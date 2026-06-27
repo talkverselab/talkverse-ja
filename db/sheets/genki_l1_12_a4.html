@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genki L1-12 Grammar — 日本語ユニバース</title>
+<style>
+@page { size: A4 portrait; margin: 8mm 10mm 8mm 10mm; }
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic", "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  color: #4A4554;
+  background: #FBF8F1;
+  font-size: 10pt;
+  line-height: 1.45;
+}
+.page {
+  width: 100%;
+  min-height: calc(297mm - 16mm);
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+}
+.page:last-of-type { page-break-after: auto; }
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  margin-bottom: 4mm;
+  padding-bottom: 3mm;
+  border-bottom: 1.2px solid #8B8294;
+}
+header h1 {
+  margin: 0;
+  font-size: 14pt;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #4A4554;
+}
+header h1::before {
+  content: "🌸 ";
+}
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 8.5pt;
+  color: #7A7585;
+  font-weight: 600;
+}
+.badge {
+  background: #F8C8D8;
+  color: #4A4554;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 0.6px solid #8B8294;
+  font-weight: 700;
+}
+.pageno {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3mm;
+  align-content: start;
+}
+.card {
+  border: 0.8px solid #8B8294;
+  border-radius: 4px;
+  padding: 2.5mm 3mm;
+  background: #FFFEFB;
+  break-inside: avoid;
+}
+.chips {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1.5mm;
+}
+.chip {
+  display: inline-block;
+  font-size: 7pt;
+  font-weight: 800;
+  padding: 0.5px 5px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+}
+.chip.lesson {
+  background: #C8BFE8;
+  color: #4A4554;
+  border: 0.5px solid #8B8294;
+}
+.chip.jlpt {
+  background: #EDD27A;
+  color: #4A4554;
+  border: 0.5px solid #8B8294;
+}
+.ja {
+  font-size: 12pt;
+  font-weight: 800;
+  color: #4A4554;
+  letter-spacing: -0.2px;
+  margin-bottom: 0.8mm;
+}
+.brief {
+  font-size: 8.5pt;
+  color: #7A7585;
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1.5mm;
+}
+.ex {
+  background: #FDF6D9;
+  border-left: 1.5px solid #EDD27A;
+  padding: 1.5mm 2mm;
+  margin-bottom: 1.5mm;
+  border-radius: 0 3px 3px 0;
+}
+.ex-ja {
+  display: block;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #4A4554;
+}
+.ex-ko {
+  display: block;
+  font-size: 8.5pt;
+  color: #7A7585;
+  margin-top: 0.5mm;
+}
+.hint {
+  font-size: 8pt;
+  color: #4A4554;
+  background: #EAF3E4;
+  padding: 1mm 2mm;
+  border-radius: 3px;
+  border: 0.5px solid #B8D2AE;
+}
+footer {
+  margin-top: 3mm;
+  padding-top: 2mm;
+  border-top: 0.6px solid #B0ACB8;
+  font-size: 7.5pt;
+  color: #7A7585;
+  text-align: center;
+  font-weight: 600;
+}
+@media print {
+  body { background: white; }
+  .card { background: white; box-shadow: none; }
+}
+</style>
+</head>
+<body>
+<section class="page">
+  <header>
+    <h1>L1-4 · 명사문 · 지시사 · 동사·조사 · 존재</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース</span>
+      <span>Genki L1-12 · 영어화자 baseline 커리큘럼</span>
+      <span class="pageno">1 / 3</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">X は Y です</div>
+  <div class="brief">Identity / topic-comment sentence</div>
+  <div class="ex">
+    <span class="ex-ja">私は学生です。</span>
+    <span class="ex-ko">저는 학생입니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~은/는 = は (주제). です = 입니다</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~の~</div>
+  <div class="brief">Connecting nouns / possessive</div>
+  <div class="ex">
+    <span class="ex-ja">山田さんの本</span>
+    <span class="ex-ko">야마다 씨의 책</span>
+  </div>
+  <div class="hint">🇰🇷 ~의 = の (1:1 매핑)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~か (의문)</div>
+  <div class="brief">Question marker (sentence-end)</div>
+  <div class="ex">
+    <span class="ex-ja">学生ですか？</span>
+    <span class="ex-ko">학생이에요?</span>
+  </div>
+  <div class="hint">🇰🇷 ~까? = か (정중 의문)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">X も Y</div>
+  <div class="brief">X also / too</div>
+  <div class="ex">
+    <span class="ex-ja">私も学生です。</span>
+    <span class="ex-ko">저도 학생입니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~도 = も</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">これ / それ / あれ / どれ</div>
+  <div class="brief">this / that / that-far / which</div>
+  <div class="ex">
+    <span class="ex-ja">これは何ですか？</span>
+    <span class="ex-ko">이건 뭐예요?</span>
+  </div>
+  <div class="hint">🇰🇷 근/중/원/의 = 한국어와 동일 패턴</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">この / その / あの N</div>
+  <div class="brief">this/that N (noun-modifying)</div>
+  <div class="ex">
+    <span class="ex-ja">この本は私のです。</span>
+    <span class="ex-ko">이 책은 제 거예요.</span>
+  </div>
+  <div class="hint">🇰🇷 이 / 그 / 저 + 명사 (한국어 동일)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">ね / よ</div>
+  <div class="brief">Sentence-final particles (agreement / info)</div>
+  <div class="ex">
+    <span class="ex-ja">いいですね。 / 行きますよ。</span>
+    <span class="ex-ko">좋네요. / 갑니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ね = ~네 / よ = ~요 (알림). 한국어 종조사 1:1</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~じゃありません</div>
+  <div class="brief">Negation of nouns (~ is not)</div>
+  <div class="ex">
+    <span class="ex-ja">学生じゃありません。</span>
+    <span class="ex-ko">학생이 아닙니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~이 아니다 = じゃない / じゃありません</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">誰の N (소유 의문)</div>
+  <div class="brief">Whose N</div>
+  <div class="ex">
+    <span class="ex-ja">誰のかばんですか？</span>
+    <span class="ex-ko">누구 가방이에요?</span>
+  </div>
+  <div class="hint">🇰🇷 누구의 = 誰の</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Verb conjugation (ます polite)</div>
+  <div class="brief">Polite present (will / does)</div>
+  <div class="ex">
+    <span class="ex-ja">私は本を読みます。</span>
+    <span class="ex-ko">저는 책을 읽습니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~습니다/입니다 = ます (정중체)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~を / ~で / ~に / ~へ</div>
+  <div class="brief">Object / location / target particles</div>
+  <div class="ex">
+    <span class="ex-ja">学校で勉強する</span>
+    <span class="ex-ko">학교에서 공부함</span>
+  </div>
+  <div class="hint">🇰🇷 を=을/를, で=에서(장소), に=에/에게, へ=로</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Frequency adverbs</div>
+  <div class="brief">Often / sometimes / never</div>
+  <div class="ex">
+    <span class="ex-ja">よく勉強します。</span>
+    <span class="ex-ko">자주 공부합니다.</span>
+  </div>
+  <div class="hint">🇰🇷 よく=자주, 時々=가끔, あまり~ない=별로 안~</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Word order (SOV)</div>
+  <div class="brief">Subject - Object - Verb</div>
+  <div class="ex">
+    <span class="ex-ja">私はパンを食べる。</span>
+    <span class="ex-ko">저는 빵을 먹어요.</span>
+  </div>
+  <div class="hint">🇰🇷 한국어와 동일 — 영어화자 큰 부담</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">ある / いる</div>
+  <div class="brief">Existence (inanimate / animate)</div>
+  <div class="ex">
+    <span class="ex-ja">猫がいる。 / 本がある。</span>
+    <span class="ex-ko">고양이가 있어요. / 책이 있어요.</span>
+  </div>
+  <div class="hint">🇰🇷 있다 = ある(사물) / いる(생물)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Past tense (~ました)</div>
+  <div class="brief">Polite past</div>
+  <div class="ex">
+    <span class="ex-ja">昨日来ました。</span>
+    <span class="ex-ko">어제 왔어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~았/었습니다 = ました</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Location 上下中</div>
+  <div class="brief">Location nouns</div>
+  <div class="ex">
+    <span class="ex-ja">机の上にある。</span>
+    <span class="ex-ko">책상 위에 있어요.</span>
+  </div>
+  <div class="hint">🇰🇷 위/아래/안 = 上/下/中 (한국어 동일)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Time duration</div>
+  <div class="brief">How long</div>
+  <div class="ex">
+    <span class="ex-ja">一時間勉強しました。</span>
+    <span class="ex-ko">한 시간 공부했어요.</span>
+  </div>
+  <div class="hint">🇰🇷 시간 길이 단위 — 한국어와 동일</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~と~ (along with)</div>
+  <div class="brief">Doing together with</div>
+  <div class="ex">
+    <span class="ex-ja">友達と行きます。</span>
+    <span class="ex-ko">친구랑 갑니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~와/과 함께 = ~と</div>
+</div>
+  </div>
+  <footer>
+    <span>🌸 한국화자 = 🇰🇷 hint 라인 활용해 소거법 진행 · 영어화자 = 본문 위주</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L5-8 · 형용사 · te-form · ~ている · 주격 が</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース</span>
+      <span>Genki L1-12 · 영어화자 baseline 커리큘럼</span>
+      <span class="pageno">2 / 3</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">い-adjective / な-adjective</div>
+  <div class="brief">Two adjective types</div>
+  <div class="ex">
+    <span class="ex-ja">おいしい / きれいな</span>
+    <span class="ex-ko">맛있는 / 예쁜</span>
+  </div>
+  <div class="hint">🇰🇷 い형용사 활용 / な형용사 = 명사형. ~한 매핑</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Counting (一つ, 一個…)</div>
+  <div class="brief">Number + counter</div>
+  <div class="ex">
+    <span class="ex-ja">りんごを三つください。</span>
+    <span class="ex-ko">사과 세 개 주세요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~개 = 個/つ. 단위 다양 (영어 화자 큰 부담)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">好き / 嫌い</div>
+  <div class="brief">Like / dislike (uses が)</div>
+  <div class="ex">
+    <span class="ex-ja">猫が好きです。</span>
+    <span class="ex-ko">고양이를 좋아합니다.</span>
+  </div>
+  <div class="hint">🇰🇷 좋아함 = 好き. 조사 が (목적격 아님) 주의</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ましょう</div>
+  <div class="brief">Let's ~ (suggestion)</div>
+  <div class="ex">
+    <span class="ex-ja">一緒に行きましょう。</span>
+    <span class="ex-ko">같이 갑시다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~합시다 = ましょう (한국어 청유 동등)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~から (이유)</div>
+  <div class="brief">Because ~ (reason)</div>
+  <div class="ex">
+    <span class="ex-ja">寒いから着る。</span>
+    <span class="ex-ko">추우니까 입어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~니까 = から (이유). 같은 から = ~부터 도 있음</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">te-form (て形)</div>
+  <div class="brief">Connective form ★ CORE</div>
+  <div class="ex">
+    <span class="ex-ja">本を読んで寝た。</span>
+    <span class="ex-ko">책을 읽고 잤다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~고/해서 = て (활용형 신규. 영어화자 최대 난관)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~てください</div>
+  <div class="brief">Please do ~ (polite request)</div>
+  <div class="ex">
+    <span class="ex-ja">ここに座ってください。</span>
+    <span class="ex-ko">여기 앉으세요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~해주세요 = てください</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~てもいい / ~てはいけない</div>
+  <div class="brief">Permission / prohibition</div>
+  <div class="ex">
+    <span class="ex-ja">食べてもいいです。</span>
+    <span class="ex-ko">먹어도 돼요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~해도 된다 / ~하면 안 된다 (한국어 매핑)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Counting people (一人 二人…)</div>
+  <div class="brief">People counter</div>
+  <div class="ex">
+    <span class="ex-ja">三人います。</span>
+    <span class="ex-ko">세 명 있어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~명 = 人. 1·2·3 발음 불규칙 (ひとり·ふたり·さんにん)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~に行く (목적)</div>
+  <div class="brief">Go to (purpose)</div>
+  <div class="ex">
+    <span class="ex-ja">買い物に行く。</span>
+    <span class="ex-ko">쇼핑하러 가요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~하러 가다 = ~に行く. 동사 ます어간 + に</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ている</div>
+  <div class="brief">Progressive / state ★</div>
+  <div class="ex">
+    <span class="ex-ja">今、本を読んでいる。</span>
+    <span class="ex-ko">지금 책 읽고 있어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~고 있다 = ている (진행) / ~어 있다 (상태)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">te-form 문장 연결</div>
+  <div class="brief">Joining sentences (and)</div>
+  <div class="ex">
+    <span class="ex-ja">起きて、朝ご飯を食べる。</span>
+    <span class="ex-ko">일어나서 아침 먹어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~고 = て (순서). 한국어 직관 매핑</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Particle が (주격)</div>
+  <div class="brief">Subject marker (new info)</div>
+  <div class="ex">
+    <span class="ex-ja">誰がいますか？ — 田中がいます。</span>
+    <span class="ex-ko">누가 있어요? — 다나카가.</span>
+  </div>
+  <div class="hint">🇰🇷 이/가 = が (새 정보·의문 답). は와 미묘 차이</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">何か / 何も</div>
+  <div class="brief">Something / nothing</div>
+  <div class="ex">
+    <span class="ex-ja">何か食べる？ / 何もない。</span>
+    <span class="ex-ko">뭐 좀 먹어? / 아무것도 없어.</span>
+  </div>
+  <div class="hint">🇰🇷 뭔가 = 何か / 아무것도 ~없다 = 何も~ない</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Short forms (普通体)</div>
+  <div class="brief">Casual/dictionary form</div>
+  <div class="ex">
+    <span class="ex-ja">行く / 食べる / 来る</span>
+    <span class="ex-ko">가, 먹어, 와</span>
+  </div>
+  <div class="hint">🇰🇷 반말 어미. 친구·가족 대화</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Verb as noun (の·こと)</div>
+  <div class="brief">Nominalizing verb</div>
+  <div class="ex">
+    <span class="ex-ja">勉強するのが好き。</span>
+    <span class="ex-ko">공부하는 게 좋아.</span>
+  </div>
+  <div class="hint">🇰🇷 ~는 것 = の·こと. ~ 매핑 거의 동일</div>
+</div>
+  </div>
+  <footer>
+    <span>🌸 한국화자 = 🇰🇷 hint 라인 활용해 소거법 진행 · 영어화자 = 본문 위주</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L9-12 · ~から 설명 · 비교 · ~たい · ~んです</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース</span>
+      <span>Genki L1-12 · 영어화자 baseline 커리큘럼</span>
+      <span class="pageno">3 / 3</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~から (설명·because)</div>
+  <div class="brief">Because (explanation in answer)</div>
+  <div class="ex">
+    <span class="ex-ja">なんで？ — 疲れているから。</span>
+    <span class="ex-ko">왜? — 피곤하니까.</span>
+  </div>
+  <div class="hint">🇰🇷 이유 답 = から. (이유 강조)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Qualifying nouns (관계절)</div>
+  <div class="brief">Adjective clause → noun</div>
+  <div class="ex">
+    <span class="ex-ja">私が買った本</span>
+    <span class="ex-ko">내가 산 책</span>
+  </div>
+  <div class="hint">🇰🇷 한국어 관계절과 동등 — 어순도 같음</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">まだ ~ていません</div>
+  <div class="brief">Not yet ~</div>
+  <div class="ex">
+    <span class="ex-ja">まだ食べていません。</span>
+    <span class="ex-ko">아직 안 먹었어요.</span>
+  </div>
+  <div class="hint">🇰🇷 아직 안 ~ = まだ~ていない (한국어 직관)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Short form past</div>
+  <div class="brief">Casual past</div>
+  <div class="ex">
+    <span class="ex-ja">行った / 食べた / 来た</span>
+    <span class="ex-ko">갔어, 먹었어, 왔어</span>
+  </div>
+  <div class="hint">🇰🇷 보통체 과거. 반말</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Comparison (~より~のほうが)</div>
+  <div class="brief">X is more ~ than Y</div>
+  <div class="ex">
+    <span class="ex-ja">犬より猫のほうが好き。</span>
+    <span class="ex-ko">개보다 고양이가 좋아.</span>
+  </div>
+  <div class="hint">🇰🇷 ~보다 = より. ~의 쪽 = ほう</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">どこかに / どこにも</div>
+  <div class="brief">Somewhere / nowhere</div>
+  <div class="ex">
+    <span class="ex-ja">どこかに行こう。 / どこにも行かない。</span>
+    <span class="ex-ko">어디론가 가자 / 아무 데도 안 가.</span>
+  </div>
+  <div class="hint">🇰🇷 어디론가/아무 데도 — 한국어 직관</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">なる (to become)</div>
+  <div class="brief">Becomes ~</div>
+  <div class="ex">
+    <span class="ex-ja">暑くなる。 / 先生になる。</span>
+    <span class="ex-ko">더워져요. / 선생님이 돼요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~이/가 되다 = になる (한국어 동일)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~つもりだ</div>
+  <div class="brief">Intend to ~</div>
+  <div class="ex">
+    <span class="ex-ja">明日行くつもりです。</span>
+    <span class="ex-ko">내일 갈 생각이에요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~할 생각/작정 = つもり</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~で (수단·도구)</div>
+  <div class="brief">By means of / with</div>
+  <div class="ex">
+    <span class="ex-ja">バスで行く。 / 鉛筆で書く。</span>
+    <span class="ex-ko">버스로 가요. / 연필로 써요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~로 (수단) = で. 같은 で = 장소도 있음</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~や~</div>
+  <div class="brief">X and Y (non-exhaustive)</div>
+  <div class="ex">
+    <span class="ex-ja">本やノートを買う。</span>
+    <span class="ex-ko">책이랑 노트를 사요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~랑/이나 = や (대표 나열). と 와 차이</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ことがある (경험)</div>
+  <div class="brief">Have done ~ before</div>
+  <div class="ex">
+    <span class="ex-ja">日本に行ったことがある。</span>
+    <span class="ex-ko">일본 간 적 있어요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~한 적 있다 = ことがある (한국어 동등)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~たい (희망)</div>
+  <div class="brief">Want to ~</div>
+  <div class="ex">
+    <span class="ex-ja">ラーメンが食べたい。</span>
+    <span class="ex-ko">라멘 먹고 싶어.</span>
+  </div>
+  <div class="hint">🇰🇷 ~고 싶다 = たい. を→が 변환 주의</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~たり~たりする</div>
+  <div class="brief">Things like ~ing and ~ing</div>
+  <div class="ex">
+    <span class="ex-ja">本を読んだり、寝たりする。</span>
+    <span class="ex-ko">책 읽기도 하고 자기도 해요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~기도 하고 ~기도 = たり (열거)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~でしょう</div>
+  <div class="brief">Probably / right?</div>
+  <div class="ex">
+    <span class="ex-ja">明日は雨でしょう。</span>
+    <span class="ex-ko">내일은 비 오겠죠.</span>
+  </div>
+  <div class="hint">🇰🇷 ~겠죠 = でしょう. 추측 + 확인</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ほうがいい</div>
+  <div class="brief">Should do / had better</div>
+  <div class="ex">
+    <span class="ex-ja">早く寝たほうがいい。</span>
+    <span class="ex-ko">빨리 자는 게 좋아.</span>
+  </div>
+  <div class="hint">🇰🇷 ~는 게 낫다 = ほうがいい (한국어 동등)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~んです (설명)</div>
+  <div class="brief">Explanation / context</div>
+  <div class="ex">
+    <span class="ex-ja">今、勉強しているんです。</span>
+    <span class="ex-ko">지금 공부하고 있는 거예요.</span>
+  </div>
+  <div class="hint">🇰🇷 ~인 거예요 / ~거든 = んです (정중)</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ので (because, polite)</div>
+  <div class="brief">Because (softer than から)</div>
+  <div class="ex">
+    <span class="ex-ja">疲れているので休む。</span>
+    <span class="ex-ko">피곤해서 쉽니다.</span>
+  </div>
+  <div class="hint">🇰🇷 ~서/때문에 = ので. から 보다 부드러움</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~なくちゃいけない</div>
+  <div class="brief">Must / have to ~</div>
+  <div class="ex">
+    <span class="ex-ja">勉強しなくちゃいけない。</span>
+    <span class="ex-ko">공부해야 해.</span>
+  </div>
+  <div class="hint">🇰🇷 ~해야 한다 = なくちゃいけない / なければならない</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~すぎる</div>
+  <div class="brief">Too much / excessively</div>
+  <div class="ex">
+    <span class="ex-ja">食べすぎた。</span>
+    <span class="ex-ko">너무 많이 먹었어.</span>
+  </div>
+  <div class="hint">🇰🇷 너무 ~하다 = すぎる. 동사 ます어간 + すぎる</div>
+</div>
+  </div>
+  <footer>
+    <span>🌸 한국화자 = 🇰🇷 hint 라인 활용해 소거법 진행 · 영어화자 = 본문 위주</span>
+  </footer>
+</section>
+</body>
+</html>

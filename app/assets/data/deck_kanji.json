@@ -1,0 +1,3416 @@
+{
+  "deck_id": "kanji",
+  "deck_name": "한자 코어 80",
+  "deck_subtitle": "4-way cross-ref (ja↔zh-簡↔zh-繁↔ko) — 80자",
+  "color": "0xFF6B6478",
+  "icon": "漢",
+  "unlock_threshold": 0,
+  "source": "db/corpus/hanja_crossref.json",
+  "cards": [
+    {
+      "id": "hanja_0005",
+      "front": "言",
+      "kana": "",
+      "back": "말씀 언",
+      "key": "ko: 言(언) / 가중 빈도 #2 (1.63%, 15어 사용) / 예: 言う(19) · 然う言う(184) · 言葉(471)",
+      "ko_hanja": "言",
+      "zh_simp": "言",
+      "zh_trad": "言",
+      "rank": 5,
+      "weighted_rank": 2,
+      "weighted_pct": 1.6333,
+      "readings": [
+        {
+          "reading": "いう",
+          "kind": "훈독",
+          "gloss": "말하다"
+        },
+        {
+          "reading": "こと",
+          "kind": "훈독",
+          "gloss": "말 (말씀)"
+        },
+        {
+          "reading": "ゲン",
+          "kind": "음독",
+          "gloss": "言語·証言"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "言う",
+          "freq": 0.004895,
+          "rank": 19,
+          "ko": "말하다"
+        },
+        {
+          "word": "然う言う",
+          "freq": 0.000671,
+          "rank": 184,
+          "ko": "그렇게 말하다"
+        },
+        {
+          "word": "言葉",
+          "freq": 0.000265,
+          "rank": 471,
+          "ko": "말/언어"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0001",
+      "front": "事",
+      "kana": "",
+      "back": "일 사",
+      "key": "ko: 事(사) / 가중 빈도 #4 (1.32%, 16어 사용) / 예: 事(42) · 仕事(123) · 事件(224)",
+      "ko_hanja": "事",
+      "zh_simp": "事",
+      "zh_trad": "事",
+      "rank": 1,
+      "weighted_rank": 4,
+      "weighted_pct": 1.3183,
+      "readings": [
+        {
+          "reading": "こと",
+          "kind": "훈독",
+          "gloss": "일/것"
+        },
+        {
+          "reading": "ジ",
+          "kind": "음독",
+          "gloss": "事件·仕事"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "事",
+          "freq": 0.002603,
+          "rank": 42,
+          "ko": "일/것"
+        },
+        {
+          "word": "仕事",
+          "freq": 0.000972,
+          "rank": 123,
+          "ko": "일/직업"
+        },
+        {
+          "word": "事件",
+          "freq": 0.000557,
+          "rank": 224,
+          "ko": "사건"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0026",
+      "front": "分",
+      "kana": "",
+      "back": "나눌 분",
+      "key": "ko: 分(분) / 가중 빈도 #5 (1.24%, 14어 사용) / 예: 分かる(43) · 自分(93) · 分(239)",
+      "ko_hanja": "分",
+      "zh_simp": "分",
+      "zh_trad": "分",
+      "rank": 26,
+      "weighted_rank": 5,
+      "weighted_pct": 1.2447,
+      "readings": [
+        {
+          "reading": "わ-かる",
+          "kind": "훈독",
+          "gloss": "알다"
+        },
+        {
+          "reading": "わ-ける",
+          "kind": "훈독",
+          "gloss": "나누다"
+        },
+        {
+          "reading": "フン",
+          "kind": "음독",
+          "gloss": "1分/시간"
+        },
+        {
+          "reading": "ブン",
+          "kind": "음독",
+          "gloss": "部分/이성"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "分かる",
+          "freq": 0.002574,
+          "rank": 43,
+          "ko": "알다"
+        },
+        {
+          "word": "自分",
+          "freq": 0.001266,
+          "rank": 93,
+          "ko": "자기/스스로"
+        },
+        {
+          "word": "分",
+          "freq": 0.000513,
+          "rank": 239,
+          "ko": "분/부분"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0007",
+      "front": "来",
+      "kana": "",
+      "back": "올 래",
+      "key": "ko: 來(래) / zh-繁: 來 / 가중 빈도 #6 (1.09%, 6어 사용) / 예: 来る(21) · やって来る(832) · 未来(882)",
+      "ko_hanja": "來",
+      "zh_simp": "来",
+      "zh_trad": "來",
+      "rank": 7,
+      "weighted_rank": 6,
+      "weighted_pct": 1.0878,
+      "readings": [
+        {
+          "reading": "く-る",
+          "kind": "훈독",
+          "gloss": "오다"
+        },
+        {
+          "reading": "ライ",
+          "kind": "음독",
+          "gloss": "未来·来年"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "来る",
+          "freq": 0.004217,
+          "rank": 21,
+          "ko": "오다"
+        },
+        {
+          "word": "やって来る",
+          "freq": 0.00014,
+          "rank": 832,
+          "ko": "다가오다"
+        },
+        {
+          "word": "未来",
+          "freq": 0.000133,
+          "rank": 882,
+          "ko": "미래"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0027",
+      "front": "前",
+      "kana": "",
+      "back": "앞 전",
+      "key": "ko: 前(전) / 가중 빈도 #7 (1.03%, 8어 사용) / 예: お前(47) · 前(164) · 前に(248)",
+      "ko_hanja": "前",
+      "zh_simp": "前",
+      "zh_trad": "前",
+      "rank": 27,
+      "weighted_rank": 7,
+      "weighted_pct": 1.0315,
+      "readings": [
+        {
+          "reading": "まえ",
+          "kind": "훈독",
+          "gloss": "앞"
+        },
+        {
+          "reading": "ゼン",
+          "kind": "음독",
+          "gloss": "前後·以前"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "お前",
+          "freq": 0.002464,
+          "rank": 47,
+          "ko": "너/임마"
+        },
+        {
+          "word": "前",
+          "freq": 0.000752,
+          "rank": 164,
+          "ko": "앞/전"
+        },
+        {
+          "word": "前に",
+          "freq": 0.000493,
+          "rank": 248,
+          "ko": "이전에"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0024",
+      "front": "一",
+      "kana": "",
+      "back": "한 일",
+      "key": "ko: 一(일) / 가중 빈도 #8 (0.96%, 23어 사용) / 예: 一緒に(180) · 一(266) · 一同(275)",
+      "ko_hanja": "一",
+      "zh_simp": "一",
+      "zh_trad": "一",
+      "rank": 24,
+      "weighted_rank": 8,
+      "weighted_pct": 0.9613,
+      "readings": [
+        {
+          "reading": "ひと-つ",
+          "kind": "훈독",
+          "gloss": "하나"
+        },
+        {
+          "reading": "イチ",
+          "kind": "음독",
+          "gloss": "1番·一週間"
+        },
+        {
+          "reading": "イッ",
+          "kind": "음독",
+          "gloss": "촉음 변형"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "一緒に",
+          "freq": 0.000687,
+          "rank": 180,
+          "ko": "함께/같이"
+        },
+        {
+          "word": "一",
+          "freq": 0.00045,
+          "rank": 266,
+          "ko": "하나"
+        },
+        {
+          "word": "一同",
+          "freq": 0.000437,
+          "rank": 275,
+          "ko": "일동/모두"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0034",
+      "front": "生",
+      "kana": "",
+      "back": "날 생",
+      "key": "ko: 生(생) / 가중 빈도 #9 (0.96%, 14어 사용) / 예: 先生(71) · 生きる(199) · 生む(397)",
+      "ko_hanja": "生",
+      "zh_simp": "生",
+      "zh_trad": "生",
+      "rank": 34,
+      "weighted_rank": 9,
+      "weighted_pct": 0.96,
+      "readings": [
+        {
+          "reading": "い-きる",
+          "kind": "훈독",
+          "gloss": "살다"
+        },
+        {
+          "reading": "う-まれる",
+          "kind": "훈독",
+          "gloss": "태어나다"
+        },
+        {
+          "reading": "セイ",
+          "kind": "음독",
+          "gloss": "学生·人生"
+        },
+        {
+          "reading": "ショウ",
+          "kind": "음독",
+          "gloss": "一生·誕生"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "先生",
+          "freq": 0.001815,
+          "rank": 71,
+          "ko": "선생님"
+        },
+        {
+          "word": "生きる",
+          "freq": 0.000607,
+          "rank": 199,
+          "ko": "살다"
+        },
+        {
+          "word": "生む",
+          "freq": 0.000318,
+          "rank": 397,
+          "ko": "낳다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0010",
+      "front": "今",
+      "kana": "",
+      "back": "이제 금",
+      "key": "ko: 今(금) / 가중 빈도 #10 (0.92%, 13어 사용) / 예: 今(72) · 今日(182) · 今度(405)",
+      "ko_hanja": "今",
+      "zh_simp": "今",
+      "zh_trad": "今",
+      "rank": 10,
+      "weighted_rank": 10,
+      "weighted_pct": 0.921,
+      "readings": [
+        {
+          "reading": "いま",
+          "kind": "훈독",
+          "gloss": "지금"
+        },
+        {
+          "reading": "コン",
+          "kind": "음독",
+          "gloss": "今度·今週"
+        },
+        {
+          "reading": "キン",
+          "kind": "음독",
+          "gloss": "今日(きょう) 변형"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "今",
+          "freq": 0.001805,
+          "rank": 72,
+          "ko": "지금"
+        },
+        {
+          "word": "今日",
+          "freq": 0.000684,
+          "rank": 182,
+          "ko": "오늘"
+        },
+        {
+          "word": "今度",
+          "freq": 0.000313,
+          "rank": 405,
+          "ko": "이번/다음번"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0009",
+      "front": "思",
+      "kana": "",
+      "back": "생각 사",
+      "key": "ko: 思(사) / 가중 빈도 #11 (0.91%, 6어 사용) / 예: 思う(26) · 思い出す(741) · 思(1357)",
+      "ko_hanja": "思",
+      "zh_simp": "思",
+      "zh_trad": "思",
+      "rank": 9,
+      "weighted_rank": 11,
+      "weighted_pct": 0.9142,
+      "readings": [
+        {
+          "reading": "おも-う",
+          "kind": "훈독",
+          "gloss": "생각하다"
+        },
+        {
+          "reading": "シ",
+          "kind": "음독",
+          "gloss": "思考·意思"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "思う",
+          "freq": 0.003487,
+          "rank": 26,
+          "ko": "생각하다"
+        },
+        {
+          "word": "思い出す",
+          "freq": 0.000158,
+          "rank": 741,
+          "ko": "떠올리다"
+        },
+        {
+          "word": "思",
+          "freq": 8.3e-05,
+          "rank": 1357,
+          "ko": "생각"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0006",
+      "front": "人",
+      "kana": "",
+      "back": "사람 인",
+      "key": "ko: 人(인) / 가중 빈도 #12 (0.86%, 27어 사용) / 예: 人間(235) · 犯人(269) · １人(382)",
+      "ko_hanja": "人",
+      "zh_simp": "人",
+      "zh_trad": "人",
+      "rank": 6,
+      "weighted_rank": 12,
+      "weighted_pct": 0.8562,
+      "readings": [
+        {
+          "reading": "ひと",
+          "kind": "훈독",
+          "gloss": "사람"
+        },
+        {
+          "reading": "ジン",
+          "kind": "음독",
+          "gloss": "日本人·恋人"
+        },
+        {
+          "reading": "ニン",
+          "kind": "음독",
+          "gloss": "三人·人気"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "人間",
+          "freq": 0.000523,
+          "rank": 235,
+          "ko": "인간"
+        },
+        {
+          "word": "犯人",
+          "freq": 0.000447,
+          "rank": 269,
+          "ko": "범인"
+        },
+        {
+          "word": "１人",
+          "freq": 0.000334,
+          "rank": 382,
+          "ko": "한 사람"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0011",
+      "front": "俺",
+      "kana": "",
+      "back": "나 엄",
+      "key": "ko: 俺(엄) / 가중 빈도 #13 (0.84%, 4어 사용) / 예: 俺(30) · 俺たち(564) · 俺達(1149)",
+      "ko_hanja": "俺",
+      "zh_simp": "俺",
+      "zh_trad": "俺",
+      "rank": 11,
+      "weighted_rank": 13,
+      "weighted_pct": 0.8437,
+      "readings": [
+        {
+          "reading": "おれ",
+          "kind": "훈독",
+          "gloss": "나 (남성 캐주얼)"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "俺",
+          "freq": 0.003211,
+          "rank": 30,
+          "ko": "나 (남성 캐주얼)"
+        },
+        {
+          "word": "俺たち",
+          "freq": 0.000223,
+          "rank": 564,
+          "ko": "우리 (남)"
+        },
+        {
+          "word": "俺達",
+          "freq": 9.9e-05,
+          "rank": 1149,
+          "ko": "우리 (남)"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0039",
+      "front": "要",
+      "kana": "",
+      "back": "요긴할 요",
+      "key": "ko: 要(요) / 가중 빈도 #14 (0.83%, 5어 사용) / 예: 要る(35) · 必要(311) · 要約(1805)",
+      "ko_hanja": "要",
+      "zh_simp": "要",
+      "zh_trad": "要",
+      "rank": 39,
+      "weighted_rank": 14,
+      "weighted_pct": 0.8315,
+      "readings": [
+        {
+          "reading": "い-る",
+          "kind": "훈독",
+          "gloss": "필요하다"
+        },
+        {
+          "reading": "ヨウ",
+          "kind": "음독",
+          "gloss": "重要·必要"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "要る",
+          "freq": 0.002996,
+          "rank": 35,
+          "ko": "필요하다"
+        },
+        {
+          "word": "必要",
+          "freq": 0.000402,
+          "rank": 311,
+          "ko": "필요"
+        },
+        {
+          "word": "要約",
+          "freq": 6e-05,
+          "rank": 1805,
+          "ko": "요약"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0012",
+      "front": "大",
+      "kana": "",
+      "back": "큰 대",
+      "key": "ko: 大(대) / 가중 빈도 #15 (0.82%, 18어 사용) / 예: 大丈夫(90) · 大事(379) · 大変(388)",
+      "ko_hanja": "大",
+      "zh_simp": "大",
+      "zh_trad": "大",
+      "rank": 12,
+      "weighted_rank": 15,
+      "weighted_pct": 0.8168,
+      "readings": [
+        {
+          "reading": "おお-きい",
+          "kind": "훈독",
+          "gloss": "크다"
+        },
+        {
+          "reading": "ダイ",
+          "kind": "음독",
+          "gloss": "大学·大事"
+        },
+        {
+          "reading": "タイ",
+          "kind": "음독",
+          "gloss": "大切·大変"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "大丈夫",
+          "freq": 0.001297,
+          "rank": 90,
+          "ko": "괜찮다"
+        },
+        {
+          "word": "大事",
+          "freq": 0.000335,
+          "rank": 379,
+          "ko": "중요함"
+        },
+        {
+          "word": "大変",
+          "freq": 0.000327,
+          "rank": 388,
+          "ko": "큰일/매우"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0020",
+      "front": "日",
+      "kana": "",
+      "back": "날 일",
+      "key": "ko: 日(일) / 가중 빈도 #17 (0.79%, 19어 사용) / 예: 今日(182) · 明日(279) · 日(287)",
+      "ko_hanja": "日",
+      "zh_simp": "日",
+      "zh_trad": "日",
+      "rank": 20,
+      "weighted_rank": 17,
+      "weighted_pct": 0.7898,
+      "readings": [
+        {
+          "reading": "ひ",
+          "kind": "훈독",
+          "gloss": "날"
+        },
+        {
+          "reading": "ニチ",
+          "kind": "음독",
+          "gloss": "日曜日·毎日"
+        },
+        {
+          "reading": "ジツ",
+          "kind": "음독",
+          "gloss": "日常·先日"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "今日",
+          "freq": 0.000684,
+          "rank": 182,
+          "ko": "오늘"
+        },
+        {
+          "word": "明日",
+          "freq": 0.000435,
+          "rank": 279,
+          "ko": "내일"
+        },
+        {
+          "word": "日",
+          "freq": 0.000429,
+          "rank": 287,
+          "ko": "날/일"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0022",
+      "front": "子",
+      "kana": "",
+      "back": "아들 자",
+      "key": "ko: 子(자) / 가중 빈도 #18 (0.76%, 27어 사용) / 예: 子(159) · 子供(264) · あの子(569)",
+      "ko_hanja": "子",
+      "zh_simp": "子",
+      "zh_trad": "子",
+      "rank": 22,
+      "weighted_rank": 18,
+      "weighted_pct": 0.7626,
+      "readings": [
+        {
+          "reading": "こ",
+          "kind": "훈독",
+          "gloss": "아이"
+        },
+        {
+          "reading": "シ",
+          "kind": "음독",
+          "gloss": "子供·女子"
+        },
+        {
+          "reading": "ス",
+          "kind": "음독",
+          "gloss": "椅子(いす)"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "子",
+          "freq": 0.00078,
+          "rank": 159,
+          "ko": "아이/자식"
+        },
+        {
+          "word": "子供",
+          "freq": 0.00045,
+          "rank": 264,
+          "ko": "어린이"
+        },
+        {
+          "word": "あの子",
+          "freq": 0.000219,
+          "rank": 569,
+          "ko": "저 아이"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0019",
+      "front": "出",
+      "kana": "",
+      "back": "날 출",
+      "key": "ko: 出(출) / 가중 빈도 #21 (0.68%, 11어 사용) / 예: 出る(110) · 出す(136) · 出てくる(729)",
+      "ko_hanja": "出",
+      "zh_simp": "出",
+      "zh_trad": "出",
+      "rank": 19,
+      "weighted_rank": 21,
+      "weighted_pct": 0.6778,
+      "readings": [
+        {
+          "reading": "で-る",
+          "kind": "훈독",
+          "gloss": "나가다"
+        },
+        {
+          "reading": "だ-す",
+          "kind": "훈독",
+          "gloss": "내놓다"
+        },
+        {
+          "reading": "シュツ",
+          "kind": "음독",
+          "gloss": "出発·外出"
+        },
+        {
+          "reading": "スイ",
+          "kind": "음독",
+          "gloss": "出納"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "出る",
+          "freq": 0.001101,
+          "rank": 110,
+          "ko": "나가다/나오다"
+        },
+        {
+          "word": "出す",
+          "freq": 0.000924,
+          "rank": 136,
+          "ko": "꺼내다/내다"
+        },
+        {
+          "word": "出てくる",
+          "freq": 0.000162,
+          "rank": 729,
+          "ko": "나오다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0035",
+      "front": "気",
+      "kana": "",
+      "back": "기운 기",
+      "key": "ko: 氣(기) / zh-簡: 气 / zh-繁: 氣 / 가중 빈도 #25 (0.61%, 20어 사용) / 예: 気(329) · 気持ち(341) · 元気(500)",
+      "ko_hanja": "氣",
+      "zh_simp": "气",
+      "zh_trad": "氣",
+      "rank": 35,
+      "weighted_rank": 25,
+      "weighted_pct": 0.6056,
+      "readings": [
+        {
+          "reading": "キ",
+          "kind": "음독",
+          "gloss": "気·元気·気持ち"
+        },
+        {
+          "reading": "ケ",
+          "kind": "음독",
+          "gloss": "気配"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "気",
+          "freq": 0.000381,
+          "rank": 329,
+          "ko": "기/마음"
+        },
+        {
+          "word": "気持ち",
+          "freq": 0.000371,
+          "rank": 341,
+          "ko": "기분"
+        },
+        {
+          "word": "元気",
+          "freq": 0.000254,
+          "rank": 500,
+          "ko": "건강함/잘 지냄"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0014",
+      "front": "話",
+      "kana": "",
+      "back": "말씀 화",
+      "key": "ko: 話(화) / zh-簡: 话 / 가중 빈도 #26 (0.60%, 9어 사용) / 예: 話(112) · 話す(197) · 電話(350)",
+      "ko_hanja": "話",
+      "zh_simp": "话",
+      "zh_trad": "話",
+      "rank": 14,
+      "weighted_rank": 26,
+      "weighted_pct": 0.5996,
+      "readings": [
+        {
+          "reading": "はな-す",
+          "kind": "훈독",
+          "gloss": "말하다"
+        },
+        {
+          "reading": "はなし",
+          "kind": "훈독",
+          "gloss": "이야기"
+        },
+        {
+          "reading": "ワ",
+          "kind": "음독",
+          "gloss": "電話·会話"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "話",
+          "freq": 0.001093,
+          "rank": 112,
+          "ko": "이야기"
+        },
+        {
+          "word": "話す",
+          "freq": 0.000614,
+          "rank": 197,
+          "ko": "이야기하다"
+        },
+        {
+          "word": "電話",
+          "freq": 0.000365,
+          "rank": 350,
+          "ko": "전화"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0008",
+      "front": "時",
+      "kana": "",
+      "back": "때 시",
+      "key": "ko: 時(시) / zh-簡: 时 / 가중 빈도 #30 (0.55%, 10어 사용) / 예: 時(129) · 時間(221) · 時に(413)",
+      "ko_hanja": "時",
+      "zh_simp": "时",
+      "zh_trad": "時",
+      "rank": 8,
+      "weighted_rank": 30,
+      "weighted_pct": 0.5548,
+      "readings": [
+        {
+          "reading": "とき",
+          "kind": "훈독",
+          "gloss": "때"
+        },
+        {
+          "reading": "ジ",
+          "kind": "음독",
+          "gloss": "時間·時計"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "時",
+          "freq": 0.000947,
+          "rank": 129,
+          "ko": "때/시"
+        },
+        {
+          "word": "時間",
+          "freq": 0.00056,
+          "rank": 221,
+          "ko": "시간"
+        },
+        {
+          "word": "時に",
+          "freq": 0.000308,
+          "rank": 413,
+          "ko": "때로"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0018",
+      "front": "間",
+      "kana": "",
+      "back": "사이 간",
+      "key": "ko: 間(간) / zh-簡: 间 / 가중 빈도 #31 (0.55%, 14어 사용) / 예: 時間(221) · 人間(235) · 間(623)",
+      "ko_hanja": "間",
+      "zh_simp": "间",
+      "zh_trad": "間",
+      "rank": 18,
+      "weighted_rank": 31,
+      "weighted_pct": 0.5528,
+      "readings": [
+        {
+          "reading": "あいだ",
+          "kind": "훈독",
+          "gloss": "사이"
+        },
+        {
+          "reading": "ま",
+          "kind": "훈독",
+          "gloss": "공간"
+        },
+        {
+          "reading": "カン",
+          "kind": "음독",
+          "gloss": "時間·間隔"
+        },
+        {
+          "reading": "ケン",
+          "kind": "음독",
+          "gloss": "人間·世間"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "時間",
+          "freq": 0.00056,
+          "rank": 221,
+          "ko": "시간"
+        },
+        {
+          "word": "人間",
+          "freq": 0.000523,
+          "rank": 235,
+          "ko": "인간"
+        },
+        {
+          "word": "間",
+          "freq": 0.000196,
+          "rank": 623,
+          "ko": "사이/동안"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0017",
+      "front": "女",
+      "kana": "",
+      "back": "여자 녀",
+      "key": "ko: 女(녀) / 가중 빈도 #35 (0.49%, 6어 사용) / 예: 女(170) · 彼女(186) · 女性(301)",
+      "ko_hanja": "女",
+      "zh_simp": "女",
+      "zh_trad": "女",
+      "rank": 17,
+      "weighted_rank": 35,
+      "weighted_pct": 0.4944,
+      "readings": [
+        {
+          "reading": "おんな",
+          "kind": "훈독",
+          "gloss": "여자"
+        },
+        {
+          "reading": "ジョ",
+          "kind": "음독",
+          "gloss": "女性·彼女"
+        },
+        {
+          "reading": "ニョ",
+          "kind": "음독",
+          "gloss": "女房"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "女",
+          "freq": 0.000719,
+          "rank": 170,
+          "ko": "여자"
+        },
+        {
+          "word": "彼女",
+          "freq": 0.000662,
+          "rank": 186,
+          "ko": "그녀/여자친구"
+        },
+        {
+          "word": "女性",
+          "freq": 0.000415,
+          "rank": 301,
+          "ko": "여성"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0038",
+      "front": "手",
+      "kana": "",
+      "back": "손 수",
+      "key": "ko: 手(수) / 가중 빈도 #37 (0.45%, 14어 사용) / 예: 手(342) · 相手(371) · 勝手(524)",
+      "ko_hanja": "手",
+      "zh_simp": "手",
+      "zh_trad": "手",
+      "rank": 38,
+      "weighted_rank": 37,
+      "weighted_pct": 0.4489,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "手",
+          "freq": 0.000371,
+          "rank": 342,
+          "ko": "손"
+        },
+        {
+          "word": "相手",
+          "freq": 0.000343,
+          "rank": 371,
+          "ko": "상대"
+        },
+        {
+          "word": "勝手",
+          "freq": 0.000242,
+          "rank": 524,
+          "ko": "마음대로"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0031",
+      "front": "自",
+      "kana": "",
+      "back": "스스로 자",
+      "key": "ko: 自(자) / 가중 빈도 #40 (0.41%, 7어 사용) / 예: 自分(93) · 自殺(872) · 自由(1220)",
+      "ko_hanja": "自",
+      "zh_simp": "自",
+      "zh_trad": "自",
+      "rank": 31,
+      "weighted_rank": 40,
+      "weighted_pct": 0.4084,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "自分",
+          "freq": 0.001266,
+          "rank": 93,
+          "ko": "자기/스스로"
+        },
+        {
+          "word": "自殺",
+          "freq": 0.000136,
+          "rank": 872,
+          "ko": "자살"
+        },
+        {
+          "word": "自由",
+          "freq": 9.3e-05,
+          "rank": 1220,
+          "ko": "자유"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0036",
+      "front": "僕",
+      "kana": "",
+      "back": "종 복",
+      "key": "ko: 僕(복) / zh-簡: 仆 / 가중 빈도 #41 (0.41%, 2어 사용) / 예: 僕(75) · 僕ら(1273)",
+      "ko_hanja": "僕",
+      "zh_simp": "仆",
+      "zh_trad": "僕",
+      "rank": 36,
+      "weighted_rank": 41,
+      "weighted_pct": 0.4053,
+      "readings": [
+        {
+          "reading": "ぼく",
+          "kind": "훈독",
+          "gloss": "나 (남성)"
+        },
+        {
+          "reading": "ボク",
+          "kind": "음독",
+          "gloss": "下僕"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "僕",
+          "freq": 0.001643,
+          "rank": 75,
+          "ko": "나 (남성 부드러움)"
+        },
+        {
+          "word": "僕ら",
+          "freq": 8.8e-05,
+          "rank": 1273,
+          "ko": "우리 (남)"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0023",
+      "front": "全",
+      "kana": "",
+      "back": "온전할 전",
+      "key": "ko: 全(전) / 가중 빈도 #42 (0.40%, 8어 사용) / 예: 全て(305) · 全部(324) · 全然(330)",
+      "ko_hanja": "全",
+      "zh_simp": "全",
+      "zh_trad": "全",
+      "rank": 23,
+      "weighted_rank": 42,
+      "weighted_pct": 0.4015,
+      "readings": [
+        {
+          "reading": "まった-く",
+          "kind": "훈독",
+          "gloss": "전혀"
+        },
+        {
+          "reading": "すべ-て",
+          "kind": "훈독",
+          "gloss": "모두"
+        },
+        {
+          "reading": "ゼン",
+          "kind": "음독",
+          "gloss": "全部·安全"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "全て",
+          "freq": 0.000411,
+          "rank": 305,
+          "ko": "모두"
+        },
+        {
+          "word": "全部",
+          "freq": 0.000388,
+          "rank": 324,
+          "ko": "전부"
+        },
+        {
+          "word": "全然",
+          "freq": 0.000379,
+          "rank": 330,
+          "ko": "전혀"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0013",
+      "front": "知",
+      "kana": "",
+      "back": "알 지",
+      "key": "ko: 知(지) / 가중 빈도 #43 (0.40%, 5어 사용) / 예: 知る(89) · 知り合う(982) · 知(1040)",
+      "ko_hanja": "知",
+      "zh_simp": "知",
+      "zh_trad": "知",
+      "rank": 13,
+      "weighted_rank": 43,
+      "weighted_pct": 0.3994,
+      "readings": [
+        {
+          "reading": "し-る",
+          "kind": "훈독",
+          "gloss": "알다"
+        },
+        {
+          "reading": "チ",
+          "kind": "음독",
+          "gloss": "知識·通知"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "知る",
+          "freq": 0.001345,
+          "rank": 89,
+          "ko": "알다"
+        },
+        {
+          "word": "知り合う",
+          "freq": 0.000118,
+          "rank": 982,
+          "ko": "알게 되다"
+        },
+        {
+          "word": "知",
+          "freq": 0.000112,
+          "rank": 1040,
+          "ko": "지식"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0048",
+      "front": "夫",
+      "kana": "",
+      "back": "지아비 부",
+      "key": "ko: 夫(부) / 가중 빈도 #45 (0.39%, 5어 사용) / 예: 大丈夫(90) · 夫(705) · 夫婦(1229)",
+      "ko_hanja": "夫",
+      "zh_simp": "夫",
+      "zh_trad": "夫",
+      "rank": 48,
+      "weighted_rank": 45,
+      "weighted_pct": 0.3881,
+      "readings": [
+        {
+          "reading": "おっと",
+          "kind": "훈독",
+          "gloss": "남편"
+        },
+        {
+          "reading": "フ",
+          "kind": "음독",
+          "gloss": "夫婦·大丈夫"
+        },
+        {
+          "reading": "フウ",
+          "kind": "음독",
+          "gloss": "工夫"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "大丈夫",
+          "freq": 0.001297,
+          "rank": 90,
+          "ko": "괜찮다"
+        },
+        {
+          "word": "夫",
+          "freq": 0.000168,
+          "rank": 705,
+          "ko": "남편"
+        },
+        {
+          "word": "夫婦",
+          "freq": 9.2e-05,
+          "rank": 1229,
+          "ko": "부부"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0025",
+      "front": "聞",
+      "kana": "",
+      "back": "들을 문",
+      "key": "ko: 聞(문) / zh-簡: 闻 / 가중 빈도 #46 (0.38%, 4어 사용) / 예: 聞く(88) · 聞こえる(787) · 聞きたい(1247)",
+      "ko_hanja": "聞",
+      "zh_simp": "闻",
+      "zh_trad": "聞",
+      "rank": 25,
+      "weighted_rank": 46,
+      "weighted_pct": 0.3826,
+      "readings": [
+        {
+          "reading": "き-く",
+          "kind": "훈독",
+          "gloss": "듣다"
+        },
+        {
+          "reading": "き-こえる",
+          "kind": "훈독",
+          "gloss": "들리다"
+        },
+        {
+          "reading": "ブン",
+          "kind": "음독",
+          "gloss": "新聞·見聞"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "聞く",
+          "freq": 0.001352,
+          "rank": 88,
+          "ko": "듣다/묻다"
+        },
+        {
+          "word": "聞こえる",
+          "freq": 0.000149,
+          "rank": 787,
+          "ko": "들리다"
+        },
+        {
+          "word": "聞きたい",
+          "freq": 9e-05,
+          "rank": 1247,
+          "ko": "듣고 싶다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0051",
+      "front": "待",
+      "kana": "",
+      "back": "기다릴 대",
+      "key": "ko: 待(대) / 가중 빈도 #50 (0.36%, 4어 사용) / 예: 待つ(95) · お待ち(946) · 期待(1326)",
+      "ko_hanja": "待",
+      "zh_simp": "待",
+      "zh_trad": "待",
+      "rank": 51,
+      "weighted_rank": 50,
+      "weighted_pct": 0.3579,
+      "readings": [
+        {
+          "reading": "ま-つ",
+          "kind": "훈독",
+          "gloss": "기다리다"
+        },
+        {
+          "reading": "タイ",
+          "kind": "음독",
+          "gloss": "招待·期待"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "待つ",
+          "freq": 0.001243,
+          "rank": 95,
+          "ko": "기다리다"
+        },
+        {
+          "word": "お待ち",
+          "freq": 0.000123,
+          "rank": 946,
+          "ko": "기다림 (정중)"
+        },
+        {
+          "word": "期待",
+          "freq": 8.5e-05,
+          "rank": 1326,
+          "ko": "기대"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0016",
+      "front": "方",
+      "kana": "",
+      "back": "모 방",
+      "key": "ko: 方(방) / 가중 빈도 #51 (0.35%, 10어 사용) / 예: 方(153) · 方がいい(874) · 方法(965)",
+      "ko_hanja": "方",
+      "zh_simp": "方",
+      "zh_trad": "方",
+      "rank": 16,
+      "weighted_rank": 51,
+      "weighted_pct": 0.3515,
+      "readings": [
+        {
+          "reading": "かた",
+          "kind": "훈독",
+          "gloss": "분/방향"
+        },
+        {
+          "reading": "ホウ",
+          "kind": "음독",
+          "gloss": "方法·地方"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "方",
+          "freq": 0.000804,
+          "rank": 153,
+          "ko": "분/방향"
+        },
+        {
+          "word": "方がいい",
+          "freq": 0.000135,
+          "rank": 874,
+          "ko": "~하는 게 좋다"
+        },
+        {
+          "word": "方法",
+          "freq": 0.00012,
+          "rank": 965,
+          "ko": "방법"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0037",
+      "front": "入",
+      "kana": "",
+      "back": "들 입",
+      "key": "ko: 入(입) / 가중 빈도 #52 (0.35%, 8어 사용) / 예: 入る(160) · 入れる(363) · 手に入れる(1493)",
+      "ko_hanja": "入",
+      "zh_simp": "入",
+      "zh_trad": "入",
+      "rank": 37,
+      "weighted_rank": 52,
+      "weighted_pct": 0.3505,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "入る",
+          "freq": 0.000771,
+          "rank": 160,
+          "ko": "들어가다"
+        },
+        {
+          "word": "入れる",
+          "freq": 0.000352,
+          "rank": 363,
+          "ko": "넣다"
+        },
+        {
+          "word": "手に入れる",
+          "freq": 7.4e-05,
+          "rank": 1493,
+          "ko": "손에 넣다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0052",
+      "front": "中",
+      "kana": "",
+      "back": "가운데 중",
+      "key": "ko: 中(중) / 가중 빈도 #53 (0.34%, 10어 사용) / 예: 中(133) · 連中(1340) · 世の中(1433)",
+      "ko_hanja": "中",
+      "zh_simp": "中",
+      "zh_trad": "中",
+      "rank": 52,
+      "weighted_rank": 53,
+      "weighted_pct": 0.3414,
+      "readings": [
+        {
+          "reading": "なか",
+          "kind": "훈독",
+          "gloss": "안/가운데"
+        },
+        {
+          "reading": "チュウ",
+          "kind": "음독",
+          "gloss": "中国·中学"
+        },
+        {
+          "reading": "ジュウ",
+          "kind": "음독",
+          "gloss": "一日中"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "中",
+          "freq": 0.000938,
+          "rank": 133,
+          "ko": "안/가운데"
+        },
+        {
+          "word": "連中",
+          "freq": 8.4e-05,
+          "rank": 1340,
+          "ko": "패거리/일행"
+        },
+        {
+          "word": "世の中",
+          "freq": 7.8e-05,
+          "rank": 1433,
+          "ko": "세상"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0050",
+      "front": "年",
+      "kana": "",
+      "back": "해 년",
+      "key": "ko: 年(년) / 가중 빈도 #55 (0.33%, 7어 사용) / 예: 年(117) · 今年(1009) · 年間(1467)",
+      "ko_hanja": "年",
+      "zh_simp": "年",
+      "zh_trad": "年",
+      "rank": 50,
+      "weighted_rank": 55,
+      "weighted_pct": 0.3321,
+      "readings": [
+        {
+          "reading": "とし",
+          "kind": "훈독",
+          "gloss": "년/나이"
+        },
+        {
+          "reading": "ネン",
+          "kind": "음독",
+          "gloss": "今年·年間"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "年",
+          "freq": 0.001029,
+          "rank": 117,
+          "ko": "년/나이"
+        },
+        {
+          "word": "今年",
+          "freq": 0.000115,
+          "rank": 1009,
+          "ko": "올해"
+        },
+        {
+          "word": "年間",
+          "freq": 7.6e-05,
+          "rank": 1467,
+          "ko": "1년간"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0046",
+      "front": "違",
+      "kana": "",
+      "back": "어긋날 위",
+      "key": "ko: 違(위) / zh-簡: 违 / 가중 빈도 #58 (0.32%, 5어 사용) / 예: 違う(125) · 間違う(656) · 間違いない(1026)",
+      "ko_hanja": "違",
+      "zh_simp": "违",
+      "zh_trad": "違",
+      "rank": 46,
+      "weighted_rank": 58,
+      "weighted_pct": 0.3214,
+      "readings": [
+        {
+          "reading": "ちが-う",
+          "kind": "훈독",
+          "gloss": "다르다"
+        },
+        {
+          "reading": "イ",
+          "kind": "음독",
+          "gloss": "違反"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "違う",
+          "freq": 0.000959,
+          "rank": 125,
+          "ko": "다르다/아니다"
+        },
+        {
+          "word": "間違う",
+          "freq": 0.000184,
+          "rank": 656,
+          "ko": "틀리다"
+        },
+        {
+          "word": "間違いない",
+          "freq": 0.000113,
+          "rank": 1026,
+          "ko": "틀림없다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0065",
+      "front": "部",
+      "kana": "",
+      "back": "떼 부",
+      "key": "ko: 部(부) / 가중 빈도 #59 (0.32%, 9어 사용) / 예: 全部(324) · 部屋(393) · 部(600)",
+      "ko_hanja": "部",
+      "zh_simp": "部",
+      "zh_trad": "部",
+      "rank": 65,
+      "weighted_rank": 59,
+      "weighted_pct": 0.32,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "全部",
+          "freq": 0.000388,
+          "rank": 324,
+          "ko": "전부"
+        },
+        {
+          "word": "部屋",
+          "freq": 0.000321,
+          "rank": 393,
+          "ko": "방"
+        },
+        {
+          "word": "部",
+          "freq": 0.000206,
+          "rank": 600,
+          "ko": "부"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0003",
+      "front": "彼",
+      "kana": "",
+      "back": "저 피",
+      "key": "ko: 彼(피) / 가중 빈도 #62 (0.31%, 4어 사용) / 예: 彼女(186) · 彼(251) · 彼ら(1140)",
+      "ko_hanja": "彼",
+      "zh_simp": "彼",
+      "zh_trad": "彼",
+      "rank": 3,
+      "weighted_rank": 62,
+      "weighted_pct": 0.3133,
+      "readings": [
+        {
+          "reading": "かれ",
+          "kind": "훈독",
+          "gloss": "그 (남)"
+        },
+        {
+          "reading": "かの-じょ",
+          "kind": "훈독",
+          "gloss": "彼女=그녀"
+        },
+        {
+          "reading": "ヒ",
+          "kind": "음독",
+          "gloss": "彼此"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "彼女",
+          "freq": 0.000662,
+          "rank": 186,
+          "ko": "그녀/여자친구"
+        },
+        {
+          "word": "彼",
+          "freq": 0.000486,
+          "rank": 251
+        },
+        {
+          "word": "彼ら",
+          "freq": 0.0001,
+          "rank": 1140
+        }
+      ]
+    },
+    {
+      "id": "hanja_0055",
+      "front": "願",
+      "kana": "",
+      "back": "원할 원",
+      "key": "ko: 願(원) / zh-簡: 愿 / 가중 빈도 #63 (0.31%, 5어 사용) / 예: お願いします(220) · お願い(372) · よろしくお願いします(657)",
+      "ko_hanja": "願",
+      "zh_simp": "愿",
+      "zh_trad": "願",
+      "rank": 55,
+      "weighted_rank": 63,
+      "weighted_pct": 0.3088,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "お願いします",
+          "freq": 0.00056,
+          "rank": 220,
+          "ko": "부탁드립니다"
+        },
+        {
+          "word": "お願い",
+          "freq": 0.000342,
+          "rank": 372,
+          "ko": "부탁"
+        },
+        {
+          "word": "よろしくお願いします",
+          "freq": 0.000184,
+          "rank": 657,
+          "ko": "잘 부탁드립니다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0043",
+      "front": "無",
+      "kana": "",
+      "back": "없을 무",
+      "key": "ko: 無(무) / zh-簡: 无 / 가중 빈도 #66 (0.30%, 7어 사용) / 예: 無理(253) · 無くなる(277) · 無事(964)",
+      "ko_hanja": "無",
+      "zh_simp": "无",
+      "zh_trad": "無",
+      "rank": 43,
+      "weighted_rank": 66,
+      "weighted_pct": 0.3039,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "無理",
+          "freq": 0.000476,
+          "rank": 253,
+          "ko": "무리"
+        },
+        {
+          "word": "無くなる",
+          "freq": 0.000435,
+          "rank": 277,
+          "ko": "없어지다"
+        },
+        {
+          "word": "無事",
+          "freq": 0.00012,
+          "rank": 964,
+          "ko": "무사"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0062",
+      "front": "丈",
+      "kana": "",
+      "back": "어른 장",
+      "key": "ko: 丈(장) / 가중 빈도 #67 (0.30%, 1어 사용) / 예: 大丈夫(90)",
+      "ko_hanja": "丈",
+      "zh_simp": "丈",
+      "zh_trad": "丈",
+      "rank": 62,
+      "weighted_rank": 67,
+      "weighted_pct": 0.3036,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "大丈夫",
+          "freq": 0.001297,
+          "rank": 90,
+          "ko": "괜찮다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0057",
+      "front": "死",
+      "kana": "",
+      "back": "죽을 사",
+      "key": "ko: 死(사) / 가중 빈도 #68 (0.30%, 7어 사용) / 예: 死ぬ(145) · 死(1092) · 二死(1129)",
+      "ko_hanja": "死",
+      "zh_simp": "死",
+      "zh_trad": "死",
+      "rank": 57,
+      "weighted_rank": 68,
+      "weighted_pct": 0.3035,
+      "readings": [
+        {
+          "reading": "し-ぬ",
+          "kind": "훈독",
+          "gloss": "죽다"
+        },
+        {
+          "reading": "シ",
+          "kind": "음독",
+          "gloss": "死亡·必死"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "死ぬ",
+          "freq": 0.00087,
+          "rank": 145,
+          "ko": "죽다"
+        },
+        {
+          "word": "死",
+          "freq": 0.000106,
+          "rank": 1092,
+          "ko": "죽음"
+        },
+        {
+          "word": "二死",
+          "freq": 0.000102,
+          "rank": 1129,
+          "ko": "투아웃 (야구)"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0002",
+      "front": "見",
+      "kana": "",
+      "back": "볼 견",
+      "key": "ko: 見(견) / zh-簡: 见 / 가중 빈도 #72 (0.30%, 7어 사용) / 예: 見える(309) · 見せる(385) · 見つける(566)",
+      "ko_hanja": "見",
+      "zh_simp": "见",
+      "zh_trad": "見",
+      "rank": 2,
+      "weighted_rank": 72,
+      "weighted_pct": 0.2954,
+      "readings": [
+        {
+          "reading": "み-る",
+          "kind": "훈독",
+          "gloss": "보다"
+        },
+        {
+          "reading": "み-える",
+          "kind": "훈독",
+          "gloss": "보이다"
+        },
+        {
+          "reading": "ケン",
+          "kind": "음독",
+          "gloss": "意見·発見"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "見える",
+          "freq": 0.000406,
+          "rank": 309,
+          "ko": "보이다"
+        },
+        {
+          "word": "見せる",
+          "freq": 0.000331,
+          "rank": 385,
+          "ko": "보여주다"
+        },
+        {
+          "word": "見つける",
+          "freq": 0.000222,
+          "rank": 566,
+          "ko": "발견하다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0047",
+      "front": "持",
+      "kana": "",
+      "back": "가질 지",
+      "key": "ko: 持(지) / 가중 빈도 #73 (0.29%, 5어 사용) / 예: 持つ(192) · 気持ち(341) · 持ってくる(972)",
+      "ko_hanja": "持",
+      "zh_simp": "持",
+      "zh_trad": "持",
+      "rank": 47,
+      "weighted_rank": 73,
+      "weighted_pct": 0.2916,
+      "readings": [
+        {
+          "reading": "も-つ",
+          "kind": "훈독",
+          "gloss": "들다"
+        },
+        {
+          "reading": "ジ",
+          "kind": "음독",
+          "gloss": "支持·持続"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "持つ",
+          "freq": 0.000635,
+          "rank": 192,
+          "ko": "들다/가지다"
+        },
+        {
+          "word": "気持ち",
+          "freq": 0.000371,
+          "rank": 341,
+          "ko": "기분"
+        },
+        {
+          "word": "持ってくる",
+          "freq": 0.000119,
+          "rank": 972,
+          "ko": "가져오다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0070",
+      "front": "変",
+      "kana": "",
+      "back": "변할 변",
+      "key": "ko: 變(변) / zh-簡: 变 / zh-繁: 變 / 가중 빈도 #75 (0.28%, 6어 사용) / 예: 大変(388) · 変わる(406) · 変(434)",
+      "ko_hanja": "變",
+      "zh_simp": "变",
+      "zh_trad": "變",
+      "rank": 70,
+      "weighted_rank": 75,
+      "weighted_pct": 0.2839,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "大変",
+          "freq": 0.000327,
+          "rank": 388,
+          "ko": "큰일/매우"
+        },
+        {
+          "word": "変わる",
+          "freq": 0.000313,
+          "rank": 406,
+          "ko": "변하다"
+        },
+        {
+          "word": "変",
+          "freq": 0.000296,
+          "rank": 434,
+          "ko": "이상함"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0045",
+      "front": "家",
+      "kana": "",
+      "back": "집 가",
+      "key": "ko: 家(가) / 가중 빈도 #76 (0.28%, 4어 사용) / 예: 家(174) · 家族(331) · 実家(1687)",
+      "ko_hanja": "家",
+      "zh_simp": "家",
+      "zh_trad": "家",
+      "rank": 45,
+      "weighted_rank": 76,
+      "weighted_pct": 0.281,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "家",
+          "freq": 0.000714,
+          "rank": 174,
+          "ko": "집"
+        },
+        {
+          "word": "家族",
+          "freq": 0.000379,
+          "rank": 331,
+          "ko": "가족"
+        },
+        {
+          "word": "実家",
+          "freq": 6.4e-05,
+          "rank": 1687,
+          "ko": "본가"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0021",
+      "front": "最",
+      "kana": "",
+      "back": "가장 최",
+      "key": "ko: 最(최) / 가중 빈도 #80 (0.27%, 8어 사용) / 예: 最後(444) · 最初(521) · 最近(563)",
+      "ko_hanja": "最",
+      "zh_simp": "最",
+      "zh_trad": "最",
+      "rank": 21,
+      "weighted_rank": 80,
+      "weighted_pct": 0.2747,
+      "readings": [
+        {
+          "reading": "もっと-も",
+          "kind": "훈독",
+          "gloss": "가장"
+        },
+        {
+          "reading": "サイ",
+          "kind": "음독",
+          "gloss": "最高·最近"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "最後",
+          "freq": 0.000287,
+          "rank": 444,
+          "ko": "마지막"
+        },
+        {
+          "word": "最初",
+          "freq": 0.000245,
+          "rank": 521,
+          "ko": "최초"
+        },
+        {
+          "word": "最近",
+          "freq": 0.000223,
+          "rank": 563,
+          "ko": "최근"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0049",
+      "front": "上",
+      "kana": "",
+      "back": "윗 상",
+      "key": "ko: 上(상) / 가중 빈도 #83 (0.27%, 10어 사용) / 예: 以上(387) · 上(532) · 上がる(891)",
+      "ko_hanja": "上",
+      "zh_simp": "上",
+      "zh_trad": "上",
+      "rank": 49,
+      "weighted_rank": 83,
+      "weighted_pct": 0.2715,
+      "readings": [
+        {
+          "reading": "うえ",
+          "kind": "훈독",
+          "gloss": "위"
+        },
+        {
+          "reading": "あ-げる",
+          "kind": "훈독",
+          "gloss": "올리다"
+        },
+        {
+          "reading": "のぼ-る",
+          "kind": "훈독",
+          "gloss": "오르다"
+        },
+        {
+          "reading": "ジョウ",
+          "kind": "음독",
+          "gloss": "上手·屋上"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "以上",
+          "freq": 0.000327,
+          "rank": 387,
+          "ko": "이상"
+        },
+        {
+          "word": "上",
+          "freq": 0.000238,
+          "rank": 532,
+          "ko": "위"
+        },
+        {
+          "word": "上がる",
+          "freq": 0.000132,
+          "rank": 891,
+          "ko": "올라가다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0030",
+      "front": "食",
+      "kana": "",
+      "back": "밥 식",
+      "key": "ko: 食(식) / 가중 빈도 #89 (0.26%, 4어 사용) / 예: 食べる(171) · 食う(511) · 食事(1196)",
+      "ko_hanja": "食",
+      "zh_simp": "食",
+      "zh_trad": "食",
+      "rank": 30,
+      "weighted_rank": 89,
+      "weighted_pct": 0.2589,
+      "readings": [
+        {
+          "reading": "た-べる",
+          "kind": "훈독",
+          "gloss": "먹다"
+        },
+        {
+          "reading": "ショク",
+          "kind": "음독",
+          "gloss": "食事·定食"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "食べる",
+          "freq": 0.000717,
+          "rank": 171,
+          "ko": "먹다"
+        },
+        {
+          "word": "食う",
+          "freq": 0.000249,
+          "rank": 511,
+          "ko": "먹다 (반말)"
+        },
+        {
+          "word": "食事",
+          "freq": 9.5e-05,
+          "rank": 1196,
+          "ko": "식사"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0041",
+      "front": "殺",
+      "kana": "",
+      "back": "죽일 살",
+      "key": "ko: 殺(살) / zh-簡: 杀 / 가중 빈도 #90 (0.25%, 4어 사용) / 예: 殺す(166) · 自殺(872) · 殺害(993)",
+      "ko_hanja": "殺",
+      "zh_simp": "杀",
+      "zh_trad": "殺",
+      "rank": 41,
+      "weighted_rank": 90,
+      "weighted_pct": 0.2541,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "殺す",
+          "freq": 0.000748,
+          "rank": 166,
+          "ko": "죽이다"
+        },
+        {
+          "word": "自殺",
+          "freq": 0.000136,
+          "rank": 872,
+          "ko": "자살"
+        },
+        {
+          "word": "殺害",
+          "freq": 0.000117,
+          "rank": 993,
+          "ko": "살해"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0053",
+      "front": "理",
+      "kana": "",
+      "back": "다스릴 리",
+      "key": "ko: 理(리) / 가중 빈도 #92 (0.24%, 5어 사용) / 예: 無理(253) · 料理(584) · 理由(594)",
+      "ko_hanja": "理",
+      "zh_simp": "理",
+      "zh_trad": "理",
+      "rank": 53,
+      "weighted_rank": 92,
+      "weighted_pct": 0.2422,
+      "readings": [
+        {
+          "reading": "リ",
+          "kind": "음독",
+          "gloss": "理由·料理·無理"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "無理",
+          "freq": 0.000476,
+          "rank": 253,
+          "ko": "무리"
+        },
+        {
+          "word": "料理",
+          "freq": 0.000213,
+          "rank": 584,
+          "ko": "요리"
+        },
+        {
+          "word": "理由",
+          "freq": 0.000209,
+          "rank": 594,
+          "ko": "이유"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0032",
+      "front": "後",
+      "kana": "",
+      "back": "뒤 후",
+      "key": "ko: 後(후) / zh-簡: 后 / 가중 빈도 #93 (0.24%, 10어 사용) / 예: 最後(444) · 後(526) · その後(1430)",
+      "ko_hanja": "後",
+      "zh_simp": "后",
+      "zh_trad": "後",
+      "rank": 32,
+      "weighted_rank": 93,
+      "weighted_pct": 0.2404,
+      "readings": [
+        {
+          "reading": "あと",
+          "kind": "훈독",
+          "gloss": "뒤"
+        },
+        {
+          "reading": "うし-ろ",
+          "kind": "훈독",
+          "gloss": "뒤쪽"
+        },
+        {
+          "reading": "ゴ",
+          "kind": "음독",
+          "gloss": "午後·最後"
+        },
+        {
+          "reading": "コウ",
+          "kind": "음독",
+          "gloss": "後悔"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "最後",
+          "freq": 0.000287,
+          "rank": 444,
+          "ko": "마지막"
+        },
+        {
+          "word": "後",
+          "freq": 0.00024,
+          "rank": 526,
+          "ko": "뒤/후"
+        },
+        {
+          "word": "その後",
+          "freq": 7.8e-05,
+          "rank": 1430,
+          "ko": "그 후"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0075",
+      "front": "語",
+      "kana": "",
+      "back": "말씀 어",
+      "key": "ko: 語(어) / zh-簡: 语 / 가중 빈도 #94 (0.24%, 5어 사용) / 예: 語(150) · 英語(1766) · 語彙(1973)",
+      "ko_hanja": "語",
+      "zh_simp": "语",
+      "zh_trad": "語",
+      "rank": 0,
+      "weighted_rank": 94,
+      "weighted_pct": 0.2404,
+      "readings": [
+        {
+          "reading": "かた-る",
+          "kind": "훈독",
+          "gloss": "이야기하다"
+        },
+        {
+          "reading": "ゴ",
+          "kind": "음독",
+          "gloss": "日本語·語学"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "語",
+          "freq": 0.00082,
+          "rank": 150,
+          "ko": "어/언어"
+        },
+        {
+          "word": "英語",
+          "freq": 6.1e-05,
+          "rank": 1766,
+          "ko": "영어"
+        },
+        {
+          "word": "語彙",
+          "freq": 5.4e-05,
+          "rank": 1973,
+          "ko": "어휘"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0028",
+      "front": "好",
+      "kana": "",
+      "back": "좋을 호",
+      "key": "ko: 好(호) / 가중 빈도 #96 (0.23%, 3어 사용) / 예: 好き(157) · 大好き(913) · 格好(1882)",
+      "ko_hanja": "好",
+      "zh_simp": "好",
+      "zh_trad": "好",
+      "rank": 28,
+      "weighted_rank": 96,
+      "weighted_pct": 0.2293,
+      "readings": [
+        {
+          "reading": "す-き",
+          "kind": "훈독",
+          "gloss": "좋아함"
+        },
+        {
+          "reading": "この-む",
+          "kind": "훈독",
+          "gloss": "선호하다"
+        },
+        {
+          "reading": "コウ",
+          "kind": "음독",
+          "gloss": "好意·愛好"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "好き",
+          "freq": 0.000795,
+          "rank": 157,
+          "ko": "좋아함"
+        },
+        {
+          "word": "大好き",
+          "freq": 0.000128,
+          "rank": 913,
+          "ko": "정말 좋아함"
+        },
+        {
+          "word": "格好",
+          "freq": 5.7e-05,
+          "rank": 1882,
+          "ko": "모습/멋"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0040",
+      "front": "会",
+      "kana": "",
+      "back": "모일 회",
+      "key": "ko: 會(회) / zh-繁: 會 / 가중 빈도 #98 (0.23%, 8어 사용) / 예: 会社(290) · 出会う(859) · 会(897)",
+      "ko_hanja": "會",
+      "zh_simp": "会",
+      "zh_trad": "會",
+      "rank": 40,
+      "weighted_rank": 98,
+      "weighted_pct": 0.2268,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "会社",
+          "freq": 0.000425,
+          "rank": 290,
+          "ko": "회사"
+        },
+        {
+          "word": "出会う",
+          "freq": 0.000137,
+          "rank": 859,
+          "ko": "만나다"
+        },
+        {
+          "word": "会",
+          "freq": 0.000131,
+          "rank": 897,
+          "ko": "모임"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0076",
+      "front": "心",
+      "kana": "",
+      "back": "마음 심",
+      "key": "ko: 心(심) / 가중 빈도 #100 (0.22%, 4어 사용) / 예: 心配(310) · 心(337) · 安心(970)",
+      "ko_hanja": "心",
+      "zh_simp": "心",
+      "zh_trad": "心",
+      "rank": 0,
+      "weighted_rank": 100,
+      "weighted_pct": 0.2244,
+      "readings": [
+        {
+          "reading": "こころ",
+          "kind": "훈독",
+          "gloss": "마음"
+        },
+        {
+          "reading": "シン",
+          "kind": "음독",
+          "gloss": "心配·安心"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "心配",
+          "freq": 0.000404,
+          "rank": 310,
+          "ko": "걱정"
+        },
+        {
+          "word": "心",
+          "freq": 0.000374,
+          "rank": 337,
+          "ko": "마음"
+        },
+        {
+          "word": "安心",
+          "freq": 0.00012,
+          "rank": 970,
+          "ko": "안심"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0069",
+      "front": "場",
+      "kana": "",
+      "back": "마당 장",
+      "key": "ko: 場(장) / zh-簡: 场 / 가중 빈도 #101 (0.22%, 8어 사용) / 예: 場所(435) · 現場(612) · 場合(778)",
+      "ko_hanja": "場",
+      "zh_simp": "场",
+      "zh_trad": "場",
+      "rank": 69,
+      "weighted_rank": 101,
+      "weighted_pct": 0.2231,
+      "readings": [
+        {
+          "reading": "ば",
+          "kind": "훈독",
+          "gloss": "곳"
+        },
+        {
+          "reading": "ジョウ",
+          "kind": "음독",
+          "gloss": "場所·会場·運動場"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "場所",
+          "freq": 0.000295,
+          "rank": 435,
+          "ko": "장소"
+        },
+        {
+          "word": "現場",
+          "freq": 0.000201,
+          "rank": 612,
+          "ko": "현장"
+        },
+        {
+          "word": "場合",
+          "freq": 0.000151,
+          "rank": 778,
+          "ko": "경우"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0042",
+      "front": "味",
+      "kana": "",
+      "back": "맛 미",
+      "key": "ko: 味(미) / 가중 빈도 #103 (0.22%, 6어 사용) / 예: 意味(402) · 美味い(427) · 味(817)",
+      "ko_hanja": "味",
+      "zh_simp": "味",
+      "zh_trad": "味",
+      "rank": 42,
+      "weighted_rank": 103,
+      "weighted_pct": 0.2218,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "意味",
+          "freq": 0.000315,
+          "rank": 402,
+          "ko": "의미"
+        },
+        {
+          "word": "美味い",
+          "freq": 0.000299,
+          "rank": 427,
+          "ko": "맛있다"
+        },
+        {
+          "word": "味",
+          "freq": 0.000143,
+          "rank": 817,
+          "ko": "맛"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0029",
+      "front": "付",
+      "kana": "",
+      "back": "줄 부",
+      "key": "ko: 付(부) / 가중 빈도 #104 (0.22%, 5어 사용) / 예: 付ける(451) · 付き合う(477) · 似付く(609)",
+      "ko_hanja": "付",
+      "zh_simp": "付",
+      "zh_trad": "付",
+      "rank": 29,
+      "weighted_rank": 104,
+      "weighted_pct": 0.2208,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "付ける",
+          "freq": 0.000281,
+          "rank": 451,
+          "ko": "붙이다"
+        },
+        {
+          "word": "付き合う",
+          "freq": 0.000264,
+          "rank": 477,
+          "ko": "사귀다/어울리다"
+        },
+        {
+          "word": "似付く",
+          "freq": 0.000202,
+          "rank": 609,
+          "ko": "닮다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0067",
+      "front": "多",
+      "kana": "",
+      "back": "많을 다",
+      "key": "ko: 多(다) / 가중 빈도 #109 (0.21%, 4어 사용) / 예: 多い(229) · 多分(799) · 多様(1013)",
+      "ko_hanja": "多",
+      "zh_simp": "多",
+      "zh_trad": "多",
+      "rank": 67,
+      "weighted_rank": 109,
+      "weighted_pct": 0.212,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "多い",
+          "freq": 0.000534,
+          "rank": 229,
+          "ko": "많다"
+        },
+        {
+          "word": "多分",
+          "freq": 0.000147,
+          "rank": 799,
+          "ko": "아마"
+        },
+        {
+          "word": "多様",
+          "freq": 0.000115,
+          "rank": 1013,
+          "ko": "다양"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0033",
+      "front": "目",
+      "kana": "",
+      "back": "눈 목",
+      "key": "ko: 目(목) / 가중 빈도 #124 (0.19%, 5어 사용) / 예: 目(227) · 目的(1296) · 目指す(1400)",
+      "ko_hanja": "目",
+      "zh_simp": "目",
+      "zh_trad": "目",
+      "rank": 33,
+      "weighted_rank": 124,
+      "weighted_pct": 0.1931,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "目",
+          "freq": 0.000541,
+          "rank": 227,
+          "ko": "눈/목표"
+        },
+        {
+          "word": "目的",
+          "freq": 8.6e-05,
+          "rank": 1296,
+          "ko": "목적"
+        },
+        {
+          "word": "目指す",
+          "freq": 8e-05,
+          "rank": 1400,
+          "ko": "지향하다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0061",
+      "front": "確",
+      "kana": "",
+      "back": "굳을 확",
+      "key": "ko: 確(확) / zh-簡: 确 / 가중 빈도 #138 (0.17%, 4어 사용) / 예: 確か(263) · 確認(633) · 確かめる(2029)",
+      "ko_hanja": "確",
+      "zh_simp": "确",
+      "zh_trad": "確",
+      "rank": 61,
+      "weighted_rank": 138,
+      "weighted_pct": 0.1743,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "確か",
+          "freq": 0.000453,
+          "rank": 263,
+          "ko": "확실/아마"
+        },
+        {
+          "word": "確認",
+          "freq": 0.000192,
+          "rank": 633,
+          "ko": "확인"
+        },
+        {
+          "word": "確かめる",
+          "freq": 5.2e-05,
+          "rank": 2029,
+          "ko": "확인하다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0004",
+      "front": "行",
+      "kana": "",
+      "back": "다닐 행",
+      "key": "ko: 行(행) / 가중 빈도 #139 (0.17%, 8어 사용) / 예: 行(590) · 行う(1171) · 行ってくる(1174)",
+      "ko_hanja": "行",
+      "zh_simp": "行",
+      "zh_trad": "行",
+      "rank": 4,
+      "weighted_rank": 139,
+      "weighted_pct": 0.1718,
+      "readings": [
+        {
+          "reading": "い-く",
+          "kind": "훈독",
+          "gloss": "가다"
+        },
+        {
+          "reading": "おこな-う",
+          "kind": "훈독",
+          "gloss": "행하다"
+        },
+        {
+          "reading": "コウ",
+          "kind": "음독",
+          "gloss": "旅行·銀行"
+        },
+        {
+          "reading": "ギョウ",
+          "kind": "음독",
+          "gloss": "行事·改行"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "行",
+          "freq": 0.000211,
+          "rank": 590
+        },
+        {
+          "word": "行う",
+          "freq": 9.7e-05,
+          "rank": 1171,
+          "ko": "행하다"
+        },
+        {
+          "word": "行ってくる",
+          "freq": 9.6e-05,
+          "rank": 1174,
+          "ko": "다녀오다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0063",
+      "front": "通",
+      "kana": "",
+      "back": "통할 통",
+      "key": "ko: 通(통) / 가중 빈도 #142 (0.17%, 6어 사용) / 예: 通る(529) · 普通(539) · その通り(1490)",
+      "ko_hanja": "通",
+      "zh_simp": "通",
+      "zh_trad": "通",
+      "rank": 63,
+      "weighted_rank": 142,
+      "weighted_pct": 0.1687,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "通る",
+          "freq": 0.000238,
+          "rank": 529,
+          "ko": "지나가다"
+        },
+        {
+          "word": "普通",
+          "freq": 0.000234,
+          "rank": 539,
+          "ko": "보통"
+        },
+        {
+          "word": "その通り",
+          "freq": 7.4e-05,
+          "rank": 1490,
+          "ko": "그 말대로"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0058",
+      "front": "必",
+      "kana": "",
+      "back": "반드시 필",
+      "key": "ko: 必(필) / 가중 빈도 #159 (0.16%, 3어 사용) / 예: 必要(311) · 必ず(547) · 必死(2440)",
+      "ko_hanja": "必",
+      "zh_simp": "必",
+      "zh_trad": "必",
+      "rank": 58,
+      "weighted_rank": 159,
+      "weighted_pct": 0.1577,
+      "readings": [
+        {
+          "reading": "かなら-ず",
+          "kind": "훈독",
+          "gloss": "반드시"
+        },
+        {
+          "reading": "ヒツ",
+          "kind": "음독",
+          "gloss": "必要·必死"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "必要",
+          "freq": 0.000402,
+          "rank": 311,
+          "ko": "필요"
+        },
+        {
+          "word": "必ず",
+          "freq": 0.00023,
+          "rank": 547,
+          "ko": "반드시"
+        },
+        {
+          "word": "必死",
+          "freq": 4.1e-05,
+          "rank": 2440,
+          "ko": "필사적"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0071",
+      "front": "愛",
+      "kana": "",
+      "back": "사랑 애",
+      "key": "ko: 愛(애) / zh-簡: 爱 / 가중 빈도 #164 (0.15%, 5어 사용) / 예: 可愛い(523) · 愛(779) · 愛する(938)",
+      "ko_hanja": "愛",
+      "zh_simp": "爱",
+      "zh_trad": "愛",
+      "rank": 0,
+      "weighted_rank": 164,
+      "weighted_pct": 0.1525,
+      "readings": [
+        {
+          "reading": "あい-する",
+          "kind": "혼합",
+          "gloss": "사랑하다"
+        },
+        {
+          "reading": "アイ",
+          "kind": "음독",
+          "gloss": "愛·愛情·恋愛"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "可愛い",
+          "freq": 0.000242,
+          "rank": 523,
+          "ko": "귀엽다"
+        },
+        {
+          "word": "愛",
+          "freq": 0.000151,
+          "rank": 779,
+          "ko": "사랑"
+        },
+        {
+          "word": "愛する",
+          "freq": 0.000125,
+          "rank": 938,
+          "ko": "사랑하다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0059",
+      "front": "取",
+      "kana": "",
+      "back": "가질 취",
+      "key": "ko: 取(취) / 가중 빈도 #165 (0.15%, 6어 사용) / 예: 取る(404) · 取れる(1187) · 受け取る(1476)",
+      "ko_hanja": "取",
+      "zh_simp": "取",
+      "zh_trad": "取",
+      "rank": 59,
+      "weighted_rank": 165,
+      "weighted_pct": 0.1522,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "取る",
+          "freq": 0.000314,
+          "rank": 404,
+          "ko": "잡다/얻다"
+        },
+        {
+          "word": "取れる",
+          "freq": 9.5e-05,
+          "rank": 1187,
+          "ko": "잡히다/없어지다"
+        },
+        {
+          "word": "受け取る",
+          "freq": 7.5e-05,
+          "rank": 1476,
+          "ko": "받다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0066",
+      "front": "動",
+      "kana": "",
+      "back": "움직일 동",
+      "key": "ko: 動(동) / zh-簡: 动 / 가중 빈도 #169 (0.15%, 6어 사용) / 예: 動く(424) · 波動(971) · 行動(1443)",
+      "ko_hanja": "動",
+      "zh_simp": "动",
+      "zh_trad": "動",
+      "rank": 66,
+      "weighted_rank": 169,
+      "weighted_pct": 0.1464,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "動く",
+          "freq": 0.000302,
+          "rank": 424,
+          "ko": "움직이다"
+        },
+        {
+          "word": "波動",
+          "freq": 0.00012,
+          "rank": 971,
+          "ko": "파동"
+        },
+        {
+          "word": "行動",
+          "freq": 7.7e-05,
+          "rank": 1443,
+          "ko": "행동"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0056",
+      "front": "近",
+      "kana": "",
+      "back": "가까울 근",
+      "key": "ko: 近(근) / 가중 빈도 #172 (0.15%, 6어 사용) / 예: 最近(563) · 近く(855) · 近い(1373)",
+      "ko_hanja": "近",
+      "zh_simp": "近",
+      "zh_trad": "近",
+      "rank": 56,
+      "weighted_rank": 172,
+      "weighted_pct": 0.1456,
+      "readings": [
+        {
+          "reading": "ちか-い",
+          "kind": "훈독",
+          "gloss": "가깝다"
+        },
+        {
+          "reading": "キン",
+          "kind": "음독",
+          "gloss": "最近·近所"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "最近",
+          "freq": 0.000223,
+          "rank": 563,
+          "ko": "최근"
+        },
+        {
+          "word": "近く",
+          "freq": 0.000137,
+          "rank": 855,
+          "ko": "근처"
+        },
+        {
+          "word": "近い",
+          "freq": 8.1e-05,
+          "rank": 1373,
+          "ko": "가깝다"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0074",
+      "front": "学",
+      "kana": "",
+      "back": "배울 학",
+      "key": "ko: 學(학) / zh-繁: 學 / 가중 빈도 #177 (0.14%, 6어 사용) / 예: 学校(467) · 大学(790) · 学生(1985)",
+      "ko_hanja": "學",
+      "zh_simp": "学",
+      "zh_trad": "學",
+      "rank": 0,
+      "weighted_rank": 177,
+      "weighted_pct": 0.1427,
+      "readings": [
+        {
+          "reading": "まな-ぶ",
+          "kind": "훈독",
+          "gloss": "배우다"
+        },
+        {
+          "reading": "ガク",
+          "kind": "음독",
+          "gloss": "学校·大学·科学"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "学校",
+          "freq": 0.000266,
+          "rank": 467,
+          "ko": "학교"
+        },
+        {
+          "word": "大学",
+          "freq": 0.000149,
+          "rank": 790,
+          "ko": "대학"
+        },
+        {
+          "word": "学生",
+          "freq": 5.3e-05,
+          "rank": 1985,
+          "ko": "학생"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0054",
+      "front": "感",
+      "kana": "",
+      "back": "느낄 감",
+      "key": "ko: 感(감) / 가중 빈도 #186 (0.14%, 3어 사용) / 예: 感じる(280) · 感謝(1179) · 感情(1966)",
+      "ko_hanja": "感",
+      "zh_simp": "感",
+      "zh_trad": "感",
+      "rank": 54,
+      "weighted_rank": 186,
+      "weighted_pct": 0.1365,
+      "readings": [
+        {
+          "reading": "カン",
+          "kind": "음독",
+          "gloss": "感じる·感謝·感情"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "感じる",
+          "freq": 0.000433,
+          "rank": 280,
+          "ko": "느끼다"
+        },
+        {
+          "word": "感謝",
+          "freq": 9.6e-05,
+          "rank": 1179,
+          "ko": "감사"
+        },
+        {
+          "word": "感情",
+          "freq": 5.4e-05,
+          "rank": 1966,
+          "ko": "감정"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0060",
+      "front": "所",
+      "kana": "",
+      "back": "바 소",
+      "key": "ko: 所(소) / 가중 빈도 #202 (0.12%, 5어 사용) / 예: 場所(435) · 事務所(1360) · 居場所(1859)",
+      "ko_hanja": "所",
+      "zh_simp": "所",
+      "zh_trad": "所",
+      "rank": 60,
+      "weighted_rank": 202,
+      "weighted_pct": 0.1237,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "場所",
+          "freq": 0.000295,
+          "rank": 435,
+          "ko": "장소"
+        },
+        {
+          "word": "事務所",
+          "freq": 8.2e-05,
+          "rank": 1360,
+          "ko": "사무소"
+        },
+        {
+          "word": "居場所",
+          "freq": 5.8e-05,
+          "rank": 1859,
+          "ko": "거처/있을 곳"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0080",
+      "front": "山",
+      "kana": "",
+      "back": "메 산",
+      "key": "ko: 山(산) / 가중 빈도 #234 (0.11%, 6어 사용) / 예: 山(864) · 山田(1230) · 山里(1383)",
+      "ko_hanja": "山",
+      "zh_simp": "山",
+      "zh_trad": "山",
+      "rank": 0,
+      "weighted_rank": 234,
+      "weighted_pct": 0.1082,
+      "readings": [
+        {
+          "reading": "やま",
+          "kind": "훈독",
+          "gloss": "산"
+        },
+        {
+          "reading": "サン",
+          "kind": "음독",
+          "gloss": "富士山·登山"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "山",
+          "freq": 0.000136,
+          "rank": 864,
+          "ko": "산"
+        },
+        {
+          "word": "山田",
+          "freq": 9.2e-05,
+          "rank": 1230,
+          "ko": "야마다 (이름)"
+        },
+        {
+          "word": "山里",
+          "freq": 8.1e-05,
+          "rank": 1383,
+          "ko": "산골"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0068",
+      "front": "直",
+      "kana": "",
+      "back": "곧을 직",
+      "key": "ko: 直(직) / 가중 빈도 #262 (0.10%, 6어 사용) / 예: 正直(941) · 直す(1589) · 直接(1650)",
+      "ko_hanja": "直",
+      "zh_simp": "直",
+      "zh_trad": "直",
+      "rank": 68,
+      "weighted_rank": 262,
+      "weighted_pct": 0.0993,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "正直",
+          "freq": 0.000124,
+          "rank": 941,
+          "ko": "정직/솔직"
+        },
+        {
+          "word": "直す",
+          "freq": 6.9e-05,
+          "rank": 1589,
+          "ko": "고치다"
+        },
+        {
+          "word": "直接",
+          "freq": 6.6e-05,
+          "rank": 1650,
+          "ko": "직접"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0015",
+      "front": "物",
+      "kana": "",
+      "back": "물건 물",
+      "key": "ko: 物(물) / 가중 빈도 #270 (0.10%, 7어 사용) / 예: 本物(1225) · 人物(1319) · 荷物(1989)",
+      "ko_hanja": "物",
+      "zh_simp": "物",
+      "zh_trad": "物",
+      "rank": 15,
+      "weighted_rank": 270,
+      "weighted_pct": 0.0977,
+      "readings": [
+        {
+          "reading": "もの",
+          "kind": "훈독",
+          "gloss": "물건"
+        },
+        {
+          "reading": "ブツ",
+          "kind": "음독",
+          "gloss": "物質·動物"
+        },
+        {
+          "reading": "モツ",
+          "kind": "음독",
+          "gloss": "食物"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "本物",
+          "freq": 9.2e-05,
+          "rank": 1225,
+          "ko": "진짜"
+        },
+        {
+          "word": "人物",
+          "freq": 8.5e-05,
+          "rank": 1319,
+          "ko": "인물"
+        },
+        {
+          "word": "荷物",
+          "freq": 5.3e-05,
+          "rank": 1989,
+          "ko": "짐"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0078",
+      "front": "火",
+      "kana": "",
+      "back": "불 화",
+      "key": "ko: 火(화) / 가중 빈도 #285 (0.09%, 4어 사용) / 예: 消火(640) · 火照る(1307) · 火傷(1590)",
+      "ko_hanja": "火",
+      "zh_simp": "火",
+      "zh_trad": "火",
+      "rank": 0,
+      "weighted_rank": 285,
+      "weighted_pct": 0.0924,
+      "readings": [
+        {
+          "reading": "ひ",
+          "kind": "훈독",
+          "gloss": "불"
+        },
+        {
+          "reading": "カ",
+          "kind": "음독",
+          "gloss": "火曜日·火事"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "消火",
+          "freq": 0.000191,
+          "rank": 640,
+          "ko": "소화"
+        },
+        {
+          "word": "火照る",
+          "freq": 8.6e-05,
+          "rank": 1307,
+          "ko": "달아오르다"
+        },
+        {
+          "word": "火傷",
+          "freq": 6.9e-05,
+          "rank": 1590,
+          "ko": "화상"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0044",
+      "front": "止",
+      "kana": "",
+      "back": "그칠 지",
+      "key": "ko: 止(지) / 가중 빈도 #346 (0.07%, 4어 사용) / 예: 止める(791) · 止まる(1538) · 禁止(2160)",
+      "ko_hanja": "止",
+      "zh_simp": "止",
+      "zh_trad": "止",
+      "rank": 44,
+      "weighted_rank": 346,
+      "weighted_pct": 0.0736,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "止める",
+          "freq": 0.000149,
+          "rank": 791,
+          "ko": "그만두다"
+        },
+        {
+          "word": "止まる",
+          "freq": 7.2e-05,
+          "rank": 1538,
+          "ko": "멈추다"
+        },
+        {
+          "word": "禁止",
+          "freq": 4.8e-05,
+          "rank": 2160,
+          "ko": "금지"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0079",
+      "front": "月",
+      "kana": "",
+      "back": "달 월",
+      "key": "ko: 月(월) / 가중 빈도 #376 (0.06%, 3어 사용) / 예: 月(1078) · か月(1192) · 美月(1646)",
+      "ko_hanja": "月",
+      "zh_simp": "月",
+      "zh_trad": "月",
+      "rank": 0,
+      "weighted_rank": 376,
+      "weighted_pct": 0.063,
+      "readings": [
+        {
+          "reading": "つき",
+          "kind": "훈독",
+          "gloss": "달"
+        },
+        {
+          "reading": "ゲツ",
+          "kind": "음독",
+          "gloss": "月曜日·先月"
+        },
+        {
+          "reading": "ガツ",
+          "kind": "음독",
+          "gloss": "1月·お正月"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "月",
+          "freq": 0.000108,
+          "rank": 1078,
+          "ko": "달/월"
+        },
+        {
+          "word": "か月",
+          "freq": 9.5e-05,
+          "rank": 1192,
+          "ko": "개월"
+        },
+        {
+          "word": "美月",
+          "freq": 6.6e-05,
+          "rank": 1646,
+          "ko": "이름"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0072",
+      "front": "国",
+      "kana": "",
+      "back": "나라 국",
+      "key": "ko: 國(국) / zh-繁: 國 / 가중 빈도 #506 (0.04%, 1어 사용) / 예: 国(708)",
+      "ko_hanja": "國",
+      "zh_simp": "国",
+      "zh_trad": "國",
+      "rank": 0,
+      "weighted_rank": 506,
+      "weighted_pct": 0.0393,
+      "readings": [
+        {
+          "reading": "くに",
+          "kind": "훈독",
+          "gloss": "나라"
+        },
+        {
+          "reading": "コク",
+          "kind": "음독",
+          "gloss": "中国·外国·国民"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "国",
+          "freq": 0.000168,
+          "rank": 708,
+          "ko": "나라"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0077",
+      "front": "水",
+      "kana": "",
+      "back": "물 수",
+      "key": "ko: 水(수) / 가중 빈도 #600 (0.03%, 1어 사용) / 예: 水(924)",
+      "ko_hanja": "水",
+      "zh_simp": "水",
+      "zh_trad": "水",
+      "rank": 0,
+      "weighted_rank": 600,
+      "weighted_pct": 0.0294,
+      "readings": [
+        {
+          "reading": "みず",
+          "kind": "훈독",
+          "gloss": "물"
+        },
+        {
+          "reading": "スイ",
+          "kind": "음독",
+          "gloss": "水曜日·水泳"
+        }
+      ],
+      "example_words": [
+        {
+          "word": "水",
+          "freq": 0.000126,
+          "rank": 924,
+          "ko": "물"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0064",
+      "front": "此",
+      "kana": "",
+      "back": "이 차",
+      "key": "ko: 此(차) / 가중 빈도 #1075 (0.01%, 1어 사용) / 예: 此度(2490)",
+      "ko_hanja": "此",
+      "zh_simp": "此",
+      "zh_trad": "此",
+      "rank": 64,
+      "weighted_rank": 1075,
+      "weighted_pct": 0.0094,
+      "readings": [],
+      "example_words": [
+        {
+          "word": "此度",
+          "freq": 4e-05,
+          "rank": 2490,
+          "ko": "이번"
+        }
+      ]
+    },
+    {
+      "id": "hanja_0073",
+      "front": "韓",
+      "kana": "",
+      "back": "나라 한",
+      "key": "ko: 韓(한) / zh-簡: 韩",
+      "ko_hanja": "韓",
+      "zh_simp": "韩",
+      "zh_trad": "韓",
+      "rank": 0,
+      "weighted_rank": null,
+      "weighted_pct": null,
+      "readings": [],
+      "example_words": []
+    }
+  ]
+}

@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Genki L1-12 Grammar — Japanese Universe</title>
+<style>
+@page { size: A4 portrait; margin: 8mm 10mm; }
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: "Noto Sans CJK JP", "Noto Sans JP", "Yu Gothic", "Helvetica Neue", Arial, sans-serif;
+  color: #4A4554;
+  background: #FBF8F1;
+  font-size: 9pt;
+  line-height: 1.4;
+}
+.page {
+  width: 100%;
+  min-height: calc(297mm - 16mm);
+  page-break-after: always;
+  display: flex;
+  flex-direction: column;
+}
+.page:last-of-type { page-break-after: auto; }
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 2mm;
+  margin-bottom: 3.5mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 1.2px solid #8B8294;
+}
+header h1 {
+  margin: 0;
+  font-size: 13pt;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+  color: #4A4554;
+}
+header h1::before { content: "🌸 "; }
+.meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 8pt;
+  color: #7A7585;
+  font-weight: 600;
+}
+.badge {
+  background: #F8C8D8;
+  color: #4A4554;
+  padding: 1px 6px;
+  border-radius: 999px;
+  border: 0.6px solid #8B8294;
+  font-weight: 700;
+}
+.pageno {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5mm;
+  align-content: start;
+}
+.card {
+  border: 0.8px solid #8B8294;
+  border-radius: 4px;
+  padding: 2mm 2.5mm;
+  background: #FFFEFB;
+  break-inside: avoid;
+}
+.chips {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1mm;
+}
+.chip {
+  display: inline-block;
+  font-size: 6.5pt;
+  font-weight: 800;
+  padding: 0.5px 5px;
+  border-radius: 999px;
+  letter-spacing: 0.5px;
+}
+.chip.lesson { background: #C8BFE8; color: #4A4554; border: 0.5px solid #8B8294; }
+.chip.jlpt   { background: #EDD27A; color: #4A4554; border: 0.5px solid #8B8294; }
+.ja {
+  font-size: 11.5pt;
+  font-weight: 800;
+  color: #4A4554;
+  letter-spacing: -0.2px;
+}
+.romaji {
+  font-size: 7.5pt;
+  color: #7A7585;
+  font-style: italic;
+  margin-bottom: 0.5mm;
+}
+.title {
+  font-size: 9pt;
+  font-weight: 700;
+  color: #4A4554;
+  margin-bottom: 1mm;
+}
+.formation {
+  font-size: 8pt;
+  color: #5C5C6E;
+  line-height: 1.35;
+  margin-bottom: 1.5mm;
+}
+.form-label {
+  display: inline-block;
+  background: #DDD3F0;
+  color: #4A4554;
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 6.5pt;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  margin-right: 3px;
+  vertical-align: 1px;
+}
+.ex {
+  background: #FDF6D9;
+  border-left: 1.5px solid #EDD27A;
+  padding: 1.2mm 2mm;
+  margin-bottom: 1mm;
+  border-radius: 0 3px 3px 0;
+}
+.ex-ja { font-size: 9.5pt; font-weight: 700; color: #4A4554; }
+.ex-romaji { font-size: 7.5pt; color: #7A7585; font-style: italic; margin-top: 0.2mm; }
+.ex-en { font-size: 8pt; color: #4A4554; margin-top: 0.3mm; }
+.note {
+  font-size: 7.8pt;
+  color: #4A4554;
+  background: #EAF3E4;
+  padding: 1mm 2mm;
+  border-radius: 3px;
+  border: 0.5px solid #B8D2AE;
+  line-height: 1.35;
+}
+.note-label {
+  display: inline-block;
+  background: #B8D2AE;
+  color: #4A4554;
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 6.5pt;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+  margin-right: 3px;
+  vertical-align: 1px;
+}
+footer {
+  margin-top: 3mm;
+  padding-top: 2mm;
+  border-top: 0.6px solid #B0ACB8;
+  font-size: 7pt;
+  color: #7A7585;
+  text-align: center;
+  font-weight: 600;
+}
+@media print {
+  body { background: white; }
+  .card { background: white; }
+}
+</style>
+</head>
+<body>
+<section class="page">
+  <header>
+    <h1>L1-2 · Basics: copula, demonstratives, particles</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース · Globi</span>
+      <span>Genki L1-12 · For native English speakers</span>
+      <span class="pageno">1 / 5</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">X は Y です</div>
+  <div class="romaji">X wa Y desu</div>
+  <div class="title">X is Y (identity)</div>
+  <div class="formation"><span class="form-label">Form</span> Noun は Noun です. Negative: ~では ありません</div>
+  <div class="ex">
+    <div class="ex-ja">私は学生です。</div>
+    <div class="ex-romaji">Watashi wa gakusei desu.</div>
+    <div class="ex-en">I am a student.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> は is the topic marker (pronounced 'wa', not 'ha'). です = formal copula. No equivalent in English — Japanese marks the subject of discourse rather than 'I/you'.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~の~</div>
+  <div class="romaji">~no~</div>
+  <div class="title">Connecting nouns (possessive / attributive)</div>
+  <div class="formation"><span class="form-label">Form</span> Noun の Noun. Owner + の + object.</div>
+  <div class="ex">
+    <div class="ex-ja">山田さんの本</div>
+    <div class="ex-romaji">Yamada-san no hon</div>
+    <div class="ex-en">Yamada's book</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> の is far more versatile than English 'of' or '-'s. Also used in compound nouns like 日本の歌 (Japanese songs).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~か (question)</div>
+  <div class="romaji">~ka</div>
+  <div class="title">Sentence-end question marker</div>
+  <div class="formation"><span class="form-label">Form</span> Statement + か. No rising intonation needed in formal speech.</div>
+  <div class="ex">
+    <div class="ex-ja">学生ですか？</div>
+    <div class="ex-romaji">Gakusei desu ka?</div>
+    <div class="ex-en">Are you a student?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Japanese doesn't invert word order for questions like English. Just add か at the end.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">X も Y</div>
+  <div class="romaji">X mo Y</div>
+  <div class="title">X also / X too</div>
+  <div class="formation"><span class="form-label">Form</span> Replaces は or を to add 'also'.</div>
+  <div class="ex">
+    <div class="ex-ja">私も学生です。</div>
+    <div class="ex-romaji">Watashi mo gakusei desu.</div>
+    <div class="ex-en">I am also a student.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Particles like も REPLACE は/を, they don't add to them.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L1</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Numbers 1-10, age, time</div>
+  <div class="romaji">ichi, ni, san...</div>
+  <div class="title">Basic counting</div>
+  <div class="formation"><span class="form-label">Form</span> Number + counter (e.g., 〜歳 sai for age, 〜時 ji for time).</div>
+  <div class="ex">
+    <div class="ex-ja">二十歳です。</div>
+    <div class="ex-romaji">Hatachi desu.</div>
+    <div class="ex-en">I'm 20 years old.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> 20 years old is irregularly read 'hatachi' (not 'nijussai').</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">これ / それ / あれ / どれ</div>
+  <div class="romaji">kore / sore / are / dore</div>
+  <div class="title">This / that / that-far / which (pronoun)</div>
+  <div class="formation"><span class="form-label">Form</span> Standalone pronouns. これ=near speaker, それ=near listener, あれ=far from both, どれ=which.</div>
+  <div class="ex">
+    <div class="ex-ja">これは何ですか？</div>
+    <div class="ex-romaji">Kore wa nan desu ka?</div>
+    <div class="ex-en">What is this?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Three-way distance, not two like English ('this/that'). Important to learn the spatial logic.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">この / その / あの + Noun</div>
+  <div class="romaji">kono / sono / ano + N</div>
+  <div class="title">This/that + noun (attributive)</div>
+  <div class="formation"><span class="form-label">Form</span> Used BEFORE a noun. Cannot stand alone.</div>
+  <div class="ex">
+    <div class="ex-ja">この本は私のです。</div>
+    <div class="ex-romaji">Kono hon wa watashi no desu.</div>
+    <div class="ex-en">This book is mine.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Different from これ — これ stands alone, この must attach to a noun. Common mistake.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">ここ / そこ / あそこ / どこ</div>
+  <div class="romaji">koko / soko / asoko / doko</div>
+  <div class="title">Here / there / over there / where</div>
+  <div class="formation"><span class="form-label">Form</span> Location pronouns.</div>
+  <div class="ex">
+    <div class="ex-ja">トイレはどこですか？</div>
+    <div class="ex-romaji">Toire wa doko desu ka?</div>
+    <div class="ex-en">Where is the toilet?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> あそこ (asoko) means 'over there' (far from both speakers). No direct one-word English equivalent.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ね / ~よ</div>
+  <div class="romaji">~ne / ~yo</div>
+  <div class="title">Sentence-end particles (agreement / new info)</div>
+  <div class="formation"><span class="form-label">Form</span> ね = seeking agreement (right?). よ = telling listener something they don't know.</div>
+  <div class="ex">
+    <div class="ex-ja">いいですね。 / 行きますよ。</div>
+    <div class="ex-romaji">Ii desu ne. / Ikimasu yo.</div>
+    <div class="ex-en">Nice, isn't it? / I'm going (FYI).</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Carry social/emotional weight. Overusing よ can sound bossy. ね is friendly.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~じゃ ありません</div>
+  <div class="romaji">~ja arimasen</div>
+  <div class="title">Negation of nouns/な-adjectives</div>
+  <div class="formation"><span class="form-label">Form</span> Replace です with じゃありません (casual: じゃない).</div>
+  <div class="ex">
+    <div class="ex-ja">学生じゃありません。</div>
+    <div class="ex-romaji">Gakusei ja arimasen.</div>
+    <div class="ex-en">I'm not a student.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> じゃ is the spoken contraction of では. Formal speech uses では ありません.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L2</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">誰の N (whose N)</div>
+  <div class="romaji">dare no N</div>
+  <div class="title">Whose ~?</div>
+  <div class="formation"><span class="form-label">Form</span> 誰 (who) + の + Noun.</div>
+  <div class="ex">
+    <div class="ex-ja">誰のかばんですか？</div>
+    <div class="ex-romaji">Dare no kaban desu ka?</div>
+    <div class="ex-en">Whose bag is it?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Same の pattern as L1, just with 誰 (who).</div>
+</div>
+  </div>
+  <footer>
+    <span>★ = critical grammar · Particles in <i>italic-romaji</i> · Plain (dictionary) form used for combinations</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L3-4 · Verbs, existence, time</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース · Globi</span>
+      <span>Genki L1-12 · For native English speakers</span>
+      <span class="pageno">2 / 5</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Verb ます-form (polite present/future)</div>
+  <div class="romaji">~masu</div>
+  <div class="title">Polite present tense verb</div>
+  <div class="formation"><span class="form-label">Form</span> Group 1 (う-verbs): 書く→書きます. Group 2 (る-verbs): 食べる→食べます. Irregular: する→します, 来る→きます.</div>
+  <div class="ex">
+    <div class="ex-ja">本を読みます。</div>
+    <div class="ex-romaji">Hon o yomimasu.</div>
+    <div class="ex-en">I read a book.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> ます form covers both present and future ('I read' AND 'I will read'). Context decides.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Object particle を</div>
+  <div class="romaji">~o</div>
+  <div class="title">Direct object marker</div>
+  <div class="formation"><span class="form-label">Form</span> Direct object + を + transitive verb. Written を but pronounced 'o'.</div>
+  <div class="ex">
+    <div class="ex-ja">コーヒーを飲みます。</div>
+    <div class="ex-romaji">Koohii o nomimasu.</div>
+    <div class="ex-en">I drink coffee.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Pronounced 'o' identical to お, but written differently. Only used for direct object.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Location particles で / に / へ</div>
+  <div class="romaji">de / ni / e</div>
+  <div class="title">Where action happens / destination</div>
+  <div class="formation"><span class="form-label">Form</span> で = where action takes place. に = direction/specific time/destination. へ = direction (written へ, pronounced 'e').</div>
+  <div class="ex">
+    <div class="ex-ja">学校で勉強します。</div>
+    <div class="ex-romaji">Gakkou de benkyou shimasu.</div>
+    <div class="ex-en">I study at school.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> で vs に is a HUGE pitfall: で = activity location (study AT school), に = end-point (go TO school).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Frequency adverbs</div>
+  <div class="romaji">yoku / tokidoki / amari / zenzen</div>
+  <div class="title">often / sometimes / not much / not at all</div>
+  <div class="formation"><span class="form-label">Form</span> Negative frequency (あまり, ぜんぜん) must end with negative verb.</div>
+  <div class="ex">
+    <div class="ex-ja">あまり食べません。</div>
+    <div class="ex-romaji">Amari tabemasen.</div>
+    <div class="ex-en">I don't eat much.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> あまり and ぜんぜん REQUIRE negative verbs. 'I rarely eat' = 'I don't eat much' in Japanese logic.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L3</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Word order — SOV</div>
+  <div class="romaji">Subject-Object-Verb</div>
+  <div class="title">Verb goes LAST</div>
+  <div class="formation"><span class="form-label">Form</span> Subject は Object を Verb. Particles do the grammatical work, so word order is flexible.</div>
+  <div class="ex">
+    <div class="ex-ja">私はパンを食べます。</div>
+    <div class="ex-romaji">Watashi wa pan o tabemasu.</div>
+    <div class="ex-en">I eat bread.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> BIGGEST mental shift for English speakers. The verb always comes last. Train your brain to wait for the verb.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">ある / いる (existence)</div>
+  <div class="romaji">aru / iru</div>
+  <div class="title">There is / there are</div>
+  <div class="formation"><span class="form-label">Form</span> ある = inanimate (things). いる = animate (people, animals). Use が for subject.</div>
+  <div class="ex">
+    <div class="ex-ja">猫がいます。 / 本があります。</div>
+    <div class="ex-romaji">Neko ga imasu. / Hon ga arimasu.</div>
+    <div class="ex-en">There is a cat. / There is a book.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Choosing aru/iru by animacy is alien to English. Plants and most insects use ある.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Past tense (ました / でした)</div>
+  <div class="romaji">~mashita / ~deshita</div>
+  <div class="title">Polite past tense</div>
+  <div class="formation"><span class="form-label">Form</span> ます → ました (verbs). です → でした (nouns/な-adj). Negative past: ~ませんでした.</div>
+  <div class="ex">
+    <div class="ex-ja">昨日学校へ行きました。</div>
+    <div class="ex-romaji">Kinou gakkou e ikimashita.</div>
+    <div class="ex-en">I went to school yesterday.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Past tense affixes are very regular — much easier than English irregular verbs.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Location nouns (上下中前後)</div>
+  <div class="romaji">ue / shita / naka / mae / ushiro</div>
+  <div class="title">Above / under / inside / front / back</div>
+  <div class="formation"><span class="form-label">Form</span> Noun の + location word + に. Sequence: thing-の-location-に.</div>
+  <div class="ex">
+    <div class="ex-ja">机の上にあります。</div>
+    <div class="ex-romaji">Tsukue no ue ni arimasu.</div>
+    <div class="ex-en">It's on top of the desk.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Spatial relations expressed as nouns, not prepositions. 'On the desk' = 'at the desk's top'.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Time particle に / で</div>
+  <div class="romaji">~ni / ~de</div>
+  <div class="title">At a specific time / time-window</div>
+  <div class="formation"><span class="form-label">Form</span> に for specific clock time, day, year. No に for relative time (今日, 明日).</div>
+  <div class="ex">
+    <div class="ex-ja">七時に起きます。</div>
+    <div class="ex-romaji">Shichi-ji ni okimasu.</div>
+    <div class="ex-en">I get up at 7 o'clock.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Don't add に to 今日, 明日, 昨日 — they already imply time. Common mistake.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L4</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~と (with someone)</div>
+  <div class="romaji">~to</div>
+  <div class="title">Together with</div>
+  <div class="formation"><span class="form-label">Form</span> Person/thing + と. Different から と (and so).</div>
+  <div class="ex">
+    <div class="ex-ja">友達と映画を見ます。</div>
+    <div class="ex-romaji">Tomodachi to eiga o mimasu.</div>
+    <div class="ex-en">I watch a movie with a friend.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Same particle と does both 'with' AND 'and' (for lists). Context distinguishes.</div>
+</div>
+  </div>
+  <footer>
+    <span>★ = critical grammar · Particles in <i>italic-romaji</i> · Plain (dictionary) form used for combinations</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L5-6 · Adjectives, te-form ★</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース · Globi</span>
+      <span>Genki L1-12 · For native English speakers</span>
+      <span class="pageno">3 / 5</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">い-adjectives</div>
+  <div class="romaji">i-adjectives</div>
+  <div class="title">True adjectives (conjugate)</div>
+  <div class="formation"><span class="form-label">Form</span> End in い: 高い, 安い, 大きい. Negative: 高くない. Past: 高かった. Negative past: 高くなかった.</div>
+  <div class="ex">
+    <div class="ex-ja">この本は高いです。</div>
+    <div class="ex-romaji">Kono hon wa takai desu.</div>
+    <div class="ex-en">This book is expensive.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> い-adj. conjugate themselves like verbs (carry tense). NEVER add です to make past — change い→かった instead.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">な-adjectives</div>
+  <div class="romaji">na-adjectives</div>
+  <div class="title">Quasi-noun adjectives</div>
+  <div class="formation"><span class="form-label">Form</span> Use な before noun: 静かな町. Otherwise treated like nouns: 静かです. Negative: 静かじゃありません.</div>
+  <div class="ex">
+    <div class="ex-ja">あの町は静かです。</div>
+    <div class="ex-romaji">Ano machi wa shizuka desu.</div>
+    <div class="ex-en">That town is quiet.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> な-adj act like nouns until they modify another noun (then add な). Includes loanwords like ハンサム.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">好き / 嫌い (like/dislike — な-adj)</div>
+  <div class="romaji">suki / kirai</div>
+  <div class="title">Like / dislike (uses が)</div>
+  <div class="formation"><span class="form-label">Form</span> Object liked + が好き. Negative: 好きじゃありません.</div>
+  <div class="ex">
+    <div class="ex-ja">犬が好きです。</div>
+    <div class="ex-romaji">Inu ga suki desu.</div>
+    <div class="ex-en">I like dogs.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> 好き is a な-ADJECTIVE, not a verb. Object uses が, NOT を. 'I like X' = 'X is likable (to me).'</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Counters (~まい ~ぽん ~こ etc.)</div>
+  <div class="romaji">~mai / ~hon / ~ko</div>
+  <div class="title">Object-specific counters</div>
+  <div class="formation"><span class="form-label">Form</span> Number + counter. 紙 (paper) uses ~まい. 鉛筆 (long thin objects) uses ~ほん. General: ~つ (1-10).</div>
+  <div class="ex">
+    <div class="ex-ja">りんごを三つください。</div>
+    <div class="ex-romaji">Ringo o mittsu kudasai.</div>
+    <div class="ex-en">Three apples, please.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Hundreds of counters exist. Start with つ (general), 個, 人, 本, 枚. Beginners default to ~つ when unsure.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L5</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ましょう (let's)</div>
+  <div class="romaji">~mashou</div>
+  <div class="title">Let's do ~ (suggestion)</div>
+  <div class="formation"><span class="form-label">Form</span> Verb stem (ます removed) + ましょう. Question form ~ましょうか? = 'Shall we?'</div>
+  <div class="ex">
+    <div class="ex-ja">一緒に行きましょう。</div>
+    <div class="ex-romaji">Issho ni ikimashou.</div>
+    <div class="ex-en">Let's go together.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Very common — used in formal & casual settings. ~ましょうか? is polite for offering to do something for someone.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">te-form (て形) ★</div>
+  <div class="romaji">te-form</div>
+  <div class="title">Connector form — joins clauses, makes requests, allows...</div>
+  <div class="formation"><span class="form-label">Form</span> Rules vary by verb group. Group 1 (う-verbs): 書く→書いて, 飲む→飲んで, 立つ→立って. Group 2: drop る, add て. Irregular: する→して, 来る→きて.</div>
+  <div class="ex">
+    <div class="ex-ja">ご飯を食べて、寝ます。</div>
+    <div class="ex-romaji">Gohan o tabete, nemasu.</div>
+    <div class="ex-en">I'll eat and then sleep.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> ★ CRUCIAL FORM. The single biggest hurdle in early Japanese. Required for ~てください, ~ている, requests, permissions, prohibitions, and connecting clauses. Memorize the rules.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~から (reason)</div>
+  <div class="romaji">~kara</div>
+  <div class="title">Because ~</div>
+  <div class="formation"><span class="form-label">Form</span> Reason clause + から + result clause. Always end the REASON with から.</div>
+  <div class="ex">
+    <div class="ex-ja">寒いから、ジャケットを着ます。</div>
+    <div class="ex-romaji">Samui kara, jaketto o kimasu.</div>
+    <div class="ex-en">Because it's cold, I wear a jacket.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Opposite order from English 'X because Y'. Japanese: 'Y kara X'. Reason FIRST, then action.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~てください (please do)</div>
+  <div class="romaji">~te kudasai</div>
+  <div class="title">Please do ~ (polite request)</div>
+  <div class="formation"><span class="form-label">Form</span> te-form + ください. Negative request: ~ないでください.</div>
+  <div class="ex">
+    <div class="ex-ja">ここに座ってください。</div>
+    <div class="ex-romaji">Koko ni suwatte kudasai.</div>
+    <div class="ex-en">Please sit here.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Despite ください meaning 'give', this is a normal polite request, not begging. Use freely with strangers.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~てもいい / ~てはいけない</div>
+  <div class="romaji">~temo ii / ~te wa ikenai</div>
+  <div class="title">May ~ / Must not ~</div>
+  <div class="formation"><span class="form-label">Form</span> te-form + も いい です = permission. te-form + は いけません = prohibition.</div>
+  <div class="ex">
+    <div class="ex-ja">ここでタバコを吸ってもいいですか？</div>
+    <div class="ex-romaji">Koko de tabako o sutte mo ii desu ka?</div>
+    <div class="ex-en">May I smoke here?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Combines te-form with new grammar. ~ても is 'even if'. Critical for navigating Japanese politeness.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L6</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ましょうか (shall I?)</div>
+  <div class="romaji">~mashou ka</div>
+  <div class="title">Shall I do ~ for you?</div>
+  <div class="formation"><span class="form-label">Form</span> Verb stem + ましょうか. Offers help.</div>
+  <div class="ex">
+    <div class="ex-ja">手伝いましょうか？</div>
+    <div class="ex-romaji">Tetsudaimashou ka?</div>
+    <div class="ex-en">Shall I help you?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Polite offer. Different from ~ませんか (would you like to?) which suggests doing together.</div>
+</div>
+  </div>
+  <footer>
+    <span>★ = critical grammar · Particles in <i>italic-romaji</i> · Plain (dictionary) form used for combinations</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L7-8 · ~ている, particle が, short forms</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース · Globi</span>
+      <span>Genki L1-12 · For native English speakers</span>
+      <span class="pageno">4 / 5</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Counting people 一人 二人...</div>
+  <div class="romaji">hitori / futari / sannin</div>
+  <div class="title">People counter</div>
+  <div class="formation"><span class="form-label">Form</span> 1 and 2 irregular (hitori, futari). 3+: number + 人 (nin).</div>
+  <div class="ex">
+    <div class="ex-ja">三人います。</div>
+    <div class="ex-romaji">Sannin imasu.</div>
+    <div class="ex-en">There are three people.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Memorize: hitori, futari, then sannin (3), yonin (4 — irregular: read 'yo' not 'shi'), gonin (5)...</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Verb stem + に行く (purpose)</div>
+  <div class="romaji">~ni iku</div>
+  <div class="title">Go to do ~</div>
+  <div class="formation"><span class="form-label">Form</span> Verb stem (ます removed) + に + 行く/来る/帰る.</div>
+  <div class="ex">
+    <div class="ex-ja">買い物に行きます。</div>
+    <div class="ex-romaji">Kaimono ni ikimasu.</div>
+    <div class="ex-en">I'm going shopping.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> に here is purpose, not location. The verb stem becomes a 'noun of action'.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ている (progressive/state) ★</div>
+  <div class="romaji">~te iru</div>
+  <div class="title">Be doing ~ / be in state of ~</div>
+  <div class="formation"><span class="form-label">Form</span> te-form + いる. Progressive (action ongoing) OR resultant state.</div>
+  <div class="ex">
+    <div class="ex-ja">今、本を読んでいます。</div>
+    <div class="ex-romaji">Ima, hon o yonde imasu.</div>
+    <div class="ex-en">I am reading a book now.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Has TWO meanings: (1) ongoing action ('eating'), (2) result state ('married' = 結婚しています, 'know' = 知っています). The state meaning catches English speakers off guard.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">te-form connecting sentences</div>
+  <div class="romaji">te-form chaining</div>
+  <div class="title">Doing X and then Y</div>
+  <div class="formation"><span class="form-label">Form</span> te-form chains actions in sequence. The last verb carries the tense.</div>
+  <div class="ex">
+    <div class="ex-ja">朝起きて、ご飯を食べて、出かけます。</div>
+    <div class="ex-romaji">Asa okite, gohan o tabete, dekakemasu.</div>
+    <div class="ex-en">I wake up, eat, then go out.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Time/sequence flows from first to last. Compare to from-/from-which in English.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L7</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Family terms (mine vs yours)</div>
+  <div class="romaji">haha / okaasan</div>
+  <div class="title">Humble vs respectful family</div>
+  <div class="formation"><span class="form-label">Form</span> Own family (humble): 父 (chichi), 母 (haha), 兄 (ani), 姉 (ane). Other's family (respectful): お父さん, お母さん, お兄さん, お姉さん.</div>
+  <div class="ex">
+    <div class="ex-ja">母は医者です。</div>
+    <div class="ex-romaji">Haha wa isha desu.</div>
+    <div class="ex-en">My mother is a doctor.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Strict in-group/out-group distinction. Calling YOUR mother お母さん to others sounds childish. Calling SOMEONE ELSE'S mother 母 is rude.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Particle が (subject marker)</div>
+  <div class="romaji">~ga</div>
+  <div class="title">Subject marker (new info / answer to questions)</div>
+  <div class="formation"><span class="form-label">Form</span> Use が when (1) answering 'who/what?' questions, (2) introducing new info, (3) with existence verbs.</div>
+  <div class="ex">
+    <div class="ex-ja">誰が来ましたか？— 田中さんが来ました。</div>
+    <div class="ex-romaji">Dare ga kimashita ka? Tanaka-san ga kimashita.</div>
+    <div class="ex-en">Who came? — Tanaka came.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> が vs は is THE eternal pitfall. Rule of thumb: は marks WHAT the sentence is about (topic), が marks WHO/WHAT does the verb (subject, new info). With く 形容詞 like 好き, ALWAYS が.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">何か / 何も</div>
+  <div class="romaji">nanika / nanimo</div>
+  <div class="title">Something / nothing</div>
+  <div class="formation"><span class="form-label">Form</span> 何 + か = something (positive). 何 + も + negative verb = nothing.</div>
+  <div class="ex">
+    <div class="ex-ja">何か食べますか？— 何も食べません。</div>
+    <div class="ex-romaji">Nanika tabemasu ka? Nanimo tabemasen.</div>
+    <div class="ex-en">Will you eat something? I won't eat anything.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Same pattern with 誰 (who): 誰か (someone) / 誰も (no one). The も version REQUIRES negative.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Short forms (普通体 / dictionary form)</div>
+  <div class="romaji">futsuutai</div>
+  <div class="title">Casual / dictionary form verbs</div>
+  <div class="formation"><span class="form-label">Form</span> ます → dictionary form (行きます → 行く). Negative: ない (行きません → 行かない).</div>
+  <div class="ex">
+    <div class="ex-ja">今日は学校に行く。</div>
+    <div class="ex-romaji">Kyou wa gakkou ni iku.</div>
+    <div class="ex-en">I'm going to school today.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Used with friends, family, in writing, and required for many grammar patterns. The 'real' form of the verb (dictionary entries use this).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Verb as modifier (~ている人)</div>
+  <div class="romaji">modifying nouns with verbs</div>
+  <div class="title">Relative clauses</div>
+  <div class="formation"><span class="form-label">Form</span> Plain verb + noun. Verb describes the noun.</div>
+  <div class="ex">
+    <div class="ex-ja">あそこにいる人は誰ですか？</div>
+    <div class="ex-romaji">Asoko ni iru hito wa dare desu ka?</div>
+    <div class="ex-en">Who is the person over there?</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Japanese relative clauses come BEFORE the noun (opposite of English 'who/which/that' clauses). No relative pronoun needed.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L8</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Nominalizing with の / こと</div>
+  <div class="romaji">verb + no / koto</div>
+  <div class="title">Verb-ing as noun</div>
+  <div class="formation"><span class="form-label">Form</span> Plain verb + の or こと turns verb into 'the act of ~ing'.</div>
+  <div class="ex">
+    <div class="ex-ja">本を読むのが好きです。</div>
+    <div class="ex-romaji">Hon o yomu no ga suki desu.</div>
+    <div class="ex-en">I like reading books.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> の and こと both nominalize verbs. Subtle preference rules — の for concrete actions, こと for abstract/general. Beginners can use の mostly.</div>
+</div>
+  </div>
+  <footer>
+    <span>★ = critical grammar · Particles in <i>italic-romaji</i> · Plain (dictionary) form used for combinations</span>
+  </footer>
+</section>
+<section class="page">
+  <header>
+    <h1>L9-12 · Past, comparison, ~たい, ~んです</h1>
+    <div class="meta">
+      <span class="badge">日本語ユニバース · Globi</span>
+      <span>Genki L1-12 · For native English speakers</span>
+      <span class="pageno">5 / 5</span>
+    </div>
+  </header>
+  <div class="grid">
+    <div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Plain past affirmative (~た)</div>
+  <div class="romaji">~ta</div>
+  <div class="title">Plain past tense</div>
+  <div class="formation"><span class="form-label">Form</span> Same rules as te-form, but て → た / で → だ. 行く→行った, 食べる→食べた.</div>
+  <div class="ex">
+    <div class="ex-ja">昨日、寿司を食べた。</div>
+    <div class="ex-romaji">Kinou, sushi o tabeta.</div>
+    <div class="ex-en">I ate sushi yesterday.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Mastering te-form gives you ta-form free. Just swap ending sound.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Plain past negative (~なかった)</div>
+  <div class="romaji">~nakatta</div>
+  <div class="title">Plain past negative</div>
+  <div class="formation"><span class="form-label">Form</span> Plain negative ~ない → ~なかった.</div>
+  <div class="ex">
+    <div class="ex-ja">昨日、食べなかった。</div>
+    <div class="ex-romaji">Kinou, tabenakatta.</div>
+    <div class="ex-en">I didn't eat yesterday.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> い-adj. follow same pattern: 高くない → 高くなかった. The ない suffix conjugates like an い-adjective.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Qualifying nouns with clauses</div>
+  <div class="romaji">relative clauses</div>
+  <div class="title">Adjective clauses</div>
+  <div class="formation"><span class="form-label">Form</span> Full clause (in plain form) + noun.</div>
+  <div class="ex">
+    <div class="ex-ja">私が買った本</div>
+    <div class="ex-romaji">Watashi ga katta hon</div>
+    <div class="ex-en">The book I bought</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Subject of relative clause uses が (not は). Plain form is required (no です/ます inside).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L9</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~から (because, plain form)</div>
+  <div class="romaji">~kara</div>
+  <div class="title">Because (with plain form)</div>
+  <div class="formation"><span class="form-label">Form</span> Plain form clause + から. Common in casual speech.</div>
+  <div class="ex">
+    <div class="ex-ja">雨が降ったから、行かなかった。</div>
+    <div class="ex-romaji">Ame ga futta kara, ikanakatta.</div>
+    <div class="ex-en">I didn't go because it rained.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Same から as before, but explicitly used with plain forms in casual speech.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Comparison: より / のほうが</div>
+  <div class="romaji">~yori / ~no hou ga</div>
+  <div class="title">X is more ~ than Y</div>
+  <div class="formation"><span class="form-label">Form</span> Y より X のほう が ~ (X is more ~ than Y). Order: standard X-で is-more-than-Y.</div>
+  <div class="ex">
+    <div class="ex-ja">犬より猫のほうが好きです。</div>
+    <div class="ex-romaji">Inu yori neko no hou ga suki desu.</div>
+    <div class="ex-en">I like cats more than dogs.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Word order can flip. Important: のほうが is the 'more' part, より is the 'than' part.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Superlative: ~の中で一番</div>
+  <div class="romaji">~no naka de ichiban</div>
+  <div class="title">The most ~ (within a group)</div>
+  <div class="formation"><span class="form-label">Form</span> Group の中で + adjective + のは + thing (or 一番 + adj. directly).</div>
+  <div class="ex">
+    <div class="ex-ja">果物の中でりんごが一番好きです。</div>
+    <div class="ex-romaji">Kudamono no naka de ringo ga ichiban suki desu.</div>
+    <div class="ex-en">Of all fruits, I like apples best.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> 一番 literally means 'number one'. Use it as 'most' in superlatives.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">Indefinite: どこかに / どこにも</div>
+  <div class="romaji">dokoka ni / doko nimo</div>
+  <div class="title">Somewhere / nowhere</div>
+  <div class="formation"><span class="form-label">Form</span> Question word + か (some-) or + も (negative '-no-').</div>
+  <div class="ex">
+    <div class="ex-ja">どこかに行きたい。 / どこにも行かない。</div>
+    <div class="ex-romaji">Dokoka ni ikitai. / Doko nimo ikanai.</div>
+    <div class="ex-en">I want to go somewhere. / I'm not going anywhere.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Same pattern works with 何 (something/nothing), 誰 (someone/no one), いつ (sometime/never).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~になる / ~くなる (become)</div>
+  <div class="romaji">~ni naru / ~ku naru</div>
+  <div class="title">Becomes ~</div>
+  <div class="formation"><span class="form-label">Form</span> Noun + に + なる. い-adj. drop い + く + なる. な-adj. + に + なる.</div>
+  <div class="ex">
+    <div class="ex-ja">暑くなりました。 / 先生になりたい。</div>
+    <div class="ex-romaji">Atsuku narimashita. / Sensei ni naritai.</div>
+    <div class="ex-en">It became hot. / I want to become a teacher.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> なる expresses change of state. Different から する (do) which suggests deliberate action. なる = natural/inevitable change.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L10</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~つもりです (intention)</div>
+  <div class="romaji">~tsumori desu</div>
+  <div class="title">I plan to / intend to ~</div>
+  <div class="formation"><span class="form-label">Form</span> Plain dictionary form + つもり + です. Negative: 動かないつもりです.</div>
+  <div class="ex">
+    <div class="ex-ja">明日、大阪に行くつもりです。</div>
+    <div class="ex-romaji">Ashita, Oosaka ni iku tsumori desu.</div>
+    <div class="ex-en">I plan to go to Osaka tomorrow.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Stronger than just 'will' — implies a personal commitment or plan. Different from もうつもりはない (no intention).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~や~ (non-exhaustive 'and')</div>
+  <div class="romaji">~ya ~</div>
+  <div class="title">Things like X and Y (among others)</div>
+  <div class="formation"><span class="form-label">Form</span> Noun や Noun (など). Implies more items exist beyond what's listed.</div>
+  <div class="ex">
+    <div class="ex-ja">本やノートを買った。</div>
+    <div class="ex-romaji">Hon ya nooto o katta.</div>
+    <div class="ex-en">I bought books and notebooks (among other things).</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> と lists EVERYTHING. や lists SOME representative items. Subtle but important distinction in nuance.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ことがある (experience)</div>
+  <div class="romaji">~koto ga aru</div>
+  <div class="title">Have ~ed before</div>
+  <div class="formation"><span class="form-label">Form</span> Plain PAST form + こと が ある. Negative: ~ことがない.</div>
+  <div class="ex">
+    <div class="ex-ja">日本に行ったことがあります。</div>
+    <div class="ex-romaji">Nihon ni itta koto ga arimasu.</div>
+    <div class="ex-en">I have been to Japan before.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Must use PAST form even though English uses present perfect ('have been'). Common error: using dictionary form.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~たい (want to do)</div>
+  <div class="romaji">~tai</div>
+  <div class="title">I want to ~</div>
+  <div class="formation"><span class="form-label">Form</span> Verb stem (ます removed) + たい. Conjugates like い-adjective: ~たくない, ~たかった.</div>
+  <div class="ex">
+    <div class="ex-ja">ラーメンが食べたい。</div>
+    <div class="ex-romaji">Raamen ga tabetai.</div>
+    <div class="ex-en">I want to eat ramen.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> OBJECT particle changes: を often becomes が with ~たい (preference, not action). Only for FIRST person — using ~たい about others sounds presumptuous; use ~たがる instead.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L11</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~たり~たりする</div>
+  <div class="romaji">~tari ~tari suru</div>
+  <div class="title">Doing things like ~ and ~</div>
+  <div class="formation"><span class="form-label">Form</span> Plain past + り + Plain past + り + する. Non-exhaustive list of activities.</div>
+  <div class="ex">
+    <div class="ex-ja">週末は本を読んだり、寝たりします。</div>
+    <div class="ex-romaji">Shuumatsu wa hon o yondari, netari shimasu.</div>
+    <div class="ex-en">On weekends I do things like reading and sleeping.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Indicates SAMPLES of activities, not all of them. Compare to て-form chains which list ALL the activities in sequence.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~でしょう / ~だろう</div>
+  <div class="romaji">~deshou / ~darou</div>
+  <div class="title">Probably ~ / right?</div>
+  <div class="formation"><span class="form-label">Form</span> Plain form + でしょう (formal) / だろう (casual). Rising intonation = seeking confirmation.</div>
+  <div class="ex">
+    <div class="ex-ja">明日は雨でしょう。</div>
+    <div class="ex-romaji">Ashita wa ame deshou.</div>
+    <div class="ex-en">It will probably rain tomorrow.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Used by weather forecasters constantly. Different functions: (1) probability, (2) seeking agreement (rising tone).</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ほうがいい (you should)</div>
+  <div class="romaji">~hou ga ii</div>
+  <div class="title">It's better to ~</div>
+  <div class="formation"><span class="form-label">Form</span> Plain PAST form + ほうがいい. Negative: ~ないほうがいい (better not to).</div>
+  <div class="ex">
+    <div class="ex-ja">早く寝たほうがいいです。</div>
+    <div class="ex-romaji">Hayaku neta hou ga ii desu.</div>
+    <div class="ex-en">You should sleep early.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Often advice given to others. Past form is required for affirmative advice — strange to English speakers. Negative uses ない form.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~んです / ~のです (explanatory)</div>
+  <div class="romaji">~n desu / ~no desu</div>
+  <div class="title">It's because / the reason is ~</div>
+  <div class="formation"><span class="form-label">Form</span> Plain form + ん (or の) + です. Provides context or explanation.</div>
+  <div class="ex">
+    <div class="ex-ja">今、忙しいんです。</div>
+    <div class="ex-romaji">Ima, isogashii n desu.</div>
+    <div class="ex-en">It's because I'm busy now.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Adds emotional/explanatory weight. Sounds defensive or explanatory. Overuse can sound whiny. Listen to native speakers to learn nuance.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~ので (because, polite)</div>
+  <div class="romaji">~node</div>
+  <div class="title">Because (softer than から)</div>
+  <div class="formation"><span class="form-label">Form</span> Plain form + ので. Sounds more polite/objective than から.</div>
+  <div class="ex">
+    <div class="ex-ja">疲れているので、休みます。</div>
+    <div class="ex-romaji">Tsukarete iru node, yasumimasu.</div>
+    <div class="ex-en">Since I'm tired, I'll rest.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Used in formal/polite contexts (workplace requests). から sounds more assertive. な-adj/noun: use ~なので.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~なくちゃ いけない / ~なければ ならない</div>
+  <div class="romaji">~nakucha ikenai / ~nakereba naranai</div>
+  <div class="title">Must do ~</div>
+  <div class="formation"><span class="form-label">Form</span> Drop い from ない, then add ~くちゃいけない (casual) or ~ければならない (formal).</div>
+  <div class="ex">
+    <div class="ex-ja">宿題をしなくちゃいけない。</div>
+    <div class="ex-romaji">Shukudai o shinakucha ikenai.</div>
+    <div class="ex-en">I have to do homework.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Literally means 'if I don't do it, it won't do' — a double negative. Many shorter casual forms: ~ないと, ~なきゃ. Very common.</div>
+</div>
+<div class="card">
+  <div class="chips">
+    <span class="chip lesson">L12</span>
+    <span class="chip jlpt">N5</span>
+  </div>
+  <div class="ja">~すぎる (too much)</div>
+  <div class="romaji">~sugiru</div>
+  <div class="title">Too ~ / overdo ~</div>
+  <div class="formation"><span class="form-label">Form</span> Verb stem + すぎる. い-adj drop い + すぎる. な-adj + すぎる.</div>
+  <div class="ex">
+    <div class="ex-ja">食べすぎた。</div>
+    <div class="ex-romaji">Tabesugita.</div>
+    <div class="ex-en">I ate too much.</div>
+  </div>
+  <div class="note"><span class="note-label">EN tip</span> Conjugates as a regular る-verb: 食べすぎる → 食べすぎます → 食べすぎた. Indicates an undesirable excess.</div>
+</div>
+  </div>
+  <footer>
+    <span>★ = critical grammar · Particles in <i>italic-romaji</i> · Plain (dictionary) form used for combinations</span>
+  </footer>
+</section>
+</body>
+</html>
