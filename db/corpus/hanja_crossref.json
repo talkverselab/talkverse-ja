@@ -1,0 +1,819 @@
+{
+  "version": "v4-2026-05-15",
+  "purpose": "reference-only cross-ref for zh/ja/ko hanja - NOT for learning",
+  "scope": "L1-L4 표준에서 학습 X. ZH/JA 룸 vocab 분석·검수 시 cross-lookup reference 만",
+  "id_scheme": "hanja:{0001..} sequential, stable across versions",
+  "freq_basis": "JP top kanji (jp_l1_kanji_70.json 2026-05-11) — 일본어 회화 freq rank reference",
+  "fields": {
+    "id": "hanja:NNNN sequential primary key",
+    "ko_hanja": "Korean traditional hanja form",
+    "ko_hanja_yumeum": "음 (Korean reading)",
+    "zh_simp": "Simplified Chinese (PRC)",
+    "zh_trad": "Traditional Chinese (TW/HK)",
+    "ja_kanji": "Japanese kanji (modern shinjitai)",
+    "meaning_ko": "뜻 음 (e.g. '사랑 애')",
+    "freq_rank": "JP conversation freq rank (1=highest), null if unranked"
+  },
+  "entries": [
+    {
+      "id": "hanja:0001",
+      "ko_hanja": "事",
+      "ko_hanja_yumeum": "사",
+      "zh_simp": "事",
+      "zh_trad": "事",
+      "ja_kanji": "事",
+      "meaning_ko": "일 사",
+      "freq_rank": 1
+    },
+    {
+      "id": "hanja:0002",
+      "ko_hanja": "見",
+      "ko_hanja_yumeum": "견",
+      "zh_simp": "见",
+      "zh_trad": "見",
+      "ja_kanji": "見",
+      "meaning_ko": "볼 견",
+      "freq_rank": 2
+    },
+    {
+      "id": "hanja:0003",
+      "ko_hanja": "彼",
+      "ko_hanja_yumeum": "피",
+      "zh_simp": "彼",
+      "zh_trad": "彼",
+      "ja_kanji": "彼",
+      "meaning_ko": "저 피",
+      "freq_rank": 3
+    },
+    {
+      "id": "hanja:0004",
+      "ko_hanja": "行",
+      "ko_hanja_yumeum": "행",
+      "zh_simp": "行",
+      "zh_trad": "行",
+      "ja_kanji": "行",
+      "meaning_ko": "다닐 행",
+      "freq_rank": 4
+    },
+    {
+      "id": "hanja:0005",
+      "ko_hanja": "言",
+      "ko_hanja_yumeum": "언",
+      "zh_simp": "言",
+      "zh_trad": "言",
+      "ja_kanji": "言",
+      "meaning_ko": "말씀 언",
+      "freq_rank": 5
+    },
+    {
+      "id": "hanja:0006",
+      "ko_hanja": "人",
+      "ko_hanja_yumeum": "인",
+      "zh_simp": "人",
+      "zh_trad": "人",
+      "ja_kanji": "人",
+      "meaning_ko": "사람 인",
+      "freq_rank": 6
+    },
+    {
+      "id": "hanja:0007",
+      "ko_hanja": "來",
+      "ko_hanja_yumeum": "래",
+      "zh_simp": "来",
+      "zh_trad": "來",
+      "ja_kanji": "来",
+      "meaning_ko": "올 래",
+      "freq_rank": 7
+    },
+    {
+      "id": "hanja:0008",
+      "ko_hanja": "時",
+      "ko_hanja_yumeum": "시",
+      "zh_simp": "时",
+      "zh_trad": "時",
+      "ja_kanji": "時",
+      "meaning_ko": "때 시",
+      "freq_rank": 8
+    },
+    {
+      "id": "hanja:0009",
+      "ko_hanja": "思",
+      "ko_hanja_yumeum": "사",
+      "zh_simp": "思",
+      "zh_trad": "思",
+      "ja_kanji": "思",
+      "meaning_ko": "생각 사",
+      "freq_rank": 9
+    },
+    {
+      "id": "hanja:0010",
+      "ko_hanja": "今",
+      "ko_hanja_yumeum": "금",
+      "zh_simp": "今",
+      "zh_trad": "今",
+      "ja_kanji": "今",
+      "meaning_ko": "이제 금",
+      "freq_rank": 10
+    },
+    {
+      "id": "hanja:0011",
+      "ko_hanja": "俺",
+      "ko_hanja_yumeum": "엄",
+      "zh_simp": "俺",
+      "zh_trad": "俺",
+      "ja_kanji": "俺",
+      "meaning_ko": "나 엄",
+      "freq_rank": 11
+    },
+    {
+      "id": "hanja:0012",
+      "ko_hanja": "大",
+      "ko_hanja_yumeum": "대",
+      "zh_simp": "大",
+      "zh_trad": "大",
+      "ja_kanji": "大",
+      "meaning_ko": "큰 대",
+      "freq_rank": 12
+    },
+    {
+      "id": "hanja:0013",
+      "ko_hanja": "知",
+      "ko_hanja_yumeum": "지",
+      "zh_simp": "知",
+      "zh_trad": "知",
+      "ja_kanji": "知",
+      "meaning_ko": "알 지",
+      "freq_rank": 13
+    },
+    {
+      "id": "hanja:0014",
+      "ko_hanja": "話",
+      "ko_hanja_yumeum": "화",
+      "zh_simp": "话",
+      "zh_trad": "話",
+      "ja_kanji": "話",
+      "meaning_ko": "말씀 화",
+      "freq_rank": 14
+    },
+    {
+      "id": "hanja:0015",
+      "ko_hanja": "物",
+      "ko_hanja_yumeum": "물",
+      "zh_simp": "物",
+      "zh_trad": "物",
+      "ja_kanji": "物",
+      "meaning_ko": "물건 물",
+      "freq_rank": 15
+    },
+    {
+      "id": "hanja:0016",
+      "ko_hanja": "方",
+      "ko_hanja_yumeum": "방",
+      "zh_simp": "方",
+      "zh_trad": "方",
+      "ja_kanji": "方",
+      "meaning_ko": "모 방",
+      "freq_rank": 16
+    },
+    {
+      "id": "hanja:0017",
+      "ko_hanja": "女",
+      "ko_hanja_yumeum": "녀",
+      "zh_simp": "女",
+      "zh_trad": "女",
+      "ja_kanji": "女",
+      "meaning_ko": "여자 녀",
+      "freq_rank": 17
+    },
+    {
+      "id": "hanja:0018",
+      "ko_hanja": "間",
+      "ko_hanja_yumeum": "간",
+      "zh_simp": "间",
+      "zh_trad": "間",
+      "ja_kanji": "間",
+      "meaning_ko": "사이 간",
+      "freq_rank": 18
+    },
+    {
+      "id": "hanja:0019",
+      "ko_hanja": "出",
+      "ko_hanja_yumeum": "출",
+      "zh_simp": "出",
+      "zh_trad": "出",
+      "ja_kanji": "出",
+      "meaning_ko": "날 출",
+      "freq_rank": 19
+    },
+    {
+      "id": "hanja:0020",
+      "ko_hanja": "日",
+      "ko_hanja_yumeum": "일",
+      "zh_simp": "日",
+      "zh_trad": "日",
+      "ja_kanji": "日",
+      "meaning_ko": "날 일",
+      "freq_rank": 20
+    },
+    {
+      "id": "hanja:0021",
+      "ko_hanja": "最",
+      "ko_hanja_yumeum": "최",
+      "zh_simp": "最",
+      "zh_trad": "最",
+      "ja_kanji": "最",
+      "meaning_ko": "가장 최",
+      "freq_rank": 21
+    },
+    {
+      "id": "hanja:0022",
+      "ko_hanja": "子",
+      "ko_hanja_yumeum": "자",
+      "zh_simp": "子",
+      "zh_trad": "子",
+      "ja_kanji": "子",
+      "meaning_ko": "아들 자",
+      "freq_rank": 22
+    },
+    {
+      "id": "hanja:0023",
+      "ko_hanja": "全",
+      "ko_hanja_yumeum": "전",
+      "zh_simp": "全",
+      "zh_trad": "全",
+      "ja_kanji": "全",
+      "meaning_ko": "온전할 전",
+      "freq_rank": 23
+    },
+    {
+      "id": "hanja:0024",
+      "ko_hanja": "一",
+      "ko_hanja_yumeum": "일",
+      "zh_simp": "一",
+      "zh_trad": "一",
+      "ja_kanji": "一",
+      "meaning_ko": "한 일",
+      "freq_rank": 24
+    },
+    {
+      "id": "hanja:0025",
+      "ko_hanja": "聞",
+      "ko_hanja_yumeum": "문",
+      "zh_simp": "闻",
+      "zh_trad": "聞",
+      "ja_kanji": "聞",
+      "meaning_ko": "들을 문",
+      "freq_rank": 25
+    },
+    {
+      "id": "hanja:0026",
+      "ko_hanja": "分",
+      "ko_hanja_yumeum": "분",
+      "zh_simp": "分",
+      "zh_trad": "分",
+      "ja_kanji": "分",
+      "meaning_ko": "나눌 분",
+      "freq_rank": 26
+    },
+    {
+      "id": "hanja:0027",
+      "ko_hanja": "前",
+      "ko_hanja_yumeum": "전",
+      "zh_simp": "前",
+      "zh_trad": "前",
+      "ja_kanji": "前",
+      "meaning_ko": "앞 전",
+      "freq_rank": 27
+    },
+    {
+      "id": "hanja:0028",
+      "ko_hanja": "好",
+      "ko_hanja_yumeum": "호",
+      "zh_simp": "好",
+      "zh_trad": "好",
+      "ja_kanji": "好",
+      "meaning_ko": "좋을 호",
+      "freq_rank": 28
+    },
+    {
+      "id": "hanja:0029",
+      "ko_hanja": "付",
+      "ko_hanja_yumeum": "부",
+      "zh_simp": "付",
+      "zh_trad": "付",
+      "ja_kanji": "付",
+      "meaning_ko": "줄 부",
+      "freq_rank": 29
+    },
+    {
+      "id": "hanja:0030",
+      "ko_hanja": "食",
+      "ko_hanja_yumeum": "식",
+      "zh_simp": "食",
+      "zh_trad": "食",
+      "ja_kanji": "食",
+      "meaning_ko": "밥 식",
+      "freq_rank": 30
+    },
+    {
+      "id": "hanja:0031",
+      "ko_hanja": "自",
+      "ko_hanja_yumeum": "자",
+      "zh_simp": "自",
+      "zh_trad": "自",
+      "ja_kanji": "自",
+      "meaning_ko": "스스로 자",
+      "freq_rank": 31
+    },
+    {
+      "id": "hanja:0032",
+      "ko_hanja": "後",
+      "ko_hanja_yumeum": "후",
+      "zh_simp": "后",
+      "zh_trad": "後",
+      "ja_kanji": "後",
+      "meaning_ko": "뒤 후",
+      "freq_rank": 32
+    },
+    {
+      "id": "hanja:0033",
+      "ko_hanja": "目",
+      "ko_hanja_yumeum": "목",
+      "zh_simp": "目",
+      "zh_trad": "目",
+      "ja_kanji": "目",
+      "meaning_ko": "눈 목",
+      "freq_rank": 33
+    },
+    {
+      "id": "hanja:0034",
+      "ko_hanja": "生",
+      "ko_hanja_yumeum": "생",
+      "zh_simp": "生",
+      "zh_trad": "生",
+      "ja_kanji": "生",
+      "meaning_ko": "날 생",
+      "freq_rank": 34
+    },
+    {
+      "id": "hanja:0035",
+      "ko_hanja": "氣",
+      "ko_hanja_yumeum": "기",
+      "zh_simp": "气",
+      "zh_trad": "氣",
+      "ja_kanji": "気",
+      "meaning_ko": "기운 기",
+      "freq_rank": 35
+    },
+    {
+      "id": "hanja:0036",
+      "ko_hanja": "僕",
+      "ko_hanja_yumeum": "복",
+      "zh_simp": "仆",
+      "zh_trad": "僕",
+      "ja_kanji": "僕",
+      "meaning_ko": "종 복",
+      "freq_rank": 36
+    },
+    {
+      "id": "hanja:0037",
+      "ko_hanja": "入",
+      "ko_hanja_yumeum": "입",
+      "zh_simp": "入",
+      "zh_trad": "入",
+      "ja_kanji": "入",
+      "meaning_ko": "들 입",
+      "freq_rank": 37
+    },
+    {
+      "id": "hanja:0038",
+      "ko_hanja": "手",
+      "ko_hanja_yumeum": "수",
+      "zh_simp": "手",
+      "zh_trad": "手",
+      "ja_kanji": "手",
+      "meaning_ko": "손 수",
+      "freq_rank": 38
+    },
+    {
+      "id": "hanja:0039",
+      "ko_hanja": "要",
+      "ko_hanja_yumeum": "요",
+      "zh_simp": "要",
+      "zh_trad": "要",
+      "ja_kanji": "要",
+      "meaning_ko": "요긴할 요",
+      "freq_rank": 39
+    },
+    {
+      "id": "hanja:0040",
+      "ko_hanja": "會",
+      "ko_hanja_yumeum": "회",
+      "zh_simp": "会",
+      "zh_trad": "會",
+      "ja_kanji": "会",
+      "meaning_ko": "모일 회",
+      "freq_rank": 40
+    },
+    {
+      "id": "hanja:0041",
+      "ko_hanja": "殺",
+      "ko_hanja_yumeum": "살",
+      "zh_simp": "杀",
+      "zh_trad": "殺",
+      "ja_kanji": "殺",
+      "meaning_ko": "죽일 살",
+      "freq_rank": 41
+    },
+    {
+      "id": "hanja:0042",
+      "ko_hanja": "味",
+      "ko_hanja_yumeum": "미",
+      "zh_simp": "味",
+      "zh_trad": "味",
+      "ja_kanji": "味",
+      "meaning_ko": "맛 미",
+      "freq_rank": 42
+    },
+    {
+      "id": "hanja:0043",
+      "ko_hanja": "無",
+      "ko_hanja_yumeum": "무",
+      "zh_simp": "无",
+      "zh_trad": "無",
+      "ja_kanji": "無",
+      "meaning_ko": "없을 무",
+      "freq_rank": 43
+    },
+    {
+      "id": "hanja:0044",
+      "ko_hanja": "止",
+      "ko_hanja_yumeum": "지",
+      "zh_simp": "止",
+      "zh_trad": "止",
+      "ja_kanji": "止",
+      "meaning_ko": "그칠 지",
+      "freq_rank": 44
+    },
+    {
+      "id": "hanja:0045",
+      "ko_hanja": "家",
+      "ko_hanja_yumeum": "가",
+      "zh_simp": "家",
+      "zh_trad": "家",
+      "ja_kanji": "家",
+      "meaning_ko": "집 가",
+      "freq_rank": 45
+    },
+    {
+      "id": "hanja:0046",
+      "ko_hanja": "違",
+      "ko_hanja_yumeum": "위",
+      "zh_simp": "违",
+      "zh_trad": "違",
+      "ja_kanji": "違",
+      "meaning_ko": "어긋날 위",
+      "freq_rank": 46
+    },
+    {
+      "id": "hanja:0047",
+      "ko_hanja": "持",
+      "ko_hanja_yumeum": "지",
+      "zh_simp": "持",
+      "zh_trad": "持",
+      "ja_kanji": "持",
+      "meaning_ko": "가질 지",
+      "freq_rank": 47
+    },
+    {
+      "id": "hanja:0048",
+      "ko_hanja": "夫",
+      "ko_hanja_yumeum": "부",
+      "zh_simp": "夫",
+      "zh_trad": "夫",
+      "ja_kanji": "夫",
+      "meaning_ko": "지아비 부",
+      "freq_rank": 48
+    },
+    {
+      "id": "hanja:0049",
+      "ko_hanja": "上",
+      "ko_hanja_yumeum": "상",
+      "zh_simp": "上",
+      "zh_trad": "上",
+      "ja_kanji": "上",
+      "meaning_ko": "윗 상",
+      "freq_rank": 49
+    },
+    {
+      "id": "hanja:0050",
+      "ko_hanja": "年",
+      "ko_hanja_yumeum": "년",
+      "zh_simp": "年",
+      "zh_trad": "年",
+      "ja_kanji": "年",
+      "meaning_ko": "해 년",
+      "freq_rank": 50
+    },
+    {
+      "id": "hanja:0051",
+      "ko_hanja": "待",
+      "ko_hanja_yumeum": "대",
+      "zh_simp": "待",
+      "zh_trad": "待",
+      "ja_kanji": "待",
+      "meaning_ko": "기다릴 대",
+      "freq_rank": 51
+    },
+    {
+      "id": "hanja:0052",
+      "ko_hanja": "中",
+      "ko_hanja_yumeum": "중",
+      "zh_simp": "中",
+      "zh_trad": "中",
+      "ja_kanji": "中",
+      "meaning_ko": "가운데 중",
+      "freq_rank": 52
+    },
+    {
+      "id": "hanja:0053",
+      "ko_hanja": "理",
+      "ko_hanja_yumeum": "리",
+      "zh_simp": "理",
+      "zh_trad": "理",
+      "ja_kanji": "理",
+      "meaning_ko": "다스릴 리",
+      "freq_rank": 53
+    },
+    {
+      "id": "hanja:0054",
+      "ko_hanja": "感",
+      "ko_hanja_yumeum": "감",
+      "zh_simp": "感",
+      "zh_trad": "感",
+      "ja_kanji": "感",
+      "meaning_ko": "느낄 감",
+      "freq_rank": 54
+    },
+    {
+      "id": "hanja:0055",
+      "ko_hanja": "願",
+      "ko_hanja_yumeum": "원",
+      "zh_simp": "愿",
+      "zh_trad": "願",
+      "ja_kanji": "願",
+      "meaning_ko": "원할 원",
+      "freq_rank": 55
+    },
+    {
+      "id": "hanja:0056",
+      "ko_hanja": "近",
+      "ko_hanja_yumeum": "근",
+      "zh_simp": "近",
+      "zh_trad": "近",
+      "ja_kanji": "近",
+      "meaning_ko": "가까울 근",
+      "freq_rank": 56
+    },
+    {
+      "id": "hanja:0057",
+      "ko_hanja": "死",
+      "ko_hanja_yumeum": "사",
+      "zh_simp": "死",
+      "zh_trad": "死",
+      "ja_kanji": "死",
+      "meaning_ko": "죽을 사",
+      "freq_rank": 57
+    },
+    {
+      "id": "hanja:0058",
+      "ko_hanja": "必",
+      "ko_hanja_yumeum": "필",
+      "zh_simp": "必",
+      "zh_trad": "必",
+      "ja_kanji": "必",
+      "meaning_ko": "반드시 필",
+      "freq_rank": 58
+    },
+    {
+      "id": "hanja:0059",
+      "ko_hanja": "取",
+      "ko_hanja_yumeum": "취",
+      "zh_simp": "取",
+      "zh_trad": "取",
+      "ja_kanji": "取",
+      "meaning_ko": "가질 취",
+      "freq_rank": 59
+    },
+    {
+      "id": "hanja:0060",
+      "ko_hanja": "所",
+      "ko_hanja_yumeum": "소",
+      "zh_simp": "所",
+      "zh_trad": "所",
+      "ja_kanji": "所",
+      "meaning_ko": "바 소",
+      "freq_rank": 60
+    },
+    {
+      "id": "hanja:0061",
+      "ko_hanja": "確",
+      "ko_hanja_yumeum": "확",
+      "zh_simp": "确",
+      "zh_trad": "確",
+      "ja_kanji": "確",
+      "meaning_ko": "굳을 확",
+      "freq_rank": 61
+    },
+    {
+      "id": "hanja:0062",
+      "ko_hanja": "丈",
+      "ko_hanja_yumeum": "장",
+      "zh_simp": "丈",
+      "zh_trad": "丈",
+      "ja_kanji": "丈",
+      "meaning_ko": "어른 장",
+      "freq_rank": 62
+    },
+    {
+      "id": "hanja:0063",
+      "ko_hanja": "通",
+      "ko_hanja_yumeum": "통",
+      "zh_simp": "通",
+      "zh_trad": "通",
+      "ja_kanji": "通",
+      "meaning_ko": "통할 통",
+      "freq_rank": 63
+    },
+    {
+      "id": "hanja:0064",
+      "ko_hanja": "此",
+      "ko_hanja_yumeum": "차",
+      "zh_simp": "此",
+      "zh_trad": "此",
+      "ja_kanji": "此",
+      "meaning_ko": "이 차",
+      "freq_rank": 64
+    },
+    {
+      "id": "hanja:0065",
+      "ko_hanja": "部",
+      "ko_hanja_yumeum": "부",
+      "zh_simp": "部",
+      "zh_trad": "部",
+      "ja_kanji": "部",
+      "meaning_ko": "떼 부",
+      "freq_rank": 65
+    },
+    {
+      "id": "hanja:0066",
+      "ko_hanja": "動",
+      "ko_hanja_yumeum": "동",
+      "zh_simp": "动",
+      "zh_trad": "動",
+      "ja_kanji": "動",
+      "meaning_ko": "움직일 동",
+      "freq_rank": 66
+    },
+    {
+      "id": "hanja:0067",
+      "ko_hanja": "多",
+      "ko_hanja_yumeum": "다",
+      "zh_simp": "多",
+      "zh_trad": "多",
+      "ja_kanji": "多",
+      "meaning_ko": "많을 다",
+      "freq_rank": 67
+    },
+    {
+      "id": "hanja:0068",
+      "ko_hanja": "直",
+      "ko_hanja_yumeum": "직",
+      "zh_simp": "直",
+      "zh_trad": "直",
+      "ja_kanji": "直",
+      "meaning_ko": "곧을 직",
+      "freq_rank": 68
+    },
+    {
+      "id": "hanja:0069",
+      "ko_hanja": "場",
+      "ko_hanja_yumeum": "장",
+      "zh_simp": "场",
+      "zh_trad": "場",
+      "ja_kanji": "場",
+      "meaning_ko": "마당 장",
+      "freq_rank": 69
+    },
+    {
+      "id": "hanja:0070",
+      "ko_hanja": "變",
+      "ko_hanja_yumeum": "변",
+      "zh_simp": "变",
+      "zh_trad": "變",
+      "ja_kanji": "変",
+      "meaning_ko": "변할 변",
+      "freq_rank": 70
+    },
+    {
+      "id": "hanja:0071",
+      "ko_hanja": "愛",
+      "ko_hanja_yumeum": "애",
+      "zh_simp": "爱",
+      "zh_trad": "愛",
+      "ja_kanji": "愛",
+      "meaning_ko": "사랑 애",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0072",
+      "ko_hanja": "國",
+      "ko_hanja_yumeum": "국",
+      "zh_simp": "国",
+      "zh_trad": "國",
+      "ja_kanji": "国",
+      "meaning_ko": "나라 국",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0073",
+      "ko_hanja": "韓",
+      "ko_hanja_yumeum": "한",
+      "zh_simp": "韩",
+      "zh_trad": "韓",
+      "ja_kanji": "韓",
+      "meaning_ko": "나라 한",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0074",
+      "ko_hanja": "學",
+      "ko_hanja_yumeum": "학",
+      "zh_simp": "学",
+      "zh_trad": "學",
+      "ja_kanji": "学",
+      "meaning_ko": "배울 학",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0075",
+      "ko_hanja": "語",
+      "ko_hanja_yumeum": "어",
+      "zh_simp": "语",
+      "zh_trad": "語",
+      "ja_kanji": "語",
+      "meaning_ko": "말씀 어",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0076",
+      "ko_hanja": "心",
+      "ko_hanja_yumeum": "심",
+      "zh_simp": "心",
+      "zh_trad": "心",
+      "ja_kanji": "心",
+      "meaning_ko": "마음 심",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0077",
+      "ko_hanja": "水",
+      "ko_hanja_yumeum": "수",
+      "zh_simp": "水",
+      "zh_trad": "水",
+      "ja_kanji": "水",
+      "meaning_ko": "물 수",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0078",
+      "ko_hanja": "火",
+      "ko_hanja_yumeum": "화",
+      "zh_simp": "火",
+      "zh_trad": "火",
+      "ja_kanji": "火",
+      "meaning_ko": "불 화",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0079",
+      "ko_hanja": "月",
+      "ko_hanja_yumeum": "월",
+      "zh_simp": "月",
+      "zh_trad": "月",
+      "ja_kanji": "月",
+      "meaning_ko": "달 월",
+      "freq_rank": null
+    },
+    {
+      "id": "hanja:0080",
+      "ko_hanja": "山",
+      "ko_hanja_yumeum": "산",
+      "zh_simp": "山",
+      "zh_trad": "山",
+      "ja_kanji": "山",
+      "meaning_ko": "메 산",
+      "freq_rank": null
+    }
+  ]
+}

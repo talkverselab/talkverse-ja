@@ -1,0 +1,12595 @@
+[
+  {
+    "hanja": "佳",
+    "sound": "가",
+    "meaning": "아름다울",
+    "level": "中",
+    "order": 1
+  },
+  {
+    "hanja": "假",
+    "sound": "가",
+    "meaning": "거짓",
+    "level": "中",
+    "order": 2
+  },
+  {
+    "hanja": "價",
+    "sound": "가",
+    "meaning": "값",
+    "level": "中",
+    "order": 3
+  },
+  {
+    "hanja": "加",
+    "sound": "가",
+    "meaning": "더할",
+    "level": "中",
+    "order": 4
+  },
+  {
+    "hanja": "可",
+    "sound": "가",
+    "meaning": "옳을",
+    "level": "中",
+    "order": 5
+  },
+  {
+    "hanja": "家",
+    "sound": "가",
+    "meaning": "집",
+    "level": "中",
+    "order": 6
+  },
+  {
+    "hanja": "歌",
+    "sound": "가",
+    "meaning": "노래",
+    "level": "中",
+    "order": 7
+  },
+  {
+    "hanja": "街",
+    "sound": "가",
+    "meaning": "거리",
+    "level": "中",
+    "order": 8
+  },
+  {
+    "hanja": "暇",
+    "sound": "가",
+    "meaning": "겨를",
+    "level": "高",
+    "order": 9
+  },
+  {
+    "hanja": "架",
+    "sound": "가",
+    "meaning": "시렁",
+    "level": "高",
+    "order": 10
+  },
+  {
+    "hanja": "各",
+    "sound": "각",
+    "meaning": "각각",
+    "level": "中",
+    "order": 11
+  },
+  {
+    "hanja": "脚",
+    "sound": "각",
+    "meaning": "다리",
+    "level": "中",
+    "order": 12
+  },
+  {
+    "hanja": "角",
+    "sound": "각",
+    "meaning": "뿔",
+    "level": "中",
+    "order": 13
+  },
+  {
+    "hanja": "刻",
+    "sound": "각",
+    "meaning": "새길",
+    "level": "高",
+    "order": 14
+  },
+  {
+    "hanja": "却",
+    "sound": "각",
+    "meaning": "물리칠",
+    "level": "高",
+    "order": 15
+  },
+  {
+    "hanja": "覺",
+    "sound": "각",
+    "meaning": "깨달을",
+    "level": "高",
+    "order": 16
+  },
+  {
+    "hanja": "閣",
+    "sound": "각",
+    "meaning": "누각",
+    "level": "高",
+    "order": 17
+  },
+  {
+    "hanja": "干",
+    "sound": "간",
+    "meaning": "방패",
+    "level": "中",
+    "order": 18
+  },
+  {
+    "hanja": "看",
+    "sound": "간",
+    "meaning": "볼",
+    "level": "中",
+    "order": 19
+  },
+  {
+    "hanja": "間",
+    "sound": "간",
+    "meaning": "사이",
+    "level": "中",
+    "order": 20
+  },
+  {
+    "hanja": "刊",
+    "sound": "간",
+    "meaning": "새길",
+    "level": "高",
+    "order": 21
+  },
+  {
+    "hanja": "姦",
+    "sound": "간",
+    "meaning": "간음할",
+    "level": "高",
+    "order": 22
+  },
+  {
+    "hanja": "幹",
+    "sound": "간",
+    "meaning": "줄기",
+    "level": "高",
+    "order": 23
+  },
+  {
+    "hanja": "懇",
+    "sound": "간",
+    "meaning": "간절할",
+    "level": "高",
+    "order": 24
+  },
+  {
+    "hanja": "簡",
+    "sound": "간",
+    "meaning": "대쪽",
+    "level": "高",
+    "order": 25
+  },
+  {
+    "hanja": "肝",
+    "sound": "간",
+    "meaning": "간",
+    "level": "高",
+    "order": 26
+  },
+  {
+    "hanja": "渴",
+    "sound": "갈",
+    "meaning": "목마를",
+    "level": "中",
+    "order": 27
+  },
+  {
+    "hanja": "感",
+    "sound": "감",
+    "meaning": "느낄",
+    "level": "中",
+    "order": 28
+  },
+  {
+    "hanja": "敢",
+    "sound": "감",
+    "meaning": "감히",
+    "level": "中",
+    "order": 29
+  },
+  {
+    "hanja": "減",
+    "sound": "감",
+    "meaning": "덜",
+    "level": "中",
+    "order": 30
+  },
+  {
+    "hanja": "甘",
+    "sound": "감",
+    "meaning": "달",
+    "level": "中",
+    "order": 31
+  },
+  {
+    "hanja": "監",
+    "sound": "감",
+    "meaning": "볼",
+    "level": "高",
+    "order": 32
+  },
+  {
+    "hanja": "鑑",
+    "sound": "감",
+    "meaning": "거울",
+    "level": "高",
+    "order": 33
+  },
+  {
+    "hanja": "甲",
+    "sound": "갑",
+    "meaning": "갑옷",
+    "level": "中",
+    "order": 34
+  },
+  {
+    "hanja": "強",
+    "sound": "강",
+    "meaning": "굳셀",
+    "level": "中",
+    "order": 35
+  },
+  {
+    "hanja": "江",
+    "sound": "강",
+    "meaning": "강",
+    "level": "中",
+    "order": 36
+  },
+  {
+    "hanja": "講",
+    "sound": "강",
+    "meaning": "익힐",
+    "level": "中",
+    "order": 37
+  },
+  {
+    "hanja": "降",
+    "sound": "강",
+    "meaning": "내릴",
+    "level": "中",
+    "order": 38
+  },
+  {
+    "hanja": "剛",
+    "sound": "강",
+    "meaning": "굳셀",
+    "level": "高",
+    "order": 39
+  },
+  {
+    "hanja": "康",
+    "sound": "강",
+    "meaning": "편안할",
+    "level": "高",
+    "order": 40
+  },
+  {
+    "hanja": "綱",
+    "sound": "강",
+    "meaning": "벼리",
+    "level": "高",
+    "order": 41
+  },
+  {
+    "hanja": "鋼",
+    "sound": "강",
+    "meaning": "강철",
+    "level": "高",
+    "order": 42
+  },
+  {
+    "hanja": "個",
+    "sound": "개",
+    "meaning": "낱",
+    "level": "中",
+    "order": 43
+  },
+  {
+    "hanja": "改",
+    "sound": "개",
+    "meaning": "고칠",
+    "level": "中",
+    "order": 44
+  },
+  {
+    "hanja": "皆",
+    "sound": "개",
+    "meaning": "다",
+    "level": "中",
+    "order": 45
+  },
+  {
+    "hanja": "開",
+    "sound": "개",
+    "meaning": "열",
+    "level": "中",
+    "order": 46
+  },
+  {
+    "hanja": "介",
+    "sound": "개",
+    "meaning": "낄",
+    "level": "高",
+    "order": 47
+  },
+  {
+    "hanja": "慨",
+    "sound": "개",
+    "meaning": "슬퍼할",
+    "level": "高",
+    "order": 48
+  },
+  {
+    "hanja": "槪",
+    "sound": "개",
+    "meaning": "대개",
+    "level": "高",
+    "order": 49
+  },
+  {
+    "hanja": "蓋",
+    "sound": "개",
+    "meaning": "덮을",
+    "level": "高",
+    "order": 50
+  },
+  {
+    "hanja": "客",
+    "sound": "객",
+    "meaning": "손님",
+    "level": "中",
+    "order": 51
+  },
+  {
+    "hanja": "更",
+    "sound": "갱",
+    "meaning": "다시",
+    "level": "中",
+    "order": 52
+  },
+  {
+    "hanja": "去",
+    "sound": "거",
+    "meaning": "갈",
+    "level": "中",
+    "order": 53
+  },
+  {
+    "hanja": "居",
+    "sound": "거",
+    "meaning": "살",
+    "level": "中",
+    "order": 54
+  },
+  {
+    "hanja": "巨",
+    "sound": "거",
+    "meaning": "클",
+    "level": "中",
+    "order": 55
+  },
+  {
+    "hanja": "擧",
+    "sound": "거",
+    "meaning": "들",
+    "level": "中",
+    "order": 56
+  },
+  {
+    "hanja": "車",
+    "sound": "거",
+    "meaning": "수레",
+    "level": "中",
+    "order": 57
+  },
+  {
+    "hanja": "拒",
+    "sound": "거",
+    "meaning": "막을",
+    "level": "高",
+    "order": 58
+  },
+  {
+    "hanja": "據",
+    "sound": "거",
+    "meaning": "의거할",
+    "level": "高",
+    "order": 59
+  },
+  {
+    "hanja": "距",
+    "sound": "거",
+    "meaning": "떨어질",
+    "level": "高",
+    "order": 60
+  },
+  {
+    "hanja": "乾",
+    "sound": "건",
+    "meaning": "하늘",
+    "level": "中",
+    "order": 61
+  },
+  {
+    "hanja": "建",
+    "sound": "건",
+    "meaning": "세울",
+    "level": "中",
+    "order": 62
+  },
+  {
+    "hanja": "件",
+    "sound": "건",
+    "meaning": "물건",
+    "level": "高",
+    "order": 63
+  },
+  {
+    "hanja": "健",
+    "sound": "건",
+    "meaning": "튼튼할",
+    "level": "高",
+    "order": 64
+  },
+  {
+    "hanja": "乞",
+    "sound": "걸",
+    "meaning": "빌",
+    "level": "高",
+    "order": 65
+  },
+  {
+    "hanja": "傑",
+    "sound": "걸",
+    "meaning": "뛰어날",
+    "level": "高",
+    "order": 66
+  },
+  {
+    "hanja": "儉",
+    "sound": "검",
+    "meaning": "검소할",
+    "level": "高",
+    "order": 67
+  },
+  {
+    "hanja": "劍",
+    "sound": "검",
+    "meaning": "칼",
+    "level": "高",
+    "order": 68
+  },
+  {
+    "hanja": "檢",
+    "sound": "검",
+    "meaning": "검사할",
+    "level": "高",
+    "order": 69
+  },
+  {
+    "hanja": "擊",
+    "sound": "격",
+    "meaning": "칠",
+    "level": "高",
+    "order": 70
+  },
+  {
+    "hanja": "格",
+    "sound": "격",
+    "meaning": "격식",
+    "level": "高",
+    "order": 71
+  },
+  {
+    "hanja": "激",
+    "sound": "격",
+    "meaning": "격할",
+    "level": "高",
+    "order": 72
+  },
+  {
+    "hanja": "隔",
+    "sound": "격",
+    "meaning": "사이 뜰",
+    "level": "高",
+    "order": 73
+  },
+  {
+    "hanja": "堅",
+    "sound": "견",
+    "meaning": "굳을",
+    "level": "中",
+    "order": 74
+  },
+  {
+    "hanja": "犬",
+    "sound": "견",
+    "meaning": "개",
+    "level": "中",
+    "order": 75
+  },
+  {
+    "hanja": "見",
+    "sound": "견",
+    "meaning": "볼",
+    "level": "中",
+    "order": 76
+  },
+  {
+    "hanja": "牽",
+    "sound": "견",
+    "meaning": "이끌",
+    "level": "高",
+    "order": 77
+  },
+  {
+    "hanja": "絹",
+    "sound": "견",
+    "meaning": "비단",
+    "level": "高",
+    "order": 78
+  },
+  {
+    "hanja": "肩",
+    "sound": "견",
+    "meaning": "어깨",
+    "level": "高",
+    "order": 79
+  },
+  {
+    "hanja": "遣",
+    "sound": "견",
+    "meaning": "보낼",
+    "level": "高",
+    "order": 80
+  },
+  {
+    "hanja": "決",
+    "sound": "결",
+    "meaning": "결단할",
+    "level": "中",
+    "order": 81
+  },
+  {
+    "hanja": "潔",
+    "sound": "결",
+    "meaning": "깨끗할",
+    "level": "中",
+    "order": 82
+  },
+  {
+    "hanja": "結",
+    "sound": "결",
+    "meaning": "맺을",
+    "level": "中",
+    "order": 83
+  },
+  {
+    "hanja": "缺",
+    "sound": "결",
+    "meaning": "이지러질",
+    "level": "高",
+    "order": 84
+  },
+  {
+    "hanja": "兼",
+    "sound": "겸",
+    "meaning": "겸할",
+    "level": "高",
+    "order": 85
+  },
+  {
+    "hanja": "謙",
+    "sound": "겸",
+    "meaning": "겸손할",
+    "level": "高",
+    "order": 86
+  },
+  {
+    "hanja": "京",
+    "sound": "경",
+    "meaning": "서울",
+    "level": "中",
+    "order": 87
+  },
+  {
+    "hanja": "庚",
+    "sound": "경",
+    "meaning": "별",
+    "level": "中",
+    "order": 88
+  },
+  {
+    "hanja": "慶",
+    "sound": "경",
+    "meaning": "경사",
+    "level": "中",
+    "order": 89
+  },
+  {
+    "hanja": "敬",
+    "sound": "경",
+    "meaning": "공경할",
+    "level": "中",
+    "order": 90
+  },
+  {
+    "hanja": "景",
+    "sound": "경",
+    "meaning": "볕",
+    "level": "中",
+    "order": 91
+  },
+  {
+    "hanja": "競",
+    "sound": "경",
+    "meaning": "겨룰",
+    "level": "中",
+    "order": 92
+  },
+  {
+    "hanja": "經",
+    "sound": "경",
+    "meaning": "지날/글",
+    "level": "中",
+    "order": 93
+  },
+  {
+    "hanja": "耕",
+    "sound": "경",
+    "meaning": "밭 갈",
+    "level": "中",
+    "order": 94
+  },
+  {
+    "hanja": "輕",
+    "sound": "경",
+    "meaning": "가벼울",
+    "level": "中",
+    "order": 95
+  },
+  {
+    "hanja": "驚",
+    "sound": "경",
+    "meaning": "놀랄",
+    "level": "中",
+    "order": 96
+  },
+  {
+    "hanja": "傾",
+    "sound": "경",
+    "meaning": "기울",
+    "level": "高",
+    "order": 97
+  },
+  {
+    "hanja": "卿",
+    "sound": "경",
+    "meaning": "벼슬",
+    "level": "高",
+    "order": 98
+  },
+  {
+    "hanja": "境",
+    "sound": "경",
+    "meaning": "지경",
+    "level": "高",
+    "order": 99
+  },
+  {
+    "hanja": "徑",
+    "sound": "경",
+    "meaning": "지름길",
+    "level": "高",
+    "order": 100
+  },
+  {
+    "hanja": "硬",
+    "sound": "경",
+    "meaning": "굳을",
+    "level": "高",
+    "order": 101
+  },
+  {
+    "hanja": "竟",
+    "sound": "경",
+    "meaning": "마침내",
+    "level": "高",
+    "order": 102
+  },
+  {
+    "hanja": "警",
+    "sound": "경",
+    "meaning": "깨우칠/경계할",
+    "level": "高",
+    "order": 103
+  },
+  {
+    "hanja": "鏡",
+    "sound": "경",
+    "meaning": "거울",
+    "level": "高",
+    "order": 104
+  },
+  {
+    "hanja": "頃",
+    "sound": "경",
+    "meaning": "이랑/잠깐",
+    "level": "高",
+    "order": 105
+  },
+  {
+    "hanja": "季",
+    "sound": "계",
+    "meaning": "계절",
+    "level": "中",
+    "order": 106
+  },
+  {
+    "hanja": "溪",
+    "sound": "계",
+    "meaning": "시내",
+    "level": "中",
+    "order": 107
+  },
+  {
+    "hanja": "界",
+    "sound": "계",
+    "meaning": "지경",
+    "level": "中",
+    "order": 108
+  },
+  {
+    "hanja": "癸",
+    "sound": "계",
+    "meaning": "북방",
+    "level": "中",
+    "order": 109
+  },
+  {
+    "hanja": "計",
+    "sound": "계",
+    "meaning": "셀",
+    "level": "中",
+    "order": 110
+  },
+  {
+    "hanja": "鷄",
+    "sound": "계",
+    "meaning": "닭",
+    "level": "中",
+    "order": 111
+  },
+  {
+    "hanja": "係",
+    "sound": "계",
+    "meaning": "맬",
+    "level": "高",
+    "order": 112
+  },
+  {
+    "hanja": "啓",
+    "sound": "계",
+    "meaning": "열",
+    "level": "高",
+    "order": 113
+  },
+  {
+    "hanja": "契",
+    "sound": "계",
+    "meaning": "맺을",
+    "level": "高",
+    "order": 114
+  },
+  {
+    "hanja": "戒",
+    "sound": "계",
+    "meaning": "경계할",
+    "level": "高",
+    "order": 115
+  },
+  {
+    "hanja": "桂",
+    "sound": "계",
+    "meaning": "계수나무",
+    "level": "高",
+    "order": 116
+  },
+  {
+    "hanja": "械",
+    "sound": "계",
+    "meaning": "기계",
+    "level": "高",
+    "order": 117
+  },
+  {
+    "hanja": "系",
+    "sound": "계",
+    "meaning": "이을",
+    "level": "高",
+    "order": 118
+  },
+  {
+    "hanja": "繫",
+    "sound": "계",
+    "meaning": "맬",
+    "level": "高",
+    "order": 119
+  },
+  {
+    "hanja": "繼",
+    "sound": "계",
+    "meaning": "이을",
+    "level": "高",
+    "order": 120
+  },
+  {
+    "hanja": "階",
+    "sound": "계",
+    "meaning": "섬돌",
+    "level": "高",
+    "order": 121
+  },
+  {
+    "hanja": "古",
+    "sound": "고",
+    "meaning": "옛",
+    "level": "中",
+    "order": 122
+  },
+  {
+    "hanja": "告",
+    "sound": "고",
+    "meaning": "알릴",
+    "level": "中",
+    "order": 123
+  },
+  {
+    "hanja": "固",
+    "sound": "고",
+    "meaning": "굳을",
+    "level": "中",
+    "order": 124
+  },
+  {
+    "hanja": "故",
+    "sound": "고",
+    "meaning": "옛",
+    "level": "中",
+    "order": 125
+  },
+  {
+    "hanja": "考",
+    "sound": "고",
+    "meaning": "생각할",
+    "level": "中",
+    "order": 126
+  },
+  {
+    "hanja": "苦",
+    "sound": "고",
+    "meaning": "쓸",
+    "level": "中",
+    "order": 127
+  },
+  {
+    "hanja": "高",
+    "sound": "고",
+    "meaning": "높을",
+    "level": "中",
+    "order": 128
+  },
+  {
+    "hanja": "姑",
+    "sound": "고",
+    "meaning": "시어미",
+    "level": "高",
+    "order": 129
+  },
+  {
+    "hanja": "孤",
+    "sound": "고",
+    "meaning": "외로울",
+    "level": "高",
+    "order": 130
+  },
+  {
+    "hanja": "庫",
+    "sound": "고",
+    "meaning": "곳집",
+    "level": "高",
+    "order": 131
+  },
+  {
+    "hanja": "枯",
+    "sound": "고",
+    "meaning": "마를",
+    "level": "高",
+    "order": 132
+  },
+  {
+    "hanja": "稿",
+    "sound": "고",
+    "meaning": "볏짚",
+    "level": "高",
+    "order": 133
+  },
+  {
+    "hanja": "顧",
+    "sound": "고",
+    "meaning": "돌아볼",
+    "level": "高",
+    "order": 134
+  },
+  {
+    "hanja": "鼓",
+    "sound": "고",
+    "meaning": "북",
+    "level": "高",
+    "order": 135
+  },
+  {
+    "hanja": "曲",
+    "sound": "곡",
+    "meaning": "굽을",
+    "level": "中",
+    "order": 136
+  },
+  {
+    "hanja": "穀",
+    "sound": "곡",
+    "meaning": "곡식",
+    "level": "中",
+    "order": 137
+  },
+  {
+    "hanja": "谷",
+    "sound": "곡",
+    "meaning": "골",
+    "level": "中",
+    "order": 138
+  },
+  {
+    "hanja": "哭",
+    "sound": "곡",
+    "meaning": "울",
+    "level": "高",
+    "order": 139
+  },
+  {
+    "hanja": "困",
+    "sound": "곤",
+    "meaning": "곤할",
+    "level": "中",
+    "order": 140
+  },
+  {
+    "hanja": "坤",
+    "sound": "곤",
+    "meaning": "땅",
+    "level": "中",
+    "order": 141
+  },
+  {
+    "hanja": "骨",
+    "sound": "골",
+    "meaning": "뼈",
+    "level": "中",
+    "order": 142
+  },
+  {
+    "hanja": "公",
+    "sound": "공",
+    "meaning": "공변될",
+    "level": "中",
+    "order": 143
+  },
+  {
+    "hanja": "共",
+    "sound": "공",
+    "meaning": "함께",
+    "level": "中",
+    "order": 144
+  },
+  {
+    "hanja": "功",
+    "sound": "공",
+    "meaning": "공",
+    "level": "中",
+    "order": 145
+  },
+  {
+    "hanja": "工",
+    "sound": "공",
+    "meaning": "장인",
+    "level": "中",
+    "order": 146
+  },
+  {
+    "hanja": "空",
+    "sound": "공",
+    "meaning": "빌",
+    "level": "中",
+    "order": 147
+  },
+  {
+    "hanja": "供",
+    "sound": "공",
+    "meaning": "이바지할",
+    "level": "高",
+    "order": 148
+  },
+  {
+    "hanja": "孔",
+    "sound": "공",
+    "meaning": "구멍",
+    "level": "高",
+    "order": 149
+  },
+  {
+    "hanja": "恐",
+    "sound": "공",
+    "meaning": "두려울",
+    "level": "高",
+    "order": 150
+  },
+  {
+    "hanja": "恭",
+    "sound": "공",
+    "meaning": "공손할",
+    "level": "高",
+    "order": 151
+  },
+  {
+    "hanja": "攻",
+    "sound": "공",
+    "meaning": "칠",
+    "level": "高",
+    "order": 152
+  },
+  {
+    "hanja": "貢",
+    "sound": "공",
+    "meaning": "바칠",
+    "level": "高",
+    "order": 153
+  },
+  {
+    "hanja": "果",
+    "sound": "과",
+    "meaning": "열매",
+    "level": "中",
+    "order": 154
+  },
+  {
+    "hanja": "科",
+    "sound": "과",
+    "meaning": "과목",
+    "level": "中",
+    "order": 155
+  },
+  {
+    "hanja": "課",
+    "sound": "과",
+    "meaning": "공부할/과정",
+    "level": "中",
+    "order": 156
+  },
+  {
+    "hanja": "過",
+    "sound": "과",
+    "meaning": "지날",
+    "level": "中",
+    "order": 157
+  },
+  {
+    "hanja": "寡",
+    "sound": "과",
+    "meaning": "적을",
+    "level": "高",
+    "order": 158
+  },
+  {
+    "hanja": "誇",
+    "sound": "과",
+    "meaning": "자랑할",
+    "level": "高",
+    "order": 159
+  },
+  {
+    "hanja": "郭",
+    "sound": "곽",
+    "meaning": "성곽",
+    "level": "高",
+    "order": 160
+  },
+  {
+    "hanja": "官",
+    "sound": "관",
+    "meaning": "벼슬",
+    "level": "中",
+    "order": 161
+  },
+  {
+    "hanja": "觀",
+    "sound": "관",
+    "meaning": "볼",
+    "level": "中",
+    "order": 162
+  },
+  {
+    "hanja": "關",
+    "sound": "관",
+    "meaning": "빗장",
+    "level": "中",
+    "order": 163
+  },
+  {
+    "hanja": "冠",
+    "sound": "관",
+    "meaning": "갓",
+    "level": "高",
+    "order": 164
+  },
+  {
+    "hanja": "寬",
+    "sound": "관",
+    "meaning": "너그러울",
+    "level": "高",
+    "order": 165
+  },
+  {
+    "hanja": "慣",
+    "sound": "관",
+    "meaning": "익숙할",
+    "level": "高",
+    "order": 166
+  },
+  {
+    "hanja": "管",
+    "sound": "관",
+    "meaning": "대롱",
+    "level": "高",
+    "order": 167
+  },
+  {
+    "hanja": "貫",
+    "sound": "관",
+    "meaning": "꿸",
+    "level": "高",
+    "order": 168
+  },
+  {
+    "hanja": "館",
+    "sound": "관",
+    "meaning": "집",
+    "level": "高",
+    "order": 169
+  },
+  {
+    "hanja": "光",
+    "sound": "광",
+    "meaning": "빛",
+    "level": "中",
+    "order": 170
+  },
+  {
+    "hanja": "廣",
+    "sound": "광",
+    "meaning": "넓을",
+    "level": "中",
+    "order": 171
+  },
+  {
+    "hanja": "狂",
+    "sound": "광",
+    "meaning": "미칠",
+    "level": "高",
+    "order": 172
+  },
+  {
+    "hanja": "鑛",
+    "sound": "광",
+    "meaning": "쇳돌",
+    "level": "高",
+    "order": 173
+  },
+  {
+    "hanja": "掛",
+    "sound": "괘",
+    "meaning": "걸",
+    "level": "高",
+    "order": 174
+  },
+  {
+    "hanja": "塊",
+    "sound": "괴",
+    "meaning": "흙덩이",
+    "level": "高",
+    "order": 175
+  },
+  {
+    "hanja": "壞",
+    "sound": "괴",
+    "meaning": "무너질",
+    "level": "高",
+    "order": 176
+  },
+  {
+    "hanja": "怪",
+    "sound": "괴",
+    "meaning": "기이할",
+    "level": "高",
+    "order": 177
+  },
+  {
+    "hanja": "愧",
+    "sound": "괴",
+    "meaning": "부끄러울",
+    "level": "高",
+    "order": 178
+  },
+  {
+    "hanja": "交",
+    "sound": "교",
+    "meaning": "사귈",
+    "level": "中",
+    "order": 179
+  },
+  {
+    "hanja": "敎",
+    "sound": "교",
+    "meaning": "가르칠",
+    "level": "中",
+    "order": 180
+  },
+  {
+    "hanja": "校",
+    "sound": "교",
+    "meaning": "학교",
+    "level": "中",
+    "order": 181
+  },
+  {
+    "hanja": "橋",
+    "sound": "교",
+    "meaning": "다리",
+    "level": "中",
+    "order": 182
+  },
+  {
+    "hanja": "巧",
+    "sound": "교",
+    "meaning": "공교할",
+    "level": "高",
+    "order": 183
+  },
+  {
+    "hanja": "矯",
+    "sound": "교",
+    "meaning": "바로잡을",
+    "level": "高",
+    "order": 184
+  },
+  {
+    "hanja": "較",
+    "sound": "교",
+    "meaning": "견줄",
+    "level": "高",
+    "order": 185
+  },
+  {
+    "hanja": "郊",
+    "sound": "교",
+    "meaning": "들",
+    "level": "高",
+    "order": 186
+  },
+  {
+    "hanja": "久",
+    "sound": "구",
+    "meaning": "오랠",
+    "level": "中",
+    "order": 187
+  },
+  {
+    "hanja": "九",
+    "sound": "구",
+    "meaning": "아홉",
+    "level": "中",
+    "order": 188
+  },
+  {
+    "hanja": "口",
+    "sound": "구",
+    "meaning": "입",
+    "level": "中",
+    "order": 189
+  },
+  {
+    "hanja": "句",
+    "sound": "구",
+    "meaning": "글귀",
+    "level": "中",
+    "order": 190
+  },
+  {
+    "hanja": "救",
+    "sound": "구",
+    "meaning": "건질",
+    "level": "中",
+    "order": 191
+  },
+  {
+    "hanja": "求",
+    "sound": "구",
+    "meaning": "구할",
+    "level": "中",
+    "order": 192
+  },
+  {
+    "hanja": "究",
+    "sound": "구",
+    "meaning": "연구할",
+    "level": "中",
+    "order": 193
+  },
+  {
+    "hanja": "舊",
+    "sound": "구",
+    "meaning": "예",
+    "level": "中",
+    "order": 194
+  },
+  {
+    "hanja": "丘",
+    "sound": "구",
+    "meaning": "언덕",
+    "level": "高",
+    "order": 195
+  },
+  {
+    "hanja": "俱",
+    "sound": "구",
+    "meaning": "함께",
+    "level": "高",
+    "order": 196
+  },
+  {
+    "hanja": "具",
+    "sound": "구",
+    "meaning": "갖출",
+    "level": "高",
+    "order": 197
+  },
+  {
+    "hanja": "區",
+    "sound": "구",
+    "meaning": "구분할",
+    "level": "高",
+    "order": 198
+  },
+  {
+    "hanja": "懼",
+    "sound": "구",
+    "meaning": "두려워할",
+    "level": "高",
+    "order": 199
+  },
+  {
+    "hanja": "拘",
+    "sound": "구",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 200
+  },
+  {
+    "hanja": "構",
+    "sound": "구",
+    "meaning": "얽을",
+    "level": "高",
+    "order": 201
+  },
+  {
+    "hanja": "狗",
+    "sound": "구",
+    "meaning": "개",
+    "level": "高",
+    "order": 202
+  },
+  {
+    "hanja": "球",
+    "sound": "구",
+    "meaning": "공",
+    "level": "高",
+    "order": 203
+  },
+  {
+    "hanja": "苟",
+    "sound": "구",
+    "meaning": "진실로",
+    "level": "高",
+    "order": 204
+  },
+  {
+    "hanja": "驅",
+    "sound": "구",
+    "meaning": "몰",
+    "level": "高",
+    "order": 205
+  },
+  {
+    "hanja": "龜",
+    "sound": "구",
+    "meaning": "땅 이름",
+    "level": "高",
+    "order": 206
+  },
+  {
+    "hanja": "國",
+    "sound": "국",
+    "meaning": "나라",
+    "level": "中",
+    "order": 207
+  },
+  {
+    "hanja": "局",
+    "sound": "국",
+    "meaning": "판",
+    "level": "高",
+    "order": 208
+  },
+  {
+    "hanja": "菊",
+    "sound": "국",
+    "meaning": "국화",
+    "level": "高",
+    "order": 209
+  },
+  {
+    "hanja": "君",
+    "sound": "군",
+    "meaning": "임금",
+    "level": "中",
+    "order": 210
+  },
+  {
+    "hanja": "軍",
+    "sound": "군",
+    "meaning": "군사",
+    "level": "中",
+    "order": 211
+  },
+  {
+    "hanja": "郡",
+    "sound": "군",
+    "meaning": "고을",
+    "level": "中",
+    "order": 212
+  },
+  {
+    "hanja": "群",
+    "sound": "군",
+    "meaning": "무리",
+    "level": "高",
+    "order": 213
+  },
+  {
+    "hanja": "屈",
+    "sound": "굴",
+    "meaning": "굽힐",
+    "level": "高",
+    "order": 214
+  },
+  {
+    "hanja": "弓",
+    "sound": "궁",
+    "meaning": "활",
+    "level": "中",
+    "order": 215
+  },
+  {
+    "hanja": "宮",
+    "sound": "궁",
+    "meaning": "집",
+    "level": "高",
+    "order": 216
+  },
+  {
+    "hanja": "窮",
+    "sound": "궁",
+    "meaning": "다할",
+    "level": "高",
+    "order": 217
+  },
+  {
+    "hanja": "勸",
+    "sound": "권",
+    "meaning": "권할",
+    "level": "中",
+    "order": 218
+  },
+  {
+    "hanja": "卷",
+    "sound": "권",
+    "meaning": "책",
+    "level": "中",
+    "order": 219
+  },
+  {
+    "hanja": "權",
+    "sound": "권",
+    "meaning": "권세",
+    "level": "中",
+    "order": 220
+  },
+  {
+    "hanja": "券",
+    "sound": "권",
+    "meaning": "문서",
+    "level": "高",
+    "order": 221
+  },
+  {
+    "hanja": "拳",
+    "sound": "권",
+    "meaning": "주먹",
+    "level": "高",
+    "order": 222
+  },
+  {
+    "hanja": "厥",
+    "sound": "궐",
+    "meaning": "그",
+    "level": "高",
+    "order": 223
+  },
+  {
+    "hanja": "軌",
+    "sound": "궤",
+    "meaning": "바퀴 자국",
+    "level": "高",
+    "order": 224
+  },
+  {
+    "hanja": "歸",
+    "sound": "귀",
+    "meaning": "돌아갈",
+    "level": "中",
+    "order": 225
+  },
+  {
+    "hanja": "貴",
+    "sound": "귀",
+    "meaning": "귀할",
+    "level": "中",
+    "order": 226
+  },
+  {
+    "hanja": "鬼",
+    "sound": "귀",
+    "meaning": "귀신",
+    "level": "高",
+    "order": 227
+  },
+  {
+    "hanja": "叫",
+    "sound": "규",
+    "meaning": "부르짖을",
+    "level": "高",
+    "order": 228
+  },
+  {
+    "hanja": "糾",
+    "sound": "규",
+    "meaning": "얽힐",
+    "level": "高",
+    "order": 229
+  },
+  {
+    "hanja": "規",
+    "sound": "규",
+    "meaning": "법",
+    "level": "高",
+    "order": 230
+  },
+  {
+    "hanja": "均",
+    "sound": "균",
+    "meaning": "고를",
+    "level": "中",
+    "order": 231
+  },
+  {
+    "hanja": "菌",
+    "sound": "균",
+    "meaning": "버섯",
+    "level": "高",
+    "order": 232
+  },
+  {
+    "hanja": "極",
+    "sound": "극",
+    "meaning": "다할",
+    "level": "中",
+    "order": 233
+  },
+  {
+    "hanja": "克",
+    "sound": "극",
+    "meaning": "이길",
+    "level": "高",
+    "order": 234
+  },
+  {
+    "hanja": "劇",
+    "sound": "극",
+    "meaning": "심할",
+    "level": "高",
+    "order": 235
+  },
+  {
+    "hanja": "勤",
+    "sound": "근",
+    "meaning": "부지런할",
+    "level": "中",
+    "order": 236
+  },
+  {
+    "hanja": "根",
+    "sound": "근",
+    "meaning": "뿌리",
+    "level": "中",
+    "order": 237
+  },
+  {
+    "hanja": "近",
+    "sound": "근",
+    "meaning": "가까울",
+    "level": "中",
+    "order": 238
+  },
+  {
+    "hanja": "僅",
+    "sound": "근",
+    "meaning": "겨우",
+    "level": "高",
+    "order": 239
+  },
+  {
+    "hanja": "斤",
+    "sound": "근",
+    "meaning": "도끼",
+    "level": "高",
+    "order": 240
+  },
+  {
+    "hanja": "謹",
+    "sound": "근",
+    "meaning": "삼갈",
+    "level": "高",
+    "order": 241
+  },
+  {
+    "hanja": "今",
+    "sound": "금",
+    "meaning": "이제",
+    "level": "中",
+    "order": 242
+  },
+  {
+    "hanja": "禁",
+    "sound": "금",
+    "meaning": "금할",
+    "level": "中",
+    "order": 243
+  },
+  {
+    "hanja": "金",
+    "sound": "금",
+    "meaning": "쇠",
+    "level": "中",
+    "order": 244
+  },
+  {
+    "hanja": "琴",
+    "sound": "금",
+    "meaning": "거문고",
+    "level": "高",
+    "order": 245
+  },
+  {
+    "hanja": "禽",
+    "sound": "금",
+    "meaning": "날짐승",
+    "level": "高",
+    "order": 246
+  },
+  {
+    "hanja": "錦",
+    "sound": "금",
+    "meaning": "비단",
+    "level": "高",
+    "order": 247
+  },
+  {
+    "hanja": "及",
+    "sound": "급",
+    "meaning": "미칠",
+    "level": "中",
+    "order": 248
+  },
+  {
+    "hanja": "急",
+    "sound": "급",
+    "meaning": "급할",
+    "level": "中",
+    "order": 249
+  },
+  {
+    "hanja": "給",
+    "sound": "급",
+    "meaning": "줄",
+    "level": "中",
+    "order": 250
+  },
+  {
+    "hanja": "級",
+    "sound": "급",
+    "meaning": "등급",
+    "level": "高",
+    "order": 251
+  },
+  {
+    "hanja": "肯",
+    "sound": "긍",
+    "meaning": "즐길",
+    "level": "高",
+    "order": 252
+  },
+  {
+    "hanja": "其",
+    "sound": "기",
+    "meaning": "그",
+    "level": "中",
+    "order": 253
+  },
+  {
+    "hanja": "基",
+    "sound": "기",
+    "meaning": "터",
+    "level": "中",
+    "order": 254
+  },
+  {
+    "hanja": "己",
+    "sound": "기",
+    "meaning": "몸",
+    "level": "中",
+    "order": 255
+  },
+  {
+    "hanja": "幾",
+    "sound": "기",
+    "meaning": "기미",
+    "level": "中",
+    "order": 256
+  },
+  {
+    "hanja": "技",
+    "sound": "기",
+    "meaning": "재주",
+    "level": "中",
+    "order": 257
+  },
+  {
+    "hanja": "旣",
+    "sound": "기",
+    "meaning": "이미",
+    "level": "中",
+    "order": 258
+  },
+  {
+    "hanja": "期",
+    "sound": "기",
+    "meaning": "기약할",
+    "level": "中",
+    "order": 259
+  },
+  {
+    "hanja": "氣",
+    "sound": "기",
+    "meaning": "기운",
+    "level": "中",
+    "order": 260
+  },
+  {
+    "hanja": "記",
+    "sound": "기",
+    "meaning": "기록할",
+    "level": "中",
+    "order": 261
+  },
+  {
+    "hanja": "起",
+    "sound": "기",
+    "meaning": "일어날",
+    "level": "中",
+    "order": 262
+  },
+  {
+    "hanja": "企",
+    "sound": "기",
+    "meaning": "꾀할",
+    "level": "高",
+    "order": 263
+  },
+  {
+    "hanja": "器",
+    "sound": "기",
+    "meaning": "그릇",
+    "level": "高",
+    "order": 264
+  },
+  {
+    "hanja": "奇",
+    "sound": "기",
+    "meaning": "기특할",
+    "level": "高",
+    "order": 265
+  },
+  {
+    "hanja": "寄",
+    "sound": "기",
+    "meaning": "부칠",
+    "level": "高",
+    "order": 266
+  },
+  {
+    "hanja": "忌",
+    "sound": "기",
+    "meaning": "꺼릴",
+    "level": "高",
+    "order": 267
+  },
+  {
+    "hanja": "旗",
+    "sound": "기",
+    "meaning": "기",
+    "level": "高",
+    "order": 268
+  },
+  {
+    "hanja": "棄",
+    "sound": "기",
+    "meaning": "버릴",
+    "level": "高",
+    "order": 269
+  },
+  {
+    "hanja": "機",
+    "sound": "기",
+    "meaning": "틀",
+    "level": "高",
+    "order": 270
+  },
+  {
+    "hanja": "欺",
+    "sound": "기",
+    "meaning": "속일",
+    "level": "高",
+    "order": 271
+  },
+  {
+    "hanja": "畿",
+    "sound": "기",
+    "meaning": "경기",
+    "level": "高",
+    "order": 272
+  },
+  {
+    "hanja": "祈",
+    "sound": "기",
+    "meaning": "빌",
+    "level": "高",
+    "order": 273
+  },
+  {
+    "hanja": "紀",
+    "sound": "기",
+    "meaning": "벼리",
+    "level": "高",
+    "order": 274
+  },
+  {
+    "hanja": "豈",
+    "sound": "기",
+    "meaning": "어찌",
+    "level": "高",
+    "order": 275
+  },
+  {
+    "hanja": "飢",
+    "sound": "기",
+    "meaning": "주릴",
+    "level": "高",
+    "order": 276
+  },
+  {
+    "hanja": "騎",
+    "sound": "기",
+    "meaning": "말 탈",
+    "level": "高",
+    "order": 277
+  },
+  {
+    "hanja": "緊",
+    "sound": "긴",
+    "meaning": "긴할",
+    "level": "高",
+    "order": 278
+  },
+  {
+    "hanja": "吉",
+    "sound": "길",
+    "meaning": "길할",
+    "level": "中",
+    "order": 279
+  },
+  {
+    "hanja": "那",
+    "sound": "나",
+    "meaning": "어찌",
+    "level": "高",
+    "order": 280
+  },
+  {
+    "hanja": "諾",
+    "sound": "낙",
+    "meaning": "허락할",
+    "level": "高",
+    "order": 281
+  },
+  {
+    "hanja": "暖",
+    "sound": "난",
+    "meaning": "따뜻할",
+    "level": "中",
+    "order": 282
+  },
+  {
+    "hanja": "難",
+    "sound": "난",
+    "meaning": "어려울",
+    "level": "中",
+    "order": 283
+  },
+  {
+    "hanja": "南",
+    "sound": "남",
+    "meaning": "남녘",
+    "level": "中",
+    "order": 284
+  },
+  {
+    "hanja": "男",
+    "sound": "남",
+    "meaning": "사내",
+    "level": "中",
+    "order": 285
+  },
+  {
+    "hanja": "納",
+    "sound": "납",
+    "meaning": "들일/바칠",
+    "level": "高",
+    "order": 286
+  },
+  {
+    "hanja": "娘",
+    "sound": "낭",
+    "meaning": "아가씨",
+    "level": "高",
+    "order": 287
+  },
+  {
+    "hanja": "乃",
+    "sound": "내",
+    "meaning": "이에",
+    "level": "中",
+    "order": 288
+  },
+  {
+    "hanja": "內",
+    "sound": "내",
+    "meaning": "안",
+    "level": "中",
+    "order": 289
+  },
+  {
+    "hanja": "奈",
+    "sound": "내",
+    "meaning": "어찌",
+    "level": "高",
+    "order": 290
+  },
+  {
+    "hanja": "耐",
+    "sound": "내",
+    "meaning": "견딜",
+    "level": "高",
+    "order": 291
+  },
+  {
+    "hanja": "女",
+    "sound": "녀",
+    "meaning": "계집",
+    "level": "中",
+    "order": 292
+  },
+  {
+    "hanja": "年",
+    "sound": "년",
+    "meaning": "해",
+    "level": "中",
+    "order": 293
+  },
+  {
+    "hanja": "念",
+    "sound": "념",
+    "meaning": "생각",
+    "level": "中",
+    "order": 294
+  },
+  {
+    "hanja": "寧",
+    "sound": "녕",
+    "meaning": "편안할",
+    "level": "高",
+    "order": 295
+  },
+  {
+    "hanja": "怒",
+    "sound": "노",
+    "meaning": "성낼",
+    "level": "中",
+    "order": 296
+  },
+  {
+    "hanja": "努",
+    "sound": "노",
+    "meaning": "힘쓸",
+    "level": "高",
+    "order": 297
+  },
+  {
+    "hanja": "奴",
+    "sound": "노",
+    "meaning": "종",
+    "level": "高",
+    "order": 298
+  },
+  {
+    "hanja": "農",
+    "sound": "농",
+    "meaning": "농사",
+    "level": "中",
+    "order": 299
+  },
+  {
+    "hanja": "惱",
+    "sound": "뇌",
+    "meaning": "괴로워할",
+    "level": "高",
+    "order": 300
+  },
+  {
+    "hanja": "腦",
+    "sound": "뇌",
+    "meaning": "골",
+    "level": "高",
+    "order": 301
+  },
+  {
+    "hanja": "能",
+    "sound": "능",
+    "meaning": "능할",
+    "level": "中",
+    "order": 302
+  },
+  {
+    "hanja": "泥",
+    "sound": "니",
+    "meaning": "진흙",
+    "level": "高",
+    "order": 303
+  },
+  {
+    "hanja": "多",
+    "sound": "다",
+    "meaning": "많을",
+    "level": "中",
+    "order": 304
+  },
+  {
+    "hanja": "茶",
+    "sound": "다",
+    "meaning": "차",
+    "level": "高",
+    "order": 305
+  },
+  {
+    "hanja": "丹",
+    "sound": "단",
+    "meaning": "붉을",
+    "level": "中",
+    "order": 306
+  },
+  {
+    "hanja": "但",
+    "sound": "단",
+    "meaning": "다만",
+    "level": "中",
+    "order": 307
+  },
+  {
+    "hanja": "單",
+    "sound": "단",
+    "meaning": "홑",
+    "level": "中",
+    "order": 308
+  },
+  {
+    "hanja": "短",
+    "sound": "단",
+    "meaning": "짧을",
+    "level": "中",
+    "order": 309
+  },
+  {
+    "hanja": "端",
+    "sound": "단",
+    "meaning": "끝",
+    "level": "中",
+    "order": 310
+  },
+  {
+    "hanja": "團",
+    "sound": "단",
+    "meaning": "둥글",
+    "level": "高",
+    "order": 311
+  },
+  {
+    "hanja": "壇",
+    "sound": "단",
+    "meaning": "단",
+    "level": "高",
+    "order": 312
+  },
+  {
+    "hanja": "斷",
+    "sound": "단",
+    "meaning": "끊을",
+    "level": "高",
+    "order": 313
+  },
+  {
+    "hanja": "旦",
+    "sound": "단",
+    "meaning": "아침",
+    "level": "高",
+    "order": 314
+  },
+  {
+    "hanja": "檀",
+    "sound": "단",
+    "meaning": "박달나무",
+    "level": "高",
+    "order": 315
+  },
+  {
+    "hanja": "段",
+    "sound": "단",
+    "meaning": "층계",
+    "level": "高",
+    "order": 316
+  },
+  {
+    "hanja": "達",
+    "sound": "달",
+    "meaning": "통달할",
+    "level": "中",
+    "order": 317
+  },
+  {
+    "hanja": "談",
+    "sound": "담",
+    "meaning": "말씀",
+    "level": "中",
+    "order": 318
+  },
+  {
+    "hanja": "擔",
+    "sound": "담",
+    "meaning": "멜",
+    "level": "高",
+    "order": 319
+  },
+  {
+    "hanja": "淡",
+    "sound": "담",
+    "meaning": "맑을",
+    "level": "高",
+    "order": 320
+  },
+  {
+    "hanja": "答",
+    "sound": "답",
+    "meaning": "대답",
+    "level": "中",
+    "order": 321
+  },
+  {
+    "hanja": "畓",
+    "sound": "답",
+    "meaning": "논",
+    "level": "高",
+    "order": 322
+  },
+  {
+    "hanja": "踏",
+    "sound": "답",
+    "meaning": "밟을",
+    "level": "高",
+    "order": 323
+  },
+  {
+    "hanja": "堂",
+    "sound": "당",
+    "meaning": "집",
+    "level": "中",
+    "order": 324
+  },
+  {
+    "hanja": "當",
+    "sound": "당",
+    "meaning": "마땅",
+    "level": "中",
+    "order": 325
+  },
+  {
+    "hanja": "唐",
+    "sound": "당",
+    "meaning": "당나라",
+    "level": "高",
+    "order": 326
+  },
+  {
+    "hanja": "糖",
+    "sound": "당",
+    "meaning": "사탕",
+    "level": "高",
+    "order": 327
+  },
+  {
+    "hanja": "黨",
+    "sound": "당",
+    "meaning": "무리",
+    "level": "高",
+    "order": 328
+  },
+  {
+    "hanja": "代",
+    "sound": "대",
+    "meaning": "대신할",
+    "level": "中",
+    "order": 329
+  },
+  {
+    "hanja": "大",
+    "sound": "대",
+    "meaning": "큰",
+    "level": "中",
+    "order": 330
+  },
+  {
+    "hanja": "對",
+    "sound": "대",
+    "meaning": "대할",
+    "level": "中",
+    "order": 331
+  },
+  {
+    "hanja": "待",
+    "sound": "대",
+    "meaning": "기다릴",
+    "level": "中",
+    "order": 332
+  },
+  {
+    "hanja": "帶",
+    "sound": "대",
+    "meaning": "띠",
+    "level": "高",
+    "order": 333
+  },
+  {
+    "hanja": "臺",
+    "sound": "대",
+    "meaning": "대",
+    "level": "高",
+    "order": 334
+  },
+  {
+    "hanja": "貸",
+    "sound": "대",
+    "meaning": "빌릴",
+    "level": "高",
+    "order": 335
+  },
+  {
+    "hanja": "隊",
+    "sound": "대",
+    "meaning": "무리",
+    "level": "高",
+    "order": 336
+  },
+  {
+    "hanja": "德",
+    "sound": "덕",
+    "meaning": "클",
+    "level": "中",
+    "order": 337
+  },
+  {
+    "hanja": "刀",
+    "sound": "도",
+    "meaning": "칼",
+    "level": "中",
+    "order": 338
+  },
+  {
+    "hanja": "到",
+    "sound": "도",
+    "meaning": "이를",
+    "level": "中",
+    "order": 339
+  },
+  {
+    "hanja": "圖",
+    "sound": "도",
+    "meaning": "그림",
+    "level": "中",
+    "order": 340
+  },
+  {
+    "hanja": "島",
+    "sound": "도",
+    "meaning": "섬",
+    "level": "中",
+    "order": 341
+  },
+  {
+    "hanja": "度",
+    "sound": "도",
+    "meaning": "법도",
+    "level": "中",
+    "order": 342
+  },
+  {
+    "hanja": "徒",
+    "sound": "도",
+    "meaning": "무리",
+    "level": "中",
+    "order": 343
+  },
+  {
+    "hanja": "道",
+    "sound": "도",
+    "meaning": "길",
+    "level": "中",
+    "order": 344
+  },
+  {
+    "hanja": "都",
+    "sound": "도",
+    "meaning": "도읍",
+    "level": "中",
+    "order": 345
+  },
+  {
+    "hanja": "倒",
+    "sound": "도",
+    "meaning": "넘어질",
+    "level": "高",
+    "order": 346
+  },
+  {
+    "hanja": "塗",
+    "sound": "도",
+    "meaning": "칠할",
+    "level": "高",
+    "order": 347
+  },
+  {
+    "hanja": "導",
+    "sound": "도",
+    "meaning": "이끌",
+    "level": "高",
+    "order": 348
+  },
+  {
+    "hanja": "挑",
+    "sound": "도",
+    "meaning": "돋울",
+    "level": "高",
+    "order": 349
+  },
+  {
+    "hanja": "桃",
+    "sound": "도",
+    "meaning": "복숭아",
+    "level": "高",
+    "order": 350
+  },
+  {
+    "hanja": "渡",
+    "sound": "도",
+    "meaning": "건널",
+    "level": "高",
+    "order": 351
+  },
+  {
+    "hanja": "盜",
+    "sound": "도",
+    "meaning": "훔칠",
+    "level": "高",
+    "order": 352
+  },
+  {
+    "hanja": "稻",
+    "sound": "도",
+    "meaning": "벼",
+    "level": "高",
+    "order": 353
+  },
+  {
+    "hanja": "跳",
+    "sound": "도",
+    "meaning": "뛸",
+    "level": "高",
+    "order": 354
+  },
+  {
+    "hanja": "逃",
+    "sound": "도",
+    "meaning": "달아날",
+    "level": "高",
+    "order": 355
+  },
+  {
+    "hanja": "途",
+    "sound": "도",
+    "meaning": "길",
+    "level": "高",
+    "order": 356
+  },
+  {
+    "hanja": "陶",
+    "sound": "도",
+    "meaning": "질그릇",
+    "level": "高",
+    "order": 357
+  },
+  {
+    "hanja": "獨",
+    "sound": "독",
+    "meaning": "홀로",
+    "level": "中",
+    "order": 358
+  },
+  {
+    "hanja": "讀",
+    "sound": "독",
+    "meaning": "읽을",
+    "level": "中",
+    "order": 359
+  },
+  {
+    "hanja": "毒",
+    "sound": "독",
+    "meaning": "독",
+    "level": "高",
+    "order": 360
+  },
+  {
+    "hanja": "督",
+    "sound": "독",
+    "meaning": "감독할",
+    "level": "高",
+    "order": 361
+  },
+  {
+    "hanja": "篤",
+    "sound": "독",
+    "meaning": "도타울",
+    "level": "高",
+    "order": 362
+  },
+  {
+    "hanja": "敦",
+    "sound": "돈",
+    "meaning": "도타울",
+    "level": "高",
+    "order": 363
+  },
+  {
+    "hanja": "豚",
+    "sound": "돈",
+    "meaning": "돼지",
+    "level": "高",
+    "order": 364
+  },
+  {
+    "hanja": "突",
+    "sound": "돌",
+    "meaning": "갑자기",
+    "level": "高",
+    "order": 365
+  },
+  {
+    "hanja": "冬",
+    "sound": "동",
+    "meaning": "겨울",
+    "level": "中",
+    "order": 366
+  },
+  {
+    "hanja": "動",
+    "sound": "동",
+    "meaning": "움직일",
+    "level": "中",
+    "order": 367
+  },
+  {
+    "hanja": "同",
+    "sound": "동",
+    "meaning": "한가지",
+    "level": "中",
+    "order": 368
+  },
+  {
+    "hanja": "東",
+    "sound": "동",
+    "meaning": "동녘",
+    "level": "中",
+    "order": 369
+  },
+  {
+    "hanja": "洞",
+    "sound": "동",
+    "meaning": "골",
+    "level": "中",
+    "order": 370
+  },
+  {
+    "hanja": "童",
+    "sound": "동",
+    "meaning": "아이",
+    "level": "中",
+    "order": 371
+  },
+  {
+    "hanja": "凍",
+    "sound": "동",
+    "meaning": "얼",
+    "level": "高",
+    "order": 372
+  },
+  {
+    "hanja": "銅",
+    "sound": "동",
+    "meaning": "구리",
+    "level": "高",
+    "order": 373
+  },
+  {
+    "hanja": "斗",
+    "sound": "두",
+    "meaning": "말",
+    "level": "中",
+    "order": 374
+  },
+  {
+    "hanja": "豆",
+    "sound": "두",
+    "meaning": "콩",
+    "level": "中",
+    "order": 375
+  },
+  {
+    "hanja": "頭",
+    "sound": "두",
+    "meaning": "머리",
+    "level": "中",
+    "order": 376
+  },
+  {
+    "hanja": "屯",
+    "sound": "둔",
+    "meaning": "진 칠",
+    "level": "高",
+    "order": 377
+  },
+  {
+    "hanja": "鈍",
+    "sound": "둔",
+    "meaning": "무딜",
+    "level": "高",
+    "order": 378
+  },
+  {
+    "hanja": "得",
+    "sound": "득",
+    "meaning": "얻을",
+    "level": "中",
+    "order": 379
+  },
+  {
+    "hanja": "燈",
+    "sound": "등",
+    "meaning": "등",
+    "level": "中",
+    "order": 380
+  },
+  {
+    "hanja": "登",
+    "sound": "등",
+    "meaning": "오를",
+    "level": "中",
+    "order": 381
+  },
+  {
+    "hanja": "等",
+    "sound": "등",
+    "meaning": "무리",
+    "level": "中",
+    "order": 382
+  },
+  {
+    "hanja": "騰",
+    "sound": "등",
+    "meaning": "오를",
+    "level": "高",
+    "order": 383
+  },
+  {
+    "hanja": "羅",
+    "sound": "라",
+    "meaning": "벌일",
+    "level": "高",
+    "order": 384
+  },
+  {
+    "hanja": "樂",
+    "sound": "락",
+    "meaning": "즐길",
+    "level": "中",
+    "order": 385
+  },
+  {
+    "hanja": "落",
+    "sound": "락",
+    "meaning": "떨어질",
+    "level": "中",
+    "order": 386
+  },
+  {
+    "hanja": "絡",
+    "sound": "락",
+    "meaning": "이을",
+    "level": "高",
+    "order": 387
+  },
+  {
+    "hanja": "卵",
+    "sound": "란",
+    "meaning": "알",
+    "level": "中",
+    "order": 388
+  },
+  {
+    "hanja": "亂",
+    "sound": "란",
+    "meaning": "어지러울",
+    "level": "高",
+    "order": 389
+  },
+  {
+    "hanja": "欄",
+    "sound": "란",
+    "meaning": "난간",
+    "level": "高",
+    "order": 390
+  },
+  {
+    "hanja": "蘭",
+    "sound": "란",
+    "meaning": "난초",
+    "level": "高",
+    "order": 391
+  },
+  {
+    "hanja": "濫",
+    "sound": "람",
+    "meaning": "넘칠",
+    "level": "高",
+    "order": 392
+  },
+  {
+    "hanja": "覽",
+    "sound": "람",
+    "meaning": "볼",
+    "level": "高",
+    "order": 393
+  },
+  {
+    "hanja": "浪",
+    "sound": "랑",
+    "meaning": "물결",
+    "level": "中",
+    "order": 394
+  },
+  {
+    "hanja": "郞",
+    "sound": "랑",
+    "meaning": "사내",
+    "level": "中",
+    "order": 395
+  },
+  {
+    "hanja": "廊",
+    "sound": "랑",
+    "meaning": "사랑채",
+    "level": "高",
+    "order": 396
+  },
+  {
+    "hanja": "來",
+    "sound": "래",
+    "meaning": "올",
+    "level": "中",
+    "order": 397
+  },
+  {
+    "hanja": "冷",
+    "sound": "랭",
+    "meaning": "찰",
+    "level": "中",
+    "order": 398
+  },
+  {
+    "hanja": "掠",
+    "sound": "략",
+    "meaning": "노략질할",
+    "level": "高",
+    "order": 399
+  },
+  {
+    "hanja": "略",
+    "sound": "략",
+    "meaning": "간략할/다스릴",
+    "level": "高",
+    "order": 400
+  },
+  {
+    "hanja": "兩",
+    "sound": "량",
+    "meaning": "두",
+    "level": "中",
+    "order": 401
+  },
+  {
+    "hanja": "涼",
+    "sound": "량",
+    "meaning": "서늘할",
+    "level": "中",
+    "order": 402
+  },
+  {
+    "hanja": "良",
+    "sound": "량",
+    "meaning": "어질",
+    "level": "中",
+    "order": 403
+  },
+  {
+    "hanja": "量",
+    "sound": "량",
+    "meaning": "헤아릴",
+    "level": "中",
+    "order": 404
+  },
+  {
+    "hanja": "梁",
+    "sound": "량",
+    "meaning": "들보",
+    "level": "高",
+    "order": 405
+  },
+  {
+    "hanja": "糧",
+    "sound": "량",
+    "meaning": "양식",
+    "level": "高",
+    "order": 406
+  },
+  {
+    "hanja": "諒",
+    "sound": "량",
+    "meaning": "살필",
+    "level": "高",
+    "order": 407
+  },
+  {
+    "hanja": "旅",
+    "sound": "려",
+    "meaning": "나그네",
+    "level": "中",
+    "order": 408
+  },
+  {
+    "hanja": "勵",
+    "sound": "려",
+    "meaning": "힘쓸",
+    "level": "高",
+    "order": 409
+  },
+  {
+    "hanja": "慮",
+    "sound": "려",
+    "meaning": "생각할",
+    "level": "高",
+    "order": 410
+  },
+  {
+    "hanja": "麗",
+    "sound": "려",
+    "meaning": "고울",
+    "level": "高",
+    "order": 411
+  },
+  {
+    "hanja": "力",
+    "sound": "력",
+    "meaning": "힘",
+    "level": "中",
+    "order": 412
+  },
+  {
+    "hanja": "歷",
+    "sound": "력",
+    "meaning": "지날",
+    "level": "中",
+    "order": 413
+  },
+  {
+    "hanja": "曆",
+    "sound": "력",
+    "meaning": "책력",
+    "level": "高",
+    "order": 414
+  },
+  {
+    "hanja": "練",
+    "sound": "련",
+    "meaning": "익힐",
+    "level": "中",
+    "order": 415
+  },
+  {
+    "hanja": "連",
+    "sound": "련",
+    "meaning": "잇닿을",
+    "level": "中",
+    "order": 416
+  },
+  {
+    "hanja": "憐",
+    "sound": "련",
+    "meaning": "불쌍히 여길",
+    "level": "高",
+    "order": 417
+  },
+  {
+    "hanja": "戀",
+    "sound": "련",
+    "meaning": "그리워할/사모할",
+    "level": "高",
+    "order": 418
+  },
+  {
+    "hanja": "聯",
+    "sound": "련",
+    "meaning": "연이을",
+    "level": "高",
+    "order": 419
+  },
+  {
+    "hanja": "蓮",
+    "sound": "련",
+    "meaning": "연",
+    "level": "高",
+    "order": 420
+  },
+  {
+    "hanja": "鍊",
+    "sound": "련",
+    "meaning": "불릴",
+    "level": "高",
+    "order": 421
+  },
+  {
+    "hanja": "列",
+    "sound": "렬",
+    "meaning": "벌일",
+    "level": "中",
+    "order": 422
+  },
+  {
+    "hanja": "烈",
+    "sound": "렬",
+    "meaning": "세찰",
+    "level": "中",
+    "order": 423
+  },
+  {
+    "hanja": "劣",
+    "sound": "렬",
+    "meaning": "못할",
+    "level": "高",
+    "order": 424
+  },
+  {
+    "hanja": "裂",
+    "sound": "렬",
+    "meaning": "찢을",
+    "level": "高",
+    "order": 425
+  },
+  {
+    "hanja": "廉",
+    "sound": "렴",
+    "meaning": "청렴할",
+    "level": "高",
+    "order": 426
+  },
+  {
+    "hanja": "獵",
+    "sound": "렵",
+    "meaning": "사냥",
+    "level": "高",
+    "order": 427
+  },
+  {
+    "hanja": "令",
+    "sound": "령",
+    "meaning": "하여금/명령",
+    "level": "中",
+    "order": 428
+  },
+  {
+    "hanja": "領",
+    "sound": "령",
+    "meaning": "거느릴",
+    "level": "中",
+    "order": 429
+  },
+  {
+    "hanja": "嶺",
+    "sound": "령",
+    "meaning": "재",
+    "level": "高",
+    "order": 430
+  },
+  {
+    "hanja": "零",
+    "sound": "령",
+    "meaning": "떨어질",
+    "level": "高",
+    "order": 431
+  },
+  {
+    "hanja": "靈",
+    "sound": "령",
+    "meaning": "신령",
+    "level": "高",
+    "order": 432
+  },
+  {
+    "hanja": "例",
+    "sound": "례",
+    "meaning": "법식",
+    "level": "中",
+    "order": 433
+  },
+  {
+    "hanja": "禮",
+    "sound": "례",
+    "meaning": "예도",
+    "level": "中",
+    "order": 434
+  },
+  {
+    "hanja": "隷",
+    "sound": "례",
+    "meaning": "종",
+    "level": "高",
+    "order": 435
+  },
+  {
+    "hanja": "勞",
+    "sound": "로",
+    "meaning": "일할",
+    "level": "中",
+    "order": 436
+  },
+  {
+    "hanja": "老",
+    "sound": "로",
+    "meaning": "늙을",
+    "level": "中",
+    "order": 437
+  },
+  {
+    "hanja": "路",
+    "sound": "로",
+    "meaning": "길",
+    "level": "中",
+    "order": 438
+  },
+  {
+    "hanja": "露",
+    "sound": "로",
+    "meaning": "이슬",
+    "level": "中",
+    "order": 439
+  },
+  {
+    "hanja": "爐",
+    "sound": "로",
+    "meaning": "화로",
+    "level": "高",
+    "order": 440
+  },
+  {
+    "hanja": "綠",
+    "sound": "록",
+    "meaning": "푸를",
+    "level": "中",
+    "order": 441
+  },
+  {
+    "hanja": "祿",
+    "sound": "록",
+    "meaning": "녹",
+    "level": "高",
+    "order": 442
+  },
+  {
+    "hanja": "錄",
+    "sound": "록",
+    "meaning": "기록할",
+    "level": "高",
+    "order": 443
+  },
+  {
+    "hanja": "鹿",
+    "sound": "록",
+    "meaning": "사슴",
+    "level": "高",
+    "order": 444
+  },
+  {
+    "hanja": "論",
+    "sound": "론",
+    "meaning": "논할",
+    "level": "中",
+    "order": 445
+  },
+  {
+    "hanja": "弄",
+    "sound": "롱",
+    "meaning": "희롱할",
+    "level": "高",
+    "order": 446
+  },
+  {
+    "hanja": "賴",
+    "sound": "뢰",
+    "meaning": "의뢰할",
+    "level": "高",
+    "order": 447
+  },
+  {
+    "hanja": "雷",
+    "sound": "뢰",
+    "meaning": "우레",
+    "level": "高",
+    "order": 448
+  },
+  {
+    "hanja": "料",
+    "sound": "료",
+    "meaning": "헤아릴",
+    "level": "中",
+    "order": 449
+  },
+  {
+    "hanja": "了",
+    "sound": "료",
+    "meaning": "마칠",
+    "level": "高",
+    "order": 450
+  },
+  {
+    "hanja": "僚",
+    "sound": "료",
+    "meaning": "벗",
+    "level": "高",
+    "order": 451
+  },
+  {
+    "hanja": "龍",
+    "sound": "룡",
+    "meaning": "용",
+    "level": "高",
+    "order": 452
+  },
+  {
+    "hanja": "屢",
+    "sound": "루",
+    "meaning": "여러",
+    "level": "高",
+    "order": 453
+  },
+  {
+    "hanja": "樓",
+    "sound": "루",
+    "meaning": "다락",
+    "level": "高",
+    "order": 454
+  },
+  {
+    "hanja": "淚",
+    "sound": "루",
+    "meaning": "눈물",
+    "level": "高",
+    "order": 455
+  },
+  {
+    "hanja": "漏",
+    "sound": "루",
+    "meaning": "샐",
+    "level": "高",
+    "order": 456
+  },
+  {
+    "hanja": "累",
+    "sound": "루",
+    "meaning": "묶을",
+    "level": "高",
+    "order": 457
+  },
+  {
+    "hanja": "柳",
+    "sound": "류",
+    "meaning": "버들",
+    "level": "中",
+    "order": 458
+  },
+  {
+    "hanja": "流",
+    "sound": "류",
+    "meaning": "흐를",
+    "level": "中",
+    "order": 459
+  },
+  {
+    "hanja": "留",
+    "sound": "류",
+    "meaning": "머무를",
+    "level": "中",
+    "order": 460
+  },
+  {
+    "hanja": "類",
+    "sound": "류",
+    "meaning": "무리",
+    "level": "高",
+    "order": 461
+  },
+  {
+    "hanja": "六",
+    "sound": "륙",
+    "meaning": "여섯",
+    "level": "中",
+    "order": 462
+  },
+  {
+    "hanja": "陸",
+    "sound": "륙",
+    "meaning": "뭍",
+    "level": "中",
+    "order": 463
+  },
+  {
+    "hanja": "倫",
+    "sound": "륜",
+    "meaning": "인륜",
+    "level": "中",
+    "order": 464
+  },
+  {
+    "hanja": "輪",
+    "sound": "륜",
+    "meaning": "바퀴",
+    "level": "高",
+    "order": 465
+  },
+  {
+    "hanja": "律",
+    "sound": "률",
+    "meaning": "법",
+    "level": "中",
+    "order": 466
+  },
+  {
+    "hanja": "栗",
+    "sound": "률",
+    "meaning": "밤",
+    "level": "高",
+    "order": 467
+  },
+  {
+    "hanja": "率",
+    "sound": "률",
+    "meaning": "헤아릴",
+    "level": "高",
+    "order": 468
+  },
+  {
+    "hanja": "隆",
+    "sound": "륭",
+    "meaning": "높을",
+    "level": "高",
+    "order": 469
+  },
+  {
+    "hanja": "陵",
+    "sound": "릉",
+    "meaning": "언덕",
+    "level": "高",
+    "order": 470
+  },
+  {
+    "hanja": "利",
+    "sound": "리",
+    "meaning": "이로울",
+    "level": "中",
+    "order": 471
+  },
+  {
+    "hanja": "李",
+    "sound": "리",
+    "meaning": "오얏",
+    "level": "中",
+    "order": 472
+  },
+  {
+    "hanja": "理",
+    "sound": "리",
+    "meaning": "다스릴",
+    "level": "中",
+    "order": 473
+  },
+  {
+    "hanja": "里",
+    "sound": "리",
+    "meaning": "마을",
+    "level": "中",
+    "order": 474
+  },
+  {
+    "hanja": "吏",
+    "sound": "리",
+    "meaning": "벼슬아치",
+    "level": "高",
+    "order": 475
+  },
+  {
+    "hanja": "履",
+    "sound": "리",
+    "meaning": "밟을",
+    "level": "高",
+    "order": 476
+  },
+  {
+    "hanja": "梨",
+    "sound": "리",
+    "meaning": "배나무",
+    "level": "高",
+    "order": 477
+  },
+  {
+    "hanja": "裏",
+    "sound": "리",
+    "meaning": "속",
+    "level": "高",
+    "order": 478
+  },
+  {
+    "hanja": "離",
+    "sound": "리",
+    "meaning": "떠날",
+    "level": "高",
+    "order": 479
+  },
+  {
+    "hanja": "鄰",
+    "sound": "린",
+    "meaning": "이웃",
+    "level": "高",
+    "order": 480
+  },
+  {
+    "hanja": "林",
+    "sound": "림",
+    "meaning": "수풀",
+    "level": "中",
+    "order": 481
+  },
+  {
+    "hanja": "臨",
+    "sound": "림",
+    "meaning": "임할",
+    "level": "高",
+    "order": 482
+  },
+  {
+    "hanja": "立",
+    "sound": "립",
+    "meaning": "설",
+    "level": "中",
+    "order": 483
+  },
+  {
+    "hanja": "馬",
+    "sound": "마",
+    "meaning": "말",
+    "level": "中",
+    "order": 484
+  },
+  {
+    "hanja": "磨",
+    "sound": "마",
+    "meaning": "갈",
+    "level": "高",
+    "order": 485
+  },
+  {
+    "hanja": "麻",
+    "sound": "마",
+    "meaning": "삼",
+    "level": "高",
+    "order": 486
+  },
+  {
+    "hanja": "莫",
+    "sound": "막",
+    "meaning": "없을",
+    "level": "中",
+    "order": 487
+  },
+  {
+    "hanja": "幕",
+    "sound": "막",
+    "meaning": "장막",
+    "level": "高",
+    "order": 488
+  },
+  {
+    "hanja": "漠",
+    "sound": "막",
+    "meaning": "넓을/사막",
+    "level": "高",
+    "order": 489
+  },
+  {
+    "hanja": "晩",
+    "sound": "만",
+    "meaning": "늦을",
+    "level": "中",
+    "order": 490
+  },
+  {
+    "hanja": "滿",
+    "sound": "만",
+    "meaning": "찰",
+    "level": "中",
+    "order": 491
+  },
+  {
+    "hanja": "萬",
+    "sound": "만",
+    "meaning": "일만",
+    "level": "中",
+    "order": 492
+  },
+  {
+    "hanja": "慢",
+    "sound": "만",
+    "meaning": "게으를/거만할",
+    "level": "高",
+    "order": 493
+  },
+  {
+    "hanja": "漫",
+    "sound": "만",
+    "meaning": "질펀할",
+    "level": "高",
+    "order": 494
+  },
+  {
+    "hanja": "末",
+    "sound": "말",
+    "meaning": "끝",
+    "level": "中",
+    "order": 495
+  },
+  {
+    "hanja": "亡",
+    "sound": "망",
+    "meaning": "망할",
+    "level": "中",
+    "order": 496
+  },
+  {
+    "hanja": "忙",
+    "sound": "망",
+    "meaning": "바쁠",
+    "level": "中",
+    "order": 497
+  },
+  {
+    "hanja": "忘",
+    "sound": "망",
+    "meaning": "잊을",
+    "level": "中",
+    "order": 498
+  },
+  {
+    "hanja": "望",
+    "sound": "망",
+    "meaning": "바랄",
+    "level": "中",
+    "order": 499
+  },
+  {
+    "hanja": "妄",
+    "sound": "망",
+    "meaning": "망령될",
+    "level": "高",
+    "order": 500
+  },
+  {
+    "hanja": "罔",
+    "sound": "망",
+    "meaning": "그물",
+    "level": "高",
+    "order": 501
+  },
+  {
+    "hanja": "茫",
+    "sound": "망",
+    "meaning": "아득할",
+    "level": "高",
+    "order": 502
+  },
+  {
+    "hanja": "妹",
+    "sound": "매",
+    "meaning": "누이",
+    "level": "中",
+    "order": 503
+  },
+  {
+    "hanja": "每",
+    "sound": "매",
+    "meaning": "매양",
+    "level": "中",
+    "order": 504
+  },
+  {
+    "hanja": "買",
+    "sound": "매",
+    "meaning": "살",
+    "level": "中",
+    "order": 505
+  },
+  {
+    "hanja": "賣",
+    "sound": "매",
+    "meaning": "팔",
+    "level": "中",
+    "order": 506
+  },
+  {
+    "hanja": "埋",
+    "sound": "매",
+    "meaning": "묻을",
+    "level": "高",
+    "order": 507
+  },
+  {
+    "hanja": "媒",
+    "sound": "매",
+    "meaning": "중매",
+    "level": "高",
+    "order": 508
+  },
+  {
+    "hanja": "梅",
+    "sound": "매",
+    "meaning": "매화",
+    "level": "高",
+    "order": 509
+  },
+  {
+    "hanja": "麥",
+    "sound": "맥",
+    "meaning": "보리",
+    "level": "中",
+    "order": 510
+  },
+  {
+    "hanja": "脈",
+    "sound": "맥",
+    "meaning": "줄기",
+    "level": "高",
+    "order": 511
+  },
+  {
+    "hanja": "孟",
+    "sound": "맹",
+    "meaning": "맏",
+    "level": "高",
+    "order": 512
+  },
+  {
+    "hanja": "猛",
+    "sound": "맹",
+    "meaning": "사나울",
+    "level": "高",
+    "order": 513
+  },
+  {
+    "hanja": "盟",
+    "sound": "맹",
+    "meaning": "맹세",
+    "level": "高",
+    "order": 514
+  },
+  {
+    "hanja": "盲",
+    "sound": "맹",
+    "meaning": "눈멀",
+    "level": "高",
+    "order": 515
+  },
+  {
+    "hanja": "免",
+    "sound": "면",
+    "meaning": "면할",
+    "level": "中",
+    "order": 516
+  },
+  {
+    "hanja": "勉",
+    "sound": "면",
+    "meaning": "힘쓸",
+    "level": "中",
+    "order": 517
+  },
+  {
+    "hanja": "眠",
+    "sound": "면",
+    "meaning": "잘",
+    "level": "中",
+    "order": 518
+  },
+  {
+    "hanja": "面",
+    "sound": "면",
+    "meaning": "낯",
+    "level": "中",
+    "order": 519
+  },
+  {
+    "hanja": "綿",
+    "sound": "면",
+    "meaning": "솜",
+    "level": "高",
+    "order": 520
+  },
+  {
+    "hanja": "滅",
+    "sound": "멸",
+    "meaning": "꺼질",
+    "level": "高",
+    "order": 521
+  },
+  {
+    "hanja": "名",
+    "sound": "명",
+    "meaning": "이름",
+    "level": "中",
+    "order": 522
+  },
+  {
+    "hanja": "命",
+    "sound": "명",
+    "meaning": "목숨",
+    "level": "中",
+    "order": 523
+  },
+  {
+    "hanja": "明",
+    "sound": "명",
+    "meaning": "밝을",
+    "level": "中",
+    "order": 524
+  },
+  {
+    "hanja": "鳴",
+    "sound": "명",
+    "meaning": "울",
+    "level": "中",
+    "order": 525
+  },
+  {
+    "hanja": "冥",
+    "sound": "명",
+    "meaning": "어두울",
+    "level": "高",
+    "order": 526
+  },
+  {
+    "hanja": "銘",
+    "sound": "명",
+    "meaning": "새길",
+    "level": "高",
+    "order": 527
+  },
+  {
+    "hanja": "暮",
+    "sound": "모",
+    "meaning": "저물",
+    "level": "中",
+    "order": 528
+  },
+  {
+    "hanja": "母",
+    "sound": "모",
+    "meaning": "어미",
+    "level": "中",
+    "order": 529
+  },
+  {
+    "hanja": "毛",
+    "sound": "모",
+    "meaning": "털",
+    "level": "中",
+    "order": 530
+  },
+  {
+    "hanja": "侮",
+    "sound": "모",
+    "meaning": "업신여길",
+    "level": "高",
+    "order": 531
+  },
+  {
+    "hanja": "冒",
+    "sound": "모",
+    "meaning": "무릅쓸",
+    "level": "高",
+    "order": 532
+  },
+  {
+    "hanja": "募",
+    "sound": "모",
+    "meaning": "모을",
+    "level": "高",
+    "order": 533
+  },
+  {
+    "hanja": "慕",
+    "sound": "모",
+    "meaning": "그릴",
+    "level": "高",
+    "order": 534
+  },
+  {
+    "hanja": "某",
+    "sound": "모",
+    "meaning": "아무개",
+    "level": "高",
+    "order": 535
+  },
+  {
+    "hanja": "模",
+    "sound": "모",
+    "meaning": "본뜰",
+    "level": "高",
+    "order": 536
+  },
+  {
+    "hanja": "謀",
+    "sound": "모",
+    "meaning": "꾀",
+    "level": "高",
+    "order": 537
+  },
+  {
+    "hanja": "貌",
+    "sound": "모",
+    "meaning": "모양",
+    "level": "高",
+    "order": 538
+  },
+  {
+    "hanja": "木",
+    "sound": "목",
+    "meaning": "나무",
+    "level": "中",
+    "order": 539
+  },
+  {
+    "hanja": "目",
+    "sound": "목",
+    "meaning": "눈",
+    "level": "中",
+    "order": 540
+  },
+  {
+    "hanja": "牧",
+    "sound": "목",
+    "meaning": "칠",
+    "level": "高",
+    "order": 541
+  },
+  {
+    "hanja": "睦",
+    "sound": "목",
+    "meaning": "화목할",
+    "level": "高",
+    "order": 542
+  },
+  {
+    "hanja": "沒",
+    "sound": "몰",
+    "meaning": "빠질/없을",
+    "level": "高",
+    "order": 543
+  },
+  {
+    "hanja": "夢",
+    "sound": "몽",
+    "meaning": "꿈",
+    "level": "高",
+    "order": 544
+  },
+  {
+    "hanja": "蒙",
+    "sound": "몽",
+    "meaning": "입을",
+    "level": "高",
+    "order": 545
+  },
+  {
+    "hanja": "卯",
+    "sound": "묘",
+    "meaning": "토끼",
+    "level": "中",
+    "order": 546
+  },
+  {
+    "hanja": "妙",
+    "sound": "묘",
+    "meaning": "묘할",
+    "level": "中",
+    "order": 547
+  },
+  {
+    "hanja": "墓",
+    "sound": "묘",
+    "meaning": "무덤",
+    "level": "高",
+    "order": 548
+  },
+  {
+    "hanja": "廟",
+    "sound": "묘",
+    "meaning": "사당",
+    "level": "高",
+    "order": 549
+  },
+  {
+    "hanja": "苗",
+    "sound": "묘",
+    "meaning": "모",
+    "level": "高",
+    "order": 550
+  },
+  {
+    "hanja": "務",
+    "sound": "무",
+    "meaning": "힘쓸",
+    "level": "中",
+    "order": 551
+  },
+  {
+    "hanja": "戊",
+    "sound": "무",
+    "meaning": "다섯째 천간",
+    "level": "中",
+    "order": 552
+  },
+  {
+    "hanja": "武",
+    "sound": "무",
+    "meaning": "굳셀",
+    "level": "中",
+    "order": 553
+  },
+  {
+    "hanja": "無",
+    "sound": "무",
+    "meaning": "없을",
+    "level": "中",
+    "order": 554
+  },
+  {
+    "hanja": "舞",
+    "sound": "무",
+    "meaning": "춤출",
+    "level": "中",
+    "order": 555
+  },
+  {
+    "hanja": "茂",
+    "sound": "무",
+    "meaning": "우거질",
+    "level": "中",
+    "order": 556
+  },
+  {
+    "hanja": "貿",
+    "sound": "무",
+    "meaning": "무역할",
+    "level": "高",
+    "order": 557
+  },
+  {
+    "hanja": "霧",
+    "sound": "무",
+    "meaning": "안개",
+    "level": "高",
+    "order": 558
+  },
+  {
+    "hanja": "墨",
+    "sound": "묵",
+    "meaning": "먹",
+    "level": "中",
+    "order": 559
+  },
+  {
+    "hanja": "默",
+    "sound": "묵",
+    "meaning": "잠잠할",
+    "level": "高",
+    "order": 560
+  },
+  {
+    "hanja": "問",
+    "sound": "문",
+    "meaning": "물을",
+    "level": "中",
+    "order": 561
+  },
+  {
+    "hanja": "文",
+    "sound": "문",
+    "meaning": "글월",
+    "level": "中",
+    "order": 562
+  },
+  {
+    "hanja": "聞",
+    "sound": "문",
+    "meaning": "들을",
+    "level": "中",
+    "order": 563
+  },
+  {
+    "hanja": "門",
+    "sound": "문",
+    "meaning": "문",
+    "level": "中",
+    "order": 564
+  },
+  {
+    "hanja": "勿",
+    "sound": "물",
+    "meaning": "말",
+    "level": "中",
+    "order": 565
+  },
+  {
+    "hanja": "物",
+    "sound": "물",
+    "meaning": "물건",
+    "level": "中",
+    "order": 566
+  },
+  {
+    "hanja": "味",
+    "sound": "미",
+    "meaning": "맛",
+    "level": "中",
+    "order": 567
+  },
+  {
+    "hanja": "尾",
+    "sound": "미",
+    "meaning": "꼬리",
+    "level": "中",
+    "order": 568
+  },
+  {
+    "hanja": "未",
+    "sound": "미",
+    "meaning": "아닐",
+    "level": "中",
+    "order": 569
+  },
+  {
+    "hanja": "米",
+    "sound": "미",
+    "meaning": "쌀",
+    "level": "中",
+    "order": 570
+  },
+  {
+    "hanja": "美",
+    "sound": "미",
+    "meaning": "아름다울",
+    "level": "中",
+    "order": 571
+  },
+  {
+    "hanja": "微",
+    "sound": "미",
+    "meaning": "작을",
+    "level": "高",
+    "order": 572
+  },
+  {
+    "hanja": "眉",
+    "sound": "미",
+    "meaning": "눈썹",
+    "level": "高",
+    "order": 573
+  },
+  {
+    "hanja": "迷",
+    "sound": "미",
+    "meaning": "미혹할",
+    "level": "高",
+    "order": 574
+  },
+  {
+    "hanja": "民",
+    "sound": "민",
+    "meaning": "백성",
+    "level": "中",
+    "order": 575
+  },
+  {
+    "hanja": "憫",
+    "sound": "민",
+    "meaning": "민망할",
+    "level": "高",
+    "order": 576
+  },
+  {
+    "hanja": "敏",
+    "sound": "민",
+    "meaning": "재빠를",
+    "level": "高",
+    "order": 577
+  },
+  {
+    "hanja": "密",
+    "sound": "밀",
+    "meaning": "빽빽할",
+    "level": "中",
+    "order": 578
+  },
+  {
+    "hanja": "蜜",
+    "sound": "밀",
+    "meaning": "꿀",
+    "level": "高",
+    "order": 579
+  },
+  {
+    "hanja": "朴",
+    "sound": "박",
+    "meaning": "성/순박할",
+    "level": "中",
+    "order": 580
+  },
+  {
+    "hanja": "博",
+    "sound": "박",
+    "meaning": "넓을",
+    "level": "高",
+    "order": 581
+  },
+  {
+    "hanja": "拍",
+    "sound": "박",
+    "meaning": "칠",
+    "level": "高",
+    "order": 582
+  },
+  {
+    "hanja": "泊",
+    "sound": "박",
+    "meaning": "머무를",
+    "level": "高",
+    "order": 583
+  },
+  {
+    "hanja": "薄",
+    "sound": "박",
+    "meaning": "엷을",
+    "level": "高",
+    "order": 584
+  },
+  {
+    "hanja": "迫",
+    "sound": "박",
+    "meaning": "핍박할/닥칠",
+    "level": "高",
+    "order": 585
+  },
+  {
+    "hanja": "半",
+    "sound": "반",
+    "meaning": "반",
+    "level": "中",
+    "order": 586
+  },
+  {
+    "hanja": "反",
+    "sound": "반",
+    "meaning": "돌아올/뒤집을",
+    "level": "中",
+    "order": 587
+  },
+  {
+    "hanja": "飯",
+    "sound": "반",
+    "meaning": "밥",
+    "level": "中",
+    "order": 588
+  },
+  {
+    "hanja": "伴",
+    "sound": "반",
+    "meaning": "짝",
+    "level": "高",
+    "order": 589
+  },
+  {
+    "hanja": "叛",
+    "sound": "반",
+    "meaning": "배반할",
+    "level": "高",
+    "order": 590
+  },
+  {
+    "hanja": "班",
+    "sound": "반",
+    "meaning": "나눌",
+    "level": "高",
+    "order": 591
+  },
+  {
+    "hanja": "盤",
+    "sound": "반",
+    "meaning": "소반",
+    "level": "高",
+    "order": 592
+  },
+  {
+    "hanja": "般",
+    "sound": "반",
+    "meaning": "가지",
+    "level": "高",
+    "order": 593
+  },
+  {
+    "hanja": "返",
+    "sound": "반",
+    "meaning": "돌이킬",
+    "level": "高",
+    "order": 594
+  },
+  {
+    "hanja": "發",
+    "sound": "발",
+    "meaning": "쏠",
+    "level": "中",
+    "order": 595
+  },
+  {
+    "hanja": "拔",
+    "sound": "발",
+    "meaning": "뺄",
+    "level": "高",
+    "order": 596
+  },
+  {
+    "hanja": "髮",
+    "sound": "발",
+    "meaning": "터럭",
+    "level": "高",
+    "order": 597
+  },
+  {
+    "hanja": "房",
+    "sound": "방",
+    "meaning": "방",
+    "level": "中",
+    "order": 598
+  },
+  {
+    "hanja": "放",
+    "sound": "방",
+    "meaning": "놓을",
+    "level": "中",
+    "order": 599
+  },
+  {
+    "hanja": "方",
+    "sound": "방",
+    "meaning": "모",
+    "level": "中",
+    "order": 600
+  },
+  {
+    "hanja": "訪",
+    "sound": "방",
+    "meaning": "찾을",
+    "level": "中",
+    "order": 601
+  },
+  {
+    "hanja": "防",
+    "sound": "방",
+    "meaning": "막을",
+    "level": "中",
+    "order": 602
+  },
+  {
+    "hanja": "倣",
+    "sound": "방",
+    "meaning": "본뜰",
+    "level": "高",
+    "order": 603
+  },
+  {
+    "hanja": "傍",
+    "sound": "방",
+    "meaning": "곁",
+    "level": "高",
+    "order": 604
+  },
+  {
+    "hanja": "妨",
+    "sound": "방",
+    "meaning": "방해할",
+    "level": "高",
+    "order": 605
+  },
+  {
+    "hanja": "芳",
+    "sound": "방",
+    "meaning": "꽃다울",
+    "level": "高",
+    "order": 606
+  },
+  {
+    "hanja": "邦",
+    "sound": "방",
+    "meaning": "나라",
+    "level": "高",
+    "order": 607
+  },
+  {
+    "hanja": "拜",
+    "sound": "배",
+    "meaning": "절",
+    "level": "中",
+    "order": 608
+  },
+  {
+    "hanja": "杯",
+    "sound": "배",
+    "meaning": "잔",
+    "level": "中",
+    "order": 609
+  },
+  {
+    "hanja": "倍",
+    "sound": "배",
+    "meaning": "곱",
+    "level": "高",
+    "order": 610
+  },
+  {
+    "hanja": "培",
+    "sound": "배",
+    "meaning": "북돋을",
+    "level": "高",
+    "order": 611
+  },
+  {
+    "hanja": "排",
+    "sound": "배",
+    "meaning": "밀칠",
+    "level": "高",
+    "order": 612
+  },
+  {
+    "hanja": "背",
+    "sound": "배",
+    "meaning": "등",
+    "level": "高",
+    "order": 613
+  },
+  {
+    "hanja": "輩",
+    "sound": "배",
+    "meaning": "무리",
+    "level": "高",
+    "order": 614
+  },
+  {
+    "hanja": "配",
+    "sound": "배",
+    "meaning": "나눌",
+    "level": "高",
+    "order": 615
+  },
+  {
+    "hanja": "白",
+    "sound": "백",
+    "meaning": "흰",
+    "level": "中",
+    "order": 616
+  },
+  {
+    "hanja": "百",
+    "sound": "백",
+    "meaning": "일백",
+    "level": "中",
+    "order": 617
+  },
+  {
+    "hanja": "伯",
+    "sound": "백",
+    "meaning": "맏",
+    "level": "高",
+    "order": 618
+  },
+  {
+    "hanja": "番",
+    "sound": "번",
+    "meaning": "차례",
+    "level": "中",
+    "order": 619
+  },
+  {
+    "hanja": "煩",
+    "sound": "번",
+    "meaning": "번거로울",
+    "level": "高",
+    "order": 620
+  },
+  {
+    "hanja": "繁",
+    "sound": "번",
+    "meaning": "번성할/복잡할",
+    "level": "高",
+    "order": 621
+  },
+  {
+    "hanja": "飜",
+    "sound": "번",
+    "meaning": "번역할/날",
+    "level": "高",
+    "order": 622
+  },
+  {
+    "hanja": "伐",
+    "sound": "벌",
+    "meaning": "칠",
+    "level": "中",
+    "order": 623
+  },
+  {
+    "hanja": "罰",
+    "sound": "벌",
+    "meaning": "벌할",
+    "level": "高",
+    "order": 624
+  },
+  {
+    "hanja": "凡",
+    "sound": "범",
+    "meaning": "무릇",
+    "level": "中",
+    "order": 625
+  },
+  {
+    "hanja": "犯",
+    "sound": "범",
+    "meaning": "범할",
+    "level": "高",
+    "order": 626
+  },
+  {
+    "hanja": "範",
+    "sound": "범",
+    "meaning": "법",
+    "level": "高",
+    "order": 627
+  },
+  {
+    "hanja": "法",
+    "sound": "법",
+    "meaning": "법",
+    "level": "中",
+    "order": 628
+  },
+  {
+    "hanja": "壁",
+    "sound": "벽",
+    "meaning": "벽",
+    "level": "高",
+    "order": 629
+  },
+  {
+    "hanja": "碧",
+    "sound": "벽",
+    "meaning": "푸를",
+    "level": "高",
+    "order": 630
+  },
+  {
+    "hanja": "變",
+    "sound": "변",
+    "meaning": "변할",
+    "level": "中",
+    "order": 631
+  },
+  {
+    "hanja": "辨",
+    "sound": "변",
+    "meaning": "분별할",
+    "level": "高",
+    "order": 632
+  },
+  {
+    "hanja": "辯",
+    "sound": "변",
+    "meaning": "말씀",
+    "level": "高",
+    "order": 633
+  },
+  {
+    "hanja": "邊",
+    "sound": "변",
+    "meaning": "가",
+    "level": "高",
+    "order": 634
+  },
+  {
+    "hanja": "別",
+    "sound": "별",
+    "meaning": "나눌",
+    "level": "中",
+    "order": 635
+  },
+  {
+    "hanja": "丙",
+    "sound": "병",
+    "meaning": "남녘",
+    "level": "中",
+    "order": 636
+  },
+  {
+    "hanja": "兵",
+    "sound": "병",
+    "meaning": "병사",
+    "level": "中",
+    "order": 637
+  },
+  {
+    "hanja": "病",
+    "sound": "병",
+    "meaning": "병",
+    "level": "中",
+    "order": 638
+  },
+  {
+    "hanja": "屛",
+    "sound": "병",
+    "meaning": "병풍",
+    "level": "高",
+    "order": 639
+  },
+  {
+    "hanja": "竝",
+    "sound": "병",
+    "meaning": "아우를",
+    "level": "高",
+    "order": 640
+  },
+  {
+    "hanja": "保",
+    "sound": "보",
+    "meaning": "지킬",
+    "level": "中",
+    "order": 641
+  },
+  {
+    "hanja": "報",
+    "sound": "보",
+    "meaning": "갚을",
+    "level": "中",
+    "order": 642
+  },
+  {
+    "hanja": "步",
+    "sound": "보",
+    "meaning": "걸음",
+    "level": "中",
+    "order": 643
+  },
+  {
+    "hanja": "寶",
+    "sound": "보",
+    "meaning": "보배",
+    "level": "高",
+    "order": 644
+  },
+  {
+    "hanja": "普",
+    "sound": "보",
+    "meaning": "넓을",
+    "level": "高",
+    "order": 645
+  },
+  {
+    "hanja": "補",
+    "sound": "보",
+    "meaning": "기울/도울",
+    "level": "高",
+    "order": 646
+  },
+  {
+    "hanja": "譜",
+    "sound": "보",
+    "meaning": "족보",
+    "level": "高",
+    "order": 647
+  },
+  {
+    "hanja": "伏",
+    "sound": "복",
+    "meaning": "엎드릴",
+    "level": "中",
+    "order": 648
+  },
+  {
+    "hanja": "復",
+    "sound": "복",
+    "meaning": "돌아올",
+    "level": "中",
+    "order": 649
+  },
+  {
+    "hanja": "服",
+    "sound": "복",
+    "meaning": "옷",
+    "level": "中",
+    "order": 650
+  },
+  {
+    "hanja": "福",
+    "sound": "복",
+    "meaning": "복",
+    "level": "中",
+    "order": 651
+  },
+  {
+    "hanja": "卜",
+    "sound": "복",
+    "meaning": "점",
+    "level": "高",
+    "order": 652
+  },
+  {
+    "hanja": "腹",
+    "sound": "복",
+    "meaning": "배",
+    "level": "高",
+    "order": 653
+  },
+  {
+    "hanja": "複",
+    "sound": "복",
+    "meaning": "겹칠",
+    "level": "高",
+    "order": 654
+  },
+  {
+    "hanja": "覆",
+    "sound": "복",
+    "meaning": "다시",
+    "level": "高",
+    "order": 655
+  },
+  {
+    "hanja": "本",
+    "sound": "본",
+    "meaning": "근본/뿌리",
+    "level": "中",
+    "order": 656
+  },
+  {
+    "hanja": "奉",
+    "sound": "봉",
+    "meaning": "받들",
+    "level": "中",
+    "order": 657
+  },
+  {
+    "hanja": "逢",
+    "sound": "봉",
+    "meaning": "만날",
+    "level": "中",
+    "order": 658
+  },
+  {
+    "hanja": "封",
+    "sound": "봉",
+    "meaning": "봉할",
+    "level": "高",
+    "order": 659
+  },
+  {
+    "hanja": "峯",
+    "sound": "봉",
+    "meaning": "봉우리",
+    "level": "高",
+    "order": 660
+  },
+  {
+    "hanja": "蜂",
+    "sound": "봉",
+    "meaning": "벌",
+    "level": "高",
+    "order": 661
+  },
+  {
+    "hanja": "鳳",
+    "sound": "봉",
+    "meaning": "봉황새",
+    "level": "高",
+    "order": 662
+  },
+  {
+    "hanja": "否",
+    "sound": "부",
+    "meaning": "아닐",
+    "level": "中",
+    "order": 663
+  },
+  {
+    "hanja": "夫",
+    "sound": "부",
+    "meaning": "지아비",
+    "level": "中",
+    "order": 664
+  },
+  {
+    "hanja": "婦",
+    "sound": "부",
+    "meaning": "며느리/아내",
+    "level": "中",
+    "order": 665
+  },
+  {
+    "hanja": "富",
+    "sound": "부",
+    "meaning": "부유할",
+    "level": "中",
+    "order": 666
+  },
+  {
+    "hanja": "扶",
+    "sound": "부",
+    "meaning": "도울",
+    "level": "中",
+    "order": 667
+  },
+  {
+    "hanja": "浮",
+    "sound": "부",
+    "meaning": "뜰",
+    "level": "中",
+    "order": 668
+  },
+  {
+    "hanja": "父",
+    "sound": "부",
+    "meaning": "아비",
+    "level": "中",
+    "order": 669
+  },
+  {
+    "hanja": "部",
+    "sound": "부",
+    "meaning": "떼",
+    "level": "中",
+    "order": 670
+  },
+  {
+    "hanja": "付",
+    "sound": "부",
+    "meaning": "줄",
+    "level": "高",
+    "order": 671
+  },
+  {
+    "hanja": "副",
+    "sound": "부",
+    "meaning": "버금",
+    "level": "高",
+    "order": 672
+  },
+  {
+    "hanja": "府",
+    "sound": "부",
+    "meaning": "마을",
+    "level": "高",
+    "order": 673
+  },
+  {
+    "hanja": "符",
+    "sound": "부",
+    "meaning": "부호",
+    "level": "高",
+    "order": 674
+  },
+  {
+    "hanja": "簿",
+    "sound": "부",
+    "meaning": "장부",
+    "level": "高",
+    "order": 675
+  },
+  {
+    "hanja": "腐",
+    "sound": "부",
+    "meaning": "썩을",
+    "level": "高",
+    "order": 676
+  },
+  {
+    "hanja": "負",
+    "sound": "부",
+    "meaning": "질",
+    "level": "高",
+    "order": 677
+  },
+  {
+    "hanja": "賦",
+    "sound": "부",
+    "meaning": "부세",
+    "level": "高",
+    "order": 678
+  },
+  {
+    "hanja": "赴",
+    "sound": "부",
+    "meaning": "다다를",
+    "level": "高",
+    "order": 679
+  },
+  {
+    "hanja": "附",
+    "sound": "부",
+    "meaning": "붙을",
+    "level": "高",
+    "order": 680
+  },
+  {
+    "hanja": "北",
+    "sound": "북",
+    "meaning": "북녘",
+    "level": "中",
+    "order": 681
+  },
+  {
+    "hanja": "分",
+    "sound": "분",
+    "meaning": "나눌",
+    "level": "中",
+    "order": 682
+  },
+  {
+    "hanja": "墳",
+    "sound": "분",
+    "meaning": "무덤",
+    "level": "高",
+    "order": 683
+  },
+  {
+    "hanja": "奔",
+    "sound": "분",
+    "meaning": "달릴",
+    "level": "高",
+    "order": 684
+  },
+  {
+    "hanja": "奮",
+    "sound": "분",
+    "meaning": "떨칠",
+    "level": "高",
+    "order": 685
+  },
+  {
+    "hanja": "憤",
+    "sound": "분",
+    "meaning": "분할",
+    "level": "高",
+    "order": 686
+  },
+  {
+    "hanja": "粉",
+    "sound": "분",
+    "meaning": "가루",
+    "level": "高",
+    "order": 687
+  },
+  {
+    "hanja": "紛",
+    "sound": "분",
+    "meaning": "어지러울",
+    "level": "高",
+    "order": 688
+  },
+  {
+    "hanja": "不",
+    "sound": "불",
+    "meaning": "아닐",
+    "level": "中",
+    "order": 689
+  },
+  {
+    "hanja": "佛",
+    "sound": "불",
+    "meaning": "부처",
+    "level": "中",
+    "order": 690
+  },
+  {
+    "hanja": "拂",
+    "sound": "불",
+    "meaning": "떨칠",
+    "level": "高",
+    "order": 691
+  },
+  {
+    "hanja": "朋",
+    "sound": "붕",
+    "meaning": "벗",
+    "level": "中",
+    "order": 692
+  },
+  {
+    "hanja": "崩",
+    "sound": "붕",
+    "meaning": "무너질",
+    "level": "高",
+    "order": 693
+  },
+  {
+    "hanja": "備",
+    "sound": "비",
+    "meaning": "갖출",
+    "level": "中",
+    "order": 694
+  },
+  {
+    "hanja": "比",
+    "sound": "비",
+    "meaning": "견줄",
+    "level": "中",
+    "order": 695
+  },
+  {
+    "hanja": "悲",
+    "sound": "비",
+    "meaning": "슬플",
+    "level": "中",
+    "order": 696
+  },
+  {
+    "hanja": "非",
+    "sound": "비",
+    "meaning": "아닐",
+    "level": "中",
+    "order": 697
+  },
+  {
+    "hanja": "飛",
+    "sound": "비",
+    "meaning": "날",
+    "level": "中",
+    "order": 698
+  },
+  {
+    "hanja": "鼻",
+    "sound": "비",
+    "meaning": "코",
+    "level": "中",
+    "order": 699
+  },
+  {
+    "hanja": "卑",
+    "sound": "비",
+    "meaning": "낮을",
+    "level": "高",
+    "order": 700
+  },
+  {
+    "hanja": "妃",
+    "sound": "비",
+    "meaning": "왕비",
+    "level": "高",
+    "order": 701
+  },
+  {
+    "hanja": "婢",
+    "sound": "비",
+    "meaning": "계집종",
+    "level": "高",
+    "order": 702
+  },
+  {
+    "hanja": "批",
+    "sound": "비",
+    "meaning": "비평할",
+    "level": "高",
+    "order": 703
+  },
+  {
+    "hanja": "碑",
+    "sound": "비",
+    "meaning": "돌기둥",
+    "level": "高",
+    "order": 704
+  },
+  {
+    "hanja": "祕",
+    "sound": "비",
+    "meaning": "숨길",
+    "level": "高",
+    "order": 705
+  },
+  {
+    "hanja": "肥",
+    "sound": "비",
+    "meaning": "살찔",
+    "level": "高",
+    "order": 706
+  },
+  {
+    "hanja": "費",
+    "sound": "비",
+    "meaning": "쓸",
+    "level": "高",
+    "order": 707
+  },
+  {
+    "hanja": "貧",
+    "sound": "빈",
+    "meaning": "가난할",
+    "level": "中",
+    "order": 708
+  },
+  {
+    "hanja": "賓",
+    "sound": "빈",
+    "meaning": "손",
+    "level": "高",
+    "order": 709
+  },
+  {
+    "hanja": "頻",
+    "sound": "빈",
+    "meaning": "자주",
+    "level": "高",
+    "order": 710
+  },
+  {
+    "hanja": "氷",
+    "sound": "빙",
+    "meaning": "얼음",
+    "level": "中",
+    "order": 711
+  },
+  {
+    "hanja": "聘",
+    "sound": "빙",
+    "meaning": "부를",
+    "level": "高",
+    "order": 712
+  },
+  {
+    "hanja": "事",
+    "sound": "사",
+    "meaning": "일",
+    "level": "中",
+    "order": 713
+  },
+  {
+    "hanja": "仕",
+    "sound": "사",
+    "meaning": "섬길",
+    "level": "中",
+    "order": 714
+  },
+  {
+    "hanja": "使",
+    "sound": "사",
+    "meaning": "하여금/부릴",
+    "level": "中",
+    "order": 715
+  },
+  {
+    "hanja": "史",
+    "sound": "사",
+    "meaning": "사기",
+    "level": "中",
+    "order": 716
+  },
+  {
+    "hanja": "四",
+    "sound": "사",
+    "meaning": "넉",
+    "level": "中",
+    "order": 717
+  },
+  {
+    "hanja": "士",
+    "sound": "사",
+    "meaning": "선비",
+    "level": "中",
+    "order": 718
+  },
+  {
+    "hanja": "寺",
+    "sound": "사",
+    "meaning": "절",
+    "level": "中",
+    "order": 719
+  },
+  {
+    "hanja": "巳",
+    "sound": "사",
+    "meaning": "뱀",
+    "level": "中",
+    "order": 720
+  },
+  {
+    "hanja": "射",
+    "sound": "사",
+    "meaning": "쏠",
+    "level": "中",
+    "order": 721
+  },
+  {
+    "hanja": "師",
+    "sound": "사",
+    "meaning": "스승",
+    "level": "中",
+    "order": 722
+  },
+  {
+    "hanja": "思",
+    "sound": "사",
+    "meaning": "생각할",
+    "level": "中",
+    "order": 723
+  },
+  {
+    "hanja": "死",
+    "sound": "사",
+    "meaning": "죽을",
+    "level": "中",
+    "order": 724
+  },
+  {
+    "hanja": "私",
+    "sound": "사",
+    "meaning": "사사로울",
+    "level": "中",
+    "order": 725
+  },
+  {
+    "hanja": "絲",
+    "sound": "사",
+    "meaning": "실",
+    "level": "中",
+    "order": 726
+  },
+  {
+    "hanja": "舍",
+    "sound": "사",
+    "meaning": "집",
+    "level": "中",
+    "order": 727
+  },
+  {
+    "hanja": "謝",
+    "sound": "사",
+    "meaning": "사례할",
+    "level": "中",
+    "order": 728
+  },
+  {
+    "hanja": "似",
+    "sound": "사",
+    "meaning": "닮을",
+    "level": "高",
+    "order": 729
+  },
+  {
+    "hanja": "司",
+    "sound": "사",
+    "meaning": "맡을",
+    "level": "高",
+    "order": 730
+  },
+  {
+    "hanja": "寫",
+    "sound": "사",
+    "meaning": "베낄",
+    "level": "高",
+    "order": 731
+  },
+  {
+    "hanja": "捨",
+    "sound": "사",
+    "meaning": "버릴",
+    "level": "高",
+    "order": 732
+  },
+  {
+    "hanja": "斜",
+    "sound": "사",
+    "meaning": "비낄",
+    "level": "高",
+    "order": 733
+  },
+  {
+    "hanja": "斯",
+    "sound": "사",
+    "meaning": "이",
+    "level": "高",
+    "order": 734
+  },
+  {
+    "hanja": "査",
+    "sound": "사",
+    "meaning": "조사할",
+    "level": "高",
+    "order": 735
+  },
+  {
+    "hanja": "沙",
+    "sound": "사",
+    "meaning": "모래",
+    "level": "高",
+    "order": 736
+  },
+  {
+    "hanja": "祀",
+    "sound": "사",
+    "meaning": "제사",
+    "level": "高",
+    "order": 737
+  },
+  {
+    "hanja": "社",
+    "sound": "사",
+    "meaning": "모일/토지신",
+    "level": "高",
+    "order": 738
+  },
+  {
+    "hanja": "蛇",
+    "sound": "사",
+    "meaning": "뱀",
+    "level": "高",
+    "order": 739
+  },
+  {
+    "hanja": "詐",
+    "sound": "사",
+    "meaning": "속일",
+    "level": "高",
+    "order": 740
+  },
+  {
+    "hanja": "詞",
+    "sound": "사",
+    "meaning": "말씀",
+    "level": "高",
+    "order": 741
+  },
+  {
+    "hanja": "賜",
+    "sound": "사",
+    "meaning": "줄",
+    "level": "高",
+    "order": 742
+  },
+  {
+    "hanja": "辭",
+    "sound": "사",
+    "meaning": "말씀",
+    "level": "高",
+    "order": 743
+  },
+  {
+    "hanja": "邪",
+    "sound": "사",
+    "meaning": "간사할",
+    "level": "高",
+    "order": 744
+  },
+  {
+    "hanja": "削",
+    "sound": "삭",
+    "meaning": "깎을",
+    "level": "高",
+    "order": 745
+  },
+  {
+    "hanja": "朔",
+    "sound": "삭",
+    "meaning": "초하루",
+    "level": "高",
+    "order": 746
+  },
+  {
+    "hanja": "山",
+    "sound": "산",
+    "meaning": "뫼",
+    "level": "中",
+    "order": 747
+  },
+  {
+    "hanja": "散",
+    "sound": "산",
+    "meaning": "흩어질",
+    "level": "中",
+    "order": 748
+  },
+  {
+    "hanja": "產",
+    "sound": "산",
+    "meaning": "낳을",
+    "level": "中",
+    "order": 749
+  },
+  {
+    "hanja": "算",
+    "sound": "산",
+    "meaning": "셀",
+    "level": "中",
+    "order": 750
+  },
+  {
+    "hanja": "殺",
+    "sound": "살",
+    "meaning": "죽일",
+    "level": "中",
+    "order": 751
+  },
+  {
+    "hanja": "三",
+    "sound": "삼",
+    "meaning": "석",
+    "level": "中",
+    "order": 752
+  },
+  {
+    "hanja": "上",
+    "sound": "상",
+    "meaning": "위",
+    "level": "中",
+    "order": 753
+  },
+  {
+    "hanja": "傷",
+    "sound": "상",
+    "meaning": "상처",
+    "level": "中",
+    "order": 754
+  },
+  {
+    "hanja": "商",
+    "sound": "상",
+    "meaning": "장사",
+    "level": "中",
+    "order": 755
+  },
+  {
+    "hanja": "喪",
+    "sound": "상",
+    "meaning": "잃을",
+    "level": "中",
+    "order": 756
+  },
+  {
+    "hanja": "尙",
+    "sound": "상",
+    "meaning": "오히려",
+    "level": "中",
+    "order": 757
+  },
+  {
+    "hanja": "常",
+    "sound": "상",
+    "meaning": "항상/떳떳할",
+    "level": "中",
+    "order": 758
+  },
+  {
+    "hanja": "想",
+    "sound": "상",
+    "meaning": "생각할",
+    "level": "中",
+    "order": 759
+  },
+  {
+    "hanja": "相",
+    "sound": "상",
+    "meaning": "서로",
+    "level": "中",
+    "order": 760
+  },
+  {
+    "hanja": "賞",
+    "sound": "상",
+    "meaning": "상줄",
+    "level": "中",
+    "order": 761
+  },
+  {
+    "hanja": "霜",
+    "sound": "상",
+    "meaning": "서리",
+    "level": "中",
+    "order": 762
+  },
+  {
+    "hanja": "像",
+    "sound": "상",
+    "meaning": "모양",
+    "level": "高",
+    "order": 763
+  },
+  {
+    "hanja": "償",
+    "sound": "상",
+    "meaning": "갚을",
+    "level": "高",
+    "order": 764
+  },
+  {
+    "hanja": "嘗",
+    "sound": "상",
+    "meaning": "맛볼",
+    "level": "高",
+    "order": 765
+  },
+  {
+    "hanja": "床",
+    "sound": "상",
+    "meaning": "상",
+    "level": "高",
+    "order": 766
+  },
+  {
+    "hanja": "桑",
+    "sound": "상",
+    "meaning": "뽕나무",
+    "level": "高",
+    "order": 767
+  },
+  {
+    "hanja": "狀",
+    "sound": "상",
+    "meaning": "형상",
+    "level": "高",
+    "order": 768
+  },
+  {
+    "hanja": "祥",
+    "sound": "상",
+    "meaning": "상서로울",
+    "level": "高",
+    "order": 769
+  },
+  {
+    "hanja": "裳",
+    "sound": "상",
+    "meaning": "치마",
+    "level": "高",
+    "order": 770
+  },
+  {
+    "hanja": "詳",
+    "sound": "상",
+    "meaning": "자세할",
+    "level": "高",
+    "order": 771
+  },
+  {
+    "hanja": "象",
+    "sound": "상",
+    "meaning": "코끼리",
+    "level": "高",
+    "order": 772
+  },
+  {
+    "hanja": "塞",
+    "sound": "새",
+    "meaning": "변방",
+    "level": "高",
+    "order": 773
+  },
+  {
+    "hanja": "色",
+    "sound": "색",
+    "meaning": "빛",
+    "level": "中",
+    "order": 774
+  },
+  {
+    "hanja": "索",
+    "sound": "색",
+    "meaning": "찾을",
+    "level": "高",
+    "order": 775
+  },
+  {
+    "hanja": "生",
+    "sound": "생",
+    "meaning": "날",
+    "level": "中",
+    "order": 776
+  },
+  {
+    "hanja": "序",
+    "sound": "서",
+    "meaning": "차례",
+    "level": "中",
+    "order": 777
+  },
+  {
+    "hanja": "暑",
+    "sound": "서",
+    "meaning": "더울",
+    "level": "中",
+    "order": 778
+  },
+  {
+    "hanja": "書",
+    "sound": "서",
+    "meaning": "쓸",
+    "level": "中",
+    "order": 779
+  },
+  {
+    "hanja": "西",
+    "sound": "서",
+    "meaning": "서녘",
+    "level": "中",
+    "order": 780
+  },
+  {
+    "hanja": "庶",
+    "sound": "서",
+    "meaning": "여러",
+    "level": "高",
+    "order": 781
+  },
+  {
+    "hanja": "徐",
+    "sound": "서",
+    "meaning": "천천히",
+    "level": "高",
+    "order": 782
+  },
+  {
+    "hanja": "恕",
+    "sound": "서",
+    "meaning": "용서할",
+    "level": "高",
+    "order": 783
+  },
+  {
+    "hanja": "敍",
+    "sound": "서",
+    "meaning": "펼",
+    "level": "高",
+    "order": 784
+  },
+  {
+    "hanja": "緖",
+    "sound": "서",
+    "meaning": "실마리",
+    "level": "高",
+    "order": 785
+  },
+  {
+    "hanja": "署",
+    "sound": "서",
+    "meaning": "마을",
+    "level": "高",
+    "order": 786
+  },
+  {
+    "hanja": "誓",
+    "sound": "서",
+    "meaning": "맹세할",
+    "level": "高",
+    "order": 787
+  },
+  {
+    "hanja": "逝",
+    "sound": "서",
+    "meaning": "갈",
+    "level": "高",
+    "order": 788
+  },
+  {
+    "hanja": "夕",
+    "sound": "석",
+    "meaning": "저녁",
+    "level": "中",
+    "order": 789
+  },
+  {
+    "hanja": "席",
+    "sound": "석",
+    "meaning": "자리",
+    "level": "中",
+    "order": 790
+  },
+  {
+    "hanja": "惜",
+    "sound": "석",
+    "meaning": "아낄",
+    "level": "中",
+    "order": 791
+  },
+  {
+    "hanja": "昔",
+    "sound": "석",
+    "meaning": "옛",
+    "level": "中",
+    "order": 792
+  },
+  {
+    "hanja": "石",
+    "sound": "석",
+    "meaning": "돌",
+    "level": "中",
+    "order": 793
+  },
+  {
+    "hanja": "析",
+    "sound": "석",
+    "meaning": "쪼갤",
+    "level": "高",
+    "order": 794
+  },
+  {
+    "hanja": "釋",
+    "sound": "석",
+    "meaning": "풀",
+    "level": "高",
+    "order": 795
+  },
+  {
+    "hanja": "仙",
+    "sound": "선",
+    "meaning": "신선",
+    "level": "中",
+    "order": 796
+  },
+  {
+    "hanja": "先",
+    "sound": "선",
+    "meaning": "먼저",
+    "level": "中",
+    "order": 797
+  },
+  {
+    "hanja": "善",
+    "sound": "선",
+    "meaning": "착할",
+    "level": "中",
+    "order": 798
+  },
+  {
+    "hanja": "線",
+    "sound": "선",
+    "meaning": "줄",
+    "level": "中",
+    "order": 799
+  },
+  {
+    "hanja": "船",
+    "sound": "선",
+    "meaning": "배",
+    "level": "中",
+    "order": 800
+  },
+  {
+    "hanja": "選",
+    "sound": "선",
+    "meaning": "가릴",
+    "level": "中",
+    "order": 801
+  },
+  {
+    "hanja": "鮮",
+    "sound": "선",
+    "meaning": "고울",
+    "level": "中",
+    "order": 802
+  },
+  {
+    "hanja": "宣",
+    "sound": "선",
+    "meaning": "베풀",
+    "level": "高",
+    "order": 803
+  },
+  {
+    "hanja": "旋",
+    "sound": "선",
+    "meaning": "돌",
+    "level": "高",
+    "order": 804
+  },
+  {
+    "hanja": "禪",
+    "sound": "선",
+    "meaning": "선",
+    "level": "高",
+    "order": 805
+  },
+  {
+    "hanja": "舌",
+    "sound": "설",
+    "meaning": "혀",
+    "level": "中",
+    "order": 806
+  },
+  {
+    "hanja": "設",
+    "sound": "설",
+    "meaning": "베풀",
+    "level": "中",
+    "order": 807
+  },
+  {
+    "hanja": "說",
+    "sound": "설",
+    "meaning": "말씀",
+    "level": "中",
+    "order": 808
+  },
+  {
+    "hanja": "雪",
+    "sound": "설",
+    "meaning": "눈",
+    "level": "中",
+    "order": 809
+  },
+  {
+    "hanja": "攝",
+    "sound": "섭",
+    "meaning": "다스릴/잡을",
+    "level": "高",
+    "order": 810
+  },
+  {
+    "hanja": "涉",
+    "sound": "섭",
+    "meaning": "건널",
+    "level": "高",
+    "order": 811
+  },
+  {
+    "hanja": "城",
+    "sound": "성",
+    "meaning": "재",
+    "level": "中",
+    "order": 812
+  },
+  {
+    "hanja": "姓",
+    "sound": "성",
+    "meaning": "성",
+    "level": "中",
+    "order": 813
+  },
+  {
+    "hanja": "性",
+    "sound": "성",
+    "meaning": "성품",
+    "level": "中",
+    "order": 814
+  },
+  {
+    "hanja": "成",
+    "sound": "성",
+    "meaning": "이룰",
+    "level": "中",
+    "order": 815
+  },
+  {
+    "hanja": "星",
+    "sound": "성",
+    "meaning": "별",
+    "level": "中",
+    "order": 816
+  },
+  {
+    "hanja": "盛",
+    "sound": "성",
+    "meaning": "성할",
+    "level": "中",
+    "order": 817
+  },
+  {
+    "hanja": "省",
+    "sound": "성",
+    "meaning": "살필",
+    "level": "中",
+    "order": 818
+  },
+  {
+    "hanja": "聖",
+    "sound": "성",
+    "meaning": "거룩할",
+    "level": "中",
+    "order": 819
+  },
+  {
+    "hanja": "聲",
+    "sound": "성",
+    "meaning": "소리",
+    "level": "中",
+    "order": 820
+  },
+  {
+    "hanja": "誠",
+    "sound": "성",
+    "meaning": "정성",
+    "level": "中",
+    "order": 821
+  },
+  {
+    "hanja": "世",
+    "sound": "세",
+    "meaning": "대/인간",
+    "level": "中",
+    "order": 822
+  },
+  {
+    "hanja": "勢",
+    "sound": "세",
+    "meaning": "형세",
+    "level": "中",
+    "order": 823
+  },
+  {
+    "hanja": "歲",
+    "sound": "세",
+    "meaning": "해",
+    "level": "中",
+    "order": 824
+  },
+  {
+    "hanja": "洗",
+    "sound": "세",
+    "meaning": "씻을",
+    "level": "中",
+    "order": 825
+  },
+  {
+    "hanja": "稅",
+    "sound": "세",
+    "meaning": "세금",
+    "level": "中",
+    "order": 826
+  },
+  {
+    "hanja": "細",
+    "sound": "세",
+    "meaning": "가늘",
+    "level": "中",
+    "order": 827
+  },
+  {
+    "hanja": "小",
+    "sound": "소",
+    "meaning": "작을",
+    "level": "中",
+    "order": 828
+  },
+  {
+    "hanja": "少",
+    "sound": "소",
+    "meaning": "적을",
+    "level": "中",
+    "order": 829
+  },
+  {
+    "hanja": "所",
+    "sound": "소",
+    "meaning": "바",
+    "level": "中",
+    "order": 830
+  },
+  {
+    "hanja": "消",
+    "sound": "소",
+    "meaning": "사라질",
+    "level": "中",
+    "order": 831
+  },
+  {
+    "hanja": "笑",
+    "sound": "소",
+    "meaning": "웃을",
+    "level": "中",
+    "order": 832
+  },
+  {
+    "hanja": "素",
+    "sound": "소",
+    "meaning": "본디",
+    "level": "中",
+    "order": 833
+  },
+  {
+    "hanja": "召",
+    "sound": "소",
+    "meaning": "부를",
+    "level": "高",
+    "order": 834
+  },
+  {
+    "hanja": "掃",
+    "sound": "소",
+    "meaning": "쓸",
+    "level": "高",
+    "order": 835
+  },
+  {
+    "hanja": "昭",
+    "sound": "소",
+    "meaning": "밝을",
+    "level": "高",
+    "order": 836
+  },
+  {
+    "hanja": "燒",
+    "sound": "소",
+    "meaning": "불사를",
+    "level": "高",
+    "order": 837
+  },
+  {
+    "hanja": "疏",
+    "sound": "소",
+    "meaning": "트일",
+    "level": "高",
+    "order": 838
+  },
+  {
+    "hanja": "蔬",
+    "sound": "소",
+    "meaning": "푸성귀",
+    "level": "高",
+    "order": 839
+  },
+  {
+    "hanja": "蘇",
+    "sound": "소",
+    "meaning": "깨어날",
+    "level": "高",
+    "order": 840
+  },
+  {
+    "hanja": "訴",
+    "sound": "소",
+    "meaning": "호소할",
+    "level": "高",
+    "order": 841
+  },
+  {
+    "hanja": "騷",
+    "sound": "소",
+    "meaning": "떠들",
+    "level": "高",
+    "order": 842
+  },
+  {
+    "hanja": "俗",
+    "sound": "속",
+    "meaning": "풍속",
+    "level": "中",
+    "order": 843
+  },
+  {
+    "hanja": "續",
+    "sound": "속",
+    "meaning": "이을",
+    "level": "中",
+    "order": 844
+  },
+  {
+    "hanja": "速",
+    "sound": "속",
+    "meaning": "빠를",
+    "level": "中",
+    "order": 845
+  },
+  {
+    "hanja": "屬",
+    "sound": "속",
+    "meaning": "무리",
+    "level": "高",
+    "order": 846
+  },
+  {
+    "hanja": "束",
+    "sound": "속",
+    "meaning": "묶을",
+    "level": "高",
+    "order": 847
+  },
+  {
+    "hanja": "粟",
+    "sound": "속",
+    "meaning": "조",
+    "level": "高",
+    "order": 848
+  },
+  {
+    "hanja": "孫",
+    "sound": "손",
+    "meaning": "손자",
+    "level": "中",
+    "order": 849
+  },
+  {
+    "hanja": "損",
+    "sound": "손",
+    "meaning": "덜다덜",
+    "level": "高",
+    "order": 850
+  },
+  {
+    "hanja": "松",
+    "sound": "송",
+    "meaning": "소나무",
+    "level": "中",
+    "order": 851
+  },
+  {
+    "hanja": "送",
+    "sound": "송",
+    "meaning": "보낼",
+    "level": "中",
+    "order": 852
+  },
+  {
+    "hanja": "訟",
+    "sound": "송",
+    "meaning": "송사할",
+    "level": "高",
+    "order": 853
+  },
+  {
+    "hanja": "誦",
+    "sound": "송",
+    "meaning": "외울",
+    "level": "高",
+    "order": 854
+  },
+  {
+    "hanja": "頌",
+    "sound": "송",
+    "meaning": "칭송할",
+    "level": "高",
+    "order": 855
+  },
+  {
+    "hanja": "刷",
+    "sound": "쇄",
+    "meaning": "인쇄할",
+    "level": "高",
+    "order": 856
+  },
+  {
+    "hanja": "鎖",
+    "sound": "쇄",
+    "meaning": "쇠사슬",
+    "level": "高",
+    "order": 857
+  },
+  {
+    "hanja": "修",
+    "sound": "수",
+    "meaning": "닦을",
+    "level": "中",
+    "order": 858
+  },
+  {
+    "hanja": "受",
+    "sound": "수",
+    "meaning": "받을",
+    "level": "中",
+    "order": 859
+  },
+  {
+    "hanja": "壽",
+    "sound": "수",
+    "meaning": "목숨",
+    "level": "中",
+    "order": 860
+  },
+  {
+    "hanja": "守",
+    "sound": "수",
+    "meaning": "지킬",
+    "level": "中",
+    "order": 861
+  },
+  {
+    "hanja": "愁",
+    "sound": "수",
+    "meaning": "시름",
+    "level": "中",
+    "order": 862
+  },
+  {
+    "hanja": "手",
+    "sound": "수",
+    "meaning": "손",
+    "level": "中",
+    "order": 863
+  },
+  {
+    "hanja": "授",
+    "sound": "수",
+    "meaning": "줄",
+    "level": "中",
+    "order": 864
+  },
+  {
+    "hanja": "收",
+    "sound": "수",
+    "meaning": "거둘",
+    "level": "中",
+    "order": 865
+  },
+  {
+    "hanja": "數",
+    "sound": "수",
+    "meaning": "셀",
+    "level": "中",
+    "order": 866
+  },
+  {
+    "hanja": "樹",
+    "sound": "수",
+    "meaning": "나무",
+    "level": "中",
+    "order": 867
+  },
+  {
+    "hanja": "水",
+    "sound": "수",
+    "meaning": "물",
+    "level": "中",
+    "order": 868
+  },
+  {
+    "hanja": "秀",
+    "sound": "수",
+    "meaning": "빼어날",
+    "level": "中",
+    "order": 869
+  },
+  {
+    "hanja": "誰",
+    "sound": "수",
+    "meaning": "누구",
+    "level": "中",
+    "order": 870
+  },
+  {
+    "hanja": "雖",
+    "sound": "수",
+    "meaning": "비록",
+    "level": "中",
+    "order": 871
+  },
+  {
+    "hanja": "須",
+    "sound": "수",
+    "meaning": "모름지기",
+    "level": "中",
+    "order": 872
+  },
+  {
+    "hanja": "首",
+    "sound": "수",
+    "meaning": "머리",
+    "level": "中",
+    "order": 873
+  },
+  {
+    "hanja": "囚",
+    "sound": "수",
+    "meaning": "가둘",
+    "level": "高",
+    "order": 874
+  },
+  {
+    "hanja": "垂",
+    "sound": "수",
+    "meaning": "드리울",
+    "level": "高",
+    "order": 875
+  },
+  {
+    "hanja": "帥",
+    "sound": "수",
+    "meaning": "장수",
+    "level": "高",
+    "order": 876
+  },
+  {
+    "hanja": "搜",
+    "sound": "수",
+    "meaning": "찾을",
+    "level": "高",
+    "order": 877
+  },
+  {
+    "hanja": "殊",
+    "sound": "수",
+    "meaning": "다를",
+    "level": "高",
+    "order": 878
+  },
+  {
+    "hanja": "獸",
+    "sound": "수",
+    "meaning": "짐승",
+    "level": "高",
+    "order": 879
+  },
+  {
+    "hanja": "睡",
+    "sound": "수",
+    "meaning": "잘",
+    "level": "高",
+    "order": 880
+  },
+  {
+    "hanja": "輸",
+    "sound": "수",
+    "meaning": "보낼",
+    "level": "高",
+    "order": 881
+  },
+  {
+    "hanja": "遂",
+    "sound": "수",
+    "meaning": "드디어/따를",
+    "level": "高",
+    "order": 882
+  },
+  {
+    "hanja": "隨",
+    "sound": "수",
+    "meaning": "따를",
+    "level": "高",
+    "order": 883
+  },
+  {
+    "hanja": "需",
+    "sound": "수",
+    "meaning": "쓰일",
+    "level": "高",
+    "order": 884
+  },
+  {
+    "hanja": "叔",
+    "sound": "숙",
+    "meaning": "아저씨",
+    "level": "中",
+    "order": 885
+  },
+  {
+    "hanja": "宿",
+    "sound": "숙",
+    "meaning": "잘",
+    "level": "中",
+    "order": 886
+  },
+  {
+    "hanja": "淑",
+    "sound": "숙",
+    "meaning": "맑을",
+    "level": "中",
+    "order": 887
+  },
+  {
+    "hanja": "孰",
+    "sound": "숙",
+    "meaning": "누구",
+    "level": "高",
+    "order": 888
+  },
+  {
+    "hanja": "熟",
+    "sound": "숙",
+    "meaning": "익을",
+    "level": "高",
+    "order": 889
+  },
+  {
+    "hanja": "肅",
+    "sound": "숙",
+    "meaning": "엄숙할",
+    "level": "高",
+    "order": 890
+  },
+  {
+    "hanja": "純",
+    "sound": "순",
+    "meaning": "순수할",
+    "level": "中",
+    "order": 891
+  },
+  {
+    "hanja": "順",
+    "sound": "순",
+    "meaning": "순할",
+    "level": "中",
+    "order": 892
+  },
+  {
+    "hanja": "巡",
+    "sound": "순",
+    "meaning": "돌아다닐",
+    "level": "高",
+    "order": 893
+  },
+  {
+    "hanja": "循",
+    "sound": "순",
+    "meaning": "돌",
+    "level": "高",
+    "order": 894
+  },
+  {
+    "hanja": "旬",
+    "sound": "순",
+    "meaning": "열흘",
+    "level": "高",
+    "order": 895
+  },
+  {
+    "hanja": "殉",
+    "sound": "순",
+    "meaning": "따라 죽을",
+    "level": "高",
+    "order": 896
+  },
+  {
+    "hanja": "瞬",
+    "sound": "순",
+    "meaning": "깜짝일",
+    "level": "高",
+    "order": 897
+  },
+  {
+    "hanja": "脣",
+    "sound": "순",
+    "meaning": "입술",
+    "level": "高",
+    "order": 898
+  },
+  {
+    "hanja": "戌",
+    "sound": "술",
+    "meaning": "개",
+    "level": "中",
+    "order": 899
+  },
+  {
+    "hanja": "術",
+    "sound": "술",
+    "meaning": "재주",
+    "level": "高",
+    "order": 900
+  },
+  {
+    "hanja": "述",
+    "sound": "술",
+    "meaning": "펼",
+    "level": "高",
+    "order": 901
+  },
+  {
+    "hanja": "崇",
+    "sound": "숭",
+    "meaning": "높을",
+    "level": "中",
+    "order": 902
+  },
+  {
+    "hanja": "拾",
+    "sound": "습",
+    "meaning": "주울",
+    "level": "中",
+    "order": 903
+  },
+  {
+    "hanja": "習",
+    "sound": "습",
+    "meaning": "익힐",
+    "level": "中",
+    "order": 904
+  },
+  {
+    "hanja": "濕",
+    "sound": "습",
+    "meaning": "젖을/축축할",
+    "level": "高",
+    "order": 905
+  },
+  {
+    "hanja": "襲",
+    "sound": "습",
+    "meaning": "엄습할",
+    "level": "高",
+    "order": 906
+  },
+  {
+    "hanja": "乘",
+    "sound": "승",
+    "meaning": "탈",
+    "level": "中",
+    "order": 907
+  },
+  {
+    "hanja": "勝",
+    "sound": "승",
+    "meaning": "이길/뛰어날",
+    "level": "中",
+    "order": 908
+  },
+  {
+    "hanja": "承",
+    "sound": "승",
+    "meaning": "이을/받들",
+    "level": "中",
+    "order": 909
+  },
+  {
+    "hanja": "僧",
+    "sound": "승",
+    "meaning": "중",
+    "level": "高",
+    "order": 910
+  },
+  {
+    "hanja": "昇",
+    "sound": "승",
+    "meaning": "오를",
+    "level": "高",
+    "order": 911
+  },
+  {
+    "hanja": "始",
+    "sound": "시",
+    "meaning": "비로소",
+    "level": "中",
+    "order": 912
+  },
+  {
+    "hanja": "市",
+    "sound": "시",
+    "meaning": "저자",
+    "level": "中",
+    "order": 913
+  },
+  {
+    "hanja": "施",
+    "sound": "시",
+    "meaning": "베풀",
+    "level": "中",
+    "order": 914
+  },
+  {
+    "hanja": "是",
+    "sound": "시",
+    "meaning": "옳을",
+    "level": "中",
+    "order": 915
+  },
+  {
+    "hanja": "時",
+    "sound": "시",
+    "meaning": "때",
+    "level": "中",
+    "order": 916
+  },
+  {
+    "hanja": "示",
+    "sound": "시",
+    "meaning": "보일",
+    "level": "中",
+    "order": 917
+  },
+  {
+    "hanja": "視",
+    "sound": "시",
+    "meaning": "볼",
+    "level": "中",
+    "order": 918
+  },
+  {
+    "hanja": "詩",
+    "sound": "시",
+    "meaning": "시",
+    "level": "中",
+    "order": 919
+  },
+  {
+    "hanja": "試",
+    "sound": "시",
+    "meaning": "시험",
+    "level": "中",
+    "order": 920
+  },
+  {
+    "hanja": "侍",
+    "sound": "시",
+    "meaning": "모실",
+    "level": "高",
+    "order": 921
+  },
+  {
+    "hanja": "矢",
+    "sound": "시",
+    "meaning": "화살",
+    "level": "高",
+    "order": 922
+  },
+  {
+    "hanja": "式",
+    "sound": "식",
+    "meaning": "법",
+    "level": "中",
+    "order": 923
+  },
+  {
+    "hanja": "植",
+    "sound": "식",
+    "meaning": "심을",
+    "level": "中",
+    "order": 924
+  },
+  {
+    "hanja": "識",
+    "sound": "식",
+    "meaning": "알",
+    "level": "中",
+    "order": 925
+  },
+  {
+    "hanja": "食",
+    "sound": "식",
+    "meaning": "먹을",
+    "level": "中",
+    "order": 926
+  },
+  {
+    "hanja": "息",
+    "sound": "식",
+    "meaning": "숨쉴",
+    "level": "高",
+    "order": 927
+  },
+  {
+    "hanja": "飾",
+    "sound": "식",
+    "meaning": "꾸밀",
+    "level": "高",
+    "order": 928
+  },
+  {
+    "hanja": "信",
+    "sound": "신",
+    "meaning": "믿을",
+    "level": "中",
+    "order": 929
+  },
+  {
+    "hanja": "新",
+    "sound": "신",
+    "meaning": "새",
+    "level": "中",
+    "order": 930
+  },
+  {
+    "hanja": "申",
+    "sound": "신",
+    "meaning": "거듭",
+    "level": "中",
+    "order": 931
+  },
+  {
+    "hanja": "神",
+    "sound": "신",
+    "meaning": "귀신",
+    "level": "中",
+    "order": 932
+  },
+  {
+    "hanja": "臣",
+    "sound": "신",
+    "meaning": "신하",
+    "level": "中",
+    "order": 933
+  },
+  {
+    "hanja": "身",
+    "sound": "신",
+    "meaning": "몸",
+    "level": "中",
+    "order": 934
+  },
+  {
+    "hanja": "辛",
+    "sound": "신",
+    "meaning": "매울/괴로울",
+    "level": "中",
+    "order": 935
+  },
+  {
+    "hanja": "伸",
+    "sound": "신",
+    "meaning": "펴다",
+    "level": "高",
+    "order": 936
+  },
+  {
+    "hanja": "愼",
+    "sound": "신",
+    "meaning": "삼갈",
+    "level": "高",
+    "order": 937
+  },
+  {
+    "hanja": "晨",
+    "sound": "신",
+    "meaning": "새벽",
+    "level": "高",
+    "order": 938
+  },
+  {
+    "hanja": "失",
+    "sound": "실",
+    "meaning": "잃을",
+    "level": "中",
+    "order": 939
+  },
+  {
+    "hanja": "室",
+    "sound": "실",
+    "meaning": "집",
+    "level": "中",
+    "order": 940
+  },
+  {
+    "hanja": "實",
+    "sound": "실",
+    "meaning": "열매",
+    "level": "中",
+    "order": 941
+  },
+  {
+    "hanja": "心",
+    "sound": "심",
+    "meaning": "마음",
+    "level": "中",
+    "order": 942
+  },
+  {
+    "hanja": "深",
+    "sound": "심",
+    "meaning": "깊을",
+    "level": "中",
+    "order": 943
+  },
+  {
+    "hanja": "甚",
+    "sound": "심",
+    "meaning": "심할",
+    "level": "中",
+    "order": 944
+  },
+  {
+    "hanja": "審",
+    "sound": "심",
+    "meaning": "살필",
+    "level": "高",
+    "order": 945
+  },
+  {
+    "hanja": "尋",
+    "sound": "심",
+    "meaning": "찾을",
+    "level": "高",
+    "order": 946
+  },
+  {
+    "hanja": "十",
+    "sound": "십",
+    "meaning": "열",
+    "level": "中",
+    "order": 947
+  },
+  {
+    "hanja": "雙",
+    "sound": "쌍",
+    "meaning": "두",
+    "level": "高",
+    "order": 948
+  },
+  {
+    "hanja": "氏",
+    "sound": "씨",
+    "meaning": "성씨",
+    "level": "中",
+    "order": 949
+  },
+  {
+    "hanja": "兒",
+    "sound": "아",
+    "meaning": "아이",
+    "level": "中",
+    "order": 950
+  },
+  {
+    "hanja": "我",
+    "sound": "아",
+    "meaning": "나",
+    "level": "中",
+    "order": 951
+  },
+  {
+    "hanja": "亞",
+    "sound": "아",
+    "meaning": "버금",
+    "level": "高",
+    "order": 952
+  },
+  {
+    "hanja": "牙",
+    "sound": "아",
+    "meaning": "어금니",
+    "level": "高",
+    "order": 953
+  },
+  {
+    "hanja": "芽",
+    "sound": "아",
+    "meaning": "싹",
+    "level": "高",
+    "order": 954
+  },
+  {
+    "hanja": "雅",
+    "sound": "아",
+    "meaning": "맑을/우아할",
+    "level": "高",
+    "order": 955
+  },
+  {
+    "hanja": "餓",
+    "sound": "아",
+    "meaning": "주릴",
+    "level": "高",
+    "order": 956
+  },
+  {
+    "hanja": "惡",
+    "sound": "악",
+    "meaning": "나쁠",
+    "level": "中",
+    "order": 957
+  },
+  {
+    "hanja": "岳",
+    "sound": "악",
+    "meaning": "큰 산",
+    "level": "高",
+    "order": 958
+  },
+  {
+    "hanja": "安",
+    "sound": "안",
+    "meaning": "편안할",
+    "level": "中",
+    "order": 959
+  },
+  {
+    "hanja": "案",
+    "sound": "안",
+    "meaning": "책상/안건",
+    "level": "中",
+    "order": 960
+  },
+  {
+    "hanja": "眼",
+    "sound": "안",
+    "meaning": "눈",
+    "level": "中",
+    "order": 961
+  },
+  {
+    "hanja": "顔",
+    "sound": "안",
+    "meaning": "얼굴",
+    "level": "中",
+    "order": 962
+  },
+  {
+    "hanja": "岸",
+    "sound": "안",
+    "meaning": "언덕",
+    "level": "高",
+    "order": 963
+  },
+  {
+    "hanja": "雁",
+    "sound": "안",
+    "meaning": "기러기",
+    "level": "高",
+    "order": 964
+  },
+  {
+    "hanja": "謁",
+    "sound": "알",
+    "meaning": "뵐",
+    "level": "高",
+    "order": 965
+  },
+  {
+    "hanja": "巖",
+    "sound": "암",
+    "meaning": "바위",
+    "level": "中",
+    "order": 966
+  },
+  {
+    "hanja": "暗",
+    "sound": "암",
+    "meaning": "어두울",
+    "level": "中",
+    "order": 967
+  },
+  {
+    "hanja": "壓",
+    "sound": "압",
+    "meaning": "누를",
+    "level": "高",
+    "order": 968
+  },
+  {
+    "hanja": "押",
+    "sound": "압",
+    "meaning": "누를/억압할",
+    "level": "高",
+    "order": 969
+  },
+  {
+    "hanja": "仰",
+    "sound": "앙",
+    "meaning": "우러를",
+    "level": "中",
+    "order": 970
+  },
+  {
+    "hanja": "央",
+    "sound": "앙",
+    "meaning": "가운데",
+    "level": "高",
+    "order": 971
+  },
+  {
+    "hanja": "殃",
+    "sound": "앙",
+    "meaning": "재앙",
+    "level": "高",
+    "order": 972
+  },
+  {
+    "hanja": "哀",
+    "sound": "애",
+    "meaning": "슬플",
+    "level": "中",
+    "order": 973
+  },
+  {
+    "hanja": "愛",
+    "sound": "애",
+    "meaning": "사랑",
+    "level": "中",
+    "order": 974
+  },
+  {
+    "hanja": "涯",
+    "sound": "애",
+    "meaning": "물가",
+    "level": "高",
+    "order": 975
+  },
+  {
+    "hanja": "厄",
+    "sound": "액",
+    "meaning": "액",
+    "level": "高",
+    "order": 976
+  },
+  {
+    "hanja": "額",
+    "sound": "액",
+    "meaning": "이마",
+    "level": "高",
+    "order": 977
+  },
+  {
+    "hanja": "也",
+    "sound": "야",
+    "meaning": "어조사",
+    "level": "中",
+    "order": 978
+  },
+  {
+    "hanja": "夜",
+    "sound": "야",
+    "meaning": "밤",
+    "level": "中",
+    "order": 979
+  },
+  {
+    "hanja": "野",
+    "sound": "야",
+    "meaning": "들",
+    "level": "中",
+    "order": 980
+  },
+  {
+    "hanja": "耶",
+    "sound": "야",
+    "meaning": "어조사",
+    "level": "高",
+    "order": 981
+  },
+  {
+    "hanja": "弱",
+    "sound": "약",
+    "meaning": "약할",
+    "level": "中",
+    "order": 982
+  },
+  {
+    "hanja": "約",
+    "sound": "약",
+    "meaning": "맺을",
+    "level": "中",
+    "order": 983
+  },
+  {
+    "hanja": "若",
+    "sound": "약",
+    "meaning": "같을",
+    "level": "中",
+    "order": 984
+  },
+  {
+    "hanja": "藥",
+    "sound": "약",
+    "meaning": "약",
+    "level": "中",
+    "order": 985
+  },
+  {
+    "hanja": "躍",
+    "sound": "약",
+    "meaning": "뛸",
+    "level": "高",
+    "order": 986
+  },
+  {
+    "hanja": "揚",
+    "sound": "양",
+    "meaning": "날릴",
+    "level": "中",
+    "order": 987
+  },
+  {
+    "hanja": "洋",
+    "sound": "양",
+    "meaning": "큰 바다",
+    "level": "中",
+    "order": 988
+  },
+  {
+    "hanja": "羊",
+    "sound": "양",
+    "meaning": "양",
+    "level": "中",
+    "order": 989
+  },
+  {
+    "hanja": "讓",
+    "sound": "양",
+    "meaning": "사양할",
+    "level": "中",
+    "order": 990
+  },
+  {
+    "hanja": "陽",
+    "sound": "양",
+    "meaning": "볕",
+    "level": "中",
+    "order": 991
+  },
+  {
+    "hanja": "養",
+    "sound": "양",
+    "meaning": "기를",
+    "level": "中",
+    "order": 992
+  },
+  {
+    "hanja": "壤",
+    "sound": "양",
+    "meaning": "흙",
+    "level": "高",
+    "order": 993
+  },
+  {
+    "hanja": "楊",
+    "sound": "양",
+    "meaning": "버들",
+    "level": "高",
+    "order": 994
+  },
+  {
+    "hanja": "樣",
+    "sound": "양",
+    "meaning": "모양",
+    "level": "高",
+    "order": 995
+  },
+  {
+    "hanja": "於",
+    "sound": "어",
+    "meaning": "어조사",
+    "level": "中",
+    "order": 996
+  },
+  {
+    "hanja": "漁",
+    "sound": "어",
+    "meaning": "고기 잡을",
+    "level": "中",
+    "order": 997
+  },
+  {
+    "hanja": "語",
+    "sound": "어",
+    "meaning": "말씀",
+    "level": "中",
+    "order": 998
+  },
+  {
+    "hanja": "魚",
+    "sound": "어",
+    "meaning": "물고기",
+    "level": "中",
+    "order": 999
+  },
+  {
+    "hanja": "御",
+    "sound": "어",
+    "meaning": "어거할",
+    "level": "高",
+    "order": 1000
+  },
+  {
+    "hanja": "億",
+    "sound": "억",
+    "meaning": "억",
+    "level": "中",
+    "order": 1001
+  },
+  {
+    "hanja": "憶",
+    "sound": "억",
+    "meaning": "생각할",
+    "level": "中",
+    "order": 1002
+  },
+  {
+    "hanja": "抑",
+    "sound": "억",
+    "meaning": "누를/억압할",
+    "level": "高",
+    "order": 1003
+  },
+  {
+    "hanja": "言",
+    "sound": "언",
+    "meaning": "말씀",
+    "level": "中",
+    "order": 1004
+  },
+  {
+    "hanja": "焉",
+    "sound": "언",
+    "meaning": "어찌",
+    "level": "高",
+    "order": 1005
+  },
+  {
+    "hanja": "嚴",
+    "sound": "엄",
+    "meaning": "엄할",
+    "level": "中",
+    "order": 1006
+  },
+  {
+    "hanja": "業",
+    "sound": "업",
+    "meaning": "일",
+    "level": "中",
+    "order": 1007
+  },
+  {
+    "hanja": "余",
+    "sound": "여",
+    "meaning": "나",
+    "level": "中",
+    "order": 1008
+  },
+  {
+    "hanja": "如",
+    "sound": "여",
+    "meaning": "같을",
+    "level": "中",
+    "order": 1009
+  },
+  {
+    "hanja": "汝",
+    "sound": "여",
+    "meaning": "너",
+    "level": "中",
+    "order": 1010
+  },
+  {
+    "hanja": "與",
+    "sound": "여",
+    "meaning": "줄",
+    "level": "中",
+    "order": 1011
+  },
+  {
+    "hanja": "餘",
+    "sound": "여",
+    "meaning": "남을",
+    "level": "中",
+    "order": 1012
+  },
+  {
+    "hanja": "予",
+    "sound": "여",
+    "meaning": "나",
+    "level": "高",
+    "order": 1013
+  },
+  {
+    "hanja": "輿",
+    "sound": "여",
+    "meaning": "수레",
+    "level": "高",
+    "order": 1014
+  },
+  {
+    "hanja": "亦",
+    "sound": "역",
+    "meaning": "또",
+    "level": "中",
+    "order": 1015
+  },
+  {
+    "hanja": "易",
+    "sound": "역",
+    "meaning": "바꿀",
+    "level": "中",
+    "order": 1016
+  },
+  {
+    "hanja": "逆",
+    "sound": "역",
+    "meaning": "거스를",
+    "level": "中",
+    "order": 1017
+  },
+  {
+    "hanja": "域",
+    "sound": "역",
+    "meaning": "지경",
+    "level": "高",
+    "order": 1018
+  },
+  {
+    "hanja": "役",
+    "sound": "역",
+    "meaning": "부릴",
+    "level": "高",
+    "order": 1019
+  },
+  {
+    "hanja": "疫",
+    "sound": "역",
+    "meaning": "전염병",
+    "level": "高",
+    "order": 1020
+  },
+  {
+    "hanja": "譯",
+    "sound": "역",
+    "meaning": "풀/번역할",
+    "level": "高",
+    "order": 1021
+  },
+  {
+    "hanja": "驛",
+    "sound": "역",
+    "meaning": "역참",
+    "level": "高",
+    "order": 1022
+  },
+  {
+    "hanja": "然",
+    "sound": "연",
+    "meaning": "그러할",
+    "level": "中",
+    "order": 1023
+  },
+  {
+    "hanja": "煙",
+    "sound": "연",
+    "meaning": "연기",
+    "level": "中",
+    "order": 1024
+  },
+  {
+    "hanja": "硏",
+    "sound": "연",
+    "meaning": "갈",
+    "level": "中",
+    "order": 1025
+  },
+  {
+    "hanja": "宴",
+    "sound": "연",
+    "meaning": "잔치",
+    "level": "高",
+    "order": 1026
+  },
+  {
+    "hanja": "延",
+    "sound": "연",
+    "meaning": "늘일",
+    "level": "高",
+    "order": 1027
+  },
+  {
+    "hanja": "沿",
+    "sound": "연",
+    "meaning": "따를",
+    "level": "高",
+    "order": 1028
+  },
+  {
+    "hanja": "演",
+    "sound": "연",
+    "meaning": "펼",
+    "level": "高",
+    "order": 1029
+  },
+  {
+    "hanja": "燃",
+    "sound": "연",
+    "meaning": "탈",
+    "level": "高",
+    "order": 1030
+  },
+  {
+    "hanja": "燕",
+    "sound": "연",
+    "meaning": "제비",
+    "level": "高",
+    "order": 1031
+  },
+  {
+    "hanja": "緣",
+    "sound": "연",
+    "meaning": "인연",
+    "level": "高",
+    "order": 1032
+  },
+  {
+    "hanja": "軟",
+    "sound": "연",
+    "meaning": "연할",
+    "level": "高",
+    "order": 1033
+  },
+  {
+    "hanja": "鉛",
+    "sound": "연",
+    "meaning": "납",
+    "level": "高",
+    "order": 1034
+  },
+  {
+    "hanja": "悅",
+    "sound": "열",
+    "meaning": "기쁠",
+    "level": "中",
+    "order": 1035
+  },
+  {
+    "hanja": "熱",
+    "sound": "열",
+    "meaning": "더울",
+    "level": "中",
+    "order": 1036
+  },
+  {
+    "hanja": "閱",
+    "sound": "열",
+    "meaning": "볼/검열할",
+    "level": "高",
+    "order": 1037
+  },
+  {
+    "hanja": "炎",
+    "sound": "염",
+    "meaning": "불꽃",
+    "level": "中",
+    "order": 1038
+  },
+  {
+    "hanja": "染",
+    "sound": "염",
+    "meaning": "물들",
+    "level": "高",
+    "order": 1039
+  },
+  {
+    "hanja": "鹽",
+    "sound": "염",
+    "meaning": "소금",
+    "level": "高",
+    "order": 1040
+  },
+  {
+    "hanja": "葉",
+    "sound": "엽",
+    "meaning": "잎",
+    "level": "中",
+    "order": 1041
+  },
+  {
+    "hanja": "榮",
+    "sound": "영",
+    "meaning": "영화로울",
+    "level": "中",
+    "order": 1042
+  },
+  {
+    "hanja": "永",
+    "sound": "영",
+    "meaning": "길",
+    "level": "中",
+    "order": 1043
+  },
+  {
+    "hanja": "英",
+    "sound": "영",
+    "meaning": "꽃부리",
+    "level": "中",
+    "order": 1044
+  },
+  {
+    "hanja": "迎",
+    "sound": "영",
+    "meaning": "맞을",
+    "level": "中",
+    "order": 1045
+  },
+  {
+    "hanja": "影",
+    "sound": "영",
+    "meaning": "그림자",
+    "level": "高",
+    "order": 1046
+  },
+  {
+    "hanja": "映",
+    "sound": "영",
+    "meaning": "비출",
+    "level": "高",
+    "order": 1047
+  },
+  {
+    "hanja": "泳",
+    "sound": "영",
+    "meaning": "헤엄칠",
+    "level": "高",
+    "order": 1048
+  },
+  {
+    "hanja": "營",
+    "sound": "영",
+    "meaning": "경영할",
+    "level": "高",
+    "order": 1049
+  },
+  {
+    "hanja": "詠",
+    "sound": "영",
+    "meaning": "읊을",
+    "level": "高",
+    "order": 1050
+  },
+  {
+    "hanja": "藝",
+    "sound": "예",
+    "meaning": "재주",
+    "level": "中",
+    "order": 1051
+  },
+  {
+    "hanja": "譽",
+    "sound": "예",
+    "meaning": "기릴",
+    "level": "高",
+    "order": 1052
+  },
+  {
+    "hanja": "銳",
+    "sound": "예",
+    "meaning": "날카로울",
+    "level": "高",
+    "order": 1053
+  },
+  {
+    "hanja": "豫",
+    "sound": "예",
+    "meaning": "미리",
+    "level": "高",
+    "order": 1054
+  },
+  {
+    "hanja": "五",
+    "sound": "오",
+    "meaning": "다섯",
+    "level": "中",
+    "order": 1055
+  },
+  {
+    "hanja": "午",
+    "sound": "오",
+    "meaning": "낮",
+    "level": "中",
+    "order": 1056
+  },
+  {
+    "hanja": "吾",
+    "sound": "오",
+    "meaning": "나",
+    "level": "中",
+    "order": 1057
+  },
+  {
+    "hanja": "悟",
+    "sound": "오",
+    "meaning": "깨달을",
+    "level": "中",
+    "order": 1058
+  },
+  {
+    "hanja": "烏",
+    "sound": "오",
+    "meaning": "까마귀",
+    "level": "中",
+    "order": 1059
+  },
+  {
+    "hanja": "誤",
+    "sound": "오",
+    "meaning": "그르칠",
+    "level": "中",
+    "order": 1060
+  },
+  {
+    "hanja": "傲",
+    "sound": "오",
+    "meaning": "오만할",
+    "level": "高",
+    "order": 1061
+  },
+  {
+    "hanja": "嗚",
+    "sound": "오",
+    "meaning": "슬플/흐느낄",
+    "level": "高",
+    "order": 1062
+  },
+  {
+    "hanja": "娛",
+    "sound": "오",
+    "meaning": "즐길",
+    "level": "高",
+    "order": 1063
+  },
+  {
+    "hanja": "汚",
+    "sound": "오",
+    "meaning": "더러울",
+    "level": "高",
+    "order": 1064
+  },
+  {
+    "hanja": "屋",
+    "sound": "옥",
+    "meaning": "집",
+    "level": "中",
+    "order": 1065
+  },
+  {
+    "hanja": "玉",
+    "sound": "옥",
+    "meaning": "구슬",
+    "level": "中",
+    "order": 1066
+  },
+  {
+    "hanja": "獄",
+    "sound": "옥",
+    "meaning": "옥",
+    "level": "高",
+    "order": 1067
+  },
+  {
+    "hanja": "溫",
+    "sound": "온",
+    "meaning": "따뜻할",
+    "level": "中",
+    "order": 1068
+  },
+  {
+    "hanja": "擁",
+    "sound": "옹",
+    "meaning": "낄/안을",
+    "level": "高",
+    "order": 1069
+  },
+  {
+    "hanja": "翁",
+    "sound": "옹",
+    "meaning": "늙은이",
+    "level": "高",
+    "order": 1070
+  },
+  {
+    "hanja": "瓦",
+    "sound": "와",
+    "meaning": "기와",
+    "level": "中",
+    "order": 1071
+  },
+  {
+    "hanja": "臥",
+    "sound": "와",
+    "meaning": "누울",
+    "level": "中",
+    "order": 1072
+  },
+  {
+    "hanja": "完",
+    "sound": "완",
+    "meaning": "완전할",
+    "level": "中",
+    "order": 1073
+  },
+  {
+    "hanja": "緩",
+    "sound": "완",
+    "meaning": "느릴/느슨할",
+    "level": "高",
+    "order": 1074
+  },
+  {
+    "hanja": "曰",
+    "sound": "왈",
+    "meaning": "가로",
+    "level": "中",
+    "order": 1075
+  },
+  {
+    "hanja": "往",
+    "sound": "왕",
+    "meaning": "갈",
+    "level": "中",
+    "order": 1076
+  },
+  {
+    "hanja": "王",
+    "sound": "왕",
+    "meaning": "임금",
+    "level": "中",
+    "order": 1077
+  },
+  {
+    "hanja": "外",
+    "sound": "외",
+    "meaning": "바깥",
+    "level": "中",
+    "order": 1078
+  },
+  {
+    "hanja": "畏",
+    "sound": "외",
+    "meaning": "두려워할",
+    "level": "高",
+    "order": 1079
+  },
+  {
+    "hanja": "要",
+    "sound": "요",
+    "meaning": "요긴할",
+    "level": "中",
+    "order": 1080
+  },
+  {
+    "hanja": "搖",
+    "sound": "요",
+    "meaning": "흔들",
+    "level": "高",
+    "order": 1081
+  },
+  {
+    "hanja": "腰",
+    "sound": "요",
+    "meaning": "허리",
+    "level": "高",
+    "order": 1082
+  },
+  {
+    "hanja": "謠",
+    "sound": "요",
+    "meaning": "노래",
+    "level": "高",
+    "order": 1083
+  },
+  {
+    "hanja": "遙",
+    "sound": "요",
+    "meaning": "멀",
+    "level": "高",
+    "order": 1084
+  },
+  {
+    "hanja": "欲",
+    "sound": "욕",
+    "meaning": "하고자 할",
+    "level": "中",
+    "order": 1085
+  },
+  {
+    "hanja": "浴",
+    "sound": "욕",
+    "meaning": "목욕할",
+    "level": "中",
+    "order": 1086
+  },
+  {
+    "hanja": "慾",
+    "sound": "욕",
+    "meaning": "욕심",
+    "level": "高",
+    "order": 1087
+  },
+  {
+    "hanja": "辱",
+    "sound": "욕",
+    "meaning": "욕될",
+    "level": "高",
+    "order": 1088
+  },
+  {
+    "hanja": "勇",
+    "sound": "용",
+    "meaning": "날랠",
+    "level": "中",
+    "order": 1089
+  },
+  {
+    "hanja": "容",
+    "sound": "용",
+    "meaning": "얼굴",
+    "level": "中",
+    "order": 1090
+  },
+  {
+    "hanja": "用",
+    "sound": "용",
+    "meaning": "쓸",
+    "level": "中",
+    "order": 1091
+  },
+  {
+    "hanja": "庸",
+    "sound": "용",
+    "meaning": "떳떳할",
+    "level": "高",
+    "order": 1092
+  },
+  {
+    "hanja": "于",
+    "sound": "우",
+    "meaning": "어조사",
+    "level": "中",
+    "order": 1093
+  },
+  {
+    "hanja": "又",
+    "sound": "우",
+    "meaning": "또",
+    "level": "中",
+    "order": 1094
+  },
+  {
+    "hanja": "友",
+    "sound": "우",
+    "meaning": "벗",
+    "level": "中",
+    "order": 1095
+  },
+  {
+    "hanja": "右",
+    "sound": "우",
+    "meaning": "오른",
+    "level": "中",
+    "order": 1096
+  },
+  {
+    "hanja": "宇",
+    "sound": "우",
+    "meaning": "집",
+    "level": "中",
+    "order": 1097
+  },
+  {
+    "hanja": "尤",
+    "sound": "우",
+    "meaning": "더욱",
+    "level": "中",
+    "order": 1098
+  },
+  {
+    "hanja": "憂",
+    "sound": "우",
+    "meaning": "근심",
+    "level": "中",
+    "order": 1099
+  },
+  {
+    "hanja": "牛",
+    "sound": "우",
+    "meaning": "소",
+    "level": "中",
+    "order": 1100
+  },
+  {
+    "hanja": "遇",
+    "sound": "우",
+    "meaning": "만날",
+    "level": "中",
+    "order": 1101
+  },
+  {
+    "hanja": "雨",
+    "sound": "우",
+    "meaning": "비",
+    "level": "中",
+    "order": 1102
+  },
+  {
+    "hanja": "偶",
+    "sound": "우",
+    "meaning": "짝",
+    "level": "高",
+    "order": 1103
+  },
+  {
+    "hanja": "優",
+    "sound": "우",
+    "meaning": "넉넉할",
+    "level": "高",
+    "order": 1104
+  },
+  {
+    "hanja": "愚",
+    "sound": "우",
+    "meaning": "어리석을",
+    "level": "高",
+    "order": 1105
+  },
+  {
+    "hanja": "羽",
+    "sound": "우",
+    "meaning": "깃",
+    "level": "高",
+    "order": 1106
+  },
+  {
+    "hanja": "郵",
+    "sound": "우",
+    "meaning": "우편/역참",
+    "level": "高",
+    "order": 1107
+  },
+  {
+    "hanja": "云",
+    "sound": "운",
+    "meaning": "이를",
+    "level": "中",
+    "order": 1108
+  },
+  {
+    "hanja": "運",
+    "sound": "운",
+    "meaning": "옮길",
+    "level": "中",
+    "order": 1109
+  },
+  {
+    "hanja": "雲",
+    "sound": "운",
+    "meaning": "구름",
+    "level": "中",
+    "order": 1110
+  },
+  {
+    "hanja": "韻",
+    "sound": "운",
+    "meaning": "운",
+    "level": "高",
+    "order": 1111
+  },
+  {
+    "hanja": "雄",
+    "sound": "웅",
+    "meaning": "수컷",
+    "level": "中",
+    "order": 1112
+  },
+  {
+    "hanja": "元",
+    "sound": "원",
+    "meaning": "으뜸",
+    "level": "中",
+    "order": 1113
+  },
+  {
+    "hanja": "原",
+    "sound": "원",
+    "meaning": "언덕",
+    "level": "中",
+    "order": 1114
+  },
+  {
+    "hanja": "圓",
+    "sound": "원",
+    "meaning": "둥글",
+    "level": "中",
+    "order": 1115
+  },
+  {
+    "hanja": "園",
+    "sound": "원",
+    "meaning": "동산",
+    "level": "中",
+    "order": 1116
+  },
+  {
+    "hanja": "怨",
+    "sound": "원",
+    "meaning": "원망할",
+    "level": "中",
+    "order": 1117
+  },
+  {
+    "hanja": "遠",
+    "sound": "원",
+    "meaning": "멀",
+    "level": "中",
+    "order": 1118
+  },
+  {
+    "hanja": "願",
+    "sound": "원",
+    "meaning": "원할",
+    "level": "中",
+    "order": 1119
+  },
+  {
+    "hanja": "員",
+    "sound": "원",
+    "meaning": "인원/관원",
+    "level": "高",
+    "order": 1120
+  },
+  {
+    "hanja": "援",
+    "sound": "원",
+    "meaning": "도울",
+    "level": "高",
+    "order": 1121
+  },
+  {
+    "hanja": "源",
+    "sound": "원",
+    "meaning": "근원",
+    "level": "高",
+    "order": 1122
+  },
+  {
+    "hanja": "院",
+    "sound": "원",
+    "meaning": "집",
+    "level": "高",
+    "order": 1123
+  },
+  {
+    "hanja": "月",
+    "sound": "월",
+    "meaning": "달",
+    "level": "中",
+    "order": 1124
+  },
+  {
+    "hanja": "越",
+    "sound": "월",
+    "meaning": "넘을",
+    "level": "高",
+    "order": 1125
+  },
+  {
+    "hanja": "位",
+    "sound": "위",
+    "meaning": "자리",
+    "level": "中",
+    "order": 1126
+  },
+  {
+    "hanja": "偉",
+    "sound": "위",
+    "meaning": "클/훌륭할",
+    "level": "中",
+    "order": 1127
+  },
+  {
+    "hanja": "危",
+    "sound": "위",
+    "meaning": "위태할",
+    "level": "中",
+    "order": 1128
+  },
+  {
+    "hanja": "威",
+    "sound": "위",
+    "meaning": "위엄",
+    "level": "中",
+    "order": 1129
+  },
+  {
+    "hanja": "爲",
+    "sound": "위",
+    "meaning": "할",
+    "level": "中",
+    "order": 1130
+  },
+  {
+    "hanja": "僞",
+    "sound": "위",
+    "meaning": "거짓",
+    "level": "高",
+    "order": 1131
+  },
+  {
+    "hanja": "圍",
+    "sound": "위",
+    "meaning": "에워쌀",
+    "level": "高",
+    "order": 1132
+  },
+  {
+    "hanja": "委",
+    "sound": "위",
+    "meaning": "맡길",
+    "level": "高",
+    "order": 1133
+  },
+  {
+    "hanja": "慰",
+    "sound": "위",
+    "meaning": "위로할",
+    "level": "高",
+    "order": 1134
+  },
+  {
+    "hanja": "緯",
+    "sound": "위",
+    "meaning": "씨",
+    "level": "高",
+    "order": 1135
+  },
+  {
+    "hanja": "胃",
+    "sound": "위",
+    "meaning": "위장",
+    "level": "高",
+    "order": 1136
+  },
+  {
+    "hanja": "衛",
+    "sound": "위",
+    "meaning": "지킬",
+    "level": "高",
+    "order": 1137
+  },
+  {
+    "hanja": "謂",
+    "sound": "위",
+    "meaning": "이를",
+    "level": "高",
+    "order": 1138
+  },
+  {
+    "hanja": "違",
+    "sound": "위",
+    "meaning": "어긋날/어길",
+    "level": "高",
+    "order": 1139
+  },
+  {
+    "hanja": "唯",
+    "sound": "유",
+    "meaning": "오직",
+    "level": "中",
+    "order": 1140
+  },
+  {
+    "hanja": "幼",
+    "sound": "유",
+    "meaning": "어릴",
+    "level": "中",
+    "order": 1141
+  },
+  {
+    "hanja": "有",
+    "sound": "유",
+    "meaning": "있을",
+    "level": "中",
+    "order": 1142
+  },
+  {
+    "hanja": "柔",
+    "sound": "유",
+    "meaning": "부드러울",
+    "level": "中",
+    "order": 1143
+  },
+  {
+    "hanja": "油",
+    "sound": "유",
+    "meaning": "기름",
+    "level": "中",
+    "order": 1144
+  },
+  {
+    "hanja": "猶",
+    "sound": "유",
+    "meaning": "오히려",
+    "level": "中",
+    "order": 1145
+  },
+  {
+    "hanja": "由",
+    "sound": "유",
+    "meaning": "말미암을",
+    "level": "中",
+    "order": 1146
+  },
+  {
+    "hanja": "遊",
+    "sound": "유",
+    "meaning": "놀",
+    "level": "中",
+    "order": 1147
+  },
+  {
+    "hanja": "遺",
+    "sound": "유",
+    "meaning": "남길",
+    "level": "中",
+    "order": 1148
+  },
+  {
+    "hanja": "酉",
+    "sound": "유",
+    "meaning": "닭",
+    "level": "中",
+    "order": 1149
+  },
+  {
+    "hanja": "乳",
+    "sound": "유",
+    "meaning": "젖",
+    "level": "高",
+    "order": 1150
+  },
+  {
+    "hanja": "儒",
+    "sound": "유",
+    "meaning": "선비",
+    "level": "高",
+    "order": 1151
+  },
+  {
+    "hanja": "幽",
+    "sound": "유",
+    "meaning": "그윽할",
+    "level": "高",
+    "order": 1152
+  },
+  {
+    "hanja": "悠",
+    "sound": "유",
+    "meaning": "멀",
+    "level": "高",
+    "order": 1153
+  },
+  {
+    "hanja": "惟",
+    "sound": "유",
+    "meaning": "생각할",
+    "level": "高",
+    "order": 1154
+  },
+  {
+    "hanja": "愈",
+    "sound": "유",
+    "meaning": "나을",
+    "level": "高",
+    "order": 1155
+  },
+  {
+    "hanja": "維",
+    "sound": "유",
+    "meaning": "벼리",
+    "level": "高",
+    "order": 1156
+  },
+  {
+    "hanja": "裕",
+    "sound": "유",
+    "meaning": "넉넉할",
+    "level": "高",
+    "order": 1157
+  },
+  {
+    "hanja": "誘",
+    "sound": "유",
+    "meaning": "꾈",
+    "level": "高",
+    "order": 1158
+  },
+  {
+    "hanja": "肉",
+    "sound": "육",
+    "meaning": "고기",
+    "level": "中",
+    "order": 1159
+  },
+  {
+    "hanja": "育",
+    "sound": "육",
+    "meaning": "기를",
+    "level": "中",
+    "order": 1160
+  },
+  {
+    "hanja": "潤",
+    "sound": "윤",
+    "meaning": "불을/젖을/윤택할",
+    "level": "高",
+    "order": 1161
+  },
+  {
+    "hanja": "閏",
+    "sound": "윤",
+    "meaning": "윤달",
+    "level": "高",
+    "order": 1162
+  },
+  {
+    "hanja": "恩",
+    "sound": "은",
+    "meaning": "은혜",
+    "level": "中",
+    "order": 1163
+  },
+  {
+    "hanja": "銀",
+    "sound": "은",
+    "meaning": "은",
+    "level": "中",
+    "order": 1164
+  },
+  {
+    "hanja": "隱",
+    "sound": "은",
+    "meaning": "숨을",
+    "level": "高",
+    "order": 1165
+  },
+  {
+    "hanja": "乙",
+    "sound": "을",
+    "meaning": "새",
+    "level": "中",
+    "order": 1166
+  },
+  {
+    "hanja": "吟",
+    "sound": "음",
+    "meaning": "읊을",
+    "level": "中",
+    "order": 1167
+  },
+  {
+    "hanja": "陰",
+    "sound": "음",
+    "meaning": "그늘",
+    "level": "中",
+    "order": 1168
+  },
+  {
+    "hanja": "音",
+    "sound": "음",
+    "meaning": "소리",
+    "level": "中",
+    "order": 1169
+  },
+  {
+    "hanja": "飮",
+    "sound": "음",
+    "meaning": "마실",
+    "level": "中",
+    "order": 1170
+  },
+  {
+    "hanja": "淫",
+    "sound": "음",
+    "meaning": "음란할",
+    "level": "高",
+    "order": 1171
+  },
+  {
+    "hanja": "泣",
+    "sound": "읍",
+    "meaning": "울",
+    "level": "中",
+    "order": 1172
+  },
+  {
+    "hanja": "邑",
+    "sound": "읍",
+    "meaning": "고을",
+    "level": "中",
+    "order": 1173
+  },
+  {
+    "hanja": "應",
+    "sound": "응",
+    "meaning": "응할",
+    "level": "中",
+    "order": 1174
+  },
+  {
+    "hanja": "凝",
+    "sound": "응",
+    "meaning": "엉길",
+    "level": "高",
+    "order": 1175
+  },
+  {
+    "hanja": "依",
+    "sound": "의",
+    "meaning": "의지할/기댈",
+    "level": "中",
+    "order": 1176
+  },
+  {
+    "hanja": "意",
+    "sound": "의",
+    "meaning": "뜻",
+    "level": "中",
+    "order": 1177
+  },
+  {
+    "hanja": "矣",
+    "sound": "의",
+    "meaning": "어조사",
+    "level": "中",
+    "order": 1178
+  },
+  {
+    "hanja": "義",
+    "sound": "의",
+    "meaning": "옳을",
+    "level": "中",
+    "order": 1179
+  },
+  {
+    "hanja": "衣",
+    "sound": "의",
+    "meaning": "옷",
+    "level": "中",
+    "order": 1180
+  },
+  {
+    "hanja": "議",
+    "sound": "의",
+    "meaning": "의논할",
+    "level": "中",
+    "order": 1181
+  },
+  {
+    "hanja": "醫",
+    "sound": "의",
+    "meaning": "의원",
+    "level": "中",
+    "order": 1182
+  },
+  {
+    "hanja": "儀",
+    "sound": "의",
+    "meaning": "거동",
+    "level": "高",
+    "order": 1183
+  },
+  {
+    "hanja": "宜",
+    "sound": "의",
+    "meaning": "마땅",
+    "level": "高",
+    "order": 1184
+  },
+  {
+    "hanja": "疑",
+    "sound": "의",
+    "meaning": "의심할/믿지 앓을",
+    "level": "高",
+    "order": 1185
+  },
+  {
+    "hanja": "二",
+    "sound": "이",
+    "meaning": "두",
+    "level": "中",
+    "order": 1186
+  },
+  {
+    "hanja": "以",
+    "sound": "이",
+    "meaning": "써",
+    "level": "中",
+    "order": 1187
+  },
+  {
+    "hanja": "已",
+    "sound": "이",
+    "meaning": "이미",
+    "level": "中",
+    "order": 1188
+  },
+  {
+    "hanja": "異",
+    "sound": "이",
+    "meaning": "다를",
+    "level": "中",
+    "order": 1189
+  },
+  {
+    "hanja": "移",
+    "sound": "이",
+    "meaning": "옮길",
+    "level": "中",
+    "order": 1190
+  },
+  {
+    "hanja": "而",
+    "sound": "이",
+    "meaning": "말 이을",
+    "level": "中",
+    "order": 1191
+  },
+  {
+    "hanja": "耳",
+    "sound": "이",
+    "meaning": "귀",
+    "level": "中",
+    "order": 1192
+  },
+  {
+    "hanja": "夷",
+    "sound": "이",
+    "meaning": "오랑캐",
+    "level": "高",
+    "order": 1193
+  },
+  {
+    "hanja": "益",
+    "sound": "익",
+    "meaning": "더할",
+    "level": "中",
+    "order": 1194
+  },
+  {
+    "hanja": "翼",
+    "sound": "익",
+    "meaning": "날개",
+    "level": "高",
+    "order": 1195
+  },
+  {
+    "hanja": "人",
+    "sound": "인",
+    "meaning": "사람",
+    "level": "中",
+    "order": 1196
+  },
+  {
+    "hanja": "仁",
+    "sound": "인",
+    "meaning": "어질",
+    "level": "中",
+    "order": 1197
+  },
+  {
+    "hanja": "印",
+    "sound": "인",
+    "meaning": "도장",
+    "level": "中",
+    "order": 1198
+  },
+  {
+    "hanja": "因",
+    "sound": "인",
+    "meaning": "인할",
+    "level": "中",
+    "order": 1199
+  },
+  {
+    "hanja": "寅",
+    "sound": "인",
+    "meaning": "범",
+    "level": "中",
+    "order": 1200
+  },
+  {
+    "hanja": "引",
+    "sound": "인",
+    "meaning": "끌",
+    "level": "中",
+    "order": 1201
+  },
+  {
+    "hanja": "忍",
+    "sound": "인",
+    "meaning": "참을",
+    "level": "中",
+    "order": 1202
+  },
+  {
+    "hanja": "認",
+    "sound": "인",
+    "meaning": "알",
+    "level": "中",
+    "order": 1203
+  },
+  {
+    "hanja": "姻",
+    "sound": "인",
+    "meaning": "혼인",
+    "level": "高",
+    "order": 1204
+  },
+  {
+    "hanja": "一",
+    "sound": "일",
+    "meaning": "한",
+    "level": "中",
+    "order": 1205
+  },
+  {
+    "hanja": "日",
+    "sound": "일",
+    "meaning": "날",
+    "level": "中",
+    "order": 1206
+  },
+  {
+    "hanja": "逸",
+    "sound": "일",
+    "meaning": "편안할",
+    "level": "高",
+    "order": 1207
+  },
+  {
+    "hanja": "壬",
+    "sound": "임",
+    "meaning": "북방",
+    "level": "中",
+    "order": 1208
+  },
+  {
+    "hanja": "任",
+    "sound": "임",
+    "meaning": "맡길",
+    "level": "高",
+    "order": 1209
+  },
+  {
+    "hanja": "賃",
+    "sound": "임",
+    "meaning": "품삯",
+    "level": "高",
+    "order": 1210
+  },
+  {
+    "hanja": "入",
+    "sound": "입",
+    "meaning": "들",
+    "level": "中",
+    "order": 1211
+  },
+  {
+    "hanja": "姊",
+    "sound": "자",
+    "meaning": "손윗누이",
+    "level": "中",
+    "order": 1212
+  },
+  {
+    "hanja": "子",
+    "sound": "자",
+    "meaning": "아들",
+    "level": "中",
+    "order": 1213
+  },
+  {
+    "hanja": "字",
+    "sound": "자",
+    "meaning": "글자",
+    "level": "中",
+    "order": 1214
+  },
+  {
+    "hanja": "慈",
+    "sound": "자",
+    "meaning": "사랑",
+    "level": "中",
+    "order": 1215
+  },
+  {
+    "hanja": "者",
+    "sound": "자",
+    "meaning": "놈",
+    "level": "中",
+    "order": 1216
+  },
+  {
+    "hanja": "自",
+    "sound": "자",
+    "meaning": "스스로",
+    "level": "中",
+    "order": 1217
+  },
+  {
+    "hanja": "刺",
+    "sound": "자",
+    "meaning": "찌를",
+    "level": "高",
+    "order": 1218
+  },
+  {
+    "hanja": "姿",
+    "sound": "자",
+    "meaning": "맵시",
+    "level": "高",
+    "order": 1219
+  },
+  {
+    "hanja": "恣",
+    "sound": "자",
+    "meaning": "마음대로",
+    "level": "高",
+    "order": 1220
+  },
+  {
+    "hanja": "紫",
+    "sound": "자",
+    "meaning": "자줏빛",
+    "level": "高",
+    "order": 1221
+  },
+  {
+    "hanja": "玆",
+    "sound": "자",
+    "meaning": "무성할",
+    "level": "高",
+    "order": 1222
+  },
+  {
+    "hanja": "資",
+    "sound": "자",
+    "meaning": "재물",
+    "level": "高",
+    "order": 1223
+  },
+  {
+    "hanja": "作",
+    "sound": "작",
+    "meaning": "지을",
+    "level": "中",
+    "order": 1224
+  },
+  {
+    "hanja": "昨",
+    "sound": "작",
+    "meaning": "어제",
+    "level": "中",
+    "order": 1225
+  },
+  {
+    "hanja": "爵",
+    "sound": "작",
+    "meaning": "벼슬",
+    "level": "高",
+    "order": 1226
+  },
+  {
+    "hanja": "酌",
+    "sound": "작",
+    "meaning": "따를",
+    "level": "高",
+    "order": 1227
+  },
+  {
+    "hanja": "殘",
+    "sound": "잔",
+    "meaning": "잔인할",
+    "level": "高",
+    "order": 1228
+  },
+  {
+    "hanja": "暫",
+    "sound": "잠",
+    "meaning": "잠깐",
+    "level": "高",
+    "order": 1229
+  },
+  {
+    "hanja": "潛",
+    "sound": "잠",
+    "meaning": "잠길",
+    "level": "高",
+    "order": 1230
+  },
+  {
+    "hanja": "雜",
+    "sound": "잡",
+    "meaning": "섞일",
+    "level": "高",
+    "order": 1231
+  },
+  {
+    "hanja": "場",
+    "sound": "장",
+    "meaning": "마당",
+    "level": "中",
+    "order": 1232
+  },
+  {
+    "hanja": "壯",
+    "sound": "장",
+    "meaning": "씩씩할",
+    "level": "中",
+    "order": 1233
+  },
+  {
+    "hanja": "將",
+    "sound": "장",
+    "meaning": "장수/장차",
+    "level": "中",
+    "order": 1234
+  },
+  {
+    "hanja": "章",
+    "sound": "장",
+    "meaning": "글",
+    "level": "中",
+    "order": 1235
+  },
+  {
+    "hanja": "長",
+    "sound": "장",
+    "meaning": "길",
+    "level": "中",
+    "order": 1236
+  },
+  {
+    "hanja": "丈",
+    "sound": "장",
+    "meaning": "어른",
+    "level": "高",
+    "order": 1237
+  },
+  {
+    "hanja": "墻",
+    "sound": "장",
+    "meaning": "담",
+    "level": "高",
+    "order": 1238
+  },
+  {
+    "hanja": "奬",
+    "sound": "장",
+    "meaning": "장려할",
+    "level": "高",
+    "order": 1239
+  },
+  {
+    "hanja": "帳",
+    "sound": "장",
+    "meaning": "장막",
+    "level": "高",
+    "order": 1240
+  },
+  {
+    "hanja": "張",
+    "sound": "장",
+    "meaning": "베풀",
+    "level": "高",
+    "order": 1241
+  },
+  {
+    "hanja": "掌",
+    "sound": "장",
+    "meaning": "손바닥",
+    "level": "高",
+    "order": 1242
+  },
+  {
+    "hanja": "粧",
+    "sound": "장",
+    "meaning": "단장할",
+    "level": "高",
+    "order": 1243
+  },
+  {
+    "hanja": "腸",
+    "sound": "장",
+    "meaning": "창자",
+    "level": "高",
+    "order": 1244
+  },
+  {
+    "hanja": "臟",
+    "sound": "장",
+    "meaning": "오장",
+    "level": "高",
+    "order": 1245
+  },
+  {
+    "hanja": "莊",
+    "sound": "장",
+    "meaning": "엄할",
+    "level": "高",
+    "order": 1246
+  },
+  {
+    "hanja": "葬",
+    "sound": "장",
+    "meaning": "장사지낼",
+    "level": "高",
+    "order": 1247
+  },
+  {
+    "hanja": "藏",
+    "sound": "장",
+    "meaning": "감출",
+    "level": "高",
+    "order": 1248
+  },
+  {
+    "hanja": "裝",
+    "sound": "장",
+    "meaning": "꾸밀",
+    "level": "高",
+    "order": 1249
+  },
+  {
+    "hanja": "障",
+    "sound": "장",
+    "meaning": "막을",
+    "level": "高",
+    "order": 1250
+  },
+  {
+    "hanja": "再",
+    "sound": "재",
+    "meaning": "두",
+    "level": "中",
+    "order": 1251
+  },
+  {
+    "hanja": "哉",
+    "sound": "재",
+    "meaning": "비롯할/처음",
+    "level": "中",
+    "order": 1252
+  },
+  {
+    "hanja": "在",
+    "sound": "재",
+    "meaning": "있을",
+    "level": "中",
+    "order": 1253
+  },
+  {
+    "hanja": "才",
+    "sound": "재",
+    "meaning": "재주",
+    "level": "中",
+    "order": 1254
+  },
+  {
+    "hanja": "材",
+    "sound": "재",
+    "meaning": "재목",
+    "level": "中",
+    "order": 1255
+  },
+  {
+    "hanja": "栽",
+    "sound": "재",
+    "meaning": "심을",
+    "level": "中",
+    "order": 1256
+  },
+  {
+    "hanja": "財",
+    "sound": "재",
+    "meaning": "재물",
+    "level": "中",
+    "order": 1257
+  },
+  {
+    "hanja": "宰",
+    "sound": "재",
+    "meaning": "재상",
+    "level": "高",
+    "order": 1258
+  },
+  {
+    "hanja": "災",
+    "sound": "재",
+    "meaning": "재앙",
+    "level": "高",
+    "order": 1259
+  },
+  {
+    "hanja": "裁",
+    "sound": "재",
+    "meaning": "마를",
+    "level": "高",
+    "order": 1260
+  },
+  {
+    "hanja": "載",
+    "sound": "재",
+    "meaning": "실을",
+    "level": "高",
+    "order": 1261
+  },
+  {
+    "hanja": "爭",
+    "sound": "쟁",
+    "meaning": "다툴",
+    "level": "中",
+    "order": 1262
+  },
+  {
+    "hanja": "低",
+    "sound": "저",
+    "meaning": "낮을",
+    "level": "中",
+    "order": 1263
+  },
+  {
+    "hanja": "著",
+    "sound": "저",
+    "meaning": "나타날",
+    "level": "中",
+    "order": 1264
+  },
+  {
+    "hanja": "貯",
+    "sound": "저",
+    "meaning": "쌓을",
+    "level": "中",
+    "order": 1265
+  },
+  {
+    "hanja": "底",
+    "sound": "저",
+    "meaning": "바닥",
+    "level": "高",
+    "order": 1266
+  },
+  {
+    "hanja": "抵",
+    "sound": "저",
+    "meaning": "막을",
+    "level": "高",
+    "order": 1267
+  },
+  {
+    "hanja": "敵",
+    "sound": "적",
+    "meaning": "대적할/적",
+    "level": "中",
+    "order": 1268
+  },
+  {
+    "hanja": "的",
+    "sound": "적",
+    "meaning": "과녁",
+    "level": "中",
+    "order": 1269
+  },
+  {
+    "hanja": "赤",
+    "sound": "적",
+    "meaning": "붉을",
+    "level": "中",
+    "order": 1270
+  },
+  {
+    "hanja": "適",
+    "sound": "적",
+    "meaning": "맞을",
+    "level": "中",
+    "order": 1271
+  },
+  {
+    "hanja": "寂",
+    "sound": "적",
+    "meaning": "고요할",
+    "level": "高",
+    "order": 1272
+  },
+  {
+    "hanja": "摘",
+    "sound": "적",
+    "meaning": "딸",
+    "level": "高",
+    "order": 1273
+  },
+  {
+    "hanja": "滴",
+    "sound": "적",
+    "meaning": "물방울",
+    "level": "高",
+    "order": 1274
+  },
+  {
+    "hanja": "積",
+    "sound": "적",
+    "meaning": "쌓을",
+    "level": "高",
+    "order": 1275
+  },
+  {
+    "hanja": "籍",
+    "sound": "적",
+    "meaning": "서적",
+    "level": "高",
+    "order": 1276
+  },
+  {
+    "hanja": "績",
+    "sound": "적",
+    "meaning": "길쌈할",
+    "level": "高",
+    "order": 1277
+  },
+  {
+    "hanja": "賊",
+    "sound": "적",
+    "meaning": "도적",
+    "level": "高",
+    "order": 1278
+  },
+  {
+    "hanja": "跡",
+    "sound": "적",
+    "meaning": "발자취",
+    "level": "高",
+    "order": 1279
+  },
+  {
+    "hanja": "傳",
+    "sound": "전",
+    "meaning": "전할",
+    "level": "中",
+    "order": 1280
+  },
+  {
+    "hanja": "全",
+    "sound": "전",
+    "meaning": "온전할",
+    "level": "中",
+    "order": 1281
+  },
+  {
+    "hanja": "典",
+    "sound": "전",
+    "meaning": "법",
+    "level": "中",
+    "order": 1282
+  },
+  {
+    "hanja": "前",
+    "sound": "전",
+    "meaning": "앞",
+    "level": "中",
+    "order": 1283
+  },
+  {
+    "hanja": "展",
+    "sound": "전",
+    "meaning": "펼",
+    "level": "中",
+    "order": 1284
+  },
+  {
+    "hanja": "戰",
+    "sound": "전",
+    "meaning": "싸울",
+    "level": "中",
+    "order": 1285
+  },
+  {
+    "hanja": "田",
+    "sound": "전",
+    "meaning": "밭",
+    "level": "中",
+    "order": 1286
+  },
+  {
+    "hanja": "錢",
+    "sound": "전",
+    "meaning": "돈",
+    "level": "中",
+    "order": 1287
+  },
+  {
+    "hanja": "電",
+    "sound": "전",
+    "meaning": "번개",
+    "level": "中",
+    "order": 1288
+  },
+  {
+    "hanja": "專",
+    "sound": "전",
+    "meaning": "오로지",
+    "level": "高",
+    "order": 1289
+  },
+  {
+    "hanja": "殿",
+    "sound": "전",
+    "meaning": "전각",
+    "level": "高",
+    "order": 1290
+  },
+  {
+    "hanja": "轉",
+    "sound": "전",
+    "meaning": "구를",
+    "level": "高",
+    "order": 1291
+  },
+  {
+    "hanja": "節",
+    "sound": "절",
+    "meaning": "마디",
+    "level": "中",
+    "order": 1292
+  },
+  {
+    "hanja": "絕",
+    "sound": "절",
+    "meaning": "끊을/그만둘",
+    "level": "中",
+    "order": 1293
+  },
+  {
+    "hanja": "切",
+    "sound": "절",
+    "meaning": "끊을/벨",
+    "level": "高",
+    "order": 1294
+  },
+  {
+    "hanja": "折",
+    "sound": "절",
+    "meaning": "꺾을",
+    "level": "高",
+    "order": 1295
+  },
+  {
+    "hanja": "竊",
+    "sound": "절",
+    "meaning": "훔칠",
+    "level": "高",
+    "order": 1296
+  },
+  {
+    "hanja": "店",
+    "sound": "점",
+    "meaning": "가게",
+    "level": "中",
+    "order": 1297
+  },
+  {
+    "hanja": "占",
+    "sound": "점",
+    "meaning": "차지할",
+    "level": "高",
+    "order": 1298
+  },
+  {
+    "hanja": "漸",
+    "sound": "점",
+    "meaning": "점점",
+    "level": "高",
+    "order": 1299
+  },
+  {
+    "hanja": "點",
+    "sound": "점",
+    "meaning": "점",
+    "level": "高",
+    "order": 1300
+  },
+  {
+    "hanja": "接",
+    "sound": "접",
+    "meaning": "이을/접할",
+    "level": "中",
+    "order": 1301
+  },
+  {
+    "hanja": "蝶",
+    "sound": "접",
+    "meaning": "나비",
+    "level": "高",
+    "order": 1302
+  },
+  {
+    "hanja": "丁",
+    "sound": "정",
+    "meaning": "고무래",
+    "level": "中",
+    "order": 1303
+  },
+  {
+    "hanja": "井",
+    "sound": "정",
+    "meaning": "우물",
+    "level": "中",
+    "order": 1304
+  },
+  {
+    "hanja": "停",
+    "sound": "정",
+    "meaning": "머무를",
+    "level": "中",
+    "order": 1305
+  },
+  {
+    "hanja": "定",
+    "sound": "정",
+    "meaning": "정할",
+    "level": "中",
+    "order": 1306
+  },
+  {
+    "hanja": "庭",
+    "sound": "정",
+    "meaning": "뜰",
+    "level": "中",
+    "order": 1307
+  },
+  {
+    "hanja": "情",
+    "sound": "정",
+    "meaning": "뜻",
+    "level": "中",
+    "order": 1308
+  },
+  {
+    "hanja": "政",
+    "sound": "정",
+    "meaning": "정사",
+    "level": "中",
+    "order": 1309
+  },
+  {
+    "hanja": "正",
+    "sound": "정",
+    "meaning": "바를",
+    "level": "中",
+    "order": 1310
+  },
+  {
+    "hanja": "淨",
+    "sound": "정",
+    "meaning": "깨끗할",
+    "level": "中",
+    "order": 1311
+  },
+  {
+    "hanja": "精",
+    "sound": "정",
+    "meaning": "정할",
+    "level": "中",
+    "order": 1312
+  },
+  {
+    "hanja": "貞",
+    "sound": "정",
+    "meaning": "곧을",
+    "level": "中",
+    "order": 1313
+  },
+  {
+    "hanja": "靜",
+    "sound": "정",
+    "meaning": "고요할",
+    "level": "中",
+    "order": 1314
+  },
+  {
+    "hanja": "頂",
+    "sound": "정",
+    "meaning": "정수리",
+    "level": "中",
+    "order": 1315
+  },
+  {
+    "hanja": "亭",
+    "sound": "정",
+    "meaning": "정자",
+    "level": "高",
+    "order": 1316
+  },
+  {
+    "hanja": "廷",
+    "sound": "정",
+    "meaning": "조정",
+    "level": "高",
+    "order": 1317
+  },
+  {
+    "hanja": "征",
+    "sound": "정",
+    "meaning": "칠",
+    "level": "高",
+    "order": 1318
+  },
+  {
+    "hanja": "整",
+    "sound": "정",
+    "meaning": "가지런할",
+    "level": "高",
+    "order": 1319
+  },
+  {
+    "hanja": "程",
+    "sound": "정",
+    "meaning": "한도",
+    "level": "高",
+    "order": 1320
+  },
+  {
+    "hanja": "訂",
+    "sound": "정",
+    "meaning": "바로잡을",
+    "level": "高",
+    "order": 1321
+  },
+  {
+    "hanja": "帝",
+    "sound": "제",
+    "meaning": "임금",
+    "level": "中",
+    "order": 1322
+  },
+  {
+    "hanja": "弟",
+    "sound": "제",
+    "meaning": "아우",
+    "level": "中",
+    "order": 1323
+  },
+  {
+    "hanja": "祭",
+    "sound": "제",
+    "meaning": "제사",
+    "level": "中",
+    "order": 1324
+  },
+  {
+    "hanja": "第",
+    "sound": "제",
+    "meaning": "차례",
+    "level": "中",
+    "order": 1325
+  },
+  {
+    "hanja": "製",
+    "sound": "제",
+    "meaning": "지을",
+    "level": "中",
+    "order": 1326
+  },
+  {
+    "hanja": "諸",
+    "sound": "제",
+    "meaning": "모두",
+    "level": "中",
+    "order": 1327
+  },
+  {
+    "hanja": "除",
+    "sound": "제",
+    "meaning": "덜",
+    "level": "中",
+    "order": 1328
+  },
+  {
+    "hanja": "題",
+    "sound": "제",
+    "meaning": "제목",
+    "level": "中",
+    "order": 1329
+  },
+  {
+    "hanja": "制",
+    "sound": "제",
+    "meaning": "절제할",
+    "level": "高",
+    "order": 1330
+  },
+  {
+    "hanja": "堤",
+    "sound": "제",
+    "meaning": "둑",
+    "level": "高",
+    "order": 1331
+  },
+  {
+    "hanja": "提",
+    "sound": "제",
+    "meaning": "끌",
+    "level": "高",
+    "order": 1332
+  },
+  {
+    "hanja": "濟",
+    "sound": "제",
+    "meaning": "건널",
+    "level": "高",
+    "order": 1333
+  },
+  {
+    "hanja": "際",
+    "sound": "제",
+    "meaning": "즈음/가",
+    "level": "高",
+    "order": 1334
+  },
+  {
+    "hanja": "齊",
+    "sound": "제",
+    "meaning": "가지런할",
+    "level": "高",
+    "order": 1335
+  },
+  {
+    "hanja": "兆",
+    "sound": "조",
+    "meaning": "조",
+    "level": "中",
+    "order": 1336
+  },
+  {
+    "hanja": "助",
+    "sound": "조",
+    "meaning": "도울",
+    "level": "中",
+    "order": 1337
+  },
+  {
+    "hanja": "早",
+    "sound": "조",
+    "meaning": "이를/일찍",
+    "level": "中",
+    "order": 1338
+  },
+  {
+    "hanja": "朝",
+    "sound": "조",
+    "meaning": "아침",
+    "level": "中",
+    "order": 1339
+  },
+  {
+    "hanja": "祖",
+    "sound": "조",
+    "meaning": "할아버지",
+    "level": "中",
+    "order": 1340
+  },
+  {
+    "hanja": "調",
+    "sound": "조",
+    "meaning": "고를",
+    "level": "中",
+    "order": 1341
+  },
+  {
+    "hanja": "造",
+    "sound": "조",
+    "meaning": "지을",
+    "level": "中",
+    "order": 1342
+  },
+  {
+    "hanja": "鳥",
+    "sound": "조",
+    "meaning": "새",
+    "level": "中",
+    "order": 1343
+  },
+  {
+    "hanja": "弔",
+    "sound": "조",
+    "meaning": "조상할",
+    "level": "高",
+    "order": 1344
+  },
+  {
+    "hanja": "操",
+    "sound": "조",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 1345
+  },
+  {
+    "hanja": "條",
+    "sound": "조",
+    "meaning": "가지",
+    "level": "高",
+    "order": 1346
+  },
+  {
+    "hanja": "潮",
+    "sound": "조",
+    "meaning": "밀물/조수",
+    "level": "高",
+    "order": 1347
+  },
+  {
+    "hanja": "照",
+    "sound": "조",
+    "meaning": "비출",
+    "level": "高",
+    "order": 1348
+  },
+  {
+    "hanja": "燥",
+    "sound": "조",
+    "meaning": "마를",
+    "level": "高",
+    "order": 1349
+  },
+  {
+    "hanja": "租",
+    "sound": "조",
+    "meaning": "조세",
+    "level": "高",
+    "order": 1350
+  },
+  {
+    "hanja": "組",
+    "sound": "조",
+    "meaning": "끈",
+    "level": "高",
+    "order": 1351
+  },
+  {
+    "hanja": "族",
+    "sound": "족",
+    "meaning": "겨레",
+    "level": "中",
+    "order": 1352
+  },
+  {
+    "hanja": "足",
+    "sound": "족",
+    "meaning": "발",
+    "level": "中",
+    "order": 1353
+  },
+  {
+    "hanja": "存",
+    "sound": "존",
+    "meaning": "있을",
+    "level": "中",
+    "order": 1354
+  },
+  {
+    "hanja": "尊",
+    "sound": "존",
+    "meaning": "높을",
+    "level": "中",
+    "order": 1355
+  },
+  {
+    "hanja": "卒",
+    "sound": "졸",
+    "meaning": "마칠/군사",
+    "level": "中",
+    "order": 1356
+  },
+  {
+    "hanja": "拙",
+    "sound": "졸",
+    "meaning": "옹졸할",
+    "level": "高",
+    "order": 1357
+  },
+  {
+    "hanja": "宗",
+    "sound": "종",
+    "meaning": "마루",
+    "level": "中",
+    "order": 1358
+  },
+  {
+    "hanja": "從",
+    "sound": "종",
+    "meaning": "좇을",
+    "level": "中",
+    "order": 1359
+  },
+  {
+    "hanja": "種",
+    "sound": "종",
+    "meaning": "씨",
+    "level": "中",
+    "order": 1360
+  },
+  {
+    "hanja": "終",
+    "sound": "종",
+    "meaning": "마칠",
+    "level": "中",
+    "order": 1361
+  },
+  {
+    "hanja": "鐘",
+    "sound": "종",
+    "meaning": "쇠북",
+    "level": "中",
+    "order": 1362
+  },
+  {
+    "hanja": "縱",
+    "sound": "종",
+    "meaning": "세로",
+    "level": "高",
+    "order": 1363
+  },
+  {
+    "hanja": "坐",
+    "sound": "좌",
+    "meaning": "앉을",
+    "level": "中",
+    "order": 1364
+  },
+  {
+    "hanja": "左",
+    "sound": "좌",
+    "meaning": "왼",
+    "level": "中",
+    "order": 1365
+  },
+  {
+    "hanja": "佐",
+    "sound": "좌",
+    "meaning": "도울",
+    "level": "高",
+    "order": 1366
+  },
+  {
+    "hanja": "座",
+    "sound": "좌",
+    "meaning": "자리",
+    "level": "高",
+    "order": 1367
+  },
+  {
+    "hanja": "罪",
+    "sound": "죄",
+    "meaning": "허물",
+    "level": "中",
+    "order": 1368
+  },
+  {
+    "hanja": "主",
+    "sound": "주",
+    "meaning": "주인",
+    "level": "中",
+    "order": 1369
+  },
+  {
+    "hanja": "住",
+    "sound": "주",
+    "meaning": "살",
+    "level": "中",
+    "order": 1370
+  },
+  {
+    "hanja": "宙",
+    "sound": "주",
+    "meaning": "집",
+    "level": "中",
+    "order": 1371
+  },
+  {
+    "hanja": "晝",
+    "sound": "주",
+    "meaning": "낮",
+    "level": "中",
+    "order": 1372
+  },
+  {
+    "hanja": "朱",
+    "sound": "주",
+    "meaning": "붉을",
+    "level": "中",
+    "order": 1373
+  },
+  {
+    "hanja": "注",
+    "sound": "주",
+    "meaning": "물댈",
+    "level": "中",
+    "order": 1374
+  },
+  {
+    "hanja": "走",
+    "sound": "주",
+    "meaning": "달릴",
+    "level": "中",
+    "order": 1375
+  },
+  {
+    "hanja": "酒",
+    "sound": "주",
+    "meaning": "술",
+    "level": "中",
+    "order": 1376
+  },
+  {
+    "hanja": "周",
+    "sound": "주",
+    "meaning": "두루",
+    "level": "高",
+    "order": 1377
+  },
+  {
+    "hanja": "奏",
+    "sound": "주",
+    "meaning": "아뢸",
+    "level": "高",
+    "order": 1378
+  },
+  {
+    "hanja": "州",
+    "sound": "주",
+    "meaning": "고을",
+    "level": "高",
+    "order": 1379
+  },
+  {
+    "hanja": "柱",
+    "sound": "주",
+    "meaning": "기둥",
+    "level": "高",
+    "order": 1380
+  },
+  {
+    "hanja": "株",
+    "sound": "주",
+    "meaning": "그루",
+    "level": "高",
+    "order": 1381
+  },
+  {
+    "hanja": "洲",
+    "sound": "주",
+    "meaning": "물가",
+    "level": "高",
+    "order": 1382
+  },
+  {
+    "hanja": "珠",
+    "sound": "주",
+    "meaning": "구슬",
+    "level": "高",
+    "order": 1383
+  },
+  {
+    "hanja": "舟",
+    "sound": "주",
+    "meaning": "배",
+    "level": "高",
+    "order": 1384
+  },
+  {
+    "hanja": "鑄",
+    "sound": "주",
+    "meaning": "불릴",
+    "level": "高",
+    "order": 1385
+  },
+  {
+    "hanja": "竹",
+    "sound": "죽",
+    "meaning": "대",
+    "level": "中",
+    "order": 1386
+  },
+  {
+    "hanja": "俊",
+    "sound": "준",
+    "meaning": "준걸",
+    "level": "高",
+    "order": 1387
+  },
+  {
+    "hanja": "準",
+    "sound": "준",
+    "meaning": "준할",
+    "level": "高",
+    "order": 1388
+  },
+  {
+    "hanja": "遵",
+    "sound": "준",
+    "meaning": "좇을",
+    "level": "高",
+    "order": 1389
+  },
+  {
+    "hanja": "中",
+    "sound": "중",
+    "meaning": "가운데",
+    "level": "中",
+    "order": 1390
+  },
+  {
+    "hanja": "衆",
+    "sound": "중",
+    "meaning": "무리",
+    "level": "中",
+    "order": 1391
+  },
+  {
+    "hanja": "重",
+    "sound": "중",
+    "meaning": "무거울",
+    "level": "中",
+    "order": 1392
+  },
+  {
+    "hanja": "仲",
+    "sound": "중",
+    "meaning": "버금",
+    "level": "高",
+    "order": 1393
+  },
+  {
+    "hanja": "卽",
+    "sound": "즉",
+    "meaning": "곧",
+    "level": "中",
+    "order": 1394
+  },
+  {
+    "hanja": "增",
+    "sound": "증",
+    "meaning": "더할",
+    "level": "中",
+    "order": 1395
+  },
+  {
+    "hanja": "曾",
+    "sound": "증",
+    "meaning": "일찍",
+    "level": "中",
+    "order": 1396
+  },
+  {
+    "hanja": "證",
+    "sound": "증",
+    "meaning": "증거",
+    "level": "中",
+    "order": 1397
+  },
+  {
+    "hanja": "憎",
+    "sound": "증",
+    "meaning": "미울",
+    "level": "高",
+    "order": 1398
+  },
+  {
+    "hanja": "症",
+    "sound": "증",
+    "meaning": "증세",
+    "level": "高",
+    "order": 1399
+  },
+  {
+    "hanja": "蒸",
+    "sound": "증",
+    "meaning": "찔",
+    "level": "高",
+    "order": 1400
+  },
+  {
+    "hanja": "贈",
+    "sound": "증",
+    "meaning": "줄",
+    "level": "高",
+    "order": 1401
+  },
+  {
+    "hanja": "之",
+    "sound": "지",
+    "meaning": "갈",
+    "level": "中",
+    "order": 1402
+  },
+  {
+    "hanja": "只",
+    "sound": "지",
+    "meaning": "다만",
+    "level": "中",
+    "order": 1403
+  },
+  {
+    "hanja": "地",
+    "sound": "지",
+    "meaning": "땅",
+    "level": "中",
+    "order": 1404
+  },
+  {
+    "hanja": "志",
+    "sound": "지",
+    "meaning": "뜻",
+    "level": "中",
+    "order": 1405
+  },
+  {
+    "hanja": "持",
+    "sound": "지",
+    "meaning": "가질",
+    "level": "中",
+    "order": 1406
+  },
+  {
+    "hanja": "指",
+    "sound": "지",
+    "meaning": "손가락",
+    "level": "中",
+    "order": 1407
+  },
+  {
+    "hanja": "支",
+    "sound": "지",
+    "meaning": "지탱할",
+    "level": "中",
+    "order": 1408
+  },
+  {
+    "hanja": "枝",
+    "sound": "지",
+    "meaning": "가지",
+    "level": "中",
+    "order": 1409
+  },
+  {
+    "hanja": "止",
+    "sound": "지",
+    "meaning": "그칠",
+    "level": "中",
+    "order": 1410
+  },
+  {
+    "hanja": "知",
+    "sound": "지",
+    "meaning": "알",
+    "level": "中",
+    "order": 1411
+  },
+  {
+    "hanja": "紙",
+    "sound": "지",
+    "meaning": "종이",
+    "level": "中",
+    "order": 1412
+  },
+  {
+    "hanja": "至",
+    "sound": "지",
+    "meaning": "이를",
+    "level": "中",
+    "order": 1413
+  },
+  {
+    "hanja": "智",
+    "sound": "지",
+    "meaning": "슬기",
+    "level": "高",
+    "order": 1414
+  },
+  {
+    "hanja": "池",
+    "sound": "지",
+    "meaning": "못",
+    "level": "高",
+    "order": 1415
+  },
+  {
+    "hanja": "誌",
+    "sound": "지",
+    "meaning": "기록할",
+    "level": "高",
+    "order": 1416
+  },
+  {
+    "hanja": "遲",
+    "sound": "지",
+    "meaning": "더딜/늦을",
+    "level": "高",
+    "order": 1417
+  },
+  {
+    "hanja": "直",
+    "sound": "직",
+    "meaning": "곧을",
+    "level": "中",
+    "order": 1418
+  },
+  {
+    "hanja": "織",
+    "sound": "직",
+    "meaning": "짤",
+    "level": "高",
+    "order": 1419
+  },
+  {
+    "hanja": "職",
+    "sound": "직",
+    "meaning": "벼슬",
+    "level": "高",
+    "order": 1420
+  },
+  {
+    "hanja": "盡",
+    "sound": "진",
+    "meaning": "다할",
+    "level": "中",
+    "order": 1421
+  },
+  {
+    "hanja": "眞",
+    "sound": "진",
+    "meaning": "참",
+    "level": "中",
+    "order": 1422
+  },
+  {
+    "hanja": "辰",
+    "sound": "진",
+    "meaning": "별",
+    "level": "中",
+    "order": 1423
+  },
+  {
+    "hanja": "進",
+    "sound": "진",
+    "meaning": "나아갈",
+    "level": "中",
+    "order": 1424
+  },
+  {
+    "hanja": "振",
+    "sound": "진",
+    "meaning": "떨칠",
+    "level": "高",
+    "order": 1425
+  },
+  {
+    "hanja": "珍",
+    "sound": "진",
+    "meaning": "보배",
+    "level": "高",
+    "order": 1426
+  },
+  {
+    "hanja": "鎭",
+    "sound": "진",
+    "meaning": "진압할",
+    "level": "高",
+    "order": 1427
+  },
+  {
+    "hanja": "陣",
+    "sound": "진",
+    "meaning": "진칠",
+    "level": "高",
+    "order": 1428
+  },
+  {
+    "hanja": "陳",
+    "sound": "진",
+    "meaning": "베풀",
+    "level": "高",
+    "order": 1429
+  },
+  {
+    "hanja": "震",
+    "sound": "진",
+    "meaning": "우레",
+    "level": "高",
+    "order": 1430
+  },
+  {
+    "hanja": "質",
+    "sound": "질",
+    "meaning": "바탕",
+    "level": "中",
+    "order": 1431
+  },
+  {
+    "hanja": "姪",
+    "sound": "질",
+    "meaning": "조카",
+    "level": "高",
+    "order": 1432
+  },
+  {
+    "hanja": "疾",
+    "sound": "질",
+    "meaning": "병",
+    "level": "高",
+    "order": 1433
+  },
+  {
+    "hanja": "秩",
+    "sound": "질",
+    "meaning": "차례",
+    "level": "高",
+    "order": 1434
+  },
+  {
+    "hanja": "執",
+    "sound": "집",
+    "meaning": "잡을",
+    "level": "中",
+    "order": 1435
+  },
+  {
+    "hanja": "集",
+    "sound": "집",
+    "meaning": "모을",
+    "level": "中",
+    "order": 1436
+  },
+  {
+    "hanja": "徵",
+    "sound": "징",
+    "meaning": "부를",
+    "level": "高",
+    "order": 1437
+  },
+  {
+    "hanja": "懲",
+    "sound": "징",
+    "meaning": "징계할",
+    "level": "高",
+    "order": 1438
+  },
+  {
+    "hanja": "且",
+    "sound": "차",
+    "meaning": "또",
+    "level": "中",
+    "order": 1439
+  },
+  {
+    "hanja": "借",
+    "sound": "차",
+    "meaning": "빌",
+    "level": "中",
+    "order": 1440
+  },
+  {
+    "hanja": "次",
+    "sound": "차",
+    "meaning": "버금",
+    "level": "中",
+    "order": 1441
+  },
+  {
+    "hanja": "此",
+    "sound": "차",
+    "meaning": "이",
+    "level": "中",
+    "order": 1442
+  },
+  {
+    "hanja": "差",
+    "sound": "차",
+    "meaning": "다를",
+    "level": "高",
+    "order": 1443
+  },
+  {
+    "hanja": "着",
+    "sound": "착",
+    "meaning": "붙을",
+    "level": "中",
+    "order": 1444
+  },
+  {
+    "hanja": "捉",
+    "sound": "착",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 1445
+  },
+  {
+    "hanja": "錯",
+    "sound": "착",
+    "meaning": "어긋날",
+    "level": "高",
+    "order": 1446
+  },
+  {
+    "hanja": "讚",
+    "sound": "찬",
+    "meaning": "기릴",
+    "level": "高",
+    "order": 1447
+  },
+  {
+    "hanja": "贊",
+    "sound": "찬",
+    "meaning": "도울",
+    "level": "高",
+    "order": 1448
+  },
+  {
+    "hanja": "察",
+    "sound": "찰",
+    "meaning": "살필",
+    "level": "中",
+    "order": 1449
+  },
+  {
+    "hanja": "參",
+    "sound": "참",
+    "meaning": "참여할",
+    "level": "中",
+    "order": 1450
+  },
+  {
+    "hanja": "慘",
+    "sound": "참",
+    "meaning": "참혹할",
+    "level": "高",
+    "order": 1451
+  },
+  {
+    "hanja": "慙",
+    "sound": "참",
+    "meaning": "부끄러울",
+    "level": "高",
+    "order": 1452
+  },
+  {
+    "hanja": "唱",
+    "sound": "창",
+    "meaning": "노래",
+    "level": "中",
+    "order": 1453
+  },
+  {
+    "hanja": "昌",
+    "sound": "창",
+    "meaning": "창성할",
+    "level": "中",
+    "order": 1454
+  },
+  {
+    "hanja": "窓",
+    "sound": "창",
+    "meaning": "창",
+    "level": "中",
+    "order": 1455
+  },
+  {
+    "hanja": "倉",
+    "sound": "창",
+    "meaning": "곳집",
+    "level": "高",
+    "order": 1456
+  },
+  {
+    "hanja": "創",
+    "sound": "창",
+    "meaning": "비롯할",
+    "level": "高",
+    "order": 1457
+  },
+  {
+    "hanja": "暢",
+    "sound": "창",
+    "meaning": "화창할",
+    "level": "高",
+    "order": 1458
+  },
+  {
+    "hanja": "蒼",
+    "sound": "창",
+    "meaning": "푸를",
+    "level": "高",
+    "order": 1459
+  },
+  {
+    "hanja": "採",
+    "sound": "채",
+    "meaning": "캘",
+    "level": "中",
+    "order": 1460
+  },
+  {
+    "hanja": "菜",
+    "sound": "채",
+    "meaning": "나물",
+    "level": "中",
+    "order": 1461
+  },
+  {
+    "hanja": "債",
+    "sound": "채",
+    "meaning": "빚",
+    "level": "高",
+    "order": 1462
+  },
+  {
+    "hanja": "彩",
+    "sound": "채",
+    "meaning": "무늬",
+    "level": "高",
+    "order": 1463
+  },
+  {
+    "hanja": "冊",
+    "sound": "책",
+    "meaning": "책",
+    "level": "中",
+    "order": 1464
+  },
+  {
+    "hanja": "責",
+    "sound": "책",
+    "meaning": "꾸짖을",
+    "level": "中",
+    "order": 1465
+  },
+  {
+    "hanja": "策",
+    "sound": "책",
+    "meaning": "꾀",
+    "level": "高",
+    "order": 1466
+  },
+  {
+    "hanja": "妻",
+    "sound": "처",
+    "meaning": "아내",
+    "level": "中",
+    "order": 1467
+  },
+  {
+    "hanja": "處",
+    "sound": "처",
+    "meaning": "곳",
+    "level": "中",
+    "order": 1468
+  },
+  {
+    "hanja": "尺",
+    "sound": "척",
+    "meaning": "자",
+    "level": "中",
+    "order": 1469
+  },
+  {
+    "hanja": "戚",
+    "sound": "척",
+    "meaning": "친척",
+    "level": "高",
+    "order": 1470
+  },
+  {
+    "hanja": "拓",
+    "sound": "척",
+    "meaning": "열/넓힐",
+    "level": "高",
+    "order": 1471
+  },
+  {
+    "hanja": "斥",
+    "sound": "척",
+    "meaning": "물리칠",
+    "level": "高",
+    "order": 1472
+  },
+  {
+    "hanja": "千",
+    "sound": "천",
+    "meaning": "일천",
+    "level": "中",
+    "order": 1473
+  },
+  {
+    "hanja": "天",
+    "sound": "천",
+    "meaning": "하늘",
+    "level": "中",
+    "order": 1474
+  },
+  {
+    "hanja": "川",
+    "sound": "천",
+    "meaning": "내",
+    "level": "中",
+    "order": 1475
+  },
+  {
+    "hanja": "泉",
+    "sound": "천",
+    "meaning": "샘",
+    "level": "中",
+    "order": 1476
+  },
+  {
+    "hanja": "淺",
+    "sound": "천",
+    "meaning": "얕을",
+    "level": "中",
+    "order": 1477
+  },
+  {
+    "hanja": "薦",
+    "sound": "천",
+    "meaning": "천거할",
+    "level": "高",
+    "order": 1478
+  },
+  {
+    "hanja": "賤",
+    "sound": "천",
+    "meaning": "천할",
+    "level": "高",
+    "order": 1479
+  },
+  {
+    "hanja": "踐",
+    "sound": "천",
+    "meaning": "밟을",
+    "level": "高",
+    "order": 1480
+  },
+  {
+    "hanja": "遷",
+    "sound": "천",
+    "meaning": "옮길",
+    "level": "高",
+    "order": 1481
+  },
+  {
+    "hanja": "鐵",
+    "sound": "철",
+    "meaning": "쇠",
+    "level": "中",
+    "order": 1482
+  },
+  {
+    "hanja": "哲",
+    "sound": "철",
+    "meaning": "밝을",
+    "level": "高",
+    "order": 1483
+  },
+  {
+    "hanja": "徹",
+    "sound": "철",
+    "meaning": "뚫을",
+    "level": "高",
+    "order": 1484
+  },
+  {
+    "hanja": "尖",
+    "sound": "첨",
+    "meaning": "뾰족할",
+    "level": "高",
+    "order": 1485
+  },
+  {
+    "hanja": "添",
+    "sound": "첨",
+    "meaning": "더할",
+    "level": "高",
+    "order": 1486
+  },
+  {
+    "hanja": "妾",
+    "sound": "첩",
+    "meaning": "첩",
+    "level": "高",
+    "order": 1487
+  },
+  {
+    "hanja": "晴",
+    "sound": "청",
+    "meaning": "갤",
+    "level": "中",
+    "order": 1488
+  },
+  {
+    "hanja": "淸",
+    "sound": "청",
+    "meaning": "맑을",
+    "level": "中",
+    "order": 1489
+  },
+  {
+    "hanja": "聽",
+    "sound": "청",
+    "meaning": "들을",
+    "level": "中",
+    "order": 1490
+  },
+  {
+    "hanja": "請",
+    "sound": "청",
+    "meaning": "청할",
+    "level": "中",
+    "order": 1491
+  },
+  {
+    "hanja": "靑",
+    "sound": "청",
+    "meaning": "푸를",
+    "level": "中",
+    "order": 1492
+  },
+  {
+    "hanja": "廳",
+    "sound": "청",
+    "meaning": "관청",
+    "level": "高",
+    "order": 1493
+  },
+  {
+    "hanja": "體",
+    "sound": "체",
+    "meaning": "몸",
+    "level": "中",
+    "order": 1494
+  },
+  {
+    "hanja": "替",
+    "sound": "체",
+    "meaning": "바꿀",
+    "level": "高",
+    "order": 1495
+  },
+  {
+    "hanja": "滯",
+    "sound": "체",
+    "meaning": "막힐",
+    "level": "高",
+    "order": 1496
+  },
+  {
+    "hanja": "逮",
+    "sound": "체",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 1497
+  },
+  {
+    "hanja": "遞",
+    "sound": "체",
+    "meaning": "갈릴",
+    "level": "高",
+    "order": 1498
+  },
+  {
+    "hanja": "初",
+    "sound": "초",
+    "meaning": "처음",
+    "level": "中",
+    "order": 1499
+  },
+  {
+    "hanja": "招",
+    "sound": "초",
+    "meaning": "부를",
+    "level": "中",
+    "order": 1500
+  },
+  {
+    "hanja": "草",
+    "sound": "초",
+    "meaning": "풀",
+    "level": "中",
+    "order": 1501
+  },
+  {
+    "hanja": "抄",
+    "sound": "초",
+    "meaning": "베낄",
+    "level": "高",
+    "order": 1502
+  },
+  {
+    "hanja": "礎",
+    "sound": "초",
+    "meaning": "주춧돌",
+    "level": "高",
+    "order": 1503
+  },
+  {
+    "hanja": "秒",
+    "sound": "초",
+    "meaning": "초",
+    "level": "高",
+    "order": 1504
+  },
+  {
+    "hanja": "肖",
+    "sound": "초",
+    "meaning": "닮을",
+    "level": "高",
+    "order": 1505
+  },
+  {
+    "hanja": "超",
+    "sound": "초",
+    "meaning": "넘을",
+    "level": "高",
+    "order": 1506
+  },
+  {
+    "hanja": "促",
+    "sound": "촉",
+    "meaning": "재촉할",
+    "level": "高",
+    "order": 1507
+  },
+  {
+    "hanja": "燭",
+    "sound": "촉",
+    "meaning": "촛불",
+    "level": "高",
+    "order": 1508
+  },
+  {
+    "hanja": "觸",
+    "sound": "촉",
+    "meaning": "닿을",
+    "level": "高",
+    "order": 1509
+  },
+  {
+    "hanja": "寸",
+    "sound": "촌",
+    "meaning": "마디",
+    "level": "中",
+    "order": 1510
+  },
+  {
+    "hanja": "村",
+    "sound": "촌",
+    "meaning": "마을",
+    "level": "中",
+    "order": 1511
+  },
+  {
+    "hanja": "總",
+    "sound": "총",
+    "meaning": "거느릴",
+    "level": "高",
+    "order": 1512
+  },
+  {
+    "hanja": "聰",
+    "sound": "총",
+    "meaning": "총명할",
+    "level": "高",
+    "order": 1513
+  },
+  {
+    "hanja": "銃",
+    "sound": "총",
+    "meaning": "총",
+    "level": "高",
+    "order": 1514
+  },
+  {
+    "hanja": "最",
+    "sound": "최",
+    "meaning": "가장",
+    "level": "中",
+    "order": 1515
+  },
+  {
+    "hanja": "催",
+    "sound": "최",
+    "meaning": "재촉할",
+    "level": "高",
+    "order": 1516
+  },
+  {
+    "hanja": "推",
+    "sound": "추",
+    "meaning": "밀",
+    "level": "中",
+    "order": 1517
+  },
+  {
+    "hanja": "秋",
+    "sound": "추",
+    "meaning": "가을",
+    "level": "中",
+    "order": 1518
+  },
+  {
+    "hanja": "追",
+    "sound": "추",
+    "meaning": "쫓을",
+    "level": "中",
+    "order": 1519
+  },
+  {
+    "hanja": "抽",
+    "sound": "추",
+    "meaning": "뽑을",
+    "level": "高",
+    "order": 1520
+  },
+  {
+    "hanja": "醜",
+    "sound": "추",
+    "meaning": "추할",
+    "level": "高",
+    "order": 1521
+  },
+  {
+    "hanja": "丑",
+    "sound": "축",
+    "meaning": "소",
+    "level": "中",
+    "order": 1522
+  },
+  {
+    "hanja": "祝",
+    "sound": "축",
+    "meaning": "빌",
+    "level": "中",
+    "order": 1523
+  },
+  {
+    "hanja": "畜",
+    "sound": "축",
+    "meaning": "가축",
+    "level": "高",
+    "order": 1524
+  },
+  {
+    "hanja": "築",
+    "sound": "축",
+    "meaning": "쌓을",
+    "level": "高",
+    "order": 1525
+  },
+  {
+    "hanja": "縮",
+    "sound": "축",
+    "meaning": "줄일",
+    "level": "高",
+    "order": 1526
+  },
+  {
+    "hanja": "蓄",
+    "sound": "축",
+    "meaning": "모을",
+    "level": "高",
+    "order": 1527
+  },
+  {
+    "hanja": "逐",
+    "sound": "축",
+    "meaning": "쫓을",
+    "level": "高",
+    "order": 1528
+  },
+  {
+    "hanja": "春",
+    "sound": "춘",
+    "meaning": "봄",
+    "level": "中",
+    "order": 1529
+  },
+  {
+    "hanja": "出",
+    "sound": "출",
+    "meaning": "날",
+    "level": "中",
+    "order": 1530
+  },
+  {
+    "hanja": "充",
+    "sound": "충",
+    "meaning": "채울",
+    "level": "中",
+    "order": 1531
+  },
+  {
+    "hanja": "忠",
+    "sound": "충",
+    "meaning": "충성",
+    "level": "中",
+    "order": 1532
+  },
+  {
+    "hanja": "蟲",
+    "sound": "충",
+    "meaning": "벌레",
+    "level": "中",
+    "order": 1533
+  },
+  {
+    "hanja": "衝",
+    "sound": "충",
+    "meaning": "찌를",
+    "level": "高",
+    "order": 1534
+  },
+  {
+    "hanja": "取",
+    "sound": "취",
+    "meaning": "가질",
+    "level": "中",
+    "order": 1535
+  },
+  {
+    "hanja": "吹",
+    "sound": "취",
+    "meaning": "불",
+    "level": "中",
+    "order": 1536
+  },
+  {
+    "hanja": "就",
+    "sound": "취",
+    "meaning": "나아갈/이룰",
+    "level": "中",
+    "order": 1537
+  },
+  {
+    "hanja": "臭",
+    "sound": "취",
+    "meaning": "냄새",
+    "level": "高",
+    "order": 1538
+  },
+  {
+    "hanja": "趣",
+    "sound": "취",
+    "meaning": "뜻",
+    "level": "高",
+    "order": 1539
+  },
+  {
+    "hanja": "醉",
+    "sound": "취",
+    "meaning": "취할",
+    "level": "高",
+    "order": 1540
+  },
+  {
+    "hanja": "側",
+    "sound": "측",
+    "meaning": "곁",
+    "level": "高",
+    "order": 1541
+  },
+  {
+    "hanja": "測",
+    "sound": "측",
+    "meaning": "잴",
+    "level": "高",
+    "order": 1542
+  },
+  {
+    "hanja": "層",
+    "sound": "층",
+    "meaning": "층",
+    "level": "高",
+    "order": 1543
+  },
+  {
+    "hanja": "治",
+    "sound": "치",
+    "meaning": "다스릴",
+    "level": "中",
+    "order": 1544
+  },
+  {
+    "hanja": "致",
+    "sound": "치",
+    "meaning": "이를",
+    "level": "中",
+    "order": 1545
+  },
+  {
+    "hanja": "齒",
+    "sound": "치",
+    "meaning": "이",
+    "level": "中",
+    "order": 1546
+  },
+  {
+    "hanja": "値",
+    "sound": "치",
+    "meaning": "값",
+    "level": "高",
+    "order": 1547
+  },
+  {
+    "hanja": "恥",
+    "sound": "치",
+    "meaning": "부끄러울",
+    "level": "高",
+    "order": 1548
+  },
+  {
+    "hanja": "置",
+    "sound": "치",
+    "meaning": "둘",
+    "level": "高",
+    "order": 1549
+  },
+  {
+    "hanja": "則",
+    "sound": "칙",
+    "meaning": "법칙",
+    "level": "中",
+    "order": 1550
+  },
+  {
+    "hanja": "親",
+    "sound": "친",
+    "meaning": "친할",
+    "level": "中",
+    "order": 1551
+  },
+  {
+    "hanja": "七",
+    "sound": "칠",
+    "meaning": "일곱",
+    "level": "中",
+    "order": 1552
+  },
+  {
+    "hanja": "漆",
+    "sound": "칠",
+    "meaning": "옻",
+    "level": "高",
+    "order": 1553
+  },
+  {
+    "hanja": "針",
+    "sound": "침",
+    "meaning": "바늘",
+    "level": "中",
+    "order": 1554
+  },
+  {
+    "hanja": "侵",
+    "sound": "침",
+    "meaning": "침노할",
+    "level": "高",
+    "order": 1555
+  },
+  {
+    "hanja": "寢",
+    "sound": "침",
+    "meaning": "잘",
+    "level": "高",
+    "order": 1556
+  },
+  {
+    "hanja": "枕",
+    "sound": "침",
+    "meaning": "베개",
+    "level": "高",
+    "order": 1557
+  },
+  {
+    "hanja": "沈",
+    "sound": "침",
+    "meaning": "가라앉을",
+    "level": "高",
+    "order": 1558
+  },
+  {
+    "hanja": "浸",
+    "sound": "침",
+    "meaning": "담글",
+    "level": "高",
+    "order": 1559
+  },
+  {
+    "hanja": "稱",
+    "sound": "칭",
+    "meaning": "일컬을",
+    "level": "高",
+    "order": 1560
+  },
+  {
+    "hanja": "快",
+    "sound": "쾌",
+    "meaning": "쾌할",
+    "level": "中",
+    "order": 1561
+  },
+  {
+    "hanja": "他",
+    "sound": "타",
+    "meaning": "다를",
+    "level": "中",
+    "order": 1562
+  },
+  {
+    "hanja": "打",
+    "sound": "타",
+    "meaning": "칠",
+    "level": "中",
+    "order": 1563
+  },
+  {
+    "hanja": "墮",
+    "sound": "타",
+    "meaning": "떨어질",
+    "level": "高",
+    "order": 1564
+  },
+  {
+    "hanja": "妥",
+    "sound": "타",
+    "meaning": "온당할",
+    "level": "高",
+    "order": 1565
+  },
+  {
+    "hanja": "卓",
+    "sound": "탁",
+    "meaning": "높을",
+    "level": "高",
+    "order": 1566
+  },
+  {
+    "hanja": "托",
+    "sound": "탁",
+    "meaning": "맡길",
+    "level": "高",
+    "order": 1567
+  },
+  {
+    "hanja": "濁",
+    "sound": "탁",
+    "meaning": "흐릴",
+    "level": "高",
+    "order": 1568
+  },
+  {
+    "hanja": "濯",
+    "sound": "탁",
+    "meaning": "씻을",
+    "level": "高",
+    "order": 1569
+  },
+  {
+    "hanja": "彈",
+    "sound": "탄",
+    "meaning": "탄알",
+    "level": "高",
+    "order": 1570
+  },
+  {
+    "hanja": "歎",
+    "sound": "탄",
+    "meaning": "탄식할",
+    "level": "高",
+    "order": 1571
+  },
+  {
+    "hanja": "炭",
+    "sound": "탄",
+    "meaning": "숯",
+    "level": "高",
+    "order": 1572
+  },
+  {
+    "hanja": "誕",
+    "sound": "탄",
+    "meaning": "낳을",
+    "level": "高",
+    "order": 1573
+  },
+  {
+    "hanja": "脫",
+    "sound": "탈",
+    "meaning": "벗을",
+    "level": "中",
+    "order": 1574
+  },
+  {
+    "hanja": "奪",
+    "sound": "탈",
+    "meaning": "빼앗을",
+    "level": "高",
+    "order": 1575
+  },
+  {
+    "hanja": "探",
+    "sound": "탐",
+    "meaning": "찾을",
+    "level": "中",
+    "order": 1576
+  },
+  {
+    "hanja": "貪",
+    "sound": "탐",
+    "meaning": "탐할",
+    "level": "高",
+    "order": 1577
+  },
+  {
+    "hanja": "塔",
+    "sound": "탑",
+    "meaning": "탑",
+    "level": "高",
+    "order": 1578
+  },
+  {
+    "hanja": "湯",
+    "sound": "탕",
+    "meaning": "끓일",
+    "level": "高",
+    "order": 1579
+  },
+  {
+    "hanja": "太",
+    "sound": "태",
+    "meaning": "클",
+    "level": "中",
+    "order": 1580
+  },
+  {
+    "hanja": "泰",
+    "sound": "태",
+    "meaning": "클/편안할",
+    "level": "中",
+    "order": 1581
+  },
+  {
+    "hanja": "怠",
+    "sound": "태",
+    "meaning": "게으를",
+    "level": "高",
+    "order": 1582
+  },
+  {
+    "hanja": "態",
+    "sound": "태",
+    "meaning": "모양",
+    "level": "高",
+    "order": 1583
+  },
+  {
+    "hanja": "殆",
+    "sound": "태",
+    "meaning": "거의",
+    "level": "高",
+    "order": 1584
+  },
+  {
+    "hanja": "宅",
+    "sound": "택",
+    "meaning": "집",
+    "level": "中",
+    "order": 1585
+  },
+  {
+    "hanja": "擇",
+    "sound": "택",
+    "meaning": "가릴",
+    "level": "高",
+    "order": 1586
+  },
+  {
+    "hanja": "澤",
+    "sound": "택",
+    "meaning": "못",
+    "level": "高",
+    "order": 1587
+  },
+  {
+    "hanja": "土",
+    "sound": "토",
+    "meaning": "흙",
+    "level": "中",
+    "order": 1588
+  },
+  {
+    "hanja": "吐",
+    "sound": "토",
+    "meaning": "토할",
+    "level": "高",
+    "order": 1589
+  },
+  {
+    "hanja": "討",
+    "sound": "토",
+    "meaning": "칠",
+    "level": "高",
+    "order": 1590
+  },
+  {
+    "hanja": "統",
+    "sound": "통",
+    "meaning": "거느릴",
+    "level": "中",
+    "order": 1591
+  },
+  {
+    "hanja": "通",
+    "sound": "통",
+    "meaning": "통할",
+    "level": "中",
+    "order": 1592
+  },
+  {
+    "hanja": "痛",
+    "sound": "통",
+    "meaning": "아플",
+    "level": "高",
+    "order": 1593
+  },
+  {
+    "hanja": "退",
+    "sound": "퇴",
+    "meaning": "물러날",
+    "level": "中",
+    "order": 1594
+  },
+  {
+    "hanja": "投",
+    "sound": "투",
+    "meaning": "던질",
+    "level": "中",
+    "order": 1595
+  },
+  {
+    "hanja": "透",
+    "sound": "투",
+    "meaning": "사무칠",
+    "level": "高",
+    "order": 1596
+  },
+  {
+    "hanja": "鬪",
+    "sound": "투",
+    "meaning": "싸울",
+    "level": "高",
+    "order": 1597
+  },
+  {
+    "hanja": "特",
+    "sound": "특",
+    "meaning": "특별할/뛰어날",
+    "level": "中",
+    "order": 1598
+  },
+  {
+    "hanja": "波",
+    "sound": "파",
+    "meaning": "물결",
+    "level": "中",
+    "order": 1599
+  },
+  {
+    "hanja": "破",
+    "sound": "파",
+    "meaning": "깨뜨릴",
+    "level": "中",
+    "order": 1600
+  },
+  {
+    "hanja": "把",
+    "sound": "파",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 1601
+  },
+  {
+    "hanja": "播",
+    "sound": "파",
+    "meaning": "뿌릴",
+    "level": "高",
+    "order": 1602
+  },
+  {
+    "hanja": "派",
+    "sound": "파",
+    "meaning": "갈래",
+    "level": "高",
+    "order": 1603
+  },
+  {
+    "hanja": "罷",
+    "sound": "파",
+    "meaning": "마칠",
+    "level": "高",
+    "order": 1604
+  },
+  {
+    "hanja": "頗",
+    "sound": "파",
+    "meaning": "자못",
+    "level": "高",
+    "order": 1605
+  },
+  {
+    "hanja": "判",
+    "sound": "판",
+    "meaning": "판단할",
+    "level": "中",
+    "order": 1606
+  },
+  {
+    "hanja": "板",
+    "sound": "판",
+    "meaning": "널빤지",
+    "level": "高",
+    "order": 1607
+  },
+  {
+    "hanja": "版",
+    "sound": "판",
+    "meaning": "판목",
+    "level": "高",
+    "order": 1608
+  },
+  {
+    "hanja": "販",
+    "sound": "판",
+    "meaning": "팔",
+    "level": "高",
+    "order": 1609
+  },
+  {
+    "hanja": "八",
+    "sound": "팔",
+    "meaning": "여덟",
+    "level": "中",
+    "order": 1610
+  },
+  {
+    "hanja": "敗",
+    "sound": "패",
+    "meaning": "패할",
+    "level": "中",
+    "order": 1611
+  },
+  {
+    "hanja": "貝",
+    "sound": "패",
+    "meaning": "조개",
+    "level": "中",
+    "order": 1612
+  },
+  {
+    "hanja": "便",
+    "sound": "편",
+    "meaning": "편할",
+    "level": "中",
+    "order": 1613
+  },
+  {
+    "hanja": "片",
+    "sound": "편",
+    "meaning": "조각",
+    "level": "中",
+    "order": 1614
+  },
+  {
+    "hanja": "篇",
+    "sound": "편",
+    "meaning": "책",
+    "level": "中",
+    "order": 1615
+  },
+  {
+    "hanja": "偏",
+    "sound": "편",
+    "meaning": "치우칠",
+    "level": "高",
+    "order": 1616
+  },
+  {
+    "hanja": "編",
+    "sound": "편",
+    "meaning": "엮을",
+    "level": "高",
+    "order": 1617
+  },
+  {
+    "hanja": "遍",
+    "sound": "편",
+    "meaning": "두루",
+    "level": "高",
+    "order": 1618
+  },
+  {
+    "hanja": "平",
+    "sound": "평",
+    "meaning": "평평할",
+    "level": "中",
+    "order": 1619
+  },
+  {
+    "hanja": "評",
+    "sound": "평",
+    "meaning": "평할",
+    "level": "高",
+    "order": 1620
+  },
+  {
+    "hanja": "閉",
+    "sound": "폐",
+    "meaning": "닫을",
+    "level": "中",
+    "order": 1621
+  },
+  {
+    "hanja": "幣",
+    "sound": "폐",
+    "meaning": "화폐/비단",
+    "level": "高",
+    "order": 1622
+  },
+  {
+    "hanja": "廢",
+    "sound": "폐",
+    "meaning": "버릴/폐할",
+    "level": "高",
+    "order": 1623
+  },
+  {
+    "hanja": "弊",
+    "sound": "폐",
+    "meaning": "폐단/해질",
+    "level": "高",
+    "order": 1624
+  },
+  {
+    "hanja": "肺",
+    "sound": "폐",
+    "meaning": "허파",
+    "level": "高",
+    "order": 1625
+  },
+  {
+    "hanja": "蔽",
+    "sound": "폐",
+    "meaning": "덮을",
+    "level": "高",
+    "order": 1626
+  },
+  {
+    "hanja": "布",
+    "sound": "포",
+    "meaning": "베",
+    "level": "中",
+    "order": 1627
+  },
+  {
+    "hanja": "抱",
+    "sound": "포",
+    "meaning": "안을",
+    "level": "中",
+    "order": 1628
+  },
+  {
+    "hanja": "包",
+    "sound": "포",
+    "meaning": "쌀",
+    "level": "高",
+    "order": 1629
+  },
+  {
+    "hanja": "捕",
+    "sound": "포",
+    "meaning": "잡을",
+    "level": "高",
+    "order": 1630
+  },
+  {
+    "hanja": "浦",
+    "sound": "포",
+    "meaning": "물가",
+    "level": "高",
+    "order": 1631
+  },
+  {
+    "hanja": "胞",
+    "sound": "포",
+    "meaning": "세포/여드름",
+    "level": "高",
+    "order": 1632
+  },
+  {
+    "hanja": "飽",
+    "sound": "포",
+    "meaning": "배부를",
+    "level": "高",
+    "order": 1633
+  },
+  {
+    "hanja": "暴",
+    "sound": "폭",
+    "meaning": "사나울/쬘",
+    "level": "中",
+    "order": 1634
+  },
+  {
+    "hanja": "幅",
+    "sound": "폭",
+    "meaning": "너비",
+    "level": "高",
+    "order": 1635
+  },
+  {
+    "hanja": "爆",
+    "sound": "폭",
+    "meaning": "터질",
+    "level": "高",
+    "order": 1636
+  },
+  {
+    "hanja": "表",
+    "sound": "표",
+    "meaning": "겉",
+    "level": "中",
+    "order": 1637
+  },
+  {
+    "hanja": "標",
+    "sound": "표",
+    "meaning": "나타낼",
+    "level": "高",
+    "order": 1638
+  },
+  {
+    "hanja": "漂",
+    "sound": "표",
+    "meaning": "떠다닐",
+    "level": "高",
+    "order": 1639
+  },
+  {
+    "hanja": "票",
+    "sound": "표",
+    "meaning": "표",
+    "level": "高",
+    "order": 1640
+  },
+  {
+    "hanja": "品",
+    "sound": "품",
+    "meaning": "물건",
+    "level": "中",
+    "order": 1641
+  },
+  {
+    "hanja": "豐",
+    "sound": "풍",
+    "meaning": "풍년",
+    "level": "中",
+    "order": 1642
+  },
+  {
+    "hanja": "風",
+    "sound": "풍",
+    "meaning": "바람",
+    "level": "中",
+    "order": 1643
+  },
+  {
+    "hanja": "彼",
+    "sound": "피",
+    "meaning": "저",
+    "level": "中",
+    "order": 1644
+  },
+  {
+    "hanja": "皮",
+    "sound": "피",
+    "meaning": "가죽",
+    "level": "中",
+    "order": 1645
+  },
+  {
+    "hanja": "疲",
+    "sound": "피",
+    "meaning": "지칠",
+    "level": "高",
+    "order": 1646
+  },
+  {
+    "hanja": "被",
+    "sound": "피",
+    "meaning": "입을",
+    "level": "高",
+    "order": 1647
+  },
+  {
+    "hanja": "避",
+    "sound": "피",
+    "meaning": "피할",
+    "level": "高",
+    "order": 1648
+  },
+  {
+    "hanja": "匹",
+    "sound": "필",
+    "meaning": "짝",
+    "level": "中",
+    "order": 1649
+  },
+  {
+    "hanja": "必",
+    "sound": "필",
+    "meaning": "반드시",
+    "level": "中",
+    "order": 1650
+  },
+  {
+    "hanja": "筆",
+    "sound": "필",
+    "meaning": "붓",
+    "level": "中",
+    "order": 1651
+  },
+  {
+    "hanja": "畢",
+    "sound": "필",
+    "meaning": "마칠",
+    "level": "高",
+    "order": 1652
+  },
+  {
+    "hanja": "下",
+    "sound": "하",
+    "meaning": "아래",
+    "level": "中",
+    "order": 1653
+  },
+  {
+    "hanja": "何",
+    "sound": "하",
+    "meaning": "어찌",
+    "level": "中",
+    "order": 1654
+  },
+  {
+    "hanja": "夏",
+    "sound": "하",
+    "meaning": "여름",
+    "level": "中",
+    "order": 1655
+  },
+  {
+    "hanja": "河",
+    "sound": "하",
+    "meaning": "물",
+    "level": "中",
+    "order": 1656
+  },
+  {
+    "hanja": "賀",
+    "sound": "하",
+    "meaning": "하례",
+    "level": "中",
+    "order": 1657
+  },
+  {
+    "hanja": "荷",
+    "sound": "하",
+    "meaning": "멜",
+    "level": "高",
+    "order": 1658
+  },
+  {
+    "hanja": "學",
+    "sound": "학",
+    "meaning": "배울",
+    "level": "中",
+    "order": 1659
+  },
+  {
+    "hanja": "鶴",
+    "sound": "학",
+    "meaning": "두루미",
+    "level": "高",
+    "order": 1660
+  },
+  {
+    "hanja": "寒",
+    "sound": "한",
+    "meaning": "찰",
+    "level": "中",
+    "order": 1661
+  },
+  {
+    "hanja": "恨",
+    "sound": "한",
+    "meaning": "한",
+    "level": "中",
+    "order": 1662
+  },
+  {
+    "hanja": "漢",
+    "sound": "한",
+    "meaning": "한수/한나라",
+    "level": "中",
+    "order": 1663
+  },
+  {
+    "hanja": "閑",
+    "sound": "한",
+    "meaning": "한가할",
+    "level": "中",
+    "order": 1664
+  },
+  {
+    "hanja": "限",
+    "sound": "한",
+    "meaning": "한할",
+    "level": "中",
+    "order": 1665
+  },
+  {
+    "hanja": "韓",
+    "sound": "한",
+    "meaning": "한국/나라 이름",
+    "level": "中",
+    "order": 1666
+  },
+  {
+    "hanja": "旱",
+    "sound": "한",
+    "meaning": "가물",
+    "level": "高",
+    "order": 1667
+  },
+  {
+    "hanja": "汗",
+    "sound": "한",
+    "meaning": "땀",
+    "level": "高",
+    "order": 1668
+  },
+  {
+    "hanja": "割",
+    "sound": "할",
+    "meaning": "나눌",
+    "level": "高",
+    "order": 1669
+  },
+  {
+    "hanja": "含",
+    "sound": "함",
+    "meaning": "머금을",
+    "level": "高",
+    "order": 1670
+  },
+  {
+    "hanja": "咸",
+    "sound": "함",
+    "meaning": "다",
+    "level": "高",
+    "order": 1671
+  },
+  {
+    "hanja": "陷",
+    "sound": "함",
+    "meaning": "빠질",
+    "level": "高",
+    "order": 1672
+  },
+  {
+    "hanja": "合",
+    "sound": "합",
+    "meaning": "합할",
+    "level": "中",
+    "order": 1673
+  },
+  {
+    "hanja": "恒",
+    "sound": "항",
+    "meaning": "항상",
+    "level": "中",
+    "order": 1674
+  },
+  {
+    "hanja": "巷",
+    "sound": "항",
+    "meaning": "거리",
+    "level": "高",
+    "order": 1675
+  },
+  {
+    "hanja": "抗",
+    "sound": "항",
+    "meaning": "겨룰",
+    "level": "高",
+    "order": 1676
+  },
+  {
+    "hanja": "港",
+    "sound": "항",
+    "meaning": "항구",
+    "level": "高",
+    "order": 1677
+  },
+  {
+    "hanja": "航",
+    "sound": "항",
+    "meaning": "배",
+    "level": "高",
+    "order": 1678
+  },
+  {
+    "hanja": "項",
+    "sound": "항",
+    "meaning": "항목",
+    "level": "高",
+    "order": 1679
+  },
+  {
+    "hanja": "亥",
+    "sound": "해",
+    "meaning": "돼지",
+    "level": "中",
+    "order": 1680
+  },
+  {
+    "hanja": "害",
+    "sound": "해",
+    "meaning": "해할",
+    "level": "中",
+    "order": 1681
+  },
+  {
+    "hanja": "海",
+    "sound": "해",
+    "meaning": "바다",
+    "level": "中",
+    "order": 1682
+  },
+  {
+    "hanja": "解",
+    "sound": "해",
+    "meaning": "풀",
+    "level": "中",
+    "order": 1683
+  },
+  {
+    "hanja": "奚",
+    "sound": "해",
+    "meaning": "어찌",
+    "level": "高",
+    "order": 1684
+  },
+  {
+    "hanja": "該",
+    "sound": "해",
+    "meaning": "갖출",
+    "level": "高",
+    "order": 1685
+  },
+  {
+    "hanja": "核",
+    "sound": "핵",
+    "meaning": "씨",
+    "level": "高",
+    "order": 1686
+  },
+  {
+    "hanja": "幸",
+    "sound": "행",
+    "meaning": "다행",
+    "level": "中",
+    "order": 1687
+  },
+  {
+    "hanja": "行",
+    "sound": "행",
+    "meaning": "다닐",
+    "level": "中",
+    "order": 1688
+  },
+  {
+    "hanja": "向",
+    "sound": "향",
+    "meaning": "향할",
+    "level": "中",
+    "order": 1689
+  },
+  {
+    "hanja": "鄕",
+    "sound": "향",
+    "meaning": "시골",
+    "level": "中",
+    "order": 1690
+  },
+  {
+    "hanja": "香",
+    "sound": "향",
+    "meaning": "향기",
+    "level": "中",
+    "order": 1691
+  },
+  {
+    "hanja": "享",
+    "sound": "향",
+    "meaning": "누릴",
+    "level": "高",
+    "order": 1692
+  },
+  {
+    "hanja": "響",
+    "sound": "향",
+    "meaning": "울릴",
+    "level": "高",
+    "order": 1693
+  },
+  {
+    "hanja": "虛",
+    "sound": "허",
+    "meaning": "빌",
+    "level": "中",
+    "order": 1694
+  },
+  {
+    "hanja": "許",
+    "sound": "허",
+    "meaning": "허락할",
+    "level": "中",
+    "order": 1695
+  },
+  {
+    "hanja": "憲",
+    "sound": "헌",
+    "meaning": "법",
+    "level": "高",
+    "order": 1696
+  },
+  {
+    "hanja": "獻",
+    "sound": "헌",
+    "meaning": "드릴/바칠",
+    "level": "高",
+    "order": 1697
+  },
+  {
+    "hanja": "軒",
+    "sound": "헌",
+    "meaning": "집",
+    "level": "高",
+    "order": 1698
+  },
+  {
+    "hanja": "險",
+    "sound": "험",
+    "meaning": "험할",
+    "level": "高",
+    "order": 1699
+  },
+  {
+    "hanja": "驗",
+    "sound": "험",
+    "meaning": "시험할",
+    "level": "高",
+    "order": 1700
+  },
+  {
+    "hanja": "革",
+    "sound": "혁",
+    "meaning": "가죽/고칠",
+    "level": "中",
+    "order": 1701
+  },
+  {
+    "hanja": "現",
+    "sound": "현",
+    "meaning": "나타날",
+    "level": "中",
+    "order": 1702
+  },
+  {
+    "hanja": "賢",
+    "sound": "현",
+    "meaning": "어질",
+    "level": "中",
+    "order": 1703
+  },
+  {
+    "hanja": "懸",
+    "sound": "현",
+    "meaning": "매달",
+    "level": "高",
+    "order": 1704
+  },
+  {
+    "hanja": "玄",
+    "sound": "현",
+    "meaning": "검을",
+    "level": "高",
+    "order": 1705
+  },
+  {
+    "hanja": "絃",
+    "sound": "현",
+    "meaning": "줄",
+    "level": "高",
+    "order": 1706
+  },
+  {
+    "hanja": "縣",
+    "sound": "현",
+    "meaning": "고을",
+    "level": "高",
+    "order": 1707
+  },
+  {
+    "hanja": "顯",
+    "sound": "현",
+    "meaning": "나타날",
+    "level": "高",
+    "order": 1708
+  },
+  {
+    "hanja": "血",
+    "sound": "혈",
+    "meaning": "피",
+    "level": "中",
+    "order": 1709
+  },
+  {
+    "hanja": "穴",
+    "sound": "혈",
+    "meaning": "구멍",
+    "level": "高",
+    "order": 1710
+  },
+  {
+    "hanja": "嫌",
+    "sound": "혐",
+    "meaning": "",
+    "level": "高",
+    "order": 1711
+  },
+  {
+    "hanja": "協",
+    "sound": "협",
+    "meaning": "화합할/도울",
+    "level": "中",
+    "order": 1712
+  },
+  {
+    "hanja": "脅",
+    "sound": "협",
+    "meaning": "위협할/으를",
+    "level": "高",
+    "order": 1713
+  },
+  {
+    "hanja": "兄",
+    "sound": "형",
+    "meaning": "맏/형",
+    "level": "中",
+    "order": 1714
+  },
+  {
+    "hanja": "刑",
+    "sound": "형",
+    "meaning": "형벌",
+    "level": "中",
+    "order": 1715
+  },
+  {
+    "hanja": "形",
+    "sound": "형",
+    "meaning": "모양",
+    "level": "中",
+    "order": 1716
+  },
+  {
+    "hanja": "亨",
+    "sound": "형",
+    "meaning": "형통할",
+    "level": "高",
+    "order": 1717
+  },
+  {
+    "hanja": "螢",
+    "sound": "형",
+    "meaning": "반딧불이",
+    "level": "高",
+    "order": 1718
+  },
+  {
+    "hanja": "衡",
+    "sound": "형",
+    "meaning": "저울대",
+    "level": "高",
+    "order": 1719
+  },
+  {
+    "hanja": "惠",
+    "sound": "혜",
+    "meaning": "은혜",
+    "level": "中",
+    "order": 1720
+  },
+  {
+    "hanja": "兮",
+    "sound": "혜",
+    "meaning": "어조사",
+    "level": "高",
+    "order": 1721
+  },
+  {
+    "hanja": "慧",
+    "sound": "혜",
+    "meaning": "슬기로울",
+    "level": "高",
+    "order": 1722
+  },
+  {
+    "hanja": "乎",
+    "sound": "호",
+    "meaning": "어조사",
+    "level": "中",
+    "order": 1723
+  },
+  {
+    "hanja": "呼",
+    "sound": "호",
+    "meaning": "부를",
+    "level": "中",
+    "order": 1724
+  },
+  {
+    "hanja": "好",
+    "sound": "호",
+    "meaning": "좋을",
+    "level": "中",
+    "order": 1725
+  },
+  {
+    "hanja": "戶",
+    "sound": "호",
+    "meaning": "지게",
+    "level": "中",
+    "order": 1726
+  },
+  {
+    "hanja": "湖",
+    "sound": "호",
+    "meaning": "호수",
+    "level": "中",
+    "order": 1727
+  },
+  {
+    "hanja": "虎",
+    "sound": "호",
+    "meaning": "범",
+    "level": "中",
+    "order": 1728
+  },
+  {
+    "hanja": "號",
+    "sound": "호",
+    "meaning": "부르짖을",
+    "level": "中",
+    "order": 1729
+  },
+  {
+    "hanja": "互",
+    "sound": "호",
+    "meaning": "서로",
+    "level": "高",
+    "order": 1730
+  },
+  {
+    "hanja": "毫",
+    "sound": "호",
+    "meaning": "터럭",
+    "level": "高",
+    "order": 1731
+  },
+  {
+    "hanja": "浩",
+    "sound": "호",
+    "meaning": "넓을",
+    "level": "高",
+    "order": 1732
+  },
+  {
+    "hanja": "胡",
+    "sound": "호",
+    "meaning": "오랑캐",
+    "level": "高",
+    "order": 1733
+  },
+  {
+    "hanja": "護",
+    "sound": "호",
+    "meaning": "도울",
+    "level": "高",
+    "order": 1734
+  },
+  {
+    "hanja": "豪",
+    "sound": "호",
+    "meaning": "호걸",
+    "level": "高",
+    "order": 1735
+  },
+  {
+    "hanja": "或",
+    "sound": "혹",
+    "meaning": "혹",
+    "level": "中",
+    "order": 1736
+  },
+  {
+    "hanja": "惑",
+    "sound": "혹",
+    "meaning": "미혹할",
+    "level": "高",
+    "order": 1737
+  },
+  {
+    "hanja": "婚",
+    "sound": "혼",
+    "meaning": "혼인할",
+    "level": "中",
+    "order": 1738
+  },
+  {
+    "hanja": "混",
+    "sound": "혼",
+    "meaning": "섞을",
+    "level": "中",
+    "order": 1739
+  },
+  {
+    "hanja": "昏",
+    "sound": "혼",
+    "meaning": "어두울",
+    "level": "高",
+    "order": 1740
+  },
+  {
+    "hanja": "魂",
+    "sound": "혼",
+    "meaning": "넋",
+    "level": "高",
+    "order": 1741
+  },
+  {
+    "hanja": "忽",
+    "sound": "홀",
+    "meaning": "갑자기/문득",
+    "level": "高",
+    "order": 1742
+  },
+  {
+    "hanja": "紅",
+    "sound": "홍",
+    "meaning": "붉을",
+    "level": "中",
+    "order": 1743
+  },
+  {
+    "hanja": "弘",
+    "sound": "홍",
+    "meaning": "넓을",
+    "level": "高",
+    "order": 1744
+  },
+  {
+    "hanja": "洪",
+    "sound": "홍",
+    "meaning": "넓을/큰물",
+    "level": "高",
+    "order": 1745
+  },
+  {
+    "hanja": "鴻",
+    "sound": "홍",
+    "meaning": "기러기",
+    "level": "高",
+    "order": 1746
+  },
+  {
+    "hanja": "化",
+    "sound": "화",
+    "meaning": "될",
+    "level": "中",
+    "order": 1747
+  },
+  {
+    "hanja": "和",
+    "sound": "화",
+    "meaning": "화할",
+    "level": "中",
+    "order": 1748
+  },
+  {
+    "hanja": "火",
+    "sound": "화",
+    "meaning": "불",
+    "level": "中",
+    "order": 1749
+  },
+  {
+    "hanja": "畫",
+    "sound": "화",
+    "meaning": "그림",
+    "level": "中",
+    "order": 1750
+  },
+  {
+    "hanja": "花",
+    "sound": "화",
+    "meaning": "꽃",
+    "level": "中",
+    "order": 1751
+  },
+  {
+    "hanja": "華",
+    "sound": "화",
+    "meaning": "빛날",
+    "level": "中",
+    "order": 1752
+  },
+  {
+    "hanja": "話",
+    "sound": "화",
+    "meaning": "말씀",
+    "level": "中",
+    "order": 1753
+  },
+  {
+    "hanja": "貨",
+    "sound": "화",
+    "meaning": "재화",
+    "level": "中",
+    "order": 1754
+  },
+  {
+    "hanja": "禍",
+    "sound": "화",
+    "meaning": "재앙",
+    "level": "高",
+    "order": 1755
+  },
+  {
+    "hanja": "禾",
+    "sound": "화",
+    "meaning": "벼",
+    "level": "高",
+    "order": 1756
+  },
+  {
+    "hanja": "擴",
+    "sound": "확",
+    "meaning": "넓힐",
+    "level": "高",
+    "order": 1757
+  },
+  {
+    "hanja": "確",
+    "sound": "확",
+    "meaning": "굳을",
+    "level": "高",
+    "order": 1758
+  },
+  {
+    "hanja": "穫",
+    "sound": "확",
+    "meaning": "거둘",
+    "level": "高",
+    "order": 1759
+  },
+  {
+    "hanja": "患",
+    "sound": "환",
+    "meaning": "근심",
+    "level": "中",
+    "order": 1760
+  },
+  {
+    "hanja": "歡",
+    "sound": "환",
+    "meaning": "기쁠",
+    "level": "中",
+    "order": 1761
+  },
+  {
+    "hanja": "丸",
+    "sound": "환",
+    "meaning": "둥글",
+    "level": "高",
+    "order": 1762
+  },
+  {
+    "hanja": "換",
+    "sound": "환",
+    "meaning": "바꿀",
+    "level": "高",
+    "order": 1763
+  },
+  {
+    "hanja": "環",
+    "sound": "환",
+    "meaning": "고리",
+    "level": "高",
+    "order": 1764
+  },
+  {
+    "hanja": "還",
+    "sound": "환",
+    "meaning": "돌아올",
+    "level": "高",
+    "order": 1765
+  },
+  {
+    "hanja": "活",
+    "sound": "활",
+    "meaning": "살",
+    "level": "中",
+    "order": 1766
+  },
+  {
+    "hanja": "皇",
+    "sound": "황",
+    "meaning": "임금",
+    "level": "中",
+    "order": 1767
+  },
+  {
+    "hanja": "黃",
+    "sound": "황",
+    "meaning": "누를",
+    "level": "中",
+    "order": 1768
+  },
+  {
+    "hanja": "況",
+    "sound": "황",
+    "meaning": "상황",
+    "level": "高",
+    "order": 1769
+  },
+  {
+    "hanja": "荒",
+    "sound": "황",
+    "meaning": "거칠",
+    "level": "高",
+    "order": 1770
+  },
+  {
+    "hanja": "回",
+    "sound": "회",
+    "meaning": "돌",
+    "level": "中",
+    "order": 1771
+  },
+  {
+    "hanja": "會",
+    "sound": "회",
+    "meaning": "모일",
+    "level": "中",
+    "order": 1772
+  },
+  {
+    "hanja": "悔",
+    "sound": "회",
+    "meaning": "뉘우칠",
+    "level": "高",
+    "order": 1773
+  },
+  {
+    "hanja": "懷",
+    "sound": "회",
+    "meaning": "품을",
+    "level": "高",
+    "order": 1774
+  },
+  {
+    "hanja": "劃",
+    "sound": "획",
+    "meaning": "그을",
+    "level": "高",
+    "order": 1775
+  },
+  {
+    "hanja": "獲",
+    "sound": "획",
+    "meaning": "얻을",
+    "level": "高",
+    "order": 1776
+  },
+  {
+    "hanja": "橫",
+    "sound": "횡",
+    "meaning": "가로",
+    "level": "高",
+    "order": 1777
+  },
+  {
+    "hanja": "孝",
+    "sound": "효",
+    "meaning": "효도",
+    "level": "中",
+    "order": 1778
+  },
+  {
+    "hanja": "效",
+    "sound": "효",
+    "meaning": "본받을",
+    "level": "中",
+    "order": 1779
+  },
+  {
+    "hanja": "曉",
+    "sound": "효",
+    "meaning": "새벽",
+    "level": "高",
+    "order": 1780
+  },
+  {
+    "hanja": "厚",
+    "sound": "후",
+    "meaning": "두터울",
+    "level": "中",
+    "order": 1781
+  },
+  {
+    "hanja": "後",
+    "sound": "후",
+    "meaning": "뒤",
+    "level": "中",
+    "order": 1782
+  },
+  {
+    "hanja": "侯",
+    "sound": "후",
+    "meaning": "제후",
+    "level": "高",
+    "order": 1783
+  },
+  {
+    "hanja": "候",
+    "sound": "후",
+    "meaning": "기후",
+    "level": "高",
+    "order": 1784
+  },
+  {
+    "hanja": "訓",
+    "sound": "훈",
+    "meaning": "가르칠",
+    "level": "中",
+    "order": 1785
+  },
+  {
+    "hanja": "毁",
+    "sound": "훼",
+    "meaning": "헐",
+    "level": "高",
+    "order": 1786
+  },
+  {
+    "hanja": "揮",
+    "sound": "휘",
+    "meaning": "휘두를",
+    "level": "高",
+    "order": 1787
+  },
+  {
+    "hanja": "輝",
+    "sound": "휘",
+    "meaning": "빛날",
+    "level": "高",
+    "order": 1788
+  },
+  {
+    "hanja": "休",
+    "sound": "휴",
+    "meaning": "쉴",
+    "level": "中",
+    "order": 1789
+  },
+  {
+    "hanja": "携",
+    "sound": "휴",
+    "meaning": "이끌/가질",
+    "level": "高",
+    "order": 1790
+  },
+  {
+    "hanja": "凶",
+    "sound": "흉",
+    "meaning": "흉할",
+    "level": "中",
+    "order": 1791
+  },
+  {
+    "hanja": "胸",
+    "sound": "흉",
+    "meaning": "가슴",
+    "level": "中",
+    "order": 1792
+  },
+  {
+    "hanja": "黑",
+    "sound": "흑",
+    "meaning": "검을",
+    "level": "中",
+    "order": 1793
+  },
+  {
+    "hanja": "吸",
+    "sound": "흡",
+    "meaning": "마실",
+    "level": "高",
+    "order": 1794
+  },
+  {
+    "hanja": "興",
+    "sound": "흥",
+    "meaning": "일",
+    "level": "中",
+    "order": 1795
+  },
+  {
+    "hanja": "喜",
+    "sound": "희",
+    "meaning": "기쁠",
+    "level": "中",
+    "order": 1796
+  },
+  {
+    "hanja": "希",
+    "sound": "희",
+    "meaning": "바랄",
+    "level": "中",
+    "order": 1797
+  },
+  {
+    "hanja": "戱",
+    "sound": "희",
+    "meaning": "놀이",
+    "level": "高",
+    "order": 1798
+  },
+  {
+    "hanja": "稀",
+    "sound": "희",
+    "meaning": "드물",
+    "level": "高",
+    "order": 1799
+  }
+]

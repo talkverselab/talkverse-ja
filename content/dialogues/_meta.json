@@ -1,0 +1,7 @@
+{
+  "level": "L1-L3 (L4=TBD)",
+  "status": "TBD",
+  "kpi_target": { "dialogues": "TBD", "turns_total": "TBD", "blocks": "TBD" },
+  "created": "2026-05-15",
+  "notes": "Skeleton only. Content to be authored. v4 schema."
+}

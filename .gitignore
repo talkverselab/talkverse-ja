@@ -1,0 +1,65 @@
+# Flutter / Dart
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/.pub/
+**/build/
+**/coverage/
+**/pubspec.lock
+
+# Android
+app/android/.gradle/
+app/android/captures/
+app/android/local.properties
+app/android/key.properties
+app/android/**/GeneratedPluginRegistrant.*
+app/android/app/release/
+**/*.keystore
+**/*.jks
+
+# iOS
+app/ios/Pods/
+app/ios/.symlinks/
+app/ios/Flutter/Flutter.framework
+app/ios/Flutter/Flutter.podspec
+app/ios/Flutter/App.framework
+app/ios/Flutter/flutter_assets/
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/ServiceDefinitions.json
+app/ios/Runner/GeneratedPluginRegistrant.*
+**/Pods/
+
+# Audio raw (큰 mp3 모음. OneDrive sync 로 백업. git history 에는 안 넣음.)
+content/audio/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+*.tmp
+
+# Env / secrets
+.env
+.env.local
+*.env
+
+# Python (db/scripts 안 분석 스크립트용)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Claude session metadata (PC 별로 다름)
+.claude/
