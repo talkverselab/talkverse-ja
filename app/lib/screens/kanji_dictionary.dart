@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import '../services/kanji_index.dart';
 import '../theme.dart';
 import '../widgets/app_background.dart';
@@ -50,7 +51,16 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('漢字', style: TextStyle(fontWeight: FontWeight.w700))),
+      appBar: AppBar(
+        title: const Text('漢字', style: TextStyle(fontWeight: FontWeight.w700)),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.quiz_rounded),
+            tooltip: '한자 퀴즈',
+            onPressed: () => context.push('/kanji-quiz'),
+          ),
+        ],
+      ),
       body: AppBackground(
         scatterSeed: 23,
         child: _all == null
