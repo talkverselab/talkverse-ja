@@ -4,6 +4,7 @@ import 'screens/deck_list.dart';
 import 'screens/card_session.dart';
 import 'screens/srs_progress.dart';
 import 'screens/kana_chart.dart';
+import 'screens/kanji_dictionary.dart';
 import 'screens/settings.dart';
 import 'screens/profile.dart';
 import 'screens/about_app.dart';
@@ -21,6 +22,7 @@ final appRouter = GoRouter(
     ),
     GoRoute(path: '/progress', builder: (c, s) => const SrsProgressScreen()),
     GoRoute(path: '/kana', builder: (c, s) => const KanaChartScreen()),
+    GoRoute(path: '/kanji', builder: (c, s) => const KanjiDictionaryScreen()),
     GoRoute(path: '/settings', builder: (c, s) => const SettingsScreen()),
     GoRoute(path: '/profile', builder: (c, s) => const ProfileScreen()),
     GoRoute(path: '/about', builder: (c, s) => const AboutAppScreen()),

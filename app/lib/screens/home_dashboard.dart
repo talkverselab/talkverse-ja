@@ -330,6 +330,8 @@ class _HomeDashboardScreenState extends State<HomeDashboardScreen> {
         const SizedBox(width: 10),
         Expanded(child: _shortcut(Icons.translate, 'かな', '/kana')),
         const SizedBox(width: 10),
+        Expanded(child: _shortcut(Icons.search_rounded, '漢字', '/kanji')),
+        const SizedBox(width: 10),
         Expanded(child: _shortcut(Icons.grid_view_rounded, '전체 덱', '/decks')),
       ],
     );
