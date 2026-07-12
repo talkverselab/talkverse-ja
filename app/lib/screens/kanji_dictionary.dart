@@ -157,10 +157,11 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    if (e.meaning.isNotEmpty)
+                    if (e.meanings.isNotEmpty)
                       Text(
-                        e.meaning,
+                        e.meaningJoined,
                         style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.ink),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     if (sub.isNotEmpty)
                       Text(

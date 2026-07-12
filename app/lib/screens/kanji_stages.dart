@@ -15,7 +15,7 @@ class KanjiStagesScreen extends StatefulWidget {
 
   /// 뜻 있는 항목만 빈도순 → 20자 단위 단계 분할.
   static List<List<KanjiEntry>> buildStages(List<KanjiEntry> all) {
-    final pool = all.where((e) => e.meaning.isNotEmpty).toList()
+    final pool = all.where((e) => e.meanings.isNotEmpty).toList()
       ..sort((a, b) => a.rank.compareTo(b.rank));
     final stages = <List<KanjiEntry>>[];
     for (var i = 0; i < pool.length; i += stageSize) {
