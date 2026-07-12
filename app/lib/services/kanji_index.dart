@@ -3,11 +3,12 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../models/flash_card.dart';
 
 /// 한자 사전 항목 — kanji_index.json 1개 엔트리.
+/// 한 한자에 음훈이 여럿일 수 있음 (行: 다닐 행·항렬 항, 楽: 즐길 락·노래 악).
 class KanjiEntry {
   final String char;
   final int rank;
   final double pct;
-  final String meaning; // 음훈 (e.g. '말씀 언') — 없으면 빈 문자열
+  final List<String> meanings; // 음훈 목록 — 대표가 첫 번째
   final List<KanjiReading> readings;
   final List<ExampleWord> words;
 
@@ -15,34 +16,41 @@ class KanjiEntry {
     required this.char,
     required this.rank,
     required this.pct,
-    required this.meaning,
+    required this.meanings,
     required this.readings,
     required this.words,
   });
 
-  factory KanjiEntry.fromJson(Map<String, dynamic> j) => KanjiEntry(
-        char: j['char'] as String,
-        rank: j['rank'] as int,
-        pct: (j['pct'] as num?)?.toDouble() ?? 0,
-        meaning: j['meaning'] as String? ?? '',
-        readings: (j['readings'] as List?)
-                ?.map((r) => KanjiReading.fromJson(r as Map<String, dynamic>))
-                .toList() ??
-            const [],
-        words: (j['words'] as List?)
-                ?.map((w) => ExampleWord.fromJson(w as Map<String, dynamic>))
-                .toList() ??
-            const [],
-      );
+  factory KanjiEntry.fromJson(Map<String, dynamic> j) {
+    final meanings = (j['meanings'] as List?)?.cast<String>() ??
+        [if ((j['meaning'] as String?)?.isNotEmpty ?? false) j['meaning'] as String];
+    return KanjiEntry(
+      char: j['char'] as String,
+      rank: j['rank'] as int,
+      pct: (j['pct'] as num?)?.toDouble() ?? 0,
+      meanings: meanings,
+      readings: (j['readings'] as List?)
+              ?.map((r) => KanjiReading.fromJson(r as Map<String, dynamic>))
+              .toList() ??
+          const [],
+      words: (j['words'] as List?)
+              ?.map((w) => ExampleWord.fromJson(w as Map<String, dynamic>))
+              .toList() ??
+          const [],
+    );
+  }
 
-  bool get hasDetail => meaning.isNotEmpty || readings.isNotEmpty;
+  String get meaning => meanings.isEmpty ? '' : meanings.first;
+  String get meaningJoined => meanings.join(' · ');
 
-  /// KanjiDetailSheet 재사용을 위한 FlashCard 변환.
+  bool get hasDetail => meanings.isNotEmpty || readings.isNotEmpty;
+
+  /// KanjiDetailSheet 재사용을 위한 FlashCard 변환 — 복수 음훈은 · 로 병기.
   FlashCard toCard() => FlashCard(
         id: 'kanji_index_$rank',
         front: char,
         kana: '',
-        back: meaning,
+        back: meaningJoined,
         key: '',
         readings: readings,
         exampleWords: words,
@@ -73,7 +81,7 @@ class KanjiIndex {
     final qKana = _toHiragana(q);
     return all.where((e) {
       if (q.contains(e.char)) return true;
-      if (e.meaning.contains(q)) return true;
+      if (e.meanings.any((m) => m.contains(q))) return true;
       for (final r in e.readings) {
         final pure = r.reading.replaceAll(RegExp(r'[\-\(\)、]'), '');
         if (_toHiragana(pure).contains(qKana)) return true;
