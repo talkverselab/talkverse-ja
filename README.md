@@ -1,155 +1,113 @@
-# talkverse-ja
+# 일본어유니버스 (JapaneseUniverse)
 
-> 일본어 학습 앱 — 신규 단일 앱 (2026-05-17 시작)
-> 옛 `D:/OneDrive/PROJECT/talkverse-lab/` monorepo 폐기, JA 만 독립 앱으로.
-
----
-
-## 한 줄 정리
-
-한국 화자 → 일본어. **Flutter** 단일 앱. **git local-only** (GitHub X). 옛 콘텐츠·DB schema 재사용.
+> 한국 화자 대상 일본어 단일 앱. `zh` (중국어유니버스) 구조를 그대로 따라 Flutter 로 재작성 (2026-08-16).
+> 앱 이름: **Japanese Universe** · Package: `com.talkverse.japanese_universe`
+> Stack: **Flutter** (Material 3) + **Drift** (SQLite). Brand: 紅 `#BC002D` (和風 팔레트).
+> Git: **local only** (GitHub 사용 X).
 
 ---
 
-## 폴더 구조
+## 한 페이지 요약
 
+ja = 교착어 (한국어와 어순·조사 구조 거의 동일). 학습 3축 = **(1) 가나 50음 / (2) 한자 (한국 한자음 매핑) / (3) 조사·종조사 1:1 매핑**.
+
+**차별화 IP**
+- **한자음 매핑**: 한국 한자음 받침 → 일본 음독 규칙 (ㄱ→ク/キ · ㄴ,ㅁ→ン · ㄹ→ツ/チ · ㅂ→ウ · ㅇ→ウ/イ). 훈음의 '음'으로 1,078자 자동 그룹.
+- **조사 1:1**: は=은/는, が=이/가, を=을/를, に/で/へ/と/も/の/から/まで … + 종조사 ね/よ/か/な/の/かな.
+- **회화 자막 가중 빈도** 한자 1,078 · 단어 2,500 (R1-R4 cliff).
+- 영어 우회 X · 모든 번역·예시 한국어 기반.
+
+---
+
+## 진입
+
+```powershell
+cd C:\Users\Johnjeon\talkverse\ja
+claude
 ```
-ja/
-├── .git/                    ← local only (GitHub push 안 함)
-├── app/                     ← Flutter 앱
-│   ├── lib/                   Dart 소스
-│   ├── android/               (flutter create 시 생성)
-│   ├── ios/                   (옵션)
-│   ├── assets/
-│   │   ├── audio/             dialogue mp3 (north_*/south_*)
-│   │   ├── data/              JSON (L1-L3, wordsets, annotations)
-│   │   ├── fonts/             일본어 폰트 (Noto Sans JP 등)
-│   │   └── images/
-│   ├── test/
-│   └── pubspec.yaml
-│
-├── content/                 ← 학습 콘텐츠 SOT (앱이 참조)
-│   ├── north/                 도쿄·표준 (canonical, 우선)
-│   │   ├── dialogues/         L1-L3 json + _meta.json
-│   │   └── audio/             north_male / north_female mp3
-│   ├── south/                 오사카·간사이 (후속)
-│   │   ├── dialogues/
-│   │   └── audio/
-│   ├── wordsets/              words_base / delta / chat_additions
-│   └── annotations/           빨간펜 annotation JSON
-│
-├── db/                      ← 분석 자료 / 옛 데이터 보존
-│   ├── corpus/                lang_ja_top2500, native_top80, cliff, hanja_crossref, jp_l1_kanji_70
-│   ├── scripts/               JMultiWOZ / RealPersonaChat 빈도 분석 .py
-│   ├── notes/                 옛 메모 카피본 (overview, content-spec, grammar-frameworks, cliff-report)
-│   └── legacy/                옛 ja-lab TSX 핵심 (포팅 reference)
-│
-└── README.md                ← 이 파일
 
-# 메모는 별도 폴더
-# D:/OneDrive/memo/ja/   ← ADR + 결정 + 작업 로그
+빌드:
+```powershell
+flutter pub get
+dart run build_runner build --delete-conflicting-outputs   # Drift 스키마 변경 시
+flutter run                                  # 개발 (실기기)
+flutter build apk --release                  # release APK
+adb install -r build/app/outputs/flutter-apk/app-release.apk
 ```
 
 ---
 
-## 원칙
+## 폴더
 
-### 1. git local-only
-- `git init` 후 local commit 만. **GitHub push 안 함**.
-- `.gitignore` 에 audio raw / build artifact 포함.
-- 백업 = OneDrive sync (이 폴더가 OneDrive 안에 있음).
-
-### 2. 옛 자료는 read-only reference
-- `D:/OneDrive/PROJECT/talkverse-lab/ja/` = 옛 콘텐츠 SOT, 신규 앱이 수정 X.
-- `D:/OneDrive/PROJECT/talkverse-lab/apps/ja-lab/` = 옛 TSX 앱, 포팅 reference 만.
-- `D:/OneDrive/memo/03-Languages/ja/` = 옛 메모, read-only.
-- 수동 cherry-pick: 필요할 때만 신규 폴더로 복사.
-
-### 3. 차별화 (옛 brand 룰 그대로)
-- "영어 우회 X" — 영어 통하는 phrase 안 가르침
-- 한국 화자 한정 — 번역·예시 모두 한국어 기반 (조사·종조사·경어 1:1 매핑)
-- L1 narrative (data) / L2 카오스 채팅 / L3 사랑 narrative
-
-### 4. UX 전면 재설계
-- 옛 vi-lab 패턴 (dating narrative + 14 어기조사) 답습 X.
-- 일본어 특수성 우선: kana_chart / kanji_cards / katakana_reader / pitch_accent 화면 신규.
-- 옛 ja-lab `app/*.tsx` (index, main, conversation_200, chat_dialogue_*, adverbs_200, tone_practice, textbook, profile, adverbs_200) = reference, 그대로 포팅 X.
-
-### 5. dialect = north/south split
-- **north (도쿄·표준) 우선** 완성.
-- south (간사이) = 어휘·종조사 변형판으로 후속.
-- 음성 합성 = north 우선 (TTS 엔진 결정 후).
-
----
-
-## Stack
-
-| | |
+| 위치 | 내용 |
 |---|---|
-| Framework | Flutter 3.27+ |
-| Language | Dart 3.6+ |
-| State | Riverpod |
-| Audio | just_audio |
-| Storage | shared_preferences (옛 AsyncStorage 키 schema 동일 유지) |
-| Routing | go_router |
-| Targets | Android (우선), iOS (옵션) |
-| Fonts | Noto Sans JP / Noto Serif JP (한자·가나) + Pretendard (한국어) |
+| `lib/main.dart` | 앱 진입점 (Drift 초기화 + seed) |
+| `lib/core/theme.dart` | 和風 팔레트 (紅·藍·金·墨·和紙·抹茶·桜) + 50음 행 색 |
+| `lib/data/db/` | **Drift** SQLite schema (`app_database.dart` + 생성 `.g.dart`) + `seed_loader.dart` |
+| `lib/screens/` | MainScreen(홈/학습/진행/프로필) · Conversation · Episode · SentenceFlashcard · KanaChart · GrammarLesson(조사+테스트) · KanjiStages · KanjiQuiz · KanjiDictionary · HanjaSound · WordFreq · Flashcard(덱) · Progress · Profile |
+| `lib/widgets/` | japanese_decor (落款·青海波·麻の葉·鳥居·桜) · today_mission(富士) · memo_toggle · selectable_ja_text(한자 탭 → 정보 시트) |
+| `lib/services/` | TtsService(ja-JP 남/녀) · MemoService · KanjiIndexService · DeckService |
+| `assets/data/dialogues/` | L1.json (5 ep, ep1 40턴 완성) + `_meta.json` |
+| `assets/data/kanji/` | kanji_index.json (1,078자 · 훈음·음독·훈독·예시어) |
+| `assets/data/freq/` | lang_ja_with_regions.csv (2,500어 R1-R4) |
+| `assets/data/hanja/` | hanja_crossref.json (ko/zh/ja 80자 crossref) |
+| `assets/data/grammar/` | particles.json (조사 20 · 예문 · 팁) |
+| `assets/data/decks/` | 복습 덱 5종 (L1 회화 · native 회화체 · R1 골격 · 한자 80 · 교육부 어휘) |
+| `assets/images/` | icon_source.png (じゃト 런처 아이콘 원본) |
+| `data/` | raw corpus · 분석 CSV/JSON · 옛 legacy TS (앱 미포함) |
+| `test/` | 단위 테스트 |
+| `android/` `ios/` | `flutter create` 자동 생성 (런처 아이콘 mipmap 유지) |
 
 ---
 
-## "DB" 재사용 범위 (4종 — ADR 0003 참조)
+## Drift schema (v1)
 
-1. **AsyncStorage → shared_preferences 동일 키** (WordReviews / FavoriteWords / UserStats / UserMemo / AnnotationOverride)
-2. **콘텐츠 JSON schema** (ja/kana/romaji/ko/key + annotations 필드)
-3. **분석 데이터** (chriskempson top2500, native_top80, R1-R4 cliff, hanja 80, jp_l1_kanji_70, JMultiWOZ, RealPersonaChat)
-4. **audioMap** (옛 mp3 있다면 그대로, 없으면 신규 합성)
-
----
-
-## 작업 계획 (M0 ~ M3)
-
-### M0 — Bootstrap (현재)
-- ✅ 폴더 하이어라키
-- ⏭ git init (local)
-- ⏭ `flutter create` 또는 수동 `pubspec.yaml`
-- ⏭ 옛 자료 Phase A import (메타, 분석 CSV, 한자 ref, 옛 메모 카피)
-
-### M1 — MVP 화면
-- 홈 (lang 단일 = 메인 진입 단순)
-- kana_chart / katakana_reader (사전 학습)
-- L1 conversation viewer (200 turn) — L1 콘텐츠 미완 단계에선 _meta + sample turn 만
-- 오디오 재생 (north male/female 토글)
-- shared_preferences SRS 토대
-
-### M2 — 빨간펜 시스템
-- Flutter 로 AnnotatedText 재구현
-- AnnotationOverride (shared_preferences)
-- MemoButton + Export → Clipboard
-- L1 자동 추출 스크립트 (Python or Dart)
-
-### M3 — L2/L3 + TTS
-- L2 카오스 채팅 화면 (JMultiWOZ task-oriented 어휘 풀 활용)
-- L3 사랑 narrative (RealPersonaChat persona reference)
-- TTS 합성 (ElevenLabs ja or Google Wavenet ja-JP)
-- 본인 폰 검수 cycle (long-press → export → Claude 적용)
-
----
-
-## 옛 monorepo 참조 경로
-
-| 자료 | 옛 위치 |
+| 테이블 | 내용 |
 |---|---|
-| dialogues skeleton | `D:/OneDrive/PROJECT/talkverse-lab/ja/{north,south}/dialogues/_meta.json` |
-| 옛 TSX 화면 | `D:/OneDrive/PROJECT/talkverse-lab/apps/ja-lab/app/*.tsx` |
-| 옛 services (AsyncStorage) | `D:/OneDrive/PROJECT/talkverse-lab/apps/ja-lab/services/*.ts` |
-| 옛 components (빨간펜) | `D:/OneDrive/PROJECT/talkverse-lab/apps/vi-lab/components/AnnotatedText.tsx` (vi-lab 가 canonical) |
-| 분석 CSV | `D:/OneDrive/BOOKS/_assets/data/lang_ja_*` |
-| 한자 ref | `D:/OneDrive/PROJECT/talkverse-lab/rules/hanja_crossref.json`, `_shared/jp_l1_kanji_70.json` |
-| JMultiWOZ | `D:/OneDrive/DATA_Raw/languages/ja/chat/jmultiwoz-data/JMultiWOZ_1.0/dialogues.json` |
-| RealPersonaChat | `D:/OneDrive/DATA_Raw/languages/ja/chat/real-persona-chat-data/` |
-| 옛 메모 (read-only) | `D:/OneDrive/memo/03-Languages/ja/` |
-| 신규 메모 vault | `D:/OneDrive/memo/ja/` |
+| `turns` | level/dialect/episodeId/num/speaker/ja/kana/romaji/ko/note/tags |
+| `kanji` | char/rank/pct/meaningKo/onyomi/kunyomi/koHanja |
+| `words` | rank/word/freq/cumPct/region |
+| `user_progress` | turnId → learned/favorite/lastReviewed/reviewCount |
+| `kanji_progress` | char → known/exposureCount/lastReviewed |
+| `stage_results` | stage → correct/total/bestPct/lastPlayed |
+| `user_memos` | context/body/createdAt |
+
+시드: `SeedLoader` (`db_seeded_v1` 키). 데이터 갱신 시 키 버전 올리기.
+복습 덱 카드 상태·문장 메모는 SharedPreferences (`card:{id}` / `memo:{pattern}:{idx}`).
 
 ---
 
-_갱신: 2026-05-17_
+## 콘텐츠 schema (v4)
+
+```
+L1: 5 ep × 40 turn = 200 turn   민준(한국 IT, 28) × 사쿠라(도쿄 디자이너, 26)   ← ep1 40 완성, ep2-5 미작성
+L2: 23 dial ≈ 300 turn          카오스 채팅 (미작성)
+L3: 23 dial ≈ 300 turn          사랑 narrative (미작성)
+```
+
+Turn JSON:
+```json
+{"num": 1, "speaker": "B", "ja": "あ、すみません。ここ、空いてますか?",
+ "kana": "あ、すみません。ここ、あいてますか?", "romaji": "A, sumimasen. Koko, aitemasu ka?",
+ "ko": "아, 죄송해요. 여기 비어 있나요?", "note": "すみません=죄송해요 / 空く(あく)=비다 / -ますか=의문 정중"}
+```
+
+---
+
+## 미결 / 다음
+
+1. L1 ep2-5 (160턴) · L2 · L3 콘텐츠 작성
+2. dialect south (간사이) 변형판
+3. TTS 정책 (시스템 ja-JP → 합성 mp3)
+4. 문법 레슨 확장 (동사 활용 · 정중체/반말 · 경어)
+5. 한자 단계 풀 조정 (현재 뜻 있는 전체 1,078자 → 회화 시작점 cliff 확정 후 축소)
+
+---
+
+## 옛 자료 (read-only reference)
+
+| 자료 | 위치 |
+|---|---|
+| zh 앱 (구조 원본) | `C:/Users/Johnjeon/talkverse/zh/` |
+| 옛 monorepo | `D:/OneDrive/PROJECT/talkverse-lab/` |
+| 분석 CSV / 한자 ref / 교육부 어휘 | `data/corpus/` |

@@ -1,65 +1,68 @@
 # Flutter / Dart
-**/.dart_tool/
-**/.flutter-plugins
-**/.flutter-plugins-dependencies
-**/.packages
-**/.pub-cache/
-**/.pub/
-**/build/
-**/coverage/
-**/pubspec.lock
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+*.iml
+.idea/
+.vscode/
+.metadata
+.fvm/
+flutter_export_environment.sh
 
 # Android
-app/android/.gradle/
-app/android/captures/
-app/android/local.properties
-app/android/key.properties
-app/android/**/GeneratedPluginRegistrant.*
-app/android/app/release/
-**/*.keystore
-**/*.jks
+android/.gradle/
+android/.idea/
+android/.kotlin/
+android/captures/
+android/local.properties
+android/key.properties
+android/app/build/
+android/build/
+android/app/release/
+*.keystore
+*.jks
 
 # iOS
-app/ios/Pods/
-app/ios/.symlinks/
-app/ios/Flutter/Flutter.framework
-app/ios/Flutter/Flutter.podspec
-app/ios/Flutter/App.framework
-app/ios/Flutter/flutter_assets/
-app/ios/Flutter/flutter_export_environment.sh
-app/ios/ServiceDefinitions.json
-app/ios/Runner/GeneratedPluginRegistrant.*
-**/Pods/
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/flutter_export_environment.sh
+ios/Runner/GeneratedPluginRegistrant.*
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner.xcodeproj/xcuserdata/
 
-# Audio raw (큰 mp3 모음. OneDrive sync 로 백업. git history 에는 안 넣음.)
-content/audio/
+# Audio (대용량 — 별도 sync)
+**/audio/**/*.mp3
+**/audio/**/*.wav
+**/audio/**/*.m4a
 
-# IDE
-.vscode/
-.idea/
-*.iml
-*.iws
-*.ipr
-
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# Logs
-*.log
-*.tmp
-
-# Env / secrets
-.env
-.env.local
-*.env
-
-# Python (db/scripts 안 분석 스크립트용)
+# Python
 __pycache__/
 *.pyc
 .venv/
 venv/
 
-# Claude session metadata (PC 별로 다름)
-.claude/
+# Secrets
+.env
+.env.local
+
+# IDE / OS
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Claude local settings
+.claude/settings.local.json
+
+# Drift generated (app_database.g.dart 은 커밋)
+**/*.g.dart
+!lib/data/db/app_database.g.dart

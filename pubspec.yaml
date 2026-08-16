@@ -1,0 +1,46 @@
+name: japanese_universe
+description: "일본어유니버스 — 한국 화자 일본어 학습 앱"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # Storage
+  shared_preferences: ^2.3.2
+  path_provider: ^2.1.4
+
+  # Util
+  csv: ^6.0.0
+  flutter_tts: ^4.2.0
+
+  # Drift (SQLite ORM)
+  drift: ^2.20.3
+  drift_flutter: ^0.2.0
+  sqlite3_flutter_libs: ^0.5.24
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+  # Drift codegen
+  drift_dev: ^2.20.3
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/dialogues/L1.json
+    - assets/data/dialogues/_meta.json
+    - assets/data/kanji/kanji_index.json
+    - assets/data/freq/lang_ja_with_regions.csv
+    - assets/data/hanja/hanja_crossref.json
+    - assets/data/grammar/particles.json
+    - assets/data/decks/
