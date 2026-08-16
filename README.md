@@ -13,7 +13,7 @@ ja = 교착어 (한국어와 어순·조사 구조 거의 동일). 학습 3축 =
 
 **한자 ↔ 읽기 ↔ 단어 DB (JLPT 기준, 2026-08-17)**
 - 한자 2,285자 (JLPT N5 79 · N4 166 · N3 367 · N2 367 · N1 1,232 + 회화 74) — 한국어 훈음 100% (corpus 1,078 / 한국 한자 목록 756 / 수동 451)
-- 단어 8,600어 (JLPT N5-N1 7,988 + 회화 top2500 한자어 598) — **후리가나 분절** 7,343 (JmdictFurigana)
+- 단어 8,600어 (JLPT N5-N1 7,988 + 회화 top2500 한자어 598) — **후리가나 분절** 7,343 (JmdictFurigana). 한국어 뜻: **N5·N4 100%** (1,411어, `data/corpus/ko_gloss/`), N3↓ 는 영어 gloss
 - 링크: `word_segments.char` → 한자 1자 ↔ 그 단어 안 실제 읽기 → 한자 시트 "읽기별 단어", 단어 시트 "한자 분해"
 - 빌드: `python data/scripts/build_furigana_db.py` (입력 `data/raw/`, README 참조)
 
@@ -82,7 +82,7 @@ adb install -r build/app/outputs/flutter-apk/app-release.apk
 | `stage_results` | stage → correct/total/bestPct/lastPlayed |
 | `user_memos` | context/body/createdAt |
 
-시드: `SeedLoader` (`db_seeded_v2` 키). 데이터 갱신 시 키 버전 + `schemaVersion` 올리기 (미출시: onUpgrade 전체 재생성).
+시드: `SeedLoader` (`db_seeded_v3` 키). 데이터 갱신 시 키 버전 + `schemaVersion` 올리기 (미출시: onUpgrade 전체 재생성).
 복습 덱 카드 상태·문장 메모는 SharedPreferences (`card:{id}` / `memo:{pattern}:{idx}`).
 
 ---
@@ -110,7 +110,7 @@ Turn JSON:
 2. dialect south (간사이) 변형판
 3. TTS 정책 (시스템 ja-JP → 합성 mp3)
 4. 문법 레슨 확장 (동사 활용 · 정중체/반말 · 경어)
-5. JLPT 단어 한국어 뜻 채우기 (현재 313/8,600 만 ko, 나머지 en 표시) — N5·N4부터
+5. JLPT 단어 한국어 뜻 채우기 — N5·N4 완료(2026-08-17), N3 (2,135어)·N2·N1 남음. 방식: `todo_*.json` 청크 → `done_*.json` (surface|kana → 뜻)
 6. 회화 에피소드 버블에 후리가나 루비 적용 (words_jlpt 분절 매칭)
 
 ---

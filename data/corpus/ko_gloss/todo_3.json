@@ -1,0 +1,1046 @@
+[
+{
+"surface": "ノート",
+"kana": "ノート",
+"jlpt": 5,
+"en": "notebook"
+},
+{
+"surface": "ハンカチ",
+"kana": "ハンカチ",
+"jlpt": 5,
+"en": "handkerchief"
+},
+{
+"surface": "バス",
+"kana": "バス",
+"jlpt": 5,
+"en": "bus; bath; bass"
+},
+{
+"surface": "バター",
+"kana": "バター",
+"jlpt": 5,
+"en": "butter"
+},
+{
+"surface": "パン",
+"kana": "パン",
+"jlpt": 5,
+"en": "bread"
+},
+{
+"surface": "パーティー",
+"kana": "パーティー",
+"jlpt": 5,
+"en": "a party"
+},
+{
+"surface": "フィルム",
+"kana": "フィルム",
+"jlpt": 5,
+"en": "film (roll of)"
+},
+{
+"surface": "フォーク",
+"kana": "フォーク",
+"jlpt": 5,
+"en": "fork"
+},
+{
+"surface": "プール",
+"kana": "プール",
+"jlpt": 5,
+"en": "swimming pool"
+},
+{
+"surface": "ベッド",
+"kana": "ベッド",
+"jlpt": 5,
+"en": "bed"
+},
+{
+"surface": "ペット",
+"kana": "ペット",
+"jlpt": 5,
+"en": "pet"
+},
+{
+"surface": "ペン",
+"kana": "ペン",
+"jlpt": 5,
+"en": "pen"
+},
+{
+"surface": "ページ",
+"kana": "ページ",
+"jlpt": 5,
+"en": "a page"
+},
+{
+"surface": "ホテル",
+"kana": "ホテル",
+"jlpt": 5,
+"en": "hotel"
+},
+{
+"surface": "ボタン",
+"kana": "ボタン",
+"jlpt": 5,
+"en": "button"
+},
+{
+"surface": "ボールペン",
+"kana": "ボールペン",
+"jlpt": 5,
+"en": "ball-point pen"
+},
+{
+"surface": "ポケット",
+"kana": "ポケット",
+"jlpt": 5,
+"en": "pocket"
+},
+{
+"surface": "ポスト",
+"kana": "ポスト",
+"jlpt": 5,
+"en": "mailbox; post, position"
+},
+{
+"surface": "マッチ",
+"kana": "マッチ",
+"jlpt": 5,
+"en": "match"
+},
+{
+"surface": "メートル",
+"kana": "メートル",
+"jlpt": 5,
+"en": "meter"
+},
+{
+"surface": "ラジオ",
+"kana": "ラジオ",
+"jlpt": 5,
+"en": "radio"
+},
+{
+"surface": "ラジオカセ",
+"kana": "ラジオカセ",
+"jlpt": 5,
+"en": "radio cassette player"
+},
+{
+"surface": "レコード",
+"kana": "レコード",
+"jlpt": 5,
+"en": "record"
+},
+{
+"surface": "レストラン",
+"kana": "レストラン",
+"jlpt": 5,
+"en": "restaurant"
+},
+{
+"surface": "ワイシャツ",
+"kana": "ワイシャツ",
+"jlpt": 5,
+"en": "shirt (lit: white shirt), business shirt"
+},
+{
+"surface": "一昨日",
+"kana": "おととい",
+"jlpt": 5,
+"en": "the day before yesterday"
+},
+{
+"surface": "一月",
+"kana": "ひとつき",
+"jlpt": 5,
+"en": "one month"
+},
+{
+"surface": "丁度",
+"kana": "ちょうど",
+"jlpt": 5,
+"en": "just, right, exactly"
+},
+{
+"surface": "七",
+"kana": "しち",
+"jlpt": 5,
+"en": "seven"
+},
+{
+"surface": "七つ",
+"kana": "ななつ",
+"jlpt": 5,
+"en": "seven things"
+},
+{
+"surface": "万年筆",
+"kana": "まんねんひつ",
+"jlpt": 5,
+"en": "fountain pen"
+},
+{
+"surface": "丈夫",
+"kana": "じょうぶ",
+"jlpt": 5,
+"en": "strong, solid, durable"
+},
+{
+"surface": "三つ",
+"kana": "みっつ",
+"jlpt": 5,
+"en": "three things"
+},
+{
+"surface": "三日",
+"kana": "みっか",
+"jlpt": 5,
+"en": "three days, third day of the month"
+},
+{
+"surface": "上げる",
+"kana": "あげる",
+"jlpt": 5,
+"en": "to raise, to lift"
+},
+{
+"surface": "上手",
+"kana": "じょうず",
+"jlpt": 5,
+"en": "be good at, skillful"
+},
+{
+"surface": "上着",
+"kana": "うわぎ",
+"jlpt": 5,
+"en": "coat, jacket"
+},
+{
+"surface": "下さい",
+"kana": "ください",
+"jlpt": 5,
+"en": "(with te-form verb) please do for me"
+},
+{
+"surface": "並ぶ",
+"kana": "ならぶ",
+"jlpt": 5,
+"en": "to line up, to stand in a line (v.i.)"
+},
+{
+"surface": "並べる",
+"kana": "ならべる",
+"jlpt": 5,
+"en": "to put (things) side by side; to line up"
+},
+{
+"surface": "九",
+"kana": "きゅう",
+"jlpt": 5,
+"en": "nine"
+},
+{
+"surface": "九",
+"kana": "く",
+"jlpt": 5,
+"en": "nine"
+},
+{
+"surface": "九つ",
+"kana": "ここのつ",
+"jlpt": 5,
+"en": "nine things"
+},
+{
+"surface": "九日",
+"kana": "ここのか",
+"jlpt": 5,
+"en": "nine days; ninth day of the month"
+},
+{
+"surface": "二つ",
+"kana": "ふたつ",
+"jlpt": 5,
+"en": "two things"
+},
+{
+"surface": "二十日",
+"kana": "はつか",
+"jlpt": 5,
+"en": "twenty days, twentieth (day of the month)"
+},
+{
+"surface": "二十歳",
+"kana": "はたち",
+"jlpt": 5,
+"en": "20 years old"
+},
+{
+"surface": "二日",
+"kana": "ふつか",
+"jlpt": 5,
+"en": "two days; second day of the month"
+},
+{
+"surface": "五",
+"kana": "ご",
+"jlpt": 5,
+"en": "five"
+},
+{
+"surface": "五つ",
+"kana": "いつつ",
+"jlpt": 5,
+"en": "five things"
+},
+{
+"surface": "交差点",
+"kana": "こうさてん",
+"jlpt": 5,
+"en": "intersection"
+},
+{
+"surface": "交番",
+"kana": "こうばん",
+"jlpt": 5,
+"en": "police box"
+},
+{
+"surface": "今晩",
+"kana": "こんばん",
+"jlpt": 5,
+"en": "tonight, this evening"
+},
+{
+"surface": "今月",
+"kana": "こんげつ",
+"jlpt": 5,
+"en": "this month"
+},
+{
+"surface": "今週",
+"kana": "こんしゅう",
+"jlpt": 5,
+"en": "this week"
+},
+{
+"surface": "休み",
+"kana": "やすみ",
+"jlpt": 5,
+"en": "holiday; day off; absence"
+},
+{
+"surface": "会う",
+"kana": "あう",
+"jlpt": 5,
+"en": "to meet, to see"
+},
+{
+"surface": "低い",
+"kana": "ひくい",
+"jlpt": 5,
+"en": "short, low"
+},
+{
+"surface": "余り",
+"kana": "あまり",
+"jlpt": 5,
+"en": "not very; surplus"
+},
+{
+"surface": "作文",
+"kana": "さくぶん",
+"jlpt": 5,
+"en": "essay; composition"
+},
+{
+"surface": "便利",
+"kana": "べんり",
+"jlpt": 5,
+"en": "convenient, handy"
+},
+{
+"surface": "先月",
+"kana": "せんげつ",
+"jlpt": 5,
+"en": "last month"
+},
+{
+"surface": "先週",
+"kana": "せんしゅう",
+"jlpt": 5,
+"en": "last week"
+},
+{
+"surface": "入口",
+"kana": "いりぐち",
+"jlpt": 5,
+"en": "entrance"
+},
+{
+"surface": "八",
+"kana": "はち",
+"jlpt": 5,
+"en": "eight"
+},
+{
+"surface": "八つ",
+"kana": "やっつ",
+"jlpt": 5,
+"en": "eight things"
+},
+{
+"surface": "八日",
+"kana": "ようか",
+"jlpt": 5,
+"en": "eight days; eighth day of the month"
+},
+{
+"surface": "八百屋",
+"kana": "やおや",
+"jlpt": 5,
+"en": "greengrocer"
+},
+{
+"surface": "六",
+"kana": "ろく",
+"jlpt": 5,
+"en": "six"
+},
+{
+"surface": "六つ",
+"kana": "むっつ",
+"jlpt": 5,
+"en": "six things"
+},
+{
+"surface": "六日",
+"kana": "むいか",
+"jlpt": 5,
+"en": "six days; sixth day of month"
+},
+{
+"surface": "冷蔵庫",
+"kana": "れいぞうこ",
+"jlpt": 5,
+"en": "refrigerator"
+},
+{
+"surface": "出口",
+"kana": "でぐち",
+"jlpt": 5,
+"en": "an exit"
+},
+{
+"surface": "切手",
+"kana": "きって",
+"jlpt": 5,
+"en": "postal (postage) stamps"
+},
+{
+"surface": "切符",
+"kana": "きっぷ",
+"jlpt": 5,
+"en": "a ticket"
+},
+{
+"surface": "初め",
+"kana": "はじめ",
+"jlpt": 5,
+"en": "beginning, start"
+},
+{
+"surface": "初めて",
+"kana": "はじめて",
+"jlpt": 5,
+"en": "for the first time"
+},
+{
+"surface": "勤める",
+"kana": "つとめる",
+"jlpt": 5,
+"en": "to work (for)"
+},
+{
+"surface": "北",
+"kana": "きた",
+"jlpt": 5,
+"en": "north"
+},
+{
+"surface": "十日",
+"kana": "とおか",
+"jlpt": 5,
+"en": "ten days; tenth day of the month"
+},
+{
+"surface": "千",
+"kana": "せん",
+"jlpt": 5,
+"en": "thousand"
+},
+{
+"surface": "午前",
+"kana": "ごぜん",
+"jlpt": 5,
+"en": "morning, A.M."
+},
+{
+"surface": "半",
+"kana": "はん",
+"jlpt": 5,
+"en": "half (e.g., にじはん | half-past two)"
+},
+{
+"surface": "厚い",
+"kana": "あつい",
+"jlpt": 5,
+"en": "kind, warm(hearted), thick, deep"
+},
+{
+"surface": "叔母さん",
+"kana": "おばさん",
+"jlpt": 5,
+"en": "aunt"
+},
+{
+"surface": "叔父さん",
+"kana": "おじさん",
+"jlpt": 5,
+"en": "uncle, middle-aged man"
+},
+{
+"surface": "台所",
+"kana": "だいどころ",
+"jlpt": 5,
+"en": "kitchen"
+},
+{
+"surface": "吹く",
+"kana": "ふく",
+"jlpt": 5,
+"en": "to blow (wind, etc.)"
+},
+{
+"surface": "咲く",
+"kana": "さく",
+"jlpt": 5,
+"en": "to bloom"
+},
+{
+"surface": "喫茶店",
+"kana": "きっさてん",
+"jlpt": 5,
+"en": "café"
+},
+{
+"surface": "四",
+"kana": "し",
+"jlpt": 5,
+"en": "four"
+},
+{
+"surface": "四つ",
+"kana": "よっつ",
+"jlpt": 5,
+"en": "four things"
+},
+{
+"surface": "四日",
+"kana": "よっか",
+"jlpt": 5,
+"en": "four days; fourth day of the month"
+},
+{
+"surface": "図書館",
+"kana": "としょかん",
+"jlpt": 5,
+"en": "library"
+},
+{
+"surface": "土曜日",
+"kana": "どようび",
+"jlpt": 5,
+"en": "Saturday"
+},
+{
+"surface": "在る",
+"kana": "ある",
+"jlpt": 5,
+"en": "to be, to have"
+},
+{
+"surface": "地下鉄",
+"kana": "ちかてつ",
+"jlpt": 5,
+"en": "underground train, subway"
+},
+{
+"surface": "地図",
+"kana": "ちず",
+"jlpt": 5,
+"en": "a map"
+},
+{
+"surface": "塩",
+"kana": "しお",
+"jlpt": 5,
+"en": "salt"
+},
+{
+"surface": "夏休み",
+"kana": "なつやすみ",
+"jlpt": 5,
+"en": "summer vacation"
+},
+{
+"surface": "夕方",
+"kana": "ゆうがた",
+"jlpt": 5,
+"en": "late afternoon (typically just before dinner time), evening"
+},
+{
+"surface": "夕飯",
+"kana": "ゆうはん",
+"jlpt": 5,
+"en": "dinner, supper, evening meal"
+},
+{
+"surface": "外国",
+"kana": "がいこく",
+"jlpt": 5,
+"en": "foreign country; abroad"
+},
+{
+"surface": "外国人",
+"kana": "がいこくじん",
+"jlpt": 5,
+"en": "foreigner"
+},
+{
+"surface": "大使館",
+"kana": "たいしかん",
+"jlpt": 5,
+"en": "embassy"
+},
+{
+"surface": "大勢",
+"kana": "おおぜい",
+"jlpt": 5,
+"en": "great number of people"
+},
+{
+"surface": "天気",
+"kana": "てんき",
+"jlpt": 5,
+"en": "weather"
+},
+{
+"surface": "始め",
+"kana": "はじめ",
+"jlpt": 5,
+"en": "beginning, start"
+},
+{
+"surface": "字引",
+"kana": "じびき",
+"jlpt": 5,
+"en": "dictionary"
+},
+{
+"surface": "宿題",
+"kana": "しゅくだい",
+"jlpt": 5,
+"en": "homework"
+},
+{
+"surface": "封筒",
+"kana": "ふうとう",
+"jlpt": 5,
+"en": "envelope"
+},
+{
+"surface": "居る",
+"kana": "いる",
+"jlpt": 5,
+"en": "(humble) to be (animate), to exist"
+},
+{
+"surface": "差す",
+"kana": "さす",
+"jlpt": 5,
+"en": "to raise (stretch out) hands, to raise (e.g., umbrella)"
+},
+{
+"surface": "帽子",
+"kana": "ぼうし",
+"jlpt": 5,
+"en": "hat; cap"
+},
+{
+"surface": "平仮名",
+"kana": "ひらがな",
+"jlpt": 5,
+"en": "hiragana"
+},
+{
+"surface": "庭",
+"kana": "にわ",
+"jlpt": 5,
+"en": "garden"
+},
+{
+"surface": "廊下",
+"kana": "ろうか",
+"jlpt": 5,
+"en": "corridor"
+},
+{
+"surface": "建物",
+"kana": "たてもの",
+"jlpt": 5,
+"en": "building"
+},
+{
+"surface": "弾く",
+"kana": "ひく",
+"jlpt": 5,
+"en": "to play (a string instrument or piano)"
+},
+{
+"surface": "散歩",
+"kana": "さんぽ",
+"jlpt": 5,
+"en": "walk, stroll"
+},
+{
+"surface": "文章",
+"kana": "ぶんしょう",
+"jlpt": 5,
+"en": "sentence, text"
+},
+{
+"surface": "日曜日",
+"kana": "にちようび",
+"jlpt": 5,
+"en": "Sunday"
+},
+{
+"surface": "明るい",
+"kana": "あかるい",
+"jlpt": 5,
+"en": "bright (in reference to personality or weather); cheerful"
+},
+{
+"surface": "明後日",
+"kana": "あさって",
+"jlpt": 5,
+"en": "day after tomorrow"
+},
+{
+"surface": "易しい",
+"kana": "やさしい",
+"jlpt": 5,
+"en": "easy, plain, simple"
+},
+{
+"surface": "映画館",
+"kana": "えいがかん",
+"jlpt": 5,
+"en": "movie theater, cinema"
+},
+{
+"surface": "昼",
+"kana": "ひる",
+"jlpt": 5,
+"en": "noon, daytime"
+},
+{
+"surface": "昼御飯",
+"kana": "ひるごはん",
+"jlpt": 5,
+"en": "lunch, midday meal"
+},
+{
+"surface": "時計",
+"kana": "とけい",
+"jlpt": 5,
+"en": "a watch; a clock"
+},
+{
+"surface": "晩",
+"kana": "ばん",
+"jlpt": 5,
+"en": "evening"
+},
+{
+"surface": "晩御飯",
+"kana": "ばんごはん",
+"jlpt": 5,
+"en": "dinner, evening meal"
+},
+{
+"surface": "晴れ",
+"kana": "はれ",
+"jlpt": 5,
+"en": "clear (sunny) weather"
+},
+{
+"surface": "晴れる",
+"kana": "はれる",
+"jlpt": 5,
+"en": "to be sunny"
+},
+{
+"surface": "暑い",
+"kana": "あつい",
+"jlpt": 5,
+"en": "hot (in reference to weather), warm"
+},
+{
+"surface": "暗い",
+"kana": "くらい",
+"jlpt": 5,
+"en": "dark, gloomy"
+},
+{
+"surface": "曇り",
+"kana": "くもり",
+"jlpt": 5,
+"en": "cloudiness, cloudy weather"
+},
+{
+"surface": "曇る",
+"kana": "くもる",
+"jlpt": 5,
+"en": "to become cloudy, to become dim"
+},
+{
+"surface": "曲る",
+"kana": "まがる",
+"jlpt": 5,
+"en": "to turn, to bend"
+},
+{
+"surface": "月曜日",
+"kana": "げつようび",
+"jlpt": 5,
+"en": "Monday"
+},
+{
+"surface": "有る",
+"kana": "ある",
+"jlpt": 5,
+"en": "to be, to have"
+},
+{
+"surface": "朝御飯",
+"kana": "あさごはん",
+"jlpt": 5,
+"en": "breakfast"
+},
+{
+"surface": "木曜日",
+"kana": "もくようび",
+"jlpt": 5,
+"en": "Thursday"
+},
+{
+"surface": "本棚",
+"kana": "ほんだな",
+"jlpt": 5,
+"en": "bookshelf"
+},
+{
+"surface": "机",
+"kana": "つくえ",
+"jlpt": 5,
+"en": "desk"
+},
+{
+"surface": "来年",
+"kana": "らいねん",
+"jlpt": 5,
+"en": "next year"
+},
+{
+"surface": "来月",
+"kana": "らいげつ",
+"jlpt": 5,
+"en": "next month"
+},
+{
+"surface": "果物",
+"kana": "くだもの",
+"jlpt": 5,
+"en": "fruit"
+},
+{
+"surface": "椅子",
+"kana": "いす",
+"jlpt": 5,
+"en": "chair"
+},
+{
+"surface": "横",
+"kana": "よこ",
+"jlpt": 5,
+"en": "beside; side; width"
+},
+{
+"surface": "歯",
+"kana": "は",
+"jlpt": 5,
+"en": "tooth"
+},
+{
+"surface": "段々",
+"kana": "だんだん",
+"jlpt": 5,
+"en": "gradually, by degrees"
+},
+{
+"surface": "毎年",
+"kana": "まいとし",
+"jlpt": 5,
+"en": "every year, yearly, annually"
+},
+{
+"surface": "毎年",
+"kana": "まいねん",
+"jlpt": 5,
+"en": "every year, yearly, annually"
+},
+{
+"surface": "毎晩",
+"kana": "まいばん",
+"jlpt": 5,
+"en": "every night"
+},
+{
+"surface": "毎月",
+"kana": "まいげつ",
+"jlpt": 5,
+"en": "every month, monthly"
+},
+{
+"surface": "毎月",
+"kana": "まいつき",
+"jlpt": 5,
+"en": "every month, monthly"
+},
+{
+"surface": "毎朝",
+"kana": "まいあさ",
+"jlpt": 5,
+"en": "every morning"
+},
+{
+"surface": "毎週",
+"kana": "まいしゅう",
+"jlpt": 5,
+"en": "every week"
+},
+{
+"surface": "水曜日",
+"kana": "すいようび",
+"jlpt": 5,
+"en": "Wednesday"
+},
+{
+"surface": "沢山",
+"kana": "たくさん",
+"jlpt": 5,
+"en": "many, much"
+},
+{
+"surface": "河",
+"kana": "かわ",
+"jlpt": 5,
+"en": "river"
+},
+{
+"surface": "泳ぐ",
+"kana": "およぐ",
+"jlpt": 5,
+"en": "to swim"
+},
+{
+"surface": "洋服",
+"kana": "ようふく",
+"jlpt": 5,
+"en": "Western-style clothes"
+},
+{
+"surface": "洗濯",
+"kana": "せんたく",
+"jlpt": 5,
+"en": "washing, laundry"
+},
+{
+"surface": "浴びる",
+"kana": "あびる",
+"jlpt": 5,
+"en": "to bathe, to shower"
+},
+{
+"surface": "涼しい",
+"kana": "すずしい",
+"jlpt": 5,
+"en": "cool, refreshing (in reference to weather)"
+},
+{
+"surface": "渡る",
+"kana": "わたる",
+"jlpt": 5,
+"en": "to cross over, to go across"
+},
+{
+"surface": "温い",
+"kana": "ぬるい",
+"jlpt": 5,
+"en": "lukewarm"
+},
+{
+"surface": "漢字",
+"kana": "かんじ",
+"jlpt": 5,
+"en": "kanji; Chinese character"
+},
+{
+"surface": "火曜日",
+"kana": "かようび",
+"jlpt": 5,
+"en": "Tuesday"
+},
+{
+"surface": "灰皿",
+"kana": "はいざら",
+"jlpt": 5,
+"en": "ashtray"
+},
+{
+"surface": "片仮名",
+"kana": "かたかな",
+"jlpt": 5,
+"en": "katakana"
+},
+{
+"surface": "牛乳",
+"kana": "ぎゅうにゅう",
+"jlpt": 5,
+"en": "milk"
+},
+{
+"surface": "牛肉",
+"kana": "ぎゅうにく",
+"jlpt": 5,
+"en": "beef"
+}
+]
