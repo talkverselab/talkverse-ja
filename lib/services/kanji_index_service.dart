@@ -38,9 +38,13 @@ class ExampleWord {
 /// 한 한자에 음훈이 여럿일 수 있음 (行: 다닐 행·항렬 항, 楽: 즐길 락·노래 악).
 class KanjiEntry {
   final String char;
-  final int rank;
+  final int rank; // 회화 가중 빈도 순위 (없으면 9999)
   final double pct;
-  final List<String> meanings;
+  final int? jlpt; // 5..1
+  final int? grade;
+  final int? strokes;
+  final List<String> meanings; // 한국어 훈음
+  final String meaningsEn;
   final List<KanjiReading> readings;
   final List<ExampleWord> words;
 
@@ -48,11 +52,39 @@ class KanjiEntry {
     required this.char,
     required this.rank,
     required this.pct,
+    this.jlpt,
+    this.grade,
+    this.strokes,
     required this.meanings,
+    this.meaningsEn = '',
     required this.readings,
     required this.words,
   });
 
+  /// kanji_db.json 엔트리
+  factory KanjiEntry.fromDbJson(Map<String, dynamic> j) {
+    final glosses = (j['glosses'] as Map?)?.cast<String, dynamic>() ?? const {};
+    String base(String r) => KanjiIndexService.toHiragana(r.split('-').first);
+    return KanjiEntry(
+      char: j['char'] as String,
+      rank: j['rank'] as int? ?? 9999,
+      pct: (j['pct'] as num?)?.toDouble() ?? 0,
+      jlpt: j['jlpt'] as int?,
+      grade: j['grade'] as int?,
+      strokes: j['strokes'] as int?,
+      meanings: (j['meanings_ko'] as List?)?.cast<String>() ?? const [],
+      meaningsEn: ((j['meanings_en'] as List?) ?? []).join(', '),
+      readings: [
+        for (final r in (j['on'] as List? ?? []).cast<String>())
+          KanjiReading(reading: r, kind: '음독', gloss: (glosses[base(r)] as String?) ?? ''),
+        for (final r in (j['kun'] as List? ?? []).cast<String>())
+          KanjiReading(reading: r, kind: '훈독', gloss: (glosses[base(r)] as String?) ?? ''),
+      ],
+      words: const [],
+    );
+  }
+
+  /// (구) kanji_index.json 엔트리
   factory KanjiEntry.fromJson(Map<String, dynamic> j) {
     final meanings = (j['meanings'] as List?)?.cast<String>() ??
         [if ((j['meaning'] as String?)?.isNotEmpty ?? false) j['meaning'] as String];
@@ -72,6 +104,8 @@ class KanjiEntry {
     );
   }
 
+  String get jlptLabel => jlpt == null ? '—' : 'N$jlpt';
+
   String get meaning => meanings.isEmpty ? '' : meanings.first;
   String get meaningJoined => meanings.join(' · ');
   bool get hasDetail => meanings.isNotEmpty || readings.isNotEmpty;
@@ -79,7 +113,18 @@ class KanjiEntry {
   List<KanjiReading> get kun => readings.where((r) => !r.isOn).toList();
 }
 
-/// kanji_index.json 로더 + 검색 + 단계 분할.
+/// 한자 퀴즈 단계 1개
+class KanjiStage {
+  final int stage; // 전체 통번호 (1..)
+  final int? level; // 5..1, null=기타(JLPT 밖 회화 한자)
+  final int indexInLevel;
+  final List<KanjiEntry> chars;
+  const KanjiStage({required this.stage, required this.level, required this.indexInLevel, required this.chars});
+
+  String get levelLabel => level == null ? '기타' : 'N$level';
+}
+
+/// kanji_db.json 로더 (JLPT N5-N1 ∪ 회화 1,078 = 2,285자) + 검색 + JLPT 단계 분할.
 class KanjiIndexService {
   KanjiIndexService._();
   static final KanjiIndexService instance = KanjiIndexService._();
@@ -95,11 +140,38 @@ class KanjiIndexService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    final raw = await rootBundle.loadString('assets/data/kanji/kanji_index.json');
+    final raw = await rootBundle.loadString('assets/data/kanji/kanji_db.json');
     final json = jsonDecode(raw) as Map<String, dynamic>;
     _all = (json['entries'] as List)
-        .map((e) => KanjiEntry.fromJson(e as Map<String, dynamic>))
+        .map((e) => KanjiEntry.fromDbJson(e as Map<String, dynamic>))
         .toList();
+    // 예시 단어 (구 kanji_index.json) 병합 — 한국어 뜻 있는 회화 단어
+    try {
+      final raw2 = await rootBundle.loadString('assets/data/kanji/kanji_index.json');
+      final j2 = jsonDecode(raw2) as Map<String, dynamic>;
+      final byChar = {for (final e in _all) e.char: e};
+      final merged = <String, KanjiEntry>{};
+      for (final e in (j2['entries'] as List).cast<Map<String, dynamic>>()) {
+        final base = byChar[e['char']];
+        if (base == null) continue;
+        merged[base.char] = KanjiEntry(
+          char: base.char,
+          rank: base.rank,
+          pct: base.pct,
+          jlpt: base.jlpt,
+          grade: base.grade,
+          strokes: base.strokes,
+          meanings: base.meanings,
+          meaningsEn: base.meaningsEn,
+          readings: base.readings,
+          words: (e['words'] as List?)
+                  ?.map((w) => ExampleWord.fromJson(w as Map<String, dynamic>))
+                  .toList() ??
+              const [],
+        );
+      }
+      _all = [for (final e in _all) merged[e.char] ?? e];
+    } catch (_) {}
     _byChar = {for (final e in _all) e.char: e};
     _loaded = true;
   }
@@ -112,13 +184,28 @@ class KanjiIndexService {
     return (code >= 0x4E00 && code <= 0x9FFF) || (code >= 0x3400 && code <= 0x4DBF);
   }
 
-  /// 뜻 있는 항목만 빈도순 → 20자 단위 단계 분할.
-  List<List<KanjiEntry>> stages() {
-    final pool = _all.where((e) => e.meanings.isNotEmpty).toList()
+  /// JLPT 레벨별 (N5→N1) 한자 — 레벨 안에서는 회화 빈도순. jlpt 없는 회화 한자는 '기타'(0).
+  List<KanjiEntry> forLevel(int? level) {
+    final list = _all.where((e) => e.meanings.isNotEmpty && (level == null ? e.jlpt == null : e.jlpt == level)).toList()
       ..sort((a, b) => a.rank.compareTo(b.rank));
-    final out = <List<KanjiEntry>>[];
-    for (var i = 0; i < pool.length; i += stageSize) {
-      out.add(pool.sublist(i, (i + stageSize).clamp(0, pool.length)));
+    return list;
+  }
+
+  /// JLPT 순 (N5→N1→기타) 20자 단위 단계. 반환: [(level, chars)]
+  List<KanjiStage> stages() {
+    final out = <KanjiStage>[];
+    var n = 0;
+    for (final level in [5, 4, 3, 2, 1, null]) {
+      final pool = forLevel(level);
+      for (var i = 0; i < pool.length; i += stageSize) {
+        n++;
+        out.add(KanjiStage(
+          stage: n,
+          level: level,
+          indexInLevel: i ~/ stageSize + 1,
+          chars: pool.sublist(i, (i + stageSize).clamp(0, pool.length)),
+        ));
+      }
     }
     return out;
   }

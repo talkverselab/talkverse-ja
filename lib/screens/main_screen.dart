@@ -9,6 +9,7 @@ import 'episode_screen.dart';
 import 'flashcard_screen.dart';
 import 'grammar_lesson_screen.dart';
 import 'hanja_sound_screen.dart';
+import 'jlpt_words_screen.dart';
 import 'kana_chart_screen.dart';
 import 'kanji_dictionary_screen.dart';
 import 'kanji_stages_screen.dart';
@@ -247,13 +248,15 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const KanaChartScreen()),
       _MenuItem(label: '조사', sub: '助詞 핵심 20', seal: '助詞', color: AppColors.ai,
         builder: (_) => const GrammarLessonScreen()),
-      _MenuItem(label: '한자 단계', sub: '20자 × 단계 4지선다', seal: '漢字', color: const Color(0xFFC62828),
+      _MenuItem(label: '한자 단계', sub: 'JLPT N5→N1 4지선다', seal: '漢字', color: const Color(0xFFC62828),
         builder: (_) => const KanjiStagesScreen()),
-      _MenuItem(label: '한자 사전', sub: '1,078자 검색', seal: '辞書', color: const Color(0xFF6A1B9A),
+      _MenuItem(label: '한자 사전', sub: '2,285자 · 읽기별 단어', seal: '辞書', color: const Color(0xFF6A1B9A),
         builder: (_) => const KanjiDictionaryScreen()),
+      _MenuItem(label: 'JLPT 단어', sub: '8,600어 · 후리가나', seal: 'N5', color: AppColors.matcha,
+        builder: (_) => const JlptWordsScreen()),
       _MenuItem(label: '한자음', sub: '한국 한자음 ↔ 音読み', seal: '音', color: AppColors.aiDeep,
         builder: (_) => const HanjaSoundScreen()),
-      _MenuItem(label: '단어', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.matcha,
+      _MenuItem(label: '단어 빈도', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
         builder: (_) => const WordFreqScreen()),
       _MenuItem(label: '복습', sub: 'Flashcard 덱 5', seal: '復習', color: AppColors.kin,
         builder: (_) => const FlashcardScreen()),

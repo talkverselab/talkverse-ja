@@ -40,6 +40,8 @@ flutter:
     - assets/data/dialogues/L1.json
     - assets/data/dialogues/_meta.json
     - assets/data/kanji/kanji_index.json
+    - assets/data/kanji/kanji_db.json
+    - assets/data/words/words_jlpt.json
     - assets/data/freq/lang_ja_with_regions.csv
     - assets/data/hanja/hanja_crossref.json
     - assets/data/grammar/particles.json

@@ -706,12 +706,63 @@ class $KanjiTable extends Kanji with TableInfo<$KanjiTable, KanjiRow> {
     type: DriftSqlType.double,
     requiredDuringInsert: false,
   );
+  static const VerificationMeta _jlptMeta = const VerificationMeta('jlpt');
+  @override
+  late final GeneratedColumn<int> jlpt = GeneratedColumn<int>(
+    'jlpt',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _gradeMeta = const VerificationMeta('grade');
+  @override
+  late final GeneratedColumn<int> grade = GeneratedColumn<int>(
+    'grade',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _strokesMeta = const VerificationMeta(
+    'strokes',
+  );
+  @override
+  late final GeneratedColumn<int> strokes = GeneratedColumn<int>(
+    'strokes',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
   static const VerificationMeta _meaningKoMeta = const VerificationMeta(
     'meaningKo',
   );
   @override
   late final GeneratedColumn<String> meaningKo = GeneratedColumn<String>(
     'meaning_ko',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _meaningsKoJsonMeta = const VerificationMeta(
+    'meaningsKoJson',
+  );
+  @override
+  late final GeneratedColumn<String> meaningsKoJson = GeneratedColumn<String>(
+    'meanings_ko_json',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _meaningsEnMeta = const VerificationMeta(
+    'meaningsEn',
+  );
+  @override
+  late final GeneratedColumn<String> meaningsEn = GeneratedColumn<String>(
+    'meanings_en',
     aliasedName,
     true,
     type: DriftSqlType.string,
@@ -753,7 +804,12 @@ class $KanjiTable extends Kanji with TableInfo<$KanjiTable, KanjiRow> {
     char,
     rank,
     pct,
+    jlpt,
+    grade,
+    strokes,
     meaningKo,
+    meaningsKoJson,
+    meaningsEn,
     onyomi,
     kunyomi,
     koHanja,
@@ -790,10 +846,43 @@ class $KanjiTable extends Kanji with TableInfo<$KanjiTable, KanjiRow> {
         pct.isAcceptableOrUnknown(data['pct']!, _pctMeta),
       );
     }
+    if (data.containsKey('jlpt')) {
+      context.handle(
+        _jlptMeta,
+        jlpt.isAcceptableOrUnknown(data['jlpt']!, _jlptMeta),
+      );
+    }
+    if (data.containsKey('grade')) {
+      context.handle(
+        _gradeMeta,
+        grade.isAcceptableOrUnknown(data['grade']!, _gradeMeta),
+      );
+    }
+    if (data.containsKey('strokes')) {
+      context.handle(
+        _strokesMeta,
+        strokes.isAcceptableOrUnknown(data['strokes']!, _strokesMeta),
+      );
+    }
     if (data.containsKey('meaning_ko')) {
       context.handle(
         _meaningKoMeta,
         meaningKo.isAcceptableOrUnknown(data['meaning_ko']!, _meaningKoMeta),
+      );
+    }
+    if (data.containsKey('meanings_ko_json')) {
+      context.handle(
+        _meaningsKoJsonMeta,
+        meaningsKoJson.isAcceptableOrUnknown(
+          data['meanings_ko_json']!,
+          _meaningsKoJsonMeta,
+        ),
+      );
+    }
+    if (data.containsKey('meanings_en')) {
+      context.handle(
+        _meaningsEnMeta,
+        meaningsEn.isAcceptableOrUnknown(data['meanings_en']!, _meaningsEnMeta),
       );
     }
     if (data.containsKey('onyomi')) {
@@ -835,9 +924,29 @@ class $KanjiTable extends Kanji with TableInfo<$KanjiTable, KanjiRow> {
         DriftSqlType.double,
         data['${effectivePrefix}pct'],
       ),
+      jlpt: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}jlpt'],
+      ),
+      grade: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}grade'],
+      ),
+      strokes: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}strokes'],
+      ),
       meaningKo: attachedDatabase.typeMapping.read(
         DriftSqlType.string,
         data['${effectivePrefix}meaning_ko'],
+      ),
+      meaningsKoJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}meanings_ko_json'],
+      ),
+      meaningsEn: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}meanings_en'],
       ),
       onyomi: attachedDatabase.typeMapping.read(
         DriftSqlType.string,
@@ -864,7 +973,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
   final String char;
   final int? rank;
   final double? pct;
+  final int? jlpt;
+  final int? grade;
+  final int? strokes;
   final String? meaningKo;
+  final String? meaningsKoJson;
+  final String? meaningsEn;
   final String? onyomi;
   final String? kunyomi;
   final String? koHanja;
@@ -872,7 +986,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
     required this.char,
     this.rank,
     this.pct,
+    this.jlpt,
+    this.grade,
+    this.strokes,
     this.meaningKo,
+    this.meaningsKoJson,
+    this.meaningsEn,
     this.onyomi,
     this.kunyomi,
     this.koHanja,
@@ -887,8 +1006,23 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
     if (!nullToAbsent || pct != null) {
       map['pct'] = Variable<double>(pct);
     }
+    if (!nullToAbsent || jlpt != null) {
+      map['jlpt'] = Variable<int>(jlpt);
+    }
+    if (!nullToAbsent || grade != null) {
+      map['grade'] = Variable<int>(grade);
+    }
+    if (!nullToAbsent || strokes != null) {
+      map['strokes'] = Variable<int>(strokes);
+    }
     if (!nullToAbsent || meaningKo != null) {
       map['meaning_ko'] = Variable<String>(meaningKo);
+    }
+    if (!nullToAbsent || meaningsKoJson != null) {
+      map['meanings_ko_json'] = Variable<String>(meaningsKoJson);
+    }
+    if (!nullToAbsent || meaningsEn != null) {
+      map['meanings_en'] = Variable<String>(meaningsEn);
     }
     if (!nullToAbsent || onyomi != null) {
       map['onyomi'] = Variable<String>(onyomi);
@@ -907,9 +1041,22 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
       char: Value(char),
       rank: rank == null && nullToAbsent ? const Value.absent() : Value(rank),
       pct: pct == null && nullToAbsent ? const Value.absent() : Value(pct),
+      jlpt: jlpt == null && nullToAbsent ? const Value.absent() : Value(jlpt),
+      grade: grade == null && nullToAbsent
+          ? const Value.absent()
+          : Value(grade),
+      strokes: strokes == null && nullToAbsent
+          ? const Value.absent()
+          : Value(strokes),
       meaningKo: meaningKo == null && nullToAbsent
           ? const Value.absent()
           : Value(meaningKo),
+      meaningsKoJson: meaningsKoJson == null && nullToAbsent
+          ? const Value.absent()
+          : Value(meaningsKoJson),
+      meaningsEn: meaningsEn == null && nullToAbsent
+          ? const Value.absent()
+          : Value(meaningsEn),
       onyomi: onyomi == null && nullToAbsent
           ? const Value.absent()
           : Value(onyomi),
@@ -931,7 +1078,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
       char: serializer.fromJson<String>(json['char']),
       rank: serializer.fromJson<int?>(json['rank']),
       pct: serializer.fromJson<double?>(json['pct']),
+      jlpt: serializer.fromJson<int?>(json['jlpt']),
+      grade: serializer.fromJson<int?>(json['grade']),
+      strokes: serializer.fromJson<int?>(json['strokes']),
       meaningKo: serializer.fromJson<String?>(json['meaningKo']),
+      meaningsKoJson: serializer.fromJson<String?>(json['meaningsKoJson']),
+      meaningsEn: serializer.fromJson<String?>(json['meaningsEn']),
       onyomi: serializer.fromJson<String?>(json['onyomi']),
       kunyomi: serializer.fromJson<String?>(json['kunyomi']),
       koHanja: serializer.fromJson<String?>(json['koHanja']),
@@ -944,7 +1096,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
       'char': serializer.toJson<String>(char),
       'rank': serializer.toJson<int?>(rank),
       'pct': serializer.toJson<double?>(pct),
+      'jlpt': serializer.toJson<int?>(jlpt),
+      'grade': serializer.toJson<int?>(grade),
+      'strokes': serializer.toJson<int?>(strokes),
       'meaningKo': serializer.toJson<String?>(meaningKo),
+      'meaningsKoJson': serializer.toJson<String?>(meaningsKoJson),
+      'meaningsEn': serializer.toJson<String?>(meaningsEn),
       'onyomi': serializer.toJson<String?>(onyomi),
       'kunyomi': serializer.toJson<String?>(kunyomi),
       'koHanja': serializer.toJson<String?>(koHanja),
@@ -955,7 +1112,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
     String? char,
     Value<int?> rank = const Value.absent(),
     Value<double?> pct = const Value.absent(),
+    Value<int?> jlpt = const Value.absent(),
+    Value<int?> grade = const Value.absent(),
+    Value<int?> strokes = const Value.absent(),
     Value<String?> meaningKo = const Value.absent(),
+    Value<String?> meaningsKoJson = const Value.absent(),
+    Value<String?> meaningsEn = const Value.absent(),
     Value<String?> onyomi = const Value.absent(),
     Value<String?> kunyomi = const Value.absent(),
     Value<String?> koHanja = const Value.absent(),
@@ -963,7 +1125,14 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
     char: char ?? this.char,
     rank: rank.present ? rank.value : this.rank,
     pct: pct.present ? pct.value : this.pct,
+    jlpt: jlpt.present ? jlpt.value : this.jlpt,
+    grade: grade.present ? grade.value : this.grade,
+    strokes: strokes.present ? strokes.value : this.strokes,
     meaningKo: meaningKo.present ? meaningKo.value : this.meaningKo,
+    meaningsKoJson: meaningsKoJson.present
+        ? meaningsKoJson.value
+        : this.meaningsKoJson,
+    meaningsEn: meaningsEn.present ? meaningsEn.value : this.meaningsEn,
     onyomi: onyomi.present ? onyomi.value : this.onyomi,
     kunyomi: kunyomi.present ? kunyomi.value : this.kunyomi,
     koHanja: koHanja.present ? koHanja.value : this.koHanja,
@@ -973,7 +1142,16 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
       char: data.char.present ? data.char.value : this.char,
       rank: data.rank.present ? data.rank.value : this.rank,
       pct: data.pct.present ? data.pct.value : this.pct,
+      jlpt: data.jlpt.present ? data.jlpt.value : this.jlpt,
+      grade: data.grade.present ? data.grade.value : this.grade,
+      strokes: data.strokes.present ? data.strokes.value : this.strokes,
       meaningKo: data.meaningKo.present ? data.meaningKo.value : this.meaningKo,
+      meaningsKoJson: data.meaningsKoJson.present
+          ? data.meaningsKoJson.value
+          : this.meaningsKoJson,
+      meaningsEn: data.meaningsEn.present
+          ? data.meaningsEn.value
+          : this.meaningsEn,
       onyomi: data.onyomi.present ? data.onyomi.value : this.onyomi,
       kunyomi: data.kunyomi.present ? data.kunyomi.value : this.kunyomi,
       koHanja: data.koHanja.present ? data.koHanja.value : this.koHanja,
@@ -986,7 +1164,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
           ..write('char: $char, ')
           ..write('rank: $rank, ')
           ..write('pct: $pct, ')
+          ..write('jlpt: $jlpt, ')
+          ..write('grade: $grade, ')
+          ..write('strokes: $strokes, ')
           ..write('meaningKo: $meaningKo, ')
+          ..write('meaningsKoJson: $meaningsKoJson, ')
+          ..write('meaningsEn: $meaningsEn, ')
           ..write('onyomi: $onyomi, ')
           ..write('kunyomi: $kunyomi, ')
           ..write('koHanja: $koHanja')
@@ -995,8 +1178,20 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(char, rank, pct, meaningKo, onyomi, kunyomi, koHanja);
+  int get hashCode => Object.hash(
+    char,
+    rank,
+    pct,
+    jlpt,
+    grade,
+    strokes,
+    meaningKo,
+    meaningsKoJson,
+    meaningsEn,
+    onyomi,
+    kunyomi,
+    koHanja,
+  );
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
@@ -1004,7 +1199,12 @@ class KanjiRow extends DataClass implements Insertable<KanjiRow> {
           other.char == this.char &&
           other.rank == this.rank &&
           other.pct == this.pct &&
+          other.jlpt == this.jlpt &&
+          other.grade == this.grade &&
+          other.strokes == this.strokes &&
           other.meaningKo == this.meaningKo &&
+          other.meaningsKoJson == this.meaningsKoJson &&
+          other.meaningsEn == this.meaningsEn &&
           other.onyomi == this.onyomi &&
           other.kunyomi == this.kunyomi &&
           other.koHanja == this.koHanja);
@@ -1014,7 +1214,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
   final Value<String> char;
   final Value<int?> rank;
   final Value<double?> pct;
+  final Value<int?> jlpt;
+  final Value<int?> grade;
+  final Value<int?> strokes;
   final Value<String?> meaningKo;
+  final Value<String?> meaningsKoJson;
+  final Value<String?> meaningsEn;
   final Value<String?> onyomi;
   final Value<String?> kunyomi;
   final Value<String?> koHanja;
@@ -1023,7 +1228,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
     this.char = const Value.absent(),
     this.rank = const Value.absent(),
     this.pct = const Value.absent(),
+    this.jlpt = const Value.absent(),
+    this.grade = const Value.absent(),
+    this.strokes = const Value.absent(),
     this.meaningKo = const Value.absent(),
+    this.meaningsKoJson = const Value.absent(),
+    this.meaningsEn = const Value.absent(),
     this.onyomi = const Value.absent(),
     this.kunyomi = const Value.absent(),
     this.koHanja = const Value.absent(),
@@ -1033,7 +1243,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
     required String char,
     this.rank = const Value.absent(),
     this.pct = const Value.absent(),
+    this.jlpt = const Value.absent(),
+    this.grade = const Value.absent(),
+    this.strokes = const Value.absent(),
     this.meaningKo = const Value.absent(),
+    this.meaningsKoJson = const Value.absent(),
+    this.meaningsEn = const Value.absent(),
     this.onyomi = const Value.absent(),
     this.kunyomi = const Value.absent(),
     this.koHanja = const Value.absent(),
@@ -1043,7 +1258,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
     Expression<String>? char,
     Expression<int>? rank,
     Expression<double>? pct,
+    Expression<int>? jlpt,
+    Expression<int>? grade,
+    Expression<int>? strokes,
     Expression<String>? meaningKo,
+    Expression<String>? meaningsKoJson,
+    Expression<String>? meaningsEn,
     Expression<String>? onyomi,
     Expression<String>? kunyomi,
     Expression<String>? koHanja,
@@ -1053,7 +1273,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
       if (char != null) 'char': char,
       if (rank != null) 'rank': rank,
       if (pct != null) 'pct': pct,
+      if (jlpt != null) 'jlpt': jlpt,
+      if (grade != null) 'grade': grade,
+      if (strokes != null) 'strokes': strokes,
       if (meaningKo != null) 'meaning_ko': meaningKo,
+      if (meaningsKoJson != null) 'meanings_ko_json': meaningsKoJson,
+      if (meaningsEn != null) 'meanings_en': meaningsEn,
       if (onyomi != null) 'onyomi': onyomi,
       if (kunyomi != null) 'kunyomi': kunyomi,
       if (koHanja != null) 'ko_hanja': koHanja,
@@ -1065,7 +1290,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
     Value<String>? char,
     Value<int?>? rank,
     Value<double?>? pct,
+    Value<int?>? jlpt,
+    Value<int?>? grade,
+    Value<int?>? strokes,
     Value<String?>? meaningKo,
+    Value<String?>? meaningsKoJson,
+    Value<String?>? meaningsEn,
     Value<String?>? onyomi,
     Value<String?>? kunyomi,
     Value<String?>? koHanja,
@@ -1075,7 +1305,12 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
       char: char ?? this.char,
       rank: rank ?? this.rank,
       pct: pct ?? this.pct,
+      jlpt: jlpt ?? this.jlpt,
+      grade: grade ?? this.grade,
+      strokes: strokes ?? this.strokes,
       meaningKo: meaningKo ?? this.meaningKo,
+      meaningsKoJson: meaningsKoJson ?? this.meaningsKoJson,
+      meaningsEn: meaningsEn ?? this.meaningsEn,
       onyomi: onyomi ?? this.onyomi,
       kunyomi: kunyomi ?? this.kunyomi,
       koHanja: koHanja ?? this.koHanja,
@@ -1095,8 +1330,23 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
     if (pct.present) {
       map['pct'] = Variable<double>(pct.value);
     }
+    if (jlpt.present) {
+      map['jlpt'] = Variable<int>(jlpt.value);
+    }
+    if (grade.present) {
+      map['grade'] = Variable<int>(grade.value);
+    }
+    if (strokes.present) {
+      map['strokes'] = Variable<int>(strokes.value);
+    }
     if (meaningKo.present) {
       map['meaning_ko'] = Variable<String>(meaningKo.value);
+    }
+    if (meaningsKoJson.present) {
+      map['meanings_ko_json'] = Variable<String>(meaningsKoJson.value);
+    }
+    if (meaningsEn.present) {
+      map['meanings_en'] = Variable<String>(meaningsEn.value);
     }
     if (onyomi.present) {
       map['onyomi'] = Variable<String>(onyomi.value);
@@ -1119,11 +1369,1315 @@ class KanjiCompanion extends UpdateCompanion<KanjiRow> {
           ..write('char: $char, ')
           ..write('rank: $rank, ')
           ..write('pct: $pct, ')
+          ..write('jlpt: $jlpt, ')
+          ..write('grade: $grade, ')
+          ..write('strokes: $strokes, ')
           ..write('meaningKo: $meaningKo, ')
+          ..write('meaningsKoJson: $meaningsKoJson, ')
+          ..write('meaningsEn: $meaningsEn, ')
           ..write('onyomi: $onyomi, ')
           ..write('kunyomi: $kunyomi, ')
           ..write('koHanja: $koHanja, ')
           ..write('rowid: $rowid')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class $KanjiReadingsTable extends KanjiReadings
+    with TableInfo<$KanjiReadingsTable, KanjiReadingRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $KanjiReadingsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    hasAutoIncrement: true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'PRIMARY KEY AUTOINCREMENT',
+    ),
+  );
+  static const VerificationMeta _charMeta = const VerificationMeta('char');
+  @override
+  late final GeneratedColumn<String> char = GeneratedColumn<String>(
+    'char',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'REFERENCES kanji (char)',
+    ),
+  );
+  static const VerificationMeta _readingMeta = const VerificationMeta(
+    'reading',
+  );
+  @override
+  late final GeneratedColumn<String> reading = GeneratedColumn<String>(
+    'reading',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _baseMeta = const VerificationMeta('base');
+  @override
+  late final GeneratedColumn<String> base = GeneratedColumn<String>(
+    'base',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _kindMeta = const VerificationMeta('kind');
+  @override
+  late final GeneratedColumn<String> kind = GeneratedColumn<String>(
+    'kind',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _glossMeta = const VerificationMeta('gloss');
+  @override
+  late final GeneratedColumn<String> gloss = GeneratedColumn<String>(
+    'gloss',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [id, char, reading, base, kind, gloss];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'kanji_readings';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<KanjiReadingRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('char')) {
+      context.handle(
+        _charMeta,
+        char.isAcceptableOrUnknown(data['char']!, _charMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_charMeta);
+    }
+    if (data.containsKey('reading')) {
+      context.handle(
+        _readingMeta,
+        reading.isAcceptableOrUnknown(data['reading']!, _readingMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_readingMeta);
+    }
+    if (data.containsKey('base')) {
+      context.handle(
+        _baseMeta,
+        base.isAcceptableOrUnknown(data['base']!, _baseMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_baseMeta);
+    }
+    if (data.containsKey('kind')) {
+      context.handle(
+        _kindMeta,
+        kind.isAcceptableOrUnknown(data['kind']!, _kindMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kindMeta);
+    }
+    if (data.containsKey('gloss')) {
+      context.handle(
+        _glossMeta,
+        gloss.isAcceptableOrUnknown(data['gloss']!, _glossMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  KanjiReadingRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return KanjiReadingRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      char: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}char'],
+      )!,
+      reading: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reading'],
+      )!,
+      base: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}base'],
+      )!,
+      kind: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kind'],
+      )!,
+      gloss: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}gloss'],
+      ),
+    );
+  }
+
+  @override
+  $KanjiReadingsTable createAlias(String alias) {
+    return $KanjiReadingsTable(attachedDatabase, alias);
+  }
+}
+
+class KanjiReadingRow extends DataClass implements Insertable<KanjiReadingRow> {
+  final int id;
+  final String char;
+  final String reading;
+  final String base;
+  final String kind;
+  final String? gloss;
+  const KanjiReadingRow({
+    required this.id,
+    required this.char,
+    required this.reading,
+    required this.base,
+    required this.kind,
+    this.gloss,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    map['char'] = Variable<String>(char);
+    map['reading'] = Variable<String>(reading);
+    map['base'] = Variable<String>(base);
+    map['kind'] = Variable<String>(kind);
+    if (!nullToAbsent || gloss != null) {
+      map['gloss'] = Variable<String>(gloss);
+    }
+    return map;
+  }
+
+  KanjiReadingsCompanion toCompanion(bool nullToAbsent) {
+    return KanjiReadingsCompanion(
+      id: Value(id),
+      char: Value(char),
+      reading: Value(reading),
+      base: Value(base),
+      kind: Value(kind),
+      gloss: gloss == null && nullToAbsent
+          ? const Value.absent()
+          : Value(gloss),
+    );
+  }
+
+  factory KanjiReadingRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return KanjiReadingRow(
+      id: serializer.fromJson<int>(json['id']),
+      char: serializer.fromJson<String>(json['char']),
+      reading: serializer.fromJson<String>(json['reading']),
+      base: serializer.fromJson<String>(json['base']),
+      kind: serializer.fromJson<String>(json['kind']),
+      gloss: serializer.fromJson<String?>(json['gloss']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'char': serializer.toJson<String>(char),
+      'reading': serializer.toJson<String>(reading),
+      'base': serializer.toJson<String>(base),
+      'kind': serializer.toJson<String>(kind),
+      'gloss': serializer.toJson<String?>(gloss),
+    };
+  }
+
+  KanjiReadingRow copyWith({
+    int? id,
+    String? char,
+    String? reading,
+    String? base,
+    String? kind,
+    Value<String?> gloss = const Value.absent(),
+  }) => KanjiReadingRow(
+    id: id ?? this.id,
+    char: char ?? this.char,
+    reading: reading ?? this.reading,
+    base: base ?? this.base,
+    kind: kind ?? this.kind,
+    gloss: gloss.present ? gloss.value : this.gloss,
+  );
+  KanjiReadingRow copyWithCompanion(KanjiReadingsCompanion data) {
+    return KanjiReadingRow(
+      id: data.id.present ? data.id.value : this.id,
+      char: data.char.present ? data.char.value : this.char,
+      reading: data.reading.present ? data.reading.value : this.reading,
+      base: data.base.present ? data.base.value : this.base,
+      kind: data.kind.present ? data.kind.value : this.kind,
+      gloss: data.gloss.present ? data.gloss.value : this.gloss,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('KanjiReadingRow(')
+          ..write('id: $id, ')
+          ..write('char: $char, ')
+          ..write('reading: $reading, ')
+          ..write('base: $base, ')
+          ..write('kind: $kind, ')
+          ..write('gloss: $gloss')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(id, char, reading, base, kind, gloss);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is KanjiReadingRow &&
+          other.id == this.id &&
+          other.char == this.char &&
+          other.reading == this.reading &&
+          other.base == this.base &&
+          other.kind == this.kind &&
+          other.gloss == this.gloss);
+}
+
+class KanjiReadingsCompanion extends UpdateCompanion<KanjiReadingRow> {
+  final Value<int> id;
+  final Value<String> char;
+  final Value<String> reading;
+  final Value<String> base;
+  final Value<String> kind;
+  final Value<String?> gloss;
+  const KanjiReadingsCompanion({
+    this.id = const Value.absent(),
+    this.char = const Value.absent(),
+    this.reading = const Value.absent(),
+    this.base = const Value.absent(),
+    this.kind = const Value.absent(),
+    this.gloss = const Value.absent(),
+  });
+  KanjiReadingsCompanion.insert({
+    this.id = const Value.absent(),
+    required String char,
+    required String reading,
+    required String base,
+    required String kind,
+    this.gloss = const Value.absent(),
+  }) : char = Value(char),
+       reading = Value(reading),
+       base = Value(base),
+       kind = Value(kind);
+  static Insertable<KanjiReadingRow> custom({
+    Expression<int>? id,
+    Expression<String>? char,
+    Expression<String>? reading,
+    Expression<String>? base,
+    Expression<String>? kind,
+    Expression<String>? gloss,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (char != null) 'char': char,
+      if (reading != null) 'reading': reading,
+      if (base != null) 'base': base,
+      if (kind != null) 'kind': kind,
+      if (gloss != null) 'gloss': gloss,
+    });
+  }
+
+  KanjiReadingsCompanion copyWith({
+    Value<int>? id,
+    Value<String>? char,
+    Value<String>? reading,
+    Value<String>? base,
+    Value<String>? kind,
+    Value<String?>? gloss,
+  }) {
+    return KanjiReadingsCompanion(
+      id: id ?? this.id,
+      char: char ?? this.char,
+      reading: reading ?? this.reading,
+      base: base ?? this.base,
+      kind: kind ?? this.kind,
+      gloss: gloss ?? this.gloss,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (char.present) {
+      map['char'] = Variable<String>(char.value);
+    }
+    if (reading.present) {
+      map['reading'] = Variable<String>(reading.value);
+    }
+    if (base.present) {
+      map['base'] = Variable<String>(base.value);
+    }
+    if (kind.present) {
+      map['kind'] = Variable<String>(kind.value);
+    }
+    if (gloss.present) {
+      map['gloss'] = Variable<String>(gloss.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('KanjiReadingsCompanion(')
+          ..write('id: $id, ')
+          ..write('char: $char, ')
+          ..write('reading: $reading, ')
+          ..write('base: $base, ')
+          ..write('kind: $kind, ')
+          ..write('gloss: $gloss')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class $JlptWordsTable extends JlptWords
+    with TableInfo<$JlptWordsTable, JlptWordRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $JlptWordsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _surfaceMeta = const VerificationMeta(
+    'surface',
+  );
+  @override
+  late final GeneratedColumn<String> surface = GeneratedColumn<String>(
+    'surface',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _kanaMeta = const VerificationMeta('kana');
+  @override
+  late final GeneratedColumn<String> kana = GeneratedColumn<String>(
+    'kana',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _jlptMeta = const VerificationMeta('jlpt');
+  @override
+  late final GeneratedColumn<int> jlpt = GeneratedColumn<int>(
+    'jlpt',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _enMeta = const VerificationMeta('en');
+  @override
+  late final GeneratedColumn<String> en = GeneratedColumn<String>(
+    'en',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _koMeta = const VerificationMeta('ko');
+  @override
+  late final GeneratedColumn<String> ko = GeneratedColumn<String>(
+    'ko',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _rankMeta = const VerificationMeta('rank');
+  @override
+  late final GeneratedColumn<int> rank = GeneratedColumn<int>(
+    'rank',
+    aliasedName,
+    true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _srcMeta = const VerificationMeta('src');
+  @override
+  late final GeneratedColumn<String> src = GeneratedColumn<String>(
+    'src',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _segsJsonMeta = const VerificationMeta(
+    'segsJson',
+  );
+  @override
+  late final GeneratedColumn<String> segsJson = GeneratedColumn<String>(
+    'segs_json',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    surface,
+    kana,
+    jlpt,
+    en,
+    ko,
+    rank,
+    src,
+    segsJson,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'jlpt_words';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<JlptWordRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('surface')) {
+      context.handle(
+        _surfaceMeta,
+        surface.isAcceptableOrUnknown(data['surface']!, _surfaceMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_surfaceMeta);
+    }
+    if (data.containsKey('kana')) {
+      context.handle(
+        _kanaMeta,
+        kana.isAcceptableOrUnknown(data['kana']!, _kanaMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_kanaMeta);
+    }
+    if (data.containsKey('jlpt')) {
+      context.handle(
+        _jlptMeta,
+        jlpt.isAcceptableOrUnknown(data['jlpt']!, _jlptMeta),
+      );
+    }
+    if (data.containsKey('en')) {
+      context.handle(_enMeta, en.isAcceptableOrUnknown(data['en']!, _enMeta));
+    }
+    if (data.containsKey('ko')) {
+      context.handle(_koMeta, ko.isAcceptableOrUnknown(data['ko']!, _koMeta));
+    }
+    if (data.containsKey('rank')) {
+      context.handle(
+        _rankMeta,
+        rank.isAcceptableOrUnknown(data['rank']!, _rankMeta),
+      );
+    }
+    if (data.containsKey('src')) {
+      context.handle(
+        _srcMeta,
+        src.isAcceptableOrUnknown(data['src']!, _srcMeta),
+      );
+    }
+    if (data.containsKey('segs_json')) {
+      context.handle(
+        _segsJsonMeta,
+        segsJson.isAcceptableOrUnknown(data['segs_json']!, _segsJsonMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  JlptWordRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return JlptWordRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      surface: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}surface'],
+      )!,
+      kana: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}kana'],
+      )!,
+      jlpt: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}jlpt'],
+      ),
+      en: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}en'],
+      ),
+      ko: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}ko'],
+      ),
+      rank: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}rank'],
+      ),
+      src: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}src'],
+      ),
+      segsJson: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}segs_json'],
+      ),
+    );
+  }
+
+  @override
+  $JlptWordsTable createAlias(String alias) {
+    return $JlptWordsTable(attachedDatabase, alias);
+  }
+}
+
+class JlptWordRow extends DataClass implements Insertable<JlptWordRow> {
+  final int id;
+  final String surface;
+  final String kana;
+  final int? jlpt;
+  final String? en;
+  final String? ko;
+  final int? rank;
+  final String? src;
+  final String? segsJson;
+  const JlptWordRow({
+    required this.id,
+    required this.surface,
+    required this.kana,
+    this.jlpt,
+    this.en,
+    this.ko,
+    this.rank,
+    this.src,
+    this.segsJson,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    map['surface'] = Variable<String>(surface);
+    map['kana'] = Variable<String>(kana);
+    if (!nullToAbsent || jlpt != null) {
+      map['jlpt'] = Variable<int>(jlpt);
+    }
+    if (!nullToAbsent || en != null) {
+      map['en'] = Variable<String>(en);
+    }
+    if (!nullToAbsent || ko != null) {
+      map['ko'] = Variable<String>(ko);
+    }
+    if (!nullToAbsent || rank != null) {
+      map['rank'] = Variable<int>(rank);
+    }
+    if (!nullToAbsent || src != null) {
+      map['src'] = Variable<String>(src);
+    }
+    if (!nullToAbsent || segsJson != null) {
+      map['segs_json'] = Variable<String>(segsJson);
+    }
+    return map;
+  }
+
+  JlptWordsCompanion toCompanion(bool nullToAbsent) {
+    return JlptWordsCompanion(
+      id: Value(id),
+      surface: Value(surface),
+      kana: Value(kana),
+      jlpt: jlpt == null && nullToAbsent ? const Value.absent() : Value(jlpt),
+      en: en == null && nullToAbsent ? const Value.absent() : Value(en),
+      ko: ko == null && nullToAbsent ? const Value.absent() : Value(ko),
+      rank: rank == null && nullToAbsent ? const Value.absent() : Value(rank),
+      src: src == null && nullToAbsent ? const Value.absent() : Value(src),
+      segsJson: segsJson == null && nullToAbsent
+          ? const Value.absent()
+          : Value(segsJson),
+    );
+  }
+
+  factory JlptWordRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return JlptWordRow(
+      id: serializer.fromJson<int>(json['id']),
+      surface: serializer.fromJson<String>(json['surface']),
+      kana: serializer.fromJson<String>(json['kana']),
+      jlpt: serializer.fromJson<int?>(json['jlpt']),
+      en: serializer.fromJson<String?>(json['en']),
+      ko: serializer.fromJson<String?>(json['ko']),
+      rank: serializer.fromJson<int?>(json['rank']),
+      src: serializer.fromJson<String?>(json['src']),
+      segsJson: serializer.fromJson<String?>(json['segsJson']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'surface': serializer.toJson<String>(surface),
+      'kana': serializer.toJson<String>(kana),
+      'jlpt': serializer.toJson<int?>(jlpt),
+      'en': serializer.toJson<String?>(en),
+      'ko': serializer.toJson<String?>(ko),
+      'rank': serializer.toJson<int?>(rank),
+      'src': serializer.toJson<String?>(src),
+      'segsJson': serializer.toJson<String?>(segsJson),
+    };
+  }
+
+  JlptWordRow copyWith({
+    int? id,
+    String? surface,
+    String? kana,
+    Value<int?> jlpt = const Value.absent(),
+    Value<String?> en = const Value.absent(),
+    Value<String?> ko = const Value.absent(),
+    Value<int?> rank = const Value.absent(),
+    Value<String?> src = const Value.absent(),
+    Value<String?> segsJson = const Value.absent(),
+  }) => JlptWordRow(
+    id: id ?? this.id,
+    surface: surface ?? this.surface,
+    kana: kana ?? this.kana,
+    jlpt: jlpt.present ? jlpt.value : this.jlpt,
+    en: en.present ? en.value : this.en,
+    ko: ko.present ? ko.value : this.ko,
+    rank: rank.present ? rank.value : this.rank,
+    src: src.present ? src.value : this.src,
+    segsJson: segsJson.present ? segsJson.value : this.segsJson,
+  );
+  JlptWordRow copyWithCompanion(JlptWordsCompanion data) {
+    return JlptWordRow(
+      id: data.id.present ? data.id.value : this.id,
+      surface: data.surface.present ? data.surface.value : this.surface,
+      kana: data.kana.present ? data.kana.value : this.kana,
+      jlpt: data.jlpt.present ? data.jlpt.value : this.jlpt,
+      en: data.en.present ? data.en.value : this.en,
+      ko: data.ko.present ? data.ko.value : this.ko,
+      rank: data.rank.present ? data.rank.value : this.rank,
+      src: data.src.present ? data.src.value : this.src,
+      segsJson: data.segsJson.present ? data.segsJson.value : this.segsJson,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JlptWordRow(')
+          ..write('id: $id, ')
+          ..write('surface: $surface, ')
+          ..write('kana: $kana, ')
+          ..write('jlpt: $jlpt, ')
+          ..write('en: $en, ')
+          ..write('ko: $ko, ')
+          ..write('rank: $rank, ')
+          ..write('src: $src, ')
+          ..write('segsJson: $segsJson')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(id, surface, kana, jlpt, en, ko, rank, src, segsJson);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is JlptWordRow &&
+          other.id == this.id &&
+          other.surface == this.surface &&
+          other.kana == this.kana &&
+          other.jlpt == this.jlpt &&
+          other.en == this.en &&
+          other.ko == this.ko &&
+          other.rank == this.rank &&
+          other.src == this.src &&
+          other.segsJson == this.segsJson);
+}
+
+class JlptWordsCompanion extends UpdateCompanion<JlptWordRow> {
+  final Value<int> id;
+  final Value<String> surface;
+  final Value<String> kana;
+  final Value<int?> jlpt;
+  final Value<String?> en;
+  final Value<String?> ko;
+  final Value<int?> rank;
+  final Value<String?> src;
+  final Value<String?> segsJson;
+  const JlptWordsCompanion({
+    this.id = const Value.absent(),
+    this.surface = const Value.absent(),
+    this.kana = const Value.absent(),
+    this.jlpt = const Value.absent(),
+    this.en = const Value.absent(),
+    this.ko = const Value.absent(),
+    this.rank = const Value.absent(),
+    this.src = const Value.absent(),
+    this.segsJson = const Value.absent(),
+  });
+  JlptWordsCompanion.insert({
+    this.id = const Value.absent(),
+    required String surface,
+    required String kana,
+    this.jlpt = const Value.absent(),
+    this.en = const Value.absent(),
+    this.ko = const Value.absent(),
+    this.rank = const Value.absent(),
+    this.src = const Value.absent(),
+    this.segsJson = const Value.absent(),
+  }) : surface = Value(surface),
+       kana = Value(kana);
+  static Insertable<JlptWordRow> custom({
+    Expression<int>? id,
+    Expression<String>? surface,
+    Expression<String>? kana,
+    Expression<int>? jlpt,
+    Expression<String>? en,
+    Expression<String>? ko,
+    Expression<int>? rank,
+    Expression<String>? src,
+    Expression<String>? segsJson,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (surface != null) 'surface': surface,
+      if (kana != null) 'kana': kana,
+      if (jlpt != null) 'jlpt': jlpt,
+      if (en != null) 'en': en,
+      if (ko != null) 'ko': ko,
+      if (rank != null) 'rank': rank,
+      if (src != null) 'src': src,
+      if (segsJson != null) 'segs_json': segsJson,
+    });
+  }
+
+  JlptWordsCompanion copyWith({
+    Value<int>? id,
+    Value<String>? surface,
+    Value<String>? kana,
+    Value<int?>? jlpt,
+    Value<String?>? en,
+    Value<String?>? ko,
+    Value<int?>? rank,
+    Value<String?>? src,
+    Value<String?>? segsJson,
+  }) {
+    return JlptWordsCompanion(
+      id: id ?? this.id,
+      surface: surface ?? this.surface,
+      kana: kana ?? this.kana,
+      jlpt: jlpt ?? this.jlpt,
+      en: en ?? this.en,
+      ko: ko ?? this.ko,
+      rank: rank ?? this.rank,
+      src: src ?? this.src,
+      segsJson: segsJson ?? this.segsJson,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (surface.present) {
+      map['surface'] = Variable<String>(surface.value);
+    }
+    if (kana.present) {
+      map['kana'] = Variable<String>(kana.value);
+    }
+    if (jlpt.present) {
+      map['jlpt'] = Variable<int>(jlpt.value);
+    }
+    if (en.present) {
+      map['en'] = Variable<String>(en.value);
+    }
+    if (ko.present) {
+      map['ko'] = Variable<String>(ko.value);
+    }
+    if (rank.present) {
+      map['rank'] = Variable<int>(rank.value);
+    }
+    if (src.present) {
+      map['src'] = Variable<String>(src.value);
+    }
+    if (segsJson.present) {
+      map['segs_json'] = Variable<String>(segsJson.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('JlptWordsCompanion(')
+          ..write('id: $id, ')
+          ..write('surface: $surface, ')
+          ..write('kana: $kana, ')
+          ..write('jlpt: $jlpt, ')
+          ..write('en: $en, ')
+          ..write('ko: $ko, ')
+          ..write('rank: $rank, ')
+          ..write('src: $src, ')
+          ..write('segsJson: $segsJson')
+          ..write(')'))
+        .toString();
+  }
+}
+
+class $WordSegmentsTable extends WordSegments
+    with TableInfo<$WordSegmentsTable, WordSegmentRow> {
+  @override
+  final GeneratedDatabase attachedDatabase;
+  final String? _alias;
+  $WordSegmentsTable(this.attachedDatabase, [this._alias]);
+  static const VerificationMeta _idMeta = const VerificationMeta('id');
+  @override
+  late final GeneratedColumn<int> id = GeneratedColumn<int>(
+    'id',
+    aliasedName,
+    false,
+    hasAutoIncrement: true,
+    type: DriftSqlType.int,
+    requiredDuringInsert: false,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'PRIMARY KEY AUTOINCREMENT',
+    ),
+  );
+  static const VerificationMeta _wordIdMeta = const VerificationMeta('wordId');
+  @override
+  late final GeneratedColumn<int> wordId = GeneratedColumn<int>(
+    'word_id',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+    defaultConstraints: GeneratedColumn.constraintIsAlways(
+      'REFERENCES jlpt_words (id)',
+    ),
+  );
+  static const VerificationMeta _idxMeta = const VerificationMeta('idx');
+  @override
+  late final GeneratedColumn<int> idx = GeneratedColumn<int>(
+    'idx',
+    aliasedName,
+    false,
+    type: DriftSqlType.int,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _segTextMeta = const VerificationMeta(
+    'segText',
+  );
+  @override
+  late final GeneratedColumn<String> segText = GeneratedColumn<String>(
+    'seg_text',
+    aliasedName,
+    false,
+    type: DriftSqlType.string,
+    requiredDuringInsert: true,
+  );
+  static const VerificationMeta _readingMeta = const VerificationMeta(
+    'reading',
+  );
+  @override
+  late final GeneratedColumn<String> reading = GeneratedColumn<String>(
+    'reading',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  static const VerificationMeta _charMeta = const VerificationMeta('char');
+  @override
+  late final GeneratedColumn<String> char = GeneratedColumn<String>(
+    'char',
+    aliasedName,
+    true,
+    type: DriftSqlType.string,
+    requiredDuringInsert: false,
+  );
+  @override
+  List<GeneratedColumn> get $columns => [
+    id,
+    wordId,
+    idx,
+    segText,
+    reading,
+    char,
+  ];
+  @override
+  String get aliasedName => _alias ?? actualTableName;
+  @override
+  String get actualTableName => $name;
+  static const String $name = 'word_segments';
+  @override
+  VerificationContext validateIntegrity(
+    Insertable<WordSegmentRow> instance, {
+    bool isInserting = false,
+  }) {
+    final context = VerificationContext();
+    final data = instance.toColumns(true);
+    if (data.containsKey('id')) {
+      context.handle(_idMeta, id.isAcceptableOrUnknown(data['id']!, _idMeta));
+    }
+    if (data.containsKey('word_id')) {
+      context.handle(
+        _wordIdMeta,
+        wordId.isAcceptableOrUnknown(data['word_id']!, _wordIdMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_wordIdMeta);
+    }
+    if (data.containsKey('idx')) {
+      context.handle(
+        _idxMeta,
+        idx.isAcceptableOrUnknown(data['idx']!, _idxMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_idxMeta);
+    }
+    if (data.containsKey('seg_text')) {
+      context.handle(
+        _segTextMeta,
+        segText.isAcceptableOrUnknown(data['seg_text']!, _segTextMeta),
+      );
+    } else if (isInserting) {
+      context.missing(_segTextMeta);
+    }
+    if (data.containsKey('reading')) {
+      context.handle(
+        _readingMeta,
+        reading.isAcceptableOrUnknown(data['reading']!, _readingMeta),
+      );
+    }
+    if (data.containsKey('char')) {
+      context.handle(
+        _charMeta,
+        char.isAcceptableOrUnknown(data['char']!, _charMeta),
+      );
+    }
+    return context;
+  }
+
+  @override
+  Set<GeneratedColumn> get $primaryKey => {id};
+  @override
+  WordSegmentRow map(Map<String, dynamic> data, {String? tablePrefix}) {
+    final effectivePrefix = tablePrefix != null ? '$tablePrefix.' : '';
+    return WordSegmentRow(
+      id: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}id'],
+      )!,
+      wordId: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}word_id'],
+      )!,
+      idx: attachedDatabase.typeMapping.read(
+        DriftSqlType.int,
+        data['${effectivePrefix}idx'],
+      )!,
+      segText: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}seg_text'],
+      )!,
+      reading: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}reading'],
+      ),
+      char: attachedDatabase.typeMapping.read(
+        DriftSqlType.string,
+        data['${effectivePrefix}char'],
+      ),
+    );
+  }
+
+  @override
+  $WordSegmentsTable createAlias(String alias) {
+    return $WordSegmentsTable(attachedDatabase, alias);
+  }
+}
+
+class WordSegmentRow extends DataClass implements Insertable<WordSegmentRow> {
+  final int id;
+  final int wordId;
+  final int idx;
+  final String segText;
+  final String? reading;
+  final String? char;
+  const WordSegmentRow({
+    required this.id,
+    required this.wordId,
+    required this.idx,
+    required this.segText,
+    this.reading,
+    this.char,
+  });
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    map['id'] = Variable<int>(id);
+    map['word_id'] = Variable<int>(wordId);
+    map['idx'] = Variable<int>(idx);
+    map['seg_text'] = Variable<String>(segText);
+    if (!nullToAbsent || reading != null) {
+      map['reading'] = Variable<String>(reading);
+    }
+    if (!nullToAbsent || char != null) {
+      map['char'] = Variable<String>(char);
+    }
+    return map;
+  }
+
+  WordSegmentsCompanion toCompanion(bool nullToAbsent) {
+    return WordSegmentsCompanion(
+      id: Value(id),
+      wordId: Value(wordId),
+      idx: Value(idx),
+      segText: Value(segText),
+      reading: reading == null && nullToAbsent
+          ? const Value.absent()
+          : Value(reading),
+      char: char == null && nullToAbsent ? const Value.absent() : Value(char),
+    );
+  }
+
+  factory WordSegmentRow.fromJson(
+    Map<String, dynamic> json, {
+    ValueSerializer? serializer,
+  }) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return WordSegmentRow(
+      id: serializer.fromJson<int>(json['id']),
+      wordId: serializer.fromJson<int>(json['wordId']),
+      idx: serializer.fromJson<int>(json['idx']),
+      segText: serializer.fromJson<String>(json['segText']),
+      reading: serializer.fromJson<String?>(json['reading']),
+      char: serializer.fromJson<String?>(json['char']),
+    );
+  }
+  @override
+  Map<String, dynamic> toJson({ValueSerializer? serializer}) {
+    serializer ??= driftRuntimeOptions.defaultSerializer;
+    return <String, dynamic>{
+      'id': serializer.toJson<int>(id),
+      'wordId': serializer.toJson<int>(wordId),
+      'idx': serializer.toJson<int>(idx),
+      'segText': serializer.toJson<String>(segText),
+      'reading': serializer.toJson<String?>(reading),
+      'char': serializer.toJson<String?>(char),
+    };
+  }
+
+  WordSegmentRow copyWith({
+    int? id,
+    int? wordId,
+    int? idx,
+    String? segText,
+    Value<String?> reading = const Value.absent(),
+    Value<String?> char = const Value.absent(),
+  }) => WordSegmentRow(
+    id: id ?? this.id,
+    wordId: wordId ?? this.wordId,
+    idx: idx ?? this.idx,
+    segText: segText ?? this.segText,
+    reading: reading.present ? reading.value : this.reading,
+    char: char.present ? char.value : this.char,
+  );
+  WordSegmentRow copyWithCompanion(WordSegmentsCompanion data) {
+    return WordSegmentRow(
+      id: data.id.present ? data.id.value : this.id,
+      wordId: data.wordId.present ? data.wordId.value : this.wordId,
+      idx: data.idx.present ? data.idx.value : this.idx,
+      segText: data.segText.present ? data.segText.value : this.segText,
+      reading: data.reading.present ? data.reading.value : this.reading,
+      char: data.char.present ? data.char.value : this.char,
+    );
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('WordSegmentRow(')
+          ..write('id: $id, ')
+          ..write('wordId: $wordId, ')
+          ..write('idx: $idx, ')
+          ..write('segText: $segText, ')
+          ..write('reading: $reading, ')
+          ..write('char: $char')
+          ..write(')'))
+        .toString();
+  }
+
+  @override
+  int get hashCode => Object.hash(id, wordId, idx, segText, reading, char);
+  @override
+  bool operator ==(Object other) =>
+      identical(this, other) ||
+      (other is WordSegmentRow &&
+          other.id == this.id &&
+          other.wordId == this.wordId &&
+          other.idx == this.idx &&
+          other.segText == this.segText &&
+          other.reading == this.reading &&
+          other.char == this.char);
+}
+
+class WordSegmentsCompanion extends UpdateCompanion<WordSegmentRow> {
+  final Value<int> id;
+  final Value<int> wordId;
+  final Value<int> idx;
+  final Value<String> segText;
+  final Value<String?> reading;
+  final Value<String?> char;
+  const WordSegmentsCompanion({
+    this.id = const Value.absent(),
+    this.wordId = const Value.absent(),
+    this.idx = const Value.absent(),
+    this.segText = const Value.absent(),
+    this.reading = const Value.absent(),
+    this.char = const Value.absent(),
+  });
+  WordSegmentsCompanion.insert({
+    this.id = const Value.absent(),
+    required int wordId,
+    required int idx,
+    required String segText,
+    this.reading = const Value.absent(),
+    this.char = const Value.absent(),
+  }) : wordId = Value(wordId),
+       idx = Value(idx),
+       segText = Value(segText);
+  static Insertable<WordSegmentRow> custom({
+    Expression<int>? id,
+    Expression<int>? wordId,
+    Expression<int>? idx,
+    Expression<String>? segText,
+    Expression<String>? reading,
+    Expression<String>? char,
+  }) {
+    return RawValuesInsertable({
+      if (id != null) 'id': id,
+      if (wordId != null) 'word_id': wordId,
+      if (idx != null) 'idx': idx,
+      if (segText != null) 'seg_text': segText,
+      if (reading != null) 'reading': reading,
+      if (char != null) 'char': char,
+    });
+  }
+
+  WordSegmentsCompanion copyWith({
+    Value<int>? id,
+    Value<int>? wordId,
+    Value<int>? idx,
+    Value<String>? segText,
+    Value<String?>? reading,
+    Value<String?>? char,
+  }) {
+    return WordSegmentsCompanion(
+      id: id ?? this.id,
+      wordId: wordId ?? this.wordId,
+      idx: idx ?? this.idx,
+      segText: segText ?? this.segText,
+      reading: reading ?? this.reading,
+      char: char ?? this.char,
+    );
+  }
+
+  @override
+  Map<String, Expression> toColumns(bool nullToAbsent) {
+    final map = <String, Expression>{};
+    if (id.present) {
+      map['id'] = Variable<int>(id.value);
+    }
+    if (wordId.present) {
+      map['word_id'] = Variable<int>(wordId.value);
+    }
+    if (idx.present) {
+      map['idx'] = Variable<int>(idx.value);
+    }
+    if (segText.present) {
+      map['seg_text'] = Variable<String>(segText.value);
+    }
+    if (reading.present) {
+      map['reading'] = Variable<String>(reading.value);
+    }
+    if (char.present) {
+      map['char'] = Variable<String>(char.value);
+    }
+    return map;
+  }
+
+  @override
+  String toString() {
+    return (StringBuffer('WordSegmentsCompanion(')
+          ..write('id: $id, ')
+          ..write('wordId: $wordId, ')
+          ..write('idx: $idx, ')
+          ..write('segText: $segText, ')
+          ..write('reading: $reading, ')
+          ..write('char: $char')
           ..write(')'))
         .toString();
   }
@@ -2811,6 +4365,9 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   $AppDatabaseManager get managers => $AppDatabaseManager(this);
   late final $TurnsTable turns = $TurnsTable(this);
   late final $KanjiTable kanji = $KanjiTable(this);
+  late final $KanjiReadingsTable kanjiReadings = $KanjiReadingsTable(this);
+  late final $JlptWordsTable jlptWords = $JlptWordsTable(this);
+  late final $WordSegmentsTable wordSegments = $WordSegmentsTable(this);
   late final $WordsTable words = $WordsTable(this);
   late final $UserProgressTable userProgress = $UserProgressTable(this);
   late final $KanjiProgressTable kanjiProgress = $KanjiProgressTable(this);
@@ -2823,6 +4380,9 @@ abstract class _$AppDatabase extends GeneratedDatabase {
   List<DatabaseSchemaEntity> get allSchemaEntities => [
     turns,
     kanji,
+    kanjiReadings,
+    jlptWords,
+    wordSegments,
     words,
     userProgress,
     kanjiProgress,
@@ -3260,7 +4820,12 @@ typedef $$KanjiTableCreateCompanionBuilder =
       required String char,
       Value<int?> rank,
       Value<double?> pct,
+      Value<int?> jlpt,
+      Value<int?> grade,
+      Value<int?> strokes,
       Value<String?> meaningKo,
+      Value<String?> meaningsKoJson,
+      Value<String?> meaningsEn,
       Value<String?> onyomi,
       Value<String?> kunyomi,
       Value<String?> koHanja,
@@ -3271,7 +4836,12 @@ typedef $$KanjiTableUpdateCompanionBuilder =
       Value<String> char,
       Value<int?> rank,
       Value<double?> pct,
+      Value<int?> jlpt,
+      Value<int?> grade,
+      Value<int?> strokes,
       Value<String?> meaningKo,
+      Value<String?> meaningsKoJson,
+      Value<String?> meaningsEn,
       Value<String?> onyomi,
       Value<String?> kunyomi,
       Value<String?> koHanja,
@@ -3281,6 +4851,24 @@ typedef $$KanjiTableUpdateCompanionBuilder =
 final class $$KanjiTableReferences
     extends BaseReferences<_$AppDatabase, $KanjiTable, KanjiRow> {
   $$KanjiTableReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static MultiTypedResultKey<$KanjiReadingsTable, List<KanjiReadingRow>>
+  _kanjiReadingsRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
+    db.kanjiReadings,
+    aliasName: $_aliasNameGenerator(db.kanji.char, db.kanjiReadings.char),
+  );
+
+  $$KanjiReadingsTableProcessedTableManager get kanjiReadingsRefs {
+    final manager = $$KanjiReadingsTableTableManager(
+      $_db,
+      $_db.kanjiReadings,
+    ).filter((f) => f.char.char.sqlEquals($_itemColumn<String>('char')!));
+
+    final cache = $_typedResult.readTableOrNull(_kanjiReadingsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
 
   static MultiTypedResultKey<$KanjiProgressTable, List<KanjiProgressRow>>
   _kanjiProgressRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
@@ -3324,8 +4912,33 @@ class $$KanjiTableFilterComposer extends Composer<_$AppDatabase, $KanjiTable> {
     builder: (column) => ColumnFilters(column),
   );
 
+  ColumnFilters<int> get jlpt => $composableBuilder(
+    column: $table.jlpt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get grade => $composableBuilder(
+    column: $table.grade,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get strokes => $composableBuilder(
+    column: $table.strokes,
+    builder: (column) => ColumnFilters(column),
+  );
+
   ColumnFilters<String> get meaningKo => $composableBuilder(
     column: $table.meaningKo,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get meaningsKoJson => $composableBuilder(
+    column: $table.meaningsKoJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get meaningsEn => $composableBuilder(
+    column: $table.meaningsEn,
     builder: (column) => ColumnFilters(column),
   );
 
@@ -3343,6 +4956,31 @@ class $$KanjiTableFilterComposer extends Composer<_$AppDatabase, $KanjiTable> {
     column: $table.koHanja,
     builder: (column) => ColumnFilters(column),
   );
+
+  Expression<bool> kanjiReadingsRefs(
+    Expression<bool> Function($$KanjiReadingsTableFilterComposer f) f,
+  ) {
+    final $$KanjiReadingsTableFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.char,
+      referencedTable: $db.kanjiReadings,
+      getReferencedColumn: (t) => t.char,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$KanjiReadingsTableFilterComposer(
+            $db: $db,
+            $table: $db.kanjiReadings,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
 
   Expression<bool> kanjiProgressRefs(
     Expression<bool> Function($$KanjiProgressTableFilterComposer f) f,
@@ -3394,8 +5032,33 @@ class $$KanjiTableOrderingComposer
     builder: (column) => ColumnOrderings(column),
   );
 
+  ColumnOrderings<int> get jlpt => $composableBuilder(
+    column: $table.jlpt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get grade => $composableBuilder(
+    column: $table.grade,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get strokes => $composableBuilder(
+    column: $table.strokes,
+    builder: (column) => ColumnOrderings(column),
+  );
+
   ColumnOrderings<String> get meaningKo => $composableBuilder(
     column: $table.meaningKo,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get meaningsKoJson => $composableBuilder(
+    column: $table.meaningsKoJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get meaningsEn => $composableBuilder(
+    column: $table.meaningsEn,
     builder: (column) => ColumnOrderings(column),
   );
 
@@ -3433,8 +5096,27 @@ class $$KanjiTableAnnotationComposer
   GeneratedColumn<double> get pct =>
       $composableBuilder(column: $table.pct, builder: (column) => column);
 
+  GeneratedColumn<int> get jlpt =>
+      $composableBuilder(column: $table.jlpt, builder: (column) => column);
+
+  GeneratedColumn<int> get grade =>
+      $composableBuilder(column: $table.grade, builder: (column) => column);
+
+  GeneratedColumn<int> get strokes =>
+      $composableBuilder(column: $table.strokes, builder: (column) => column);
+
   GeneratedColumn<String> get meaningKo =>
       $composableBuilder(column: $table.meaningKo, builder: (column) => column);
+
+  GeneratedColumn<String> get meaningsKoJson => $composableBuilder(
+    column: $table.meaningsKoJson,
+    builder: (column) => column,
+  );
+
+  GeneratedColumn<String> get meaningsEn => $composableBuilder(
+    column: $table.meaningsEn,
+    builder: (column) => column,
+  );
 
   GeneratedColumn<String> get onyomi =>
       $composableBuilder(column: $table.onyomi, builder: (column) => column);
@@ -3444,6 +5126,31 @@ class $$KanjiTableAnnotationComposer
 
   GeneratedColumn<String> get koHanja =>
       $composableBuilder(column: $table.koHanja, builder: (column) => column);
+
+  Expression<T> kanjiReadingsRefs<T extends Object>(
+    Expression<T> Function($$KanjiReadingsTableAnnotationComposer a) f,
+  ) {
+    final $$KanjiReadingsTableAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.char,
+      referencedTable: $db.kanjiReadings,
+      getReferencedColumn: (t) => t.char,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$KanjiReadingsTableAnnotationComposer(
+            $db: $db,
+            $table: $db.kanjiReadings,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
 
   Expression<T> kanjiProgressRefs<T extends Object>(
     Expression<T> Function($$KanjiProgressTableAnnotationComposer a) f,
@@ -3484,7 +5191,10 @@ class $$KanjiTableTableManager
           $$KanjiTableUpdateCompanionBuilder,
           (KanjiRow, $$KanjiTableReferences),
           KanjiRow,
-          PrefetchHooks Function({bool kanjiProgressRefs})
+          PrefetchHooks Function({
+            bool kanjiReadingsRefs,
+            bool kanjiProgressRefs,
+          })
         > {
   $$KanjiTableTableManager(_$AppDatabase db, $KanjiTable table)
     : super(
@@ -3502,7 +5212,12 @@ class $$KanjiTableTableManager
                 Value<String> char = const Value.absent(),
                 Value<int?> rank = const Value.absent(),
                 Value<double?> pct = const Value.absent(),
+                Value<int?> jlpt = const Value.absent(),
+                Value<int?> grade = const Value.absent(),
+                Value<int?> strokes = const Value.absent(),
                 Value<String?> meaningKo = const Value.absent(),
+                Value<String?> meaningsKoJson = const Value.absent(),
+                Value<String?> meaningsEn = const Value.absent(),
                 Value<String?> onyomi = const Value.absent(),
                 Value<String?> kunyomi = const Value.absent(),
                 Value<String?> koHanja = const Value.absent(),
@@ -3511,7 +5226,12 @@ class $$KanjiTableTableManager
                 char: char,
                 rank: rank,
                 pct: pct,
+                jlpt: jlpt,
+                grade: grade,
+                strokes: strokes,
                 meaningKo: meaningKo,
+                meaningsKoJson: meaningsKoJson,
+                meaningsEn: meaningsEn,
                 onyomi: onyomi,
                 kunyomi: kunyomi,
                 koHanja: koHanja,
@@ -3522,7 +5242,12 @@ class $$KanjiTableTableManager
                 required String char,
                 Value<int?> rank = const Value.absent(),
                 Value<double?> pct = const Value.absent(),
+                Value<int?> jlpt = const Value.absent(),
+                Value<int?> grade = const Value.absent(),
+                Value<int?> strokes = const Value.absent(),
                 Value<String?> meaningKo = const Value.absent(),
+                Value<String?> meaningsKoJson = const Value.absent(),
+                Value<String?> meaningsEn = const Value.absent(),
                 Value<String?> onyomi = const Value.absent(),
                 Value<String?> kunyomi = const Value.absent(),
                 Value<String?> koHanja = const Value.absent(),
@@ -3531,7 +5256,12 @@ class $$KanjiTableTableManager
                 char: char,
                 rank: rank,
                 pct: pct,
+                jlpt: jlpt,
+                grade: grade,
+                strokes: strokes,
                 meaningKo: meaningKo,
+                meaningsKoJson: meaningsKoJson,
+                meaningsEn: meaningsEn,
                 onyomi: onyomi,
                 kunyomi: kunyomi,
                 koHanja: koHanja,
@@ -3543,37 +5273,63 @@ class $$KanjiTableTableManager
                     (e.readTable(table), $$KanjiTableReferences(db, table, e)),
               )
               .toList(),
-          prefetchHooksCallback: ({kanjiProgressRefs = false}) {
-            return PrefetchHooks(
-              db: db,
-              explicitlyWatchedTables: [
-                if (kanjiProgressRefs) db.kanjiProgress,
-              ],
-              addJoins: null,
-              getPrefetchedDataCallback: (items) async {
-                return [
-                  if (kanjiProgressRefs)
-                    await $_getPrefetchedData<
-                      KanjiRow,
-                      $KanjiTable,
-                      KanjiProgressRow
-                    >(
-                      currentTable: table,
-                      referencedTable: $$KanjiTableReferences
-                          ._kanjiProgressRefsTable(db),
-                      managerFromTypedResult: (p0) => $$KanjiTableReferences(
-                        db,
-                        table,
-                        p0,
-                      ).kanjiProgressRefs,
-                      referencedItemsForCurrentItem: (item, referencedItems) =>
-                          referencedItems.where((e) => e.char == item.char),
-                      typedResults: items,
-                    ),
-                ];
+          prefetchHooksCallback:
+              ({kanjiReadingsRefs = false, kanjiProgressRefs = false}) {
+                return PrefetchHooks(
+                  db: db,
+                  explicitlyWatchedTables: [
+                    if (kanjiReadingsRefs) db.kanjiReadings,
+                    if (kanjiProgressRefs) db.kanjiProgress,
+                  ],
+                  addJoins: null,
+                  getPrefetchedDataCallback: (items) async {
+                    return [
+                      if (kanjiReadingsRefs)
+                        await $_getPrefetchedData<
+                          KanjiRow,
+                          $KanjiTable,
+                          KanjiReadingRow
+                        >(
+                          currentTable: table,
+                          referencedTable: $$KanjiTableReferences
+                              ._kanjiReadingsRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $$KanjiTableReferences(
+                                db,
+                                table,
+                                p0,
+                              ).kanjiReadingsRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.char == item.char,
+                              ),
+                          typedResults: items,
+                        ),
+                      if (kanjiProgressRefs)
+                        await $_getPrefetchedData<
+                          KanjiRow,
+                          $KanjiTable,
+                          KanjiProgressRow
+                        >(
+                          currentTable: table,
+                          referencedTable: $$KanjiTableReferences
+                              ._kanjiProgressRefsTable(db),
+                          managerFromTypedResult: (p0) =>
+                              $$KanjiTableReferences(
+                                db,
+                                table,
+                                p0,
+                              ).kanjiProgressRefs,
+                          referencedItemsForCurrentItem:
+                              (item, referencedItems) => referencedItems.where(
+                                (e) => e.char == item.char,
+                              ),
+                          typedResults: items,
+                        ),
+                    ];
+                  },
+                );
               },
-            );
-          },
         ),
       );
 }
@@ -3590,7 +5346,1046 @@ typedef $$KanjiTableProcessedTableManager =
       $$KanjiTableUpdateCompanionBuilder,
       (KanjiRow, $$KanjiTableReferences),
       KanjiRow,
-      PrefetchHooks Function({bool kanjiProgressRefs})
+      PrefetchHooks Function({bool kanjiReadingsRefs, bool kanjiProgressRefs})
+    >;
+typedef $$KanjiReadingsTableCreateCompanionBuilder =
+    KanjiReadingsCompanion Function({
+      Value<int> id,
+      required String char,
+      required String reading,
+      required String base,
+      required String kind,
+      Value<String?> gloss,
+    });
+typedef $$KanjiReadingsTableUpdateCompanionBuilder =
+    KanjiReadingsCompanion Function({
+      Value<int> id,
+      Value<String> char,
+      Value<String> reading,
+      Value<String> base,
+      Value<String> kind,
+      Value<String?> gloss,
+    });
+
+final class $$KanjiReadingsTableReferences
+    extends
+        BaseReferences<_$AppDatabase, $KanjiReadingsTable, KanjiReadingRow> {
+  $$KanjiReadingsTableReferences(
+    super.$_db,
+    super.$_table,
+    super.$_typedResult,
+  );
+
+  static $KanjiTable _charTable(_$AppDatabase db) => db.kanji.createAlias(
+    $_aliasNameGenerator(db.kanjiReadings.char, db.kanji.char),
+  );
+
+  $$KanjiTableProcessedTableManager get char {
+    final $_column = $_itemColumn<String>('char')!;
+
+    final manager = $$KanjiTableTableManager(
+      $_db,
+      $_db.kanji,
+    ).filter((f) => f.char.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_charTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $$KanjiReadingsTableFilterComposer
+    extends Composer<_$AppDatabase, $KanjiReadingsTable> {
+  $$KanjiReadingsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reading => $composableBuilder(
+    column: $table.reading,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get base => $composableBuilder(
+    column: $table.base,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get gloss => $composableBuilder(
+    column: $table.gloss,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $$KanjiTableFilterComposer get char {
+    final $$KanjiTableFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.char,
+      referencedTable: $db.kanji,
+      getReferencedColumn: (t) => t.char,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$KanjiTableFilterComposer(
+            $db: $db,
+            $table: $db.kanji,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$KanjiReadingsTableOrderingComposer
+    extends Composer<_$AppDatabase, $KanjiReadingsTable> {
+  $$KanjiReadingsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reading => $composableBuilder(
+    column: $table.reading,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get base => $composableBuilder(
+    column: $table.base,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kind => $composableBuilder(
+    column: $table.kind,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get gloss => $composableBuilder(
+    column: $table.gloss,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $$KanjiTableOrderingComposer get char {
+    final $$KanjiTableOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.char,
+      referencedTable: $db.kanji,
+      getReferencedColumn: (t) => t.char,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$KanjiTableOrderingComposer(
+            $db: $db,
+            $table: $db.kanji,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$KanjiReadingsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $KanjiReadingsTable> {
+  $$KanjiReadingsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get reading =>
+      $composableBuilder(column: $table.reading, builder: (column) => column);
+
+  GeneratedColumn<String> get base =>
+      $composableBuilder(column: $table.base, builder: (column) => column);
+
+  GeneratedColumn<String> get kind =>
+      $composableBuilder(column: $table.kind, builder: (column) => column);
+
+  GeneratedColumn<String> get gloss =>
+      $composableBuilder(column: $table.gloss, builder: (column) => column);
+
+  $$KanjiTableAnnotationComposer get char {
+    final $$KanjiTableAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.char,
+      referencedTable: $db.kanji,
+      getReferencedColumn: (t) => t.char,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$KanjiTableAnnotationComposer(
+            $db: $db,
+            $table: $db.kanji,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$KanjiReadingsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $KanjiReadingsTable,
+          KanjiReadingRow,
+          $$KanjiReadingsTableFilterComposer,
+          $$KanjiReadingsTableOrderingComposer,
+          $$KanjiReadingsTableAnnotationComposer,
+          $$KanjiReadingsTableCreateCompanionBuilder,
+          $$KanjiReadingsTableUpdateCompanionBuilder,
+          (KanjiReadingRow, $$KanjiReadingsTableReferences),
+          KanjiReadingRow,
+          PrefetchHooks Function({bool char})
+        > {
+  $$KanjiReadingsTableTableManager(_$AppDatabase db, $KanjiReadingsTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$KanjiReadingsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$KanjiReadingsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$KanjiReadingsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String> char = const Value.absent(),
+                Value<String> reading = const Value.absent(),
+                Value<String> base = const Value.absent(),
+                Value<String> kind = const Value.absent(),
+                Value<String?> gloss = const Value.absent(),
+              }) => KanjiReadingsCompanion(
+                id: id,
+                char: char,
+                reading: reading,
+                base: base,
+                kind: kind,
+                gloss: gloss,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                required String char,
+                required String reading,
+                required String base,
+                required String kind,
+                Value<String?> gloss = const Value.absent(),
+              }) => KanjiReadingsCompanion.insert(
+                id: id,
+                char: char,
+                reading: reading,
+                base: base,
+                kind: kind,
+                gloss: gloss,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable(table),
+                  $$KanjiReadingsTableReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({char = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (char) {
+                      state =
+                          state.withJoin(
+                                currentTable: table,
+                                currentColumn: table.char,
+                                referencedTable: $$KanjiReadingsTableReferences
+                                    ._charTable(db),
+                                referencedColumn: $$KanjiReadingsTableReferences
+                                    ._charTable(db)
+                                    .char,
+                              )
+                              as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $$KanjiReadingsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $KanjiReadingsTable,
+      KanjiReadingRow,
+      $$KanjiReadingsTableFilterComposer,
+      $$KanjiReadingsTableOrderingComposer,
+      $$KanjiReadingsTableAnnotationComposer,
+      $$KanjiReadingsTableCreateCompanionBuilder,
+      $$KanjiReadingsTableUpdateCompanionBuilder,
+      (KanjiReadingRow, $$KanjiReadingsTableReferences),
+      KanjiReadingRow,
+      PrefetchHooks Function({bool char})
+    >;
+typedef $$JlptWordsTableCreateCompanionBuilder =
+    JlptWordsCompanion Function({
+      Value<int> id,
+      required String surface,
+      required String kana,
+      Value<int?> jlpt,
+      Value<String?> en,
+      Value<String?> ko,
+      Value<int?> rank,
+      Value<String?> src,
+      Value<String?> segsJson,
+    });
+typedef $$JlptWordsTableUpdateCompanionBuilder =
+    JlptWordsCompanion Function({
+      Value<int> id,
+      Value<String> surface,
+      Value<String> kana,
+      Value<int?> jlpt,
+      Value<String?> en,
+      Value<String?> ko,
+      Value<int?> rank,
+      Value<String?> src,
+      Value<String?> segsJson,
+    });
+
+final class $$JlptWordsTableReferences
+    extends BaseReferences<_$AppDatabase, $JlptWordsTable, JlptWordRow> {
+  $$JlptWordsTableReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static MultiTypedResultKey<$WordSegmentsTable, List<WordSegmentRow>>
+  _wordSegmentsRefsTable(_$AppDatabase db) => MultiTypedResultKey.fromTable(
+    db.wordSegments,
+    aliasName: $_aliasNameGenerator(db.jlptWords.id, db.wordSegments.wordId),
+  );
+
+  $$WordSegmentsTableProcessedTableManager get wordSegmentsRefs {
+    final manager = $$WordSegmentsTableTableManager(
+      $_db,
+      $_db.wordSegments,
+    ).filter((f) => f.wordId.id.sqlEquals($_itemColumn<int>('id')!));
+
+    final cache = $_typedResult.readTableOrNull(_wordSegmentsRefsTable($_db));
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: cache),
+    );
+  }
+}
+
+class $$JlptWordsTableFilterComposer
+    extends Composer<_$AppDatabase, $JlptWordsTable> {
+  $$JlptWordsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get surface => $composableBuilder(
+    column: $table.surface,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get kana => $composableBuilder(
+    column: $table.kana,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get jlpt => $composableBuilder(
+    column: $table.jlpt,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get en => $composableBuilder(
+    column: $table.en,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get ko => $composableBuilder(
+    column: $table.ko,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get rank => $composableBuilder(
+    column: $table.rank,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get src => $composableBuilder(
+    column: $table.src,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get segsJson => $composableBuilder(
+    column: $table.segsJson,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  Expression<bool> wordSegmentsRefs(
+    Expression<bool> Function($$WordSegmentsTableFilterComposer f) f,
+  ) {
+    final $$WordSegmentsTableFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.id,
+      referencedTable: $db.wordSegments,
+      getReferencedColumn: (t) => t.wordId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$WordSegmentsTableFilterComposer(
+            $db: $db,
+            $table: $db.wordSegments,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $$JlptWordsTableOrderingComposer
+    extends Composer<_$AppDatabase, $JlptWordsTable> {
+  $$JlptWordsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get surface => $composableBuilder(
+    column: $table.surface,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get kana => $composableBuilder(
+    column: $table.kana,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get jlpt => $composableBuilder(
+    column: $table.jlpt,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get en => $composableBuilder(
+    column: $table.en,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get ko => $composableBuilder(
+    column: $table.ko,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get rank => $composableBuilder(
+    column: $table.rank,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get src => $composableBuilder(
+    column: $table.src,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get segsJson => $composableBuilder(
+    column: $table.segsJson,
+    builder: (column) => ColumnOrderings(column),
+  );
+}
+
+class $$JlptWordsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $JlptWordsTable> {
+  $$JlptWordsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<String> get surface =>
+      $composableBuilder(column: $table.surface, builder: (column) => column);
+
+  GeneratedColumn<String> get kana =>
+      $composableBuilder(column: $table.kana, builder: (column) => column);
+
+  GeneratedColumn<int> get jlpt =>
+      $composableBuilder(column: $table.jlpt, builder: (column) => column);
+
+  GeneratedColumn<String> get en =>
+      $composableBuilder(column: $table.en, builder: (column) => column);
+
+  GeneratedColumn<String> get ko =>
+      $composableBuilder(column: $table.ko, builder: (column) => column);
+
+  GeneratedColumn<int> get rank =>
+      $composableBuilder(column: $table.rank, builder: (column) => column);
+
+  GeneratedColumn<String> get src =>
+      $composableBuilder(column: $table.src, builder: (column) => column);
+
+  GeneratedColumn<String> get segsJson =>
+      $composableBuilder(column: $table.segsJson, builder: (column) => column);
+
+  Expression<T> wordSegmentsRefs<T extends Object>(
+    Expression<T> Function($$WordSegmentsTableAnnotationComposer a) f,
+  ) {
+    final $$WordSegmentsTableAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.id,
+      referencedTable: $db.wordSegments,
+      getReferencedColumn: (t) => t.wordId,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$WordSegmentsTableAnnotationComposer(
+            $db: $db,
+            $table: $db.wordSegments,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return f(composer);
+  }
+}
+
+class $$JlptWordsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $JlptWordsTable,
+          JlptWordRow,
+          $$JlptWordsTableFilterComposer,
+          $$JlptWordsTableOrderingComposer,
+          $$JlptWordsTableAnnotationComposer,
+          $$JlptWordsTableCreateCompanionBuilder,
+          $$JlptWordsTableUpdateCompanionBuilder,
+          (JlptWordRow, $$JlptWordsTableReferences),
+          JlptWordRow,
+          PrefetchHooks Function({bool wordSegmentsRefs})
+        > {
+  $$JlptWordsTableTableManager(_$AppDatabase db, $JlptWordsTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$JlptWordsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$JlptWordsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$JlptWordsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<String> surface = const Value.absent(),
+                Value<String> kana = const Value.absent(),
+                Value<int?> jlpt = const Value.absent(),
+                Value<String?> en = const Value.absent(),
+                Value<String?> ko = const Value.absent(),
+                Value<int?> rank = const Value.absent(),
+                Value<String?> src = const Value.absent(),
+                Value<String?> segsJson = const Value.absent(),
+              }) => JlptWordsCompanion(
+                id: id,
+                surface: surface,
+                kana: kana,
+                jlpt: jlpt,
+                en: en,
+                ko: ko,
+                rank: rank,
+                src: src,
+                segsJson: segsJson,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                required String surface,
+                required String kana,
+                Value<int?> jlpt = const Value.absent(),
+                Value<String?> en = const Value.absent(),
+                Value<String?> ko = const Value.absent(),
+                Value<int?> rank = const Value.absent(),
+                Value<String?> src = const Value.absent(),
+                Value<String?> segsJson = const Value.absent(),
+              }) => JlptWordsCompanion.insert(
+                id: id,
+                surface: surface,
+                kana: kana,
+                jlpt: jlpt,
+                en: en,
+                ko: ko,
+                rank: rank,
+                src: src,
+                segsJson: segsJson,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable(table),
+                  $$JlptWordsTableReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({wordSegmentsRefs = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [if (wordSegmentsRefs) db.wordSegments],
+              addJoins: null,
+              getPrefetchedDataCallback: (items) async {
+                return [
+                  if (wordSegmentsRefs)
+                    await $_getPrefetchedData<
+                      JlptWordRow,
+                      $JlptWordsTable,
+                      WordSegmentRow
+                    >(
+                      currentTable: table,
+                      referencedTable: $$JlptWordsTableReferences
+                          ._wordSegmentsRefsTable(db),
+                      managerFromTypedResult: (p0) =>
+                          $$JlptWordsTableReferences(
+                            db,
+                            table,
+                            p0,
+                          ).wordSegmentsRefs,
+                      referencedItemsForCurrentItem: (item, referencedItems) =>
+                          referencedItems.where((e) => e.wordId == item.id),
+                      typedResults: items,
+                    ),
+                ];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $$JlptWordsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $JlptWordsTable,
+      JlptWordRow,
+      $$JlptWordsTableFilterComposer,
+      $$JlptWordsTableOrderingComposer,
+      $$JlptWordsTableAnnotationComposer,
+      $$JlptWordsTableCreateCompanionBuilder,
+      $$JlptWordsTableUpdateCompanionBuilder,
+      (JlptWordRow, $$JlptWordsTableReferences),
+      JlptWordRow,
+      PrefetchHooks Function({bool wordSegmentsRefs})
+    >;
+typedef $$WordSegmentsTableCreateCompanionBuilder =
+    WordSegmentsCompanion Function({
+      Value<int> id,
+      required int wordId,
+      required int idx,
+      required String segText,
+      Value<String?> reading,
+      Value<String?> char,
+    });
+typedef $$WordSegmentsTableUpdateCompanionBuilder =
+    WordSegmentsCompanion Function({
+      Value<int> id,
+      Value<int> wordId,
+      Value<int> idx,
+      Value<String> segText,
+      Value<String?> reading,
+      Value<String?> char,
+    });
+
+final class $$WordSegmentsTableReferences
+    extends BaseReferences<_$AppDatabase, $WordSegmentsTable, WordSegmentRow> {
+  $$WordSegmentsTableReferences(super.$_db, super.$_table, super.$_typedResult);
+
+  static $JlptWordsTable _wordIdTable(_$AppDatabase db) =>
+      db.jlptWords.createAlias(
+        $_aliasNameGenerator(db.wordSegments.wordId, db.jlptWords.id),
+      );
+
+  $$JlptWordsTableProcessedTableManager get wordId {
+    final $_column = $_itemColumn<int>('word_id')!;
+
+    final manager = $$JlptWordsTableTableManager(
+      $_db,
+      $_db.jlptWords,
+    ).filter((f) => f.id.sqlEquals($_column));
+    final item = $_typedResult.readTableOrNull(_wordIdTable($_db));
+    if (item == null) return manager;
+    return ProcessedTableManager(
+      manager.$state.copyWith(prefetchedData: [item]),
+    );
+  }
+}
+
+class $$WordSegmentsTableFilterComposer
+    extends Composer<_$AppDatabase, $WordSegmentsTable> {
+  $$WordSegmentsTableFilterComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnFilters<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<int> get idx => $composableBuilder(
+    column: $table.idx,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get segText => $composableBuilder(
+    column: $table.segText,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get reading => $composableBuilder(
+    column: $table.reading,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  ColumnFilters<String> get char => $composableBuilder(
+    column: $table.char,
+    builder: (column) => ColumnFilters(column),
+  );
+
+  $$JlptWordsTableFilterComposer get wordId {
+    final $$JlptWordsTableFilterComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.wordId,
+      referencedTable: $db.jlptWords,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$JlptWordsTableFilterComposer(
+            $db: $db,
+            $table: $db.jlptWords,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$WordSegmentsTableOrderingComposer
+    extends Composer<_$AppDatabase, $WordSegmentsTable> {
+  $$WordSegmentsTableOrderingComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  ColumnOrderings<int> get id => $composableBuilder(
+    column: $table.id,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<int> get idx => $composableBuilder(
+    column: $table.idx,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get segText => $composableBuilder(
+    column: $table.segText,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get reading => $composableBuilder(
+    column: $table.reading,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  ColumnOrderings<String> get char => $composableBuilder(
+    column: $table.char,
+    builder: (column) => ColumnOrderings(column),
+  );
+
+  $$JlptWordsTableOrderingComposer get wordId {
+    final $$JlptWordsTableOrderingComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.wordId,
+      referencedTable: $db.jlptWords,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$JlptWordsTableOrderingComposer(
+            $db: $db,
+            $table: $db.jlptWords,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$WordSegmentsTableAnnotationComposer
+    extends Composer<_$AppDatabase, $WordSegmentsTable> {
+  $$WordSegmentsTableAnnotationComposer({
+    required super.$db,
+    required super.$table,
+    super.joinBuilder,
+    super.$addJoinBuilderToRootComposer,
+    super.$removeJoinBuilderFromRootComposer,
+  });
+  GeneratedColumn<int> get id =>
+      $composableBuilder(column: $table.id, builder: (column) => column);
+
+  GeneratedColumn<int> get idx =>
+      $composableBuilder(column: $table.idx, builder: (column) => column);
+
+  GeneratedColumn<String> get segText =>
+      $composableBuilder(column: $table.segText, builder: (column) => column);
+
+  GeneratedColumn<String> get reading =>
+      $composableBuilder(column: $table.reading, builder: (column) => column);
+
+  GeneratedColumn<String> get char =>
+      $composableBuilder(column: $table.char, builder: (column) => column);
+
+  $$JlptWordsTableAnnotationComposer get wordId {
+    final $$JlptWordsTableAnnotationComposer composer = $composerBuilder(
+      composer: this,
+      getCurrentColumn: (t) => t.wordId,
+      referencedTable: $db.jlptWords,
+      getReferencedColumn: (t) => t.id,
+      builder:
+          (
+            joinBuilder, {
+            $addJoinBuilderToRootComposer,
+            $removeJoinBuilderFromRootComposer,
+          }) => $$JlptWordsTableAnnotationComposer(
+            $db: $db,
+            $table: $db.jlptWords,
+            $addJoinBuilderToRootComposer: $addJoinBuilderToRootComposer,
+            joinBuilder: joinBuilder,
+            $removeJoinBuilderFromRootComposer:
+                $removeJoinBuilderFromRootComposer,
+          ),
+    );
+    return composer;
+  }
+}
+
+class $$WordSegmentsTableTableManager
+    extends
+        RootTableManager<
+          _$AppDatabase,
+          $WordSegmentsTable,
+          WordSegmentRow,
+          $$WordSegmentsTableFilterComposer,
+          $$WordSegmentsTableOrderingComposer,
+          $$WordSegmentsTableAnnotationComposer,
+          $$WordSegmentsTableCreateCompanionBuilder,
+          $$WordSegmentsTableUpdateCompanionBuilder,
+          (WordSegmentRow, $$WordSegmentsTableReferences),
+          WordSegmentRow,
+          PrefetchHooks Function({bool wordId})
+        > {
+  $$WordSegmentsTableTableManager(_$AppDatabase db, $WordSegmentsTable table)
+    : super(
+        TableManagerState(
+          db: db,
+          table: table,
+          createFilteringComposer: () =>
+              $$WordSegmentsTableFilterComposer($db: db, $table: table),
+          createOrderingComposer: () =>
+              $$WordSegmentsTableOrderingComposer($db: db, $table: table),
+          createComputedFieldComposer: () =>
+              $$WordSegmentsTableAnnotationComposer($db: db, $table: table),
+          updateCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                Value<int> wordId = const Value.absent(),
+                Value<int> idx = const Value.absent(),
+                Value<String> segText = const Value.absent(),
+                Value<String?> reading = const Value.absent(),
+                Value<String?> char = const Value.absent(),
+              }) => WordSegmentsCompanion(
+                id: id,
+                wordId: wordId,
+                idx: idx,
+                segText: segText,
+                reading: reading,
+                char: char,
+              ),
+          createCompanionCallback:
+              ({
+                Value<int> id = const Value.absent(),
+                required int wordId,
+                required int idx,
+                required String segText,
+                Value<String?> reading = const Value.absent(),
+                Value<String?> char = const Value.absent(),
+              }) => WordSegmentsCompanion.insert(
+                id: id,
+                wordId: wordId,
+                idx: idx,
+                segText: segText,
+                reading: reading,
+                char: char,
+              ),
+          withReferenceMapper: (p0) => p0
+              .map(
+                (e) => (
+                  e.readTable(table),
+                  $$WordSegmentsTableReferences(db, table, e),
+                ),
+              )
+              .toList(),
+          prefetchHooksCallback: ({wordId = false}) {
+            return PrefetchHooks(
+              db: db,
+              explicitlyWatchedTables: [],
+              addJoins:
+                  <
+                    T extends TableManagerState<
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic,
+                      dynamic
+                    >
+                  >(state) {
+                    if (wordId) {
+                      state =
+                          state.withJoin(
+                                currentTable: table,
+                                currentColumn: table.wordId,
+                                referencedTable: $$WordSegmentsTableReferences
+                                    ._wordIdTable(db),
+                                referencedColumn: $$WordSegmentsTableReferences
+                                    ._wordIdTable(db)
+                                    .id,
+                              )
+                              as T;
+                    }
+
+                    return state;
+                  },
+              getPrefetchedDataCallback: (items) async {
+                return [];
+              },
+            );
+          },
+        ),
+      );
+}
+
+typedef $$WordSegmentsTableProcessedTableManager =
+    ProcessedTableManager<
+      _$AppDatabase,
+      $WordSegmentsTable,
+      WordSegmentRow,
+      $$WordSegmentsTableFilterComposer,
+      $$WordSegmentsTableOrderingComposer,
+      $$WordSegmentsTableAnnotationComposer,
+      $$WordSegmentsTableCreateCompanionBuilder,
+      $$WordSegmentsTableUpdateCompanionBuilder,
+      (WordSegmentRow, $$WordSegmentsTableReferences),
+      WordSegmentRow,
+      PrefetchHooks Function({bool wordId})
     >;
 typedef $$WordsTableCreateCompanionBuilder =
     WordsCompanion Function({
@@ -4782,6 +7577,12 @@ class $AppDatabaseManager {
       $$TurnsTableTableManager(_db, _db.turns);
   $$KanjiTableTableManager get kanji =>
       $$KanjiTableTableManager(_db, _db.kanji);
+  $$KanjiReadingsTableTableManager get kanjiReadings =>
+      $$KanjiReadingsTableTableManager(_db, _db.kanjiReadings);
+  $$JlptWordsTableTableManager get jlptWords =>
+      $$JlptWordsTableTableManager(_db, _db.jlptWords);
+  $$WordSegmentsTableTableManager get wordSegments =>
+      $$WordSegmentsTableTableManager(_db, _db.wordSegments);
   $$WordsTableTableManager get words =>
       $$WordsTableTableManager(_db, _db.words);
   $$UserProgressTableTableManager get userProgress =>

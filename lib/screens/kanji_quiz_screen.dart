@@ -13,7 +13,7 @@ import '../widgets/selectable_ja_text.dart';
 /// 한자 4지선다 퀴즈 — 현재 단계 출제, 누적 단계는 오답 풀.
 class KanjiQuizScreen extends StatefulWidget {
   final int stage;
-  final List<List<KanjiEntry>> allStages;
+  final List<KanjiStage> allStages;
 
   const KanjiQuizScreen({super.key, required this.stage, required this.allStages});
 
@@ -44,11 +44,13 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
   }
 
   void _build() {
+    // 누적: 같은 레벨 안 이전 단계 + 이전 레벨 전체를 오답 풀로
+    final cur = widget.allStages[widget.stage - 1];
     final pool = <KanjiEntry>[];
-    for (var i = 0; i < widget.stage && i < widget.allStages.length; i++) {
-      pool.addAll(widget.allStages[i]);
+    for (final s in widget.allStages) {
+      if (s.stage <= cur.stage) pool.addAll(s.chars);
     }
-    final current = List<KanjiEntry>.from(widget.allStages[widget.stage - 1])..shuffle(_rand);
+    final current = List<KanjiEntry>.from(cur.chars)..shuffle(_rand);
     final qs = <_Q>[];
     for (final e in current) {
       final correct = e.meaning;
@@ -201,7 +203,7 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('한자 단계 ${widget.stage}',
+            Text('한자 단계 ${widget.stage} · ${widget.allStages[widget.stage - 1].levelLabel}',
                 style: const TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             const Text('훈음 4지선다 · 누적',

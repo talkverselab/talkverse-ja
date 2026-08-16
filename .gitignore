@@ -66,3 +66,7 @@ desktop.ini
 # Drift generated (app_database.g.dart 은 커밋)
 **/*.g.dart
 !lib/data/db/app_database.g.dart
+
+# 외부 원본 데이터 (build_furigana_db.py 가 다운로드 — README 참조)
+data/raw/*
+!data/raw/README.md
