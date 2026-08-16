@@ -1,0 +1,42 @@
+{
+ "lang": "ja",
+ "dialect": "north",
+ "label": "도쿄 표준어 (標準語)",
+ "version": "v1-2026-08-16",
+ "schema": "v4",
+ "levels": {
+  "L1": {
+   "file": "L1.json",
+   "schema": "5ep40turn",
+   "target_turns": 200,
+   "current_turns": 40,
+   "status": "ep1 완성 · ep2-5 미작성"
+  },
+  "L2": {
+   "file": null,
+   "schema": "23dial",
+   "target_turns": 300,
+   "current_turns": 0,
+   "status": "미작성"
+  },
+  "L3": {
+   "file": null,
+   "schema": "23dial",
+   "target_turns": 300,
+   "current_turns": 0,
+   "status": "미작성"
+  }
+ },
+ "characters_canonical": {
+  "A": {
+   "name": "민준",
+   "role": "한국 IT 직장인 (28)",
+   "gender": "male"
+  },
+  "B": {
+   "name": "사쿠라",
+   "role": "도쿄 디자이너 (26)",
+   "gender": "female"
+  }
+ }
+}
