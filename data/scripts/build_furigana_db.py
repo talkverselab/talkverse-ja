@@ -212,6 +212,8 @@ def segments(surface, reading):
 # ── 3. 한국어 단어 뜻 소스 ───────────────────────────────────────────────
 ko_word = {}
 for f in sorted((ASSETS / 'decks').glob('deck_*.json')):
+    if f.name == 'deck_kanji.json':
+        continue  # 한자 훈음 ('앞 전') 은 단어 뜻이 아님
     for c in json.load(open(f, encoding='utf-8'))['cards']:
         if c.get('front') and c.get('back') and len(c['front']) <= 12:
             ko_word.setdefault(c['front'], c['back'])
@@ -220,6 +222,14 @@ for e in kanji_index:
         if w.get('ko'):
             ko_word.setdefault(w['word'], w['ko'])
 print('ko word glosses available:', len(ko_word))
+
+# 수동 한국어 뜻 (data/corpus/ko_gloss/done_*.json: "surface|kana" → 뜻)
+ko_pair = {}
+for f in sorted((CORPUS / 'ko_gloss').glob('done_*.json')):
+    for k, v in json.load(open(f, encoding='utf-8')).items():
+        if isinstance(v, str) and v.strip():
+            ko_pair[k] = v.strip()
+print('ko pair glosses (manual):', len(ko_pair))
 
 # ── 4. 단어: JLPT 리스트 ─────────────────────────────────────────────────
 words = {}  # (surface, reading) → dict
@@ -243,7 +253,7 @@ for n in [5, 4, 3, 2, 1]:
                         'kana': reading,
                         'jlpt': n,
                         'en': row['meaning'].strip(),
-                        'ko': ko_word.get(surface) or ko_word.get(lookup_key(surface)),
+                        'ko': ko_pair.get(f'{surface}|{reading}') or ko_word.get(surface) or ko_word.get(lookup_key(surface)),
                         'rank': None,
                         'src': 'jlpt',
                     }
@@ -270,7 +280,7 @@ with open(CORPUS / 'lang_ja_with_regions.csv', encoding='utf-8-sig') as fh:
         for r in readings[:2]:
             words[(w, r)] = {
                 'surface': w, 'kana': r, 'jlpt': None, 'en': '',
-                'ko': ko_word.get(w), 'rank': rank, 'src': 'corpus',
+                'ko': ko_pair.get(f'{w}|{r}') or ko_word.get(w), 'rank': rank, 'src': 'corpus',
             }
             added += 1
 print('corpus words added:', added)

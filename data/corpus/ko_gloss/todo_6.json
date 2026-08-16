@@ -1,0 +1,1046 @@
+[
+{
+"surface": "ごらんになる",
+"kana": "ごらんになる",
+"jlpt": 4,
+"en": "-- honorific expression for みる --"
+},
+{
+"surface": "さっき",
+"kana": "さっき",
+"jlpt": 4,
+"en": "a little while ago"
+},
+{
+"surface": "しっかり",
+"kana": "しっかり",
+"jlpt": 4,
+"en": "firmly, steady"
+},
+{
+"surface": "しばらく",
+"kana": "しばらく",
+"jlpt": 4,
+"en": "little while"
+},
+{
+"surface": "すっかり",
+"kana": "すっかり",
+"jlpt": 4,
+"en": "all, completely"
+},
+{
+"surface": "すっと",
+"kana": "すっと",
+"jlpt": 4,
+"en": "straight, quickly"
+},
+{
+"surface": "すり",
+"kana": "すり",
+"jlpt": 4,
+"en": "pickpocket"
+},
+{
+"surface": "すると",
+"kana": "すると",
+"jlpt": 4,
+"en": "and, then"
+},
+{
+"surface": "それで",
+"kana": "それで",
+"jlpt": 4,
+"en": "and (conj.), thereupon, because of that"
+},
+{
+"surface": "それに",
+"kana": "それに",
+"jlpt": 4,
+"en": "moreover; besides"
+},
+{
+"surface": "それほど",
+"kana": "それほど",
+"jlpt": 4,
+"en": "to that degree; extent"
+},
+{
+"surface": "そろそろ",
+"kana": "そろそろ",
+"jlpt": 4,
+"en": "gradually, soon"
+},
+{
+"surface": "そんなに",
+"kana": "そんなに",
+"jlpt": 4,
+"en": "so much, like that"
+},
+{
+"surface": "たまに",
+"kana": "たまに",
+"jlpt": 4,
+"en": "occasionally"
+},
+{
+"surface": "だめ",
+"kana": "だめ",
+"jlpt": 4,
+"en": "useless, no good, hopeless"
+},
+{
+"surface": "ちっとも",
+"kana": "ちっとも",
+"jlpt": 4,
+"en": "not at all (neg. verb)"
+},
+{
+"surface": "つもり",
+"kana": "つもり",
+"jlpt": 4,
+"en": "intention, plan"
+},
+{
+"surface": "できるだけ",
+"kana": "できるだけ",
+"jlpt": 4,
+"en": "if at all possible, as much as possible"
+},
+{
+"surface": "とうとう",
+"kana": "とうとう",
+"jlpt": 4,
+"en": "finally, at last"
+},
+{
+"surface": "どんどん",
+"kana": "どんどん",
+"jlpt": 4,
+"en": "quickly and steadily; at a rapid pace"
+},
+{
+"surface": "なさる",
+"kana": "なさる",
+"jlpt": 4,
+"en": "-- honorific expression for する --"
+},
+{
+"surface": "なるべく",
+"kana": "なるべく",
+"jlpt": 4,
+"en": "if possible, as much as possible"
+},
+{
+"surface": "なるほど",
+"kana": "なるほど",
+"jlpt": 4,
+"en": "I see; I now understand"
+},
+{
+"surface": "はず",
+"kana": "はず",
+"jlpt": 4,
+"en": "it should be so"
+},
+{
+"surface": "はっきり",
+"kana": "はっきり",
+"jlpt": 4,
+"en": "clearly, distinctly"
+},
+{
+"surface": "ひげ",
+"kana": "ひげ",
+"jlpt": 4,
+"en": "beard"
+},
+{
+"surface": "ひどい",
+"kana": "ひどい",
+"jlpt": 4,
+"en": "terrible, awful, unfair, cruel"
+},
+{
+"surface": "びっくりする",
+"kana": "びっくりする",
+"jlpt": 4,
+"en": "to be surprised"
+},
+{
+"surface": "ぶどう",
+"kana": "ぶどう",
+"jlpt": 4,
+"en": "grapes"
+},
+{
+"surface": "ほとんど",
+"kana": "ほとんど",
+"jlpt": 4,
+"en": "mostly, almost"
+},
+{
+"surface": "まず",
+"kana": "まず",
+"jlpt": 4,
+"en": "first (of all), to start with"
+},
+{
+"surface": "または",
+"kana": "または",
+"jlpt": 4,
+"en": "or, otherwise"
+},
+{
+"surface": "もうすぐ",
+"kana": "もうすぐ",
+"jlpt": 4,
+"en": "very soon; in a few moments; days"
+},
+{
+"surface": "もし",
+"kana": "もし",
+"jlpt": 4,
+"en": "if"
+},
+{
+"surface": "もちろん",
+"kana": "もちろん",
+"jlpt": 4,
+"en": "certainly, of course"
+},
+{
+"surface": "もらう",
+"kana": "もらう",
+"jlpt": 4,
+"en": "to receive"
+},
+{
+"surface": "やっと",
+"kana": "やっと",
+"jlpt": 4,
+"en": "at last, finally"
+},
+{
+"surface": "やっぱり",
+"kana": "やっぱり",
+"jlpt": 4,
+"en": "as I thought, absolutely"
+},
+{
+"surface": "やはり",
+"kana": "やはり",
+"jlpt": 4,
+"en": "as I thought, absolutely"
+},
+{
+"surface": "よろしい",
+"kana": "よろしい",
+"jlpt": 4,
+"en": "(hon.) good, OK, all right"
+},
+{
+"surface": "アクセサリー",
+"kana": "アクセサリー",
+"jlpt": 4,
+"en": "accessory"
+},
+{
+"surface": "アジア",
+"kana": "アジア",
+"jlpt": 4,
+"en": "Asia"
+},
+{
+"surface": "アナウンサー",
+"kana": "アナウンサー",
+"jlpt": 4,
+"en": "announcer"
+},
+{
+"surface": "アフリカ",
+"kana": "アフリカ",
+"jlpt": 4,
+"en": "Africa"
+},
+{
+"surface": "アメリカ",
+"kana": "アメリカ",
+"jlpt": 4,
+"en": "America, U.S.A."
+},
+{
+"surface": "アルコール",
+"kana": "アルコール",
+"jlpt": 4,
+"en": "alcohol"
+},
+{
+"surface": "アルバイト",
+"kana": "アルバイト",
+"jlpt": 4,
+"en": "part-time job"
+},
+{
+"surface": "エスカレーター",
+"kana": "エスカレーター",
+"jlpt": 4,
+"en": "escalator"
+},
+{
+"surface": "オートバイ",
+"kana": "オートバイ",
+"jlpt": 4,
+"en": "motorcycle (lit: auto-bi(ke))"
+},
+{
+"surface": "オーバー",
+"kana": "オーバー",
+"jlpt": 4,
+"en": "overcoat; over, exceeding, exaggeration"
+},
+{
+"surface": "カーテン",
+"kana": "カーテン",
+"jlpt": 4,
+"en": "curtain"
+},
+{
+"surface": "ガス",
+"kana": "ガス",
+"jlpt": 4,
+"en": "gas"
+},
+{
+"surface": "ガソリン",
+"kana": "ガソリン",
+"jlpt": 4,
+"en": "gasoline, petrol"
+},
+{
+"surface": "ガソリンスタンド",
+"kana": "ガソリンスタンド",
+"jlpt": 4,
+"en": "gas station, service station"
+},
+{
+"surface": "ガラス",
+"kana": "ガラス",
+"jlpt": 4,
+"en": "glass, pane"
+},
+{
+"surface": "ケーキ",
+"kana": "ケーキ",
+"jlpt": 4,
+"en": "cake"
+},
+{
+"surface": "コンサート",
+"kana": "コンサート",
+"jlpt": 4,
+"en": "concert"
+},
+{
+"surface": "コンピュータ",
+"kana": "コンピュータ",
+"jlpt": 4,
+"en": "computer"
+},
+{
+"surface": "コンピューター",
+"kana": "コンピューター",
+"jlpt": 4,
+"en": "computer"
+},
+{
+"surface": "サラダ",
+"kana": "サラダ",
+"jlpt": 4,
+"en": "salad"
+},
+{
+"surface": "サンダル",
+"kana": "サンダル",
+"jlpt": 4,
+"en": "sandal"
+},
+{
+"surface": "サンドイッチ",
+"kana": "サンドイッチ",
+"jlpt": 4,
+"en": "sandwich"
+},
+{
+"surface": "ジャム",
+"kana": "ジャム",
+"jlpt": 4,
+"en": "jam"
+},
+{
+"surface": "スクリーン",
+"kana": "スクリーン",
+"jlpt": 4,
+"en": "screen"
+},
+{
+"surface": "ステレオ",
+"kana": "ステレオ",
+"jlpt": 4,
+"en": "stereo"
+},
+{
+"surface": "ステーキ",
+"kana": "ステーキ",
+"jlpt": 4,
+"en": "steak"
+},
+{
+"surface": "スーツ",
+"kana": "スーツ",
+"jlpt": 4,
+"en": "suit"
+},
+{
+"surface": "スーツケース",
+"kana": "スーツケース",
+"jlpt": 4,
+"en": "suitcase"
+},
+{
+"surface": "スーパー",
+"kana": "スーパー",
+"jlpt": 4,
+"en": "supermarket"
+},
+{
+"surface": "ソフト",
+"kana": "ソフト",
+"jlpt": 4,
+"en": "soft; soft hat; software"
+},
+{
+"surface": "タイプ",
+"kana": "タイプ",
+"jlpt": 4,
+"en": "type, style"
+},
+{
+"surface": "チェックする",
+"kana": "チェックする",
+"jlpt": 4,
+"en": "check"
+},
+{
+"surface": "テキスト",
+"kana": "テキスト",
+"jlpt": 4,
+"en": "text; text book"
+},
+{
+"surface": "テニス",
+"kana": "テニス",
+"jlpt": 4,
+"en": "tennis"
+},
+{
+"surface": "ハンバーグ",
+"kana": "ハンバーグ",
+"jlpt": 4,
+"en": "hamburger steak"
+},
+{
+"surface": "パソコン",
+"kana": "パソコン",
+"jlpt": 4,
+"en": "(personal) computer"
+},
+{
+"surface": "パパ",
+"kana": "パパ",
+"jlpt": 4,
+"en": "papa, daddy"
+},
+{
+"surface": "パート",
+"kana": "パート",
+"jlpt": 4,
+"en": "part time (esp. female part time employees)"
+},
+{
+"surface": "ビル",
+"kana": "ビル",
+"jlpt": 4,
+"en": "(abbr.) building"
+},
+{
+"surface": "ピアノ",
+"kana": "ピアノ",
+"jlpt": 4,
+"en": "piano"
+},
+{
+"surface": "ファックス",
+"kana": "ファックス",
+"jlpt": 4,
+"en": "fax"
+},
+{
+"surface": "プレゼント",
+"kana": "プレゼント",
+"jlpt": 4,
+"en": "present, gift"
+},
+{
+"surface": "ベル",
+"kana": "ベル",
+"jlpt": 4,
+"en": "bell"
+},
+{
+"surface": "リポート",
+"kana": "リポート",
+"jlpt": 4,
+"en": "report"
+},
+{
+"surface": "レジ",
+"kana": "レジ",
+"jlpt": 4,
+"en": "register"
+},
+{
+"surface": "レポート",
+"kana": "レポート",
+"jlpt": 4,
+"en": "report"
+},
+{
+"surface": "ワープロ",
+"kana": "ワープロ",
+"jlpt": 4,
+"en": "word processor"
+},
+{
+"surface": "丁寧",
+"kana": "ていねい",
+"jlpt": 4,
+"en": "polite, courteous, careful"
+},
+{
+"surface": "下げる",
+"kana": "さげる",
+"jlpt": 4,
+"en": "to lower (v.t.); to hang"
+},
+{
+"surface": "下りる",
+"kana": "おりる",
+"jlpt": 4,
+"en": "to get down, to go; come down"
+},
+{
+"surface": "下宿",
+"kana": "げしゅく",
+"jlpt": 4,
+"en": "lodging, boarding house"
+},
+{
+"surface": "下着",
+"kana": "したぎ",
+"jlpt": 4,
+"en": "underwear"
+},
+{
+"surface": "不便",
+"kana": "ふべん",
+"jlpt": 4,
+"en": "inconvenience"
+},
+{
+"surface": "世話",
+"kana": "せわ",
+"jlpt": 4,
+"en": "looking after; to look after"
+},
+{
+"surface": "両方",
+"kana": "りょうほう",
+"jlpt": 4,
+"en": "both sides, both parties"
+},
+{
+"surface": "中々",
+"kana": "なかなか",
+"jlpt": 4,
+"en": "very, considerably, quite"
+},
+{
+"surface": "中学校",
+"kana": "ちゅうがっこう",
+"jlpt": 4,
+"en": "junior high school pupil"
+},
+{
+"surface": "乗り換える",
+"kana": "のりかえる",
+"jlpt": 4,
+"en": "to transfer (trains), to change (bus, train, etc.)"
+},
+{
+"surface": "乗り物",
+"kana": "のりもの",
+"jlpt": 4,
+"en": "vehicle"
+},
+{
+"surface": "乾く",
+"kana": "かわく",
+"jlpt": 4,
+"en": "to get dry"
+},
+{
+"surface": "予約",
+"kana": "よやく",
+"jlpt": 4,
+"en": "reservation"
+},
+{
+"surface": "予習",
+"kana": "よしゅう",
+"jlpt": 4,
+"en": "preparation of lessons (for class)"
+},
+{
+"surface": "交通",
+"kana": "こうつう",
+"jlpt": 4,
+"en": "traffic, transportation"
+},
+{
+"surface": "人口",
+"kana": "じんこう",
+"jlpt": 4,
+"en": "population"
+},
+{
+"surface": "人形",
+"kana": "にんぎょう",
+"jlpt": 4,
+"en": "doll, figure"
+},
+{
+"surface": "仕方",
+"kana": "しかた",
+"jlpt": 4,
+"en": "way (of doing something)"
+},
+{
+"surface": "代わり",
+"kana": "かわり",
+"jlpt": 4,
+"en": "substitute, replacement"
+},
+{
+"surface": "以下",
+"kana": "いか",
+"jlpt": 4,
+"en": "less than, below"
+},
+{
+"surface": "以内",
+"kana": "いない",
+"jlpt": 4,
+"en": "within, less (no more) than"
+},
+{
+"surface": "会場",
+"kana": "かいじょう",
+"jlpt": 4,
+"en": "venue, meeting place"
+},
+{
+"surface": "会話",
+"kana": "かいわ",
+"jlpt": 4,
+"en": "conversation"
+},
+{
+"surface": "会議室",
+"kana": "かいぎしつ",
+"jlpt": 4,
+"en": "conference room"
+},
+{
+"surface": "住所",
+"kana": "じゅうしょ",
+"jlpt": 4,
+"en": "address; place of residence"
+},
+{
+"surface": "倍",
+"kana": "ばい",
+"jlpt": 4,
+"en": "double"
+},
+{
+"surface": "値段",
+"kana": "ねだん",
+"jlpt": 4,
+"en": "price"
+},
+{
+"surface": "入学",
+"kana": "にゅうがく",
+"jlpt": 4,
+"en": "entry to school or university"
+},
+{
+"surface": "公務員",
+"kana": "こうむいん",
+"jlpt": 4,
+"en": "government worker, public servant"
+},
+{
+"surface": "再来月",
+"kana": "さらいげつ",
+"jlpt": 4,
+"en": "the month after next"
+},
+{
+"surface": "再来週",
+"kana": "さらいしゅう",
+"jlpt": 4,
+"en": "the week after next"
+},
+{
+"surface": "写す",
+"kana": "うつす",
+"jlpt": 4,
+"en": "to copy (v.t.); to photograph"
+},
+{
+"surface": "冷える",
+"kana": "ひえる",
+"jlpt": 4,
+"en": "to grow cold, to cool down"
+},
+{
+"surface": "冷房",
+"kana": "れいぼう",
+"jlpt": 4,
+"en": "cooling, air conditioning"
+},
+{
+"surface": "凄い",
+"kana": "すごい",
+"jlpt": 4,
+"en": "terrific, great"
+},
+{
+"surface": "出席",
+"kana": "しゅっせき",
+"jlpt": 4,
+"en": "attendance"
+},
+{
+"surface": "出発",
+"kana": "しゅっぱつ",
+"jlpt": 4,
+"en": "departure"
+},
+{
+"surface": "割合",
+"kana": "わりあい",
+"jlpt": 4,
+"en": "rate, ratio, percentage"
+},
+{
+"surface": "動物園",
+"kana": "どうぶつえん",
+"jlpt": 4,
+"en": "zoo"
+},
+{
+"surface": "匂い",
+"kana": "におい",
+"jlpt": 4,
+"en": "odor, smell"
+},
+{
+"surface": "医学",
+"kana": "いがく",
+"jlpt": 4,
+"en": "medical science"
+},
+{
+"surface": "取り替える",
+"kana": "とりかえる",
+"jlpt": 4,
+"en": "to exchange, to replace"
+},
+{
+"surface": "受付",
+"kana": "うけつけ",
+"jlpt": 4,
+"en": "reception(ist) desk"
+},
+{
+"surface": "召し上がる",
+"kana": "めしあがる",
+"jlpt": 4,
+"en": "-- honorific form of 食べる (たべる) and 飲む (のむ) --"
+},
+{
+"surface": "台風",
+"kana": "たいふう",
+"jlpt": 4,
+"en": "typhoon"
+},
+{
+"surface": "叱る",
+"kana": "しかる",
+"jlpt": 4,
+"en": "to scold"
+},
+{
+"surface": "味噌",
+"kana": "みそ",
+"jlpt": 4,
+"en": "miso, bean paste"
+},
+{
+"surface": "品物",
+"kana": "しなもの",
+"jlpt": 4,
+"en": "goods"
+},
+{
+"surface": "喉",
+"kana": "のど",
+"jlpt": 4,
+"en": "throat"
+},
+{
+"surface": "噛む",
+"kana": "かむ",
+"jlpt": 4,
+"en": "to bite, to chew"
+},
+{
+"surface": "固い",
+"kana": "かたい",
+"jlpt": 4,
+"en": "solid, hard, firm"
+},
+{
+"surface": "国際",
+"kana": "こくさい",
+"jlpt": 4,
+"en": "international"
+},
+{
+"surface": "地理",
+"kana": "ちり",
+"jlpt": 4,
+"en": "geography"
+},
+{
+"surface": "地震",
+"kana": "じしん",
+"jlpt": 4,
+"en": "earthquake"
+},
+{
+"surface": "坂",
+"kana": "さか",
+"jlpt": 4,
+"en": "slope, hill"
+},
+{
+"surface": "堅",
+"kana": "かたい",
+"jlpt": 4,
+"en": "solid, hard, firm"
+},
+{
+"surface": "塗る",
+"kana": "ぬる",
+"jlpt": 4,
+"en": "to paint, to plaster"
+},
+{
+"surface": "売り場",
+"kana": "うりば",
+"jlpt": 4,
+"en": "place where things are sold"
+},
+{
+"surface": "大学生",
+"kana": "だいがくせい",
+"jlpt": 4,
+"en": "college student, university student"
+},
+{
+"surface": "大抵",
+"kana": "たいてい",
+"jlpt": 4,
+"en": "generally, usually"
+},
+{
+"surface": "天気予報",
+"kana": "てんきよほう",
+"jlpt": 4,
+"en": "weather forecast"
+},
+{
+"surface": "太る",
+"kana": "ふとる",
+"jlpt": 4,
+"en": "to gain weight"
+},
+{
+"surface": "妻",
+"kana": "つま",
+"jlpt": 4,
+"en": "wife (humble)"
+},
+{
+"surface": "季節",
+"kana": "きせつ",
+"jlpt": 4,
+"en": "season (in reference to weather)"
+},
+{
+"surface": "家内",
+"kana": "かない",
+"jlpt": 4,
+"en": "(one's own) wife"
+},
+{
+"surface": "寝坊",
+"kana": "ねぼう",
+"jlpt": 4,
+"en": "sleeping in late"
+},
+{
+"surface": "専門",
+"kana": "せんもん",
+"jlpt": 4,
+"en": "major; speciality"
+},
+{
+"surface": "尋ねる",
+"kana": "たずねる",
+"jlpt": 4,
+"en": "to inquire (same as 質問する)"
+},
+{
+"surface": "小説",
+"kana": "しょうせつ",
+"jlpt": 4,
+"en": "novel"
+},
+{
+"surface": "小鳥",
+"kana": "ことり",
+"jlpt": 4,
+"en": "small bird"
+},
+{
+"surface": "屋上",
+"kana": "おくじょう",
+"jlpt": 4,
+"en": "rooftop"
+},
+{
+"surface": "展覧会",
+"kana": "てんらんかい",
+"jlpt": 4,
+"en": "exhibition"
+},
+{
+"surface": "島",
+"kana": "しま",
+"jlpt": 4,
+"en": "island"
+},
+{
+"surface": "工業",
+"kana": "こうぎょう",
+"jlpt": 4,
+"en": "(manufacturing) industry"
+},
+{
+"surface": "差し上げる",
+"kana": "さしあげる",
+"jlpt": 4,
+"en": "-- humble expression for あげる --"
+},
+{
+"surface": "市民",
+"kana": "しみん",
+"jlpt": 4,
+"en": "citizen"
+},
+{
+"surface": "布団",
+"kana": "ふとん",
+"jlpt": 4,
+"en": "futon"
+},
+{
+"surface": "帰り",
+"kana": "かえり",
+"jlpt": 4,
+"en": "return, coming back"
+},
+{
+"surface": "床屋",
+"kana": "とこや",
+"jlpt": 4,
+"en": "barber's (shop)"
+},
+{
+"surface": "建て",
+"kana": "～だて",
+"jlpt": 4,
+"en": "~ storied, separate housing"
+},
+{
+"surface": "建てる",
+"kana": "たてる",
+"jlpt": 4,
+"en": "to build"
+},
+{
+"surface": "引き出し",
+"kana": "ひきだし",
+"jlpt": 4,
+"en": "drawer"
+},
+{
+"surface": "御～",
+"kana": "ご～",
+"jlpt": 4,
+"en": "honorable ~"
+},
+{
+"surface": "復習",
+"kana": "ふくしゅう",
+"jlpt": 4,
+"en": "review (of lessons), revision"
+},
+{
+"surface": "忘れ物",
+"kana": "わすれもの",
+"jlpt": 4,
+"en": "lost article, something forgotten"
+},
+{
+"surface": "急行",
+"kana": "きゅうこう",
+"jlpt": 4,
+"en": "express train or bus"
+}
+]

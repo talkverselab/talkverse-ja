@@ -1,0 +1,1046 @@
+[
+{
+"surface": "吸う",
+"kana": "すう",
+"jlpt": 5,
+"en": "to breathe in, to suck"
+},
+{
+"surface": "悪い",
+"kana": "わるい",
+"jlpt": 5,
+"en": "bad, sinful; inferior"
+},
+{
+"surface": "帰る",
+"kana": "かえる",
+"jlpt": 5,
+"en": "to go back, to go home, to return"
+},
+{
+"surface": "門",
+"kana": "もん",
+"jlpt": 5,
+"en": "gate"
+},
+{
+"surface": "本",
+"kana": "ほん",
+"jlpt": 5,
+"en": "book"
+},
+{
+"surface": "買う",
+"kana": "かう",
+"jlpt": 5,
+"en": "to buy"
+},
+{
+"surface": "作る",
+"kana": "つくる",
+"jlpt": 5,
+"en": "to make, to create"
+},
+{
+"surface": "お母さん",
+"kana": "おかあさん",
+"jlpt": 5,
+"en": "mother (formal)"
+},
+{
+"surface": "声",
+"kana": "こえ",
+"jlpt": 5,
+"en": "voice"
+},
+{
+"surface": "お父さん",
+"kana": "おとうさん",
+"jlpt": 5,
+"en": "father (formal)"
+},
+{
+"surface": "使う",
+"kana": "つかう",
+"jlpt": 5,
+"en": "to use"
+},
+{
+"surface": "欲しい",
+"kana": "ほしい",
+"jlpt": 5,
+"en": "to want, in need of"
+},
+{
+"surface": "同じ",
+"kana": "おなじ",
+"jlpt": 5,
+"en": "same, identical"
+},
+{
+"surface": "頼む",
+"kana": "たのむ",
+"jlpt": 5,
+"en": "to request, to ask (a favor)"
+},
+{
+"surface": "顔",
+"kana": "かお",
+"jlpt": 5,
+"en": "face (body part)"
+},
+{
+"surface": "結婚",
+"kana": "けっこん",
+"jlpt": 5,
+"en": "marriage (get married)"
+},
+{
+"surface": "背",
+"kana": "せい",
+"jlpt": 5,
+"en": "(one's) height, stature"
+},
+{
+"surface": "本当",
+"kana": "ほんとう",
+"jlpt": 5,
+"en": "real, true"
+},
+{
+"surface": "痛い",
+"kana": "いたい",
+"jlpt": 5,
+"en": "hurt; painful; sore"
+},
+{
+"surface": "飲む",
+"kana": "のむ",
+"jlpt": 5,
+"en": "to drink"
+},
+{
+"surface": "教える",
+"kana": "おしえる",
+"jlpt": 5,
+"en": "to teach, to inform, to instruct"
+},
+{
+"surface": "書く",
+"kana": "かく",
+"jlpt": 5,
+"en": "to write"
+},
+{
+"surface": "万",
+"kana": "まん",
+"jlpt": 5,
+"en": "ten thousand"
+},
+{
+"surface": "店",
+"kana": "みせ",
+"jlpt": 5,
+"en": "store, shop"
+},
+{
+"surface": "体",
+"kana": "からだ",
+"jlpt": 5,
+"en": "body; health"
+},
+{
+"surface": "渡す",
+"kana": "わたす",
+"jlpt": 5,
+"en": "to hand (something) over (v.t.); to get across"
+},
+{
+"surface": "忘れる",
+"kana": "わすれる",
+"jlpt": 5,
+"en": "to forget"
+},
+{
+"surface": "呼ぶ",
+"kana": "よぶ",
+"jlpt": 5,
+"en": "to call (one's name); to invite"
+},
+{
+"surface": "名前",
+"kana": "なまえ",
+"jlpt": 5,
+"en": "name"
+},
+{
+"surface": "次",
+"kana": "つぎ",
+"jlpt": 5,
+"en": "next"
+},
+{
+"surface": "一番",
+"kana": "いちばん",
+"jlpt": 5,
+"en": "best (most), first, number one"
+},
+{
+"surface": "鳴く",
+"kana": "なく",
+"jlpt": 5,
+"en": "to make sound (animal)"
+},
+{
+"surface": "問題",
+"kana": "もんだい",
+"jlpt": 5,
+"en": "a problem"
+},
+{
+"surface": "友達",
+"kana": "ともだち",
+"jlpt": 5,
+"en": "friend"
+},
+{
+"surface": "少し",
+"kana": "すこし",
+"jlpt": 5,
+"en": "little, few"
+},
+{
+"surface": "鼻",
+"kana": "はな",
+"jlpt": 5,
+"en": "nose"
+},
+{
+"surface": "皆さん",
+"kana": "みなさん",
+"jlpt": 5,
+"en": "all of you, everyone"
+},
+{
+"surface": "お金",
+"kana": "おかね",
+"jlpt": 5,
+"en": "money"
+},
+{
+"surface": "働く",
+"kana": "はたらく",
+"jlpt": 5,
+"en": "to work"
+},
+{
+"surface": "開く",
+"kana": "あく",
+"jlpt": 5,
+"en": "to open, to become open"
+},
+{
+"surface": "覚える",
+"kana": "おぼえる",
+"jlpt": 5,
+"en": "to learn, to commit to memory, to remember, to memorize"
+},
+{
+"surface": "楽しい",
+"kana": "たのしい",
+"jlpt": 5,
+"en": "enjoyable, fun"
+},
+{
+"surface": "着る",
+"kana": "きる",
+"jlpt": 5,
+"en": "to put on (clothes above your waist); to wear"
+},
+{
+"surface": "病院",
+"kana": "びょういん",
+"jlpt": 5,
+"en": "hospital"
+},
+{
+"surface": "色々",
+"kana": "いろいろ",
+"jlpt": 5,
+"en": "various"
+},
+{
+"surface": "夜",
+"kana": "よる",
+"jlpt": 5,
+"en": "evening, night"
+},
+{
+"surface": "売る",
+"kana": "うる",
+"jlpt": 5,
+"en": "to sell (v.t.)"
+},
+{
+"surface": "乗る",
+"kana": "のる",
+"jlpt": 5,
+"en": "to get on, to ride in, to board"
+},
+{
+"surface": "父",
+"kana": "ちち",
+"jlpt": 5,
+"en": "(my) father"
+},
+{
+"surface": "外",
+"kana": "そと",
+"jlpt": 5,
+"en": "outside, exterior"
+},
+{
+"surface": "外",
+"kana": "ほか",
+"jlpt": 5,
+"en": "other, the rest"
+},
+{
+"surface": "寝る",
+"kana": "ねる",
+"jlpt": 5,
+"en": "to sleep; to go to sleep; to go to bed"
+},
+{
+"surface": "新しい",
+"kana": "あたらしい",
+"jlpt": 5,
+"en": "new"
+},
+{
+"surface": "太い",
+"kana": "ふとい",
+"jlpt": 5,
+"en": "fat, thick"
+},
+{
+"surface": "頭",
+"kana": "あたま",
+"jlpt": 5,
+"en": "head"
+},
+{
+"surface": "困る",
+"kana": "こまる",
+"jlpt": 5,
+"en": "to be bothered, to have difficulty"
+},
+{
+"surface": "起きる",
+"kana": "おきる",
+"jlpt": 5,
+"en": "to get up (e.g., from sleeping); to happen"
+},
+{
+"surface": "生徒",
+"kana": "せいと",
+"jlpt": 5,
+"en": "student; pupil"
+},
+{
+"surface": "一つ",
+"kana": "ひとつ",
+"jlpt": 5,
+"en": "one thing"
+},
+{
+"surface": "写真",
+"kana": "しゃしん",
+"jlpt": 5,
+"en": "a picture; a photograph"
+},
+{
+"surface": "遅い",
+"kana": "おそい",
+"jlpt": 5,
+"en": "slow; (to be) late"
+},
+{
+"surface": "読む",
+"kana": "よむ",
+"jlpt": 5,
+"en": "to read"
+},
+{
+"surface": "奥さん",
+"kana": "おくさん",
+"jlpt": 5,
+"en": "(someone else's) wife (hon.)"
+},
+{
+"surface": "車",
+"kana": "くるま",
+"jlpt": 5,
+"en": "car, vehicle"
+},
+{
+"surface": "面白い",
+"kana": "おもしろい",
+"jlpt": 5,
+"en": "interesting, amusing"
+},
+{
+"surface": "返す",
+"kana": "かえす",
+"jlpt": 5,
+"en": "to return something"
+},
+{
+"surface": "高い",
+"kana": "たかい",
+"jlpt": 5,
+"en": "tall, high; expensive"
+},
+{
+"surface": "疲れる",
+"kana": "つかれる",
+"jlpt": 5,
+"en": "to get (become) tired; to become fatigued"
+},
+{
+"surface": "七日",
+"kana": "なのか",
+"jlpt": 5,
+"en": "seven days; seventh day (of the month)"
+},
+{
+"surface": "長い",
+"kana": "ながい",
+"jlpt": 5,
+"en": "long, lengthy"
+},
+{
+"surface": "一人",
+"kana": "ひとり",
+"jlpt": 5,
+"en": "one person"
+},
+{
+"surface": "若い",
+"kana": "わかい",
+"jlpt": 5,
+"en": "young"
+},
+{
+"surface": "朝",
+"kana": "あさ",
+"jlpt": 5,
+"en": "morning"
+},
+{
+"surface": "答える",
+"kana": "こたえる",
+"jlpt": 5,
+"en": "to answer, to reply"
+},
+{
+"surface": "始まる",
+"kana": "はじまる",
+"jlpt": 5,
+"en": "(something) begins"
+},
+{
+"surface": "早い",
+"kana": "はやい",
+"jlpt": 5,
+"en": "early"
+},
+{
+"surface": "大切",
+"kana": "たいせつ",
+"jlpt": 5,
+"en": "important"
+},
+{
+"surface": "辛い",
+"kana": "からい",
+"jlpt": 5,
+"en": "hot and spicy; salty"
+},
+{
+"surface": "切る",
+"kana": "きる",
+"jlpt": 5,
+"en": "to cut; to hang up (a phone)"
+},
+{
+"surface": "白い",
+"kana": "しろい",
+"jlpt": 5,
+"en": "white"
+},
+{
+"surface": "一緒",
+"kana": "いっしょ",
+"jlpt": 5,
+"en": "together"
+},
+{
+"surface": "閉まる",
+"kana": "しまる",
+"jlpt": 5,
+"en": "to close, to be closed"
+},
+{
+"surface": "円い",
+"kana": "まるい",
+"jlpt": 5,
+"en": "round, circular"
+},
+{
+"surface": "道",
+"kana": "みち",
+"jlpt": 5,
+"en": "road, street; way, directions"
+},
+{
+"surface": "先",
+"kana": "さき",
+"jlpt": 5,
+"en": "future; recent, previous"
+},
+{
+"surface": "空",
+"kana": "そら",
+"jlpt": 5,
+"en": "sky"
+},
+{
+"surface": "忙しい",
+"kana": "いそがしい",
+"jlpt": 5,
+"en": "busy (people, days)"
+},
+{
+"surface": "毎日",
+"kana": "まいにち",
+"jlpt": 5,
+"en": "every day"
+},
+{
+"surface": "貸す",
+"kana": "かす",
+"jlpt": 5,
+"en": "to lend"
+},
+{
+"surface": "開ける",
+"kana": "あける",
+"jlpt": 5,
+"en": "to open (v.t.)"
+},
+{
+"surface": "風",
+"kana": "かぜ",
+"jlpt": 5,
+"en": "wind, breeze"
+},
+{
+"surface": "足",
+"kana": "あし",
+"jlpt": 5,
+"en": "foot; leg"
+},
+{
+"surface": "二人",
+"kana": "ふたり",
+"jlpt": 5,
+"en": "two people"
+},
+{
+"surface": "医者",
+"kana": "いしゃ",
+"jlpt": 5,
+"en": "doctor; physician"
+},
+{
+"surface": "撮る",
+"kana": "とる",
+"jlpt": 5,
+"en": "to take (a photo), to make (a film)"
+},
+{
+"surface": "大きい",
+"kana": "おおきい",
+"jlpt": 5,
+"en": "big, large"
+},
+{
+"surface": "休む",
+"kana": "やすむ",
+"jlpt": 5,
+"en": "to rest, to have a break, to get time off"
+},
+{
+"surface": "貼る",
+"kana": "はる",
+"jlpt": 5,
+"en": "to post; to paste; to attach"
+},
+{
+"surface": "辺",
+"kana": "へん",
+"jlpt": 5,
+"en": "area, vicinity"
+},
+{
+"surface": "木",
+"kana": "き",
+"jlpt": 5,
+"en": "tree, wood, timber"
+},
+{
+"surface": "消える",
+"kana": "きえる",
+"jlpt": 5,
+"en": "to vanish, to disappear"
+},
+{
+"surface": "座る",
+"kana": "すわる",
+"jlpt": 5,
+"en": "to sit"
+},
+{
+"surface": "遊ぶ",
+"kana": "あそぶ",
+"jlpt": 5,
+"en": "to play; to spend time pleasantly; to hang out"
+},
+{
+"surface": "大きな",
+"kana": "おおきな",
+"jlpt": 5,
+"en": "big"
+},
+{
+"surface": "口",
+"kana": "くち",
+"jlpt": 5,
+"en": "job opening; mouth"
+},
+{
+"surface": "勉強",
+"kana": "べんきょう",
+"jlpt": 5,
+"en": "study"
+},
+{
+"surface": "歩く",
+"kana": "あるく",
+"jlpt": 5,
+"en": "to walk"
+},
+{
+"surface": "広い",
+"kana": "ひろい",
+"jlpt": 5,
+"en": "spacious; wide; broad"
+},
+{
+"surface": "花",
+"kana": "はな",
+"jlpt": 5,
+"en": "flower"
+},
+{
+"surface": "海",
+"kana": "うみ",
+"jlpt": 5,
+"en": "sea, beach"
+},
+{
+"surface": "町",
+"kana": "まち",
+"jlpt": 5,
+"en": "town; city"
+},
+{
+"surface": "住む",
+"kana": "すむ",
+"jlpt": 5,
+"en": "to reside, to live in"
+},
+{
+"surface": "強い",
+"kana": "つよい",
+"jlpt": 5,
+"en": "strong, powerful"
+},
+{
+"surface": "兄",
+"kana": "あに",
+"jlpt": 5,
+"en": "(my) older brother (humble)"
+},
+{
+"surface": "熱い",
+"kana": "あつい",
+"jlpt": 5,
+"en": "hot (objects)"
+},
+{
+"surface": "難しい",
+"kana": "むずかしい",
+"jlpt": 5,
+"en": "difficult"
+},
+{
+"surface": "大人",
+"kana": "おとな",
+"jlpt": 5,
+"en": "adult"
+},
+{
+"surface": "飛ぶ",
+"kana": "とぶ",
+"jlpt": 5,
+"en": "to fly, to hop"
+},
+{
+"surface": "歌",
+"kana": "うた",
+"jlpt": 5,
+"en": "a song"
+},
+{
+"surface": "お腹",
+"kana": "おなか",
+"jlpt": 5,
+"en": "stomach"
+},
+{
+"surface": "下",
+"kana": "した",
+"jlpt": 5,
+"en": "under, below, beneath"
+},
+{
+"surface": "女の子",
+"kana": "おんなのこ",
+"jlpt": 5,
+"en": "girl"
+},
+{
+"surface": "借りる",
+"kana": "かりる",
+"jlpt": 5,
+"en": "to borrow, to owe"
+},
+{
+"surface": "東",
+"kana": "ひがし",
+"jlpt": 5,
+"en": "east"
+},
+{
+"surface": "黒い",
+"kana": "くろい",
+"jlpt": 5,
+"en": "black; dark"
+},
+{
+"surface": "危ない",
+"kana": "あぶない",
+"jlpt": 5,
+"en": "dangerous, critical"
+},
+{
+"surface": "向こう",
+"kana": "むこう",
+"jlpt": 5,
+"en": "beyond, over there"
+},
+{
+"surface": "五日",
+"kana": "いつか",
+"jlpt": 5,
+"en": "five days; fifth day of the month"
+},
+{
+"surface": "走る",
+"kana": "はしる",
+"jlpt": 5,
+"en": "to run"
+},
+{
+"surface": "箱",
+"kana": "はこ",
+"jlpt": 5,
+"en": "box"
+},
+{
+"surface": "夏",
+"kana": "なつ",
+"jlpt": 5,
+"en": "summer"
+},
+{
+"surface": "犬",
+"kana": "いぬ",
+"jlpt": 5,
+"en": "dog"
+},
+{
+"surface": "消す",
+"kana": "けす",
+"jlpt": 5,
+"en": "to erase, to delete, to turn off power"
+},
+{
+"surface": "甘い",
+"kana": "あまい",
+"jlpt": 5,
+"en": "generous, sweet"
+},
+{
+"surface": "嫌い",
+"kana": "きらい",
+"jlpt": 5,
+"en": "dislike"
+},
+{
+"surface": "病気",
+"kana": "びょうき",
+"jlpt": 5,
+"en": "illness; sickness"
+},
+{
+"surface": "映画",
+"kana": "えいが",
+"jlpt": 5,
+"en": "movie, film"
+},
+{
+"surface": "絵",
+"kana": "え",
+"jlpt": 5,
+"en": "a painting; a picture; a drawing"
+},
+{
+"surface": "妹",
+"kana": "いもうと",
+"jlpt": 5,
+"en": "younger sister (humble)"
+},
+{
+"surface": "魚",
+"kana": "さかな",
+"jlpt": 5,
+"en": "fish"
+},
+{
+"surface": "練習",
+"kana": "れんしゅう",
+"jlpt": 5,
+"en": "(to) practice"
+},
+{
+"surface": "手紙",
+"kana": "てがみ",
+"jlpt": 5,
+"en": "letter"
+},
+{
+"surface": "赤い",
+"kana": "あかい",
+"jlpt": 5,
+"en": "red"
+},
+{
+"surface": "鍵",
+"kana": "かぎ",
+"jlpt": 5,
+"en": "a lock; a key"
+},
+{
+"surface": "隣",
+"kana": "となり",
+"jlpt": 5,
+"en": "next to, next door to"
+},
+{
+"surface": "丸い",
+"kana": "まるい",
+"jlpt": 5,
+"en": "round, circular"
+},
+{
+"surface": "薬",
+"kana": "くすり",
+"jlpt": 5,
+"en": "medicine"
+},
+{
+"surface": "服",
+"kana": "ふく",
+"jlpt": 5,
+"en": "clothes"
+},
+{
+"surface": "重い",
+"kana": "おもい",
+"jlpt": 5,
+"en": "heavy; serious"
+},
+{
+"surface": "色",
+"kana": "いろ",
+"jlpt": 5,
+"en": "color"
+},
+{
+"surface": "歌う",
+"kana": "うたう",
+"jlpt": 5,
+"en": "to sing"
+},
+{
+"surface": "お茶",
+"kana": "おちゃ",
+"jlpt": 5,
+"en": "(green) tea"
+},
+{
+"surface": "誕生日",
+"kana": "たんじょうび",
+"jlpt": 5,
+"en": "birthday"
+},
+{
+"surface": "寒い",
+"kana": "さむい",
+"jlpt": 5,
+"en": "cold (in reference to weather)"
+},
+{
+"surface": "緑",
+"kana": "みどり",
+"jlpt": 5,
+"en": "green"
+},
+{
+"surface": "肉",
+"kana": "にく",
+"jlpt": 5,
+"en": "meat"
+},
+{
+"surface": "池",
+"kana": "いけ",
+"jlpt": 5,
+"en": "pond"
+},
+{
+"surface": "音楽",
+"kana": "おんがく",
+"jlpt": 5,
+"en": "Music"
+},
+{
+"surface": "暇",
+"kana": "ひま",
+"jlpt": 5,
+"en": "free time, leisure"
+},
+{
+"surface": "銀行",
+"kana": "ぎんこう",
+"jlpt": 5,
+"en": "bank"
+},
+{
+"surface": "質問",
+"kana": "しつもん",
+"jlpt": 5,
+"en": "question, inquiry"
+},
+{
+"surface": "弟",
+"kana": "おとうと",
+"jlpt": 5,
+"en": "younger brother"
+},
+{
+"surface": "雪",
+"kana": "ゆき",
+"jlpt": 5,
+"en": "snow"
+},
+{
+"surface": "引く",
+"kana": "ひく",
+"jlpt": 5,
+"en": "to pull, to draw; subtract"
+},
+{
+"surface": "姉",
+"kana": "あね",
+"jlpt": 5,
+"en": "(my) older sister (humble)"
+},
+{
+"surface": "十",
+"kana": "じゅう",
+"jlpt": 5,
+"en": "ten"
+},
+{
+"surface": "十",
+"kana": "とお",
+"jlpt": 5,
+"en": "ten (~)"
+},
+{
+"surface": "弱い",
+"kana": "よわい",
+"jlpt": 5,
+"en": "weak"
+},
+{
+"surface": "南",
+"kana": "みなみ",
+"jlpt": 5,
+"en": "South"
+},
+{
+"surface": "押す",
+"kana": "おす",
+"jlpt": 5,
+"en": "to push, to press, to stamp (e.g., a passport)"
+},
+{
+"surface": "雨",
+"kana": "あめ",
+"jlpt": 5,
+"en": "rain"
+},
+{
+"surface": "村",
+"kana": "むら",
+"jlpt": 5,
+"en": "village"
+},
+{
+"surface": "青い",
+"kana": "あおい",
+"jlpt": 5,
+"en": "blue"
+},
+{
+"surface": "小さい",
+"kana": "ちいさい",
+"jlpt": 5,
+"en": "small, little"
+}
+]

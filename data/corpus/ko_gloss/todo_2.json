@@ -1,0 +1,1046 @@
+[
+{
+"surface": "戸",
+"kana": "と",
+"jlpt": 5,
+"en": "door (Japanese style)"
+},
+{
+"surface": "小さな",
+"kana": "ちいさな",
+"jlpt": 5,
+"en": "small, little"
+},
+{
+"surface": "靴",
+"kana": "くつ",
+"jlpt": 5,
+"en": "shoes, footwear"
+},
+{
+"surface": "静か",
+"kana": "しずか",
+"jlpt": 5,
+"en": "quiet, calm"
+},
+{
+"surface": "春",
+"kana": "はる",
+"jlpt": 5,
+"en": "spring"
+},
+{
+"surface": "箸",
+"kana": "はし",
+"jlpt": 5,
+"en": "chopsticks"
+},
+{
+"surface": "今朝",
+"kana": "けさ",
+"jlpt": 5,
+"en": "this morning"
+},
+{
+"surface": "古い",
+"kana": "ふるい",
+"jlpt": 5,
+"en": "old (in reference to objects, not people), aged, ancient"
+},
+{
+"surface": "安い",
+"kana": "やすい",
+"jlpt": 5,
+"en": "inexpensive; cheap (things)"
+},
+{
+"surface": "零",
+"kana": "れい",
+"jlpt": 5,
+"en": "zero, nought"
+},
+{
+"surface": "午後",
+"kana": "ごご",
+"jlpt": 5,
+"en": "afternoon, P.M."
+},
+{
+"surface": "伯母さん",
+"kana": "おばさん",
+"jlpt": 5,
+"en": "aunt"
+},
+{
+"surface": "両親",
+"kana": "りょうしん",
+"jlpt": 5,
+"en": "parents (lit., both parents)"
+},
+{
+"surface": "掛ける",
+"kana": "かける",
+"jlpt": 5,
+"en": "to put on (e.g., glasses); to hang (e.g., on a wall)"
+},
+{
+"surface": "男の子",
+"kana": "おとこのこ",
+"jlpt": 5,
+"en": "boy"
+},
+{
+"surface": "傘",
+"kana": "かさ",
+"jlpt": 5,
+"en": "umbrella, parasol"
+},
+{
+"surface": "着く",
+"kana": "つく",
+"jlpt": 5,
+"en": "to arrive at, to reach"
+},
+{
+"surface": "軽い",
+"kana": "かるい",
+"jlpt": 5,
+"en": "light, non-serious, minor"
+},
+{
+"surface": "下手",
+"kana": "へた",
+"jlpt": 5,
+"en": "unskillful, poor"
+},
+{
+"surface": "お酒",
+"kana": "おさけ",
+"jlpt": 5,
+"en": "sake; alcohol"
+},
+{
+"surface": "右",
+"kana": "みぎ",
+"jlpt": 5,
+"en": "right hand side"
+},
+{
+"surface": "汚い",
+"kana": "きたない",
+"jlpt": 5,
+"en": "dirty, unclean, filthy"
+},
+{
+"surface": "一日",
+"kana": "いちにち",
+"jlpt": 5,
+"en": "one day (duration)"
+},
+{
+"surface": "一日",
+"kana": "ついたち",
+"jlpt": 5,
+"en": "one day; first day of the month"
+},
+{
+"surface": "左",
+"kana": "ひだり",
+"jlpt": 5,
+"en": "left hand side"
+},
+{
+"surface": "掃除",
+"kana": "そうじ",
+"jlpt": 5,
+"en": "cleaning, sweeping"
+},
+{
+"surface": "お姉さん",
+"kana": "おねえさん",
+"jlpt": 5,
+"en": "older sister (formal)"
+},
+{
+"surface": "有名",
+"kana": "ゆうめい",
+"jlpt": 5,
+"en": "famous"
+},
+{
+"surface": "洗う",
+"kana": "あらう",
+"jlpt": 5,
+"en": "to wash"
+},
+{
+"surface": "御飯",
+"kana": "ごはん",
+"jlpt": 5,
+"en": "rice (cooked); meal"
+},
+{
+"surface": "遠い",
+"kana": "とおい",
+"jlpt": 5,
+"en": "far (away), distant"
+},
+{
+"surface": "冷たい",
+"kana": "つめたい",
+"jlpt": 5,
+"en": "cold (things, people)"
+},
+{
+"surface": "雑誌",
+"kana": "ざっし",
+"jlpt": 5,
+"en": "magazine, journal"
+},
+{
+"surface": "無くす",
+"kana": "なくす",
+"jlpt": 5,
+"en": "to lose something"
+},
+{
+"surface": "後ろ",
+"kana": "うしろ",
+"jlpt": 5,
+"en": "back, behind, rear"
+},
+{
+"surface": "速い",
+"kana": "はやい",
+"jlpt": 5,
+"en": "fast, quick"
+},
+{
+"surface": "少ない",
+"kana": "すくない",
+"jlpt": 5,
+"en": "a little; a few"
+},
+{
+"surface": "授業",
+"kana": "じゅぎょう",
+"jlpt": 5,
+"en": "a class (of school)"
+},
+{
+"surface": "来週",
+"kana": "らいしゅう",
+"jlpt": 5,
+"en": "next week"
+},
+{
+"surface": "公園",
+"kana": "こうえん",
+"jlpt": 5,
+"en": "a park"
+},
+{
+"surface": "お兄さん",
+"kana": "おにいさん",
+"jlpt": 5,
+"en": "(someone else's) older brother (formal)"
+},
+{
+"surface": "耳",
+"kana": "みみ",
+"jlpt": 5,
+"en": "ear"
+},
+{
+"surface": "三",
+"kana": "さん",
+"jlpt": 5,
+"en": "three"
+},
+{
+"surface": "時々",
+"kana": "ときどき",
+"jlpt": 5,
+"en": "sometimes"
+},
+{
+"surface": "出かける",
+"kana": "でかける",
+"jlpt": 5,
+"en": "to go out; to depart"
+},
+{
+"surface": "警官",
+"kana": "けいかん",
+"jlpt": 5,
+"en": "police officer"
+},
+{
+"surface": "去年",
+"kana": "きょねん",
+"jlpt": 5,
+"en": "last year"
+},
+{
+"surface": "窓",
+"kana": "まど",
+"jlpt": 5,
+"en": "window"
+},
+{
+"surface": "野菜",
+"kana": "やさい",
+"jlpt": 5,
+"en": "vegetable"
+},
+{
+"surface": "教室",
+"kana": "きょうしつ",
+"jlpt": 5,
+"en": "classroom"
+},
+{
+"surface": "昨夜",
+"kana": "ゆうべ",
+"jlpt": 5,
+"en": "last night"
+},
+{
+"surface": "冬",
+"kana": "ふゆ",
+"jlpt": 5,
+"en": "winter"
+},
+{
+"surface": "閉める",
+"kana": "しめる",
+"jlpt": 5,
+"en": "to close, to shut"
+},
+{
+"surface": "降りる",
+"kana": "おりる",
+"jlpt": 5,
+"en": "to get off"
+},
+{
+"surface": "暖かい",
+"kana": "あたたかい",
+"jlpt": 5,
+"en": "warm"
+},
+{
+"surface": "脱ぐ",
+"kana": "ぬぐ",
+"jlpt": 5,
+"en": "to take off (clothes)"
+},
+{
+"surface": "伯父",
+"kana": "おじさん",
+"jlpt": 5,
+"en": "uncle, middle-aged man"
+},
+{
+"surface": "兄弟",
+"kana": "きょうだい",
+"jlpt": 5,
+"en": "siblings (humble), brothers and sisters"
+},
+{
+"surface": "鳥",
+"kana": "とり",
+"jlpt": 5,
+"en": "chicken (lit., bird)"
+},
+{
+"surface": "家庭",
+"kana": "かてい",
+"jlpt": 5,
+"en": "home; family"
+},
+{
+"surface": "半分",
+"kana": "はんぶん",
+"jlpt": 5,
+"en": "half"
+},
+{
+"surface": "川",
+"kana": "かわ",
+"jlpt": 5,
+"en": "river"
+},
+{
+"surface": "新聞",
+"kana": "しんぶん",
+"jlpt": 5,
+"en": "newspaper"
+},
+{
+"surface": "動物",
+"kana": "どうぶつ",
+"jlpt": 5,
+"en": "animal"
+},
+{
+"surface": "旅行",
+"kana": "りょこう",
+"jlpt": 5,
+"en": "travel, trip"
+},
+{
+"surface": "降る",
+"kana": "ふる",
+"jlpt": 5,
+"en": "to precipitate, to fall (e.g., rain, snow, etc.)"
+},
+{
+"surface": "卵",
+"kana": "たまご",
+"jlpt": 5,
+"en": "egg"
+},
+{
+"surface": "二",
+"kana": "に",
+"jlpt": 5,
+"en": "two"
+},
+{
+"surface": "眼鏡",
+"kana": "めがね",
+"jlpt": 5,
+"en": "eye glasses"
+},
+{
+"surface": "橋",
+"kana": "はし",
+"jlpt": 5,
+"en": "bridge"
+},
+{
+"surface": "駅",
+"kana": "えき",
+"jlpt": 5,
+"en": "station"
+},
+{
+"surface": "あちら",
+"kana": "あちら",
+"jlpt": 5,
+"en": "this way (polite)"
+},
+{
+"surface": "あっち",
+"kana": "あっち",
+"jlpt": 5,
+"en": "over there"
+},
+{
+"surface": "いかが",
+"kana": "いかが",
+"jlpt": 5,
+"en": "how, in what way"
+},
+{
+"surface": "いくつ",
+"kana": "いくつ",
+"jlpt": 5,
+"en": "how many, how old"
+},
+{
+"surface": "いくら",
+"kana": "いくら",
+"jlpt": 5,
+"en": "how much, how many"
+},
+{
+"surface": "いつ",
+"kana": "いつ",
+"jlpt": 5,
+"en": "when"
+},
+{
+"surface": "いつも",
+"kana": "いつも",
+"jlpt": 5,
+"en": "always, usually, every time, never (with neg. verb)"
+},
+{
+"surface": "うち",
+"kana": "うち",
+"jlpt": 5,
+"en": "home; house; my place"
+},
+{
+"surface": "うるさい",
+"kana": "うるさい",
+"jlpt": 5,
+"en": "noisy; annoying"
+},
+{
+"surface": "おじいさん",
+"kana": "おじいさん",
+"jlpt": 5,
+"en": "grandfather, male senior citizen"
+},
+{
+"surface": "おととし",
+"kana": "おととし",
+"jlpt": 5,
+"en": "year before last"
+},
+{
+"surface": "おばあさん",
+"kana": "おばあさん",
+"jlpt": 5,
+"en": "grandmother, female senior-citizen"
+},
+{
+"surface": "おまわりさん",
+"kana": "おまわりさん",
+"jlpt": 5,
+"en": "policeman (friendly term)"
+},
+{
+"surface": "お弁当",
+"kana": "おべんとう",
+"jlpt": 5,
+"en": "a boxed lunch"
+},
+{
+"surface": "お手洗い",
+"kana": "おてあらい",
+"jlpt": 5,
+"en": "toilet, restroom, bathroom (lit., a place to wash one's hands)"
+},
+{
+"surface": "お皿",
+"kana": "おさら",
+"jlpt": 5,
+"en": "plate, dish"
+},
+{
+"surface": "お菓子",
+"kana": "おかし",
+"jlpt": 5,
+"en": "confections, sweets, snack"
+},
+{
+"surface": "お風呂",
+"kana": "おふろ",
+"jlpt": 5,
+"en": "a bath"
+},
+{
+"surface": "お～",
+"kana": "お～",
+"jlpt": 5,
+"en": "honorable ~ (honorific)"
+},
+{
+"surface": "かかる",
+"kana": "かかる",
+"jlpt": 5,
+"en": "it takes (amount of time, money) (v.i.)"
+},
+{
+"surface": "かける",
+"kana": "かける",
+"jlpt": 5,
+"en": "to dial/call (e.g., phone); to sit down"
+},
+{
+"surface": "かばん",
+"kana": "かばん",
+"jlpt": 5,
+"en": "bag, basket"
+},
+{
+"surface": "かぶる",
+"kana": "かぶる",
+"jlpt": 5,
+"en": "to wear, to put on (e.g., a hat on the head)"
+},
+{
+"surface": "ぐらい",
+"kana": "ぐらい",
+"jlpt": 5,
+"en": "approximate (quantity)"
+},
+{
+"surface": "こちら",
+"kana": "こちら",
+"jlpt": 5,
+"en": "this person (polite); this way (polite)"
+},
+{
+"surface": "こっち",
+"kana": "こっち",
+"jlpt": 5,
+"en": "this person; this direction; this side"
+},
+{
+"surface": "さあ",
+"kana": "さあ",
+"jlpt": 5,
+"en": "come now, well"
+},
+{
+"surface": "さ来年",
+"kana": "さらいねん",
+"jlpt": 5,
+"en": "year after next"
+},
+{
+"surface": "しかし",
+"kana": "しかし",
+"jlpt": 5,
+"en": "however; but"
+},
+{
+"surface": "すぐに",
+"kana": "すぐに",
+"jlpt": 5,
+"en": "immediately, soon"
+},
+{
+"surface": "そうして",
+"kana": "そうして",
+"jlpt": 5,
+"en": "and, like that"
+},
+{
+"surface": "そうです",
+"kana": "そうです",
+"jlpt": 5,
+"en": "yes; appears, to be the case"
+},
+{
+"surface": "そして",
+"kana": "そして",
+"jlpt": 5,
+"en": "and, like that"
+},
+{
+"surface": "そちら",
+"kana": "そちら",
+"jlpt": 5,
+"en": "over there"
+},
+{
+"surface": "そっち",
+"kana": "そっち",
+"jlpt": 5,
+"en": "over there"
+},
+{
+"surface": "そば",
+"kana": "そば",
+"jlpt": 5,
+"en": "near, close, beside; Japanese traditional buckwheat noodle"
+},
+{
+"surface": "それから",
+"kana": "それから",
+"jlpt": 5,
+"en": "and then, after that"
+},
+{
+"surface": "それでは",
+"kana": "それでは",
+"jlpt": 5,
+"en": "in that situation, well then..."
+},
+{
+"surface": "たて",
+"kana": "たて",
+"jlpt": 5,
+"en": "length, height"
+},
+{
+"surface": "たばこ",
+"kana": "たばこ",
+"jlpt": 5,
+"en": "tobacco, cigarettes"
+},
+{
+"surface": "つける",
+"kana": "つける",
+"jlpt": 5,
+"en": "to turn on (e.g., a light); to take"
+},
+{
+"surface": "つまらない",
+"kana": "つまらない",
+"jlpt": 5,
+"en": "boring, dull; insignificant"
+},
+{
+"surface": "できる",
+"kana": "できる",
+"jlpt": 5,
+"en": "to be able to (to accomplish)"
+},
+{
+"surface": "とても",
+"kana": "とても",
+"jlpt": 5,
+"en": "very (much), greatly, exceedingly"
+},
+{
+"surface": "どうして",
+"kana": "どうして",
+"jlpt": 5,
+"en": "why, for what reason"
+},
+{
+"surface": "どうぞ",
+"kana": "どうぞ",
+"jlpt": 5,
+"en": "please, kindly, by all means"
+},
+{
+"surface": "どうも",
+"kana": "どうも",
+"jlpt": 5,
+"en": "Thank you; somehow; no matter how hard one may try"
+},
+{
+"surface": "どちら",
+"kana": "どちら",
+"jlpt": 5,
+"en": "which (one) (way); where (polite)"
+},
+{
+"surface": "どっち",
+"kana": "どっち",
+"jlpt": 5,
+"en": "which one, which way"
+},
+{
+"surface": "どなた",
+"kana": "どなた",
+"jlpt": 5,
+"en": "who"
+},
+{
+"surface": "どの",
+"kana": "どの",
+"jlpt": 5,
+"en": "which"
+},
+{
+"surface": "どれ",
+"kana": "どれ",
+"jlpt": 5,
+"en": "which one"
+},
+{
+"surface": "どんな",
+"kana": "どんな",
+"jlpt": 5,
+"en": "what, what kind of"
+},
+{
+"surface": "なぜ",
+"kana": "なぜ",
+"jlpt": 5,
+"en": "why (same as どうして)"
+},
+{
+"surface": "にぎやか",
+"kana": "にぎやか",
+"jlpt": 5,
+"en": "bustling, busy"
+},
+{
+"surface": "はく",
+"kana": "はく",
+"jlpt": 5,
+"en": "to put on (items below your waist)"
+},
+{
+"surface": "まずい",
+"kana": "まずい",
+"jlpt": 5,
+"en": "terrible (in reference to food), unappetizing, unpleasant (taste)"
+},
+{
+"surface": "まっすぐ",
+"kana": "まっすぐ",
+"jlpt": 5,
+"en": "straight (ahead), direct"
+},
+{
+"surface": "みんな",
+"kana": "みんな",
+"jlpt": 5,
+"en": "all, everyone, everybody"
+},
+{
+"surface": "もしもし",
+"kana": "もしもし",
+"jlpt": 5,
+"en": "Hello? (used on the phone)"
+},
+{
+"surface": "もっと",
+"kana": "もっと",
+"jlpt": 5,
+"en": "more"
+},
+{
+"surface": "やる",
+"kana": "やる",
+"jlpt": 5,
+"en": "to do; to give (to pets, parents, siblings, etc.)"
+},
+{
+"surface": "ゆっくりと",
+"kana": "ゆっくりと",
+"jlpt": 5,
+"en": "slowly, at ease"
+},
+{
+"surface": "よい",
+"kana": "よい",
+"jlpt": 5,
+"en": "good"
+},
+{
+"surface": "よく",
+"kana": "よく",
+"jlpt": 5,
+"en": "frequently, often (much); well, skillfully"
+},
+{
+"surface": "りっぱ",
+"kana": "りっぱ",
+"jlpt": 5,
+"en": "splendid, fine"
+},
+{
+"surface": "アパート",
+"kana": "アパート",
+"jlpt": 5,
+"en": "apartment (abbr.)"
+},
+{
+"surface": "エレベーター",
+"kana": "エレベーター",
+"jlpt": 5,
+"en": "elevator"
+},
+{
+"surface": "カップ",
+"kana": "カップ",
+"jlpt": 5,
+"en": "cup"
+},
+{
+"surface": "カメラ",
+"kana": "カメラ",
+"jlpt": 5,
+"en": "camera"
+},
+{
+"surface": "カレンダー",
+"kana": "カレンダー",
+"jlpt": 5,
+"en": "calendar"
+},
+{
+"surface": "カレー",
+"kana": "カレー",
+"jlpt": 5,
+"en": "curry (abbr. for curry and rice)"
+},
+{
+"surface": "キロ",
+"kana": "キロ",
+"jlpt": 5,
+"en": "(abbr.) kilo (kilogram)"
+},
+{
+"surface": "キログラム",
+"kana": "キログラム",
+"jlpt": 5,
+"en": "(abbr.) kilo (kilogram)"
+},
+{
+"surface": "キロメートル",
+"kana": "キロメートル",
+"jlpt": 5,
+"en": "(abbr.) kilo (kilometer)"
+},
+{
+"surface": "ギター",
+"kana": "ギター",
+"jlpt": 5,
+"en": "guitar"
+},
+{
+"surface": "クラス",
+"kana": "クラス",
+"jlpt": 5,
+"en": "a class"
+},
+{
+"surface": "グラム",
+"kana": "グラム",
+"jlpt": 5,
+"en": "gram"
+},
+{
+"surface": "コップ",
+"kana": "コップ",
+"jlpt": 5,
+"en": "a tumbler; a glass"
+},
+{
+"surface": "コピーする",
+"kana": "コピーする",
+"jlpt": 5,
+"en": "to copy"
+},
+{
+"surface": "コート",
+"kana": "コート",
+"jlpt": 5,
+"en": "coat; court (e.g., tennis)"
+},
+{
+"surface": "コーヒー",
+"kana": "コーヒー",
+"jlpt": 5,
+"en": "coffee"
+},
+{
+"surface": "シャツ",
+"kana": "シャツ",
+"jlpt": 5,
+"en": "shirt"
+},
+{
+"surface": "シャワー",
+"kana": "シャワー",
+"jlpt": 5,
+"en": "shower"
+},
+{
+"surface": "スカート",
+"kana": "スカート",
+"jlpt": 5,
+"en": "skirt"
+},
+{
+"surface": "ストーブ",
+"kana": "ストーブ",
+"jlpt": 5,
+"en": "heater (lit: stove)"
+},
+{
+"surface": "スプーン",
+"kana": "スプーン",
+"jlpt": 5,
+"en": "spoon"
+},
+{
+"surface": "スポーツ",
+"kana": "スポーツ",
+"jlpt": 5,
+"en": "sport(s)"
+},
+{
+"surface": "ズボン",
+"kana": "ズボン",
+"jlpt": 5,
+"en": "trousers"
+},
+{
+"surface": "セーター",
+"kana": "セーター",
+"jlpt": 5,
+"en": "sweater"
+},
+{
+"surface": "ゼロ",
+"kana": "ゼロ",
+"jlpt": 5,
+"en": "zero"
+},
+{
+"surface": "タクシー",
+"kana": "タクシー",
+"jlpt": 5,
+"en": "taxi"
+},
+{
+"surface": "テスト",
+"kana": "テスト",
+"jlpt": 5,
+"en": "test"
+},
+{
+"surface": "テレビ",
+"kana": "テレビ",
+"jlpt": 5,
+"en": "television, TV"
+},
+{
+"surface": "テーブル",
+"kana": "テーブル",
+"jlpt": 5,
+"en": "table"
+},
+{
+"surface": "テープ",
+"kana": "テープ",
+"jlpt": 5,
+"en": "tape"
+},
+{
+"surface": "テープレコーダー",
+"kana": "テープレコーダー",
+"jlpt": 5,
+"en": "tape recorder"
+},
+{
+"surface": "デパート",
+"kana": "デパート",
+"jlpt": 5,
+"en": "(abbr.) department store"
+},
+{
+"surface": "トイレ",
+"kana": "トイレ",
+"jlpt": 5,
+"en": "bathroom; toilet"
+},
+{
+"surface": "ドア",
+"kana": "ドア",
+"jlpt": 5,
+"en": "door (Western style)"
+},
+{
+"surface": "ナイフ",
+"kana": "ナイフ",
+"jlpt": 5,
+"en": "knife"
+},
+{
+"surface": "ニュース",
+"kana": "ニュース",
+"jlpt": 5,
+"en": "news"
+},
+{
+"surface": "ネクタイ",
+"kana": "ネクタイ",
+"jlpt": 5,
+"en": "tie, necktie"
+}
+]
