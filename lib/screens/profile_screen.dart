@@ -20,6 +20,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   int _turns = 0;
   int _kanji = 0;
   int _words = 0;
+  int _jlptWords = 0;
 
   @override
   void initState() {
@@ -32,12 +33,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
     final turns = await appDb.turns.count().getSingle();
     final kanji = await appDb.kanji.count().getSingle();
     final words = await appDb.words.count().getSingle();
+    final jlpt = await appDb.jlptWords.count().getSingle();
     if (!mounted) return;
     setState(() {
       _memoCount = memo;
       _turns = turns;
       _kanji = kanji;
       _words = words;
+      _jlptWords = jlpt;
     });
   }
 
@@ -129,7 +132,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
           const SizedBox(height: 8),
           _SettingsGroup(items: [
             _SettingItem(icon: Icons.chat_bubble_outline, title: '회화 턴', subtitle: '$_turns턴 (L1 ep1 · 민준×사쿠라)'),
-            _SettingItem(icon: Icons.translate, title: '한자 사전', subtitle: '$_kanji자 · 회화 가중 빈도'),
+            _SettingItem(icon: Icons.translate, title: '한자 DB', subtitle: '$_kanji자 · JLPT N5-N1 + 회화 빈도'),
+            _SettingItem(icon: Icons.menu_book, title: 'JLPT 단어 · 후리가나', subtitle: '$_jlptWords어 · 한자↔읽기↔단어 링크'),
             _SettingItem(icon: Icons.format_list_numbered, title: '단어 빈도', subtitle: '$_words어 · R1-R4'),
           ]),
           const SizedBox(height: 16),

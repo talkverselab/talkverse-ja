@@ -24,15 +24,59 @@ class Turns extends Table {
 @DataClassName('KanjiRow')
 class Kanji extends Table {
   TextColumn get char => text()();
-  IntColumn get rank => integer().nullable()();
+  IntColumn get rank => integer().nullable()(); // 회화 가중 빈도 순위 (1,078 안)
   RealColumn get pct => real().nullable()();
+  IntColumn get jlpt => integer().nullable()(); // 5..1 (N5..N1)
+  IntColumn get grade => integer().nullable()(); // 학년 (1-6, 8=중학)
+  IntColumn get strokes => integer().nullable()();
   TextColumn get meaningKo => text().nullable()(); // 대표 훈음 (예: '말씀 언')
+  TextColumn get meaningsKoJson => text().nullable()(); // 훈음 목록 JSON
+  TextColumn get meaningsEn => text().nullable()();
   TextColumn get onyomi => text().nullable()(); // 음독 (·구분)
   TextColumn get kunyomi => text().nullable()(); // 훈독 (·구분)
   TextColumn get koHanja => text().nullable()();
 
   @override
   Set<Column> get primaryKey => {char};
+}
+
+/// 한자 1자의 읽기 1개 (음독/훈독) — kind: 'on' | 'kun'
+@DataClassName('KanjiReadingRow')
+class KanjiReadings extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  TextColumn get char => text().references(Kanji, #char)();
+  TextColumn get reading => text()(); // 표시용 (음독 가타카나 / 훈독 'い-きる')
+  TextColumn get base => text()(); // 매칭용 히라가나 base (い)
+  TextColumn get kind => text()();
+  TextColumn get gloss => text().nullable()();
+}
+
+/// JLPT 어휘 + 회화 top2500 한자어. segsJson = [[text, reading|null], ...]
+@DataClassName('JlptWordRow')
+class JlptWords extends Table {
+  IntColumn get id => integer()();
+  TextColumn get surface => text()();
+  TextColumn get kana => text()();
+  IntColumn get jlpt => integer().nullable()();
+  TextColumn get en => text().nullable()();
+  TextColumn get ko => text().nullable()();
+  IntColumn get rank => integer().nullable()();
+  TextColumn get src => text().nullable()();
+  TextColumn get segsJson => text().nullable()();
+
+  @override
+  Set<Column> get primaryKey => {id};
+}
+
+/// 단어 안 후리가나 분절 — 한자 1자 분절이면 char 채움 (한자↔읽기↔단어 링크)
+@DataClassName('WordSegmentRow')
+class WordSegments extends Table {
+  IntColumn get id => integer().autoIncrement()();
+  IntColumn get wordId => integer().references(JlptWords, #id)();
+  IntColumn get idx => integer()();
+  TextColumn get segText => text()();
+  TextColumn get reading => text().nullable()();
+  TextColumn get char => text().nullable()();
 }
 
 @DataClassName('WordRow')
@@ -95,6 +139,9 @@ class UserMemos extends Table {
 @DriftDatabase(tables: [
   Turns,
   Kanji,
+  KanjiReadings,
+  JlptWords,
+  WordSegments,
   Words,
   UserProgress,
   KanjiProgress,
@@ -108,7 +155,19 @@ class AppDatabase extends _$AppDatabase {
   AppDatabase.forTesting(super.executor);
 
   @override
-  int get schemaVersion => 1;
+  int get schemaVersion => 2;
+
+  @override
+  MigrationStrategy get migration => MigrationStrategy(
+        onCreate: (m) => m.createAll(),
+        onUpgrade: (m, from, to) async {
+          // 미출시 단계: 스키마 변경 시 전체 재생성 (SeedLoader 키 버전과 함께 올림)
+          for (final t in allTables) {
+            await m.deleteTable(t.actualTableName);
+          }
+          await m.createAll();
+        },
+      );
 
   static QueryExecutor _openConnection() {
     return driftDatabase(name: 'japanese_universe');

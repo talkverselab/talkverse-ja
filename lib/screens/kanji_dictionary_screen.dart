@@ -18,14 +18,16 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
   List<KanjiEntry> _all = const [];
   List<KanjiEntry> _results = const [];
   bool _loading = true;
-  String _filter = 'ALL'; // ALL | 1-100 | 101-300 | 301-600 | 601+
+  String _filter = 'ALL'; // ALL | N5..N1 | TOP (회화 300)
 
   static const _ranges = {
-    'ALL': ('전체', 1, 100000),
-    'R1': ('1-100', 1, 100),
-    'R2': ('101-300', 101, 300),
-    'R3': ('301-600', 301, 600),
-    'R4': ('601+', 601, 100000),
+    'ALL': ('전체', null),
+    'N5': ('N5', 5),
+    'N4': ('N4', 4),
+    'N3': ('N3', 3),
+    'N2': ('N2', 2),
+    'N1': ('N1', 1),
+    'TOP': ('회화 Top300', -1),
   };
 
   @override
@@ -57,7 +59,14 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
   Widget build(BuildContext context) {
     final searching = _ctrl.text.trim().isNotEmpty;
     final range = _ranges[_filter]!;
-    final list = searching ? _results : _all.where((e) => e.rank >= range.$2 && e.rank <= range.$3).toList();
+    final lv = range.$2;
+    final list = searching
+        ? _results
+        : lv == null
+            ? _all
+            : lv == -1
+                ? (_all.where((e) => e.rank <= 300).toList()..sort((a, b) => a.rank.compareTo(b.rank)))
+                : (_all.where((e) => e.jlpt == lv).toList()..sort((a, b) => a.rank.compareTo(b.rank)));
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
@@ -66,7 +75,7 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
           children: [
             const Text('한자 사전', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('${_all.length}자 · 회화 가중 빈도순',
+            Text('${_all.length}자 · JLPT N5-N1 + 회화 빈도',
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -177,7 +186,7 @@ class _KanjiRow extends StatelessWidget {
           children: [
             SizedBox(
               width: 44,
-              child: Text('#${e.rank}',
+              child: Text(e.rank < 9999 ? '#${e.rank}' : '—',
                   style: const TextStyle(fontSize: 11, color: AppColors.sumiLight, fontWeight: FontWeight.w700)),
             ),
             Container(
@@ -215,8 +224,20 @@ class _KanjiRow extends StatelessWidget {
                 ],
               ),
             ),
-            Text('${e.pct.toStringAsFixed(2)}%',
-                style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                if (e.jlpt != null)
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
+                    color: AppColors.ai,
+                    child: Text('N${e.jlpt}',
+                        style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppColors.washi)),
+                  ),
+                if (e.rank < 9999)
+                  Text('${e.pct.toStringAsFixed(2)}%', style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+              ],
+            ),
           ],
         ),
       ),

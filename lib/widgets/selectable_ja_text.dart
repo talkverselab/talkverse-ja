@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
+import '../services/word_service.dart';
+import 'furigana_text.dart';
 import 'japanese_decor.dart';
+import 'word_sheet.dart';
 
 /// 문장 내 한자를 탭하면 한자 정보 시트를 띄움. 가나·기호는 일반 텍스트.
 class SelectableJaText extends StatefulWidget {
@@ -94,20 +97,39 @@ Future<void> showKanjiSheet(BuildContext context, {required String char, KanjiEn
   );
 }
 
-/// 한자 1자 정보 시트 — 훈음·음독·훈독·예시 단어·빈도.
-class KanjiInfoSheet extends StatelessWidget {
+/// 한자 1자 정보 시트 — 훈음·JLPT·음독·훈독·읽기별 단어(DB)·예시 단어.
+class KanjiInfoSheet extends StatefulWidget {
   final String char;
   final KanjiEntry? entry;
   const KanjiInfoSheet({super.key, required this.char, this.entry});
 
   @override
+  State<KanjiInfoSheet> createState() => _KanjiInfoSheetState();
+}
+
+class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
+  List<ReadingGroup>? _groups;
+
+  @override
+  void initState() {
+    super.initState();
+    WordService.instance.wordsForKanji(widget.char).then((g) {
+      if (mounted) setState(() => _groups = g);
+    }).catchError((_) {
+      if (mounted) setState(() => _groups = const []);
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    final e = entry;
+    final e = widget.entry;
+    final char = widget.char;
+    final groups = _groups;
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
         child: ConstrainedBox(
-          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.75),
+          constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.8),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.min,
@@ -126,12 +148,7 @@ class KanjiInfoSheet extends StatelessWidget {
                       ),
                       child: Text(
                         char,
-                        style: const TextStyle(
-                          fontSize: 60,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.beni,
-                          height: 1,
-                        ),
+                        style: const TextStyle(fontSize: 60, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1),
                       ),
                     ),
                     const SizedBox(width: 14),
@@ -140,22 +157,23 @@ class KanjiInfoSheet extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            e == null || e.meanings.isEmpty ? '(뜻 정보 없음)' : e.meaningJoined,
-                            style: const TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.sumi,
-                              height: 1.2,
-                            ),
+                            e == null || e.meanings.isEmpty
+                                ? (e != null && e.meaningsEn.isNotEmpty ? e.meaningsEn : '(뜻 정보 없음)')
+                                : e.meaningJoined,
+                            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi, height: 1.2),
                           ),
+                          if (e != null && e.meanings.isNotEmpty && e.meaningsEn.isNotEmpty)
+                            Text(e.meaningsEn, style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
                           const SizedBox(height: 6),
                           if (e != null)
                             Wrap(
                               spacing: 6,
                               runSpacing: 4,
                               children: [
-                                _Tag('빈도 #${e.rank}', AppColors.beni),
-                                _Tag('${e.pct.toStringAsFixed(2)}%', AppColors.kinDeep),
+                                if (e.jlpt != null) _Tag('JLPT N${e.jlpt}', AppColors.ai),
+                                if (e.rank < 9999) _Tag('회화 #${e.rank}', AppColors.beni),
+                                if (e.strokes != null) _Tag('${e.strokes}획', AppColors.kinDeep),
+                                if (e.grade != null) _Tag(e.grade! <= 6 ? '초${e.grade}' : '중학', AppColors.matcha),
                               ],
                             ),
                         ],
@@ -180,40 +198,43 @@ class KanjiInfoSheet extends StatelessWidget {
                   if (e.on.isNotEmpty) _ReadingRow(label: '음독', color: AppColors.ai, readings: e.on),
                   if (e.kun.isNotEmpty) _ReadingRow(label: '훈독', color: AppColors.matcha, readings: e.kun),
                 ],
-                if (e != null && e.words.isNotEmpty) ...[
-                  const SizedBox(height: 14),
-                  Row(
-                    children: [
-                      const SealStamp(text: '語', size: 20),
-                      const SizedBox(width: 8),
-                      const Text(
-                        '예시 단어',
-                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.5),
-                      ),
-                    ],
-                  ),
+                const SizedBox(height: 10),
+                Row(
+                  children: [
+                    const SealStamp(text: '語', size: 20),
+                    const SizedBox(width: 8),
+                    const Text('읽기별 단어',
+                        style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.5)),
+                    const SizedBox(width: 6),
+                    if (groups != null)
+                      Text('${groups.fold<int>(0, (n, g) => n + g.words.length)}어 · ${groups.length}읽기',
+                          style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                if (groups == null)
+                  const Padding(
+                    padding: EdgeInsets.symmetric(vertical: 12),
+                    child: Center(
+                        child: SizedBox(
+                            width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.beni))),
+                  )
+                else if (groups.isEmpty)
+                  const Text('연결된 단어가 아직 없어요.', style: TextStyle(fontSize: 12, color: AppColors.sumiLight))
+                else
+                  ...groups.map((g) => _ReadingGroupBlock(char: char, group: g)),
+                if (e != null && e.words.isNotEmpty && (groups == null || groups.isEmpty)) ...[
                   const SizedBox(height: 8),
                   ...e.words.take(6).map((w) => Padding(
                         padding: const EdgeInsets.symmetric(vertical: 4),
                         child: Row(
                           children: [
                             Expanded(
-                              child: Text(
-                                w.word,
-                                style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi),
-                              ),
-                            ),
+                                child: Text(w.word,
+                                    style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi))),
                             if (w.ko.isNotEmpty)
-                              Expanded(
-                                child: Text(
-                                  w.ko,
-                                  style: const TextStyle(fontSize: 13, color: AppColors.sumiLight),
-                                ),
-                              ),
-                            Text(
-                              '#${w.rank}',
-                              style: const TextStyle(fontSize: 11, color: AppColors.sumiLight),
-                            ),
+                              Expanded(child: Text(w.ko, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight))),
+                            Text('#${w.rank}', style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
                             const SizedBox(width: 6),
                             InkWell(
                               onTap: () => TtsService.instance.speak(w.word),
@@ -227,6 +248,70 @@ class KanjiInfoSheet extends StatelessWidget {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// 읽기 1개 그룹 — 헤더(읽기 + 개수) + 단어 칩(루비)
+class _ReadingGroupBlock extends StatelessWidget {
+  final String char;
+  final ReadingGroup group;
+  const _ReadingGroupBlock({required this.char, required this.group});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 10),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                decoration: BoxDecoration(
+                    color: AppColors.washiDeep, border: Border.all(color: AppColors.kin.withValues(alpha: 0.6))),
+                child: Text(
+                  '$char = ${group.reading}',
+                  style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w900, color: AppColors.ai),
+                ),
+              ),
+              const SizedBox(width: 6),
+              Text('${group.words.length}어', style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Wrap(
+            spacing: 8,
+            runSpacing: 6,
+            children: group.words
+                .map((w) => InkWell(
+                      onTap: () => showWordSheet(context, w),
+                      child: Container(
+                        padding: const EdgeInsets.fromLTRB(8, 4, 8, 4),
+                        decoration: BoxDecoration(
+                          color: AppColors.washi,
+                          border: Border.all(color: AppColors.kin.withValues(alpha: 0.5)),
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            FuriganaText(segs: w.segs, fontSize: 17, tappable: false, highlightChar: char),
+                            if (w.gloss.isNotEmpty)
+                              Text(
+                                '${w.jlptLabel} · ${w.gloss}',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(fontSize: 10, color: w.hasKo ? AppColors.sumi : AppColors.sumiLight),
+                              ),
+                          ],
+                        ),
+                      ),
+                    ))
+                .toList(),
+          ),
+        ],
       ),
     );
   }
