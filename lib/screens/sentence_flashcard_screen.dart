@@ -5,6 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
 import '../main.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import 'episode_screen.dart';
@@ -170,6 +171,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: _koFirst ? '한국어 먼저 (탭: 일본어 먼저)' : '일본어 먼저 (탭: 한국어 먼저)',
             onPressed: _toggleDirection,
@@ -312,6 +314,15 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                               fontStyle: FontStyle.italic,
                               fontWeight: FontWeight.w700,
                               color: AppColors.beni,
+                            ),
+                          ),
+                        if (turn.kana != null)
+                          KoReadingText(
+                            turn.kana!,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                              fontSize: 13,
+                              color: AppColors.sumiLight,
                             ),
                           ),
                         if (_flipped && turn.ko != null) ...[

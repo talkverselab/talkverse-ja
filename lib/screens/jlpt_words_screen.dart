@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
 import '../widgets/furigana_text.dart';
@@ -111,6 +112,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: '후리가나',
             icon: Text('ふ',
@@ -230,7 +232,17 @@ class _WordRow extends StatelessWidget {
             const SizedBox(width: 12),
             Expanded(
               flex: 5,
-              child: FuriganaText(segs: w.segs, fontSize: 20, showRuby: showRuby),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  FuriganaText(segs: w.segs, fontSize: 20, showRuby: showRuby),
+                  KoReadingText(
+                    w.kana,
+                    style: const TextStyle(
+                        fontSize: 10, color: AppColors.sumiLight),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(width: 8),
             Expanded(
