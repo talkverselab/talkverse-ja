@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/theme.dart';
 import '../services/deck_service.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
@@ -234,6 +235,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
+        actions: const [KoReadingToggleAction()],
       ),
       body: cards.isEmpty
           ? const Center(child: Text('카드가 없어요', style: TextStyle(color: AppColors.sumiLight)))
@@ -313,6 +315,11 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
                             textAlign: TextAlign.center,
                             style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700)),
                       ],
+                      if (card.kana.isNotEmpty)
+                        KoReadingText(card.kana,
+                            textAlign: TextAlign.center,
+                            style: const TextStyle(
+                                fontSize: 12, color: AppColors.sumiLight)),
                       if (_flipped) ...[
                         const SizedBox(height: 16),
                         const BrushDivider(height: 2),

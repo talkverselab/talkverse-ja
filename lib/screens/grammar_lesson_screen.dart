@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
@@ -50,6 +51,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           if (data != null)
             IconButton(
               tooltip: '조사 테스트',
@@ -227,6 +229,9 @@ class _ParticleTileState extends State<_ParticleTile> {
                                         ),
                                         if (ex['kana'] != null && ex['kana'] != ex['ja'])
                                           Text(ex['kana'] as String,
+                                              style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
+                                        if (ex['kana'] != null)
+                                          KoReadingText(ex['kana'] as String,
                                               style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
                                         Text(ex['ko'] as String,
                                             style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w600)),

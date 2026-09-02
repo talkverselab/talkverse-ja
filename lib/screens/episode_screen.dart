@@ -7,6 +7,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
 import '../main.dart';
+import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/memo_toggle.dart';
@@ -154,6 +155,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
           ],
         ),
         actions: [
+          const KoReadingToggleAction(),
           IconButton(
             tooltip: '가나 표시',
             icon: Text('か',
@@ -300,6 +302,11 @@ class _EpisodeBubble extends StatelessWidget {
                 style: TextStyle(fontSize: 12, color: bubbleText.withValues(alpha: 0.85)),
               ),
             ],
+            if (turn.kana != null)
+              KoReadingText(
+                turn.kana!,
+                style: TextStyle(fontSize: 11, color: bubbleText.withValues(alpha: 0.75)),
+              ),
             if (showRomaji && turn.romaji != null) ...[
               const SizedBox(height: 2),
               Text(

@@ -15,6 +15,7 @@ import 'kanji_dictionary_screen.dart';
 import 'kanji_stages_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
+import 'topic_vocab_screen.dart';
 import 'word_freq_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -254,6 +255,8 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const KanjiDictionaryScreen()),
       _MenuItem(label: 'JLPT 단어', sub: '8,600어 · 후리가나', seal: 'N5', color: AppColors.matcha,
         builder: (_) => const JlptWordsScreen()),
+      _MenuItem(label: '필수 단어', sub: 'Day별 975어 · 외우기', seal: '単語', color: AppColors.kin,
+        builder: (_) => const TopicVocabScreen()),
       _MenuItem(label: '한자음', sub: '한국 한자음 ↔ 音読み', seal: '音', color: AppColors.aiDeep,
         builder: (_) => const HanjaSoundScreen()),
       _MenuItem(label: '단어 빈도', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
