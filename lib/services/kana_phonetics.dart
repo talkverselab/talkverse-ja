@@ -305,3 +305,68 @@ String _koYou(String onset, String v) {
   const map = {'a': 'ㅑ', 'u': 'ㅠ', 'o': 'ㅛ'};
   return '자음 + ${map[v] ?? v}';
 }
+
+/// IPA 모음 사다리꼴 위의 좌표 (x: 0=전설 → 1=후설, y: 0=고모음 → 1=저모음)
+class VowelPoint {
+  final double x, y;
+  final String ipa; // 기호
+  final String label; // 예: father의 a
+  const VowelPoint(this.x, this.y, this.ipa, this.label);
+}
+
+/// 일본어 모음 1개 vs 영어 이웃 모음들 — 같은 차트 위 비교용
+class VowelChartData {
+  final VowelPoint ja;
+  final List<VowelPoint> eng;
+  final String note; // 입술 모양 등 핵심 차이 한 줄
+  const VowelChartData({required this.ja, required this.eng, required this.note});
+}
+
+const Map<String, VowelChartData> _vowelCharts = {
+  'a': VowelChartData(
+    ja: VowelPoint(0.50, 1.00, 'ä', 'あ'),
+    eng: [
+      VowelPoint(0.97, 0.97, 'ɑ', 'father'),
+      VowelPoint(0.10, 0.82, 'æ', 'cat'),
+    ],
+    note: 'あ는 입안 정중앙 아래. father의 ɑ보다 앞, cat의 æ보다 뒤·아래.',
+  ),
+  'i': VowelChartData(
+    ja: VowelPoint(0.03, 0.03, 'i', 'い'),
+    eng: [
+      VowelPoint(0.00, 0.00, 'iː', 'see'),
+      VowelPoint(0.16, 0.16, 'ɪ', 'sit'),
+    ],
+    note: 'い는 see의 iː와 거의 같은 자리. 단, 길게 끌지 않는다. sit의 ɪ보다는 높고 앞.',
+  ),
+  'u': VowelChartData(
+    ja: VowelPoint(0.82, 0.06, 'ɯᵝ', 'う'),
+    eng: [
+      VowelPoint(1.00, 0.00, 'uː', 'boot'),
+      VowelPoint(0.84, 0.18, 'ʊ', 'book'),
+    ],
+    note: 'う는 boot의 uː보다 약간 앞이고, 결정적으로 입술을 안 둥글린다(비원순).',
+  ),
+  'e': VowelChartData(
+    ja: VowelPoint(0.12, 0.42, 'e̞', 'え'),
+    eng: [
+      VowelPoint(0.10, 0.50, 'ɛ', 'get'),
+      VowelPoint(0.05, 0.33, 'e', 'gate 첫부분'),
+    ],
+    note: 'え는 get의 ɛ와 gate 첫소리 e의 딱 중간 높이. 순수 단모음으로 유지.',
+  ),
+  'o': VowelChartData(
+    ja: VowelPoint(0.95, 0.42, 'o̞', 'お'),
+    eng: [
+      VowelPoint(1.00, 0.33, 'oʊ', 'go 첫부분'),
+      VowelPoint(1.00, 0.58, 'ɔː', 'thought'),
+    ],
+    note: 'お는 go의 첫소리와 thought의 ɔː 사이. 이중모음처럼 u로 미끄러지지 않는다.',
+  ),
+};
+
+/// romaji 음절의 모음 비교 차트 데이터 (ん 등 모음 없는 음절은 null)
+VowelChartData? vowelChartOf(String romaji) {
+  if (romaji.isEmpty || romaji == 'n') return null;
+  return _vowelCharts[romaji.substring(romaji.length - 1)];
+}
