@@ -305,9 +305,63 @@ branches = [
   ]},
 ]
 
-total = sum(len(b['words']) for b in branches)
-data = {"_meta": f"영어유래 외래어 음차 분석 — 줄기 {len(branches)}개 · {total}어",
+# ---- 2단계: JLPT DB 카타카나 전체 자동 추출·분류 ----
+import re
+kata = re.compile(r'^[ァ-ヺー・]+$')
+db = json.load(open('assets/data/words/words_jlpt.json', encoding='utf-8'))
+
+# JLPT 급수 조회 (같은 표기 여러 급수면 낮은 난도=높은 N 우선)
+jlpt_of = {}
+gloss_of = {}
+rank_of = {}
+for e in db['entries']:
+    w = e['surface']
+    if not kata.match(w):
+        continue
+    lv = e.get('jlpt')
+    if lv is None:
+        continue
+    if w not in jlpt_of or lv > jlpt_of[w]:
+        jlpt_of[w] = lv
+        gloss_of[w] = e.get('ko') or e.get('en') or ''
+        rank_of[w] = e.get('rank') or 99999
+
+# 1단계(큐레이션) 단어에 급수 태그 부착 + 수록 목록화
+curated = {}
+for b in branches:
+    for w in b['words']:
+        w['st'] = 1
+        if w['ja'] in jlpt_of:
+            w['jlpt'] = jlpt_of[w['ja']]
+        curated[w['ja']] = True
+
+by_id = {b['id']: b for b in branches}
+
+def classify(w):
+    if 'ヴ' in w: return 'v'
+    if re.search(r'フ[ァィェォュ]', w): return 'f'
+    if w.endswith('ー') and len(w) > 2: return 'long'
+    if re.search(r'[ラリルレロ]', w): return 'lr'
+    return 'vowel'
+
+added = 0
+new_words = {}
+for w, lv in jlpt_of.items():
+    if w in curated:
+        continue
+    bid = classify(w)
+    new_words.setdefault(bid, []).append(
+        {'ja': w, 'en': '', 'ko': gloss_of[w], 'st': 2, 'jlpt': lv})
+    added += 1
+
+for bid, ws in new_words.items():
+    ws.sort(key=lambda x: (-x['jlpt'], rank_of.get(x['ja'], 99999)))
+    by_id[bid]['words'].extend(ws)
+
+total1 = sum(1 for b in branches for w in b['words'] if w['st'] == 1)
+total2 = sum(len(b['words']) for b in branches)
+data = {"_meta": f"외래어 음차 분석 — 1단계 {total1}어(큐레이션) · 2단계 {total2}어(JLPT 전체 포함)",
         "branches": branches}
 json.dump(data, open('assets/data/vocab/gairaigo.json', 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
-print('branches:', len(branches), 'words:', total)
+print('branches:', len(branches), '1단계:', total1, '2단계 전체:', total2, '(자동 추가', added, ')')
