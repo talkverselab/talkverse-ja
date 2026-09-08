@@ -345,6 +345,19 @@ class _FamilySheet extends StatelessWidget {
   static String _norm(String r) =>
       r.split('-').first.split('').map((c) => _daku[c] ?? c).join();
 
+  /// 훈음 목록 → 한국 한자음 집합 ('어찌 하' → 하)
+  static Set<String> _eumsOf(KanjiEntry e) {
+    final out = <String>{};
+    for (final m in e.meanings) {
+      final t = m.trim();
+      if (t.isEmpty) continue;
+      final last = t.characters.last;
+      final code = last.codeUnitAt(0);
+      if (code >= 0xAC00 && code <= 0xD7A3) out.add(last);
+    }
+    return out;
+  }
+
   @override
   Widget build(BuildContext context) {
     final rootNorm = _norm(root.on);
@@ -354,8 +367,15 @@ class _FamilySheet extends StatelessWidget {
     final similar = <KanjiEntry>[];
     final except = <KanjiEntry>[];
 
-    // 루트 자신도 db에 있으면 완전공유 맨 앞에
     final rootEntry = KanjiIndexService.instance.lookup(root.root);
+    // 기준 한국 한자음: roots 데이터의 ko, 없으면 루트 훈음에서
+    var rootKo = root.ko;
+    if (rootKo == null && rootEntry != null) {
+      final es = _eumsOf(rootEntry);
+      if (es.isNotEmpty) rootKo = es.first;
+    }
+
+    // 루트 자신은 완전공유 맨 앞에
     if (rootEntry != null) exact.add(rootEntry);
 
     for (final c in root.members) {
@@ -364,12 +384,17 @@ class _FamilySheet extends StatelessWidget {
       if (e == null || e.on.isEmpty) continue;
       final ons = e.on.map((r) => r.reading).toList();
       final norms = ons.map(_norm).toList();
-      if (ons.contains(root.on)) {
+      final jaExact = ons.contains(root.on);
+      final jaDaku = !jaExact && norms.contains(rootNorm);
+      final koSame = rootKo != null && _eumsOf(e).contains(rootKo);
+      if (jaExact && koSame) {
+        // 완전공유: 일본 음독 + 한국 한자음 모두 같음 (가=가)
         exact.add(e);
-      } else if (norms.contains(rootNorm)) {
+      } else if (jaExact || (jaDaku && koSame)) {
+        // 부분공유: 음독은 같은데 한자음 다름(하), 또는 탁음만 차이
         partial.add(e);
-      } else if (rootFirst.isNotEmpty &&
-          norms.any((n) => n.startsWith(rootFirst))) {
+      } else if (jaDaku ||
+          (rootFirst.isNotEmpty && norms.any((n) => n.startsWith(rootFirst)))) {
         similar.add(e);
       } else {
         except.add(e);
@@ -449,11 +474,11 @@ class _FamilySheet extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             if (exact.isNotEmpty)
-              _groupBox(context, '완전공유', '음독이 완전히 같음', const Color(0xFF2E7D32), exact),
+              _groupBox(context, '완전공유', '음독·한국 한자음 모두 같음', const Color(0xFF2E7D32), exact),
             if (partial.isNotEmpty)
-              _groupBox(context, '부분공유', '탁음·반탁음만 다름', const Color(0xFFB26A00), partial),
+              _groupBox(context, '부분공유', '음독은 같지만 한자음 다름 · 탁음 차이', const Color(0xFFB26A00), partial),
             if (similar.isNotEmpty)
-              _groupBox(context, '비슷한 음차', '첫소리 같음, 끝이 변형', const Color(0xFF1565C0), similar),
+              _groupBox(context, '비슷한 음차', '첫소리 같음, 끝·탁음 변형', const Color(0xFF1565C0), similar),
             if (except.isNotEmpty)
               _groupBox(context, '예외', '음이 크게 달라짐', const Color(0xFFC62828), except),
             const SizedBox(height: 10),
