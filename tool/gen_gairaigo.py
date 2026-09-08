@@ -337,21 +337,40 @@ for b in branches:
 
 by_id = {b['id']: b for b in branches}
 
+import sys, os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from gairaigo_ko_fix import KO_FIX, BRANCH_FIX, EN_FIX
+
 def classify(w):
+    if w in BRANCH_FIX: return BRANCH_FIX[w]
     if 'ヴ' in w: return 'v'
     if re.search(r'フ[ァィェォュ]', w): return 'f'
     if w.endswith('ー') and len(w) > 2: return 'long'
     if re.search(r'[ラリルレロ]', w): return 'lr'
     return 'vowel'
 
+def clean_en(g):
+    # DB 영문 뜻에서 원어 후보(첫 항목)만
+    g = re.split(r'[,;(]', g)[0].strip()
+    return g if re.fullmatch(r"[A-Za-z' .\-]+", g) else ''
+
+hangul = re.compile(r'[가-힣]')
 added = 0
 new_words = {}
 for w, lv in jlpt_of.items():
     if w in curated:
         continue
     bid = classify(w)
-    new_words.setdefault(bid, []).append(
-        {'ja': w, 'en': '', 'ko': gloss_of[w], 'st': 2, 'jlpt': lv})
+    raw = gloss_of[w]
+    if hangul.search(raw):
+        ko, en = raw, ''
+    else:
+        ko = KO_FIX.get(w, raw)
+        en = EN_FIX.get(w, clean_en(raw))
+    entry = {'ja': w, 'en': en, 'ko': ko, 'st': 2, 'jlpt': lv}
+    if w in EN_FIX:
+        entry['ex'] = True
+    new_words.setdefault(bid, []).append(entry)
     added += 1
 
 for bid, ws in new_words.items():
