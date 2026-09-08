@@ -23,13 +23,32 @@ class _Root {
   final String on; // 대표 음독
   final String? ko; // 한국 한자음
   final List<String> members; // 빈도순
-  const _Root({required this.root, required this.on, this.ko, required this.members});
+  final int bestRank; // 가장 빈도 높은 멤버의 회화 순위
+  const _Root(
+      {required this.root, required this.on, this.ko, required this.members, required this.bestRank});
+
+  /// 절벽구간 (회화 빈도 기준)
+  String get region => bestRank <= 294
+      ? 'R1'
+      : bestRank <= 437
+          ? 'R2'
+          : bestRank <= 998
+              ? 'R3'
+              : 'R4';
 }
+
+const Map<String, Color> _regionColors = {
+  'R1': AppColors.beni,
+  'R2': AppColors.beniLight,
+  'R3': AppColors.kin,
+  'R4': AppColors.matcha,
+};
 
 class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
   bool _loading = true;
   List<_Root> _roots = [];
   String _query = '';
+  String _region = 'ALL';
 
   @override
   void initState() {
@@ -61,9 +80,11 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
         on: (m['on'] as String?) ?? '',
         ko: m['ko'] as String?,
         members: members,
+        bestRank: rankOf(members.first),
       ));
     }
-    roots.sort((a, b) => b.members.length.compareTo(a.members.length));
+    // 절벽구간(빈도) 순 — 내 회화 절벽 기준으로 공부
+    roots.sort((a, b) => a.bestRank.compareTo(b.bestRank));
     if (!mounted) return;
     setState(() {
       _roots = roots;
@@ -72,9 +93,10 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
   }
 
   List<_Root> get _filtered {
+    final base = _region == 'ALL' ? _roots : _roots.where((r) => r.region == _region).toList();
     final q = _query.trim();
-    if (q.isEmpty) return _roots;
-    return _roots.where((r) {
+    if (q.isEmpty) return base;
+    return base.where((r) {
       if (r.root == q || r.on.contains(q)) return true;
       if (r.ko != null && r.ko!.contains(q)) return true;
       if (KanjiIndexService.toHiragana(r.on).contains(q)) return true;
@@ -163,6 +185,44 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                     ],
                   ),
                 ),
+                Container(
+                  color: AppColors.washiDeep,
+                  padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                  child: SizedBox(
+                    height: 34,
+                    child: ListView(
+                      scrollDirection: Axis.horizontal,
+                      children: ['ALL', 'R1', 'R2', 'R3', 'R4'].map((k) {
+                        final selected = _region == k;
+                        final c = _regionColors[k] ?? AppColors.sumi;
+                        final label = k == 'ALL'
+                            ? '전체'
+                            : '$k · ${_roots.where((r) => r.region == k).length}';
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: GestureDetector(
+                            onTap: () => setState(() => _region = k),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                              decoration: BoxDecoration(
+                                color: selected ? c : AppColors.washi,
+                                border: Border.all(color: c, width: selected ? 1.5 : 0.8),
+                              ),
+                              child: Text(
+                                label,
+                                style: TextStyle(
+                                  color: selected ? AppColors.washi : c,
+                                  fontWeight: FontWeight.w800,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      }).toList(),
+                    ),
+                  ),
+                ),
                 const AsanohaDivider(height: 8),
                 Expanded(
                   child: GridView.builder(
@@ -223,16 +283,39 @@ class _RootCard extends StatelessWidget {
                         style: const TextStyle(fontSize: 11, color: AppColors.sumiLight),
                       ),
                     const SizedBox(height: 4),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                      decoration: BoxDecoration(
-                        color: AppColors.kin.withValues(alpha: 0.2),
-                        border: Border.all(color: AppColors.kin),
-                      ),
-                      child: Text(
-                        '가족 ${root.members.length}자',
-                        style: const TextStyle(fontSize: 9, color: AppColors.sumi, fontWeight: FontWeight.w700),
-                      ),
+                    Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: (_regionColors[root.region] ?? AppColors.sumi)
+                                .withValues(alpha: 0.15),
+                            border: Border.all(
+                                color: _regionColors[root.region] ?? AppColors.sumi),
+                          ),
+                          child: Text(
+                            root.region,
+                            style: TextStyle(
+                                fontSize: 9,
+                                color: _regionColors[root.region] ?? AppColors.sumi,
+                                fontWeight: FontWeight.w800),
+                          ),
+                        ),
+                        const SizedBox(width: 4),
+                        Container(
+                          padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                          decoration: BoxDecoration(
+                            color: AppColors.kin.withValues(alpha: 0.2),
+                            border: Border.all(color: AppColors.kin),
+                          ),
+                          child: Text(
+                            '가족 ${root.members.length}자',
+                            style: const TextStyle(
+                                fontSize: 9, color: AppColors.sumi, fontWeight: FontWeight.w700),
+                          ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
@@ -246,7 +329,7 @@ class _RootCard extends StatelessWidget {
   }
 }
 
-/// 발음부 가족 시트 — 완전 일치 / 탁음 변형 / 음 변화 그룹.
+/// 발음부 가족 시트 — 완전공유 / 부분공유 / 비슷한 음차 / 예외 4분류.
 class _FamilySheet extends StatelessWidget {
   final _Root root;
   const _FamilySheet({required this.root});
@@ -265,25 +348,35 @@ class _FamilySheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final rootNorm = _norm(root.on);
+    final rootFirst = rootNorm.isEmpty ? '' : rootNorm.substring(0, 1);
     final exact = <KanjiEntry>[];
-    final variant = <KanjiEntry>[];
-    final shifted = <KanjiEntry>[];
-    final unknown = <String>[];
+    final partial = <KanjiEntry>[];
+    final similar = <KanjiEntry>[];
+    final except = <KanjiEntry>[];
+
+    // 루트 자신도 db에 있으면 완전공유 맨 앞에
+    final rootEntry = KanjiIndexService.instance.lookup(root.root);
+    if (rootEntry != null) exact.add(rootEntry);
+
     for (final c in root.members) {
+      if (c == root.root) continue;
       final e = KanjiIndexService.instance.lookup(c);
-      if (e == null || e.on.isEmpty) {
-        unknown.add(c);
-        continue;
-      }
+      if (e == null || e.on.isEmpty) continue;
       final ons = e.on.map((r) => r.reading).toList();
+      final norms = ons.map(_norm).toList();
       if (ons.contains(root.on)) {
         exact.add(e);
-      } else if (ons.map(_norm).contains(rootNorm)) {
-        variant.add(e);
+      } else if (norms.contains(rootNorm)) {
+        partial.add(e);
+      } else if (rootFirst.isNotEmpty &&
+          norms.any((n) => n.startsWith(rootFirst))) {
+        similar.add(e);
       } else {
-        shifted.add(e);
+        except.add(e);
       }
     }
+
+    final total = exact.length + partial.length + similar.length + except.length;
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
@@ -321,8 +414,26 @@ class _FamilySheet extends StatelessWidget {
                             fontSize: 11, color: AppColors.sumiLight, letterSpacing: 1.5, fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(height: 2),
-                      Text('${root.members.length}자',
-                          style: const TextStyle(fontSize: 11, color: AppColors.beni, fontWeight: FontWeight.w800)),
+                      Row(
+                        children: [
+                          Text('$total자',
+                              style: const TextStyle(
+                                  fontSize: 11, color: AppColors.beni, fontWeight: FontWeight.w800)),
+                          const SizedBox(width: 6),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                  color: _regionColors[root.region] ?? AppColors.sumi),
+                            ),
+                            child: Text(root.region,
+                                style: TextStyle(
+                                    fontSize: 9,
+                                    fontWeight: FontWeight.w800,
+                                    color: _regionColors[root.region] ?? AppColors.sumi)),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -337,12 +448,17 @@ class _FamilySheet extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 14),
-            if (exact.isNotEmpty) _group(context, '완전 공유 — ${root.on} 그대로', AppColors.matcha, exact),
-            if (variant.isNotEmpty) _group(context, '탁음 변형 — 첫소리만 흐려짐', AppColors.ai, variant),
-            if (shifted.isNotEmpty) _group(context, '음 변화 — 진화하며 달라짐', AppColors.beni, shifted),
+            if (exact.isNotEmpty)
+              _groupBox(context, '완전공유', '음독이 완전히 같음', const Color(0xFF2E7D32), exact),
+            if (partial.isNotEmpty)
+              _groupBox(context, '부분공유', '탁음·반탁음만 다름', const Color(0xFFB26A00), partial),
+            if (similar.isNotEmpty)
+              _groupBox(context, '비슷한 음차', '첫소리 같음, 끝이 변형', const Color(0xFF1565C0), similar),
+            if (except.isNotEmpty)
+              _groupBox(context, '예외', '음이 크게 달라짐', const Color(0xFFC62828), except),
             const SizedBox(height: 10),
             const Text(
-              '💡 같은 발음부 = 음독이 비슷한 경향. 한자를 탭하면 훈음·읽기·단어 상세.',
+              '💡 같은 발음부 = 음독이 비슷한 경향. 단 한자가 진화하며 일부 음이 변형됨.',
               style: TextStyle(fontSize: 11, color: AppColors.sumiLight, height: 1.5),
             ),
           ],
@@ -351,47 +467,90 @@ class _FamilySheet extends StatelessWidget {
     );
   }
 
-  Widget _group(BuildContext context, String title, Color color, List<KanjiEntry> entries) {
+  Widget _groupBox(
+      BuildContext context, String badge, String desc, Color color, List<KanjiEntry> entries) {
     return Padding(
       padding: const EdgeInsets.only(bottom: 12),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(title,
-              style: TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: color, letterSpacing: 0.5)),
-          const SizedBox(height: 6),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            children: entries.map((e) {
-              final on = e.on.map((r) => r.reading).take(2).join('·');
-              final hun = e.meanings.isEmpty ? '' : e.meanings.first;
-              return InkWell(
-                onTap: () => showKanjiSheet(context, char: e.char, entry: e),
-                onLongPress: () {
-                  if (e.on.isNotEmpty) TtsService.instance.speak(e.on.first.reading);
-                },
-                child: Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-                  decoration: BoxDecoration(
-                    color: AppColors.washi,
-                    border: Border.all(color: color.withValues(alpha: 0.6)),
-                  ),
-                  child: Column(
-                    children: [
-                      Text(e.char,
-                          style: const TextStyle(
-                              fontSize: 26, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.15)),
-                      Text(on, style: TextStyle(fontSize: 10, color: color, fontWeight: FontWeight.w700)),
-                      if (hun.isNotEmpty)
-                        Text(hun, style: const TextStyle(fontSize: 9, color: AppColors.sumiLight)),
-                    ],
-                  ),
+      child: Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(
+          color: color.withValues(alpha: 0.04),
+          border: Border.all(color: color.withValues(alpha: 0.55)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  color: color,
+                  child: Text(badge,
+                      style: const TextStyle(
+                          fontSize: 12, fontWeight: FontWeight.w900, color: AppColors.washi)),
                 ),
-              );
-            }).toList(),
-          ),
-        ],
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(desc,
+                      style: const TextStyle(fontSize: 11, color: AppColors.sumi)),
+                ),
+                Text('${entries.length}자',
+                    style: TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: color)),
+              ],
+            ),
+            const SizedBox(height: 10),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: entries.map((e) => _tile(context, e, color)).toList(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _tile(BuildContext context, KanjiEntry e, Color color) {
+    final on = e.on.map((r) => r.reading).take(2).join('·');
+    final hun = e.meanings.isEmpty ? '' : e.meanings.first;
+    return InkWell(
+      onTap: () => showKanjiSheet(context, char: e.char, entry: e),
+      child: Container(
+        width: 88,
+        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 8),
+        decoration: BoxDecoration(
+          color: AppColors.washi,
+          border: Border.all(color: color.withValues(alpha: 0.5)),
+        ),
+        child: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(e.char,
+                    style: const TextStyle(
+                        fontSize: 30, fontWeight: FontWeight.w900, color: AppColors.sumi, height: 1.1)),
+                const SizedBox(width: 3),
+                InkWell(
+                  onTap: () {
+                    if (e.on.isNotEmpty) TtsService.instance.speak(e.on.first.reading);
+                  },
+                  child: const Icon(Icons.volume_up, size: 15, color: AppColors.beni),
+                ),
+              ],
+            ),
+            const SizedBox(height: 2),
+            Text(on,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 11, color: color, fontWeight: FontWeight.w800)),
+            if (hun.isNotEmpty)
+              Text(hun,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+          ],
+        ),
       ),
     );
   }
