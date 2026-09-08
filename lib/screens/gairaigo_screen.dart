@@ -8,8 +8,8 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 
-/// 영어유래단어 — 영어가 일본어로 음차되는 규칙을 큰 줄기별로 분석.
-/// 줄기 9개 × 최다 사용 200어. 예외는 [예외] 배지.
+/// 영어등유래단어 — 외래어가 일본어로 음차되는 규칙(영어) + 유래 언어별 줄기.
+/// 예외는 [예외] 배지.
 class GairaigoScreen extends StatefulWidget {
   const GairaigoScreen({super.key});
 
@@ -74,7 +74,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('영어유래단어',
+            const Text('영어등유래단어',
                 style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
             Text('外来語 · 음차 규칙 ${_branches.length}줄기 · $total어',

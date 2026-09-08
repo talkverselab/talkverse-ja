@@ -263,7 +263,7 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const HanjaSoundScreen()),
       _MenuItem(label: '발음부', sub: '音符 · 한자 가족', seal: '音符', color: const Color(0xFF6A1B9A),
         builder: (_) => const PhoneticRootsScreen()),
-      _MenuItem(label: '영어유래단어', sub: '카타카나 음차 규칙', seal: '外来', color: const Color(0xFF00695C),
+      _MenuItem(label: '영어등유래단어', sub: '음차 규칙·유래 언어', seal: '外来', color: const Color(0xFF00695C),
         builder: (_) => const GairaigoScreen()),
       _MenuItem(label: '단어 빈도', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
         builder: (_) => const WordFreqScreen()),
