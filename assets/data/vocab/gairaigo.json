@@ -1,5 +1,5 @@
 {
- "_meta": "영어유래 외래어 음차 분석 — 줄기 13개 · 248어",
+ "_meta": "외래어 음차 분석 — 1단계 248어(큐레이션) · 2단계 636어(JLPT 전체 포함)",
  "branches": [
   {
    "id": "vowel",
@@ -10,223 +10,1614 @@
     {
      "ja": "バス",
      "en": "bus",
-     "ko": "버스"
+     "ko": "버스",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ガス",
      "en": "gas",
-     "ko": "가스"
+     "ko": "가스",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "テスト",
      "en": "test",
      "ko": "시험",
-     "note": "t→ト 두 번"
+     "note": "t→ト 두 번",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ベッド",
      "en": "bed",
      "ko": "침대",
-     "note": "d→ド, 촉음 ッ으로 짧게 끊음"
+     "note": "d→ド, 촉음 ッ으로 짧게 끊음",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "バッグ",
      "en": "bag",
      "ko": "가방",
-     "note": "g→グ"
+     "note": "g→グ",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ミルク",
      "en": "milk",
      "ko": "우유",
-     "note": "l→ル, k→ク"
+     "note": "l→ル, k→ク",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "デスク",
      "en": "desk",
-     "ko": "책상"
+     "ko": "책상",
+     "st": 1
     },
     {
      "ja": "マスク",
      "en": "mask",
-     "ko": "마스크"
+     "ko": "마스크",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "キス",
      "en": "kiss",
-     "ko": "키스"
+     "ko": "키스",
+     "st": 1
     },
     {
      "ja": "ノック",
      "en": "knock",
      "ko": "노크",
-     "note": "묵음 k는 무시"
+     "note": "묵음 k는 무시",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "カップ",
      "en": "cup",
      "ko": "컵",
-     "note": "p→プ"
+     "note": "p→プ",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "トップ",
      "en": "top",
-     "ko": "톱·정상"
+     "ko": "톱·정상",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ストップ",
      "en": "stop",
-     "ko": "정지"
+     "ko": "정지",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "アップ",
      "en": "up",
-     "ko": "업·올림"
+     "ko": "업·올림",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ケーキ",
      "en": "cake",
      "ko": "케이크",
      "note": "예외: k 끝음이 キ (규칙대로면 ク)",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "ステーキ",
      "en": "steak",
      "ko": "스테이크",
      "note": "예외: k→キ",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "インク",
      "en": "ink",
-     "ko": "잉크"
+     "ko": "잉크",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ピンク",
      "en": "pink",
-     "ko": "핑크"
+     "ko": "핑크",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ベンチ",
      "en": "bench",
      "ko": "벤치",
-     "note": "ch→チ"
+     "note": "ch→チ",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ランチ",
      "en": "lunch",
-     "ko": "점심"
+     "ko": "점심",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "マッチ",
      "en": "match",
-     "ko": "성냥·경기"
+     "ko": "성냥·경기",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "オレンジ",
      "en": "orange",
      "ko": "오렌지",
-     "note": "j→ジ"
+     "note": "j→ジ",
+     "st": 1
     },
     {
      "ja": "ページ",
      "en": "page",
-     "ko": "페이지"
+     "ko": "페이지",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "イメージ",
      "en": "image",
-     "ko": "이미지"
+     "ko": "이미지",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "メッセージ",
      "en": "message",
-     "ko": "메시지"
+     "ko": "메시지",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "チーズ",
      "en": "cheese",
      "ko": "치즈",
-     "note": "z→ズ"
+     "note": "z→ズ",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ニュース",
      "en": "news",
      "ko": "뉴스",
-     "note": "s→ス"
+     "note": "s→ス",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "クラス",
      "en": "class",
-     "ko": "학급"
+     "ko": "학급",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ガラス",
      "en": "glass",
      "ko": "유리(창)",
      "note": "예외: 네덜란드어 glas 경유. 술잔은 グラス",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "プレゼント",
      "en": "present",
-     "ko": "선물"
+     "ko": "선물",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "レストラン",
      "en": "restaurant",
      "ko": "레스토랑",
-     "note": "프랑스어식 발음을 음차"
+     "note": "프랑스어식 발음을 음차",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ペット",
      "en": "pet",
-     "ko": "반려동물"
+     "ko": "반려동물",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ポケット",
      "en": "pocket",
-     "ko": "주머니"
+     "ko": "주머니",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "チケット",
      "en": "ticket",
-     "ko": "표"
+     "ko": "표",
+     "st": 1
     },
     {
      "ja": "ロケット",
      "en": "rocket",
-     "ko": "로켓"
+     "ko": "로켓",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "サラダ",
      "en": "salad",
      "ko": "샐러드",
      "note": "예외: d→ダ (규칙대로면 ド)",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "パンツ",
      "en": "pants",
      "ko": "바지·팬츠",
-     "note": "ts→ツ"
+     "note": "ts→ツ",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "シャツ",
      "en": "shirt",
-     "ko": "셔츠"
+     "ko": "셔츠",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "スポーツ",
      "en": "sports",
-     "ko": "스포츠"
+     "ko": "스포츠",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ゲームセット",
      "en": "game set",
      "ko": "경기 종료",
-     "note": "화제영어 성격도 있음"
+     "note": "화제영어 성격도 있음",
+     "st": 1
+    },
+    {
+     "ja": "コート",
+     "en": "",
+     "ko": "코트 · (테니스) 코트",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "スカート",
+     "en": "",
+     "ko": "스커트 · 치마",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ストーブ",
+     "en": "",
+     "ko": "난로 · 히터",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "スプーン",
+     "en": "",
+     "ko": "숟가락 · 스푼",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "テープ",
+     "en": "",
+     "ko": "테이프",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ドア",
+     "en": "",
+     "ko": "문 · 도어",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ナイフ",
+     "en": "",
+     "ko": "나이프 · 칼",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ネクタイ",
+     "en": "",
+     "ko": "넥타이",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ノート",
+     "en": "",
+     "ko": "노트 · 공책",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ハンカチ",
+     "en": "",
+     "ko": "손수건",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ペン",
+     "en": "",
+     "ko": "펜",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ポスト",
+     "en": "",
+     "ko": "우체통 · 지위",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "アジア",
+     "en": "",
+     "ko": "아시아",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "オートバイ",
+     "en": "",
+     "ko": "오토바이",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "カーテン",
+     "en": "",
+     "ko": "커튼",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "コンサート",
+     "en": "",
+     "ko": "콘서트 · 연주회",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "コンピュータ",
+     "en": "",
+     "ko": "컴퓨터",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "サンドイッチ",
+     "en": "",
+     "ko": "샌드위치",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ジャム",
+     "en": "",
+     "ko": "잼",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "スーツ",
+     "en": "",
+     "ko": "정장 · 양복",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "スーツケース",
+     "en": "",
+     "ko": "여행 가방 · 슈트케이스",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ソフト",
+     "en": "",
+     "ko": "소프트웨어 · 부드러움",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "タイプ",
+     "en": "",
+     "ko": "타입 · 유형",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "テキスト",
+     "en": "",
+     "ko": "교과서 · 텍스트",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "テニス",
+     "en": "",
+     "ko": "테니스",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ハンバーグ",
+     "en": "",
+     "ko": "햄버그스테이크",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "パパ",
+     "en": "",
+     "ko": "아빠",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "パート",
+     "en": "",
+     "ko": "파트타임 · 시간제 근무",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ピアノ",
+     "en": "",
+     "ko": "피아노",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "アウト",
+     "en": "",
+     "ko": "out",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "エンジン",
+     "en": "",
+     "ko": "engine",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "カード",
+     "en": "",
+     "ko": "card, curd",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "キャプテン",
+     "en": "",
+     "ko": "captain",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "キャンプ",
+     "en": "",
+     "ko": "camp",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ケース",
+     "en": "",
+     "ko": "case",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ゲーム",
+     "en": "",
+     "ko": "game",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "コンテスト",
+     "en": "",
+     "ko": "contest",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "コーチ",
+     "en": "",
+     "ko": "coach",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "コード",
+     "en": "",
+     "ko": "code; cord; chord",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ショック",
+     "en": "",
+     "ko": "shock",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ジュース",
+     "en": "",
+     "ko": "juice, soft drink; deuce",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ジーンズ",
+     "en": "",
+     "ko": "jeans",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スイッチ",
+     "en": "",
+     "ko": "switch",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スケート",
+     "en": "",
+     "ko": "skate(s), skating",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スタンド",
+     "en": "",
+     "ko": "stand",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スープ",
+     "en": "",
+     "ko": "(Western) soup",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "セット",
+     "en": "",
+     "ko": "set",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ダイヤ",
+     "en": "",
+     "ko": "(railway) schedule; diamond",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ダウン",
+     "en": "",
+     "ko": "down",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ダンス",
+     "en": "",
+     "ko": "dance",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "チャイム",
+     "en": "",
+     "ko": "chime",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "チャンス",
+     "en": "",
+     "ko": "chance, opportunity",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "テント",
+     "en": "",
+     "ko": "tent",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "デザイン",
+     "en": "",
+     "ko": "design",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "デザート",
+     "en": "",
+     "ko": "dessert",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "デモ",
+     "en": "",
+     "ko": "demo, demonstration",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "トン",
+     "en": "",
+     "ko": "ton (1000 lbs.)",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ノー",
+     "en": "",
+     "ko": "no",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ハイキング",
+     "en": "",
+     "ko": "hiking",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ハンサム",
+     "en": "",
+     "ko": "handsome",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "パイプ",
+     "en": "",
+     "ko": "pipe; channels official or otherwise",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "パス",
+     "en": "",
+     "ko": "path, pass (in games)",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "パスポート",
+     "en": "",
+     "ko": "passport",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "パーセント",
+     "en": "",
+     "ko": "percent",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ピクニック",
+     "en": "",
+     "ko": "picnic",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ピン",
+     "en": "",
+     "ko": "pin",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ホーム",
+     "en": "",
+     "ko": "platform; home",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ボーイ",
+     "en": "",
+     "ko": "porter; boy",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ボート",
+     "en": "",
+     "ko": "rowing boat",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "マイク",
+     "en": "",
+     "ko": "mic",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "マイナス",
+     "en": "",
+     "ko": "minus",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "マスコミ",
+     "en": "",
+     "ko": "mass communication",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "マッサージ",
+     "en": "",
+     "ko": "massage",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ママ",
+     "en": "",
+     "ko": "Mama",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "マーケット",
+     "en": "",
+     "ko": "market",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ユーモア",
+     "en": "",
+     "ko": "humor",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ヨット",
+     "en": "",
+     "ko": "yacht",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ワイン",
+     "en": "",
+     "ko": "wine",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "アイデア",
+     "en": "",
+     "ko": "idea",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アイディア",
+     "en": "",
+     "ko": "idea",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アクセント",
+     "en": "",
+     "ko": "accent",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アンテナ",
+     "en": "",
+     "ko": "antenna",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "インキ",
+     "en": "",
+     "ko": "ink",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ウーマン",
+     "en": "",
+     "ko": "woman",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "オートメーション",
+     "en": "",
+     "ko": "automation",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "カセット",
+     "en": "",
+     "ko": "cassette (tape)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "カーブ",
+     "en": "",
+     "ko": "curve; curve ball (baseball)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ガム",
+     "en": "",
+     "ko": "chewing gum",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "キャンパス",
+     "en": "",
+     "ko": "campus",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ギャング",
+     "en": "",
+     "ko": "gang",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "コック",
+     "en": "",
+     "ko": "cook; tap, cock",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "コース",
+     "en": "",
+     "ko": "course",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ショップ",
+     "en": "",
+     "ko": "a shop",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "シーズン",
+     "en": "",
+     "ko": "season (sporting)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "シーツ",
+     "en": "",
+     "ko": "sheet",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スカーフ",
+     "en": "",
+     "ko": "scarf",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スタート",
+     "en": "",
+     "ko": "start",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スチュワーデス",
+     "en": "",
+     "ko": "stewardess",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ステージ",
+     "en": "",
+     "ko": "stage; performance",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ストッキング",
+     "en": "",
+     "ko": "stockings",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スマート",
+     "en": "",
+     "ko": "smart, stylish, slim",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "セメント",
+     "en": "",
+     "ko": "cement",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "センチ",
+     "en": "",
+     "ko": "centimeter",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "タイア",
+     "en": "",
+     "ko": "tire, tyre",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ダイヤモンド",
+     "en": "",
+     "ko": "diamond",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ダム",
+     "en": "",
+     "ko": "dam",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "チップ",
+     "en": "",
+     "ko": "gratuity, tip; chip",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "チョーク",
+     "en": "",
+     "ko": "chalk",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "テニスコート",
+     "en": "",
+     "ko": "tennis court",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "バイバイ",
+     "en": "",
+     "ko": "bye bye",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "バケツ",
+     "en": "",
+     "ko": "bucket, pail",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "バック",
+     "en": "",
+     "ko": "back",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "バンド",
+     "en": "",
+     "ko": "band",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "パターン",
+     "en": "",
+     "ko": "pattern",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ビタミン",
+     "en": "",
+     "ko": "vitamin",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ペンチ",
+     "en": "",
+     "ko": "pliers (lit: pinchers)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ボーナス",
+     "en": "",
+     "ko": "bonus",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ミシン",
+     "en": "",
+     "ko": "sewing machine",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "モダン",
+     "en": "",
+     "ko": "modern",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アマチュア",
+     "en": "",
+     "ko": "amateur",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "イェス",
+     "en": "",
+     "ko": "yes; Jesus",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "インターチェンジ",
+     "en": "",
+     "ko": "interchange",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "エンジニア",
+     "en": "",
+     "ko": "engineer",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "オートマチック",
+     "en": "",
+     "ko": "automatic",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カット",
+     "en": "",
+     "ko": "cut, cutting",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カムバック",
+     "en": "",
+     "ko": "comeback",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カーペット",
+     "en": "",
+     "ko": "carpet",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ガイド",
+     "en": "",
+     "ko": "guide",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ガイドブック",
+     "en": "",
+     "ko": "guidebook",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "キャッチ",
+     "en": "",
+     "ko": "catch",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "クイズ",
+     "en": "",
+     "ko": "quiz",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ゲスト",
+     "en": "",
+     "ko": "guest",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コメント",
+     "en": "",
+     "ko": "comment",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コンタクト",
+     "en": "",
+     "ko": "contact; contact lens",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コンパス",
+     "en": "",
+     "ko": "compass",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "サイズ",
+     "en": "",
+     "ko": "size",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "システム",
+     "en": "",
+     "ko": "system",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "シック",
+     "en": "",
+     "ko": "chic",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ジャズ",
+     "en": "",
+     "ko": "jazz",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ジャンプ",
+     "en": "",
+     "ko": "jump",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ジャンボ",
+     "en": "",
+     "ko": "jumbo",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ジーパン",
+     "en": "",
+     "ko": "jeans",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スタジオ",
+     "en": "",
+     "ko": "studio",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スチーム",
+     "en": "",
+     "ko": "steam",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スト",
+     "en": "",
+     "ko": "(abbr.) strike",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スペース",
+     "en": "",
+     "ko": "space",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "セクション",
+     "en": "",
+     "ko": "section",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "セックス",
+     "en": "",
+     "ko": "sex",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "センス",
+     "en": "",
+     "ko": "sense (for music, style, tact, etc.)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ソックス",
+     "en": "",
+     "ko": "socks",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ソース",
+     "en": "",
+     "ko": "source",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイピスト",
+     "en": "",
+     "ko": "typist",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイミング",
+     "en": "",
+     "ko": "timing",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイム",
+     "en": "",
+     "ko": "time",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ダンプ",
+     "en": "",
+     "ko": "dump truck",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ダース",
+     "en": "",
+     "ko": "dozen",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "チェンジ",
+     "en": "",
+     "ko": "change",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "チームワーク",
+     "en": "",
+     "ko": "teamwork",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "トーン",
+     "en": "",
+     "ko": "tone",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ナプキン",
+     "en": "",
+     "ko": "napkin",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ナンセンス",
+     "en": "",
+     "ko": "nonsense",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ニュアンス",
+     "en": "",
+     "ko": "nuance",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ネガ",
+     "en": "",
+     "ko": "(photographic) negative",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "バッジ",
+     "en": "",
+     "ko": "badge",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "バット",
+     "en": "",
+     "ko": "bat, vat",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "パジャマ",
+     "en": "",
+     "ko": "pajamas",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "パチンコ",
+     "en": "",
+     "ko": "pachinko (Japanese pinball)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ヒント",
+     "en": "",
+     "ko": "hint",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ビジネス",
+     "en": "",
+     "ko": "business",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ブーツ",
+     "en": "",
+     "ko": "boots",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ブーム",
+     "en": "",
+     "ko": "boom",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ベスト",
+     "en": "",
+     "ko": "best; vest",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ベース",
+     "en": "",
+     "ko": "base, bass",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ペア",
+     "en": "",
+     "ko": "pair, pear",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ボイコット",
+     "en": "",
+     "ko": "boycott",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ポイント",
+     "en": "",
+     "ko": "point",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ポジション",
+     "en": "",
+     "ko": "position",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ポット",
+     "en": "",
+     "ko": "pot",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ポンプ",
+     "en": "",
+     "ko": "pump",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ポーズ",
+     "en": "",
+     "ko": "pause",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "マーク",
+     "en": "",
+     "ko": "mark",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ミセス",
+     "en": "",
+     "ko": "Mrs.",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ミュージック",
+     "en": "",
+     "ko": "music",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ムード",
+     "en": "",
+     "ko": "mood",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "メディア",
+     "en": "",
+     "ko": "media",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ヤング",
+     "en": "",
+     "ko": "young",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ユニーク",
+     "en": "",
+     "ko": "unique",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ワット",
+     "en": "",
+     "ko": "watt",
+     "st": 2,
+     "jlpt": 1
     }
    ]
   },
@@ -240,134 +1631,1164 @@
      "ja": "ホテル",
      "en": "hotel",
      "ko": "호텔",
-     "note": "l→ル"
+     "note": "l→ル",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "テーブル",
      "en": "table",
-     "ko": "테이블"
+     "ko": "테이블",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ボール",
      "en": "ball",
-     "ko": "공"
+     "ko": "공",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ビール",
      "en": "beer",
      "ko": "맥주",
-     "note": "r도 ル"
+     "note": "r도 ル",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "メール",
      "en": "mail",
-     "ko": "메일"
+     "ko": "메일",
+     "st": 1
     },
     {
      "ja": "ルール",
      "en": "rule",
      "ko": "규칙",
-     "note": "r와 l이 같은 ル"
+     "note": "r와 l이 같은 ル",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "レベル",
      "en": "level",
-     "ko": "수준"
+     "ko": "수준",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ホール",
      "en": "hall",
-     "ko": "홀"
+     "ko": "홀",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "セール",
      "en": "sale",
-     "ko": "세일"
+     "ko": "세일",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "スクール",
      "en": "school",
-     "ko": "학교"
+     "ko": "학교",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "プール",
      "en": "pool",
-     "ko": "수영장"
+     "ko": "수영장",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ゴール",
      "en": "goal",
-     "ko": "골·목표"
+     "ko": "골·목표",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "アイドル",
      "en": "idol",
-     "ko": "아이돌"
+     "ko": "아이돌",
+     "st": 1
     },
     {
      "ja": "モデル",
      "en": "model",
-     "ko": "모델"
+     "ko": "모델",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ベル",
      "en": "bell",
-     "ko": "종"
+     "ko": "종",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "ドル",
      "en": "dollar",
-     "ko": "달러"
+     "ko": "달러",
+     "st": 1
     },
     {
      "ja": "タオル",
      "en": "towel",
-     "ko": "수건"
+     "ko": "수건",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "トイレ",
      "en": "toilet",
      "ko": "화장실",
-     "note": "끝의 t 탈락 축약"
+     "note": "끝의 t 탈락 축약",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ライト",
      "en": "light / right",
      "ko": "조명 / 오른쪽",
-     "note": "light와 right가 같은 표기가 됨!"
+     "note": "light와 right가 같은 표기가 됨!",
+     "st": 1
     },
     {
      "ja": "ロック",
      "en": "lock / rock",
      "ko": "잠금 / 록",
-     "note": "lock과 rock 동일 표기"
+     "note": "lock과 rock 동일 표기",
+     "st": 1
     },
     {
      "ja": "グラス",
      "en": "glass",
-     "ko": "유리잔"
+     "ko": "유리잔",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ブログ",
      "en": "blog",
-     "ko": "블로그"
+     "ko": "블로그",
+     "st": 1
     },
     {
      "ja": "クラブ",
      "en": "club",
-     "ko": "클럽"
+     "ko": "클럽",
+     "st": 1
     },
     {
      "ja": "プラン",
      "en": "plan",
-     "ko": "계획"
+     "ko": "계획",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ラジオ",
      "en": "radio",
      "ko": "라디오",
      "note": "예외: di→ジ (옛 음차)",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
+    },
+    {
+     "ja": "カメラ",
+     "en": "",
+     "ko": "카메라",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "キロ",
+     "en": "",
+     "ko": "킬로 · 킬로그램",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "キログラム",
+     "en": "",
+     "ko": "킬로그램",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "キロメートル",
+     "en": "",
+     "ko": "킬로미터",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "グラム",
+     "en": "",
+     "ko": "그램",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ゼロ",
+     "en": "",
+     "ko": "제로 · 영",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "メートル",
+     "en": "",
+     "ko": "미터",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ラジオカセ",
+     "en": "",
+     "ko": "라디오 카세트",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "レコード",
+     "en": "",
+     "ko": "레코드 · 음반",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "アフリカ",
+     "en": "",
+     "ko": "아프리카",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "アメリカ",
+     "en": "",
+     "ko": "미국 · 아메리카",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "アルコール",
+     "en": "",
+     "ko": "알코올 · 술",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ガソリン",
+     "en": "",
+     "ko": "가솔린 · 휘발유",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "サンダル",
+     "en": "",
+     "ko": "샌들",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "スクリーン",
+     "en": "",
+     "ko": "스크린 · 화면",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ステレオ",
+     "en": "",
+     "ko": "스테레오",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "リポート",
+     "en": "",
+     "ko": "리포트 · 보고서",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "レジ",
+     "en": "",
+     "ko": "계산대 · 카운터",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "レポート",
+     "en": "",
+     "ko": "리포트 · 보고서",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ワープロ",
+     "en": "",
+     "ko": "워드프로세서",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "アイスクリーム",
+     "en": "",
+     "ko": "ice cream",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "アルバム",
+     "en": "",
+     "ko": "album",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "クラシック",
+     "en": "",
+     "ko": "classic(s)",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "クリスマス",
+     "en": "",
+     "ko": "Christmas",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "クリーム",
+     "en": "",
+     "ko": "cream",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "グランド",
+     "en": "",
+     "ko": "gland, grand, (electrical) ground",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "グループ",
+     "en": "",
+     "ko": "group",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スケジュール",
+     "en": "",
+     "ko": "schedule",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スタイル",
+     "en": "",
+     "ko": "style",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "タイトル",
+     "en": "",
+     "ko": "title",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "トラック",
+     "en": "",
+     "ko": "truck; (running) track",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "トランプ",
+     "en": "",
+     "ko": "playing cards (lit: trump)",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "トンネル",
+     "en": "",
+     "ko": "tunnel",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ドラマ",
+     "en": "",
+     "ko": "drama",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ドレス",
+     "en": "",
+     "ko": "dress",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "バランス",
+     "en": "",
+     "ko": "balance",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "パイロット",
+     "en": "",
+     "ko": "pilot",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ブレーキ",
+     "en": "",
+     "ko": "a brake",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "プラス",
+     "en": "",
+     "ko": "plus",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "プラスチック",
+     "en": "",
+     "ko": "plastic",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ベルト",
+     "en": "",
+     "ko": "Belt for western clothes",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ヨーロッパ",
+     "en": "",
+     "ko": "Europe",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ラケット",
+     "en": "",
+     "ko": "racket",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ラベル",
+     "en": "",
+     "ko": "label",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "イコール",
+     "en": "",
+     "ko": "equal",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ウエートレス",
+     "en": "",
+     "ko": "waitress",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ウール",
+     "en": "",
+     "ko": "wool",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "エプロン",
+     "en": "",
+     "ko": "apron",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "オイル",
+     "en": "",
+     "ko": "oil",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "オルガン",
+     "en": "",
+     "ko": "organ",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "オーケストラ",
+     "en": "",
+     "ko": "orchestra",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "クリーニング",
+     "en": "",
+     "ko": "cleaning, dry cleaning, laundry service",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "コレクション",
+     "en": "",
+     "ko": "collection; correction",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "コンクリート",
+     "en": "",
+     "ko": "concrete",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "コーラス",
+     "en": "",
+     "ko": "chorus",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "サイレン",
+     "en": "",
+     "ko": "siren",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "サンプル",
+     "en": "",
+     "ko": "sample",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "サークル",
+     "en": "",
+     "ko": "circle, sports club (e.g., at a company)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "シリーズ",
+     "en": "",
+     "ko": "series",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ジャーナリスト",
+     "en": "",
+     "ko": "journalist",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スライド",
+     "en": "",
+     "ko": "slide",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スリッパ",
+     "en": "",
+     "ko": "slippers",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ダイヤグラム",
+     "en": "",
+     "ko": "diagram",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ダイヤル",
+     "en": "",
+     "ko": "dial",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ダブル",
+     "en": "",
+     "ko": "double",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ナイロン",
+     "en": "",
+     "ko": "nylon",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ネックレス",
+     "en": "",
+     "ko": "necklace",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ハンドル",
+     "en": "",
+     "ko": "handle, steering wheel",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ビニール",
+     "en": "",
+     "ko": "vinyl",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ビルディング",
+     "en": "",
+     "ko": "building",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ピストル",
+     "en": "",
+     "ko": "pistol",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "フライパン",
+     "en": "",
+     "ko": "fry pan, frying pan",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ブラウス",
+     "en": "",
+     "ko": "blouse",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ブラシ",
+     "en": "",
+     "ko": "brush",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ブローチ",
+     "en": "",
+     "ko": "brooch",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "プリント",
+     "en": "",
+     "ko": "print, handout",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "プログラム",
+     "en": "",
+     "ko": "program",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ベテラン",
+     "en": "",
+     "ko": "veteran",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ミリ",
+     "en": "",
+     "ko": "milli-",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "モノレール",
+     "en": "",
+     "ko": "monorail",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ランニング",
+     "en": "",
+     "ko": "running; tank top",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "リットル",
+     "en": "",
+     "ko": "liter",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "リボン",
+     "en": "",
+     "ko": "ribbon",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "レインコート",
+     "en": "",
+     "ko": "raincoat",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "レクリェーション",
+     "en": "",
+     "ko": "recreation",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "レンズ",
+     "en": "",
+     "ko": "lens",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アクセル",
+     "en": "",
+     "ko": "(abbr.) accelerator",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "アプローチ",
+     "en": "",
+     "ko": "approach (in golf)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "アラブ",
+     "en": "",
+     "ko": "Arab",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "アルカリ",
+     "en": "",
+     "ko": "alkali",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "アルミ",
+     "en": "",
+     "ko": "aluminum (Al, aluminum)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "インターナショナル",
+     "en": "",
+     "ko": "international",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "インテリ",
+     "en": "",
+     "ko": "(abbr.) egghead, intelligentsia",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "エアメール",
+     "en": "",
+     "ko": "air mail",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "エレガント",
+     "en": "",
+     "ko": "elegant",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "オリエンテーション",
+     "en": "",
+     "ko": "orientation",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "オンライン",
+     "en": "",
+     "ko": "on-line",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カクテル",
+     "en": "",
+     "ko": "cocktail",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カメラマン",
+     "en": "",
+     "ko": "cameraman",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ガレージ",
+     "en": "",
+     "ko": "garage (at house)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "キャリア",
+     "en": "",
+     "ko": "career, career government employee",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "クレーン",
+     "en": "",
+     "ko": "crane",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コマーシャル",
+     "en": "",
+     "ko": "a commercial",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コントラスト",
+     "en": "",
+     "ko": "contrast",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "コントロール",
+     "en": "",
+     "ko": "control",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "サイクル",
+     "en": "",
+     "ko": "cycle",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "サンタクロース",
+     "en": "",
+     "ko": "Santa Claus",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "シナリオ",
+     "en": "",
+     "ko": "scenario",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ストライキ",
+     "en": "",
+     "ko": "strike",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ストロボ",
+     "en": "",
+     "ko": "stroboscope (literally: strobo, strobe lamp, stroboscopic lamp)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スプリング",
+     "en": "",
+     "ko": "spring",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スラックス",
+     "en": "",
+     "ko": "slacks",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ソロ",
+     "en": "",
+     "ko": "solo",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイル",
+     "en": "",
+     "ko": "tile",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タレント",
+     "en": "",
+     "ko": "talent, star, personality",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "チャンネル",
+     "en": "",
+     "ko": "a channel",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "テレックス",
+     "en": "",
+     "ko": "telex, teletypewriter exchange",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "デコレーション",
+     "en": "",
+     "ko": "decoration",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "デモンストレーション",
+     "en": "",
+     "ko": "demonstration",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "トラブル",
+     "en": "",
+     "ko": "trouble (sometimes used as a verb)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ドライ",
+     "en": "",
+     "ko": "dry",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ドライクリーニング",
+     "en": "",
+     "ko": "dry cleaning",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ドライブイン",
+     "en": "",
+     "ko": "drive in",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ドリル",
+     "en": "",
+     "ko": "drill",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ビールス",
+     "en": "",
+     "ko": "virus",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "フロント",
+     "en": "",
+     "ko": "front",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ブル",
+     "en": "",
+     "ko": "bull",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ボルト",
+     "en": "",
+     "ko": "volt; bolt",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ミスプリント",
+     "en": "",
+     "ko": "misprint",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "モーテル",
+     "en": "",
+     "ko": "motel",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ライス",
+     "en": "",
+     "ko": "rice",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ランプ",
+     "en": "",
+     "ko": "lamp; ramp",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "リード",
+     "en": "",
+     "ko": "lead; reed",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ルーズ",
+     "en": "",
+     "ko": "loose",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レッスン",
+     "en": "",
+     "ko": "lesson",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レンジ",
+     "en": "",
+     "ko": "range, stove",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レントゲン",
+     "en": "",
+     "ko": "X-ray (lit: Roentgen)",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レース",
+     "en": "",
+     "ko": "race; lace",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ロマンチック",
+     "en": "",
+     "ko": "romantic",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ロープ",
+     "en": "",
+     "ko": "rope",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ロープウエイ",
+     "en": "",
+     "ko": "ropeway, aerial tram",
+     "st": 2,
+     "jlpt": 1
     }
    ]
   },
@@ -380,83 +2801,163 @@
     {
      "ja": "ファン",
      "en": "fan",
-     "ko": "팬"
+     "ko": "팬",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ファイル",
      "en": "file",
-     "ko": "파일"
+     "ko": "파일",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ファッション",
      "en": "fashion",
-     "ko": "패션"
+     "ko": "패션",
+     "st": 1
     },
     {
      "ja": "ファミリー",
      "en": "family",
-     "ko": "가족"
+     "ko": "가족",
+     "st": 1
     },
     {
      "ja": "フィルム",
      "en": "film",
-     "ko": "필름"
+     "ko": "필름",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "フォーク",
      "en": "fork",
-     "ko": "포크"
+     "ko": "포크",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "フォント",
      "en": "font",
-     "ko": "폰트"
+     "ko": "폰트",
+     "st": 1
     },
     {
      "ja": "フルーツ",
      "en": "fruits",
-     "ko": "과일"
+     "ko": "과일",
+     "st": 1
     },
     {
      "ja": "フリー",
      "en": "free",
-     "ko": "자유·무료"
+     "ko": "자유·무료",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ソファー",
      "en": "sofa",
-     "ko": "소파"
+     "ko": "소파",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "オフィス",
      "en": "office",
-     "ko": "사무실"
+     "ko": "사무실",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "コーヒー",
      "en": "coffee",
      "ko": "커피",
      "note": "예외: 네덜란드어 koffie 경유라 f가 ヒ가 됨",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "プラットホーム",
      "en": "platform",
      "ko": "플랫폼·승강장",
      "note": "예외: 옛 음차라 f→ホ. 요즘은 フォーム도 씀",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "テレホン",
      "en": "telephone",
      "ko": "전화",
      "note": "예외: 옛 음차 ph→ホ (テレフォン 병용)",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "セーフ",
      "en": "safe",
-     "ko": "세이프"
+     "ko": "세이프",
+     "st": 1
+    },
+    {
+     "ja": "ファックス",
+     "en": "",
+     "ko": "팩스",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ファスナー",
+     "en": "",
+     "ko": "fastener, zipper",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "インターフォン",
+     "en": "",
+     "ko": "entry phone, intercom",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "インフォメーション",
+     "en": "",
+     "ko": "information",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "フィルタ",
+     "en": "",
+     "ko": "filter",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "フォーム",
+     "en": "",
+     "ko": "foam; form",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "マイクロフォン",
+     "en": "",
+     "ko": "microphone",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ユニフォーム",
+     "en": "",
+     "ko": "uniform",
+     "st": 2,
+     "jlpt": 1
     }
    ]
   },
@@ -470,77 +2971,97 @@
      "ja": "テレビ",
      "en": "television",
      "ko": "텔레비전",
-     "note": "vi→ビ + 축약"
+     "note": "vi→ビ + 축약",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "サービス",
      "en": "service",
      "ko": "서비스",
-     "note": "vi→ビ"
+     "note": "vi→ビ",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ビデオ",
      "en": "video",
-     "ko": "비디오"
+     "ko": "비디오",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "イベント",
      "en": "event",
-     "ko": "이벤트"
+     "ko": "이벤트",
+     "st": 1
     },
     {
      "ja": "ドライブ",
      "en": "drive",
-     "ko": "드라이브"
+     "ko": "드라이브",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ラブ",
      "en": "love",
-     "ko": "사랑"
+     "ko": "사랑",
+     "st": 1
     },
     {
      "ja": "オリーブ",
      "en": "olive",
-     "ko": "올리브"
+     "ko": "올리브",
+     "st": 1
     },
     {
      "ja": "バイオリン",
      "en": "violin",
-     "ko": "바이올린"
+     "ko": "바이올린",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ボリューム",
      "en": "volume",
-     "ko": "볼륨"
+     "ko": "볼륨",
+     "st": 1
     },
     {
      "ja": "バケーション",
      "en": "vacation",
-     "ko": "휴가"
+     "ko": "휴가",
+     "st": 1
     },
     {
      "ja": "インタビュー",
      "en": "interview",
      "ko": "인터뷰",
-     "note": "vi→ビュ"
+     "note": "vi→ビュ",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "レビュー",
      "en": "review",
-     "ko": "리뷰"
+     "ko": "리뷰",
+     "st": 1
     },
     {
      "ja": "ナビ",
      "en": "navi(gation)",
      "ko": "내비",
-     "note": "축약과 결합"
+     "note": "축약과 결합",
+     "st": 1
     },
     {
      "ja": "ヴァイオリン",
      "en": "violin",
      "ko": "바이올린",
      "note": "ヴ 표기 병용 예",
-     "ex": true
+     "ex": true,
+     "st": 1
     }
    ]
   },
@@ -554,55 +3075,67 @@
      "ja": "サンキュー",
      "en": "thank you",
      "ko": "고마워",
-     "note": "th→サ"
+     "note": "th→サ",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "スリー",
      "en": "three",
      "ko": "3",
-     "note": "th→ス"
+     "note": "th→ス",
+     "st": 1
     },
     {
      "ja": "マラソン",
      "en": "marathon",
      "ko": "마라톤",
-     "note": "th→ソ"
+     "note": "th→ソ",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ヘルシー",
      "en": "healthy",
      "ko": "건강한",
-     "note": "th→シ"
+     "note": "th→シ",
+     "st": 1
     },
     {
      "ja": "バースデー",
      "en": "birthday",
      "ko": "생일",
-     "note": "th→ス"
+     "note": "th→ス",
+     "st": 1
     },
     {
      "ja": "マザー",
      "en": "mother",
      "ko": "어머니",
-     "note": "유성 th→ザ"
+     "note": "유성 th→ザ",
+     "st": 1
     },
     {
      "ja": "ファーザー",
      "en": "father",
      "ko": "아버지",
-     "note": "유성 th→ザ"
+     "note": "유성 th→ザ",
+     "st": 1
     },
     {
      "ja": "リズム",
      "en": "rhythm",
      "ko": "리듬",
-     "note": "th→ズ"
+     "note": "th→ズ",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "スムーズ",
      "en": "smooth",
      "ko": "매끄러운",
-     "note": "th→ズ"
+     "note": "th→ズ",
+     "st": 1
     }
    ]
   },
@@ -615,148 +3148,554 @@
     {
      "ja": "コンピューター",
      "en": "computer",
-     "ko": "컴퓨터"
+     "ko": "컴퓨터",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "エレベーター",
      "en": "elevator",
-     "ko": "엘리베이터"
+     "ko": "엘리베이터",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "エスカレーター",
      "en": "escalator",
-     "ko": "에스컬레이터"
+     "ko": "에스컬레이터",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "ドクター",
      "en": "doctor",
-     "ko": "의사"
+     "ko": "의사",
+     "st": 1
     },
     {
      "ja": "マスター",
      "en": "master",
-     "ko": "마스터·주인"
+     "ko": "마스터·주인",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "スター",
      "en": "star",
-     "ko": "스타"
+     "ko": "스타",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "カー",
      "en": "car",
-     "ko": "자동차"
+     "ko": "자동차",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "バー",
      "en": "bar",
-     "ko": "바·술집"
+     "ko": "바·술집",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ショー",
      "en": "show",
-     "ko": "쇼"
+     "ko": "쇼",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "パーティー",
      "en": "party",
      "ko": "파티",
-     "note": "ar→アー, ty→ティー"
+     "note": "ar→アー, ty→ティー",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ハンバーガー",
      "en": "hamburger",
-     "ko": "햄버거"
+     "ko": "햄버거",
+     "st": 1
     },
     {
      "ja": "シャワー",
      "en": "shower",
      "ko": "샤워",
      "note": "ower→アワー",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "タワー",
      "en": "tower",
      "ko": "타워",
      "note": "ower→アワー",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "パワー",
      "en": "power",
      "ko": "파워",
      "note": "ower→アワー",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "コーナー",
      "en": "corner",
-     "ko": "코너"
+     "ko": "코너",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "カレンダー",
      "en": "calendar",
-     "ko": "달력"
+     "ko": "달력",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "メンバー",
      "en": "member",
-     "ko": "멤버"
+     "ko": "멤버",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ナンバー",
      "en": "number",
-     "ko": "번호"
+     "ko": "번호",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "シャッター",
      "en": "shutter",
-     "ko": "셔터"
+     "ko": "셔터",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "セーター",
      "en": "sweater",
      "ko": "스웨터",
      "note": "예외: sw의 w가 탈락",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ミラー",
      "en": "mirror",
-     "ko": "거울"
+     "ko": "거울",
+     "st": 1
     },
     {
      "ja": "カラー",
      "en": "color",
-     "ko": "색"
+     "ko": "색",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "コピー",
      "en": "copy",
-     "ko": "복사"
+     "ko": "복사",
+     "st": 1
     },
     {
      "ja": "タクシー",
      "en": "taxi",
-     "ko": "택시"
+     "ko": "택시",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "チーム",
      "en": "team",
      "ko": "팀",
-     "note": "ea→イー"
+     "note": "ea→イー",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "スピーチ",
      "en": "speech",
-     "ko": "연설"
+     "ko": "연설",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "シート",
      "en": "seat / sheet",
      "ko": "좌석 / 시트",
-     "note": "seat와 sheet가 같은 표기"
+     "note": "seat와 sheet가 같은 표기",
+     "st": 1,
+     "jlpt": 1
+    },
+    {
+     "ja": "カレー",
+     "en": "",
+     "ko": "카레",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "ギター",
+     "en": "",
+     "ko": "기타",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "テープレコーダー",
+     "en": "",
+     "ko": "테이프 리코더 · 녹음기",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "バター",
+     "en": "",
+     "ko": "버터",
+     "st": 2,
+     "jlpt": 5
+    },
+    {
+     "ja": "アクセサリー",
+     "en": "",
+     "ko": "액세서리 · 장신구",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "アナウンサー",
+     "en": "",
+     "ko": "아나운서",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "オーバー",
+     "en": "",
+     "ko": "오버코트 · 초과 · 과장",
+     "st": 2,
+     "jlpt": 4
+    },
+    {
+     "ja": "ウイスキー",
+     "en": "",
+     "ko": "whiskey",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "スキー",
+     "en": "",
+     "ko": "ski",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "センター",
+     "en": "",
+     "ko": "center",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "タイプライター",
+     "en": "",
+     "ko": "typewriter",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "ライター",
+     "en": "",
+     "ko": "lighter; writer",
+     "st": 2,
+     "jlpt": 3
+    },
+    {
+     "ja": "カバー",
+     "en": "",
+     "ko": "cover (e.g., book)",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "カロリー",
+     "en": "",
+     "ko": "calorie",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "クーラー",
+     "en": "",
+     "ko": "air conditioner",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "スピーカー",
+     "en": "",
+     "ko": "speaker",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ヘリコプター",
+     "en": "",
+     "ko": "helicopter",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ポスター",
+     "en": "",
+     "ko": "poster",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "マフラー",
+     "en": "",
+     "ko": "a winter scarf",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "メニュー",
+     "en": "",
+     "ko": "menu",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "モーター",
+     "en": "",
+     "ko": "motor",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ラッシュアワー",
+     "en": "",
+     "ko": "rush hour",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "レジャー",
+     "en": "",
+     "ko": "leisure",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ロッカー",
+     "en": "",
+     "ko": "locker",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "ロビー",
+     "en": "",
+     "ko": "lobby",
+     "st": 2,
+     "jlpt": 2
+    },
+    {
+     "ja": "アワー",
+     "en": "",
+     "ko": "hour",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "カテゴリー",
+     "en": "",
+     "ko": "category",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "グレー",
+     "en": "",
+     "ko": "grey, gray",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ジャンパー",
+     "en": "",
+     "ko": "jacket, jumper",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ストロー",
+     "en": "",
+     "ko": "straw",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "スポーツカー",
+     "en": "",
+     "ko": "sports car",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "セレモニー",
+     "en": "",
+     "ko": "ceremony",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ゼリー",
+     "en": "",
+     "ko": "jelly",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイマー",
+     "en": "",
+     "ko": "timer",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "タイムリー",
+     "en": "",
+     "ko": "timely, run-batted-in (baseball), RBI",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ティシュペーパー",
+     "en": "",
+     "ko": "tissue",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "トランジスター",
+     "en": "",
+     "ko": "transistor",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ドライバー",
+     "en": "",
+     "ko": "driver, screwdriver",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ニュー",
+     "en": "",
+     "ko": "new",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ハンガー",
+     "en": "",
+     "ko": "(coat) hanger",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "バッテリー",
+     "en": "",
+     "ko": "battery",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "パトカー",
+     "en": "",
+     "ko": "patrol car",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ブザー",
+     "en": "",
+     "ko": "buzzer",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "ベストセラー",
+     "en": "",
+     "ko": "best-seller",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "メロディー",
+     "en": "",
+     "ko": "melody",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "メーカー",
+     "en": "",
+     "ko": "manufacturer",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "モニター",
+     "en": "",
+     "ko": "(computer) monitor",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レギュラー",
+     "en": "",
+     "ko": "regular",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レディー",
+     "en": "",
+     "ko": "lady",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レバー",
+     "en": "",
+     "ko": "lever; liver",
+     "st": 2,
+     "jlpt": 1
+    },
+    {
+     "ja": "レンタカー",
+     "en": "",
+     "ko": "rented car",
+     "st": 2,
+     "jlpt": 1
     }
    ]
   },
@@ -770,149 +3709,192 @@
      "ja": "パソコン",
      "en": "personal computer",
      "ko": "PC",
-     "note": "パーソナル+コンピューター의 머리끼리"
+     "note": "パーソナル+コンピューター의 머리끼리",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "コンビニ",
      "en": "convenience store",
-     "ko": "편의점"
+     "ko": "편의점",
+     "st": 1
     },
     {
      "ja": "エアコン",
      "en": "air conditioner",
-     "ko": "에어컨"
+     "ko": "에어컨",
+     "st": 1
     },
     {
      "ja": "リモコン",
      "en": "remote control",
-     "ko": "리모컨"
+     "ko": "리모컨",
+     "st": 1
     },
     {
      "ja": "スマホ",
      "en": "smartphone",
      "ko": "스마트폰",
-     "note": "スマートフォン→スマホ. フォ가 ホ로 남는 점이 특이"
+     "note": "スマートフォン→スマホ. フォ가 ホ로 남는 점이 특이",
+     "st": 1
     },
     {
      "ja": "アニメ",
      "en": "animation",
-     "ko": "애니메이션"
+     "ko": "애니메이션",
+     "st": 1
     },
     {
      "ja": "デパート",
      "en": "department store",
-     "ko": "백화점"
+     "ko": "백화점",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "スーパー",
      "en": "supermarket",
-     "ko": "슈퍼마켓"
+     "ko": "슈퍼마켓",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "アプリ",
      "en": "application",
-     "ko": "앱"
+     "ko": "앱",
+     "st": 1
     },
     {
      "ja": "ネット",
      "en": "internet",
-     "ko": "인터넷"
+     "ko": "인터넷",
+     "st": 1
     },
     {
      "ja": "プロ",
      "en": "professional",
-     "ko": "프로"
+     "ko": "프로",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ビル",
      "en": "building",
      "ko": "빌딩",
-     "note": "ビルディング→ビル. ビール(맥주)와 장음으로 구별!"
+     "note": "ビルディング→ビル. ビール(맥주)와 장음으로 구별!",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "メモ",
      "en": "memo(randum)",
-     "ko": "메모"
+     "ko": "메모",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "データ",
      "en": "data",
-     "ko": "데이터"
+     "ko": "데이터",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "インフレ",
      "en": "inflation",
-     "ko": "인플레이션"
+     "ko": "인플레이션",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ストレス",
      "en": "stress",
-     "ko": "스트레스"
+     "ko": "스트레스",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "トレーニング",
      "en": "training",
-     "ko": "트레이닝"
+     "ko": "트레이닝",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "デート",
      "en": "date",
-     "ko": "데이트"
+     "ko": "데이트",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ミス",
      "en": "mistake",
-     "ko": "실수"
+     "ko": "실수",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "アイス",
      "en": "ice cream",
-     "ko": "아이스크림"
+     "ko": "아이스크림",
+     "st": 1
     },
     {
      "ja": "パンク",
      "en": "puncture",
-     "ko": "펑크"
+     "ko": "펑크",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ボールペン",
      "en": "ball(-point) pen",
-     "ko": "볼펜"
+     "ko": "볼펜",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ワイシャツ",
      "en": "white shirt",
      "ko": "와이셔츠",
      "note": "white→ワイ 음차 축약",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "カラオケ",
      "en": "kara + orchestra",
      "ko": "노래방",
      "note": "예외: 空(から)+オーケストラ 혼종어",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "バイト",
      "en": "Arbeit",
      "ko": "알바",
      "note": "예외: 독일어 アルバイト의 축약",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ゼミ",
      "en": "Seminar",
      "ko": "세미나",
      "note": "예외: 독일어 유래",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "オペ",
      "en": "Operation",
      "ko": "수술",
      "note": "예외: 독일어 경유",
-     "ex": true
+     "ex": true,
+     "st": 1
     }
    ]
   },
@@ -926,159 +3908,195 @@
      "ja": "サラリーマン",
      "en": "salary + man",
      "ko": "회사원",
-     "note": "영어로는 office worker"
+     "note": "영어로는 office worker",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "マンション",
      "en": "mansion",
      "ko": "아파트",
-     "note": "영어 mansion은 대저택! 뜻이 다름"
+     "note": "영어 mansion은 대저택! 뜻이 다름",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "アパート",
      "en": "apart(ment)",
      "ko": "연립주택",
-     "note": "일본에선 マンション보다 저렴한 저층 건물"
+     "note": "일본에선 マンション보다 저렴한 저층 건물",
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ガソリンスタンド",
      "en": "gasoline + stand",
      "ko": "주유소",
-     "note": "영어는 gas station"
+     "note": "영어는 gas station",
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "キーホルダー",
      "en": "key + holder",
      "ko": "열쇠고리",
-     "note": "영어는 key ring"
+     "note": "영어는 key ring",
+     "st": 1
     },
     {
      "ja": "ペットボトル",
      "en": "PET + bottle",
      "ko": "페트병",
-     "note": "영어는 plastic bottle"
+     "note": "영어는 plastic bottle",
+     "st": 1
     },
     {
      "ja": "シャープペンシル",
      "en": "sharp + pencil",
      "ko": "샤프",
-     "note": "영어는 mechanical pencil"
+     "note": "영어는 mechanical pencil",
+     "st": 1
     },
     {
      "ja": "ホッチキス",
      "en": "Hotchkiss",
      "ko": "스테이플러",
      "note": "예외: 회사 이름이 보통명사화",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ナイター",
      "en": "night + -er",
      "ko": "야간 경기",
-     "note": "영어는 night game"
+     "note": "영어는 night game",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "フリーター",
      "en": "free + Arbeiter",
      "ko": "프리터",
      "note": "예외: 영어+독일어 혼종",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "スキンシップ",
      "en": "skin + -ship",
      "ko": "스킨십",
-     "note": "영어는 physical contact"
+     "note": "영어는 physical contact",
+     "st": 1
     },
     {
      "ja": "ベビーカー",
      "en": "baby + car",
      "ko": "유모차",
-     "note": "영어는 stroller"
+     "note": "영어는 stroller",
+     "st": 1
     },
     {
      "ja": "モーニングコール",
      "en": "morning + call",
      "ko": "모닝콜",
-     "note": "영어는 wake-up call"
+     "note": "영어는 wake-up call",
+     "st": 1
     },
     {
      "ja": "ノートパソコン",
      "en": "note + PC",
      "ko": "노트북",
-     "note": "영어는 laptop"
+     "note": "영어는 laptop",
+     "st": 1
     },
     {
      "ja": "コンセント",
      "en": "concentric plug",
      "ko": "콘센트",
-     "note": "영어는 outlet/socket"
+     "note": "영어는 outlet/socket",
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "リフォーム",
      "en": "reform",
      "ko": "리모델링",
-     "note": "영어 reform은 제도 개혁"
+     "note": "영어 reform은 제도 개혁",
+     "st": 1
     },
     {
      "ja": "バイキング",
      "en": "Viking",
      "ko": "뷔페",
-     "note": "영어는 buffet"
+     "note": "영어는 buffet",
+     "st": 1
     },
     {
      "ja": "クレーム",
      "en": "claim",
      "ko": "항의",
-     "note": "영어 claim은 주장·청구"
+     "note": "영어 claim은 주장·청구",
+     "st": 1
     },
     {
      "ja": "カンニング",
      "en": "cunning",
      "ko": "컨닝",
-     "note": "영어는 cheating"
+     "note": "영어는 cheating",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ドンマイ",
      "en": "don't mind",
      "ko": "괜찮아",
-     "note": "영어는 never mind"
+     "note": "영어는 never mind",
+     "st": 1
     },
     {
      "ja": "ファイト",
      "en": "fight",
      "ko": "파이팅",
-     "note": "영어 fight는 싸움. 응원은 Go!"
+     "note": "영어 fight는 싸움. 응원은 Go!",
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "テンション",
      "en": "tension",
      "ko": "기분·흥",
-     "note": "영어 tension은 긴장"
+     "note": "영어 tension은 긴장",
+     "st": 1
     },
     {
      "ja": "サイン",
      "en": "sign",
      "ko": "서명·사인",
-     "note": "영어는 signature/autograph"
+     "note": "영어는 signature/autograph",
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "オーダーメイド",
      "en": "order + made",
      "ko": "맞춤 제작",
-     "note": "영어는 custom-made"
+     "note": "영어는 custom-made",
+     "st": 1
     },
     {
      "ja": "ゲームセンター",
      "en": "game + center",
      "ko": "오락실",
-     "note": "영어는 arcade"
+     "note": "영어는 arcade",
+     "st": 1
     },
     {
      "ja": "ワンピース",
      "en": "one + piece",
      "ko": "원피스",
-     "note": "영어는 dress"
+     "note": "영어는 dress",
+     "st": 1,
+     "jlpt": 2
     }
    ]
   },
@@ -1093,67 +4111,79 @@
      "en": "pão",
      "ko": "빵",
      "note": "영어는 bread",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ボタン",
      "en": "botão",
      "ko": "단추·버튼",
      "note": "영어 button과 우연히 비슷",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "タバコ",
      "en": "tabaco",
      "ko": "담배",
      "note": "영어는 cigarette",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "カステラ",
      "en": "castella",
      "ko": "카스텔라",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "テンプラ",
      "en": "tempero",
      "ko": "튀김(天ぷら)",
      "note": "한자 표기가 붙어 일본어화",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "カルタ",
      "en": "carta",
      "ko": "카드놀이",
      "note": "트럼프 카드는 영어 カード",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "コンペイトウ",
      "en": "confeito",
      "ko": "별사탕(金平糖)",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "シャボン",
      "en": "sabão",
      "ko": "비누",
      "note": "シャボン玉=비눗방울. 일상 비누는 石けん",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ビロード",
      "en": "veludo",
      "ko": "벨벳",
      "note": "영어식은 ベルベット",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ジョウロ",
      "en": "jarro",
      "ko": "물뿌리개",
-     "ex": true
+     "ex": true,
+     "st": 1
     }
    ]
   },
@@ -1168,76 +4198,94 @@
      "en": "bier",
      "ko": "맥주",
      "note": "영어 beer면 ビア. ビール은 네덜란드어",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "コーヒー",
      "en": "koffie",
      "ko": "커피",
      "note": "f가 ヒ가 된 이유가 이것",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ガラス",
      "en": "glas",
      "ko": "유리",
      "note": "술잔 glass는 영어 グラス로 구별",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "コップ",
      "en": "kop",
      "ko": "컵",
      "note": "영어 cup은 カップ로 따로 존재",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ゴム",
      "en": "gom",
      "ko": "고무",
      "note": "영어는 rubber",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ランドセル",
      "en": "ransel",
      "ko": "책가방",
      "note": "초등학생용 가방",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ペンキ",
      "en": "pek",
      "ko": "페인트",
      "note": "영어식은 ペイント",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "オルゴール",
      "en": "orgel",
      "ko": "오르골",
      "note": "영어는 music box",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "メス",
      "en": "mes",
      "ko": "수술칼",
      "note": "영어는 scalpel",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ピンセット",
      "en": "pincet",
      "ko": "핀셋",
      "note": "영어는 tweezers",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ホース",
      "en": "hoos",
      "ko": "호스",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     }
    ]
   },
@@ -1252,94 +4300,114 @@
      "en": "Arbeit",
      "ko": "아르바이트",
      "note": "영어는 part-time job",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 4
     },
     {
      "ja": "エネルギー",
      "en": "Energie",
      "ko": "에너지",
      "note": "영어식이면 エナジー",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "アレルギー",
      "en": "Allergie",
      "ko": "알레르기",
      "note": "영어식이면 アラジー",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "テーマ",
      "en": "Thema",
      "ko": "주제",
      "note": "영어 theme은 발음이 다름",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "カルテ",
      "en": "Karte",
      "ko": "진료 기록",
      "note": "영어는 chart",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "ギプス",
      "en": "Gips",
      "ko": "깁스",
      "note": "영어는 cast",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ワクチン",
      "en": "Vakzin",
      "ko": "백신",
      "note": "영어 vaccine이면 バクシーン이 됐을 것",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ゼミ",
      "en": "Seminar",
      "ko": "세미나·학부 연구실",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ノイローゼ",
      "en": "Neurose",
      "ko": "노이로제",
      "note": "영어는 neurosis",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "リュックサック",
      "en": "Rucksack",
      "ko": "배낭",
      "note": "줄여서 リュック",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ゲレンデ",
      "en": "Gelände",
      "ko": "스키장 슬로프",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "メルヘン",
      "en": "Märchen",
      "ko": "동화",
      "note": "영어는 fairy tale",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ガーゼ",
      "en": "Gaze",
      "ko": "거즈",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "バウムクーヘン",
      "en": "Baumkuchen",
      "ko": "바움쿠헨",
-     "ex": true
+     "ex": true,
+     "st": 1
     }
    ]
   },
@@ -1354,129 +4422,155 @@
      "en": "enquête",
      "ko": "설문조사",
      "note": "영어는 survey",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 3
     },
     {
      "ja": "ズボン",
      "en": "jupon",
      "ko": "바지",
      "note": "영어는 pants/trousers",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 5
     },
     {
      "ja": "ピーマン",
      "en": "piment",
      "ko": "피망",
      "note": "영어는 bell pepper",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "デッサン",
      "en": "dessin",
      "ko": "데생",
      "note": "영어는 sketch",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "アトリエ",
      "en": "atelier",
      "ko": "작업실",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ジャンル",
      "en": "genre",
      "ko": "장르",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     },
     {
      "ja": "グルメ",
      "en": "gourmet",
      "ko": "미식가",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "コンクール",
      "en": "concours",
      "ko": "콩쿠르·경연",
      "note": "영어는 competition",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "クレヨン",
      "en": "crayon",
      "ko": "크레용",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "マヨネーズ",
      "en": "mayonnaise",
      "ko": "마요네즈",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "オムレツ",
      "en": "omelette",
      "ko": "오믈렛",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "クロワッサン",
      "en": "croissant",
      "ko": "크루아상",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "シュークリーム",
      "en": "chou à la crème",
      "ko": "슈크림",
      "note": "영어 shoe cream(구두약)이 아님!",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "パフェ",
      "en": "parfait",
      "ko": "파르페",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ブティック",
      "en": "boutique",
      "ko": "부티크",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ベージュ",
      "en": "beige",
      "ko": "베이지",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "バカンス",
      "en": "vacances",
      "ko": "바캉스·휴가",
      "note": "영어는 vacation",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "エチケット",
      "en": "étiquette",
      "ko": "에티켓",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "ピエロ",
      "en": "pierrot",
      "ko": "삐에로",
      "note": "영어는 clown",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "サボる",
      "en": "sabotage+る",
      "ko": "땡땡이치다",
      "note": "프랑스어+일본어 동사화",
-     "ex": true
+     "ex": true,
+     "st": 1
     }
    ]
   },
@@ -1490,62 +4584,74 @@
      "ja": "パスタ",
      "en": "pasta (이탈리아어)",
      "ko": "파스타",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ピザ",
      "en": "pizza (이탈리아어)",
      "ko": "피자",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "スパゲッティ",
      "en": "spaghetti (이탈리아어)",
      "ko": "스파게티",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "オペラ",
      "en": "opera (이탈리아어)",
      "ko": "오페라",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ソプラノ",
      "en": "soprano (이탈리아어)",
      "ko": "소프라노",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "テンポ",
      "en": "tempo (이탈리아어)",
      "ko": "템포",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 2
     },
     {
      "ja": "イクラ",
      "en": "ikra (러시아어)",
      "ko": "연어알",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ノルマ",
      "en": "norma (러시아어)",
      "ko": "할당량",
      "note": "영어는 quota",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "ヨーグルト",
      "en": "yoghurt (터키어 기원)",
      "ko": "요구르트",
-     "ex": true
+     "ex": true,
+     "st": 1
     },
     {
      "ja": "アンコール",
      "en": "encore (프랑스어)",
      "ko": "앙코르",
-     "ex": true
+     "ex": true,
+     "st": 1,
+     "jlpt": 1
     }
    ]
   }

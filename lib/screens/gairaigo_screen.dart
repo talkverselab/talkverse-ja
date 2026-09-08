@@ -27,13 +27,19 @@ class _Word {
   final String ja, en, ko;
   final String? note;
   final bool ex;
-  const _Word(this.ja, this.en, this.ko, this.note, this.ex);
+  final int st; // 1=핵심 큐레이션, 2=JLPT 전체
+  final int? jlpt;
+  const _Word(this.ja, this.en, this.ko, this.note, this.ex, this.st, this.jlpt);
 }
 
 class _GairaigoScreenState extends State<GairaigoScreen> {
   List<_Branch> _branches = [];
   bool _loading = true;
   int _tab = 0;
+  int _stage = 1; // 1단계(핵심) 디폴트 · 2단계(JLPT 전체)
+
+  List<_Word> _visible(_Branch b) =>
+      b.words.where((w) => w.st <= _stage).toList();
 
   @override
   void initState() {
@@ -54,7 +60,8 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
         [
           for (final w in (b['words'] as List).cast<Map<String, dynamic>>())
             _Word(w['ja'] as String, w['en'] as String, w['ko'] as String,
-                w['note'] as String?, w['ex'] == true),
+                w['note'] as String?, w['ex'] == true,
+                (w['st'] as int?) ?? 1, w['jlpt'] as int?),
         ],
       ));
     }
@@ -67,7 +74,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final total = _branches.fold(0, (s, b) => s + b.words.length);
+    final total = _branches.fold(0, (s, b) => s + _visible(b).length);
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
@@ -77,7 +84,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
             const Text('영어등유래단어',
                 style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('外来語 · 음차 규칙 ${_branches.length}줄기 · $total어',
+            Text('外来語 · $_stage단계 · ${_branches.length}줄기 · $total어',
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -87,6 +94,42 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
           ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
           : Column(
               children: [
+                // 단계 선택
+                Container(
+                  color: AppColors.washiDeep,
+                  padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
+                  child: Row(
+                    children: [1, 2].map((st) {
+                      final selected = _stage == st;
+                      final n = _branches.fold(
+                          0, (s, b) => s + b.words.where((w) => w.st <= st).length);
+                      return Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: GestureDetector(
+                          onTap: () => setState(() => _stage = st),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 14, vertical: 7),
+                            decoration: BoxDecoration(
+                              color: selected ? AppColors.ai : AppColors.washi,
+                              border: Border.all(
+                                  color: AppColors.ai,
+                                  width: selected ? 1.5 : 0.8),
+                            ),
+                            child: Text(
+                              st == 1 ? '1단계 핵심 $n' : '2단계 JLPT 전체 $n',
+                              style: TextStyle(
+                                color: selected ? AppColors.washi : AppColors.ai,
+                                fontWeight: FontWeight.w800,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    }).toList(),
+                  ),
+                ),
                 // 줄기 선택 칩
                 Container(
                   color: AppColors.washiDeep,
@@ -111,7 +154,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                                     Border.all(color: AppColors.beni, width: selected ? 1.5 : 0.8),
                               ),
                               child: Text(
-                                '${b.emoji} ${b.title} ${b.words.length}',
+                                '${b.emoji} ${b.title} ${_visible(b).length}',
                                 style: TextStyle(
                                   color: selected ? AppColors.washi : AppColors.beni,
                                   fontWeight: FontWeight.w800,
@@ -148,7 +191,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
           ),
         ),
         const SizedBox(height: 12),
-        ...b.words.map(_wordRow),
+        ..._visible(b).map(_wordRow),
       ],
     );
   }
@@ -179,6 +222,23 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                                   fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi)),
                         ),
                         const SizedBox(width: 8),
+                        if (w.jlpt != null)
+                          Padding(
+                            padding: const EdgeInsets.only(right: 6),
+                            child: Container(
+                              padding: const EdgeInsets.symmetric(
+                                  horizontal: 5, vertical: 1),
+                              decoration: BoxDecoration(
+                                color: AppColors.matcha.withValues(alpha: 0.12),
+                                border: Border.all(color: AppColors.matcha),
+                              ),
+                              child: Text('N${w.jlpt}',
+                                  style: const TextStyle(
+                                      fontSize: 9,
+                                      fontWeight: FontWeight.w800,
+                                      color: AppColors.matcha)),
+                            ),
+                          ),
                         if (w.ex)
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
@@ -195,7 +255,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                     KoReadingText(w.ja,
                         style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
                     const SizedBox(height: 2),
-                    Text('${w.en} · ${w.ko}',
+                    Text(w.en.isEmpty ? w.ko : '${w.en} · ${w.ko}',
                         style: const TextStyle(
                             fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
                     if (w.note != null)
