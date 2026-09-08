@@ -8,7 +8,9 @@ import 'conversation_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
 import 'grammar_lesson_screen.dart';
+import 'gairaigo_screen.dart';
 import 'hanja_sound_screen.dart';
+import 'phonetic_roots_screen.dart';
 import 'jlpt_words_screen.dart';
 import 'kana_chart_screen.dart';
 import 'kanji_dictionary_screen.dart';
@@ -259,6 +261,10 @@ class _MenuGrid extends StatelessWidget {
         builder: (_) => const TopicVocabScreen()),
       _MenuItem(label: '한자음', sub: '한국 한자음 ↔ 音読み', seal: '音', color: AppColors.aiDeep,
         builder: (_) => const HanjaSoundScreen()),
+      _MenuItem(label: '발음부', sub: '音符 · 한자 가족', seal: '音符', color: const Color(0xFF6A1B9A),
+        builder: (_) => const PhoneticRootsScreen()),
+      _MenuItem(label: '영어유래단어', sub: '카타카나 음차 규칙', seal: '外来', color: const Color(0xFF00695C),
+        builder: (_) => const GairaigoScreen()),
       _MenuItem(label: '단어 빈도', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
         builder: (_) => const WordFreqScreen()),
       _MenuItem(label: '복습', sub: 'Flashcard 덱 5', seal: '復習', color: AppColors.kin,
