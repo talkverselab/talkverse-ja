@@ -65,6 +65,7 @@ db = json.load(open(DB, encoding='utf-8'))
 entries = db['entries']
 onmap = {}   # char -> set of normalized on readings
 rawon = {}   # char -> first raw on
+rawons = {}  # char -> all raw on readings
 komap = {}   # char -> 한국 한자음
 jlpt = {}
 rank = {}
@@ -80,6 +81,7 @@ for e in entries:
     if ms:
         last = ms[0].strip()[-1:]
         if last and 0xAC00 <= ord(last) <= 0xD7A3: komap[c] = last
+    rawons[c] = ons
 
 # 후보: 각 한자 X 의 구성요소 C 중 음독 일치하는 것
 cand = defaultdict(set)   # root -> {members}
@@ -151,12 +153,34 @@ fam = {c: ms for c, ms in fam.items() if len(ms) >= 2}
 
 out_roots, out_chars = {}, {}
 for c, ms in sorted(fam.items(), key=lambda kv: -len(kv[1])):
-    on = rawon.get(c)
+    # 대표 음독: 멤버들과 가장 많이 일치하는 음독을 고른다 (且: ショ가 아니라 ソ)
+    member_norms = defaultdict(int)
+    for m in ms:
+        for r in rawons.get(m, []):
+            member_norms[norm(r)] += 1
+    candidates = rawons.get(c) or []
+    on = None
+    if candidates:
+        on = max(candidates, key=lambda r: member_norms.get(norm(r), 0))
     if not on:
+        # db 밖 루트: 멤버 최빈 음독(원표기)으로
         cnt = defaultdict(int)
-        for m in ms: cnt[rawon[m].translate(DAKU)] += 1
-        on = max(cnt, key=cnt.get)
-    out_roots[c] = {'on': on, 'ko': komap.get(c), 'count': len(ms),
+        rep = {}
+        for m in ms:
+            for r in rawons.get(m, []):
+                n = norm(r)
+                cnt[n] += 1
+                rep.setdefault(n, r)
+        best = max(cnt, key=cnt.get)
+        on = rep[best]
+    # 한자음: 루트 자신 것, 없으면 멤버 최빈 한자음 (尞 → 료)
+    ko = komap.get(c)
+    if ko is None:
+        kc = defaultdict(int)
+        for m in ms:
+            if m in komap: kc[komap[m]] += 1
+        if kc: ko = max(kc, key=kc.get)
+    out_roots[c] = {'on': on, 'ko': ko, 'count': len(ms),
                     'in_db': c in onmap}
     for m in sorted(ms, key=lambda x: (rank.get(x) or 9999)):
         out_chars[m] = {'phonetic': c, 'jlpt': jlpt.get(m)}

@@ -15,7 +15,8 @@ class KanjiQuizScreen extends StatefulWidget {
   final int stage;
   final List<KanjiStage> allStages;
 
-  const KanjiQuizScreen({super.key, required this.stage, required this.allStages});
+  final int resultOffset; // 빈도순 모드 기록 분리용 (+500)
+  const KanjiQuizScreen({super.key, required this.stage, required this.allStages, this.resultOffset = 0});
 
   @override
   State<KanjiQuizScreen> createState() => _KanjiQuizScreenState();
@@ -115,10 +116,11 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
 
   Future<void> _saveResult() async {
     final pct = (_correct / _questions.length * 100).round();
-    final prev = await (appDb.select(appDb.stageResults)..where((s) => s.stage.equals(widget.stage))).getSingleOrNull();
+    final key = widget.stage + widget.resultOffset;
+    final prev = await (appDb.select(appDb.stageResults)..where((s) => s.stage.equals(key))).getSingleOrNull();
     await appDb.into(appDb.stageResults).insertOnConflictUpdate(
           StageResultsCompanion(
-            stage: Value(widget.stage),
+            stage: Value(key),
             correct: Value(_correct),
             total: Value(_questions.length),
             bestPct: Value(max(pct, prev?.bestPct ?? 0)),
