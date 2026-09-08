@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../services/kana_phonetics.dart';
+import 'vowel_compare_chart.dart';
 import '../services/tts_service.dart';
 
 /// 가나 탭 → 발음 상세 시트.
@@ -56,6 +57,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
   @override
   Widget build(BuildContext context) {
     final p = kanaPhoneticsOf(widget.romaji);
+    final vc = vowelChartOf(widget.romaji);
     final color = widget.color;
     return DraggableScrollableSheet(
       expand: false,
@@ -121,42 +123,65 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
           const SizedBox(height: 20),
           if (p != null) ...[
             _section('👄 소리나는 곳 · 입모양', p.place, color),
-            const SizedBox(height: 6),
-            // IPA 차트 (위키미디어 자료)
-            InkWell(
-              onTap: () => setState(() => _showChart = !_showChart),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(vertical: 6),
-                child: Row(
+            // 모음 위치 비교 — 한 차트 위에 일본어(빨강) vs 영어(파랑)
+            if (vc != null) ...[
+              const SizedBox(height: 14),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(14),
+                decoration: BoxDecoration(
+                  color: AppColors.washiDeep,
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: color.withValues(alpha: 0.35)),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(_showChart ? Icons.expand_less : Icons.expand_more,
-                        size: 18, color: color),
-                    Text(p.vowelOnly ? 'IPA 모음 차트 보기' : 'IPA 조음 위치 그림 보기',
+                    Text('📍 모음 위치 — 일본어 vs 영어',
                         style: TextStyle(
-                            fontSize: 12, fontWeight: FontWeight.w700, color: color)),
+                            fontSize: 13, fontWeight: FontWeight.w800, color: color)),
+                    const SizedBox(height: 10),
+                    VowelCompareChart(data: vc),
                   ],
                 ),
               ),
-            ),
-            if (_showChart) ...[
-              ClipRRect(
-                borderRadius: BorderRadius.circular(8),
-                child: Container(
-                  color: Colors.white,
-                  padding: const EdgeInsets.all(8),
-                  child: Image.asset(
-                    p.vowelOnly
-                        ? 'assets/images/ipa/ipa_vowel_chart.png'
-                        : 'assets/images/ipa/places_of_articulation.png',
-                    fit: BoxFit.contain,
+            ],
+            if (!p.vowelOnly) ...[
+              const SizedBox(height: 6),
+              // 자음 조음 위치 그림 (위키미디어 자료)
+              InkWell(
+                onTap: () => setState(() => _showChart = !_showChart),
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 6),
+                  child: Row(
+                    children: [
+                      Icon(_showChart ? Icons.expand_less : Icons.expand_more,
+                          size: 18, color: color),
+                      Text('자음 조음 위치 그림 보기',
+                          style: TextStyle(
+                              fontSize: 12, fontWeight: FontWeight.w700, color: color)),
+                    ],
                   ),
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.only(top: 4),
-                child: Text('차트: Wikimedia Commons IPA 자료 (CC BY-SA)',
-                    style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
-              ),
+              if (_showChart) ...[
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: Container(
+                    color: Colors.white,
+                    padding: const EdgeInsets.all(8),
+                    child: Image.asset(
+                      'assets/images/ipa/places_of_articulation.png',
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ),
+                const Padding(
+                  padding: EdgeInsets.only(top: 4),
+                  child: Text('그림: Wikimedia Commons IPA 자료 (CC BY-SA)',
+                      style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
+                ),
+              ],
             ],
             const SizedBox(height: 14),
             _section('🇺🇸 영어와 비교', '${p.engIpa}\n\n${p.engHow}', color),
