@@ -1,5 +1,5 @@
 {
- "_meta": "영어유래 외래어 음차 분석 — 줄기 9개 · 200어",
+ "_meta": "영어유래 외래어 음차 분석 — 줄기 13개 · 248어",
  "branches": [
   {
    "id": "vowel",
@@ -1083,126 +1083,468 @@
    ]
   },
   {
-   "id": "nonen",
-   "title": "영어 아님 주의",
-   "emoji": "⚠️",
-   "rule": "카타카나라고 다 영어가 아니다. 포르투갈어·네덜란드어·독일어·프랑스어에서 온 말들 — 영어로 말하면 안 통한다. 전부 예외로 표시.",
+   "id": "pt",
+   "title": "포르투갈어 유래",
+   "emoji": "🇵🇹",
+   "rule": "16세기 남만무역으로 들어온 가장 오래된 외래어층. 음식·생활용품이 많다. 영어로 말하면 안 통하는 것 주의.",
    "words": [
     {
      "ja": "パン",
-     "en": "pão (포르투갈어)",
+     "en": "pão",
      "ko": "빵",
      "note": "영어는 bread",
      "ex": true
     },
     {
-     "ja": "アルバイト",
-     "en": "Arbeit (독일어)",
-     "ko": "아르바이트",
-     "note": "영어는 part-time job",
+     "ja": "ボタン",
+     "en": "botão",
+     "ko": "단추·버튼",
+     "note": "영어 button과 우연히 비슷",
      "ex": true
     },
     {
-     "ja": "エネルギー",
-     "en": "Energie (독일어)",
-     "ko": "에너지",
-     "note": "영어식이면 エナジー",
+     "ja": "タバコ",
+     "en": "tabaco",
+     "ko": "담배",
+     "note": "영어는 cigarette",
      "ex": true
     },
     {
-     "ja": "アレルギー",
-     "en": "Allergie (독일어)",
-     "ko": "알레르기",
-     "note": "영어식이면 アラジー",
+     "ja": "カステラ",
+     "en": "castella",
+     "ko": "카스텔라",
      "ex": true
     },
     {
-     "ja": "テーマ",
-     "en": "Thema (독일어)",
-     "ko": "주제",
-     "note": "영어 theme은 スィーム에 가까움",
+     "ja": "テンプラ",
+     "en": "tempero",
+     "ko": "튀김(天ぷら)",
+     "note": "한자 표기가 붙어 일본어화",
      "ex": true
     },
     {
-     "ja": "カルテ",
-     "en": "Karte (독일어)",
-     "ko": "진료 기록",
-     "note": "영어는 chart",
+     "ja": "カルタ",
+     "en": "carta",
+     "ko": "카드놀이",
+     "note": "트럼프 카드는 영어 カード",
      "ex": true
     },
     {
-     "ja": "ギプス",
-     "en": "Gips (독일어)",
-     "ko": "깁스",
-     "note": "영어는 cast",
+     "ja": "コンペイトウ",
+     "en": "confeito",
+     "ko": "별사탕(金平糖)",
      "ex": true
     },
     {
-     "ja": "アンケート",
-     "en": "enquête (프랑스어)",
-     "ko": "설문조사",
-     "note": "영어는 survey",
+     "ja": "シャボン",
+     "en": "sabão",
+     "ko": "비누",
+     "note": "シャボン玉=비눗방울. 일상 비누는 石けん",
      "ex": true
     },
     {
-     "ja": "ズボン",
-     "en": "jupon (프랑스어)",
-     "ko": "바지",
-     "note": "영어는 pants/trousers",
+     "ja": "ビロード",
+     "en": "veludo",
+     "ko": "벨벳",
+     "note": "영어식은 ベルベット",
      "ex": true
     },
     {
-     "ja": "ピーマン",
-     "en": "piment (프랑스어)",
-     "ko": "피망",
-     "note": "영어는 bell pepper",
+     "ja": "ジョウロ",
+     "en": "jarro",
+     "ko": "물뿌리개",
+     "ex": true
+    }
+   ]
+  },
+  {
+   "id": "nl",
+   "title": "네덜란드어 유래",
+   "emoji": "🇳🇱",
+   "rule": "에도시대 난학(蘭學)으로 들어온 층. 과학·의학·생활어가 많고, 영어와 형태가 비슷해 헷갈리기 쉽다.",
+   "words": [
+    {
+     "ja": "ビール",
+     "en": "bier",
+     "ko": "맥주",
+     "note": "영어 beer면 ビア. ビール은 네덜란드어",
      "ex": true
     },
     {
-     "ja": "デッサン",
-     "en": "dessin (프랑스어)",
-     "ko": "데생",
-     "note": "영어는 sketch",
+     "ja": "コーヒー",
+     "en": "koffie",
+     "ko": "커피",
+     "note": "f가 ヒ가 된 이유가 이것",
+     "ex": true
+    },
+    {
+     "ja": "ガラス",
+     "en": "glas",
+     "ko": "유리",
+     "note": "술잔 glass는 영어 グラス로 구별",
      "ex": true
     },
     {
      "ja": "コップ",
-     "en": "kop (네덜란드어)",
+     "en": "kop",
      "ko": "컵",
-     "note": "영어 cup은 カップ로 따로 존재!",
+     "note": "영어 cup은 カップ로 따로 존재",
      "ex": true
     },
     {
      "ja": "ゴム",
-     "en": "gom (네덜란드어)",
+     "en": "gom",
      "ko": "고무",
      "note": "영어는 rubber",
      "ex": true
     },
     {
      "ja": "ランドセル",
-     "en": "ransel (네덜란드어)",
+     "en": "ransel",
      "ko": "책가방",
      "note": "초등학생용 가방",
      "ex": true
     },
     {
-     "ja": "カステラ",
-     "en": "castella (포르투갈어)",
-     "ko": "카스텔라",
+     "ja": "ペンキ",
+     "en": "pek",
+     "ko": "페인트",
+     "note": "영어식은 ペイント",
      "ex": true
     },
     {
-     "ja": "タバコ",
-     "en": "tabaco (포르투갈어)",
-     "ko": "담배",
-     "note": "영어는 cigarette",
+     "ja": "オルゴール",
+     "en": "orgel",
+     "ko": "오르골",
+     "note": "영어는 music box",
+     "ex": true
+    },
+    {
+     "ja": "メス",
+     "en": "mes",
+     "ko": "수술칼",
+     "note": "영어는 scalpel",
+     "ex": true
+    },
+    {
+     "ja": "ピンセット",
+     "en": "pincet",
+     "ko": "핀셋",
+     "note": "영어는 tweezers",
+     "ex": true
+    },
+    {
+     "ja": "ホース",
+     "en": "hoos",
+     "ko": "호스",
+     "ex": true
+    }
+   ]
+  },
+  {
+   "id": "de",
+   "title": "독일어 유래",
+   "emoji": "🇩🇪",
+   "rule": "메이지 이후 의학·등산·학문 용어로 들어온 층. 병원·대학에서 많이 쓴다.",
+   "words": [
+    {
+     "ja": "アルバイト",
+     "en": "Arbeit",
+     "ko": "아르바이트",
+     "note": "영어는 part-time job",
+     "ex": true
+    },
+    {
+     "ja": "エネルギー",
+     "en": "Energie",
+     "ko": "에너지",
+     "note": "영어식이면 エナジー",
+     "ex": true
+    },
+    {
+     "ja": "アレルギー",
+     "en": "Allergie",
+     "ko": "알레르기",
+     "note": "영어식이면 アラジー",
+     "ex": true
+    },
+    {
+     "ja": "テーマ",
+     "en": "Thema",
+     "ko": "주제",
+     "note": "영어 theme은 발음이 다름",
+     "ex": true
+    },
+    {
+     "ja": "カルテ",
+     "en": "Karte",
+     "ko": "진료 기록",
+     "note": "영어는 chart",
+     "ex": true
+    },
+    {
+     "ja": "ギプス",
+     "en": "Gips",
+     "ko": "깁스",
+     "note": "영어는 cast",
+     "ex": true
+    },
+    {
+     "ja": "ワクチン",
+     "en": "Vakzin",
+     "ko": "백신",
+     "note": "영어 vaccine이면 バクシーン이 됐을 것",
+     "ex": true
+    },
+    {
+     "ja": "ゼミ",
+     "en": "Seminar",
+     "ko": "세미나·학부 연구실",
+     "ex": true
+    },
+    {
+     "ja": "ノイローゼ",
+     "en": "Neurose",
+     "ko": "노이로제",
+     "note": "영어는 neurosis",
+     "ex": true
+    },
+    {
+     "ja": "リュックサック",
+     "en": "Rucksack",
+     "ko": "배낭",
+     "note": "줄여서 リュック",
+     "ex": true
+    },
+    {
+     "ja": "ゲレンデ",
+     "en": "Gelände",
+     "ko": "스키장 슬로프",
+     "ex": true
+    },
+    {
+     "ja": "メルヘン",
+     "en": "Märchen",
+     "ko": "동화",
+     "note": "영어는 fairy tale",
+     "ex": true
+    },
+    {
+     "ja": "ガーゼ",
+     "en": "Gaze",
+     "ko": "거즈",
+     "ex": true
+    },
+    {
+     "ja": "バウムクーヘン",
+     "en": "Baumkuchen",
+     "ko": "바움쿠헨",
+     "ex": true
+    }
+   ]
+  },
+  {
+   "id": "fr",
+   "title": "프랑스어 유래",
+   "emoji": "🇫🇷",
+   "rule": "예술·패션·요리 분야로 들어온 층. 세련된 어감으로 쓰인다.",
+   "words": [
+    {
+     "ja": "アンケート",
+     "en": "enquête",
+     "ko": "설문조사",
+     "note": "영어는 survey",
+     "ex": true
+    },
+    {
+     "ja": "ズボン",
+     "en": "jupon",
+     "ko": "바지",
+     "note": "영어는 pants/trousers",
+     "ex": true
+    },
+    {
+     "ja": "ピーマン",
+     "en": "piment",
+     "ko": "피망",
+     "note": "영어는 bell pepper",
+     "ex": true
+    },
+    {
+     "ja": "デッサン",
+     "en": "dessin",
+     "ko": "데생",
+     "note": "영어는 sketch",
+     "ex": true
+    },
+    {
+     "ja": "アトリエ",
+     "en": "atelier",
+     "ko": "작업실",
+     "ex": true
+    },
+    {
+     "ja": "ジャンル",
+     "en": "genre",
+     "ko": "장르",
+     "ex": true
+    },
+    {
+     "ja": "グルメ",
+     "en": "gourmet",
+     "ko": "미식가",
+     "ex": true
+    },
+    {
+     "ja": "コンクール",
+     "en": "concours",
+     "ko": "콩쿠르·경연",
+     "note": "영어는 competition",
+     "ex": true
+    },
+    {
+     "ja": "クレヨン",
+     "en": "crayon",
+     "ko": "크레용",
+     "ex": true
+    },
+    {
+     "ja": "マヨネーズ",
+     "en": "mayonnaise",
+     "ko": "마요네즈",
+     "ex": true
+    },
+    {
+     "ja": "オムレツ",
+     "en": "omelette",
+     "ko": "오믈렛",
+     "ex": true
+    },
+    {
+     "ja": "クロワッサン",
+     "en": "croissant",
+     "ko": "크루아상",
+     "ex": true
+    },
+    {
+     "ja": "シュークリーム",
+     "en": "chou à la crème",
+     "ko": "슈크림",
+     "note": "영어 shoe cream(구두약)이 아님!",
+     "ex": true
+    },
+    {
+     "ja": "パフェ",
+     "en": "parfait",
+     "ko": "파르페",
+     "ex": true
+    },
+    {
+     "ja": "ブティック",
+     "en": "boutique",
+     "ko": "부티크",
+     "ex": true
+    },
+    {
+     "ja": "ベージュ",
+     "en": "beige",
+     "ko": "베이지",
+     "ex": true
+    },
+    {
+     "ja": "バカンス",
+     "en": "vacances",
+     "ko": "바캉스·휴가",
+     "note": "영어는 vacation",
+     "ex": true
+    },
+    {
+     "ja": "エチケット",
+     "en": "étiquette",
+     "ko": "에티켓",
+     "ex": true
+    },
+    {
+     "ja": "ピエロ",
+     "en": "pierrot",
+     "ko": "삐에로",
+     "note": "영어는 clown",
+     "ex": true
+    },
+    {
+     "ja": "サボる",
+     "en": "sabotage+る",
+     "ko": "땡땡이치다",
+     "note": "프랑스어+일본어 동사화",
+     "ex": true
+    }
+   ]
+  },
+  {
+   "id": "etc",
+   "title": "이탈리아어·기타",
+   "emoji": "🍝",
+   "rule": "이탈리아어(음악·음식), 러시아어 등. 분야가 뚜렷해서 외우기 쉽다.",
+   "words": [
+    {
+     "ja": "パスタ",
+     "en": "pasta (이탈리아어)",
+     "ko": "파스타",
+     "ex": true
+    },
+    {
+     "ja": "ピザ",
+     "en": "pizza (이탈리아어)",
+     "ko": "피자",
+     "ex": true
+    },
+    {
+     "ja": "スパゲッティ",
+     "en": "spaghetti (이탈리아어)",
+     "ko": "스파게티",
+     "ex": true
+    },
+    {
+     "ja": "オペラ",
+     "en": "opera (이탈리아어)",
+     "ko": "오페라",
+     "ex": true
+    },
+    {
+     "ja": "ソプラノ",
+     "en": "soprano (이탈리아어)",
+     "ko": "소프라노",
+     "ex": true
+    },
+    {
+     "ja": "テンポ",
+     "en": "tempo (이탈리아어)",
+     "ko": "템포",
      "ex": true
     },
     {
      "ja": "イクラ",
      "en": "ikra (러시아어)",
      "ko": "연어알",
+     "ex": true
+    },
+    {
+     "ja": "ノルマ",
+     "en": "norma (러시아어)",
+     "ko": "할당량",
+     "note": "영어는 quota",
+     "ex": true
+    },
+    {
+     "ja": "ヨーグルト",
+     "en": "yoghurt (터키어 기원)",
+     "ko": "요구르트",
+     "ex": true
+    },
+    {
+     "ja": "アンコール",
+     "en": "encore (프랑스어)",
+     "ko": "앙코르",
      "ex": true
     }
    ]
