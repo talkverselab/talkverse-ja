@@ -1,0 +1,3563 @@
+{
+ "_meta": "JLPT 한자 발음부(音符) 자동판정 — IDS 분해 + 음독(탁음 정규화) 일치 검증. 가족 2자 이상.",
+ "roots": {
+  "工": {
+   "on": "コウ",
+   "ko": "공",
+   "count": 10,
+   "in_db": true
+  },
+  "方": {
+   "on": "ホウ",
+   "ko": "방",
+   "count": 10,
+   "in_db": true
+  },
+  "令": {
+   "on": "レイ",
+   "ko": "령",
+   "count": 9,
+   "in_db": true
+  },
+  "且": {
+   "on": "ショ",
+   "ko": "차",
+   "count": 8,
+   "in_db": true
+  },
+  "丁": {
+   "on": "チョウ",
+   "ko": "정",
+   "count": 7,
+   "in_db": true
+  },
+  "青": {
+   "on": "セイ",
+   "ko": "청",
+   "count": 7,
+   "in_db": true
+  },
+  "反": {
+   "on": "ハン",
+   "ko": "반",
+   "count": 6,
+   "in_db": true
+  },
+  "甫": {
+   "on": "ホ",
+   "ko": "보",
+   "count": 6,
+   "in_db": true
+  },
+  "其": {
+   "on": "キ",
+   "ko": "기",
+   "count": 6,
+   "in_db": true
+  },
+  "召": {
+   "on": "ショウ",
+   "ko": "소",
+   "count": 6,
+   "in_db": true
+  },
+  "尞": {
+   "on": "リョウ",
+   "ko": null,
+   "count": 6,
+   "in_db": false
+  },
+  "干": {
+   "on": "カン",
+   "ko": "간",
+   "count": 6,
+   "in_db": true
+  },
+  "加": {
+   "on": "カ",
+   "ko": "가",
+   "count": 6,
+   "in_db": true
+  },
+  "寺": {
+   "on": "ジ",
+   "ko": "사",
+   "count": 5,
+   "in_db": true
+  },
+  "辰": {
+   "on": "シン",
+   "ko": "진",
+   "count": 5,
+   "in_db": true
+  },
+  "交": {
+   "on": "コウ",
+   "ko": "교",
+   "count": 5,
+   "in_db": true
+  },
+  "同": {
+   "on": "ドウ",
+   "ko": "동",
+   "count": 5,
+   "in_db": true
+  },
+  "㑒": {
+   "on": "ケン",
+   "ko": null,
+   "count": 5,
+   "in_db": false
+  },
+  "莫": {
+   "on": "ホ",
+   "ko": null,
+   "count": 5,
+   "in_db": false
+  },
+  "肖": {
+   "on": "ショウ",
+   "ko": "초",
+   "count": 5,
+   "in_db": true
+  },
+  "亡": {
+   "on": "ボウ",
+   "ko": "망",
+   "count": 5,
+   "in_db": true
+  },
+  "包": {
+   "on": "ホウ",
+   "ko": "포",
+   "count": 5,
+   "in_db": true
+  },
+  "古": {
+   "on": "コ",
+   "ko": "고",
+   "count": 5,
+   "in_db": true
+  },
+  "正": {
+   "on": "セイ",
+   "ko": "정",
+   "count": 5,
+   "in_db": true
+  },
+  "啇": {
+   "on": "テキ",
+   "ko": null,
+   "count": 5,
+   "in_db": false
+  },
+  "㐮": {
+   "on": "ショウ",
+   "ko": null,
+   "count": 5,
+   "in_db": false
+  },
+  "可": {
+   "on": "カ",
+   "ko": "가",
+   "count": 4,
+   "in_db": true
+  },
+  "俞": {
+   "on": "ユ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "乍": {
+   "on": "サク",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "昔": {
+   "on": "セキ",
+   "ko": "석",
+   "count": 4,
+   "in_db": true
+  },
+  "咅": {
+   "on": "ハイ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "皮": {
+   "on": "ヒ",
+   "ko": "피",
+   "count": 4,
+   "in_db": true
+  },
+  "龹": {
+   "on": "ケン",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "复": {
+   "on": "フク",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "奇": {
+   "on": "キ",
+   "ko": "기",
+   "count": 4,
+   "in_db": true
+  },
+  "元": {
+   "on": "ゲン",
+   "ko": "원",
+   "count": 4,
+   "in_db": true
+  },
+  "非": {
+   "on": "ヒ",
+   "ko": "비",
+   "count": 4,
+   "in_db": true
+  },
+  "冓": {
+   "on": "コウ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "司": {
+   "on": "シ",
+   "ko": "사",
+   "count": 4,
+   "in_db": true
+  },
+  "氐": {
+   "on": "テイ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "中": {
+   "on": "チュウ",
+   "ko": "중",
+   "count": 4,
+   "in_db": true
+  },
+  "成": {
+   "on": "セイ",
+   "ko": "성",
+   "count": 4,
+   "in_db": true
+  },
+  "扁": {
+   "on": "ヘン",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "付": {
+   "on": "フ",
+   "ko": "부",
+   "count": 4,
+   "in_db": true
+  },
+  "曾": {
+   "on": "ソウ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "喿": {
+   "on": "ソウ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "夋": {
+   "on": "シュン",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "夌": {
+   "on": "リョウ",
+   "ko": null,
+   "count": 4,
+   "in_db": false
+  },
+  "吾": {
+   "on": "コ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "亲": {
+   "on": "シン",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "丂": {
+   "on": "コウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "开": {
+   "on": "ケイ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "化": {
+   "on": "カ",
+   "ko": "화",
+   "count": 3,
+   "in_db": true
+  },
+  "代": {
+   "on": "ダイ",
+   "ko": "대",
+   "count": 3,
+   "in_db": true
+  },
+  "龸": {
+   "on": "ショウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "官": {
+   "on": "カン",
+   "ko": "관",
+   "count": 3,
+   "in_db": true
+  },
+  "翟": {
+   "on": "ヨウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "㐬": {
+   "on": "リュウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "咼": {
+   "on": "カ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "及": {
+   "on": "キュウ",
+   "ko": "급",
+   "count": 3,
+   "in_db": true
+  },
+  "義": {
+   "on": "ギ",
+   "ko": "의",
+   "count": 3,
+   "in_db": true
+  },
+  "申": {
+   "on": "シン",
+   "ko": "신",
+   "count": 3,
+   "in_db": true
+  },
+  "袁": {
+   "on": "エン",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "相": {
+   "on": "ソウ",
+   "ko": "상",
+   "count": 3,
+   "in_db": true
+  },
+  "半": {
+   "on": "ハン",
+   "ko": "반",
+   "count": 3,
+   "in_db": true
+  },
+  "禺": {
+   "on": "クウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "圭": {
+   "on": "ケイ",
+   "ko": "규",
+   "count": 3,
+   "in_db": true
+  },
+  "胡": {
+   "on": "ウ",
+   "ko": "호",
+   "count": 3,
+   "in_db": true
+  },
+  "次": {
+   "on": "ジ",
+   "ko": "차",
+   "count": 3,
+   "in_db": true
+  },
+  "畐": {
+   "on": "フク",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "侖": {
+   "on": "リン",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "求": {
+   "on": "キュウ",
+   "ko": "구",
+   "count": 3,
+   "in_db": true
+  },
+  "采": {
+   "on": "サイ",
+   "ko": "채",
+   "count": 3,
+   "in_db": true
+  },
+  "录": {
+   "on": "ロク",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "賁": {
+   "on": "フン",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "区": {
+   "on": "ク",
+   "ko": "구",
+   "count": 3,
+   "in_db": true
+  },
+  "亢": {
+   "on": "コウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "尃": {
+   "on": "ハク",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "分": {
+   "on": "ブン",
+   "ko": "분",
+   "count": 3,
+   "in_db": true
+  },
+  "夹": {
+   "on": "キョウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "兼": {
+   "on": "ケン",
+   "ko": "겸",
+   "count": 3,
+   "in_db": true
+  },
+  "朱": {
+   "on": "シュ",
+   "ko": "주",
+   "count": 3,
+   "in_db": true
+  },
+  "利": {
+   "on": "リ",
+   "ko": "리",
+   "count": 3,
+   "in_db": true
+  },
+  "朋": {
+   "on": "ホウ",
+   "ko": "붕",
+   "count": 3,
+   "in_db": true
+  },
+  "今": {
+   "on": "コン",
+   "ko": "금",
+   "count": 3,
+   "in_db": true
+  },
+  "辟": {
+   "on": "ヘキ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "䍃": {
+   "on": "ヨウ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "倉": {
+   "on": "ソウ",
+   "ko": "창",
+   "count": 3,
+   "in_db": true
+  },
+  "兆": {
+   "on": "チョウ",
+   "ko": "조",
+   "count": 3,
+   "in_db": true
+  },
+  "岡": {
+   "on": "コウ",
+   "ko": "강",
+   "count": 3,
+   "in_db": true
+  },
+  "監": {
+   "on": "カン",
+   "ko": "감",
+   "count": 3,
+   "in_db": true
+  },
+  "兹": {
+   "on": "シ",
+   "ko": null,
+   "count": 3,
+   "in_db": false
+  },
+  "光": {
+   "on": "コウ",
+   "ko": "광",
+   "count": 3,
+   "in_db": true
+  },
+  "旬": {
+   "on": "ジュン",
+   "ko": "순",
+   "count": 3,
+   "in_db": true
+  },
+  "乁": {
+   "on": "キ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "喬": {
+   "on": "キョウ",
+   "ko": "교",
+   "count": 2,
+   "in_db": true
+  },
+  "丙": {
+   "on": "ヘイ",
+   "ko": "병",
+   "count": 2,
+   "in_db": true
+  },
+  "甬": {
+   "on": "ヨウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "君": {
+   "on": "クン",
+   "ko": "군",
+   "count": 2,
+   "in_db": true
+  },
+  "取": {
+   "on": "シュ",
+   "ko": "취",
+   "count": 2,
+   "in_db": true
+  },
+  "隺": {
+   "on": "カク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "敬": {
+   "on": "ケイ",
+   "ko": "경",
+   "count": 2,
+   "in_db": true
+  },
+  "㔾": {
+   "on": "ハン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "戋": {
+   "on": "セン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "責": {
+   "on": "セキ",
+   "ko": "책",
+   "count": 2,
+   "in_db": true
+  },
+  "刃": {
+   "on": "ジン",
+   "ko": "인",
+   "count": 2,
+   "in_db": true
+  },
+  "廷": {
+   "on": "テイ",
+   "ko": "정",
+   "count": 2,
+   "in_db": true
+  },
+  "旨": {
+   "on": "シ",
+   "ko": "지",
+   "count": 2,
+   "in_db": true
+  },
+  "奴": {
+   "on": "ド",
+   "ko": "노",
+   "count": 2,
+   "in_db": true
+  },
+  "則": {
+   "on": "ソク",
+   "ko": "칙",
+   "count": 2,
+   "in_db": true
+  },
+  "术": {
+   "on": "シュツ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "斉": {
+   "on": "セイ",
+   "ko": "제",
+   "count": 2,
+   "in_db": true
+  },
+  "乇": {
+   "on": "タク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "圣": {
+   "on": "ケイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "固": {
+   "on": "コ",
+   "ko": "고",
+   "count": 2,
+   "in_db": true
+  },
+  "戠": {
+   "on": "ショク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "幾": {
+   "on": "キ",
+   "ko": "기",
+   "count": 2,
+   "in_db": true
+  },
+  "民": {
+   "on": "ミン",
+   "ko": "민",
+   "count": 2,
+   "in_db": true
+  },
+  "卌": {
+   "on": "フ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "卬": {
+   "on": "コウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "吴": {
+   "on": "コ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "先": {
+   "on": "セン",
+   "ko": "선",
+   "count": 2,
+   "in_db": true
+  },
+  "才": {
+   "on": "サイ",
+   "ko": "재",
+   "count": 2,
+   "in_db": true
+  },
+  "堇": {
+   "on": "キン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "亥": {
+   "on": "ガイ",
+   "ko": "해",
+   "count": 2,
+   "in_db": true
+  },
+  "永": {
+   "on": "エイ",
+   "ko": "영",
+   "count": 2,
+   "in_db": true
+  },
+  "苗": {
+   "on": "ビョウ",
+   "ko": "묘",
+   "count": 2,
+   "in_db": true
+  },
+  "容": {
+   "on": "ヨウ",
+   "ko": "용",
+   "count": 2,
+   "in_db": true
+  },
+  "果": {
+   "on": "カ",
+   "ko": "과",
+   "count": 2,
+   "in_db": true
+  },
+  "忩": {
+   "on": "ソウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "闌": {
+   "on": "ラン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "劦": {
+   "on": "キョウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "奉": {
+   "on": "ホウ",
+   "ko": "봉",
+   "count": 2,
+   "in_db": true
+  },
+  "竟": {
+   "on": "キョウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "壮": {
+   "on": "ソウ",
+   "ko": "장",
+   "count": 2,
+   "in_db": true
+  },
+  "奐": {
+   "on": "カン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "于": {
+   "on": "ウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "臤": {
+   "on": "ケン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "屈": {
+   "on": "クツ",
+   "ko": "굴",
+   "count": 2,
+   "in_db": true
+  },
+  "東": {
+   "on": "トウ",
+   "ko": "동",
+   "count": 2,
+   "in_db": true
+  },
+  "広": {
+   "on": "コウ",
+   "ko": "광",
+   "count": 2,
+   "in_db": true
+  },
+  "并": {
+   "on": "ヘイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "荅": {
+   "on": "トウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "菐": {
+   "on": "ホク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "卆": {
+   "on": "スイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "离": {
+   "on": "リ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "蒦": {
+   "on": "カク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "粦": {
+   "on": "リン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "曹": {
+   "on": "ソウ",
+   "ko": "조",
+   "count": 2,
+   "in_db": true
+  },
+  "迶": {
+   "on": "スイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "太": {
+   "on": "タイ",
+   "ko": "태",
+   "count": 2,
+   "in_db": true
+  },
+  "爰": {
+   "on": "エン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "叚": {
+   "on": "カ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "厷": {
+   "on": "コウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "童": {
+   "on": "ドウ",
+   "ko": "동",
+   "count": 2,
+   "in_db": true
+  },
+  "曼": {
+   "on": "マン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "㦮": {
+   "on": "セン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "建": {
+   "on": "ケン",
+   "ko": "건",
+   "count": 2,
+   "in_db": true
+  },
+  "曷": {
+   "on": "カツ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "豖": {
+   "on": "タク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "呆": {
+   "on": "ホウ",
+   "ko": "매",
+   "count": 2,
+   "in_db": true
+  },
+  "貞": {
+   "on": "テイ",
+   "ko": "정",
+   "count": 2,
+   "in_db": true
+  },
+  "家": {
+   "on": "カ",
+   "ko": "가",
+   "count": 2,
+   "in_db": true
+  },
+  "般": {
+   "on": "ハン",
+   "ko": "반",
+   "count": 2,
+   "in_db": true
+  },
+  "此": {
+   "on": "シ",
+   "ko": "차",
+   "count": 2,
+   "in_db": true
+  },
+  "亶": {
+   "on": "タン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "列": {
+   "on": "レツ",
+   "ko": "렬",
+   "count": 2,
+   "in_db": true
+  },
+  "安": {
+   "on": "アン",
+   "ko": "안",
+   "count": 2,
+   "in_db": true
+  },
+  "乡": {
+   "on": "キョウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "巨": {
+   "on": "キョ",
+   "ko": "거",
+   "count": 2,
+   "in_db": true
+  },
+  "睘": {
+   "on": "カン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "平": {
+   "on": "ヘイ",
+   "ko": "평",
+   "count": 2,
+   "in_db": true
+  },
+  "票": {
+   "on": "ヒョウ",
+   "ko": "표",
+   "count": 2,
+   "in_db": true
+  },
+  "亘": {
+   "on": "コウ",
+   "ko": "긍",
+   "count": 2,
+   "in_db": true
+  },
+  "章": {
+   "on": "ショウ",
+   "ko": "장",
+   "count": 2,
+   "in_db": true
+  },
+  "帝": {
+   "on": "テイ",
+   "ko": "제",
+   "count": 2,
+   "in_db": true
+  },
+  "路": {
+   "on": "ロ",
+   "ko": "로",
+   "count": 2,
+   "in_db": true
+  },
+  "真": {
+   "on": "シン",
+   "ko": "진",
+   "count": 2,
+   "in_db": true
+  },
+  "知": {
+   "on": "チ",
+   "ko": "지",
+   "count": 2,
+   "in_db": true
+  },
+  "旡": {
+   "on": "カイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "昌": {
+   "on": "ショウ",
+   "ko": "창",
+   "count": 2,
+   "in_db": true
+  },
+  "貇": {
+   "on": "コン",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "匊": {
+   "on": "キク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "孰": {
+   "on": "シュク",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "番": {
+   "on": "バン",
+   "ko": "번",
+   "count": 2,
+   "in_db": true
+  },
+  "州": {
+   "on": "シュウ",
+   "ko": "주",
+   "count": 2,
+   "in_db": true
+  },
+  "秋": {
+   "on": "シュウ",
+   "ko": "추",
+   "count": 2,
+   "in_db": true
+  },
+  "台": {
+   "on": "ダイ",
+   "ko": "대",
+   "count": 2,
+   "in_db": true
+  },
+  "右": {
+   "on": "ウ",
+   "ko": "우",
+   "count": 2,
+   "in_db": true
+  },
+  "夆": {
+   "on": "ホウ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "垂": {
+   "on": "スイ",
+   "ko": "수",
+   "count": 2,
+   "in_db": true
+  },
+  "敝": {
+   "on": "ヘイ",
+   "ko": null,
+   "count": 2,
+   "in_db": false
+  },
+  "焦": {
+   "on": "ショウ",
+   "ko": "초",
+   "count": 2,
+   "in_db": true
+  },
+  "末": {
+   "on": "マツ",
+   "ko": "말",
+   "count": 2,
+   "in_db": true
+  },
+  "差": {
+   "on": "サ",
+   "ko": "차",
+   "count": 2,
+   "in_db": true
+  },
+  "留": {
+   "on": "リュウ",
+   "ko": "류",
+   "count": 2,
+   "in_db": true
+  },
+  "如": {
+   "on": "ジョ",
+   "ko": "여",
+   "count": 2,
+   "in_db": true
+  },
+  "耶": {
+   "on": "ヤ",
+   "ko": "야",
+   "count": 2,
+   "in_db": true
+  }
+ },
+ "chars": {
+  "江": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "功": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "攻": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "巧": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "控": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "鴻": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "項": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "紅": {
+   "phonetic": "工",
+   "jlpt": 2
+  },
+  "貢": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "虹": {
+   "phonetic": "工",
+   "jlpt": 1
+  },
+  "房": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "放": {
+   "phonetic": "方",
+   "jlpt": 3
+  },
+  "妨": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "倣": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "紡": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "訪": {
+   "phonetic": "方",
+   "jlpt": 3
+  },
+  "防": {
+   "phonetic": "方",
+   "jlpt": 2
+  },
+  "肪": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "芳": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "傍": {
+   "phonetic": "方",
+   "jlpt": 1
+  },
+  "鈴": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "玲": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "零": {
+   "phonetic": "令",
+   "jlpt": 2
+  },
+  "冷": {
+   "phonetic": "令",
+   "jlpt": 3
+  },
+  "伶": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "澪": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "嶺": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "齢": {
+   "phonetic": "令",
+   "jlpt": 2
+  },
+  "怜": {
+   "phonetic": "令",
+   "jlpt": 1
+  },
+  "助": {
+   "phonetic": "且",
+   "jlpt": 3
+  },
+  "組": {
+   "phonetic": "且",
+   "jlpt": 3
+  },
+  "狙": {
+   "phonetic": "且",
+   "jlpt": null
+  },
+  "祖": {
+   "phonetic": "且",
+   "jlpt": 3
+  },
+  "粗": {
+   "phonetic": "且",
+   "jlpt": 1
+  },
+  "畳": {
+   "phonetic": "且",
+   "jlpt": 2
+  },
+  "租": {
+   "phonetic": "且",
+   "jlpt": 1
+  },
+  "阻": {
+   "phonetic": "且",
+   "jlpt": 1
+  },
+  "頂": {
+   "phonetic": "丁",
+   "jlpt": 3
+  },
+  "町": {
+   "phonetic": "丁",
+   "jlpt": 4
+  },
+  "庁": {
+   "phonetic": "丁",
+   "jlpt": 2
+  },
+  "灯": {
+   "phonetic": "丁",
+   "jlpt": 2
+  },
+  "停": {
+   "phonetic": "丁",
+   "jlpt": 2
+  },
+  "訂": {
+   "phonetic": "丁",
+   "jlpt": 1
+  },
+  "亭": {
+   "phonetic": "丁",
+   "jlpt": 1
+  },
+  "情": {
+   "phonetic": "青",
+   "jlpt": 3
+  },
+  "請": {
+   "phonetic": "青",
+   "jlpt": 1
+  },
+  "静": {
+   "phonetic": "青",
+   "jlpt": 3
+  },
+  "晴": {
+   "phonetic": "青",
+   "jlpt": 3
+  },
+  "靖": {
+   "phonetic": "青",
+   "jlpt": 1
+  },
+  "精": {
+   "phonetic": "青",
+   "jlpt": 3
+  },
+  "清": {
+   "phonetic": "青",
+   "jlpt": 2
+  },
+  "板": {
+   "phonetic": "反",
+   "jlpt": 2
+  },
+  "飯": {
+   "phonetic": "反",
+   "jlpt": 4
+  },
+  "坂": {
+   "phonetic": "反",
+   "jlpt": 2
+  },
+  "阪": {
+   "phonetic": "反",
+   "jlpt": null
+  },
+  "版": {
+   "phonetic": "反",
+   "jlpt": 2
+  },
+  "販": {
+   "phonetic": "反",
+   "jlpt": 2
+  },
+  "捕": {
+   "phonetic": "甫",
+   "jlpt": 3
+  },
+  "敷": {
+   "phonetic": "甫",
+   "jlpt": 1
+  },
+  "輔": {
+   "phonetic": "甫",
+   "jlpt": 1
+  },
+  "補": {
+   "phonetic": "甫",
+   "jlpt": 2
+  },
+  "舗": {
+   "phonetic": "甫",
+   "jlpt": 1
+  },
+  "浦": {
+   "phonetic": "甫",
+   "jlpt": 1
+  },
+  "期": {
+   "phonetic": "其",
+   "jlpt": 3
+  },
+  "欺": {
+   "phonetic": "其",
+   "jlpt": 1
+  },
+  "基": {
+   "phonetic": "其",
+   "jlpt": 1
+  },
+  "旗": {
+   "phonetic": "其",
+   "jlpt": 1
+  },
+  "棋": {
+   "phonetic": "其",
+   "jlpt": 1
+  },
+  "碁": {
+   "phonetic": "其",
+   "jlpt": 1
+  },
+  "照": {
+   "phonetic": "召",
+   "jlpt": 2
+  },
+  "紹": {
+   "phonetic": "召",
+   "jlpt": 2
+  },
+  "招": {
+   "phonetic": "召",
+   "jlpt": 3
+  },
+  "昭": {
+   "phonetic": "召",
+   "jlpt": 1
+  },
+  "詔": {
+   "phonetic": "召",
+   "jlpt": 1
+  },
+  "沼": {
+   "phonetic": "召",
+   "jlpt": 1
+  },
+  "療": {
+   "phonetic": "尞",
+   "jlpt": 2
+  },
+  "瞭": {
+   "phonetic": "尞",
+   "jlpt": 1
+  },
+  "僚": {
+   "phonetic": "尞",
+   "jlpt": 1
+  },
+  "遼": {
+   "phonetic": "尞",
+   "jlpt": 1
+  },
+  "燎": {
+   "phonetic": "尞",
+   "jlpt": 1
+  },
+  "寮": {
+   "phonetic": "尞",
+   "jlpt": 1
+  },
+  "汗": {
+   "phonetic": "干",
+   "jlpt": 2
+  },
+  "幹": {
+   "phonetic": "干",
+   "jlpt": 1
+  },
+  "岸": {
+   "phonetic": "干",
+   "jlpt": 2
+  },
+  "肝": {
+   "phonetic": "干",
+   "jlpt": 1
+  },
+  "刊": {
+   "phonetic": "干",
+   "jlpt": 2
+  },
+  "栞": {
+   "phonetic": "干",
+   "jlpt": 1
+  },
+  "賀": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "架": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "袈": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "茄": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "嘉": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "伽": {
+   "phonetic": "加",
+   "jlpt": 1
+  },
+  "時": {
+   "phonetic": "寺",
+   "jlpt": 5
+  },
+  "持": {
+   "phonetic": "寺",
+   "jlpt": 4
+  },
+  "侍": {
+   "phonetic": "寺",
+   "jlpt": 1
+  },
+  "詩": {
+   "phonetic": "寺",
+   "jlpt": 1
+  },
+  "蒔": {
+   "phonetic": "寺",
+   "jlpt": 1
+  },
+  "振": {
+   "phonetic": "辰",
+   "jlpt": 1
+  },
+  "娠": {
+   "phonetic": "辰",
+   "jlpt": 1
+  },
+  "震": {
+   "phonetic": "辰",
+   "jlpt": 2
+  },
+  "唇": {
+   "phonetic": "辰",
+   "jlpt": 1
+  },
+  "晨": {
+   "phonetic": "辰",
+   "jlpt": 1
+  },
+  "校": {
+   "phonetic": "交",
+   "jlpt": 5
+  },
+  "絞": {
+   "phonetic": "交",
+   "jlpt": 1
+  },
+  "較": {
+   "phonetic": "交",
+   "jlpt": 1
+  },
+  "効": {
+   "phonetic": "交",
+   "jlpt": 2
+  },
+  "郊": {
+   "phonetic": "交",
+   "jlpt": 2
+  },
+  "銅": {
+   "phonetic": "同",
+   "jlpt": 2
+  },
+  "胴": {
+   "phonetic": "同",
+   "jlpt": 1
+  },
+  "洞": {
+   "phonetic": "同",
+   "jlpt": 1
+  },
+  "筒": {
+   "phonetic": "同",
+   "jlpt": 2
+  },
+  "桐": {
+   "phonetic": "同",
+   "jlpt": 1
+  },
+  "検": {
+   "phonetic": "㑒",
+   "jlpt": 1
+  },
+  "験": {
+   "phonetic": "㑒",
+   "jlpt": 4
+  },
+  "険": {
+   "phonetic": "㑒",
+   "jlpt": 3
+  },
+  "剣": {
+   "phonetic": "㑒",
+   "jlpt": 1
+  },
+  "倹": {
+   "phonetic": "㑒",
+   "jlpt": 1
+  },
+  "暮": {
+   "phonetic": "莫",
+   "jlpt": 3
+  },
+  "慕": {
+   "phonetic": "莫",
+   "jlpt": 1
+  },
+  "模": {
+   "phonetic": "莫",
+   "jlpt": 1
+  },
+  "募": {
+   "phonetic": "莫",
+   "jlpt": 2
+  },
+  "墓": {
+   "phonetic": "莫",
+   "jlpt": 1
+  },
+  "消": {
+   "phonetic": "肖",
+   "jlpt": 3
+  },
+  "蛸": {
+   "phonetic": "肖",
+   "jlpt": null
+  },
+  "梢": {
+   "phonetic": "肖",
+   "jlpt": 1
+  },
+  "硝": {
+   "phonetic": "肖",
+   "jlpt": 1
+  },
+  "宵": {
+   "phonetic": "肖",
+   "jlpt": 1
+  },
+  "忘": {
+   "phonetic": "亡",
+   "jlpt": 3
+  },
+  "望": {
+   "phonetic": "亡",
+   "jlpt": 3
+  },
+  "忙": {
+   "phonetic": "亡",
+   "jlpt": 3
+  },
+  "妄": {
+   "phonetic": "亡",
+   "jlpt": 1
+  },
+  "盲": {
+   "phonetic": "亡",
+   "jlpt": 1
+  },
+  "砲": {
+   "phonetic": "包",
+   "jlpt": 1
+  },
+  "抱": {
+   "phonetic": "包",
+   "jlpt": 3
+  },
+  "飽": {
+   "phonetic": "包",
+   "jlpt": 1
+  },
+  "胞": {
+   "phonetic": "包",
+   "jlpt": 1
+  },
+  "泡": {
+   "phonetic": "包",
+   "jlpt": 1
+  },
+  "故": {
+   "phonetic": "古",
+   "jlpt": 1
+  },
+  "居": {
+   "phonetic": "古",
+   "jlpt": 3
+  },
+  "胡": {
+   "phonetic": "古",
+   "jlpt": 1
+  },
+  "固": {
+   "phonetic": "古",
+   "jlpt": 2
+  },
+  "枯": {
+   "phonetic": "古",
+   "jlpt": 2
+  },
+  "証": {
+   "phonetic": "正",
+   "jlpt": 1
+  },
+  "政": {
+   "phonetic": "正",
+   "jlpt": 3
+  },
+  "症": {
+   "phonetic": "正",
+   "jlpt": 1
+  },
+  "征": {
+   "phonetic": "正",
+   "jlpt": 1
+  },
+  "整": {
+   "phonetic": "正",
+   "jlpt": 1
+  },
+  "敵": {
+   "phonetic": "啇",
+   "jlpt": 1
+  },
+  "嫡": {
+   "phonetic": "啇",
+   "jlpt": 1
+  },
+  "摘": {
+   "phonetic": "啇",
+   "jlpt": 1
+  },
+  "適": {
+   "phonetic": "啇",
+   "jlpt": 3
+  },
+  "滴": {
+   "phonetic": "啇",
+   "jlpt": 2
+  },
+  "嬢": {
+   "phonetic": "㐮",
+   "jlpt": 1
+  },
+  "譲": {
+   "phonetic": "㐮",
+   "jlpt": 1
+  },
+  "穣": {
+   "phonetic": "㐮",
+   "jlpt": 1
+  },
+  "醸": {
+   "phonetic": "㐮",
+   "jlpt": 1
+  },
+  "壌": {
+   "phonetic": "㐮",
+   "jlpt": 1
+  },
+  "何": {
+   "phonetic": "可",
+   "jlpt": 5
+  },
+  "荷": {
+   "phonetic": "可",
+   "jlpt": 2
+  },
+  "歌": {
+   "phonetic": "可",
+   "jlpt": 4
+  },
+  "河": {
+   "phonetic": "可",
+   "jlpt": 2
+  },
+  "輸": {
+   "phonetic": "俞",
+   "jlpt": 2
+  },
+  "諭": {
+   "phonetic": "俞",
+   "jlpt": 1
+  },
+  "愉": {
+   "phonetic": "俞",
+   "jlpt": 1
+  },
+  "癒": {
+   "phonetic": "俞",
+   "jlpt": 1
+  },
+  "作": {
+   "phonetic": "乍",
+   "jlpt": 4
+  },
+  "昨": {
+   "phonetic": "乍",
+   "jlpt": 3
+  },
+  "酢": {
+   "phonetic": "乍",
+   "jlpt": 1
+  },
+  "搾": {
+   "phonetic": "乍",
+   "jlpt": 1
+  },
+  "借": {
+   "phonetic": "昔",
+   "jlpt": 4
+  },
+  "籍": {
+   "phonetic": "昔",
+   "jlpt": 2
+  },
+  "惜": {
+   "phonetic": "昔",
+   "jlpt": 1
+  },
+  "錯": {
+   "phonetic": "昔",
+   "jlpt": 1
+  },
+  "陪": {
+   "phonetic": "咅",
+   "jlpt": 1
+  },
+  "培": {
+   "phonetic": "咅",
+   "jlpt": 1
+  },
+  "賠": {
+   "phonetic": "咅",
+   "jlpt": 1
+  },
+  "倍": {
+   "phonetic": "咅",
+   "jlpt": 2
+  },
+  "彼": {
+   "phonetic": "皮",
+   "jlpt": 3
+  },
+  "疲": {
+   "phonetic": "皮",
+   "jlpt": 3
+  },
+  "被": {
+   "phonetic": "皮",
+   "jlpt": 2
+  },
+  "披": {
+   "phonetic": "皮",
+   "jlpt": 1
+  },
+  "巻": {
+   "phonetic": "龹",
+   "jlpt": 2
+  },
+  "圏": {
+   "phonetic": "龹",
+   "jlpt": 1
+  },
+  "券": {
+   "phonetic": "龹",
+   "jlpt": 2
+  },
+  "拳": {
+   "phonetic": "龹",
+   "jlpt": 1
+  },
+  "腹": {
+   "phonetic": "复",
+   "jlpt": 3
+  },
+  "復": {
+   "phonetic": "复",
+   "jlpt": 2
+  },
+  "複": {
+   "phonetic": "复",
+   "jlpt": 2
+  },
+  "覆": {
+   "phonetic": "复",
+   "jlpt": 1
+  },
+  "寄": {
+   "phonetic": "奇",
+   "jlpt": 3
+  },
+  "崎": {
+   "phonetic": "奇",
+   "jlpt": 1
+  },
+  "騎": {
+   "phonetic": "奇",
+   "jlpt": 1
+  },
+  "綺": {
+   "phonetic": "奇",
+   "jlpt": 1
+  },
+  "頑": {
+   "phonetic": "元",
+   "jlpt": 1
+  },
+  "完": {
+   "phonetic": "元",
+   "jlpt": 3
+  },
+  "冠": {
+   "phonetic": "元",
+   "jlpt": 1
+  },
+  "莞": {
+   "phonetic": "元",
+   "jlpt": 1
+  },
+  "悲": {
+   "phonetic": "非",
+   "jlpt": 3
+  },
+  "扉": {
+   "phonetic": "非",
+   "jlpt": 1
+  },
+  "斐": {
+   "phonetic": "非",
+   "jlpt": 1
+  },
+  "緋": {
+   "phonetic": "非",
+   "jlpt": 1
+  },
+  "構": {
+   "phonetic": "冓",
+   "jlpt": 3
+  },
+  "購": {
+   "phonetic": "冓",
+   "jlpt": 1
+  },
+  "講": {
+   "phonetic": "冓",
+   "jlpt": 2
+  },
+  "溝": {
+   "phonetic": "冓",
+   "jlpt": 1
+  },
+  "伺": {
+   "phonetic": "司",
+   "jlpt": 2
+  },
+  "詞": {
+   "phonetic": "司",
+   "jlpt": 2
+  },
+  "飼": {
+   "phonetic": "司",
+   "jlpt": 1
+  },
+  "嗣": {
+   "phonetic": "司",
+   "jlpt": 1
+  },
+  "底": {
+   "phonetic": "氐",
+   "jlpt": 2
+  },
+  "邸": {
+   "phonetic": "氐",
+   "jlpt": 1
+  },
+  "低": {
+   "phonetic": "氐",
+   "jlpt": 2
+  },
+  "抵": {
+   "phonetic": "氐",
+   "jlpt": 1
+  },
+  "仲": {
+   "phonetic": "中",
+   "jlpt": 2
+  },
+  "衷": {
+   "phonetic": "中",
+   "jlpt": 1
+  },
+  "沖": {
+   "phonetic": "中",
+   "jlpt": 1
+  },
+  "忠": {
+   "phonetic": "中",
+   "jlpt": 1
+  },
+  "城": {
+   "phonetic": "成",
+   "jlpt": 2
+  },
+  "誠": {
+   "phonetic": "成",
+   "jlpt": 1
+  },
+  "晟": {
+   "phonetic": "成",
+   "jlpt": 1
+  },
+  "盛": {
+   "phonetic": "成",
+   "jlpt": 1
+  },
+  "騙": {
+   "phonetic": "扁",
+   "jlpt": null
+  },
+  "編": {
+   "phonetic": "扁",
+   "jlpt": 2
+  },
+  "偏": {
+   "phonetic": "扁",
+   "jlpt": 1
+  },
+  "遍": {
+   "phonetic": "扁",
+   "jlpt": 1
+  },
+  "府": {
+   "phonetic": "付",
+   "jlpt": 2
+  },
+  "腐": {
+   "phonetic": "付",
+   "jlpt": 1
+  },
+  "符": {
+   "phonetic": "付",
+   "jlpt": 2
+  },
+  "附": {
+   "phonetic": "付",
+   "jlpt": 1
+  },
+  "僧": {
+   "phonetic": "曾",
+   "jlpt": 1
+  },
+  "層": {
+   "phonetic": "曾",
+   "jlpt": 2
+  },
+  "贈": {
+   "phonetic": "曾",
+   "jlpt": 2
+  },
+  "憎": {
+   "phonetic": "曾",
+   "jlpt": 2
+  },
+  "繰": {
+   "phonetic": "喿",
+   "jlpt": 1
+  },
+  "操": {
+   "phonetic": "喿",
+   "jlpt": 1
+  },
+  "藻": {
+   "phonetic": "喿",
+   "jlpt": 1
+  },
+  "燥": {
+   "phonetic": "喿",
+   "jlpt": 2
+  },
+  "俊": {
+   "phonetic": "夋",
+   "jlpt": 1
+  },
+  "駿": {
+   "phonetic": "夋",
+   "jlpt": 1
+  },
+  "峻": {
+   "phonetic": "夋",
+   "jlpt": 1
+  },
+  "竣": {
+   "phonetic": "夋",
+   "jlpt": 1
+  },
+  "陵": {
+   "phonetic": "夌",
+   "jlpt": 1
+  },
+  "稜": {
+   "phonetic": "夌",
+   "jlpt": 1
+  },
+  "崚": {
+   "phonetic": "夌",
+   "jlpt": 1
+  },
+  "凌": {
+   "phonetic": "夌",
+   "jlpt": 1
+  },
+  "語": {
+   "phonetic": "吾",
+   "jlpt": 5
+  },
+  "悟": {
+   "phonetic": "吾",
+   "jlpt": 1
+  },
+  "梧": {
+   "phonetic": "吾",
+   "jlpt": 1
+  },
+  "親": {
+   "phonetic": "亲",
+   "jlpt": 4
+  },
+  "新": {
+   "phonetic": "亲",
+   "jlpt": 4
+  },
+  "薪": {
+   "phonetic": "亲",
+   "jlpt": 1
+  },
+  "考": {
+   "phonetic": "丂",
+   "jlpt": 4
+  },
+  "号": {
+   "phonetic": "丂",
+   "jlpt": 3
+  },
+  "拷": {
+   "phonetic": "丂",
+   "jlpt": 1
+  },
+  "刑": {
+   "phonetic": "开",
+   "jlpt": 1
+  },
+  "形": {
+   "phonetic": "开",
+   "jlpt": 3
+  },
+  "型": {
+   "phonetic": "开",
+   "jlpt": 2
+  },
+  "花": {
+   "phonetic": "化",
+   "jlpt": 4
+  },
+  "貨": {
+   "phonetic": "化",
+   "jlpt": 2
+  },
+  "靴": {
+   "phonetic": "化",
+   "jlpt": 3
+  },
+  "貸": {
+   "phonetic": "代",
+   "jlpt": 4
+  },
+  "黛": {
+   "phonetic": "代",
+   "jlpt": 1
+  },
+  "袋": {
+   "phonetic": "代",
+   "jlpt": 2
+  },
+  "常": {
+   "phonetic": "龸",
+   "jlpt": 3
+  },
+  "賞": {
+   "phonetic": "龸",
+   "jlpt": 2
+  },
+  "掌": {
+   "phonetic": "龸",
+   "jlpt": 1
+  },
+  "館": {
+   "phonetic": "官",
+   "jlpt": 4
+  },
+  "管": {
+   "phonetic": "官",
+   "jlpt": 2
+  },
+  "棺": {
+   "phonetic": "官",
+   "jlpt": 1
+  },
+  "燿": {
+   "phonetic": "翟",
+   "jlpt": 1
+  },
+  "耀": {
+   "phonetic": "翟",
+   "jlpt": 1
+  },
+  "曜": {
+   "phonetic": "翟",
+   "jlpt": 4
+  },
+  "流": {
+   "phonetic": "㐬",
+   "jlpt": 3
+  },
+  "琉": {
+   "phonetic": "㐬",
+   "jlpt": 1
+  },
+  "硫": {
+   "phonetic": "㐬",
+   "jlpt": 1
+  },
+  "過": {
+   "phonetic": "咼",
+   "jlpt": 3
+  },
+  "渦": {
+   "phonetic": "咼",
+   "jlpt": 1
+  },
+  "禍": {
+   "phonetic": "咼",
+   "jlpt": 1
+  },
+  "吸": {
+   "phonetic": "及",
+   "jlpt": 3
+  },
+  "扱": {
+   "phonetic": "及",
+   "jlpt": 1
+  },
+  "級": {
+   "phonetic": "及",
+   "jlpt": 1
+  },
+  "議": {
+   "phonetic": "義",
+   "jlpt": 3
+  },
+  "儀": {
+   "phonetic": "義",
+   "jlpt": 1
+  },
+  "犠": {
+   "phonetic": "義",
+   "jlpt": 1
+  },
+  "神": {
+   "phonetic": "申",
+   "jlpt": 3
+  },
+  "伸": {
+   "phonetic": "申",
+   "jlpt": 2
+  },
+  "紳": {
+   "phonetic": "申",
+   "jlpt": 1
+  },
+  "遠": {
+   "phonetic": "袁",
+   "jlpt": 3
+  },
+  "園": {
+   "phonetic": "袁",
+   "jlpt": 3
+  },
+  "猿": {
+   "phonetic": "袁",
+   "jlpt": 1
+  },
+  "想": {
+   "phonetic": "相",
+   "jlpt": 3
+  },
+  "箱": {
+   "phonetic": "相",
+   "jlpt": 3
+  },
+  "霜": {
+   "phonetic": "相",
+   "jlpt": 1
+  },
+  "判": {
+   "phonetic": "半",
+   "jlpt": 3
+  },
+  "伴": {
+   "phonetic": "半",
+   "jlpt": 1
+  },
+  "畔": {
+   "phonetic": "半",
+   "jlpt": 1
+  },
+  "偶": {
+   "phonetic": "禺",
+   "jlpt": 3
+  },
+  "遇": {
+   "phonetic": "禺",
+   "jlpt": 1
+  },
+  "隅": {
+   "phonetic": "禺",
+   "jlpt": 2
+  },
+  "掛": {
+   "phonetic": "圭",
+   "jlpt": 3
+  },
+  "桂": {
+   "phonetic": "圭",
+   "jlpt": 1
+  },
+  "奎": {
+   "phonetic": "圭",
+   "jlpt": 1
+  },
+  "糊": {
+   "phonetic": "胡",
+   "jlpt": null
+  },
+  "湖": {
+   "phonetic": "胡",
+   "jlpt": 2
+  },
+  "瑚": {
+   "phonetic": "胡",
+   "jlpt": 1
+  },
+  "姿": {
+   "phonetic": "次",
+   "jlpt": 1
+  },
+  "資": {
+   "phonetic": "次",
+   "jlpt": 3
+  },
+  "諮": {
+   "phonetic": "次",
+   "jlpt": 1
+  },
+  "副": {
+   "phonetic": "畐",
+   "jlpt": 2
+  },
+  "福": {
+   "phonetic": "畐",
+   "jlpt": 3
+  },
+  "幅": {
+   "phonetic": "畐",
+   "jlpt": 2
+  },
+  "倫": {
+   "phonetic": "侖",
+   "jlpt": 1
+  },
+  "輪": {
+   "phonetic": "侖",
+   "jlpt": 2
+  },
+  "綸": {
+   "phonetic": "侖",
+   "jlpt": 1
+  },
+  "救": {
+   "phonetic": "求",
+   "jlpt": 1
+  },
+  "球": {
+   "phonetic": "求",
+   "jlpt": 3
+  },
+  "毬": {
+   "phonetic": "求",
+   "jlpt": 1
+  },
+  "菜": {
+   "phonetic": "采",
+   "jlpt": 2
+  },
+  "彩": {
+   "phonetic": "采",
+   "jlpt": 1
+  },
+  "採": {
+   "phonetic": "采",
+   "jlpt": 2
+  },
+  "緑": {
+   "phonetic": "录",
+   "jlpt": 2
+  },
+  "録": {
+   "phonetic": "录",
+   "jlpt": 2
+  },
+  "禄": {
+   "phonetic": "录",
+   "jlpt": 1
+  },
+  "噴": {
+   "phonetic": "賁",
+   "jlpt": 1
+  },
+  "憤": {
+   "phonetic": "賁",
+   "jlpt": 1
+  },
+  "墳": {
+   "phonetic": "賁",
+   "jlpt": 1
+  },
+  "殴": {
+   "phonetic": "区",
+   "jlpt": 1
+  },
+  "駆": {
+   "phonetic": "区",
+   "jlpt": 1
+  },
+  "欧": {
+   "phonetic": "区",
+   "jlpt": 2
+  },
+  "坑": {
+   "phonetic": "亢",
+   "jlpt": 1
+  },
+  "抗": {
+   "phonetic": "亢",
+   "jlpt": 1
+  },
+  "航": {
+   "phonetic": "亢",
+   "jlpt": 2
+  },
+  "博": {
+   "phonetic": "尃",
+   "jlpt": 1
+  },
+  "薄": {
+   "phonetic": "尃",
+   "jlpt": 2
+  },
+  "縛": {
+   "phonetic": "尃",
+   "jlpt": 1
+  },
+  "紛": {
+   "phonetic": "分",
+   "jlpt": 1
+  },
+  "粉": {
+   "phonetic": "分",
+   "jlpt": 2
+  },
+  "雰": {
+   "phonetic": "分",
+   "jlpt": 1
+  },
+  "峡": {
+   "phonetic": "夹",
+   "jlpt": 1
+  },
+  "挟": {
+   "phonetic": "夹",
+   "jlpt": 2
+  },
+  "狭": {
+   "phonetic": "夹",
+   "jlpt": 1
+  },
+  "嫌": {
+   "phonetic": "兼",
+   "jlpt": 1
+  },
+  "謙": {
+   "phonetic": "兼",
+   "jlpt": 1
+  },
+  "鎌": {
+   "phonetic": "兼",
+   "jlpt": 1
+  },
+  "殊": {
+   "phonetic": "朱",
+   "jlpt": 1
+  },
+  "株": {
+   "phonetic": "朱",
+   "jlpt": 1
+  },
+  "珠": {
+   "phonetic": "朱",
+   "jlpt": 1
+  },
+  "梨": {
+   "phonetic": "利",
+   "jlpt": 1
+  },
+  "痢": {
+   "phonetic": "利",
+   "jlpt": 1
+  },
+  "莉": {
+   "phonetic": "利",
+   "jlpt": 1
+  },
+  "棚": {
+   "phonetic": "朋",
+   "jlpt": 1
+  },
+  "崩": {
+   "phonetic": "朋",
+   "jlpt": 1
+  },
+  "鵬": {
+   "phonetic": "朋",
+   "jlpt": 1
+  },
+  "琴": {
+   "phonetic": "今",
+   "jlpt": 1
+  },
+  "吟": {
+   "phonetic": "今",
+   "jlpt": 1
+  },
+  "衿": {
+   "phonetic": "今",
+   "jlpt": 1
+  },
+  "璧": {
+   "phonetic": "辟",
+   "jlpt": null
+  },
+  "壁": {
+   "phonetic": "辟",
+   "jlpt": 1
+  },
+  "癖": {
+   "phonetic": "辟",
+   "jlpt": 1
+  },
+  "遥": {
+   "phonetic": "䍃",
+   "jlpt": 1
+  },
+  "瑶": {
+   "phonetic": "䍃",
+   "jlpt": 1
+  },
+  "謡": {
+   "phonetic": "䍃",
+   "jlpt": 1
+  },
+  "槍": {
+   "phonetic": "倉",
+   "jlpt": null
+  },
+  "蒼": {
+   "phonetic": "倉",
+   "jlpt": 1
+  },
+  "創": {
+   "phonetic": "倉",
+   "jlpt": 1
+  },
+  "眺": {
+   "phonetic": "兆",
+   "jlpt": 1
+  },
+  "跳": {
+   "phonetic": "兆",
+   "jlpt": 1
+  },
+  "挑": {
+   "phonetic": "兆",
+   "jlpt": 1
+  },
+  "鋼": {
+   "phonetic": "岡",
+   "jlpt": 1
+  },
+  "綱": {
+   "phonetic": "岡",
+   "jlpt": 1
+  },
+  "剛": {
+   "phonetic": "岡",
+   "jlpt": 1
+  },
+  "檻": {
+   "phonetic": "監",
+   "jlpt": null
+  },
+  "鑑": {
+   "phonetic": "監",
+   "jlpt": 1
+  },
+  "艦": {
+   "phonetic": "監",
+   "jlpt": 1
+  },
+  "滋": {
+   "phonetic": "兹",
+   "jlpt": 1
+  },
+  "慈": {
+   "phonetic": "兹",
+   "jlpt": 1
+  },
+  "磁": {
+   "phonetic": "兹",
+   "jlpt": 1
+  },
+  "滉": {
+   "phonetic": "光",
+   "jlpt": 1
+  },
+  "洸": {
+   "phonetic": "光",
+   "jlpt": 1
+  },
+  "晃": {
+   "phonetic": "光",
+   "jlpt": 1
+  },
+  "詢": {
+   "phonetic": "旬",
+   "jlpt": 1
+  },
+  "殉": {
+   "phonetic": "旬",
+   "jlpt": 1
+  },
+  "洵": {
+   "phonetic": "旬",
+   "jlpt": 1
+  },
+  "気": {
+   "phonetic": "乁",
+   "jlpt": 5
+  },
+  "汽": {
+   "phonetic": "乁",
+   "jlpt": 1
+  },
+  "橋": {
+   "phonetic": "喬",
+   "jlpt": 2
+  },
+  "矯": {
+   "phonetic": "喬",
+   "jlpt": 1
+  },
+  "柄": {
+   "phonetic": "丙",
+   "jlpt": 1
+  },
+  "病": {
+   "phonetic": "丙",
+   "jlpt": 4
+  },
+  "湧": {
+   "phonetic": "甬",
+   "jlpt": 1
+  },
+  "踊": {
+   "phonetic": "甬",
+   "jlpt": 2
+  },
+  "郡": {
+   "phonetic": "君",
+   "jlpt": 1
+  },
+  "群": {
+   "phonetic": "君",
+   "jlpt": 2
+  },
+  "最": {
+   "phonetic": "取",
+   "jlpt": 3
+  },
+  "趣": {
+   "phonetic": "取",
+   "jlpt": 1
+  },
+  "確": {
+   "phonetic": "隺",
+   "jlpt": 3
+  },
+  "鶴": {
+   "phonetic": "隺",
+   "jlpt": 1
+  },
+  "警": {
+   "phonetic": "敬",
+   "jlpt": 3
+  },
+  "驚": {
+   "phonetic": "敬",
+   "jlpt": 1
+  },
+  "犯": {
+   "phonetic": "㔾",
+   "jlpt": 3
+  },
+  "範": {
+   "phonetic": "㔾",
+   "jlpt": 1
+  },
+  "浅": {
+   "phonetic": "戋",
+   "jlpt": 2
+  },
+  "践": {
+   "phonetic": "戋",
+   "jlpt": 1
+  },
+  "積": {
+   "phonetic": "責",
+   "jlpt": 3
+  },
+  "績": {
+   "phonetic": "責",
+   "jlpt": 2
+  },
+  "認": {
+   "phonetic": "刃",
+   "jlpt": 3
+  },
+  "忍": {
+   "phonetic": "刃",
+   "jlpt": 1
+  },
+  "庭": {
+   "phonetic": "廷",
+   "jlpt": 3
+  },
+  "艇": {
+   "phonetic": "廷",
+   "jlpt": 1
+  },
+  "指": {
+   "phonetic": "旨",
+   "jlpt": 3
+  },
+  "脂": {
+   "phonetic": "旨",
+   "jlpt": 2
+  },
+  "怒": {
+   "phonetic": "奴",
+   "jlpt": 3
+  },
+  "努": {
+   "phonetic": "奴",
+   "jlpt": 3
+  },
+  "側": {
+   "phonetic": "則",
+   "jlpt": 3
+  },
+  "測": {
+   "phonetic": "則",
+   "jlpt": 2
+  },
+  "術": {
+   "phonetic": "术",
+   "jlpt": 3
+  },
+  "述": {
+   "phonetic": "术",
+   "jlpt": 2
+  },
+  "済": {
+   "phonetic": "斉",
+   "jlpt": 3
+  },
+  "剤": {
+   "phonetic": "斉",
+   "jlpt": 1
+  },
+  "宅": {
+   "phonetic": "乇",
+   "jlpt": 3
+  },
+  "託": {
+   "phonetic": "乇",
+   "jlpt": 1
+  },
+  "経": {
+   "phonetic": "圣",
+   "jlpt": 3
+  },
+  "軽": {
+   "phonetic": "圣",
+   "jlpt": 2
+  },
+  "個": {
+   "phonetic": "固",
+   "jlpt": 2
+  },
+  "箇": {
+   "phonetic": "固",
+   "jlpt": 1
+  },
+  "織": {
+   "phonetic": "戠",
+   "jlpt": 1
+  },
+  "職": {
+   "phonetic": "戠",
+   "jlpt": 3
+  },
+  "機": {
+   "phonetic": "幾",
+   "jlpt": 3
+  },
+  "磯": {
+   "phonetic": "幾",
+   "jlpt": 1
+  },
+  "眠": {
+   "phonetic": "民",
+   "jlpt": 3
+  },
+  "罠": {
+   "phonetic": "民",
+   "jlpt": null
+  },
+  "無": {
+   "phonetic": "卌",
+   "jlpt": null
+  },
+  "舞": {
+   "phonetic": "卌",
+   "jlpt": 3
+  },
+  "昂": {
+   "phonetic": "卬",
+   "jlpt": 1
+  },
+  "仰": {
+   "phonetic": "卬",
+   "jlpt": 1
+  },
+  "茣": {
+   "phonetic": "吴",
+   "jlpt": null
+  },
+  "誤": {
+   "phonetic": "吴",
+   "jlpt": 3
+  },
+  "洗": {
+   "phonetic": "先",
+   "jlpt": 3
+  },
+  "銑": {
+   "phonetic": "先",
+   "jlpt": 1
+  },
+  "材": {
+   "phonetic": "才",
+   "jlpt": 2
+  },
+  "財": {
+   "phonetic": "才",
+   "jlpt": 3
+  },
+  "謹": {
+   "phonetic": "堇",
+   "jlpt": 1
+  },
+  "勤": {
+   "phonetic": "堇",
+   "jlpt": 3
+  },
+  "劾": {
+   "phonetic": "亥",
+   "jlpt": 1
+  },
+  "該": {
+   "phonetic": "亥",
+   "jlpt": 1
+  },
+  "泳": {
+   "phonetic": "永",
+   "jlpt": 3
+  },
+  "詠": {
+   "phonetic": "永",
+   "jlpt": 1
+  },
+  "描": {
+   "phonetic": "苗",
+   "jlpt": 1
+  },
+  "猫": {
+   "phonetic": "苗",
+   "jlpt": 3
+  },
+  "溶": {
+   "phonetic": "容",
+   "jlpt": 2
+  },
+  "蓉": {
+   "phonetic": "容",
+   "jlpt": 1
+  },
+  "課": {
+   "phonetic": "果",
+   "jlpt": 2
+  },
+  "菓": {
+   "phonetic": "果",
+   "jlpt": 2
+  },
+  "総": {
+   "phonetic": "忩",
+   "jlpt": 2
+  },
+  "聡": {
+   "phonetic": "忩",
+   "jlpt": 1
+  },
+  "欄": {
+   "phonetic": "闌",
+   "jlpt": 1
+  },
+  "蘭": {
+   "phonetic": "闌",
+   "jlpt": 1
+  },
+  "協": {
+   "phonetic": "劦",
+   "jlpt": 2
+  },
+  "脅": {
+   "phonetic": "劦",
+   "jlpt": 1
+  },
+  "棒": {
+   "phonetic": "奉",
+   "jlpt": 2
+  },
+  "俸": {
+   "phonetic": "奉",
+   "jlpt": 1
+  },
+  "鏡": {
+   "phonetic": "竟",
+   "jlpt": 1
+  },
+  "境": {
+   "phonetic": "竟",
+   "jlpt": 2
+  },
+  "装": {
+   "phonetic": "壮",
+   "jlpt": 2
+  },
+  "荘": {
+   "phonetic": "壮",
+   "jlpt": 1
+  },
+  "換": {
+   "phonetic": "奐",
+   "jlpt": 2
+  },
+  "喚": {
+   "phonetic": "奐",
+   "jlpt": 1
+  },
+  "宇": {
+   "phonetic": "于",
+   "jlpt": 2
+  },
+  "芋": {
+   "phonetic": "于",
+   "jlpt": 1
+  },
+  "賢": {
+   "phonetic": "臤",
+   "jlpt": 2
+  },
+  "堅": {
+   "phonetic": "臤",
+   "jlpt": 1
+  },
+  "掘": {
+   "phonetic": "屈",
+   "jlpt": 2
+  },
+  "堀": {
+   "phonetic": "屈",
+   "jlpt": 1
+  },
+  "棟": {
+   "phonetic": "東",
+   "jlpt": 1
+  },
+  "凍": {
+   "phonetic": "東",
+   "jlpt": 2
+  },
+  "鉱": {
+   "phonetic": "広",
+   "jlpt": 2
+  },
+  "拡": {
+   "phonetic": "広",
+   "jlpt": 1
+  },
+  "塀": {
+   "phonetic": "并",
+   "jlpt": 1
+  },
+  "併": {
+   "phonetic": "并",
+   "jlpt": 1
+  },
+  "搭": {
+   "phonetic": "荅",
+   "jlpt": 1
+  },
+  "塔": {
+   "phonetic": "荅",
+   "jlpt": 2
+  },
+  "僕": {
+   "phonetic": "菐",
+   "jlpt": 1
+  },
+  "撲": {
+   "phonetic": "菐",
+   "jlpt": 1
+  },
+  "酔": {
+   "phonetic": "卆",
+   "jlpt": 1
+  },
+  "粋": {
+   "phonetic": "卆",
+   "jlpt": 1
+  },
+  "離": {
+   "phonetic": "离",
+   "jlpt": 1
+  },
+  "璃": {
+   "phonetic": "离",
+   "jlpt": 1
+  },
+  "獲": {
+   "phonetic": "蒦",
+   "jlpt": 1
+  },
+  "穫": {
+   "phonetic": "蒦",
+   "jlpt": 1
+  },
+  "隣": {
+   "phonetic": "粦",
+   "jlpt": 1
+  },
+  "麟": {
+   "phonetic": "粦",
+   "jlpt": 1
+  },
+  "遭": {
+   "phonetic": "曹",
+   "jlpt": 1
+  },
+  "槽": {
+   "phonetic": "曹",
+   "jlpt": 1
+  },
+  "随": {
+   "phonetic": "迶",
+   "jlpt": 1
+  },
+  "髄": {
+   "phonetic": "迶",
+   "jlpt": 1
+  },
+  "駄": {
+   "phonetic": "太",
+   "jlpt": 1
+  },
+  "汰": {
+   "phonetic": "太",
+   "jlpt": 1
+  },
+  "援": {
+   "phonetic": "爰",
+   "jlpt": 1
+  },
+  "媛": {
+   "phonetic": "爰",
+   "jlpt": 1
+  },
+  "暇": {
+   "phonetic": "叚",
+   "jlpt": 1
+  },
+  "霞": {
+   "phonetic": "叚",
+   "jlpt": 1
+  },
+  "宏": {
+   "phonetic": "厷",
+   "jlpt": 1
+  },
+  "紘": {
+   "phonetic": "厷",
+   "jlpt": 1
+  },
+  "瞳": {
+   "phonetic": "童",
+   "jlpt": 1
+  },
+  "憧": {
+   "phonetic": "童",
+   "jlpt": 1
+  },
+  "慢": {
+   "phonetic": "曼",
+   "jlpt": 1
+  },
+  "漫": {
+   "phonetic": "曼",
+   "jlpt": 1
+  },
+  "銭": {
+   "phonetic": "㦮",
+   "jlpt": 1
+  },
+  "桟": {
+   "phonetic": "㦮",
+   "jlpt": 1
+  },
+  "鍵": {
+   "phonetic": "建",
+   "jlpt": null
+  },
+  "健": {
+   "phonetic": "建",
+   "jlpt": 1
+  },
+  "褐": {
+   "phonetic": "曷",
+   "jlpt": 1
+  },
+  "喝": {
+   "phonetic": "曷",
+   "jlpt": 1
+  },
+  "琢": {
+   "phonetic": "豖",
+   "jlpt": 1
+  },
+  "啄": {
+   "phonetic": "豖",
+   "jlpt": 1
+  },
+  "褒": {
+   "phonetic": "呆",
+   "jlpt": 1
+  },
+  "保": {
+   "phonetic": "呆",
+   "jlpt": 1
+  },
+  "偵": {
+   "phonetic": "貞",
+   "jlpt": 1
+  },
+  "禎": {
+   "phonetic": "貞",
+   "jlpt": 1
+  },
+  "稼": {
+   "phonetic": "家",
+   "jlpt": 1
+  },
+  "嫁": {
+   "phonetic": "家",
+   "jlpt": 1
+  },
+  "盤": {
+   "phonetic": "般",
+   "jlpt": 1
+  },
+  "搬": {
+   "phonetic": "般",
+   "jlpt": 1
+  },
+  "紫": {
+   "phonetic": "此",
+   "jlpt": 1
+  },
+  "雌": {
+   "phonetic": "此",
+   "jlpt": 1
+  },
+  "檀": {
+   "phonetic": "亶",
+   "jlpt": 1
+  },
+  "壇": {
+   "phonetic": "亶",
+   "jlpt": 1
+  },
+  "裂": {
+   "phonetic": "列",
+   "jlpt": 1
+  },
+  "烈": {
+   "phonetic": "列",
+   "jlpt": 1
+  },
+  "案": {
+   "phonetic": "安",
+   "jlpt": 1
+  },
+  "晏": {
+   "phonetic": "安",
+   "jlpt": 1
+  },
+  "響": {
+   "phonetic": "乡",
+   "jlpt": 1
+  },
+  "郷": {
+   "phonetic": "乡",
+   "jlpt": 1
+  },
+  "距": {
+   "phonetic": "巨",
+   "jlpt": 1
+  },
+  "拒": {
+   "phonetic": "巨",
+   "jlpt": 1
+  },
+  "環": {
+   "phonetic": "睘",
+   "jlpt": 1
+  },
+  "還": {
+   "phonetic": "睘",
+   "jlpt": 1
+  },
+  "坪": {
+   "phonetic": "平",
+   "jlpt": 1
+  },
+  "評": {
+   "phonetic": "平",
+   "jlpt": 1
+  },
+  "標": {
+   "phonetic": "票",
+   "jlpt": 1
+  },
+  "漂": {
+   "phonetic": "票",
+   "jlpt": 1
+  },
+  "宣": {
+   "phonetic": "亘",
+   "jlpt": 1
+  },
+  "恒": {
+   "phonetic": "亘",
+   "jlpt": 1
+  },
+  "彰": {
+   "phonetic": "章",
+   "jlpt": 1
+  },
+  "障": {
+   "phonetic": "章",
+   "jlpt": 1
+  },
+  "諦": {
+   "phonetic": "帝",
+   "jlpt": null
+  },
+  "締": {
+   "phonetic": "帝",
+   "jlpt": 1
+  },
+  "蕗": {
+   "phonetic": "路",
+   "jlpt": 1
+  },
+  "露": {
+   "phonetic": "路",
+   "jlpt": 1
+  },
+  "慎": {
+   "phonetic": "真",
+   "jlpt": 1
+  },
+  "槙": {
+   "phonetic": "真",
+   "jlpt": 1
+  },
+  "痴": {
+   "phonetic": "知",
+   "jlpt": 1
+  },
+  "智": {
+   "phonetic": "知",
+   "jlpt": 1
+  },
+  "概": {
+   "phonetic": "旡",
+   "jlpt": 1
+  },
+  "慨": {
+   "phonetic": "旡",
+   "jlpt": 1
+  },
+  "菖": {
+   "phonetic": "昌",
+   "jlpt": 1
+  },
+  "唱": {
+   "phonetic": "昌",
+   "jlpt": 1
+  },
+  "墾": {
+   "phonetic": "貇",
+   "jlpt": 1
+  },
+  "懇": {
+   "phonetic": "貇",
+   "jlpt": 1
+  },
+  "鞠": {
+   "phonetic": "匊",
+   "jlpt": 1
+  },
+  "菊": {
+   "phonetic": "匊",
+   "jlpt": 1
+  },
+  "塾": {
+   "phonetic": "孰",
+   "jlpt": 1
+  },
+  "熟": {
+   "phonetic": "孰",
+   "jlpt": 1
+  },
+  "翻": {
+   "phonetic": "番",
+   "jlpt": 1
+  },
+  "藩": {
+   "phonetic": "番",
+   "jlpt": 1
+  },
+  "洲": {
+   "phonetic": "州",
+   "jlpt": 1
+  },
+  "酬": {
+   "phonetic": "州",
+   "jlpt": 1
+  },
+  "萩": {
+   "phonetic": "秋",
+   "jlpt": 1
+  },
+  "愁": {
+   "phonetic": "秋",
+   "jlpt": 1
+  },
+  "胎": {
+   "phonetic": "台",
+   "jlpt": 1
+  },
+  "怠": {
+   "phonetic": "台",
+   "jlpt": 1
+  },
+  "祐": {
+   "phonetic": "右",
+   "jlpt": 1
+  },
+  "佑": {
+   "phonetic": "右",
+   "jlpt": 1
+  },
+  "峰": {
+   "phonetic": "夆",
+   "jlpt": 1
+  },
+  "縫": {
+   "phonetic": "夆",
+   "jlpt": 1
+  },
+  "睡": {
+   "phonetic": "垂",
+   "jlpt": 1
+  },
+  "錘": {
+   "phonetic": "垂",
+   "jlpt": 1
+  },
+  "弊": {
+   "phonetic": "敝",
+   "jlpt": 1
+  },
+  "幣": {
+   "phonetic": "敝",
+   "jlpt": 1
+  },
+  "礁": {
+   "phonetic": "焦",
+   "jlpt": 1
+  },
+  "蕉": {
+   "phonetic": "焦",
+   "jlpt": 1
+  },
+  "茉": {
+   "phonetic": "末",
+   "jlpt": 1
+  },
+  "抹": {
+   "phonetic": "末",
+   "jlpt": 1
+  },
+  "嵯": {
+   "phonetic": "差",
+   "jlpt": 1
+  },
+  "瑳": {
+   "phonetic": "差",
+   "jlpt": 1
+  },
+  "溜": {
+   "phonetic": "留",
+   "jlpt": null
+  },
+  "瑠": {
+   "phonetic": "留",
+   "jlpt": 1
+  },
+  "茹": {
+   "phonetic": "如",
+   "jlpt": null
+  },
+  "恕": {
+   "phonetic": "如",
+   "jlpt": 1
+  },
+  "爺": {
+   "phonetic": "耶",
+   "jlpt": null
+  },
+  "椰": {
+   "phonetic": "耶",
+   "jlpt": 1
+  }
+ }
+}
