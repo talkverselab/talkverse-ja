@@ -8,7 +8,7 @@ import '../services/ko_reading.dart';
 import '../services/memorized_store.dart';
 import '../services/tts_service.dart';
 
-/// 해커스 Day별 필수 단어 — 주제별 단어장 (chinese-universe 포팅).
+/// Day별 필수 단어 — 주제별 단어장 (chinese-universe 포팅).
 class VocabWord {
   final String ko;
   final String tx; // 일본어
@@ -79,7 +79,7 @@ class TopicVocabScreen extends StatefulWidget {
   const TopicVocabScreen({
     super.key,
     this.title = '필수 단어',
-    this.asset = 'assets/data/vocab/hackers_days.json',
+    this.asset = 'assets/data/vocab/essential_days.json',
   });
 
   @override
@@ -125,7 +125,7 @@ class _TopicVocabScreenState extends State<TopicVocabScreen> {
                     fontSize: 16,
                     fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('해커스 Day별 · $total단어',
+            Text('Day별 필수 단어 · $total단어',
                 style: const TextStyle(
                     color: AppColors.sumiLight,
                     fontSize: 10,

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""해커스 Day별 필수 단어 익힘장 raw.md → 주제별 단어 JSON.
+"""Day별 필수 단어 원본 raw.md → 주제별 단어 JSON.
 '단어 익히기' 구간만 파싱: `□ 단어` / (후리가나) / `품사 뜻` 패턴.
 테마 = Day 5개 묶음. 아이콘 = 한국어 뜻 키워드.
 """
@@ -11,7 +11,7 @@ OUT = sys.argv[2]
 POS = re.compile(r'^(명|동[12３]?|い형|な형|부|조|감|접|연체|외|외래)\s+(.+)$')
 KANA_ONLY = re.compile(r'^[ぁ-ゖー]+$')          # 후리가나(히라가나)
 TX_KANA = re.compile(r'^[ぁ-ゖァ-ヺー]+$')       # 가나 전용 표제어(가타카나 포함)
-NOISE = re.compile(r'저작권자|japan\.Hackers|^\d+$|단어 익히기\.mp3|<!-- PAGE|^Day별|^\[|^정답')
+NOISE = re.compile(r'저작권자|\w+\.\w+\.com|^\d+$|단어 익히기\.mp3|<!-- PAGE|^Day별|^\[|^정답')
 DAY_HDR = re.compile(r'^Day (\d+)')
 QUIZ = re.compile(r'^2\s+단어\s+퀴즈')
 LEARN = re.compile(r'^1\s+단어 익히기')
@@ -112,7 +112,7 @@ for g0 in range(0, len(day_list), GROUP):
                    'emoji': '📘', 'sections': sections})
 
 os.makedirs(os.path.dirname(OUT), exist_ok=True)
-json.dump({'_meta': '해커스 Day별 필수 단어 익힘장', 'themes': themes},
+json.dump({'_meta': 'Day별 필수 단어', 'themes': themes},
           open(OUT, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 tot = sum(len(s['words']) for t in themes for s in t['sections'])
 print('themes:', len(themes), 'words:', tot)

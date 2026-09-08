@@ -46,4 +46,4 @@ flutter:
     - assets/data/hanja/hanja_crossref.json
     - assets/data/grammar/particles.json
     - assets/data/decks/
-    - assets/data/vocab/hackers_days.json
+    - assets/data/vocab/essential_days.json
