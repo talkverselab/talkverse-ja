@@ -16,6 +16,7 @@ class KanjiStagesScreen extends StatefulWidget {
 
 class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
   List<KanjiStage>? _stages;
+  bool _byFreq = true; // 디폴트: 회화 빈도순 (절벽구간 진행)
   Map<int, int> _best = {}; // stage → bestPct
   int? _levelFilter; // null=전체, 5..1, 0=기타
 
@@ -30,8 +31,11 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
     final results = await appDb.select(appDb.stageResults).get();
     if (!mounted) return;
     setState(() {
-      _stages = KanjiIndexService.instance.stages();
+      _stages = _byFreq
+          ? KanjiIndexService.instance.stagesByFreq()
+          : KanjiIndexService.instance.stages();
       _best = {for (final r in results) r.stage: r.bestPct};
+      // 빈도순 모드 기록은 +500 오프셋 키에 저장된다
     });
   }
 
@@ -56,7 +60,8 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
             const Text('한자 단계 · JLPT',
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
-            Text('N5→N1 · ${KanjiIndexService.stageSize}자 × ${stages?.length ?? '-'}단계 · 4지선다 (누적)',
+            Text(
+                '${_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1'} · ${KanjiIndexService.stageSize}자 × ${stages?.length ?? '-'}단계 · 4지선다 (누적)',
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -83,11 +88,41 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                for (final lv in [null, 5, 4, 3, 2, 1, 0])
+                for (final freq in [true, false])
                   Padding(
                     padding: const EdgeInsets.only(right: 8),
-                    child: _levelChip(lv, stages),
+                    child: GestureDetector(
+                      onTap: () {
+                        if (_byFreq == freq) return;
+                        setState(() {
+                          _byFreq = freq;
+                          _levelFilter = null;
+                        });
+                        _load();
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                        decoration: BoxDecoration(
+                          color: _byFreq == freq ? AppColors.beni : AppColors.washi,
+                          border: Border.all(color: AppColors.beni, width: _byFreq == freq ? 1.5 : 0.8),
+                        ),
+                        child: Text(
+                          freq ? '빈도순' : 'JLPT순',
+                          style: TextStyle(
+                            color: _byFreq == freq ? AppColors.washi : AppColors.beni,
+                            fontWeight: FontWeight.w800,
+                            fontSize: 12,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
+                if (!_byFreq)
+                  for (final lv in [null, 5, 4, 3, 2, 1, 0])
+                    Padding(
+                      padding: const EdgeInsets.only(right: 8),
+                      child: _levelChip(lv, stages),
+                    ),
               ],
             ),
           ),
@@ -153,7 +188,23 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
     );
   }
 
+  static const _regionNames = {
+    'R1': 'R1 · 회화 1-294 절벽',
+    'R2': 'R2 · 295-437',
+    'R3': 'R3 · 438-998',
+    'R4': 'R4 · 999-',
+  };
+  static const _regionColors = {
+    'R1': AppColors.beni,
+    'R2': AppColors.beniLight,
+    'R3': AppColors.kin,
+    'R4': AppColors.matcha,
+  };
+
+  int get _keyOffset => _byFreq ? 500 : 0;
+
   List<Widget> _withHeaders(List<KanjiStage> visible, List<KanjiStage> all) {
+    if (_byFreq) return _withFreqHeaders(visible, all);
     final out = <Widget>[];
     int? last = -1;
     for (final s in visible) {
@@ -183,6 +234,52 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         color: levelColor(s.level),
         onTap: () async {
           await Navigator.push(context, MaterialPageRoute(builder: (_) => KanjiQuizScreen(stage: s.stage, allStages: all)));
+          _load();
+        },
+      ));
+    }
+    return out;
+  }
+
+  List<Widget> _withFreqHeaders(List<KanjiStage> visible, List<KanjiStage> all) {
+    final out = <Widget>[];
+    String? last;
+    for (final s in visible) {
+      final region = s.freqLabel ?? 'R4';
+      if (region != last) {
+        last = region;
+        final count = all.where((x) => x.freqLabel == region).length;
+        final passed =
+            all.where((x) => x.freqLabel == region && (_best[x.stage + _keyOffset] ?? 0) >= 80).length;
+        final color = _regionColors[region] ?? AppColors.sumi;
+        out.add(Padding(
+          padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
+          child: Row(
+            children: [
+              SealStamp(text: region, size: 24, color: color),
+              const SizedBox(width: 8),
+              Text(
+                _regionNames[region] ?? region,
+                style: const TextStyle(
+                    fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.2),
+              ),
+              const Spacer(),
+              Text('$passed/$count 단계 통과',
+                  style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
+            ],
+          ),
+        ));
+      }
+      out.add(_StageRow(
+        stage: s,
+        bestPct: _best[s.stage + _keyOffset],
+        color: _regionColors[s.freqLabel] ?? AppColors.sumiLight,
+        onTap: () async {
+          await Navigator.push(
+              context,
+              MaterialPageRoute(
+                  builder: (_) => KanjiQuizScreen(
+                      stage: s.stage, allStages: all, resultOffset: _keyOffset)));
           _load();
         },
       ));

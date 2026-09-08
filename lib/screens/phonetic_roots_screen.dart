@@ -360,15 +360,20 @@ class _FamilySheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final rootNorm = _norm(root.on);
-    final rootFirst = rootNorm.isEmpty ? '' : rootNorm.substring(0, 1);
     final exact = <KanjiEntry>[];
     final partial = <KanjiEntry>[];
     final similar = <KanjiEntry>[];
     final except = <KanjiEntry>[];
 
     final rootEntry = KanjiIndexService.instance.lookup(root.root);
-    // 기준 한국 한자음: roots 데이터의 ko, 없으면 루트 훈음에서
+    // 루트의 음독 전체 (元: ゲン·ガン 모두) — 대표음 하나만 쓰면 오분류
+    final rootOns = <String>{root.on};
+    if (rootEntry != null) {
+      rootOns.addAll(rootEntry.on.map((r) => r.reading));
+    }
+    final rootNorms = rootOns.map(_norm).toSet();
+    final rootFirsts = rootNorms.where((n) => n.isNotEmpty).map((n) => n.substring(0, 1)).toSet();
+    // 기준 한국 한자음: roots 데이터의 ko(멤버 최빈 포함), 없으면 루트 훈음에서
     var rootKo = root.ko;
     if (rootKo == null && rootEntry != null) {
       final es = _eumsOf(rootEntry);
@@ -384,8 +389,8 @@ class _FamilySheet extends StatelessWidget {
       if (e == null || e.on.isEmpty) continue;
       final ons = e.on.map((r) => r.reading).toList();
       final norms = ons.map(_norm).toList();
-      final jaExact = ons.contains(root.on);
-      final jaDaku = !jaExact && norms.contains(rootNorm);
+      final jaExact = ons.any(rootOns.contains);
+      final jaDaku = !jaExact && norms.any(rootNorms.contains);
       final koSame = rootKo != null && _eumsOf(e).contains(rootKo);
       if (jaExact && koSame) {
         // 완전공유: 일본 음독 + 한국 한자음 모두 같음 (가=가)
@@ -394,7 +399,9 @@ class _FamilySheet extends StatelessWidget {
         // 부분공유: 음독은 같은데 한자음 다름(하), 또는 탁음만 차이
         partial.add(e);
       } else if (jaDaku ||
-          (rootFirst.isNotEmpty && norms.any((n) => n.startsWith(rootFirst)))) {
+          koSame ||
+          norms.any((n) => n.isNotEmpty && rootFirsts.contains(n.substring(0, 1)))) {
+        // 비슷한 음차: 첫소리 같음, 또는 한자음은 같은데 일본음만 변형 (刃 인=인, ジン↔ニン)
         similar.add(e);
       } else {
         except.add(e);

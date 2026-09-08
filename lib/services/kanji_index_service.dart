@@ -118,10 +118,12 @@ class KanjiStage {
   final int stage; // 전체 통번호 (1..)
   final int? level; // 5..1, null=기타(JLPT 밖 회화 한자)
   final int indexInLevel;
+  final String? freqLabel; // 빈도순 모드의 절벽구간 라벨 (R1~R4)
   final List<KanjiEntry> chars;
-  const KanjiStage({required this.stage, required this.level, required this.indexInLevel, required this.chars});
+  const KanjiStage(
+      {required this.stage, required this.level, required this.indexInLevel, required this.chars, this.freqLabel});
 
-  String get levelLabel => level == null ? '기타' : 'N$level';
+  String get levelLabel => freqLabel ?? (level == null ? '기타' : 'N$level');
 }
 
 /// kanji_db.json 로더 (JLPT N5-N1 ∪ 회화 1,078 = 2,285자) + 검색 + JLPT 단계 분할.
@@ -206,6 +208,29 @@ class KanjiIndexService {
           chars: pool.sublist(i, (i + stageSize).clamp(0, pool.length)),
         ));
       }
+    }
+    return out;
+  }
+
+  /// 회화 빈도순 (레벨 무시) 20자 단위 단계. 절벽구간(R1~R4) 진행.
+  /// level 필드에는 그 단계 첫 한자의 JLPT를 참고로 담지 않고 null을 둔다.
+  List<KanjiStage> stagesByFreq() {
+    final pool = _all.where((e) => e.meanings.isNotEmpty && e.rank < 9999).toList()
+      ..sort((a, b) => a.rank.compareTo(b.rank));
+    final out = <KanjiStage>[];
+    var n = 0;
+    String regionOf(int rank) =>
+        rank <= 294 ? 'R1' : rank <= 437 ? 'R2' : rank <= 998 ? 'R3' : 'R4';
+    for (var i = 0; i < pool.length; i += stageSize) {
+      n++;
+      final chars = pool.sublist(i, (i + stageSize).clamp(0, pool.length));
+      out.add(KanjiStage(
+        stage: n,
+        level: null,
+        indexInLevel: n,
+        chars: chars,
+        freqLabel: regionOf(chars.first.rank),
+      ));
     }
     return out;
   }
