@@ -7,6 +7,7 @@ import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
 
 /// 한자음 매핑 — 한국 한자음(훈음의 '음') ↔ 일본 음독(音読み).
+/// zh 발음부(声旁) 화면 스타일: 카드 그리드 → 탭하면 한자 가족 시트.
 /// 받침 규칙: ㄱ→ク/キ · ㄴ→ン · ㄹ→ツ/チ · ㅁ→ン · ㅂ→ウ(장음) · ㅇ→ウ/イ(장음).
 class HanjaSoundScreen extends StatefulWidget {
   const HanjaSoundScreen({super.key});
@@ -16,25 +17,39 @@ class HanjaSoundScreen extends StatefulWidget {
 }
 
 class _Group {
-  final String eum; // 한국 한자음 (예: '사')
-  final List<KanjiEntry> entries;
+  final String eum; // 한국 한자음 (예: '마')
+  final List<KanjiEntry> entries; // rank 오름차순 (첫 항목 = 대표 한자)
   _Group(this.eum, this.entries);
+
+  KanjiEntry get rep => entries.first;
+  String get repOn => rep.on.isEmpty ? '' : rep.on.map((r) => r.reading).take(2).join('·');
 }
 
 class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
   List<_Group> _groups = const [];
   bool _loading = true;
   String _filter = 'ALL';
+  String _query = '';
 
   static const _filters = {
-    'ALL': ('전체', ''),
-    'NONE': ('받침 없음', ''),
-    'ㄱ': ('ㄱ → ク/キ', 'ク·キ'),
-    'ㄴ': ('ㄴ → ン', 'ン'),
-    'ㄹ': ('ㄹ → ツ/チ', 'ツ·チ'),
-    'ㅁ': ('ㅁ → ン', 'ン'),
-    'ㅂ': ('ㅂ → ウ (장음)', 'ウ'),
-    'ㅇ': ('ㅇ → ウ/イ (장음)', 'ウ·イ'),
+    'ALL': '전체',
+    'NONE': '받침 없음',
+    'ㄱ': 'ㄱ → ク/キ',
+    'ㄴ': 'ㄴ → ン',
+    'ㄹ': 'ㄹ → ツ/チ',
+    'ㅁ': 'ㅁ → ン',
+    'ㅂ': 'ㅂ → ウ장음',
+    'ㅇ': 'ㅇ → ウ/イ장음',
+  };
+
+  static const _ruleOf = {
+    'NONE': '받침 없음 → 음독도 1음절인 경우가 많다',
+    'ㄱ': 'ㄱ 받침 → ク·キ (学 학→ガク · 力 력→リョク)',
+    'ㄴ': 'ㄴ 받침 → ン (新 신→シン · 安 안→アン)',
+    'ㄹ': 'ㄹ 받침 → ツ·チ (一 일→イチ · 発 발→ハツ)',
+    'ㅁ': 'ㅁ 받침 → ン (心 심→シン · 三 삼→サン)',
+    'ㅂ': 'ㅂ 받침 → ウ장음 (十 십→ジュウ · 業 업→ギョウ)',
+    'ㅇ': 'ㅇ 받침 → ウ·イ장음 (生 생→セイ · 東 동→トウ)',
   };
 
   @override
@@ -78,8 +93,8 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
       case 15:
         return 'ㄹ';
       case 16:
-        return 'ㅁ';
       case 17:
+        return 'ㅁ';
       case 18:
       case 19:
         return 'ㅂ';
@@ -102,7 +117,9 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
         byEum.putIfAbsent(eum, () => []).add(e);
       }
     }
-    final groups = byEum.entries.map((kv) => _Group(kv.key, kv.value..sort((a, b) => a.rank.compareTo(b.rank)))).toList()
+    final groups = byEum.entries
+        .map((kv) => _Group(kv.key, kv.value..sort((a, b) => a.rank.compareTo(b.rank))))
+        .toList()
       ..sort((a, b) {
         final c = b.entries.length.compareTo(a.entries.length);
         return c != 0 ? c : a.eum.compareTo(b.eum);
@@ -114,10 +131,44 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
     });
   }
 
+  List<_Group> get _filtered {
+    var list = _filter == 'ALL' ? _groups : _groups.where((g) => _jong(g.eum) == _filter).toList();
+    final q = _query.trim();
+    if (q.isEmpty) return list;
+    final lower = q.toLowerCase();
+    return list.where((g) {
+      if (g.eum.contains(q)) return true;
+      return g.entries.any((e) =>
+          e.char == q ||
+          e.meanings.any((m) => m.contains(q)) ||
+          e.on.any((r) => r.reading.contains(q) || KanjiIndexService.toHiragana(r.reading).contains(lower)));
+    }).toList();
+  }
+
+  Future<void> _openFamily(_Group g) async {
+    await showModalBottomSheet(
+      context: context,
+      backgroundColor: AppColors.washi,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(2)),
+      ),
+      builder: (_) => DraggableScrollableSheet(
+        expand: false,
+        initialChildSize: 0.7,
+        maxChildSize: 0.95,
+        builder: (context, controller) => SingleChildScrollView(
+          controller: controller,
+          child: _FamilySheet(group: g, rule: _ruleOf[_jong(g.eum)]),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    final list = _filter == 'ALL' ? _groups : _groups.where((g) => _jong(g.eum) == _filter).toList();
-    final kanjiCount = list.fold<int>(0, (n, g) => n + g.entries.length);
+    final list = _filtered;
+    final kanjiCount = _groups.fold<int>(0, (n, g) => n + g.entries.length);
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
@@ -134,6 +185,45 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
           ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
           : Column(
               children: [
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 8, 16, 4),
+                  child: TextField(
+                    onChanged: (v) => setState(() => _query = v),
+                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.sumi),
+                    decoration: InputDecoration(
+                      hintText: '馬 · バ · 마',
+                      hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 14),
+                      prefixIcon: const Icon(Icons.search, color: AppColors.beni),
+                      isDense: true,
+                      filled: true,
+                      fillColor: AppColors.washiDeep,
+                      enabledBorder: const OutlineInputBorder(
+                        borderRadius: BorderRadius.zero,
+                        borderSide: BorderSide(color: AppColors.kin),
+                      ),
+                      focusedBorder: const OutlineInputBorder(
+                        borderRadius: BorderRadius.zero,
+                        borderSide: BorderSide(color: AppColors.beni, width: 1.5),
+                      ),
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
+                  child: Row(
+                    children: [
+                      const SealStamp(text: '音', size: 22),
+                      const SizedBox(width: 8),
+                      Text(
+                        '한자음 ${_groups.length}개 · 한자 $kanjiCount자 커버',
+                        style: const TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1),
+                      ),
+                      const Spacer(),
+                      const Text('탭 → 한자 가족', style: TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+                    ],
+                  ),
+                ),
                 Container(
                   color: AppColors.washiDeep,
                   padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -154,7 +244,7 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
                                 border: Border.all(color: AppColors.ai, width: selected ? 1.5 : 0.8),
                               ),
                               child: Text(
-                                e.value.$1,
+                                e.value,
                                 style: TextStyle(
                                   color: selected ? AppColors.washi : AppColors.ai,
                                   fontWeight: FontWeight.w800,
@@ -170,131 +260,209 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
                 ),
                 const AsanohaDivider(height: 8),
                 Expanded(
-                  child: ListView(
-                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 80),
-                    children: [
-                      _ruleCard(list.length, kanjiCount),
-                      const SizedBox(height: 12),
-                      ...list.map((g) => _GroupCard(group: g)),
-                    ],
+                  child: GridView.builder(
+                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 8,
+                      crossAxisSpacing: 8,
+                      childAspectRatio: 1.9,
+                    ),
+                    itemCount: list.length,
+                    itemBuilder: (context, i) {
+                      final g = list[i];
+                      return _GroupCard(group: g, onTap: () => _openFamily(g));
+                    },
                   ),
                 ),
               ],
             ),
     );
   }
+}
 
-  Widget _ruleCard(int groups, int kanji) {
-    return JapaneseCard(
-      title: '받침 → 음독 규칙',
-      sealText: '音',
-      accent: AppColors.ai,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const Text(
-            '한국 한자음의 받침이 일본 음독의 끝소리를 거의 결정한다. '
-            '초성도 대부분 대응 (ㅅ→サ행, ㅎ→カ행, ㅁ→マ/バ행 …). 규칙을 알면 처음 보는 한자도 음독을 추정할 수 있다.',
-            style: TextStyle(fontSize: 12, color: AppColors.sumi, height: 1.5),
-          ),
-          const SizedBox(height: 10),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
+/// 그리드 카드 — 대표 한자 도장 + 음독 + 마(馬) + 가족 N자
+class _GroupCard extends StatelessWidget {
+  final _Group group;
+  final VoidCallback onTap;
+  const _GroupCard({required this.group, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: AppColors.washi,
+        border: Border.all(color: AppColors.kin.withValues(alpha: 0.5)),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        child: Padding(
+          padding: const EdgeInsets.all(10),
+          child: Row(
             children: [
-              _rule('ㄱ', 'ク·キ', '学 학→ガク · 力 력→リョク'),
-              _rule('ㄴ', 'ン', '新 신→シン · 安 안→アン'),
-              _rule('ㄹ', 'ツ·チ', '一 일→イチ · 発 발→ハツ'),
-              _rule('ㅁ', 'ン', '心 심→シン · 三 삼→サン'),
-              _rule('ㅂ', 'ウ(장음)', '十 십→ジュウ · 業 업→ギョウ'),
-              _rule('ㅇ', 'ウ·イ(장음)', '生 생→セイ · 東 동→トウ'),
+              SealStamp(text: group.rep.char, size: 48, color: AppColors.beni),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      group.repOn,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.w800,
+                        fontSize: 14,
+                        color: AppColors.ai,
+                      ),
+                    ),
+                    Text(
+                      '${group.eum}(${group.rep.char})',
+                      style: const TextStyle(fontSize: 11, color: AppColors.sumiLight),
+                    ),
+                    const SizedBox(height: 4),
+                    Container(
+                      padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                      decoration: BoxDecoration(
+                        color: AppColors.kin.withValues(alpha: 0.2),
+                        border: Border.all(color: AppColors.kin),
+                      ),
+                      child: Text(
+                        '가족 ${group.entries.length}자',
+                        style: const TextStyle(fontSize: 9, color: AppColors.sumi, fontWeight: FontWeight.w700),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const Icon(Icons.chevron_right, color: AppColors.sumiLight, size: 18),
             ],
           ),
-          const SizedBox(height: 10),
-          Text(
-            '$groups개 한자음 · $kanji자 (회화 빈도순)',
-            style: const TextStyle(fontSize: 11, color: AppColors.sumiLight),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _rule(String jong, String ja, String ex) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-      decoration: BoxDecoration(
-        color: AppColors.washiDeep,
-        border: Border.all(color: AppColors.kin.withValues(alpha: 0.6)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text('$jong → $ja', style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: AppColors.ai)),
-          Text(ex, style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
-        ],
+        ),
       ),
     );
   }
 }
 
-class _GroupCard extends StatelessWidget {
+/// 한자 가족 시트 — 같은 한국 한자음을 공유하는 한자들.
+/// 한자 탭 → 한자 상세 시트(훈음·음독·훈독·대표단어·후리가나 단어 전부).
+class _FamilySheet extends StatelessWidget {
   final _Group group;
-  const _GroupCard({required this.group});
+  final String? rule;
+  const _FamilySheet({required this.group, this.rule});
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 10),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppColors.washi,
-          border: Border.all(color: AppColors.kin.withValues(alpha: 0.5)),
-        ),
+    return SafeArea(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-              color: AppColors.washiDeep,
-              child: Row(
-                children: [
-                  SealStamp(text: group.eum, size: 26, color: AppColors.ai),
-                  const SizedBox(width: 8),
-                  Text('${group.eum} 음',
-                      style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-                  const Spacer(),
-                  Text('${group.entries.length}자', style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
-                ],
-              ),
+            Row(
+              children: [
+                Container(
+                  width: 80,
+                  height: 80,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: AppColors.kin.withValues(alpha: 0.25),
+                    border: Border.all(color: AppColors.kin, width: 2),
+                  ),
+                  child: Text(
+                    group.eum,
+                    style: const TextStyle(
+                        fontSize: 44, fontWeight: FontWeight.w900, color: AppColors.sumi, height: 1),
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        group.repOn,
+                        style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.ai),
+                      ),
+                      const SizedBox(height: 4),
+                      const Text(
+                        '한국 한자음 family',
+                        style: TextStyle(
+                            fontSize: 11, color: AppColors.sumiLight, letterSpacing: 1.5, fontWeight: FontWeight.w700),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        '${group.entries.length}자',
+                        style: const TextStyle(fontSize: 11, color: AppColors.beni, fontWeight: FontWeight.w800),
+                      ),
+                    ],
+                  ),
+                ),
+                IconButton(
+                  icon: const Icon(Icons.volume_up, color: AppColors.beni),
+                  onPressed: () {
+                    final on = group.rep.on;
+                    if (on.isNotEmpty) TtsService.instance.speak(on.first.reading);
+                  },
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close, color: AppColors.sumi),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
             ),
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: group.entries.map((e) {
-                  final on = e.on.map((r) => r.reading).join('·');
-                  return InkWell(
-                    onTap: () => showKanjiSheet(context, char: e.char, entry: e),
-                    onLongPress: () => TtsService.instance.speak(e.on.first.reading),
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
-                      decoration: BoxDecoration(
-                        color: AppColors.washi,
-                        border: Border.all(color: AppColors.beni.withValues(alpha: 0.6)),
-                      ),
-                      child: Column(
-                        children: [
-                          Text(e.char,
-                              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.1)),
-                          Text(on, style: const TextStyle(fontSize: 10, color: AppColors.ai, fontWeight: FontWeight.w700)),
-                        ],
-                      ),
-                    ),
-                  );
-                }).toList(),
+            if (rule != null) ...[
+              const SizedBox(height: 10),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                decoration: BoxDecoration(
+                  color: AppColors.washiDeep,
+                  border: Border.all(color: AppColors.ai.withValues(alpha: 0.4)),
+                ),
+                child: Text('💡 $rule',
+                    style: const TextStyle(fontSize: 11, color: AppColors.sumi, height: 1.4)),
               ),
+            ],
+            const SizedBox(height: 14),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: group.entries.map((e) {
+                final on = e.on.map((r) => r.reading).take(2).join('·');
+                final hun = e.meanings.isEmpty ? '' : e.meanings.first;
+                return InkWell(
+                  onTap: () => showKanjiSheet(context, char: e.char, entry: e),
+                  onLongPress: () {
+                    if (e.on.isNotEmpty) TtsService.instance.speak(e.on.first.reading);
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+                    decoration: BoxDecoration(
+                      color: AppColors.washi,
+                      border: Border.all(color: AppColors.beni.withValues(alpha: 0.6)),
+                    ),
+                    child: Column(
+                      children: [
+                        Text(e.char,
+                            style: const TextStyle(
+                                fontSize: 26, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.15)),
+                        Text(on,
+                            style:
+                                const TextStyle(fontSize: 10, color: AppColors.ai, fontWeight: FontWeight.w700)),
+                        if (hun.isNotEmpty)
+                          Text(hun, style: const TextStyle(fontSize: 9, color: AppColors.sumiLight)),
+                      ],
+                    ),
+                  ),
+                );
+              }).toList(),
+            ),
+            const SizedBox(height: 10),
+            const Text(
+              '💡 같은 한국 한자음 = 일본 음독도 비슷한 경향. 한자를 탭하면 훈음·읽기·단어 상세.',
+              style: TextStyle(fontSize: 11, color: AppColors.sumiLight, height: 1.5),
             ),
           ],
         ),

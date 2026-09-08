@@ -245,7 +245,7 @@ class _MenuGrid extends StatelessWidget {
     final items = <_MenuItem>[
       _MenuItem(label: '회화', sub: 'Conversation', seal: '会話', color: AppColors.beni,
         builder: (_) => const ConversationScreen()),
-      _MenuItem(label: '50음도', sub: 'ひらがな·カタカナ', seal: 'かな', color: AppColors.sakuraDeep,
+      _MenuItem(label: '50음도와 발음', sub: 'ひらがな·カタカナ', seal: 'かな', color: AppColors.sakuraDeep,
         builder: (_) => const KanaChartScreen()),
       _MenuItem(label: '조사', sub: '助詞 핵심 20', seal: '助詞', color: AppColors.ai,
         builder: (_) => const GrammarLessonScreen()),
