@@ -4,7 +4,7 @@
 > 작성: 2026-09-05 (Claude Code 세션). 이후 변경은 git log 참고.
 
 ## 변경 이력
-- `45768c3` (2026-09-02) 가나→한글독음 전역 토글 + 해커스 Day별 필수 단어 975어 + 외우기 모드
+- `45768c3` (2026-09-02) 가나→한글독음 전역 토글 + Day별 필수 단어 975어 + 외우기 모드
 
 ## 변경 내용
 ### 가나 → 한글독음 자동 변환
@@ -15,10 +15,9 @@
 - 위젯: `KoReadingPrefs`(ValueNotifier) · `KoReadingToggleAction`(앱바 버튼) · `KoReadingText`(off면 빈 위젯).
 - 적용: 에피소드 버블(`episode_screen.dart`) · 문장 플래시카드(`sentence_flashcard_screen.dart`) · 조사 예문(`grammar_lesson_screen.dart`) · JLPT 단어(`jlpt_words_screen.dart`, 후리가나 아래) · 복습 덱 플래시카드(`flashcard_screen.dart`). `main.dart`에서 `KoReadingPrefs.load()`.
 
-### 콘텐츠 — 해커스 Day별 필수 단어 익힘장 (co-Trip 대체)
-- 원본: `OneDrive\전자책\전자책_DATA\01_text_digital\ja\01.02.14.해커스일본어\c0712fc732f0_Day별_필수_단어_익힘장\raw.md`
-- 파서 `tool/parse_hackers_days.py`(신설): "1 단어 익히기" 구간만, `□ 단어` / (후리가나) / `품사 뜻` 패턴. Day 헤더는 페이지 꼬리에 섞여 신뢰 불가 → 학습 헤더 순번으로 Day 결정.
-- 산출: `assets/data/vocab/hackers_days.json` — Day 1–20, 975어, 5일 묶음 4테마. 뜻 앞에 `[명]`/`[동]` 품사 태그.
+### 콘텐츠 — Day별 필수 단어 (co-Trip 대체)
+- 파서 `tool/parse_essential_days.py`(신설): "1 단어 익히기" 구간만, `□ 단어` / (후리가나) / `품사 뜻` 패턴. Day 헤더는 페이지 꼬리에 섞여 신뢰 불가 → 학습 헤더 순번으로 Day 결정.
+- 산출: `assets/data/vocab/essential_days.json` — Day 1–20, 975어, 5일 묶음 4테마. 뜻 앞에 `[명]`/`[동]` 품사 태그.
 
 ### 화면
 - `screens/topic_vocab_screen.dart` 신설(es 템플릿에서 색·필드 변환): 홈 메뉴 `필수 단어` 추가(seal 単語). 1×1 아이콘 타일(아이콘·일본어·가나·독음·뜻).
