@@ -47,3 +47,4 @@ flutter:
     - assets/data/grammar/particles.json
     - assets/data/decks/
     - assets/data/vocab/essential_days.json
+    - assets/images/ipa/

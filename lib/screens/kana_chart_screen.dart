@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/theme.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
+import '../widgets/kana_sound_sheet.dart';
 
 const _hira = [
   ['あ', 'い', 'う', 'え', 'お'],
@@ -135,9 +136,9 @@ class _KanaChartScreenState extends State<KanaChartScreen> {
           title: const Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('50음도 · かな', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+              Text('50음도와 발음', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
               SizedBox(height: 2),
-              Text('탭하면 발음 · 행별 색', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
+              Text('탭하면 발음·IPA 상세', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
             ],
           ),
           actions: [
@@ -269,7 +270,7 @@ class _KanaChartScreenState extends State<KanaChartScreen> {
                         child: k.isEmpty
                             ? const SizedBox(height: 58)
                             : InkWell(
-                                onTap: () => TtsService.instance.speak(k),
+                                onTap: () => showKanaSoundSheet(context, kana: k, romaji: ro, color: color),
                                 child: Container(
                                   height: 58,
                                   decoration: BoxDecoration(

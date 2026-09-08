@@ -138,18 +138,36 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Container(
-                      width: 92,
-                      height: 92,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: AppColors.washiDeep,
-                        border: Border.all(color: AppColors.kin, width: 1.5),
-                      ),
-                      child: Text(
-                        char,
-                        style: const TextStyle(fontSize: 60, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1),
-                      ),
+                    Column(
+                      children: [
+                        Container(
+                          width: 92,
+                          height: 92,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            color: AppColors.washiDeep,
+                            border: Border.all(color: AppColors.kin, width: 1.5),
+                          ),
+                          child: Text(
+                            char,
+                            style: const TextStyle(fontSize: 60, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1),
+                          ),
+                        ),
+                        // 한국 한자 훈음 — 한자 바로 밑
+                        if (e != null && e.meanings.isNotEmpty)
+                          Padding(
+                            padding: const EdgeInsets.only(top: 4),
+                            child: SizedBox(
+                              width: 92,
+                              child: Text(
+                                e.meaningJoined,
+                                textAlign: TextAlign.center,
+                                style: const TextStyle(
+                                    fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.25),
+                              ),
+                            ),
+                          ),
+                      ],
                     ),
                     const SizedBox(width: 14),
                     Expanded(
@@ -197,6 +215,50 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                   const SizedBox(height: 10),
                   if (e.on.isNotEmpty) _ReadingRow(label: '음독', color: AppColors.ai, readings: e.on),
                   if (e.kun.isNotEmpty) _ReadingRow(label: '훈독', color: AppColors.matcha, readings: e.kun),
+                ],
+                // 대표 단어 — 회화 빈도순 1~2개
+                if (e != null && e.words.isNotEmpty) ...[
+                  const SizedBox(height: 12),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: AppColors.washiDeep,
+                      border: Border.all(color: AppColors.beni.withValues(alpha: 0.4)),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const Text('대표 단어 (빈도순)',
+                            style: TextStyle(
+                                fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.beni, letterSpacing: 1)),
+                        const SizedBox(height: 6),
+                        ...e.words.take(2).map((w) => Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 2),
+                              child: Row(
+                                children: [
+                                  Text(w.word,
+                                      style: const TextStyle(
+                                          fontSize: 18, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+                                  const SizedBox(width: 8),
+                                  if (w.ko.isNotEmpty)
+                                    Expanded(
+                                        child: Text(w.ko,
+                                            style: const TextStyle(fontSize: 13, color: AppColors.sumiLight)))
+                                  else
+                                    const Spacer(),
+                                  Text('#${w.rank}',
+                                      style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+                                  const SizedBox(width: 6),
+                                  InkWell(
+                                    onTap: () => TtsService.instance.speak(w.word),
+                                    child: const Icon(Icons.volume_up, size: 16, color: AppColors.beni),
+                                  ),
+                                ],
+                              ),
+                            )),
+                      ],
+                    ),
+                  ),
                 ],
                 const SizedBox(height: 10),
                 Row(
