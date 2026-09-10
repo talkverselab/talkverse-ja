@@ -115,7 +115,7 @@
 | 출처 종류 | 언어 |
 |---|---|
 | 학술자막빈도 (학술 자막 빈도) | en, de, es |
-| 공개자막말뭉치 직접처리 | ko, ja, hi |
+| 공개 말뭉치 직접처리 | ko, ja, hi |
 | freqlib 혼합 코퍼스 | fr, it, ru, pt, fa, ar, id, vi, tr, hu, pl |
 | 자체처리 (분절기 적용) | th (pythainlp), zh (?) |
 

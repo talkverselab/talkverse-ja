@@ -19,8 +19,8 @@
 
 | Corpus | 도메인 | 적용 |
 |---|---|---|
-| **공개자막말뭉치** | 자막 (회화) | 모든 lang ★ |
-| **예문DB** | 일상 회화 | 30+ lang |
+| **공개 말뭉치** | 자막 (회화) | 모든 lang ★ |
+| **공개 예문 말뭉치** | 일상 회화 | 30+ lang |
 | **Alpaca / WuDaoCorpus** | 채팅 | EN/ZH |
 | **PhoMT (VI)** / WMT 다른 lang | 다양 | 도메인 비교용 |
 | **AIHub (KR/VI)** | 사회·정치 (격식) | KR + VI 만 |
@@ -36,7 +36,7 @@ VI 결과 예시:
 ## 3. 빈도 추출 (50k → 5k)
 
 ```python
-# 웹말뭉치 공개자막 freq_5k.txt (lang 별)
+# 웹말뭉치 공개 말뭉치 freq_5k.txt (lang 별)
 url = f"https://wortschatz.uni-webcorpus.de/.../{lang}-..."
 # top 50,000 → freq_50k.txt
 # top 5,000 → freq_5k.txt

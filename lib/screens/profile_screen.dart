@@ -1,5 +1,7 @@
 import 'package:drift/drift.dart' hide Column;
 import 'package:flutter/material.dart';
+
+import 'update_screen.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -102,6 +104,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          const UpdateEntryTile(),
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(

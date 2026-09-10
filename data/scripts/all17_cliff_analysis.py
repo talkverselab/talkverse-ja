@@ -22,7 +22,7 @@ from pathlib import Path
 
 DATA = Path("D:/OneDrive/BOOKS/_assets/data")
 
-RAW_OPUS = Path(r"D:\OneDrive\DATA_Raw\subtitle_corpus")
+RAW_OPUS = Path(r"D:\OneDrive\DATA_Raw\raw_공개 말뭉치")
 RAW_DB2 = Path(r"D:\OneDrive\DATA_Raw\db2")
 RAW_EVB = Path(r"D:\OneDrive\DATA_Raw\bicorpus")
 RAW_WEBCORPUS = Path(r"D:\OneDrive\DATA_Raw\webcorpus")
@@ -260,7 +260,7 @@ with open(out, "w", encoding="utf-8") as f:
     f.write("\n## 데이터 출처별 분류\n\n")
     f.write("| 출처 종류 | 언어 |\n|---|---|\n")
     f.write("| 학술자막빈도 (학술 자막 빈도) | en, de, es |\n")
-    f.write("| 공개자막말뭉치 직접처리 | ko, ja, hi |\n")
+    f.write("| 공개 말뭉치 직접처리 | ko, ja, hi |\n")
     f.write("| freqlib 혼합 코퍼스 | fr, it, ru, pt, fa, ar, id, vi, tr, hu, pl |\n")
     f.write("| 자체처리 (분절기 적용) | th (pythainlp), zh (?) |\n")
     f.write("\n**주의**: 데이터 출처가 다르므로 직접 비교는 제한적. 형태소 분리 후 재처리하면 더 공정.\n")
