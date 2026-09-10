@@ -6,7 +6,7 @@ import csv
 from pathlib import Path
 
 DATA = Path("D:/OneDrive/BOOKS/_assets/data")
-RAW_OPUS = Path(r"D:\OneDrive\DATA_Raw\opus_opensubtitles")
+RAW_OPUS = Path(r"D:\OneDrive\DATA_Raw\opus_공개 말뭉치")
 RAW_IMDB = Path(r"D:\OneDrive\DATA_Raw\imdb")
 RAW_EVB = Path(r"D:\OneDrive\DATA_Raw\evbcorpus")
 RAW_LEIPZIG = Path(r"D:\OneDrive\DATA_Raw\leipzig")

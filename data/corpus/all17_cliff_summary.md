@@ -115,7 +115,7 @@
 | 출처 종류 | 언어 |
 |---|---|
 | SUBTLEX (학술 자막 빈도) | en, de, es |
-| OPUS-OpenSubtitles 직접처리 | ko, ja, hi |
+| OPUS-공개 말뭉치 직접처리 | ko, ja, hi |
 | wordfreq 혼합 코퍼스 | fr, it, ru, pt, fa, ar, id, vi, tr, hu, pl |
 | 자체처리 (분절기 적용) | th (pythainlp), zh (?) |
 

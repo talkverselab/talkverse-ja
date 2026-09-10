@@ -97,7 +97,7 @@ JA 적용 시:
 ## 6. 자료 위치 (참고)
 
 - 원시 코퍼스: `D:/OneDrive/DATA_Raw/languages/ja/` (있는지 확인)
-- 빈도 자료: Leipzig JA OpenSubtitles freq_5k.txt
+- 빈도 자료: Leipzig JA 공개 말뭉치 freq_5k.txt
 - 코어 어휘 메모: `_shared/jp_l1_kanji_70.json` (70 한자) — hanja_crossref 소스
 
 ## 7. lab 앱

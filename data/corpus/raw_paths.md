@@ -30,11 +30,11 @@
 - `D:/OneDrive/DATA_Raw/languages/ja/chat/japanese-daily-dialogue/data/topic{1-5}.json` (각 ~18KB)
 - 소량이라 필요 시 `db/corpus/` 직접 카피 가능
 
-## OpenSubtitles 2024 (대용량, 참조만)
-- `D:/OneDrive/DATA_Raw/languages/ja/chat/opensubtitles_v2024.txt.gz` (33MB)
+## 공개 말뭉치 2024 (대용량, 참조만)
+- `D:/OneDrive/DATA_Raw/languages/ja/chat/corpus_v2024.txt.gz` (33MB)
 - 분석 시 압축 해제 후 빈도 추출
 
 ## drama_modern 자막 (회화 빈도 보조)
 - `D:/OneDrive/DATA_Raw/languages/ja/drama_modern/*.srt`
-- Asura_EP01-02, FirstLove_Netflix, Ikusagami_S01E01, Makanai_S01E01
+- Asura_EP01-02, FirstLove_스트리밍, Ikusagami_S01E01, Makanai_S01E01
 - INDEX.md 에 메타정보

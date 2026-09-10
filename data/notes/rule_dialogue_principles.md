@@ -796,7 +796,7 @@ L2-L4:    vi:sent:l{N}_d{NN}_t{NN}       ← dialogue 기반
 6. **부록 언어** — 해당 시 (LO=TH, MS=ID 모델)
 7. **데이터셋 1순위** — HermitDave / UniMorph / Stanza / Underthesea 등
 8. **형태 분석** — 격·성·모음조화 시각화 여부
-9. **한-X 평행 corpora** — Tatoeba / OPUS / 부재 시 직접 작성
+9. **한-X 평행 corpora** — 공개 예문 말뭉치 / OPUS / 부재 시 직접 작성
 10. **TTS** — Google Cloud / 자체 API / 무료 fallback
 11. **윤리·문화** — 종교·문화 가드 (sin sod·visa·풍습)
 12. **KPI** — 어휘 cap / total turns / tier 비율 (bottom-up 락)
@@ -865,7 +865,7 @@ L2-L4:    vi:sent:l{N}_d{NN}_t{NN}       ← dialogue 기반
 
 | # | 옵션 | 폐기 사유 |
 |---|---|---|
-| 1 | L1 외부 freq top-N 미리 확정 | Decision 47 — OpenSubtitles freq ≠ 우리 narrative 분포 |
+| 1 | L1 외부 freq top-N 미리 확정 | Decision 47 — 공개 말뭉치 freq ≠ 우리 narrative 분포 |
 | 2 | L1 캐릭터 이름 등장 | lemma 풀 낭비 + universal 원칙 위반 + 재활용성 ↓ |
 | 3 | VI 호칭 1개 컬럼 (target_text 만) | 5 시나리오 placeholder 치환으로 대체 |
 | 4 | VI 옛 시나리오 5종 (부모/카페/직장/쇼핑) | 5 시나리오 (em-anh / em-chị / tớ-cậu) 로 통합 |
