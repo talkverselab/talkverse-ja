@@ -5,6 +5,7 @@ import '../main.dart';
 import '../services/kanji_index_service.dart';
 import '../widgets/japanese_decor.dart';
 import 'kanji_quiz_screen.dart';
+import '../core/l10n.dart';
 
 /// 한자 단계 목록 — JLPT N5→N1 순, 레벨 안 회화 빈도순 20자 × N단계. 단계 탭 → 누적 4지선다 퀴즈.
 class KanjiStagesScreen extends StatefulWidget {
@@ -57,11 +58,11 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('한자 단계 · JLPT',
+            Text(tr('한자 단계 · JLPT'),
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             Text(
-                '${_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1'} · ${KanjiIndexService.stageSize}자 × ${stages?.length ?? '-'}단계 · 4지선다 (누적)',
+                trf('{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -107,7 +108,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                           border: Border.all(color: AppColors.beni, width: _byFreq == freq ? 1.5 : 0.8),
                         ),
                         child: Text(
-                          freq ? '빈도순' : 'JLPT순',
+                          freq ? tr('빈도순') : tr('JLPT순'),
                           style: TextStyle(
                             color: _byFreq == freq ? AppColors.washi : AppColors.beni,
                             fontWeight: FontWeight.w800,
@@ -146,13 +147,13 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text('JLPT 한자 + 회화 빈도',
+                          Text(tr('JLPT 한자 + 회화 빈도'),
                               style: TextStyle(color: AppColors.kinBright, fontSize: 12, fontWeight: FontWeight.w800, letterSpacing: 3)),
                           const SizedBox(height: 4),
                           Text('N5 ${KanjiIndexService.instance.forLevel(5).length} · N4 ${KanjiIndexService.instance.forLevel(4).length} · N3 ${KanjiIndexService.instance.forLevel(3).length} · N2 ${KanjiIndexService.instance.forLevel(2).length} · N1 ${KanjiIndexService.instance.forLevel(1).length}',
                               style: const TextStyle(color: AppColors.washi, fontSize: 14, fontWeight: FontWeight.w900, height: 1.2)),
                           const SizedBox(height: 4),
-                          Text('누적 4지선다 — 훈음 맞추기 · 80% 이상 통과 $done/${stages.length}',
+                          Text(trf('누적 4지선다 — 훈음 맞추기 · 80% 이상 통과 {0}/{1}', [done, stages.length]),
                               style: TextStyle(color: AppColors.washi.withValues(alpha: 0.9), fontSize: 11, height: 1.5)),
                         ],
                       ),
@@ -172,7 +173,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
 
   Widget _levelChip(int? lv, List<KanjiStage> stages) {
     final selected = _levelFilter == lv;
-    final label = lv == null ? '전체' : (lv == 0 ? '기타' : 'N$lv');
+    final label = lv == null ? tr('전체') : (lv == 0 ? tr('기타') : 'N$lv');
     final color = lv == null ? AppColors.sumi : levelColor(lv == 0 ? null : lv);
     return GestureDetector(
       onTap: () => setState(() => _levelFilter = lv),
@@ -188,8 +189,8 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
     );
   }
 
-  static const _regionNames = {
-    'R1': 'R1 · 회화 1-294 절벽',
+  static Map<String, String> get _regionNames => {
+    'R1': tr('R1 · 회화 1-294 절벽'),
     'R2': 'R2 · 295-437',
     'R3': 'R3 · 438-998',
     'R4': 'R4 · 999-',
@@ -219,11 +220,11 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
               SealStamp(text: s.levelLabel, size: 24, color: levelColor(s.level)),
               const SizedBox(width: 8),
               Text(
-                s.level == null ? '기타 (JLPT 밖 회화 한자)' : 'JLPT N${s.level}',
+                s.level == null ? tr('기타 (JLPT 밖 회화 한자)') : 'JLPT N${s.level}',
                 style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.2),
               ),
               const Spacer(),
-              Text('$passed/$count 단계 통과', style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
+              Text(trf('{0}/{1} 단계 통과', [passed, count]), style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
             ],
           ),
         ));
@@ -264,7 +265,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                     fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.2),
               ),
               const Spacer(),
-              Text('$passed/$count 단계 통과',
+              Text(trf('{0}/{1} 단계 통과', [passed, count]),
                   style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
             ],
           ),
@@ -337,18 +338,18 @@ class _StageRow extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Text('단계 ${stage.stage}',
+                          Text(trf('단계 {0}', [stage.stage]),
                               style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1)),
                           const SizedBox(width: 6),
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 1),
                             color: AppColors.kin.withValues(alpha: 0.2),
-                            child: Text('${chars.length}자',
+                            child: Text(trf('{0}자', [chars.length]),
                                 style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: AppColors.sumi)),
                           ),
                           if (bestPct != null) ...[
                             const SizedBox(width: 6),
-                            Text('최고 $bestPct%',
+                            Text(trf('최고 {0}%', [bestPct]),
                                 style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: passed ? AppColors.matcha : AppColors.beni)),
                           ],
                         ],

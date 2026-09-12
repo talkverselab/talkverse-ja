@@ -5,6 +5,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/theme.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
+import '../core/l10n.dart';
 
 class WordFreqScreen extends StatefulWidget {
   const WordFreqScreen({super.key});
@@ -18,8 +19,8 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
   bool _loading = true;
   String _filter = 'ALL';
 
-  static const Map<String, _Region> _regions = {
-    'ALL': _Region('전체', AppColors.sumi, 0, 2500),
+  static Map<String, _Region> get _regions => {
+    'ALL': _Region(tr('전체'), AppColors.sumi, 0, 2500),
     'R1': _Region('R1 · 1-294', AppColors.beni, 1, 294),
     'R2': _Region('R2 · 295-437', AppColors.beniLight, 295, 437),
     'R3': _Region('R3 · 438-998', AppColors.kin, 438, 998),
@@ -62,12 +63,12 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('단어 빈도 2500', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('단어 빈도 2500'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
-            Text('회화 자막 코퍼스 · 탭하면 발음', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
+            Text(tr('회화 자막 코퍼스 · 탭하면 발음'), style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
       ),
@@ -152,7 +153,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
                                     ),
                                   ),
                                   Text(
-                                    '누적 ${w.cumPct.toStringAsFixed(2)}%',
+                                    trf('누적 {0}%', [w.cumPct.toStringAsFixed(2)]),
                                     style: const TextStyle(fontSize: 10, color: AppColors.sumiLight),
                                   ),
                                 ],

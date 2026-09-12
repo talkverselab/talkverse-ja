@@ -4,6 +4,7 @@ import '../core/theme.dart';
 import '../services/kanji_index_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/l10n.dart';
 
 /// 한자 사전 — 검색(한자·뜻·읽기·단어) + 빈도순 브라우저 (1,078자).
 class KanjiDictionaryScreen extends StatefulWidget {
@@ -20,14 +21,14 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
   bool _loading = true;
   String _filter = 'ALL'; // ALL | N5..N1 | TOP (회화 300)
 
-  static const _ranges = {
-    'ALL': ('전체', null),
+  static Map<String, (String, int?)> get _ranges => {
+    'ALL': (tr('전체'), null),
     'N5': ('N5', 5),
     'N4': ('N4', 4),
     'N3': ('N3', 3),
     'N2': ('N2', 2),
     'N1': ('N1', 1),
-    'TOP': ('회화 Top300', -1),
+    'TOP': (tr('회화 Top300'), -1),
   };
 
   @override
@@ -73,9 +74,9 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('한자 사전', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('한자 사전'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('${_all.length}자 · JLPT N5-N1 + 회화 빈도',
+            Text(trf('{0}자 · JLPT N5-N1 + 회화 빈도', [_all.length]),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -92,7 +93,7 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
                     style: const TextStyle(color: AppColors.sumi, fontSize: 15),
                     decoration: InputDecoration(
                       isDense: true,
-                      hintText: '한자 · 뜻(사랑) · 읽기(あい) · 단어',
+                      hintText: tr('한자 · 뜻(사랑) · 읽기(あい) · 단어'),
                       hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 13),
                       prefixIcon: const Icon(Icons.search, color: AppColors.beni),
                       suffixIcon: searching
@@ -156,7 +157,7 @@ class _KanjiDictionaryScreenState extends State<KanjiDictionaryScreen> {
                 const AsanohaDivider(height: 8),
                 Expanded(
                   child: list.isEmpty
-                      ? const Center(child: Text('결과 없음', style: TextStyle(color: AppColors.sumiLight)))
+                      ? Center(child: Text(tr('결과 없음'), style: TextStyle(color: AppColors.sumiLight)))
                       : ListView.separated(
                           padding: const EdgeInsets.only(bottom: 80),
                           itemCount: list.length,
@@ -214,8 +215,8 @@ class _KanjiRow extends StatelessWidget {
                   const SizedBox(height: 2),
                   Text(
                     [
-                      if (e.on.isNotEmpty) '음 ${e.on.map((r) => r.reading).join('·')}',
-                      if (e.kun.isNotEmpty) '훈 ${e.kun.map((r) => r.reading).join('·')}',
+                      if (e.on.isNotEmpty) trf('음 {0}', [e.on.map((r) => r.reading).join('·')]),
+                      if (e.kun.isNotEmpty) trf('훈 {0}', [e.kun.map((r) => r.reading).join('·')]),
                     ].join('  '),
                     style: const TextStyle(fontSize: 11, color: AppColors.ai),
                     maxLines: 1,

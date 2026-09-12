@@ -7,6 +7,8 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 복습 덱 목록 — decks/*.json (L1 회화 · native 회화체 · R1 골격 · 한자 80 · 교육부 어휘).
 class FlashcardScreen extends StatefulWidget {
@@ -47,10 +49,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('복습 카드', style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 16)),
+            Text(tr('복습 카드'), style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 16)),
             SizedBox(height: 2),
             Text('Flashcards', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -143,7 +145,7 @@ class _DeckRow extends StatelessWidget {
                 children: [
                   Text('$known/${deck.cards.length}',
                       style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: AppColors.beni)),
-                  const Text('알아요', style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
+                  Text(tr('알아요'), style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
                 ],
               ),
             ],
@@ -206,7 +208,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
       final known = _states.values.where((s) => s == 2).length;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text('🎉 마지막 카드! ${widget.deck.cards.length}장 중 알아요 $known장'),
+          content: Text(trf('🎉 마지막 카드! {0}장 중 알아요 {1}장', [widget.deck.cards.length, known])),
           backgroundColor: AppColors.matcha,
         ),
       );
@@ -238,7 +240,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
         actions: const [KoReadingToggleAction()],
       ),
       body: cards.isEmpty
-          ? const Center(child: Text('카드가 없어요', style: TextStyle(color: AppColors.sumiLight)))
+          ? Center(child: Text(tr('카드가 없어요'), style: TextStyle(color: AppColors.sumiLight)))
           : _body(cards),
     );
   }
@@ -342,7 +344,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
                         ],
                       ],
                       const SizedBox(height: 18),
-                      Text(_flipped ? '탭해서 앞면 보기' : '탭해서 뜻 보기',
+                      Text(_flipped ? tr('탭해서 앞면 보기') : tr('탭해서 뜻 보기'),
                           style: const TextStyle(fontSize: 11, color: AppColors.sumiLight, letterSpacing: 2)),
                     ],
                   ),
@@ -359,26 +361,26 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
                 onPressed: _index > 0 ? () => _go(-1) : null,
                 style: OutlinedButton.styleFrom(shape: const RoundedRectangleBorder(), side: const BorderSide(color: AppColors.kin)),
                 icon: const Icon(Icons.arrow_back, size: 16),
-                label: const Text('이전'),
+                label: Text(tr('이전')),
               ),
               const Spacer(),
               OutlinedButton.icon(
                 onPressed: _index < cards.length - 1 ? () => _go(1) : null,
                 style: OutlinedButton.styleFrom(shape: const RoundedRectangleBorder(), side: const BorderSide(color: AppColors.kin)),
-                icon: const Text('다음'),
+                icon: Text(tr('다음')),
                 label: const Icon(Icons.arrow_forward, size: 16),
               ),
             ],
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(16, 10, 16, 20),
+          padding: EdgeInsets.fromLTRB(16, 10, 16, 20 + bottomInset(context)),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              _SrsButton(icon: Icons.close, label: '몰라요', color: AppColors.beni, onTap: () => _mark(0)),
-              _SrsButton(icon: Icons.refresh, label: '보통이에요', color: AppColors.kin, onTap: () => _mark(1)),
-              _SrsButton(icon: Icons.check, label: '알아요', color: AppColors.matcha, onTap: () => _mark(2)),
+              _SrsButton(icon: Icons.close, label: tr('몰라요'), color: AppColors.beni, onTap: () => _mark(0)),
+              _SrsButton(icon: Icons.refresh, label: tr('보통이에요'), color: AppColors.kin, onTap: () => _mark(1)),
+              _SrsButton(icon: Icons.check, label: tr('알아요'), color: AppColors.matcha, onTap: () => _mark(2)),
             ],
           ),
         ),

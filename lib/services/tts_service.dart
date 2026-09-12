@@ -1,4 +1,5 @@
 import 'package:flutter_tts/flutter_tts.dart';
+import '../core/platform.dart';
 
 /// flutter_tts 기반 — Android 시스템 ja-JP voice 사용.
 ///
@@ -18,6 +19,18 @@ class TtsService {
 
   Future<void> _ensureInit() async {
     if (_initialized) return;
+    if (isIOS) {
+      // 무음 스위치가 켜져 있어도 재생되게, 다른 앱 소리는 잠시 줄이게
+      await _tts.setSharedInstance(true);
+      await _tts.setIosAudioCategory(
+        IosTextToSpeechAudioCategory.playback,
+        [
+          IosTextToSpeechAudioCategoryOptions.duckOthers,
+          IosTextToSpeechAudioCategoryOptions.defaultToSpeaker,
+        ],
+        IosTextToSpeechAudioMode.spokenAudio,
+      );
+    }
     await _tts.setLanguage('ja-JP');
     await _tts.setSpeechRate(0.45);
     await _tts.setPitch(1.0);

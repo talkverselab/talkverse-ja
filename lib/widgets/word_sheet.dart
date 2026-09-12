@@ -7,6 +7,8 @@ import '../services/word_service.dart';
 import 'furigana_text.dart';
 import 'japanese_decor.dart';
 import 'selectable_ja_text.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 단어 정보 시트 열기
 Future<void> showWordSheet(BuildContext context, WordEntry word) {
@@ -45,7 +47,7 @@ class _WordSheetState extends State<WordSheet> {
     final kanjiSegs = w.segs.where((s) => s.reading != null && s.text.runes.any((c) => KanjiIndexService.isKanji(String.fromCharCode(c)))).toList();
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 16, 20, 24 + bottomInset(context)),
         child: ConstrainedBox(
           constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.75),
           child: SingleChildScrollView(
@@ -69,8 +71,8 @@ class _WordSheetState extends State<WordSheet> {
                 Wrap(
                   spacing: 6,
                   children: [
-                    _chip(w.jlpt == null ? '회화 코퍼스' : 'JLPT N${w.jlpt}', AppColors.ai),
-                    if (w.row.rank != null) _chip('회화 #${w.row.rank}', AppColors.beni),
+                    _chip(w.jlpt == null ? tr('회화 코퍼스') : 'JLPT N${w.jlpt}', AppColors.ai),
+                    if (w.row.rank != null) _chip(trf('회화 #{0}', [w.row.rank]), AppColors.beni),
                   ],
                 ),
                 const SizedBox(height: 12),
@@ -97,7 +99,7 @@ class _WordSheetState extends State<WordSheet> {
                     children: [
                       const SealStamp(text: '漢', size: 20),
                       const SizedBox(width: 8),
-                      const Text('한자 분해',
+                      Text(tr('한자 분해'),
                           style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.5)),
                     ],
                   ),
@@ -156,7 +158,7 @@ class _KanjiSegRow extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
                         color: AppColors.kin.withValues(alpha: 0.2),
-                        child: const Text('숙자훈 (통째 읽기)', style: TextStyle(fontSize: 9, color: AppColors.sumi)),
+                        child: Text(tr('숙자훈 (통째 읽기)'), style: TextStyle(fontSize: 9, color: AppColors.sumi)),
                       ),
                     ],
                   ],

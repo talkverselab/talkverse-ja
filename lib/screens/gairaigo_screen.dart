@@ -7,6 +7,8 @@ import '../core/theme.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 영어등유래단어 — 외래어가 일본어로 음차되는 규칙(영어) + 유래 언어별 줄기.
 /// 예외는 [예외] 배지.
@@ -81,10 +83,10 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('영어등유래단어',
+            Text(tr('영어등유래단어'),
                 style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('外来語 · $_stage단계 · ${_branches.length}줄기 · $total어',
+            Text(trf('外来語 · {0}단계 · {1}줄기 · {2}어', [_stage, _branches.length, total]),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -117,7 +119,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                                   width: selected ? 1.5 : 0.8),
                             ),
                             child: Text(
-                              st == 1 ? '1단계 핵심 $n' : '2단계 JLPT 전체 $n',
+                              st == 1 ? trf('1단계 핵심 {0}', [n]) : trf('2단계 JLPT 전체 {0}', [n]),
                               style: TextStyle(
                                 color: selected ? AppColors.washi : AppColors.ai,
                                 fontWeight: FontWeight.w800,
@@ -178,7 +180,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
   Widget _branchView(_Branch b) {
     return ListView(
       key: PageStorageKey(b.id),
-      padding: const EdgeInsets.fromLTRB(16, 12, 16, 80),
+      padding: EdgeInsets.fromLTRB(16, 12, 16, 80 + bottomInset(context)),
       children: [
         // 규칙 설명 카드
         JapaneseCard(
@@ -246,7 +248,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                               color: const Color(0xFFB26A00).withValues(alpha: 0.12),
                               border: Border.all(color: const Color(0xFFB26A00)),
                             ),
-                            child: const Text('예외',
+                            child: Text(tr('예외'),
                                 style: TextStyle(
                                     fontSize: 9, fontWeight: FontWeight.w800, color: Color(0xFFB26A00))),
                           ),
@@ -270,7 +272,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
               ),
               IconButton(
                 icon: const Icon(Icons.play_circle_fill, color: AppColors.beni, size: 32),
-                tooltip: '재생',
+                tooltip: tr('재생'),
                 onPressed: () => TtsService.instance.speak(w.ja),
               ),
             ],

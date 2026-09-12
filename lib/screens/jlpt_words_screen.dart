@@ -9,6 +9,7 @@ import '../services/word_service.dart';
 import '../widgets/furigana_text.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_sheet.dart';
+import '../core/l10n.dart';
 
 /// JLPT 단어 — 레벨 탭(N5→N1·회화) · 후리가나 루비 · 검색 · 한자 탭 → 한자 시트.
 class JlptWordsScreen extends StatefulWidget {
@@ -106,15 +107,15 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Text('JLPT 단어', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('JLPT 단어'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text('$total어 · 후리가나 · 한자 탭', style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
+            Text(trf('{0}어 · 후리가나 · 한자 탭', [total]), style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
         actions: [
           const KoReadingToggleAction(),
           IconButton(
-            tooltip: '후리가나',
+            tooltip: tr('후리가나'),
             icon: Text('ふ',
                 style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16, color: _showRuby ? AppColors.beni : AppColors.sumiLight)),
             onPressed: () => setState(() => _showRuby = !_showRuby),
@@ -131,7 +132,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
               style: const TextStyle(color: AppColors.sumi, fontSize: 15),
               decoration: InputDecoration(
                 isDense: true,
-                hintText: '표기(言葉) · 읽기(ことば) · 뜻(말, language)',
+                hintText: tr('표기(言葉) · 읽기(ことば) · 뜻(말, language)'),
                 hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 13),
                 prefixIcon: const Icon(Icons.search, color: AppColors.beni),
                 suffixIcon: searching
@@ -190,7 +191,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
             child: _loading
                 ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
                 : _words.isEmpty
-                    ? const Center(child: Text('결과 없음', style: TextStyle(color: AppColors.sumiLight)))
+                    ? Center(child: Text(tr('결과 없음'), style: TextStyle(color: AppColors.sumiLight)))
                     : ListView.separated(
                         controller: _scroll,
                         padding: const EdgeInsets.only(bottom: 80),

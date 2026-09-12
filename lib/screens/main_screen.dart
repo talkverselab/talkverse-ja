@@ -19,6 +19,7 @@ import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'topic_vocab_screen.dart';
 import 'word_freq_screen.dart';
+import '../core/l10n.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -37,11 +38,11 @@ class _MainScreenState extends State<MainScreen> {
     ProfileScreen(),
   ];
 
-  static const List<NavigationDestination> _tabs = [
-    NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: '홈'),
-    NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: '학습'),
-    NavigationDestination(icon: Icon(Icons.bar_chart_outlined), selectedIcon: Icon(Icons.bar_chart), label: '진행'),
-    NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: '프로필'),
+  static List<NavigationDestination> get _tabs => [
+    NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: tr('홈')),
+    NavigationDestination(icon: Icon(Icons.menu_book_outlined), selectedIcon: Icon(Icons.menu_book), label: tr('학습')),
+    NavigationDestination(icon: Icon(Icons.bar_chart_outlined), selectedIcon: Icon(Icons.bar_chart), label: tr('진행')),
+    NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: tr('프로필')),
   ];
 
   @override
@@ -94,7 +95,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           const SizedBox(height: 2),
                           Text(
-                            '한국 학습자, 오늘도 시작해요',
+                            tr('한국 학습자, 오늘도 시작해요'),
                             style: TextStyle(
                               fontSize: 13,
                               color: AppColors.sumiLight,
@@ -136,7 +137,7 @@ class HomeScreen extends StatelessWidget {
                     const SealStamp(text: '学', size: 22),
                     const SizedBox(width: 8),
                     Text(
-                      '메인 메뉴',
+                      tr('메인 메뉴'),
                       style: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w800,
@@ -153,7 +154,7 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 12),
                 Center(
                   child: Text(
-                    '일본어유니버스 · 2026',
+                    tr('일본어유니버스 · 2026'),
                     style: TextStyle(
                       color: AppColors.sumiLight,
                       fontSize: 11,
@@ -227,7 +228,7 @@ class _TodayMissionState extends State<_TodayMission> {
     return TodayMissionCard(
       level: meta.level == 'L1' ? 'BEGINNER 1' : meta.level,
       lessonTitle: '${meta.level} · ${meta.title}',
-      lessonSubtitle: '민준 & 사쿠라 스토리 ${meta.emoji}${meta.place.isNotEmpty ? ' · ${meta.place}' : ''}',
+      lessonSubtitle: trf('민준 & 사쿠라 스토리 {0}{1}', [meta.emoji, meta.place.isNotEmpty ? ' · ${meta.place}' : '']),
       progress: _learned,
       total: _total,
       onTap: () async {
@@ -245,29 +246,29 @@ class _MenuGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final items = <_MenuItem>[
-      _MenuItem(label: '회화', sub: 'Conversation', seal: '会話', color: AppColors.beni,
+      _MenuItem(label: tr('회화'), sub: 'Conversation', seal: '会話', color: AppColors.beni,
         builder: (_) => const ConversationScreen()),
-      _MenuItem(label: '50음도와 발음', sub: 'ひらがな·カタカナ', seal: 'かな', color: AppColors.sakuraDeep,
+      _MenuItem(label: tr('50음도와 발음'), sub: 'ひらがな·カタカナ', seal: 'かな', color: AppColors.sakuraDeep,
         builder: (_) => const KanaChartScreen()),
-      _MenuItem(label: '조사', sub: '助詞 핵심 20', seal: '助詞', color: AppColors.ai,
+      _MenuItem(label: tr('조사'), sub: tr('助詞 핵심 20'), seal: '助詞', color: AppColors.ai,
         builder: (_) => const GrammarLessonScreen()),
-      _MenuItem(label: '한자 단계', sub: 'JLPT N5→N1 4지선다', seal: '漢字', color: const Color(0xFFC62828),
+      _MenuItem(label: tr('한자 단계'), sub: tr('JLPT N5→N1 4지선다'), seal: '漢字', color: const Color(0xFFC62828),
         builder: (_) => const KanjiStagesScreen()),
-      _MenuItem(label: '한자 사전', sub: '2,285자 · 읽기별 단어', seal: '辞書', color: const Color(0xFF6A1B9A),
+      _MenuItem(label: tr('한자 사전'), sub: tr('2,285자 · 읽기별 단어'), seal: '辞書', color: const Color(0xFF6A1B9A),
         builder: (_) => const KanjiDictionaryScreen()),
-      _MenuItem(label: 'JLPT 단어', sub: '8,600어 · 후리가나', seal: 'N5', color: AppColors.matcha,
+      _MenuItem(label: tr('JLPT 단어'), sub: tr('8,600어 · 후리가나'), seal: 'N5', color: AppColors.matcha,
         builder: (_) => const JlptWordsScreen()),
-      _MenuItem(label: '필수 단어', sub: 'Day별 975어 · 외우기', seal: '単語', color: AppColors.kin,
+      _MenuItem(label: tr('필수 단어'), sub: tr('Day별 975어 · 외우기'), seal: '単語', color: AppColors.kin,
         builder: (_) => const TopicVocabScreen()),
-      _MenuItem(label: '한자음', sub: '한국 한자음 ↔ 音読み', seal: '音', color: AppColors.aiDeep,
+      _MenuItem(label: tr('한자음'), sub: tr('한국 한자음 ↔ 音読み'), seal: '音', color: AppColors.aiDeep,
         builder: (_) => const HanjaSoundScreen()),
-      _MenuItem(label: '발음부', sub: '音符 · 한자 가족', seal: '音符', color: const Color(0xFF6A1B9A),
+      _MenuItem(label: tr('발음부'), sub: tr('音符 · 한자 가족'), seal: '音符', color: const Color(0xFF6A1B9A),
         builder: (_) => const PhoneticRootsScreen()),
-      _MenuItem(label: '영어등유래단어', sub: '음차 규칙·유래 언어', seal: '外来', color: const Color(0xFF00695C),
+      _MenuItem(label: tr('영어등유래단어'), sub: tr('음차 규칙·유래 언어'), seal: '外来', color: const Color(0xFF00695C),
         builder: (_) => const GairaigoScreen()),
-      _MenuItem(label: '단어 빈도', sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
+      _MenuItem(label: tr('단어 빈도'), sub: 'Vocabulary 2500', seal: '語彙', color: AppColors.kinDeep,
         builder: (_) => const WordFreqScreen()),
-      _MenuItem(label: '복습', sub: 'Flashcard 덱 5', seal: '復習', color: AppColors.kin,
+      _MenuItem(label: tr('복습'), sub: tr('Flashcard 덱 5'), seal: '復習', color: AppColors.kin,
         builder: (_) => const FlashcardScreen()),
     ];
 
@@ -363,8 +364,8 @@ class LearnScreen extends StatefulWidget {
 }
 
 class _LearnScreenState extends State<LearnScreen> {
-  String _filter = '전체';
-  final List<String> _filters = const ['전체', 'L1', 'L2', 'L3'];
+  String _filter = tr('전체');
+  final List<String> _filters = [tr('전체'), 'L1', 'L2', 'L3'];
   List<_LessonItem> _lessons = [];
 
   @override
@@ -384,7 +385,7 @@ class _LearnScreenState extends State<LearnScreen> {
     for (final level in ['L1', 'L2', 'L3']) {
       final metas = EpisodeCatalog.instance.plannedForLevel(level);
       if (metas.isEmpty) continue;
-      if (_filter != '전체' && _filter != level) continue;
+      if (_filter != tr('전체') && _filter != level) continue;
       items.add(_LessonItem.header(
           EpisodeCatalog.levelLabels[level] ?? level, metas.length));
       var currentAssigned = false;
@@ -430,7 +431,7 @@ class _LearnScreenState extends State<LearnScreen> {
         backgroundColor: AppColors.washi,
         foregroundColor: AppColors.sumi,
         elevation: 0,
-        title: const Text('학습', style: TextStyle(color: AppColors.sumi)),
+        title: Text(tr('학습'), style: TextStyle(color: AppColors.sumi)),
         centerTitle: true,
         actions: [
           IconButton(
@@ -553,7 +554,7 @@ class _LessonRow extends StatelessWidget {
               ),
             ),
             Text(
-              '${lesson.total}편',
+              trf('{0}편', [lesson.total]),
               style: const TextStyle(
                 fontSize: 11,
                 fontWeight: FontWeight.w800,

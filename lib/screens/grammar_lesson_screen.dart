@@ -9,6 +9,8 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 조사 레슨 — particles.json (격조사·보조사 + 종조사). 항목 펼치기 + 예문 TTS + 4지선다 테스트.
 class GrammarLessonScreen extends StatefulWidget {
@@ -43,7 +45,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(data?['title'] as String? ?? '조사',
+            Text(data?['title'] as String? ?? tr('조사'),
                 style: const TextStyle(color: AppColors.sumi, fontSize: 15, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
             Text(data?['subtitle'] as String? ?? '',
@@ -54,7 +56,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
           const KoReadingToggleAction(),
           if (data != null)
             IconButton(
-              tooltip: '조사 테스트',
+              tooltip: tr('조사 테스트'),
               icon: const Icon(Icons.quiz, color: AppColors.beni),
               onPressed: () => Navigator.push(
                 context,
@@ -109,7 +111,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
         const AsanohaDivider(height: 10),
         Expanded(
           child: ListView.separated(
-            padding: const EdgeInsets.fromLTRB(16, 10, 16, 80),
+            padding: EdgeInsets.fromLTRB(16, 10, 16, 80 + bottomInset(context)),
             itemCount: items.length,
             separatorBuilder: (_, _) => const SizedBox(height: 10),
             itemBuilder: (context, i) => _ParticleTile(item: items[i], index: i),
@@ -343,7 +345,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
         builder: (_) => AlertDialog(
           backgroundColor: AppColors.washi,
           shape: const RoundedRectangleBorder(),
-          title: const Text('🎉 조사 테스트 완료', style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w900)),
+          title: Text(tr('🎉 조사 테스트 완료'), style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w900)),
           content: Text('$_correct / ${_qs.length}  ·  $pct%',
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900, color: AppColors.beni)),
           actions: [
@@ -352,7 +354,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                 Navigator.pop(context);
                 Navigator.pop(context);
               },
-              child: const Text('나가기', style: TextStyle(color: AppColors.sumiLight)),
+              child: Text(tr('나가기'), style: TextStyle(color: AppColors.sumiLight)),
             ),
             ElevatedButton(
               onPressed: () {
@@ -364,7 +366,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                 foregroundColor: AppColors.washi,
                 shape: const RoundedRectangleBorder(),
               ),
-              child: const Text('다시'),
+              child: Text(tr('다시')),
             ),
           ],
         ),
@@ -376,7 +378,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.washi,
-      appBar: AppBar(title: const Text('조사 테스트 · 빈칸 4지선다')),
+      appBar: AppBar(title: Text(tr('조사 테스트 · 빈칸 4지선다'))),
       body: _qs.isEmpty
           ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
           : _body(),
@@ -499,7 +501,7 @@ class _GrammarTestScreenState extends State<GrammarTestScreen> {
                   elevation: 0,
                 ),
                 child: Text(
-                  _idx == _qs.length - 1 ? '결과 보기' : '다음 →',
+                  _idx == _qs.length - 1 ? tr('결과 보기') : tr('다음 →'),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, letterSpacing: 3),
                 ),
               ),

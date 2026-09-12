@@ -4,6 +4,8 @@ import '../core/theme.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/kana_sound_sheet.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 const _hira = [
   ['あ', 'い', 'う', 'え', 'お'],
@@ -47,7 +49,7 @@ const _romaji = [
   ['n', '', '', '', ''],
 ];
 
-const _rowNames = ['あ행', 'か행', 'さ행', 'た행', 'な행', 'は행', 'ま행', 'や행', 'ら행', 'わ행', 'ん'];
+List<String> get _rowNames => [tr('あ행'), tr('か행'), tr('さ행'), tr('た행'), tr('な행'), tr('は행'), tr('ま행'), tr('や행'), tr('ら행'), tr('わ행'), 'ん'];
 
 // 濁音·半濁音
 const _dakuHira = [
@@ -71,7 +73,7 @@ const _dakuRomaji = [
   ['ba', 'bi', 'bu', 'be', 'bo'],
   ['pa', 'pi', 'pu', 'pe', 'po'],
 ];
-const _dakuRowNames = ['が행', 'ざ행', 'だ행', 'ば행', 'ぱ행'];
+List<String> get _dakuRowNames => [tr('が행'), tr('ざ행'), tr('だ행'), tr('ば행'), tr('ぱ행')];
 
 // 拗音
 const _youHira = [
@@ -133,17 +135,17 @@ class _KanaChartScreenState extends State<KanaChartScreen> {
       child: Scaffold(
         backgroundColor: AppColors.washi,
         appBar: AppBar(
-          title: const Column(
+          title: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Text('50음도와 발음', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+              Text(tr('50음도와 발음'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
               SizedBox(height: 2),
-              Text('탭하면 발음·IPA 상세', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
+              Text(tr('탭하면 발음·IPA 상세'), style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
             ],
           ),
           actions: [
             IconButton(
-              tooltip: '로마자',
+              tooltip: tr('로마자'),
               icon: Text('Aa',
                   style: TextStyle(
                       fontWeight: FontWeight.w900, color: _showRomaji ? AppColors.beni : AppColors.sumiLight)),
@@ -182,7 +184,7 @@ class _KanaChartScreenState extends State<KanaChartScreen> {
   }
 
   Widget _setChips() {
-    const labels = ['청음 46', '탁음·반탁음 25', '요음 33'];
+    final labels = [tr('청음 46'), tr('탁음·반탁음 25'), tr('요음 33')];
     return Container(
       color: AppColors.washiDeep,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
@@ -240,7 +242,7 @@ class _KanaChartScreenState extends State<KanaChartScreen> {
         cols = 5;
     }
     return ListView.builder(
-      padding: const EdgeInsets.fromLTRB(12, 12, 12, 80),
+      padding: EdgeInsets.fromLTRB(12, 12, 12, 80 + bottomInset(context)),
       itemCount: rows.length,
       itemBuilder: (context, r) {
         final color = _set == 2 ? kanaRowColor(r + 1) : (_set == 1 ? kanaRowColor(r + 1) : kanaRowColor(r));

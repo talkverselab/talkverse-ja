@@ -7,6 +7,8 @@ import '../services/word_service.dart';
 import 'furigana_text.dart';
 import 'japanese_decor.dart';
 import 'word_sheet.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 문장 내 한자를 탭하면 한자 정보 시트를 띄움. 가나·기호는 일반 텍스트.
 class SelectableJaText extends StatefulWidget {
@@ -127,7 +129,7 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
     final groups = _groups;
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 14, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 14, 20, 24 + bottomInset(context)),
         child: ConstrainedBox(
           constraints: BoxConstraints(maxHeight: MediaQuery.of(context).size.height * 0.8),
           child: SingleChildScrollView(
@@ -176,7 +178,7 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                         children: [
                           Text(
                             e == null || e.meanings.isEmpty
-                                ? (e != null && e.meaningsEn.isNotEmpty ? e.meaningsEn : '(뜻 정보 없음)')
+                                ? (e != null && e.meaningsEn.isNotEmpty ? e.meaningsEn : tr('(뜻 정보 없음)'))
                                 : e.meaningJoined,
                             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi, height: 1.2),
                           ),
@@ -189,9 +191,9 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                               runSpacing: 4,
                               children: [
                                 if (e.jlpt != null) _Tag('JLPT N${e.jlpt}', AppColors.ai),
-                                if (e.rank < 9999) _Tag('회화 #${e.rank}', AppColors.beni),
-                                if (e.strokes != null) _Tag('${e.strokes}획', AppColors.kinDeep),
-                                if (e.grade != null) _Tag(e.grade! <= 6 ? '초${e.grade}' : '중학', AppColors.matcha),
+                                if (e.rank < 9999) _Tag(trf('회화 #{0}', [e.rank]), AppColors.beni),
+                                if (e.strokes != null) _Tag(trf('{0}획', [e.strokes]), AppColors.kinDeep),
+                                if (e.grade != null) _Tag(e.grade! <= 6 ? trf('초{0}', [e.grade]) : tr('중학'), AppColors.matcha),
                               ],
                             ),
                         ],
@@ -213,8 +215,8 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                   const SizedBox(height: 16),
                   const AsanohaDivider(height: 8),
                   const SizedBox(height: 10),
-                  if (e.on.isNotEmpty) _ReadingRow(label: '음독', color: AppColors.ai, readings: e.on),
-                  if (e.kun.isNotEmpty) _ReadingRow(label: '훈독', color: AppColors.matcha, readings: e.kun),
+                  if (e.on.isNotEmpty) _ReadingRow(label: tr('음독'), color: AppColors.ai, readings: e.on),
+                  if (e.kun.isNotEmpty) _ReadingRow(label: tr('훈독'), color: AppColors.matcha, readings: e.kun),
                 ],
                 // 대표 단어 — 회화 빈도순 1~2개
                 if (e != null && e.words.isNotEmpty) ...[
@@ -228,7 +230,7 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('대표 단어 (빈도순)',
+                        Text(tr('대표 단어 (빈도순)'),
                             style: TextStyle(
                                 fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.beni, letterSpacing: 1)),
                         const SizedBox(height: 6),
@@ -265,11 +267,11 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                   children: [
                     const SealStamp(text: '語', size: 20),
                     const SizedBox(width: 8),
-                    const Text('읽기별 단어',
+                    Text(tr('읽기별 단어'),
                         style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.5)),
                     const SizedBox(width: 6),
                     if (groups != null)
-                      Text('${groups.fold<int>(0, (n, g) => n + g.words.length)}어 · ${groups.length}읽기',
+                      Text(trf('{0}어 · {1}읽기', [groups.fold<int>(0, (n, g) => n + g.words.length), groups.length]),
                           style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
                   ],
                 ),
@@ -282,7 +284,7 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                             width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.beni))),
                   )
                 else if (groups.isEmpty)
-                  const Text('연결된 단어가 아직 없어요.', style: TextStyle(fontSize: 12, color: AppColors.sumiLight))
+                  Text(tr('연결된 단어가 아직 없어요.'), style: TextStyle(fontSize: 12, color: AppColors.sumiLight))
                 else
                   ...groups.map((g) => _ReadingGroupBlock(char: char, group: g)),
                 if (e != null && e.words.isNotEmpty && (groups == null || groups.isEmpty)) ...[
@@ -340,7 +342,7 @@ class _ReadingGroupBlock extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 6),
-              Text('${group.words.length}어', style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+              Text(trf('{0}어', [group.words.length]), style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
             ],
           ),
           const SizedBox(height: 6),
