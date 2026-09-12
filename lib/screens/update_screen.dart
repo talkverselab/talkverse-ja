@@ -34,7 +34,9 @@ class _UpdateScreenState extends State<UpdateScreen> {
     await _svc.loadCurrent();
     if (!mounted) return;
     setState(() {});
-    _check();
+    // iOS 빌드 번호는 TestFlight 워크플로의 실행 번호라 안드로이드 릴리스의
+    // latest.json 과는 다른 수열이다 — 견주지 않고 TestFlight 안내만 한다.
+    if (Platform.isAndroid) _check();
   }
 
   Future<void> _check() async {
@@ -146,38 +148,60 @@ class _UpdateScreenState extends State<UpdateScreen> {
             lines: ['버전 ${_svc.currentText}'],
           ),
           const SizedBox(height: 12),
-          _latestPanel(cs),
-          const SizedBox(height: 14),
-          if (_error != null) ...[
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                color: cs.errorContainer,
-                border: Border.all(color: cs.error, width: 1.2),
+          if (!Platform.isAndroid) ...[
+            _Panel(
+              title: 'iPhone은 TestFlight로 업데이트',
+              color: cs.primary,
+              lines: const [
+                '새 빌드는 TestFlight 앱에 자동으로 올라옵니다.',
+                'TestFlight 앱을 열어 「업데이트」를 눌러 주세요.',
+                '알림을 켜 두면 새 빌드가 올 때마다 바로 알려 줍니다.',
+              ],
+            ),
+            const SizedBox(height: 20),
+            Text(
+              '갤럭시(안드로이드)에서는 이 화면에서 APK를 바로 받아 설치하고,\n'
+              'iPhone에서는 애플 정책상 TestFlight 앱이 그 역할을 맡습니다.',
+              style: TextStyle(
+                fontSize: 11.5,
+                height: 1.5,
+                color: cs.onSurfaceVariant,
               ),
-              child: Text(
-                _error!,
-                style: TextStyle(
-                  fontSize: 12.5,
-                  height: 1.45,
-                  color: cs.onErrorContainer,
-                  fontWeight: FontWeight.w600,
+            ),
+          ] else ...[
+            _latestPanel(cs),
+            const SizedBox(height: 14),
+            if (_error != null) ...[
+              Container(
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: cs.errorContainer,
+                  border: Border.all(color: cs.error, width: 1.2),
+                ),
+                child: Text(
+                  _error!,
+                  style: TextStyle(
+                    fontSize: 12.5,
+                    height: 1.45,
+                    color: cs.onErrorContainer,
+                    fontWeight: FontWeight.w600,
+                  ),
                 ),
               ),
+              const SizedBox(height: 14),
+            ],
+            _actions(cs),
+            const SizedBox(height: 20),
+            Text(
+              '업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n'
+              '처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.',
+              style: TextStyle(
+                fontSize: 11.5,
+                height: 1.5,
+                color: cs.onSurfaceVariant,
+              ),
             ),
-            const SizedBox(height: 14),
           ],
-          _actions(cs),
-          const SizedBox(height: 20),
-          Text(
-            '업데이트는 푸시할 때마다 GitHub Actions가 서명해 올린 APK입니다.\n'
-            '처음 설치할 때 한 번 「출처를 알 수 없는 앱 설치」 허용이 필요합니다.',
-            style: TextStyle(
-              fontSize: 11.5,
-              height: 1.5,
-              color: cs.onSurfaceVariant,
-            ),
-          ),
         ],
       ),
     );
@@ -248,11 +272,7 @@ class _UpdateScreenState extends State<UpdateScreen> {
         );
       case _Stage.idle:
       case _Stage.upToDate:
-        return _Button(
-          label: '다시 확인',
-          color: cs.secondary,
-          onTap: _check,
-        );
+        return _Button(label: '다시 확인', color: cs.secondary, onTap: _check);
     }
   }
 }
@@ -287,7 +307,10 @@ class _Panel extends StatelessWidget {
           for (final t in lines)
             Padding(
               padding: const EdgeInsets.only(bottom: 3),
-              child: Text(t, style: const TextStyle(fontSize: 12.5, height: 1.4)),
+              child: Text(
+                t,
+                style: const TextStyle(fontSize: 12.5, height: 1.4),
+              ),
             ),
         ],
       ),
@@ -316,7 +339,8 @@ class _Button extends StatelessWidget {
         child: Text(
           label,
           style: TextStyle(
-            color: ThemeData.estimateBrightnessForColor(color) == Brightness.dark
+            color:
+                ThemeData.estimateBrightnessForColor(color) == Brightness.dark
                 ? Colors.white
                 : Colors.black,
             fontSize: 14.5,
@@ -339,7 +363,10 @@ class UpdateEntryTile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 14),
       decoration: BoxDecoration(
-        border: Border.all(color: cs.primary.withValues(alpha: 0.7), width: 1.3),
+        border: Border.all(
+          color: cs.primary.withValues(alpha: 0.7),
+          width: 1.3,
+        ),
       ),
       child: ListTile(
         leading: Icon(Icons.system_update, color: cs.primary),
@@ -347,9 +374,11 @@ class UpdateEntryTile extends StatelessWidget {
           '앱 업데이트',
           style: TextStyle(fontWeight: FontWeight.w800),
         ),
-        subtitle: const Text(
-          'GitHub 최신 빌드 확인 · 내려받아 설치',
-          style: TextStyle(fontSize: 11.5),
+        subtitle: Text(
+          Platform.isAndroid
+              ? 'GitHub 최신 빌드 확인 · 내려받아 설치'
+              : 'TestFlight 업데이트 안내',
+          style: const TextStyle(fontSize: 11.5),
         ),
         trailing: Icon(Icons.chevron_right, color: cs.primary),
         onTap: () => Navigator.push(
