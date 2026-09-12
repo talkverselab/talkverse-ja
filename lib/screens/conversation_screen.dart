@@ -5,6 +5,8 @@ import '../widgets/japanese_decor.dart';
 import 'episode_screen.dart';
 import 'grammar_lesson_screen.dart';
 import 'sentence_flashcard_screen.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 회화 허브 — 스토리 에피소드(L1~L3) + 문법 + 문장 플래시카드.
 class ConversationScreen extends StatefulWidget {
@@ -33,10 +35,10 @@ class _ConversationScreenState extends State<ConversationScreen> {
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('회화', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('회화'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
             Text('Conversation', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
@@ -48,7 +50,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
               children: [
                 const Positioned.fill(child: SeigaihaPattern(opacity: 0.05)),
                 ListView(
-                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 80),
+                  padding: EdgeInsets.fromLTRB(16, 12, 16, 80 + bottomInset(context)),
                   children: [
                     _storyHub(),
                     const SizedBox(height: 8),
@@ -75,7 +77,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
-                    '${EpisodeCatalog.levelLabels[level]} · ${catalog.forLevel(level).length}/${catalog.plannedForLevel(level).length}편',
+                    trf('{0} · {1}/{2}편', [EpisodeCatalog.levelLabels[level], catalog.forLevel(level).length, catalog.plannedForLevel(level).length]),
                     style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1.5),
                   ),
                 ),
@@ -122,7 +124,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                           ),
                           if (meta.place.isNotEmpty)
                             Text(
-                              ready ? meta.place : '준비 중',
+                              ready ? meta.place : tr('준비 중'),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: const TextStyle(fontSize: 9, color: AppColors.sumiLight),
@@ -148,24 +150,24 @@ class _ConversationScreenState extends State<ConversationScreen> {
           children: [
             const SealStamp(text: '学', size: 22),
             const SizedBox(width: 8),
-            const Text(
-              '우리 콘텐츠 (자체 제작)',
+            Text(
+              tr('우리 콘텐츠 (자체 제작)'),
               style: TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 2),
             ),
           ],
         ),
         const SizedBox(height: 8),
         _HubCard(
-          title: '조사 (助詞) 핵심 20',
-          sub: '은/는·이/가·을/를 1:1 매핑 + 종조사 ね·よ·か',
+          title: tr('조사 (助詞) 핵심 20'),
+          sub: tr('은/는·이/가·을/를 1:1 매핑 + 종조사 ね·よ·か'),
           seal: '助詞',
           color: AppColors.ai,
           builder: (_) => const GrammarLessonScreen(),
         ),
         const SizedBox(height: 8),
         _HubCard(
-          title: '문장 플래시카드',
-          sub: '전 레벨 랜덤 20문장 · 뜻 뒤집기 · 남/녀 음성',
+          title: tr('문장 플래시카드'),
+          sub: tr('전 레벨 랜덤 20문장 · 뜻 뒤집기 · 남/녀 음성'),
           seal: '復習',
           color: AppColors.matcha,
           builder: (_) => const SentenceFlashcardScreen(),
@@ -176,7 +178,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
 
   Widget _characters() {
     return JapaneseCard(
-      title: '등장인물',
+      title: tr('등장인물'),
       sealText: '人',
       accent: AppColors.sumi,
       child: Column(
@@ -184,15 +186,15 @@ class _ConversationScreenState extends State<ConversationScreen> {
           _CharRow(
             avatar: '民',
             color: AppColors.ai,
-            name: '민준 (28)',
-            role: '한국 IT 직장인 · 도쿄 출장 중 · 화자 A (남)',
+            name: tr('민준 (28)'),
+            role: tr('한국 IT 직장인 · 도쿄 출장 중 · 화자 A (남)'),
           ),
           const SizedBox(height: 8),
           _CharRow(
             avatar: '桜',
             color: AppColors.beni,
-            name: '사쿠라 (26)',
-            role: '도쿄 디자이너 · 화자 B (여) · 표준어 (도쿄)',
+            name: tr('사쿠라 (26)'),
+            role: tr('도쿄 디자이너 · 화자 B (여) · 표준어 (도쿄)'),
           ),
         ],
       ),

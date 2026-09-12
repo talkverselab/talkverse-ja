@@ -13,6 +13,8 @@ import '../widgets/japanese_decor.dart';
 import '../widgets/memo_toggle.dart';
 import '../widgets/selectable_ja_text.dart';
 import 'sentence_flashcard_screen.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 에피소드/다이얼로그 메타 (Learn 탭·회화 허브·홈 공용).
 class EpisodeMeta {
@@ -34,14 +36,14 @@ class EpisodeCatalog {
   final Map<String, List<EpisodeMeta>> _plannedByLevel = {}; // 턴 0 (미작성) 포함
   bool _loaded = false;
 
-  static const Map<String, String> levelLabels = {
-    'L1': 'L1 스토리 — 만남',
-    'L2': 'L2 카오스 챗 — 일상',
-    'L3': 'L3 내러티브 — 사랑',
+  static Map<String, String> get levelLabels => {
+    'L1': tr('L1 스토리 — 만남'),
+    'L2': tr('L2 카오스 챗 — 일상'),
+    'L3': tr('L3 내러티브 — 사랑'),
   };
 
-  static const String charA = '민준';
-  static const String charB = '사쿠라';
+  static String get charA => tr('민준');
+  static String get charB => tr('사쿠라');
 
   List<EpisodeMeta> forLevel(String level) => _byLevel[level] ?? const [];
   List<EpisodeMeta> plannedForLevel(String level) => _plannedByLevel[level] ?? const [];
@@ -157,7 +159,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
         actions: [
           const KoReadingToggleAction(),
           IconButton(
-            tooltip: '가나 표시',
+            tooltip: tr('가나 표시'),
             icon: Text('か',
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
@@ -167,7 +169,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
             onPressed: () => setState(() => _showKana = !_showKana),
           ),
           IconButton(
-            tooltip: '로마자 표시',
+            tooltip: tr('로마자 표시'),
             icon: Text('Aa',
                 style: TextStyle(
                   fontWeight: FontWeight.w900,
@@ -177,7 +179,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
             onPressed: () => setState(() => _showRomaji = !_showRomaji),
           ),
           IconButton(
-            tooltip: '이 에피소드 플래시카드',
+            tooltip: tr('이 에피소드 플래시카드'),
             icon: const Icon(Icons.style, color: AppColors.beni),
             onPressed: () async {
               await Navigator.push(
@@ -205,7 +207,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
                 const AsanohaDivider(height: 8),
                 Expanded(
                   child: ListView.builder(
-                    padding: const EdgeInsets.fromLTRB(12, 10, 12, 90),
+                    padding: EdgeInsets.fromLTRB(12, 10, 12, 90 + bottomInset(context)),
                     itemCount: _turns.length,
                     itemBuilder: (context, i) {
                       final t = _turns[i];

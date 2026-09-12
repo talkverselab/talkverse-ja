@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'kana_hangul_map.dart';
+import '../core/l10n.dart';
 
 /// 가나 → 한글독음 변환 + 전역 표시 설정 (모든 메뉴 공용).
 class KoReading {
@@ -98,7 +99,7 @@ class KoReadingToggleAction extends StatelessWidget {
       builder: (context, on, _) {
         final color = on ? base : base.withValues(alpha: 0.35);
         return IconButton(
-          tooltip: on ? '한글독음 숨기기' : '한글독음 표시',
+          tooltip: on ? tr('한글독음 숨기기') : tr('한글독음 표시'),
           onPressed: KoReadingPrefs.toggle,
           icon: Container(
             padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
@@ -107,7 +108,7 @@ class KoReadingToggleAction extends StatelessWidget {
               borderRadius: BorderRadius.circular(6),
             ),
             child: Text(
-              '한',
+              tr('한'),
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w700,

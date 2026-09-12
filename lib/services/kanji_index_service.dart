@@ -1,6 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
+import '../core/l10n.dart';
 
 /// 한자 읽기 (음독/훈독)
 class KanjiReading {
@@ -15,7 +16,7 @@ class KanjiReading {
         gloss: j['gloss'] as String? ?? '',
       );
 
-  bool get isOn => kind == '음독';
+  bool get isOn => kind == tr('음독');
 }
 
 /// 한자 예시 단어
@@ -76,9 +77,9 @@ class KanjiEntry {
       meaningsEn: ((j['meanings_en'] as List?) ?? []).join(', '),
       readings: [
         for (final r in (j['on'] as List? ?? []).cast<String>())
-          KanjiReading(reading: r, kind: '음독', gloss: (glosses[base(r)] as String?) ?? ''),
+          KanjiReading(reading: r, kind: tr('음독'), gloss: (glosses[base(r)] as String?) ?? ''),
         for (final r in (j['kun'] as List? ?? []).cast<String>())
-          KanjiReading(reading: r, kind: '훈독', gloss: (glosses[base(r)] as String?) ?? ''),
+          KanjiReading(reading: r, kind: tr('훈독'), gloss: (glosses[base(r)] as String?) ?? ''),
       ],
       words: const [],
     );
@@ -123,7 +124,7 @@ class KanjiStage {
   const KanjiStage(
       {required this.stage, required this.level, required this.indexInLevel, required this.chars, this.freqLabel});
 
-  String get levelLabel => freqLabel ?? (level == null ? '기타' : 'N$level');
+  String get levelLabel => freqLabel ?? (level == null ? tr('기타') : 'N$level');
 }
 
 /// kanji_db.json 로더 (JLPT N5-N1 ∪ 회화 1,078 = 2,285자) + 검색 + JLPT 단계 분할.

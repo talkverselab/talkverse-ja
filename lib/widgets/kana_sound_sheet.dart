@@ -6,6 +6,8 @@ import '../core/theme.dart';
 import '../services/kana_phonetics.dart';
 import 'vowel_compare_chart.dart';
 import '../services/tts_service.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 가나 탭 → 발음 상세 시트.
 /// 열리면 1초 뒤 자동 재생, IPA·조음 위치·영어/한국어 비교, 다시듣기 버튼.
@@ -73,7 +75,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
         top: false,
         child: ListView(
           controller: scroll,
-          padding: const EdgeInsets.fromLTRB(20, 12, 20, 32),
+          padding: EdgeInsets.fromLTRB(20, 12, 20, 32 + bottomInset(context)),
           children: [
             Center(
               child: Container(
@@ -136,7 +138,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
                 IconButton(
                   iconSize: 44,
                   color: color,
-                  tooltip: '다시 듣기',
+                  tooltip: tr('다시 듣기'),
                   icon: const Icon(Icons.play_circle_fill),
                   onPressed: () => TtsService.instance.speak(widget.kana),
                 ),
@@ -144,7 +146,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
             ),
             const SizedBox(height: 20),
             if (p != null) ...[
-              _section('👄 소리나는 곳 · 입모양', p.place, color),
+              _section(tr('👄 소리나는 곳 · 입모양'), p.place, color),
               // 모음 위치 비교 — 한 차트 위에 일본어(빨강) vs 영어(파랑)
               if (vc != null) ...[
                 const SizedBox(height: 14),
@@ -160,7 +162,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        '📍 모음 위치 — 일본어 vs 영어',
+                        tr('📍 모음 위치 — 일본어 vs 영어'),
                         style: TextStyle(
                           fontSize: 13,
                           fontWeight: FontWeight.w800,
@@ -188,7 +190,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
                           color: color,
                         ),
                         Text(
-                          '자음 조음 위치 그림 보기',
+                          tr('자음 조음 위치 그림 보기'),
                           style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.w700,
@@ -211,26 +213,26 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
                       ),
                     ),
                   ),
-                  const Padding(
+                  Padding(
                     padding: EdgeInsets.only(top: 4),
                     child: Text(
-                      '그림: Wikimedia Commons IPA 자료 (CC BY-SA)',
+                      tr('그림: Wikimedia Commons IPA 자료 (CC BY-SA)'),
                       style: TextStyle(fontSize: 9, color: AppColors.sumiLight),
                     ),
                   ),
                 ],
               ],
               const SizedBox(height: 14),
-              _section('🇺🇸 영어와 비교', '${p.engIpa}\n\n${p.engHow}', color),
+              _section(tr('🇺🇸 영어와 비교'), '${p.engIpa}\n\n${p.engHow}', color),
               const SizedBox(height: 14),
               _section(
-                '🇰🇷 한국어와 비교',
-                '비슷한 소리: ${p.korSim}\n\n${p.korDiff}',
+                tr('🇰🇷 한국어와 비교'),
+                trf('비슷한 소리: {0}\n\n{1}', [p.korSim, p.korDiff]),
                 color,
               ),
             ] else
-              const Text(
-                '발음 정보가 아직 없어요.',
+              Text(
+                tr('발음 정보가 아직 없어요.'),
                 style: TextStyle(color: AppColors.sumiLight),
               ),
           ],

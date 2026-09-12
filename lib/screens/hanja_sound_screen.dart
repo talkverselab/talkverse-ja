@@ -5,6 +5,8 @@ import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 한자음 매핑 — 한국 한자음(훈음의 '음') ↔ 일본 음독(音読み).
 /// zh 발음부(声旁) 화면 스타일: 카드 그리드 → 탭하면 한자 가족 시트.
@@ -31,25 +33,25 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
   String _filter = 'ALL';
   String _query = '';
 
-  static const _filters = {
-    'ALL': '전체',
-    'NONE': '받침 없음',
+  static Map<String, String> get _filters => {
+    'ALL': tr('전체'),
+    'NONE': tr('받침 없음'),
     'ㄱ': 'ㄱ → ク/キ',
     'ㄴ': 'ㄴ → ン',
     'ㄹ': 'ㄹ → ツ/チ',
     'ㅁ': 'ㅁ → ン',
-    'ㅂ': 'ㅂ → ウ장음',
-    'ㅇ': 'ㅇ → ウ/イ장음',
+    'ㅂ': tr('ㅂ → ウ장음'),
+    'ㅇ': tr('ㅇ → ウ/イ장음'),
   };
 
-  static const _ruleOf = {
-    'NONE': '받침 없음 → 음독도 1음절인 경우가 많다',
-    'ㄱ': 'ㄱ 받침 → ク·キ (学 학→ガク · 力 력→リョク)',
-    'ㄴ': 'ㄴ 받침 → ン (新 신→シン · 安 안→アン)',
-    'ㄹ': 'ㄹ 받침 → ツ·チ (一 일→イチ · 発 발→ハツ)',
-    'ㅁ': 'ㅁ 받침 → ン (心 심→シン · 三 삼→サン)',
-    'ㅂ': 'ㅂ 받침 → ウ장음 (十 십→ジュウ · 業 업→ギョウ)',
-    'ㅇ': 'ㅇ 받침 → ウ·イ장음 (生 생→セイ · 東 동→トウ)',
+  static Map<String, String> get _ruleOf => {
+    'NONE': tr('받침 없음 → 음독도 1음절인 경우가 많다'),
+    'ㄱ': tr('ㄱ 받침 → ク·キ (学 학→ガク · 力 력→リョク)'),
+    'ㄴ': tr('ㄴ 받침 → ン (新 신→シン · 安 안→アン)'),
+    'ㄹ': tr('ㄹ 받침 → ツ·チ (一 일→イチ · 発 발→ハツ)'),
+    'ㅁ': tr('ㅁ 받침 → ン (心 심→シン · 三 삼→サン)'),
+    'ㅂ': tr('ㅂ 받침 → ウ장음 (十 십→ジュウ · 業 업→ギョウ)'),
+    'ㅇ': tr('ㅇ 받침 → ウ·イ장음 (生 생→セイ · 東 동→トウ)'),
   };
 
   @override
@@ -172,12 +174,12 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('한자음 매핑', style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
+            Text(tr('한자음 매핑'), style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
-            Text('한국 한자음 ↔ 일본 음독', style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
+            Text(tr('한국 한자음 ↔ 일본 음독'), style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
       ),
@@ -191,7 +193,7 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
                     onChanged: (v) => setState(() => _query = v),
                     style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.sumi),
                     decoration: InputDecoration(
-                      hintText: '馬 · バ · 마',
+                      hintText: tr('馬 · バ · 마'),
                       hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 14),
                       prefixIcon: const Icon(Icons.search, color: AppColors.beni),
                       isDense: true,
@@ -215,12 +217,12 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
                       const SealStamp(text: '音', size: 22),
                       const SizedBox(width: 8),
                       Text(
-                        '한자음 ${_groups.length}개 · 한자 $kanjiCount자 커버',
+                        trf('한자음 {0}개 · 한자 {1}자 커버', [_groups.length, kanjiCount]),
                         style: const TextStyle(
                             fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1),
                       ),
                       const Spacer(),
-                      const Text('탭 → 한자 가족', style: TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+                      Text(tr('탭 → 한자 가족'), style: TextStyle(fontSize: 10, color: AppColors.sumiLight)),
                     ],
                   ),
                 ),
@@ -261,7 +263,7 @@ class _HanjaSoundScreenState extends State<HanjaSoundScreen> {
                 const AsanohaDivider(height: 8),
                 Expanded(
                   child: GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                    padding: EdgeInsets.fromLTRB(16, 10, 16, 24 + bottomInset(context)),
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 8,
@@ -329,7 +331,7 @@ class _GroupCard extends StatelessWidget {
                         border: Border.all(color: AppColors.kin),
                       ),
                       child: Text(
-                        '가족 ${group.entries.length}자',
+                        trf('가족 {0}자', [group.entries.length]),
                         style: const TextStyle(fontSize: 9, color: AppColors.sumi, fontWeight: FontWeight.w700),
                       ),
                     ),
@@ -356,7 +358,7 @@ class _FamilySheet extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -387,14 +389,14 @@ class _FamilySheet extends StatelessWidget {
                         style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.ai),
                       ),
                       const SizedBox(height: 4),
-                      const Text(
-                        '한국 한자음 family',
+                      Text(
+                        tr('한국 한자음 family'),
                         style: TextStyle(
                             fontSize: 11, color: AppColors.sumiLight, letterSpacing: 1.5, fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        '${group.entries.length}자',
+                        trf('{0}자', [group.entries.length]),
                         style: const TextStyle(fontSize: 11, color: AppColors.beni, fontWeight: FontWeight.w800),
                       ),
                     ],
@@ -460,8 +462,8 @@ class _FamilySheet extends StatelessWidget {
               }).toList(),
             ),
             const SizedBox(height: 10),
-            const Text(
-              '💡 같은 한국 한자음 = 일본 음독도 비슷한 경향. 한자를 탭하면 훈음·읽기·단어 상세.',
+            Text(
+              tr('💡 같은 한국 한자음 = 일본 음독도 비슷한 경향. 한자를 탭하면 훈음·읽기·단어 상세.'),
               style: TextStyle(fontSize: 11, color: AppColors.sumiLight, height: 1.5),
             ),
           ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../services/kana_phonetics.dart';
+import '../core/l10n.dart';
 
 /// IPA 모음 사다리꼴 1장 위에 일본어 모음(빨강 ●)과
 /// 이웃한 영어 모음들(파랑 ●)을 함께 찍어 위치 차이를 보여준다.
@@ -31,9 +32,9 @@ class VowelCompareChart extends StatelessWidget {
         const SizedBox(height: 6),
         Row(
           children: [
-            _legendDot(AppColors.beni, '일본어'),
+            _legendDot(AppColors.beni, tr('일본어')),
             const SizedBox(width: 12),
-            _legendDot(AppColors.ai, '영어'),
+            _legendDot(AppColors.ai, tr('영어')),
           ],
         ),
         const SizedBox(height: 4),
@@ -91,13 +92,13 @@ class _TrapezoidPainter extends CustomPainter {
     canvas.drawLine(_map(0.5, 0, size), _map(0.5, 1, size), grid);
 
     // 축 라벨
-    _text(canvas, '전설', Offset(_map(0, 0, size).dx - 2, -18), AppColors.sumiLight, 9,
+    _text(canvas, tr('전설'), Offset(_map(0, 0, size).dx - 2, -18), AppColors.sumiLight, 9,
         align: TextAlign.left);
-    _text(canvas, '중설', Offset(_map(0.5, 0, size).dx - 10, -18), AppColors.sumiLight, 9);
-    _text(canvas, '후설', Offset(size.width - 22, -18), AppColors.sumiLight, 9);
-    _text(canvas, '고', Offset(-24, _map(0, 0, size).dy - 5), AppColors.sumiLight, 9);
-    _text(canvas, '중', Offset(-24, _map(0, 0.5, size).dy - 5), AppColors.sumiLight, 9);
-    _text(canvas, '저', Offset(-24, size.height - 10), AppColors.sumiLight, 9);
+    _text(canvas, tr('중설'), Offset(_map(0.5, 0, size).dx - 10, -18), AppColors.sumiLight, 9);
+    _text(canvas, tr('후설'), Offset(size.width - 22, -18), AppColors.sumiLight, 9);
+    _text(canvas, tr('고'), Offset(-24, _map(0, 0, size).dy - 5), AppColors.sumiLight, 9);
+    _text(canvas, tr('중'), Offset(-24, _map(0, 0.5, size).dy - 5), AppColors.sumiLight, 9);
+    _text(canvas, tr('저'), Offset(-24, size.height - 10), AppColors.sumiLight, 9);
 
     // 일본어 ↔ 영어 연결 점선
     final ja = _map(data.ja.x, data.ja.y, size);

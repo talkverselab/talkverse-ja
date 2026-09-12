@@ -8,6 +8,8 @@ import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/platform.dart';
+import '../core/l10n.dart';
 
 /// 발음부(音符) 탐색 — IDS 분해 + 음독 일치 자동판정 (JLPT 한자 기반).
 /// 카드를 탭하면 그 발음부를 공유하는 한자 가족 시트가 열린다. zh 声旁 화면 포팅.
@@ -131,13 +133,13 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: const Column(
+        title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('발음부 + 한국 한자음',
+            Text(tr('발음부 + 한국 한자음'),
                 style: TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             SizedBox(height: 2),
-            Text('音符 · JLPT 한자',
+            Text(tr('音符 · JLPT 한자'),
                 style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -152,7 +154,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                     onChanged: (v) => setState(() => _query = v),
                     style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.sumi),
                     decoration: InputDecoration(
-                      hintText: '寺 · ジ · 사',
+                      hintText: tr('寺 · ジ · 사'),
                       hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 14),
                       prefixIcon: const Icon(Icons.search, color: AppColors.beni),
                       isDense: true,
@@ -176,12 +178,12 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                       const SealStamp(text: '音符', size: 22),
                       const SizedBox(width: 8),
                       Text(
-                        '발음부 ${_roots.length}개 · 한자 $total자 커버',
+                        trf('발음부 {0}개 · 한자 {1}자 커버', [_roots.length, total]),
                         style: const TextStyle(
                             fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.sumi, letterSpacing: 1),
                       ),
                       const Spacer(),
-                      const Text('탭 → 한자 가족', style: TextStyle(fontSize: 10, color: AppColors.sumiLight)),
+                      Text(tr('탭 → 한자 가족'), style: TextStyle(fontSize: 10, color: AppColors.sumiLight)),
                     ],
                   ),
                 ),
@@ -196,7 +198,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                         final selected = _region == k;
                         final c = _regionColors[k] ?? AppColors.sumi;
                         final label = k == 'ALL'
-                            ? '전체'
+                            ? tr('전체')
                             : '$k · ${_roots.where((r) => r.region == k).length}';
                         return Padding(
                           padding: const EdgeInsets.only(right: 8),
@@ -226,7 +228,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                 const AsanohaDivider(height: 8),
                 Expanded(
                   child: GridView.builder(
-                    padding: const EdgeInsets.fromLTRB(16, 10, 16, 24),
+                    padding: EdgeInsets.fromLTRB(16, 10, 16, 24 + bottomInset(context)),
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       mainAxisSpacing: 8,
@@ -310,7 +312,7 @@ class _RootCard extends StatelessWidget {
                             border: Border.all(color: AppColors.kin),
                           ),
                           child: Text(
-                            '가족 ${root.members.length}자',
+                            trf('가족 {0}자', [root.members.length]),
                             style: const TextStyle(
                                 fontSize: 9, color: AppColors.sumi, fontWeight: FontWeight.w700),
                           ),
@@ -411,7 +413,7 @@ class _FamilySheet extends StatelessWidget {
     final total = exact.length + partial.length + similar.length + except.length;
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 24),
+        padding: EdgeInsets.fromLTRB(20, 18, 20, 24 + bottomInset(context)),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -441,14 +443,14 @@ class _FamilySheet extends StatelessWidget {
                           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.ai)),
                       const SizedBox(height: 4),
                       Text(
-                        root.ko != null ? '발음부 (音符) · ${root.ko}(${root.root})' : '발음부 (音符) family',
+                        root.ko != null ? trf('발음부 (音符) · {0}({1})', [root.ko, root.root]) : tr('발음부 (音符) family'),
                         style: const TextStyle(
                             fontSize: 11, color: AppColors.sumiLight, letterSpacing: 1.5, fontWeight: FontWeight.w700),
                       ),
                       const SizedBox(height: 2),
                       Row(
                         children: [
-                          Text('$total자',
+                          Text(trf('{0}자', [total]),
                               style: const TextStyle(
                                   fontSize: 11, color: AppColors.beni, fontWeight: FontWeight.w800)),
                           const SizedBox(width: 6),
@@ -481,16 +483,16 @@ class _FamilySheet extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             if (exact.isNotEmpty)
-              _groupBox(context, '완전공유', '음독·한국 한자음 모두 같음', const Color(0xFF2E7D32), exact),
+              _groupBox(context, tr('완전공유'), tr('음독·한국 한자음 모두 같음'), const Color(0xFF2E7D32), exact),
             if (partial.isNotEmpty)
-              _groupBox(context, '부분공유', '음독은 같지만 한자음 다름 · 탁음 차이', const Color(0xFFB26A00), partial),
+              _groupBox(context, tr('부분공유'), tr('음독은 같지만 한자음 다름 · 탁음 차이'), const Color(0xFFB26A00), partial),
             if (similar.isNotEmpty)
-              _groupBox(context, '비슷한 음차', '첫소리 같음, 끝·탁음 변형', const Color(0xFF1565C0), similar),
+              _groupBox(context, tr('비슷한 음차'), tr('첫소리 같음, 끝·탁음 변형'), const Color(0xFF1565C0), similar),
             if (except.isNotEmpty)
-              _groupBox(context, '예외', '음이 크게 달라짐', const Color(0xFFC62828), except),
+              _groupBox(context, tr('예외'), tr('음이 크게 달라짐'), const Color(0xFFC62828), except),
             const SizedBox(height: 10),
-            const Text(
-              '💡 같은 발음부 = 음독이 비슷한 경향. 단 한자가 진화하며 일부 음이 변형됨.',
+            Text(
+              tr('💡 같은 발음부 = 음독이 비슷한 경향. 단 한자가 진화하며 일부 음이 변형됨.'),
               style: TextStyle(fontSize: 11, color: AppColors.sumiLight, height: 1.5),
             ),
           ],
@@ -526,7 +528,7 @@ class _FamilySheet extends StatelessWidget {
                   child: Text(desc,
                       style: const TextStyle(fontSize: 11, color: AppColors.sumi)),
                 ),
-                Text('${entries.length}자',
+                Text(trf('{0}자', [entries.length]),
                     style: TextStyle(fontSize: 12, fontWeight: FontWeight.w900, color: color)),
               ],
             ),

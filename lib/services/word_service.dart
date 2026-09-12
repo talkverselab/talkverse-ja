@@ -4,6 +4,7 @@ import 'package:drift/drift.dart';
 
 import '../data/db/app_database.dart';
 import '../main.dart';
+import '../core/l10n.dart';
 
 /// 후리가나 분절 1개 — text 위에 reading (null 이면 가나/기호 그대로)
 class FuriSeg {
@@ -35,7 +36,7 @@ class WordEntry {
   int? get jlpt => row.jlpt;
   String get gloss => (row.ko?.isNotEmpty ?? false) ? row.ko! : (row.en ?? '');
   bool get hasKo => row.ko?.isNotEmpty ?? false;
-  String get jlptLabel => jlpt == null ? '회화' : 'N$jlpt';
+  String get jlptLabel => jlpt == null ? tr('회화') : 'N$jlpt';
 }
 
 /// 한자 1자 ↔ 읽기별 단어 묶음

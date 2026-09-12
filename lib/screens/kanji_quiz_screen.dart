@@ -9,6 +9,7 @@ import '../main.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart';
+import '../core/l10n.dart';
 
 /// 한자 4지선다 퀴즈 — 현재 단계 출제, 누적 단계는 오답 풀.
 class KanjiQuizScreen extends StatefulWidget {
@@ -138,14 +139,14 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
         backgroundColor: AppColors.washi,
         shape: const RoundedRectangleBorder(),
         title: Text(
-          pct >= 80 ? '🎉  단계 ${widget.stage} 통과' : '단계 ${widget.stage} 완료',
+          pct >= 80 ? trf('🎉  단계 {0} 통과', [widget.stage]) : trf('단계 {0} 완료', [widget.stage]),
           style: const TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w900),
         ),
         content: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            _row('정답', _correct, AppColors.matcha),
-            _row('오답', _wrong, const Color(0xFFE53935)),
+            _row(tr('정답'), _correct, AppColors.matcha),
+            _row(tr('오답'), _wrong, const Color(0xFFE53935)),
             const Divider(),
             Text('$pct%',
                 style: const TextStyle(fontSize: 36, fontWeight: FontWeight.w900, color: AppColors.beni)),
@@ -157,7 +158,7 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
               Navigator.pop(context);
               Navigator.pop(context);
             },
-            child: const Text('나가기', style: TextStyle(color: AppColors.sumiLight)),
+            child: Text(tr('나가기'), style: TextStyle(color: AppColors.sumiLight)),
           ),
           ElevatedButton(
             onPressed: () {
@@ -176,7 +177,7 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
               foregroundColor: AppColors.washi,
               shape: const RoundedRectangleBorder(),
             ),
-            child: const Text('다시'),
+            child: Text(tr('다시')),
           ),
         ],
       ),
@@ -205,10 +206,10 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text('한자 단계 ${widget.stage} · ${widget.allStages[widget.stage - 1].levelLabel}',
+            Text(trf('한자 단계 {0} · {1}', [widget.stage, widget.allStages[widget.stage - 1].levelLabel]),
                 style: const TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
-            const Text('훈음 4지선다 · 누적',
+            Text(tr('훈음 4지선다 · 누적'),
                 style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -284,10 +285,10 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
                         Text(
                           _revealed
                               ? [
-                                  if (q.entry.on.isNotEmpty) '음 ${q.entry.on.map((r) => r.reading).join('·')}',
-                                  if (q.entry.kun.isNotEmpty) '훈 ${q.entry.kun.map((r) => r.reading).join('·')}',
+                                  if (q.entry.on.isNotEmpty) trf('음 {0}', [q.entry.on.map((r) => r.reading).join('·')]),
+                                  if (q.entry.kun.isNotEmpty) trf('훈 {0}', [q.entry.kun.map((r) => r.reading).join('·')]),
                                 ].join('   ')
-                              : '훈음은?',
+                              : tr('훈음은?'),
                           style: TextStyle(
                             fontSize: _revealed ? 12 : 11,
                             color: _revealed ? AppColors.ai : AppColors.sumiLight,
@@ -296,9 +297,9 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
                           ),
                         ),
                         if (_revealed)
-                          const Padding(
+                          Padding(
                             padding: EdgeInsets.only(top: 4),
-                            child: Text('탭하면 상세', style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
+                            child: Text(tr('탭하면 상세'), style: TextStyle(fontSize: 9, color: AppColors.sumiLight)),
                           ),
                       ],
                     ),
@@ -338,7 +339,7 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
                   elevation: 0,
                 ),
                 child: Text(
-                  _idx == _questions.length - 1 ? '결과 보기' : '다음 →',
+                  _idx == _questions.length - 1 ? tr('결과 보기') : tr('다음 →'),
                   style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, letterSpacing: 3),
                 ),
               ),
