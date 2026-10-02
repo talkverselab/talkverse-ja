@@ -44,7 +44,7 @@
 - 위젯: `KoReadingPrefs`(ValueNotifier) · `KoReadingToggleAction`(앱바 버튼) · `KoReadingText`(off면 빈 위젯).
 - 적용: 에피소드 버블(`episode_screen.dart`) · 문장 플래시카드(`sentence_flashcard_screen.dart`) · 조사 예문(`grammar_lesson_screen.dart`) · JLPT 단어(`jlpt_words_screen.dart`, 후리가나 아래) · 복습 덱 플래시카드(`flashcard_screen.dart`). `main.dart`에서 `KoReadingPrefs.load()`.
 
-### 콘텐츠 — Day별 필수 단어 (co-Trip 대체)
+### 콘텐츠 — Day별 필수 단어 (여행 가이드북류 대체, 자체 제작)
 - 파서 `tool/parse_essential_days.py`(신설): "1 단어 익히기" 구간만, `□ 단어` / (후리가나) / `품사 뜻` 패턴. Day 헤더는 페이지 꼬리에 섞여 신뢰 불가 → 학습 헤더 순번으로 Day 결정.
 - 산출: `assets/data/vocab/essential_days.json` — Day 1–20, 975어, 5일 묶음 4테마. 뜻 앞에 `[명]`/`[동]` 품사 태그.
 
