@@ -40,14 +40,14 @@ adb -s R3CY20HDN2K install --user 0 -r build/app/outputs/flutter-apk/app-release
 
 - **iOS TestFlight** — 사용자 단계 대기: Apple Developer Program 가입 → ASC API 키 발급 → `tools/ios/make_ios_cert.py`로 인증서(팀 공용 1개, th와 공유) → 앱 레코드 생성 → 리포 시크릿 6개 + `IOS_TESTFLIGHT_ENABLED=true`. 절차 전체: `talkverse-th/docs/ios-build-and-testflight.md`.
 - 회화 콘텐츠: L1 ep2~5(160턴)·L2·L3 미작성. 회화 버블 후리가나 루비 미적용.
-- 한국어 뜻: 단어 8,586어 100% (2026-10-03 N3·N2·N1·급수없음 완료, `data/corpus/ko_gloss/n3_*`·`n12_*`·`nx_*`). ⚠ 급수없음 중 61어는 자동 한자 변환 오류 표기(`nx_badsurface_*.json`) — 처리 미결.
+- 한국어 뜻: 단어 8,525어 100% (2026-10-03 N3·N2·N1·급수없음 완료, `data/corpus/ko_gloss/n3_*`·`n12_*`·`nx_*`). 자동 한자 변환 오류 표기 61어는 사용자 결정으로 삭제(목록 `nx_badsurface_*.json`).
 - 합성 TTS 미결(현재 기기 ja-JP), 간사이 변형판, 동사 활용·경어 문법 확장.
 
 ## 5. 데이터·생성기 지도
 
 - 절벽: `data/corpus/lang_ja_with_regions.csv`(단어 rank·cum·region) · `ja_kanji_weighted_freq.csv`(한자 1,078) · `ja_cliff_summary.md`.
 - 생성기: `tool/gen_phonetic_ja.py`(발음부, IDS 필요) · `tool/gen_gairaigo.py`+`gairaigo_ko_fix.py`(외래어) · `tool/parse_essential_days.py`.
-- JLPT 단어 8,586어: `assets/data/words/words_jlpt.json`(surface·kana·jlpt·ko·rank·segs).
+- JLPT·말뭉치 단어 8,525어: `assets/data/words/words_jlpt.json`(surface·kana·jlpt·ko·rank·segs).
 
 ## 6. 소개 사이트 연계 (`~/talkverse-uk` → talkverse.uk)
 
