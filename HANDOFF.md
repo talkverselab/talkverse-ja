@@ -7,10 +7,9 @@
 
 ## 0. 현재 상태
 
-- origin/master = **`2efac0d`** "표시 언어 4종 + 갤럭시·아이폰 공용 인터페이스 + iOS 빌드 초안".
-  로컬(맥)은 그 위에 이 HANDOFF 커밋 1개 — **push 대기** (아래 인증 문제).
+- origin/master = **`21d723c`** (2026-10-03 푸시 완료 — N3·N2·N1 한국어 뜻 + 시드 v5).
 - 맥에서 `git status`에 ~91개 파일이 M으로 보이면 **CRLF 줄끝 노이즈**다(`git diff --ignore-cr-at-eol --stat`이 비면 실변경 0). 그대로 두고 커밋하지 말 것.
-- ⚠ **맥미니에서 talkverselab 리포 push 불가**: 맥 `gh`는 gpyungbusan 계정, SSH 키(`id_ed25519_github`)는 GitHub 미등록, 노트북 `gh` 토큰도 만료 상태(2026-09-30 확인). 해결 전까지는 커밋만 쌓고, 푸시가 필요하면 사용자에게 `gh auth login`(맥, talkverselab) 요청. 임시 우회: `git bundle` → `scp laptop:` → 노트북 대화형 터미널에서 push.
+- **맥에서 푸시**(2026-10-03 해결): 맥 `gh`에 talkverselab 추가 로그인(디바이스 코드), 활성 계정은 다른 세션용 gpyungbusan 유지. 푸시할 때만 `gh auth switch --user talkverselab` → `git push` → `gh auth switch --user gpyungbusan`. uk 리포 remote 는 SSH(맥 키 미등록)라 `git push https://github.com/talkverselab/talkverse-uk.git main`.
 
 ## 1. 규칙 (CLAUDE.md가 원본 — 여기엔 요점만)
 
@@ -54,4 +53,4 @@ adb -s R3CY20HDN2K install --user 0 -r build/app/outputs/flutter-apk/app-release
 
 - ja 소개 페이지에 절벽구간 곡선 2종(단어·한자, 빨간 절벽선)·JLPT 교차표·타 자료 검증, 절벽구간별 한자 1,078자 나열 페이지(`/talkverse/lang/ja-kanji`). zh도 동일 구성(`zh-hanzi`, 1,207자).
 - 생성기 `tools/build_cliff_kanji.py`(이 리포의 CSV를 읽음 — ja 절벽 데이터가 바뀌면 재실행), 메인 재생성은 `tools/build_home.py`(**맥은 python3.12로** — 3.9는 f-string 문법 오류).
-- ⚠ uk 리포 커밋 `a154969`(한자 페이지)가 push 미완(위 0의 인증 문제). 배포 자체는 완료되어 사이트는 최신.
+- uk 리포 `a154969`(한자 페이지) 2026-10-03 푸시 완료.
