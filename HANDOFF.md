@@ -41,7 +41,7 @@ adb -s R3CY20HDN2K install --user 0 -r build/app/outputs/flutter-apk/app-release
 
 - **iOS TestFlight** — 사용자 단계 대기: Apple Developer Program 가입 → ASC API 키 발급 → `tools/ios/make_ios_cert.py`로 인증서(팀 공용 1개, th와 공유) → 앱 레코드 생성 → 리포 시크릿 6개 + `IOS_TESTFLIGHT_ENABLED=true`. 절차 전체: `talkverse-th/docs/ios-build-and-testflight.md`.
 - 회화 콘텐츠: L1 ep2~5(160턴)·L2·L3 미작성. 회화 버블 후리가나 루비 미적용.
-- N2·N1 한국어 뜻 채우기(N5·N4·N3 3,546어 100% — N3 2,135어는 2026-10-03 완료, `data/corpus/ko_gloss/n3_*`; N2 1,744·N1 2,698어는 영어 gloss).
+- JLPT 한국어 뜻: N5~N1 8,000어 100% (2026-10-03 N3·N2·N1 완료, `data/corpus/ko_gloss/n3_*`·`n12_*`). 급수 없음(None) 598어 중 545어는 아직 영어 gloss.
 - 합성 TTS 미결(현재 기기 ja-JP), 간사이 변형판, 동사 활용·경어 문법 확장.
 
 ## 5. 데이터·생성기 지도
