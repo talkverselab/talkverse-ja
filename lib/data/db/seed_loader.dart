@@ -9,7 +9,7 @@ import 'app_database.dart';
 
 class SeedLoader {
   // v2: 한자 DB (JLPT 2,285) + JLPT 어휘·후리가나 분절 (7,900)
-  static const _kSeededKey = 'db_seeded_v6'; // v6: 급수 없음 545어 한국어 뜻 → 8,586어 100%, v5: N2·N1 4,442 (v4: N3 2,135, v3: N5·N4 1,225)
+  static const _kSeededKey = 'db_seeded_v7'; // v7: 자동 변환 오류 표기 61어 삭제(8,525어), v6: 급수 없음 545어 한국어 뜻, v5: N2·N1 4,442 (v4: N3 2,135, v3: N5·N4 1,225)
 
   final AppDatabase db;
   SeedLoader(this.db);
