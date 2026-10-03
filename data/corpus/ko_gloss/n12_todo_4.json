@@ -1,0 +1,2648 @@
+[
+{
+"id": 4878,
+"surface": "耕地",
+"kana": "こうち",
+"en": "arable land"
+},
+{
+"id": 4879,
+"surface": "職人",
+"kana": "しょくにん",
+"en": "artisan, craftsman"
+},
+{
+"id": 4880,
+"surface": "職場",
+"kana": "しょくば",
+"en": "workplace"
+},
+{
+"id": 4881,
+"surface": "肌着",
+"kana": "はだぎ",
+"en": "underwear"
+},
+{
+"id": 4882,
+"surface": "肘",
+"kana": "ひじ",
+"en": "elbow"
+},
+{
+"id": 4883,
+"surface": "肯定",
+"kana": "こうてい",
+"en": "positive, affirmation"
+},
+{
+"id": 4884,
+"surface": "育児",
+"kana": "いくじ",
+"en": "childcare, nursing"
+},
+{
+"id": 4885,
+"surface": "背負う",
+"kana": "せおう",
+"en": "to be burdened with; to carry on (one's) back or shoulder(s)"
+},
+{
+"id": 4886,
+"surface": "能率",
+"kana": "のうりつ",
+"en": "efficiency"
+},
+{
+"id": 4887,
+"surface": "脅かす",
+"kana": "おどかす",
+"en": "to threaten, to coerce"
+},
+{
+"id": 4888,
+"surface": "脱線",
+"kana": "だっせん",
+"en": "derailment, digression"
+},
+{
+"id": 4889,
+"surface": "腰掛け",
+"kana": "こしかけ",
+"en": "seat, bench"
+},
+{
+"id": 4890,
+"surface": "腰掛ける",
+"kana": "こしかける",
+"en": "to sit (down)"
+},
+{
+"id": 4891,
+"surface": "膨らます",
+"kana": "ふくらます",
+"en": "to swell, to expand, to inflate"
+},
+{
+"id": 4892,
+"surface": "膨らむ",
+"kana": "ふくらむ",
+"en": "to expand, to swell (out), to become inflated"
+},
+{
+"id": 4893,
+"surface": "膨大",
+"kana": "ぼうだい",
+"en": "enormous, extensive"
+},
+{
+"id": 4894,
+"surface": "臨時",
+"kana": "りんじ",
+"en": "temporary, special, extraordinary"
+},
+{
+"id": 4895,
+"surface": "自治",
+"kana": "じち",
+"en": "self-government, autonomy"
+},
+{
+"id": 4896,
+"surface": "自然科学",
+"kana": "しぜんかがく",
+"en": "natural science"
+},
+{
+"id": 4897,
+"surface": "自習",
+"kana": "じしゅう",
+"en": "self-study"
+},
+{
+"id": 4898,
+"surface": "自衛",
+"kana": "じえい",
+"en": "self-defense"
+},
+{
+"id": 4899,
+"surface": "船便",
+"kana": "ふなびん",
+"en": "surface mail (ship)"
+},
+{
+"id": 4900,
+"surface": "艶",
+"kana": "つや",
+"en": "gloss, glaze"
+},
+{
+"id": 4901,
+"surface": "花嫁",
+"kana": "はなよめ",
+"en": "bride"
+},
+{
+"id": 4902,
+"surface": "花火",
+"kana": "はなび",
+"en": "fireworks"
+},
+{
+"id": 4903,
+"surface": "芸能",
+"kana": "げいのう",
+"en": "public entertainment, performing arts"
+},
+{
+"id": 4904,
+"surface": "若々しい",
+"kana": "わかわかしい",
+"en": "youthful, young"
+},
+{
+"id": 4905,
+"surface": "苦心",
+"kana": "くしん",
+"en": "pain, trouble"
+},
+{
+"id": 4906,
+"surface": "苦情",
+"kana": "くじょう",
+"en": "complaint, grievance, grumble"
+},
+{
+"id": 4907,
+"surface": "英和",
+"kana": "えいわ",
+"en": "English-Japanese (e.g., dictionary)"
+},
+{
+"id": 4908,
+"surface": "英文",
+"kana": "えいぶん",
+"en": "sentence in English"
+},
+{
+"id": 4909,
+"surface": "茂る",
+"kana": "しげる",
+"en": "to grow thick"
+},
+{
+"id": 4910,
+"surface": "茶色い",
+"kana": "ちゃいろい",
+"en": "brown"
+},
+{
+"id": 4911,
+"surface": "草履",
+"kana": "ぞうり",
+"en": "Japanese sandals (footwear)"
+},
+{
+"id": 4912,
+"surface": "荒い",
+"kana": "あらい",
+"en": "rough, rude, wild"
+},
+{
+"id": 4913,
+"surface": "荒れる",
+"kana": "あれる",
+"en": "to be stormy, to be rough, to be ruined"
+},
+{
+"id": 4914,
+"surface": "落し物",
+"kana": "おとしもの",
+"en": "lost property"
+},
+{
+"id": 4915,
+"surface": "落着く",
+"kana": "おちつく",
+"en": "to calm down, to settle down"
+},
+{
+"id": 4916,
+"surface": "落第",
+"kana": "らくだい",
+"en": "failure, dropping out of a class"
+},
+{
+"id": 4917,
+"surface": "葬式",
+"kana": "そうしき",
+"en": "funeral"
+},
+{
+"id": 4918,
+"surface": "蒸気",
+"kana": "じょうき",
+"en": "steam, vapor"
+},
+{
+"id": 4919,
+"surface": "蒸発",
+"kana": "じょうはつ",
+"en": "evaporation; unexplained disappearance"
+},
+{
+"id": 4920,
+"surface": "蓄える",
+"kana": "たくわえる",
+"en": "to save, to store, to lay in stock"
+},
+{
+"id": 4921,
+"surface": "蓋",
+"kana": "ふた",
+"en": "cover, lid, cap"
+},
+{
+"id": 4922,
+"surface": "薄める",
+"kana": "うすめる",
+"en": "to dilute, to water down"
+},
+{
+"id": 4923,
+"surface": "薄暗い",
+"kana": "うすぐらい",
+"en": "dim, gloomy"
+},
+{
+"id": 4924,
+"surface": "薬品",
+"kana": "やくひん",
+"en": "medicine(s), chemical(s)"
+},
+{
+"id": 4925,
+"surface": "薬局",
+"kana": "やっきょく",
+"en": "pharmacy, drugstore"
+},
+{
+"id": 4926,
+"surface": "薬指",
+"kana": "くすりゆび",
+"en": "ring finger"
+},
+{
+"id": 4927,
+"surface": "蘇る",
+"kana": "よみがえる",
+"en": "to be resurrected, to be revived"
+},
+{
+"id": 4928,
+"surface": "虹",
+"kana": "にじ",
+"en": "rainbow"
+},
+{
+"id": 4929,
+"surface": "蛇口",
+"kana": "じゃぐち",
+"en": "faucet, tap"
+},
+{
+"id": 4930,
+"surface": "蛍光灯",
+"kana": "けいこうとう",
+"en": "fluorescent lamp"
+},
+{
+"id": 4931,
+"surface": "血圧",
+"kana": "けつあつ",
+"en": "blood pressure"
+},
+{
+"id": 4932,
+"surface": "行っていらっしゃい",
+"kana": "いっていらっしゃい",
+"en": "have a nice day, see you"
+},
+{
+"id": 4933,
+"surface": "行ってらっしゃい",
+"kana": "いってらっしゃい",
+"en": "have a nice day, see you"
+},
+{
+"id": 4934,
+"surface": "行事",
+"kana": "ぎょうじ",
+"en": "event, function"
+},
+{
+"id": 4935,
+"surface": "行列",
+"kana": "ぎょうれつ",
+"en": "line, procession; matrix (math)"
+},
+{
+"id": 4936,
+"surface": "行方",
+"kana": "ゆくえ",
+"en": "one's whereabouts"
+},
+{
+"id": 4937,
+"surface": "街角",
+"kana": "まちかど",
+"en": "street corner"
+},
+{
+"id": 4938,
+"surface": "衣食住",
+"kana": "いしょくじゅう",
+"en": "food, clothing and shelter"
+},
+{
+"id": 4939,
+"surface": "表紙",
+"kana": "ひょうし",
+"en": "front cover, binding"
+},
+{
+"id": 4940,
+"surface": "被せる",
+"kana": "かぶせる",
+"en": "to cover (with something)"
+},
+{
+"id": 4941,
+"surface": "裁縫",
+"kana": "さいほう",
+"en": "sewing"
+},
+{
+"id": 4942,
+"surface": "裏口",
+"kana": "うらぐち",
+"en": "backdoor, rear entrance"
+},
+{
+"id": 4943,
+"surface": "裏返す",
+"kana": "うらがえす",
+"en": "to turn inside out, to turn (something) over"
+},
+{
+"id": 4944,
+"surface": "補う",
+"kana": "おぎなう",
+"en": "to compensate for"
+},
+{
+"id": 4945,
+"surface": "製作",
+"kana": "せいさく",
+"en": "manufacture, production"
+},
+{
+"id": 4946,
+"surface": "複写",
+"kana": "ふくしゃ",
+"en": "copy, duplicate"
+},
+{
+"id": 4947,
+"surface": "複数",
+"kana": "ふくすう",
+"en": "plural, multiple"
+},
+{
+"id": 4948,
+"surface": "襖",
+"kana": "ふすま",
+"en": "sliding screen"
+},
+{
+"id": 4949,
+"surface": "西暦",
+"kana": "せいれき",
+"en": "Christian Era, after (Christ’s) death (A.D.)"
+},
+{
+"id": 4950,
+"surface": "要旨",
+"kana": "ようし",
+"en": "gist, essentials, summary"
+},
+{
+"id": 4951,
+"surface": "要領",
+"kana": "ようりょう",
+"en": "gist, essentials, outline"
+},
+{
+"id": 4952,
+"surface": "見上げる",
+"kana": "みあげる",
+"en": "to look up at, to admire"
+},
+{
+"id": 4953,
+"surface": "見下ろす",
+"kana": "みおろす",
+"en": "to overlook, to look down on something"
+},
+{
+"id": 4954,
+"surface": "見出し",
+"kana": "みだし",
+"en": "heading, index"
+},
+{
+"id": 4955,
+"surface": "見学",
+"kana": "けんがく",
+"en": "tour, study by observation"
+},
+{
+"id": 4956,
+"surface": "見慣れる",
+"kana": "みなれる",
+"en": "to become used to seeing, to be familiar with"
+},
+{
+"id": 4957,
+"surface": "見掛け",
+"kana": "みかけ",
+"en": "outward appearance"
+},
+{
+"id": 4958,
+"surface": "見本",
+"kana": "みほん",
+"en": "sample"
+},
+{
+"id": 4959,
+"surface": "見直す",
+"kana": "みなおす",
+"en": "to look over again, to review"
+},
+{
+"id": 4960,
+"surface": "見舞う",
+"kana": "みまう",
+"en": "to ask after (health), to visit"
+},
+{
+"id": 4961,
+"surface": "見詰める",
+"kana": "みつめる",
+"en": "to stare at, to gaze at"
+},
+{
+"id": 4962,
+"surface": "見送る",
+"kana": "みおくる",
+"en": "to see off; to escort; to let pass"
+},
+{
+"id": 4963,
+"surface": "規律",
+"kana": "きりつ",
+"en": "order, rules, law"
+},
+{
+"id": 4964,
+"surface": "規準",
+"kana": "きじゅん",
+"en": "standard, basis, criteria"
+},
+{
+"id": 4965,
+"surface": "親指",
+"kana": "おやゆび",
+"en": "thumb"
+},
+{
+"id": 4966,
+"surface": "親類",
+"kana": "しんるい",
+"en": "relative(s) (same as 親戚 (しんせき))"
+},
+{
+"id": 4967,
+"surface": "観念",
+"kana": "かんねん",
+"en": "idea, notion; sense"
+},
+{
+"id": 4968,
+"surface": "観測",
+"kana": "かんそく",
+"en": "observation"
+},
+{
+"id": 4969,
+"surface": "角度",
+"kana": "かくど",
+"en": "angle"
+},
+{
+"id": 4970,
+"surface": "解く",
+"kana": "ほどく",
+"en": "to unfasten"
+},
+{
+"id": 4971,
+"surface": "解放",
+"kana": "かいほう",
+"en": "release, liberation, emancipation"
+},
+{
+"id": 4972,
+"surface": "解散",
+"kana": "かいさん",
+"en": "breakup, dissolution"
+},
+{
+"id": 4973,
+"surface": "解答",
+"kana": "かいとう",
+"en": "answer, solution"
+},
+{
+"id": 4974,
+"surface": "解説",
+"kana": "かいせつ",
+"en": "explanation, commentary"
+},
+{
+"id": 4975,
+"surface": "言い付ける",
+"kana": "いいつける",
+"en": "to tell, to order"
+},
+{
+"id": 4976,
+"surface": "言い出す",
+"kana": "いいだす",
+"en": "to start talking, to suggest"
+},
+{
+"id": 4977,
+"surface": "言付ける",
+"kana": "ことづける",
+"en": "to leave a message"
+},
+{
+"id": 4978,
+"surface": "言葉遣い",
+"kana": "ことばづかい",
+"en": "speech, expression, wording"
+},
+{
+"id": 4979,
+"surface": "記号",
+"kana": "きごう",
+"en": "symbol, code"
+},
+{
+"id": 4980,
+"surface": "診断",
+"kana": "しんだん",
+"en": "diagnosis"
+},
+{
+"id": 4981,
+"surface": "評論",
+"kana": "ひょうろん",
+"en": "criticism, critique"
+},
+{
+"id": 4982,
+"surface": "詫びる",
+"kana": "わびる",
+"en": "to apologize"
+},
+{
+"id": 4983,
+"surface": "話し掛ける",
+"kana": "はなしかける",
+"en": "to accost a person, to talk (to someone)"
+},
+{
+"id": 4984,
+"surface": "話中",
+"kana": "はなしちゅう",
+"en": "while talking, the line is busy"
+},
+{
+"id": 4985,
+"surface": "話合い",
+"kana": "はなしあい",
+"en": "discussion, talk"
+},
+{
+"id": 4986,
+"surface": "誓う",
+"kana": "ちかう",
+"en": "to swear, to vow"
+},
+{
+"id": 4987,
+"surface": "課税",
+"kana": "かぜい",
+"en": "taxation"
+},
+{
+"id": 4988,
+"surface": "調味料",
+"kana": "ちょうみりょう",
+"en": "condiment, seasoning"
+},
+{
+"id": 4989,
+"surface": "調整",
+"kana": "ちょうせい",
+"en": "regulation, adjustment, tuning"
+},
+{
+"id": 4990,
+"surface": "調節",
+"kana": "ちょうせつ",
+"en": "regulation, adjustment, control"
+},
+{
+"id": 4991,
+"surface": "論ずる",
+"kana": "ろんずる",
+"en": "to argue, to discuss"
+},
+{
+"id": 4992,
+"surface": "諸～",
+"kana": "しょ～",
+"en": "various ~"
+},
+{
+"id": 4993,
+"surface": "謎謎",
+"kana": "なぞなぞ",
+"en": "riddle"
+},
+{
+"id": 4994,
+"surface": "謙虚",
+"kana": "けんきょ",
+"en": "modesty, humble"
+},
+{
+"id": 4995,
+"surface": "謙遜",
+"kana": "けんそん",
+"en": "humble, humility, modesty"
+},
+{
+"id": 4996,
+"surface": "講師",
+"kana": "こうし",
+"en": "lecturer"
+},
+{
+"id": 4997,
+"surface": "警備",
+"kana": "けいび",
+"en": "defense, guard, policing, security"
+},
+{
+"id": 4998,
+"surface": "貨物",
+"kana": "かもつ",
+"en": "cargo, freight"
+},
+{
+"id": 4999,
+"surface": "貯蔵",
+"kana": "ちょぞう",
+"en": "storage, preservation"
+},
+{
+"id": 5000,
+"surface": "貸し出し",
+"kana": "かしだし",
+"en": "lending, loaning"
+},
+{
+"id": 5001,
+"surface": "貸家",
+"kana": "かしや",
+"en": "house for rent"
+},
+{
+"id": 5002,
+"surface": "貸間",
+"kana": "かしま",
+"en": "room to let"
+},
+{
+"id": 5003,
+"surface": "賞金",
+"kana": "しょうきん",
+"en": "prize, monetary award"
+},
+{
+"id": 5004,
+"surface": "赤道",
+"kana": "せきどう",
+"en": "equator"
+},
+{
+"id": 5005,
+"surface": "起床",
+"kana": "きしょう",
+"en": "rising, getting out of bed"
+},
+{
+"id": 5006,
+"surface": "超過",
+"kana": "ちょうか",
+"en": "excess, being more than"
+},
+{
+"id": 5007,
+"surface": "足元",
+"kana": "あしもと",
+"en": "at one's feet"
+},
+{
+"id": 5008,
+"surface": "足跡",
+"kana": "あしあと",
+"en": "footprint"
+},
+{
+"id": 5009,
+"surface": "跳ねる",
+"kana": "はねる",
+"en": "to jump, to leap"
+},
+{
+"id": 5010,
+"surface": "踏切",
+"kana": "ふみきり",
+"en": "railway crossing, level crossing, starting line, scratch, crossover"
+},
+{
+"id": 5011,
+"surface": "身分",
+"kana": "みぶん",
+"en": "position, status"
+},
+{
+"id": 5012,
+"surface": "車庫",
+"kana": "しゃこ",
+"en": "garage, car shed"
+},
+{
+"id": 5013,
+"surface": "車掌",
+"kana": "しゃしょう",
+"en": "(train) conductor"
+},
+{
+"id": 5014,
+"surface": "車輪",
+"kana": "しゃりん",
+"en": "(car) wheel"
+},
+{
+"id": 5015,
+"surface": "軟らかい",
+"kana": "やわらかい",
+"en": "soft, tender, limp"
+},
+{
+"id": 5016,
+"surface": "転々",
+"kana": "てんてん",
+"en": "from one to another"
+},
+{
+"id": 5017,
+"surface": "転がす",
+"kana": "ころがす",
+"en": "to roll"
+},
+{
+"id": 5018,
+"surface": "転がる",
+"kana": "ころがる",
+"en": "to roll, to tumble"
+},
+{
+"id": 5019,
+"surface": "輸血",
+"kana": "ゆけつ",
+"en": "blood transfusion"
+},
+{
+"id": 5020,
+"surface": "輸送",
+"kana": "ゆそう",
+"en": "transport, transportation"
+},
+{
+"id": 5021,
+"surface": "農村",
+"kana": "のうそん",
+"en": "agricultural community"
+},
+{
+"id": 5022,
+"surface": "農産物",
+"kana": "のうさんぶつ",
+"en": "agricultural produce"
+},
+{
+"id": 5023,
+"surface": "農薬",
+"kana": "のうやく",
+"en": "agricultural chemicals"
+},
+{
+"id": 5024,
+"surface": "近々",
+"kana": "ちかぢか",
+"en": "soon, before long"
+},
+{
+"id": 5025,
+"surface": "近付ける",
+"kana": "ちかづける",
+"en": "to bring near, to put close, to let come near"
+},
+{
+"id": 5026,
+"surface": "近寄る",
+"kana": "ちかよる",
+"en": "to approach, to draw near"
+},
+{
+"id": 5027,
+"surface": "迫る",
+"kana": "せまる",
+"en": "to draw near, to press"
+},
+{
+"id": 5028,
+"surface": "述語",
+"kana": "じゅつご",
+"en": "predicate"
+},
+{
+"id": 5029,
+"surface": "迷信",
+"kana": "めいしん",
+"en": "superstition"
+},
+{
+"id": 5030,
+"surface": "追いかける",
+"kana": "おいかける",
+"en": "to chase or run after someone"
+},
+{
+"id": 5031,
+"surface": "追い越す",
+"kana": "おいこす",
+"en": "to pass (e.g., car), to outdistance, to outstrip"
+},
+{
+"id": 5032,
+"surface": "追加",
+"kana": "ついか",
+"en": "addition, supplement, appendix"
+},
+{
+"id": 5033,
+"surface": "送り仮名",
+"kana": "おくりがな",
+"en": "part of word written in kana"
+},
+{
+"id": 5034,
+"surface": "送別",
+"kana": "そうべつ",
+"en": "farewell, send-off"
+},
+{
+"id": 5035,
+"surface": "送料",
+"kana": "そうりょう",
+"en": "postage, carriage"
+},
+{
+"id": 5036,
+"surface": "逃がす",
+"kana": "にがす",
+"en": "to let loose, to set free, to let escape"
+},
+{
+"id": 5037,
+"surface": "逆さ",
+"kana": "さかさ",
+"en": "reverse, upside down"
+},
+{
+"id": 5038,
+"surface": "逆様",
+"kana": "さかさま",
+"en": "reverse, upside down"
+},
+{
+"id": 5039,
+"surface": "透き通る",
+"kana": "すきとおる",
+"en": "to be(come) transparent"
+},
+{
+"id": 5040,
+"surface": "透明",
+"kana": "とうめい",
+"en": "transparency, cleanness"
+},
+{
+"id": 5041,
+"surface": "通ずる",
+"kana": "つうずる",
+"en": "to lead, to run, to open"
+},
+{
+"id": 5042,
+"surface": "通り掛かる",
+"kana": "とおりかかる",
+"en": "to happen to pass by"
+},
+{
+"id": 5043,
+"surface": "通帳",
+"kana": "つうちょう",
+"en": "bankbook"
+},
+{
+"id": 5044,
+"surface": "通用",
+"kana": "つうよう",
+"en": "popular use, circulation"
+},
+{
+"id": 5045,
+"surface": "通知",
+"kana": "つうち",
+"en": "notice, notification"
+},
+{
+"id": 5046,
+"surface": "通路",
+"kana": "つうろ",
+"en": "passage, pathway"
+},
+{
+"id": 5047,
+"surface": "速力",
+"kana": "そくりょく",
+"en": "speed"
+},
+{
+"id": 5048,
+"surface": "速達",
+"kana": "そくたつ",
+"en": "express, special delivery"
+},
+{
+"id": 5049,
+"surface": "造船",
+"kana": "ぞうせん",
+"en": "shipbuilding"
+},
+{
+"id": 5050,
+"surface": "連合",
+"kana": "れんごう",
+"en": "union, alliance"
+},
+{
+"id": 5051,
+"surface": "逸れる",
+"kana": "それる",
+"en": "to stray (turn) from subject, to go astray"
+},
+{
+"id": 5052,
+"surface": "遊園地",
+"kana": "ゆうえんち",
+"en": "amusement park"
+},
+{
+"id": 5053,
+"surface": "運河",
+"kana": "うんが",
+"en": "canal, waterway"
+},
+{
+"id": 5054,
+"surface": "過剰",
+"kana": "かじょう",
+"en": "excess, over-"
+},
+{
+"id": 5055,
+"surface": "過半数",
+"kana": "かはんすう",
+"en": "majority"
+},
+{
+"id": 5056,
+"surface": "過失",
+"kana": "かしつ",
+"en": "error, mistake, negligence"
+},
+{
+"id": 5057,
+"surface": "道順",
+"kana": "みちじゅん",
+"en": "itinerary, route"
+},
+{
+"id": 5058,
+"surface": "遠足",
+"kana": "えんそく",
+"en": "trip, hike, picnic"
+},
+{
+"id": 5059,
+"surface": "遡る",
+"kana": "さかのぼる",
+"en": "to go back, to date back; ascend"
+},
+{
+"id": 5060,
+"surface": "適確",
+"kana": "てきかく",
+"en": "precise, accurate"
+},
+{
+"id": 5061,
+"surface": "部品",
+"kana": "ぶひん",
+"en": "parts, accessories"
+},
+{
+"id": 5062,
+"surface": "部首",
+"kana": "ぶしゅ",
+"en": "radical (of a kanji character)"
+},
+{
+"id": 5063,
+"surface": "郵送",
+"kana": "ゆうそう",
+"en": "mailing"
+},
+{
+"id": 5064,
+"surface": "都心",
+"kana": "としん",
+"en": "heart (of city)"
+},
+{
+"id": 5065,
+"surface": "配る",
+"kana": "くばる",
+"en": "to distribute, to deliver"
+},
+{
+"id": 5066,
+"surface": "酒場",
+"kana": "さかば",
+"en": "bar, bar-room"
+},
+{
+"id": 5067,
+"surface": "酔っ払い",
+"kana": "よっぱらい",
+"en": "drunkard"
+},
+{
+"id": 5068,
+"surface": "醜い",
+"kana": "みにくい",
+"en": "ugly"
+},
+{
+"id": 5069,
+"surface": "重たい",
+"kana": "おもたい",
+"en": "heavy, massive, serious"
+},
+{
+"id": 5070,
+"surface": "重力",
+"kana": "じゅうりょく",
+"en": "gravity"
+},
+{
+"id": 5071,
+"surface": "重役",
+"kana": "じゅうやく",
+"en": "director, high executive"
+},
+{
+"id": 5072,
+"surface": "重点",
+"kana": "じゅうてん",
+"en": "important point, lay stress on, emphasis"
+},
+{
+"id": 5073,
+"surface": "重量",
+"kana": "じゅうりょう",
+"en": "heavyweight"
+},
+{
+"id": 5074,
+"surface": "重～",
+"kana": "じゅう～",
+"en": "heavy ~"
+},
+{
+"id": 5075,
+"surface": "金魚",
+"kana": "きんぎょ",
+"en": "goldfish"
+},
+{
+"id": 5076,
+"surface": "釘",
+"kana": "くぎ",
+"en": "nail"
+},
+{
+"id": 5077,
+"surface": "釜",
+"kana": "かま",
+"en": "iron pot, kettle"
+},
+{
+"id": 5078,
+"surface": "針路",
+"kana": "しんろ",
+"en": "course, direction"
+},
+{
+"id": 5079,
+"surface": "針金",
+"kana": "はりがね",
+"en": "wire"
+},
+{
+"id": 5080,
+"surface": "釣り合う",
+"kana": "つりあう",
+"en": "to balance, to be in harmony, to suit"
+},
+{
+"id": 5081,
+"surface": "鈍い",
+"kana": "にぶい",
+"en": "dull (e.g., a knife), thickheaded, slow (opposite of fast), stupid"
+},
+{
+"id": 5082,
+"surface": "鈍い",
+"kana": "のろい",
+"en": "dull (e.g., a knife), slow (opposite of fast), stupid"
+},
+{
+"id": 5083,
+"surface": "鉄橋",
+"kana": "てっきょう",
+"en": "iron bridge"
+},
+{
+"id": 5084,
+"surface": "鉄砲",
+"kana": "てっぽう",
+"en": "gun"
+},
+{
+"id": 5085,
+"surface": "鉢",
+"kana": "はち",
+"en": "a bowl, a pot"
+},
+{
+"id": 5086,
+"surface": "鉱物",
+"kana": "こうぶつ",
+"en": "mineral"
+},
+{
+"id": 5087,
+"surface": "銅",
+"kana": "どう",
+"en": "copper"
+},
+{
+"id": 5088,
+"surface": "銘々",
+"kana": "めいめい",
+"en": "each, individual"
+},
+{
+"id": 5089,
+"surface": "錆",
+"kana": "さび",
+"en": "rust (color)"
+},
+{
+"id": 5090,
+"surface": "錆びる",
+"kana": "さびる",
+"en": "to rust, to become rusty"
+},
+{
+"id": 5091,
+"surface": "録音",
+"kana": "ろくおん",
+"en": "(audio) recording"
+},
+{
+"id": 5092,
+"surface": "鑑賞",
+"kana": "かんしょう",
+"en": "appreciation"
+},
+{
+"id": 5093,
+"surface": "長女",
+"kana": "ちょうじょ",
+"en": "eldest daughter"
+},
+{
+"id": 5094,
+"surface": "長引く",
+"kana": "ながびく",
+"en": "to be prolonged, to drag on"
+},
+{
+"id": 5095,
+"surface": "長所",
+"kana": "ちょうしょ",
+"en": "strong point, merit; advantage"
+},
+{
+"id": 5096,
+"surface": "長方形",
+"kana": "ちょうほうけい",
+"en": "rectangle, oblong"
+},
+{
+"id": 5097,
+"surface": "長男",
+"kana": "ちょうなん",
+"en": "eldest son"
+},
+{
+"id": 5098,
+"surface": "長短",
+"kana": "ちょうたん",
+"en": "length, long and short, +-"
+},
+{
+"id": 5099,
+"surface": "長～",
+"kana": "ちょう～",
+"en": "long ~"
+},
+{
+"id": 5100,
+"surface": "長～",
+"kana": "なが～",
+"en": "long ~"
+},
+{
+"id": 5101,
+"surface": "閉会",
+"kana": "へいかい",
+"en": "closure"
+},
+{
+"id": 5102,
+"surface": "開会",
+"kana": "かいかい",
+"en": "opening of a meeting"
+},
+{
+"id": 5103,
+"surface": "開放",
+"kana": "かいほう",
+"en": "open, throw open, liberalization"
+},
+{
+"id": 5104,
+"surface": "開通",
+"kana": "かいつう",
+"en": "opening, open"
+},
+{
+"id": 5105,
+"surface": "間も無く",
+"kana": "まもなく",
+"en": "soon, in a short time"
+},
+{
+"id": 5106,
+"surface": "間接",
+"kana": "かんせつ",
+"en": "indirect, indirectness"
+},
+{
+"id": 5107,
+"surface": "関東",
+"kana": "かんとう",
+"en": "eastern half of Japan, including Tokyo"
+},
+{
+"id": 5108,
+"surface": "関西",
+"kana": "かんさい",
+"en": "south-western half of Japan, including Osaka"
+},
+{
+"id": 5109,
+"surface": "防止",
+"kana": "ぼうし",
+"en": "prevention, check"
+},
+{
+"id": 5110,
+"surface": "防犯",
+"kana": "ぼうはん",
+"en": "prevention of crime"
+},
+{
+"id": 5111,
+"surface": "防～",
+"kana": "ぼう～",
+"en": "~ prevention"
+},
+{
+"id": 5112,
+"surface": "附属",
+"kana": "ふぞく",
+"en": "attached, belonging, affiliated"
+},
+{
+"id": 5113,
+"surface": "限り",
+"kana": "かぎり",
+"en": "limit(s), as far as possible"
+},
+{
+"id": 5114,
+"surface": "限度",
+"kana": "げんど",
+"en": "limit, bounds"
+},
+{
+"id": 5115,
+"surface": "険しい",
+"kana": "けわしい",
+"en": "steep, rugged; severe"
+},
+{
+"id": 5116,
+"surface": "陽射",
+"kana": "ひざし",
+"en": "sunlight, rays of the sun"
+},
+{
+"id": 5117,
+"surface": "随筆",
+"kana": "ずいひつ",
+"en": "essays, miscellaneous writings"
+},
+{
+"id": 5118,
+"surface": "隔てる",
+"kana": "へだてる",
+"en": "to be shut out"
+},
+{
+"id": 5119,
+"surface": "隙",
+"kana": "すき",
+"en": "unguarded moment, chance"
+},
+{
+"id": 5120,
+"surface": "隙間",
+"kana": "すきま",
+"en": "crack, gap, opening"
+},
+{
+"id": 5121,
+"surface": "障子",
+"kana": "しょうじ",
+"en": "paper sliding door"
+},
+{
+"id": 5122,
+"surface": "集会",
+"kana": "しゅうかい",
+"en": "meeting, assembly"
+},
+{
+"id": 5123,
+"surface": "集合",
+"kana": "しゅうごう",
+"en": "gathering, assembly"
+},
+{
+"id": 5124,
+"surface": "集金",
+"kana": "しゅうきん",
+"en": "money collection"
+},
+{
+"id": 5125,
+"surface": "雑巾",
+"kana": "ぞうきん",
+"en": "house-cloth, dust cloth"
+},
+{
+"id": 5126,
+"surface": "雑音",
+"kana": "ざつおん",
+"en": "noise (jarring, grating)"
+},
+{
+"id": 5127,
+"surface": "雨戸",
+"kana": "あまど",
+"en": "sliding storm door"
+},
+{
+"id": 5128,
+"surface": "零点",
+"kana": "れいてん",
+"en": "zero, no marks"
+},
+{
+"id": 5129,
+"surface": "電力",
+"kana": "でんりょく",
+"en": "electric power"
+},
+{
+"id": 5130,
+"surface": "電柱",
+"kana": "でんちゅう",
+"en": "telephone pole, telegraph pole, light pole"
+},
+{
+"id": 5131,
+"surface": "電池",
+"kana": "でんち",
+"en": "battery"
+},
+{
+"id": 5132,
+"surface": "電波",
+"kana": "でんぱ",
+"en": "electro-magnetic wave"
+},
+{
+"id": 5133,
+"surface": "電流",
+"kana": "でんりゅう",
+"en": "electric current"
+},
+{
+"id": 5134,
+"surface": "電球",
+"kana": "でんきゅう",
+"en": "light bulb"
+},
+{
+"id": 5135,
+"surface": "青少年",
+"kana": "せいしょうねん",
+"en": "youth, young person"
+},
+{
+"id": 5136,
+"surface": "青白い",
+"kana": "あおじろい",
+"en": "pale"
+},
+{
+"id": 5137,
+"surface": "静まる",
+"kana": "しずまる",
+"en": "to quieten down, to calm down"
+},
+{
+"id": 5138,
+"surface": "非～",
+"kana": "ひ～",
+"en": "anti~, counter~, an~, non~"
+},
+{
+"id": 5139,
+"surface": "面倒臭い",
+"kana": "めんどうくさい",
+"en": "bother to do, tiresome"
+},
+{
+"id": 5140,
+"surface": "面積",
+"kana": "めんせき",
+"en": "area"
+},
+{
+"id": 5141,
+"surface": "響き",
+"kana": "ひびき",
+"en": "echo, sound"
+},
+{
+"id": 5142,
+"surface": "響く",
+"kana": "ひびく",
+"en": "to resound; to affect"
+},
+{
+"id": 5143,
+"surface": "頂点",
+"kana": "ちょうてん",
+"en": "top, summit"
+},
+{
+"id": 5144,
+"surface": "項目",
+"kana": "こうもく",
+"en": "item"
+},
+{
+"id": 5145,
+"surface": "順々",
+"kana": "じゅんじゅん",
+"en": "in order, in turn"
+},
+{
+"id": 5146,
+"surface": "順序",
+"kana": "じゅんじょ",
+"en": "order, sequence, procedure"
+},
+{
+"id": 5147,
+"surface": "領事",
+"kana": "りょうじ",
+"en": "consul"
+},
+{
+"id": 5148,
+"surface": "領収",
+"kana": "りょうしゅう",
+"en": "receipt, voucher"
+},
+{
+"id": 5149,
+"surface": "頭脳",
+"kana": "ずのう",
+"en": "head, brains, intellect"
+},
+{
+"id": 5150,
+"surface": "頼もしい",
+"kana": "たのもしい",
+"en": "reliable, promising"
+},
+{
+"id": 5151,
+"surface": "顕微鏡",
+"kana": "けんびきょう",
+"en": "microscope"
+},
+{
+"id": 5152,
+"surface": "風呂敷",
+"kana": "ふろしき",
+"en": "wrapping cloth, cloth wrapper"
+},
+{
+"id": 5153,
+"surface": "風船",
+"kana": "ふうせん",
+"en": "balloon"
+},
+{
+"id": 5154,
+"surface": "飛び込む",
+"kana": "とびこむ",
+"en": "to jump in, to leap in, to plunge into"
+},
+{
+"id": 5155,
+"surface": "食器",
+"kana": "しょっき",
+"en": "tableware"
+},
+{
+"id": 5156,
+"surface": "食塩",
+"kana": "しょくえん",
+"en": "table salt"
+},
+{
+"id": 5157,
+"surface": "飢える",
+"kana": "うえる",
+"en": "to starve"
+},
+{
+"id": 5158,
+"surface": "飢饉",
+"kana": "ききん",
+"en": "famine"
+},
+{
+"id": 5159,
+"surface": "飽くまで",
+"kana": "あくまで",
+"en": "to the end, to the last, stubbornly"
+},
+{
+"id": 5160,
+"surface": "餅",
+"kana": "もち",
+"en": "sticky rice cake"
+},
+{
+"id": 5161,
+"surface": "養分",
+"kana": "ようぶん",
+"en": "nourishment, nutrient"
+},
+{
+"id": 5162,
+"surface": "香水",
+"kana": "こうすい",
+"en": "perfume"
+},
+{
+"id": 5163,
+"surface": "騒々しい",
+"kana": "そうぞうしい",
+"en": "noisy, boisterous"
+},
+{
+"id": 5164,
+"surface": "騒がしい",
+"kana": "さわがしい",
+"en": "noisy"
+},
+{
+"id": 5165,
+"surface": "驚かす",
+"kana": "おどろかす",
+"en": "to surprise, to frighten"
+},
+{
+"id": 5166,
+"surface": "高層",
+"kana": "こうそう",
+"en": "tall, high rise"
+},
+{
+"id": 5167,
+"surface": "高度",
+"kana": "こうど",
+"en": "altitude, height; advanced"
+},
+{
+"id": 5168,
+"surface": "高等",
+"kana": "こうとう",
+"en": "high class, high grade"
+},
+{
+"id": 5169,
+"surface": "高級",
+"kana": "こうきゅう",
+"en": "high class; first-rate"
+},
+{
+"id": 5170,
+"surface": "高～",
+"kana": "こう～",
+"en": "high (level) ~"
+},
+{
+"id": 5171,
+"surface": "麓",
+"kana": "ふもと",
+"en": "the foot, the bottom, the base (of a mountain)"
+},
+{
+"id": 5172,
+"surface": "～いち",
+"kana": "～いち",
+"en": "No. 1 ~ (in)"
+},
+{
+"id": 5173,
+"surface": "～おしまい",
+"kana": "～おしまい",
+"en": "end up ~"
+},
+{
+"id": 5174,
+"surface": "～がち",
+"kana": "～がち",
+"en": "tend to do ~"
+},
+{
+"id": 5175,
+"surface": "～きる",
+"kana": "～きる",
+"en": "nevertheless, to carry through"
+},
+{
+"id": 5176,
+"surface": "～だらけ",
+"kana": "～だらけ",
+"en": "be full of ~, be filled with ~"
+},
+{
+"id": 5177,
+"surface": "～ところ",
+"kana": "～ところ",
+"en": "about to do ~"
+},
+{
+"id": 5178,
+"surface": "～ほう",
+"kana": "～ほう",
+"en": "(in comparison)"
+},
+{
+"id": 5179,
+"surface": "～ぽい",
+"kana": "～ぽい",
+"en": "~ish"
+},
+{
+"id": 5181,
+"surface": "～もち",
+"kana": "～もち",
+"en": "person who has ~"
+},
+{
+"id": 5182,
+"surface": "～丁目",
+"kana": "～ちょうめ",
+"en": "~ district (of a town; city, block)"
+},
+{
+"id": 5183,
+"surface": "～下",
+"kana": "～か",
+"en": "under ~"
+},
+{
+"id": 5184,
+"surface": "～付",
+"kana": "～つき",
+"en": "with ~"
+},
+{
+"id": 5185,
+"surface": "～位",
+"kana": "～い",
+"en": "~th place"
+},
+{
+"id": 5186,
+"surface": "～兆",
+"kana": "～ちょう",
+"en": "trillion"
+},
+{
+"id": 5187,
+"surface": "～内",
+"kana": "～ない",
+"en": "inside ~"
+},
+{
+"id": 5188,
+"surface": "～切れ",
+"kana": "～きれ",
+"en": "out of ~"
+},
+{
+"id": 5189,
+"surface": "～刊",
+"kana": "～かん",
+"en": "~ issued (magazine, newspaper)"
+},
+{
+"id": 5191,
+"surface": "～力",
+"kana": "～りょく",
+"en": "power of ~"
+},
+{
+"id": 5192,
+"surface": "～勝",
+"kana": "～しょう",
+"en": "count for victory"
+},
+{
+"id": 5193,
+"surface": "～化",
+"kana": "～か",
+"en": "action of making something"
+},
+{
+"id": 5194,
+"surface": "～口",
+"kana": "～くち",
+"en": "~ opening; ~ entrance, ~ exit"
+},
+{
+"id": 5195,
+"surface": "～史",
+"kana": "～し",
+"en": "history of ~"
+},
+{
+"id": 5196,
+"surface": "～号",
+"kana": "～ごう",
+"en": "counter for magazine; the name of ship"
+},
+{
+"id": 5197,
+"surface": "～名",
+"kana": "～めい",
+"en": "counter for people"
+},
+{
+"id": 5198,
+"surface": "～向け",
+"kana": "～むけ",
+"en": "for ~"
+},
+{
+"id": 5199,
+"surface": "～商",
+"kana": "～しょう",
+"en": "merchant, business"
+},
+{
+"id": 5200,
+"surface": "～問",
+"kana": "～もん",
+"en": "counter for questions"
+},
+{
+"id": 5201,
+"surface": "～器",
+"kana": "～き",
+"en": "device, equipment"
+},
+{
+"id": 5202,
+"surface": "～団",
+"kana": "～だん",
+"en": "group, corps, party"
+},
+{
+"id": 5204,
+"surface": "～圏",
+"kana": "～けん",
+"en": "bloc, sphere, area"
+},
+{
+"id": 5205,
+"surface": "～園",
+"kana": "～えん",
+"en": "~ garden (especially man made)"
+},
+{
+"id": 5206,
+"surface": "～場",
+"kana": "～じょう",
+"en": "kind of field, ground"
+},
+{
+"id": 5207,
+"surface": "～外",
+"kana": "～がい",
+"en": "out of ~"
+},
+{
+"id": 5208,
+"surface": "～夜",
+"kana": "～や",
+"en": "counter for nights"
+},
+{
+"id": 5210,
+"surface": "～室",
+"kana": "～しつ",
+"en": "counter for room"
+},
+{
+"id": 5212,
+"surface": "～寺",
+"kana": "～じ",
+"en": "the name of temple"
+},
+{
+"id": 5214,
+"surface": "～島",
+"kana": "～とう",
+"en": "kind of islands"
+},
+{
+"id": 5215,
+"surface": "～巻",
+"kana": "～かん",
+"en": "volume"
+},
+{
+"id": 5216,
+"surface": "～席",
+"kana": "～せき",
+"en": "counter for seats"
+},
+{
+"id": 5217,
+"surface": "～帳",
+"kana": "～ちょう",
+"en": "~ book, notebook"
+},
+{
+"id": 5218,
+"surface": "～年生",
+"kana": "～ねんせい",
+"en": "counter for school year"
+},
+{
+"id": 5219,
+"surface": "～庁",
+"kana": "～ちょう",
+"en": "office, agency"
+},
+{
+"id": 5220,
+"surface": "～弁",
+"kana": "～べん",
+"en": "speech, dialect"
+},
+{
+"id": 5221,
+"surface": "～形",
+"kana": "～けい",
+"en": "shape of ~"
+},
+{
+"id": 5222,
+"surface": "～感",
+"kana": "～かん",
+"en": "feeling, sense, impression"
+},
+{
+"id": 5223,
+"surface": "～戦",
+"kana": "～せん",
+"en": "counter for games, matches"
+},
+{
+"id": 5224,
+"surface": "～所",
+"kana": "～しょ",
+"en": "place"
+},
+{
+"id": 5225,
+"surface": "～所",
+"kana": "～じょ",
+"en": "place"
+},
+{
+"id": 5227,
+"surface": "～振り",
+"kana": "～ぶり",
+"en": "after an interval of ~"
+},
+{
+"id": 5228,
+"surface": "～教",
+"kana": "～きょう",
+"en": "religion"
+},
+{
+"id": 5229,
+"surface": "～料",
+"kana": "～りょう",
+"en": "fare, charge"
+},
+{
+"id": 5232,
+"surface": "～時間目",
+"kana": "～じかんめ",
+"en": "~th hour, ~th period"
+},
+{
+"id": 5233,
+"surface": "～期",
+"kana": "～き",
+"en": "~age, ~period"
+},
+{
+"id": 5234,
+"surface": "～条",
+"kana": "～じょう",
+"en": "counter for article"
+},
+{
+"id": 5235,
+"surface": "～校",
+"kana": "～こう",
+"en": "counter for school"
+},
+{
+"id": 5236,
+"surface": "～業",
+"kana": "～ぎょう",
+"en": "type of business"
+},
+{
+"id": 5237,
+"surface": "～機",
+"kana": "～き",
+"en": "machine"
+},
+{
+"id": 5238,
+"surface": "～歌",
+"kana": "～か",
+"en": "song of ~"
+},
+{
+"id": 5239,
+"surface": "～歩",
+"kana": "～ほ",
+"en": "step, pace"
+},
+{
+"id": 5240,
+"surface": "～毎",
+"kana": "～ごと",
+"en": "every ~, each ~"
+},
+{
+"id": 5241,
+"surface": "～気味",
+"kana": "～ぎみ",
+"en": "slightly ~"
+},
+{
+"id": 5242,
+"surface": "～沿い",
+"kana": "～そい",
+"en": "along"
+},
+{
+"id": 5243,
+"surface": "～泊",
+"kana": "～はく",
+"en": "counter for staying (e.g., 2 nights)"
+},
+{
+"id": 5244,
+"surface": "～流",
+"kana": "～りゅう",
+"en": "fashion, manner, way"
+},
+{
+"id": 5245,
+"surface": "～済",
+"kana": "～ずみ",
+"en": "finished"
+},
+{
+"id": 5246,
+"surface": "～港",
+"kana": "～こう",
+"en": "~ port"
+},
+{
+"id": 5247,
+"surface": "～滴",
+"kana": "～てき",
+"en": "drop"
+},
+{
+"id": 5248,
+"surface": "～点",
+"kana": "～てん",
+"en": "counter for scores"
+},
+{
+"id": 5249,
+"surface": "～産",
+"kana": "～さん",
+"en": "made in ~"
+},
+{
+"id": 5250,
+"surface": "～画",
+"kana": "～が",
+"en": "picture, painting"
+},
+{
+"id": 5251,
+"surface": "～番目",
+"kana": "～ばんめ",
+"en": "~th"
+},
+{
+"id": 5252,
+"surface": "～畳",
+"kana": "～じょう",
+"en": "count for tatami, mat"
+},
+{
+"id": 5253,
+"surface": "～病",
+"kana": "～びょう",
+"en": "kind of disease"
+},
+{
+"id": 5254,
+"surface": "～発",
+"kana": "～はつ",
+"en": "counter for bullets"
+},
+{
+"id": 5255,
+"surface": "～省",
+"kana": "～しょう",
+"en": "kind of ministry"
+},
+{
+"id": 5256,
+"surface": "～着",
+"kana": "～ちゃく",
+"en": "counter for clothes; finishing place"
+},
+{
+"id": 5257,
+"surface": "～社",
+"kana": "～しゃ",
+"en": "counter for company"
+},
+{
+"id": 5258,
+"surface": "～科",
+"kana": "～か",
+"en": "family, group, course"
+},
+{
+"id": 5259,
+"surface": "～等",
+"kana": "～とう",
+"en": "level, place"
+},
+{
+"id": 5260,
+"surface": "～等",
+"kana": "～ら",
+"en": "plural persons"
+},
+{
+"id": 5261,
+"surface": "～系",
+"kana": "～けい",
+"en": "~ system, ~ lineage, ~ group"
+},
+{
+"id": 5262,
+"surface": "～紙",
+"kana": "～し",
+"en": "newspaper, type of paper"
+},
+{
+"id": 5263,
+"surface": "～続く",
+"kana": "～つづく",
+"en": "follow, continue, go on"
+},
+{
+"id": 5264,
+"surface": "～羽",
+"kana": "～わ",
+"en": "counter for rabbits; birds"
+},
+{
+"id": 5265,
+"surface": "～者",
+"kana": "～しゃ",
+"en": "person"
+},
+{
+"id": 5266,
+"surface": "～船",
+"kana": "～せん",
+"en": "counter for ships"
+},
+{
+"id": 5267,
+"surface": "～艘",
+"kana": "～そう",
+"en": "counter for ships"
+},
+{
+"id": 5268,
+"surface": "～色",
+"kana": "～しょく",
+"en": "kind of color"
+},
+{
+"id": 5269,
+"surface": "～行",
+"kana": "～ぎょう",
+"en": "line, row"
+},
+{
+"id": 5270,
+"surface": "～論",
+"kana": "～ろん",
+"en": "theory"
+},
+{
+"id": 5271,
+"surface": "～費",
+"kana": "～ひ",
+"en": "cost of ~"
+},
+{
+"id": 5272,
+"surface": "～足",
+"kana": "～そく",
+"en": "counter for shoes"
+},
+{
+"id": 5273,
+"surface": "～車",
+"kana": "～しゃ",
+"en": "~ car"
+},
+{
+"id": 5274,
+"surface": "～辛い",
+"kana": "～づらい",
+"en": "hard to do ~"
+},
+{
+"id": 5275,
+"surface": "～通",
+"kana": "～つう",
+"en": "counter for letters"
+},
+{
+"id": 5276,
+"surface": "～通り",
+"kana": "～とおり",
+"en": "in accordance with ~; following ~; ~ street, ~ avenue"
+},
+{
+"id": 5277,
+"surface": "～遍",
+"kana": "～へん",
+"en": "time"
+},
+{
+"id": 5278,
+"surface": "～過ぎる",
+"kana": "～すぎる",
+"en": "too much ~"
+},
+{
+"id": 5279,
+"surface": "～道",
+"kana": "～どう",
+"en": "kind of path, road"
+},
+{
+"id": 5280,
+"surface": "～遣い",
+"kana": "～づかい",
+"en": "use of ~"
+},
+{
+"id": 5282,
+"surface": "～酒",
+"kana": "～しゅ",
+"en": "kind of alcohol"
+},
+{
+"id": 5283,
+"surface": "～長",
+"kana": "～ちょう",
+"en": "leader, head"
+},
+{
+"id": 5285,
+"surface": "～集",
+"kana": "～しゅう",
+"en": "collection of ~"
+},
+{
+"id": 5286,
+"surface": "～難い",
+"kana": "～がたい",
+"en": "hard (difficult) to do ~"
+},
+{
+"id": 5287,
+"surface": "～領",
+"kana": "～りょう",
+"en": "territory"
+},
+{
+"id": 5288,
+"surface": "～頭",
+"kana": "～とう",
+"en": "counter for animals"
+},
+{
+"id": 5289,
+"surface": "～風",
+"kana": "～ふう",
+"en": "~ style"
+},
+{
+"id": 5290,
+"surface": "～館",
+"kana": "～かん",
+"en": "~ hall, ~ building"
+},
+{
+"id": 5293,
+"surface": "反る",
+"kana": "そる",
+"en": "to warp, to be warped, to curve"
+},
+{
+"id": 5294,
+"surface": "擦る",
+"kana": "か",
+"en": "to rub, to chafe"
+},
+{
+"id": 5295,
+"surface": "老いる",
+"kana": "おいる",
+"en": "to age, to grow old"
+},
+{
+"id": 5296,
+"surface": "担う",
+"kana": "になう",
+"en": "to carry on shoulder, to bear (burden), to shoulder (gun)"
+},
+{
+"id": 5297,
+"surface": "病む",
+"kana": "やむ",
+"en": "to fall ill, to be ill"
+},
+{
+"id": 5299,
+"surface": "頭",
+"kana": "かしら",
+"en": "head, chief"
+},
+{
+"id": 5301,
+"surface": "強いる",
+"kana": "しいる",
+"en": "to force, to compel, to coerce"
+},
+{
+"id": 5302,
+"surface": "旦那",
+"kana": "だんな",
+"en": "master (of house), husband (informal)"
+},
+{
+"id": 5303,
+"surface": "証拠",
+"kana": "しょうこ",
+"en": "evidence, proof"
+},
+{
+"id": 5304,
+"surface": "慕う",
+"kana": "したう",
+"en": "to yearn to adore"
+},
+{
+"id": 5305,
+"surface": "殊に",
+"kana": "ことに",
+"en": "especially, above all"
+},
+{
+"id": 5306,
+"surface": "突く",
+"kana": "つつく",
+"en": "to thrust, to strike, to attack; to poke, to nudge, to pick at"
+},
+{
+"id": 5307,
+"surface": "先",
+"kana": "せん",
+"en": "priority, precedence, previous"
+},
+{
+"id": 5308,
+"surface": "本気",
+"kana": "ほんき",
+"en": "seriousness, truth, sanctity"
+},
+{
+"id": 5310,
+"surface": "遭難",
+"kana": "そうなん",
+"en": "disaster, shipwreck, accident"
+},
+{
+"id": 5311,
+"surface": "親父",
+"kana": "おやじ",
+"en": "one's father, old man, one's boss"
+},
+{
+"id": 5312,
+"surface": "乃至",
+"kana": "ないし",
+"en": "from...to, between...and, or"
+},
+{
+"id": 5313,
+"surface": "穂",
+"kana": "ほ",
+"en": "ear (of plant), head (of plant)"
+},
+{
+"id": 5314,
+"surface": "様",
+"kana": "さま",
+"en": "state; way (a person does something); Mr. or Mrs."
+},
+{
+"id": 5316,
+"surface": "超",
+"kana": "ちょう",
+"en": "super-, ultra-, hyper-"
+},
+{
+"id": 5317,
+"surface": "何だか",
+"kana": "なんだか",
+"en": "a little, somewhat, somehow"
+},
+{
+"id": 5318,
+"surface": "真実",
+"kana": "しんじつ",
+"en": "truth, reality"
+},
+{
+"id": 5319,
+"surface": "叩く",
+"kana": "はたく",
+"en": "to strike, to clap, to dust, to beat"
+},
+{
+"id": 5320,
+"surface": "了解",
+"kana": "りょうかい",
+"en": "comprehension, consent, understanding"
+},
+{
+"id": 5321,
+"surface": "麻",
+"kana": "あさ",
+"en": "hemp"
+},
+{
+"id": 5322,
+"surface": "念",
+"kana": "ねん",
+"en": "sense, feeling, desire"
+},
+{
+"id": 5323,
+"surface": "漏る",
+"kana": "もる",
+"en": "to leak, to run out"
+},
+{
+"id": 5324,
+"surface": "檻",
+"kana": "おり",
+"en": "cage, pen, jail cell"
+},
+{
+"id": 5325,
+"surface": "殺人",
+"kana": "さつじん",
+"en": "murder"
+},
+{
+"id": 5327,
+"surface": "恋愛",
+"kana": "れんあい",
+"en": "love, romance"
+},
+{
+"id": 5328,
+"surface": "襲う",
+"kana": "おそう",
+"en": "to attack"
+},
+{
+"id": 5329,
+"surface": "誠",
+"kana": "まこと",
+"en": "truth, faith, fidelity"
+},
+{
+"id": 5330,
+"surface": "舞う",
+"kana": "まう",
+"en": "to dance, to flutter about, to revolve"
+},
+{
+"id": 5331,
+"surface": "運命",
+"kana": "うんめい",
+"en": "fate"
+},
+{
+"id": 5332,
+"surface": "我",
+"kana": "が～",
+"en": "ego"
+},
+{
+"id": 5333,
+"surface": "我",
+"kana": "われ",
+"en": "me, oneself, self, ego"
+},
+{
+"id": 5334,
+"surface": "主",
+"kana": "しゅ",
+"en": "owner, master, god"
+},
+{
+"id": 5335,
+"surface": "主",
+"kana": "ぬし",
+"en": "owner, master, god"
+},
+{
+"id": 5336,
+"surface": "農地",
+"kana": "のうち",
+"en": "agricultural land"
+}
+]

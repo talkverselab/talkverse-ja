@@ -1,0 +1,2648 @@
+[
+{
+"id": 5337,
+"surface": "埋める",
+"kana": "うずめる",
+"en": "to bury, to fill"
+},
+{
+"id": 5338,
+"surface": "証言",
+"kana": "しょうげん",
+"en": "evidence, testimony"
+},
+{
+"id": 5339,
+"surface": "種",
+"kana": "しゅ",
+"en": "seed; variety"
+},
+{
+"id": 5340,
+"surface": "取材",
+"kana": "しゅざい",
+"en": "coverage, collecting data"
+},
+{
+"id": 5341,
+"surface": "勝る",
+"kana": "まさる",
+"en": "to excel, to surpass, to out-rival"
+},
+{
+"id": 5342,
+"surface": "浮気",
+"kana": "うわき",
+"en": "affair, to cheat"
+},
+{
+"id": 5344,
+"surface": "映像",
+"kana": "えいぞう",
+"en": "reflection, image"
+},
+{
+"id": 5345,
+"surface": "無線",
+"kana": "むせん",
+"en": "wireless, radio"
+},
+{
+"id": 5346,
+"surface": "検事",
+"kana": "けんじ",
+"en": "public prosecutor"
+},
+{
+"id": 5347,
+"surface": "美",
+"kana": "び",
+"en": "beauty"
+},
+{
+"id": 5348,
+"surface": "作戦",
+"kana": "さくせん",
+"en": "military operations, tactics, strategy"
+},
+{
+"id": 5349,
+"surface": "受け入れる",
+"kana": "うけいれる",
+"en": "to accept, to receive"
+},
+{
+"id": 5350,
+"surface": "部下",
+"kana": "ぶか",
+"en": "one's subordinate"
+},
+{
+"id": 5351,
+"surface": "正義",
+"kana": "せいぎ",
+"en": "justice, right, righteousness"
+},
+{
+"id": 5352,
+"surface": "正解",
+"kana": "せいかい",
+"en": "correct, right answer, solution"
+},
+{
+"id": 5353,
+"surface": "富む",
+"kana": "とむ",
+"en": "to be rich, to become rich"
+},
+{
+"id": 5354,
+"surface": "従業員",
+"kana": "じゅうぎょういん",
+"en": "employee, worker"
+},
+{
+"id": 5355,
+"surface": "摩する",
+"kana": "さする",
+"en": "to rub, to stroke"
+},
+{
+"id": 5356,
+"surface": "開発",
+"kana": "かいはつ",
+"en": "development, exploitation"
+},
+{
+"id": 5357,
+"surface": "爆弾",
+"kana": "ばくだん",
+"en": "bomb"
+},
+{
+"id": 5358,
+"surface": "一切",
+"kana": "いっさい",
+"en": "without exception, the whole"
+},
+{
+"id": 5359,
+"surface": "企画",
+"kana": "きかく",
+"en": "planning, project"
+},
+{
+"id": 5360,
+"surface": "耐える",
+"kana": "たえる",
+"en": "to endure, to put up with"
+},
+{
+"id": 5361,
+"surface": "人質",
+"kana": "ひとじち",
+"en": "hostage"
+},
+{
+"id": 5362,
+"surface": "今更",
+"kana": "いまさら",
+"en": "now, again"
+},
+{
+"id": 5363,
+"surface": "及ぶ",
+"kana": "およぶ",
+"en": "to reach, to extend"
+},
+{
+"id": 5364,
+"surface": "悲鳴",
+"kana": "ひめい",
+"en": "shriek, scream"
+},
+{
+"id": 5366,
+"surface": "主任",
+"kana": "しゅにん",
+"en": "person in charge, responsible official"
+},
+{
+"id": 5367,
+"surface": "告白",
+"kana": "こくはく",
+"en": "confession, acknowledgment"
+},
+{
+"id": 5368,
+"surface": "取り戻す",
+"kana": "とりもどす",
+"en": "to take back, to regain"
+},
+{
+"id": 5369,
+"surface": "人気",
+"kana": "ひとけ",
+"en": "sign of life"
+},
+{
+"id": 5370,
+"surface": "脅す",
+"kana": "おどす",
+"en": "to threaten, to menace"
+},
+{
+"id": 5371,
+"surface": "仕掛ける",
+"kana": "しかける",
+"en": "to lay, to set, to wage"
+},
+{
+"id": 5372,
+"surface": "絡む",
+"kana": "からむ",
+"en": "to entangle, to entwine"
+},
+{
+"id": 5373,
+"surface": "避ける",
+"kana": "よける",
+"en": "to avoid (physical contact with; to ward off, to avert"
+},
+{
+"id": 5374,
+"surface": "詐欺",
+"kana": "さぎ",
+"en": "fraud, swindle"
+},
+{
+"id": 5375,
+"surface": "警部",
+"kana": "けいぶ",
+"en": "police inspector"
+},
+{
+"id": 5376,
+"surface": "果たす",
+"kana": "はたす",
+"en": "to accomplish, to fulfill, to carry out, to achieve"
+},
+{
+"id": 5377,
+"surface": "確保",
+"kana": "かくほ",
+"en": "guarantee, insure, secure"
+},
+{
+"id": 5378,
+"surface": "遥か",
+"kana": "はるか",
+"en": "far, far-away, distant"
+},
+{
+"id": 5379,
+"surface": "新人",
+"kana": "しんじん",
+"en": "new face, newcomer"
+},
+{
+"id": 5380,
+"surface": "施設",
+"kana": "しせつ",
+"en": "establishment, facility"
+},
+{
+"id": 5381,
+"surface": "勘弁",
+"kana": "かんべん",
+"en": "pardon, forgiveness, forbearance"
+},
+{
+"id": 5382,
+"surface": "妊娠",
+"kana": "にんしん",
+"en": "conception, pregnancy"
+},
+{
+"id": 5383,
+"surface": "焦る",
+"kana": "あせる",
+"en": "to be in a hurry, to be impatient"
+},
+{
+"id": 5384,
+"surface": "言い訳",
+"kana": "いいわけ",
+"en": "excuse, explanation"
+},
+{
+"id": 5385,
+"surface": "蔵",
+"kana": "くら",
+"en": "warehouse, cellar"
+},
+{
+"id": 5386,
+"surface": "凝る",
+"kana": "こる",
+"en": "to stiffen, to harden"
+},
+{
+"id": 5387,
+"surface": "発生",
+"kana": "はっせい",
+"en": "outbreak, spring forth, occurrence"
+},
+{
+"id": 5388,
+"surface": "秘書",
+"kana": "ひしょ",
+"en": "(private) secretary"
+},
+{
+"id": 5389,
+"surface": "魂",
+"kana": "たましい",
+"en": "soul, spirit"
+},
+{
+"id": 5390,
+"surface": "屋敷",
+"kana": "やしき",
+"en": "mansion"
+},
+{
+"id": 5391,
+"surface": "処分",
+"kana": "しょぶん",
+"en": "disposal, dealing, punishment"
+},
+{
+"id": 5392,
+"surface": "副",
+"kana": "とりわけ",
+"en": "especially, above all"
+},
+{
+"id": 5393,
+"surface": "誇る",
+"kana": "ほこる",
+"en": "to boast of, to be proud of"
+},
+{
+"id": 5394,
+"surface": "幽霊",
+"kana": "ゆうれい",
+"en": "ghost, specter, phantom"
+},
+{
+"id": 5395,
+"surface": "職員",
+"kana": "しょくいん",
+"en": "staff member, personnel"
+},
+{
+"id": 5396,
+"surface": "内緒",
+"kana": "ないしょ",
+"en": "secrecy, privacy, secret"
+},
+{
+"id": 5397,
+"surface": "反応",
+"kana": "はんのう",
+"en": "reaction, response"
+},
+{
+"id": 5398,
+"surface": "交渉",
+"kana": "こうしょう",
+"en": "negotiation"
+},
+{
+"id": 5399,
+"surface": "暴力",
+"kana": "ぼうりょく",
+"en": "violence"
+},
+{
+"id": 5400,
+"surface": "地獄",
+"kana": "じごく",
+"en": "hell"
+},
+{
+"id": 5401,
+"surface": "説得",
+"kana": "せっとく",
+"en": "persuasion"
+},
+{
+"id": 5402,
+"surface": "対応",
+"kana": "たいおう",
+"en": "dealing with"
+},
+{
+"id": 5403,
+"surface": "動機",
+"kana": "どうき",
+"en": "motive, incentive"
+},
+{
+"id": 5404,
+"surface": "扉",
+"kana": "とびら",
+"en": "door, opening"
+},
+{
+"id": 5405,
+"surface": "日向",
+"kana": "ひなた",
+"en": "sunny place, in the sun"
+},
+{
+"id": 5406,
+"surface": "闇",
+"kana": "やみ",
+"en": "darkness, shady, illegal"
+},
+{
+"id": 5407,
+"surface": "あくどい",
+"kana": "あくどい",
+"en": "gaudy vicious"
+},
+{
+"id": 5408,
+"surface": "あざ",
+"kana": "あざ",
+"en": "birthmark, bruise"
+},
+{
+"id": 5409,
+"surface": "あせる",
+"kana": "あせる",
+"en": "to fade, to discolor"
+},
+{
+"id": 5410,
+"surface": "あっさり",
+"kana": "あっさり",
+"en": "easily, readily, quickly"
+},
+{
+"id": 5411,
+"surface": "あつらえる",
+"kana": "あつらえる",
+"en": "to give an order, to place an order"
+},
+{
+"id": 5412,
+"surface": "あべこべ",
+"kana": "あべこべ",
+"en": "contrary, opposite, inverse"
+},
+{
+"id": 5413,
+"surface": "あやふや",
+"kana": "あやふや",
+"en": "uncertain, vague, ambiguous"
+},
+{
+"id": 5414,
+"surface": "ありのまま",
+"kana": "ありのまま",
+"en": "the truth, as it is, frankly"
+},
+{
+"id": 5415,
+"surface": "ありふれる",
+"kana": "ありふれる",
+"en": "common, ordinary, routine"
+},
+{
+"id": 5416,
+"surface": "いい加減",
+"kana": "いいかげん",
+"en": "random, irresponsible"
+},
+{
+"id": 5417,
+"surface": "いかに",
+"kana": "いかに",
+"en": "how, in what way"
+},
+{
+"id": 5418,
+"surface": "いかにも",
+"kana": "いかにも",
+"en": "truly (same as 実に (じつに))"
+},
+{
+"id": 5419,
+"surface": "いざ",
+"kana": "いざ",
+"en": "now, come (now), crucial moment"
+},
+{
+"id": 5420,
+"surface": "いじる",
+"kana": "いじる",
+"en": "to touch, to tamper with"
+},
+{
+"id": 5421,
+"surface": "いたって",
+"kana": "いたって",
+"en": "very much, exceedingly, extremely"
+},
+{
+"id": 5422,
+"surface": "いたわる",
+"kana": "いたわる",
+"en": "to sympathize with, to console, to care for"
+},
+{
+"id": 5423,
+"surface": "いっそ",
+"kana": "いっそ",
+"en": "rather, sooner, might as well"
+},
+{
+"id": 5424,
+"surface": "いびき",
+"kana": "いびき",
+"en": "snoring"
+},
+{
+"id": 5425,
+"surface": "いやに",
+"kana": "いやに",
+"en": "awfully, terribly"
+},
+{
+"id": 5426,
+"surface": "いやらしい",
+"kana": "いやらしい",
+"en": "unpleasant, disgusting, indecent"
+},
+{
+"id": 5427,
+"surface": "うたた寝",
+"kana": "うたたね",
+"en": "dozing, napping"
+},
+{
+"id": 5428,
+"surface": "うっとうしい",
+"kana": "うっとうしい",
+"en": "weary, annoying"
+},
+{
+"id": 5429,
+"surface": "うつむく",
+"kana": "うつむく",
+"en": "to look downward, to stoop"
+},
+{
+"id": 5430,
+"surface": "うぬぼれ",
+"kana": "うぬぼれ",
+"en": "pretension, conceit, hubris"
+},
+{
+"id": 5431,
+"surface": "うんざり",
+"kana": "うんざり",
+"en": "tedious, boring, being fed up with"
+},
+{
+"id": 5432,
+"surface": "おおい",
+"kana": "おおい",
+"en": "hey"
+},
+{
+"id": 5433,
+"surface": "おおげさ",
+"kana": "おおげさ",
+"en": "grandiose, exaggerated"
+},
+{
+"id": 5434,
+"surface": "おおまかな",
+"kana": "おおまかな",
+"en": "rough, approximate"
+},
+{
+"id": 5435,
+"surface": "おごる",
+"kana": "おごる",
+"en": "to give (someone) a treat"
+},
+{
+"id": 5436,
+"surface": "おだてる",
+"kana": "おだてる",
+"en": "to flatter"
+},
+{
+"id": 5437,
+"surface": "おっかない",
+"kana": "おっかない",
+"en": "frightening, scary"
+},
+{
+"id": 5438,
+"surface": "おどおど",
+"kana": "おどおど",
+"en": "coweringly, hesitantly"
+},
+{
+"id": 5439,
+"surface": "おびただしい",
+"kana": "おびただしい",
+"en": "abundantly, innumerably"
+},
+{
+"id": 5440,
+"surface": "おまけ",
+"kana": "おまけ",
+"en": "a discount; something additional"
+},
+{
+"id": 5441,
+"surface": "おむつ",
+"kana": "おむつ",
+"en": "diaper, nappy"
+},
+{
+"id": 5442,
+"surface": "おろそか",
+"kana": "おろそか",
+"en": "neglect, negligence, carelessness"
+},
+{
+"id": 5443,
+"surface": "おんぶ",
+"kana": "おんぶ",
+"en": "carrying on one's back (erg. Baby)"
+},
+{
+"id": 5444,
+"surface": "お使い",
+"kana": "おつかい",
+"en": "errand"
+},
+{
+"id": 5445,
+"surface": "お供",
+"kana": "おとも",
+"en": "attendant, companion"
+},
+{
+"id": 5446,
+"surface": "お宮",
+"kana": "おみや",
+"en": "Shinto shrine"
+},
+{
+"id": 5447,
+"surface": "お手上げ",
+"kana": "おてあげ",
+"en": "given in, given up hope"
+},
+{
+"id": 5448,
+"surface": "お産",
+"kana": "おさん",
+"en": "(giving) birth"
+},
+{
+"id": 5449,
+"surface": "お袋",
+"kana": "おふくろ",
+"en": "mother"
+},
+{
+"id": 5450,
+"surface": "かかと",
+"kana": "かかと",
+"en": "shoe heel"
+},
+{
+"id": 5451,
+"surface": "かく",
+"kana": "かく",
+"en": "to humiliate oneself"
+},
+{
+"id": 5452,
+"surface": "かさばる",
+"kana": "かさばる",
+"en": "to be bulky"
+},
+{
+"id": 5453,
+"surface": "かさむ",
+"kana": "かさむ",
+"en": "to pile up, to increase"
+},
+{
+"id": 5454,
+"surface": "かつて",
+"kana": "かつて",
+"en": "once, before, formerly"
+},
+{
+"id": 5455,
+"surface": "かなわない",
+"kana": "かなわない",
+"en": "be beyond one's power, be unable"
+},
+{
+"id": 5456,
+"surface": "かぶれる",
+"kana": "かぶれる",
+"en": "to react to; to be influenced by"
+},
+{
+"id": 5457,
+"surface": "かりに",
+"kana": "かりに",
+"en": "temporarily; if, for argument's sake"
+},
+{
+"id": 5458,
+"surface": "かろうじて",
+"kana": "かろうじて",
+"en": "barely, narrowly"
+},
+{
+"id": 5459,
+"surface": "がっくり",
+"kana": "がっくり",
+"en": "heartbroken"
+},
+{
+"id": 5460,
+"surface": "がっしり",
+"kana": "がっしり",
+"en": "firmly, solidly, tough"
+},
+{
+"id": 5461,
+"surface": "がっちり",
+"kana": "がっちり",
+"en": "solidly built, tightly"
+},
+{
+"id": 5462,
+"surface": "きしむ",
+"kana": "きしむ",
+"en": "to jar, to creak, to grate"
+},
+{
+"id": 5463,
+"surface": "きちっと",
+"kana": "きちっと",
+"en": "exactly, perfectly"
+},
+{
+"id": 5464,
+"surface": "きっかり",
+"kana": "きっかり",
+"en": "exactly, precisely"
+},
+{
+"id": 5465,
+"surface": "きっちり",
+"kana": "きっちり",
+"en": "precisely, tightly"
+},
+{
+"id": 5466,
+"surface": "きっぱり",
+"kana": "きっぱり",
+"en": "clearly, plainly, distinctly"
+},
+{
+"id": 5467,
+"surface": "きまりわるい",
+"kana": "きまりわるい",
+"en": "feeling awkward, being ashamed"
+},
+{
+"id": 5468,
+"surface": "きらびやか",
+"kana": "きらびやか",
+"en": "gorgeous, gaudy, dazzling"
+},
+{
+"id": 5469,
+"surface": "くぐる",
+"kana": "くぐる",
+"en": "to pass through; to go around"
+},
+{
+"id": 5470,
+"surface": "くじ",
+"kana": "くじ",
+"en": "lottery, lot"
+},
+{
+"id": 5471,
+"surface": "くじびき",
+"kana": "くじびき",
+"en": "lottery, drawn lot"
+},
+{
+"id": 5472,
+"surface": "くすぐったい",
+"kana": "くすぐったい",
+"en": "ticklish"
+},
+{
+"id": 5473,
+"surface": "くっきり",
+"kana": "くっきり",
+"en": "distinctly, clearly, boldly"
+},
+{
+"id": 5474,
+"surface": "ぐっと",
+"kana": "ぐっと",
+"en": "firmly, fast, more"
+},
+{
+"id": 5475,
+"surface": "けがらわしい",
+"kana": "けがらわしい",
+"en": "filthy, unfair"
+},
+{
+"id": 5476,
+"surface": "けなす",
+"kana": "けなす",
+"en": "to speak ill of"
+},
+{
+"id": 5477,
+"surface": "げっそり",
+"kana": "げっそり",
+"en": "being disheartened, losing weight"
+},
+{
+"id": 5478,
+"surface": "こじれる",
+"kana": "こじれる",
+"en": "to get complicated, to grow worse"
+},
+{
+"id": 5479,
+"surface": "こす",
+"kana": "こす",
+"en": "to strain, to filter"
+},
+{
+"id": 5480,
+"surface": "こたつ",
+"kana": "こたつ",
+"en": "table with heater, (originally) charcoal brazier in a floor well"
+},
+{
+"id": 5481,
+"surface": "こだわる",
+"kana": "こだわる",
+"en": "to fuss over, to be particular about"
+},
+{
+"id": 5482,
+"surface": "こつ",
+"kana": "こつ",
+"en": "secret, trick, hang"
+},
+{
+"id": 5483,
+"surface": "ことごとく",
+"kana": "ことごとく",
+"en": "altogether, entirely"
+},
+{
+"id": 5484,
+"surface": "ございます",
+"kana": "ございます",
+"en": "to be (polite, to exist)"
+},
+{
+"id": 5485,
+"surface": "ごまかす",
+"kana": "ごまかす",
+"en": "to deceive, to falsify, to misrepresent"
+},
+{
+"id": 5486,
+"surface": "ごらんなさい",
+"kana": "ごらんなさい",
+"en": "look, (please) try to do"
+},
+{
+"id": 5487,
+"surface": "さえずる",
+"kana": "さえずる",
+"en": "to sing, to chirp, to twitter"
+},
+{
+"id": 5488,
+"surface": "さきに",
+"kana": "さきに",
+"en": "before, earlier than, previously"
+},
+{
+"id": 5489,
+"surface": "さぞ",
+"kana": "さぞ",
+"en": "I am sure, certainly, no doubt"
+},
+{
+"id": 5490,
+"surface": "さっと",
+"kana": "さっと",
+"en": "suddenly, smoothly"
+},
+{
+"id": 5491,
+"surface": "さっぱりする",
+"kana": "さっぱりする",
+"en": "to refresh"
+},
+{
+"id": 5492,
+"surface": "さほど",
+"kana": "さほど",
+"en": "not so, not that much"
+},
+{
+"id": 5493,
+"surface": "さも",
+"kana": "さも",
+"en": "with gusto, with satisfaction"
+},
+{
+"id": 5494,
+"surface": "さらう",
+"kana": "さらう",
+"en": "to kidnap"
+},
+{
+"id": 5495,
+"surface": "しかしながら",
+"kana": "しかしながら",
+"en": "however, nevertheless"
+},
+{
+"id": 5496,
+"surface": "しきたり",
+"kana": "しきたり",
+"en": "custom, conventional practice, tradition"
+},
+{
+"id": 5497,
+"surface": "しくじる",
+"kana": "しくじる",
+"en": "to fail, to fall through, to blunder"
+},
+{
+"id": 5498,
+"surface": "しなやか",
+"kana": "しなやか",
+"en": "supple, flexible, elastic"
+},
+{
+"id": 5499,
+"surface": "しぶとい",
+"kana": "しぶとい",
+"en": "tenacious, stubborn"
+},
+{
+"id": 5500,
+"surface": "しょっちゅう",
+"kana": "しょっちゅう",
+"en": "always, constantly"
+},
+{
+"id": 5501,
+"surface": "じっくり",
+"kana": "じっくり",
+"en": "deliberately, carefully"
+},
+{
+"id": 5502,
+"surface": "すがすがしい",
+"kana": "すがすがしい",
+"en": "fresh, refreshing"
+},
+{
+"id": 5503,
+"surface": "すくう",
+"kana": "すくう",
+"en": "to scoop"
+},
+{
+"id": 5504,
+"surface": "すばしこい",
+"kana": "すばしこい",
+"en": "nimble, smart, quick"
+},
+{
+"id": 5505,
+"surface": "すみやか",
+"kana": "すみやか",
+"en": "speedy"
+},
+{
+"id": 5506,
+"surface": "すれちがい",
+"kana": "すれちがい",
+"en": "chance encounter"
+},
+{
+"id": 5507,
+"surface": "すんなり",
+"kana": "すんなり",
+"en": "pass with no objection, slim, slender"
+},
+{
+"id": 5508,
+"surface": "ずばり",
+"kana": "ずばり",
+"en": "decisively, unreservedly, frankly"
+},
+{
+"id": 5509,
+"surface": "ずぶぬれ",
+"kana": "ずぶぬれ",
+"en": "soaked, dripping wet"
+},
+{
+"id": 5510,
+"surface": "ずらっと",
+"kana": "ずらっと",
+"en": "in a line, in a row"
+},
+{
+"id": 5511,
+"surface": "ずるずる",
+"kana": "ずるずる",
+"en": "dragging on, sound of sniffling"
+},
+{
+"id": 5512,
+"surface": "ずれ",
+"kana": "ずれ",
+"en": "difference, gap"
+},
+{
+"id": 5513,
+"surface": "そこら",
+"kana": "そこら",
+"en": "everywhere, somewhere"
+},
+{
+"id": 5514,
+"surface": "そらす",
+"kana": "そらす",
+"en": "to bend, to warp"
+},
+{
+"id": 5515,
+"surface": "そり",
+"kana": "そり",
+"en": "sleigh, sled"
+},
+{
+"id": 5516,
+"surface": "それゆえ",
+"kana": "それゆえ",
+"en": "therefore, for that reason, so"
+},
+{
+"id": 5517,
+"surface": "ぞんざい",
+"kana": "ぞんざい",
+"en": "rude, careless, slovenly"
+},
+{
+"id": 5518,
+"surface": "たくましい",
+"kana": "たくましい",
+"en": "burly, strong, sturdy"
+},
+{
+"id": 5519,
+"surface": "たやすい",
+"kana": "たやすい",
+"en": "easy, simple, light"
+},
+{
+"id": 5520,
+"surface": "だったら",
+"kana": "だったら",
+"en": "if it's the case"
+},
+{
+"id": 5522,
+"surface": "だぶだぶ",
+"kana": "だぶだぶ",
+"en": "loose, baggy"
+},
+{
+"id": 5523,
+"surface": "だるい",
+"kana": "だるい",
+"en": "sluggish, feel heavy (tired), languid"
+},
+{
+"id": 5524,
+"surface": "ちやほや",
+"kana": "ちやほや",
+"en": "pamper, make a fuss of, spoil"
+},
+{
+"id": 5525,
+"surface": "ちょくちょく",
+"kana": "ちょくちょく",
+"en": "often, frequently, now and then, occasionally"
+},
+{
+"id": 5526,
+"surface": "ちらっと",
+"kana": "ちらっと",
+"en": "at a glance, by accident"
+},
+{
+"id": 5527,
+"surface": "つかの間",
+"kana": "つかのま",
+"en": "moment, brief time,"
+},
+{
+"id": 5528,
+"surface": "つくづく",
+"kana": "つくづく",
+"en": "completely, really"
+},
+{
+"id": 5529,
+"surface": "つじつま",
+"kana": "つじつま",
+"en": "coherence, consistency"
+},
+{
+"id": 5530,
+"surface": "つねる",
+"kana": "つねる",
+"en": "to pinch"
+},
+{
+"id": 5531,
+"surface": "つぶら",
+"kana": "つぶら",
+"en": "round, rotund"
+},
+{
+"id": 5532,
+"surface": "つぶる",
+"kana": "つぶる",
+"en": "to close the eyes"
+},
+{
+"id": 5533,
+"surface": "てっきり",
+"kana": "てっきり",
+"en": "surely, certainly, beyond doubt"
+},
+{
+"id": 5534,
+"surface": "てっぺん",
+"kana": "てっぺん",
+"en": "top, summit, apex"
+},
+{
+"id": 5535,
+"surface": "てんで",
+"kana": "てんで",
+"en": "(not) at all, altogether, entirely"
+},
+{
+"id": 5536,
+"surface": "でかい",
+"kana": "でかい",
+"en": "huge"
+},
+{
+"id": 5537,
+"surface": "できもの",
+"kana": "できもの",
+"en": "boil, rash"
+},
+{
+"id": 5538,
+"surface": "とかく",
+"kana": "とかく",
+"en": "anyhow, anyway, in any case"
+},
+{
+"id": 5539,
+"surface": "とがめる",
+"kana": "とがめる",
+"en": "to blame, to rebuke"
+},
+{
+"id": 5540,
+"surface": "とぎれる",
+"kana": "とぎれる",
+"en": "to pause, to be interrupted"
+},
+{
+"id": 5541,
+"surface": "とげ",
+"kana": "とげ",
+"en": "thorn"
+},
+{
+"id": 5542,
+"surface": "とっさに",
+"kana": "とっさに",
+"en": "at once"
+},
+{
+"id": 5543,
+"surface": "とって",
+"kana": "とって",
+"en": "handle, grip, knob"
+},
+{
+"id": 5544,
+"surface": "とぼける",
+"kana": "とぼける",
+"en": "to play dumb, to feign ignorance, to play innocent, to have a blank facial expression; to play the fool; to be in one's dotage"
+},
+{
+"id": 5545,
+"surface": "とりあえず",
+"kana": "とりあえず",
+"en": "at once, first of all, for the time being"
+},
+{
+"id": 5546,
+"surface": "とろける",
+"kana": "とろける",
+"en": "melt; to be enchanted with"
+},
+{
+"id": 5547,
+"surface": "とんだ",
+"kana": "とんだ",
+"en": "terrible, awful, serious, absolutely not"
+},
+{
+"id": 5548,
+"surface": "どうにか",
+"kana": "どうにか",
+"en": "in some way or other, one way or another"
+},
+{
+"id": 5549,
+"surface": "どうやら",
+"kana": "どうやら",
+"en": "it seems like, somehow or other"
+},
+{
+"id": 5550,
+"surface": "なおさら",
+"kana": "なおさら",
+"en": "all the more, still less"
+},
+{
+"id": 5551,
+"surface": "なにとぞ",
+"kana": "なにとぞ",
+"en": "please, kindly, by all means"
+},
+{
+"id": 5552,
+"surface": "なにより",
+"kana": "なにより",
+"en": "most, best"
+},
+{
+"id": 5553,
+"surface": "なるたけ",
+"kana": "なるたけ",
+"en": "as much as possible, if possible"
+},
+{
+"id": 5554,
+"surface": "なんだかんだ",
+"kana": "なんだかんだ",
+"en": "something or other"
+},
+{
+"id": 5555,
+"surface": "なんなり",
+"kana": "なんなり",
+"en": "anything, whatever"
+},
+{
+"id": 5556,
+"surface": "にきび",
+"kana": "にきび",
+"en": "pimple, acne"
+},
+{
+"id": 5557,
+"surface": "にせ物",
+"kana": "にせもの",
+"en": "imitation, counterfeit"
+},
+{
+"id": 5558,
+"surface": "にも関わらず",
+"kana": "にもかかわらず",
+"en": "in spite of, nevertheless"
+},
+{
+"id": 5559,
+"surface": "ねじまわし",
+"kana": "ねじまわし",
+"en": "screwdriver"
+},
+{
+"id": 5560,
+"surface": "ねだる",
+"kana": "ねだる",
+"en": "to nag, to demand"
+},
+{
+"id": 5561,
+"surface": "のどか",
+"kana": "のどか",
+"en": "tranquil, calm, quiet"
+},
+{
+"id": 5562,
+"surface": "はかない",
+"kana": "はかない",
+"en": "short-lived, momentary, ephemeral"
+},
+{
+"id": 5563,
+"surface": "はまる",
+"kana": "はまる",
+"en": "to get into, to go into, to fit, to be fit for, to suit"
+},
+{
+"id": 5564,
+"surface": "はらはら",
+"kana": "はらはら",
+"en": "feel nervous"
+},
+{
+"id": 5565,
+"surface": "ばい菌",
+"kana": "ばいきん",
+"en": "bacteria, germ(s)"
+},
+{
+"id": 5566,
+"surface": "ばかばかしい",
+"kana": "ばかばかしい",
+"en": "stupid"
+},
+{
+"id": 5567,
+"surface": "ばてる",
+"kana": "ばてる",
+"en": "to be exhausted, to be worn out"
+},
+{
+"id": 5568,
+"surface": "ばらまく",
+"kana": "ばらまく",
+"en": "to disseminate, to scatter"
+},
+{
+"id": 5569,
+"surface": "ひいては",
+"kana": "ひいては",
+"en": "not only…but also, in addition to, consequently"
+},
+{
+"id": 5570,
+"surface": "ひたすら",
+"kana": "ひたすら",
+"en": "nothing but, earnestly, intently"
+},
+{
+"id": 5571,
+"surface": "ひび",
+"kana": "ひび",
+"en": "crack, fissure, flaw"
+},
+{
+"id": 5572,
+"surface": "ひょっと",
+"kana": "ひょっと",
+"en": "possibly, accidentally"
+},
+{
+"id": 5573,
+"surface": "びっしょり",
+"kana": "びっしょり",
+"en": "wet through, drenched"
+},
+{
+"id": 5574,
+"surface": "びら",
+"kana": "びら",
+"en": "handout, leaflet"
+},
+{
+"id": 5575,
+"surface": "びり",
+"kana": "びり",
+"en": "last on the list, at the bottom"
+},
+{
+"id": 5576,
+"surface": "ふさわしい",
+"kana": "ふさわしい",
+"en": "appropriate"
+},
+{
+"id": 5577,
+"surface": "ふらふら",
+"kana": "ふらふら",
+"en": "unsteady on one's feet, totter, dizzy"
+},
+{
+"id": 5578,
+"surface": "ふんだん",
+"kana": "ふんだん",
+"en": "plentiful, abundant, lavish"
+},
+{
+"id": 5579,
+"surface": "ぶかぶか",
+"kana": "ぶかぶか",
+"en": "too big, baggy"
+},
+{
+"id": 5580,
+"surface": "ぶらぶら",
+"kana": "ぶらぶら",
+"en": "dangle heavily, sway to and fro, stroll idly"
+},
+{
+"id": 5581,
+"surface": "へりくだる",
+"kana": "へりくだる",
+"en": "to deprecate oneself and praise the listener"
+},
+{
+"id": 5582,
+"surface": "ぺこぺこ",
+"kana": "ぺこぺこ",
+"en": "fawn, be very hungry"
+},
+{
+"id": 5583,
+"surface": "ほっぺた",
+"kana": "ほっぺた",
+"en": "cheek"
+},
+{
+"id": 5584,
+"surface": "ほとり",
+"kana": "ほとり",
+"en": "vicinity of lake; river"
+},
+{
+"id": 5585,
+"surface": "ぼつぼつ",
+"kana": "ぼつぼつ",
+"en": "gradually, here and there, spots"
+},
+{
+"id": 5586,
+"surface": "ぼやく",
+"kana": "ぼやく",
+"en": "to grumble, to complain"
+},
+{
+"id": 5587,
+"surface": "ぼやける",
+"kana": "ぼやける",
+"en": "to become dim, to become blurred"
+},
+{
+"id": 5588,
+"surface": "まごつく",
+"kana": "まごつく",
+"en": "to be confused, to be flustered"
+},
+{
+"id": 5589,
+"surface": "まさしく",
+"kana": "まさしく",
+"en": "surely, no doubt, evidently"
+},
+{
+"id": 5590,
+"surface": "まして",
+"kana": "まして",
+"en": "still more, still less (with neg. verb), to say nothing of"
+},
+{
+"id": 5591,
+"surface": "またがる",
+"kana": "またがる",
+"en": "to straddle"
+},
+{
+"id": 5592,
+"surface": "まちまち",
+"kana": "まちまち",
+"en": "various, different"
+},
+{
+"id": 5593,
+"surface": "まと",
+"kana": "まと",
+"en": "mark, target"
+},
+{
+"id": 5594,
+"surface": "まるっきり",
+"kana": "まるっきり",
+"en": "completely, perfectly, just as if"
+},
+{
+"id": 5595,
+"surface": "みすぼらしい",
+"kana": "みすぼらしい",
+"en": "shabby, seedy"
+},
+{
+"id": 5596,
+"surface": "むしる",
+"kana": "むしる",
+"en": "to pluck, to pick, to tear"
+},
+{
+"id": 5597,
+"surface": "もがく",
+"kana": "もがく",
+"en": "to struggle, to wriggle, to be impatient"
+},
+{
+"id": 5599,
+"surface": "もしくは",
+"kana": "もしくは",
+"en": "or, otherwise"
+},
+{
+"id": 5600,
+"surface": "もたらす",
+"kana": "もたらす",
+"en": "to bring, to take, to bring about"
+},
+{
+"id": 5601,
+"surface": "もてなす",
+"kana": "もてなす",
+"en": "to entertain, to make welcome"
+},
+{
+"id": 5602,
+"surface": "もてる",
+"kana": "もてる",
+"en": "to be well liked, to be popular"
+},
+{
+"id": 5603,
+"surface": "もはや",
+"kana": "もはや",
+"en": "already, now"
+},
+{
+"id": 5604,
+"surface": "もめる",
+"kana": "もめる",
+"en": "to disagree, to dispute"
+},
+{
+"id": 5605,
+"surface": "もろに",
+"kana": "もろに",
+"en": "completely, altogether, bodily"
+},
+{
+"id": 5606,
+"surface": "やけに",
+"kana": "やけに",
+"en": "sure, very"
+},
+{
+"id": 5607,
+"surface": "ややこしい",
+"kana": "ややこしい",
+"en": "puzzling, tangled, complicated, complex"
+},
+{
+"id": 5608,
+"surface": "やりとおす",
+"kana": "やりとおす",
+"en": "to carry through, to achieve, to complete"
+},
+{
+"id": 5609,
+"surface": "やりとげる",
+"kana": "やりとげる",
+"en": "to accomplish"
+},
+{
+"id": 5610,
+"surface": "ゆとり",
+"kana": "ゆとり",
+"en": "reserve, affluence, time (to spare)"
+},
+{
+"id": 5611,
+"surface": "よし",
+"kana": "よし",
+"en": "all right!"
+},
+{
+"id": 5612,
+"surface": "よって",
+"kana": "よって",
+"en": "therefore, consequently"
+},
+{
+"id": 5613,
+"surface": "ろくな",
+"kana": "ろくな",
+"en": "satisfactory, decent"
+},
+{
+"id": 5614,
+"surface": "わざわざ",
+"kana": "わざわざ",
+"en": "take the trouble (to do), doing something especially rather than incidentally"
+},
+{
+"id": 5615,
+"surface": "アクセル",
+"kana": "アクセル",
+"en": "(abbr.) accelerator"
+},
+{
+"id": 5616,
+"surface": "アプローチ",
+"kana": "アプローチ",
+"en": "approach (in golf)"
+},
+{
+"id": 5617,
+"surface": "アマチュア",
+"kana": "アマチュア",
+"en": "amateur"
+},
+{
+"id": 5618,
+"surface": "アラブ",
+"kana": "アラブ",
+"en": "Arab"
+},
+{
+"id": 5619,
+"surface": "アルカリ",
+"kana": "アルカリ",
+"en": "alkali"
+},
+{
+"id": 5620,
+"surface": "アルミ",
+"kana": "アルミ",
+"en": "aluminum (Al, aluminum)"
+},
+{
+"id": 5621,
+"surface": "アワー",
+"kana": "アワー",
+"en": "hour"
+},
+{
+"id": 5622,
+"surface": "アンコール",
+"kana": "アンコール",
+"en": "encore"
+},
+{
+"id": 5623,
+"surface": "イェス",
+"kana": "イェス",
+"en": "yes; Jesus"
+},
+{
+"id": 5624,
+"surface": "インターチェンジ",
+"kana": "インターチェンジ",
+"en": "interchange"
+},
+{
+"id": 5625,
+"surface": "インターナショナル",
+"kana": "インターナショナル",
+"en": "international"
+},
+{
+"id": 5626,
+"surface": "インターフォン",
+"kana": "インターフォン",
+"en": "entry phone, intercom"
+},
+{
+"id": 5627,
+"surface": "インテリ",
+"kana": "インテリ",
+"en": "(abbr.) egghead, intelligentsia"
+},
+{
+"id": 5628,
+"surface": "インフォメーション",
+"kana": "インフォメーション",
+"en": "information"
+},
+{
+"id": 5629,
+"surface": "インフレ",
+"kana": "インフレ",
+"en": "(abbr.) inflation"
+},
+{
+"id": 5630,
+"surface": "エアメール",
+"kana": "エアメール",
+"en": "air mail"
+},
+{
+"id": 5631,
+"surface": "エレガント",
+"kana": "エレガント",
+"en": "elegant"
+},
+{
+"id": 5632,
+"surface": "エンジニア",
+"kana": "エンジニア",
+"en": "engineer"
+},
+{
+"id": 5633,
+"surface": "オリエンテーション",
+"kana": "オリエンテーション",
+"en": "orientation"
+},
+{
+"id": 5634,
+"surface": "オンライン",
+"kana": "オンライン",
+"en": "on-line"
+},
+{
+"id": 5635,
+"surface": "オートマチック",
+"kana": "オートマチック",
+"en": "automatic"
+},
+{
+"id": 5636,
+"surface": "カクテル",
+"kana": "カクテル",
+"en": "cocktail"
+},
+{
+"id": 5637,
+"surface": "カット",
+"kana": "カット",
+"en": "cut, cutting"
+},
+{
+"id": 5638,
+"surface": "カテゴリー",
+"kana": "カテゴリー",
+"en": "category"
+},
+{
+"id": 5639,
+"surface": "カムバック",
+"kana": "カムバック",
+"en": "comeback"
+},
+{
+"id": 5640,
+"surface": "カメラマン",
+"kana": "カメラマン",
+"en": "cameraman"
+},
+{
+"id": 5641,
+"surface": "カルテ",
+"kana": "カルテ",
+"en": "clinical records (GER: Karte)"
+},
+{
+"id": 5642,
+"surface": "カンニング",
+"kana": "カンニング",
+"en": "cunning, cheat"
+},
+{
+"id": 5643,
+"surface": "カーペット",
+"kana": "カーペット",
+"en": "carpet"
+},
+{
+"id": 5644,
+"surface": "ガイド",
+"kana": "ガイド",
+"en": "guide"
+},
+{
+"id": 5645,
+"surface": "ガイドブック",
+"kana": "ガイドブック",
+"en": "guidebook"
+},
+{
+"id": 5646,
+"surface": "ガレージ",
+"kana": "ガレージ",
+"en": "garage (at house)"
+},
+{
+"id": 5647,
+"surface": "キャッチ",
+"kana": "キャッチ",
+"en": "catch"
+},
+{
+"id": 5648,
+"surface": "キャリア",
+"kana": "キャリア",
+"en": "career, career government employee"
+},
+{
+"id": 5649,
+"surface": "クイズ",
+"kana": "クイズ",
+"en": "quiz"
+},
+{
+"id": 5650,
+"surface": "クレーン",
+"kana": "クレーン",
+"en": "crane"
+},
+{
+"id": 5651,
+"surface": "グレー",
+"kana": "グレー",
+"en": "grey, gray"
+},
+{
+"id": 5652,
+"surface": "ゲスト",
+"kana": "ゲスト",
+"en": "guest"
+},
+{
+"id": 5653,
+"surface": "コマーシャル",
+"kana": "コマーシャル",
+"en": "a commercial"
+},
+{
+"id": 5654,
+"surface": "コメント",
+"kana": "コメント",
+"en": "comment"
+},
+{
+"id": 5655,
+"surface": "コンタクト",
+"kana": "コンタクト",
+"en": "contact; contact lens"
+},
+{
+"id": 5656,
+"surface": "コントラスト",
+"kana": "コントラスト",
+"en": "contrast"
+},
+{
+"id": 5657,
+"surface": "コントロール",
+"kana": "コントロール",
+"en": "control"
+},
+{
+"id": 5658,
+"surface": "コンパス",
+"kana": "コンパス",
+"en": "compass"
+},
+{
+"id": 5659,
+"surface": "コーナー",
+"kana": "コーナー",
+"en": "corner"
+},
+{
+"id": 5660,
+"surface": "サイクル",
+"kana": "サイクル",
+"en": "cycle"
+},
+{
+"id": 5661,
+"surface": "サイズ",
+"kana": "サイズ",
+"en": "size"
+},
+{
+"id": 5662,
+"surface": "サボる",
+"kana": "サボる",
+"en": "to cut (skip) classes; to loaf on the job; to idle away one's time"
+},
+{
+"id": 5663,
+"surface": "サンキュー",
+"kana": "サンキュー",
+"en": "thank you"
+},
+{
+"id": 5664,
+"surface": "サンタクロース",
+"kana": "サンタクロース",
+"en": "Santa Claus"
+},
+{
+"id": 5665,
+"surface": "システム",
+"kana": "システム",
+"en": "system"
+},
+{
+"id": 5666,
+"surface": "シック",
+"kana": "シック",
+"en": "chic"
+},
+{
+"id": 5667,
+"surface": "シナリオ",
+"kana": "シナリオ",
+"en": "scenario"
+},
+{
+"id": 5668,
+"surface": "ショー",
+"kana": "ショー",
+"en": "show"
+},
+{
+"id": 5669,
+"surface": "シート",
+"kana": "シート",
+"en": "seat; sheet"
+},
+{
+"id": 5670,
+"surface": "ジャズ",
+"kana": "ジャズ",
+"en": "jazz"
+},
+{
+"id": 5671,
+"surface": "ジャンパー",
+"kana": "ジャンパー",
+"en": "jacket, jumper"
+},
+{
+"id": 5672,
+"surface": "ジャンプ",
+"kana": "ジャンプ",
+"en": "jump"
+},
+{
+"id": 5673,
+"surface": "ジャンボ",
+"kana": "ジャンボ",
+"en": "jumbo"
+},
+{
+"id": 5674,
+"surface": "ジャンル",
+"kana": "ジャンル",
+"en": "genre"
+},
+{
+"id": 5675,
+"surface": "ジーパン",
+"kana": "ジーパン",
+"en": "jeans"
+},
+{
+"id": 5676,
+"surface": "スタジオ",
+"kana": "スタジオ",
+"en": "studio"
+},
+{
+"id": 5677,
+"surface": "スチーム",
+"kana": "スチーム",
+"en": "steam"
+},
+{
+"id": 5678,
+"surface": "スト",
+"kana": "スト",
+"en": "(abbr.) strike"
+},
+{
+"id": 5679,
+"surface": "ストライキ",
+"kana": "ストライキ",
+"en": "strike"
+},
+{
+"id": 5680,
+"surface": "ストロボ",
+"kana": "ストロボ",
+"en": "stroboscope (literally: strobo, strobe lamp, stroboscopic lamp)"
+},
+{
+"id": 5681,
+"surface": "ストロー",
+"kana": "ストロー",
+"en": "straw"
+},
+{
+"id": 5682,
+"surface": "スプリング",
+"kana": "スプリング",
+"en": "spring"
+},
+{
+"id": 5683,
+"surface": "スペース",
+"kana": "スペース",
+"en": "space"
+},
+{
+"id": 5684,
+"surface": "スポーツカー",
+"kana": "スポーツカー",
+"en": "sports car"
+},
+{
+"id": 5685,
+"surface": "スラックス",
+"kana": "スラックス",
+"en": "slacks"
+},
+{
+"id": 5686,
+"surface": "セクション",
+"kana": "セクション",
+"en": "section"
+},
+{
+"id": 5687,
+"surface": "セックス",
+"kana": "セックス",
+"en": "sex"
+},
+{
+"id": 5688,
+"surface": "セレモニー",
+"kana": "セレモニー",
+"en": "ceremony"
+},
+{
+"id": 5689,
+"surface": "センス",
+"kana": "センス",
+"en": "sense (for music, style, tact, etc.)"
+},
+{
+"id": 5690,
+"surface": "セール",
+"kana": "セール",
+"en": "sale"
+},
+{
+"id": 5691,
+"surface": "ゼリー",
+"kana": "ゼリー",
+"en": "jelly"
+},
+{
+"id": 5692,
+"surface": "ソックス",
+"kana": "ソックス",
+"en": "socks"
+},
+{
+"id": 5693,
+"surface": "ソロ",
+"kana": "ソロ",
+"en": "solo"
+},
+{
+"id": 5694,
+"surface": "ソース",
+"kana": "ソース",
+"en": "source"
+},
+{
+"id": 5695,
+"surface": "タイピスト",
+"kana": "タイピスト",
+"en": "typist"
+},
+{
+"id": 5696,
+"surface": "タイマー",
+"kana": "タイマー",
+"en": "timer"
+},
+{
+"id": 5697,
+"surface": "タイミング",
+"kana": "タイミング",
+"en": "timing"
+},
+{
+"id": 5698,
+"surface": "タイム",
+"kana": "タイム",
+"en": "time"
+},
+{
+"id": 5699,
+"surface": "タイムリー",
+"kana": "タイムリー",
+"en": "timely, run-batted-in (baseball), RBI"
+},
+{
+"id": 5700,
+"surface": "タイル",
+"kana": "タイル",
+"en": "tile"
+},
+{
+"id": 5701,
+"surface": "タレント",
+"kana": "タレント",
+"en": "talent, star, personality"
+},
+{
+"id": 5702,
+"surface": "タワー",
+"kana": "タワー",
+"en": "tower"
+},
+{
+"id": 5703,
+"surface": "ダンプ",
+"kana": "ダンプ",
+"en": "dump truck"
+},
+{
+"id": 5704,
+"surface": "ダース",
+"kana": "ダース",
+"en": "dozen"
+},
+{
+"id": 5705,
+"surface": "チェンジ",
+"kana": "チェンジ",
+"en": "change"
+},
+{
+"id": 5706,
+"surface": "チャンネル",
+"kana": "チャンネル",
+"en": "a channel"
+},
+{
+"id": 5707,
+"surface": "チームワーク",
+"kana": "チームワーク",
+"en": "teamwork"
+},
+{
+"id": 5708,
+"surface": "ティシュペーパー",
+"kana": "ティシュペーパー",
+"en": "tissue"
+},
+{
+"id": 5709,
+"surface": "テレックス",
+"kana": "テレックス",
+"en": "telex, teletypewriter exchange"
+},
+{
+"id": 5710,
+"surface": "デコレーション",
+"kana": "デコレーション",
+"en": "decoration"
+},
+{
+"id": 5711,
+"surface": "デッサン",
+"kana": "デッサン",
+"en": "rough sketch (FRE: dessin)"
+},
+{
+"id": 5712,
+"surface": "デモンストレーション",
+"kana": "デモンストレーション",
+"en": "demonstration"
+},
+{
+"id": 5713,
+"surface": "トラブル",
+"kana": "トラブル",
+"en": "trouble (sometimes used as a verb)"
+},
+{
+"id": 5714,
+"surface": "トランジスター",
+"kana": "トランジスター",
+"en": "transistor"
+},
+{
+"id": 5715,
+"surface": "トーン",
+"kana": "トーン",
+"en": "tone"
+},
+{
+"id": 5716,
+"surface": "ドライ",
+"kana": "ドライ",
+"en": "dry"
+},
+{
+"id": 5717,
+"surface": "ドライクリーニング",
+"kana": "ドライクリーニング",
+"en": "dry cleaning"
+},
+{
+"id": 5718,
+"surface": "ドライバー",
+"kana": "ドライバー",
+"en": "driver, screwdriver"
+},
+{
+"id": 5719,
+"surface": "ドライブイン",
+"kana": "ドライブイン",
+"en": "drive in"
+},
+{
+"id": 5720,
+"surface": "ドリル",
+"kana": "ドリル",
+"en": "drill"
+},
+{
+"id": 5721,
+"surface": "ナイター",
+"kana": "ナイター",
+"en": "game under lights (e.g., baseball), night game"
+},
+{
+"id": 5722,
+"surface": "ナプキン",
+"kana": "ナプキン",
+"en": "napkin"
+},
+{
+"id": 5723,
+"surface": "ナンセンス",
+"kana": "ナンセンス",
+"en": "nonsense"
+},
+{
+"id": 5724,
+"surface": "ニュアンス",
+"kana": "ニュアンス",
+"en": "nuance"
+},
+{
+"id": 5725,
+"surface": "ニュー",
+"kana": "ニュー",
+"en": "new"
+},
+{
+"id": 5726,
+"surface": "ネガ",
+"kana": "ネガ",
+"en": "(photographic) negative"
+},
+{
+"id": 5727,
+"surface": "ノイローゼ",
+"kana": "ノイローゼ",
+"en": "neurosis (GER: Neurose)"
+},
+{
+"id": 5728,
+"surface": "ハンガー",
+"kana": "ハンガー",
+"en": "(coat) hanger"
+},
+{
+"id": 5729,
+"surface": "バッジ",
+"kana": "バッジ",
+"en": "badge"
+},
+{
+"id": 5730,
+"surface": "バッテリー",
+"kana": "バッテリー",
+"en": "battery"
+},
+{
+"id": 5731,
+"surface": "バット",
+"kana": "バット",
+"en": "bat, vat"
+},
+{
+"id": 5732,
+"surface": "バー",
+"kana": "バー",
+"en": "bar"
+},
+{
+"id": 5733,
+"surface": "パジャマ",
+"kana": "パジャマ",
+"en": "pajamas"
+},
+{
+"id": 5734,
+"surface": "パチンコ",
+"kana": "パチンコ",
+"en": "pachinko (Japanese pinball)"
+},
+{
+"id": 5735,
+"surface": "パトカー",
+"kana": "パトカー",
+"en": "patrol car"
+},
+{
+"id": 5736,
+"surface": "パンク",
+"kana": "パンク",
+"en": "puncture, bursting; punk"
+},
+{
+"id": 5737,
+"surface": "ヒント",
+"kana": "ヒント",
+"en": "hint"
+},
+{
+"id": 5738,
+"surface": "ビジネス",
+"kana": "ビジネス",
+"en": "business"
+},
+{
+"id": 5739,
+"surface": "ビールス",
+"kana": "ビールス",
+"en": "virus"
+},
+{
+"id": 5740,
+"surface": "ファイト",
+"kana": "ファイト",
+"en": "fight"
+},
+{
+"id": 5741,
+"surface": "ファイル",
+"kana": "ファイル",
+"en": "file; portfolio"
+},
+{
+"id": 5742,
+"surface": "ファン",
+"kana": "ファン",
+"en": "fan"
+},
+{
+"id": 5743,
+"surface": "フィルタ",
+"kana": "フィルタ",
+"en": "filter"
+},
+{
+"id": 5744,
+"surface": "フォーム",
+"kana": "フォーム",
+"en": "foam; form"
+},
+{
+"id": 5745,
+"surface": "フロント",
+"kana": "フロント",
+"en": "front"
+},
+{
+"id": 5746,
+"surface": "ブザー",
+"kana": "ブザー",
+"en": "buzzer"
+},
+{
+"id": 5747,
+"surface": "ブル",
+"kana": "ブル",
+"en": "bull"
+},
+{
+"id": 5748,
+"surface": "ブーツ",
+"kana": "ブーツ",
+"en": "boots"
+},
+{
+"id": 5749,
+"surface": "ブーム",
+"kana": "ブーム",
+"en": "boom"
+},
+{
+"id": 5750,
+"surface": "ベスト",
+"kana": "ベスト",
+"en": "best; vest"
+},
+{
+"id": 5751,
+"surface": "ベストセラー",
+"kana": "ベストセラー",
+"en": "best-seller"
+},
+{
+"id": 5752,
+"surface": "ベース",
+"kana": "ベース",
+"en": "base, bass"
+},
+{
+"id": 5753,
+"surface": "ペア",
+"kana": "ペア",
+"en": "pair, pear"
+},
+{
+"id": 5754,
+"surface": "ホース",
+"kana": "ホース",
+"en": "hose"
+},
+{
+"id": 5755,
+"surface": "ホール",
+"kana": "ホール",
+"en": "hall; hole"
+},
+{
+"id": 5756,
+"surface": "ボイコット",
+"kana": "ボイコット",
+"en": "boycott"
+},
+{
+"id": 5757,
+"surface": "ボルト",
+"kana": "ボルト",
+"en": "volt; bolt"
+},
+{
+"id": 5758,
+"surface": "ポイント",
+"kana": "ポイント",
+"en": "point"
+},
+{
+"id": 5759,
+"surface": "ポジション",
+"kana": "ポジション",
+"en": "position"
+},
+{
+"id": 5760,
+"surface": "ポット",
+"kana": "ポット",
+"en": "pot"
+},
+{
+"id": 5761,
+"surface": "ポンプ",
+"kana": "ポンプ",
+"en": "pump"
+},
+{
+"id": 5762,
+"surface": "ポーズ",
+"kana": "ポーズ",
+"en": "pause"
+},
+{
+"id": 5763,
+"surface": "マイクロフォン",
+"kana": "マイクロフォン",
+"en": "microphone"
+},
+{
+"id": 5764,
+"surface": "マイ～",
+"kana": "マイ～",
+"en": "my ~, one's own ~"
+},
+{
+"id": 5765,
+"surface": "マーク",
+"kana": "マーク",
+"en": "mark"
+},
+{
+"id": 5766,
+"surface": "ミスプリント",
+"kana": "ミスプリント",
+"en": "misprint"
+},
+{
+"id": 5767,
+"surface": "ミセス",
+"kana": "ミセス",
+"en": "Mrs."
+},
+{
+"id": 5768,
+"surface": "ミュージック",
+"kana": "ミュージック",
+"en": "music"
+},
+{
+"id": 5769,
+"surface": "ムード",
+"kana": "ムード",
+"en": "mood"
+},
+{
+"id": 5770,
+"surface": "メディア",
+"kana": "メディア",
+"en": "media"
+},
+{
+"id": 5771,
+"surface": "メロディー",
+"kana": "メロディー",
+"en": "melody"
+},
+{
+"id": 5772,
+"surface": "メーカー",
+"kana": "メーカー",
+"en": "manufacturer"
+},
+{
+"id": 5773,
+"surface": "モニター",
+"kana": "モニター",
+"en": "(computer) monitor"
+},
+{
+"id": 5774,
+"surface": "モーテル",
+"kana": "モーテル",
+"en": "motel"
+},
+{
+"id": 5775,
+"surface": "ヤング",
+"kana": "ヤング",
+"en": "young"
+},
+{
+"id": 5776,
+"surface": "ユニフォーム",
+"kana": "ユニフォーム",
+"en": "uniform"
+},
+{
+"id": 5777,
+"surface": "ユニーク",
+"kana": "ユニーク",
+"en": "unique"
+},
+{
+"id": 5778,
+"surface": "ライス",
+"kana": "ライス",
+"en": "rice"
+},
+{
+"id": 5779,
+"surface": "ランプ",
+"kana": "ランプ",
+"en": "lamp; ramp"
+},
+{
+"id": 5780,
+"surface": "リード",
+"kana": "リード",
+"en": "lead; reed"
+},
+{
+"id": 5781,
+"surface": "ルーズ",
+"kana": "ルーズ",
+"en": "loose"
+}
+]
