@@ -1,0 +1,156 @@
+[
+{
+"id": 8329,
+"surface": "愧赧",
+"kana": "きたん",
+"suggested_surface": "忌憚",
+"note": "忌憚(きたん) - 거리낌"
+},
+{
+"id": 8339,
+"surface": "山下",
+"kana": "さんか",
+"suggested_surface": "参加",
+"note": "spoken さんか"
+},
+{
+"id": 8340,
+"surface": "山下",
+"kana": "やまもと",
+"suggested_surface": "山本",
+"note": "やまもと is 山本"
+},
+{
+"id": 8319,
+"surface": "同化",
+"kana": "どうか",
+"suggested_surface": "どうか",
+"note": "adverb どうか"
+},
+{
+"id": 8350,
+"surface": "合",
+"kana": "あい",
+"suggested_surface": "あい",
+"note": "colloquial reply"
+},
+{
+"id": 8362,
+"surface": "階",
+"kana": "しな",
+"suggested_surface": "しな",
+"note": "suffix ～しな"
+},
+{
+"id": 8367,
+"surface": "軟化",
+"kana": "なんか",
+"suggested_surface": "なんか",
+"note": "filler なんか"
+},
+{
+"id": 8371,
+"surface": "裔",
+"kana": "こはな",
+"suggested_surface": "小花",
+"note": "name"
+},
+{
+"id": 8379,
+"surface": "親子",
+"kana": "しんし",
+"suggested_surface": "紳士",
+"note": "spoken しんし"
+},
+{
+"id": 8390,
+"surface": "宋",
+"kana": "そう",
+"suggested_surface": "そう",
+"note": "そう"
+},
+{
+"id": 8468,
+"surface": "曹",
+"kana": "そう",
+"suggested_surface": "そう",
+"note": "そう"
+},
+{
+"id": 8392,
+"surface": "本々",
+"kana": "もともと",
+"suggested_surface": "元々",
+"note": "normal spelling"
+},
+{
+"id": 8403,
+"surface": "人々",
+"kana": "にんにん",
+"suggested_surface": "にんにん",
+"note": "ninja interjection"
+},
+{
+"id": 8417,
+"surface": "盤",
+"kana": "さら",
+"suggested_surface": "皿",
+"note": "さら = plate"
+},
+{
+"id": 8437,
+"surface": "陽子",
+"kana": "ようし",
+"suggested_surface": "よし",
+"note": "interjection ようし"
+},
+{
+"id": 8448,
+"surface": "是",
+"kana": "ここ",
+"suggested_surface": "ここ",
+"note": "ここ"
+},
+{
+"id": 8460,
+"surface": "堂",
+"kana": "どう",
+"suggested_surface": "どう",
+"note": "どう"
+},
+{
+"id": 8472,
+"surface": "殿下",
+"kana": "てんが",
+"suggested_surface": "てんが",
+"note": "uncertain; not 殿下"
+},
+{
+"id": 8478,
+"surface": "弥生",
+"kana": "いやおい",
+"suggested_surface": "いや、おい",
+"note": "いや おい"
+},
+{
+"id": 8561,
+"surface": "入",
+"kana": "しお",
+"suggested_surface": "塩",
+"note": "しお = salt"
+},
+{
+"id": 8565,
+"surface": "会す",
+"kana": "えす",
+"suggested_surface": "エス",
+"note": "letter S"
+},
+{
+"id": 8577,
+"surface": "パソ婚",
+"kana": "パソこん",
+"suggested_surface": "パソコン",
+"note": "PC"
+}
+]

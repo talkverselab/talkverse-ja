@@ -1,0 +1,275 @@
+[
+{
+"id": 7990,
+"surface": "流",
+"kana": "る",
+"suggested_surface": "る",
+"note": "동사 어미 조각"
+},
+{
+"id": 7991,
+"surface": "鋳る",
+"kana": "いる",
+"suggested_surface": "いる",
+"note": "있다(居る) 오변환"
+},
+{
+"id": 7992,
+"surface": "殊",
+"kana": "け",
+"suggested_surface": "け",
+"note": "회상 종조사(っけ)"
+},
+{
+"id": 7993,
+"surface": "殊",
+"kana": "こと",
+"suggested_surface": "事",
+"note": "'것' 의미의 こと"
+},
+{
+"id": 8006,
+"surface": "算賀",
+"kana": "さんが",
+"suggested_surface": "さんが",
+"note": "~さん+が 조각"
+},
+{
+"id": 8007,
+"surface": "負",
+"kana": "おい",
+"suggested_surface": "おい",
+"note": "감탄사 오변환"
+},
+{
+"id": 8019,
+"surface": "個個に",
+"kana": "ここに",
+"suggested_surface": "ここに",
+"note": "여기에"
+},
+{
+"id": 8026,
+"surface": "常",
+"kana": "ただ",
+"suggested_surface": "ただ",
+"note": "부사 '그냥'"
+},
+{
+"id": 8027,
+"surface": "常",
+"kana": "とこ",
+"suggested_surface": "とこ",
+"note": "ところ 구어"
+},
+{
+"id": 8033,
+"surface": "陽に",
+"kana": "ように",
+"suggested_surface": "ように",
+"note": "~ように"
+},
+{
+"id": 8043,
+"surface": "初める",
+"kana": "そめる",
+"suggested_surface": "染める",
+"note": "물들이다"
+},
+{
+"id": 8047,
+"surface": "請う",
+"kana": "こう",
+"suggested_surface": "こう",
+"note": "부사 '이렇게'"
+},
+{
+"id": 8055,
+"surface": "短打",
+"kana": "たんだ",
+"suggested_surface": "たんだ",
+"note": "~たんだ 조각"
+},
+{
+"id": 8064,
+"surface": "過渡",
+"kana": "かと",
+"suggested_surface": "かと",
+"note": "~かと 조각"
+},
+{
+"id": 8066,
+"surface": "生ける",
+"kana": "いける",
+"suggested_surface": "いける",
+"note": "가능 동사 行ける"
+},
+{
+"id": 8109,
+"surface": "似寄る",
+"kana": "による",
+"suggested_surface": "による",
+"note": "~による"
+},
+{
+"id": 8110,
+"surface": "羃",
+"kana": "べき",
+"suggested_surface": "べき",
+"note": "~べき"
+},
+{
+"id": 8111,
+"surface": "打ち荷",
+"kana": "うちに",
+"suggested_surface": "うちに",
+"note": "~うちに"
+},
+{
+"id": 8113,
+"surface": "賀する",
+"kana": "がする",
+"suggested_surface": "がする",
+"note": "~がする"
+},
+{
+"id": 8122,
+"surface": "同氏",
+"kana": "どうし",
+"suggested_surface": "同士",
+"note": "끼리"
+},
+{
+"id": 8123,
+"surface": "区内",
+"kana": "くない",
+"suggested_surface": "くない",
+"note": "형용사 부정 조각"
+},
+{
+"id": 8134,
+"surface": "底荷",
+"kana": "そこに",
+"suggested_surface": "そこに",
+"note": "거기에"
+},
+{
+"id": 8171,
+"surface": "隣る",
+"kana": "となる",
+"suggested_surface": "となる",
+"note": "~となる"
+},
+{
+"id": 8173,
+"surface": "遺体",
+"kana": "いたい",
+"suggested_surface": "痛い",
+"note": "아프다"
+},
+{
+"id": 8174,
+"surface": "糊塗",
+"kana": "こと",
+"suggested_surface": "事",
+"note": "'것' 의미의 こと"
+},
+{
+"id": 8182,
+"surface": "葬送",
+"kana": "そうそう",
+"suggested_surface": "そうそう",
+"note": "맞장구"
+},
+{
+"id": 8185,
+"surface": "言値",
+"kana": "いいね",
+"suggested_surface": "いいね",
+"note": "좋네"
+},
+{
+"id": 8186,
+"surface": "多飲",
+"kana": "たいん",
+"suggested_surface": "たいん",
+"note": "~たいんだ 조각"
+},
+{
+"id": 8207,
+"surface": "読過",
+"kana": "どっか",
+"suggested_surface": "どっか",
+"note": "어딘가"
+},
+{
+"id": 8220,
+"surface": "泰斗",
+"kana": "たいと",
+"suggested_surface": "たいと",
+"note": "~たいと 조각"
+},
+{
+"id": 8228,
+"surface": "代",
+"kana": "しろ",
+"suggested_surface": "しろ",
+"note": "する 명령형"
+},
+{
+"id": 8229,
+"surface": "代",
+"kana": "よ",
+"suggested_surface": "よ",
+"note": "종조사"
+},
+{
+"id": 8237,
+"surface": "模する",
+"kana": "もする",
+"suggested_surface": "もする",
+"note": "~もする"
+},
+{
+"id": 8249,
+"surface": "私邸",
+"kana": "してい",
+"suggested_surface": "してい",
+"note": "~している 조각"
+},
+{
+"id": 8254,
+"surface": "異端",
+"kana": "いたん",
+"suggested_surface": "いたん",
+"note": "~いたんだ 조각"
+},
+{
+"id": 8258,
+"surface": "害意",
+"kana": "がいい",
+"suggested_surface": "がいい",
+"note": "~がいい"
+},
+{
+"id": 8282,
+"surface": "佳",
+"kana": "か",
+"suggested_surface": "か",
+"note": "의문 종조사"
+},
+{
+"id": 8307,
+"surface": "褐炭",
+"kana": "かったん",
+"suggested_surface": "かったん",
+"note": "~かったんだ 조각"
+},
+{
+"id": 8308,
+"surface": "陪都",
+"kana": "ばいと",
+"suggested_surface": "バイト",
+"note": "아르바이트"
+}
+]
