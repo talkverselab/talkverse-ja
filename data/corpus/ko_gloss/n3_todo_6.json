@@ -1,0 +1,1562 @@
+[
+{
+"id": 2769,
+"surface": "掻く",
+"kana": "かく",
+"en": "to scratch"
+},
+{
+"id": 2770,
+"surface": "揃える",
+"kana": "そろえる",
+"en": "to put things in order, to arrange"
+},
+{
+"id": 2771,
+"surface": "提出",
+"kana": "ていしゅつ",
+"en": "presentation, submission, filing"
+},
+{
+"id": 2772,
+"surface": "提案",
+"kana": "ていあん",
+"en": "proposal, proposition, suggestion"
+},
+{
+"id": 2773,
+"surface": "揚げる",
+"kana": "あげる",
+"en": "to lift, to fry"
+},
+{
+"id": 2774,
+"surface": "換える",
+"kana": "かえる",
+"en": "to exchange, to interchange, to substitute"
+},
+{
+"id": 2775,
+"surface": "握手",
+"kana": "あくしゅ",
+"en": "handshake"
+},
+{
+"id": 2776,
+"surface": "援助",
+"kana": "えんじょ",
+"en": "assistance, aid, support"
+},
+{
+"id": 2777,
+"surface": "損",
+"kana": "そん",
+"en": "loss, disadvantage"
+},
+{
+"id": 2778,
+"surface": "損害",
+"kana": "そんがい",
+"en": "damage, loss"
+},
+{
+"id": 2779,
+"surface": "摘む",
+"kana": "つむ",
+"en": "to pluck, to pick, to trim"
+},
+{
+"id": 2780,
+"surface": "撒く",
+"kana": "まく",
+"en": "to scatter, to sprinkle, to sow"
+},
+{
+"id": 2781,
+"surface": "操縦",
+"kana": "そうじゅう",
+"en": "management, control, manipulation"
+},
+{
+"id": 2782,
+"surface": "支出",
+"kana": "ししゅつ",
+"en": "expenditure, expenses"
+},
+{
+"id": 2783,
+"surface": "支店",
+"kana": "してん",
+"en": "branch store (office)"
+},
+{
+"id": 2784,
+"surface": "支払",
+"kana": "しはらい",
+"en": "payment"
+},
+{
+"id": 2785,
+"surface": "支給",
+"kana": "しきゅう",
+"en": "payment, allowance"
+},
+{
+"id": 2786,
+"surface": "支配",
+"kana": "しはい",
+"en": "rule, control, direction"
+},
+{
+"id": 2787,
+"surface": "改善",
+"kana": "かいぜん",
+"en": "betterment, improvement"
+},
+{
+"id": 2788,
+"surface": "攻める",
+"kana": "せめる",
+"en": "to attack, to assault"
+},
+{
+"id": 2789,
+"surface": "放れる",
+"kana": "はなれる",
+"en": "to leave, to get free, to cut oneself off"
+},
+{
+"id": 2790,
+"surface": "政府",
+"kana": "せいふ",
+"en": "government, administration"
+},
+{
+"id": 2791,
+"surface": "故人",
+"kana": "こじん",
+"en": "the deceased"
+},
+{
+"id": 2792,
+"surface": "故郷",
+"kana": "こきょう",
+"en": "hometown"
+},
+{
+"id": 2793,
+"surface": "救助",
+"kana": "きゅうじょ",
+"en": "relief, aid, rescue"
+},
+{
+"id": 2794,
+"surface": "教え",
+"kana": "おしえ",
+"en": "teachings, doctrine"
+},
+{
+"id": 2795,
+"surface": "教わる",
+"kana": "おそわる",
+"en": "to be taught"
+},
+{
+"id": 2796,
+"surface": "教科書",
+"kana": "きょうかしょ",
+"en": "textbook"
+},
+{
+"id": 2797,
+"surface": "散らす",
+"kana": "ちらす",
+"en": "to scatter, to disperse, to distribute"
+},
+{
+"id": 2798,
+"surface": "敬意",
+"kana": "けいい",
+"en": "respect, honor"
+},
+{
+"id": 2799,
+"surface": "数える",
+"kana": "かぞえる",
+"en": "to count"
+},
+{
+"id": 2800,
+"surface": "数字",
+"kana": "すうじ",
+"en": "numeral, figure"
+},
+{
+"id": 2801,
+"surface": "整理",
+"kana": "せいり",
+"en": "sorting, arrangement"
+},
+{
+"id": 2802,
+"surface": "文字",
+"kana": "もじ",
+"en": "letter (of alphabet), character"
+},
+{
+"id": 2803,
+"surface": "文字",
+"kana": "もんじ",
+"en": "letter (of alphabet), character"
+},
+{
+"id": 2804,
+"surface": "文明",
+"kana": "ぶんめい",
+"en": "civilization"
+},
+{
+"id": 2805,
+"surface": "料金",
+"kana": "りょうきん",
+"en": "fee, charge, fare"
+},
+{
+"id": 2806,
+"surface": "断つ",
+"kana": "たつ",
+"en": "to sever, to cut off"
+},
+{
+"id": 2807,
+"surface": "新興",
+"kana": "しんこう",
+"en": "rising, developing, emergent"
+},
+{
+"id": 2808,
+"surface": "新鮮",
+"kana": "しんせん",
+"en": "fresh"
+},
+{
+"id": 2809,
+"surface": "方々",
+"kana": "かたがた",
+"en": "persons"
+},
+{
+"id": 2810,
+"surface": "方々",
+"kana": "ほうぼう",
+"en": "here and there, everywhere"
+},
+{
+"id": 2811,
+"surface": "方向",
+"kana": "ほうこう",
+"en": "direction, course, way"
+},
+{
+"id": 2812,
+"surface": "旗",
+"kana": "はた",
+"en": "flag"
+},
+{
+"id": 2813,
+"surface": "既に",
+"kana": "すでに",
+"en": "already (same as もう)"
+},
+{
+"id": 2814,
+"surface": "日中",
+"kana": "にっちゅう",
+"en": "daytime, broad daylight"
+},
+{
+"id": 2815,
+"surface": "日付",
+"kana": "ひづけ",
+"en": "date, dating"
+},
+{
+"id": 2816,
+"surface": "日光",
+"kana": "にっこう",
+"en": "sunlight"
+},
+{
+"id": 2817,
+"surface": "日常",
+"kana": "にちじょう",
+"en": "ordinary, regular, everyday"
+},
+{
+"id": 2818,
+"surface": "旧",
+"kana": "きゅう",
+"en": "ex-"
+},
+{
+"id": 2819,
+"surface": "昇る",
+"kana": "のぼる",
+"en": "to arise, to ascend, to go up"
+},
+{
+"id": 2820,
+"surface": "明ける",
+"kana": "あける",
+"en": "to dawn, to become daylight"
+},
+{
+"id": 2821,
+"surface": "明らか",
+"kana": "あきらか",
+"en": "obvious, clear"
+},
+{
+"id": 2822,
+"surface": "明後日",
+"kana": "みょうごにち",
+"en": "day after tomorrow"
+},
+{
+"id": 2823,
+"surface": "明確",
+"kana": "めいかく",
+"en": "clear, definite"
+},
+{
+"id": 2824,
+"surface": "映える",
+"kana": "はえる",
+"en": "to shine, to look attractive, to look pretty"
+},
+{
+"id": 2825,
+"surface": "映す",
+"kana": "うつす",
+"en": "to project, to reflect, to cast (shadow)"
+},
+{
+"id": 2826,
+"surface": "映る",
+"kana": "うつる",
+"en": "to be reflected, to come out (photo)"
+},
+{
+"id": 2827,
+"surface": "昨",
+"kana": "さく",
+"en": "last (year), yesterday"
+},
+{
+"id": 2828,
+"surface": "昼食",
+"kana": "ちゅうしょく",
+"en": "lunch (same as 昼ご飯 (ひるごはん))"
+},
+{
+"id": 2829,
+"surface": "時刻",
+"kana": "じこく",
+"en": "time, hour"
+},
+{
+"id": 2830,
+"surface": "景気",
+"kana": "けいき",
+"en": "condition, state, business (condition)"
+},
+{
+"id": 2831,
+"surface": "暖まる",
+"kana": "あたたまる",
+"en": "to warm up"
+},
+{
+"id": 2832,
+"surface": "暖める",
+"kana": "あたためる",
+"en": "to warm (up to someone/something), to heat (up to someone/something)"
+},
+{
+"id": 2833,
+"surface": "暗記",
+"kana": "あんき",
+"en": "memorization, learning by heart"
+},
+{
+"id": 2834,
+"surface": "暮らし",
+"kana": "くらし",
+"en": "living; life style"
+},
+{
+"id": 2835,
+"surface": "暮れ",
+"kana": "くれ",
+"en": "year end,"
+},
+{
+"id": 2836,
+"surface": "曜日",
+"kana": "ようび",
+"en": "day of the week"
+},
+{
+"id": 2837,
+"surface": "更に",
+"kana": "さらに",
+"en": "furthermore, moreover"
+},
+{
+"id": 2838,
+"surface": "書斎",
+"kana": "しょさい",
+"en": "study, den"
+},
+{
+"id": 2839,
+"surface": "書物",
+"kana": "しょもつ",
+"en": "books"
+},
+{
+"id": 2840,
+"surface": "書類",
+"kana": "しょるい",
+"en": "documents, official papers"
+},
+{
+"id": 2841,
+"surface": "替える",
+"kana": "かえる",
+"en": "to exchange, to interchange, to substitute"
+},
+{
+"id": 2842,
+"surface": "最中",
+"kana": "さいちゅう",
+"en": "in the middle of"
+},
+{
+"id": 2843,
+"surface": "最終",
+"kana": "さいしゅう",
+"en": "last, closing"
+},
+{
+"id": 2844,
+"surface": "有利",
+"kana": "ゆうり",
+"en": "advantageous, better"
+},
+{
+"id": 2845,
+"surface": "有効",
+"kana": "ゆうこう",
+"en": "valid, effectual"
+},
+{
+"id": 2846,
+"surface": "有機",
+"kana": "ゆうき",
+"en": "organic"
+},
+{
+"id": 2847,
+"surface": "有無",
+"kana": "うむ",
+"en": "yes or no, presence or absence"
+},
+{
+"id": 2848,
+"surface": "有能",
+"kana": "ゆうのう",
+"en": "able, capable, efficient"
+},
+{
+"id": 2849,
+"surface": "服装",
+"kana": "ふくそう",
+"en": "clothes, attire"
+},
+{
+"id": 2850,
+"surface": "望み",
+"kana": "のぞみ",
+"en": "wish, desire, (a) hope"
+},
+{
+"id": 2851,
+"surface": "期間",
+"kana": "きかん",
+"en": "period, term"
+},
+{
+"id": 2852,
+"surface": "期限",
+"kana": "きげん",
+"en": "deadline, term"
+},
+{
+"id": 2853,
+"surface": "末",
+"kana": "すえ",
+"en": "the end of, powder"
+},
+{
+"id": 2854,
+"surface": "末",
+"kana": "まつ",
+"en": "the end of"
+},
+{
+"id": 2855,
+"surface": "札",
+"kana": "さつ",
+"en": "bill, note"
+},
+{
+"id": 2856,
+"surface": "材料",
+"kana": "ざいりょう",
+"en": "ingredients, material"
+},
+{
+"id": 2857,
+"surface": "束",
+"kana": "たば",
+"en": "bunch, bundle"
+},
+{
+"id": 2858,
+"surface": "来",
+"kana": "らい～",
+"en": "next ~"
+},
+{
+"id": 2859,
+"surface": "東洋",
+"kana": "とうよう",
+"en": "Orient"
+},
+{
+"id": 2860,
+"surface": "松",
+"kana": "まつ",
+"en": "pine tree"
+},
+{
+"id": 2861,
+"surface": "枠",
+"kana": "わく",
+"en": "frame, slide"
+},
+{
+"id": 2862,
+"surface": "柵",
+"kana": "さく",
+"en": "fence, paling"
+},
+{
+"id": 2863,
+"surface": "栄養",
+"kana": "えいよう",
+"en": "nutrition, nourishment"
+},
+{
+"id": 2864,
+"surface": "校舎",
+"kana": "こうしゃ",
+"en": "school building"
+},
+{
+"id": 2865,
+"surface": "株",
+"kana": "かぶ",
+"en": "stock; stump (of tree)"
+},
+{
+"id": 2866,
+"surface": "核",
+"kana": "かく",
+"en": "nucleus, kernel"
+},
+{
+"id": 2867,
+"surface": "根",
+"kana": "ね",
+"en": "root"
+},
+{
+"id": 2868,
+"surface": "格",
+"kana": "かく",
+"en": "status, character, case"
+},
+{
+"id": 2869,
+"surface": "案",
+"kana": "あん",
+"en": "plan, scheme, proposal"
+},
+{
+"id": 2870,
+"surface": "案外",
+"kana": "あんがい",
+"en": "unexpectedly"
+},
+{
+"id": 2871,
+"surface": "梅",
+"kana": "うめ",
+"en": "plum, lowest (of a three-tier ranking system)"
+},
+{
+"id": 2872,
+"surface": "梅雨",
+"kana": "つゆ",
+"en": "rainy season"
+},
+{
+"id": 2873,
+"surface": "梅雨",
+"kana": "ばいう",
+"en": "rainy season"
+},
+{
+"id": 2874,
+"surface": "棒",
+"kana": "ぼう",
+"en": "pole, rod, stick"
+},
+{
+"id": 2875,
+"surface": "棟",
+"kana": "とう",
+"en": "ridge (of roof"
+},
+{
+"id": 2876,
+"surface": "椀",
+"kana": "わん",
+"en": "bowl"
+},
+{
+"id": 2877,
+"surface": "植物",
+"kana": "しょくぶつ",
+"en": "plant, vegetation"
+},
+{
+"id": 2878,
+"surface": "検討",
+"kana": "けんとう",
+"en": "consideration, examination, investigation"
+},
+{
+"id": 2879,
+"surface": "極",
+"kana": "ごく",
+"en": "quite, very"
+},
+{
+"id": 2880,
+"surface": "楽器",
+"kana": "がっき",
+"en": "musical instrument"
+},
+{
+"id": 2881,
+"surface": "構成",
+"kana": "こうせい",
+"en": "organization, composition"
+},
+{
+"id": 2882,
+"surface": "様々",
+"kana": "さまざま",
+"en": "varied, various"
+},
+{
+"id": 2883,
+"surface": "模様",
+"kana": "もよう",
+"en": "pattern, figure, design"
+},
+{
+"id": 2884,
+"surface": "権利",
+"kana": "けんり",
+"en": "right, privilege"
+},
+{
+"id": 2885,
+"surface": "横切る",
+"kana": "よこぎる",
+"en": "to cross (e.g., arms), to traverse"
+},
+{
+"id": 2886,
+"surface": "横断",
+"kana": "おうだん",
+"en": "crossing"
+},
+{
+"id": 2887,
+"surface": "機嫌",
+"kana": "きげん",
+"en": "humor, temper, mood"
+},
+{
+"id": 2888,
+"surface": "機械",
+"kana": "きかい",
+"en": "machine, machinery"
+},
+{
+"id": 2889,
+"surface": "機構",
+"kana": "きこう",
+"en": "mechanism, organization"
+},
+{
+"id": 2890,
+"surface": "機能",
+"kana": "きのう",
+"en": "function, faculty"
+},
+{
+"id": 2891,
+"surface": "機関",
+"kana": "きかん",
+"en": "engine; institution, organization"
+},
+{
+"id": 2892,
+"surface": "欠く",
+"kana": "かく",
+"en": "to lack, to crack"
+},
+{
+"id": 2893,
+"surface": "欠ける",
+"kana": "かける",
+"en": "to be lacking"
+},
+{
+"id": 2894,
+"surface": "欠席",
+"kana": "けっせき",
+"en": "absence, non-attendance"
+},
+{
+"id": 2895,
+"surface": "欠点",
+"kana": "けってん",
+"en": "faults, defect, weakness"
+},
+{
+"id": 2896,
+"surface": "欠陥",
+"kana": "けっかん",
+"en": "defect, fault, deficiency"
+},
+{
+"id": 2897,
+"surface": "次々",
+"kana": "つぎつぎ",
+"en": "in succession, one by one"
+},
+{
+"id": 2898,
+"surface": "次ぐ",
+"kana": "つぐ",
+"en": "to rank next to, to come after"
+},
+{
+"id": 2899,
+"surface": "歌手",
+"kana": "かしゅ",
+"en": "singer"
+},
+{
+"id": 2900,
+"surface": "歌謡",
+"kana": "かよう",
+"en": "song, ballad"
+},
+{
+"id": 2901,
+"surface": "歓迎",
+"kana": "かんげい",
+"en": "welcome, reception"
+},
+{
+"id": 2902,
+"surface": "正",
+"kana": "せい",
+"en": "(logical) true, regular"
+},
+{
+"id": 2903,
+"surface": "正午",
+"kana": "しょうご",
+"en": "noon, mid-day"
+},
+{
+"id": 2904,
+"surface": "正式",
+"kana": "せいしき",
+"en": "official, formal"
+},
+{
+"id": 2905,
+"surface": "正確",
+"kana": "せいかく",
+"en": "accurate, punctuality, exact"
+},
+{
+"id": 2906,
+"surface": "正規",
+"kana": "せいき",
+"en": "regular, legitimate"
+},
+{
+"id": 2907,
+"surface": "歩道",
+"kana": "ほどう",
+"en": "walkway"
+},
+{
+"id": 2908,
+"surface": "残り",
+"kana": "のこり",
+"en": "remaining, left-over"
+},
+{
+"id": 2909,
+"surface": "殖やす",
+"kana": "ふやす",
+"en": "to increase, to add to"
+},
+{
+"id": 2910,
+"surface": "段",
+"kana": "だん",
+"en": "step, stair, grade"
+},
+{
+"id": 2911,
+"surface": "殻",
+"kana": "から",
+"en": "shell, husk, hull"
+},
+{
+"id": 2912,
+"surface": "比較",
+"kana": "ひかく",
+"en": "comparison"
+},
+{
+"id": 2913,
+"surface": "毛布",
+"kana": "もうふ",
+"en": "blanket"
+},
+{
+"id": 2914,
+"surface": "気の毒",
+"kana": "きのどく",
+"en": "pitiful, a pity"
+},
+{
+"id": 2915,
+"surface": "気体",
+"kana": "きたい",
+"en": "vapor, gas"
+},
+{
+"id": 2916,
+"surface": "気候",
+"kana": "きこう",
+"en": "climate"
+},
+{
+"id": 2917,
+"surface": "気味",
+"kana": "きみ",
+"en": "-like, -looking, -looked"
+},
+{
+"id": 2918,
+"surface": "気温",
+"kana": "きおん",
+"en": "temperature (weather - not used for things)"
+},
+{
+"id": 2919,
+"surface": "水洗",
+"kana": "すいせん",
+"en": "flushing"
+},
+{
+"id": 2920,
+"surface": "水準",
+"kana": "すいじゅん",
+"en": "level, standard"
+},
+{
+"id": 2921,
+"surface": "氷",
+"kana": "こおり",
+"en": "ice, hail"
+},
+{
+"id": 2922,
+"surface": "永久",
+"kana": "えいきゅう",
+"en": "eternity, perpetuity, immortality"
+},
+{
+"id": 2923,
+"surface": "汗",
+"kana": "あせ",
+"en": "sweat, perspiration"
+},
+{
+"id": 2924,
+"surface": "汚す",
+"kana": "よごす",
+"en": "to pollute, to make dirty"
+},
+{
+"id": 2925,
+"surface": "汚染",
+"kana": "おせん",
+"en": "pollution, contamination"
+},
+{
+"id": 2926,
+"surface": "汲む",
+"kana": "くむ",
+"en": "to draw, to scoop, to pump"
+},
+{
+"id": 2927,
+"surface": "決まり",
+"kana": "きまり",
+"en": "settlement, conclusion, rule"
+},
+{
+"id": 2928,
+"surface": "決定",
+"kana": "けってい",
+"en": "decision, determination"
+},
+{
+"id": 2929,
+"surface": "決心",
+"kana": "けっしん",
+"en": "determination, resolution"
+},
+{
+"id": 2930,
+"surface": "決行",
+"kana": "けっこう",
+"en": "doing (with resolve), carrying out (e.g., a plan)"
+},
+{
+"id": 2931,
+"surface": "沈む",
+"kana": "しずむ",
+"en": "to sink; to feel depressed"
+},
+{
+"id": 2932,
+"surface": "沖",
+"kana": "おき",
+"en": "open sea"
+},
+{
+"id": 2933,
+"surface": "油",
+"kana": "あぶら",
+"en": "oil"
+},
+{
+"id": 2934,
+"surface": "治める",
+"kana": "おさめる",
+"en": "to govern, to manage; to subdue"
+},
+{
+"id": 2935,
+"surface": "沿う",
+"kana": "そう",
+"en": "to run along, to follow"
+},
+{
+"id": 2936,
+"surface": "泊める",
+"kana": "とめる",
+"en": "to have someone stay (over night) (v.t.)"
+},
+{
+"id": 2937,
+"surface": "法",
+"kana": "ほう",
+"en": "Act (law: the X Act)"
+},
+{
+"id": 2938,
+"surface": "泡",
+"kana": "あわ",
+"en": "bubble, foam"
+},
+{
+"id": 2939,
+"surface": "波",
+"kana": "なみ",
+"en": "wave"
+},
+{
+"id": 2940,
+"surface": "泥",
+"kana": "どろ",
+"en": "mud"
+},
+{
+"id": 2941,
+"surface": "注ぐ",
+"kana": "そそぐ",
+"en": "to pour (into)"
+},
+{
+"id": 2942,
+"surface": "注ぐ",
+"kana": "つぐ",
+"en": "to pour (into)"
+},
+{
+"id": 2943,
+"surface": "注文",
+"kana": "ちゅうもん",
+"en": "order, request"
+},
+{
+"id": 2944,
+"surface": "注目",
+"kana": "ちゅうもく",
+"en": "notice, attention, observation"
+},
+{
+"id": 2945,
+"surface": "泳ぎ",
+"kana": "およぎ",
+"en": "swimming"
+},
+{
+"id": 2946,
+"surface": "洗剤",
+"kana": "せんざい",
+"en": "detergent"
+},
+{
+"id": 2947,
+"surface": "活動",
+"kana": "かつどう",
+"en": "action, activity"
+},
+{
+"id": 2948,
+"surface": "活気",
+"kana": "かっき",
+"en": "vigor; liveliness; vitality; energy"
+},
+{
+"id": 2949,
+"surface": "活用",
+"kana": "かつよう",
+"en": "conjugation; practical use"
+},
+{
+"id": 2950,
+"surface": "活躍",
+"kana": "かつやく",
+"en": "activity"
+},
+{
+"id": 2951,
+"surface": "流れ",
+"kana": "ながれ",
+"en": "stream, current"
+},
+{
+"id": 2952,
+"surface": "流行",
+"kana": "りゅうこう",
+"en": "fashionable, fad, prevailing"
+},
+{
+"id": 2953,
+"surface": "消費",
+"kana": "しょうひ",
+"en": "consumption, expenditure"
+},
+{
+"id": 2954,
+"surface": "消防",
+"kana": "しょうぼう",
+"en": "fire fighting, fire department"
+},
+{
+"id": 2955,
+"surface": "深まる",
+"kana": "ふかまる",
+"en": "to deepen"
+},
+{
+"id": 2956,
+"surface": "深める",
+"kana": "ふかめる",
+"en": "to deepen, to heighten, to intensify"
+},
+{
+"id": 2957,
+"surface": "深刻",
+"kana": "しんこく",
+"en": "serious"
+},
+{
+"id": 2958,
+"surface": "混ざる",
+"kana": "まざる",
+"en": "to be mixed, to mingle with"
+},
+{
+"id": 2959,
+"surface": "混じる",
+"kana": "まじる",
+"en": "to be mixed, to mingle with"
+},
+{
+"id": 2960,
+"surface": "混ぜる",
+"kana": "まぜる",
+"en": "to mix, to stir"
+},
+{
+"id": 2961,
+"surface": "混乱",
+"kana": "こんらん",
+"en": "chaos, confusion, mayhem"
+},
+{
+"id": 2962,
+"surface": "混雑",
+"kana": "こんざつ",
+"en": "confusion, congestion"
+},
+{
+"id": 2963,
+"surface": "清む",
+"kana": "すむ",
+"en": "to clear (e.g., weather), to become transparent"
+},
+{
+"id": 2964,
+"surface": "清潔",
+"kana": "せいけつ",
+"en": "clean"
+},
+{
+"id": 2965,
+"surface": "渇く",
+"kana": "かわく",
+"en": "to be thirsty"
+},
+{
+"id": 2966,
+"surface": "済ませる",
+"kana": "すませる",
+"en": "to be finished"
+},
+{
+"id": 2967,
+"surface": "渋滞",
+"kana": "じゅうたい",
+"en": "congestion (e.g., traffic), delay"
+},
+{
+"id": 2968,
+"surface": "減らす",
+"kana": "へらす",
+"en": "to decrease, to diminish"
+},
+{
+"id": 2969,
+"surface": "減少",
+"kana": "げんしょう",
+"en": "decrease, reduction, decline"
+},
+{
+"id": 2970,
+"surface": "渦",
+"kana": "うず",
+"en": "swirl"
+},
+{
+"id": 2971,
+"surface": "温かい",
+"kana": "あたたかい",
+"en": "warm"
+},
+{
+"id": 2972,
+"surface": "温まる",
+"kana": "あたたまる",
+"en": "to warm oneself, to get warm"
+},
+{
+"id": 2973,
+"surface": "温める",
+"kana": "あたためる",
+"en": "to warm, to heat"
+},
+{
+"id": 2974,
+"surface": "温度",
+"kana": "おんど",
+"en": "temperature"
+},
+{
+"id": 2975,
+"surface": "温暖",
+"kana": "おんだん",
+"en": "warmth"
+},
+{
+"id": 2976,
+"surface": "測る",
+"kana": "はかる",
+"en": "to measure, to weigh, to survey"
+},
+{
+"id": 2977,
+"surface": "湿る",
+"kana": "しめる",
+"en": "to be wet, to be damp"
+},
+{
+"id": 2978,
+"surface": "湿度",
+"kana": "しつど",
+"en": "humidity"
+},
+{
+"id": 2979,
+"surface": "湿気",
+"kana": "しっけ",
+"en": "moisture, humidity, dampness"
+},
+{
+"id": 2980,
+"surface": "満ちる",
+"kana": "みちる",
+"en": "to be full, to mature"
+},
+{
+"id": 2981,
+"surface": "満足",
+"kana": "まんぞく",
+"en": "satisfaction"
+},
+{
+"id": 2982,
+"surface": "溺れる",
+"kana": "おぼれる",
+"en": "to be drowned, to indulge in"
+},
+{
+"id": 2983,
+"surface": "滅多に",
+"kana": "めったに",
+"en": "rarely (with neg. verb), seldom"
+},
+{
+"id": 2984,
+"surface": "滞在",
+"kana": "たいざい",
+"en": "stay, sojourn"
+},
+{
+"id": 2985,
+"surface": "演奏",
+"kana": "えんそう",
+"en": "musical performance"
+},
+{
+"id": 2986,
+"surface": "演技",
+"kana": "えんぎ",
+"en": "acting, performance"
+},
+{
+"id": 2987,
+"surface": "演説",
+"kana": "えんぜつ",
+"en": "speech, address"
+},
+{
+"id": 2988,
+"surface": "激しい",
+"kana": "はげしい",
+"en": "violent, vehement, intense"
+},
+{
+"id": 2989,
+"surface": "濠",
+"kana": "ほり",
+"en": "moat"
+},
+{
+"id": 2990,
+"surface": "濡らす",
+"kana": "ぬらす",
+"en": "to wet, to soak"
+},
+{
+"id": 2991,
+"surface": "火災",
+"kana": "かさい",
+"en": "conflagration, fire"
+},
+{
+"id": 2992,
+"surface": "灯",
+"kana": "ひ",
+"en": "light"
+},
+{
+"id": 2993,
+"surface": "灰",
+"kana": "はい",
+"en": "ash"
+},
+{
+"id": 2994,
+"surface": "炊く",
+"kana": "たく",
+"en": "to boil, to cook"
+},
+{
+"id": 2995,
+"surface": "炎",
+"kana": "ほのお",
+"en": "flame"
+},
+{
+"id": 2996,
+"surface": "炒める",
+"kana": "いためる",
+"en": "to stir-fry"
+},
+{
+"id": 2997,
+"surface": "為る",
+"kana": "する",
+"en": "to do, to attempt"
+},
+{
+"id": 2998,
+"surface": "為る",
+"kana": "なる",
+"en": "to change, to be of use, to reach to"
+},
+{
+"id": 2999,
+"surface": "無",
+"kana": "ぶ",
+"en": "nothing, naught, nil, zero"
+},
+{
+"id": 3000,
+"surface": "無",
+"kana": "む",
+"en": "nothing, naught, zero"
+},
+{
+"id": 3001,
+"surface": "無し",
+"kana": "なし",
+"en": "without"
+},
+{
+"id": 3002,
+"surface": "無料",
+"kana": "むりょう",
+"en": "free, no charge"
+},
+{
+"id": 3003,
+"surface": "煙",
+"kana": "けむり",
+"en": "smoke, fumes"
+},
+{
+"id": 3004,
+"surface": "照明",
+"kana": "しょうめい",
+"en": "illumination"
+},
+{
+"id": 3005,
+"surface": "煮える",
+"kana": "にえる",
+"en": "to boil, to cook, to be cooked"
+},
+{
+"id": 3006,
+"surface": "熱中",
+"kana": "ねっちゅう",
+"en": "enthusiasm, zeal, mania"
+},
+{
+"id": 3007,
+"surface": "熱帯",
+"kana": "ねったい",
+"en": "tropics"
+},
+{
+"id": 3008,
+"surface": "燃やす",
+"kana": "もやす",
+"en": "to burn"
+},
+{
+"id": 3009,
+"surface": "片付く",
+"kana": "かたづく",
+"en": "to put in order, to solve"
+},
+{
+"id": 3010,
+"surface": "片付け",
+"kana": "かたづけ",
+"en": "tidying up, finishing"
+},
+{
+"id": 3011,
+"surface": "版",
+"kana": "はん",
+"en": "edition"
+},
+{
+"id": 3012,
+"surface": "牛",
+"kana": "うし",
+"en": "cattle, cow"
+},
+{
+"id": 3013,
+"surface": "物事",
+"kana": "ものごと",
+"en": "things, everything"
+},
+{
+"id": 3014,
+"surface": "物価",
+"kana": "ぶっか",
+"en": "(commodity/consumer) prices"
+},
+{
+"id": 3015,
+"surface": "物理",
+"kana": "ぶつり",
+"en": "physics"
+},
+{
+"id": 3016,
+"surface": "物質",
+"kana": "ぶっしつ",
+"en": "material, substance"
+},
+{
+"id": 3017,
+"surface": "特徴",
+"kana": "とくちょう",
+"en": "characteristic(s); feature(s); trait(s)"
+},
+{
+"id": 3018,
+"surface": "特長",
+"kana": "とくちょう",
+"en": "forte, merit"
+},
+{
+"id": 3019,
+"surface": "狩り",
+"kana": "かり",
+"en": "hunting"
+},
+{
+"id": 3020,
+"surface": "独り",
+"kana": "ひとり",
+"en": "alone, unmarried"
+},
+{
+"id": 3021,
+"surface": "独特",
+"kana": "どくとく",
+"en": "peculiarity, uniqueness, characteristic"
+},
+{
+"id": 3022,
+"surface": "独立",
+"kana": "どくりつ",
+"en": "independence (e.g., Ind. Day), self-support"
+},
+{
+"id": 3023,
+"surface": "独身",
+"kana": "どくしん",
+"en": "single, unmarried"
+},
+{
+"id": 3024,
+"surface": "猿",
+"kana": "さる",
+"en": "monkey"
+},
+{
+"id": 3025,
+"surface": "率",
+"kana": "りつ",
+"en": "rate, ratio, percentage"
+},
+{
+"id": 3026,
+"surface": "王子",
+"kana": "おうじ",
+"en": "prince"
+},
+{
+"id": 3027,
+"surface": "王様",
+"kana": "おうさま",
+"en": "king"
+},
+{
+"id": 3028,
+"surface": "現す",
+"kana": "あらわす",
+"en": "to show, to appear, to reveal"
+}
+]
