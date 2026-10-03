@@ -1,0 +1,1562 @@
+[
+{
+"id": 1985,
+"surface": "すなわち",
+"kana": "すなわち",
+"en": "that is, namely, e.g."
+},
+{
+"id": 1986,
+"surface": "すみません",
+"kana": "すみません",
+"en": "sorry, excuse me"
+},
+{
+"id": 1987,
+"surface": "すれ違う",
+"kana": "すれちがう",
+"en": "to pass by one another"
+},
+{
+"id": 1988,
+"surface": "ずっと",
+"kana": "ずっと",
+"en": "for a long time; all the time; consecutively"
+},
+{
+"id": 1989,
+"surface": "ずれる",
+"kana": "ずれる",
+"en": "move, off the point"
+},
+{
+"id": 1990,
+"surface": "そこで",
+"kana": "そこで",
+"en": "so (conj.), accordingly"
+},
+{
+"id": 1991,
+"surface": "そっくり",
+"kana": "そっくり",
+"en": "the splitting image of; entirely"
+},
+{
+"id": 1992,
+"surface": "そっと",
+"kana": "そっと",
+"en": "softly, gently"
+},
+{
+"id": 1993,
+"surface": "そのうえ",
+"kana": "そのうえ",
+"en": "in addition, furthermore"
+},
+{
+"id": 1994,
+"surface": "そのうち",
+"kana": "そのうち",
+"en": "before long, eventually, sooner or later"
+},
+{
+"id": 1995,
+"surface": "そのまま",
+"kana": "そのまま",
+"en": "without change, as it is (e.g., now)"
+},
+{
+"id": 1996,
+"surface": "それぞれ",
+"kana": "それぞれ",
+"en": "each, every, respectively"
+},
+{
+"id": 1997,
+"surface": "それでも",
+"kana": "それでも",
+"en": "but (still), and yet, nevertheless"
+},
+{
+"id": 1998,
+"surface": "それと",
+"kana": "それと",
+"en": "and"
+},
+{
+"id": 1999,
+"surface": "それとも",
+"kana": "それとも",
+"en": "or, or else"
+},
+{
+"id": 2000,
+"surface": "たしか",
+"kana": "たしか",
+"en": "certain, sure, if I remember correctly"
+},
+{
+"id": 2001,
+"surface": "ただ",
+"kana": "ただ",
+"en": "free of charge; just (~); only (~)"
+},
+{
+"id": 2002,
+"surface": "たっぷり",
+"kana": "たっぷり",
+"en": "full, in plenty, ample"
+},
+{
+"id": 2003,
+"surface": "たとえ",
+"kana": "たとえ",
+"en": "even if, no matter, though"
+},
+{
+"id": 2004,
+"surface": "たびたび",
+"kana": "たびたび",
+"en": "often, repeatedly, frequently"
+},
+{
+"id": 2005,
+"surface": "たまらない",
+"kana": "たまらない",
+"en": "intolerable, unbearable, unendurable"
+},
+{
+"id": 2006,
+"surface": "だが",
+"kana": "だが",
+"en": "but, however"
+},
+{
+"id": 2007,
+"surface": "だけど",
+"kana": "だけど",
+"en": "however"
+},
+{
+"id": 2009,
+"surface": "ちゃんと",
+"kana": "ちゃんと",
+"en": "perfectly, properly, exactly"
+},
+{
+"id": 2010,
+"surface": "ちょうだい",
+"kana": "ちょうだい",
+"en": "-- colloquial form of ください; typically used by children or women --"
+},
+{
+"id": 2011,
+"surface": "つまり",
+"kana": "つまり",
+"en": "namely; in other words; in short"
+},
+{
+"id": 2012,
+"surface": "できれば",
+"kana": "できれば",
+"en": "if possible…"
+},
+{
+"id": 2013,
+"surface": "ですから",
+"kana": "ですから",
+"en": "therefore"
+},
+{
+"id": 2015,
+"surface": "ところが",
+"kana": "ところが",
+"en": "however, while, even if"
+},
+{
+"id": 2016,
+"surface": "ところで",
+"kana": "ところで",
+"en": "by the way; even if"
+},
+{
+"id": 2017,
+"surface": "とにかく",
+"kana": "とにかく",
+"en": "anyhow, at any rate, anyway"
+},
+{
+"id": 2018,
+"surface": "とんでもない",
+"kana": "とんでもない",
+"en": "outrageous, No way!"
+},
+{
+"id": 2019,
+"surface": "どうしても",
+"kana": "どうしても",
+"en": "at any cost, no matter what, no matter how hard one tries"
+},
+{
+"id": 2020,
+"surface": "どうぞよろしく",
+"kana": "どうぞよろしく",
+"en": "pleased to meet you"
+},
+{
+"id": 2021,
+"surface": "どこか",
+"kana": "どこか",
+"en": "somewhere, anywhere"
+},
+{
+"id": 2022,
+"surface": "どんなに",
+"kana": "どんなに",
+"en": "how, how much"
+},
+{
+"id": 2023,
+"surface": "なお",
+"kana": "なお",
+"en": "still, yet"
+},
+{
+"id": 2024,
+"surface": "なぜなら",
+"kana": "なぜなら",
+"en": "because"
+},
+{
+"id": 2025,
+"surface": "なにも",
+"kana": "なにも",
+"en": "nothing"
+},
+{
+"id": 2026,
+"surface": "にっこり",
+"kana": "にっこり",
+"en": "smile sweetly, smile, grin"
+},
+{
+"id": 2027,
+"surface": "のんびり",
+"kana": "のんびり",
+"en": "carefree, at leisure"
+},
+{
+"id": 2028,
+"surface": "はあ",
+"kana": "はあ",
+"en": "(sigh)"
+},
+{
+"id": 2029,
+"surface": "はさみ",
+"kana": "はさみ",
+"en": "scissors"
+},
+{
+"id": 2030,
+"surface": "ばったり",
+"kana": "ばったり",
+"en": "(to meet) by chance"
+},
+{
+"id": 2031,
+"surface": "ぴったり",
+"kana": "ぴったり",
+"en": "exactly, neatly, sharp"
+},
+{
+"id": 2032,
+"surface": "ふと",
+"kana": "ふと",
+"en": "suddenly, accidentally, incidentally"
+},
+{
+"id": 2033,
+"surface": "ぶつかる",
+"kana": "ぶつかる",
+"en": "to strike, to collide with"
+},
+{
+"id": 2034,
+"surface": "ぶつける",
+"kana": "ぶつける",
+"en": "to knock, to strike hard, to hit and attack"
+},
+{
+"id": 2035,
+"surface": "ほっと",
+"kana": "ほっと",
+"en": "feel relieved"
+},
+{
+"id": 2036,
+"surface": "ほぼ",
+"kana": "ほぼ",
+"en": "almost, roughly"
+},
+{
+"id": 2037,
+"surface": "ぼんやり",
+"kana": "ぼんやり",
+"en": "dim, faint, vague"
+},
+{
+"id": 2039,
+"surface": "まさか",
+"kana": "まさか",
+"en": "by no means"
+},
+{
+"id": 2040,
+"surface": "まさに",
+"kana": "まさに",
+"en": "correctly, surely"
+},
+{
+"id": 2041,
+"surface": "ますます",
+"kana": "ますます",
+"en": "increasingly (same as もっと), more and more"
+},
+{
+"id": 2042,
+"surface": "まとまる",
+"kana": "まとまる",
+"en": "to be collected, to be settled, to be in order"
+},
+{
+"id": 2043,
+"surface": "まとめる",
+"kana": "まとめる",
+"en": "to put in order, to collect, to bring to a conclusion"
+},
+{
+"id": 2044,
+"surface": "まぶしい",
+"kana": "まぶしい",
+"en": "dazzling, radiant"
+},
+{
+"id": 2045,
+"surface": "まるで",
+"kana": "まるで",
+"en": "just like"
+},
+{
+"id": 2046,
+"surface": "もしかすると",
+"kana": "もしかすると",
+"en": "perhaps, maybe, by some chance"
+},
+{
+"id": 2047,
+"surface": "もしも",
+"kana": "もしも",
+"en": "if"
+},
+{
+"id": 2048,
+"surface": "もったいない",
+"kana": "もったいない",
+"en": "wasteful; more than one deserves, unworthy of"
+},
+{
+"id": 2049,
+"surface": "やがて",
+"kana": "やがて",
+"en": "before long, soon, at length"
+},
+{
+"id": 2050,
+"surface": "やや",
+"kana": "やや",
+"en": "a little, partially, somewhat"
+},
+{
+"id": 2052,
+"surface": "よろしく",
+"kana": "よろしく",
+"en": "best regards, please remember me"
+},
+{
+"id": 2053,
+"surface": "わがまま",
+"kana": "わがまま",
+"en": "selfishness, egoism, willfulness"
+},
+{
+"id": 2054,
+"surface": "わざと",
+"kana": "わざと",
+"en": "on purpose"
+},
+{
+"id": 2055,
+"surface": "アイスクリーム",
+"kana": "アイスクリーム",
+"en": "ice cream"
+},
+{
+"id": 2056,
+"surface": "アウト",
+"kana": "アウト",
+"en": "out"
+},
+{
+"id": 2057,
+"surface": "アップ",
+"kana": "アップ",
+"en": "up"
+},
+{
+"id": 2058,
+"surface": "アルバム",
+"kana": "アルバム",
+"en": "album"
+},
+{
+"id": 2059,
+"surface": "アンケート",
+"kana": "アンケート",
+"en": "questionnaire (FRE: enquete), survey"
+},
+{
+"id": 2060,
+"surface": "イメージ",
+"kana": "イメージ",
+"en": "one's image"
+},
+{
+"id": 2061,
+"surface": "インク",
+"kana": "インク",
+"en": "ink"
+},
+{
+"id": 2062,
+"surface": "インタビュー",
+"kana": "インタビュー",
+"en": "interview"
+},
+{
+"id": 2063,
+"surface": "ウイスキー",
+"kana": "ウイスキー",
+"en": "whiskey"
+},
+{
+"id": 2064,
+"surface": "エネルギー",
+"kana": "エネルギー",
+"en": "energy (GER: energie)"
+},
+{
+"id": 2065,
+"surface": "エンジン",
+"kana": "エンジン",
+"en": "engine"
+},
+{
+"id": 2066,
+"surface": "オフィス",
+"kana": "オフィス",
+"en": "office"
+},
+{
+"id": 2067,
+"surface": "カー",
+"kana": "カー",
+"en": "car"
+},
+{
+"id": 2068,
+"surface": "カード",
+"kana": "カード",
+"en": "card, curd"
+},
+{
+"id": 2069,
+"surface": "キャプテン",
+"kana": "キャプテン",
+"en": "captain"
+},
+{
+"id": 2070,
+"surface": "キャンプ",
+"kana": "キャンプ",
+"en": "camp"
+},
+{
+"id": 2071,
+"surface": "クラシック",
+"kana": "クラシック",
+"en": "classic(s)"
+},
+{
+"id": 2072,
+"surface": "クリスマス",
+"kana": "クリスマス",
+"en": "Christmas"
+},
+{
+"id": 2073,
+"surface": "クリーム",
+"kana": "クリーム",
+"en": "cream"
+},
+{
+"id": 2074,
+"surface": "グラス",
+"kana": "グラス",
+"en": "glass; grass"
+},
+{
+"id": 2075,
+"surface": "グランド",
+"kana": "グランド",
+"en": "gland, grand, (electrical) ground"
+},
+{
+"id": 2076,
+"surface": "グループ",
+"kana": "グループ",
+"en": "group"
+},
+{
+"id": 2077,
+"surface": "ケース",
+"kana": "ケース",
+"en": "case"
+},
+{
+"id": 2078,
+"surface": "ゲーム",
+"kana": "ゲーム",
+"en": "game"
+},
+{
+"id": 2079,
+"surface": "コンテスト",
+"kana": "コンテスト",
+"en": "contest"
+},
+{
+"id": 2080,
+"surface": "コーチ",
+"kana": "コーチ",
+"en": "coach"
+},
+{
+"id": 2081,
+"surface": "コード",
+"kana": "コード",
+"en": "code; cord; chord"
+},
+{
+"id": 2082,
+"surface": "ゴール",
+"kana": "ゴール",
+"en": "goal"
+},
+{
+"id": 2083,
+"surface": "サイン",
+"kana": "サイン",
+"en": "autograph; sign; sine"
+},
+{
+"id": 2084,
+"surface": "サービス",
+"kana": "サービス",
+"en": "service, support system; goods or services without charge"
+},
+{
+"id": 2085,
+"surface": "ショック",
+"kana": "ショック",
+"en": "shock"
+},
+{
+"id": 2086,
+"surface": "ジェット機",
+"kana": "ジェットき",
+"en": "jet plane"
+},
+{
+"id": 2087,
+"surface": "ジュース",
+"kana": "ジュース",
+"en": "juice, soft drink; deuce"
+},
+{
+"id": 2088,
+"surface": "ジーンズ",
+"kana": "ジーンズ",
+"en": "jeans"
+},
+{
+"id": 2089,
+"surface": "スイッチ",
+"kana": "スイッチ",
+"en": "switch"
+},
+{
+"id": 2090,
+"surface": "スキー",
+"kana": "スキー",
+"en": "ski"
+},
+{
+"id": 2091,
+"surface": "スケジュール",
+"kana": "スケジュール",
+"en": "schedule"
+},
+{
+"id": 2092,
+"surface": "スケート",
+"kana": "スケート",
+"en": "skate(s), skating"
+},
+{
+"id": 2093,
+"surface": "スタイル",
+"kana": "スタイル",
+"en": "style"
+},
+{
+"id": 2094,
+"surface": "スタンド",
+"kana": "スタンド",
+"en": "stand"
+},
+{
+"id": 2095,
+"surface": "スター",
+"kana": "スター",
+"en": "star"
+},
+{
+"id": 2096,
+"surface": "ストレス",
+"kana": "ストレス",
+"en": "stress"
+},
+{
+"id": 2097,
+"surface": "スピーチ",
+"kana": "スピーチ",
+"en": "speech"
+},
+{
+"id": 2098,
+"surface": "スープ",
+"kana": "スープ",
+"en": "(Western) soup"
+},
+{
+"id": 2099,
+"surface": "セット",
+"kana": "セット",
+"en": "set"
+},
+{
+"id": 2100,
+"surface": "センター",
+"kana": "センター",
+"en": "center"
+},
+{
+"id": 2101,
+"surface": "ソファー",
+"kana": "ソファー",
+"en": "sofa, couch"
+},
+{
+"id": 2102,
+"surface": "タイトル",
+"kana": "タイトル",
+"en": "title"
+},
+{
+"id": 2103,
+"surface": "タイプライター",
+"kana": "タイプライター",
+"en": "typewriter"
+},
+{
+"id": 2104,
+"surface": "タオル",
+"kana": "タオル",
+"en": "(hand) towel"
+},
+{
+"id": 2105,
+"surface": "ダイヤ",
+"kana": "ダイヤ",
+"en": "(railway) schedule; diamond"
+},
+{
+"id": 2106,
+"surface": "ダウン",
+"kana": "ダウン",
+"en": "down"
+},
+{
+"id": 2107,
+"surface": "ダンス",
+"kana": "ダンス",
+"en": "dance"
+},
+{
+"id": 2108,
+"surface": "チャイム",
+"kana": "チャイム",
+"en": "chime"
+},
+{
+"id": 2109,
+"surface": "チャンス",
+"kana": "チャンス",
+"en": "chance, opportunity"
+},
+{
+"id": 2110,
+"surface": "チーズ",
+"kana": "チーズ",
+"en": "cheese"
+},
+{
+"id": 2111,
+"surface": "チーム",
+"kana": "チーム",
+"en": "team"
+},
+{
+"id": 2112,
+"surface": "テント",
+"kana": "テント",
+"en": "tent"
+},
+{
+"id": 2113,
+"surface": "デザイン",
+"kana": "デザイン",
+"en": "design"
+},
+{
+"id": 2114,
+"surface": "デザート",
+"kana": "デザート",
+"en": "dessert"
+},
+{
+"id": 2115,
+"surface": "デモ",
+"kana": "デモ",
+"en": "demo, demonstration"
+},
+{
+"id": 2116,
+"surface": "データ",
+"kana": "データ",
+"en": "data"
+},
+{
+"id": 2117,
+"surface": "デート",
+"kana": "デート",
+"en": "date (in the sense of 'social engagement' only)"
+},
+{
+"id": 2118,
+"surface": "トップ",
+"kana": "トップ",
+"en": "top"
+},
+{
+"id": 2119,
+"surface": "トラック",
+"kana": "トラック",
+"en": "truck; (running) track"
+},
+{
+"id": 2120,
+"surface": "トランプ",
+"kana": "トランプ",
+"en": "playing cards (lit: trump)"
+},
+{
+"id": 2121,
+"surface": "トレーニング",
+"kana": "トレーニング",
+"en": "training"
+},
+{
+"id": 2122,
+"surface": "トン",
+"kana": "トン",
+"en": "ton (1000 lbs.)"
+},
+{
+"id": 2123,
+"surface": "トンネル",
+"kana": "トンネル",
+"en": "tunnel"
+},
+{
+"id": 2124,
+"surface": "ドライブ",
+"kana": "ドライブ",
+"en": "drive, driving"
+},
+{
+"id": 2125,
+"surface": "ドラマ",
+"kana": "ドラマ",
+"en": "drama"
+},
+{
+"id": 2126,
+"surface": "ドレス",
+"kana": "ドレス",
+"en": "dress"
+},
+{
+"id": 2127,
+"surface": "ノック",
+"kana": "ノック",
+"en": "knock; fungo (baseball)"
+},
+{
+"id": 2128,
+"surface": "ノー",
+"kana": "ノー",
+"en": "no"
+},
+{
+"id": 2129,
+"surface": "ハイキング",
+"kana": "ハイキング",
+"en": "hiking"
+},
+{
+"id": 2130,
+"surface": "ハンサム",
+"kana": "ハンサム",
+"en": "handsome"
+},
+{
+"id": 2131,
+"surface": "バイオリン",
+"kana": "バイオリン",
+"en": "violin"
+},
+{
+"id": 2132,
+"surface": "バッグ",
+"kana": "バッグ",
+"en": "bag"
+},
+{
+"id": 2133,
+"surface": "バランス",
+"kana": "バランス",
+"en": "balance"
+},
+{
+"id": 2134,
+"surface": "パイプ",
+"kana": "パイプ",
+"en": "pipe; channels official or otherwise"
+},
+{
+"id": 2135,
+"surface": "パイロット",
+"kana": "パイロット",
+"en": "pilot"
+},
+{
+"id": 2136,
+"surface": "パス",
+"kana": "パス",
+"en": "path, pass (in games)"
+},
+{
+"id": 2137,
+"surface": "パスポート",
+"kana": "パスポート",
+"en": "passport"
+},
+{
+"id": 2138,
+"surface": "パーセント",
+"kana": "パーセント",
+"en": "percent"
+},
+{
+"id": 2139,
+"surface": "ビデオ",
+"kana": "ビデオ",
+"en": "video tape; VCR"
+},
+{
+"id": 2140,
+"surface": "ビール",
+"kana": "ビール",
+"en": "beer"
+},
+{
+"id": 2141,
+"surface": "ピクニック",
+"kana": "ピクニック",
+"en": "picnic"
+},
+{
+"id": 2142,
+"surface": "ピン",
+"kana": "ピン",
+"en": "pin"
+},
+{
+"id": 2143,
+"surface": "ブレーキ",
+"kana": "ブレーキ",
+"en": "a brake"
+},
+{
+"id": 2144,
+"surface": "プラス",
+"kana": "プラス",
+"en": "plus"
+},
+{
+"id": 2145,
+"surface": "プラスチック",
+"kana": "プラスチック",
+"en": "plastic"
+},
+{
+"id": 2146,
+"surface": "プラン",
+"kana": "プラン",
+"en": "plan"
+},
+{
+"id": 2147,
+"surface": "プロ",
+"kana": "プロ",
+"en": "professional"
+},
+{
+"id": 2148,
+"surface": "ベルト",
+"kana": "ベルト",
+"en": "Belt for western clothes"
+},
+{
+"id": 2149,
+"surface": "ベンチ",
+"kana": "ベンチ",
+"en": "bench"
+},
+{
+"id": 2150,
+"surface": "ペンキ",
+"kana": "ペンキ",
+"en": "paint"
+},
+{
+"id": 2151,
+"surface": "ホーム",
+"kana": "ホーム",
+"en": "platform; home"
+},
+{
+"id": 2152,
+"surface": "ボーイ",
+"kana": "ボーイ",
+"en": "porter; boy"
+},
+{
+"id": 2153,
+"surface": "ボート",
+"kana": "ボート",
+"en": "rowing boat"
+},
+{
+"id": 2154,
+"surface": "ボール",
+"kana": "ボール",
+"en": "ball; bowl"
+},
+{
+"id": 2155,
+"surface": "マイク",
+"kana": "マイク",
+"en": "mic"
+},
+{
+"id": 2156,
+"surface": "マイナス",
+"kana": "マイナス",
+"en": "minus"
+},
+{
+"id": 2157,
+"surface": "マスコミ",
+"kana": "マスコミ",
+"en": "mass communication"
+},
+{
+"id": 2158,
+"surface": "マスター",
+"kana": "マスター",
+"en": "bar owner, master (e.g., arts, science)"
+},
+{
+"id": 2159,
+"surface": "マッサージ",
+"kana": "マッサージ",
+"en": "massage"
+},
+{
+"id": 2160,
+"surface": "ママ",
+"kana": "ママ",
+"en": "Mama"
+},
+{
+"id": 2161,
+"surface": "マーケット",
+"kana": "マーケット",
+"en": "market"
+},
+{
+"id": 2162,
+"surface": "ミス",
+"kana": "ミス",
+"en": "miss (mistake, error, failure), Miss"
+},
+{
+"id": 2163,
+"surface": "ミルク",
+"kana": "ミルク",
+"en": "milk"
+},
+{
+"id": 2164,
+"surface": "メッセージ",
+"kana": "メッセージ",
+"en": "message"
+},
+{
+"id": 2165,
+"surface": "メモ",
+"kana": "メモ",
+"en": "memorandum, note"
+},
+{
+"id": 2166,
+"surface": "メンバー",
+"kana": "メンバー",
+"en": "member"
+},
+{
+"id": 2167,
+"surface": "ユーモア",
+"kana": "ユーモア",
+"en": "humor"
+},
+{
+"id": 2168,
+"surface": "ヨット",
+"kana": "ヨット",
+"en": "yacht"
+},
+{
+"id": 2169,
+"surface": "ヨーロッパ",
+"kana": "ヨーロッパ",
+"en": "Europe"
+},
+{
+"id": 2170,
+"surface": "ライター",
+"kana": "ライター",
+"en": "lighter; writer"
+},
+{
+"id": 2171,
+"surface": "ラケット",
+"kana": "ラケット",
+"en": "racket"
+},
+{
+"id": 2172,
+"surface": "ラベル",
+"kana": "ラベル",
+"en": "label"
+},
+{
+"id": 2173,
+"surface": "ルール",
+"kana": "ルール",
+"en": "rule"
+},
+{
+"id": 2174,
+"surface": "レベル",
+"kana": "レベル",
+"en": "level"
+},
+{
+"id": 2175,
+"surface": "ロケット",
+"kana": "ロケット",
+"en": "locket, rocket"
+},
+{
+"id": 2176,
+"surface": "ワイン",
+"kana": "ワイン",
+"en": "wine"
+},
+{
+"id": 2177,
+"surface": "一人一人",
+"kana": "ひとりひとり",
+"en": "one by one, each"
+},
+{
+"id": 2178,
+"surface": "一家",
+"kana": "いっか",
+"en": "family, clan"
+},
+{
+"id": 2179,
+"surface": "一層",
+"kana": "いっそう",
+"en": "much more, still more"
+},
+{
+"id": 2180,
+"surface": "一度に",
+"kana": "いちどに",
+"en": "all at once"
+},
+{
+"id": 2181,
+"surface": "一方",
+"kana": "いっぽう",
+"en": "on the other hand; meanwhile"
+},
+{
+"id": 2182,
+"surface": "一時",
+"kana": "いちじ",
+"en": "for a time, temporarily"
+},
+{
+"id": 2183,
+"surface": "一種",
+"kana": "いっしゅ",
+"en": "a species, a kind, a variety"
+},
+{
+"id": 2184,
+"surface": "一般",
+"kana": "いっぱん",
+"en": "general, average"
+},
+{
+"id": 2185,
+"surface": "一言",
+"kana": "ひとこと",
+"en": "one word"
+},
+{
+"id": 2186,
+"surface": "万一",
+"kana": "まんいち",
+"en": "by some chance, if by any chance"
+},
+{
+"id": 2187,
+"surface": "上る",
+"kana": "のぼる",
+"en": "to ascend, to go up, to climb"
+},
+{
+"id": 2188,
+"surface": "上京",
+"kana": "じょうきょう",
+"en": "proceeding to the capital (Tokyo)"
+},
+{
+"id": 2189,
+"surface": "上等",
+"kana": "じょうとう",
+"en": "first class, very good"
+},
+{
+"id": 2190,
+"surface": "上達",
+"kana": "じょうたつ",
+"en": "improvement, advance"
+},
+{
+"id": 2191,
+"surface": "下す",
+"kana": "おろす",
+"en": "to lower, to let go down"
+},
+{
+"id": 2192,
+"surface": "下り",
+"kana": "くだり",
+"en": "down-train (going away from Tokyo)"
+},
+{
+"id": 2193,
+"surface": "不",
+"kana": "ふ",
+"en": "un(~), non(~), negative prefix"
+},
+{
+"id": 2194,
+"surface": "不",
+"kana": "ぶ",
+"en": "un(~), non(~), negative prefix"
+},
+{
+"id": 2195,
+"surface": "不可",
+"kana": "ふか",
+"en": "wrong, bad, impossible"
+},
+{
+"id": 2196,
+"surface": "不平",
+"kana": "ふへい",
+"en": "complaint, discontent, dissatisfaction"
+},
+{
+"id": 2197,
+"surface": "不正",
+"kana": "ふせい",
+"en": "injustice, unfairness"
+},
+{
+"id": 2198,
+"surface": "不満",
+"kana": "ふまん",
+"en": "dissatisfaction, discontent, complaints"
+},
+{
+"id": 2199,
+"surface": "不自由",
+"kana": "ふじゆう",
+"en": "discomfort, disability, inconvenience"
+},
+{
+"id": 2200,
+"surface": "不足",
+"kana": "ふそく",
+"en": "insufficiency, shortage"
+},
+{
+"id": 2201,
+"surface": "不通",
+"kana": "ふつう",
+"en": "blockade, interruption, stoppage"
+},
+{
+"id": 2202,
+"surface": "世紀",
+"kana": "せいき",
+"en": "century"
+},
+{
+"id": 2203,
+"surface": "丘陵",
+"kana": "きゅうりょう",
+"en": "hill"
+},
+{
+"id": 2204,
+"surface": "両替",
+"kana": "りょうがえ",
+"en": "change, money exchange"
+},
+{
+"id": 2205,
+"surface": "並",
+"kana": "なみ",
+"en": "medium (e.g., food serving size, quality, price, etc.), ordinary"
+},
+{
+"id": 2206,
+"surface": "中古",
+"kana": "ちゅうこ",
+"en": "used, second-hand"
+},
+{
+"id": 2207,
+"surface": "中味",
+"kana": "なかみ",
+"en": "contents, interior, filling"
+},
+{
+"id": 2208,
+"surface": "中央",
+"kana": "ちゅうおう",
+"en": "central, center, middle"
+},
+{
+"id": 2209,
+"surface": "中心",
+"kana": "ちゅうしん",
+"en": "center, core"
+},
+{
+"id": 2210,
+"surface": "中止",
+"kana": "ちゅうし",
+"en": "suspension, stoppage, discontinuance"
+},
+{
+"id": 2211,
+"surface": "中身",
+"kana": "なかみ",
+"en": "content(s); substance"
+},
+{
+"id": 2212,
+"surface": "丸",
+"kana": "まる",
+"en": "circle, full (month)"
+},
+{
+"id": 2213,
+"surface": "主に",
+"kana": "おもに",
+"en": "mainly, primarily"
+},
+{
+"id": 2214,
+"surface": "主婦",
+"kana": "しゅふ",
+"en": "housewife"
+},
+{
+"id": 2215,
+"surface": "主張",
+"kana": "しゅちょう",
+"en": "claim, insistence, assertion"
+},
+{
+"id": 2216,
+"surface": "主義",
+"kana": "しゅぎ",
+"en": "doctrine, cause, principle"
+},
+{
+"id": 2217,
+"surface": "主要",
+"kana": "しゅよう",
+"en": "chief, main"
+},
+{
+"id": 2218,
+"surface": "乗客",
+"kana": "じょうきゃく",
+"en": "passenger"
+},
+{
+"id": 2219,
+"surface": "乾かす",
+"kana": "かわかす",
+"en": "to dry"
+},
+{
+"id": 2220,
+"surface": "乾燥",
+"kana": "かんそう",
+"en": "dry, arid, dehydrated"
+},
+{
+"id": 2221,
+"surface": "予報",
+"kana": "よほう",
+"en": "forecast, prediction"
+},
+{
+"id": 2222,
+"surface": "予想",
+"kana": "よそう",
+"en": "expectation, anticipation, prediction"
+},
+{
+"id": 2223,
+"surface": "予期",
+"kana": "よき",
+"en": "expectation, forecast"
+},
+{
+"id": 2224,
+"surface": "予測",
+"kana": "よそく",
+"en": "prediction, estimation"
+},
+{
+"id": 2225,
+"surface": "予算",
+"kana": "よさん",
+"en": "estimate, budget"
+},
+{
+"id": 2226,
+"surface": "予防",
+"kana": "よぼう",
+"en": "prevention, protection against"
+},
+{
+"id": 2227,
+"surface": "争う",
+"kana": "あらそう",
+"en": "to dispute, to argue, to fight"
+},
+{
+"id": 2228,
+"surface": "互い",
+"kana": "たがい",
+"en": "mutual, each other"
+},
+{
+"id": 2229,
+"surface": "亡くす",
+"kana": "なくす",
+"en": "to lose someone"
+},
+{
+"id": 2230,
+"surface": "交ざる",
+"kana": "まざる",
+"en": "to be mixed, to mingle with"
+},
+{
+"id": 2231,
+"surface": "交じる",
+"kana": "まじる",
+"en": "to be mixed, to mingle with"
+},
+{
+"id": 2232,
+"surface": "交ぜる",
+"kana": "まぜる",
+"en": "to be mixed, to be blended with"
+},
+{
+"id": 2233,
+"surface": "交換",
+"kana": "こうかん",
+"en": "exchange, swap"
+},
+{
+"id": 2234,
+"surface": "交際",
+"kana": "こうさい",
+"en": "friendship, association, acquaintance"
+},
+{
+"id": 2235,
+"surface": "享受",
+"kana": "きょうじゅ",
+"en": "enjoyment, being given"
+},
+{
+"id": 2236,
+"surface": "人工",
+"kana": "じんこう",
+"en": "artificial, man made, human work,"
+},
+{
+"id": 2237,
+"surface": "人種",
+"kana": "じんしゅ",
+"en": "race (of people)"
+},
+{
+"id": 2238,
+"surface": "人込み",
+"kana": "ひとごみ",
+"en": "crowd of people"
+},
+{
+"id": 2239,
+"surface": "人類",
+"kana": "じんるい",
+"en": "mankind, humanity"
+},
+{
+"id": 2240,
+"surface": "今に",
+"kana": "いまに",
+"en": "before long, soon"
+},
+{
+"id": 2241,
+"surface": "今にも",
+"kana": "いまにも",
+"en": "at any time, soon"
+},
+{
+"id": 2242,
+"surface": "仏",
+"kana": "ほとけ",
+"en": "Buddha"
+},
+{
+"id": 2243,
+"surface": "仕様",
+"kana": "しよう",
+"en": "way, method, specification"
+},
+{
+"id": 2244,
+"surface": "付き合い",
+"kana": "つきあい",
+"en": "socialization; friendship; association"
+},
+{
+"id": 2245,
+"surface": "付く",
+"kana": "つく",
+"en": "to adjoin, to be attached, to adhere"
+},
+{
+"id": 2246,
+"surface": "付合う",
+"kana": "つきあう",
+"en": "to associate with, to keep company with, to get on with"
+},
+{
+"id": 2247,
+"surface": "代える",
+"kana": "かえる",
+"en": "to exchange, to interchange, to substitute"
+},
+{
+"id": 2248,
+"surface": "代る",
+"kana": "かわる",
+"en": "to take the place of, to relieve, to be substituted for"
+}
+]
