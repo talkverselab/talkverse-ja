@@ -1,7 +1,7 @@
 """talkverse.uk 톤 앱 아이콘 생성.
 
 사이트 첫 화면(흰 바탕 + 복숭아·분홍·라벤더·하늘색 메시 그라데이션, 남색 #0a2540 글자,
-인디고→하늘색 #635bff→#00b3ff 포인트)을 아이콘으로 옮긴다.
+하늘색→인디고 #00b3ff→#635bff 강조선)을 아이콘으로 옮긴다.
   python tools/make_icon.py [글자]                       # 기본 'あ', 모든 아이콘 파일을 덮어씀
   python tools/make_icon.py --preview out.png 글자 …     # 후보 비교 그림만
 Android(레거시·라운드·적응형 전경/배경)와 iOS AppIcon 을 모두 만든다. Pillow 필요.
@@ -15,7 +15,7 @@ RES = ROOT / "android/app/src/main/res"
 IOS = ROOT / "ios/Runner/Assets.xcassets/AppIcon.appiconset"
 FONT = "/System/Library/Fonts/ヒラギノ角ゴシック W6.ttc"
 INK = (10, 37, 64)
-GRAD = ((99, 91, 255), (0, 179, 255))  # 사이트 .btn·강조선
+GRAD = ((0, 179, 255), (99, 91, 255))  # 강조선 왼쪽 하늘색 → 오른쪽 인디고 (2026-10-26 사용자 결정)
 # 사이트 .mesh: (가로 반경, 세로 반경, 중심 x, 중심 y, 색) — 아이콘 비율에 맞게 옮김
 MESH = [
     (0.55, 0.60, 0.10, 0.30, (255, 211, 155)),
