@@ -35,5 +35,5 @@
 ## 3. 대기
 
 - 로그인·학습 기록 동기화: 태국어앱 세션의 `talkverse-auth`·`talkverse-db` 가 생긴 뒤, 사용자 지시가 있을 때.
-- 한자 공용 데이터 연동: 한자 세션이 `hanja-db` 읽기 주소를 알린 뒤, 사용자 지시가 있을 때.
+- 한자 공용 데이터 연동: 사용자 지시가 있을 때. 읽기 주소는 2026-10-26 확정 — `https://hanja-api.talkverse-lab.workers.dev/rest/v1/<표>`(PostgREST 와 같은 질의 모양, 표 `hanja_chars`·`hanja_alias`·`hanja_review`·`hanja_mnemonic`), GIF `https://gif.talkverse.uk/<파일>`. 외우는 팁은 `hanja_mnemonic`(code·lang·form·origin·tip)으로 서버에 있다. 문서 `~/Hanja/hanja-app/docs/SHARED_DB.md` §15.
 - 요금제·402 제한 해제는 이 앱과 무관(옮길 데이터 없음).

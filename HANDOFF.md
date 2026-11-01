@@ -1,5 +1,52 @@
 # 일본어유니버스 — 세션 인수인계 (2026-10-06 갱신)
 
+## 2026-11-02 상태 (이 줄이 아래 옛 서술보다 우선)
+
+- 화면 톤 = talkverse.uk 일본어 워드마크(흰 바탕·남색 글자·구리→황갈), 탭 4개 배우기·복습·탐색·나 + 두 화면(태블릿·아이패드·폴드) UX — `docs/TWO_PANE_UX.md`, `CLAUDE.md` §2-3. 아이패드 캡처 `tools/pane_shots.py`.
+- iOS TestFlight 첫 업로드 2611012223, 두 번째(새 톤·UX) 2611020012 — `tools/ios_release.sh`, `CLAUDE.md` §2-2. 아이콘은 talkverse.uk 세션 담당(커밋 b57f527).
+- 로그인(Google·Naver·Apple·Kakao)은 talkverse.uk 세션 담당 — `docs/AUTH_LOGIN.md`. 학습목적×도메인(회화 생성 축) — `docs/LEARNER_PROFILE.md`.
+- Zealot 안드로이드 빌드 9(로컬, 새 톤·UX) https://apps.talkverse.uk/Ultzu/157. 이 커밋 push 로 CI 빌드가 다시 나간다.
+
+## Zealot 설정 — 확인 필요 (2026-10-11)
+
+앱이름 `일본어 유니버스`(사용자 지정), 스크립트 `tools/zealot_push.sh`, 규칙은 CLAUDE.md §2-1. 첫 업로드 완료 — CI 빌드 6, 설치 페이지 https://apps.talkverse.uk/Ultzu/33 . 커밋·푸시는 안 함.
+
+- **남은 결정: Zealot 에 무엇을 올릴지** — 폰에 깔린 것은 CI 빌드(버전 코드 = CI 실행 번호)이고 로컬 빌드는 버전 코드 1 이라 그대로는 설치가 거부된다.
+  - (지금 방식) CI 빌드를 그대로 올림: `tools/zealot_push.sh --ci`. 번호 체계가 앱 안 「앱 업데이트」와 같아 서로 꼬이지 않는다. 단, 푸시해서 CI 가 돈 뒤에만 올릴 수 있다.
+  - 로컬 빌드를 올림: 푸시 전 시험판을 폰에서 볼 수 있지만 번호를 CI 보다 크게 줘야 하고, 그러면 다음 CI 빌드가 「앱 업데이트」에서 새 빌드로 안 보인다. 쓰려면 번호 규칙을 정해야 한다.
+
+## 다음에 할 내용 (2026-10-11)
+
+**이번 세션(2026-10-06~11)에 한 일**: HANDOFF·CLAUDE.md 를 읽고 상태를 요약한 것뿐이다. 코드·데이터·커밋·푸시·빌드 변경 없음. 아래 본문(§1~§5, 2026-10-06 기준)이 그대로 유효하다.
+
+**현재 상태 (2026-10-11 확인)**
+- 맥미니 `~/talkverse/ja` master = origin/master = `9054920`(앞선·뒤진 커밋 없음).
+- 릴리스 `latest` = 빌드 6(`09cf2b7`). 단어 DB 8,525어·한국어 뜻 100%, 시드 키 `db_seeded_v7`. 회화는 L1 ep1 40턴만.
+- 미커밋 변경은 CRLF 노이즈 + 맥 도구 부산물 4개(`analysis_options.yaml`, `ios/Flutter/Debug.xcconfig`·`Release.xcconfig`, `pubspec.lock`) + `?? ios/Podfile` 뿐 — 커밋하지 말 것(§1).
+- 백그라운드 작업 없음.
+
+**남은 일 (순서대로)** — 상세는 §3
+1. 폰 확인(사용자) — 빌드 6 실제 동작.
+2. 회화 L1 ep2~5 (160턴) → `_meta.json` 갱신 → L2·L3 각 300턴.
+3. 회화 버블 후리가나 루비(`segs` 적용).
+4. 문법 확장(동사 활용·경어).
+
+**주의할 점**
+- 푸시: 맥 `gh` 활성 계정은 gpyungbusan 유지, talkverselab 은 푸시 때만 전환 후 복귀(§2).
+- 서명: 맥의 `~/.android/debug.keystore` 는 폰 키와 다르다 — 이미 있는 `android/app/signing-key.jks`·`key.properties` 를 덮어쓰지 말 것(§2).
+- 단어 데이터를 바꾸면 시드 키를 v8 로.
+- 전역 규칙이 바뀜(`~/.claude/CLAUDE.md`, 이 세션에서는 아직 적용한 적 없음):
+  - 앱을 빌드하면 묻지 말고 `~/bin/zealot-upload <파일> "<앱이름>" -c "<변경 한 줄>"` 로 올리고 설치 주소를 알린다. 이 앱의 Zealot 앱이름은 `일본어 유니버스`(CLAUDE.md §2-1, 스크립트 `tools/zealot_push.sh`).
+  - Apple Developer Program 가입 완료(2026-10-10) — §2 의 "iOS TestFlight 막힘" 원인 중 가입은 풀렸다. 경로는 맥미니에서 아카이브·업로드(표준 스크립트 `~/interval-camera/tools/ios_release.sh` 복사), 이 앱의 App Store Connect 앱 레코드는 사용자가 만들어야 한다. 미착수.
+  - 맥 `~/OneDrive` 는 사용자 로그인 전까지 읽기 실패 — OneDrive 경로에 의존하는 작업은 먼저 확인.
+
+**대기 중인 사용자 확인 사항**
+- S25 에서 「앱 업데이트」로 빌드 6 설치 후: JLPT 단어 화면 N3·N1 한국어 뜻, 한자 화면(鋳·流 등)에 엉뚱한 단어가 없는지.
+- 합성 TTS 도입 여부(현재 기기 ja-JP), 간사이 변형판 여부.
+- iOS 를 진행할지(진행하면 App Store Connect 앱 레코드 생성 + TestFlight 내부 테스트 그룹 추가).
+
+---
+
 > 새 세션은 **`CLAUDE.md`(이 리포) → 이 파일** 순서로 읽고 바로 이어간다. 대화 기록은 없어도 된다.
 > 규칙 배경은 CLAUDE.md 절 이름만 가리킨다: §1 서명 · 「폰에 설치할 때」 · §2 배포 흐름 · §3 리포 · §4 공개 저장소 · §5 표시 언어 · §6 갤럭시·아이폰 공용.
 > 전역 배경(기기 IP·SSH·계정)은 `~/.claude/CLAUDE.md` 「기기」·「앱 · repo」 절.
@@ -19,7 +66,7 @@
 | 회화 | L1 ep1 40턴만 완성 (목표 L1 200 · L2 300 · L3 300) | `assets/data/dialogues/_meta.json` |
 | talkverse-uk | `a154969`(ja·zh 한자 페이지) 푸시 완료 · 사이트 배포 완료 | 맥 `~/talkverse-uk` 에 `tools/th_cliff3.py` 미커밋 변경 = **다른 세션 것, 손대지 말 것** |
 | 폰(S25) 실제 동작 | **미확인** — 빌드 6 을 「앱 업데이트」로 받아 한국어 뜻·한자 화면 확인 안 함 | |
-| iOS TestFlight | **미진행** (사용자 단계 대기) | 리포 시크릿은 `ANDROID_DEBUG_KEYSTORE_BASE64` 1개뿐, Actions 변수 없음 |
+| iOS TestFlight | **첫 업로드 완료 2026-11-01 빌드 2611012223**(맥미니 `tools/ios_release.sh`, 앱 레코드·내부 테스트 그룹 생성됨) | 리포 시크릿은 `ANDROID_DEBUG_KEYSTORE_BASE64` 1개뿐, Actions 변수 없음 |
 
 **커밋 안 한 로컬 변경 (맥미니) — 커밋하지 말 것**
 - ~86개 ` M` 파일 = CRLF 줄끝 노이즈(`git diff --ignore-cr-at-eol --stat` 으로 확인하면 아래 4개만 실변경).

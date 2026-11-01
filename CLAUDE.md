@@ -69,6 +69,30 @@ adb -s R3CY20HDN2K install --user 0 -r <apk>
 
 구현 안내서: https://github.com/talkverselab/talkverse-th/blob/master/docs/in-app-update-via-github.md
 
+## 2-1. Zealot 업로드 (맥미니) — 2026-10-11
+
+- **Zealot 앱이름: 일본어 유니버스** (고정 — 바꾸면 Zealot 에 다른 앱이 새로 생긴다)
+- 올리기: `tools/zealot_push.sh ["변경 한 줄"]`(로컬에서 빌드한 release APK) 또는
+  `tools/zealot_push.sh --ci ["변경 한 줄"]`(GitHub `latest` 릴리스의 CI 빌드를 받아서). 변경 내용을 안 주면 최근 커밋 제목.
+  스크립트는 빌드하지 않는다. 출력된 설치 주소를 사용자에게 알린다.
+- 덮어 설치 조건(2026-10-11 확인): **서명** — 맥의 `android/key.properties` + `android/app/signing-key.jks` 가 폰과 같은 키
+  (SHA-1 `9C:C4:…:47:6B`)라 로컬 빌드도 CI 빌드도 덮어 설치된다. **버전 코드** — `pubspec.yaml` 은 `0.1.0+1` 고정이고
+  CI 가 실행 번호를 넣는다(폰에 깔린 것 = 6). 로컬 빌드를 그냥 올리면 버전 코드 1 이라 **다운그레이드로 설치가 거부된다** —
+  로컬에서 빌드할 때는 `--build-number=<폰에 깔린 번호보다 큰 값>` 을 주거나 `--ci` 로 CI 빌드를 올릴 것.
+
+## 2-2. iOS TestFlight (맥미니) — 2026-11-01
+
+- App Store Connect 앱 레코드 **일본어 유니버스**(번들 ID `com.talkverse.japaneseUniverse`, 사용자 생성 2026-11-01) + 내부 테스트 그룹. 첫 업로드 = 빌드 2611012223.
+- 올리기: `bash tools/ios_release.sh` — 아카이브(`--no-codesign`, 빌드 번호 = KST `yymmddHHMM`) → 자동 서명 export(팀 QP8QRMA9CC, pbxproj 에 `DEVELOPMENT_TEAM` 6곳) → PC `D:\OneDrive\app project\japanese_universe\ios\` 백업 → 업로드. `--no-build` 는 있는 아카이브로 업로드만.
+- 아이콘: `ios/Runner/Assets.xcassets/AppIcon.appiconset/` 은 1024 한 장 + 다크·틴티드(iOS 18+ 정책). **아이콘 생성·배포 안내는 2026-11-02 사용자 지시로 talkverse.uk 세션 담당** — 이 세션은 아이콘을 만지지 않고, 그 세션이 보내는 결과(`~/talkverse/branding/make_icon.py` 재실행 지시)를 따른다. 옛 15장 방식으로 되돌리지 말 것.
+- `Info.plist` `ITSAppUsesNonExemptEncryption=false`. 같은 빌드 번호 재업로드 불가(시각 기반이라 새로 빌드하면 자동으로 커짐).
+- 공통 절차·정책: `~/talkverse/branding/TONE.md` §2-1·§5.
+
+## 2-3. 화면 톤 · 두 화면 UX — 2026-11-02
+
+- **톤 기준 = https://talkverse.uk/talkverse/lang/ja 의 「일본어」 워드마크**(사용자 지시): 흰 바탕·남색 글자(`#0a2540`)·구리 `#b77548` → 황갈 `#c19e6d` 그라데이션 포인트(`AppColors.wordmark`, `GradText`). 색 이름(beni·ai·kin·sumi·washi)은 옛 和風 것 그대로이고 **값만** `lib/core/theme.dart` 에서 바뀜 — 새 화면도 이 이름을 쓴다. 테두리는 `AppColors.line`, 그림자는 `kCardShadow`. 옛 빨강·먹색 바탕으로 되돌리지 말 것.
+- **탭 4개 배우기·복습·탐색·나 + 두 화면(가로 720 이상 레일·왼쪽 목록·오른쪽 칸, 학습은 전체 화면)** = 한자유니버스와 같은 구조. 규칙·확인법은 `docs/TWO_PANE_UX.md`. 새 화면은 목록에서 `openPane`, 학습·퀴즈·카드 세션은 `openFull` 로 연다(`lib/core/pane.dart`).
+
 ## 3. 리포
 
 - 이름은 **`talkverselab/talkverse-<언어코드>`** 로 통일(2026-09-10). 옛 이름(`ja-universe` 등)은 리다이렉트되지만
