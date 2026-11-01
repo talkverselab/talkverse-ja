@@ -13,6 +13,7 @@ import '../widgets/japanese_decor.dart';
 import '../widgets/memo_toggle.dart';
 import '../widgets/selectable_ja_text.dart';
 import 'sentence_flashcard_screen.dart';
+import '../core/pane.dart';
 import '../core/platform.dart';
 import '../core/l10n.dart';
 
@@ -97,6 +98,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
   bool _loading = true;
   bool _showKana = true;
   bool _showRomaji = false;
+  int? _cardIndex; // 넓은 화면: 오른쪽 반에 펼친 카드(턴 번호). 버블을 누르면 오른쪽 반만 바뀐다
 
   @override
   void initState() {
@@ -182,10 +184,7 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
             tooltip: tr('이 에피소드 플래시카드'),
             icon: const Icon(Icons.style, color: AppColors.beni),
             onPressed: () async {
-              await Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => SentenceFlashcardScreen(meta: widget.meta)),
-              );
+              await openFull(context, (_) => SentenceFlashcardScreen(meta: widget.meta));
               _load();
             },
           ),
@@ -202,36 +201,56 @@ class _EpisodeScreenState extends State<EpisodeScreen> {
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
-          : Column(
-              children: [
-                const AsanohaDivider(height: 8),
+          : LayoutBuilder(builder: (context, box) {
+              // 넓은 화면(아이패드 세로·가로, 태블릿, 폴드 펼침): 왼쪽 = 대화, 오른쪽 = 고른 턴의 카드(새 화면이 아니라 오른쪽 반만 바뀜).
+              // 대화 버블은 전체 폭으로 늘이면 보기 나쁘므로 가로 720 이상이면 세로여도 반으로 나눈다.
+              final split = box.maxWidth >= wideMin;
+              final list = Column(
+                children: [
+                  const AsanohaDivider(height: 8),
+                  Expanded(
+                    child: ListView.builder(
+                      padding: EdgeInsets.fromLTRB(12, 10, 12, 90 + bottomInset(context)),
+                      itemCount: _turns.length,
+                      itemBuilder: (context, i) {
+                        final t = _turns[i];
+                        return _EpisodeBubble(
+                          turn: t,
+                          learned: _learned[t.id] ?? false,
+                          showKana: _showKana,
+                          showRomaji: _showRomaji,
+                          highlighted: split && _cardIndex == i,
+                          onLearnedTap: () => _toggleLearned(t),
+                          onCardTap: () async {
+                            if (split) {
+                              setState(() => _cardIndex = i);
+                              return;
+                            }
+                            await openFull(context, (_) => SentenceFlashcardScreen(meta: widget.meta, initialIndex: i));
+                            _load();
+                          },
+                        );
+                      },
+                    ),
+                  ),
+                ],
+              );
+              if (!split) return list;
+              final idx = _cardIndex ?? 0;
+              return Row(children: [
+                Expanded(child: list),
+                const VerticalDivider(width: 1, thickness: 1, color: AppColors.kin),
                 Expanded(
-                  child: ListView.builder(
-                    padding: EdgeInsets.fromLTRB(12, 10, 12, 90 + bottomInset(context)),
-                    itemCount: _turns.length,
-                    itemBuilder: (context, i) {
-                      final t = _turns[i];
-                      return _EpisodeBubble(
-                        turn: t,
-                        learned: _learned[t.id] ?? false,
-                        showKana: _showKana,
-                        showRomaji: _showRomaji,
-                        onLearnedTap: () => _toggleLearned(t),
-                        onCardTap: () async {
-                          await Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (_) => SentenceFlashcardScreen(meta: widget.meta, initialIndex: i),
-                            ),
-                          );
-                          _load();
-                        },
-                      );
-                    },
+                  child: SentenceFlashcardScreen(
+                    key: ValueKey('card-$idx'),
+                    meta: widget.meta,
+                    initialIndex: idx,
+                    embedded: true,
+                    onProgress: _load,
                   ),
                 ),
-              ],
-            ),
+              ]);
+            }),
     );
   }
 }
@@ -241,6 +260,7 @@ class _EpisodeBubble extends StatelessWidget {
   final bool learned;
   final bool showKana;
   final bool showRomaji;
+  final bool highlighted; // 넓은 화면에서 오른쪽 반에 펼쳐진 턴
   final VoidCallback onLearnedTap;
   final VoidCallback? onCardTap;
 
@@ -249,6 +269,7 @@ class _EpisodeBubble extends StatelessWidget {
     required this.learned,
     required this.showKana,
     required this.showRomaji,
+    this.highlighted = false,
     required this.onLearnedTap,
     this.onCardTap,
   });
@@ -256,21 +277,34 @@ class _EpisodeBubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isA = turn.speaker == 'A';
-    final bubbleColor = isA ? AppColors.ai : AppColors.beni;
-    final bubbleText = AppColors.washi;
+    // 사이트 톤: 옅은 색조 버블 + 남색 글자, 화자 색(인디고·구리)은 아바타·테두리에만
+    final speakerColor = isA ? AppColors.ai : AppColors.beni;
+    final bubbleColor = isA ? const Color(0xFFEFEEFE) : const Color(0xFFF8E8D8);
+    final bubbleText = AppColors.sumi;
     final ja = turn.ja;
     final kanaDiffers = turn.kana != null && turn.kana != ja;
 
-    final bubble = GestureDetector(
+    Widget bubble(double maxWidth) => GestureDetector(
+      key: ValueKey('bubble-${turn.id}'),
       onTap: onCardTap,
       child: Container(
-        constraints: BoxConstraints(maxWidth: MediaQuery.of(context).size.width * 0.74),
+        constraints: BoxConstraints(maxWidth: maxWidth),
         padding: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: bubbleColor,
+          borderRadius: BorderRadius.only(
+            topLeft: const Radius.circular(14),
+            topRight: const Radius.circular(14),
+            bottomLeft: Radius.circular(isA ? 4 : 14),
+            bottomRight: Radius.circular(isA ? 14 : 4),
+          ),
           border: Border.all(
-            color: learned ? AppColors.kinBright : AppColors.kinDeep,
-            width: learned ? 1.8 : 0.5,
+            color: highlighted
+                ? speakerColor
+                : learned
+                    ? AppColors.matcha
+                    : AppColors.line,
+            width: highlighted ? 2 : 1,
           ),
         ),
         child: Column(
@@ -293,7 +327,7 @@ class _EpisodeBubble extends StatelessWidget {
                 const SizedBox(width: 6),
                 InkWell(
                   onTap: () => TtsService.instance.speakAs(ja, gender: isA ? 'male' : 'female'),
-                  child: Icon(Icons.volume_up, size: 16, color: bubbleText.withValues(alpha: 0.85)),
+                  child: Icon(Icons.volume_up, size: 16, color: speakerColor),
                 ),
               ],
             ),
@@ -327,8 +361,9 @@ class _EpisodeBubble extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
                 decoration: BoxDecoration(
-                  color: AppColors.washi.withValues(alpha: 0.18),
-                  border: Border.all(color: bubbleText.withValues(alpha: 0.35), width: 0.5),
+                  color: AppColors.washi.withValues(alpha: 0.7),
+                  borderRadius: BorderRadius.circular(6),
+                  border: Border.all(color: AppColors.line, width: 1),
                 ),
                 child: Text(
                   '💡 ${turn.note}',
@@ -352,7 +387,7 @@ class _EpisodeBubble extends StatelessWidget {
         Container(
           width: 30,
           height: 30,
-          decoration: BoxDecoration(color: bubbleColor, shape: BoxShape.circle),
+          decoration: BoxDecoration(color: speakerColor, shape: BoxShape.circle),
           alignment: Alignment.center,
           child: Text(
             isA ? '民' : '桜',
@@ -371,15 +406,19 @@ class _EpisodeBubble extends StatelessWidget {
       ],
     );
 
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 4),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: isA ? MainAxisAlignment.start : MainAxisAlignment.end,
-        children: isA
-            ? [avatar, const SizedBox(width: 6), Flexible(child: bubble)]
-            : [Flexible(child: bubble), const SizedBox(width: 6), avatar],
-      ),
-    );
+    // 폰이면 화면의 74%, 넓은 화면의 반 칸이면 그 칸의 74% — MediaQuery 가 아니라 실제 칸 폭 기준
+    return LayoutBuilder(builder: (context, box) {
+      final b = bubble(box.maxWidth * 0.74);
+      return Padding(
+        padding: const EdgeInsets.symmetric(vertical: 4),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: isA ? MainAxisAlignment.start : MainAxisAlignment.end,
+          children: isA
+              ? [avatar, const SizedBox(width: 6), Flexible(child: b)]
+              : [Flexible(child: b), const SizedBox(width: 6), avatar],
+        ),
+      );
+    });
   }
 }

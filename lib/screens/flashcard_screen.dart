@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../services/deck_service.dart';
 import '../services/ko_reading.dart';
@@ -67,7 +68,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                       deck: d,
                       known: _known[d.id] ?? 0,
                       onTap: () async {
-                        await Navigator.push(context, MaterialPageRoute(builder: (_) => DeckSessionScreen(deck: d)));
+                        await openFull(context, (_) => DeckSessionScreen(deck: d));
                         _load();
                       },
                     )),

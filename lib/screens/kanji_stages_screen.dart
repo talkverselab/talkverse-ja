@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../main.dart';
 import '../services/kanji_index_service.dart';
@@ -234,7 +235,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         bestPct: _best[s.stage],
         color: levelColor(s.level),
         onTap: () async {
-          await Navigator.push(context, MaterialPageRoute(builder: (_) => KanjiQuizScreen(stage: s.stage, allStages: all)));
+          await openFull(context, (_) => KanjiQuizScreen(stage: s.stage, allStages: all));
           _load();
         },
       ));
@@ -276,11 +277,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         bestPct: _best[s.stage + _keyOffset],
         color: _regionColors[s.freqLabel] ?? AppColors.sumiLight,
         onTap: () async {
-          await Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (_) => KanjiQuizScreen(
-                      stage: s.stage, allStages: all, resultOffset: _keyOffset)));
+          await openFull(context, (_) => KanjiQuizScreen(stage: s.stage, allStages: all, resultOffset: _keyOffset));
           _load();
         },
       ));

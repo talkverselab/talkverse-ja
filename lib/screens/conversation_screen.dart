@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../widgets/japanese_decor.dart';
 import 'episode_screen.dart';
@@ -95,7 +96,7 @@ class _ConversationScreenState extends State<ConversationScreen> {
                   final ready = catalog.forLevel(level).any((m) => m.id == meta.id);
                   return InkWell(
                     onTap: ready
-                        ? () => Navigator.push(context, MaterialPageRoute(builder: (_) => EpisodeScreen(meta: meta)))
+                        ? () => openFull(context, (_) => EpisodeScreen(meta: meta))
                         : null,
                     child: Container(
                       width: 104,

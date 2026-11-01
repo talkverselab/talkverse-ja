@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
@@ -58,10 +59,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
             IconButton(
               tooltip: tr('조사 테스트'),
               icon: const Icon(Icons.quiz, color: AppColors.beni),
-              onPressed: () => Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => GrammarTestScreen(data: data)),
-              ),
+              onPressed: () => openFull(context, (_) => GrammarTestScreen(data: data)),
             ),
         ],
       ),

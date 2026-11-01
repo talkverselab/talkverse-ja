@@ -13,7 +13,8 @@ import '../core/l10n.dart';
 
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+  final bool embedded; // 「나」 탭 안(앱바·스크롤 없이, 바깥 ListView 에 들어감)
+  const ProfileScreen({super.key, this.embedded = false});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -100,12 +101,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: AppColors.washi,
-      appBar: AppBar(title: Text(tr('프로필 · 설정'))),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
+    final children = <Widget>[
           const UpdateEntryTile(),
           Container(
             padding: const EdgeInsets.all(18),
@@ -168,13 +164,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
                 onTap: AppLangPrefs.next),
             _SettingItem(icon: Icons.volume_up, title: tr('TTS 음성'), subtitle: tr('시스템 ja-JP · 남/녀 피치 구분')),
-            _SettingItem(icon: Icons.palette, title: tr('테마'), subtitle: tr('낮 · 和風 紅 #BC002D')),
+            _SettingItem(icon: Icons.palette, title: tr('테마'), subtitle: tr('낮 · talkverse.uk 구리 #B77548')),
           ]),
           const SizedBox(height: 16),
           _SectionTitle(tr('정보')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha 和風'),
+            _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha'),
             _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · Drift SQLite'),
             _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어유니버스 · 2026')),
           ]),
@@ -188,8 +184,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 style: TextStyle(color: AppColors.sumiLight, fontSize: 11, letterSpacing: 3)),
           ),
           const SizedBox(height: 32),
-        ],
-      ),
+        ];
+    if (widget.embedded) return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: children);
+    return Scaffold(
+      backgroundColor: AppColors.washi,
+      appBar: AppBar(title: Text(tr('프로필 · 설정'))),
+      body: ListView(padding: const EdgeInsets.all(16), children: children),
     );
   }
 }
@@ -211,11 +211,10 @@ class _SettingsGroup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: AppColors.washi,
-        border: Border.all(color: AppColors.kin.withValues(alpha: 0.5)),
-      ),
+    // ListTile 은 가장 가까운 Material 에 잉크를 그리므로 색 있는 Container 안에서는 Material 로 감싼다
+    return Material(
+      color: AppColors.washi,
+      shape: Border.all(color: AppColors.kin.withValues(alpha: 0.5)),
       child: Column(
         children: [
           for (var i = 0; i < items.length; i++) ...[

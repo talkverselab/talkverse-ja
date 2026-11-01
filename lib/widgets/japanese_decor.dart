@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 
-/// 落款 (らっかん) — 빨간 사각 인장. 한자·가나 1-4자 표시.
+/// 落款 (らっかん) — 사각 인장. 기본은 「일본어」 워드마크 그라데이션(구리 → 황갈), 색을 주면 그 단색.
 class SealStamp extends StatelessWidget {
   final String text;
   final double size;
@@ -28,14 +28,14 @@ class SealStamp extends StatelessWidget {
       width: size,
       height: size,
       decoration: BoxDecoration(
-        color: c,
-        borderRadius: BorderRadius.circular(2),
-        border: Border.all(color: c, width: 2),
+        color: color == null ? null : c,
+        gradient: color == null ? AppColors.wordmark : null,
+        borderRadius: BorderRadius.circular(size * 0.18),
         boxShadow: [
           BoxShadow(
-            color: c.withValues(alpha: 0.3),
-            blurRadius: 4,
-            offset: const Offset(1, 1),
+            color: c.withValues(alpha: 0.25),
+            blurRadius: 6,
+            offset: const Offset(0, 2),
           ),
         ],
       ),
@@ -81,7 +81,7 @@ class SeigaihaPattern extends StatelessWidget {
 
   const SeigaihaPattern({
     super.key,
-    this.color = AppColors.ai,
+    this.color = AppColors.kinDeep,
     this.opacity = 0.07,
   });
 
@@ -176,24 +176,87 @@ class _AsanohaPainter extends CustomPainter {
 /// 붓 분리선 — 붓터치 느낌 그라데이션 라인
 class BrushDivider extends StatelessWidget {
   final double height;
-  final Color color;
-  const BrushDivider({super.key, this.height = 3, this.color = AppColors.sumi});
+  final Color? color; // null 이면 워드마크 그라데이션(구리 → 황갈)
+  const BrushDivider({super.key, this.height = 3, this.color});
 
   @override
   Widget build(BuildContext context) {
+    final c = color;
     return Container(
       height: height,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [
-            color.withValues(alpha: 0),
-            color.withValues(alpha: 0.6),
-            color,
-            color.withValues(alpha: 0.6),
-            color.withValues(alpha: 0),
-          ],
-        ),
+        gradient: c == null
+            ? AppColors.wordmark
+            : LinearGradient(
+                colors: [
+                  c.withValues(alpha: 0),
+                  c.withValues(alpha: 0.6),
+                  c,
+                  c.withValues(alpha: 0.6),
+                  c.withValues(alpha: 0),
+                ],
+              ),
         borderRadius: BorderRadius.circular(height),
+      ),
+    );
+  }
+}
+
+/// 「일본어」 워드마크처럼 구리 → 황갈 그라데이션으로 칠한 글자(사이트 `.hero h1 .grad`).
+class GradText extends StatelessWidget {
+  final String text;
+  final TextStyle style;
+  const GradText(this.text, {super.key, required this.style});
+
+  @override
+  Widget build(BuildContext context) {
+    return ShaderMask(
+      blendMode: BlendMode.srcIn,
+      shaderCallback: (r) => AppColors.wordmark.createShader(Rect.fromLTWH(0, 0, r.width, r.height)),
+      child: Text(text, style: style.copyWith(color: Colors.white)),
+    );
+  }
+}
+
+/// 홈 상단 파스텔 메시 — 사이트 첫 화면의 번진 원(복숭아·금빛·라벤더·하늘)을 따뜻한 쪽으로, 아래로 갈수록 흰 바탕에 녹는다.
+class MeshBackdrop extends StatelessWidget {
+  const MeshBackdrop({super.key});
+
+  static const _blobs = <(Alignment, Color)>[
+    (Alignment(-0.9, -0.4), Color(0xFFFFD39B)),
+    (Alignment(-0.1, -1.0), Color(0xFFF5C07A)),
+    (Alignment(0.5, -0.5), Color(0xFFF5B8E6)),
+    (Alignment(1.0, 0.1), Color(0xFFA9A4FF)),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return IgnorePointer(
+      child: Stack(
+        fit: StackFit.expand,
+        children: [
+          const ColoredBox(color: Color(0xFFFFF4EA)),
+          for (final (align, color) in _blobs)
+            DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: align,
+                  radius: 0.9,
+                  colors: [color.withValues(alpha: 0.8), color.withValues(alpha: 0)],
+                ),
+              ),
+            ),
+          const DecoratedBox(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [Color(0x26FFFFFF), Color(0x8CFFFFFF), Colors.white],
+                stops: [0, 0.6, 1],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -226,7 +289,7 @@ class JapaneseCard extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: AppColors.washi,
-          border: Border.all(color: AppColors.kin.withValues(alpha: 0.7), width: 1),
+          border: Border.all(color: AppColors.line, width: 1),
           boxShadow: [
             BoxShadow(
               color: AppColors.sumi.withValues(alpha: 0.08),

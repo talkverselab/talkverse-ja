@@ -25,7 +25,10 @@ enum CardState { unknown, studying, known }
 class SentenceFlashcardScreen extends StatefulWidget {
   final EpisodeMeta? meta;
   final int initialIndex;
-  const SentenceFlashcardScreen({super.key, this.meta, this.initialIndex = 0});
+  /// 넓은 화면의 에피소드 오른쪽 반에 끼워 넣을 때 — 뒤로 화살표 없음, 학습 상태가 바뀌면 [onProgress].
+  final bool embedded;
+  final VoidCallback? onProgress;
+  const SentenceFlashcardScreen({super.key, this.meta, this.initialIndex = 0, this.embedded = false, this.onProgress});
 
   @override
   State<SentenceFlashcardScreen> createState() =>
@@ -102,6 +105,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
   Future<void> _mark(CardState state) async {
     final turn = _cards[_index];
     setState(() => _states[turn.id] = state);
+    widget.onProgress?.call();
     await appDb.into(appDb.userProgress).insertOnConflictUpdate(
           UserProgressCompanion(
             turnId: Value(turn.id),
@@ -156,6 +160,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
         foregroundColor: AppColors.sumi,
         elevation: 0,
         centerTitle: true,
+        automaticallyImplyLeading: !widget.embedded,
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
