@@ -32,7 +32,8 @@
 
 ## 3. 사용자 지시·결정(2026-11-02, 바꾸지 말 것)
 
-- **회화(다이얼로그) 작성은 사용자 지시 전까지 하지 않는다**(16:50 "아직 다이얼로그는 작성하지 말고") — R3 문화·일·학업, R4 본편, 강화 재작성 v2, 맞춤 회화 워커 전부 보류. 앱 구조·UX·성과·그림 연결 작업만.
+- **회화 작성 재개(2026-11-03 사용자 "다이얼로그 이제 그록에 요청해서 작성해")**: 방식 = 편 설계(`data/review/write/specs_*.json`) → Grok 이 처음부터 작성(`tools/prompts/write_grok.md`, `tools/grok_write_batch.py`, 방 「일본어 회화 검수」) → `tools/write_to_json.py` → 검사기 `--fix-rd` → 턴 설명 → 리뷰 페이지. R3 문화·일·학업 18편 완료(616e0d7, 리뷰 176편). 남은 것: R4 본편, 강화 재작성 v2·맞춤 회화 워커는 계속 보류.
+- **장면 컷(2026-11-03 사용자 "대화 컷그림도 요청해")**: `tools/grok_scene_batch.py <편id...> --push` — UXUI 방에서 **요청마다 새 대화**(긴 대화에선 그림 없이 '완료'만 답함), 인물 시트 `chars_ja_v1.jpg`+톤 `sian_01_clay.jpg` 첨부, A·B 한 쌍 = 1컷·4컷/요청, 1168×784 로 맞춰 그림 저장소 sparse 클론 `~/talkverse/ja-art`(talkverselab/talkversehanja) `talkverse_art/scene/ja/<편id>/cutN.jpg` 푸시(5편마다). 샘플 r1_survival_s1 통과 수준(점토 톤, 글자 없음). 전체 176편 대기열 `data/review/write/scene_queue.txt`, 로그 `scene_batch.log`(밤새 진행). 학습자 A 는 우선 남자 시트(5번) — 여자판은 나중에.
 - **Grok UXUI 적용 전 기준 커밋 = 태그 `pre-grok-uxui`**(`57be3aa`, origin 에도 푸시됨). 되돌리기: `git checkout pre-grok-uxui -- lib/` 또는 `git revert`.
 - Grok: **글 시안은 한 메시지에 1개, 그림은 최대 4장**(캐릭터 시트 한 번에, 장면 4컷까지 — 사용자 확인 "캐릭터도 한번에 해도 되고 장면도 4장까지"). 지연·실패가 난 방은 복구 안 됨 → 지우고 새로 만든다. 그림은 글 답 뒤에 늦게 오므로 `grok_fetch.py` 가 data: 썸네일을 BUSY 로 보고 기다린다. 다른 세션의 Chrome·탭은 건드리지 않는다.
 - 「플루언트」·「섬」 등 특정 학습서 연상어 금지, 도메인은 **「주제」**. 왕초보(R0)는 짧은 편만(턴당 평균 8자 이하).

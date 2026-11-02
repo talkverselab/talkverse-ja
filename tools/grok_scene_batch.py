@@ -122,8 +122,10 @@ def git_push(msg):
     subprocess.run(['git', '-C', ART, 'add', 'talkverse_art/scene/ja'], check=True)
     if subprocess.run(['git', '-C', ART, 'diff', '--cached', '--quiet']).returncode == 0: return
     subprocess.run(['git', '-C', ART, 'commit', '-q', '-m', msg], check=True)
-    subprocess.run(['git', '-C', ART, 'pull', '-q', '--rebase'], check=True)
-    subprocess.run(['git', '-C', ART, 'push', '-q'], check=True)
+    for _ in range(4):  # 다른 세션이 같은 저장소에 자주 푸시한다 — 밀리면 다시 받고 재시도
+        subprocess.run(['git', '-C', ART, 'pull', '-q', '--rebase'])
+        if subprocess.run(['git', '-C', ART, 'push', '-q']).returncode == 0: break
+        time.sleep(5)
     print('PUSHED', msg, flush=True)
 
 done = []
