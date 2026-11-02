@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/art_service.dart';
 import '../services/hanja_shared_service.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
@@ -480,6 +481,14 @@ class _HanjaSharedBlockState extends State<HanjaSharedBlock> {
           if (i.liushu != null) _Tag(i.liushu!, AppColors.kinDeep),
           if (i.formDiffers) ...[const SizedBox(width: 6), _Tag('${tr('정자')} ${i.kr}', AppColors.muted)],
         ]),
+        if (i.components.isNotEmpty) ...[
+          const SizedBox(height: 10),
+          _Formation(ch: i.jp.isNotEmpty ? i.jp : i.kr, parts: i.components, phonetic: i.phonetic),
+        ],
+        if (i.gifUrl == null) ...[
+          const SizedBox(height: 8),
+          _KanjiWordArt(ch: i.jp.isNotEmpty ? i.jp : i.kr),
+        ],
         if (i.gifUrl != null) ...[
           const SizedBox(height: 8),
           // 넓은 화면에서도 과하게 커지지 않게 폭 제한
@@ -566,6 +575,78 @@ class _Tag extends StatelessWidget {
         text,
         style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: color),
       ),
+    );
+  }
+}
+
+
+/// 글자 형성 시각화: 大 = 一 + 人 (소리 부품은 파란 띠). 한자 DB 의 components 를 그대로 쓰고 DB 는 바꾸지 않는다.
+class _Formation extends StatelessWidget {
+  final String ch;
+  final List<String> parts;
+  final String? phonetic;
+  const _Formation({required this.ch, required this.parts, this.phonetic});
+
+  @override
+  Widget build(BuildContext context) {
+    Widget glyph(String t, {bool big = false, bool sound = false}) => Container(
+          width: big ? 64 : 48,
+          height: big ? 64 : 48,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: sound ? AppColors.ai.withValues(alpha: 0.10) : AppColors.washiDeep,
+            border: Border.all(color: sound ? AppColors.ai : AppColors.line, width: sound ? 1.6 : 1),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          child: Text(t, style: TextStyle(fontSize: big ? 38 : 26, fontWeight: FontWeight.w900, color: sound ? AppColors.ai : AppColors.sumi, height: 1.0)),
+        );
+    Widget op(String t) => Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 6),
+          child: Text(t, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppColors.muted)),
+        );
+    final items = <Widget>[glyph(ch, big: true), op('=')];
+    for (var k = 0; k < parts.length; k++) {
+      if (k > 0) items.add(op('+'));
+      items.add(glyph(parts[k], sound: parts[k] == phonetic));
+    }
+    return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      Text(tr('글자 형성'), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.muted, letterSpacing: 1)),
+      const SizedBox(height: 6),
+      SingleChildScrollView(scrollDirection: Axis.horizontal, child: Row(children: items)),
+      if (phonetic != null) ...[
+        const SizedBox(height: 4),
+        Text(trf('파란 칸 = 소리 부품 {0} (읽기를 결정)', [phonetic!]), style: const TextStyle(fontSize: 11, color: AppColors.ai)),
+      ],
+    ]);
+  }
+}
+
+/// 한자 그림이 없을 때: 그 한자를 품은 가장 흔한 단어의 그림(talkverse.uk 공용 단어 그림)으로 대신 보여 준다.
+class _KanjiWordArt extends StatelessWidget {
+  final String ch;
+  const _KanjiWordArt({required this.ch});
+
+  @override
+  Widget build(BuildContext context) {
+    return FutureBuilder<MapEntry<String, String>?>(
+      future: ArtService.instance.wordArtForKanji(ch),
+      builder: (context, snap) {
+        final e = snap.data;
+        if (e == null) return const SizedBox.shrink();
+        return Center(
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 260, maxHeight: 200),
+                child: Image.network(e.value, fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
+              ),
+            ),
+            const SizedBox(height: 4),
+            Text(e.key, style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w700, color: AppColors.sumi)),
+          ]),
+        );
+      },
     );
   }
 }

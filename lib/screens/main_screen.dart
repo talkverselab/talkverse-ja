@@ -6,11 +6,13 @@ import '../core/theme.dart';
 import '../main.dart';
 import '../review/review_engine.dart';
 import '../review/review_ui.dart';
+import '../services/art_service.dart';
 import '../services/deck_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
+import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
 import 'gairaigo_screen.dart';
@@ -500,6 +502,14 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: 'Conversation',
               onTap: () => openPane(context, (_) => const ConversationScreen()),
             ),
+            _section(tr('회화 (새)')),
+            _NavRow(
+              seal: '会話',
+              sealColor: AppColors.beni,
+              title: tr('섬별 회화 R0~R4'),
+              subtitle: tr('모든 문장 듣기 · 그림 카드 · 왕초보/초보'),
+              onTap: () => openPane(context, (_) => const DialogueHomeScreen()),
+            ),
             _section(tr('단어')),
             _NavRow(
               seal: '語彙',
@@ -939,6 +949,7 @@ class _TodayReviewState extends State<_TodayReview> {
 
   Future<void> _load() async {
     await DeckService.instance.ensureLoaded();
+    await ArtService.instance.urlFor(''); // 매니페스트를 먼저 받아 두면 카드마다 동기 조회 가능
     final cands = <ReviewCandidate>[];
     for (final deck in DeckService.instance.decks) {
       if (deck.id != 'r1' && deck.id != 'native') continue; // 절벽 R1 골격 + 회화 톤 핵심
@@ -953,7 +964,10 @@ class _TodayReviewState extends State<_TodayReview> {
   ReviewFace? _resolve(String id) {
     final c = _cards[id];
     if (c == null) return null;
-    return ReviewFace(prompt: c.back, target: c.front, reading: c.kana, note: c.key.isNotEmpty ? c.key : null);
+    final m = RegExp(r'^r1_(\d+)$').firstMatch(c.id);
+    final rank = m == null ? null : int.tryParse(m.group(1)!);
+    final art = ArtService.instance.urlForSync(c.front, rank: rank); // 공용 단어 그림(네트워크 URL — review_ui 가 http 면 Image.network)
+    return ReviewFace(prompt: c.back, target: c.front, reading: c.kana, asset: art, note: c.key.isNotEmpty ? c.key : null);
   }
 
   @override

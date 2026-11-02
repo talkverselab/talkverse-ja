@@ -12,7 +12,7 @@ class ReviewFace {
   final String prompt;
   final String target;
   final String? reading; // 읽기(한글 독음 등)
-  final String? asset; // 그림 에셋(그림 덱)
+  final String? asset; // 그림 — 번들 에셋 경로 또는 http(s) 주소(그림 덱)
   final String? note; // 뒷면 보조 설명(품사·예문 등)
   const ReviewFace({required this.prompt, required this.target, this.reading, this.asset, this.note});
 }
@@ -37,7 +37,7 @@ class ReviewTodayCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) => ValueListenableBuilder<int>(
         valueListenable: ReviewService.instance.changes,
-        builder: (context, _, _) {
+        builder: (context, _, __) {
           final plan = ReviewService.instance.plan(candidates);
           final cs = Theme.of(context).colorScheme;
           return Card(
@@ -196,7 +196,11 @@ class _ReviewSessionScreenState extends State<ReviewSessionScreen> {
     if (item?.image != null && File(item!.image!).existsSync()) {
       image = Image.file(File(item.image!), fit: BoxFit.contain);
     } else if (face.asset != null) {
-      image = Image.asset(face.asset!, fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink());
+      // http(s) 주소면 네트워크 그림(auth.talkverse.uk/art/… 등), 아니면 번들 에셋.
+      final src = face.asset!;
+      image = src.startsWith('http://') || src.startsWith('https://')
+          ? Image.network(src, fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink())
+          : Image.asset(src, fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink());
     }
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 16, 20, 20),
@@ -346,7 +350,7 @@ class ReviewSettingsSection extends StatelessWidget {
     final svc = ReviewService.instance;
     return ValueListenableBuilder<int>(
       valueListenable: svc.changes,
-      builder: (context, _, _) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      builder: (context, _, __) => Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ListTile(
           title: Text(ReviewText.t('하루 새 카드', 'New cards per day')),
           trailing: SegmentedButton<int>(

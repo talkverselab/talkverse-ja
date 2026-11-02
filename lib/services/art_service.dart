@@ -24,6 +24,7 @@ class ArtService {
   String _base = '';
   final Map<String, String> _byWord = {}; // word → key_512
   final Map<int, String> _byRank = {}; // rank → key_512
+  final Map<String, int> _rankByWord = {}; // word → rank
   Future<void>? _loading;
   bool get isLoaded => _byWord.isNotEmpty;
 
@@ -33,6 +34,25 @@ class ArtService {
     final key = _byWord[word] ?? (rank != null ? _byRank[rank] : null);
     if (key == null || _base.isEmpty) return null;
     return _base.endsWith('/') ? '$_base$key' : '$_base/$key';
+  }
+
+  /// 이 한자를 품은 단어의 그림(한자 팝업용): 빈도 순위가 가장 높은 단어 하나. 없으면 null.
+  Future<MapEntry<String, String>?> wordArtForKanji(String ch) async {
+    await _ensure();
+    if (_base.isEmpty) return null;
+    String? bestWord;
+    int bestRank = 1 << 30;
+    for (final e in _byWord.entries) {
+      if (!e.key.contains(ch)) continue;
+      final r = _rankByWord[e.key] ?? (1 << 29);
+      if (r < bestRank) {
+        bestRank = r;
+        bestWord = e.key;
+      }
+    }
+    if (bestWord == null) return null;
+    final key = _byWord[bestWord]!;
+    return MapEntry(bestWord, _base.endsWith('/') ? '$_base$key' : '$_base/$key');
   }
 
   /// 로드 없이 즉시 조회(이미 받아 둔 경우만).
@@ -79,6 +99,7 @@ class ArtService {
       _base = base;
       _byWord.clear();
       _byRank.clear();
+      _rankByWord.clear();
       for (final it in items) {
         final m = it as Map<String, dynamic>;
         final key = m['key_512'] as String? ?? m['key_1024'] as String?;
@@ -86,10 +107,10 @@ class ArtService {
         final w = m['word'] as String?;
         if (w != null && w.isNotEmpty) _byWord[w] = key;
         final r = m['rank'];
-        if (r is int) _byRank[r] = key;
-        if (r is String) {
-          final n = int.tryParse(r);
-          if (n != null) _byRank[n] = key;
+        final rank = r is int ? r : (r is String ? int.tryParse(r) : null);
+        if (rank != null) {
+          _byRank[rank] = key;
+          if (w != null && w.isNotEmpty) _rankByWord[w] = rank;
         }
       }
       return _byWord.isNotEmpty;
