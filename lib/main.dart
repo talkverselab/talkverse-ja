@@ -7,6 +7,7 @@ import 'data/db/seed_loader.dart';
 import 'screens/main_screen.dart';
 import 'services/ko_reading.dart';
 import 'core/l10n.dart';
+import 'review/review_service.dart';
 
 late final AppDatabase appDb;
 
@@ -16,6 +17,7 @@ void main() async {
   await SeedLoader(appDb).seedIfNeeded();
   await KoReadingPrefs.load();
   await AppLangPrefs.load();
+  await ReviewService.instance.load(); // 라이트너 7단계 복습 엔진(공용, lib/review)
   await _setOrientations(); // 폰은 세로 고정, 태블릿·폴드 펼침(짧은 변 600 이상)은 회전 허용
   runApp(const JapaneseUniverseApp());
 }

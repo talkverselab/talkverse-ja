@@ -4,6 +4,10 @@ import '../core/l10n.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
 import '../main.dart';
+import '../review/review_engine.dart';
+import '../review/review_ui.dart';
+import '../services/deck_service.dart';
+import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
@@ -728,6 +732,9 @@ class ReviewTab extends StatelessWidget {
         24 + MediaQuery.paddingOf(context).bottom,
       ),
       children: [
+        _section(tr('오늘의 복습')),
+        const _TodayReview(),
+        const SizedBox(height: 12),
         _section(tr('복습')),
         _NavRow(
           seal: '文',
@@ -886,6 +893,56 @@ class MeTab extends StatelessWidget {
         _section(tr('프로필 · 설정')),
         const ProfileScreen(embedded: true),
       ],
+    );
+  }
+}
+
+
+/// 라이트너 7단계 복습(공용 엔진 `lib/review`, talkverse.uk 세션 제작) — 카드 소스 = R1 회화 골격 덱.
+/// 앞면 = 한국어 뜻(플루언트 기본), 뒷면 = 일본어 + 가나. 하루 새 카드 20장, 정답→승급·오답→1단계, 틀린 카드는 세션 끝에 다시.
+class _TodayReview extends StatefulWidget {
+  const _TodayReview();
+  @override
+  State<_TodayReview> createState() => _TodayReviewState();
+}
+
+class _TodayReviewState extends State<_TodayReview> {
+  final Map<String, DeckCard> _cards = {};
+  List<ReviewCandidate> _cands = const [];
+
+  @override
+  void initState() {
+    super.initState();
+    _load();
+  }
+
+  Future<void> _load() async {
+    await DeckService.instance.ensureLoaded();
+    final cands = <ReviewCandidate>[];
+    for (final deck in DeckService.instance.decks) {
+      if (deck.id != 'r1' && deck.id != 'native') continue; // 절벽 R1 골격 + 회화 톤 핵심
+      for (final c in deck.cards) {
+        _cards[c.id] = c;
+        cands.add(ReviewCandidate(c.id, category: deck.id, soundKey: c.kana.isNotEmpty ? c.kana : null));
+      }
+    }
+    if (mounted) setState(() => _cands = cands);
+  }
+
+  ReviewFace? _resolve(String id) {
+    final c = _cards[id];
+    if (c == null) return null;
+    return ReviewFace(prompt: c.back, target: c.front, reading: c.kana, note: c.key.isNotEmpty ? c.key : null);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (_cands.isEmpty) return const SizedBox.shrink();
+    return ReviewTodayCard(
+      candidates: _cands,
+      resolve: _resolve,
+      speak: (id, face) => TtsService.instance.speak(face.reading?.isNotEmpty == true ? face.reading! : face.target),
+      title: tr('오늘의 복습'),
     );
   }
 }

@@ -4,6 +4,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '오늘의 복습': 'Today\'s review',
   '틀렸어요': 'Wrong',
   '맞았어요': 'Right',
   '일본어로 말해 보고, 탭해서 확인': 'Say it in Japanese, tap to check',
@@ -126,6 +127,7 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '오늘의 복습': '今日の復習',
   '틀렸어요': '不正解',
   '맞았어요': '正解',
   '일본어로 말해 보고, 탭해서 확인': '日本語で言ってから、タップで確認',
@@ -234,6 +236,7 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '오늘의 복습': '今日复习',
   '틀렸어요': '错了',
   '맞았어요': '对了',
   '일본어로 말해 보고, 탭해서 확인': '先用日语说出来，再点击确认',
