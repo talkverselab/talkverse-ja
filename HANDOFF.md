@@ -25,6 +25,8 @@
 
 ## 3. 사용자 지시·결정(2026-11-02, 바꾸지 말 것)
 
+- **Grok UXUI 적용 전 기준 커밋 = 태그 `pre-grok-uxui`**(= 이 줄을 넣기 직전 origin/master, `git log -1 pre-grok-uxui`). 되돌리기: `git checkout pre-grok-uxui -- lib/` 또는 `git revert`. 태그는 origin 에도 푸시됨.
+
 - Grok **그림 요청은 한 메시지에 1장**. 지연·실패가 난 Grok 방은 복구 안 됨 → 지우고 새로 만든다(UXUI 방 재생성 사유). UXUI 큰 변경은 다음 요청 때 한꺼번에 Grok 에.
 - 맞춤 회화: 외부 LLM API 안 씀(코드 서버 + Grok), Cloudflare 에 ID 로 저장, 1회 무료, "많이 쓰면 그때 생각".
 - 한자: 바로 문제가 아니라 **배우기 먼저** → 문제. 한자 DB 자체는 바꾸지 않는다(한자유니버스 공용).
