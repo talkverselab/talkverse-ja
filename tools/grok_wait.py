@@ -3,7 +3,7 @@
 import sys, time
 import os
 sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
-g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9223')  # 이 세션 전용 Chrome(프로필 ~/chrome-grok-ja, 사용자 지시 2026-11-02) — 공용 9222 를 쓰려면 GROK_CDP_PORT=9222
+g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9230')  # 이 세션 전용 Chrome(프로필 ~/chrome-grok-ja, 사용자 지시 2026-11-02) — 공용 9222 를 쓰려면 GROK_CDP_PORT=9222
 frag, want, limit = sys.argv[1], int(sys.argv[2]), int(sys.argv[3]) if len(sys.argv) > 3 else 240
 t0 = time.time(); reloaded = False
 while time.time() - t0 < limit:
