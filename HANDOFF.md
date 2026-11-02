@@ -21,7 +21,8 @@
 - **한자 배우기** `lib/screens/kanji_learn_screen.dart`: 단계(20자)를 한 글자씩 `KanjiInfoBody`(한자 팝업과 같은 내용 — 훈음·읽기·한자유니버스 공용 DB 글자 형성·팁·어원·소리 가족·그림·대표 단어·읽기별 단어)로 먼저 보고 → 「이 단계 문제 풀기」(기존 4지선다). 아이패드 = 왼쪽 20자 격자 + 오른쪽 정보. `KanjiStagesScreen(learn: true)`. 「한자 단계」(바로 문제)는 그대로.
 - **맞춤 회화(유료 메뉴, 첫 1편 무료)**: 계약 `docs/CUSTOM_SCRIPT_API.md`. 앱 `lib/services/custom_script_service.dart`(기기 ID, POST/GET `https://talkverse.uk/api/script/ja`, ready 편 로컬 보관) + `lib/screens/custom_script_screen.dart`(섬 8 칩 → 상황 입력+추천 칩 → 레벨 4 → 만들기, 「내 맞춤 회화」 서랍 1분 폴링). Worker·D1(`custom_scripts`·`paid_devices`)은 talkverse.uk 세션이 배포, 시크릿 `SCRIPT_KEY` 는 사용자가 넣음(완료). 코드 서버 워커 `tools/custom_script_worker.py`(pending → claim → `claude-lab -p` 초안(`tools/prompts/custom_script.md`) → Grok 재작성(`rewrite_grok.md`) → `check_dialogues --fix-rd` → result). 키는 `doppler run -p keys -c prd --`(`TALKVERSE_SCRIPT_KEY`), Claude 호출 때는 `ANTHROPIC_*` 환경변수를 뺀다(안 빼면 "Invalid API key"). launchd plist `tools/launchd/com.talkverse.ja.custom-script.plist`(5분) — **아직 올리지 않음, 사용자 확인 뒤**. 작업 파일 `data/custom_scripts/`(gitignore).
 - **라이트너** `lib/review`(uk 공용 엔진, 테스트 7개), 복습 탭 「오늘의 복습」, 카드 앞면 단어 그림.
-- **Grok UXUI 요청 2회**(`data/review/uxui_ipad_request_01/02.md`, 답 `answer_01/02.md`): 시안 3개(①만화 읽기형 ②채팅형 ③학습 데스크형, 1순위 ③) + 성과 표시 원칙(세는 것: 편 완주·라이트너 단계·핵심 표현·한자·빈도 커버율 / 안 세는 것: 앱 오픈·스트릭·포인트·순위) + 맞춤 회화 메뉴 배치. **이미지는 6장 전부 실패** → Claude 가 SVG 로 그림: `data/review/wire/wire_01_desk.png`(홈→편→재생) · `wire_02_achievement.png`(「나」 탭 성과) · `wire_03_custom.png`(맞춤 회화). 생성기 `tools/wireframes.py`(SVG → `data/review/wire/*.svg`, PNG 는 CDP Chrome 캡처).
+- **Grok UXUI 시안 02 「만화책 읽기형」 적용(사용자 확정 2026-11-02 15:45, 커밋 97cfa75→69e8f65)**: 편 화면 = `EpisodePlayPane(autoPlay:false)` 하나로 통일 — 칸 너비 900 이상(아이패드 가로) 좌 「대화 스크립트」·우 장면 컷(`SceneCut`, 말풍선·400ms 페이드)+캡션(`SelectableJaText` 한자 팝업), 900 미만(아이패드 세로 칸·폰) 컷 위·스크립트 아래, 하단 고정 컨트롤(▶ 재생·슬라이더·속도·자막 칩). 회화 홈 맨 위 「오늘의 컷/이어서 읽기」(`DialogueService.lastOpenedId`). 아이패드 세로 스크린샷 10장 통과(넘침 없음). 시안 자료 `data/review/uxui/sian_01.md|jpg`(데스크형), `sian_02.md|jpg`(만화형, 채택), `sian_01_clay.jpg`(우리 점토풍 그림 3장을 첨부해 Grok 이 그린 참고 — 장면 그림 톤 기준). Grok UXUI 방 = `832d5dbe…`(전용 Chrome 9223), 요청은 시안 1개+그림 1장씩, Grok GitHub 쓰기 권한 없어 답은 세션이 커밋.
+- **Grok UXUI 요청 2회(옛 방, 참고)**(`data/review/uxui_ipad_request_01/02.md`, 답 `answer_01/02.md`): 시안 3개(①만화 읽기형 ②채팅형 ③학습 데스크형, 1순위 ③) + 성과 표시 원칙(세는 것: 편 완주·라이트너 단계·핵심 표현·한자·빈도 커버율 / 안 세는 것: 앱 오픈·스트릭·포인트·순위) + 맞춤 회화 메뉴 배치. **이미지는 6장 전부 실패** → Claude 가 SVG 로 그림: `data/review/wire/wire_01_desk.png`(홈→편→재생) · `wire_02_achievement.png`(「나」 탭 성과) · `wire_03_custom.png`(맞춤 회화). 생성기 `tools/wireframes.py`(SVG → `data/review/wire/*.svg`, PNG 는 CDP Chrome 캡처).
 
 ## 3. 사용자 지시·결정(2026-11-02, 바꾸지 말 것)
 
@@ -37,8 +38,8 @@
 
 1. TestFlight 빌드(한자 배우기·맞춤 회화) 번호 확인 → 사용자에게. 사용자 피드백 대기 항목: "다이얼로그 한번에 보기"·"단어장 안 보임"(둘 다 2611021424 에 없던 기능, 1502 이후 포함 — 다른 뜻이면 확인).
 2. 맞춤 회화 워커 — **사용자 지시(2026-11-02 15:30)로 일단 멈춤.** 끝까지 2회 성공 확인됨(`ja-4inaalel`·`ja-fao34isa`, 편당 1.5~3분). launchd 는 설치하지 않았고 프로세스도 없음. 재개 = 사용자 지시 뒤 `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`(수동 1편은 §5 명령). 앱에서 요청하면 서버에 queued 로 쌓이기만 한다. janome 은 `~/.venvs/ja`.
-3. 성과 표시(「나」 탭 AchievementDesk · 편 끝 ProgressSummaryCard · 빈도 커버율) 구현 — 설계는 `uxui_ipad_answer_02.md` B + `wire_02`.
-4. 시안 ③ 학습 데스크형으로 아이패드 재배치(사용자 승인 뒤) → 그다음 폰 최적화.
+3. 시안 02 TestFlight 업로드(사용자 지시 대기 — 현재 TestFlight 최신 2611021514 는 시안 02 전). 스크립트 `{name}` 을 맞춤 회화 이름/「나」로 치환. 장면 그림 들어오면 턴 `art` 채우기(톤 = `sian_01_clay.jpg`).
+4. 성과 표시(「나」 탭·편 끝 연출·빈도 커버율) 구현 — 설계 `sian_02.md` §5 + `uxui_ipad_answer_02.md` B + `wire_02`. 폰 레이아웃 다듬기.
 5. 장면 그림(만화 1컷) 들어오면 턴 `art` 채우기. R3 문화·일·학업, R4 본편 작성 재개.
 
 ## 5. 공통 절차(맥미니)
