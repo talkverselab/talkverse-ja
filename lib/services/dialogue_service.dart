@@ -5,11 +5,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import 'learner_prefs.dart';
 
-/// 새 회화(R0~R4, 섬별 JSON) 로더 — 2026-11-03.
+/// 새 회화(R0~R4, 주제별 JSON) 로더 — 2026-11-03.
 ///
-/// 파일: `assets/data/dialogues/R<레벨>/<섬>/<편id>.json` (구조는 `assets/data/dialogues/README.md`).
+/// 파일: `assets/data/dialogues/R<레벨>/<주제>/<편id>.json` (구조는 `assets/data/dialogues/README.md`).
 /// 레벨: R0 왕초보(옛 짧은 R1 그대로) · R1 초보(기본) · R2 중급 · R3 고급 · R4 최상급.
-/// 사용자 레벨 모드(`dialogue_level`): 기본 R1, "너무 힘들면" R0. R2 이상은 섬 목록에서 그대로 열 수 있다.
+/// 사용자 레벨 모드(`dialogue_level`): 기본 R1, "너무 힘들면" R0. R2 이상은 주제 목록에서 그대로 열 수 있다.
 class DialogueTurn {
   final int num;
   final String speaker; // A(학습자)·B·C·D
@@ -195,7 +195,7 @@ class DialogueService {
   Dialogue? byId(String id) => _byId[id];
   List<Dialogue> get all => _byId.values.toList();
 
-  /// 레벨·섬의 편 목록(편 순서대로). R0/R1 은 사용자 모드로 묶어서 본다.
+  /// 레벨·주제의 편 목록(편 순서대로). R0/R1 은 사용자 모드로 묶어서 본다.
   List<Dialogue> list({String? region, String? island}) {
     final r = region ?? _level;
     final out = _byId.values.where((d) => d.region == r && (island == null || d.island == island)).toList();
@@ -203,7 +203,7 @@ class DialogueService {
     return out;
   }
 
-  /// 레벨별 섬 목록(편이 있는 섬만, 고정 순서).
+  /// 레벨별 주제 목록(편이 있는 주제만, 고정 순서).
   List<String> islandsOf(String region) {
     final has = _byId.values.where((d) => d.region == region).map((d) => d.island).toSet();
     return islands.where(has.contains).toList();

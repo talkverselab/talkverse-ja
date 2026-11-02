@@ -12,7 +12,7 @@ import '../services/learner_prefs.dart';
 import '../widgets/japanese_decor.dart';
 import 'dialogue_screen.dart';
 
-/// 「맞춤 회화 만들기」 — 2026-11-02. 도메인(섬) · 상황 · 레벨을 고르면 그 사람만의 편 1개를 서버가 만든다(비동기, 몇 분~).
+/// 「맞춤 회화 만들기」 — 2026-11-02. 도메인(주제) · 상황 · 레벨을 고르면 그 사람만의 편 1개를 서버가 만든다(비동기, 몇 분~).
 /// 위: 「내 맞춤 회화」 서랍(만드는 중·완성·실패) / 아래: 입력 3단계 + 만들기. 첫 1편 무료.
 /// 계약·흐름: `docs/CUSTOM_SCRIPT_API.md`.
 class CustomScriptScreen extends StatefulWidget {
@@ -156,12 +156,12 @@ class _Form extends StatelessWidget {
           const Text('✨', style: TextStyle(fontSize: 22)),
           const SizedBox(width: 10),
           Expanded(
-            child: Text(tr('섬·상황·레벨을 고르면 나만의 회화 1편을 만들어 드려요. 완성까지 몇 분 걸리고, 첫 1편은 무료예요.'),
+            child: Text(tr('주제·상황·레벨을 고르면 나만의 회화 1편을 만들어 드려요. 완성까지 몇 분 걸리고, 첫 1편은 무료예요.'),
                 style: const TextStyle(fontSize: 12.5, color: AppColors.sumi, height: 1.45)),
           ),
         ]),
       ),
-      _step(1, tr('어느 섬?')),
+      _step(1, tr('어느 주제?')),
       Wrap(
         spacing: 8,
         runSpacing: 8,
@@ -348,7 +348,7 @@ class _Row extends StatelessWidget {
       );
 }
 
-/// 섬별 회화 홈 상단 진입 카드.
+/// 주제별 회화 홈 상단 진입 카드.
 class CustomScriptEntryCard extends StatelessWidget {
   const CustomScriptEntryCard({super.key});
   @override
@@ -369,7 +369,7 @@ class CustomScriptEntryCard extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text(tr('맞춤 회화 만들기'), style: const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.w900)),
                 const SizedBox(height: 2),
-                Text(tr('섬·상황·레벨을 고르면 나만의 1편 · 첫 편 무료'), style: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 11)),
+                Text(tr('주제·상황·레벨을 고르면 나만의 1편 · 첫 편 무료'), style: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 11)),
               ]),
             ),
             const Icon(Icons.chevron_right, color: Colors.white),

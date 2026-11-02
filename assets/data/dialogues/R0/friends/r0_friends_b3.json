@@ -154,8 +154,7 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_friends_b3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(1턴 ひま? 추가)"
- },
- "mode": "왕초보",
- "origin": "r1_friends_b3"
+  "final": "2026-11-03 Grok 반영(1턴 ひま? 추가)",
+  "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+ }
 }

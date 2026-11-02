@@ -514,7 +514,7 @@ class _LearnTabState extends State<LearnTab> {
             _NavRow(
               seal: '会話',
               sealColor: AppColors.beni,
-              title: tr('섬별 회화 R0~R4'),
+              title: tr('주제별 회화 R0~R4'),
               subtitle: tr('모든 문장 듣기 · 그림 카드 · 왕초보/초보'),
               onTap: () => openPane(context, (_) => const DialogueHomeScreen()),
             ),
@@ -522,7 +522,7 @@ class _LearnTabState extends State<LearnTab> {
               seal: '✨',
               sealColor: AppColors.kinDeep,
               title: tr('맞춤 회화 만들기'),
-              subtitle: tr('섬·상황·레벨 → 나만의 1편 · 첫 편 무료'),
+              subtitle: tr('주제·상황·레벨 → 나만의 1편 · 첫 편 무료'),
               onTap: () => openPane(context, (_) => const CustomScriptScreen()),
             ),
             _section(tr('단어')),
@@ -945,7 +945,7 @@ class MeTab extends StatelessWidget {
 
 
 /// 라이트너 7단계 복습(공용 엔진 `lib/review`, talkverse.uk 세션 제작) — 카드 소스 = R1 회화 골격 덱.
-/// 앞면 = 한국어 뜻(플루언트 기본), 뒷면 = 일본어 + 가나. 하루 새 카드 20장, 정답→승급·오답→1단계, 틀린 카드는 세션 끝에 다시.
+/// 앞면 = 한국어 뜻(기본), 뒷면 = 일본어 + 가나. 하루 새 카드 20장, 정답→승급·오답→1단계, 틀린 카드는 세션 끝에 다시.
 class _TodayReview extends StatefulWidget {
   const _TodayReview();
   @override

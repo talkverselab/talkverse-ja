@@ -92,7 +92,7 @@ class AchievementService {
   int get kanjiSeen => _kanji.length;
   List<int>? cardsOf(String id) => _cards[id];
 
-  /// 섬·레벨별 완주 수 / 전체 수.
+  /// 주제·레벨별 완주 수 / 전체 수.
   (int, int) progress({required String island, required String region}) {
     final all = DialogueService.instance.list(region: region, island: island);
     final done = all.where((d) => _episodes.containsKey(d.id)).length;
@@ -176,7 +176,7 @@ class AchievementService {
     final w = thisWeek;
     final e = w['episodes'] ?? 0, c = w['cards'] ?? 0, k = w['kanji'] ?? 0;
     if (e == 0 && c == 0 && k == 0) return '';
-    // 가장 많이 완주한 섬
+    // 가장 많이 완주한 주제
     String? bestIsland;
     var best = 0;
     final counts = <String, int>{};

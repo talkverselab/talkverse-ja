@@ -170,8 +170,8 @@ class DeckSessionScreen extends StatefulWidget {
 class _DeckSessionScreenState extends State<DeckSessionScreen> {
   int _index = 0;
   bool _flipped = false;
-  bool _reverse = false; // false = 앞면 한국어(뜻·그림) → 일본어 맞히기(플루언트 기본), true = 일본어 앞면
-  final List<int> _retry = []; // 틀린 카드는 세션 끝에 다시(플루언트 A2)
+  bool _reverse = false; // false = 앞면 한국어(뜻·그림) → 일본어 맞히기(기본), true = 일본어 앞면
+  final List<int> _retry = []; // 틀린 카드는 세션 끝에 다시
   SharedPreferences? _prefs;
   final Map<String, int> _states = {}; // 0 몰라요 1 보통 2 알아요
 

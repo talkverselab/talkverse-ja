@@ -122,8 +122,7 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
-  "final": "2026-11-03 Grok J19 반영(5턴 爆笑)"
- },
- "mode": "왕초보",
- "origin": "r1_friends_a6"
+  "final": "2026-11-03 Grok J19 반영(5턴 爆笑)",
+  "level_note": "2026-11-02 길이 기준(턴당 평균 5.5자 ≤ 8.0)으로 왕초보(R0)에 배정"
+ }
 }

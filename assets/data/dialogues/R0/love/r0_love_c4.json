@@ -169,8 +169,7 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_love_c4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(3턴 かわいいの)"
- },
- "mode": "왕초보",
- "origin": "r1_love_c4"
+  "final": "2026-11-03 Grok 반영(3턴 かわいいの)",
+  "level_note": "2026-11-02 길이 기준(턴당 평균 6.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+ }
 }

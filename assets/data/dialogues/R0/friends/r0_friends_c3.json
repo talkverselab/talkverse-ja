@@ -166,8 +166,7 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_friends_c3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
- },
- "mode": "왕초보",
- "origin": "r1_friends_c3"
+  "final": "2026-11-03 Grok 재작성 전부 유지",
+  "level_note": "2026-11-02 길이 기준(턴당 평균 5.1자 ≤ 8.0)으로 왕초보(R0)에 배정"
+ }
 }

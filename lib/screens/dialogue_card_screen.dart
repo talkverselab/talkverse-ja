@@ -11,7 +11,7 @@ import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 
 /// 편의 문장 플래시카드 — 앞면은 **그림만**(글자 없음, 사용자 지시 2026-11-03), 탭하면 일본어·가나·독음·한국어.
-/// 그림 = 턴 장면 그림(`art`) → 핵심 단어 그림 → 장면 카드. 틀림/맞음 2단계, 틀린 카드는 끝에 다시(플루언트 A2).
+/// 그림 = 턴 장면 그림(`art`) → 핵심 단어 그림 → 장면 카드. 틀림/맞음 2단계, 틀린 카드는 끝에 다시.
 class DialogueCardScreen extends StatefulWidget {
   final Dialogue dialogue;
   const DialogueCardScreen({super.key, required this.dialogue});

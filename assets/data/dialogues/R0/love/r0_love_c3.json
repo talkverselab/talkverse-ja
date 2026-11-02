@@ -167,8 +167,7 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_love_c3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(1턴 眠い?)"
- },
- "mode": "왕초보",
- "origin": "r1_love_c3"
+  "final": "2026-11-03 Grok 반영(1턴 眠い?)",
+  "level_note": "2026-11-02 길이 기준(턴당 평균 5.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+ }
 }

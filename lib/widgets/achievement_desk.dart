@@ -83,7 +83,7 @@ class _WeekLine extends StatelessWidget {
     final island = a.weekSentence();
     final line = e == 0 && c == 0 && k == 0
         ? tr('이번 주는 아직 조용해요. 편 하나를 끝까지 들어 보세요.')
-        : (island.isNotEmpty ? trf('이번 주엔 {0} 섬을 가장 많이 읽었어요', [tr(DialogueService.islandKo[island] ?? island)]) : tr('이번 주도 한 걸음씩 가고 있어요'));
+        : (island.isNotEmpty ? trf('이번 주엔 {0} 주제를 가장 많이 읽었어요', [tr(DialogueService.islandKo[island] ?? island)]) : tr('이번 주도 한 걸음씩 가고 있어요'));
     return _card(
       border: AppColors.beni.withValues(alpha: 0.5),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
@@ -322,7 +322,7 @@ class _EpisodeDoneOverlayState extends State<EpisodeDoneOverlay> with SingleTick
                   Text('${d.emoji} ${d.title}', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi)),
                   const SizedBox(height: 4),
                   Text(
-                    widget.firstTime ? trf('{0} 섬 {1} 첫 완주 · 핵심 표현 {2}개', [tr(DialogueService.islandKo[d.island] ?? d.island), d.region, d.expressions.length]) : tr('다시 들었어요 — 핵심 표현이 더 또렷해져요'),
+                    widget.firstTime ? trf('{0} {1} 첫 완주 · 핵심 표현 {2}개', [tr(DialogueService.islandKo[d.island] ?? d.island), d.region, d.expressions.length]) : tr('다시 들었어요 — 핵심 표현이 더 또렷해져요'),
                     style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4),
                   ),
                   if (cards != null) Padding(padding: const EdgeInsets.only(top: 4), child: Text(trf('그림 카드 {0}/{1} 기억', [cards[0], cards[1]]), style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w700))),

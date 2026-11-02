@@ -38,7 +38,7 @@ void main() {
     await wait(t, 1500);
     await shot(t, '10_learn_with_dialogue_section');
 
-    await t.tap(find.text('섬별 회화 R0~R4'));
+    await t.tap(find.text('주제별 회화 R0~R4'));
     await wait(t, 2500);
     await shot(t, '11_dialogue_home_right');
 

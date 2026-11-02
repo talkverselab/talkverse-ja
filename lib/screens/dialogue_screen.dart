@@ -13,7 +13,7 @@ import '../widgets/selectable_ja_text.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_card_screen.dart';
 
-/// 새 회화(R0~R4) 섬 목록 → 편 목록 → 편 화면 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02).
+/// 새 회화(R0~R4) 주제 목록 → 편 목록 → 편 화면 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02).
 /// 아이패드: 홈 맨 위 「오늘의 컷」, 편 화면 = 왼쪽 대화 스크립트 + 오른쪽 큰 장면 컷(말풍선) + 하단 재생 컨트롤.
 /// 폰: 각 단계가 push, 재생은 전체 화면(컷 위·스크립트 아래).
 class DialogueHomeScreen extends StatefulWidget {
@@ -94,8 +94,8 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
         decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
         child: Text(
           level == 'R0'
-              ? tr('왕초보 모드: 짧은 문장(2~5단어)으로 같은 장면을 배웁니다. 익숙해지면 초보로 돌아오세요.')
-              : tr('초보가 기본입니다. 너무 힘들면 위의 「왕초보」로 바꾸세요 — 같은 이야기를 짧은 문장으로 봅니다.'),
+              ? tr('왕초보: 문장이 짧은 편만 모았어요(턴당 평균 8자 이하). 익숙해지면 초보로 올라오세요.')
+              : tr('초보가 기본입니다. 너무 힘들면 위의 「왕초보」로 바꾸세요 — 문장이 짧은 편들만 모아 보여 줍니다.'),
           style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4),
         ),
       );
@@ -181,7 +181,7 @@ class _IslandRow extends StatelessWidget {
       );
 }
 
-/// 섬의 편 목록.
+/// 주제의 편 목록.
 class DialogueListScreen extends StatelessWidget {
   final String region;
   final String island;
