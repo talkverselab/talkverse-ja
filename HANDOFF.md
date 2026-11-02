@@ -47,7 +47,8 @@
 
 ## 4-1. 다른 언어앱 복제(2026-11-02 17:00)
 
-- 복제 안내 `docs/REPLICATE_FOR_OTHER_LANGS.md`(구조·규칙·도구 한 벌). 한국어앱에 착수 프롬프터 `~/talkverse/ko/RELAY_from_ja.md` 전달(SendMessage 「한국어앱」): 우리 회화가 기초, Gemini 없음, K-드라마·K-팝 상황 추가, Grok 방·Chrome(9224) 분리. 한국어앱 쪽 "콘텐츠 생성 금지"와 충돌 → 사용자 확인 필요하다고 적음. 태국어앱에도 `~/talkverse/th/RELAY_from_ja.md`(Gemini 없음 — Grok 재작성에 ❓ 표시 요구, 성별판 + 프로필 성별, Chrome 9225) 전달(17:10).
+- 복제 안내 `docs/REPLICATE_FOR_OTHER_LANGS.md`(구조·규칙·도구 한 벌). 한국어앱에 착수 프롬프터 `~/talkverse/ko/RELAY_from_ja.md` 전달(SendMessage 「한국어앱」): 우리 회화가 기초, Gemini 없음, K-드라마·K-팝 상황 추가, Grok 방·Chrome(9224) 분리. 한국어앱 쪽 "콘텐츠 생성 금지"와 충돌 → 사용자 확인 필요하다고 적음. 태국어앱에도 `~/talkverse/th/RELAY_from_ja.md`(Gemini 없음 — Grok 재작성에 ❓ 표시 요구, 성별판 + 프로필 성별, Chrome 9225) 전달(17:10). 17:30 사용자 지적("우리 톤은 점토 톤인데 쟤들은 모르네")으로 복제 안내 §1 점토 톤·§2 UX 확정·§7 참고 파일을 넣어 전부 다시 쓰고 두 세션에 재전달.
+- **Talkverse ID 로그인·결제(평생 이용권)**: uk 세션 경유 사용자 지시(17:20 착수 → 17:25 보류 → 17:35 보류 해제 "지금 바로 착수"). 가이드 `/Users/talkverse/talkverse/TALKVERSE_ID_APP_GUIDE.md`, 원본 한자앱 `~/Hanja/hanja-app`. 값 4개(uk 에 전달): client_id `ja`, 딥링크 `talkverse.ja://auth`, 이용권 lang `ja`(상품 iOS `com.talkverse.japaneseUniverse.lifetime`·Android `lang_ja`), 번들 iOS `com.talkverse.japaneseUniverse`·Android `com.talkverse.japanese_universe`. 진행 중.
 
 ## 5. 공통 절차(맥미니)
 
