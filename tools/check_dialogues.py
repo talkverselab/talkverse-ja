@@ -23,6 +23,7 @@ EXPR_CSV = ROOT / 'data/expressions/top_expressions.csv'
 REGION_CSV = ROOT / 'data/corpus/lang_ja_with_regions.csv'
 FORBIDDEN = ROOT / 'data/expressions/forbidden.txt'  # 출처·작품명 등, 한 줄 하나(없으면 생략)
 REGION_ORDER = ['R1', 'R2', 'R3', 'R4']
+ALIAS = {'R0': 'R1'}  # 왕초보(R0) = 옛 짧은 R1 편 그대로, 규칙은 R1
 TURNS = {'R1': {'survival': (6, 8), 'short': (6, 8), 'long': (6, 8), 'chat': (6, 8)}, 'R2': (8, 12), 'R3': (12, 16), 'R4': (12, 16)}
 WORDS = {('R1', 'short'): (2, 9), ('R1', 'survival'): (2, 9), ('R1', 'long'): (1, 10), ('R1', 'chat'): (1, 7), ('R2', None): (1, 12)}
 NEW_PER_TURN = {'R1': 3, 'R2': 4}
@@ -87,7 +88,7 @@ def check_file(path, exprs, cum_vocab, island_seen, fix_rd, forbidden):
     errs, warns = [], []
     ep = json.load(open(path, encoding='utf-8'))
     eid = ep.get('id', path.name)
-    region, kind = ep.get('region', 'R1'), ep.get('kind', 'long')
+    region, kind = ALIAS.get(ep.get('region', 'R1'), ep.get('region', 'R1')), ep.get('kind', 'long')
     turns = ep.get('turns', [])
     E = lambda m: errs.append(f'{eid}: {m}')
     W = lambda m: warns.append(f'{eid}: {m}')

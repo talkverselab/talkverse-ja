@@ -1,0 +1,170 @@
+{
+ "region": "R0",
+ "island": "culture",
+ "draft": true,
+ "flags": [],
+ "purpose": [
+  "culture_content"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "where": "SNS 댓글",
+ "id": "r0_culture_a3",
+ "kind": "short",
+ "title": "댓글 달아 봐",
+ "emoji": "💬",
+ "register": "chat",
+ "twist": 5,
+ "scene": "유카의 SNS 사진에 A 가 처음 일본어 댓글을 단다. 「かわいい」 대신 「こわい」 (S3 콜백)",
+ "goal": "SNS 댓글 말(いいね·かわいい·最高·草)",
+ "expressions": [
+  "かわいい",
+  "最高",
+  "草",
+  "w",
+  "違う",
+  "ごめん"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "（写真投稿）今日のカフェ☕",
+   "kana": "（しゃしんとうこう）きょうのかふぇ☕",
+   "rd": "(샤신 토오코오) 쿄오노 카훼",
+   "ko": "(사진 게시) 오늘의 카페☕",
+   "note": "投稿 = 게시",
+   "tags": [
+    "expr:投稿"
+   ],
+   "new": [
+    "投稿"
+   ],
+   "ui": "bubble",
+   "at": "15:00"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "こわい！",
+   "kana": "こわい！",
+   "rd": "코와이!",
+   "ko": "무서워!",
+   "note": "かわいい 라고 쓰려다 こわい — S3 콜백·반전",
+   "tags": [
+    "callback:r1_survival_s3"
+   ],
+   "new": [],
+   "ui": "bubble",
+   "at": "15:02"
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "え？w",
+   "kana": "え？w",
+   "rd": "에? w",
+   "ko": "어?ㅋ",
+   "note": "짧은 반응",
+   "tags": [
+    "expr:w"
+   ],
+   "new": [],
+   "ui": "bubble",
+   "at": "15:02"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "違う！かわいい！！最高！！",
+   "kana": "ちがう！かわいい！！さいこう！！",
+   "rd": "치가우! 카와이이!! 사이코오!!",
+   "ko": "아니야! 귀여워!! 최고!!",
+   "note": "違う = 아니야(정정)",
+   "tags": [
+    "expr:違う",
+    "expr:かわいい",
+    "expr:最高"
+   ],
+   "new": [],
+   "ui": "bubble",
+   "at": "15:02"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "草",
+   "kana": "くさ",
+   "rd": "쿠사",
+   "ko": "ㅋㅋㅋ",
+   "note": "草 = ㅋㅋㅋ(w 가 풀처럼 보여서)",
+   "tags": [
+    "expr:草"
+   ],
+   "new": [
+    "草"
+   ],
+   "ui": "bubble",
+   "at": "15:03"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "草って何？",
+   "kana": "くさってなに？",
+   "rd": "쿠삿테 나니?",
+   "ko": "草가 뭐야?",
+   "note": "〜って何? = ~가 뭐야?",
+   "tags": [
+    "expr:〜って何?"
+   ],
+   "new": [],
+   "ui": "bubble",
+   "at": "15:03"
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "ja": "www → 草。笑ってるってこと。",
+   "kana": "www → くさ。わらってるってこと。",
+   "rd": "www → 쿠사. 와랏테룻테코토.",
+   "ko": "www → 풀. 웃고 있다는 뜻.",
+   "note": "〜ってこと = ~라는 뜻",
+   "tags": [
+    "expr:w",
+    "form:ってこと"
+   ],
+   "new": [
+    "笑う"
+   ],
+   "ui": "bubble",
+   "at": "15:04"
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "ja": "草草草",
+   "kana": "くさくさくさ",
+   "rd": "쿠사 소오소오",
+   "ko": "풀풀풀",
+   "note": "배운 말 바로 남발 — 킥",
+   "tags": [
+    "expr:草"
+   ],
+   "new": [],
+   "ui": "bubble",
+   "at": "15:04"
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md",
+  "final": "2026-11-03 Grok 반영(4턴 最高)"
+ },
+ "mode": "왕초보",
+ "origin": "r1_culture_a3"
+}

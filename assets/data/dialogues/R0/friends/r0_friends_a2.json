@@ -1,0 +1,125 @@
+{
+ "region": "R0",
+ "draft": true,
+ "flags": [],
+ "id": "r0_friends_a2",
+ "island": "friends",
+ "kind": "short",
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "어디서 왔어요?",
+ "emoji": "🌏",
+ "scene": "카페. 유카가 출신을 묻고, A 의 도시 이름을 유카가 귀여운 발음으로 따라 한다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "register": "polite",
+ "twist": 4,
+ "goal": "출신·사는 곳 묻고 답하기({country}·{city} 변수)와 「へえ」「いいな」 반응",
+ "where": "첫 만남 카페",
+ "expressions": [
+  "へえ",
+  "いいな",
+  "そうなんだ",
+  "もう一回"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "{name}さんは、どこから来ましたか？",
+   "kana": "{name}さんは、どこからきましたか？",
+   "rd": "{name}산와, 도코카라 키마시타카?",
+   "ko": "{name}씨는 어디서 왔어요?",
+   "note": "どこから来ましたか = 어디서 왔어요?",
+   "tags": [
+    "particle:から"
+   ],
+   "new": [
+    "来る"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "{country}です。{city}から。",
+   "kana": "{country}です。{city}から。",
+   "rd": "{country}데스. {city}카라.",
+   "ko": "{country}예요. {city}에서요.",
+   "note": "〜から = ~에서(출발점)",
+   "tags": [
+    "particle:から"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "へえ！{city}！…{city}？合ってます？",
+   "kana": "へえ！{city}！…{city}？あってます？",
+   "rd": "헤에! {city}!… {city}? 앗테마스?",
+   "ko": "오! {city}! …{city}? 맞아요?",
+   "note": "へえ = 오~(관심) · 合ってます? = 맞아요?(발음 확인)",
+   "tags": [
+    "expr:へえ",
+    "expr:合ってる"
+   ],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "（笑）もう一回。{city}。",
+   "kana": "（わらい）もういっかい。{city}。",
+   "rd": "(와라이) 모오 이치카이. {city}.",
+   "ko": "(웃음) 한 번 더. {city}.",
+   "note": "もう一回 = 한 번 더 — 반전: 이번엔 A 가 선생",
+   "tags": [
+    "expr:もう一回"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "{city}！いいな、行ってみたい。",
+   "kana": "{city}！いいな、いってみたい。",
+   "rd": "{city}! 이이나, 오코낫테미타이.",
+   "ko": "{city}! 좋겠다, 가 보고 싶어.",
+   "note": "いいな = 좋겠다(부러움) · 〜てみたい = ~해 보고 싶어",
+   "tags": [
+    "expr:いいな",
+    "form:てみたい"
+   ],
+   "new": [
+    "行く"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "ぜひ！…あ、「ぜひ」、合ってます？",
+   "kana": "ぜひ！…あ、「ぜひ」、あってます？",
+   "rd": "제히!… 아, \"제히\", 앗테마스?",
+   "ko": "꼭 오세요! …아, 「ぜひ」, 맞아요?",
+   "note": "ぜひ = 꼭(권유) — 배운 확인 표현을 되돌려 쓰기",
+   "tags": [
+    "expr:合ってる"
+   ],
+   "new": [
+    "ぜひ"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a2_grok_rewrite.md",
+  "final": "2026-11-03 Grok J15: 5턴 そうなんだ 추가 제안은 억지라 미반영, 나머지 유지"
+ },
+ "mode": "왕초보",
+ "origin": "r1_friends_a2"
+}

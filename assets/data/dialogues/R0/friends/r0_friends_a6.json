@@ -1,0 +1,129 @@
+{
+ "region": "R0",
+ "draft": true,
+ "flags": [],
+ "id": "r0_friends_a6",
+ "island": "friends",
+ "kind": "short",
+ "purpose": [
+  "making_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "사진 찍자!",
+ "emoji": "📸",
+ "scene": "카페 앞. 유카가 사진을 찍자고 하고, A 는 일본식 포즈 「はい、チーズ」 대신 자기 나라식으로 외쳐 버린다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "register": "casual",
+ "twist": 4,
+ "goal": "사진 찍을 때 말(撮ろう·はい、チーズ·もう一枚)과 짧은 감탄",
+ "where": "친구와 외출·SNS",
+ "expressions": [
+  "撮ろう",
+  "はい、チーズ",
+  "もう一枚",
+  "いいね",
+  "最高"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "写真、撮ろう！",
+   "kana": "しゃしん、とろう！",
+   "rd": "샤신, 토로오!",
+   "ko": "사진 찍자!",
+   "note": "撮ろう = 찍자(〜おう 권유)",
+   "tags": [
+    "expr:撮ろう"
+   ],
+   "new": [
+    "撮る"
+   ]
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "いいね！どこで？",
+   "kana": "いいね！どこで？",
+   "rd": "이이네! 도코데?",
+   "ko": "좋아! 어디서?",
+   "note": "どこで? = 어디서?(장소)",
+   "tags": [
+    "expr:いいね",
+    "particle:で"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "ここ！はい、チーズ！",
+   "kana": "ここ！はい、ちーず！",
+   "rd": "코코! 하이, 치이즈!",
+   "ko": "여기! 하이, 치즈!",
+   "note": "はい、チーズ = 사진 찍을 때 구호",
+   "tags": [
+    "expr:はい、チーズ"
+   ],
+   "new": [
+    "チーズ"
+   ]
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "{photo_word}！",
+   "kana": "{photo_word}！",
+   "rd": "{photo_word}!",
+   "ko": "{photo_word}!",
+   "note": "학습자 나라의 사진 구호(변수) — 반전: 구호가 다르다",
+   "tags": [
+    "var:photo_word"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "え、何それ？（爆笑）もう一枚！",
+   "kana": "え、なにそれ？（ばくしょう）もういちまい！",
+   "rd": "에, 나니 소레? (바쿠쇼오) 모오 이치마이!",
+   "ko": "어, 그게 뭐야? (폭소) 한 장 더!",
+   "note": "何それ? = 그게 뭐야? · もう一枚 = 한 장 더(枚 = 장)",
+   "tags": [
+    "expr:何それ?",
+    "expr:もう一枚"
+   ],
+   "new": [
+    "一枚"
+   ]
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "はい、チーズ！…最高。",
+   "kana": "はい、ちーず！…さいこう。",
+   "rd": "하이, 치이즈!… 사이코오.",
+   "ko": "하이, 치즈! …최고.",
+   "note": "最高 = 최고(만족) — 일본식 구호를 바로 따라 함",
+   "tags": [
+    "expr:はい、チーズ",
+    "expr:最高"
+   ],
+   "new": [
+    "最高"
+   ]
+  }
+ ],
+ "review": {
+  "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
+  "final": "2026-11-03 Grok J19 반영(5턴 爆笑)"
+ },
+ "mode": "왕초보",
+ "origin": "r1_friends_a6"
+}
