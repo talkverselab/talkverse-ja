@@ -50,7 +50,7 @@ void main() {
     await wait(t, 1500);
     await shot(t, '13_dialogue_bubbles');
 
-    await t.tap(find.text('모든 문장 듣기').first);
+    await t.tap(find.text('재생').first); // 시안 02: 편 화면이 곧 리더, ▶ 재생
     await wait(t, 2500);
     await shot(t, '14_play_pane_right');
     await wait(t, 4000);

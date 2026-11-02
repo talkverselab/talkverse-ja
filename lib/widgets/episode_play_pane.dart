@@ -131,22 +131,26 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
       onRd: () => setState(() => _showRd = !_showRd),
       onKo: () => setState(() => _showKo = !_showKo),
     );
-    return Column(children: [
-      Expanded(
-        child: wide
-            ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                Expanded(flex: 4, child: script),
-                const VerticalDivider(width: 1, color: AppColors.line),
-                Expanded(flex: 6, child: cut),
-              ])
-            : Column(children: [
-                SizedBox(height: MediaQuery.sizeOf(context).height * 0.42, child: cut),
-                const Divider(height: 1, color: AppColors.line),
-                Expanded(child: script),
-              ]),
-      ),
-      controls,
-    ]);
+    return LayoutBuilder(builder: (context, c) {
+      // 칸이 넓으면(아이패드 가로·전체 화면 900 이상) 좌 스크립트 · 우 컷, 좁으면(아이패드 세로 오른쪽 칸·폰) 컷 위 · 스크립트 아래
+      final sideBySide = wide && c.maxWidth >= 900;
+      return Column(children: [
+        Expanded(
+          child: sideBySide
+              ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+                  Expanded(flex: 4, child: script),
+                  const VerticalDivider(width: 1, color: AppColors.line),
+                  Expanded(flex: 6, child: cut),
+                ])
+              : Column(children: [
+                  SizedBox(height: (c.maxHeight * 0.44).clamp(240, 520), child: cut),
+                  const Divider(height: 1, color: AppColors.line),
+                  Expanded(child: script),
+                ]),
+        ),
+        controls,
+      ]);
+    });
   }
 }
 
@@ -386,10 +390,10 @@ class _ControlBar extends StatelessWidget {
       Text(tr('속도'), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.sumi)),
       chip(rateLabel, true, onRate),
     ]);
-    return Container(
+    return LayoutBuilder(builder: (context, c) => Container(
       padding: EdgeInsets.fromLTRB(16, 8, 12, 8 + bottomInset(context)),
       decoration: const BoxDecoration(color: AppColors.washi, border: Border(top: BorderSide(color: AppColors.line))),
-      child: wide
+      child: wide && c.maxWidth >= 900
           ? Row(children: [
               playBtn,
               const SizedBox(width: 10),
@@ -404,7 +408,7 @@ class _ControlBar extends StatelessWidget {
               Row(children: [playBtn, const SizedBox(width: 6), Expanded(child: slider), Text('${index + 1}/$total', style: const TextStyle(fontSize: 11, color: AppColors.muted))]),
               SingleChildScrollView(scrollDirection: Axis.horizontal, child: Row(children: [speed, const SizedBox(width: 8), subs])),
             ]),
-    );
+    ));
   }
 }
 
@@ -433,7 +437,7 @@ class SceneCut extends StatelessWidget {
       future: _pick(),
       builder: (context, snap) {
         final p = snap.data;
-        return AnimatedSwitcher(
+        return LayoutBuilder(builder: (context, c) => AnimatedSwitcher(
           duration: const Duration(milliseconds: 400),
           child: Container(
             key: ValueKey('${turn.num}:${p?.url}'),
@@ -459,11 +463,11 @@ class SceneCut extends StatelessWidget {
                   top: 12,
                   left: me ? null : 12,
                   right: me ? 12 : null,
-                  child: _SpeechBubble(text: turn.ja, tail: me ? _Tail.right : _Tail.left, maxWidth: MediaQuery.sizeOf(context).width * 0.32),
+                  child: _SpeechBubble(text: turn.ja, tail: me ? _Tail.right : _Tail.left, maxWidth: c.maxWidth * 0.72, small: c.maxHeight < 220),
                 ),
             ]),
           ),
-        );
+        ));
       },
     );
   }
@@ -475,12 +479,13 @@ class _SpeechBubble extends StatelessWidget {
   final String text;
   final _Tail tail;
   final double maxWidth;
-  const _SpeechBubble({required this.text, required this.tail, required this.maxWidth});
+  final bool small;
+  const _SpeechBubble({required this.text, required this.tail, required this.maxWidth, this.small = false});
   @override
   Widget build(BuildContext context) => ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: maxWidth.clamp(160, 360)),
+        constraints: BoxConstraints(maxWidth: maxWidth.clamp(120, 360)),
         child: Container(
-          padding: const EdgeInsets.fromLTRB(14, 10, 14, 10),
+          padding: EdgeInsets.fromLTRB(small ? 10 : 14, small ? 6 : 10, small ? 10 : 14, small ? 6 : 10),
           decoration: BoxDecoration(
             color: AppColors.washi.withValues(alpha: 0.96),
             border: Border.all(color: AppColors.line),
@@ -492,7 +497,7 @@ class _SpeechBubble extends StatelessWidget {
             ),
             boxShadow: kCardShadow,
           ),
-          child: Text(text, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+          child: Text(text, maxLines: small ? 2 : 4, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: small ? 12 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
         ),
       );
 }
@@ -511,16 +516,21 @@ class _SceneCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: const BoxDecoration(gradient: LinearGradient(colors: [Color(0xFFFFF7F0), Color(0xFFF3F0FF)], begin: Alignment.topLeft, end: Alignment.bottomRight)),
-      padding: const EdgeInsets.all(18),
-      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-        Text(turn.stamp ?? dialogue.emoji, style: const TextStyle(fontSize: 56)),
-        const SizedBox(height: 10),
-        Text(dialogue.scene, textAlign: TextAlign.center, maxLines: 3, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.4)),
-        const SizedBox(height: 6),
-        Text(dialogue.speakerName(turn.speaker), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.beni)),
-      ]),
-    );
+    return LayoutBuilder(builder: (context, c) {
+      final small = c.maxHeight < 220; // 홈 「오늘의 컷」 같은 작은 틀
+      return Container(
+        decoration: const BoxDecoration(gradient: LinearGradient(colors: [Color(0xFFFFF7F0), Color(0xFFF3F0FF)], begin: Alignment.topLeft, end: Alignment.bottomRight)),
+        padding: EdgeInsets.fromLTRB(14, small ? 44 : 18, 14, 10),
+        child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+          Text(turn.stamp ?? dialogue.emoji, style: TextStyle(fontSize: small ? 34 : 56)),
+          SizedBox(height: small ? 4 : 10),
+          Flexible(child: Text(dialogue.scene, textAlign: TextAlign.center, maxLines: small ? 2 : 3, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: small ? 11 : 13, color: AppColors.sumiLight, height: 1.4))),
+          if (!small) ...[
+            const SizedBox(height: 6),
+            Text(dialogue.speakerName(turn.speaker), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.beni)),
+          ],
+        ]),
+      );
+    });
   }
 }
