@@ -42,6 +42,7 @@ flutter:
   assets:
     - assets/data/dialogues/L1.json
     - assets/data/dialogues/_meta.json
+    - assets/data/dialogues/R4/love/
     - assets/data/dialogues/R0/culture/
     - assets/data/dialogues/R0/friends/
     - assets/data/dialogues/R0/life/
