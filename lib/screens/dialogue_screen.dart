@@ -9,6 +9,7 @@ import '../services/tts_service.dart';
 import '../widgets/episode_play_pane.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/selectable_ja_text.dart';
+import 'custom_script_screen.dart';
 import 'dialogue_card_screen.dart';
 
 /// 새 회화(R0~R4) 섬 목록 → 편 목록 → 편 화면 — 2026-11-03, 아이패드 두 화면 우선.
@@ -64,6 +65,8 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
           : ListView(
               padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + bottomInset(context)),
               children: [
+                const CustomScriptEntryCard(),
+                const SizedBox(height: 10),
                 _hint(level),
                 const SizedBox(height: 8),
                 for (final lv in ['R0', 'R1', 'R2', 'R3', 'R4'])
@@ -285,7 +288,7 @@ class _Bubble extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final me = t.speaker == 'A';
-    final name = (d.speakers[t.speaker] ?? t.speaker).replaceAll(RegExp(r'[{}]'), '');
+    final name = d.speakerName(t.speaker);
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6),
       child: Row(

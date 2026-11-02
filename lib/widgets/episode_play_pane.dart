@@ -197,7 +197,7 @@ class _Controls extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.fromLTRB(10, 8, 10, 8),
       decoration: BoxDecoration(color: AppColors.washi, border: Border(bottom: BorderSide(color: AppColors.line))),
-      child: Row(children: [
+      child: SingleChildScrollView(scrollDirection: Axis.horizontal, child: Row(children: [
         IconButton(onPressed: onPrev, icon: const Icon(Icons.skip_previous_rounded), color: AppColors.sumi),
         FilledButton.icon(
           onPressed: onPlay,
@@ -208,12 +208,12 @@ class _Controls extends StatelessWidget {
         IconButton(onPressed: onNext, icon: const Icon(Icons.skip_next_rounded), color: AppColors.sumi),
         const SizedBox(width: 4),
         Text(position, style: const TextStyle(fontSize: 11, color: AppColors.muted, letterSpacing: 1)),
-        const Spacer(),
+        const SizedBox(width: 12),
         chip('×${rate.toStringAsFixed(2).replaceAll(RegExp(r'0+$'), '').replaceAll(RegExp(r'\.$'), '')}', true, onRate),
         chip('かな', showKana, onKana),
         chip('독음', showRd, onRd),
         chip('한국어', showKo, onKo),
-      ]),
+      ])),
     );
   }
 }
@@ -244,7 +244,7 @@ class _TurnList extends StatelessWidget {
         final t = d.turns[i];
         final me = t.speaker == 'A';
         final on = i == current;
-        final name = d.speakers[t.speaker] ?? t.speaker;
+        final name = d.speakerName(t.speaker);
         return Padding(
           padding: const EdgeInsets.symmetric(vertical: 5),
           child: Row(
@@ -369,7 +369,7 @@ class _SceneCard extends StatelessWidget {
         const SizedBox(height: 10),
         Text(dialogue.scene, textAlign: TextAlign.center, maxLines: 3, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.4)),
         const SizedBox(height: 6),
-        Text((dialogue.speakers[turn.speaker] ?? turn.speaker).replaceAll(RegExp(r'[{}]'), ''), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.beni)),
+        Text(dialogue.speakerName(turn.speaker), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.beni)),
       ]),
     );
   }

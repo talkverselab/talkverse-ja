@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- 맞춤 회화 코드 서버 워커(맥미니 M6). 5분마다 Cloudflare 대기열에서 1편 처리. docs/CUSTOM_SCRIPT_API.md §5.
+     설치: cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist
+     전제: doppler login 완료(keys/prd TALKVERSE_SCRIPT_KEY), Grok 전용 Chrome(127.0.0.1:9222) 떠 있음. 아직 올리지 않음 — 사용자 확인 뒤. -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.talkverse.ja.custom-script</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd ~/talkverse/ja && doppler run -p keys -c prd --no-check-version -- /usr/bin/python3 tools/custom_script_worker.py --once</string>
+  </array>
+  <key>StartInterval</key><integer>300</integer>
+  <key>EnvironmentVariables</key>
+  <dict><key>PATH</key><string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/Users/talkverse/bin:/Users/talkverse/.local/bin</string><key>TZ</key><string>Asia/Seoul</string></dict>
+  <key>StandardOutPath</key><string>/Users/talkverse/logs/custom_script/launchd.log</string>
+  <key>StandardErrorPath</key><string>/Users/talkverse/logs/custom_script/launchd.err</string>
+</dict>
+</plist>

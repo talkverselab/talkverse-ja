@@ -139,7 +139,4 @@ Flutter 구현 메모
 
 필요하시면 특정 시안의 상세 스펙을 더 깊게 풀어드리거나, 프로토타입 수준의 Flutter 위젯 구조 초안을 추가로 정리하겠습니다.
 
-[images]
-data/review/uxui_ipad_01_sian1.jpg
-data/review/uxui_ipad_01_sian2.jpg
-data/review/uxui_ipad_01_sian3.jpg
+[images] 3장 모두 생성 실패(Grok 이 흐린 썸네일만 반환). 2026-11-02 사용자 지시: 그림은 Claude 가 SVG 로 그리고, 다음 UXUI 요청 때 1장씩 다시 요청.

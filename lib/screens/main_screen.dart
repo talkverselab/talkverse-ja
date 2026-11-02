@@ -12,6 +12,7 @@ import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
+import 'custom_script_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
@@ -491,6 +492,13 @@ class _LearnTabState extends State<LearnTab> {
             ),
             _NavRow(
               seal: '漢字',
+              sealColor: AppColors.beni,
+              title: tr('한자 배우기'),
+              subtitle: tr('글자 형성·소리 가족·그림 · 단계별 20자 → 문제'),
+              onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
+            ),
+            _NavRow(
+              seal: '漢字',
               sealColor: AppColors.sumi,
               title: tr('한자 단계'),
               subtitle: tr('JLPT N5→N1 4지선다'),
@@ -509,6 +517,13 @@ class _LearnTabState extends State<LearnTab> {
               title: tr('섬별 회화 R0~R4'),
               subtitle: tr('모든 문장 듣기 · 그림 카드 · 왕초보/초보'),
               onTap: () => openPane(context, (_) => const DialogueHomeScreen()),
+            ),
+            _NavRow(
+              seal: '✨',
+              sealColor: AppColors.kinDeep,
+              title: tr('맞춤 회화 만들기'),
+              subtitle: tr('섬·상황·레벨 → 나만의 1편 · 첫 편 무료'),
+              onTap: () => openPane(context, (_) => const CustomScriptScreen()),
             ),
             _section(tr('단어')),
             _NavRow(

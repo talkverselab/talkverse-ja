@@ -111,6 +111,12 @@ class Dialogue {
         art: j['art'] as String?,
       );
   bool get isChat => kind == 'chat';
+  /// 화자 표시 이름: `{name}`(학습자 자리) → 「나」, 그 밖의 중괄호는 뗀다.
+  String speakerName(String sp) {
+    final raw = speakers[sp] ?? sp;
+    if (raw.contains('{name}')) return '나';
+    return raw.replaceAll(RegExp(r'[{}]'), '');
+  }
   /// 편 순서 키: survival → a → b → c, 번호 순.
   String get orderKey {
     final m = RegExp(r'_([abcs])(\d+)$').firstMatch(id);

@@ -5,12 +5,15 @@ import '../core/theme.dart';
 import '../main.dart';
 import '../services/kanji_index_service.dart';
 import '../widgets/japanese_decor.dart';
+import 'kanji_learn_screen.dart';
 import 'kanji_quiz_screen.dart';
 import '../core/l10n.dart';
 
 /// 한자 단계 목록 — JLPT N5→N1 순, 레벨 안 회화 빈도순 20자 × N단계. 단계 탭 → 누적 4지선다 퀴즈.
 class KanjiStagesScreen extends StatefulWidget {
-  const KanjiStagesScreen({super.key});
+  /// true = 「한자 배우기」(단계 탭 → 글자 배우기 → 문제), false = 「한자 단계」(바로 4지선다).
+  final bool learn;
+  const KanjiStagesScreen({super.key, this.learn = false});
 
   @override
   State<KanjiStagesScreen> createState() => _KanjiStagesScreenState();
@@ -59,11 +62,11 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         title: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Text(tr('한자 단계 · JLPT'),
+            Text(widget.learn ? tr('한자 배우기') : tr('한자 단계 · JLPT'),
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             Text(
-                trf('{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
+                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -234,8 +237,9 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         stage: s,
         bestPct: _best[s.stage],
         color: levelColor(s.level),
+        learn: widget.learn,
         onTap: () async {
-          await openFull(context, (_) => KanjiQuizScreen(stage: s.stage, allStages: all));
+          await openFull(context, (_) => widget.learn ? KanjiLearnStageScreen(stage: s.stage, allStages: all) : KanjiQuizScreen(stage: s.stage, allStages: all));
           _load();
         },
       ));
@@ -276,8 +280,9 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
         stage: s,
         bestPct: _best[s.stage + _keyOffset],
         color: _regionColors[s.freqLabel] ?? AppColors.sumiLight,
+        learn: widget.learn,
         onTap: () async {
-          await openFull(context, (_) => KanjiQuizScreen(stage: s.stage, allStages: all, resultOffset: _keyOffset));
+          await openFull(context, (_) => widget.learn ? KanjiLearnStageScreen(stage: s.stage, allStages: all, resultOffset: _keyOffset) : KanjiQuizScreen(stage: s.stage, allStages: all, resultOffset: _keyOffset));
           _load();
         },
       ));
@@ -291,8 +296,9 @@ class _StageRow extends StatelessWidget {
   final int? bestPct;
   final Color color;
   final VoidCallback onTap;
+  final bool learn;
 
-  const _StageRow({required this.stage, required this.bestPct, required this.color, required this.onTap});
+  const _StageRow({required this.stage, required this.bestPct, required this.color, required this.onTap, this.learn = false});
 
   @override
   Widget build(BuildContext context) {
@@ -359,7 +365,7 @@ class _StageRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(passed ? Icons.check_circle : Icons.quiz, color: passed ? AppColors.matcha : AppColors.beni),
+                Icon(passed ? Icons.check_circle : (learn ? Icons.menu_book_outlined : Icons.quiz), color: passed ? AppColors.matcha : AppColors.beni),
               ],
             ),
           ),

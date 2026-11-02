@@ -1,6 +1,5 @@
 // 새 회화 뷰어(아이패드 두 화면) 확인용 스크린샷 흐름 — 2026-11-03.
 // 실행: python3 tools/pane_shots.py <아이패드 UDID> <출력폴더> integration_test/dialogue_pane_test.dart
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:japanese_universe/core/l10n.dart';

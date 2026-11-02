@@ -139,7 +139,7 @@ class _CardText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final name = (d.speakers[t.speaker] ?? t.speaker).replaceAll(RegExp(r'[{}]'), '');
+    final name = d.speakerName(t.speaker);
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(18),
