@@ -15,7 +15,7 @@
 ## 1. 시각 톤 — "점토 톤"(우리 앱 그림의 기준)
 
 - **그림 톤 = 부드러운 펠트·점토 인형**: 파스텔(분홍·연보라·하늘·크림) 배경에 둥근 얼굴의 점토 인형, 따뜻한 조명, **그림 안에 글자 없음**. 단어 그림(512px webp)은 talkverse.uk 세션이 이 톤으로 만들어 그림 DB에 넣는다(`GET https://auth.talkverse.uk/art/<xx>/manifest` → `{base, items:[{word, rank, ko, en, key_512, key_1024}]}`; 그림 = base+key). **한·중·일은 같은 그림 세트를 공유**(`lib/services/art_service.dart` 주석). 다른 언어는 uk 세션에 `/art/<xx>/manifest` 를 요청하고, 그림이 필요한 단어 목록을 `docs/grok_ja_words_all.csv` 형식(순위·단어·뜻·그림 힌트, 그릴 수 있는 단어만, 음식은 재료 힌트)으로 넘긴다.
-- **장면 그림(아직 없음)** = 같은 톤의 **만화 1컷**(편의 턴마다 또는 편 대표 1장). 들어오면 JSON 턴 `art` 에 URL 을 채운다. 화자 A(학습자)는 **성별별 그림**(`art_m`/`art_f` 허용 예정)으로, 프로필 성별에 맞춰 보인다. 그 전까지 앱은 단어 그림 → 이모지 장면 카드 순으로 대신 보인다.
+- **장면 그림(아직 없음)** = 같은 톤의 **만화 1컷, A·B 대화 한 쌍당 1장**(8턴 → 4컷; 글자·말풍선 없음, 말풍선은 앱이 얹음). 들어오면 JSON 턴 `art` 에 URL 을 채운다. 화자 A(학습자)는 **성별별 그림**(`art_m`/`art_f` 허용 예정)으로, 프로필 성별에 맞춰 보인다. 그 전까지 앱은 단어 그림 → 이모지 장면 카드 순으로 대신 보인다.
 - 참고 이미지(톤을 그대로 보여 주는 것): `data/review/uxui/sian_01_clay.jpg`(우리 단어 그림 3장을 첨부해 Grok 이 그 톤으로 그린 아이패드 재생 화면), 그림 DB 의 실제 단어 그림(예: 私·来る·ひと). Grok 에 그림을 시킬 때는 이 톤 설명 + 우리 그림 2~3장을 **첨부**(`tools/grok_send.py --attach`)해야 톤이 유지된다.
 - **화면 톤**: 흰 바탕 · 남색 글자 `#0A2540` · 구리 `#B77548` → 황갈 `#C19E6D` 그라데이션 포인트(버튼·성과·강조) · 인디고 `#635BFF`(선택·가나·현재 턴) · 선 `#E6EBF1` · 보조 `#6B7C93`(`lib/core/theme.dart`). 언어마다 워드마크 색은 talkverse.uk 세션이 준다(`https://talkverse.uk/talkverse/lang/<xx>`). 타이포: 제목 20~24 · 본문 16~18 · 말풍선 18~20, 8pt 그리드, 카드 패딩 16, 섹션 24. 모션: 컷 전환 400ms 페이드, 카드 플립 200ms, 편 끝 연출 0.8초(확대 1.05 + 구리 오버레이, 폭죽 없음). 다크 모드: 배경 남색·글자 밝은 회·구리 포인트 유지.
 
@@ -32,11 +32,14 @@
 - 레벨 = 말뭉치 빈도 절벽: R1 ≤294 · R2 ≤437 · R3 ≤998 · R4 ≤2500(언어마다 자기 절벽 CSV `assets/data/freq/lang_<xx>_with_regions.csv`). **R0 왕초보 = 전부 복사가 아니라 R1 중 턴당 평균 글자(음절) 수가 짧은 편만 분리해 R1 에서 뺀다**(일본어 ≤8자 → 26/77편; 주제별 편수가 고르지 않아도 됨).
 - 편 수: R1 = 서바이벌 3 + 주제 5 × 16(짧은 a1~a6·긴 b1~b6·채팅 c1~c4), R2 = 7 주제 × 8, R3 = 6 주제 × 6, R4 샘플. 턴 수 R1 6~8 · R2 8~12 · R3 12~16, 턴 1~2문장.
 - 톤 규칙(`docs/DIALOGUE_WORKFLOW_JA.md` §1): 암기하고 싶은 한 줄, 킥(웃음·놀람) 코믹하게 편마다 1회, 연애는 설렘·여백, 교과서체·번역투·설명 대사 금지, 다짐·감사로 끝내지 않기, 그 언어 사람이 실제로 많이 쓰는 짧은 표현 최우선(표현 풀 `data/expressions/top_expressions.csv`). 고정 인물표·성격 한 줄·콜백(`tags: callback:<편id>`) = §5-2. 화자 A = 학습자(`{name}`·`{country}`·`{city}` 변수, 앱이 프로필 이름·성별로 채움).
+- **연애 주제 범위(사용자 지시 2026-11-02 저녁)**: 이미 연인이 된 상황뿐 아니라 **연애 시작 직전·썸·플러팅**까지 전부. 플러팅 장소는 **카페·클럽 등 제한 없음**(클럽도 넣는다) — "교육용보다 플러팅 다이얼로그가 솔직히 인기 있을 것". **여성 쪽이 먼저 다가가는 편을 더 많이**(남자만 플러팅하면 문제, 성별 균형). 클리셰(드라마 '뻔한 장면')는 **일부 편에만**, 나머지는 일상.
+- **그림 단위 = A·B 대화 한 쌍에 그림 1장**(8턴 → 4컷). 문장은 언제든 바뀌므로 **그림에 말풍선·글자를 넣지 않고** 말풍선·대사는 앱이 얹는다(`SceneCut` 의 말풍선 오버레이). 요청은 품질이 확인된 UXUI 방에서 1장씩.
+- 지금 단계는 리뷰보다 **생성에 집중** — 나머지 주제를 다 쓰고 그림 요청까지(일본어앱은 사용자 지시로 작성 보류 중).
 - 문체 참고는 사용자 소장 회화 교재 1권의 **구조만**(§5-1: 질문→대답+농담→되치기, 중반 작은 갈등, 끝 줄 한 방, 턴마다 관용구 1개) — 내용·문장·서명은 쓰지 않는다.
 
 ## 4. 제작 파이프라인(편 1개 = 한 바퀴)
 
-초안(JSON, `tools/prompts/dialogue_r1.md`) → 검사기 `tools/check_dialogues.py --fix-rd`(턴 수·단어 수·새 단어 ≤3/턴·표현 풀 ≥2·반전·독음 자동) → **Grok 재작성**(`tools/prompts/rewrite_grok.md`, 한 요청 = 편 1개, 결과 `data/review/<편id>_grok_rewrite.md`, 반영 `tools/apply_rewrite.py`) → 최소 수정(검사기 통과용) → 리뷰 페이지(`tools/review_html.py` → talkverse.uk 세션에 "REVIEW_<xx> 갱신" → `https://talkverse.uk/talkverse/review/<xx>/`, 턴·편 입력칸 + 저장 API `https://talkverse.uk/api/review/<xx>`) → 사용자 리뷰 반영(통과 편 `approved`). 채팅 보고는 턴마다 세 줄(목표어 / 독음 / 학습자 언어). 독음 변환기는 언어별로 새로(`tools/rd_ja.py`·`docs/RD_RULES_JA.md` 참고).
+초안(JSON, `tools/prompts/dialogue_r1.md`) → 검사기 `tools/check_dialogues.py --fix-rd`(턴 수·단어 수·새 단어 ≤3/턴·표현 풀 ≥2·반전·독음 자동) → **Grok 재작성**(`tools/prompts/rewrite_grok.md`, 한 요청 = 편 1개, 결과 `data/review/<편id>_grok_rewrite.md`, 반영 `tools/apply_rewrite.py`; **반드시 그 나라 구어체로 "새로 써 달라"** — 판정형 금지, 초안 문장 「유지」 금지: 한국어앱 1회차는 유지가 많아 버리고 2회차로 받음, 틀 = talkverse-ko `tools/prompts/rewrite_grok.md` ⑨항) → 최소 수정(검사기 통과용) → 리뷰 페이지(`tools/review_html.py` → talkverse.uk 세션에 "REVIEW_<xx> 갱신" → `https://talkverse.uk/talkverse/review/<xx>/`, 턴·편 입력칸 + 저장 API `https://talkverse.uk/api/review/<xx>`) → 사용자 리뷰 반영(통과 편 `approved`). 채팅 보고는 턴마다 세 줄(목표어 / 독음 / 학습자 언어). 독음 변환기는 언어별로 새로(`tools/rd_ja.py`·`docs/RD_RULES_JA.md` 참고).
 
 ## 5. 앱 구조(코드 복제 대상)
 
