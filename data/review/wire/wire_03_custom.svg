@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="1024" viewBox="0 0 1366 1024" font-family="-apple-system,Apple SD Gothic Neo,Helvetica,Arial,sans-serif">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#b77548"/><stop offset="1" stop-color="#c19e6d"/></linearGradient></defs>
+<rect width="1366" height="1024" fill="#ffffff"/>
+<text x="24" y="34" font-size="19" fill="#0a2540" font-weight="800" text-anchor="start">와이어프레임 3 — 「맞춤 회화 만들기」: 입력 3단계 → 만드는 중 → 내 맞춤 회화 서랍 · 첫 편 무료 · 서버 ID 저장 · 코드 서버+Grok 제작</text>
+<rect x="24" y="70" width="64" height="900" rx="0" fill="#f6f3ee" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="32" y="92" width="48" height="60" rx="12" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="56" y="120" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">📖</text>
+<text x="56" y="142" font-size="10" fill="#b77548" font-weight="700" text-anchor="middle">배우기</text>
+<text x="56" y="206" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🃏</text>
+<text x="56" y="228" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">복습</text>
+<text x="56" y="292" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🧭</text>
+<text x="56" y="314" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">탐색</text>
+<text x="56" y="378" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">👤</text>
+<text x="56" y="400" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">나</text>
+<rect x="100" y="70" width="560" height="900" rx="16" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="116" y="100" font-size="16" fill="#0a2540" font-weight="800" text-anchor="start">✨ 맞춤 회화 만들기</text>
+<rect x="116" y="112" width="528" height="54" rx="12" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<text x="128" y="134" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">섬·상황·레벨을 고르면 나만의 회화 1편을 만들어 드려요.</text>
+<text x="128" y="154" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">완성까지 몇 분 걸리고, 첫 1편은 무료예요. 앱을 닫아도 돼요.</text>
+<circle cx="128" cy="196" r="11" fill="#0a2540"/>
+<text x="128" y="200" font-size="10" fill="#fff" font-weight="900" text-anchor="middle">1</text>
+<text x="148" y="201" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">어느 섬?</text>
+<rect x="116" y="212" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="178" y="233" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">🆘 서바이벌</text>
+<rect x="248" y="212" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="310" y="233" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">🤝 친구</text>
+<rect x="380" y="212" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="442" y="233" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">💘 사랑</text>
+<rect x="512" y="212" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="574" y="233" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">🏠 생활</text>
+<rect x="116" y="252" width="124" height="32" rx="16" fill="#fff7ef" stroke="#b77548" stroke-width="1.5"/>
+<text x="178" y="273" font-size="11" fill="#b77548" font-weight="800" text-anchor="middle">✈️ 여행</text>
+<rect x="248" y="252" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="310" y="273" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">🎬 문화</text>
+<rect x="380" y="252" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="442" y="273" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">💼 일</text>
+<rect x="512" y="252" width="124" height="32" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1"/>
+<text x="574" y="273" font-size="11" fill="#0a2540" font-weight="800" text-anchor="middle">🎓 학업</text>
+<circle cx="128" cy="320" r="11" fill="#0a2540"/>
+<text x="128" y="324" font-size="10" fill="#fff" font-weight="900" text-anchor="middle">2</text>
+<text x="148" y="325" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">어떤 상황?</text>
+<rect x="116" y="334" width="528" height="64" rx="12" fill="#ffffff" stroke="#b77548" stroke-width="1.5"/>
+<text x="128" y="360" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">온천 여관에 늦게 도착해서 체크인</text>
+<text x="632" y="390" font-size="9" fill="#7a8594" font-weight="600" text-anchor="end">32/120</text>
+<rect x="116" y="408" width="122" height="26" rx="13" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="177.0" y="425" font-size="11" fill="#635bff" font-weight="700" text-anchor="middle">온천 여관 체크인</text>
+<rect x="244" y="408" width="146" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="317.0" y="425" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">길거리 음식 추천받기</text>
+<rect x="396" y="408" width="86" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="439.0" y="425" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">막차를 놓침</text>
+<rect x="488" y="408" width="86" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="531.0" y="425" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">렌터카 반납</text>
+<circle cx="128" cy="470" r="11" fill="#0a2540"/>
+<text x="128" y="474" font-size="10" fill="#fff" font-weight="900" text-anchor="middle">3</text>
+<text x="148" y="475" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">레벨</text>
+<rect x="116" y="484" width="528" height="36" rx="18" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="182" y="507" font-size="11" fill="#7a8594" font-weight="800" text-anchor="middle">왕초보</text>
+<rect x="250" y="486" width="128" height="32" rx="16" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="314" y="507" font-size="11" fill="#635bff" font-weight="800" text-anchor="middle">초보</text>
+<text x="446" y="507" font-size="11" fill="#7a8594" font-weight="800" text-anchor="middle">중급</text>
+<text x="578" y="507" font-size="11" fill="#7a8594" font-weight="800" text-anchor="middle">고급</text>
+<rect x="116" y="540" width="528" height="40" rx="12" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="128" y="565" font-size="11" fill="#7a8594" font-weight="600" text-anchor="start">내 이름(선택) — 회화 속 「나」로 나와요</text>
+<rect x="116" y="600" width="528" height="46" rx="23" fill="url(#g)"/>
+<text x="380" y="629" font-size="14" fill="#fff" font-weight="900" text-anchor="middle">✨ 나만의 회화 만들기</text>
+<text x="380" y="668" font-size="10" fill="#7a8594" font-weight="600" text-anchor="middle">첫 1편 무료 · 완성되면 「내 맞춤 회화」에 들어와요</text>
+<rect x="116" y="700" width="528" height="110" rx="12" fill="#f6f5ff" stroke="#635bff" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="128" y="724" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">2번째부터(402 paid_required)</text>
+<text x="128" y="746" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">“첫 맞춤 회화는 무료로 만들어 드렸어요. 다음부터는 유료예요.</text>
+<text x="128" y="764" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start"> 계속 만들고 싶으시면 언제든 말씀해 주세요.”</text>
+<text x="128" y="790" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">강요 없이 한 줄, 가격은 별도 화면(준비 중)</text>
+<text x="116" y="850" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">폰: 같은 순서로 세로 스크롤(서랍 위, 입력 아래). 아이패드 1000pt 이상: 왼쪽 입력 / 오른쪽 서랍.</text>
+<rect x="680" y="70" width="660" height="900" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="696" y="100" font-size="14" fill="#0a2540" font-weight="800" text-anchor="start">내 맞춤 회화  3</text>
+<text x="1324" y="100" font-size="10" fill="#635bff" font-weight="700" text-anchor="end">↻ 새로고침(1분마다 자동)</text>
+<rect x="696" y="120" width="628" height="86" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="714" y="170" font-size="26" fill="#0a2540" font-weight="500" text-anchor="start">♨️</text>
+<text x="756" y="154" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">온천 여관에 늦게 도착해서 체크인</text>
+<rect x="756" y="166" width="54" height="18" rx="9" fill="#635bff22" stroke="#635bff" stroke-width="1.2"/>
+<text x="783" y="179" font-size="9" fill="#635bff" font-weight="800" text-anchor="middle">쓰는 중</text>
+<text x="820" y="179" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">초보 · 여행 · 초안을 쓰고 있어요 → 다듬고 있어요 → 검수 중</text>
+<text x="1310" y="170" font-size="12" fill="#7a8594" font-weight="700" text-anchor="end">◌</text>
+<rect x="756" y="192" width="400" height="4" rx="2.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="756" y="192" width="160.0" height="4" rx="2.0" fill="#635bff"/>
+<rect x="696" y="216" width="628" height="86" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="714" y="266" font-size="26" fill="#0a2540" font-weight="500" text-anchor="start">🍜</text>
+<text x="756" y="250" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">길거리 음식 추천받기</text>
+<rect x="756" y="262" width="54" height="18" rx="9" fill="#c19e6d22" stroke="#c19e6d" stroke-width="1.2"/>
+<text x="783" y="275" font-size="9" fill="#c19e6d" font-weight="800" text-anchor="middle">대기 중</text>
+<text x="820" y="275" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">초보 · 여행 · 앞에 1편</text>
+<text x="1310" y="266" font-size="12" fill="#7a8594" font-weight="700" text-anchor="end">◌</text>
+<rect x="756" y="288" width="400" height="4" rx="2.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="756" y="288" width="2" height="4" rx="2.0" fill="#635bff"/>
+<rect x="696" y="312" width="628" height="86" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="714" y="362" font-size="26" fill="#0a2540" font-weight="500" text-anchor="start">🎂</text>
+<text x="756" y="346" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">생일 작전 들켰다</text>
+<rect x="756" y="358" width="54" height="18" rx="9" fill="#2f9e6b22" stroke="#2f9e6b" stroke-width="1.2"/>
+<text x="783" y="371" font-size="9" fill="#2f9e6b" font-weight="800" text-anchor="middle">완성</text>
+<text x="820" y="371" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">중급 · 친구 · 10턴 · 「맞춤」 배지</text>
+<text x="1310" y="362" font-size="12" fill="#7a8594" font-weight="700" text-anchor="end">›</text>
+<text x="696" y="430" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">완성 편은 기존 편과 같은 구조 → 재생 패널·그림 카드·한자 팝업·라이트너에 그대로. 카드 왼쪽 위 구리색 「맞춤」 배지로 섬 편과 구분.</text>
+<text x="696" y="470" font-size="12" fill="#7a8594" font-weight="700" text-anchor="start">뒤에서 일어나는 일(앱은 ID 만 들고 있음)</text>
+<rect x="696" y="486" width="146" height="80" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="704" y="506" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">앱</text>
+<text x="704" y="526" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">POST /api/script/ja</text>
+<text x="704" y="542" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">{device,domain,situation,level}</text>
+<text x="846" y="532" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">→</text>
+<rect x="854" y="486" width="146" height="80" rx="10" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<text x="862" y="506" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">Cloudflare D1</text>
+<text x="862" y="526" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">custom_scripts</text>
+<text x="862" y="542" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">id=ja-xxxxxxxx · queued</text>
+<text x="1004" y="532" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">→</text>
+<rect x="1012" y="486" width="146" height="80" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1020" y="506" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">맥미니 코드 서버</text>
+<text x="1020" y="526" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">claude-lab -p 초안</text>
+<text x="1020" y="542" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">(5분마다 pending 확인)</text>
+<text x="1162" y="532" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">→</text>
+<rect x="1170" y="486" width="146" height="80" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1178" y="506" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">Grok</text>
+<text x="1178" y="526" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">「일본어 회화 검수」</text>
+<text x="1178" y="542" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">재작성</text>
+<text x="1243" y="578" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">↓</text>
+<rect x="696" y="582" width="146" height="80" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="704" y="602" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">검사·독음</text>
+<text x="704" y="622" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">check_dialogues</text>
+<text x="704" y="638" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">--fix-rd</text>
+<text x="846" y="628" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">→</text>
+<rect x="854" y="582" width="146" height="80" rx="10" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<text x="862" y="602" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">Cloudflare D1</text>
+<text x="862" y="622" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">result → ready</text>
+<text x="862" y="638" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">(같은 ID)</text>
+<text x="1004" y="628" font-size="14" fill="#b77548" font-weight="900" text-anchor="middle">→</text>
+<rect x="1012" y="582" width="146" height="80" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1020" y="602" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">앱</text>
+<text x="1020" y="622" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">GET /&lt;id&gt; → 편 JSON</text>
+<text x="1020" y="638" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">로컬 보관·오프라인 OK</text>
+<text x="696" y="700" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">외부 LLM API 없음 · 1회 무료(서버가 device 로 셈) · 유료는 paid_devices 표(지금은 비움) · 많이 쓰면 그때 큐·과금 설계</text>
+<text x="696" y="730" font-size="10" fill="#b77548" font-weight="700" text-anchor="start">서버 키는 사용자가 set_script_key.sh 로 넣음(완료) — 코드 서버 launchd 는 사용자 확인 뒤 가동</text>
+</svg>

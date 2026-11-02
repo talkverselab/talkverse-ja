@@ -89,6 +89,8 @@ def check_file(path, exprs, cum_vocab, island_seen, fix_rd, forbidden):
     ep = json.load(open(path, encoding='utf-8'))
     eid = ep.get('id', path.name)
     region, kind = ALIAS.get(ep.get('region', 'R1'), ep.get('region', 'R1')), ep.get('kind', 'long')
+    if kind == 'custom':  # 맞춤 회화(docs/CUSTOM_SCRIPT_API.md) — 규칙은 그 레벨의 long 편과 같게
+        kind = 'long'
     turns = ep.get('turns', [])
     E = lambda m: errs.append(f'{eid}: {m}')
     W = lambda m: warns.append(f'{eid}: {m}')

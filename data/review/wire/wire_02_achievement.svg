@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="1024" viewBox="0 0 1366 1024" font-family="-apple-system,Apple SD Gothic Neo,Helvetica,Arial,sans-serif">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#b77548"/><stop offset="1" stop-color="#c19e6d"/></linearGradient></defs>
+<rect width="1366" height="1024" fill="#ffffff"/>
+<text x="24" y="34" font-size="19" fill="#0a2540" font-weight="800" text-anchor="start">와이어프레임 2 — 「나」 탭 성과 데스크 (센다: 편 완주·라이트너 단계·핵심 표현·한자·빈도 커버율 / 안 센다: 앱 오픈·스트릭·포인트·순위)</text>
+<rect x="24" y="70" width="64" height="900" rx="0" fill="#f6f3ee" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="56" y="120" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">📖</text>
+<text x="56" y="142" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">배우기</text>
+<text x="56" y="206" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🃏</text>
+<text x="56" y="228" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">복습</text>
+<text x="56" y="292" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🧭</text>
+<text x="56" y="314" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">탐색</text>
+<rect x="32" y="350" width="48" height="60" rx="12" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="56" y="378" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">👤</text>
+<text x="56" y="400" font-size="10" fill="#b77548" font-weight="700" text-anchor="middle">나</text>
+<rect x="100" y="70" width="300" height="900" rx="16" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="116" y="100" font-size="16" fill="#0a2540" font-weight="800" text-anchor="start">나</text>
+<rect x="116" y="114" width="60" height="26" rx="13" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="146.0" y="131" font-size="11" fill="#635bff" font-weight="700" text-anchor="middle">이번 주</text>
+<rect x="182" y="114" width="60" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="212.0" y="131" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">이번 달</text>
+<rect x="248" y="114" width="44" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="270.0" y="131" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">전체</text>
+<text x="116" y="166" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">이번 주 한 줄</text>
+<rect x="116" y="174" width="268" height="70" rx="12" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<text x="128" y="200" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">여행 섬 왕초보를 거의 다 읽었어요</text>
+<text x="128" y="222" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">편 4 완주 · 카드 9 졸업 · 한자 12자</text>
+<text x="116" y="274" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">빈도 커버율</text>
+<circle cx="170" cy="344" r="44" fill="none" stroke="#e6e2db" stroke-width="10"/><circle cx="170" cy="344" r="44" fill="none" stroke="#b77548" stroke-width="10" stroke-dasharray="116 160" transform="rotate(-90 170 344)"/>
+<text x="170" y="350" font-size="18" fill="#0a2540" font-weight="900" text-anchor="middle">42%</text>
+<text x="228" y="322" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">내가 아는 단어로</text>
+<text x="228" y="340" font-size="11" fill="#0a2540" font-weight="800" text-anchor="start">일상 일본어의 약 42%</text>
+<text x="228" y="358" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">를 이해할 수 있어요</text>
+<text x="228" y="380" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">다음 절벽 437까지 12개 더</text>
+<text x="116" y="420" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">절벽 마일스톤</text>
+<rect x="116" y="428" width="268" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="116" y="428" width="166.16" height="8" rx="4.0" fill="#b77548"/>
+<text x="148.16" y="452" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">294</text>
+<text x="204.44" y="452" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">437</text>
+<text x="282.15999999999997" y="452" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">998</text>
+<text x="373.28" y="452" font-size="9" fill="#7a8594" font-weight="800" text-anchor="middle">2500</text>
+<text x="116" y="490" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">라이트너 분포(카드 수)</text>
+<rect x="116" y="486" width="26" height="114" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="129" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">1</text>
+<rect x="149" y="534" width="26" height="66" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="162" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">2</text>
+<rect x="182" y="549" width="26" height="51" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="195" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">3</text>
+<rect x="215" y="567" width="26" height="33" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="228" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">4</text>
+<rect x="248" y="573" width="26" height="27" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="261" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">5</text>
+<rect x="281" y="582" width="26" height="18" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="294" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">6</text>
+<rect x="314" y="588" width="26" height="12" rx="4" fill="#635bff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="327" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">7</text>
+<rect x="347" y="564" width="26" height="36" rx="4" fill="#2f9e6b" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="360" y="616" font-size="9" fill="#7a8594" font-weight="700" text-anchor="middle">졸</text>
+<text x="116" y="650" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">이번 주 되돌아보기</text>
+<rect x="116" y="660" width="30" height="30" rx="8" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="131" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">월</text>
+<text x="131" y="706" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">2편</text>
+<rect x="154" y="660" width="30" height="30" rx="8" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="169" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">화</text>
+<text x="169" y="706" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">1편</text>
+<rect x="192" y="660" width="30" height="30" rx="8" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="207" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">수</text>
+<rect x="230" y="660" width="30" height="30" rx="8" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="245" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">목</text>
+<text x="245" y="706" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">3편</text>
+<rect x="268" y="660" width="30" height="30" rx="8" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="283" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">금</text>
+<text x="283" y="706" font-size="9" fill="#b77548" font-weight="800" text-anchor="middle">1편</text>
+<rect x="306" y="660" width="30" height="30" rx="8" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="321" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">토</text>
+<rect x="344" y="660" width="30" height="30" rx="8" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="359" y="680" font-size="10" fill="#0a2540" font-weight="700" text-anchor="middle">일</text>
+<text x="116" y="750" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">원칙: 큰 숫자 대신 문장 + 작은 진행 막대.</text>
+<text x="116" y="768" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">경쟁·순위·포인트·스트릭 없음.</text>
+<rect x="420" y="70" width="920" height="900" rx="16" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="436" y="100" font-size="12" fill="#7a8594" font-weight="700" text-anchor="start">섬별 진행(아이패드 오른쪽 칸)</text>
+<rect x="436" y="116" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="448" y="144" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">🆘 서바이벌</text>
+<text x="448" y="172" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="492" y="164" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="164" width="140" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="172" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">100%</text>
+<text x="448" y="206" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="492" y="198" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="198" width="140" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="206" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">100%</text>
+<text x="448" y="240" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="492" y="232" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="232" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="240" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="448" y="288" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 9/9 기억</text>
+<rect x="660" y="116" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="672" y="144" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">🤝 친구</text>
+<text x="672" y="172" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="716" y="164" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="164" width="112.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="172" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">80%</text>
+<text x="672" y="206" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="716" y="198" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="198" width="43.4" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="206" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">31%</text>
+<text x="672" y="240" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="716" y="232" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="232" width="16.8" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="240" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">12%</text>
+<text x="672" y="288" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 18/48 기억</text>
+<rect x="884" y="116" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="896" y="144" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">💘 사랑</text>
+<text x="896" y="172" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="940" y="164" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="164" width="70.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="172" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">50%</text>
+<text x="896" y="206" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="940" y="198" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="198" width="28.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="206" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">20%</text>
+<text x="896" y="240" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="940" y="232" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="232" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="240" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="896" y="288" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 6/30 기억</text>
+<rect x="1108" y="116" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1120" y="144" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">🏠 생활</text>
+<text x="1120" y="172" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="1164" y="164" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="164" width="42.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="172" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">30%</text>
+<text x="1120" y="206" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="1164" y="198" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="198" width="16.8" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="206" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">12%</text>
+<text x="1120" y="240" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="1164" y="232" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="232" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="240" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="1120" y="288" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 4/48 기억</text>
+<rect x="436" y="326" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="448" y="354" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">✈️ 여행</text>
+<text x="448" y="382" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="492" y="374" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="374" width="126.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="382" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">90%</text>
+<text x="448" y="416" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="492" y="408" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="408" width="8.4" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="416" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">6%</text>
+<text x="448" y="450" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="492" y="442" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="492" y="442" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="632" y="450" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="448" y="498" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 2/48 기억</text>
+<rect x="660" y="326" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="672" y="354" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">🎬 문화</text>
+<text x="672" y="382" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="716" y="374" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="374" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="382" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="672" y="416" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="716" y="408" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="408" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="416" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="672" y="450" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="716" y="442" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="716" y="442" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="856" y="450" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="672" y="498" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 0/48 기억</text>
+<rect x="884" y="326" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="896" y="354" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">💼 일</text>
+<text x="896" y="382" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="940" y="374" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="374" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="382" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="896" y="416" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="940" y="408" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="408" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="416" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="896" y="450" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="940" y="442" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="940" y="442" width="35.0" height="8" rx="4.0" fill="#b77548"/>
+<text x="1080" y="450" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">25%</text>
+<text x="896" y="498" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 4/16 기억</text>
+<rect x="1108" y="326" width="208" height="190" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1120" y="354" font-size="13" fill="#0a2540" font-weight="800" text-anchor="start">🎓 학업</text>
+<text x="1120" y="382" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">왕초보</text>
+<rect x="1164" y="374" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="374" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="382" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="1120" y="416" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">초보</text>
+<rect x="1164" y="408" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="408" width="2" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="416" font-size="9" fill="#7a8594" font-weight="800" text-anchor="end">0%</text>
+<text x="1120" y="450" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">중급</text>
+<rect x="1164" y="442" width="140" height="8" rx="4.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1164" y="442" width="16.8" height="8" rx="4.0" fill="#b77548"/>
+<text x="1304" y="450" font-size="9" fill="#b77548" font-weight="800" text-anchor="end">12%</text>
+<text x="1120" y="498" font-size="10" fill="#635bff" font-weight="700" text-anchor="start">핵심 표현 2/16 기억</text>
+<text x="436" y="556" font-size="12" fill="#7a8594" font-weight="700" text-anchor="start">편 끝·복습 끝의 순간 연출(공용 ProgressSummaryCard)</text>
+<rect x="436" y="566" width="440" height="160" rx="14" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<rect x="448" y="578" width="120" height="120" rx="14" fill="#f1ece4" stroke="#e6e2db" stroke-width="1.2"/>
+<path d="M466.0,674.0 L496.0,632.0 L514.0,656.0 L529.6,638.0 L551.2,674.0 Z" fill="#d9cfbf"/><circle cx="534.4" cy="611.6" r="8.4" fill="#e6d2b5"/>
+<text x="508.0" y="688" font-size="11" fill="#7a8594" font-weight="600" text-anchor="middle">장면 그림 살짝 확대</text>
+<text x="584" y="600" font-size="14" fill="#0a2540" font-weight="900" text-anchor="start">🌟 한 장면을 마쳤어요</text>
+<text x="584" y="624" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">핵심 표현 3개 중 2개를 기억했어요</text>
+<text x="584" y="646" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">새로 본 한자 写·髪 · 커버율 +0.3%p</text>
+<text x="584" y="672" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">구리빛이 한 번 스치고 짧은 효과음 0.8초, 폭죽 없음</text>
+<rect x="584" y="686" width="120" height="28" rx="10" fill="url(#g)"/>
+<text x="644" y="705" font-size="10" fill="#fff" font-weight="800" text-anchor="middle">그림 카드로 →</text>
+<rect x="892" y="566" width="432" height="160" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="904" y="590" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">복습 끝(라이트너 세션)</text>
+<text x="904" y="614" font-size="11" fill="#0a2540" font-weight="700" text-anchor="start">오늘 졸업한 카드 3장 · 7단계로 오른 카드 2장</text>
+<text x="904" y="636" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">내일 돌아올 카드 14장</text>
+<text x="904" y="658" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">틀린 카드는 1단계로 — 괜찮아요, 그게 복습이에요</text>
+<text x="436" y="760" font-size="11" fill="#0a2540" font-weight="600" text-anchor="start">Flutter 메모: 「나」 탭 AchievementDesk = IslandProgressGrid + LeitnerDistribution + CoverageMeter + WeeklyReview · ProgressSummaryCard(편 끝·복습 끝·홈 공용)</text>
+<text x="436" y="782" font-size="11" fill="#7a8594" font-weight="500" text-anchor="start">데이터: 편 완주 이벤트 · 카드 단계 변화 · 한자 조회 집합 · 단어 마스터 집합 → CoverageService(절벽 CSV 로 커버율). 폰: 왼쪽 칸이 위, 섬 카드가 세로로.</text>
+</svg>

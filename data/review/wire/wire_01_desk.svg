@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1366" height="1024" viewBox="0 0 1366 1024" font-family="-apple-system,Apple SD Gothic Neo,Helvetica,Arial,sans-serif">
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#b77548"/><stop offset="1" stop-color="#c19e6d"/></linearGradient></defs>
+<rect width="1366" height="1024" fill="#ffffff"/>
+<text x="24" y="34" font-size="19" fill="#0a2540" font-weight="800" text-anchor="start">와이어프레임 1 — 시안 ③ 「학습 데스크」 아이패드 가로: ① 홈·섬 목록 → ② 편 화면 → ③ 모든 문장 듣기</text>
+<rect x="24" y="70" width="430" height="560" rx="16" fill="#ffffff" stroke="#0a2540" stroke-width="2"/>
+<rect x="304" y="56" width="150" height="26" rx="13" fill="#0a2540" stroke="#0a2540" stroke-width="1.2"/>
+<text x="379" y="74" font-size="11" fill="#fff" font-weight="800" text-anchor="middle">① 홈 · 섬 목록</text>
+<rect x="25" y="71" width="64" height="558" rx="0" fill="#f6f3ee" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="33" y="93" width="48" height="60" rx="12" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="57" y="121" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">📖</text>
+<text x="57" y="143" font-size="10" fill="#b77548" font-weight="700" text-anchor="middle">배우기</text>
+<text x="57" y="207" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🃏</text>
+<text x="57" y="229" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">복습</text>
+<text x="57" y="293" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🧭</text>
+<text x="57" y="315" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">탐색</text>
+<text x="57" y="379" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">👤</text>
+<text x="57" y="401" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">나</text>
+<rect x="100" y="86" width="180" height="528" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="112" y="112" font-size="15" fill="#b77548" font-weight="800" text-anchor="start">こんにちは! 🌸</text>
+<text x="112" y="130" font-size="10" fill="#7a8594" font-weight="600" text-anchor="start">오늘의 작은 성과</text>
+<rect x="112" y="138" width="156" height="48" rx="10" fill="url(#g)"/>
+<text x="120" y="158" font-size="11" fill="#fff" font-weight="800" text-anchor="start">여행 섬 1편 완주</text>
+<text x="120" y="175" font-size="9" fill="#fff" font-weight="600" text-anchor="start">핵심 표현 3개 중 2개 ✔</text>
+<text x="112" y="210" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">섬 (초보 R1)</text>
+<rect x="200" y="198" width="44" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="222.0" y="215" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">왕초보</text>
+<rect x="246" y="198" width="34" height="26" rx="13" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="263.0" y="215" font-size="11" fill="#635bff" font-weight="700" text-anchor="middle">초보</text>
+<rect x="112" y="226" width="156" height="38" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="122" y="248" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🆘 서바이벌</text>
+<text x="258" y="248" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">3/3</text>
+<rect x="122" y="255" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="255" width="80" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="270" width="156" height="38" rx="10" fill="#ffffff" stroke="#b77548" stroke-width="1.2"/>
+<text x="122" y="292" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🤝 친구</text>
+<text x="258" y="292" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">5/16</text>
+<rect x="122" y="299" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="299" width="24.0" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="314" width="156" height="38" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="122" y="336" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">💘 사랑</text>
+<text x="258" y="336" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">0/10</text>
+<rect x="122" y="343" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="343" width="2" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="358" width="156" height="38" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="122" y="380" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🏠 생활</text>
+<text x="258" y="380" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">2/16</text>
+<rect x="122" y="387" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="387" width="9.6" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="402" width="156" height="38" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="122" y="424" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">✈️ 여행</text>
+<text x="258" y="424" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">1/16</text>
+<rect x="122" y="431" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="431" width="4.8" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="446" width="156" height="38" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="122" y="468" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🎬 문화</text>
+<text x="258" y="468" font-size="10" fill="#7a8594" font-weight="600" text-anchor="end">0/16</text>
+<rect x="122" y="475" width="80" height="3" rx="1.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="122" y="475" width="2" height="3" rx="1.5" fill="#b77548"/>
+<rect x="112" y="500" width="156" height="100" rx="12" fill="#fff7ef" stroke="#b77548" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="122" y="522" font-size="11" fill="#b77548" font-weight="800" text-anchor="start">✨ 맞춤 회화 만들기</text>
+<text x="122" y="540" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">섬·상황·레벨 → 나만의 1편</text>
+<text x="122" y="556" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">첫 편 무료</text>
+<rect x="294" y="86" width="150" height="528" rx="14" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="306" y="110" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🤝 친구 섬 · 16편</text>
+<rect x="306" y="120" width="126" height="4" rx="2.0" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="306" y="120" width="37.8" height="4" rx="2.0" fill="#b77548"/>
+<rect x="304" y="136" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="154" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a1 · 짧은 편</text>
+<text x="312" y="170" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 완주 ✔</text>
+<circle cx="422" cy="148" r="5" fill="#2f9e6b"/>
+<rect x="304" y="190" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="208" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a2 · 짧은 편</text>
+<text x="312" y="224" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 완주 ✔</text>
+<circle cx="422" cy="202" r="5" fill="#2f9e6b"/>
+<rect x="304" y="244" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="262" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a3 · 짧은 편</text>
+<text x="312" y="278" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="304" y="298" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="316" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a4 · 짧은 편</text>
+<text x="312" y="332" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="304" y="352" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="370" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a5 · 짧은 편</text>
+<text x="312" y="386" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="304" y="406" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="424" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a6 · 짧은 편</text>
+<text x="312" y="440" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="304" y="460" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="478" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a7 · 짧은 편</text>
+<text x="312" y="494" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="304" y="514" width="130" height="46" rx="10" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="312" y="532" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a8 · 짧은 편</text>
+<text x="312" y="548" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · 새 표현 2</text>
+<rect x="468" y="70" width="430" height="560" rx="16" fill="#ffffff" stroke="#0a2540" stroke-width="2"/>
+<rect x="748" y="56" width="150" height="26" rx="13" fill="#0a2540" stroke="#0a2540" stroke-width="1.2"/>
+<text x="823" y="74" font-size="11" fill="#fff" font-weight="800" text-anchor="middle">② 편 화면</text>
+<rect x="469" y="71" width="64" height="558" rx="0" fill="#f6f3ee" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="477" y="93" width="48" height="60" rx="12" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="501" y="121" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">📖</text>
+<text x="501" y="143" font-size="10" fill="#b77548" font-weight="700" text-anchor="middle">배우기</text>
+<text x="501" y="207" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🃏</text>
+<text x="501" y="229" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">복습</text>
+<text x="501" y="293" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🧭</text>
+<text x="501" y="315" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">탐색</text>
+<text x="501" y="379" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">👤</text>
+<text x="501" y="401" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">나</text>
+<rect x="544" y="86" width="180" height="528" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="556" y="110" font-size="12" fill="#0a2540" font-weight="800" text-anchor="start">🤝 친구 섬</text>
+<rect x="554" y="126" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="144" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a1 매칭됐다!</text>
+<text x="562" y="160" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="178" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="196" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a2 카페에서</text>
+<text x="562" y="212" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="230" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="248" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a3 늦었어</text>
+<text x="562" y="264" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="282" width="160" height="44" rx="10" fill="#fff7ef" stroke="#b77548" stroke-width="1.2"/>
+<text x="562" y="300" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a4 사진이랑 다르네?</text>
+<text x="562" y="316" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="334" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="352" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a5 우산 하나</text>
+<text x="562" y="368" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="386" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="404" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">a6 밤 산책</text>
+<text x="562" y="420" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="438" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="456" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">b1 생일 작전</text>
+<text x="562" y="472" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="490" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="508" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">b2 영화 고르기</text>
+<text x="562" y="524" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="554" y="542" width="160" height="44" rx="10" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="562" y="560" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">b3 룸메 규칙</text>
+<text x="562" y="576" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">6턴 · R1</text>
+<rect x="738" y="86" width="150" height="528" rx="14" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="748" y="106" font-size="11" fill="#0a2540" font-weight="800" text-anchor="start">☕ 사진이랑 다르네?</text>
+<text x="748" y="120" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">R1 · 친구 · 6턴</text>
+<rect x="748" y="128" width="130" height="30" rx="10" fill="url(#g)"/>
+<text x="813" y="148" font-size="11" fill="#fff" font-weight="800" text-anchor="middle">▶ 모든 문장 듣기</text>
+<rect x="748" y="166" width="130" height="80" rx="14" fill="#f1ece4" stroke="#e6e2db" stroke-width="1.2"/>
+<path d="M767.5,230.0 L800.0,202.0 L819.5,218.0 L836.4,206.0 L859.8,230.0 Z" fill="#d9cfbf"/><circle cx="841.6" cy="188.4" r="5.6000000000000005" fill="#e6d2b5"/>
+<text x="813.0" y="236" font-size="11" fill="#7a8594" font-weight="600" text-anchor="middle">장면 그림(만화 1컷)</text>
+<rect x="748" y="256" width="102" height="52" rx="12" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="756" y="272" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさん？</text>
+<text x="756" y="286" font-size="8" fill="#635bff" font-weight="600" text-anchor="start">あの…ゆかさん？</text>
+<text x="756" y="300" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<rect x="776" y="318" width="102" height="52" rx="12" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="784" y="334" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさん？</text>
+<text x="784" y="348" font-size="8" fill="#635bff" font-weight="600" text-anchor="start">あの…ゆかさん？</text>
+<text x="784" y="362" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<rect x="748" y="380" width="102" height="52" rx="12" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="756" y="396" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさん？</text>
+<text x="756" y="410" font-size="8" fill="#635bff" font-weight="600" text-anchor="start">あの…ゆかさん？</text>
+<text x="756" y="424" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<rect x="776" y="442" width="102" height="52" rx="12" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="784" y="458" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさん？</text>
+<text x="784" y="472" font-size="8" fill="#635bff" font-weight="600" text-anchor="start">あの…ゆかさん？</text>
+<text x="784" y="486" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<rect x="748" y="504" width="102" height="52" rx="12" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="756" y="520" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさん？</text>
+<text x="756" y="534" font-size="8" fill="#635bff" font-weight="600" text-anchor="start">あの…ゆかさん？</text>
+<text x="756" y="548" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<text x="748" y="590" font-size="9" fill="#7a8594" font-weight="700" text-anchor="start">🃏 그림 카드 · 한자를 탭 = 팝업</text>
+<rect x="912" y="70" width="430" height="560" rx="16" fill="#ffffff" stroke="#0a2540" stroke-width="2"/>
+<rect x="1192" y="56" width="150" height="26" rx="13" fill="#0a2540" stroke="#0a2540" stroke-width="1.2"/>
+<text x="1267" y="74" font-size="11" fill="#fff" font-weight="800" text-anchor="middle">③ 모든 문장 듣기</text>
+<rect x="913" y="71" width="64" height="558" rx="0" fill="#f6f3ee" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="921" y="93" width="48" height="60" rx="12" fill="#efe6dc" stroke="#b77548" stroke-width="1.2"/>
+<text x="945" y="121" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">📖</text>
+<text x="945" y="143" font-size="10" fill="#b77548" font-weight="700" text-anchor="middle">배우기</text>
+<text x="945" y="207" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🃏</text>
+<text x="945" y="229" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">복습</text>
+<text x="945" y="293" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">🧭</text>
+<text x="945" y="315" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">탐색</text>
+<text x="945" y="379" font-size="20" fill="#0a2540" font-weight="500" text-anchor="middle">👤</text>
+<text x="945" y="401" font-size="10" fill="#7a8594" font-weight="700" text-anchor="middle">나</text>
+<rect x="988" y="86" width="180" height="528" rx="14" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1000" y="110" font-size="11" fill="#0a2540" font-weight="800" text-anchor="start">☕ 사진이랑 다르네?</text>
+<rect x="1000" y="122" width="156" height="120" rx="14" fill="#f1ece4" stroke="#e6e2db" stroke-width="1.2"/>
+<path d="M1023.4,218.0 L1062.4,176.0 L1085.8,200.0 L1106.08,182.0 L1134.16,218.0 Z" fill="#d9cfbf"/><circle cx="1112.32" cy="155.6" r="8.4" fill="#e6d2b5"/>
+<text x="1078.0" y="232" font-size="11" fill="#7a8594" font-weight="600" text-anchor="middle">현재 턴 장면 그림</text>
+<text x="1000" y="264" font-size="9" fill="#7a8594" font-weight="700" text-anchor="start">자막 단계</text>
+<rect x="1000" y="270" width="38" height="26" rx="13" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="1019.0" y="287" font-size="11" fill="#635bff" font-weight="700" text-anchor="middle">日本語</text>
+<rect x="1042" y="270" width="38" height="26" rx="13" fill="#efeefe" stroke="#635bff" stroke-width="1.2"/>
+<text x="1061.0" y="287" font-size="11" fill="#635bff" font-weight="700" text-anchor="middle">かな</text>
+<rect x="1084" y="270" width="38" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1103.0" y="287" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">독음</text>
+<rect x="1126" y="270" width="38" height="26" rx="13" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1145.0" y="287" font-size="11" fill="#7a8594" font-weight="700" text-anchor="middle">한국어</text>
+<rect x="1000" y="310" width="156" height="296" rx="12" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1012" y="332" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">1 · ユカ</text>
+<text x="1012" y="346" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あの…ユカさんですか？</text>
+<text x="1012" y="357" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">저… 유카 씨예요?</text>
+<rect x="1006" y="364" width="144" height="44" rx="10" fill="#efeefe" stroke="#635bff" stroke-width="1.5"/>
+<text x="1012" y="380" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">2 · 나</text>
+<text x="1012" y="394" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">はい！{name}さん？</text>
+<text x="1012" y="405" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">네! {name}씨?</text>
+<text x="1012" y="428" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">3 · ユカ</text>
+<text x="1012" y="442" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">はじめまして。あ、</text>
+<text x="1012" y="453" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">처음 뵙겠습니다. 아,</text>
+<text x="1012" y="476" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">4 · 나</text>
+<text x="1012" y="490" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">うそ！髪、切った</text>
+<text x="1012" y="501" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">진짜? 머리 잘라서</text>
+<text x="1012" y="524" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">5 · ユカ</text>
+<text x="1012" y="538" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">あ、はい。でも、</text>
+<text x="1012" y="549" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">아, 네. 그래도</text>
+<text x="1012" y="572" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">6 · 나</text>
+<text x="1012" y="586" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">ありがとう。じゃ、</text>
+<text x="1012" y="597" font-size="8" fill="#7a8594" font-weight="600" text-anchor="start">고마워. 자, 앉자</text>
+<rect x="1182" y="86" width="150" height="528" rx="14" fill="#ffffff" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1192" y="106" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">재생 컨트롤</text>
+<rect x="1192" y="116" width="130" height="36" rx="18" fill="#b77548" stroke="#b77548" stroke-width="1.2"/>
+<text x="1257" y="139" font-size="11" fill="#fff" font-weight="800" text-anchor="middle">⏮  ⏸ 일시정지  ⏭</text>
+<text x="1192" y="170" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">2 / 6</text>
+<rect x="1222" y="164" width="100" height="5" rx="2.5" fill="#eee9e1" stroke="#e6e2db" stroke-width="1.2"/>
+<rect x="1222" y="164" width="33.0" height="5" rx="2.5" fill="#635bff"/>
+<text x="1192" y="194" font-size="10" fill="#0a2540" font-weight="700" text-anchor="start">배속  ×0.75  ×1  ×1.25</text>
+<text x="1192" y="216" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">턴 사이 650ms 쉼</text>
+<rect x="1192" y="234" width="130" height="120" rx="12" fill="#faf8f4" stroke="#e6e2db" stroke-width="1.2"/>
+<text x="1200" y="254" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">이 편의 핵심 표현</text>
+<text x="1200" y="276" font-size="10" fill="#b77548" font-weight="800" text-anchor="start">• はじめまして</text>
+<text x="1200" y="296" font-size="10" fill="#b77548" font-weight="800" text-anchor="start">• うそ！</text>
+<text x="1200" y="316" font-size="10" fill="#b77548" font-weight="800" text-anchor="start">• でも、いいですね</text>
+<rect x="1192" y="366" width="130" height="100" rx="12" fill="#fff7ef" stroke="#b77548" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="1200" y="386" font-size="10" fill="#7a8594" font-weight="700" text-anchor="start">완주하면</text>
+<text x="1200" y="406" font-size="10" fill="#0a2540" font-weight="800" text-anchor="start">🌟 한 장면을 마쳤어요</text>
+<text x="1200" y="424" font-size="9" fill="#7a8594" font-weight="600" text-anchor="start">핵심 3개 중 2개 기억</text>
+<text x="1200" y="442" font-size="9" fill="#635bff" font-weight="700" text-anchor="start">→ 그림 카드로 확인</text>
+<text x="1192" y="590" font-size="9" fill="#7a8594" font-weight="700" text-anchor="start">폰: 그림 위 / 문장 아래 전체화면</text>
+<text x="24" y="680" font-size="12" fill="#0a2540" font-weight="600" text-anchor="start">원칙(시안 ③ 학습 데스크형, Grok 1순위): 왼쪽 레일(배우기·복습·탐색·나) + 왼쪽 목록 칸 + 오른쪽 내용 칸. 「모든 문장 듣기」를 누르면 왼쪽 칸 = 재생 패널(그림+문장), 오른쪽 = 컨트롤·핵심 표현·완주 카드.</text>
+<text x="24" y="702" font-size="12" fill="#7a8594" font-weight="500" text-anchor="start">톤: 흰 바탕 · 남색 #0A2540 · 구리→황갈 그라데이션 포인트(버튼·성과) · 인디고 #635BFF(현재 턴·가나·선택). 그림 칸 = 곧 들어올 만화 1컷(점토풍).</text>
+<text x="24" y="724" font-size="12" fill="#7a8594" font-weight="500" text-anchor="start">폰(세로 한 칸): 레일→하단 탭, 목록→전체 화면, 재생 = 그림 상단 고정 + 문장 스크롤 + 하단 컨트롤.</text>
+</svg>
