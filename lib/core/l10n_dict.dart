@@ -4,6 +4,8 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '절벽 단어 R1~R4': 'Cliff words R1–R4',
+  '빈도 2,500 · 그림 카드': 'Top 2,500 · picture cards',
   '오늘의 복습': 'Today\'s review',
   '틀렸어요': 'Wrong',
   '맞았어요': 'Right',
@@ -127,6 +129,8 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '절벽 단어 R1~R4': '頻度語 R1〜R4',
+  '빈도 2,500 · 그림 카드': '上位2,500語・絵カード',
   '오늘의 복습': '今日の復習',
   '틀렸어요': '不正解',
   '맞았어요': '正解',
@@ -236,6 +240,8 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '절벽 단어 R1~R4': '高频词 R1~R4',
+  '빈도 2,500 · 그림 카드': '前2,500词·图片卡',
   '오늘의 복습': '今日复习',
   '틀렸어요': '错了',
   '맞았어요': '对了',

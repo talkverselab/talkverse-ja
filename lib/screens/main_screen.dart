@@ -500,6 +500,27 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: 'Conversation',
               onTap: () => openPane(context, (_) => const ConversationScreen()),
             ),
+            _section(tr('단어')),
+            _NavRow(
+              seal: '語彙',
+              title: tr('절벽 단어 R1~R4'),
+              subtitle: tr('빈도 2,500 · 그림 카드'),
+              onTap: () => openPane(context, (_) => const WordFreqScreen()),
+            ),
+            _NavRow(
+              seal: '単語',
+              sealColor: AppColors.kinDeep,
+              title: tr('필수 단어'),
+              subtitle: tr('Day별 975어 · 외우기'),
+              onTap: () => openPane(context, (_) => const TopicVocabScreen()),
+            ),
+            _NavRow(
+              seal: 'N5',
+              sealColor: AppColors.matcha,
+              title: tr('JLPT 단어'),
+              subtitle: tr('8,600어 · 후리가나'),
+              onTap: () => openPane(context, (_) => const JlptWordsScreen()),
+            ),
             _section(tr('에피소드')),
             SizedBox(
               height: 36,
