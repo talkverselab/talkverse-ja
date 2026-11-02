@@ -8,6 +8,7 @@ import '../core/platform.dart';
 import '../core/theme.dart';
 import '../services/custom_script_service.dart';
 import '../services/dialogue_service.dart';
+import '../services/entitlement.dart';
 import '../services/learner_prefs.dart';
 import '../widgets/japanese_decor.dart';
 import 'dialogue_screen.dart';
@@ -76,7 +77,12 @@ class _CustomScriptScreenState extends State<CustomScriptScreen> {
     }
     switch (r.error) {
       case 'paid_required':
-        _snack(tr('첫 1편은 무료예요. 다음 편부터는 유료(준비 중)'), AppColors.kinDeep);
+        if (Entitlement.premium) {
+          _snack(tr('이용권은 있지만 서버가 확인하지 못했어요. 로그인 상태를 확인해 주세요'), AppColors.kinDeep);
+        } else {
+          _snack(tr('첫 1편은 무료예요. 다음 편부터는 평생 이용권이 필요해요'), AppColors.kinDeep);
+          Entitlement.showPaywall(context);
+        }
       case 'offline':
         _snack(tr('지금은 만들 수 없어요. 잠시 뒤 다시 시도해 주세요'), AppColors.beni);
       default:

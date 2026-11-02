@@ -5,6 +5,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'account.dart';
 import 'dialogue_service.dart';
 
 /// 맞춤 회화(고유 스크립트) — 2026-11-02. 계약: `docs/CUSTOM_SCRIPT_API.md`.
@@ -205,6 +206,10 @@ class CustomScriptService {
     try {
       final req = await client.openUrl(method, Uri.parse(url));
       req.headers.contentType = ContentType.json;
+      req.headers.set('User-Agent', 'talkverse-ja-app/1.0');
+      // 로그인돼 있으면 Talkverse ID 토큰 — Worker 가 이용권(lang ja)을 확인해 2편째부터의 402 를 풀 수 있다(uk 세션에 요청, 2026-11-02)
+      final at = Account.signedIn ? await Account.accessToken() : null;
+      if (at != null) req.headers.set('Authorization', 'Bearer $at');
       if (body != null) req.write(json.encode(body));
       final res = await req.close().timeout(const Duration(seconds: 15));
       final text = await res.transform(utf8.decoder).join();

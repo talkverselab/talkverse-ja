@@ -9,7 +9,11 @@ import '../core/theme.dart';
 import '../main.dart';
 import '../services/memo_service.dart';
 import '../services/learner_prefs.dart';
+import '../services/account.dart';
+import '../services/purchase.dart';
 import '../widgets/achievement_desk.dart';
+import 'login_screen.dart';
+import 'paywall_screen.dart';
 import '../widgets/japanese_decor.dart';
 import '../core/l10n.dart';
 
@@ -101,6 +105,46 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
+  /// Talkverse 계정 — 로그인 전: 로그인 타일 / 로그인 후: 이름·이메일·로그아웃·계정 삭제(스토어 심사 요구) + 구매 복원·이용권(한자앱 방식).
+  Widget _accountSection() => ValueListenableBuilder<Map<String, dynamic>?>(
+        valueListenable: Account.user,
+        builder: (context, u, _) => _SettingsGroup(items: [
+          if (u == null)
+            _SettingItem(icon: Icons.account_circle_outlined, title: tr('로그인'), subtitle: tr('Talkverse 계정 하나로 모든 앱에서 (선택)'), onTap: () => LoginScreen.open(context).then((_) => setState(() {})))
+          else ...[
+            _SettingItem(icon: Icons.account_circle, title: (u['display_name'] as String?) ?? tr('이름 없음'), subtitle: (u['email'] as String?) ?? ''),
+            _SettingItem(icon: Icons.logout, title: tr('로그아웃'), subtitle: tr('이 기기에서만 로그아웃'), onTap: () => Account.signOut()),
+            _SettingItem(icon: Icons.person_remove_outlined, title: tr('계정 삭제'), subtitle: tr('서버의 개인정보 삭제 · 모든 기기 로그아웃'), onTap: () => _confirmDelete(context)),
+          ],
+          _SettingItem(
+            icon: Icons.workspace_premium_outlined,
+            title: tr('평생 이용권'),
+            subtitle: Account.has('ja') || Purchase.owns('ja') ? tr('보유 중 — 맞춤 회화 무제한') : tr('맞춤 회화 무제한 · 구매 또는 이전 구매 복원'),
+            onTap: () => PaywallScreen.show(context),
+          ),
+        ]),
+      );
+
+  Future<void> _confirmDelete(BuildContext context) async {
+    final ok = await showDialog<bool>(
+      context: context,
+      builder: (c) => AlertDialog(
+        title: Text(tr('계정을 삭제할까요?')),
+        content: Text(tr('Talkverse 계정과 이름·이메일·로그인 정보가 지워지고 모든 기기에서 로그아웃됩니다. 이 기기의 학습 기록은 그대로 남습니다. 되돌릴 수 없습니다.')),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(c, false), child: Text(tr('취소'))),
+          TextButton(onPressed: () => Navigator.pop(c, true), child: Text(tr('삭제'), style: const TextStyle(color: Colors.redAccent))),
+        ],
+      ),
+    );
+    if (ok != true) return;
+    try {
+      await Account.deleteAccount();
+    } catch (_) {
+      if (context.mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('삭제하지 못했습니다. 네트워크를 확인하고 다시 시도해 주세요.'))));
+    }
+  }
+
   Future<void> _editName() async {
     final c = TextEditingController(text: LearnerPrefs.name.value);
     final v = await showDialog<String>(
@@ -148,6 +192,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 18),
+          _SectionTitle(tr('계정')),
+          const SizedBox(height: 8),
+          _accountSection(),
           const SizedBox(height: 18),
           _SectionTitle(tr('성과')),
           const SizedBox(height: 8),

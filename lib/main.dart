@@ -8,8 +8,11 @@ import 'screens/main_screen.dart';
 import 'services/ko_reading.dart';
 import 'core/l10n.dart';
 import 'review/review_service.dart';
+import 'services/account.dart';
 import 'services/achievement_service.dart';
+import 'services/entitlement.dart';
 import 'services/learner_prefs.dart';
+import 'services/purchase.dart';
 
 late final AppDatabase appDb;
 
@@ -21,7 +24,11 @@ void main() async {
   await AppLangPrefs.load();
   await ReviewService.instance.load();
   await LearnerPrefs.load();
-  await AchievementService.instance.load(); // 라이트너 7단계 복습 엔진(공용, lib/review)
+  await AchievementService.instance.load();
+  // Talkverse ID 로그인(선택) + 스토어 결제(평생 이용권 lang 'ja') — 한자앱 방식, APP_GUIDE 2026-11-02
+  Account.load(); // 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
+  await Entitlement.load();
+  Purchase.configure({'ja': ('com.talkverse.japaneseUniverse.lifetime', 'lang_ja')});
   await _setOrientations(); // 폰은 세로 고정, 태블릿·폴드 펼침(짧은 변 600 이상)은 회전 허용
   runApp(const JapaneseUniverseApp());
 }
