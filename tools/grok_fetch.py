@@ -13,6 +13,8 @@ els = c.ev("[...document.querySelectorAll('.response-content-markdown')].map(e=>
 imgs = c.ev("[...document.querySelectorAll('.response-content-markdown')].map(e=>[...e.querySelectorAll('img')].map(i=>i.src))")
 if not els: print('EMPTY'); sys.exit(1)
 txt = els[n]
+# 그림이 아직 data: 썸네일(흐린 자리표시)이면 생성 중 — assets.grok.com 주소가 될 때까지 BUSY 로 본다(2026-11-02 태국어 시트 건)
+if imgs and imgs[n] and any(u.startswith('data:') for u in imgs[n]): busy = True
 if imgs and imgs[n]: txt += '\n\n[images]\n' + '\n'.join(imgs[n])
 open(dst, 'w', encoding='utf-8').write(txt)
 print('BUSY' if busy else 'OK', len(txt), len(imgs[n]) if imgs else 0)
