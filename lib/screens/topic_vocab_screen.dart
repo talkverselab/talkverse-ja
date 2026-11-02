@@ -1,6 +1,8 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+
+import '../widgets/word_art_thumb.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -406,8 +408,7 @@ class _WordTileState extends State<_WordTile> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Text(word.ic ?? widget.fallbackEmoji,
-                          style: const TextStyle(fontSize: 26)),
+                      WordArtThumb(word: word.tx, size: 52, fallback: Text(word.ic ?? widget.fallbackEmoji, style: const TextStyle(fontSize: 26))),
                       const SizedBox(height: 5),
                       FittedBox(
                         fit: BoxFit.scaleDown,
@@ -612,6 +613,7 @@ class _WordRowState extends State<_WordRow> {
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                if (!hideTx) ...[WordArtThumb(word: word.tx, size: 44, fallback: const SizedBox.shrink()), const SizedBox(width: 10)],
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,

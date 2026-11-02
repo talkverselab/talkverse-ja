@@ -2,6 +2,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../widgets/word_art_thumb.dart';
+
 import '../core/theme.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
@@ -230,7 +232,9 @@ class _WordRow extends StatelessWidget {
               child: Text(w.jlpt == null ? '会' : 'N${w.jlpt}',
                   style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: AppColors.washi)),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: 8),
+            WordArtThumb(word: w.surface, size: 40, fallback: const SizedBox.shrink()),
+            const SizedBox(width: 8),
             Expanded(
               flex: 5,
               child: Column(

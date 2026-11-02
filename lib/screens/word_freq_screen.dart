@@ -1,5 +1,7 @@
 import 'package:csv/csv.dart';
 import 'package:flutter/material.dart';
+
+import '../widgets/word_art_thumb.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -129,6 +131,8 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
                         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
                         child: Row(
                           children: [
+                            WordArtThumb(word: w.word, rank: w.rank, size: 46),
+                            const SizedBox(width: 10),
                             SizedBox(
                               width: 50,
                               child: Text(

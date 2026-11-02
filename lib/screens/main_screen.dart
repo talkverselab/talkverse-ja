@@ -498,6 +498,13 @@ class _LearnTabState extends State<LearnTab> {
               onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
             ),
             _NavRow(
+              seal: '音符',
+              sealColor: AppColors.ai,
+              title: tr('패밀리 한자'),
+              subtitle: tr('소리 부품이 같은 한자 가족 · 工·方·令·青…'),
+              onTap: () => openPane(context, (_) => const PhoneticRootsScreen()),
+            ),
+            _NavRow(
               seal: '漢字',
               sealColor: AppColors.sumi,
               title: tr('한자 단계'),
