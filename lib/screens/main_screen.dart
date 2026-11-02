@@ -13,7 +13,6 @@ import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
 import 'custom_script_screen.dart';
-import 'hanja_family_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
@@ -502,8 +501,8 @@ class _LearnTabState extends State<LearnTab> {
               seal: '音符',
               sealColor: AppColors.ai,
               title: tr('패밀리 한자'),
-              subtitle: tr('소리 가족·책 가족·헷갈리는 쌍 · 한자유니버스 공용 DB + 앱 판정'),
-              onTap: () => openPane(context, (_) => const HanjaFamilyScreen()),
+              subtitle: tr('소리 부품이 같은 한자 가족 · 工·方·令·青…'),
+              onTap: () => openPane(context, (_) => const PhoneticRootsScreen()), // 사용자 지시 2026-11-02 밤 "원래 니 구조가 더 좋았어" — 앱 자체 발음부 화면으로 원복(한자앱식 HanjaFamilyScreen 은 파일만 남김)
             ),
             _NavRow(
               seal: '漢字',
