@@ -34,7 +34,7 @@
 ## 4. 다음 할 일
 
 1. TestFlight 빌드(한자 배우기·맞춤 회화) 번호 확인 → 사용자에게. 사용자 피드백 대기 항목: "다이얼로그 한번에 보기"·"단어장 안 보임"(둘 다 2611021424 에 없던 기능, 1502 이후 포함 — 다른 뜻이면 확인).
-2. 맞춤 회화 워커 **끝까지 1회 성공**(시험 `ja-4inaalel` 「늦은 밤의 주먹밥」 8턴: 초안 32초 → Grok 재작성 4/8턴 반영 → 독음·검사 0 오류 → ready). 사용자 확인 뒤 launchd 가동(`cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`). 앱에서 실제로 1편 만들어 서랍에 뜨는지 확인. janome 은 `~/.venvs/ja`.
+2. 맞춤 회화 워커 — **사용자 지시(2026-11-02 15:30)로 일단 멈춤.** 끝까지 2회 성공 확인됨(`ja-4inaalel`·`ja-fao34isa`, 편당 1.5~3분). launchd 는 설치하지 않았고 프로세스도 없음. 재개 = 사용자 지시 뒤 `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`(수동 1편은 §5 명령). 앱에서 요청하면 서버에 queued 로 쌓이기만 한다. janome 은 `~/.venvs/ja`.
 3. 성과 표시(「나」 탭 AchievementDesk · 편 끝 ProgressSummaryCard · 빈도 커버율) 구현 — 설계는 `uxui_ipad_answer_02.md` B + `wire_02`.
 4. 시안 ③ 학습 데스크형으로 아이패드 재배치(사용자 승인 뒤) → 그다음 폰 최적화.
 5. 장면 그림(만화 1컷) 들어오면 턴 `art` 채우기. R3 문화·일·학업, R4 본편 작성 재개.
