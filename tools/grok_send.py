@@ -1,14 +1,16 @@
 #!/usr/bin/python3
 """Grok 프로젝트 챗에 프롬프트 파일을 보내고 답을 기다려 저장한다. 한도 문구가 뜨면 LIMIT 줄을 출력(세션이 CronCreate 로 재개).
-  /usr/bin/python3 tools/grok_send.py <프롬프트파일> <저장파일> [--tab project/84ed846e] [--wait 300]
+  /usr/bin/python3 tools/grok_send.py <프롬프트파일> <저장파일> [--tab project/08a3b12e] [--wait 300]
 출력 마지막 줄: OK <저장파일> | LIMIT <HH:MM 또는 ?> <문구> | TIMEOUT | NOINPUT
 """
 import re, sys, time
+import os
 sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
+g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9223')  # 이 세션 전용 Chrome(프로필 ~/chrome-grok-ja, 사용자 지시 2026-11-02) — 공용 9222 를 쓰려면 GROK_CDP_PORT=9222
 
 a = sys.argv[1:]
 src, dst = a[0], a[1]
-frag = a[a.index('--tab') + 1] if '--tab' in a else 'project/84ed846e'
+frag = a[a.index('--tab') + 1] if '--tab' in a else 'project/08a3b12e'
 wait = int(a[a.index('--wait') + 1]) if '--wait' in a else 300
 LIMIT_RE = re.compile(r'(한도|limit|제한|rate|너무 많|사용량|초기화|다시 시도|try again|upgrade|SuperGrok)', re.I)
 TIME_RE = re.compile(r'(\d{1,2}):(\d{2})')

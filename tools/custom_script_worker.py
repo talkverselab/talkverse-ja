@@ -17,7 +17,7 @@ WORK = ROOT / 'data/custom_scripts'
 LOGD = Path.home() / 'logs/custom_script'
 PROMPT = ROOT / 'tools/prompts/custom_script.md'
 REWRITE = ROOT / 'tools/prompts/rewrite_grok.md'
-GROK_TAB = 'project/84ed846e'
+GROK_TAB = 'project/08a3b12e'  # 「일본어 회화 검수」(2026-11-02 재생성 — 옛 84ed846e 는 다른 세션이 실수로 삭제)
 # apply_rewrite·check_dialogues 는 janome 이 필요 → ~/.venvs/ja (없으면 시스템 python3). 2026-11-02 세션 venv 에만 있던 것을 고정.
 PY = str(Path.home() / '.venvs/ja/bin/python3') if (Path.home() / '.venvs/ja/bin/python3').exists() else sys.executable
 ISLAND_KO = {'survival': '서바이벌', 'friends': '친구', 'love': '사랑', 'life': '생활', 'travel': '여행', 'culture': '문화', 'work': '일', 'study': '학업'}

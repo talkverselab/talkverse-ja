@@ -23,8 +23,8 @@
 
 ## 3. Grok 조작법 (한자 세션 방식 + 이 세션에서 겪은 것)
 
-- 전용 Chrome(CDP 127.0.0.1:9222, 프로필 `~/chrome-grok`)의 grok.com **프로젝트 「일본어 회화 검수」**(`grok.com/project/84ed846e…`) 챗. 세션마다 자기 프로젝트·탭을 쓴다(다른 세션 탭 금지).
-- 보내기: `~/Hanja/tools/grok_cdp.py send <파일> project/84ed846e`. **Enter 가 안 먹으면** 입력창(`.ProseMirror`)에 `Input.insertText` 뒤 `aria-label="제출"` 버튼을 JS `click()` 으로 누른다(이 세션에서 2회 발생).
+- **이 세션 전용 Chrome(CDP 127.0.0.1:9223, 프로필 `~/chrome-grok-ja` — 사용자 지시 2026-11-02, 공용 9222 Chrome 을 다른 세션과 같이 쓰다 방이 지워진 사고 뒤)**의 grok.com **프로젝트 「일본어 회화 검수」**(2026-11-02 재생성 `08a3b12e-5761-4a2b-a074-daa6902fd222`; 옛 84ed846e 는 삭제됨). 띄우기: `open -na "Google Chrome" --args --remote-debugging-port=9223 --remote-debugging-address=127.0.0.1 --user-data-dir=$HOME/chrome-grok-ja --no-first-run https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222`. 스크립트는 `GROK_CDP_PORT`(기본 9223). 「talkverse UXUI」 방은 아직 공용 9222 에 있음(`grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222`) 챗. 세션마다 자기 프로젝트·탭을 쓴다(다른 세션 탭 금지).
+- 보내기: `~/Hanja/tools/grok_cdp.py send <파일> project/08a3b12e`. **Enter 가 안 먹으면** 입력창(`.ProseMirror`)에 `Input.insertText` 뒤 `aria-label="제출"` 버튼을 JS `click()` 으로 누른다(이 세션에서 2회 발생).
 - 읽기: `.response-content-markdown` 요소들의 innerText(짝수 번째가 답). **답 본문이 0자로 보이면 렌더 버그** → `Page.reload` 뒤 8초 후 다시 읽는다(매 회차 발생).
 - 한 요청 = 편 1개. 20~30회차마다 새 챗. 한도 문구가 뜨면 적힌 시각 +5분 재개. 모델은 「전문가」.
 - 결과 저장: `data/review/<편id>_grok_rewrite.md`(재작성), `_grok.md`(판정형, 참고용). 공개 저장소이므로 출처·개인정보 없음.

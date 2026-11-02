@@ -1,6 +1,6 @@
 # Grok 1차 검수 프롬프트 — 자연스러움·실제 쓰는 말·AI 티 (2026-11-02 v2, 1회차 결과 보고 보강)
 
-전달 경로: 전용 Chrome(CDP 127.0.0.1:9222) 의 grok.com 프로젝트 「일본어 회화 검수」(grok.com/project/84ed846e…) 챗을 `~/Hanja/tools/grok_cdp.py send/read` 로 조작. 답 본문이 비어 보이면 `Page.reload` 뒤 다시 read. 한 요청 = 편 1개. 20~30회차마다 새 챗. 한도 문구가 뜨면 적힌 시각 +5분 재개. **git push 수신(한자 세션 방식)**: 사용자가 이 Grok 프로젝트 설정에 GitHub 커넥터(talkverse-ja 허용)를 붙인 뒤에는 프롬프트 끝에 `저장: data/review/<편id>_grok.md, 커밋 "[J0n] <편id> grok" 로 바로 푸시(승인 기다리지 말 것)` 를 붙이고 `tools/grok_push_watch.sh` 로 감시(저장소 이름을 talkverse-ja 로 바꿔 쓸 것).
+전달 경로: 전용 Chrome(CDP 127.0.0.1:9222) 의 grok.com 프로젝트 「일본어 회화 검수」(grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222) 챗을 `~/Hanja/tools/grok_cdp.py send/read` 로 조작. 답 본문이 비어 보이면 `Page.reload` 뒤 다시 read. 한 요청 = 편 1개. 20~30회차마다 새 챗. 한도 문구가 뜨면 적힌 시각 +5분 재개. **git push 수신(한자 세션 방식)**: 사용자가 이 Grok 프로젝트 설정에 GitHub 커넥터(talkverse-ja 허용)를 붙인 뒤에는 프롬프트 끝에 `저장: data/review/<편id>_grok.md, 커밋 "[J0n] <편id> grok" 로 바로 푸시(승인 기다리지 말 것)` 를 붙이고 `tools/grok_push_watch.sh` 로 감시(저장소 이름을 talkverse-ja 로 바꿔 쓸 것).
 
 v2 변경: 한국어 번역 줄을 함께 주고 「번역 어긋남」 판정 추가 · 편 전체 자연스러움 10점 · 반전 재미 평가 · 빠진 표현에 넣을 위치까지.
 

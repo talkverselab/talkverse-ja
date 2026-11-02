@@ -2,7 +2,9 @@
 """Grok 프로젝트 챗의 마지막 답을 그대로 저장(이미 끝난 답 다시 받기).  grok_fetch.py <url조각> <저장파일> [n=-1]
 이미지 생성이 포함된 답은 grok_send 가 생성 중간에 저장할 수 있어, 끝난 뒤 이 스크립트로 다시 받는다. 이미지 주소도 뒤에 붙인다."""
 import sys
+import os
 sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
+g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9223')  # 이 세션 전용 Chrome(프로필 ~/chrome-grok-ja, 사용자 지시 2026-11-02) — 공용 9222 를 쓰려면 GROK_CDP_PORT=9222
 frag, dst = sys.argv[1], sys.argv[2]
 n = int(sys.argv[3]) if len(sys.argv) > 3 else -1
 c = g.CDP(g.tab(frag))
