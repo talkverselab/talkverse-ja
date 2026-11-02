@@ -66,13 +66,11 @@ void main() {
     await t.pageBack();
     await wait(t, 1200);
 
-    // 캡션의 한자 팝업(글자 형성·그림)
-    final kanji = find.text('写').first;
-    if (kanji.evaluate().isNotEmpty) {
-      await t.tap(kanji);
-    } else {
-      await t.tap(find.textContaining('写真').first);
-    }
+    // 스크립트 3번(写真)을 눌러 현재 턴으로 만든 뒤, 캡션의 한자 팝업(글자 형성·그림)
+    await t.tap(find.textContaining('写真').first);
+    await wait(t, 1200);
+    final kanji = find.text('写');
+    if (kanji.evaluate().isNotEmpty) await t.tap(kanji.first);
     await wait(t, 3500);
     await shot(t, '18_kanji_sheet_formation');
     await t.tapAt(const Offset(40, 120));
