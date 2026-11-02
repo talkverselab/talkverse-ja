@@ -74,6 +74,9 @@ flutter:
     - assets/data/dialogues/R3/life/
     - assets/data/dialogues/R3/love/
     - assets/data/dialogues/R3/travel/
+    - assets/data/dialogues/R3/culture/
+    - assets/data/dialogues/R3/work/
+    - assets/data/dialogues/R3/study/
     - assets/data/kanji/kanji_index.json
     - assets/data/kanji/kanji_db.json
     - assets/data/kanji/phonetic_ja.json
