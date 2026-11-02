@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/l10n.dart';
 import '../core/platform.dart';
 import '../core/theme.dart';
+import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
@@ -54,6 +55,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
       });
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('틀린 카드를 다시 봅니다')), backgroundColor: AppColors.beni, duration: const Duration(seconds: 1)));
     } else {
+      AchievementService.instance.markCards(d.id, _right, d.turns.length); // 성과: 핵심 표현 맞음
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(trf('끝! 맞음 {0} / {1}', [_right, d.turns.length])), backgroundColor: AppColors.matcha));
     }
   }

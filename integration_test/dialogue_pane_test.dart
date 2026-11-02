@@ -79,5 +79,10 @@ void main() {
     await t.tap(find.text('복습').last);
     await wait(t, 1500);
     await shot(t, '19_review_today_leitner');
+
+    // 「나」 탭 성과 데스크
+    await t.tap(find.text('나').last);
+    await wait(t, 2500);
+    await shot(t, '20_me_achievement_desk');
   });
 }

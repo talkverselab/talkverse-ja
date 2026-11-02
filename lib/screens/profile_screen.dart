@@ -9,6 +9,7 @@ import '../core/theme.dart';
 import '../main.dart';
 import '../services/memo_service.dart';
 import '../services/learner_prefs.dart';
+import '../widgets/achievement_desk.dart';
 import '../widgets/japanese_decor.dart';
 import '../core/l10n.dart';
 
@@ -147,6 +148,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ],
             ),
           ),
+          const SizedBox(height: 18),
+          _SectionTitle(tr('성과')),
+          const SizedBox(height: 8),
+          const AchievementDesk(),
           const SizedBox(height: 18),
           _SectionTitle(tr('데이터')),
           const SizedBox(height: 8),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
 import '../services/art_service.dart';
+import '../services/achievement_service.dart';
 import '../services/hanja_shared_service.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
@@ -72,6 +73,7 @@ class _SelectableJaTextState extends State<SelectableJaText> {
 
 /// 한자 정보 바텀시트 열기
 Future<void> showKanjiSheet(BuildContext context, {required String char, KanjiEntry? entry}) {
+  AchievementService.instance.markKanjiSeen(char); // 성과: 팝업으로 본 글자
   return showModalBottomSheet(
     context: context,
     backgroundColor: AppColors.washi,

@@ -3,12 +3,16 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
+import '../core/pane.dart';
 import '../core/platform.dart';
 import '../core/theme.dart';
+import '../screens/dialogue_card_screen.dart';
+import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
+import 'achievement_desk.dart';
 import 'selectable_ja_text.dart';
 
 /// 「모든 문장 듣기」 재생 패널 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02, `data/review/uxui/sian_02.md`).
@@ -35,6 +39,8 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   bool _showRd = true;
   bool _showKo = true;
   int _session = 0; // 재생 루프 세대(중단 판별)
+  bool _done = false; // 완주 연출 표시
+  bool _firstDone = false;
   late final List<GlobalKey> _keys = List.generate(widget.dialogue.turns.length, (_) => GlobalKey());
 
   Dialogue get d => widget.dialogue;
@@ -63,7 +69,12 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
       if (!mounted || my != _session) return;
       await Future.delayed(Duration(milliseconds: (650 / _rate).round())); // 턴 사이 숨
       if (!mounted || my != _session) return;
-      if (_i >= d.turns.length - 1) break;
+      if (_i >= d.turns.length - 1) {
+        // 끝까지 들었다 → 성과 기록 + 순간 연출(시안 02: 확대·구리빛·진동, 폭죽 없음)
+        final first = await AchievementService.instance.markEpisodeDone(d.id);
+        if (mounted && my == _session) setState(() { _done = true; _firstDone = first; });
+        break;
+      }
       setState(() => _i++);
     }
     if (mounted && my == _session) setState(() => _playing = false);
@@ -135,7 +146,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     return LayoutBuilder(builder: (context, c) {
       // 칸이 넓으면(아이패드 가로·전체 화면 900 이상) 좌 스크립트 · 우 컷, 좁으면(아이패드 세로 오른쪽 칸·폰) 컷 위 · 스크립트 아래
       final sideBySide = wide && c.maxWidth >= 900;
-      return Column(children: [
+      final body = Column(children: [
         Expanded(
           child: sideBySide
               ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
@@ -150,6 +161,19 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
                 ]),
         ),
         controls,
+      ]);
+      if (!_done) return body;
+      return Stack(fit: StackFit.expand, children: [
+        body,
+        EpisodeDoneOverlay(
+          dialogue: d,
+          firstTime: _firstDone,
+          onCards: () {
+            setState(() => _done = false);
+            openFull(context, (_) => DialogueCardScreen(dialogue: d));
+          },
+          onClose: () => setState(() => _done = false),
+        ),
       ]);
     });
   }
