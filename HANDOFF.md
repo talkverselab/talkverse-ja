@@ -7,8 +7,8 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC) · origin = 로컬 `7d1e3bb`(한자 배우기·맞춤 회화·워커). 미커밋 = CRLF 노이즈 + 도구 부산물 + `data/review/*_grok_enrich*`(보류 작업) + `data/review/wire/`(와이어프레임) — 의도적으로만 커밋 |
-| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 2611021514(한자 배우기·맞춤 회화) → 2611021602(시안 02 만화 읽기형) → **2611021731**(프로필·성과·왕초보 재분배·「주제」·Talkverse ID 로그인·결제) 업로드 완료 — 단 프로파일에 `applesignin` 없음(사용자가 포털 App ID 에 Sign in with Apple capability 켠 뒤 재빌드 필요) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설(아이폰+아이패드) |
-| Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 빌드 14 https://apps.talkverse.uk/Ultzu/174 (`tools/zealot_push.sh --ci`) |
+| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 2611021514(한자 배우기·맞춤 회화) → 2611021602(시안 02 만화 읽기형) → 2611021731·1755(applesignin 누락) → **2611021801**(프로필·성과·왕초보 재분배·「주제」·Talkverse ID 로그인·결제·문장 안 그림 매칭, **바이너리·프로파일 모두 applesignin 포함** — 포털 capability + `tools/ios_release.sh` ad-hoc entitlements 서명) 업로드 완료 — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설(아이폰+아이패드) |
+| Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 **빌드 31** https://apps.talkverse.uk/Ultzu/177 (2026-11-02 18:05, 한자 DB·그림·만화 읽기형·프로필·성과·로그인·결제; 문장 안 그림 매칭 05a6236 은 다음 CI 빌드) |
 | 회화 콘텐츠 | R0 26(**2026-11-02 사용자 지시로 재분배** — R1 77편 중 턴당 평균 8.0자 이하를 R0 로 이동, `review.level_note`) · R1 51 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 158편(+R0 26 = 중복 없음), `assets/data/dialogues/<R>/<주제>/*.json`, 검사기 오류 5 = 강화 재작성 v2 시험 2편(culture_a3·life_c2)의 단어 수 초과(보류 중). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
 | 그림 | 단어 그림 = `ArtService`(`GET https://auth.talkverse.uk/art/ja/manifest`, 512 webp). 장면 그림(만화 1컷)은 아직 없음 → 턴 `art` 필드 비어 있음 |
