@@ -118,6 +118,8 @@ class _CardArt extends StatelessWidget {
       final u = await ArtService.instance.urlFor(w);
       if (u != null) return u;
     }
+    final inText = await ArtService.instance.urlInText(t.ja);
+    if (inText != null) return inText.value;
     return d.art;
   }
 

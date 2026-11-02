@@ -450,6 +450,8 @@ class SceneCut extends StatelessWidget {
       final u = await ArtService.instance.urlFor(w);
       if (u != null) return _ArtPick(u, w);
     }
+    final inText = await ArtService.instance.urlInText(turn.ja);
+    if (inText != null) return _ArtPick(inText.value, inText.key);
     if (dialogue.art != null) return _ArtPick(dialogue.art!, null);
     return null;
   }

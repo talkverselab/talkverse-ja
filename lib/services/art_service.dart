@@ -55,6 +55,20 @@ class ArtService {
     return MapEntry(bestWord, _base.endsWith('/') ? '$_base$key' : '$_base/$key');
   }
 
+  /// 문장 안에 들어 있는 그림 단어(2자 이상) 중 가장 긴 것의 그림. 새 단어·핵심 표현에 그림이 없을 때의 보조(2026-11-02 — 초보 턴 24%→54% 에 그림).
+  Future<MapEntry<String, String>?> urlInText(String text) async {
+    await _ensure();
+    if (_base.isEmpty || text.isEmpty) return null;
+    String? best;
+    for (final w in _byWord.keys) {
+      if (w.length < 2 || !text.contains(w)) continue;
+      if (best == null || w.length > best.length) best = w;
+    }
+    if (best == null) return null;
+    final key = _byWord[best]!;
+    return MapEntry(best, _base.endsWith('/') ? '$_base$key' : '$_base/$key');
+  }
+
   /// 로드 없이 즉시 조회(이미 받아 둔 경우만).
   String? urlForSync(String word, {int? rank}) {
     final key = _byWord[word] ?? (rank != null ? _byRank[rank] : null);
