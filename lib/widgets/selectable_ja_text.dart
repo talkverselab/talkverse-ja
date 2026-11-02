@@ -4,6 +4,7 @@ import '../core/theme.dart';
 import '../services/art_service.dart';
 import '../services/achievement_service.dart';
 import '../services/hanja_shared_service.dart';
+import 'morph_player.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
@@ -503,32 +504,11 @@ class _HanjaSharedBlockState extends State<HanjaSharedBlock> {
         if (i.gifUrl == null) ...[const SizedBox(height: 8), _KanjiWordArt(ch: i.jp.isNotEmpty ? i.jp : i.kr)],
         if (i.gifUrl != null) ...[
           const SizedBox(height: 8),
-          // 넓은 화면에서도 과하게 커지지 않게 폭 제한
-          Center(
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 320),
-                child: AspectRatio(
-                  aspectRatio: 1,
-                  child: Image.network(
-                    i.gifUrl!,
-                    fit: BoxFit.contain,
-                    gaplessPlayback: true,
-                    loadingBuilder: (_, child, p) => p == null
-                        ? child
-                        : const ColoredBox(
-                            color: AppColors.washiDeep,
-                            child: Center(
-                              child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.beni)),
-                            ),
-                          ),
-                    errorBuilder: (_, _, _) => const SizedBox.shrink(),
-                  ),
-                ),
-              ),
-            ),
-          ),
+          // 한자유니버스 모핑 그림(webp 768/1024 → gif, 기기 캐시, 한 번 재생 후 글자에서 멈춤 + ↻) — 한자 세션 지시 2026-11-02
+          Builder(builder: (context) {
+            final size = (MediaQuery.sizeOf(context).width - 40).clamp(200.0, 320.0);
+            return MorphPlayer(morphFile: i.morphFile ?? i.gifUrl!.split('/').last, status: i.morphStatus, glyph: i.jp.isNotEmpty ? i.jp : i.kr, size: size, caption: trf('그림이 글자 {0}로 겹쳐 바뀝니다 · ↻ 다시 보기', [i.jp.isNotEmpty ? i.jp : i.kr]));
+          }),
         ],
         if (i.tip != null) ...[
           label(tr('외우는 팁')),

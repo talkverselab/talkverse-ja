@@ -80,6 +80,8 @@ flutter:
     - assets/data/words/words_jlpt.json
     - assets/data/freq/lang_ja_with_regions.csv
     - assets/data/hanja/hanja_crossref.json
+    - assets/data/hanja/book.json
+    - assets/data/hanja/confuse.json
     - assets/data/grammar/particles.json
     - assets/data/decks/
     - assets/data/vocab/essential_days.json

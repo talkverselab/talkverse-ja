@@ -13,6 +13,7 @@ import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'conversation_screen.dart';
 import 'custom_script_screen.dart';
+import 'hanja_family_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
@@ -501,8 +502,8 @@ class _LearnTabState extends State<LearnTab> {
               seal: '音符',
               sealColor: AppColors.ai,
               title: tr('패밀리 한자'),
-              subtitle: tr('소리 부품이 같은 한자 가족 · 工·方·令·青…'),
-              onTap: () => openPane(context, (_) => const PhoneticRootsScreen()),
+              subtitle: tr('소리 가족·책 가족·헷갈리는 쌍 · 한자유니버스 공용 DB + 앱 판정'),
+              onTap: () => openPane(context, (_) => const HanjaFamilyScreen()),
             ),
             _NavRow(
               seal: '漢字',

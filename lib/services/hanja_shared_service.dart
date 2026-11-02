@@ -89,12 +89,16 @@ class HanjaSharedService {
     final kr = row['kr'] as String? ?? '';
     final cn = row['cn'] as String? ?? '';
 
+    // 한자 세션 지시(2026-11-02): ok·pending 둘 다 쓴다(pending = 리뷰 전 임시). 재생은 MorphPlayer(webp 768/1024 → gif, 기기 캐시).
     String? gif;
+    String? morphFile;
+    String morphStatus = 'none';
     if (jp == kr) {
-      if (row['gif_status'] == 'ok' && row['gif'] != null) gif = '$gifBase/${row['gif']}';
+      if ((row['gif_status'] == 'ok' || row['gif_status'] == 'pending') && row['gif'] != null) { morphFile = row['gif'] as String; morphStatus = row['gif_status'] as String; }
     } else {
-      if (row['gif_jp_status'] == 'ok' && row['gif_jp'] != null) gif = '$gifBase/${row['gif_jp']}';
+      if ((row['gif_jp_status'] == 'ok' || row['gif_jp_status'] == 'pending') && row['gif_jp'] != null) { morphFile = row['gif_jp'] as String; morphStatus = row['gif_jp_status'] as String; }
     }
+    if (morphFile != null) gif = '$gifBase/$morphFile';
 
     final form = (jp != kr && jp == cn) ? 'cn' : 'kr';
     final mn = await _get('/hanja_mnemonic?select=form,tip,origin&code=eq.$code&lang=eq.ko');
@@ -147,6 +151,8 @@ class HanjaSharedService {
       tip: pick?['tip'] as String?,
       origin: pick?['origin'] as String?,
       gifUrl: gif,
+      morphFile: morphFile,
+      morphStatus: morphStatus,
       family: family,
     );
   }
@@ -193,7 +199,9 @@ class HanjaInfo {
   final String? etym;
   final String? tip; // 외우는 팁(한국어)
   final String? origin; // 어원 풀이(한국어)
-  final String? gifUrl; // 규칙을 통과한 그림만
+  final String? gifUrl; // 규칙을 통과한 그림만(.gif 원본 주소)
+  final String? morphFile; // 저장소 파일 이름(MorphPlayer 용)
+  final String morphStatus; // ok | pending | none
   final List<HanjaFamilyMember> family;
 
   const HanjaInfo({
@@ -209,6 +217,8 @@ class HanjaInfo {
     this.tip,
     this.origin,
     this.gifUrl,
+    this.morphFile,
+    this.morphStatus = 'none',
     this.family = const [],
   });
 
@@ -217,7 +227,7 @@ class HanjaInfo {
 
   Map<String, dynamic> toJson() => {
         'code': code, 'jp': jp, 'kr': kr, 'hun': hun, 'liushu': liushu, 'phonetic': phonetic, 'explain': explain,
-        'components': components, 'etym': etym, 'tip': tip, 'origin': origin, 'gifUrl': gifUrl,
+        'components': components, 'etym': etym, 'tip': tip, 'origin': origin, 'gifUrl': gifUrl, 'morphFile': morphFile, 'morphStatus': morphStatus,
         'family': family.map((f) => f.toJson()).toList(),
       };
 
@@ -234,6 +244,8 @@ class HanjaInfo {
         tip: j['tip'] as String?,
         origin: j['origin'] as String?,
         gifUrl: j['gifUrl'] as String?,
+        morphFile: j['morphFile'] as String?,
+        morphStatus: j['morphStatus'] as String? ?? (j['gifUrl'] != null ? 'ok' : 'none'),
         family: (j['family'] as List?)?.map((f) => HanjaFamilyMember.fromJson(f as Map<String, dynamic>)).toList() ?? const [],
       );
 }
