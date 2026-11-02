@@ -15,7 +15,7 @@
 | 구매 → 구매 내역 | 수집(이용권 복원·기기 간 공유) · 앱 기능 · 사용자와 연결됨 · 추적 아님 |
 | 사용 데이터·진단·위치·건강·금융·검색·브라우징·기타 | **수집 안 함** |
 | 추적(ATT) | **아니요** |
-| 개인정보처리방침 URL | https://talkverse.uk/talkverse/privacy/ (§8 계정(선택)·결제 — 2026-11-02 반영됨) |
+| 개인정보처리방침 URL | https://talkverse.uk/talkverse/ja/privacy/ (§8 계정(선택)·결제 — 2026-11-02 반영됨) |
 
 - "수집"은 로그인한 사용자에게만 해당하지만 App Privacy 는 앱 기준으로 답하므로 위처럼 표시한다. 심사 메모에 "로그인은 선택"을 적는다.
 - 1.1 에서 진도 동기화를 넣으면 **사용자 콘텐츠 → 기타 사용자 콘텐츠(학습 진도)** 추가.
@@ -35,7 +35,7 @@
 | 사용자가 데이터 삭제를 요청할 수 있나요? | **예** — 앱 안 "나 → 계정 → 계정 삭제" + 웹 안내 URL **https://talkverse.uk/account/delete** |
 | 데이터 처리 방식(임시 처리) | 아니요 |
 | 독립 보안 검토(MASA) | 아니요 |
-| 개인정보처리방침 URL | https://talkverse.uk/talkverse/privacy/ |
+| 개인정보처리방침 URL | https://talkverse.uk/talkverse/ja/privacy/ |
 
 ### 그 밖의 Play Console "앱 콘텐츠"
 | 항목 | 답 |

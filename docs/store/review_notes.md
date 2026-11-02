@@ -34,7 +34,7 @@
 - 수집: 예 — 이메일 주소·이름(계정 관리, 선택), 사용자 ID, 구매 내역. 전송 암호화 예. **사용자가 삭제 요청 가능: 예** — 앱 안 "계정 삭제" + 웹 계정 삭제 안내 URL(talkverse.uk 세션에 요청: https://talkverse.uk/account/delete 같은 안내 페이지).
 - 공유: 없음(결제 처리는 Google Play). 광고 없음.
 
-## 개인정보처리방침 페이지에 추가할 문안(https://talkverse.uk/talkverse/privacy/ (언어앱 방침 — uk 세션에 §계정·결제 추가 요청) — talkverse.uk 세션 반영)
+## 개인정보처리방침 페이지에 추가할 문안(https://talkverse.uk/talkverse/ja/privacy/ (게시됨 2026-11-02, §8 계정(선택)·결제 포함) — talkverse.uk 세션 반영)
 ```
 3. 계정(선택)
 일본어 유니버스는 로그인 없이 쓸 수 있습니다. Talkverse 계정으로 로그인하면 다음을 처리합니다.
