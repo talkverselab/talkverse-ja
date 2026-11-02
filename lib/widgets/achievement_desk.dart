@@ -40,25 +40,28 @@ class _AchievementDeskState extends State<AchievementDesk> {
 
   @override
   Widget build(BuildContext context) {
-    final wide = isWide(context);
-    final left = Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      _WeekLine(a: _a),
-      const SizedBox(height: 12),
-      _CoverageMeter(cov: _cov),
-      const SizedBox(height: 12),
-      _LeitnerBars(levels: _a.leitnerLevels()),
-      const SizedBox(height: 12),
-      _WeekDots(a: _a),
-    ]);
-    final right = _IslandGrid(a: _a, columns: wide ? 4 : 2);
-    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      wide
-          ? Row(crossAxisAlignment: CrossAxisAlignment.start, children: [Expanded(flex: 5, child: left), const SizedBox(width: 14), Expanded(flex: 7, child: right)])
-          : Column(children: [left, const SizedBox(height: 12), right]),
-      const SizedBox(height: 6),
-      Text(tr('센다: 편 완주 · 라이트너 단계 · 핵심 표현 · 본 한자 · 빈도 커버율  /  안 센다: 앱 오픈 · 스트릭 · 포인트 · 순위'),
-          style: const TextStyle(fontSize: 10.5, color: AppColors.muted, height: 1.4)),
-    ]);
+    // 자기 칸 너비 기준(아이패드 「나」 탭은 왼쪽 좁은 칸에 들어간다): 700 이상이면 좌우 2단, 아니면 세로 1단
+    return LayoutBuilder(builder: (context, c) {
+      final twoCol = c.maxWidth >= 700;
+      final left = Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        _WeekLine(a: _a),
+        const SizedBox(height: 12),
+        _CoverageMeter(cov: _cov),
+        const SizedBox(height: 12),
+        _LeitnerBars(levels: _a.leitnerLevels()),
+        const SizedBox(height: 12),
+        _WeekDots(a: _a),
+      ]);
+      final right = _IslandGrid(a: _a, columns: c.maxWidth >= 900 ? 4 : (c.maxWidth >= 380 ? 2 : 1));
+      return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+        twoCol
+            ? Row(crossAxisAlignment: CrossAxisAlignment.start, children: [Expanded(flex: 5, child: left), const SizedBox(width: 14), Expanded(flex: 7, child: right)])
+            : Column(children: [left, const SizedBox(height: 12), right]),
+        const SizedBox(height: 6),
+        Text(tr('센다: 편 완주 · 라이트너 단계 · 핵심 표현 · 본 한자 · 빈도 커버율  /  안 센다: 앱 오픈 · 스트릭 · 포인트 · 순위'),
+            style: const TextStyle(fontSize: 10.5, color: AppColors.muted, height: 1.4)),
+      ]);
+    });
   }
 }
 
@@ -105,10 +108,10 @@ class _CoverageMeter extends StatelessWidget {
         _label(tr('빈도 커버율')),
         Row(children: [
           SizedBox(
-            width: 84,
-            height: 84,
+            width: 76,
+            height: 76,
             child: Stack(alignment: Alignment.center, children: [
-              SizedBox(width: 84, height: 84, child: CircularProgressIndicator(value: (pct / 100).clamp(0, 1), strokeWidth: 9, color: AppColors.beni, backgroundColor: AppColors.line)),
+              SizedBox(width: 76, height: 76, child: CircularProgressIndicator(value: (pct / 100).clamp(0, 1), strokeWidth: 9, color: AppColors.beni, backgroundColor: AppColors.line)),
               Text('${pct.toStringAsFixed(pct < 10 ? 1 : 0)}%', style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w900, color: AppColors.sumi)),
             ]),
           ),
