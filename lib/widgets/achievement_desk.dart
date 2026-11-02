@@ -129,16 +129,16 @@ class _CoverageMeter extends StatelessWidget {
         LayoutBuilder(builder: (context, c) {
           final known = cov?.known ?? 0;
           final frac = (known / 2500).clamp(0.0, 1.0);
-          return Column(children: [
+          return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Stack(children: [
               Container(height: 8, decoration: BoxDecoration(color: AppColors.line, borderRadius: BorderRadius.circular(4))),
               Container(height: 8, width: c.maxWidth * frac, decoration: BoxDecoration(color: AppColors.beni, borderRadius: BorderRadius.circular(4))),
+              for (final cl in cliffs.take(3)) Positioned(left: c.maxWidth * cl / 2500 - 1, child: Container(width: 2, height: 8, color: known >= cl ? AppColors.washi : AppColors.muted)),
             ]),
-            const SizedBox(height: 4),
-            Stack(children: [
-              const SizedBox(height: 14, width: double.infinity),
+            const SizedBox(height: 5),
+            Wrap(spacing: 10, children: [
               for (final cl in cliffs)
-                Positioned(left: (c.maxWidth * cl / 2500 - 14).clamp(0, c.maxWidth - 28), child: Text('$cl', style: TextStyle(fontSize: 9.5, fontWeight: FontWeight.w800, color: known >= cl ? AppColors.beni : AppColors.muted))),
+                Text('$cl', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: known >= cl ? AppColors.beni : AppColors.muted)),
             ]),
           ]);
         }),
@@ -221,7 +221,7 @@ class _IslandGrid extends StatelessWidget {
     return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: columns, mainAxisSpacing: 10, crossAxisSpacing: 10, mainAxisExtent: 150),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: columns, mainAxisSpacing: 10, crossAxisSpacing: 10, mainAxisExtent: 182),
       itemCount: islands.length,
       itemBuilder: (context, i) {
         final isl = islands[i];
