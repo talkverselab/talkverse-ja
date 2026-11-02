@@ -5,6 +5,7 @@ import '../core/platform.dart';
 import '../core/theme.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
+import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 
@@ -95,7 +96,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
           padding: EdgeInsets.fromLTRB(16, 6, 16, 20 + bottomInset(context)),
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
             _Btn(icon: Icons.close, label: tr('틀렸어요'), color: AppColors.beni, onTap: () => _mark(false)),
-            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.ai, onTap: () => TtsService.instance.speakAs(t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), ''), gender: t.speaker == 'A' ? 'male' : 'female')),
+            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.ai, onTap: () => TtsService.instance.speakAs(t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), ''), gender: LearnerPrefs.voiceGender(t.speaker))),
             _Btn(icon: Icons.check, label: tr('맞았어요'), color: AppColors.matcha, onTap: () => _mark(true)),
           ]),
         ),
@@ -149,13 +150,13 @@ class _CardText extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text('$name · ${t.num}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
                 const SizedBox(height: 8),
-                Text(t.ja, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.3)),
-                if (t.kana.isNotEmpty && t.kana != t.ja) ...[const SizedBox(height: 6), Text(t.kana, style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700))],
-                if (t.rd.isNotEmpty) Text(t.rd, style: const TextStyle(fontSize: 13, color: AppColors.muted)),
+                Text(LearnerPrefs.fill(t.ja), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.3)),
+                if (t.kana.isNotEmpty && t.kana != t.ja) ...[const SizedBox(height: 6), Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700))],
+                if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
                 const SizedBox(height: 12),
                 const BrushDivider(height: 2),
                 const SizedBox(height: 10),
-                Text(t.ko, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
+                Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
                 if (t.note.isNotEmpty) ...[const SizedBox(height: 10), Text('💡 ${t.note}', style: const TextStyle(fontSize: 12, color: AppColors.beniDeep, height: 1.4))],
               ]),
             )

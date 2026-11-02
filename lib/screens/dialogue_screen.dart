@@ -5,6 +5,7 @@ import '../core/platform.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
 import '../services/dialogue_service.dart';
+import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import '../widgets/episode_play_pane.dart';
 import '../widgets/japanese_decor.dart';
@@ -346,7 +347,7 @@ class _Bubble extends StatelessWidget {
                   Text('$name${t.at != null ? ' · ${t.at}' : ''}', style: const TextStyle(fontSize: 10, color: AppColors.muted)),
                   const SizedBox(width: 6),
                   InkWell(
-                    onTap: () => TtsService.instance.speakAs(t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), ''), gender: me ? 'male' : 'female'),
+                    onTap: () => TtsService.instance.speakAs(t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), ''), gender: LearnerPrefs.voiceGender(t.speaker)),
                     child: const Icon(Icons.volume_up, size: 16, color: AppColors.beni),
                   ),
                   const SizedBox(width: 4),
@@ -354,11 +355,11 @@ class _Bubble extends StatelessWidget {
                 ]),
                 const SizedBox(height: 4),
                 // 한자를 누르면 한자 팝업(글자 형성·그림) — 사용자가 좋아한 그 창 그대로
-                SelectableJaText(text: t.ja, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
-                if (t.kana.isNotEmpty && t.kana != t.ja) Text(t.kana, style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w700)),
-                if (t.rd.isNotEmpty) Text(t.rd, style: const TextStyle(fontSize: 12, color: AppColors.muted)),
+                SelectableJaText(text: LearnerPrefs.fill(t.ja), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
+                if (t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w700)),
+                if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
                 const SizedBox(height: 3),
-                Text(t.ko, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.35)),
+                Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.35)),
                 if (t.note.isNotEmpty) ...[
                   const SizedBox(height: 4),
                   Text('💡 ${t.note}', style: const TextStyle(fontSize: 11, color: AppColors.beniDeep, height: 1.35)),

@@ -8,6 +8,7 @@ import '../core/platform.dart';
 import '../core/theme.dart';
 import '../services/custom_script_service.dart';
 import '../services/dialogue_service.dart';
+import '../services/learner_prefs.dart';
 import '../widgets/japanese_decor.dart';
 import 'dialogue_screen.dart';
 
@@ -36,6 +37,7 @@ class _CustomScriptScreenState extends State<CustomScriptScreen> {
     DialogueService.instance.ensureLoaded();
     _svc.ensureLoaded().then((_) async {
       _level = ['R0', 'R1'].contains(DialogueService.instance.level) ? DialogueService.instance.level : 'R1';
+      if (_name.text.isEmpty) _name.text = LearnerPrefs.name.value;
       if (mounted) setState(() => _loading = false);
       await _refresh();
       _poll = Timer.periodic(const Duration(seconds: 60), (_) => _refresh());

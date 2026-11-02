@@ -7,6 +7,7 @@ import '../core/platform.dart';
 import '../core/theme.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
+import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import 'selectable_ja_text.dart';
 
@@ -100,7 +101,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     return s.isEmpty ? t.kana : s;
   }
 
-  String _gender(String sp) => sp == 'A' ? 'male' : (sp == 'C' ? 'male' : 'female');
+  String _gender(String sp) => LearnerPrefs.voiceGender(sp); // A = 학습자 프로필 성별
 
   @override
   Widget build(BuildContext context) {
@@ -212,10 +213,10 @@ class _Script extends StatelessWidget {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        Text(t.ja, style: TextStyle(fontSize: on ? 16.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
-                        if (showKana && t.kana.isNotEmpty && t.kana != t.ja) Text(t.kana, style: const TextStyle(fontSize: 11.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
-                        if (showRd && t.rd.isNotEmpty) Text(t.rd, style: const TextStyle(fontSize: 11.5, color: AppColors.muted)),
-                        if (showKo) Text(t.ko, style: const TextStyle(fontSize: 12.5, color: AppColors.sumiLight, height: 1.35)),
+                        Text(LearnerPrefs.fill(t.ja), style: TextStyle(fontSize: on ? 16.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+                        if (showKana && t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 11.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
+                        if (showRd && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 11.5, color: AppColors.muted)),
+                        if (showKo) Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.sumiLight, height: 1.35)),
                         if (on && t.note.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 4), child: Text('💡 ${t.note}', style: const TextStyle(fontSize: 11, color: AppColors.beniDeep, height: 1.35))),
                       ]),
                     ),
@@ -303,10 +304,10 @@ class _Caption extends StatelessWidget {
         child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              SelectableJaText(text: turn.ja, style: TextStyle(fontSize: wide ? 20 : 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
-              if (showKana && turn.kana.isNotEmpty && turn.kana != turn.ja) Text(turn.kana, style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
-              if (showRd && turn.rd.isNotEmpty) Text(turn.rd, style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
-              if (showKo) Padding(padding: const EdgeInsets.only(top: 2), child: Text(turn.ko, style: const TextStyle(fontSize: 13.5, color: AppColors.sumiLight, height: 1.35))),
+              SelectableJaText(text: LearnerPrefs.fill(turn.ja), style: TextStyle(fontSize: wide ? 20 : 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+              if (showKana && turn.kana.isNotEmpty && turn.kana != turn.ja) Text(LearnerPrefs.fill(turn.kana), style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
+              if (showRd && turn.rd.isNotEmpty) Text(LearnerPrefs.fill(turn.rd, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
+              if (showKo) Padding(padding: const EdgeInsets.only(top: 2), child: Text(LearnerPrefs.fill(turn.ko, ko: true), style: const TextStyle(fontSize: 13.5, color: AppColors.sumiLight, height: 1.35))),
             ]),
           ),
           IconButton(onPressed: onSpeak, icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 26)),
@@ -463,7 +464,7 @@ class SceneCut extends StatelessWidget {
                   top: 12,
                   left: me ? null : 12,
                   right: me ? 12 : null,
-                  child: _SpeechBubble(text: turn.ja, tail: me ? _Tail.right : _Tail.left, maxWidth: c.maxWidth * 0.72, small: c.maxHeight < 220),
+                  child: _SpeechBubble(text: LearnerPrefs.fill(turn.ja), tail: me ? _Tail.right : _Tail.left, maxWidth: c.maxWidth * 0.72, small: c.maxHeight < 220),
                 ),
             ]),
           ),

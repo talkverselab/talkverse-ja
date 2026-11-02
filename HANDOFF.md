@@ -7,7 +7,7 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC) · origin = 로컬 `7d1e3bb`(한자 배우기·맞춤 회화·워커). 미커밋 = CRLF 노이즈 + 도구 부산물 + `data/review/*_grok_enrich*`(보류 작업) + `data/review/wire/`(와이어프레임) — 의도적으로만 커밋 |
-| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → **2611021514**(한자 배우기·맞춤 회화) 업로드 완료 — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설(아이폰+아이패드) |
+| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 2611021514(한자 배우기·맞춤 회화) → **2611021602**(시안 02 만화 읽기형) 업로드 완료 — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설(아이폰+아이패드) |
 | Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 빌드 14 https://apps.talkverse.uk/Ultzu/174 (`tools/zealot_push.sh --ci`) |
 | 회화 콘텐츠 | R0 77(옛 R1 짧은 편 스냅숏) · R1 83 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 241편, `assets/data/dialogues/<R>/<섬>/*.json`, 검사기 0 오류. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
@@ -38,7 +38,7 @@
 
 1. TestFlight 빌드(한자 배우기·맞춤 회화) 번호 확인 → 사용자에게. 사용자 피드백 대기 항목: "다이얼로그 한번에 보기"·"단어장 안 보임"(둘 다 2611021424 에 없던 기능, 1502 이후 포함 — 다른 뜻이면 확인).
 2. 맞춤 회화 워커 — **사용자 지시(2026-11-02 15:30)로 일단 멈춤.** 끝까지 2회 성공 확인됨(`ja-4inaalel`·`ja-fao34isa`, 편당 1.5~3분). launchd 는 설치하지 않았고 프로세스도 없음. 재개 = 사용자 지시 뒤 `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`(수동 1편은 §5 명령). 앱에서 요청하면 서버에 queued 로 쌓이기만 한다. janome 은 `~/.venvs/ja`.
-3. 시안 02 TestFlight 업로드(사용자 지시 대기 — 현재 TestFlight 최신 2611021514 는 시안 02 전). 스크립트 `{name}` 을 맞춤 회화 이름/「나」로 치환. 장면 그림 들어오면 턴 `art` 채우기(톤 = `sian_01_clay.jpg`).
+3. ~~시안 02 TestFlight~~(2611021602 완료) · ~~`{name}` 치환~~(`lib/services/learner_prefs.dart` — 「나」 탭 학습자 프로필: 이름·성별, A 목소리 = 성별, `{name}` = 이름 또는 「〇〇」, 사용자 지시 "성별이 정해지면 나가 나오는 거니까"). 장면 그림 들어오면 턴 `art` 채우기(톤 = `sian_01_clay.jpg`; A 그림은 성별별 `art_m`/`art_f` 허용 예정).
 4. 성과 표시(「나」 탭·편 끝 연출·빈도 커버율) 구현 — 설계 `sian_02.md` §5 + `uxui_ipad_answer_02.md` B + `wire_02`. 폰 레이아웃 다듬기.
 5. 장면 그림(만화 1컷) 들어오면 턴 `art` 채우기. R3 문화·일·학업, R4 본편 작성 재개.
 

@@ -8,6 +8,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../core/theme.dart';
 import '../main.dart';
 import '../services/memo_service.dart';
+import '../services/learner_prefs.dart';
 import '../widgets/japanese_decor.dart';
 import '../core/l10n.dart';
 
@@ -99,6 +100,24 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
+  Future<void> _editName() async {
+    final c = TextEditingController(text: LearnerPrefs.name.value);
+    final v = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(tr('이름')),
+        content: TextField(controller: c, maxLength: 20, autofocus: true, decoration: InputDecoration(hintText: tr('회화 속 「나」로 나와요'))),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx), child: Text(tr('취소'))),
+          FilledButton(onPressed: () => Navigator.pop(ctx, c.text), child: Text(tr('저장'))),
+        ],
+      ),
+    );
+    if (v == null) return;
+    await LearnerPrefs.setName(v);
+    if (mounted) setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     final children = <Widget>[
@@ -152,6 +171,26 @@ class _ProfileScreenState extends State<ProfileScreen> {
               title: tr('학습 기록 초기화'),
               subtitle: tr('회화·한자·복습 기록 삭제'),
               onTap: _resetProgress,
+            ),
+          ]),
+          const SizedBox(height: 16),
+          _SectionTitle(tr('학습자 프로필')),
+          const SizedBox(height: 8),
+          _SettingsGroup(items: [
+            _SettingItem(
+              icon: Icons.badge_outlined,
+              title: tr('이름'),
+              subtitle: LearnerPrefs.name.value.isNotEmpty ? trf('{0} — 회화 속 「나」로 나와요', [LearnerPrefs.name.value]) : tr('없음 — 회화에서 「〇〇」로 보여요'),
+              onTap: _editName,
+            ),
+            _SettingItem(
+              icon: LearnerPrefs.isFemale ? Icons.face_3 : Icons.face,
+              title: tr('성별 (화자 「나」의 목소리)'),
+              subtitle: LearnerPrefs.isFemale ? tr('여성 — 탭하면 남성') : tr('남성 — 탭하면 여성'),
+              onTap: () async {
+                await LearnerPrefs.setGender(LearnerPrefs.isFemale ? 'male' : 'female');
+                if (mounted) setState(() {});
+              },
             ),
           ]),
           const SizedBox(height: 16),

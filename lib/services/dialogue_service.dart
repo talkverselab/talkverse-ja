@@ -3,6 +3,8 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'learner_prefs.dart';
+
 /// 새 회화(R0~R4, 섬별 JSON) 로더 — 2026-11-03.
 ///
 /// 파일: `assets/data/dialogues/R<레벨>/<섬>/<편id>.json` (구조는 `assets/data/dialogues/README.md`).
@@ -114,7 +116,7 @@ class Dialogue {
   /// 화자 표시 이름: `{name}`(학습자 자리) → 「나」, 그 밖의 중괄호는 뗀다.
   String speakerName(String sp) {
     final raw = speakers[sp] ?? sp;
-    if (raw.contains('{name}')) return '나';
+    if (raw.contains('{name}')) return LearnerPrefs.name.value.isNotEmpty ? LearnerPrefs.name.value : '나';
     return raw.replaceAll(RegExp(r'[{}]'), '');
   }
   /// 편 순서 키: survival → a → b → c, 번호 순.
