@@ -55,7 +55,8 @@ class _HanjaFamilyScreenState extends State<HanjaFamilyScreen> with SingleTicker
 
   @override
   Widget build(BuildContext context) {
-    final wide = isWide(context);
+    // 칸 너비 900 이상(아이패드 가로)만 좌 목록·우 상세, 그 밖(아이패드 세로 칸·폰)은 목록 → 밀어서 상세
+    final wide = isWide(context) && MediaQuery.sizeOf(context).width >= 1200;
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(

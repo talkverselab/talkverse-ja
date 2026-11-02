@@ -1,5 +1,6 @@
 // 새 회화 뷰어(아이패드 두 화면) 확인용 스크린샷 흐름 — 2026-11-03.
 // 실행: python3 tools/pane_shots.py <아이패드 UDID> <출력폴더> integration_test/dialogue_pane_test.dart
+import 'package:flutter/material.dart' show ListTile;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:integration_test/integration_test.dart';
 import 'package:japanese_universe/core/l10n.dart';
@@ -84,5 +85,21 @@ void main() {
     await t.tap(find.text('나').last);
     await wait(t, 2500);
     await shot(t, '20_me_achievement_desk');
+
+    // 패밀리 한자(공용 가족 DB) — 목록 → 가족 지도 → 씨앗 모핑
+    await t.tap(find.text('배우기').last);
+    await wait(t, 1200);
+    await t.tap(find.text('패밀리 한자').first);
+    await wait(t, 6000);
+    await shot(t, '21_family_list');
+    final fam = find.textContaining('자').first;
+    if (find.byType(ListTile).evaluate().isNotEmpty) {
+      await t.tap(find.byType(ListTile).first);
+      await wait(t, 3500);
+      await shot(t, '22_family_map');
+    } else {
+      // ignore: avoid_print
+      print('no family rows: $fam');
+    }
   });
 }

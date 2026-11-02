@@ -42,7 +42,7 @@ class HanjaChar {
 
   /// 훈(뜻)만 — "불 화" → "불".
   String get hun {
-    final first = krHun.split(',').first.trim();
+    final first = krHun.replaceAll(RegExp(r'\[[^\]]*\]'), '').split(',').first.trim();
     final i = first.lastIndexOf(' ');
     return i > 0 ? first.substring(0, i) : first;
   }
