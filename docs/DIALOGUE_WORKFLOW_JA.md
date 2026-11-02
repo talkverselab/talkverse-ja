@@ -24,6 +24,8 @@
 
 ## 3. Grok 조작법 (한자 세션 방식 + 이 세션에서 겪은 것)
 
+- **2026-11-03 사용자 지시로 Grok 은 M4 Chrome 에서**(`~/talkverse/GROK_M4_LOGIN.md`): M4 프로필 `~/chrome-grok-ja`(쿠키는 M4 안에서 `~/chrome-grok` 것을 복사, M6 로 복사하면 안 풀림)를 M4 에서 포트 9230 으로 띄우고, M6 에서 `ssh -fN -L 9230:127.0.0.1:9230 macmini4` 터널 → 도구는 그대로 `GROK_CDP_PORT=9230`. 첨부는 `scp <파일> macmini4:/tmp/grok_att/` 뒤 `GROK_ATT_DIR=/tmp/grok_att`(장면 컷 도구)나 M4 경로로 `--attach`. M6 의 옛 9230 Chrome 은 끔. 건마다 새 탭을 열면 닫을 것.
+
 - **이 세션 전용 Chrome(CDP 127.0.0.1:9230, 프로필 `~/chrome-grok-ja` — 사용자 지시 2026-11-02, 공용 9222 Chrome 을 다른 세션과 같이 쓰다 방이 지워진 사고 뒤)**의 grok.com **프로젝트 「일본어 회화 검수」**(2026-11-02 재생성 `08a3b12e-5761-4a2b-a074-daa6902fd222`; 옛 84ed846e 는 삭제됨). 띄우기: `open -na "Google Chrome" --args --remote-debugging-port=9230 --remote-debugging-address=127.0.0.1 --user-data-dir=$HOME/chrome-grok-ja --no-first-run https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222`. 스크립트는 `GROK_CDP_PORT`(기본 9230 — 2026-11-02 17:50 다른 세션 Chrome 이 9223 을 같이 써서 옮김). UX/UI 는 별도 방 「talkverse UXUI」(`832d5dbe-6d57-4114-b17d-d4a52e41bf45`, 같은 전용 Chrome) — 시안 1개+그림 1장씩. 세션마다 자기 프로젝트·탭·Chrome 을 쓴다(다른 세션 것 금지).
 - 보내기: `~/Hanja/tools/grok_cdp.py send <파일> project/08a3b12e`. **Enter 가 안 먹으면** 입력창(`.ProseMirror`)에 `Input.insertText` 뒤 `aria-label="제출"` 버튼을 JS `click()` 으로 누른다(이 세션에서 2회 발생).
 - 읽기: `.response-content-markdown` 요소들의 innerText(짝수 번째가 답). **답 본문이 0자로 보이면 렌더 버그** → `Page.reload` 뒤 8초 후 다시 읽는다(매 회차 발생).
