@@ -11,7 +11,7 @@
 | Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 **빌드 31** https://apps.talkverse.uk/Ultzu/177 (2026-11-02 18:05, 한자 DB·그림·만화 읽기형·프로필·성과·로그인·결제; 문장 안 그림 매칭 05a6236 은 다음 CI 빌드) |
 | 회화 콘텐츠 | R0 26(**2026-11-02 사용자 지시로 재분배** — R1 77편 중 턴당 평균 8.0자 이하를 R0 로 이동, `review.level_note`) · R1 51 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 158편(+R0 26 = 중복 없음), `assets/data/dialogues/<R>/<주제>/*.json`, 검사기 오류 5 = 강화 재작성 v2 시험 2편(culture_a3·life_c2)의 단어 수 초과(보류 중). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
-| 그림 | 단어 그림 = `ArtService`(`GET https://auth.talkverse.uk/art/ja/manifest`, 512 webp). 장면 그림(만화 1컷)은 아직 없음 → 턴 `art` 필드 비어 있음 |
+| 그림 | 단어 그림 = `ArtService`(`GET https://auth.talkverse.uk/art/ja/manifest`, 488장 공개). **장면 컷 저장소 개통(2026-11-02 20:30, uk)**: GitHub `talkverselab/talkversehanja` `talkverse_art/scene/ja/<편id>/cut<N>.jpg`(1168×784) 푸시 → R2 자동 → `GET …/art/ja/scene/manifest?episode=<편id>`. 앱은 `ArtService.sceneCut(편id, 턴번호)`(A·B 쌍당 1컷, 턴→컷 (num+1)÷2) → 턴 `art` → 단어 그림 → 이모지 순. **ja 컷 제작은 아직 미착수(사용자 지시 대기 — 158편 × 4컷 ≈ 630장, Grok 1장씩)** |
 | Grok 프로젝트 | 「일본어 회화 검수」 `project/08a3b12e`(재작성) · 「talkverse UXUI」 `832d5dbe-6d57-4114-b17d-d4a52e41bf45`(2026-11-02 15:40 세 번째 생성, 전용 Chrome 9223 — 시안 1개+그림 1장씩, Grok 이 git push) · 전용 Chrome CDP 127.0.0.1:9222 |
 
 ## 2. 2026-11-02 에 만든 것(전부 푸시됨)

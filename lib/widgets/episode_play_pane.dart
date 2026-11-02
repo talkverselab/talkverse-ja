@@ -445,6 +445,9 @@ class SceneCut extends StatelessWidget {
   const SceneCut({super.key, required this.dialogue, required this.turn, this.bubble = false});
 
   Future<_ArtPick?> _pick() async {
+    // 1) 장면 컷(uk /art/ja/scene, A·B 한 쌍당 1장) → 2) 턴 art → 3) 단어 그림 → 4) 장면 카드
+    final scene = await ArtService.instance.sceneCut(dialogue.id, turn.num, large: true);
+    if (scene != null) return _ArtPick(scene, null);
     if (turn.art != null) return _ArtPick(turn.art!, null);
     for (final w in turn.pictureWords) {
       final u = await ArtService.instance.urlFor(w);
@@ -474,7 +477,7 @@ class SceneCut extends StatelessWidget {
               if (p == null)
                 _SceneCard(dialogue: dialogue, turn: turn)
               else
-                Image.network(p.url, fit: BoxFit.contain, errorBuilder: (_, _, _) => _SceneCard(dialogue: dialogue, turn: turn)),
+                Image.network(p.url, fit: p.word == null ? BoxFit.cover : BoxFit.contain, errorBuilder: (_, _, _) => _SceneCard(dialogue: dialogue, turn: turn)),
               if (p?.word != null)
                 Positioned(
                   left: 10,

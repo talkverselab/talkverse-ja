@@ -17,6 +17,11 @@ class ArtService {
   static final ArtService instance = ArtService._();
 
   static const manifestUrl = 'https://auth.talkverse.uk/art/ja/manifest';
+  /// 회화 장면 컷(uk 세션 2026-11-02 개통): `GET …/art/ja/scene/manifest?episode=<편id>` → items[{episode,cut,key_1168,key_584,w,h}], 그림 = base+key.
+  /// 컷 번호 N = A·B 대화 한 쌍(턴 2개)당 1장(N 은 1부터). 그림에는 말풍선·글자가 없고 앱이 얹는다.
+  static const sceneManifestUrl = 'https://auth.talkverse.uk/art/ja/scene/manifest';
+  final Map<String, Map<int, String>> _scene = {}; // 편id → {컷번호 → URL(584폭)}
+  final Map<String, Future<void>> _sceneLoading = {};
   static const _prefKey = 'art_manifest_ja_v1';
   static const _prefAt = 'art_manifest_ja_at';
   static const _ttl = Duration(hours: 24);
@@ -67,6 +72,43 @@ class ArtService {
     if (best == null) return null;
     final key = _byWord[best]!;
     return MapEntry(best, _base.endsWith('/') ? '$_base$key' : '$_base/$key');
+  }
+
+  /// 편의 장면 컷 URL(턴 번호 1부터 → 컷 (num+1)~/2). 없으면 null. 편당 한 번만 받아 둔다(실패해도 조용히 null).
+  Future<String?> sceneCut(String episodeId, int turnNum, {bool large = false}) async {
+    final cuts = await _sceneCuts(episodeId, large: large);
+    if (cuts.isEmpty) return null;
+    final n = (turnNum + 1) ~/ 2;
+    return cuts[n] ?? cuts[cuts.keys.reduce((a, b) => (a - n).abs() <= (b - n).abs() ? a : b)];
+  }
+
+  Future<Map<int, String>> _sceneCuts(String episodeId, {bool large = false}) async {
+    final key = '$episodeId${large ? ':L' : ''}';
+    if (_scene.containsKey(key)) return _scene[key]!;
+    await (_sceneLoading[key] ??= () async {
+      final out = <int, String>{};
+      try {
+        final client = HttpClient()..connectionTimeout = const Duration(seconds: 8);
+        final req = await client.getUrl(Uri.parse('$sceneManifestUrl?episode=${Uri.encodeQueryComponent(episodeId)}'));
+        req.headers.set(HttpHeaders.userAgentHeader, 'talkverse-ja/0.1');
+        final res = await req.close().timeout(const Duration(seconds: 12));
+        if (res.statusCode == 200) {
+          final j = json.decode(await res.transform(utf8.decoder).join()) as Map<String, dynamic>;
+          final base = (j['base'] as String? ?? '').replaceAll(RegExp(r'/$'), '');
+          for (final it in (j['items'] as List? ?? const [])) {
+            final m = it as Map<String, dynamic>;
+            final k = (large ? m['key_1168'] : m['key_584']) as String? ?? m['key_1168'] as String?;
+            final cut = m['cut'];
+            if (k != null && cut is int && base.isNotEmpty) out[cut] = '$base/$k';
+          }
+        }
+        client.close();
+      } catch (e) {
+        debugPrint('ArtService: scene manifest 실패 $episodeId $e');
+      }
+      _scene[key] = out;
+    }());
+    return _scene[key] ?? const {};
   }
 
   /// 로드 없이 즉시 조회(이미 받아 둔 경우만).
