@@ -42,6 +42,23 @@ flutter:
   assets:
     - assets/data/dialogues/L1.json
     - assets/data/dialogues/_meta.json
+    - assets/data/dialogues/R1/culture/
+    - assets/data/dialogues/R1/friends/
+    - assets/data/dialogues/R1/life/
+    - assets/data/dialogues/R1/love/
+    - assets/data/dialogues/R1/survival/
+    - assets/data/dialogues/R1/travel/
+    - assets/data/dialogues/R2/culture/
+    - assets/data/dialogues/R2/friends/
+    - assets/data/dialogues/R2/life/
+    - assets/data/dialogues/R2/love/
+    - assets/data/dialogues/R2/study/
+    - assets/data/dialogues/R2/travel/
+    - assets/data/dialogues/R2/work/
+    - assets/data/dialogues/R3/friends/
+    - assets/data/dialogues/R3/life/
+    - assets/data/dialogues/R3/love/
+    - assets/data/dialogues/R3/travel/
     - assets/data/kanji/kanji_index.json
     - assets/data/kanji/kanji_db.json
     - assets/data/kanji/phonetic_ja.json

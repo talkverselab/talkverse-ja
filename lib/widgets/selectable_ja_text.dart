@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
+import '../services/hanja_shared_service.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
@@ -218,6 +219,8 @@ class _KanjiInfoSheetState extends State<KanjiInfoSheet> {
                   if (e.on.isNotEmpty) _ReadingRow(label: tr('음독'), color: AppColors.ai, readings: e.on),
                   if (e.kun.isNotEmpty) _ReadingRow(label: tr('훈독'), color: AppColors.matcha, readings: e.kun),
                 ],
+                // 한자유니버스 공용 DB — 그림(승인된 것만)·외우는 팁·어원·구성·소리 가족
+                HanjaSharedBlock(char: char),
                 // 대표 단어 — 회화 빈도순 1~2개
                 if (e != null && e.words.isNotEmpty) ...[
                   const SizedBox(height: 12),
@@ -433,6 +436,115 @@ class _ReadingRow extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+/// 한자유니버스 공용 DB(hanja-api) 칸 — 그림(GIF, 리뷰 승인된 것만)·외우는 팁·어원·글자 구성·소리 가족.
+/// 네트워크가 없거나 자료가 없으면 아무것도 그리지 않는다(번들 데이터만으로 동작).
+class HanjaSharedBlock extends StatefulWidget {
+  final String char;
+  const HanjaSharedBlock({super.key, required this.char});
+
+  @override
+  State<HanjaSharedBlock> createState() => _HanjaSharedBlockState();
+}
+
+class _HanjaSharedBlockState extends State<HanjaSharedBlock> {
+  HanjaInfo? _info;
+
+  @override
+  void initState() {
+    super.initState();
+    HanjaSharedService.instance.info(widget.char).then((i) {
+      if (mounted) setState(() => _info = i);
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final i = _info;
+    if (i == null || !i.hasAnything) return const SizedBox.shrink();
+    Widget label(String t) => Padding(
+          padding: const EdgeInsets.only(top: 10, bottom: 4),
+          child: Text(t, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.muted, letterSpacing: 1)),
+        );
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const SizedBox(height: 14),
+        const AsanohaDivider(height: 8),
+        Row(children: [
+          Text(tr('한자 풀이'), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.beni, letterSpacing: 1)),
+          const SizedBox(width: 8),
+          if (i.liushu != null) _Tag(i.liushu!, AppColors.kinDeep),
+          if (i.formDiffers) ...[const SizedBox(width: 6), _Tag('${tr('정자')} ${i.kr}', AppColors.muted)],
+        ]),
+        if (i.gifUrl != null) ...[
+          const SizedBox(height: 8),
+          // 넓은 화면에서도 과하게 커지지 않게 폭 제한
+          Center(
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 320),
+                child: AspectRatio(
+                  aspectRatio: 1,
+                  child: Image.network(
+                    i.gifUrl!,
+                    fit: BoxFit.contain,
+                    gaplessPlayback: true,
+                    loadingBuilder: (_, child, p) => p == null
+                        ? child
+                        : const ColoredBox(color: AppColors.washiDeep, child: Center(child: SizedBox(width: 22, height: 22, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.beni)))),
+                    errorBuilder: (_, _, _) => const SizedBox.shrink(),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
+        if (i.tip != null) ...[
+          label(tr('외우는 팁')),
+          Text('💡 ${i.tip}', style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: AppColors.beniDeep, height: 1.4)),
+        ],
+        if (i.origin != null) ...[
+          label(tr('어원')),
+          Text(i.origin!, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.45)),
+        ],
+        if (i.components.isNotEmpty) ...[
+          label(tr('글자 구성')),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              for (final c in i.components)
+                ActionChip(
+                  label: Text(c, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.sumi)),
+                  onPressed: () => showKanjiSheet(context, char: c, entry: KanjiIndexService.instance.lookup(c)),
+                ),
+              if (i.phonetic != null) _Tag('${tr('소리')} ${i.phonetic}', AppColors.ai),
+            ],
+          ),
+        ],
+        if (i.family.isNotEmpty) ...[
+          label(trf('소리 가족 · {0}', [i.phonetic ?? ''])),
+          Wrap(
+            spacing: 6,
+            runSpacing: 6,
+            children: [
+              for (final f in i.family)
+                ActionChip(
+                  label: Column(mainAxisSize: MainAxisSize.min, children: [
+                    Text(f.ch, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.1)),
+                    Text('${f.hun}${f.on.isNotEmpty ? ' · ${f.on}' : ''}', style: const TextStyle(fontSize: 9.5, color: AppColors.muted)),
+                  ]),
+                  onPressed: () => showKanjiSheet(context, char: f.ch, entry: KanjiIndexService.instance.lookup(f.ch)),
+                ),
+            ],
+          ),
+        ],
+      ],
     );
   }
 }

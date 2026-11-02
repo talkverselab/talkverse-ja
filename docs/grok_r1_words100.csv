@@ -1,0 +1,101 @@
+rank,word,reading,romaji,ko,en,pos,scene_hint
+19,言う,いう,iu,말하다,to say,v,친구에게 말을 거는 사람
+21,来る,くる,kuru,오다,to come,v,문으로 들어오는 친구
+71,先生,せんせい,sensei,선생님,teacher,n,교실의 선생님
+88,聞く,きく,kiku,듣다,to hear,v,이어폰으로 듣는 사람
+95,待つ,まつ,matsu,기다리다,to wait,v,역 앞에서 기다리는 사람
+96,音,おと,oto,소리,sound,n,스피커와 음표
+110,出る,でる,deru,나가다,to appear,v,건물에서 나오는 사람
+112,話,はなし,hanashi,이야기,talk (chat),n,카페에서 이야기하는 두 사람
+116,皆,みな,mina,모두,everyone,n,모여 있는 여러 사람
+117,年,とし,toshi,년,year,n,달력 한 장(연도)
+118,立つ,たつ,tatsu,서다,to stand up,v,의자에서 일어서는 사람
+120,男,おとこ,otoko,남자,man,n,20대 남성
+123,仕事,しごと,shigoto,일,work,n,노트북 앞 직장인
+137,母,はは,haha,엄마,(my) mother,n,엄마와 아이
+141,考える,かんがえる,kangaeru,생각하다,to think (about),v,턱을 괴고 생각하는 사람
+159,子,こ,ko,아이,child,n,어린아이
+160,入る,はいる,hairu,들어가다,to enter,v,가게 문으로 들어가는 사람
+164,前,まえ,mae,앞,before,n,건물 앞에 선 사람
+165,悪い,わるい,warui,나쁘다,bad,adj-i,썩은 사과
+169,帰る,かえる,kaeru,돌아가다,to go back,v,집으로 돌아가는 사람(저녁)
+170,女,おんな,onna,여자,woman,n,20대 여성
+171,食べる,たべる,taberu,먹다,to eat,v,라멘을 먹는 사람
+174,家,いえ,ie,집,house,n,작은 집
+176,門,もん,mon,문,gate,n,대문
+179,本,ほん,hon,책,book,n,책
+182,今日,きょう,kyou,오늘,today,adv/time,달력의 오늘 표시
+186,彼女,かのじょ,kanojyo,그녀,girlfriend,n,여자친구(커플)
+188,買う,かう,kau,사다,to buy,v,계산대에서 결제
+191,作る,つくる,tsukuru,만들다,to make,v,요리하는 손
+192,持つ,もつ,motsu,들다,to hold,v,가방을 든 손
+196,こんにちは,こんにちは,konnichiha,안녕하세요,hello,expr,손 흔들며 인사
+197,話す,はなす,hanasu,이야기하다,to speak,v,전화로 말하는 사람
+199,生きる,いきる,ikiru,살다,to live,v,새싹과 햇빛
+204,お母さん,おかあさん,okaasan,어머니,mother (formal),n,엄마
+208,声,こえ,koe,목소리,voice,n,말풍선과 입
+209,早く,はやく,hayaku,빨리,quickly,adv/time,달리는 사람과 시계
+217,お父さん,おとうさん,otousan,아버지,father (formal),n,아빠
+218,使う,つかう,tsukau,쓰다,to use,v,스마트폰을 쓰는 손
+221,時間,じかん,jikan,시간,time,n,시계
+227,目,め,me,눈,eye(s),n,눈
+229,多い,おおい,ooi,많다,many,adj-i,사과가 가득한 상자
+233,同じ,おなじ,onaji,같음,same,adj-na,똑같은 컵 두 개
+235,人間,にんげん,ningen,인간,human being,n,사람 실루엣
+238,頼む,たのむ,tanomu,부탁하다,to request,v,부탁하는 손짓(합장)
+242,終わる,おわる,owaru,끝나다,to end,v,결승선·끝 표시
+247,顔,かお,kao,얼굴,face (body part),n,얼굴
+250,嘘,うそ,uso,거짓말,lie,n,피노키오 코
+251,彼,かれ,kare,그,he,n,남자친구(커플)
+254,社長,しゃちょう,shyachyou,사장,president of a company,n,사장 책상
+257,戻る,もどる,modoru,돌아가다,to return (v.i.),v,되돌아오는 화살표와 사람
+259,結婚,けっこん,kekkon,결혼,marriage (get married),n,결혼반지
+261,背,せい,sei,키,(one's) height,n,키 재는 자
+264,子供,こども,kodomo,어린이,child(ren),n,어린이들
+266,一,いち,ichi,하나,one,num,손가락 하나
+269,犯人,はんにん,hannin,범인,offender,n,도망가는 도둑 실루엣
+274,痛い,いたい,itai,아프다,hurt,adj-i,배를 잡고 아파하는 사람
+282,飲む,のむ,nomu,마시다,to drink,v,물 마시는 사람
+283,警察,けいさつ,keisatsu,경찰,police,n,경찰관
+285,医院,いいん,iin,의원,doctor's office (surgery),n,작은 병원 건물
+287,日,ひ,hi,날,sun,n,해와 달력
+288,ママ,ママ,mama,엄마,Mama,n,엄마(캐주얼)
+290,会社,かいしゃ,kaishya,회사,company,n,사무실 빌딩
+279,明日,あした,ashita,내일,tomorrow,adv/time,달력의 내일 표시
+157,好き,すき,suki,좋아함,liking,adj-na,하트를 든 사람
+46,嫌,いや,iya,싫음,disagreeable,adj-na,싫어서 손사래
+90,大丈夫,だいじょうぶ,daijyoubu,괜찮다,It's ok (all right),expr,엄지 척
+226,欲しい,ほしい,hoshii,갖고 싶다,to want,adj-i,쇼윈도를 보는 사람
+128,ありがとう,ありがとう,arigatou,고마워,Thank you,expr,고개 숙여 감사
+18,私,わたし,watashi,나,I (formal),n,자기를 가리키는 사람
+72,今,いま,ima,지금,now,adv/time,시계 바늘 지금
+224,事件,じけん,jiken,사건,event,n,출입 통제 테이프
+295,力,ちから,chikara,힘,strength,n,팔 근육
+297,教える,おしえる,oshieru,가르치다,to teach,v,칠판 앞 선생님
+303,書く,かく,kaku,쓰다,to write,v,연필로 쓰는 손
+430,お金,おかね,okane,돈,money,n,지폐와 동전
+323,店,みせ,mise,가게,store,n,편의점 외관
+331,家族,かぞく,kazoku,가족,family,n,가족 네 명
+332,体,からだ,karada,몸,body,n,몸 실루엣
+336,渡す,わたす,watasu,건네다,to hand (something) over (v.t.),v,물건 건네는 두 손
+337,心,こころ,kokoro,마음,heart,n,하트
+342,手,て,te,손,hand,n,손
+350,電話,でんわ,denwa,전화,a telephone,n,스마트폰 통화
+351,忘れる,わすれる,wasureru,잊다,to forget,v,물음표와 머리
+352,呼ぶ,よぶ,yobu,부르다,to call (one's name),v,손 흔들어 부르는 사람
+355,名前,なまえ,namae,이름,name,n,이름표
+359,光,ひかり,hikari,빛,light,n,빛나는 전구
+366,守る,まもる,mamoru,지키다,to protect,v,우산으로 가려 주는 사람
+370,逃げる,にげる,nigeru,도망치다,to escape,v,달아나는 사람
+380,茶,ちゃ,chya,차,tea,n,녹차 잔
+389,友達,ともだち,tomodachi,친구,friend,n,어깨동무 친구
+393,部屋,へや,heya,방,a room,n,방 안
+398,鼻,はな,hana,코,nose,n,코
+401,怖い,こわい,kowai,무섭다,scary,adj-i,무서워 떠는 사람
+409,娘,むすめ,musume,딸,daughter (humble),n,딸과 부모
+420,パパ,パパ,papa,아빠,papa,n,아빠(캐주얼)
+421,夢,ゆめ,yume,꿈,a dream,n,잠자는 사람과 말풍선
+427,美味い,うまい,umai,맛있다,delicious,adj-i,맛있다는 표정
+433,働く,はたらく,hataraku,일하다,to work,v,일하는 사람(작업복)
+437,開く,あく,aku,열리다,to open,v,열리는 문
+435,場所,ばしょ,bashyo,장소,place,n,지도 핀

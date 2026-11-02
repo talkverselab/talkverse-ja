@@ -1,0 +1,1173 @@
+rank,word,reading,romaji,ko,en,pos,scene_hint
+19,言う,いう,iu,말하다,to say,v,말풍선을 띄우며 말하는 사람
+21,来る,くる,kuru,오다,to come,v,"문으로 들어오는 사람, 화살표가 안쪽으로"
+26,思う,おもう,omo,생각하다,to think,v,턱에 손을 대고 생각 풍선
+32,ひと,ひと,hito,사람,person,n,단순한 사람 실루엣 한 명
+43,分かる,わかる,wakaru,"알다, 이해하다",to understand,v,머리 위 전구가 켜진 사람
+51,いい,いい,ii,좋다,good,a,엄지 올린 손
+52,ちょっと,ちょっと,chotto,"조금, 잠깐",a little,adv,손가락으로 '조금'을 표시하는 손
+53,これ,これ,kore,이것,this,n,가까운 물건을 가리키는 손
+61,ある,ある,aru,있다(사물),there is,v,탁자 위에 놓인 상자 하나
+71,先生,せんせい,sensei,선생님,teacher,n,칠판 앞 선생님
+72,今,いま,ima,지금,now,n,시계의 현재 시각을 가리키는 바늘
+75,僕,ぼく,boku,나(남),I (male),n,자기 가슴을 가리키는 남자
+88,聞く,きく,kiku,"듣다, 묻다",to listen,v,손을 귀에 대고 듣는 사람
+89,知る,しる,shiru,알다,to know,v,책을 든 채 고개를 끄덕이는 사람
+90,大丈夫,だいじょうぶ,daijobu,괜찮음,okay,n,OK 손 모양
+93,自分,じぶん,jibun,자기 자신,oneself,n,거울을 보며 자기를 가리키는 사람
+95,待つ,まつ,matsu,기다리다,to wait,v,시계를 보며 서 있는 사람
+96,音,おと,oto,소리,sound,n,스피커에서 나오는 음파
+99,ここ,ここ,koko,여기,here,n,발 아래를 가리키는 화살표
+110,出る,でる,deru,나가다,to go out,v,"문에서 나가는 사람, 화살표 바깥쪽"
+112,話,はなし,hanashi,이야기,"story, talk",n,두 사람 사이의 말풍선
+116,皆,みな,mina,모두,everyone,n,여러 사람이 모인 무리
+117,年,とし,toshi,"해, 나이",year,n,벽걸이 달력 한 장
+118,立つ,たつ,tatsu,서다,to stand,v,의자에서 일어서는 사람
+120,男,おとこ,otoko,남자,man,n,남자 실루엣
+123,仕事,しごと,shigoto,일,work,n,노트북 앞에서 일하는 사람
+125,違う,ちがう,chigau,다르다,to differ,v,다른 모양 두 도형과 ≠ 기호
+129,時,とき,toki,"때, 시",time,n,모래시계
+133,中,なか,naka,"안, 가운데",inside,n,상자 안을 가리키는 화살표
+136,出す,だす,dasu,"내다, 꺼내다",to take out,v,가방에서 물건을 꺼내는 손
+137,母,はは,haha,어머니,mother,n,어머니와 아이
+138,本当に,ほんとうに,hontoni,정말로,really,adv,놀라며 눈을 크게 뜬 얼굴
+141,考える,かんがえる,kangaeru,생각하다,to think over,v,퍼즐 조각을 맞추며 고민하는 사람
+145,死ぬ,しぬ,shinu,죽다,to die,v,시든 꽃과 묘비
+151,内,うち,uchi,"안, 집안","inside, home",n,집 안의 가족
+157,好き,すき,suki,좋아함,"like, love",n,하트를 든 사람
+159,子,こ,ko,아이,child,n,어린아이
+160,入る,はいる,hairu,들어가다,to enter,v,"문으로 들어가는 사람, 화살표 안쪽"
+161,どこ,どこ,doko,어디,where,n,지도 위 물음표 핀
+164,前,まえ,mae,앞,front,n,사람 앞을 가리키는 화살표
+165,悪い,わるい,warui,나쁘다,bad,a,엄지 내린 손
+167,誰,だれ,dare,누구,who,n,얼굴에 물음표가 있는 실루엣
+169,帰る,かえる,kaeru,돌아가다,to go home,v,집으로 걸어가는 사람
+170,女,おんな,onna,여자,woman,n,여자 실루엣
+171,食べる,たべる,taberu,먹다,to eat,v,젓가락으로 밥을 먹는 사람
+174,家,いえ,ie,집,house,n,지붕 있는 단순한 집
+179,本,ほん,hon,책,book,n,펼친 책
+182,今日,きょう,kyo,오늘,today,n,달력에 동그라미 친 오늘
+186,彼女,かのじょ,kanojo,"여자친구, 그녀","she, girlfriend",n,하트와 함께 있는 여자
+188,買う,かう,kau,사다,to buy,v,계산대에서 돈을 내는 사람
+191,作る,つくる,tsukuru,만들다,to make,v,손으로 무언가를 만드는 장면
+192,持つ,もつ,motsu,"들다, 가지다",to hold,v,가방을 든 손
+197,話す,はなす,hanasu,말하다,to speak,v,마주 보고 대화하는 두 사람
+199,生きる,いきる,ikiru,살다,to live,v,새싹과 햇빛
+202,どうぞ,どうぞ,dozo,"여기요, 자",here you are,i,물건을 건네는 손
+204,お母さん,おかあさん,okaasan,엄마,mom,n,앞치마를 입은 어머니
+208,声,こえ,koe,목소리,voice,n,입에서 나오는 음파
+209,早く,はやく,hayaku,빨리,quickly,a,"달리는 사람, 속도선"
+217,お父さん,おとうさん,otosan,아빠,dad,n,아버지와 아이
+218,使う,つかう,tsukau,사용하다,to use,v,도구를 쓰는 손
+221,時間,じかん,jikan,시간,time (hours),n,벽시계
+222,こっち,こっち,kotchi,이쪽,this way,n,자기 쪽을 가리키는 화살표
+226,欲しい,ほしい,hoshii,갖고 싶다,to want,a,선물을 바라보는 아이
+227,目,め,me,눈,eye,n,눈 하나
+229,多い,おおい,oi,많다,many,a,사과가 가득 쌓인 바구니
+235,人間,にんげん,ningen,인간,human,n,사람 실루엣 여러 명
+238,頼む,たのむ,tanomu,부탁하다,to ask a favor,v,두 손 모아 부탁하는 사람
+240,ずっと,ずっと,zutto,"계속, 쭉",continuously,adv,길게 이어지는 화살표
+242,終わる,おわる,owaru,끝나다,to end,v,결승선 테이프
+247,顔,かお,kao,얼굴,face,n,얼굴 윤곽
+250,嘘,うそ,uso,거짓말,lie,n,코가 길어진 피노키오
+251,彼,かれ,kare,"그, 남자친구","he, boyfriend",n,하트와 함께 있는 남자
+253,無理,むり,muri,"무리, 불가능",impossible,n,양손으로 X 표시
+254,社長,しゃちょう,shacho,사장,company president,n,큰 의자에 앉은 사장
+256,ところ,ところ,tokoro,곳,place,n,지도 핀
+257,戻る,もどる,modoru,돌아오다,to return,v,되돌아가는 화살표
+259,結婚,けっこん,kekkon,결혼,marriage,n,결혼반지 두 개
+261,背,せ,se,"키, 등","height, back",n,키 재는 눈금 앞의 사람
+262,本当,ほんとう,honto,정말,truth,n,체크 표시가 있는 도장
+264,子供,こども,kodomo,아이,child,n,공을 든 아이
+265,馬鹿,ばか,baka,바보,fool,n,멍한 얼굴에 느낌표
+266,一,いち,ichi,하나,one,n,숫자 1
+269,犯人,はんにん,hannin,범인,culprit,n,마스크를 쓴 도둑 실루엣
+272,もっと,もっと,motto,더,more,adv,플러스 기호와 커지는 막대
+274,痛い,いたい,itai,아프다,painful,a,"손가락에 반창고, 눈물"
+279,明日,あした,ashita,내일,tomorrow,n,달력에서 다음 날을 가리키는 화살표
+280,感じる,かんじる,kanjiru,느끼다,to feel,v,손으로 심장을 감싼 사람
+281,すごい,すごい,sugoi,대단하다,amazing,a,반짝이는 눈과 느낌표
+282,飲む,のむ,nomu,마시다,to drink,v,컵으로 물을 마시는 사람
+283,警察,けいさつ,keisatsu,경찰,police,n,제복 경찰관
+287,日,ひ,hi,"날, 해","day, sun",n,태양
+288,ママ,まま,mama,엄마,mom,n,아기를 안은 엄마
+290,会社,かいしゃ,kaisha,회사,company,n,사무용 빌딩
+293,こちら,こちら,kochira,이쪽,this way (polite),n,손바닥으로 방향을 안내하는 손
+295,力,ちから,chikara,힘,strength,n,팔 근육
+297,教える,おしえる,oshieru,가르치다,to teach,v,칠판에 쓰며 설명하는 사람
+301,女性,じょせい,josei,여성,woman,n,여성 실루엣
+303,書く,かく,kaku,쓰다,to write,v,펜으로 쓰는 손
+305,全て,すべて,subete,전부,all,n,원이 모두 채워진 체크 리스트
+308,信じる,しんじる,shinjiru,믿다,to believe,v,서로 손을 맞잡은 두 사람
+309,見える,みえる,mieru,보이다,to be visible,v,눈에서 뻗어 나가는 시선과 산
+310,心配,しんぱい,shinpai,걱정,worry,n,이마에 손을 댄 걱정하는 얼굴
+311,必要,ひつよう,hitsuyo,필요,necessary,n,필수 체크 표시가 있는 목록
+320,できる,できる,dekiru,할 수 있다,can do,v,만세하는 사람
+323,店,みせ,mise,가게,shop,n,차양이 달린 작은 가게
+324,全部,ぜんぶ,zenbu,전부,everything,n,바구니에 다 담긴 과일
+329,気,き,ki,"기분, 마음",feeling,n,머리 위 구름 모양 기분 아이콘
+331,家族,かぞく,kazoku,가족,family,n,부모와 아이 셋이 손 잡은 가족
+332,体,からだ,karada,몸,body,n,사람 몸 전체 윤곽
+336,渡す,わたす,watasu,건네다,to hand over,v,봉투를 건네는 손
+337,心,こころ,kokoro,마음,heart,n,하트
+341,気持ち,きもち,kimochi,기분,feeling,n,웃는 얼굴과 우는 얼굴 두 개
+342,手,て,te,손,hand,n,손바닥
+343,これから,これから,korekara,이제부터,from now on,adv,앞으로 향한 화살표와 발자국
+349,助ける,たすける,tasukeru,"돕다, 구하다",to help,v,물에 빠진 사람에게 손 내밀기
+350,電話,でんわ,denwa,전화,telephone,n,스마트폰에서 울리는 전화
+351,忘れる,わすれる,wasureru,잊다,to forget,v,머리 위 지워지는 생각 풍선
+352,呼ぶ,よぶ,yobu,부르다,to call,v,손을 입에 대고 외치는 사람
+355,名前,なまえ,namae,이름,name,n,이름표
+356,いつも,いつも,itsumo,언제나,always,adv,반복 화살표(루프)
+359,光,ひかり,hikari,빛,light,n,빛을 내는 전구
+362,次,つぎ,tsugi,다음,next,n,오른쪽 화살표와 '다음' 카드
+363,入れる,いれる,ireru,넣다,to put in,v,상자에 물건을 넣는 손
+364,一番,いちばん,ichiban,"가장, 1등",number one,n,1등 메달
+366,守る,まもる,mamoru,지키다,to protect,v,방패
+370,逃げる,にげる,nigeru,도망치다,to run away,v,뒤돌아 뛰어 도망치는 사람
+371,相手,あいて,aite,상대,"partner, opponent",n,마주 선 두 사람
+379,大事,だいじ,daiji,소중함,important,n,두 손으로 소중히 감싼 하트
+380,茶,ちゃ,cha,차,tea,n,"녹차 — 찻잔에 담긴 녹색 차, 찻잎"
+383,私たち,わたしたち,watashitachi,우리,we,n,함께 선 두세 사람
+384,問題,もんだい,mondai,문제,problem,n,물음표가 적힌 시험지
+385,見せる,みせる,miseru,보여 주다,to show,v,그림을 들어 보여 주는 사람
+386,幸せ,しあわせ,shiawase,행복,happiness,n,웃으며 햇볕을 받는 사람
+388,大変,たいへん,taihen,"큰일, 힘듦",tough,n,무거운 짐을 진 사람
+389,友達,ともだち,tomodachi,친구,friend,n,어깨동무한 두 친구
+390,少し,すこし,sukoshi,조금,a little,adv,조금만 채워진 컵
+393,部屋,へや,heya,방,room,n,침대와 창문이 있는 방
+395,男性,だんせい,dansei,남성,man,n,남성 실루엣
+397,生む,うむ,umu,낳다,to give birth,v,알에서 나오는 새끼
+398,鼻,はな,hana,코,nose,n,코
+401,怖い,こわい,kowai,무섭다,scary,a,유령에 놀란 얼굴
+402,意味,いみ,imi,의미,meaning,n,사전과 화살표
+404,取る,とる,toru,"잡다, 집다",to take,v,물건을 집는 손
+405,今度,こんど,kondo,다음에,next time,n,달력의 다음 날짜 표시
+406,変わる,かわる,kawaru,변하다,to change,v,애벌레에서 나비로
+409,娘,むすめ,musume,딸,daughter,n,어머니와 딸
+411,皆さん,みなさん,minasan,여러분,everyone (polite),n,청중을 향해 인사하는 사람
+420,パパ,ぱぱ,papa,아빠,dad,n,아이를 목말 태운 아빠
+421,夢,ゆめ,yume,꿈,dream,n,잠든 사람 위 꿈 풍선
+424,動く,うごく,ugoku,움직이다,to move,v,움직임 선이 있는 공
+427,美味い,うまい,umai,맛있다,tasty,a,볼이 발그레한 만족한 얼굴과 음식
+429,さっき,さっき,sakki,아까,a little while ago,n,시계 바늘이 조금 뒤로
+430,お金,おかね,okane,돈,money,n,지폐와 동전
+432,世界,せかい,sekai,세계,world,n,지구
+433,働く,はたらく,hataraku,일하다,to work,v,작업복 입고 일하는 사람
+434,変,へん,hen,이상함,strange,n,물음표가 있는 뒤집힌 물건
+435,場所,ばしょ,basho,장소,place,n,지도 위 핀
+437,開く,ひらく,hiraku,열다,to open,v,열린 문
+440,覚える,おぼえる,oboeru,외우다,to memorize,v,단어장을 보며 외우는 사람
+441,楽しい,たのしい,tanoshii,즐겁다,fun,a,풍선을 들고 웃는 사람
+442,刑事,けいじ,keiji,형사,detective,n,코트와 모자의 형사
+444,最後,さいご,saigo,마지막,last,n,마지막 페이지에 END
+445,始める,はじめる,hajimeru,시작하다,to start,v,스타트 신호 깃발
+449,着る,きる,kiru,입다,to wear,v,셔츠를 입는 사람
+454,昨日,きのう,kino,어제,yesterday,n,달력에서 전날을 가리키는 화살표
+455,病院,びょういん,byoin,병원,hospital,n,십자 표시가 있는 병원 건물
+456,決める,きめる,kimeru,정하다,to decide,v,두 갈림길에서 하나를 고르는 사람
+457,昔,むかし,mukashi,옛날,old days,n,오래된 사진 액자
+458,連絡,れんらく,renraku,연락,contact,n,스마트폰 메시지 알림
+461,色々,いろいろ,iroiro,여러 가지,various,adv,색색의 여러 물건
+462,関係,かんけい,kankei,관계,relationship,n,선으로 연결된 사람들
+463,夜,よる,yoru,밤,night,n,달과 별
+464,人生,じんせい,jinsei,인생,life,n,아기에서 노인까지의 길
+466,うさぎ,うさぎ,usagi,토끼,rabbit,n,토끼
+467,学校,がっこう,gakko,학교,school,n,학교 건물과 시계
+468,続ける,つづける,tsuzukeru,계속하다,to continue,v,계속 달리는 사람
+469,街,まち,machi,"거리, 시내",town,n,상점가 거리
+471,言葉,ことば,kotoba,"말, 단어",word,n,말풍선 속 글자 ABC
+472,ドア,どあ,doa,문,door,n,문
+473,歳,とし,toshi_473,"나이, 세",age,n,생일 케이크 위 숫자 초
+474,命,いのち,inochi,목숨,life,n,심장 박동 선
+476,濃い,こい,koi,진하다,"thick, strong",a,진한 커피와 연한 커피 비교
+477,付き合う,つきあう,tsukiau,사귀다,to go out with,v,손 잡고 걷는 연인
+479,許す,ゆるす,yurusu,용서하다,to forgive,v,악수하는 두 사람
+484,売る,うる,uru,팔다,to sell,v,가게에서 물건을 내주는 상인
+488,決まる,きまる,kimaru,정해지다,to be decided,v,도장이 찍힌 서류
+490,残る,のこる,nokoru,남다,to remain,v,접시에 남은 음식 한 조각
+493,乗る,のる,noru,타다,to ride,v,버스에 올라타는 사람
+495,父,ちち,chichi,아버지,father,n,아버지
+496,外,そと,soto,밖,outside,n,집 밖의 나무와 해
+497,日本,にっぽん,nippon,일본,Japan,n,일본 지도 윤곽과 벚꽃
+499,すぐ,すぐ,sugu,곧,right away,adv,번개 표시와 시계
+500,元気,げんき,genki,"건강함, 활기","healthy, energetic",n,팔을 번쩍 든 활기찬 사람
+501,頑張って,がんばって,ganbatte,힘내,hang in there,v,주먹을 쥐고 응원하는 사람
+504,寝る,ねる,neru,자다,to sleep,v,침대에서 자는 사람
+507,おいしい,おいしい,oishii,맛있다,delicious,a,음식을 먹고 웃는 얼굴
+509,まず,まず,mazu,우선,first of all,adv,숫자 1 배지가 달린 목록 첫 줄
+511,食う,くう,ku,먹다(거친 말),to eat (rough),v,크게 입 벌려 햄버거 먹기
+512,新しい,あたらしい,atarashii,새롭다,new,a,NEW 태그가 달린 상자
+513,太い,ふとい,futoi,굵다,thick,a,굵은 선과 가는 선 비교
+515,頭,あたま,atama,머리,head,n,사람 머리
+518,すぐに,すぐに,suguni,곧바로,immediately,adv,번개와 화살표
+519,受ける,うける,ukeru,받다,to receive,v,두 손으로 받는 사람
+520,暮らす,くらす,kurasu,"살다, 생활하다",to live (daily life),v,집에서 밥 먹고 쉬는 생활
+521,最初,さいしょ,saisho,처음,beginning,n,출발선
+522,泣く,なく,naku,울다,to cry,v,눈물 흘리는 얼굴
+523,可愛い,かわいい,kawaii,귀엽다,cute,a,큰 눈의 아기 고양이
+525,困る,こまる,komaru,곤란하다,to be troubled,v,땀 흘리며 난감한 얼굴
+528,起きる,おきる,okiru,일어나다,to wake up,v,알람 소리에 일어나는 사람
+529,通る,とおる,toru_529,지나가다,to pass through,v,터널을 지나는 길
+532,上,うえ,ue,위,up,n,위쪽 화살표
+534,もしもし,もしもし,moshimoshi,여보세요,hello (phone),i,전화를 받는 사람
+536,底,そこ,soko,바닥,bottom,n,컵의 바닥
+537,笑う,わらう,warau,웃다,to laugh,v,활짝 웃는 얼굴
+539,普通,ふつう,futsu,보통,ordinary,n,중간 눈금의 게이지
+540,親,おや,oya,부모,parents,n,부모 둘
+541,生徒,せいと,seito,학생,student,n,교복 입은 학생
+542,一つ,ひとつ,hitotsu,하나,one thing,n,사과 한 개
+544,写真,しゃしん,shashin,사진,photo,n,사진 한 장
+546,先輩,せんぱい,senpai,선배,senior,n,앞서 걷는 선배와 뒤따르는 후배
+547,必ず,かならず,kanarazu,반드시,surely,adv,굵은 체크 표시
+549,笑い声,わらいごえ,waraigoe,웃음소리,laughter,n,웃는 얼굴과 ha ha 글자
+552,怒る,おこる,okoru,화내다,to get angry,v,붉어진 얼굴에 김
+553,遅い,おそい,osoi,"늦다, 느리다","late, slow",a,느린 거북이
+554,おはようございます,おはようございます,ohayogozaimasu,안녕하세요(아침),good morning,i,아침 해와 인사하는 사람
+556,糸,いと,ito,실,thread,n,실타래
+560,読む,よむ,yomu,읽다,to read,v,책 읽는 사람
+561,東京,とうきょう,tokyo,도쿄,Tokyo,n,도쿄 타워
+562,奥さん,おくさん,okusan,부인,wife (someone's),n,앞치마 입은 부인
+563,最近,さいきん,saikin,최근,recently,n,달력의 최근 며칠 표시
+565,約束,やくそく,yakusoku,약속,promise,n,손가락 걸고 약속
+566,見つける,みつける,mitsukeru,찾아내다,to find,v,돋보기로 찾은 물건
+567,母親,ははおや,hahaoya,어머니,mother,n,어머니
+571,送る,おくる,okuru,보내다,to send,v,편지를 넣는 우체통
+574,息子,むすこ,musuko,아들,son,n,아버지와 아들
+576,ただいま,ただいま,tadaima,다녀왔습니다,I'm home,i,현관에 들어오며 인사하는 사람
+577,車,くるま,kuruma,차,car,n,자동차
+581,捨てる,すてる,suteru,버리다,to throw away,v,쓰레기통에 버리는 손
+584,料理,りょうり,ryori,요리,"cooking, dish",n,프라이팬으로 요리하는 사람과 접시
+587,面白い,おもしろい,omoshiroi,재미있다,interesting,a,웃으며 책을 보는 사람
+588,辞める,やめる,yameru,그만두다,to quit,v,사무실을 나가는 사람과 사직서
+592,返す,かえす,kaesu,돌려주다,to return (item),v,빌린 책을 돌려주는 손
+593,伝える,つたえる,tsutaeru,전하다,to convey,v,메모를 전달하는 사람
+594,理由,りゆう,riyu,이유,reason,n,물음표에서 느낌표로
+595,高い,たかい,takai,"높다, 비싸다","high, expensive",a,높은 빌딩과 가격표
+601,そんなに,そんなに,sonnani,그렇게나,that much,adv,손을 넓게 벌린 사람
+603,旦那,だんな,danna,남편,husband,n,남편
+605,黙る,だまる,damaru,조용히 하다,to be silent,v,입에 손가락을 댄 쉿
+608,患者,かんじゃ,kanja,환자,patient,n,병원 침대의 환자
+611,勝つ,かつ,katsu,이기다,to win,v,트로피를 든 사람
+612,現場,げんば,genba,현장,site,n,공사 현장
+614,疲れる,つかれる,tsukareru,지치다,to get tired,v,축 늘어진 사람
+615,落ちる,おちる,ochiru,떨어지다,to fall,v,나무에서 떨어지는 사과
+616,被害者,ひがいしゃ,higaisha,피해자,victim,n,반창고를 붙인 울상인 사람
+620,情報,じょうほう,joho,정보,information,n,i 표시 아이콘과 문서
+621,宝,たから,takara,보물,treasure,n,보물 상자
+622,七日,ななにち,nananichi,7일,seven days,n,달력에 7일 표시
+627,父親,ちちおや,chichioya,아버지,father,n,아버지
+628,長い,ながい,nagai,길다,long,a,긴 줄자
+629,一人,いちにん,ichinin,"한 사람, 혼자","one person, alone",n,혼자 서 있는 사람
+630,落ち着く,おちつく,ochitsuku,안정되다,to calm down,v,차를 마시며 편안한 사람
+632,もらう,もらう,morau,받다,to receive,v,선물을 받는 사람
+633,確認,かくにん,kakunin,확인,confirmation,n,체크리스트를 확인하는 사람
+635,若い,わかい,wakai,젊다,young,a,젊은이와 노인 비교
+639,負ける,まける,makeru,지다,to lose,v,고개 숙인 사람과 2위
+644,携帯,けいたい,keitai,휴대폰,mobile phone,n,스마트폰
+645,選ぶ,えらぶ,erabu,고르다,to choose,v,여러 중 하나를 가리키는 손
+647,いつ,いつ,itsu,언제,when,n,달력 위 물음표
+651,部長,ぶちょう,bucho,부장,department head,n,넥타이를 맨 부장
+653,可能性,かのうせい,kanosei,가능성,possibility,n,여러 갈래의 길
+659,朝,あさ,asa,아침,morning,n,떠오르는 해
+660,ダメ,だめ,dame,안 됨,no good,n,빨간 X
+663,証拠,しょうこ,shoko,증거,evidence,n,지문과 돋보기
+665,戦う,たたかう,tatakau,싸우다,to fight,v,검을 든 두 사람
+666,答える,こたえる,kotaeru,대답하다,to answer,v,손을 들고 대답하는 학생
+667,おはよう,おはよう,ohayo,좋은 아침,morning!,i,아침 해와 손 인사
+669,隠す,かくす,kakusu,숨기다,to hide,v,뒤에 물건을 숨긴 사람
+670,始まる,はじまる,hajimaru,시작되다,to begin,v,막이 열리는 무대
+671,亡くなる,なくなる,nakunaru,돌아가시다,to pass away,v,국화와 묘비
+673,探す,さがす,sagasu,찾다,to search,v,돋보기를 든 사람
+676,課長,かちょう,kacho,과장,section chief,n,서류를 든 과장
+678,早い,はやい,hayai,"이르다, 빠르다","early, fast",a,새벽 시계와 달리는 사람
+679,諦める,あきらめる,akirameru,포기하다,to give up,v,손을 놓고 돌아서는 사람
+681,恋,こい,koi_681,"사랑, 연애",romantic love,n,하트 두 개와 연인
+685,字,じ,ji,글자,"letter, character",n,종이 위 글자
+688,大切,たいせつ,taisetsu,소중함,precious,n,두 손에 든 보석
+690,賞,しょう,sho,상,prize,n,상장과 메달
+691,帰ってくる,かえってくる,kaettekuru,돌아오다,to come back,v,집으로 돌아오는 사람
+694,急に,きゅうに,kyuni,갑자기,suddenly,n,번개와 느낌표
+695,辛い,つらい,tsurai,맵다,spicy,a,고추와 불
+696,最高,さいこう,saiko,최고,the best,n,정상에 깃발
+697,仲間,なかま,nakama,동료,companions,n,어깨동무한 여러 사람
+700,優しい,やさしい,yasashii,다정하다,kind,a,아이를 안아 주는 사람
+701,切る,きる,kiru_701,자르다,to cut,v,가위로 종이 자르기
+703,白い,しろい,shiroi,하얗다,white,a,흰 눈사람
+705,夫,おっと,otto,남편,husband,n,남편
+708,国,くに,kuni,나라,country,n,지도와 국기
+709,変える,かえる,kaeru_709,바꾸다,to change,v,전구를 바꾸는 손
+710,一緒,いっしょ,issho,함께,together,n,손 잡은 두 사람
+712,閉まる,しまる,shimaru,닫히다,to close,v,닫힌 문
+713,別れる,わかれる,wakareru,헤어지다,to break up,v,등 돌린 두 사람
+717,やばい,やばい,yabai,"위험하다, 대박","risky, awesome",a,식은땀 흘리는 놀란 얼굴
+719,円い,まるい,marui,둥글다,round,a,원
+723,簡単,かんたん,kantan,간단함,simple,n,한 조각 퍼즐
+725,用,よう,yo,볼일,errand,n,할 일 메모
+726,結果,けっか,kekka,결과,result,n,결과 발표 봉투
+727,似合う,にあう,niau,어울리다,to suit,v,옷이 잘 맞는 사람과 거울
+729,出てくる,でてくる,detekuru,나오다,to come out,v,상자에서 튀어나오는 것
+732,道,みち,michi,길,road,n,길
+733,急ぐ,いそぐ,isogu,서두르다,to hurry,v,시계를 보며 뛰는 사람
+734,先,さき,saki,"앞, 끝","ahead, tip",n,앞을 가리키는 화살표
+738,続く,つづく,tsuzuku,계속되다,to continue,v,점선으로 이어지는 길
+740,そっち,そっち,sotchi,그쪽,that way,n,상대 쪽을 가리키는 화살표
+742,空,そら,sora,하늘,sky,n,구름 낀 파란 하늘
+743,一度,いちど,ichido,한 번,once,n,숫자 1 체크
+744,救う,すくう,suku,구하다,to rescue,v,구명 튜브를 던지는 사람
+747,忙しい,いそがしい,isogashii,바쁘다,busy,a,서류 더미에 둘러싸인 사람
+749,準備,じゅんび,junbi,준비,preparation,n,가방을 챙기는 사람
+750,そろそろ,そろそろ,sorosoro,슬슬,soon,adv,시계를 가리키며 일어나려는 사람
+753,毎日,まいにち,mainichi,매일,every day,n,달력 모든 날에 체크
+754,貸す,かす,kasu,빌려주다,to lend,v,돈을 건네는 손
+756,相談,そうだん,sodan,상담,consultation,n,마주 앉아 이야기하는 두 사람
+757,どっち,どっち,dotchi,어느 쪽,which,n,두 갈래 화살표와 물음표
+758,開ける,あける,akeru,열다,to open,v,뚜껑을 여는 손
+761,久しぶり,ひさしぶり,hisashiburi,오랜만,long time no see,n,오랜만에 만나 손 흔드는 두 사람
+765,風,かぜ,kaze,바람,wind,n,바람에 날리는 나뭇잎
+767,手伝う,てつだう,tetsudau,돕다,to help out,v,짐을 함께 드는 두 사람
+768,足,あし,ashi,"발, 다리","foot, leg",n,발
+769,あげる,あげる,ageru,주다,to give,v,선물을 주는 손
+772,向かう,むかう,mukau,향하다,to head toward,v,목표 지점으로 향하는 화살표
+773,謝る,あやまる,ayamaru,사과하다,to apologize,v,고개 숙여 사과하는 사람
+779,愛,あい,ai,사랑,love,n,큰 하트
+785,折れる,おれる,oreru,부러지다,to break,v,부러진 연필
+787,聞こえる,きこえる,kikoeru,들리다,to be audible,v,귀와 음파
+789,二人,ににん,ninin,두 사람,two people,n,두 사람
+790,大学,だいがく,daigaku,대학,university,n,대학 건물과 학사모
+792,医者,いしゃ,isha,의사,doctor,n,흰 가운과 청진기
+793,撮る,とる,toru_793,(사진) 찍다,to take a photo,v,카메라로 찍는 사람
+794,大きい,おおきい,okii,크다,big,a,큰 공과 작은 공
+796,たくさん,たくさん,takusan,많이,a lot,n,가득 쌓인 사과
+802,休む,やすむ,yasumu,쉬다,to rest,v,소파에 누워 쉬는 사람
+805,貼る,はる,haru,붙이다,to stick,v,벽에 포스터 붙이기
+806,離れる,はなれる,hanareru,"떨어지다, 멀어지다",to separate,v,멀어지는 두 사람과 화살표
+808,辺,あたり,atari,근처,vicinity,n,지도 핀 주변 원
+812,木,き,ki_812,나무,tree,n,나무
+813,よい,よい,yoi,좋다,good,a,엄지 올린 손과 별
+816,うれしい,うれしい,ureshii,기쁘다,glad,a,기뻐 뛰는 사람
+817,味,あじ,aji,맛,taste,n,혀와 음식
+818,消える,きえる,kieru,사라지다,to disappear,v,점점 투명해지는 사람
+823,邪魔,じゃま,jama,방해,hindrance,n,길을 막은 바위
+824,座る,すわる,suwaru,앉다,to sit,v,의자에 앉는 사람
+825,遊ぶ,あそぶ,asobu,놀다,to play,v,공놀이하는 아이들
+826,ため息,ためいき,tameiki,한숨,sigh,n,입에서 나오는 한숨 구름
+829,親父,おやじ,oyaji,아버지(거친 말),"old man, dad",n,나이 든 아버지
+833,説明,せつめい,setsumei,설명,explanation,n,화이트보드로 설명하는 사람
+835,姿,すがた,sugata,모습,figure,n,전신 실루엣
+837,払う,はらう,harau,지불하다,to pay,v,카드를 내는 손
+839,気づく,きづく,kizuku,알아차리다,to notice,v,느낌표가 떠오른 얼굴
+841,女子,じょし,joshi,여자,girl,n,여학생
+842,口,くち,kuchi,입,mouth,n,입
+844,勉強,べんきょう,benkyo,공부,study,n,책상에서 공부하는 사람
+846,ゆっくり,ゆっくり,yukkuri,천천히,slowly,adv,거북이와 느린 화살표
+849,ひどい,ひどい,hidoi,심하다,terrible,a,폭우에 흠뻑 젖은 사람
+850,歩く,あるく,aruku,걷다,to walk,v,걷는 사람
+852,広い,ひろい,hiroi,넓다,wide,a,넓은 들판
+854,花,はな,hana_854,꽃,flower,n,꽃
+855,近く,ちかく,chikaku,근처,nearby,n,가까운 두 지점
+856,手術,しゅじゅつ,shujutsu,수술,surgery,n,수술실의 의사
+857,首,くび,kubi,목,neck,n,목
+858,拍手,はくしゅ,hakushu,박수,applause,n,박수치는 손
+859,出会う,であう,deau,만나다,to encounter,v,우연히 마주친 두 사람
+861,海,うみ,umi,바다,sea,n,파도치는 바다
+863,用意,ようい,yoi_863,준비,preparation,n,준비된 도구 세트
+864,山,やま,yama,산,mountain,n,산
+866,桜,さくら,sakura,벚꽃,cherry blossom,n,벚꽃 가지
+867,町,まち,machi_867,마을,town,n,집들이 모인 마을
+868,全員,ぜんいん,zenin,전원,all members,n,둥글게 선 모든 사람
+869,逮捕,たいほ,taiho,체포,arrest,n,수갑
+871,住む,すむ,sumu,살다(거주),to live in,v,집 앞에 선 사람
+873,強い,つよい,tsuyoi,강하다,strong,a,역기를 드는 사람
+875,メール,めーる,meeru,메일,email,n,봉투 아이콘
+877,教授,きょうじゅ,kyoju,교수,professor,n,안경 쓴 교수
+880,合う,あう,au,맞다,to fit,v,딱 맞는 퍼즐 두 조각
+881,疑う,うたがう,utagau,의심하다,to doubt,v,눈을 가늘게 뜬 얼굴
+882,未来,みらい,mirai,미래,future,n,앞으로 뻗은 길과 해
+884,兄,あに,ani,"형, 오빠",older brother,n,형과 동생
+885,熱い,あつい,atsui,뜨겁다,hot,a,김 나는 찻잔
+888,今夜,こんや,konya,오늘 밤,tonight,n,달과 오늘 달력
+891,上がる,あがる,agaru,올라가다,to go up,v,계단을 오르는 사람
+892,難しい,むずかしい,muzukashii,어렵다,difficult,a,복잡한 수식 앞 고민하는 사람
+893,釣る,つる,tsuru,낚다,to fish,v,낚싯대로 물고기 잡기
+894,大人,おとな,otona,어른,adult,n,어른과 아이 비교
+898,素敵,すてき,suteki,멋짐,lovely,n,반짝이는 드레스
+899,噂,うわさ,uwasa,소문,rumor,n,귀에 속삭이는 사람
+904,飛ぶ,とぶ,tobu,날다,to fly,v,날아가는 새
+908,歌,うた,uta,노래,song,n,음표와 마이크
+909,敵,てき,teki,적,enemy,n,대치하는 두 진영
+911,お腹,おなか,onaka,배,belly,n,배를 만지는 사람
+913,大好き,だいすき,daisuki,아주 좋아함,love very much,n,여러 하트를 안은 사람
+914,弁護士,べんごし,bengoshi,변호사,lawyer,n,법복과 저울
+915,下,した,shita,아래,below,n,아래쪽 화살표
+916,女の子,おんなのこ,onnanoko,여자아이,girl,n,여자아이
+919,驚く,おどろく,odoroku,놀라다,to be surprised,v,입을 벌리고 놀란 얼굴
+920,起こす,おこす,okosu,깨우다,to wake someone,v,자는 사람을 흔드는 사람
+921,おかしい,おかしい,okashii,이상하다,odd,a,기울어진 물음표
+922,だめ,だめ,dame_922,안 됨,not allowed,n,금지 표지
+923,借りる,かりる,kariru,빌리다,to borrow,v,도서관에서 책 받는 사람
+924,水,みず,mizu,물,water,n,물 한 잔
+925,いくら,いくら,ikura,얼마,how much,n,가격표에 물음표
+931,楽しむ,たのしむ,tanoshimu,즐기다,to enjoy,v,음악 들으며 웃는 사람
+935,東,ひがし,higashi,동쪽,east,n,나침반 E
+938,愛する,あいする,aisuru,사랑하다,to love,v,안고 있는 연인
+939,黒い,くろい,kuroi,검다,black,a,검은 고양이
+941,正直,しょうじき,shojiki,정직,honesty,n,가슴에 손을 올린 사람
+942,責任,せきにん,sekinin,책임,responsibility,n,어깨에 짐을 진 사람
+944,伺う,うかがう,ukagau,찾아뵙다,to visit (humble),v,문 앞에서 인사하는 방문객
+947,組む,くむ,kumu,"짜다, 팔짱 끼다","to cross, to team up",v,팔짱 낀 사람
+948,危ない,あぶない,abunai,위험하다,dangerous,a,위험 삼각 표지
+950,私達,わたしたち,watashitachi_950,우리,we,n,함께 선 사람들
+952,向こう,むこう,muko,건너편,over there,n,강 건너편을 가리키는 손
+953,離婚,りこん,rikon,이혼,divorce,n,끊어진 결혼반지
+954,いらっしゃい,いらっしゃい,irasshai,어서 와,welcome,n,문 앞에서 맞이하는 사람
+956,いっぱい,いっぱい,ippai,가득,full,adv,가득 찬 컵
+958,匂う,におう,nio,냄새나다,to smell,v,코로 냄새 맡는 사람
+960,願う,ねがう,negau,바라다,to wish,v,별을 보며 기도하는 사람
+964,無事,ぶじ,buji,무사,safety,n,안전 체크 방패
+965,方法,ほうほう,hoho,방법,method,n,순서가 적힌 설명서
+967,誘う,さそう,saso,초대하다,to invite,v,함께 가자고 손짓하는 사람
+969,似る,にる,niru,닮다,to resemble,v,닮은 두 얼굴
+970,安心,あんしん,anshin,안심,relief,n,가슴을 쓸어내리는 사람
+972,持ってくる,もってくる,mottekuru,가져오다,to bring,v,물건을 들고 오는 사람
+974,戻ってくる,もどってくる,modottekuru,되돌아오다,to come back,v,되돌아오는 화살표와 사람
+975,父さん,とうさん,tosan,아버지,dad,n,아버지
+976,あそこ,あそこ,asoko,저기,over there,n,멀리 가리키는 손
+977,五日,ごにち,gonichi,5일,five days,n,달력 5일
+979,時代,じだい,jidai,시대,era,n,옛 시대와 현대 비교
+981,とても,とても,totemo,매우,very,adv,크게 강조된 느낌표
+982,知り合う,しりあう,shiriau,알게 되다,to get acquainted,v,처음 악수하는 두 사람
+986,失敗,しっぱい,shippai,실패,failure,n,넘어진 사람과 X
+989,客,きゃく,kyaku,손님,customer,n,쇼핑백 든 손님
+992,騙す,だます,damasu,속이다,to deceive,v,가면을 쓴 사람
+995,走る,はしる,hashiru,달리다,to run,v,달리는 사람
+996,事故,じこ,jiko,사고,accident,n,충돌한 자동차
+1000,社員,しゃいん,shain,사원,employee,n,사원증을 단 직원
+1003,助かる,たすかる,tasukaru,"살았다, 도움되다",to be saved,v,안도하며 땀 닦는 사람
+1006,突然,とつぜん,totsuzen,갑자기,suddenly,adv,번개 느낌표
+1009,今年,ことし,kotoshi,올해,this year,n,올해 달력 표지
+1011,うるさい,うるさい,urusai,시끄럽다,noisy,a,귀를 막은 사람
+1012,箱,はこ,hako,상자,box,n,상자
+1015,夏,なつ,natsu,여름,summer,n,해와 수박
+1016,空く,すく,suku_1016,비다,to become empty,v,빈 의자
+1017,報告,ほうこく,hokoku,보고,report,n,보고서를 제출하는 사람
+1022,えっと,えっと,etto,음…,um,i,머리 긁으며 생각하는 사람
+1025,犬,いぬ,inu,개,dog,n,개
+1030,断る,ことわる,kotowaru,거절하다,to refuse,v,손바닥으로 거절하는 사람
+1032,発見,はっけん,hakken,발견,discovery,n,돋보기와 느낌표
+1033,十分,じゅうふん,jufun,충분,enough,n,가득 찬 게이지
+1034,消す,けす,kesu,"끄다, 지우다","to turn off, erase",v,지우개로 지우는 손
+1038,危険,きけん,kiken,위험,danger,n,경고 표지
+1041,過去,かこ,kako,과거,past,n,뒤쪽을 가리키는 화살표와 옛 사진
+1042,生活,せいかつ,seikatsu,생활,daily life,n,집·밥·일의 하루 아이콘
+1045,傷つく,きずつく,kizutsuku,상처받다,to be hurt,v,깨진 하트
+1051,裏,うら,ura,뒤,back side,n,뒤집은 카드
+1052,甘い,あまい,amai,달다,sweet,a,케이크와 사탕
+1053,しっかり,しっかり,shikkari,단단히,firmly,adv,꽉 쥔 주먹
+1055,失う,うしなう,ushinau,잃다,to lose,v,빈 손과 날아가는 풍선
+1057,覚悟,かくご,kakugo,각오,resolve,n,결심한 표정의 사람
+1058,紹介,しょうかい,shokai,소개,introduction,n,두 사람을 소개하는 손짓
+1061,デート,でーと,deeto,데이트,date,n,카페에 앉은 연인
+1063,描く,えがく,egaku,그리다,to draw,v,붓으로 그리는 사람
+1065,ノック,のっく,nokku,노크,knock,n,문을 두드리는 손
+1067,週間,しゅうかん,shukan,주간,week,n,달력 한 주
+1068,盗む,ぬすむ,nusumu,훔치다,to steal,v,가방을 훔치는 도둑
+1070,残念,ざんねん,zannen,유감,regret,n,아쉬운 얼굴
+1073,嫌い,きらい,kirai,싫음,dislike,v,얼굴을 돌린 사람과 X
+1076,城,しろ,shiro,성,castle,n,일본 성
+1078,月,つき,tsuki,달,moon,n,달
+1080,真実,しんじつ,shinjitsu,진실,truth,n,빛나는 체크 표시
+1087,迷惑,めいわく,meiwaku,폐,nuisance,n,시끄러운 이웃에 난감한 사람
+1089,病気,びょうき,byoki,병,illness,n,열이 나는 사람
+1090,振る,ふる,furu,흔들다,to shake,v,손을 흔드는 사람
+1091,無駄,むだ,muda,낭비,waste,n,쓰레기통에 버려진 돈
+1092,死,し,shi,죽음,death,n,묘비
+1093,足す,たす,tasu,더하다,to add,v,플러스 기호
+1094,映画,えいが,eiga,영화,movie,n,영화 필름과 팝콘
+1095,絵,え,e,그림,picture,n,액자 속 그림
+1096,着信音,ちゃくしんおん,chakushinon,착신음,ringtone,n,울리는 스마트폰
+1097,追う,おう,o,쫓다,to chase,v,뒤쫓는 사람
+1098,撃つ,うつ,utsu,쏘다,to shoot,v,총
+1101,妹,いもうと,imoto,여동생,younger sister,n,언니와 여동생
+1104,高校,こうこう,koko_1104,고등학교,high school,n,고등학교 건물
+1106,騒ぐ,さわぐ,sawagu,떠들다,to make noise,v,소란스러운 사람들
+1107,もう少し,もうすこし,mosukoshi,조금 더,a little more,adv,거의 다 찬 게이지
+1109,飽きる,あきる,akiru,질리다,to get bored,v,지루한 얼굴
+1110,魚,さかな,sakana,"물고기, 생선",fish,n,물고기
+1112,練習,れんしゅう,renshu,연습,practice,n,악기를 연습하는 사람
+1113,協力,きょうりょく,kyoryoku,협력,cooperation,n,함께 미는 사람들
+1114,冗談,じょうだん,jodan,농담,joke,n,웃는 얼굴과 말풍선 ha
+1119,梨,なし,nashi,배(과일),pear,n,배 과일
+1120,連れる,つれる,tsureru,데려가다,to take along,v,아이 손을 잡고 가는 사람
+1121,叩く,たたく,tataku,치다,to hit,v,북을 치는 손
+1122,看護師,かんごし,kangoshi,간호사,nurse,n,간호사
+1124,おめでとう,おめでとう,omedeto,축하해,congratulations,i,꽃가루와 축하하는 사람
+1125,子ども,こども,kodomo_1125,아이,kid,n,아이
+1127,形,かたち,katachi,모양,shape,n,원·삼각·사각
+1128,手紙,てがみ,tegami,편지,letter,n,편지 봉투
+1130,店員,てんいん,tenin,점원,clerk,n,계산대의 점원
+1132,怪我,けが,kega,부상,injury,n,붕대 감은 팔
+1136,一生,いっしょう,issho_1136,일생,lifetime,n,태어나서 노인까지의 선
+1137,しばらく,しばらく,shibaraku,잠시,for a while,adv,모래시계
+1138,悩む,なやむ,nayamu,고민하다,to worry,v,머리를 감싼 사람
+1140,彼ら,かれら,karera,그들,they,n,사람 여러 명
+1143,会長,かいちょう,kaicho,회장,chairman,n,단상 위 회장
+1144,字幕,じまく,jimaku,자막,subtitles,n,화면 아래 글자
+1146,赤い,あかい,akai,빨갗다,red,a,빨간 사과
+1147,二度と,にどと,nidoto,두 번 다시,never again,adv,반복 화살표에 X
+1152,育てる,そだてる,sodateru,기르다,to raise,v,물을 주며 식물 키우기
+1153,おじさん,おじさん,ojisan,아저씨,middle-aged man,n,아저씨
+1155,鍵,かぎ,kagi,열쇠,key,n,열쇠
+1159,光る,ひかる,hikaru,빛나다,to shine,v,반짝이는 별
+1161,進む,すすむ,susumu,나아가다,to advance,v,앞으로 가는 화살표와 사람
+1163,素晴らしい,すばらしい,subarashii,훌륭하다,wonderful,a,박수와 별
+1165,特別,とくべつ,tokubetsu,특별,special,n,별 모양 리본
+1166,隣,となり,tonari,옆,next to,n,나란히 선 두 집
+1167,秘密,ひみつ,himitsu,비밀,secret,n,입에 손가락과 자물쇠
+1169,丸い,まるい,marui_1169,둥글다,round,a,둥근 공
+1170,薬,くすり,kusuri,약,medicine,n,약 캡슐
+1174,行ってくる,いってくる,ittekuru,다녀올게,I'm off,v,현관에서 나가며 손 흔드는 사람
+1177,お客様,おきゃくさま,okyakusama,고객님,customer (polite),n,인사 받는 손님
+1179,感謝,かんしゃ,kansha,감사,gratitude,n,두 손 모아 감사
+1180,血,ち,chi,피,blood,n,피 한 방울
+1182,寂しい,さびしい,sabishii,외롭다,lonely,a,혼자 앉은 사람과 달
+1185,服,ふく,fuku,옷,clothes,n,셔츠와 바지
+1186,いってきます,いってきます,ittekimasu,다녀오겠습니다,I'm leaving,v,현관에서 인사하는 사람
+1188,はっきり,はっきり,hakkiri,확실히,clearly,adv,선명한 글자와 흐린 글자 비교
+1189,億,おく,oku,억,hundred million,n,돈더미와 숫자
+1190,お客さん,おきゃくさん,okyakusan,손님,customer,n,손님
+1191,殴る,なぐる,naguru,때리다,to punch,v,주먹
+1193,重い,おもい,omoi,무겁다,heavy,a,무거운 역기를 든 사람
+1194,いきなり,いきなり,ikinari,갑자기,all of a sudden,adv,튀어나오는 느낌표
+1196,食事,しょくじ,shokuji,식사,meal,n,차려진 식탁
+1197,笑顔,えがお,egao,웃는 얼굴,smile,n,웃는 얼굴
+1198,数,かず,kazu,수,number,n,숫자 1 2 3
+1199,傷,きず,kizu,상처,wound,n,반창고
+1201,記憶,きおく,kioku,기억,memory,n,머리 속 사진들
+1202,喜ぶ,よろこぶ,yorokobu,기뻐하다,to rejoice,v,만세하며 기뻐하는 사람
+1203,逆,ぎゃく,gyaku,반대,reverse,n,반대 방향 화살표
+1206,乾杯,かんぱい,kanpai,건배,cheers,n,맥주잔 두 개를 부딪치는 손
+1210,腹,はら,hara,배,belly,n,배
+1215,特に,とくに,tokuni,특히,especially,adv,강조된 별 하나
+1218,酒,さけ,sake,술,alcohol,n,사케 병과 잔
+1220,自由,じゆう,jiyu,자유,freedom,n,날아가는 새와 열린 새장
+1222,希望,きぼう,kibo,희망,hope,n,구름 사이 햇살
+1225,本物,ほんもの,honmono,진짜,the real thing,n,정품 인증 도장
+1226,あっち,あっち,atchi,저쪽,that way,n,멀리 가리키는 화살표
+1228,赤ちゃん,あかちゃん,akachan,아기,baby,n,아기
+1229,夫婦,ふうふ,fufu,부부,married couple,n,부부
+1233,運ぶ,はこぶ,hakobu,옮기다,to carry,v,상자를 옮기는 사람
+1237,原因,げんいん,genin,원인,cause,n,도미노 첫 조각
+1241,仲,なか,naka_1241,사이,relationship,n,서로 가까운 두 사람
+1242,応援,おうえん,oen,응원,cheering,n,응원 깃발 든 사람
+1246,切れる,きれる,kireru,끊어지다,to snap,v,끊어진 끈
+1249,彼氏,かれし,kareshi,남자친구,boyfriend,n,하트와 남자
+1250,届く,とどく,todoku,도착하다,to arrive (mail),v,우편물이 도착한 우체통
+1251,あおい,あおい,aoi,파랗다,blue,a,파란 바다
+1255,ご飯,ごはん,gohan,"밥, 식사","rice, meal",n,"흰 쌀밥 — 밥그릇에 담긴 흰 밥, 김이 오름"
+1256,色,いろ,iro,색,color,n,색 팔레트
+1258,平気,へいき,heiki,아무렇지 않음,fine,n,어깨를 으쓱한 태연한 얼굴
+1259,胸,むね,mune,가슴,chest,n,가슴에 손을 올린 사람
+1260,携帯電話,けいたいでんわ,keitaidenwa,휴대전화,cell phone,n,휴대전화
+1261,落とす,おとす,otosu,떨어뜨리다,to drop,v,손에서 떨어지는 열쇠
+1263,解決,かいけつ,kaiketsu,해결,solution,n,풀린 매듭
+1264,歌う,うたう,utau,노래하다,to sing,v,마이크를 들고 노래하는 사람
+1265,お茶,おちゃ,ocha,차,tea,n,"일본 녹차 — 찻잔과 찻주전자, 녹색 차"
+1267,立派,りっぱ,rippa,훌륭함,splendid,n,반짝이는 트로피
+1268,ゲーム,げーむ,geemu,게임,game,n,게임 컨트롤러
+1272,美しい,うつくしい,utsukushii,아름답다,beautiful,a,아름다운 꽃과 노을
+1274,誕生日,たんじょうび,tanjobi,생일,birthday,n,생일 케이크와 초
+1279,成功,せいこう,seiko,성공,success,n,정상에서 깃발 든 사람
+1280,裏切る,うらぎる,uragiru,배신하다,to betray,v,등 뒤에 칼을 숨긴 사람
+1283,寒い,さむい,samui,춥다,cold,a,떨고 있는 사람과 눈
+1284,集まる,あつまる,atsumaru,모이다,to gather,v,모여드는 사람들
+1287,自信,じしん,jishin,자신감,confidence,n,가슴을 펴고 선 사람
+1288,船,ふね,fune,배(선박),ship,n,배
+1289,倒れる,たおれる,taoreru,쓰러지다,to collapse,v,쓰러지는 사람
+1291,兄貴,あにき,aniki,형님,big bro,n,형
+1294,組,くみ,kumi,"조, 반","group, class",n,같은 띠를 맨 여러 사람
+1296,目的,もくてき,mokuteki,목적,purpose,n,화살이 꽂힌 표적
+1297,理解,りかい,rikai,이해,understanding,n,머리 위 전구와 체크
+1298,産む,うむ,umu_1298,낳다,to give birth,v,아기를 안은 어머니
+1300,緑,みどり,midori,초록,green,n,초록 잎
+1302,教師,きょうし,kyoshi,교사,teacher,n,교사
+1308,チャイム,ちゃいむ,chaimu,"차임, 벨",chime,n,종
+1310,アメリカ,あめりか,amerika,미국,America,n,미국 지도와 자유의 여신상
+1311,借金,しゃっきん,shakkin,빚,debt,n,청구서 더미
+1313,離す,はなす,hanasu_1313,떼다,to let go,v,손을 놓는 장면
+1314,肉,にく,niku,고기,meat,n,고기 — 스테이크 한 덩이
+1317,びっくり,びっくり,bikkuri,깜짝,surprise,n,깜짝 놀란 얼굴
+1320,池,いけ,ike,연못,pond,n,연못과 연꽃
+1323,音楽,おんがく,ongaku,음악,music,n,음표와 헤드폰
+1324,減る,へる,heru,줄다,to decrease,v,내려가는 그래프
+1326,期待,きたい,kitai,기대,expectation,n,선물을 기다리는 반짝이는 눈
+1327,殺人,さつじん,satsujin,살인,murder,n,범죄 현장 테이프
+1328,与える,あたえる,ataeru,주다,to give,v,먹이를 주는 손
+1329,腕,うで,ude,팔,arm,n,팔
+1330,暇,ひま,hima,한가함,free time,n,소파에서 하늘을 보는 사람
+1332,回る,まわる,mawaru,돌다,to turn,v,회전하는 바람개비
+1333,勝負,しょうぶ,shobu,승부,match,n,링 위의 두 선수
+1334,遅れる,おくれる,okureru,늦다,to be late,v,뛰어가는 사람과 시계
+1341,予定,よてい,yotei,예정,schedule,n,일정 달력
+1345,関わる,かかわる,kakawaru,관계되다,to be involved,v,연결된 고리
+1346,恥ずかしい,はずかしい,hazukashii,부끄럽다,embarrassed,a,얼굴을 가린 붉어진 사람
+1347,銀行,ぎんこう,ginko,은행,bank,n,은행 건물
+1350,預かる,あずかる,azukaru,맡다,to keep in custody,v,짐을 맡아 두는 보관소 직원
+1355,質問,しつもん,shitsumon,질문,question,n,손을 들고 물음표
+1356,計画,けいかく,keikaku,계획,plan,n,체크리스트가 적힌 플래너
+1358,気分,きぶん,kibun,기분,mood,n,웃는 얼굴과 흐린 얼굴 게이지
+1359,弟,おとうと,ototo,남동생,younger brother,n,형과 남동생
+1360,事務所,じむしょ,jimusho,사무소,office,n,책상과 간판이 있는 사무실
+1363,いってらっしゃい,いってらっしゃい,itterasshai,잘 다녀와,have a good day (seeing off),v,현관에서 배웅하며 손 흔드는 사람
+1364,偶然,ぐうぜん,guzen,우연,coincidence,n,길에서 우연히 마주친 두 사람과 느낌표
+1366,最低,さいてい,saitei,최악,the worst,n,바닥까지 내려간 게이지
+1367,主人,しゅじん,shujin,"남편, 주인","husband, master",n,집 앞의 집주인
+1369,もうすぐ,もうすぐ,mosugu,곧,soon,adv,결승선 바로 앞의 주자
+1370,恋愛,れんあい,renai,연애,romance,n,손 잡은 연인과 하트
+1371,雪,ゆき,yuki,눈(날씨),snow,n,눈송이와 눈사람
+1373,近い,ちかい,chikai,가깝다,near,a,가까운 두 점
+1374,不安,ふあん,fuan,불안,anxiety,n,손톱을 물어뜯는 사람
+1375,溶ける,とける,tokeru,녹다,to melt,v,녹아 흐르는 아이스크림
+1376,検査,けんさ,kensa,검사,examination,n,의사가 검사하는 장면
+1378,足音,あしおと,ashioto,발소리,footsteps,n,발자국과 소리 선
+1379,立てる,たてる,tateru,세우다,to stand up (something),v,쓰러진 간판을 세우는 손
+1380,飯,めし,meshi,밥,meal (casual),n,밥그릇에 담긴 밥
+1381,院長,いんちょう,incho,원장,hospital director,n,흰 가운의 원장
+1386,引く,ひく,hiku,당기다,to pull,v,줄을 당기는 사람
+1388,谷,たに,tani,골짜기,valley,n,산 사이의 골짜기
+1391,捕まえる,つかまえる,tsukamaeru,잡다,to catch,v,그물로 잡는 사람
+1393,丘,おか,oka,언덕,hill,n,언덕과 나무
+1394,眠る,ねむる,nemuru,잠들다,to sleep,v,잠든 사람과 Z
+1395,瞳,ひとみ,hitomi,눈동자,pupil (eye),n,눈동자 클로즈업
+1399,姉,あね,ane,"언니, 누나",older sister,n,언니와 여동생
+1400,目指す,めざす,mezasu,목표로 하다,to aim at,v,정상을 가리키는 사람
+1401,たまに,たまに,tamani,가끔,occasionally,adv,달력에 드문드문 표시
+1402,現在,げんざい,genzai,현재,present,n,시간선의 '지금' 점
+1403,今すぐ,いますぐ,imasugu,지금 바로,right now,n,번개와 시계
+1405,厳しい,きびしい,kibishii,엄하다,strict,a,팔짱 낀 엄한 선생님
+1407,棚,たな,tana,선반,shelf,n,책이 꽂힌 선반
+1409,流れる,ながれる,nagareru,흐르다,to flow,v,흐르는 강물
+1412,掴む,つかむ,tsukamu,붙잡다,to grab,v,손잡이를 꽉 잡은 손
+1414,十,じゅう,ju,열,ten,n,숫자 10
+1416,医師,いし,ishi,의사,physician,n,청진기를 든 의사
+1419,襲う,おそう,oso,습격하다,to attack,v,달려드는 늑대
+1421,どんどん,どんどん,dondon,점점,rapidly,adv,계단식으로 커지는 막대
+1422,チャンス,ちゃんす,chansu,기회,chance,n,열린 문과 빛
+1429,弱い,よわい,yowai,약하다,weak,a,기운 없는 사람
+1432,星,ほし,hoshi,별,star,n,별
+1434,南,みなみ,minami,남쪽,south,n,나침반 S
+1436,余る,あまる,amaru,남다,to be left over,v,남은 음식과 접시
+1439,押す,おす,osu,누르다,to push,v,버튼을 누르는 손
+1441,正しい,ただしい,tadashii,옳다,correct,a,초록 체크 표시
+1442,テレビ,てれび,terebi,텔레비전,TV,n,텔레비전
+1443,行動,こうどう,kodo,행동,action,n,앞으로 나아가는 사람
+1444,本日,ほんじつ,honjitsu,오늘(정중),today (formal),n,달력의 오늘
+1446,雨,あめ,ame,비,rain,n,비와 우산
+1448,奥,おく,oku_1448,"안쪽, 깊은 곳",inner part,n,복도 끝 안쪽을 가리키는 화살표
+1451,恋人,こいびと,koibito,연인,lover,n,손 잡은 연인
+1452,意外,いがい,igai,의외,unexpected,n,놀란 얼굴과 느낌표
+1453,売れる,うれる,ureru,팔리다,to sell well,v,품절 표지
+1456,集める,あつめる,atsumeru,모으다,to collect,v,동전을 모으는 손
+1458,我慢,がまん,gaman,참기,endurance,n,이를 악물고 참는 얼굴
+1461,村,むら,mura,마을,village,n,시골 마을
+1462,太鼓,たいこ,taiko,태고(큰북),drum,n,일본 큰북
+1463,珍しい,めずらしい,mezurashii,드물다,rare,a,희귀한 보석과 느낌표
+1464,記事,きじ,kiji,기사,article,n,신문 기사
+1468,青い,あおい,aoi_1468,파랗다,blue,a,파란 하늘
+1470,運命,うんめい,unmei,운명,fate,n,실로 연결된 두 사람
+1473,周り,まわり,mawari,주위,surroundings,n,중앙 사람 주위의 원
+1476,受け取る,うけとる,uketoru,받다,to receive,v,소포를 받는 사람
+1477,子供たち,こどもたち,kodomotachi,아이들,children,n,아이들 셋
+1479,潰す,つぶす,tsubusu,으깨다,to crush,v,캔을 밟아 으깨기
+1484,伯母,おば,oba,"이모, 고모",aunt,n,이모
+1487,頂戴,ちょうだい,chodai,주세요(반말),gimme,n,손을 내밀어 달라고 하는 사람
+1488,面倒,めんどう,mendo,귀찮음,trouble,n,귀찮아하는 얼굴
+1492,小さい,ちいさい,chiisai,작다,small,a,작은 공과 큰 공
+1493,手に入れる,てにいれる,teniireru,손에 넣다,to obtain,n,원하던 물건을 손에 쥔 사람
+1495,３日,さんにち,sannichi,3일,three days,n,달력 3일
+1498,深い,ふかい,fukai,깊다,deep,a,깊은 우물
+1501,シャッター,しゃったー,shattaa,셔터,shutter,n,내려진 가게 셔터
+1502,稲,いね,ine,벼,rice plant,n,벼
+1506,ねこ,ねこ,neko,고양이,cat,n,고양이
+1507,キス,きす,kisu,키스,kiss,n,입맞춤하는 연인
+1509,下がる,さがる,sagaru,내려가다,to go down,v,내려가는 화살표
+1510,契約,けいやく,keiyaku,계약,contract,n,서명하는 계약서
+1512,触る,さわる,sawaru,만지다,to touch,v,손가락으로 만지는 손
+1513,苦しむ,くるしむ,kurushimu,괴로워하다,to suffer,v,가슴을 쥐고 괴로운 사람
+1514,可哀相,かわいそう,kawaiso,불쌍함,pitiful,n,비에 젖은 강아지
+1515,警察官,けいさつかん,keisatsukan,경찰관,police officer,n,경찰관
+1517,真似る,まねる,maneru,흉내 내다,to imitate,v,거울처럼 따라 하는 사람
+1523,戸,と,to,문짝,door (sliding),n,미닫이문
+1524,曲,きょく,kyoku,곡,"song, tune",n,음표 악보
+1525,ちょうど,ちょうど,chodo,"딱, 마침","just, exactly",adv,딱 맞춘 저울
+1526,カメラ,かめら,kamera,카메라,camera,n,카메라
+1529,納得,なっとく,nattoku,납득,"understanding, agreement",n,고개 끄덕이는 사람
+1530,こんばんは,こんばんは,konbanha,안녕하세요(저녁),good evening,i,달과 인사하는 사람
+1533,後悔,こうかい,kokai,후회,regret,n,머리를 감싼 후회하는 사람
+1534,パーティー,ぱーてぃー,paatii,파티,party,n,풍선과 케이크 파티
+1536,まずい,まずい,mazui,맛없다,bad-tasting,a,음식에 찡그린 얼굴
+1537,研究,けんきゅう,kenkyu,연구,research,n,현미경과 연구원
+1538,止まる,とまる,tomaru,멈추다,to stop,v,정지 표지
+1539,増える,ふえる,fueru,늘다,to increase,v,올라가는 그래프
+1540,店長,てんちょう,tencho,점장,store manager,n,앞치마 입은 점장
+1541,プロ,ぷろ,puro,프로,professional,n,메달을 단 전문가
+1544,調査,ちょうさ,chosa,조사,investigation,n,돋보기와 서류
+1545,敷く,しく,shiku,깔다,to spread out,v,바닥에 담요 깔기
+1547,信用,しんよう,shinyo,신용,trust,n,악수와 체크
+1549,埋める,うめる,umeru,묻다,to bury,v,땅에 상자를 묻는 사람
+1555,途中,とちゅう,tochu,도중,on the way,n,길 중간에 선 사람
+1557,靴,くつ,kutsu,구두,shoes,n,구두 한 쌍
+1558,静か,しずか,shizuka,조용함,quiet,n,쉿 하는 손가락과 고요한 호수
+1560,現実,げんじつ,genjitsu,현실,reality,n,꿈 풍선이 터지고 책상 앞
+1561,味方,みかた,mikata,같은 편,ally,n,어깨동무한 같은 팀
+1562,気に入る,きにいる,kiniiru,마음에 들다,to like,v,물건을 안고 하트
+1565,勇気,ゆうき,yuki_1565,용기,courage,n,사자 앞에 선 사람
+1566,届ける,とどける,todokeru,배달하다,to deliver,v,소포를 배달하는 사람
+1567,焼く,やく,yaku,굽다,to grill,v,구이 — 석쇠 위 생선 굽기
+1569,涙,なみだ,namida,눈물,tears,n,눈물방울
+1571,作品,さくひん,sakuhin,작품,work (art),n,액자 속 그림과 조각
+1572,工場,こうじょう,kojo,공장,factory,n,공장 건물과 굴뚝
+1575,銃,じゅう,ju_1575,총,gun,n,권총
+1577,トイレ,といれ,toire,화장실,toilet,n,화장실 표지
+1579,刺す,さす,sasu,찌르다,to stab,v,바늘로 찌르기
+1581,悲しい,かなしい,kanashii,슬프다,sad,a,울고 있는 얼굴
+1582,森,もり,mori,숲,forest,n,숲
+1583,データ,でーた,deeta,데이터,data,n,그래프와 숫자 화면
+1586,玉,たま,tama,구슬,"ball, bead",n,구슬
+1587,最悪,さいあく,saiaku,최악,the worst,n,비 맞고 넘어진 사람
+1589,直す,なおす,naosu,고치다,to fix,v,드라이버로 고치는 사람
+1590,火傷,かしょう,kasho,화상,burn,n,붕대 감은 손과 불
+1592,でかい,でかい,dekai,크다(구어),huge,a,아주 큰 상자 옆 작은 사람
+1593,経験,けいけん,keiken,경험,experience,n,배지가 많은 가방
+1596,履く,はく,haku,신다,to put on (shoes),v,신발을 신는 사람
+1597,調子,ちょうし,choshi,컨디션,condition,n,게이지와 엄지
+1600,頼る,たよる,tayoru,의지하다,to rely on,v,어깨에 기댄 사람
+1601,興味,きょうみ,kyomi,흥미,interest,n,반짝이는 눈과 책
+1602,抜く,ぬく,nuku,뽑다,to pull out,v,풀을 뽑는 손
+1604,間に合う,まにあう,maniau,시간에 맞추다,to be in time,v,문 닫히기 직전에 뛰어드는 사람
+1605,指紋,しもん,shimon,지문,fingerprint,n,지문
+1607,進める,すすめる,susumeru,진행하다,to advance (something),v,말을 옮기는 체스 손
+1610,種,たね,tane,씨앗,seed,n,씨앗과 새싹
+1611,兄さん,にいさん,niisan,형,big brother,n,형
+1612,春,はる,haru_1612,봄,spring,n,벚꽃과 새싹
+1617,近づく,ちかづく,chikazuku,다가가다,to approach,v,가까이 다가가는 사람
+1620,犯罪,はんざい,hanzai,범죄,crime,n,수갑과 경광등
+1621,包む,つつむ,tsutsumu,싸다,to wrap,v,선물을 포장하는 손
+1622,治療,ちりょう,chiryo,치료,treatment,n,붕대와 약
+1623,ほとんど,ほとんど,hotondo,거의,almost,adv,거의 다 찬 게이지
+1625,苦労,くろう,kuro,고생,hardship,n,땀 흘리며 짐 진 사람
+1626,皮,かわ,kawa,"껍질, 가죽","skin, peel",n,바나나 껍질
+1628,コーヒー,こーひー,kohii,커피,coffee,n,커피 — 김 나는 커피 잔
+1630,迷う,まよう,mayo,헤매다,to get lost,v,갈림길에서 지도를 보는 사람
+1631,合わせる,あわせる,awaseru,맞추다,to match,v,두 조각을 맞추는 손
+1633,外す,はずす,hazusu,"떼다, 풀다",to remove,v,단추를 푸는 손
+1634,王,おう,o_1634,왕,king,n,왕관을 쓴 왕
+1635,指示,しじ,shiji,지시,instruction,n,손가락으로 지시하는 상사
+1637,プレゼント,ぷれぜんと,purezento,선물,present,n,리본 달린 선물 상자
+1640,岩,いわ,iwa,바위,rock,n,큰 바위
+1643,参加,さんか,sanka,참가,participation,n,손을 든 참가자들
+1644,褒める,ほめる,homeru,칭찬하다,to praise,v,박수치며 칭찬하는 사람
+1645,箸,はし,hashi,젓가락,chopsticks,n,젓가락
+1648,怪しい,あやしい,ayashii,수상하다,suspicious,a,선글라스와 코트의 수상한 사람
+1649,想像,そうぞう,sozo,상상,imagination,n,머리 위 구름 속 그림
+1652,奥様,おくさま,okusama,사모님,madam,n,우아한 부인
+1656,探偵,たんてい,tantei,탐정,detective,n,돋보기 든 탐정
+1659,今朝,けさ,kesa,오늘 아침,this morning,n,아침 해와 달력
+1661,完璧,かんぺき,kanpeki,완벽,perfect,n,100점 답안지
+1663,営業,えいぎょう,eigyo,영업,sales,n,명함을 건네는 영업 사원
+1666,古い,ふるい,furui,오래되다,old,a,낡은 시계
+1667,浮気,うわき,uwaki,바람(외도),cheating,n,뒤에서 다른 사람 손을 잡은 연인
+1670,お互い,おたがい,otagai,서로,each other,n,마주 보는 두 사람과 양방향 화살표
+1672,将来,しょうらい,shorai,장래,future,n,아이가 바라보는 미래의 길
+1673,記録,きろく,kiroku,기록,record,n,스톱워치와 기록표
+1676,安い,やすい,yasui,싸다,cheap,a,할인 가격표
+1681,試合,しあい,shiai,시합,"match, game",n,축구 경기
+1684,資料,しりょう,shiryo,자료,documents,n,서류 묶음
+1686,男子,だんし,danshi,남자,boys,n,남학생
+1687,実家,じっか,jikka,본가,parents' home,n,시골 부모님 집
+1690,真面目,まじめ,majime,진지함,"serious, earnest",n,안경 쓰고 집중하는 사람
+1692,証明,しょうめい,shomei,증명,proof,n,도장 찍힌 증명서
+1695,過ごす,すごす,sugosu,지내다,to spend time,v,해먹에서 시간을 보내는 사람
+1697,映像,えいぞう,eizo,영상,video,n,재생 버튼이 있는 화면
+1700,通り,とおり,tori,거리,street,n,가로수 길
+1702,無線,むせん,musen,무선,wireless,n,무선 전파 아이콘
+1703,午後,ごご,gogo,오후,afternoon,n,오후 시계 3시
+1704,反対,はんたい,hantai,반대,opposite,n,반대 방향 화살표 두 개
+1705,番組,ばんぐみ,bangumi,방송 프로그램,TV program,n,텔레비전 프로그램 화면
+1708,依頼,いらい,irai,의뢰,request,n,서류를 건네며 의뢰하는 사람
+1711,訴える,うったえる,uttaeru,고소하다,to sue,v,법원 앞의 사람
+1717,役に立つ,やくにたつ,yakunitatsu,도움이 되다,to be useful,v,공구 상자
+1719,ころ,ころ,koro,무렵,around the time,n,시계와 물결 표시
+1721,不思議,ふしぎ,fushigi,신기함,mystery,n,물음표가 떠다니는 마술 상자
+1723,死亡,しぼう,shibo,사망,death,n,묘비와 꽃
+1725,自宅,じたく,jitaku,자택,one's home,n,자기 집
+1726,タイプ,たいぷ,taipu,타입,type,n,여러 유형 아이콘 중 하나 선택
+1728,死体,したい,shitai,시체,corpse,n,흰 천에 덮인 형태
+1729,入院,にゅういん,nyuin,입원,hospitalization,n,병원 침대의 환자
+1732,両親,りょうしん,ryoshin,부모,parents,n,부모 둘
+1733,作戦,さくせん,sakusen,작전,strategy,n,화살표가 그려진 작전판
+1735,他人,たにん,tanin,타인,stranger,n,얼굴 없는 낯선 사람
+1736,蹴る,ける,keru,차다,to kick,v,공을 차는 사람
+1737,卒業,そつぎょう,sotsugyo,졸업,graduation,n,학사모와 졸업장
+1738,倒す,たおす,taosu,넘어뜨리다,to knock down,v,볼링 핀을 쓰러뜨리는 공
+1739,泊まる,とまる,tomaru_1739,숙박하다,to stay overnight,v,호텔 침대
+1745,蛸,たこ,tako,문어,octopus,n,문어
+1746,返事,へんじ,henji,답장,reply,n,말풍선에 답하는 화살표
+1748,どちら,どちら,dochira,어느 쪽,which (polite),n,두 갈림길
+1749,スタッフ,すたっふ,sutaffu,스태프,staff,n,스태프 조끼 입은 사람
+1750,穴,あな,ana,구멍,hole,n,땅의 구멍
+1753,立場,たちば,tachiba,입장,position,n,두 자리에 선 사람
+1755,ネット,ねっと,netto,인터넷,internet,n,지구와 Wi-Fi
+1758,上司,じょうし,joshi_1758,상사,boss,n,책상 앞의 상사
+1759,部下,ぶか,buka,부하,subordinate,n,상사 앞의 직원
+1761,能力,のうりょく,noryoku,능력,ability,n,근육과 전구
+1763,稼ぐ,かせぐ,kasegu,벌다,to earn,v,돈을 세는 사람
+1764,男の子,おとこのこ,otokonoko,남자아이,boy,n,남자아이
+1766,英語,えいご,eigo,영어,English,n,ABC 와 영국 국기 윤곽
+1767,パン,ぱん,pan,빵,bread,n,빵 — 식빵과 바게트
+1769,組織,そしき,soshiki,조직,organization,n,조직도
+1770,足りる,たりる,tariru,충분하다,to be enough,v,가득 찬 컵과 체크
+1772,おふくろ,おふくろ,ofukuro,엄마(남자 구어),my mom,n,어머니
+1777,嫁,よめ,yome,"아내, 며느리",wife,n,앞치마의 아내
+1780,傘,かさ,kasa,우산,umbrella,n,우산
+1782,心臓,しんぞう,shinzo,심장,heart (organ),n,심장
+1783,回す,まわす,mawasu,돌리다,to turn (something),v,손잡이를 돌리는 손
+1786,慣れる,なれる,nareru,익숙해지다,to get used to,v,편안하게 일하는 사람
+1787,迎える,むかえる,mukaeru,맞이하다,to welcome,v,공항에서 맞이하는 사람
+1788,着く,つく,tsuku,도착하다,to arrive,v,목적지 핀에 도착한 사람
+1790,思い出,おもいで,omoide,추억,memory,n,앨범 속 옛 사진
+1792,息,いき,iki,숨,breath,n,입에서 나오는 숨
+1793,意見,いけん,iken,의견,opinion,n,말풍선 속 전구
+1798,痛む,いたむ,itamu,아프다,to hurt,v,아픈 팔을 쥔 사람
+1803,軽い,かるい,karui,가볍다,light,a,깃털
+1804,苦しい,くるしい,kurushii,괴롭다,painful,a,가슴을 쥔 괴로운 얼굴
+1806,泉,いずみ,izumi,샘,spring (water),n,샘솟는 물
+1807,正解,せいかい,seikai,정답,correct answer,n,동그라미 친 정답
+1808,旅,たび,tabi,여행,journey,n,배낭과 지도
+1810,支える,ささえる,sasaeru,지탱하다,to support,v,기둥을 받치는 사람
+1814,下手,へた,heta,서툼,unskilled,n,삐뚤빼뚤한 그림
+1815,命令,めいれい,meirei,명령,order,n,손가락으로 지시하는 상관
+1822,以前,いぜん,izen,이전,before,n,시간선의 과거 점
+1824,間違える,まちがえる,machigaeru,틀리다,to make a mistake,v,X 표시 답안
+1825,安全,あんぜん,anzen,안전,safety,n,안전 헬멧
+1826,娘さん,むすめさん,musumesan,딸(남의),daughter (someone's),n,딸
+1827,バー,ばー,baa,바,bar,n,바 카운터
+1828,右,みぎ,migi,오른쪽,right,n,오른쪽 화살표
+1830,いよいよ,いよいよ,iyoiyo,드디어,at last,adv,커튼이 열리는 순간
+1832,向く,むく,muku,향하다,to face,v,한쪽을 바라보는 사람
+1834,汚い,きたない,kitanai,더럽다,dirty,a,얼룩진 셔츠
+1836,従業員,じゅうぎょういん,jugyoin,종업원,employee,n,유니폼 입은 직원
+1838,やり方,やりかた,yarikata,방법,way of doing,n,단계별 설명서
+1839,一日,いちにち,ichinichi,하루,one day,n,달력 하루
+1842,ドクター,どくたー,dokutaa,의사,doctor,n,의사
+1843,苦手,にがて,nigate,잘 못함,weak point,n,수학 문제 앞 난감한 사람
+1845,開発,かいはつ,kaihatsu,개발,development,n,설계도와 공사
+1846,左,ひだり,hidari,왼쪽,left,n,왼쪽 화살표
+1849,爆弾,ばくだん,bakudan,폭탄,bomb,n,폭탄
+1852,挨拶,あいさつ,aisatsu,인사,greeting,n,인사하는 두 사람
+1856,校長,こうちょう,kocho,교장,principal,n,교장 선생님
+1859,居場所,いばしょ,ibasho,있을 곳,one's place,n,소파에 편히 앉은 사람
+1862,裁判,さいばん,saiban,재판,trial,n,법정과 판사 망치
+1863,壊す,こわす,kowasu,부수다,to break,v,망치로 부수는 사람
+1864,息子さん,むすこさん,musukosan,아드님,son (someone's),n,아들
+1866,誤解,ごかい,gokai,오해,misunderstanding,n,엇갈린 말풍선
+1867,やり直す,やりなおす,yarinaosu,다시 하다,to redo,v,지우고 다시 쓰는 손
+1868,勘違い,かんちがい,kanchigai,착각,mistaken idea,n,물음표와 느낌표가 바뀐 얼굴
+1869,ご苦労さま,ごくろうさま,gokurosama,수고했어요,thanks for your effort,i,수고한 사람에게 인사
+1872,企画,きかく,kikaku,기획,planning,n,기획 보드와 포스트잇
+1875,耐える,たえる,taeru,견디다,to endure,v,무거운 바위를 버티는 사람
+1876,条件,じょうけん,joken,조건,condition,n,조건 목록 체크
+1879,ありえない,ありえない,arienai,말도 안 돼,impossible,v,손으로 X 하며 놀란 얼굴
+1881,溜まる,たまる,tamaru,쌓이다,to pile up,v,쌓인 설거지
+1882,格好,かっこう,kakko,모양새,appearance,n,거울 앞 옷차림
+1883,秒,びょう,byo,초,second (time),n,초침
+1884,育つ,そだつ,sodatsu,자라다,to grow,v,자라는 새싹
+1888,人質,ひとじち,hitojichi,인질,hostage,n,묶인 사람
+1889,踊る,おどる,odoru,춤추다,to dance,v,춤추는 사람
+1890,掃除,そうじ,soji,청소,cleaning,n,빗자루로 청소하는 사람
+1892,扱う,あつかう,atsukau,다루다,to handle,v,조심히 상자를 다루는 손
+1894,ガキ,がき,gaki,꼬맹이,brat,n,장난치는 아이
+1895,いらっしゃる,いらっしゃる,irassharu,계시다,to be (honorific),v,공손히 안내하는 사람
+1896,すまん,すまん,suman,미안,sorry (rough),i,머리를 긁으며 사과하는 사람
+1898,撮影,さつえい,satsuei,촬영,filming,n,카메라 촬영
+1900,流す,ながす,nagasu,흘리다,to let flow,v,물을 흘려 보내는 수도
+1902,有名,ゆうめい,yumei,유명,famous,n,스포트라이트와 사인 요청
+1905,努力,どりょく,doryoku,노력,effort,n,땀 흘리며 달리는 사람
+1906,瞬間,しゅんかん,shunkan,순간,moment,n,카메라 플래시
+1907,不倫,ふりん,furin,불륜,affair,n,반지를 숨긴 손
+1908,悪魔,あくま,akuma,악마,devil,n,뿔 달린 악마
+1910,壁,かべ,kabe,벽,wall,n,벽
+1911,文句,もんく,monku,불평,complaint,n,투덜대는 말풍선
+1913,洗う,あらう,arau,씻다,to wash,v,손 씻기
+1919,先日,せんじつ,senjitsu,며칠 전,the other day,n,달력에서 며칠 전 표시
+1920,試す,ためす,tamesu,시험하다,to try out,v,시험관으로 실험하는 사람
+1921,ベル,べる,beru,벨,bell,n,벨
+1924,下る,くだる,kudaru,내려가다,to descend,v,산을 내려가는 사람
+1925,発表,はっぴょう,happyo,발표,presentation,n,무대에서 발표하는 사람
+1927,御飯,ごはん,gohan_1927,밥,"rice, meal",n,밥공기
+1928,復讐,ふくしゅう,fukushu,복수,revenge,n,주먹을 쥔 어두운 얼굴
+1932,寺,てら,tera,절,temple,n,일본 절
+1934,マンション,まんしょん,manshon,아파트,apartment,n,고층 아파트
+1938,悔しい,くやしい,kuyashii,"억울하다, 아쉽다",frustrating,a,이를 악물고 주먹 쥔 얼굴
+1943,席,せき,seki,자리,seat,n,좌석
+1944,遠い,とおい,toi,멀다,far,a,먼 산과 긴 길
+1946,一生懸命,いっしょうけんめい,isshokenmei,열심히,with all one's might,n,땀 흘리며 전력 질주
+1950,姉ちゃん,ねえちゃん,neechan,"누나, 언니",big sis,n,누나
+1952,毒,どく,doku,독,poison,n,해골 표시 병
+1953,冷たい,つめたい,tsumetai,차갑다,cold,a,얼음 컵
+1954,煮る,にる,niru_1954,삶다,"to boil, simmer",v,냄비에 끓이는 조림
+1956,編む,あむ,amu,뜨다,to knit,v,뜨개질하는 손
+1958,割る,わる,waru,"깨다, 나누다","to break, to split",v,접시를 깨는 장면과 반으로 나눈 사과
+1959,緊張,きんちょう,kincho,긴장,tension,n,땀 흘리며 떨리는 사람
+1960,浮く,うく,uku,뜨다,to float,v,물 위에 뜬 튜브
+1962,神様,かみさま,kamisama,신,god,n,구름 위의 빛
+1964,悲鳴,ひめい,himei,비명,scream,n,입을 벌려 소리치는 얼굴
+1966,感情,かんじょう,kanjo,감정,emotion,n,여러 표정의 얼굴들
+1967,連れてくる,つれてくる,tsuretekuru,데려오다,to bring (a person),v,친구를 데려오는 사람
+1970,おめでとうございます,おめでとうございます,omedetogozaimasu,축하합니다,congratulations (polite),i,꽃다발과 축하
+1975,２時,にじ,niji,2시,two o'clock,n,2시 시계
+1978,量,りょう,ryo,양,amount,n,저울과 더미
+1984,商品,しょうひん,shohin,상품,goods,n,진열대의 상품
+1985,学生,がくせい,gakusei,학생,student,n,가방을 든 학생
+1986,抱える,かかえる,kakaeru,"안다, 떠안다",to hold in arms,v,큰 상자를 안은 사람
+1989,荷物,にもつ,nimotsu,짐,luggage,n,여행 가방
+1990,チーム,ちーむ,chiimu,팀,team,n,같은 유니폼의 팀
+1991,雑誌,ざっし,zasshi,잡지,magazine,n,잡지
+1994,懐かしい,なつかしい,natsukashii,그립다,nostalgic,a,옛 사진을 보며 미소
+1996,ファン,ふぁん,fan,팬,fan,n,응원 깃발을 든 팬
+2000,後ろ,うしろ,ushiro,뒤,behind,n,사람 뒤를 가리키는 화살표
+2003,鬼,おに,oni,"도깨비, 오니",ogre,n,뿔 달린 오니 가면
+2004,剣,けん,ken,검,sword,n,검
+2006,ドル,どる,doru,달러,dollar,n,달러 지폐
+2007,経営,けいえい,keiei,경영,management,n,그래프 앞의 경영자
+2008,ケーキ,けーき,keeki,케이크,cake,n,케이크 — 생크림 딸기 쇼트케이크
+2009,普段,ふだん,fudan,평소,usually,n,평범한 하루 아이콘
+2010,めっちゃ,めっちゃ,metcha,엄청,super (slang),adv,크게 강조된 느낌표
+2011,具合,ぐあい,guai,상태,condition (health),n,체온계와 얼굴
+2012,告白,こくはく,kokuhaku,고백,confession (love),n,꽃을 들고 고백하는 사람
+2015,愛してる,あいしてる,aishiteru,사랑해,I love you,v,하트를 건네는 연인
+2016,学ぶ,まなぶ,manabu,배우다,to learn,v,책과 노트로 배우는 사람
+2017,取り戻す,とりもどす,torimodosu,되찾다,to get back,v,잃은 물건을 되찾은 손
+2021,戦争,せんそう,senso,전쟁,war,n,탱크와 연기
+2027,何年,なんねん,nannen,몇 년,how many years,n,달력 여러 장과 물음표
+2028,半年,はんとし,hantoshi,반년,half a year,n,6개월 달력
+2029,確かめる,たしかめる,tashikameru,확인하다,to make sure,v,돋보기로 확인하는 사람
+2031,人気,にんき,ninki,인기,popularity,n,하트와 좋아요 많이
+2033,速い,はやい,hayai_2033,빠르다,fast,a,빠른 치타
+2035,監督,かんとく,kantoku,감독,"director, coach",n,호루라기를 든 감독
+2036,漫画,まんが,manga,만화,comics,n,만화책
+2037,会議,かいぎ,kaigi,회의,meeting,n,회의 테이블
+2038,脅す,おどす,odosu,위협하다,to threaten,v,주먹을 들고 위협하는 사람
+2039,戻す,もどす,modosu,되돌리다,to put back,v,책을 제자리에 돌려놓는 손
+2042,お礼,おれい,orei,감사 인사,thanks,n,감사 선물을 건네는 사람
+2044,友人,ゆうじん,yujin,친구(정중),friend,n,친구 둘
+2045,少ない,すくない,sukunai,적다,few,a,몇 개만 있는 바구니
+2046,才能,さいのう,saino,재능,talent,n,별이 빛나는 머리
+2049,ビール,びーる,biiru,맥주,beer,n,맥주 — 거품 있는 생맥주 잔
+2050,お嬢さん,おじょうさん,ojosan,"따님, 아가씨",young lady,n,아가씨
+2052,重要,じゅうよう,juyo,중요,important,n,빨간 느낄표 서류
+2056,急,きゅう,kyu,급함,urgent,n,급하게 뛰는 사람
+2060,空気,くうき,kuki,공기,air,n,바람과 구름
+2061,奇跡,きせき,kiseki,기적,miracle,n,빛나는 별똥별
+2062,技術,ぎじゅつ,gijutsu,기술,technology,n,톱니바퀴와 회로
+2066,趣味,しゅみ,shumi,취미,hobby,n,기타·낚시·그림 도구
+2068,馬,うま,uma,말,horse,n,말
+2072,どれだけ,どれだけ,doredake,얼마나,how much,n,눈금과 물음표
+2077,一歩,いちほ,ichiho,한 걸음,one step,n,발자국 하나
+2078,おっさん,おっさん,ossan,아저씨(속어),old guy,n,배 나온 아저씨
+2080,結婚式,けっこんしき,kekkonshiki,결혼식,wedding,n,웨딩드레스와 턱시도
+2085,授業,じゅぎょう,jugyo,수업,class,n,교실 수업
+2086,拾う,ひろう,hiro,줍다,to pick up,v,떨어진 동전을 줍는 손
+2087,隠れる,かくれる,kakureru,숨다,to hide,v,커튼 뒤에 숨은 사람
+2088,来週,らいしゅう,raishu,다음 주,next week,n,달력 다음 주 표시
+2093,価値,かち,kachi,가치,value,n,보석과 가격표
+2100,公園,こうえん,koen,공원,park,n,공원 벤치와 나무
+2101,避ける,さける,sakeru,피하다,to avoid,v,장애물을 피하는 사람
+2103,頑張る,がんばる,ganbaru,열심히 하다,to do one's best,v,주먹 쥐고 힘내는 사람
+2107,謎,なぞ,nazo,수수께끼,riddle,n,물음표 상자
+2108,派手,はで,hade,화려함,flashy,n,반짝이는 화려한 옷
+2113,癖,くせ,kuse,버릇,habit,n,손톱 물어뜯는 사람
+2115,詐欺,さぎ,sagi,사기,fraud,n,가면 쓴 사람과 돈
+2116,明かり,あかり,akari,불빛,light,n,창문의 불빛
+2118,完成,かんせい,kansei,완성,completion,n,완성된 퍼즐
+2119,孫,まご,mago,손주,grandchild,n,할아버지와 손주
+2121,火,ひ,hi_2121,불,fire,n,불꽃
+2122,繰り返す,くりかえす,kurikaesu,반복하다,to repeat,v,반복 화살표
+2123,美人,びじん,bijin,미인,beautiful woman,n,아름다운 여자
+2125,引っ越す,ひっこす,hikkosu,이사하다,to move house,v,이사 트럭과 상자
+2130,耳,みみ,mimi,귀,ear,n,귀
+2133,当てる,あてる,ateru,맞히다,"to hit, guess right",v,화살이 꽂힌 정중앙
+2135,近所,きんじょ,kinjo,근처,neighborhood,n,이웃집들
+2137,着替える,きがえる,kigaeru,옷을 갈아입다,to change clothes,v,옷을 갈아입는 사람
+2140,容疑者,ようぎしゃ,yogisha,용의자,suspect,n,용의자 사진 라인업
+2143,羨ましい,うらやましい,urayamashii,부럽다,envious,a,부러운 눈으로 보는 사람
+2144,聴く,きく,kiku_2144,듣다(음악),to listen (music),v,헤드폰으로 음악 듣기
+2146,凶器,きょうき,kyoki,흉기,weapon,n,증거 봉투 속 흉기
+2148,物語,ものがたり,monogatari,이야기,story,n,펼쳐진 동화책
+2149,きつい,きつい,kitsui,"힘들다, 빡세다",tough,a,지친 사람과 무거운 짐
+2152,恐れる,おそれる,osoreru,두려워하다,to fear,v,떨며 두려워하는 사람
+2155,許可,きょか,kyoka,허가,permission,n,승인 도장
+2156,纏める,まとめる,matomeru,정리하다,to put together,v,서류를 묶는 손
+2158,到着,とうちゃく,tochaku,도착,arrival,n,도착 표지판
+2159,壊れる,こわれる,kowareru,고장 나다,to break down,v,연기 나는 고장 난 기계
+2160,禁止,きんし,kinshi,금지,prohibition,n,금지 표지
+2161,三,さん,san,셋,three,n,숫자 3
+2162,鈴,すず,suzu,방울,bell,n,작은 방울
+2163,時々,ときどき,tokidoki,가끔,sometimes,adv,달력에 가끔 표시
+2164,少年,しょうねん,shonen,소년,boy,n,소년
+2165,大阪,おおさか,osaka,오사카,Osaka,n,오사카 성과 다코야키
+2166,握る,にぎる,nigiru,쥐다,to grip,v,꽉 쥔 손
+2168,攻撃,こうげき,kogeki,공격,attack,n,공격하는 화살표
+2169,医療,いりょう,iryo,의료,medical care,n,십자 표시와 청진기
+2171,狂う,くるう,kuru_2171,미치다,to go crazy,v,눈이 돌아간 얼굴
+2172,モデル,もでる,moderu,모델,model,n,런웨이 모델
+2173,雇う,やとう,yato,고용하다,to hire,v,악수하는 고용주와 직원
+2174,素直,すなお,sunao,순순함,"obedient, honest",n,고개를 끄덕이는 순한 얼굴
+2175,きれいな,きれいな,kireina,예쁜,pretty,n,꽃과 반짝임
+2177,児童,じどう,jido,아동,child (school),n,초등학생
+2181,表,ひょう,hyo,"표, 앞면","table, front",n,표(테이블)
+2184,話し合う,はなしあう,hanashiau,의논하다,to discuss,v,마주 앉아 의논하는 사람들
+2186,出かける,でかける,dekakeru,외출하다,to go out,v,문을 나서는 사람
+2187,すっかり,すっかり,sukkari,완전히,completely,adv,완전히 비워진 컵
+2192,警官,けいかん,keikan,경관,police officer,n,경찰관
+2195,超える,こえる,koeru,넘다,to exceed,v,기준선을 넘는 막대
+2196,新人,しんじん,shinjin,신입,newcomer,n,NEW 배지를 단 사원
+2197,３つ,みっつ,mittsu,세 개,three things,n,사과 세 개
+2199,施設,しせつ,shisetsu,시설,facility,n,시설 건물
+2200,救急車,きゅうきゅうしゃ,kyukyusha,구급차,ambulance,n,구급차
+2201,親友,しんゆう,shinyu,절친,best friend,n,어깨동무한 절친
+2202,治る,なおる,naoru,낫다,to heal,v,붕대를 푸는 건강한 사람
+2204,去年,きょねん,kyonen,작년,last year,n,지난해 달력
+2206,窓,まど,mado,창문,window,n,창문
+2207,責める,せめる,semeru,비난하다,to blame,v,손가락질하는 사람
+2209,妊娠,にんしん,ninshin,임신,pregnancy,n,배를 감싼 임신부
+2212,散る,ちる,chiru,"흩어지다, 지다","to scatter, fall",v,떨어지는 꽃잎
+2216,野菜,やさい,yasai,채소,vegetables,n,채소 — 당근·양배추·토마토
+2218,流行る,はやる,hayaru,유행하다,to be in fashion,v,트렌드 그래프와 사람들
+2219,嫌がる,いやがる,iyagaru,싫어하다,to dislike,v,얼굴을 돌리는 사람
+2221,焦る,あせる,aseru,초조해하다,to panic,v,땀 흘리며 시계 보는 사람
+2223,京都,きょうと,kyoto,교토,Kyoto,n,교토의 금각사와 토리이
+2234,割れる,われる,wareru_2234,갈라지다,to crack,v,갈라진 유리
+2238,泥棒,どろぼう,dorobo,도둑,thief,n,복면 도둑
+2240,企業,きぎょう,kigyo,기업,company,n,기업 빌딩
+2242,得意,とくい,tokui,잘함,good at,n,자신 있게 엄지 든 사람
+2243,システム,しすてむ,shisutemu,시스템,system,n,연결된 톱니바퀴
+2244,誘拐,ゆうかい,yukai,유괴,kidnapping,n,차에 끌려가는 실루엣
+2247,引き取る,ひきとる,hikitoru,인수하다,to take over,v,물건을 받아 가는 사람
+2248,通報,つうほう,tsuho,신고,report (to police),n,전화로 신고하는 사람
+2250,言い訳,いいわけ,iiwake,변명,excuse,n,땀 흘리며 변명하는 얼굴
+2252,試験,しけん,shiken,시험,exam,n,시험지와 연필
+2253,指,ゆび,yubi,손가락,finger,n,손가락
+2254,石,いし,ishi_2254,돌,stone,n,돌
+2256,アリバイ,ありばい,aribai,알리바이,alibi,n,시간표와 증명
+2260,遠慮,えんりょ,enryo,사양,restraint,n,손으로 사양하는 사람
+2261,教室,きょうしつ,kyoshitsu,교실,classroom,n,교실
+2265,井戸,いど,ido,우물,well,n,우물
+2266,桃,もも,momo,복숭아,peach,n,복숭아
+2268,海外,かいがい,kaigai,해외,overseas,n,지구와 비행기
+2277,爆発,ばくはつ,bakuhatsu,폭발,explosion,n,폭발
+2278,日本人,にっぽんじん,nipponjin,일본인,Japanese person,n,일본 국기와 사람
+2279,昨夜,さくや,sakuya,어젯밤,last night,n,달과 어제 달력
+2280,小学校,しょうがっこう,shogakko,초등학교,elementary school,n,초등학교 건물
+2281,部分,ぶぶん,bubun,부분,part,n,전체 중 한 조각 강조
+2285,刑務所,けいむしょ,keimusho,교도소,prison,n,철창
+2286,冬,ふゆ,fuyu,겨울,winter,n,눈과 목도리
+2288,物音,ものおと,monoto,소리,noise,n,물음표와 소리 선
+2291,台,だい,dai,대(받침),stand,n,받침대
+2293,閉める,しめる,shimeru,닫다,to close,v,문을 닫는 손
+2295,降りる,おりる,oriru,내리다,to get off,v,버스에서 내리는 사람
+2296,暖かい,あたたかい,atatakai,따뜻하다,warm,a,햇볕과 따뜻한 차
+2299,秘書,ひしょ,hisho,비서,secretary,n,비서
+2300,きれい,きれい,kirei,"예쁨, 깨끗함","pretty, clean",n,반짝이는 깨끗한 방
+2302,給料,きゅうりょう,kyuryo,급료,salary,n,월급 봉투
+2303,霧,きり,kiri,안개,fog,n,안개 낀 길
+2305,作業,さぎょう,sagyo,작업,work,n,작업하는 사람
+2306,信頼,しんらい,shinrai,신뢰,trust,n,서로 등을 맡긴 두 사람
+2308,魂,たましい,tamashii,영혼,soul,n,빛나는 영혼
+2310,案内,あんない,annai,안내,guidance,n,안내 데스크
+2312,無視,むし,mushi,무시,ignoring,n,등을 돌린 사람
+2314,きちんと,きちんと,kichinto,제대로,properly,adv,정돈된 책상
+2317,シェフ,しぇふ,shefu,셰프,chef,n,셰프 모자
+2318,屋敷,やしき,yashiki,저택,mansion,n,큰 저택
+2320,中学,ちゅうがく,chugaku,중학교,middle school,n,중학교 건물
+2324,武器,ぶき,buki,무기,weapon,n,검과 방패
+2325,時期,じき,jiki,시기,period,n,달력의 한 구간
+2327,脱ぐ,ぬぐ,nugu,벗다,to take off (clothes),v,재킷을 벗는 사람
+2329,伯父,おじ,oji,삼촌,uncle,n,삼촌
+2331,兄弟,きょうだい,kyodai,형제,siblings,n,형제
+2334,楽しみ,たのしみ,tanoshimi,기대,looking forward,n,선물을 기다리는 설레는 얼굴
+2338,鳥,とり,tori_2338,새,bird,n,새
+2340,家庭,かてい,katei,가정,"family, home",n,식탁에 둘러앉은 가족
+2342,憧れる,あこがれる,akogareru,동경하다,to admire,v,별을 올려다보는 사람
+2343,誇る,ほこる,hokoru,자랑하다,to be proud of,v,가슴을 편 사람
+2348,社会,しゃかい,shakai,사회,society,n,여러 사람과 건물
+2350,罠,わな,wana,함정,trap,n,쥐덫
+2351,式,しき,shiki,식,ceremony,n,단상과 리본 커팅
+2354,半分,はんぶん,hanbun,반,half,n,반으로 나눈 피자
+2356,幽霊,ゆうれい,yurei,유령,ghost,n,유령
+2357,ストーカー,すとーかー,sutokaa,스토커,stalker,n,뒤따르는 그림자
+2358,ニュース,にゅーす,nyusu,뉴스,news,n,뉴스 앵커 화면
+2359,職員,しょくいん,shokuin,직원,staff member,n,명찰을 단 직원
+2362,不幸,ふこう,fuko,불행,misfortune,n,비구름 아래 사람
+2363,内緒,ないしょ,naisho,비밀,secret,n,입에 손가락
+2364,反応,はんのう,hanno,반응,reaction,n,놀란 얼굴과 느낌표
+2365,背中,せなか,senaka,등,back (body),n,사람의 등
+2366,バス,ばす,basu,버스,bus,n,버스
+2369,川,かわ,kawa_2369,강,river,n,강
+2370,仲良く,なかよく,nakayoku,사이좋게,on good terms,adv,손 잡고 웃는 두 사람
+2371,変化,へんか,henka,변화,change,n,계절 변화
+2372,移動,いどう,ido_2372,이동,movement,n,A 에서 B 로 화살표
+2373,新聞,しんぶん,shinbun,신문,newspaper,n,신문
+2374,選手,せんしゅ,senshu,선수,player,n,운동선수
+2375,動物,どうぶつ,dobutsu,동물,animal,n,여러 동물
+2379,旅行,りょこう,ryoko,여행,travel,n,여행 가방과 비행기
+2386,姉妹,しまい,shimai,자매,sisters,n,자매
+2388,暴力,ぼうりょく,boryoku,폭력,violence,n,주먹과 금지 표시
+2390,支払う,しはらう,shiharau,지불하다,to pay,v,카드를 내는 손
+2391,就職,しゅうしょく,shushoku,취직,getting a job,n,사원증을 받는 사람
+2392,夕べ,ゆうべ,yube,어제 저녁,last evening,n,저녁 노을과 달력
+2393,成長,せいちょう,seicho,성장,growth,n,키가 자라는 아이
+2396,降る,ふる,furu_2396,내리다(비·눈),to fall (rain),v,비가 내리는 하늘
+2397,わざと,わざと,wazato,일부러,on purpose,adv,곁눈질하며 떨어뜨리는 손
+2399,脳,のう,no,뇌,brain,n,뇌
+2400,卵,たまご,tamago,달걀,egg,n,달걀 — 반숙 달걀 단면
+2401,開始,かいし,kaishi,개시,start,n,START 버튼
+2402,土地,とち,tochi,토지,land,n,땅과 경계선
+2404,メッセージ,めっせーじ,messeeji,메시지,message,n,메시지 말풍선
+2408,悲しむ,かなしむ,kanashimu,슬퍼하다,to grieve,v,고개 숙이고 우는 사람
+2411,触れる,ふれる,fureru,닿다,to touch,v,손끝이 닿는 장면
+2412,線,せん,sen,선,line,n,선
+2414,ショー,しょー,sho_2414,쇼,show,n,무대 쇼
+2415,影響,えいきょう,eikyo,영향,influence,n,도미노 효과
+2418,ひと言,ひとこと,hitokoto,한마디,a word,n,작은 말풍선 하나
+2420,地獄,じごく,jigoku,지옥,hell,n,불꽃과 어둠
+2426,正体,しょうたい,shotai,정체,true identity,n,가면을 벗는 사람
+2427,説得,せっとく,settoku,설득,persuasion,n,설득하는 사람과 끄덕이는 사람
+2434,限界,げんかい,genkai,한계,limit,n,게이지 끝의 빨간 선
+2437,眼鏡,めがね,megane,안경,glasses,n,안경
+2439,レベル,れべる,reberu,레벨,level,n,레벨 막대
+2440,必死,ひっし,hisshi,필사적,desperate,n,이를 악물고 뛰는 사람
+2444,距離,きょり,kyori,거리,distance,n,두 점 사이의 눈금
+2445,燃える,もえる,moeru,타다,to burn,v,타오르는 불
+2446,伝わる,つたわる,tsutawaru,전해지다,to be conveyed,v,마음에서 마음으로 가는 하트 화살표
+2449,一瞬,いっしゅん,isshun,한순간,an instant,n,번쩍이는 번개
+2450,床,ゆか,yuka,바닥,floor,n,마룻바닥
+2453,奢る,おごる,ogoru,한턱내다,to treat,v,계산서를 가져가는 사람
+2454,扉,とびら,tobira,문,door (large),n,큰 문
+2456,ルール,るーる,ruru,규칙,rule,n,규칙 목록
+2458,困難,こんなん,konnan,곤란,difficulty,n,험한 산을 오르는 사람
+2461,芝居,しばい,shibai,연극,"play, acting",n,무대 위 배우
+2465,集中,しゅうちゅう,shuchu,집중,concentration,n,집중하는 얼굴
+2466,吐く,はく,haku_2466,"토하다, 내뿜다","to vomit, breathe out",v,입을 가리고 구역질
+2467,闇,やみ,yami,어둠,darkness,n,어둠 속 작은 빛
+2470,霜,しも,shimo,서리,frost,n,서리 낀 풀잎
+2471,態度,たいど,taido,태도,attitude,n,팔짱 낀 사람
+2478,売買,ばいばい,baibai,매매,buying and selling,n,돈과 물건의 교환
+2482,恐ろしい,おそろしい,osoroshii,무섭다,terrifying,a,공포에 질린 얼굴
+2483,惜しい,おしい,oshii,아깝다,regrettable,a,아슬아슬 놓친 표적
+2485,向ける,むける,mukeru,향하게 하다,to point at,v,카메라를 향하는 손
+2487,橋,はし,hashi_2487,다리,bridge,n,다리
+2492,駅,えき,eki,역,station,n,기차역
+2497,永遠,えいえん,eien,영원,eternity,n,무한 기호
+2498,大会,たいかい,taikai,대회,tournament,n,트로피와 경기장
+2499,退院,たいいん,taiin,퇴원,leaving hospital,n,병원 문을 나서는 사람

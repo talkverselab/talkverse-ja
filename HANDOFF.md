@@ -142,3 +142,10 @@ GH_TOKEN=$(gh auth token --user talkverselab) gh run list -R talkverselab/talkve
 ## 진행 중 백그라운드 작업
 
 없음 (2026-10-06 기준 — N3·N2·N1·급수없음 뜻 작업과 CI 빌드 6 모두 완료).
+
+## 2026-11-03 새벽 — 새 회화 양산 중 (사용자 취침, 리뷰는 https://talkverse.uk/talkverse/review/ja/ )
+- 규칙 한 벌: `docs/DIALOGUE_WORKFLOW_JA.md`(톤·파이프라인·Grok 조작·리뷰 게시·참고 책). 파이프라인 = 초안 JSON → `tools/check_dialogues.py --fix-rd` → Grok 재작성(`tools/grok_send.py`, 프로젝트 「일본어 회화 검수」) → 최소 수정 → `tools/review_html.py` → uk 세션에 "REVIEW_ja.html 갱신".
+- **2026-11-03 오전 사용자 지시로 중단("지금하던거까지만 하고 멈춰")**: R1 83 + R2 56 + R3 연애 6·친구 6 = 151편 작성·Grok 반영·검사기 0 오류. R3 생활·여행 b1~b6 도 Grok 반영 완료(사용자 지시 "그록 미전송은 마저 해"). 남은 것: R3 문화·일·학업(각 6), R4 전부. 리뷰 페이지 157편(R3 연애·친구·생활·여행 각 6 포함) 게시 요청. 페이지에 턴·편 리뷰 입력칸+저장 버튼 추가(`tools/review_html.py`, 저장 API `https://talkverse.uk/api/review/ja` POST {key,text,at}/GET — uk 세션이 개설, 미개설 시 localStorage). 사용자 리뷰는 GET 으로 읽어 반영.
+- **R1 완성(2026-11-03 06시경)**: 서바이벌 3 + 친구·연애·생활·여행·문화 각 16 = 83편, 전부 Grok 재작성 반영·검사기 0 오류·리뷰 페이지 게시(79편 + R2·R3 샘플). 통과 표시는 S1·S2·연애 a1 만. R2 연애 b2~b8 초안 완료·Grok 대기(chain12). 다음: R2 친구·생활·여행·문화·일·학업(각 8편, 8~12턴), R3·R4. 표현 풀 162개(`data/expressions/top_expressions.csv`).
+- 커밋은 사용자 지시 뒤에만(지금 전부 미커밋). 검사기 규칙 완화 이력은 docs/DIALOGUE_WORKFLOW_JA.md §2.
+- 그림 단어 목록 `docs/grok_ja_words_all.csv`(1,172) · `docs/grok_ja_food50.csv` 는 uk 세션이 받아 D1 적재 완료. 그림 API: GET https://auth.talkverse.uk/art/ja/manifest?level=R1 (13시 라이트너 작업 때 카드 앞면에 붙일 것).
