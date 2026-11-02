@@ -45,6 +45,10 @@
 5. ~~성과 표시~~ 완료(b7b6291→1c2b0b2: `lib/services/achievement_service.dart` 편 완주·본 한자·그림 카드·일별 기록·라이트너 분포·빈도 커버율(라이트너 3단계 이상 단어 빈도 합), `lib/widgets/achievement_desk.dart` 「나」 탭 데스크 + `EpisodeDoneOverlay` 편 끝 연출. 아이패드 스크린샷 11장 통과). 남은 것: 폰 레이아웃 다듬기, 홈 「오늘의 작은 성과」 카드(선택).
 5. 장면 그림(만화 1컷) 들어오면 턴 `art` 채우기. R3 문화·일·학업, R4 본편 작성 재개.
 
+## 4-1. 다른 언어앱 복제(2026-11-02 17:00)
+
+- 복제 안내 `docs/REPLICATE_FOR_OTHER_LANGS.md`(구조·규칙·도구 한 벌). 한국어앱에 착수 프롬프터 `~/talkverse/ko/RELAY_from_ja.md` 전달(SendMessage 「한국어앱」): 우리 회화가 기초, Gemini 없음, K-드라마·K-팝 상황 추가, Grok 방·Chrome(9224) 분리. 한국어앱 쪽 "콘텐츠 생성 금지"와 충돌 → 사용자 확인 필요하다고 적음.
+
 ## 5. 공통 절차(맥미니)
 
 ```bash
