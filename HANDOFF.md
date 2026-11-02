@@ -7,7 +7,7 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC) · origin = 로컬(한자 구조 표시까지). 미커밋 = CRLF 노이즈 + 도구 부산물 + `data/review/*_grok_enrich*`(보류 작업) + `data/review/wire/`(와이어프레임) — 의도적으로만 커밋 |
-| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → 2314(패밀리 한자 수정) → **2611022326**(한자 구조 표시, 23:3x 업로드) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설. **패밀리 한자 원복(7b79bc4)은 아직 TestFlight 에 없음** — 다음 빌드에 |
+| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → 2314(패밀리 한자 수정) → 2326(한자 구조 표시) → **2611022338**(패밀리 한자 원복까지 전부, 23:42 업로드) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설 |
 | Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 **빌드 37** https://apps.talkverse.uk/Ultzu/186 (2026-11-02 20:35, 352ff41 = 장면 컷 연결까지). GIF·패밀리·구조 표시는 CI 빌드 뒤 `tools/zealot_push.sh --ci` 로 올릴 것 |
 | 회화 콘텐츠 | R0 26(**2026-11-02 사용자 지시로 재분배** — R1 77편 중 턴당 평균 8.0자 이하를 R0 로 이동, `review.level_note`) · R1 51 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 158편(+R0 26 = 중복 없음), `assets/data/dialogues/<R>/<주제>/*.json`, 검사기 오류 5 = 강화 재작성 v2 시험 2편(culture_a3·life_c2)의 단어 수 초과(보류 중). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
@@ -44,7 +44,7 @@
 
 ## 4. 다음 할 일
 
-1. **다음 TestFlight**: 패밀리 한자 원복(7b79bc4)을 넣어 한 번 더 올리고 번호 보고. Zealot 은 CI 빌드 뒤 `--ci` 로.
+1. Zealot 은 CI 빌드(7b79bc4) 뒤 `tools/zealot_push.sh --ci` 로 올려 주소 보고(빌드 37 이후 미갱신).
 0. 언어앱 공통 프롬프터 `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md` 를 2026-11-02 밤 전체 다시 씀(순서 캐릭터→UX→아이패드 빌드→회화, Grok 은 한자 세션 경유) — uk 세션에 "배포 가능" 전달. 이 문서가 다른 언어앱의 기준.
 2. 사용자 결정 대기: 단어 메뉴 시안 01(`data/review/uxui/sian_words_01.*`) 확정 → 적용 · 장면 컷 제작 착수(샘플 1편 = 4컷, `chars_ja_v1.jpg` 첨부) · 인앱 상품 등록(사용자 콘솔) · 다이얼로그 작성 재개 · 맞춤 회화 워커 재개(= `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`, 끝까지 2회 성공 확인됨 `ja-4inaalel`·`ja-fao34isa`).
 3. 성과 데스크 폰 레이아웃 다듬기, 홈 「오늘의 작은 성과」 카드(선택).
