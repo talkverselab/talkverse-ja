@@ -68,7 +68,7 @@ CREATE TABLE IF NOT EXISTS paid_devices (device TEXT PRIMARY KEY, note TEXT, cre
 
 - `lib/services/custom_script_service.dart` — 기기 ID(SharedPreferences `device_id`, 처음에 생성), 만들기·상태 확인·목록, ready 편은 `custom_scripts_v1` 에 JSON 으로 보관(오프라인에서도 열림), `Dialogue.fromJson` 으로 변환.
 - `lib/screens/custom_script_screen.dart` — 입력 3단계(도메인 칩 8 → 상황 자유 입력 + 추천 칩 → 레벨 4) → 「만들기」 → 서랍(「내 맞춤 회화」: 만드는 중·완성·실패) → 완성 편은 `DialogueScreen` 으로.
-- 진입: 배우기 탭 「회화 (새)」 섹션의 「맞춤 회화 만들기」 타일 + 섬별 회화 홈 상단 카드. 1회 무료 안내는 만들기 버튼 아래 한 줄, 402 이면 "첫 1편은 무료, 다음 편부터는 유료(준비 중)" 안내만(결제 흐름 없음).
+- 진입: 배우기 탭 「회화 (새)」 섹션의 「맞춤 회화 만들기」 타일 + 주제별 회화 홈 상단 카드. 1회 무료 안내는 만들기 버튼 아래 한 줄, 402 이면 "첫 1편은 무료, 다음 편부터는 유료(준비 중)" 안내만(결제 흐름 없음).
 - Worker 가 아직 없을 때: 네트워크 오류를 "지금은 만들 수 없어요" 로 보이고 입력은 로컬에 남긴다(다시 시도 버튼).
 
 ## 5. 코드 서버(맥미니, 이 폴더)

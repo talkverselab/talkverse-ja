@@ -3,7 +3,7 @@
 설계 원본 `docs/DIALOGUE_DESIGN_JA.md`, 공통 원칙 https://talkverse.uk/talkverse/dialogue-rules/ . 아래는 편 하나를 쓸 때의 체크리스트다.
 
 ## 입력
-- 편 id(`r1_<섬>_<a|b|c><n>` / `r1_survival_s<n>`), 섬, 종류(short/long/chat/survival), 장면 한 줄, 상대 B(섬 고정 인물), 노출할 표현 풀 2~4개(§1 분배표에서), 앞 편의 누적 어휘(검사기 `--dump-vocab`), 반전 종류 1개.
+- 편 id(`r1_<주제>_<a|b|c><n>` / `r1_survival_s<n>`), 주제, 종류(short/long/chat/survival), 장면 한 줄, 상대 B(주제 고정 인물), 노출할 표현 풀 2~4개(§1 분배표에서), 앞 편의 누적 어휘(검사기 `--dump-vocab`), 반전 종류 1개.
 
 ## 쓰기 규칙
 1. **최우선**: 일본 사람이 지금 실제로 쓰는 짧은 구어·채팅 표현을 편에 2개 이상, 자연스럽게 맞장구·추임새로. 교과서체·번역투 금지. 설명하듯 말하지 말 것(AI 티).
@@ -17,7 +17,7 @@
 9. note = 그 턴의 핵심 하나 "X = 뜻"(한국어), tags = 문법 포인트(`particle:は`·`form:て`·`expr:マジで`), `new` = 이 턴에서 처음 나온 단어(기본형).
 10. 출처·작품명·원문 금지, 전부 자체 작문. 실존 브랜드는 최소.
 
-## 출력 형식 (JSON, 파일 `assets/data/dialogues/R1/<섬>/<id>.json`)
+## 출력 형식 (JSON, 파일 `assets/data/dialogues/R1/<주제>/<id>.json`)
 ```json
 {"id":"r1_friends_a1","region":"R1","island":"friends","kind":"chat",
  "purpose":["making_friends"],"domain":["friends"],
