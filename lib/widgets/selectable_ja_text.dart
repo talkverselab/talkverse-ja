@@ -500,7 +500,7 @@ class _HanjaSharedBlockState extends State<HanjaSharedBlock> {
             if (i.formDiffers) ...[const SizedBox(width: 6), _Tag('${tr('정자')} ${i.kr}', AppColors.muted)],
           ],
         ),
-        if (i.components.isNotEmpty) ...[const SizedBox(height: 10), _Formation(ch: i.jp.isNotEmpty ? i.jp : i.kr, parts: i.components, phonetic: i.phonetic)],
+        if (i.components.isNotEmpty) ...[const SizedBox(height: 10), _Formation(info: i)],
         if (i.gifUrl == null) ...[const SizedBox(height: 8), _KanjiWordArt(ch: i.jp.isNotEmpty ? i.jp : i.kr)],
         if (i.gifUrl != null) ...[
           const SizedBox(height: 8),
@@ -518,24 +518,6 @@ class _HanjaSharedBlockState extends State<HanjaSharedBlock> {
           ),
         ],
         if (i.origin != null) ...[label(tr('어원')), Text(i.origin!, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.45))],
-        if (i.components.isNotEmpty) ...[
-          label(tr('글자 구성')),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              for (final c in i.components)
-                ActionChip(
-                  label: Text(
-                    c,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: AppColors.sumi),
-                  ),
-                  onPressed: () => showKanjiSheet(context, char: c, entry: KanjiIndexService.instance.lookup(c)),
-                ),
-              if (i.phonetic != null) _Tag('${tr('소리')} ${i.phonetic}', AppColors.ai),
-            ],
-          ),
-        ],
         if (i.family.isNotEmpty) ...[
           label(trf('소리 가족 · {0}', [i.phonetic ?? ''])),
           Wrap(
@@ -585,62 +567,81 @@ class _Tag extends StatelessWidget {
   }
 }
 
-/// 글자 형성 시각화: 大 = 一 + 人 (소리 부품은 파란 띠). 한자 DB 의 components 를 그대로 쓰고 DB 는 바꾸지 않는다.
+/// 글자 형성(회의·형성 구조) — 한자유니버스 공용 DB 의 components·liushu·phonetic 그대로(한자앱 `_howBuilt` 과 같은 표시, DB 는 바꾸지 않는다).
+/// 부품마다 역할(뜻부분·소리부분)·자형·훈을 보이고, 변형 자형(亻)은 본래 글자(人)를 함께. 부품을 누르면 그 글자 팝업.
 class _Formation extends StatelessWidget {
-  final String ch;
-  final List<String> parts;
-  final String? phonetic;
-  const _Formation({required this.ch, required this.parts, this.phonetic});
+  final HanjaInfo info;
+  const _Formation({required this.info});
 
   @override
   Widget build(BuildContext context) {
-    Widget glyph(String t, {bool big = false, bool sound = false}) => Container(
-      width: big ? 64 : 48,
-      height: big ? 64 : 48,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        color: sound ? AppColors.ai.withValues(alpha: 0.10) : AppColors.washiDeep,
-        border: Border.all(color: sound ? AppColors.ai : AppColors.line, width: sound ? 1.6 : 1),
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Text(
-        t,
-        style: TextStyle(fontSize: big ? 38 : 26, fontWeight: FontWeight.w900, color: sound ? AppColors.ai : AppColors.sumi, height: 1.0),
-      ),
-    );
-    Widget op(String t) => Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6),
-      child: Text(
-        t,
-        style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppColors.muted),
-      ),
-    );
-    final items = <Widget>[glyph(ch, big: true), op('=')];
-    for (var k = 0; k < parts.length; k++) {
-      if (k > 0) items.add(op('+'));
-      items.add(glyph(parts[k], sound: parts[k] == phonetic));
+    final i = info;
+    final ch = i.jp.isNotEmpty ? i.jp : i.kr;
+    final hasPhonetic = i.phoneticCode != null && i.phoneticCode!.isNotEmpty;
+    final isFamily = i.explain == 'family' || hasPhonetic;
+    Widget part(HanjaPart p) {
+      final sound = hasPhonetic ? p.code == i.phoneticCode : (i.phonetic != null && (p.ch == i.phonetic || p.baseGlyph == i.phonetic));
+      final color = sound ? AppColors.ai : AppColors.sumi;
+      final role = isFamily ? (sound ? tr('소리부분') : tr('뜻부분')) : (i.explain == 'compose' ? tr('뜻') : '');
+      final sub = p.baseGlyph != p.ch
+          ? (p.meaning.isNotEmpty ? '${p.meaning} (${p.baseGlyph})' : '= ${p.baseGlyph}')
+          : p.meaning;
+      return InkWell(
+        borderRadius: BorderRadius.circular(12),
+        onTap: () => showKanjiSheet(context, char: p.baseGlyph, entry: KanjiIndexService.instance.lookup(p.baseGlyph)),
+        child: Container(
+          width: 76,
+          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+          decoration: BoxDecoration(
+            color: sound ? AppColors.ai.withValues(alpha: 0.10) : AppColors.washiDeep,
+            border: Border.all(color: sound ? AppColors.ai : AppColors.line, width: sound ? 1.6 : 1),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            SizedBox(height: 13, child: Text(role, style: TextStyle(fontSize: 9.5, fontWeight: FontWeight.w800, color: color))),
+            Text(p.ch, style: TextStyle(fontSize: 30, height: 1.15, fontWeight: FontWeight.w900, color: color)),
+            Text(sub, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 10.5, color: AppColors.sumiLight)),
+          ]),
+        ),
+      );
     }
+    Widget op(String t) => Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4),
+      child: Text(t, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppColors.muted)),
+    );
+    final items = <Widget>[];
+    for (var k = 0; k < i.components.length; k++) {
+      if (k > 0) items.add(op('+'));
+      items.add(part(i.components[k]));
+    }
+    items.add(op('='));
+    items.add(Container(
+      width: 76,
+      padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 4),
+      decoration: BoxDecoration(color: AppColors.sumi, borderRadius: BorderRadius.circular(12)),
+      child: Column(mainAxisSize: MainAxisSize.min, children: [
+        const SizedBox(height: 13),
+        Text(ch, style: const TextStyle(fontSize: 30, height: 1.15, fontWeight: FontWeight.w900, color: Colors.white)),
+        Text(i.hun.split(',').first.trim(), maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 10.5, color: AppColors.kinBright)),
+      ]),
+    ));
+    final note = isFamily && i.phonetic != null
+        ? trf('형성자 — 뜻부분이 뜻을, 소리부분 {0}이 읽기를 정합니다. 같은 소리부분 글자는 아래 소리 가족.', [i.phonetic!])
+        : (i.explain == 'compose' || i.liushu == '회의')
+            ? tr('회의자 — 부품의 뜻을 합쳐 새 뜻을 만든 글자입니다.')
+            : tr('부품을 누르면 그 글자를 볼 수 있어요.');
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          tr('글자 형성'),
-          style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.muted, letterSpacing: 1),
-        ),
+        Text(tr('글자 형성'), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.muted, letterSpacing: 1)),
         const SizedBox(height: 6),
-        SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(children: items),
-        ),
-        if (phonetic != null) ...[
-          const SizedBox(height: 4),
-          Text(trf('파란 칸 = 소리 부품 {0} (읽기를 결정)', [phonetic!]), style: const TextStyle(fontSize: 11, color: AppColors.ai)),
-        ],
+        SingleChildScrollView(scrollDirection: Axis.horizontal, child: Row(children: items)),
+        const SizedBox(height: 4),
+        Text(note, style: const TextStyle(fontSize: 11, color: AppColors.sumiLight, height: 1.4)),
       ],
     );
   }
 }
-
 /// 한자 그림이 없을 때: 그 한자를 품은 가장 흔한 단어의 그림(talkverse.uk 공용 단어 그림)으로 대신 보여 준다.
 class _KanjiWordArt extends StatelessWidget {
   final String ch;

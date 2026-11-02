@@ -38,7 +38,7 @@ class HanjaSharedService {
 
   Future<HanjaInfo?> _load(String ch) async {
     _prefs ??= await SharedPreferences.getInstance();
-    final key = 'hanja_shared:$ch';
+    final key = 'hanja_shared2:$ch'; // v2 = 부품 구조(base·code·hun) 포함
     final cached = _prefs!.getString(key);
     if (cached != null) {
       try {
@@ -135,6 +135,27 @@ class HanjaSharedService {
             ),
       ];
     }
+    // 구성 부품(회의·형성 구조) — ch(변형 자형)·base(본래 글자)·code·known 을 그대로 두고, 부품 훈음을 한 번에 조회
+    final rawParts = [for (final c in (row['components'] as List? ?? const [])) if (c is Map && (c['ch'] as String?)?.isNotEmpty == true) c];
+    final partHun = <String, String>{};
+    final partCodes = [for (final c in rawParts) if ((c['code'] as String?)?.isNotEmpty == true) c['code'] as String];
+    if (partCodes.isNotEmpty) {
+      try {
+        for (final r in await _get('/hanja_chars?select=code,kr_hun&code=in.(${partCodes.join(',')})')) {
+          partHun[r['code'] as String] = r['kr_hun'] as String? ?? '';
+        }
+      } catch (_) {}
+    }
+    final parts = [
+      for (final c in rawParts)
+        HanjaPart(
+          ch: c['ch'] as String,
+          base: c['base'] as String?,
+          code: c['code'] as String?,
+          known: c['known'] == true,
+          hun: partHun[c['code']] ?? '',
+        ),
+    ];
     return HanjaInfo(
       code: code,
       jp: jp,
@@ -143,10 +164,8 @@ class HanjaSharedService {
       liushu: row['liushu'] as String?,
       phonetic: phonetic,
       explain: row['explain'] as String?,
-      components: [
-        for (final c in (row['components'] as List? ?? const []))
-          if (c is Map && (c['ch'] as String?)?.isNotEmpty == true) c['ch'] as String,
-      ],
+      components: parts,
+      phoneticCode: phoneticCode,
       etym: row['etym'] as String?,
       tip: pick?['tip'] as String?,
       origin: pick?['origin'] as String?,
@@ -187,6 +206,26 @@ class HanjaFamilyMember {
       HanjaFamilyMember(ch: j['ch'] as String, hun: j['hun'] as String? ?? '', on: j['on'] as String? ?? '', jlpt: j['jlpt'] as int?);
 }
 
+/// 글자를 이루는 부품 하나(한자유니버스 `components` 항목 그대로). 소리 부품 여부는 HanjaInfo.phoneticCode 와 code 비교.
+class HanjaPart {
+  final String ch; // 글자 안에서의 자형(亻)
+  final String? base; // 본래 글자(人) — ch 와 같으면 null 과 동일
+  final String? code; // U 코드(표에 있는 글자만)
+  final bool known; // JLPT·HSK 범위 안의 글자
+  final String hun; // 부품 글자의 한국어 훈음("사람 인")
+  const HanjaPart({required this.ch, this.base, this.code, this.known = false, this.hun = ''});
+  String get baseGlyph => (base != null && base!.isNotEmpty) ? base! : ch;
+  String get meaning {
+    final first = hun.replaceAll(RegExp(r'\[[^\]]*\]'), '').split(',').first.trim();
+    final i = first.lastIndexOf(' ');
+    return i > 0 ? first.substring(0, i) : first;
+  }
+  Map<String, dynamic> toJson() => {'ch': ch, 'base': base, 'code': code, 'known': known, 'hun': hun};
+  factory HanjaPart.fromJson(dynamic j) => j is String
+      ? HanjaPart(ch: j)
+      : HanjaPart(ch: j['ch'] as String, base: j['base'] as String?, code: j['code'] as String?, known: j['known'] == true, hun: j['hun'] as String? ?? '');
+}
+
 class HanjaInfo {
   final String code; // U5B78
   final String jp; // 일본 자형
@@ -195,7 +234,8 @@ class HanjaInfo {
   final String? liushu; // 형성·회의·상형…
   final String? phonetic; // 소리 부품(음부)
   final String? explain; // gif | compose | family
-  final List<String> components;
+  final List<HanjaPart> components; // 회의·형성 구조(부품 순서대로)
+  final String? phoneticCode; // 소리 부품 U 코드
   final String? etym;
   final String? tip; // 외우는 팁(한국어)
   final String? origin; // 어원 풀이(한국어)
@@ -213,6 +253,7 @@ class HanjaInfo {
     this.phonetic,
     this.explain,
     this.components = const [],
+    this.phoneticCode,
     this.etym,
     this.tip,
     this.origin,
@@ -227,7 +268,7 @@ class HanjaInfo {
 
   Map<String, dynamic> toJson() => {
         'code': code, 'jp': jp, 'kr': kr, 'hun': hun, 'liushu': liushu, 'phonetic': phonetic, 'explain': explain,
-        'components': components, 'etym': etym, 'tip': tip, 'origin': origin, 'gifUrl': gifUrl, 'morphFile': morphFile, 'morphStatus': morphStatus,
+        'components': components.map((c) => c.toJson()).toList(), 'phoneticCode': phoneticCode, 'etym': etym, 'tip': tip, 'origin': origin, 'gifUrl': gifUrl, 'morphFile': morphFile, 'morphStatus': morphStatus,
         'family': family.map((f) => f.toJson()).toList(),
       };
 
@@ -239,7 +280,8 @@ class HanjaInfo {
         liushu: j['liushu'] as String?,
         phonetic: j['phonetic'] as String?,
         explain: j['explain'] as String?,
-        components: (j['components'] as List?)?.cast<String>() ?? const [],
+        components: (j['components'] as List?)?.map(HanjaPart.fromJson).toList() ?? const [],
+        phoneticCode: j['phoneticCode'] as String?,
         etym: j['etym'] as String?,
         tip: j['tip'] as String?,
         origin: j['origin'] as String?,

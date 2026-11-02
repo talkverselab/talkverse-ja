@@ -316,6 +316,12 @@ const Map<String, String> kDictEn = {
   '다름': 'Different',
   '그림이 글자 {0}로 겹쳐 바뀝니다 · ↻ 다시 보기': 'The picture blends into {0} · tap ↻ to replay',
   '앱 판정': 'App judgement',
+  '소리부분': 'sound part',
+  '뜻부분': 'meaning part',
+  '뜻': 'meaning',
+  '형성자 — 뜻부분이 뜻을, 소리부분 {0}이 읽기를 정합니다. 같은 소리부분 글자는 아래 소리 가족.': 'Phono-semantic: the meaning part gives the sense, the sound part {0} gives the reading. Kanji sharing it are in the sound family below.',
+  '회의자 — 부품의 뜻을 합쳐 새 뜻을 만든 글자입니다.': 'Compound ideograph: the parts\' meanings combine into a new one.',
+  '부품을 누르면 그 글자를 볼 수 있어요.': 'Tap a part to open that kanji.',
 };
 
 const Map<String, String> kDictJa = {
@@ -585,6 +591,12 @@ const Map<String, String> kDictJa = {
   '다름': '違う',
   '그림이 글자 {0}로 겹쳐 바뀝니다 · ↻ 다시 보기': '絵が字{0}に重なって変わります · ↻でもう一度',
   '앱 판정': 'アプリ判定',
+  '소리부분': '音符',
+  '뜻부분': '意符',
+  '뜻': '意味',
+  '형성자 — 뜻부분이 뜻을, 소리부분 {0}이 읽기를 정합니다. 같은 소리부분 글자는 아래 소리 가족.': '形声文字 — 意符が意味を、音符{0}が読みを決めます。同じ音符の字は下の「音の家族」。',
+  '회의자 — 부품의 뜻을 합쳐 새 뜻을 만든 글자입니다.': '会意文字 — 部品の意味を合わせて新しい意味を作った字です。',
+  '부품을 누르면 그 글자를 볼 수 있어요.': '部品をタップするとその字を見られます。',
 };
 
 const Map<String, String> kDictZh = {
@@ -854,4 +866,10 @@ const Map<String, String> kDictZh = {
   '다름': '不同',
   '그림이 글자 {0}로 겹쳐 바뀝니다 · ↻ 다시 보기': '图片渐变为字{0} · 点↻重看',
   '앱 판정': '应用判定',
+  '소리부분': '声旁',
+  '뜻부분': '形旁',
+  '뜻': '意义',
+  '형성자 — 뜻부분이 뜻을, 소리부분 {0}이 읽기를 정합니다. 같은 소리부분 글자는 아래 소리 가족.': '形声字——形旁表义，声旁{0}表音。同声旁的字见下方声旁家族。',
+  '회의자 — 부품의 뜻을 합쳐 새 뜻을 만든 글자입니다.': '会意字——把部件的意义合起来表示新义。',
+  '부품을 누르면 그 글자를 볼 수 있어요.': '点部件可查看该字。',
 };
