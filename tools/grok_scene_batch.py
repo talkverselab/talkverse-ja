@@ -98,6 +98,7 @@ def do(eid):
         if last.startswith('LIMIT'):
             print('LIMIT', ep['id'], last, flush=True); return False
         new = []
+        idle = 0
         for _ in range(80):  # 그림은 글보다 늦게 온다 — 새 assets 그림이 컷 수만큼 될 때까지(최대 20분)
             c = g.CDP(g.tab(tab))
             cur = [s for s in last_imgs(c) if s not in before]
@@ -108,6 +109,9 @@ def do(eid):
                    c.ev("[...document.querySelectorAll('img')].some(i=>i.src.startsWith('data:image')&&i.naturalWidth>200)")
             new = seen
             if len(new) >= len(chunk) and not busy: break
+            # 답이 끝났는데 그림이 1분 넘게 0장이면 그림 없이 끝난 것(2026-11-03 여러 번) → 빨리 실패하고 새 대화로 재시도
+            idle = (idle + 1) if (not busy and not new) else 0
+            if idle >= 5: break
             time.sleep(15)
         print(ep['id'], part, 'imgs', len(new), flush=True)
         if len(new) < len(chunk):
@@ -130,12 +134,20 @@ def git_push(msg):
         if subprocess.run(['git', '-C', ART, 'push', '-q']).returncode == 0: break
         time.sleep(5)
     print('PUSHED', msg, flush=True)
+    # R2·D1 에도 직접(2026-11-03 사용자 "업로드허용" — uk 세션은 ja 를 더 쓸어 올리지 않음)
+    eps = re.findall(r'[A-Za-z0-9_]+', msg.split(':', 1)[1]) if ':' in msg else []
+    u = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/scene_upload.py')] + eps, capture_output=True, text=True)
+    print('UPLOAD', (u.stdout.strip().splitlines() or ['?'])[-1], flush=True)
 
-done = []
+done, failed = [], []
 for eid in ids:
-    ok = do(eid)
+    ok = do(eid) or do(eid)  # 그림이 안 오면 새 대화로 한 번 더(2026-11-03 r1_culture_b5: 그림 대신 다른 경로로 1장만 옴)
     if ok: done.append(eid)
-    else: break
+    else:
+        failed.append(eid); print('SKIPFAIL', eid, flush=True)
+        if open(os.path.join(ROOT, 'data/review/write/scene_batch.log')).read().count('LIMIT'): break
+        if len(failed) >= 5 and not done[-3:]: print('STOP 연속 실패', flush=True); break
+        continue
     if push and len(done) % 5 == 0: git_push(f'scene/ja: {", ".join(done[-5:])}')
 if push and done: git_push(f'scene/ja: {", ".join(done[-(len(done) % 5 or 5):])}')
-print('DONE', len(done), flush=True)
+print('DONE', len(done), 'FAILED', ' '.join(failed), flush=True)
