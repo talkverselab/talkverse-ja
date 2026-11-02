@@ -291,6 +291,8 @@ const Map<String, String> kDictEn = {
   '로그인하면 다른 기기에서도 이용권이 열립니다 (선택)': 'Sign in to use the pass on other devices (optional)',
   '로그인됨 — 구매는 Talkverse 계정에 기록되어 다른 기기에서도 열립니다.': 'Signed in — the purchase is saved to your Talkverse account and opens on other devices.',
   '결제는 App Store / Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다.': 'Payment is handled by the App Store / Google Play. The price shown follows the store price and may include tax.',
+  '패밀리 한자': 'Kanji families',
+  '소리 부품이 같은 한자 가족 · 工·方·令·青…': 'Kanji sharing a sound part · 工·方·令·青…',
 };
 
 const Map<String, String> kDictJa = {
@@ -535,6 +537,8 @@ const Map<String, String> kDictJa = {
   '로그인하면 다른 기기에서도 이용권이 열립니다 (선택)': 'ログインすると他の端末でもパスが使えます（任意）',
   '로그인됨 — 구매는 Talkverse 계정에 기록되어 다른 기기에서도 열립니다.': 'ログイン中 — 購入はTalkverseアカウントに記録され他の端末でも開きます。',
   '결제는 App Store / Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다.': '決済はApp Store / Google Playが処理します。表示価格はストア価格に従い税込の場合があります。',
+  '패밀리 한자': '漢字ファミリー',
+  '소리 부품이 같은 한자 가족 · 工·方·令·青…': '音符が同じ漢字の家族 · 工·方·令·青…',
 };
 
 const Map<String, String> kDictZh = {
@@ -779,4 +783,6 @@ const Map<String, String> kDictZh = {
   '로그인하면 다른 기기에서도 이용권이 열립니다 (선택)': '登录后其他设备也可使用（可选）',
   '로그인됨 — 구매는 Talkverse 계정에 기록되어 다른 기기에서도 열립니다.': '已登录 — 购买记录到Talkverse账户，其他设备也可使用。',
   '결제는 App Store / Google Play 에서 처리됩니다. 표시 가격은 스토어 가격을 따르며 세금이 포함될 수 있습니다.': '付款由App Store / Google Play处理。显示价格以商店为准，可能含税。',
+  '패밀리 한자': '汉字家族',
+  '소리 부품이 같은 한자 가족 · 工·方·令·青…': '声旁相同的汉字家族 · 工·方·令·青…',
 };
