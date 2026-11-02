@@ -228,5 +228,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_work_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 確認します)"
- }
+ },
+ "twist_type": "slip"
 }

@@ -207,5 +207,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b7_grok_rewrite.md",
   "final": "2026-11-03 Grok 4턴 どういう意味ですか 덧붙임은 길어져 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

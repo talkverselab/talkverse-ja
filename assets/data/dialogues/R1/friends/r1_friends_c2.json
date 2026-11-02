@@ -169,5 +169,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_c2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(5턴 今起きた)"
- }
+ },
+ "twist_type": "ignore"
 }

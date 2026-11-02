@@ -260,5 +260,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_life_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 12턴 덧붙임은 흐름이 끊겨 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

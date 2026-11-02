@@ -156,5 +156,6 @@
   "grok_rewrite": "data/review/r1_love_a4_grok_rewrite.md",
   "final": "2026-11-03 Grok 이 6턴 침묵(…)을 「ごめん…」으로 바꾸자 했지만 설렘의 침묵이 의도라 초안 유지",
   "level_note": "2026-11-02 길이 기준(턴당 평균 5.2자 ≤ 8.0)으로 왕초보(R0)에 배정"
- }
+ },
+ "twist_type": "slip"
 }

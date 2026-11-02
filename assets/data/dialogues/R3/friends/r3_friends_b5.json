@@ -257,5 +257,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_friends_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 サプライズ — R2 b4 와 대칭)"
- }
+ },
+ "twist_type": "reveal"
 }

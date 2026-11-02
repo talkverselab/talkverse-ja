@@ -205,5 +205,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_life_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 お願いします). 4턴 このくらい 는 문맥 밖이라 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

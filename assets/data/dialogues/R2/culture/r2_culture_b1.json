@@ -212,5 +212,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_culture_b1_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 どういう意味, 켄에게는 반말). 5·7턴 덧붙임은 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

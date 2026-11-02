@@ -201,5 +201,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b8_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(11턴 連絡するね). 1턴 気をつけて 는 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

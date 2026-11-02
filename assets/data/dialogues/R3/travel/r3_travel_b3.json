@@ -253,5 +253,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_travel_b3_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(6턴 大丈夫)"
- }
+ },
+ "twist_type": "reveal"
 }

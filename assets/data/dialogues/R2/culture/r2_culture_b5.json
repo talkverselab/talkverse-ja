@@ -210,5 +210,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_culture_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 どう?)"
- }
+ },
+ "twist_type": "reveal"
 }

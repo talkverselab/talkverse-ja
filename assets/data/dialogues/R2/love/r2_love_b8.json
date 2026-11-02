@@ -211,5 +211,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_love_b8_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 寂しい, 2턴 連絡するね)"
- }
+ },
+ "twist_type": "emotion"
 }

@@ -212,5 +212,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_life_b3_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 マジで?)"
- }
+ },
+ "twist_type": "reveal"
 }

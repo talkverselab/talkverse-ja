@@ -214,5 +214,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_love_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 楽しみ). 8턴 マジで? 는 뜻을 모르는 단계라 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

@@ -222,5 +222,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_love_b1_grok_rewrite.md [J11]",
   "final": "2026-11-02 Grok 재작성본 그대로(8턴 また会いたいし, 9턴 マジで?, 12턴 楽しみ)"
- }
+ },
+ "twist_type": "emotion"
 }

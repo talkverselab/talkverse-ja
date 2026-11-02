@@ -203,5 +203,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_love_b7_grok_rewrite.md",
   "final": "2026-11-03 Grok 6턴 「好き」 추가는 모국어로만 말하는 장치를 깨므로 미반영"
- }
+ },
+ "twist_type": "emotion"
 }

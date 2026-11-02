@@ -278,5 +278,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_love_b1_grok_rewrite.md [J12]",
   "final": "2026-11-02 Grok 재작성본 그대로(10턴 침묵+マジで?, 16턴 爆笑)"
- }
+ },
+ "twist_type": "reveal"
 }

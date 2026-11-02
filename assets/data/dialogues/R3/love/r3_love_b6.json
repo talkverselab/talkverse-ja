@@ -260,5 +260,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_love_b6_grok_rewrite.md",
   "final": "2026-11-03 Grok 6턴 「待ってる」는 비밀(A 가 간다)과 어긋나 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

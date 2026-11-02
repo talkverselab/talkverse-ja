@@ -214,5 +214,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_friends_b7_grok_rewrite.md",
   "final": "2026-11-03 Grok 2턴 「分ける。」 삽입은 어색해 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

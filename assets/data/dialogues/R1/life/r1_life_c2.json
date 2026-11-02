@@ -166,5 +166,6 @@
   "grok_rewrite": "data/review/r1_life_c2_grok_rewrite.md",
   "final": "2026-11-03 Grok 재작성 전부 유지",
   "enrich": "r1_life_c2_grok_enrich.md: 8턴 교체 · 킥: ‘먼저 먹어’라고 했는데 리쿠가 카레까지 만들어 두고, 편의점보다 낫다고 받아치는 상황. · 강화 재작성 v2 반영"
- }
+ },
+ "twist_type": "emotion"
 }

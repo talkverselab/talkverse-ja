@@ -179,5 +179,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md [J10]",
   "final": "2026-11-02 Grok 재작성본 그대로(4턴 さん 삭제, 5턴 !?)"
- }
+ },
+ "twist_type": "slip"
 }

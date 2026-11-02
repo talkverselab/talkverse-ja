@@ -252,5 +252,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_life_b3_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(6턴 どういう意味ですか, 7턴 大丈夫やで)"
- }
+ },
+ "twist_type": "slip"
 }

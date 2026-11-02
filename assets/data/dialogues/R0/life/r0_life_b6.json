@@ -150,5 +150,6 @@
   "grok_rewrite": "data/review/r1_life_b6_grok_rewrite.md",
   "final": "2026-11-03 Grok 재작성 전부 유지",
   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
- }
+ },
+ "twist_type": "slip"
 }

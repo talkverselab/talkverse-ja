@@ -155,11 +155,11 @@
   {
    "num": 11,
    "speaker": "B",
-   "ja": "え、それだけ？",
-   "kana": "え、それだけ？",
-   "rd": "에, 소레다케?",
-   "ko": "에, 그것뿐이에요?",
-   "note": "それだけ? = 그게 다예요?",
+   "ja": "え、それだけ？ …{name}の、大きめにしとく。",
+   "kana": "え、それだけ？ …{name}の、おおきめにしとく。",
+   "rd": "에, 소레다케?… {name}노, 오오키메니 시토쿠.",
+   "ko": "에, 그것뿐이에요? …{name} 건 좀 크게 해 둘게.",
+   "note": "",
    "tags": [],
    "new": []
   },
@@ -230,6 +230,11 @@
  ],
  "review": {
   "grok_write": "data/review/write/r3_work_b4_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
- }
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+  "simkung": "data/review/chaos/r3_work_b4_grok_simkung.md: 턴 [11] 교체 · 심쿵: 11번 턴, 미사키가 과자를 나누며 A 몫을 더 크게 쪼개 줌",
+  "boost_turns": [
+   11
+  ]
+ },
+ "twist_type": "reveal"
 }

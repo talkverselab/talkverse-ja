@@ -205,5 +205,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_work_b6_grok_rewrite.md",
   "final": "2026-11-03 Grok 1·8턴 덧붙임(すみません·お願いします)은 자리가 어색해 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

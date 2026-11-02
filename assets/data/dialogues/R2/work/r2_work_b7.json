@@ -207,5 +207,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_work_b7_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(8턴 お疲れさま). 9·12턴은 뜻이 어긋나 미반영"
- }
+ },
+ "twist_type": "slip"
 }

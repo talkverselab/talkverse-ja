@@ -17,7 +17,7 @@ def hira(text):
     return ''.join(out)
 
 for md in sys.argv[1:]:
-    md = Path(md)
+    md = Path(md).resolve()
     eid = re.sub(r'_grok_(chaos|simkung|boost)\.md$', '', md.name)
     kind = re.search(r'_grok_(chaos|simkung|boost)\.md$', md.name).group(1)
     f = glob.glob(str(ROOT / f'assets/data/dialogues/R*/*/{eid}.json'))[0]
@@ -39,7 +39,7 @@ for md in sys.argv[1:]:
         t.pop('rd_manual', None)
         changed.append(n)
     rv = ep.setdefault('review', {})
-    rv[kind] = f'{md.relative_to(ROOT)}: 턴 {changed} 교체 · {summary.strip()}'
+    rv[kind] = f'{md.resolve().relative_to(ROOT)}: 턴 {changed} 교체 · {summary.strip()}'
     rv['boost_turns'] = sorted(set(rv.get('boost_turns', [])) | set(changed))
     if kind in ('chaos',) or (kind == 'boost' and '카오스' in summary and '없음' not in summary.split('카오스')[1][:6]):
         ep['twist_type'] = 'chaos'

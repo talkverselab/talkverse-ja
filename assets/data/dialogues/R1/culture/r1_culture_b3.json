@@ -154,5 +154,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_b3_grok_rewrite.md",
   "final": "2026-11-03 Grok 4턴 「返すまで」 덧붙임은 어색해 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

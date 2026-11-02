@@ -119,5 +119,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a4_grok_rewrite.md",
   "final": "2026-11-03 Grok J17: 「タメ口でいいよ？」「会おう！わかった？」 제안은 부자연(의문형 오류·억지)이라 미반영, 초안 유지"
- }
+ },
+ "twist_type": "slip"
 }

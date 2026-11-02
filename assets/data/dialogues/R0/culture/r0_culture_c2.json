@@ -168,5 +168,6 @@
   "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 どう?)",
   "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
- }
+ },
+ "twist_type": "reveal"
 }

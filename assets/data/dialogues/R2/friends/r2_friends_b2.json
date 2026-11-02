@@ -207,5 +207,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_friends_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 大丈夫?)"
- }
+ },
+ "twist_type": "reveal"
 }

@@ -125,5 +125,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a3_grok_rewrite.md",
   "final": "2026-11-03 Grok J16 반영(5턴 マジで 추가)"
- }
+ },
+ "twist_type": "reveal"
 }

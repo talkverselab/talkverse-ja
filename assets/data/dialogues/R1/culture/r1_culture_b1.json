@@ -153,5 +153,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_b1_grok_rewrite.md",
   "final": "2026-11-03 Grok 1턴 「ここだ！」 중복 추가는 미반영"
- }
+ },
+ "twist_type": "chaos"
 }

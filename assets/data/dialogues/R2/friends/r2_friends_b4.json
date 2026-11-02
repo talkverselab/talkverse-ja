@@ -213,5 +213,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_friends_b4_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 サプライズ, 7턴 バレてた)"
- }
+ },
+ "twist_type": "reveal"
 }

@@ -207,5 +207,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 いただきます). 10턴 감사 추가는 미반영"
- }
+ },
+ "twist_type": "reveal"
 }

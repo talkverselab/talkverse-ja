@@ -204,5 +204,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_life_b4_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 どういう意味ですか)"
- }
+ },
+ "twist_type": "slip"
 }

@@ -160,5 +160,6 @@
   "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md [J09]",
   "final": "2026-11-02 Grok 재작성본 반영(3턴 完全に面接じゃん, 7턴 いらないって). 6턴은 Grok 이 さん 을 뺐지만 7턴 「さん、いらない」가 성립하려면 A 가 さん 을 붙여야 하므로 초안(サクラさん) 유지"
  },
- "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)"
+ "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)",
+ "twist_type": "slip"
 }

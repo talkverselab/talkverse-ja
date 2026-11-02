@@ -259,5 +259,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_friends_b1_grok_rewrite.md",
   "final": "2026-11-03 Grok 6턴 どうすれば? 덧붙임은 미반영(10턴 작전으로 이어지는 흐름 유지)"
- }
+ },
+ "twist_type": "reveal"
 }

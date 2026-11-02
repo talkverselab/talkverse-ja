@@ -156,5 +156,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 2턴 「違います」 덧붙임은 문맥상 어색해 미반영"
- }
+ },
+ "twist_type": "slip"
 }

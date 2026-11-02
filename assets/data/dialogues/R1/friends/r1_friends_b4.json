@@ -154,5 +154,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_b4_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 よろしく, 6턴 爆笑)"
- }
+ },
+ "twist_type": "slip"
 }

@@ -158,5 +158,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_survival_s3_grok_rewrite.md",
   "final": "2026-11-03 Grok J13 전부 유지(5턴 '기억하기 쉬운 한 줄' 평)"
- }
+ },
+ "twist_type": "slip"
 }

@@ -206,5 +206,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b5_grok_rewrite.md",
   "final": "2026-11-03 Grok 2턴 약사의 どういう意味ですか 는 역할상 어색해 미반영"
- }
+ },
+ "twist_type": "slip"
 }

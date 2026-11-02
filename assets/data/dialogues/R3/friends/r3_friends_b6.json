@@ -249,5 +249,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_friends_b6_grok_rewrite.md",
   "final": "2026-11-03 Grok 9·14턴 덧붙임은 콜백(「会おう！」 한 단어 교정)을 깨 미반영"
- }
+ },
+ "twist_type": "emotion"
 }

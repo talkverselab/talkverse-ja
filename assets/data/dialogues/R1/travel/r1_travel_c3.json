@@ -166,5 +166,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md",
   "final": "2026-11-03 Grok 재작성 전부 유지"
- }
+ },
+ "twist_type": "chaos"
 }

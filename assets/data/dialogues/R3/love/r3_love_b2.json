@@ -262,5 +262,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_love_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 12턴 マジで? 덧붙임은 미반영"
- }
+ },
+ "twist_type": "emotion"
 }

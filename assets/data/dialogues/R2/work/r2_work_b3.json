@@ -204,5 +204,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_work_b3_grok_rewrite.md",
   "final": "2026-11-03 Grok 11턴 「お疲れさまでした」는 건배 자리라 미반영"
- }
+ },
+ "twist_type": "chaos"
 }

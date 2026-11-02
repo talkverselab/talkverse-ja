@@ -159,5 +159,6 @@
   "grok_rewrite": "data/review/r1_survival_s1_grok_rewrite.md [J07]",
   "final": "2026-11-02 Grok 재작성본 그대로(3턴 大丈夫ですよ 복귀, 5턴 と/も 연결, 6턴 え、全部? 놀람, 7턴 しときます)"
  },
- "approved": "2026-11-02 사용자 리뷰 통과(Grok J07 재작성본)"
+ "approved": "2026-11-02 사용자 리뷰 통과(Grok J07 재작성본)",
+ "twist_type": "chaos"
 }

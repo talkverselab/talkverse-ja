@@ -124,5 +124,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md",
   "final": "2026-11-03 Grok J14 반영(2턴 よろしくお願いします 추가, 3턴 全然)"
- }
+ },
+ "twist_type": "slip"
 }

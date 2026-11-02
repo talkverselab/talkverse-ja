@@ -217,5 +217,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_love_b6_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 覚えてる?)"
- }
+ },
+ "twist_type": "reveal"
 }

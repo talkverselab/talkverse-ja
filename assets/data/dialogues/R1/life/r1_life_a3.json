@@ -155,5 +155,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_life_a3_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 どこで?). 6턴 ありがとう 추가는 킥을 늘어뜨려 미반영"
- }
+ },
+ "twist_type": "slip"
 }

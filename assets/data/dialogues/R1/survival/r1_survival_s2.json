@@ -172,5 +172,6 @@
   "grok_rewrite": "data/review/r1_survival_s2_grok_rewrite.md [J08]",
   "final": "2026-11-02 Grok 재작성본 그대로(7턴 점원 확인형, 8턴 爆笑)"
  },
- "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)"
+ "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)",
+ "twist_type": "slip"
 }

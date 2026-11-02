@@ -151,5 +151,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_travel_a6_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(7턴 助かりました)"
- }
+ },
+ "twist_type": "reveal"
 }

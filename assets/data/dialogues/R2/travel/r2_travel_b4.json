@@ -209,5 +209,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b4_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 見えない, 5턴 まあいいか)"
- }
+ },
+ "twist_type": "reveal"
 }

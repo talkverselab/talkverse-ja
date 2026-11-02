@@ -259,5 +259,6 @@
  "review": {
   "grok_rewrite": "data/review/r3_life_b2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(11턴 しんどい?)"
- }
+ },
+ "twist_type": "reveal"
 }

@@ -200,5 +200,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_work_b8_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(9턴 寂しいです)"
- }
+ },
+ "twist_type": "emotion"
 }

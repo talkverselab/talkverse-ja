@@ -184,11 +184,11 @@
   {
    "num": 13,
    "speaker": "A",
-   "ja": "え、抱擁…？",
-   "kana": "え、ほうよう…？",
-   "rd": "에, 호오요오…?",
-   "ko": "에, 포옹…?",
-   "note": "抱擁 = 포옹",
+   "ja": "え、手握って飛んで…ちょっと止まった。",
+   "kana": "え、てにぎってとんで…ちょっととまった。",
+   "rd": "에, 테 니깃테 톤데… 촛토 토맛타.",
+   "ko": "에, 손 잡고 뛰다가… 잠깐 멈췄어.",
+   "note": "",
    "tags": [],
    "new": []
   },
@@ -232,6 +232,11 @@
  ],
  "review": {
   "grok_write": "data/review/write/r3_culture_b5_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
- }
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+  "simkung": "data/review/chaos/r3_culture_b5_grok_simkung.md: 턴 [13] 교체 · 심쿵: 13번 턴, 홈런 뒤 미사키가 A 손을 잡고 뛰다가 둘 다 잠깐 멈칫함",
+  "boost_turns": [
+   13
+  ]
+ },
+ "twist_type": "slip"
 }

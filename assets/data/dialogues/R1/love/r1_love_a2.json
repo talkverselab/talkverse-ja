@@ -128,5 +128,6 @@
  "review": {
   "grok_rewrite": "data/review/r1_love_a2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(2턴 いいね)"
- }
+ },
+ "twist_type": "reveal"
 }

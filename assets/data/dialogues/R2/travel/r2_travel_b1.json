@@ -209,5 +209,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_travel_b1_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 생존 표현)"
- }
+ },
+ "twist_type": "reveal"
 }

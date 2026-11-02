@@ -209,5 +209,6 @@
  "review": {
   "grok_rewrite": "data/review/r2_culture_b4_grok_rewrite.md",
   "final": "2026-11-03 Grok 9턴 「本物じゃない」는 뜻이 어긋나 미반영"
- }
+ },
+ "twist_type": "reveal"
 }
