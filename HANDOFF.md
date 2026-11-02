@@ -7,7 +7,7 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC) · origin = 로컬(한자 구조 표시까지). 미커밋 = CRLF 노이즈 + 도구 부산물 + `data/review/*_grok_enrich*`(보류 작업) + `data/review/wire/`(와이어프레임) — 의도적으로만 커밋 |
-| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → **2611022314**(패밀리 한자 수정 포함, 23:17 업로드) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설. **한자 구조 표시(§2 마지막 항목)는 아직 TestFlight 에 없음** — 다음 빌드에 |
+| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → 2314(패밀리 한자 수정) → **2611022326**(한자 구조 표시, 23:3x 업로드) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설. **패밀리 한자 원복(7b79bc4)은 아직 TestFlight 에 없음** — 다음 빌드에 |
 | Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 **빌드 37** https://apps.talkverse.uk/Ultzu/186 (2026-11-02 20:35, 352ff41 = 장면 컷 연결까지). GIF·패밀리·구조 표시는 CI 빌드 뒤 `tools/zealot_push.sh --ci` 로 올릴 것 |
 | 회화 콘텐츠 | R0 26(**2026-11-02 사용자 지시로 재분배** — R1 77편 중 턴당 평균 8.0자 이하를 R0 로 이동, `review.level_note`) · R1 51 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 158편(+R0 26 = 중복 없음), `assets/data/dialogues/<R>/<주제>/*.json`, 검사기 오류 5 = 강화 재작성 v2 시험 2편(culture_a3·life_c2)의 단어 수 초과(보류 중). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
@@ -20,7 +20,7 @@
 - **새 회화 뷰어**: `lib/screens/dialogue_screen.dart`(주제 → 편 → 편 화면, 왕초보/초보 전환), `lib/services/dialogue_service.dart`(R0~R4 로더, `speakerName()` = `{name}` → 「나」, `lastOpenedId`), `lib/widgets/episode_play_pane.dart`(「모든 문장 듣기」 순차 TTS·배속·자막 단계·그림 칸), `lib/screens/dialogue_card_screen.dart`(그림만 앞면 카드).
 - **배우기 탭**: 「회화 (새)」(주제별 회화 + 맞춤 회화) · 「단어」(절벽·필수·JLPT, 목록·타일에 단어 그림 썸네일 `lib/widgets/word_art_thumb.dart`) · 기초에 **「한자 배우기」·「패밀리 한자」·「한자 단계」**.
 - **한자 배우기** `lib/screens/kanji_learn_screen.dart`: 단계(20자)를 한 글자씩 `KanjiInfoBody`(한자 팝업과 같은 내용)로 먼저 보고 → 「이 단계 문제 풀기」. 아이패드 = 왼쪽 20자 격자 + 오른쪽 정보. `KanjiStagesScreen(learn: true)`.
-- **한자유니버스 GIF·가족 DB 적용(한자 세션 지시, 0bef295→f9288e1)**: `lib/widgets/morph_player.dart`+`lib/services/morph_cache.dart`(한자앱 복제 — webp 768/1024→gif, 기기 캐시 `morph/`, 한 번 재생 후 글자에서 멈춤+↻, pending 허용), 한자 팝업 그림 = `MorphPlayer`. **「패밀리 한자」** `lib/screens/hanja_family_screen.dart`(소리 가족·책 가족·헷갈리는 쌍, 검색·JLPT 필터, `lib/widgets/family_map.dart` 마인드맵) + `lib/services/hanja_family_service.dart`(전체 글자표 7일 파일 캐시 `hanja_chars_v1.json`; 가족 = 공용 DB `phonetic` **+ 앱 자체 판정 `assets/data/kanji/phonetic_ja.json` 합침**, 앱만의 쌍은 「앱 판정」 표시 — 사용자 지시 "니 DB 를 완전 버리지는 마"). 가로 1200 이상만 두 칸, 그 밖엔 목록→상세 밀기. 캡처 흐름 `integration_test/dialogue_pane_test.dart` 에 패밀리 한자 포함.
+- **한자유니버스 GIF·가족 DB 적용(한자 세션 지시, 0bef295→f9288e1)**: `lib/widgets/morph_player.dart`+`lib/services/morph_cache.dart`(한자앱 복제 — webp 768/1024→gif, 기기 캐시 `morph/`, 한 번 재생 후 글자에서 멈춤+↻, pending 허용), 한자 팝업 그림 = `MorphPlayer`. 한자앱식 「패밀리 한자」(`lib/screens/hanja_family_screen.dart`·`lib/widgets/family_map.dart`·`lib/services/hanja_family_service.dart` — 소리 가족(공용 DB + 앱 판정 합침)·책 가족·헷갈리는 쌍)를 만들었으나 **사용자 지시(23:40 "원래 니 구조가 더 좋았어")로 메뉴는 앱 자체 발음부 화면 `PhoneticRootsScreen`(`phonetic_ja.json`, 절벽 구간별 뿌리 카드 → 가족 시트)으로 원복(7b79bc4)**. 한자앱식 파일은 남아 있지만 연결되지 않음(지우지 말 것 — 마인드맵 재활용 가능).
 - **한자 구조(회의·형성) 표시 보강(2026-11-02 23:25, 사용자 "회의자·형성자 구조도 DB 화 되어 있어… 받아야")**: `HanjaInfo.components` 를 글자 문자열에서 `HanjaPart`(ch·base·code·known·hun)로 바꾸고 부품 훈음을 한 번에 조회(`code=in.(…)`), `phoneticCode` 보관, 기기 캐시 키 `hanja_shared2:`. 팝업 「글자 형성」(`_Formation`, `lib/widgets/selectable_ja_text.dart`) = 한자앱 `_howBuilt` 과 같은 식 — 부품마다 역할(형성: 뜻부분/소리부분, 회의: 뜻)·자형·훈, 변형 자형은 「사람 (人)」처럼 본래 글자 병기, 소리 부품은 `ai` 색, 부품 탭 → 그 글자 팝업, 아래 한 줄 설명(형성자/회의자). 중복이던 「글자 구성」 칩은 제거. 확인 캡처 `integration_test/kanji_formation_test.dart`(語·休·江, `scratchpad/shots11/`).
 - **맞춤 회화(유료 메뉴, 첫 1편 무료)**: 계약 `docs/CUSTOM_SCRIPT_API.md`. 앱 `lib/services/custom_script_service.dart`(기기 ID, POST/GET `https://talkverse.uk/api/script/ja`, Bearer 토큰, ready 편 로컬 보관) + `lib/screens/custom_script_screen.dart`(주제 8 칩 → 상황 입력+추천 칩 → 레벨 4 → 만들기, 「내 맞춤 회화」 서랍 1분 폴링, 402 → 잠금 시트). Worker·D1(`custom_scripts`·`paid_devices`)은 talkverse.uk 세션이 배포, 시크릿 `SCRIPT_KEY` 는 사용자가 넣음(완료). 코드 서버 워커 `tools/custom_script_worker.py`(pending → claim → `claude-lab -p` 초안(`tools/prompts/custom_script.md`) → Grok 재작성(`rewrite_grok.md`) → `check_dialogues --fix-rd` → result). 키는 `doppler run -p keys -c prd --`(`TALKVERSE_SCRIPT_KEY`), Claude 호출 때는 `ANTHROPIC_*` 환경변수를 뺀다(안 빼면 "Invalid API key"). launchd plist `tools/launchd/com.talkverse.ja.custom-script.plist`(5분) — **아직 올리지 않음, 사용자 확인 뒤**. 작업 파일 `data/custom_scripts/`(gitignore). janome 은 `~/.venvs/ja`.
 - **라이트너** `lib/review`(uk 공용 엔진, 테스트 7개), 복습 탭 「오늘의 복습」, 카드 앞면 단어 그림.
@@ -37,14 +37,15 @@
 - Grok: **글 시안은 한 메시지에 1개, 그림은 최대 4장**(캐릭터 시트 한 번에, 장면 4컷까지 — 사용자 확인 "캐릭터도 한번에 해도 되고 장면도 4장까지"). 지연·실패가 난 방은 복구 안 됨 → 지우고 새로 만든다. 그림은 글 답 뒤에 늦게 오므로 `grok_fetch.py` 가 data: 썸네일을 BUSY 로 보고 기다린다. 다른 세션의 Chrome·탭은 건드리지 않는다.
 - 「플루언트」·「섬」 등 특정 학습서 연상어 금지, 도메인은 **「주제」**. 왕초보(R0)는 짧은 편만(턴당 평균 8자 이하).
 - 맞춤 회화: 외부 LLM API 안 씀(코드 서버 + Grok), Cloudflare 에 ID 로 저장, 1회 무료, "많이 쓰면 그때 생각".
-- 한자: **배우기 먼저** → 문제. 한자 DB 자체는 바꾸지 않는다(한자유니버스 공용). 패밀리 한자는 공용 DB + 앱 판정 둘 다 유지.
+- 한자: **배우기 먼저** → 문제. 한자 DB 자체는 바꾸지 않는다(한자유니버스 공용). **패밀리 한자 = 앱 자체 발음부 화면 구조**(사용자 "원래 니 구조가 더 좋았어", 2026-11-02 23:40). GIF·글자 형성(회의·형성 구조)·팁·어원·소리 가족은 공용 DB 에서.
 - 장면 컷 규칙(한국어앱 경유 사용자 지시): 연애 = 썸·플러팅까지, 클럽 포함, 여성 주도 더 많이, 클리셰 일부만, Grok 「유지」 금지(모든 줄 새로), 그림 = A·B 쌍당 1컷·말풍선 없음, 캐릭터 시트 첨부.
 - 강화 재작성 v2(`tools/prompts/rewrite_grok_v2.md`, `data/review/*_grok_enrich*`)는 보류 — Grok 스크립트 변경은 사용자가 요청할 때.
 - 아이콘은 talkverse.uk 세션 담당. 메모·문서는 덧붙이지 말고 전체 다시 쓰기.
 
 ## 4. 다음 할 일
 
-1. **다음 TestFlight**: 한자 구조 표시(§2)를 넣어 한 번 더 올리고 번호 보고. Zealot 은 CI 빌드 뒤 `--ci` 로.
+1. **다음 TestFlight**: 패밀리 한자 원복(7b79bc4)을 넣어 한 번 더 올리고 번호 보고. Zealot 은 CI 빌드 뒤 `--ci` 로.
+0. 언어앱 공통 프롬프터 `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md` 를 2026-11-02 밤 전체 다시 씀(순서 캐릭터→UX→아이패드 빌드→회화, Grok 은 한자 세션 경유) — uk 세션에 "배포 가능" 전달. 이 문서가 다른 언어앱의 기준.
 2. 사용자 결정 대기: 단어 메뉴 시안 01(`data/review/uxui/sian_words_01.*`) 확정 → 적용 · 장면 컷 제작 착수(샘플 1편 = 4컷, `chars_ja_v1.jpg` 첨부) · 인앱 상품 등록(사용자 콘솔) · 다이얼로그 작성 재개 · 맞춤 회화 워커 재개(= `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`, 끝까지 2회 성공 확인됨 `ja-4inaalel`·`ja-fao34isa`).
 3. 성과 데스크 폰 레이아웃 다듬기, 홈 「오늘의 작은 성과」 카드(선택).
 4. 장면 그림 들어오면 턴 `art` 채우기(A 그림은 성별별 `art_m`/`art_f` 허용 예정).
