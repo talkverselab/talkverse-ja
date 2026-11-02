@@ -66,9 +66,7 @@ void main() {
     await t.pageBack();
     await wait(t, 1200);
 
-    // 대화로 돌아가 한자 팝업(글자 형성·그림)
-    await t.tap(find.byTooltip('대화로 돌아가기'));
-    await wait(t, 1000);
+    // 캡션의 한자 팝업(글자 형성·그림)
     final kanji = find.text('写').first;
     if (kanji.evaluate().isNotEmpty) {
       await t.tap(kanji);

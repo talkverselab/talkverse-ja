@@ -154,6 +154,14 @@ class DialogueService {
   static const levels = ['R0', 'R1', 'R2', 'R3', 'R4'];
   static const levelKo = {'R0': '왕초보', 'R1': '초보', 'R2': '중급', 'R3': '고급', 'R4': '최상급'};
   static const _prefLevel = 'dialogue_level';
+  static const _prefLast = 'dialogue_last';
+  String? _lastOpened;
+  /// 마지막으로 연 편(홈 「이어서 읽기」).
+  String? get lastOpenedId => _lastOpened;
+  Future<void> setLastOpened(String id) async {
+    _lastOpened = id;
+    (await SharedPreferences.getInstance()).setString(_prefLast, id);
+  }
 
   final Map<String, Dialogue> _byId = {};
   bool _loaded = false;
@@ -168,7 +176,9 @@ class DialogueService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    _level = (await SharedPreferences.getInstance()).getString(_prefLevel) ?? 'R1';
+    final prefs = await SharedPreferences.getInstance();
+    _level = prefs.getString(_prefLevel) ?? 'R1';
+    _lastOpened = prefs.getString(_prefLast);
     final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
     final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(p));
     for (final p in paths) {

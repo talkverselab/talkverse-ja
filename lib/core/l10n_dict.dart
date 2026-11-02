@@ -208,6 +208,13 @@ const Map<String, String> kDictEn = {
   '다 봤어요 — 이 단계 문제 풀기': 'Seen them all — take this stage quiz',
   '이 단계 문제 풀기': 'Take this stage quiz',
   '{0}자 더 보면 문제 풀기': '{0} more to see before the quiz',
+  '대화 스크립트': 'Dialogue script',
+  '회화 장면': 'Scene',
+  '속도': 'Speed',
+  '자막': 'Subtitles',
+  '오늘의 컷': 'Today\'s panel',
+  '이어서 읽기': 'Continue reading',
+  '읽기 시작': 'Start reading',
 };
 
 const Map<String, String> kDictJa = {
@@ -369,6 +376,13 @@ const Map<String, String> kDictJa = {
   '다 봤어요 — 이 단계 문제 풀기': '全部見た — この段階の問題へ',
   '이 단계 문제 풀기': 'この段階の問題へ',
   '{0}자 더 보면 문제 풀기': 'あと{0}字見たら問題へ',
+  '대화 스크립트': '会話スクリプト',
+  '회화 장면': '会話シーン',
+  '속도': '速度',
+  '자막': '字幕',
+  '오늘의 컷': '今日のコマ',
+  '이어서 읽기': '続きを読む',
+  '읽기 시작': '読み始める',
 };
 
 const Map<String, String> kDictZh = {
@@ -530,4 +544,11 @@ const Map<String, String> kDictZh = {
   '다 봤어요 — 이 단계 문제 풀기': '都看完了 — 做本级测验',
   '이 단계 문제 풀기': '做本级测验',
   '{0}자 더 보면 문제 풀기': '再看{0}字就可以做题',
+  '대화 스크립트': '对话脚本',
+  '회화 장면': '会话场景',
+  '속도': '速度',
+  '자막': '字幕',
+  '오늘의 컷': '今日画格',
+  '이어서 읽기': '继续阅读',
+  '읽기 시작': '开始阅读',
 };

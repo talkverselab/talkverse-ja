@@ -12,9 +12,9 @@ import '../widgets/selectable_ja_text.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_card_screen.dart';
 
-/// 새 회화(R0~R4) 섬 목록 → 편 목록 → 편 화면 — 2026-11-03, 아이패드 두 화면 우선.
-/// 아이패드: 왼쭉 목록(섬·편) → 오른쪽 칸에 편 화면(버블) → 「모든 문장 듣기」를 누르면 오른쪽 칸이 재생 패널로 바뀐다.
-/// 폰: 각 단계가 push, 재생 패널은 전체 화면.
+/// 새 회화(R0~R4) 섬 목록 → 편 목록 → 편 화면 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02).
+/// 아이패드: 홈 맨 위 「오늘의 컷」, 편 화면 = 왼쪽 대화 스크립트 + 오른쪽 큰 장면 컷(말풍선) + 하단 재생 컨트롤.
+/// 폰: 각 단계가 push, 재생은 전체 화면(컷 위·스크립트 아래).
 class DialogueHomeScreen extends StatefulWidget {
   const DialogueHomeScreen({super.key});
   @override
@@ -65,6 +65,8 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
           : ListView(
               padding: EdgeInsets.fromLTRB(16, 8, 16, 24 + bottomInset(context)),
               children: [
+                _TodayCut(level: level),
+                const SizedBox(height: 10),
                 const CustomScriptEntryCard(),
                 const SizedBox(height: 10),
                 _hint(level),
@@ -96,6 +98,46 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
           style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4),
         ),
       );
+}
+
+/// 「오늘의 컷」 — 마지막으로 열었던 편(없으면 현재 레벨 첫 편)의 장면 컷 + 읽기 시작(시안 02 홈).
+class _TodayCut extends StatelessWidget {
+  final String level;
+  const _TodayCut({required this.level});
+
+  @override
+  Widget build(BuildContext context) {
+    final svc = DialogueService.instance;
+    final last = svc.lastOpenedId != null ? svc.byId(svc.lastOpenedId!) : null;
+    final d = last ?? (svc.list(region: level).isNotEmpty ? svc.list(region: level).first : null);
+    if (d == null) return const SizedBox.shrink();
+    final wide = isWide(context);
+    final t = d.turns.first;
+    final info = Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
+      Text(tr(last == null ? '오늘의 컷' : '이어서 읽기'), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.beni, letterSpacing: 1)),
+      const SizedBox(height: 4),
+      Text('${d.emoji} ${d.title}', maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+      const SizedBox(height: 2),
+      Text('${d.region} · ${tr(DialogueService.islandKo[d.island] ?? d.island)} · ${trf('{0}턴', [d.turns.length])}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
+      const SizedBox(height: 6),
+      Text(d.scene, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
+      const SizedBox(height: 10),
+      FilledButton.icon(
+        onPressed: () => openPane(context, (_) => DialogueScreen(dialogue: d)),
+        style: FilledButton.styleFrom(backgroundColor: AppColors.beni, foregroundColor: Colors.white, shape: const StadiumBorder(), visualDensity: VisualDensity.compact),
+        icon: const Icon(Icons.menu_book_rounded, size: 18),
+        label: Text(tr('읽기 시작'), style: const TextStyle(fontWeight: FontWeight.w800)),
+      ),
+    ]);
+    final cut = SizedBox(height: wide ? 180 : 150, child: SceneCut(dialogue: d, turn: t, bubble: true));
+    return Container(
+      padding: const EdgeInsets.all(12),
+      decoration: BoxDecoration(color: AppColors.washi, border: Border.all(color: AppColors.line), borderRadius: BorderRadius.circular(16), boxShadow: kCardShadow),
+      child: wide
+          ? Row(crossAxisAlignment: CrossAxisAlignment.center, children: [Expanded(flex: 5, child: cut), const SizedBox(width: 14), Expanded(flex: 6, child: info)])
+          : Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [cut, const SizedBox(height: 10), info]),
+    );
+  }
 }
 
 class _LevelHeader extends StatelessWidget {
@@ -178,7 +220,8 @@ class DialogueListScreen extends StatelessWidget {
   }
 }
 
-/// 편 화면: 맨 위 「▶ 모든 문장 듣기」, 그 아래 버블. 아이패드는 오른쪽 칸이 재생 패널로 바뀌고, 폰은 전체 화면.
+/// 편 화면 — 시안 02 만화책 읽기형. 아이패드: 왼쪽 대화 스크립트 + 오른쪽 큰 장면 컷(같은 패널, ▶ 로 순차 재생).
+/// 폰: 버블 목록 + 맨 위 「▶ 모든 문장 듣기」(전체 화면 재생).
 class DialogueScreen extends StatefulWidget {
   final Dialogue dialogue;
   const DialogueScreen({super.key, required this.dialogue});
@@ -187,9 +230,13 @@ class DialogueScreen extends StatefulWidget {
 }
 
 class _DialogueScreenState extends State<DialogueScreen> {
-  bool _playing = false;
-
   Dialogue get d => widget.dialogue;
+
+  @override
+  void initState() {
+    super.initState();
+    DialogueService.instance.setLastOpened(d.id);
+  }
 
   @override
   void dispose() {
@@ -197,13 +244,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
     super.dispose();
   }
 
-  void _openPlay({int at = 0}) {
-    if (isWide(context)) {
-      setState(() => _playing = true);
-    } else {
-      openFull(context, (_) => _PlayFull(dialogue: d, at: at));
-    }
-  }
+  void _openPlay({int at = 0}) => openFull(context, (_) => _PlayFull(dialogue: d, at: at));
 
   @override
   Widget build(BuildContext context) {
@@ -223,19 +264,10 @@ class _DialogueScreenState extends State<DialogueScreen> {
             icon: const Icon(Icons.style_outlined, color: AppColors.ai),
             onPressed: () => openFull(context, (_) => DialogueCardScreen(dialogue: d)),
           ),
-          if (wide && _playing)
-            IconButton(
-              tooltip: tr('대화로 돌아가기'),
-              icon: const Icon(Icons.chat_bubble_outline, color: AppColors.sumi),
-              onPressed: () {
-                TtsService.instance.stop();
-                setState(() => _playing = false);
-              },
-            ),
         ],
       ),
-      body: wide && _playing
-          ? EpisodePlayPane(key: ValueKey(d.id), dialogue: d)
+      body: wide
+          ? EpisodePlayPane(key: ValueKey(d.id), dialogue: d, autoPlay: false)
           : Column(children: [
               Padding(
                 padding: const EdgeInsets.fromLTRB(16, 10, 16, 4),
