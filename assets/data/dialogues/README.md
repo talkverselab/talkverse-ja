@@ -9,7 +9,7 @@ assets/data/dialogues/
   R4/<주제>/r4_<주제>_<편>.json   최상급. 12~16턴, 복문·완곡 표현 (샘플 1편)
 ```
 주제(island) = 도메인: survival · friends · love · life · travel · culture · work · study.
-레벨 R1~R4 = 말뭉치 빈도 절벽 구간(단어 순위 ≤294 / ≤437 / ≤998 / ≤2500). 고정 인물·콜백·규칙은 `docs/DIALOGUE_WORKFLOW_JA.md`.
+레벨 R1~R4 = 말뭉치 빈도 절벽 구간(단어 순위 ≤107 / ≤179 / ≤603 / ≤2500 — 2026-11-03 절벽 v2, 일본 제작 작품 형태소 기준. 기존 편은 옛 기준 ≤294/≤437/≤998 로 쓰였음). 고정 인물·콜백·규칙은 `docs/DIALOGUE_WORKFLOW_JA.md`.
 
 ## 편 JSON
 ```json

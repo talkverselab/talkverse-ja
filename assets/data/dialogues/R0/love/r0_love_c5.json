@@ -37,12 +37,13 @@
    "speaker": "A",
    "ja": "♡♡♡",
    "kana": "♡♡♡",
-   "rd": "",
+   "rd": "(하트 세 개)",
    "ko": "♡♡♡",
    "note": "♡ = 하트 — 엉뚱한 방에 보냄",
    "tags": [],
    "new": [],
-   "ui": "bubble"
+   "ui": "bubble",
+   "rd_manual": true
   },
   {
    "num": 2,

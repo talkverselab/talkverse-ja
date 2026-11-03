@@ -149,7 +149,7 @@ class AchievementService {
       knownWords.add(w);
       sum += f;
     }
-    const cliffs = [294, 437, 998, 2500];
+    const cliffs = [107, 179, 603, 2500]; // 절벽 v2(2026-11-03)
     final next = cliffs.firstWhere((c) => c > knownWords.length, orElse: () => 2500);
     return (pct: sum * 100, known: knownWords.length, nextCliff: next, toNext: (next - knownWords.length).clamp(0, 9999));
   }

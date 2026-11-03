@@ -16,7 +16,10 @@ class SeedLoader {
 
   Future<void> seedIfNeeded() async {
     final prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool(_kSeededKey) == true) return;
+    if (prefs.getBool(_kSeededKey) == true) {
+      await reseedWordsIfNeeded();
+      return;
+    }
 
     await _seedKanji();
     await _seedJlptWords();
@@ -24,6 +27,17 @@ class SeedLoader {
     await _seedTurns();
 
     await prefs.setBool(_kSeededKey, true);
+    await prefs.setBool(_kWordsKey, true);
+  }
+
+  /// 절벽 단어표만 다시 채우기(2026-11-03 절벽 v2 — 다른 표는 다시 넣으면 중복 오류라 단어표만, 순위가 기본키라 덮어쓰기)
+  static const _kWordsKey = 'words_seeded_v2';
+  Future<void> reseedWordsIfNeeded() async {
+    final prefs = await SharedPreferences.getInstance();
+    if (prefs.getBool(_kWordsKey) == true) return;
+    await db.delete(db.words).go();
+    await _seedWords();
+    await prefs.setBool(_kWordsKey, true);
   }
 
   static String _hira(String s) => String.fromCharCodes(
