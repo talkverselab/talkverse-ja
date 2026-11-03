@@ -117,17 +117,15 @@
   {
    "num": 6,
    "speaker": "B",
-   "ja": "（爆笑）明日、学校…",
-   "kana": "（ばくしょう）あした、がっこう…",
-   "rd": "(바쿠쇼오) 아시타, 갓코오…",
-   "ko": "(폭소) 내일 학교…",
-   "note": "걱정",
+   "ja": "明日、のど飴持ってく。",
+   "kana": "あした、のどあめもってく。",
+   "rd": "아시타, 노도 아메 못테쿠.",
+   "ko": "내일 목캔디 가져갈게.",
+   "note": "のど飴 = 목캔디 · 持ってく = 가져갈게",
    "tags": [
     "expr:明日"
    ],
-   "new": [
-    "学校"
-   ],
+   "new": [],
    "ui": "bubble",
    "at": "22:42"
   },
@@ -170,7 +168,11 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_c4_grok_rewrite.md",
   "final": "2026-11-03 Grok 재작성 전부 유지",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 7.4자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 7.4자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_culture_c4_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+  "boost_turns": [
+   6
+  ]
  },
  "twist_type": "reveal"
 }

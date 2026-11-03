@@ -111,23 +111,25 @@
   {
    "num": 6,
    "speaker": "B",
-   "ja": "しー。内緒。",
-   "kana": "しー。ないしょ。",
-   "rd": "시. 나이쇼.",
-   "ko": "쉿. 비밀.",
-   "note": "しー = 쉿 · 内緒 = 비밀 — 킥",
+   "ja": "しー。内緒。でも、会えてうれしい。",
+   "kana": "しー。ないしょ。でも、あえてうれしい。",
+   "rd": "시이. 나이쇼. 데모, 아에테 우레시이.",
+   "ko": "쉿. 비밀. 근데 만나서 기뻐.",
+   "note": "内緒 = 비밀 · 会えてうれしい = 만나서 기뻐",
    "tags": [
     "expr:内緒"
    ],
-   "new": [
-    "内緒"
-   ]
+   "new": []
   }
  ],
  "review": {
   "grok_rewrite": "data/review/r1_friends_a5_grok_rewrite.md",
   "final": "2026-11-03 Grok J18 전부 유지",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_friends_a5_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+  "boost_turns": [
+   6
+  ]
  },
  "twist_type": "reveal"
 }

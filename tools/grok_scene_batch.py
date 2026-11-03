@@ -79,8 +79,10 @@ def do(eid):
     cuts = [((i // 2) + 1, turns[i:i + 2]) for i in range(0, len(turns), 2)]
     out = os.path.join(ART, 'talkverse_art/scene/ja', ep['id'])
     os.makedirs(out, exist_ok=True)
-    for part, k in enumerate(range(0, len(cuts), 4), 1):
-        chunk = cuts[k:k + 4]
+    # 없는 컷만 골라 4장씩 요청(카오스·심쿵으로 바뀐 턴의 컷만 지우고 다시 받을 때 — 2026-11-03)
+    missing = [c for c in cuts if not os.path.exists(os.path.join(out, f'cut{c[0]}.jpg'))]
+    for part, k in enumerate(range(0, len(missing), 4), 1):
+        chunk = missing[k:k + 4]
         if all(os.path.exists(os.path.join(out, f'cut{n}.jpg')) for n, _ in chunk):
             print('SKIP', ep['id'], part, flush=True); continue
         pf = os.path.join(ROOT, 'data/review/write', f"{ep['id']}_scene{part}_prompt.md")

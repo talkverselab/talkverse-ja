@@ -142,18 +142,16 @@
   {
    "num": 7,
    "speaker": "B",
-   "ja": "わかってるよw　ラーメン。{name}は？",
-   "kana": "わかってるよw　らーめん。{name}は？",
-   "rd": "와캇테루요 w 라아멘. {name}와?",
-   "ko": "알아ㅋ 라멘. {name}은?",
-   "note": "わかってるよ = 알아, 알아(놀리기 뒤 수습)",
+   "ja": "わかってるよw　…ちょっと、ドキッとした。",
+   "kana": "わかってるよw　…ちょっと、どきっとした。",
+   "rd": "와캇테루요 w… 촛토, 도킷토 시타.",
+   "ko": "알아ㅋ …조금 두근거렸어.",
+   "note": "わかってるよ = 알고 있어 · ドキッとした = 두근했어",
    "tags": [
     "expr:わかってる",
     "expr:w"
    ],
-   "new": [
-    "ラーメン"
-   ],
+   "new": [],
    "ui": "bubble",
    "at": "22:46"
   },
@@ -178,7 +176,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md [J10]",
-  "final": "2026-11-02 Grok 재작성본 그대로(4턴 さん 삭제, 5턴 !?)"
+  "final": "2026-11-02 Grok 재작성본 그대로(4턴 さん 삭제, 5턴 !?)",
+  "boost": "data/review/chaos/r1_love_c1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+  "boost_turns": [
+   7
+  ]
  },
  "twist_type": "slip"
 }

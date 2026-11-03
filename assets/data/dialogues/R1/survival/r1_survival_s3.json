@@ -130,11 +130,11 @@
   {
    "num": 7,
    "speaker": "B",
-   "ja": "合ってる合ってる！で、ユカは？",
-   "kana": "あってるあってる！で、ゆかは？",
-   "rd": "앗테루앗테루! 데, 유카와?",
-   "ko": "맞아 맞아! 그래서, 유카는?",
-   "note": "合ってる = 맞아 · で、〜は? = 그래서 ~는?(놀리며 유도)",
+   "ja": "…{name}は、かわいいよ。",
+   "kana": "…{name}は、かわいいよ。",
+   "rd": "… {name}와, 카와이이요.",
+   "ko": "…{name}는 귀여워.",
+   "note": "〜は、かわいいよ = ~는 귀여워 — 심쿵 반격",
    "tags": [
     "expr:合ってる",
     "expr:で?"
@@ -157,7 +157,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_survival_s3_grok_rewrite.md",
-  "final": "2026-11-03 Grok J13 전부 유지(5턴 '기억하기 쉬운 한 줄' 평)"
+  "final": "2026-11-03 Grok J13 전부 유지(5턴 '기억하기 쉬운 한 줄' 평)",
+  "boost": "data/review/chaos/r1_survival_s3_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+  "boost_turns": [
+   7
+  ]
  },
  "twist_type": "slip"
 }

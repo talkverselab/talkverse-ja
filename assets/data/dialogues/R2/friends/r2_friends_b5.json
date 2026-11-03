@@ -176,11 +176,11 @@
   {
    "num": 11,
    "speaker": "B",
-   "ja": "（笑）UFOはいらない。",
-   "kana": "（わらい）ゆーふぉーはいらない。",
-   "rd": "(와라이) UFO와 이라나이.",
-   "ko": "(웃음) UFO 는 필요 없어.",
-   "note": "b1 콜백 — 웃음으로 화해",
+   "ja": "…待つの嫌い。でも{name}は待っちゃう。だから怒ったの。",
+   "kana": "…まつのきらい。でも{name}はまっちゃう。だからおこったの。",
+   "rd": "… 마츠노 키라이. 데모 {name}와 맛차우. 다카라 오콧타노.",
+   "ko": "…기다리는 거 싫어. 근데 {name}는 기다리게 돼. 그래서 화낸 거야.",
+   "note": "待っちゃう = 기다리게 돼 — 〜ちゃう 무심코",
    "tags": [
     "callback:r2_friends_b1"
    ],
@@ -205,7 +205,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r2_friends_b5_grok_rewrite.md",
-  "final": "2026-11-03 Grok 4턴 「反省してる」는 침묵의 무게를 깨 미반영"
+  "final": "2026-11-03 Grok 4턴 「反省してる」는 침묵의 무게를 깨 미반영",
+  "boost": "data/review/chaos/r2_friends_b5_grok_boost.md: 턴 [11] 교체 · 요약: 카오스 없음 · 심쿵 11",
+  "boost_turns": [
+   11
+  ]
  },
  "twist_type": "emotion"
 }

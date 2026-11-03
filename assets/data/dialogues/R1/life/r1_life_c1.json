@@ -135,11 +135,11 @@
   {
    "num": 7,
    "speaker": "B",
-   "ja": "見えました！",
-   "kana": "みえました！",
-   "rd": "미에마시타!",
-   "ko": "보였어요!",
-   "note": "見えました = 보였어요",
+   "ja": "寒いので、早く食べてくださいね。",
+   "kana": "さむいので、はやくたべてくださいね。",
+   "rd": "사무이노데, 하야쿠 타베테쿠다사이네.",
+   "ko": "추우니까 빨리 드세요.",
+   "note": "寒いので = 추우니까 · 早く食べて = 빨리 드세요",
    "tags": [
     "expr:見える?"
    ],
@@ -165,7 +165,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_life_c1_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
+  "final": "2026-11-03 Grok 재작성 전부 유지",
+  "boost": "data/review/chaos/r1_life_c1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+  "boost_turns": [
+   7
+  ]
  },
  "twist_type": "chaos"
 }

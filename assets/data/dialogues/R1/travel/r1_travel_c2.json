@@ -146,26 +146,27 @@
   {
    "num": 8,
    "speaker": "B",
-   "ja": "それも正解w　おにぎり、最高。",
-   "kana": "それもせいかいw　おにぎり、さいこう。",
-   "rd": "소레모 세이카이 w 오니기리, 사이코오.",
-   "ko": "그것도 정답ㅋ 오니기리 최고.",
-   "note": "正解 = 정답 — 킥",
+   "ja": "また今度、一緒に並ぼう。俺が待つ。",
+   "kana": "またこんど、いっしょにならぼう。おれがまつ。",
+   "rd": "마타 콘도, 잇쇼니 나라보오. 오레가 마츠.",
+   "ko": "다음에 또 같이 줄 서자. 내가 기다릴게.",
+   "note": "また今度 = 다음에 또 · 俺が待つ = 내가 기다릴게",
    "tags": [
     "expr:正解",
     "expr:最高"
    ],
-   "new": [
-    "正解",
-    "おにぎり"
-   ],
+   "new": [],
    "ui": "bubble",
    "at": "11:34"
   }
  ],
  "review": {
   "grok_rewrite": "data/review/r1_travel_c2_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
+  "final": "2026-11-03 Grok 재작성 전부 유지",
+  "boost": "data/review/chaos/r1_travel_c2_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+  "boost_turns": [
+   8
+  ]
  },
  "twist_type": "reveal"
 }

@@ -151,11 +151,11 @@
   {
    "num": 8,
    "speaker": "B",
-   "ja": "曲は聴けw",
-   "kana": "きょくはきけw",
-   "rd": "쿄쿠와 키케 w",
-   "ko": "노래는 들어ㅋ",
-   "note": "聴け = 들어(명령형)",
+   "ja": "すぐ聴いてくれた。嬉しい。",
+   "kana": "すぐきいてくれた。うれしい。",
+   "rd": "스구 키이테쿠레타. 우레시이.",
+   "ko": "바로 들어 줘서 기뻐.",
+   "note": "聴いてくれた = 들어 줬다 · 嬉しい = 기쁘다",
    "tags": [
     "expr:w"
    ],
@@ -167,7 +167,11 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(1턴 どう?)",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_culture_c2_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+  "boost_turns": [
+   8
+  ]
  },
  "twist_type": "reveal"
 }

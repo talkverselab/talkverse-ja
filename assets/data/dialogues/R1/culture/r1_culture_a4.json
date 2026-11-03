@@ -95,11 +95,11 @@
   {
    "num": 5,
    "speaker": "C",
-   "ja": "3枚。{name}も一緒に行こう？",
-   "kana": "さんまい。{name}もいっしょにいこう？",
-   "rd": "3마이. {name}모 잇쇼니 이코오?",
-   "ko": "3장. {name}도 같이 갈래?",
-   "note": "〜も行く? = ~도 갈래?",
+   "ja": "3枚。{name}の分、最初に取ったんだ。",
+   "kana": "3まい。{name}のぶん、さいしょにとったんだ。",
+   "rd": "3마이. {name}노 분, 사이쇼니 톳탄다.",
+   "ko": "3장. {name} 분 먼저 구했어.",
+   "note": "〜の分 = ~의 몫 · 最初に = 맨 먼저",
    "tags": [
     "expr:一緒に行こう"
    ],
@@ -150,7 +150,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_culture_a4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(5턴 一緒に行こう)"
+  "final": "2026-11-03 Grok 반영(5턴 一緒に行こう)",
+  "boost": "data/review/chaos/r1_culture_a4_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+  "boost_turns": [
+   5
+  ]
  },
  "twist_type": "slip"
 }

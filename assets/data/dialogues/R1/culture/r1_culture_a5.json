@@ -135,22 +135,24 @@
   {
    "num": 8,
    "speaker": "B",
-   "ja": "（笑）伝えとく。",
-   "kana": "（わらい）つたえとく。",
-   "rd": "(와라이) 츠타에토쿠.",
-   "ko": "(웃음) 전해 둘게.",
-   "note": "伝えとく = 전해 둘게(〜ておく 축약)",
+   "ja": "{name}が言うと、ほんとにかっこいい。",
+   "kana": "{name}がいうと、ほんとにかっこいい。",
+   "rd": "{name}가 이우토, 혼토니 캇코이이.",
+   "ko": "{name}가 하면 진짜 멋있어.",
+   "note": "〜が言うと = ~가 말하면 · ほんとに = 정말로",
    "tags": [
     "form:ておく 축약"
    ],
-   "new": [
-    "伝える"
-   ]
+   "new": []
   }
  ],
  "review": {
   "grok_rewrite": "data/review/r1_culture_a5_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
+  "final": "2026-11-03 Grok 재작성 전부 유지",
+  "boost": "data/review/chaos/r1_culture_a5_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+  "boost_turns": [
+   8
+  ]
  },
  "twist_type": "reveal"
 }

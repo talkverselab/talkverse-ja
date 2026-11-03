@@ -77,11 +77,11 @@
   {
    "num": 4,
    "speaker": "A",
-   "ja": "{photo_word}！",
-   "kana": "{photo_word}！",
-   "rd": "{photo_word}!",
-   "ko": "{photo_word}!",
-   "note": "학습자 나라의 사진 구호(변수) — 반전: 구호가 다르다",
+   "ja": "{photo_word}！目、閉じた。鳩！",
+   "kana": "{photo_word}！め、とじた。はと！",
+   "rd": "{photo_word}! 메, 토지타. 하토!",
+   "ko": "{photo_word}! 눈 감았어. 비둘기!",
+   "note": "目、閉じた = 눈 감았어 · 鳩 = 비둘기",
    "tags": [
     "var:photo_word"
    ],
@@ -90,18 +90,16 @@
   {
    "num": 5,
    "speaker": "B",
-   "ja": "え、何それ？（爆笑）もう一枚！",
-   "kana": "え、なにそれ？（ばくしょう）もういちまい！",
-   "rd": "에, 나니 소레? (바쿠쇼오) 모오 이치마이!",
-   "ko": "어, 그게 뭐야? (폭소) 한 장 더!",
-   "note": "何それ? = 그게 뭐야? · もう一枚 = 한 장 더(枚 = 장)",
+   "ja": "これ、待ち受けにする。",
+   "kana": "これ、まちうけにする。",
+   "rd": "코레, 마치우케니 스루.",
+   "ko": "이거 배경화면으로 할게.",
+   "note": "待ち受け = 폰 배경화면 · 〜にする = ~로 하다",
    "tags": [
     "expr:何それ?",
     "expr:もう一枚"
    ],
-   "new": [
-    "一枚"
-   ]
+   "new": []
   },
   {
    "num": 6,
@@ -123,7 +121,12 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
   "final": "2026-11-03 Grok J19 반영(5턴 爆笑)",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 5.5자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 5.5자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_friends_a6_grok_boost.md: 턴 [4, 5] 교체 · 요약: 카오스 4 · 심쿵 5",
+  "boost_turns": [
+   4,
+   5
+  ]
  },
- "twist_type": "slip"
+ "twist_type": "chaos"
 }

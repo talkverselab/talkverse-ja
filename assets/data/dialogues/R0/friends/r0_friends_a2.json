@@ -87,18 +87,16 @@
   {
    "num": 5,
    "speaker": "B",
-   "ja": "{city}！いいな、行ってみたい。",
-   "kana": "{city}！いいな、いってみたい。",
-   "rd": "{city}! 이이나, 오코낫테미타이.",
-   "ko": "{city}! 좋겠다, 가 보고 싶어.",
-   "note": "いいな = 좋겠다(부러움) · 〜てみたい = ~해 보고 싶어",
+   "ja": "{name}さんの日本語、上手。",
+   "kana": "{name}さんのにほんご、じょうず。",
+   "rd": "{name}산노 니홍고, 조오즈.",
+   "ko": "{name}씨 일본어 잘해.",
+   "note": "日本語、上手 = 일본어 잘하네 — 칭찬 단골",
    "tags": [
     "expr:いいな",
     "form:てみたい"
    ],
-   "new": [
-    "行く"
-   ]
+   "new": []
   },
   {
    "num": 6,
@@ -119,7 +117,11 @@
  "review": {
   "grok_rewrite": "data/review/r1_friends_a2_grok_rewrite.md",
   "final": "2026-11-03 Grok J15: 5턴 そうなんだ 추가 제안은 억지라 미반영, 나머지 유지",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 7.7자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 7.7자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_friends_a2_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+  "boost_turns": [
+   5
+  ]
  },
  "twist_type": "slip"
 }

@@ -130,18 +130,16 @@
   {
    "num": 7,
    "speaker": "B",
-   "ja": "www → 草。笑ってるってこと。てかマジでこれ、チャットの草",
-   "kana": "www → くさ。わらってるってこと。てかまじでこれ、ちゃっとのくさ",
-   "rd": "www → 쿠사. 와랏테룻테코토. 테카 마지데 코레, 찻토노 쿠사",
-   "ko": "www → 풀. 웃고 있다는 뜻. 아니 진짜 이거, 채팅의 풀",
-   "note": "〜ってこと = ~라는 뜻",
+   "ja": "初コメ、{name}で嬉しい。",
+   "kana": "はつこめ、{name}でうれしい。",
+   "rd": "하츠코메, {name}데 우레시이.",
+   "ko": "첫 댓글, {name}라서 기뻐.",
+   "note": "初コメ = 첫 댓글 · 〜で嬉しい = ~라서 기뻐",
    "tags": [
     "expr:w",
     "form:ってこと"
    ],
-   "new": [
-    "笑う"
-   ],
+   "new": [],
    "ui": "bubble",
    "at": "15:04"
   },
@@ -164,7 +162,11 @@
  "review": {
   "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md",
   "final": "2026-11-03 Grok 반영(4턴 最高)",
-  "enrich": "r1_culture_a3_grok_enrich.md: 8턴 교체 · 킥: ‘무서워’라고 오타 냈다가 급하게 ‘귀여워 최고’로 고치고, 마지막에 草를 연발하는 상황. · 강화 재작성 v2 반영"
+  "enrich": "r1_culture_a3_grok_enrich.md: 8턴 교체 · 킥: ‘무서워’라고 오타 냈다가 급하게 ‘귀여워 최고’로 고치고, 마지막에 草를 연발하는 상황. · 강화 재작성 v2 반영",
+  "boost": "data/review/chaos/r1_culture_a3_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+  "boost_turns": [
+   7
+  ]
  },
  "twist_type": "slip"
 }

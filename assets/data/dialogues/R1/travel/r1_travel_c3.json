@@ -149,11 +149,11 @@
   {
    "num": 8,
    "speaker": "B",
-   "ja": "日本だからw　一番近いの。",
-   "kana": "にほんだからw　いちばんちかいの。",
-   "rd": "닛폰다카라 w 이치반 치카이노.",
-   "ko": "일본이니까ㅋ 가장 가까운 거.",
-   "note": "一番近いの = 가장 가까운 것 — 킥",
+   "ja": "大丈夫、そこで待ってて。迎えに行く。",
+   "kana": "だいじょうぶ、そこでまってて。むかえにいく。",
+   "rd": "다이조오부, 소코데 맛테테. 무카에니 이쿠.",
+   "ko": "괜찮아, 거기서 기다려. 마중 갈게.",
+   "note": "迎えに行く = 마중 갈게 · 待ってて = 기다리고 있어",
    "tags": [
     "expr:w",
     "expr:一番"
@@ -165,7 +165,11 @@
  ],
  "review": {
   "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
+  "final": "2026-11-03 Grok 재작성 전부 유지",
+  "boost": "data/review/chaos/r1_travel_c3_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+  "boost_turns": [
+   8
+  ]
  },
  "twist_type": "chaos"
 }

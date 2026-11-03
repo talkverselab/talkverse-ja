@@ -137,24 +137,26 @@
   {
    "num": 8,
    "speaker": "B",
-   "ja": "それで十分。見てみて。",
-   "kana": "それでじゅうぶん。みてみて。",
-   "rd": "소레데 주우훈. 미테미테.",
-   "ko": "그걸로 충분해. 봐 봐.",
-   "note": "それで十分 = 그걸로 충분 — 암기 한 줄·킥",
+   "ja": "今夜、一緒に見る？",
+   "kana": "こんや、いっしょにみる？",
+   "rd": "콘야, 잇쇼니 미루?",
+   "ko": "오늘 밤 같이 볼래?",
+   "note": "今夜 = 오늘 밤 · 一緒に見る? = 같이 볼래? — 권유",
    "tags": [
     "expr:見てみる",
     "expr:十分"
    ],
-   "new": [
-    "十分"
-   ]
+   "new": []
   }
  ],
  "review": {
   "grok_rewrite": "data/review/r1_culture_a1_grok_rewrite.md",
   "final": "2026-11-03 Grok 재작성 전부 유지",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 6.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  "level_note": "2026-11-02 길이 기준(턴당 평균 6.9자 ≤ 8.0)으로 왕초보(R0)에 배정",
+  "boost": "data/review/chaos/r0_culture_a1_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+  "boost_turns": [
+   8
+  ]
  },
  "twist_type": "reveal"
 }
