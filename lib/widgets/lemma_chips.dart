@@ -23,21 +23,25 @@ class LemmaChips extends StatelessWidget {
       future: WordService.instance.byLemmas(lemmas.map((l) => l.base), readings: {for (final l in lemmas) l.base: l.reading}),
       builder: (context, snap) {
         final found = snap.data ?? const {};
-        return Wrap(
-          spacing: 6,
-          runSpacing: 6,
-          children: [
-            for (final l in lemmas)
-              _Chip(
-                label: l.base,
-                gloss: found[l.base]?.gloss,
-                compact: compact,
-                onTap: found[l.base] == null ? null : () => showWordSheet(context, found[l.base]!),
-              ),
-            if (snap.connectionState == ConnectionState.done && found.isEmpty)
-              Padding(padding: const EdgeInsets.only(top: 2), child: Text(tr('단어장에 없는 말'), style: const TextStyle(fontSize: 10, color: AppColors.muted))),
-          ],
-        );
+        final chips = [
+          for (final l in lemmas)
+            _Chip(
+              label: l.base,
+              gloss: found[l.base]?.gloss,
+              compact: compact,
+              onTap: found[l.base] == null ? null : () => showWordSheet(context, found[l.base]!),
+            ),
+          if (snap.connectionState == ConnectionState.done && found.isEmpty)
+            Padding(padding: const EdgeInsets.only(top: 2), child: Text(tr('단어장에 없는 말'), style: const TextStyle(fontSize: 10, color: AppColors.muted))),
+        ];
+        // 폰(compact)은 한 줄 가로 스크롤 — 칩이 여러 줄로 쌓여 그림을 밀어내지 않게(사용자 지시 2026-11-04 "짤린다").
+        if (compact) {
+          return SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(children: [for (var i = 0; i < chips.length; i++) ...[if (i > 0) const SizedBox(width: 6), chips[i]]]),
+          );
+        }
+        return Wrap(spacing: 6, runSpacing: 6, children: chips);
       },
     );
   }
