@@ -43,7 +43,7 @@ def load_expr():
 def load_region_vocab():
     vocab = defaultdict(set)
     for r in csv.DictReader(open(REGION_CSV, encoding='utf-8-sig')):
-        vocab[r['region']].add(r['word'])
+        vocab[{'R5': 'R4'}.get(r['region'], r['region'])].add(r['word'])  # 절벽 v2 절대 기준: 80% 밖(R5)은 R4 회화 어휘로
     cum = {}
     acc = set()
     for reg in REGION_ORDER:

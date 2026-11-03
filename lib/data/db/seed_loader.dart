@@ -31,7 +31,7 @@ class SeedLoader {
   }
 
   /// 절벽 단어표만 다시 채우기(2026-11-03 절벽 v2 — 다른 표는 다시 넣으면 중복 오류라 단어표만, 순위가 기본키라 덮어쓰기)
-  static const _kWordsKey = 'words_seeded_v2';
+  static const _kWordsKey = 'words_seeded_v3'; // v3: 절대 기준 경계(R5 추가)
   Future<void> reseedWordsIfNeeded() async {
     final prefs = await SharedPreferences.getInstance();
     if (prefs.getBool(_kWordsKey) == true) return;

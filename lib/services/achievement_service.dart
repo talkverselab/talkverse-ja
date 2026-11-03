@@ -149,7 +149,7 @@ class AchievementService {
       knownWords.add(w);
       sum += f;
     }
-    const cliffs = [107, 179, 603, 2500]; // 절벽 v2(2026-11-03)
+    const cliffs = [62, 96, 251, 778]; // 절벽 v2 절대 기준(2026-11-03, 누적 55/60/70/80%)
     final next = cliffs.firstWhere((c) => c > knownWords.length, orElse: () => 2500);
     return (pct: sum * 100, known: knownWords.length, nextCliff: next, toNext: (next - knownWords.length).clamp(0, 9999));
   }

@@ -6,7 +6,7 @@
 - 단위: unidic 형태소. 조사·조동사(た·ます·ない…)·접사도 각각 한 토큰으로 세어 분자·분모 모두에 넣는다.
   용언(動詞·形容詞·形状詞·助動詞)은 기본형(書字形基本形 orthBase). 기호·보조기호·공백·숫자·로마자는 뺀다. 고유명사·감동사는 남긴다.
 - frequency = 토큰 수 ÷ 전체 토큰 수(가중 없음), cum_pct = 1위부터 누적.
-- 구간: 2,500위 최대 누적 max 를 80%로 보고 비례 — R1 = cum ≥ max×55/80 첫 순위, R2 = ×60/80, R3 = ×70/80, R4 = 2,500(다른 언어와 같음).
+- 구간(절대, 2026-11-03 통일): 누적 55·60·70·80% 에 처음 닿는 순위가 R1~R4 끝, 80% 밖은 R5. (처음엔 최대치 비례 55/60/70/80÷80×max 로 R1 107·R2 179·R3 603 이었음)
 - 작품당 자막 1판, 청각장애인용 소리 설명 제거. 공개 저장소에는 말뭉치 이름을 적지 않는다.
 출력: lang_ja_top2500.csv(rank,word,pos,frequency,cum_pct,region) · ja_cliff_summary.json
 """
@@ -65,16 +65,17 @@ top = cnt.most_common(2500); acc = 0.0; rows = []
 for i, (w, c) in enumerate(top, 1):
     fr = c / total; acc += fr; rows.append([i, w, pos[w], round(fr, 8), round(acc * 100, 4)])
 mx = rows[-1][4]; cut = {}
-for name, p in (('R1', 55), ('R2', 60), ('R3', 70)):
-    cut[name] = next(r[0] for r in rows if r[4] >= mx * p / 80)
-cut['R4'] = 2500
+# 절대 기준(2026-11-03 사용자 지시, 문법 세션 경유 — 19개 언어와 통일): 누적 55·60·70·80% 에 처음 닿는 순위, 못 닿으면 None(미도달)
+for name, p in (('R1', 55), ('R2', 60), ('R3', 70), ('R4', 80)):
+    cut[name] = next((r[0] for r in rows if r[4] >= p), None)
 for r in rows:
-    r.append('R1' if r[0] <= cut['R1'] else 'R2' if r[0] <= cut['R2'] else 'R3' if r[0] <= cut['R3'] else 'R4')
+    k = r[0]
+    r.append(next((n for n in ('R1', 'R2', 'R3', 'R4') if cut[n] and k <= cut[n]), 'R5'))
 with open(f'{out}/lang_ja_top2500.csv', 'w', encoding='utf-8', newline='') as fo:
     wr = csv.writer(fo); wr.writerow(['rank', 'word', 'pos', 'frequency', 'cum_pct', 'region']); wr.writerows(rows)
-summ = {'docs': ndoc, 'tokens': total, 'types': len(cnt), 'max_cum_2500': mx, 'R1': cut['R1'], 'R2': cut['R2'], 'R3': cut['R3'], 'R4': 2500,
-        'cum_at': {k: rows[v - 1][4] for k, v in cut.items()},
-        'method': 'fugashi+unidic 형태소, 조사·조동사 각각 한 토큰, 용언 기본형(orthBase), 기호·숫자·로마자 제외, 가중 없음, 비례 구간(55/60/70/80 ÷ 80 × max)',
+summ = {'docs': ndoc, 'tokens': total, 'types': len(cnt), 'max_cum_2500': mx, 'R1': cut['R1'], 'R2': cut['R2'], 'R3': cut['R3'], 'R4': cut['R4'],
+        'cum_at': {k: (rows[v - 1][4] if v else None) for k, v in cut.items()}, 'proportional_old': {'R1': 107, 'R2': 179, 'R3': 603, 'R4': 2500},
+        'method': 'fugashi+unidic 형태소, 조사·조동사 각각 한 토큰, 용언 기본형(orthBase), 기호·숫자·로마자 제외, 가중 없음, 절대 구간(누적 55/60/70/80% 첫 순위, 80% 밖 = R5)',
         'corpus': f'일본 제작 영화·드라마 대사 자막 {ndoc}편(작품당 1판), 청각장애인용 소리 설명 제거', 'date': time.strftime('%Y-%m-%d')}
 json.dump(summ, open(f'{out}/ja_cliff_summary.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
 print(json.dumps(summ, ensure_ascii=False))
