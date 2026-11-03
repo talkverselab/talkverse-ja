@@ -164,7 +164,9 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
                   Expanded(flex: 6, child: cut),
                 ])
               : Column(children: [
-                  SizedBox(height: (c.maxHeight * 0.44).clamp(240, 520), child: cut),
+                  // 폰: 그림은 3:2 비율 그대로(잘리지 않게), 캡션은 자연 높이(길면 안에서 스크롤) — 위 칸 최대 62%, 나머지가 스크립트.
+                  // 넓은 칸(아이패드 세로): 전처럼 고정 높이.
+                  if (wide) SizedBox(height: (c.maxHeight * 0.44).clamp(240, 520), child: cut) else ConstrainedBox(constraints: BoxConstraints(maxHeight: c.maxHeight * 0.62), child: cut),
                   const Divider(height: 1, color: AppColors.line),
                   Expanded(child: script),
                 ]),
@@ -296,7 +298,7 @@ class _CutPanel extends StatelessWidget {
     final wide = isWide(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(wide ? 16 : 12, 10, wide ? 16 : 12, 10),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+      child: Column(mainAxisSize: wide ? MainAxisSize.max : MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         if (wide)
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
@@ -308,9 +310,13 @@ class _CutPanel extends StatelessWidget {
               Text(d.speakerName(turn.speaker), style: const TextStyle(fontSize: 11, color: AppColors.muted, fontWeight: FontWeight.w700)),
             ]),
           ),
-        Expanded(child: SceneCut(dialogue: d, turn: turn)), // 문장은 아래 _Caption 에(그림을 덮지 않음)
+        // 문장은 아래 _Caption 에(그림을 덮지 않음). 폰은 그림을 3:2 비율로 두고(사용자 지시 2026-11-04 "짤린다") 캡션이 길면 캡션만 스크롤.
+        if (wide) Expanded(child: SceneCut(dialogue: d, turn: turn)) else AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn)),
         const SizedBox(height: 10),
-        _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak),
+        if (wide)
+          _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak)
+        else
+          Flexible(child: SingleChildScrollView(child: _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak))),
       ]),
     );
   }
