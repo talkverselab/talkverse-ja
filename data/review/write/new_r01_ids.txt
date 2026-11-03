@@ -33,4 +33,6 @@ r1_friends_c5
 r1_friends_a6
 r1_travel_a7
 r1_travel_b7
-r1_travel_c4
+r1_travel_c4r0_life_a7
+r0_love_c5
+r1_love_a6

@@ -93,7 +93,7 @@ def do(eid):
             last = 'OK'
         else:
           # 그림은 새 대화에서만 안정적으로 나온다(2026-11-03: 긴 대화에서 그림 없이 "완료"만 답함) → 요청마다 프로젝트 첫 화면으로
-          c.call('Page.navigate', url='https://grok.com/' + tab.split('?')[0] if tab.startswith('project/') and len(tab) > 20 else 'https://grok.com/project/832d5dbe-6d57-4114-b17d-d4a52e41bf45'); time.sleep(8)
+          c.call('Page.navigate', url=os.environ.get('GROK_HOME', 'https://grok.com/project/832d5dbe-6d57-4114-b17d-d4a52e41bf45')); time.sleep(8)
           r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, pf.replace('_prompt.md', '_answer.md'),
                             '--tab', tab, '--wait', '90', '--attach', f'{SHEET},{TONE}'], capture_output=True, text=True)
           last = (r.stdout.strip().splitlines() or [''])[-1]

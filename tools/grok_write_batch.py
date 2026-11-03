@@ -20,7 +20,12 @@ def normalize(path, speakers):
     inv = {v: k for k, v in speakers.items()}
     inv.update({'{name}': 'A', '学習者': 'A', 'A': 'A', 'B': 'B', 'C': 'C', 'D': 'D'})
     lines = []
+    k = 0
     for ln in open(path, encoding='utf-8').read().splitlines():
+        if re.match(r'^\s*([A-D]|\{name\}|[^\s:：/0-9]{1,8})\s*[:：].*/', ln) and not re.match(r'^\s*\d', ln) and not ln.strip().startswith(('제목', '추천')):
+            k += 1; ln = f'{k} ' + ln.strip()  # 번호 없이 답한 줄에 차례 번호(2026-11-03 전문가 모델)
+        elif re.match(r'^\s*\d{1,2}\s', ln):
+            k = int(re.match(r'^\s*(\d{1,2})', ln).group(1))
         m = re.match(r'^\s*(\d{1,2})\s*([^:：/]{1,12}?)\s*[:：]\s*(.*)$', ln)
         if m and m.group(2).strip() in inv:
             ln = f"{m.group(1)} {inv[m.group(2).strip()]}: {m.group(3)}"
@@ -48,7 +53,7 @@ for i, s in enumerate(specs, 1):
     # 편마다 새 대화(긴 대화에서 Grok 이 한국어를 빼고 대충 씀 — 2026-11-03)
     sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
     g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9230')
-    _c = g.CDP(g.tab(tab)); _c.call('Page.navigate', url='https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222'); time.sleep(8)
+    _c = g.CDP(g.tab(tab)); _c.call('Page.navigate', url=os.environ.get('GROK_HOME', 'https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222')); time.sleep(8)
     def send():
         r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, dst, '--tab', tab, '--wait', '90'],
                            capture_output=True, text=True)
@@ -64,7 +69,7 @@ for i, s in enumerate(specs, 1):
         else:
             sys.path.insert(0, '/Users/talkverse/Hanja/tools'); import grok_cdp as g
             g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9230')
-            c = g.CDP(g.tab(tab)); c.call('Page.navigate', url='https://grok.com/' + tab if tab.count('-') >= 4 else 'https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222'); time.sleep(10)
+            c = g.CDP(g.tab(tab)); c.call('Page.navigate', url=os.environ.get('GROK_HOME', 'https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222')); time.sleep(10)
             last, err = send()
     print(s['id'], last, flush=True)
     if last.startswith('LIMIT'):
