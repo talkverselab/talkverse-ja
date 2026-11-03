@@ -5,6 +5,8 @@ import 'core/theme.dart';
 import 'data/db/app_database.dart';
 import 'data/db/seed_loader.dart';
 import 'screens/main_screen.dart';
+import 'screens/sync_screen.dart';
+import 'services/content_sync.dart';
 import 'services/ko_reading.dart';
 import 'core/l10n.dart';
 import 'review/review_service.dart';
@@ -30,7 +32,9 @@ void main() async {
   await Entitlement.load();
   Purchase.configure({'ja': ('com.talkverse.japaneseUniverse.lifetime', 'lang_ja')});
   await _setOrientations(); // 폰은 세로 고정, 태블릿·폴드 펼침(짧은 변 600 이상)은 회전 허용
-  runApp(const JapaneseUniverseApp());
+  // 그림(장면 컷·단어 그림) 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(사용자 지시 2026-11-04)
+  final needSync = await ContentSync.instance.init(large: _wide ?? false);
+  runApp(JapaneseUniverseApp(syncFirst: needSync));
 }
 
 bool? _wide;
@@ -49,7 +53,8 @@ Future<void> _setOrientations([double? shortest]) async {
 }
 
 class JapaneseUniverseApp extends StatelessWidget {
-  const JapaneseUniverseApp({super.key});
+  final bool syncFirst;
+  const JapaneseUniverseApp({super.key, this.syncFirst = false});
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +68,7 @@ class JapaneseUniverseApp extends StatelessWidget {
         theme: AppTheme.light(),
         darkTheme: AppTheme.dark(),
         themeMode: ThemeMode.light,
-        home: const MainScreen(),
+        home: syncFirst ? const SyncScreen(next: MainScreen()) : const MainScreen(),
         // 아이폰 Dynamic Type·갤럭시 글자 크기 설정이 커도 타일이 깨지지 않게 1.2배까지만
         builder: (context, child) {
           final mq = MediaQuery.of(context);

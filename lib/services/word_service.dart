@@ -115,6 +115,26 @@ class WordService {
   Future<List<KanjiReadingRow>> readingsFor(String char) =>
       (appDb.select(appDb.kanjiReadings)..where((r) => r.char.equals(char))).get();
 
+  /// 기본형(표면형) 또는 읽기(가나)로 단어장 항목 찾기 — 문장 레마 칩용(2026-11-04). 반환: 기본형 → 단어(표면형 일치 우선, 없으면 가나 일치).
+  Future<Map<String, WordEntry>> byLemmas(Iterable<String> bases, {Map<String, String> readings = const {}}) async {
+    final keys = bases.toSet().where((b) => b.isNotEmpty).toList();
+    if (keys.isEmpty) return const {};
+    final rds = readings.values.where((r) => r.isNotEmpty).toSet().toList();
+    final rows = await (appDb.select(appDb.jlptWords)..where((w) => w.surface.isIn(keys) | (rds.isEmpty ? const Constant(false) : w.kana.isIn(rds)))).get();
+    final out = <String, WordEntry>{};
+    for (final b in keys) {
+      final bySurface = rows.where((r) => r.surface == b).toList()
+        ..sort((a, c) => (a.rank ?? 1 << 30).compareTo(c.rank ?? 1 << 30));
+      if (bySurface.isNotEmpty) { out[b] = WordEntry(bySurface.first); continue; }
+      final rd = readings[b];
+      if (rd != null && rd.isNotEmpty) {
+        final byKana = rows.where((r) => r.kana == rd && !r.surface.runes.any((c) => c >= 0x4E00 && c <= 0x9FFF)).toList();
+        if (byKana.isNotEmpty) out[b] = WordEntry(byKana.first);
+      }
+    }
+    return out;
+  }
+
   Future<WordEntry?> byId(int id) async {
     final r = await (appDb.select(appDb.jlptWords)..where((w) => w.id.equals(id))).getSingleOrNull();
     return r == null ? null : WordEntry(r);

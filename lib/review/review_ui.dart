@@ -1,6 +1,7 @@
 // Talkverse 공통 복습 화면 — 오늘 할 카드 칸 · 전체 화면 세션 · 빠른 분류 · 설정.
 // 앱은 카드 내용을 ReviewFaceResolver 로 넘긴다(id → 앞/뒷면). 색은 앱 테마(Theme.of) 를 따른다.
 import 'dart:io';
+import '../services/content_sync.dart';
 
 import 'package:flutter/material.dart';
 
@@ -199,7 +200,7 @@ class _ReviewSessionScreenState extends State<ReviewSessionScreen> {
       // http(s) 주소면 네트워크 그림(auth.talkverse.uk/art/… 등), 아니면 번들 에셋.
       final src = face.asset!;
       image = src.startsWith('http://') || src.startsWith('https://')
-          ? Image.network(src, fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink())
+          ? Image(image: artProvider(src), fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink())
           : Image.asset(src, fit: BoxFit.contain, errorBuilder: (_, __, ___) => const SizedBox.shrink());
     }
     return Padding(

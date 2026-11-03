@@ -9,35 +9,32 @@ import 'app_database.dart';
 
 class SeedLoader {
   // v2: 한자 DB (JLPT 2,285) + JLPT 어휘·후리가나 분절 (7,900)
-  static const _kSeededKey = 'db_seeded_v7'; // v7: 자동 변환 오류 표기 61어 삭제(8,525어), v6: 급수 없음 545어 한국어 뜻, v5: N2·N1 4,442 (v4: N3 2,135, v3: N5·N4 1,225)
 
   final AppDatabase db;
   SeedLoader(this.db);
 
+  /// 번들 `assets/data/version.json` 의 `db`(업데이트 번호)와 저장된 번호가 다르면 DB 를 전부 다시 채운다(사용자 지시 2026-11-04).
+  /// 옛 키(`db_seeded_v7`·`words_seeded_v3`)는 더 쓰지 않는다 — 번호는 version.json 한 곳에서만 올린다.
+  static const _kDbVersion = 'db_version';
   Future<void> seedIfNeeded() async {
     final prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool(_kSeededKey) == true) {
-      await reseedWordsIfNeeded();
-      return;
-    }
-
+    final bundled = await bundledVersion();
+    if (prefs.getInt(_kDbVersion) == bundled) return;
     await _seedKanji();
     await _seedJlptWords();
-    await _seedWords();
-    await _seedTurns();
-
-    await prefs.setBool(_kSeededKey, true);
-    await prefs.setBool(_kWordsKey, true);
-  }
-
-  /// 절벽 단어표만 다시 채우기(2026-11-03 절벽 v2 — 다른 표는 다시 넣으면 중복 오류라 단어표만, 순위가 기본키라 덮어쓰기)
-  static const _kWordsKey = 'words_seeded_v3'; // v3: 절대 기준 경계(R5 추가)
-  Future<void> reseedWordsIfNeeded() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (prefs.getBool(_kWordsKey) == true) return;
     await db.delete(db.words).go();
     await _seedWords();
-    await prefs.setBool(_kWordsKey, true);
+    await _seedTurns();
+    await prefs.setInt(_kDbVersion, bundled);
+  }
+
+  static Future<int> bundledVersion() async {
+    try {
+      final j = json.decode(await rootBundle.loadString('assets/data/version.json')) as Map<String, dynamic>;
+      return (j['db'] as num).toInt();
+    } catch (_) {
+      return 0;
+    }
   }
 
   static String _hira(String s) => String.fromCharCodes(

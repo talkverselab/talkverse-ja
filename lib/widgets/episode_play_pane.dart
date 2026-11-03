@@ -1,4 +1,5 @@
 import 'dart:async';
+import '../services/content_sync.dart';
 
 import 'package:flutter/material.dart';
 
@@ -11,6 +12,8 @@ import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
+import 'lemma_chips.dart';
+import 'learner_setup_dialog.dart';
 import '../services/tts_service.dart';
 import 'achievement_desk.dart';
 import 'selectable_ja_text.dart';
@@ -49,7 +52,13 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   @override
   void initState() {
     super.initState();
-    if (widget.autoPlay) WidgetsBinding.instance.addPostFrameCallback((_) => _play());
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      if (!mounted) return;
+      // 대사에 {name} 자리가 있는데 이름이 없으면 먼저 묻는다(앱 켠 뒤 한 번)
+      await ensureLearnerName(context, needed: widget.dialogue.turns.any((t) => t.ja.contains('{name}')));
+      if (mounted) setState(() {});
+      if (widget.autoPlay && mounted) _play();
+    });
   }
 
   @override
@@ -299,7 +308,7 @@ class _CutPanel extends StatelessWidget {
               Text(d.speakerName(turn.speaker), style: const TextStyle(fontSize: 11, color: AppColors.muted, fontWeight: FontWeight.w700)),
             ]),
           ),
-        Expanded(child: SceneCut(dialogue: d, turn: turn, bubble: true)),
+        Expanded(child: SceneCut(dialogue: d, turn: turn)), // 문장은 아래 _Caption 에(그림을 덮지 않음)
         const SizedBox(height: 10),
         _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak),
       ]),
@@ -332,6 +341,7 @@ class _Caption extends StatelessWidget {
               if (showKana && turn.kana.isNotEmpty && turn.kana != turn.ja) Text(LearnerPrefs.fill(turn.kana), style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
               if (showRd && turn.rd.isNotEmpty) Text(LearnerPrefs.fill(turn.rd, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
               if (showKo) Padding(padding: const EdgeInsets.only(top: 2), child: Text(LearnerPrefs.fill(turn.ko, ko: true), style: const TextStyle(fontSize: 13.5, color: AppColors.sumiLight, height: 1.35))),
+              if (turn.lemmas.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 8), child: LemmaChips(turn: turn, compact: !wide)),
             ]),
           ),
           IconButton(onPressed: onSpeak, icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 26)),
@@ -437,7 +447,7 @@ class _ControlBar extends StatelessWidget {
   }
 }
 
-/// 장면 컷: 장면 그림 → 단어 그림 → 장면 카드. 둥근 틀, 컷 전환 400ms 페이드, 말풍선(현재 대사) 오버레이.
+/// 장면 컷: 장면 그림 → 단어 그림 → 장면 카드. 둥근 틀, 컷 전환 400ms 페이드. `bubble` 이면 현재 대사를 그림 **아래 띠**로(그림을 덮지 않음 — 사용자 지시 2026-11-04).
 class SceneCut extends StatelessWidget {
   final Dialogue dialogue;
   final DialogueTurn turn;
@@ -467,35 +477,34 @@ class SceneCut extends StatelessWidget {
       future: _pick(),
       builder: (context, snap) {
         final p = snap.data;
+        final pic = Stack(fit: StackFit.expand, children: [
+          if (p == null)
+            _SceneCard(dialogue: dialogue, turn: turn)
+          else
+            Image(image: artProvider(p.url), fit: p.word == null ? BoxFit.cover : BoxFit.contain, errorBuilder: (_, _, _) => _SceneCard(dialogue: dialogue, turn: turn)),
+          if (p?.word != null)
+            Positioned(
+              left: 10,
+              bottom: 8,
+              child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(color: AppColors.washi.withValues(alpha: 0.9), borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
+                child: Text(p!.word!, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+              ),
+            ),
+        ]);
         return LayoutBuilder(builder: (context, c) => AnimatedSwitcher(
           duration: const Duration(milliseconds: 400),
           child: Container(
             key: ValueKey('${turn.num}:${p?.url}'),
             clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(color: AppColors.washiDeep, border: Border.all(color: AppColors.line), borderRadius: BorderRadius.circular(18), boxShadow: kCardShadow),
-            child: Stack(fit: StackFit.expand, children: [
-              if (p == null)
-                _SceneCard(dialogue: dialogue, turn: turn)
-              else
-                Image.network(p.url, fit: p.word == null ? BoxFit.cover : BoxFit.contain, errorBuilder: (_, _, _) => _SceneCard(dialogue: dialogue, turn: turn)),
-              if (p?.word != null)
-                Positioned(
-                  left: 10,
-                  bottom: 8,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                    decoration: BoxDecoration(color: AppColors.washi.withValues(alpha: 0.9), borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
-                    child: Text(p!.word!, style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-                  ),
-                ),
-              if (bubble)
-                Positioned(
-                  top: 12,
-                  left: me ? null : 12,
-                  right: me ? 12 : null,
-                  child: _SpeechBubble(text: LearnerPrefs.fill(turn.ja), tail: me ? _Tail.right : _Tail.left, maxWidth: c.maxWidth * 0.72, small: c.maxHeight < 220),
-                ),
-            ]),
+            child: bubble
+                ? Column(children: [
+                    Expanded(child: pic),
+                    _LineStrip(speaker: dialogue.speakerName(turn.speaker), me: me, text: LearnerPrefs.fill(turn.ja), small: c.maxHeight < 220),
+                  ])
+                : pic,
           ),
         ));
       },
@@ -503,32 +512,27 @@ class SceneCut extends StatelessWidget {
   }
 }
 
-enum _Tail { left, right }
-
-class _SpeechBubble extends StatelessWidget {
+/// 그림 아래 대사 띠 — 화자 이름(학습자 = 포인트색) + 한 줄. 그림을 덮지 않는다.
+class _LineStrip extends StatelessWidget {
+  final String speaker;
+  final bool me;
   final String text;
-  final _Tail tail;
-  final double maxWidth;
   final bool small;
-  const _SpeechBubble({required this.text, required this.tail, required this.maxWidth, this.small = false});
+  const _LineStrip({required this.speaker, required this.me, required this.text, this.small = false});
   @override
-  Widget build(BuildContext context) => ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: maxWidth.clamp(120, 360)),
-        child: Container(
-          padding: EdgeInsets.fromLTRB(small ? 10 : 14, small ? 6 : 10, small ? 10 : 14, small ? 6 : 10),
-          decoration: BoxDecoration(
-            color: AppColors.washi.withValues(alpha: 0.96),
-            border: Border.all(color: AppColors.line),
-            borderRadius: BorderRadius.only(
-              topLeft: const Radius.circular(18),
-              topRight: const Radius.circular(18),
-              bottomLeft: Radius.circular(tail == _Tail.left ? 4 : 18),
-              bottomRight: Radius.circular(tail == _Tail.right ? 4 : 18),
-            ),
-            boxShadow: kCardShadow,
+  Widget build(BuildContext context) => Container(
+        width: double.infinity,
+        padding: EdgeInsets.fromLTRB(12, small ? 6 : 8, 12, small ? 6 : 8),
+        decoration: const BoxDecoration(color: AppColors.washi, border: Border(top: BorderSide(color: AppColors.line))),
+        child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+          Container(
+            margin: const EdgeInsets.only(top: 3, right: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 2),
+            decoration: BoxDecoration(color: me ? AppColors.beni : AppColors.ai, borderRadius: BorderRadius.circular(8)),
+            child: Text(speaker, style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: Colors.white)),
           ),
-          child: Text(text, maxLines: small ? 2 : 4, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: small ? 12 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
-        ),
+          Expanded(child: Text(text, maxLines: small ? 2 : 3, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: small ? 12.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35))),
+        ]),
       );
 }
 
