@@ -169,8 +169,14 @@ def git_push(msg):
     print('PUSHED', msg, flush=True)
     # R2·D1 에도 직접(2026-11-03 사용자 "업로드허용" — uk 세션은 ja 를 더 쓸어 올리지 않음)
     eps = [e + ('_f' if FEMALE else '') for e in (re.findall(r'[A-Za-z0-9_]+', msg.split(':', 1)[1]) if ':' in msg else [])]
-    u = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/scene_upload.py')] + eps, capture_output=True, text=True)
-    print('UPLOAD', (u.stdout.strip().splitlines() or ['?'])[-1], flush=True)
+    for attempt in (1, 2):  # 2026-11-04 밤샘에서 5묶음(30편)이 조용히 실패 — 실패 사유를 남기고 한 번 더
+        u = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/scene_upload.py')] + eps, capture_output=True, text=True)
+        out = (u.stdout.strip().splitlines() or [''])[-1]
+        if u.returncode == 0 and out.startswith('DONE'):
+            print('UPLOAD', out, flush=True); break
+        err = (u.stderr.strip().splitlines() or [''])[-1]
+        print(f'UPLOAD FAIL({attempt}) rc={u.returncode} {out} | {err[:200]}', flush=True)
+        time.sleep(10)
 
 done, failed = [], []
 for eid in ids:
