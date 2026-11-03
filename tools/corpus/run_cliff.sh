@@ -7,6 +7,6 @@ D=~/corpus/ja; OUT="$(cd "$(dirname "$0")/../.." && pwd)/data/corpus/cliff_v2"
 mkdir -p "$D" "$OUT"
 $PY -c "import unidic,os;print(os.path.exists(os.path.join(unidic.DICDIR,'mecabrc')))" | grep -q True || $PY -m unidic download
 [ -s "$D/ja_raw.zip" ] || curl -sL -o "$D/ja_raw.zip" "$JA_SUB_URL"  # 주소는 ~/corpus/README_local.txt(저장소 밖)
-$PY "$(dirname "$0")/select_titles.py" "$D/ja_raw.zip" Q17 "$D/jp_titles.txt"
+set -a; . ~/corpus/README_local.txt 2>/dev/null || true; set +a; $PY "$(dirname "$0")/select_titles.py" "$D/ja_raw.zip" Q17 "$D/jp_titles.txt"
 $PY "$(dirname "$0")/cliff_ja.py" "$D/ja_raw.zip" "$OUT" --only "$D/jp_titles.txt"
 echo CLIFF_DONE

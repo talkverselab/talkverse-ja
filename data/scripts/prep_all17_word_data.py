@@ -7,7 +7,7 @@ from pathlib import Path
 
 DATA = Path("D:/OneDrive/BOOKS/_assets/data")
 RAW_OPUS = Path(r"D:\OneDrive\DATA_Raw\raw_공개 말뭉치")
-RAW_DB2 = Path(r"D:\OneDrive\DATA_Raw\db2")
+RAW_DB2 = Path(r"D:\OneDrive\DATA_Raw\\db2")
 RAW_EVB = Path(r"D:\OneDrive\DATA_Raw\bicorpus")
 RAW_WEBCORPUS = Path(r"D:\OneDrive\DATA_Raw\webcorpus")
 
