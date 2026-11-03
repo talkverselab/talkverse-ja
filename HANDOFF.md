@@ -45,13 +45,16 @@
 - 강화 재작성 v2(`tools/prompts/rewrite_grok_v2.md`, `data/review/*_grok_enrich*`)는 보류 — Grok 스크립트 변경은 사용자가 요청할 때.
 - 아이콘은 talkverse.uk 세션 담당. 메모·문서는 덧붙이지 말고 전체 다시 쓰기.
 
-## 4. 다음 할 일
+## 4. 다음 할 일 (2026-11-03 오후 기준)
 
-1. Zealot 은 CI 빌드(7b79bc4) 뒤 `tools/zealot_push.sh --ci` 로 올려 주소 보고(빌드 37 이후 미갱신).
-0. 언어앱 공통 프롬프터 `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md` 를 2026-11-02 밤 전체 다시 씀(순서 캐릭터→UX→아이패드 빌드→회화, Grok 은 한자 세션 경유) — uk 세션에 "배포 가능" 전달. 이 문서가 다른 언어앱의 기준.
-2. 사용자 결정 대기: 단어 메뉴 시안 01(`data/review/uxui/sian_words_01.*`) 확정 → 적용 · 장면 컷 제작 착수(샘플 1편 = 4컷, `chars_ja_v1.jpg` 첨부) · 인앱 상품 등록(사용자 콘솔) · 다이얼로그 작성 재개 · 맞춤 회화 워커 재개(= `cp tools/launchd/com.talkverse.ja.custom-script.plist ~/Library/LaunchAgents/ && launchctl bootstrap gui/501 ~/Library/LaunchAgents/com.talkverse.ja.custom-script.plist`, 끝까지 2회 성공 확인됨 `ja-4inaalel`·`ja-fao34isa`).
-3. 성과 데스크 폰 레이아웃 다듬기, 홈 「오늘의 작은 성과」 카드(선택).
-4. 장면 그림 들어오면 턴 `art` 채우기(A 그림은 성별별 `art_m`/`art_f` 허용 예정).
+**Grok 주간 한도 도달 — 11월 9일 초기화**(사용자에게 한도 올릴지 물음, 답 대기). 그 전에는 Grok 작업 없음. 재개 순서:
+1. 신작 4편 재요청: r0_life_a7(빵집 はい)·r0_love_c5(단톡방 하트)·r1_love_a6·r1_friends_a5(무한리필) — `tools/grok_write_batch.py data/review/write/specs_r01.json --tpl tools/prompts/write_grok_r01.md`(있는 답은 건너뜀) → `tools/write_to_json.py` → 검사기·턴 설명.
+2. 바뀐 장면 컷 118컷(63편) — 대사가 바뀐 컷은 그림 저장소에서 지웠고 R2·D1 엔 옛 그림이 남아 앱에 보임. `tools/run_recut.sh`(PID 인자 없이) 또는 `tools/grok_scene_batch.py <편id...> --push` — 없는 컷만 요청하고 R2·D1 업로드까지.
+3. 신작 36편(+4편)의 장면 컷 — `data/review/write/new_r01_ids.txt`.
+4. 조연 캐릭터 시트 2장(직장: 다나카·부장·과장·미사키 / 학교·오사카: 하야시·민·호세·집주인) → 장면 컷 요청에 첨부. 여자 학습자 컷 한 벌(프로필 성별).
+5. Grok 재개 방법: M4 에서 `~/chrome-grok-ja` 를 포트 9230 으로 띄우고(쿠키는 M4 안에서 복사) M6 에서 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`. 끝나면 M4 Chrome 끄기.
+
+현황: 회화 212편(R0 44·R1 69·R2 56·R3 42·R4 1), twist_type 카오스 88(42%)·의외 72·말실수 34·감정 16·읽씹 2, 심쿵은 거의 모든 편. 리뷰 페이지 212편. 공개 저장소 출처 이름(`data/corpus/*.md`·`data/scripts/*`) 정리 범위는 사용자 결정 대기.
 
 ## 4-1. 다른 언어앱 복제(2026-11-02 17:00~20:00)
 
