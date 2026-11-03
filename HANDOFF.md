@@ -7,7 +7,7 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC) · origin = 로컬(한자 구조 표시까지). 미커밋 = CRLF 노이즈 + 도구 부산물 + `data/review/*_grok_enrich*`(보류 작업) + `data/review/wire/`(와이어프레임) — 의도적으로만 커밋 |
-| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → 2314(패밀리 한자 수정) → 2326(한자 구조 표시) → **2611022338**(패밀리 한자 원복까지 전부, 23:42 업로드) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설 |
+| iOS TestFlight | 2611021502(새 회화 뷰어·단어 섹션·라이트너·한자 DB) → 1514(한자 배우기·맞춤 회화) → 1602(시안 02 만화 읽기형) → 1731·1755(applesignin 누락) → 1801(applesignin 포함) → 1921(단어 그림 썸네일·패밀리 한자) → 2149(장면 컷 연결) → 2309(한자 GIF 모핑·패밀리 한자 화면, 단 f9288e1 수정 누락) → 2314(패밀리 한자 수정) → 2326(한자 구조 표시) → 2611022338(패밀리 한자 원복) → 2611031858(절벽 v2·신작 39편) → **2611031906**(Grok 수정 줄 70턴 손질까지) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`, 유니버설 |
 | Android | CI 빌드 = 푸시마다 자동, Zealot 「일본어 유니버스」 **빌드 37** https://apps.talkverse.uk/Ultzu/186 (2026-11-02 20:35, 352ff41 = 장면 컷 연결까지). GIF·패밀리·구조 표시는 CI 빌드 뒤 `tools/zealot_push.sh --ci` 로 올릴 것 |
 | 회화 콘텐츠 | R0 26(**2026-11-02 사용자 지시로 재분배** — R1 77편 중 턴당 평균 8.0자 이하를 R0 로 이동, `review.level_note`) · R1 51 · R2 56 · R3 24(친구·사랑·생활·여행 각 6) · R4 1 = 158편(+R0 26 = 중복 없음), `assets/data/dialogues/<R>/<주제>/*.json`, 검사기 오류 5 = 강화 재작성 v2 시험 2편(culture_a3·life_c2)의 단어 수 초과(보류 중). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (157편, 턴·편 저장칸, API `https://talkverse.uk/api/review/ja`) |
 | 단어 DB | 8,525어 한국어 뜻 100%, 시드 키 `db_seeded_v7`(데이터 바꾸면 v8) |
@@ -47,14 +47,9 @@
 
 ## 4. 다음 할 일 (2026-11-03 오후 기준)
 
-**Grok 주간 한도 도달 — 11월 9일 초기화**(사용자에게 한도 올릴지 물음, 답 대기). 그 전에는 Grok 작업 없음. 재개 순서:
-1. 신작 4편 재요청: r0_life_a7(빵집 はい)·r0_love_c5(단톡방 하트)·r1_love_a6·r1_friends_a5(무한리필) — `tools/grok_write_batch.py data/review/write/specs_r01.json --tpl tools/prompts/write_grok_r01.md`(있는 답은 건너뜀) → `tools/write_to_json.py` → 검사기·턴 설명.
-2. 바뀐 장면 컷 118컷(63편) — 대사가 바뀐 컷은 그림 저장소에서 지웠고 R2·D1 엔 옛 그림이 남아 앱에 보임. `tools/run_recut.sh`(PID 인자 없이) 또는 `tools/grok_scene_batch.py <편id...> --push` — 없는 컷만 요청하고 R2·D1 업로드까지.
-3. 신작 36편(+4편)의 장면 컷 — `data/review/write/new_r01_ids.txt`.
-4. 조연 캐릭터 시트 2장(직장: 다나카·부장·과장·미사키 / 학교·오사카: 하야시·민·호세·집주인) → 장면 컷 요청에 첨부. 여자 학습자 컷 한 벌(프로필 성별).
-5. Grok 재개 방법: M4 에서 `~/chrome-grok-ja` 를 포트 9230 으로 띄우고(쿠키는 M4 안에서 복사) M6 에서 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`. 끝나면 M4 Chrome 끄기.
-
-현황: 회화 212편(R0 44·R1 69·R2 56·R3 42·R4 1), twist_type 카오스 88(42%)·의외 72·말실수 34·감정 16·읽씹 2, 심쿵은 거의 모든 편. 리뷰 페이지 212편. 공개 저장소 출처 이름(`data/corpus/*.md`·`data/scripts/*`) 정리 범위는 사용자 결정 대기.
+**Grok 은 새 계정(유료, 전문가 모델)으로 이어 감 — 2026-11-03 저녁 남은 일 모두 끝냄.** 프로젝트 없이 새 대화(`GROK_HOME=https://grok.com/`, 탭 `--tab grok.com`), M4 `~/chrome-grok-ja` 9230 + 터널, 첨부 `/tmp/grok_att/ja/`. 끝나면 M4 Chrome 끔.
+남은 것: 조연 캐릭터 시트 2장(직장·학교/오사카) → 컷 요청에 첨부, 여자 학습자 컷 한 벌, 학습자 후드 색·유카 머리색 흔들림(접촉 시트로 확인) 재요청 여부는 사용자 결정. 신작 r1_friends_a5(무한리필)는 Grok 빈 답 5회로 뺌.
+현황: 회화 215편(R0 47·R1 70·R2 56·R3 42·R4 1 근처), 카오스 약 42%, 장면 컷 215편 전부(R2·D1 업로드), Grok 수정 줄 783턴 검토·70턴 손질(8c663ac). 절벽 v2 절대 기준 R1 62·R2 96·R3 251·R4 778(80% 밖 R5) — 앱 단어표·화면·성과·검사기 반영(5f2106e), 산출 `tools/corpus/`(말뭉치 주소는 저장소 밖 ~/corpus/README_local.txt). TestFlight 최신은 아래 상태표.
 
 ## 4-1. 다른 언어앱 복제(2026-11-02 17:00~20:00)
 
