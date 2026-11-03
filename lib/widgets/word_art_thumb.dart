@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../services/content_sync.dart';
 
 import '../core/theme.dart';
 import '../services/art_service.dart';
@@ -26,7 +27,7 @@ class WordArtThumb extends StatelessWidget {
             width: size,
             height: size,
             color: AppColors.washiDeep,
-            child: Image.network(url, fit: fit, errorBuilder: (_, _, _) => fallback ?? const SizedBox.shrink()),
+            child: Image(image: artProvider(url), fit: fit, errorBuilder: (_, _, _) => fallback ?? const SizedBox.shrink()),
           ),
         );
       },

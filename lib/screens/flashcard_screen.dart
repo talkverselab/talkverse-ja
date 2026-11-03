@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../services/content_sync.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../core/pane.dart';
@@ -475,8 +476,8 @@ class _CardArt extends StatelessWidget {
         if (url == null) return const SizedBox.shrink();
         return ClipRRect(
           borderRadius: BorderRadius.circular(12),
-          child: Image.network(
-            url,
+          child: Image(
+            image: artProvider(url),
             height: 140,
             fit: BoxFit.contain,
             errorBuilder: (_, _, _) => const SizedBox.shrink(),

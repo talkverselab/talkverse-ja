@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../services/content_sync.dart';
 
 import '../core/theme.dart';
 import '../services/art_service.dart';
@@ -662,7 +663,7 @@ class _KanjiWordArt extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 260, maxHeight: 200),
-                  child: Image.network(e.value, fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
+                  child: Image(image: artProvider(e.value), fit: BoxFit.contain, errorBuilder: (_, _, _) => const SizedBox.shrink()),
                 ),
               ),
               const SizedBox(height: 4),

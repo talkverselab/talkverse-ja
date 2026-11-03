@@ -5,6 +5,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'content_sync.dart';
 import 'learner_prefs.dart';
 
 /// 단어 그림(talkverse.uk 공용 그림 저장소) — 2026-11-03.
@@ -92,6 +93,12 @@ class ArtService {
   Future<Map<int, String>> _sceneCuts(String episodeId, {bool large = false}) async {
     final key = '$episodeId${large ? ':L' : ''}';
     if (_scene.containsKey(key)) return _scene[key]!;
+    // 시작 때 받아 둔 전체 장면 매니페스트(ContentSync) — 편마다 네트워크를 타지 않는다(2026-11-04)
+    final idx = ContentSync.instance.sceneIndex[episodeId];
+    if (idx != null && idx.isNotEmpty) {
+      final b = ContentSync.instance.base;
+      return _scene[key] = {for (final e in idx.entries) e.key: '$b/${e.value}'};
+    }
     await (_sceneLoading[key] ??= () async {
       final out = <int, String>{};
       try {

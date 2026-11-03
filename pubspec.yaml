@@ -81,6 +81,7 @@ flutter:
     - assets/data/kanji/kanji_db.json
     - assets/data/kanji/phonetic_ja.json
     - assets/data/words/words_jlpt.json
+    - assets/data/version.json
     - assets/data/freq/lang_ja_with_regions.csv
     - assets/data/hanja/hanja_crossref.json
     - assets/data/hanja/book.json
