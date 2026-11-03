@@ -23,10 +23,11 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
 
   static Map<String, _Region> get _regions => {
     'ALL': _Region(tr('전체'), AppColors.sumi, 0, 2500),
-    'R1': _Region('R1 · 1-107', AppColors.beni, 1, 107), // 2026-11-03 절벽 재산출 v2(일본 작품 형태소)
-    'R2': _Region('R2 · 108-179', AppColors.beniLight, 108, 179),
-    'R3': _Region('R3 · 180-603', AppColors.kin, 180, 603),
-    'R4': _Region('R4 · 999-2500', AppColors.matcha, 999, 2500),
+    'R1': _Region('R1 · 1-62', AppColors.beni, 1, 62), // 2026-11-03 절벽 v2 절대 기준(누적 55/60/70/80%)
+    'R2': _Region('R2 · 63-96', AppColors.beniLight, 63, 96),
+    'R3': _Region('R3 · 97-251', AppColors.kin, 97, 251),
+    'R4': _Region('R4 · 252-778', AppColors.matcha, 252, 778),
+    'R5': _Region('R5 · 779-2500', AppColors.muted, 779, 2500), // 누적 80% 밖
   };
 
   @override

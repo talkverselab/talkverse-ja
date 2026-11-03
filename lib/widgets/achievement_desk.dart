@@ -102,7 +102,7 @@ class _CoverageMeter extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pct = cov?.pct ?? 0;
-    const cliffs = [107, 179, 603, 2500]; // 절벽 v2(2026-11-03)
+    const cliffs = [62, 96, 251, 778]; // 절벽 v2 절대 기준(2026-11-03, 누적 55/60/70/80%)
     return _card(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         _label(tr('빈도 커버율')),
