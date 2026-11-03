@@ -18,8 +18,13 @@ tab = a[a.index('--tab') + 1] if '--tab' in a else 'project/832d5dbe'
 push = '--push' in a
 fetch_only = '--fetch-only' in a  # 이미 보낸 요청의 그림만 현재 대화에서 받는다(보내지 않음)
 ids = [x for x in a if not x.startswith('--') and x != tab]
-CAST = {'ユカ': '시트 1번 유카(노란 카디건)', 'サクラ': '시트 2번 사쿠라(연분홍 니트, 검은 긴 생머리)', 'ケン': '시트 3번 켄(체크 플란넬)',
-        'リク': '시트 4번 리쿠(흰 셔츠, 애쉬브라운 머리)', '{name}': '시트 5번 학습자(구리색 후드티, 갈색 백팩)'}
+# 옷·머리색을 정확히(2026-11-03 접촉 시트: 학습자 후드가 빨강으로, 유카 머리가 짙은 갈색으로 흔들림)
+CAST = {'ユカ': '시트 1번 유카(밝은 갈색 단발 — 짙은 갈색·검정 아님, 노란 카디건, 하늘색 데님)', 'サクラ': '시트 2번 사쿠라(검은 긴 생머리·앞머리, 연분홍 니트)',
+        'ケン': '시트 3번 켄(검은 웨이브 머리, 체크 플란넬 셔츠)', 'リク': '시트 4번 리쿠(밝은 애쉬브라운 센터파트, 흰 셔츠)',
+        '{name}': '시트 5번 남자 학습자(갈색 곱슬머리, 구리빛 갈색 후드티 — 빨강·주황 아님, 베이지 바지, 갈색 백팩)'}
+FEMALE = '--female' in sys.argv[1:]  # 여자 학습자판(시트 6번) — 결과는 <편id>_f/ 폴더, 앱은 프로필 성별이 여자면 이쪽을 먼저 씀
+if FEMALE:
+    CAST['{name}'] = '시트 6번 여자 학습자(검은 단발 보브, 남색 자켓 안에 구리빛 갈색 티, 베이지 바지, 갈색 백팩) — 남자 학습자 대신 이 여자 학습자로'
 
 def who(name):
     if name in CAST: return CAST[name]
@@ -37,7 +42,7 @@ def prompt(ep, cuts, part):
         ds = ' / '.join(f"{t['speaker']}「{t['ja']}」({t['ko']})" for t in pair)
         lines.append(f'컷{n}: {ds}')
     cast = ', '.join(f'{k} = {who(v)}' for k, v in sp.items())
-    return (f"[SC-{ep['id']}-{part}] **이미지 {len(cuts)}장을 생성해 주세요**(글 설명 없이 그림만, 컷마다 한 장씩 따로 {len(cuts)}장). 일본어 학습 앱 회화의 장면 컷입니다.\n"
+    return (f"[SC-{ep['id']}{'-F' if FEMALE else ''}-{part}] **이미지 {len(cuts)}장을 생성해 주세요**(글 설명 없이 그림만, 컷마다 한 장씩 따로 {len(cuts)}장). 일본어 학습 앱 회화의 장면 컷입니다.\n"
             f"첨부 1 = 우리 앱 인물 기준 그림(이 인물들의 얼굴·머리·옷을 그대로), 첨부 2 = 그림 톤 참고.\n"
             f"톤: 부드러운 펠트·점토 인형, 파스텔·크림 배경, 둥근 얼굴, 따뜻한 조명, 일본의 실제 장소 느낌. 3:2 가로. "
             f"**그림 안에 글자·말풍선·간판 글씨·로고 없음**(말풍선은 앱이 얹습니다). 실존 인물·브랜드 금지.\n"
@@ -77,7 +82,7 @@ def do(eid):
     ep = json.load(open(path, encoding='utf-8'))
     turns = ep['turns']
     cuts = [((i // 2) + 1, turns[i:i + 2]) for i in range(0, len(turns), 2)]
-    out = os.path.join(ART, 'talkverse_art/scene/ja', ep['id'])
+    out = os.path.join(ART, 'talkverse_art/scene/ja', ep['id'] + ('_f' if FEMALE else ''))
     os.makedirs(out, exist_ok=True)
     # 없는 컷만 골라 4장씩 요청(카오스·심쿵으로 바뀐 턴의 컷만 지우고 다시 받을 때 — 2026-11-03)
     missing = [c for c in cuts if not os.path.exists(os.path.join(out, f'cut{c[0]}.jpg'))]
@@ -137,7 +142,7 @@ def git_push(msg):
         time.sleep(5)
     print('PUSHED', msg, flush=True)
     # R2·D1 에도 직접(2026-11-03 사용자 "업로드허용" — uk 세션은 ja 를 더 쓸어 올리지 않음)
-    eps = re.findall(r'[A-Za-z0-9_]+', msg.split(':', 1)[1]) if ':' in msg else []
+    eps = [e + ('_f' if FEMALE else '') for e in (re.findall(r'[A-Za-z0-9_]+', msg.split(':', 1)[1]) if ':' in msg else [])]
     u = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/scene_upload.py')] + eps, capture_output=True, text=True)
     print('UPLOAD', (u.stdout.strip().splitlines() or ['?'])[-1], flush=True)
 

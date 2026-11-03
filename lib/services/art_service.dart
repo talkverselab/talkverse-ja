@@ -5,6 +5,8 @@ import 'dart:io';
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'learner_prefs.dart';
+
 /// 단어 그림(talkverse.uk 공용 그림 저장소) — 2026-11-03.
 ///
 /// talkverse.uk 세션이 Cloudflare 에 올린 공개 API(인증 없음):
@@ -76,9 +78,14 @@ class ArtService {
 
   /// 편의 장면 컷 URL(턴 번호 1부터 → 컷 (num+1)~/2). 없으면 null. 편당 한 번만 받아 둔다(실패해도 조용히 null).
   Future<String?> sceneCut(String episodeId, int turnNum, {bool large = false}) async {
+    final n = (turnNum + 1) ~/ 2;
+    // 학습자가 여자로 설정돼 있으면 여자판 컷(편id + '_f', 2026-11-03)을 먼저 — 없으면 기본 컷
+    if (LearnerPrefs.gender.value == 'female') {
+      final f = await _sceneCuts('${episodeId}_f', large: large);
+      if (f[n] != null) return f[n];
+    }
     final cuts = await _sceneCuts(episodeId, large: large);
     if (cuts.isEmpty) return null;
-    final n = (turnNum + 1) ~/ 2;
     return cuts[n] ?? cuts[cuts.keys.reduce((a, b) => (a - n).abs() <= (b - n).abs() ? a : b)];
   }
 
