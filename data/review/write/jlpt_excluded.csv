@@ -1,0 +1,1905 @@
+surface,kana,jlpt,reason
+何,なに,N5,not picturable
+要る,いる,N5,not picturable
+話,はなし,N5,not picturable
+吸う,すう,N5,not picturable
+方,かた,N5,not picturable
+好き,すき,N5,not picturable
+前,まえ,N5,not picturable
+頼む,たのむ,N5,alias→依頼
+背,せい,N5,not picturable
+万,まん,N5,not picturable
+後,あと,N5,not picturable
+多分,たぶん,N5,not picturable
+大きな,おおきな,N5,not picturable
+小さな,ちいさな,N5,not picturable
+零,れい,N5,not picturable
+伯母さん,おばさん,N5,alias→伯母
+掛ける,かける,N5,not picturable
+お姉さん,おねえさん,N5,alias→姉
+お兄さん,おにいさん,N5,alias→兄
+二,に,N5,not picturable
+ああ,ああ,N5,not picturable
+あちら,あちら,N5,not picturable
+あなた,あなた,N5,not picturable
+あの,あの,N5,not picturable
+あれ,あれ,N5,not picturable
+いいえ,いいえ,N5,not picturable
+いかが,いかが,N5,not picturable
+いくつ,いくつ,N5,not picturable
+うち,うち,N5,not picturable
+ええ,ええ,N5,not picturable
+おととし,おととし,N5,not picturable
+お手洗い,おてあらい,N5,alias→トイレ
+お風呂,おふろ,N5,alias→風呂
+お～,お～,N5,not picturable
+かかる,かかる,N5,not picturable
+かける,かける,N5,not picturable
+ぐらい,ぐらい,N5,not picturable
+この,この,N5,not picturable
+こんな,こんな,N5,not picturable
+さあ,さあ,N5,not picturable
+さ来年,さらいねん,N5,not picturable
+しかし,しかし,N5,not picturable
+じゃ,じゃ,N5,not picturable
+じゃあ,じゃあ,N5,not picturable
+する,する,N5,not picturable
+そう,そう,N5,not picturable
+そうして,そうして,N5,not picturable
+そうです,そうです,N5,not picturable
+そこ,そこ,N5,not picturable
+そして,そして,N5,not picturable
+そちら,そちら,N5,not picturable
+その,その,N5,not picturable
+それ,それ,N5,not picturable
+それから,それから,N5,not picturable
+それでは,それでは,N5,not picturable
+たて,たて,N5,not picturable
+つける,つける,N5,not picturable
+では,では,N5,not picturable
+でも,でも,N5,not picturable
+どう,どう,N5,not picturable
+どうして,どうして,N5,not picturable
+どうも,どうも,N5,not picturable
+どなた,どなた,N5,not picturable
+どの,どの,N5,not picturable
+どれ,どれ,N5,not picturable
+どんな,どんな,N5,not picturable
+ない,ない,N5,not picturable
+なぜ,なぜ,N5,not picturable
+なる,なる,N5,not picturable
+はい,はい,N5,not picturable
+はく,はく,N5,alias→履く
+また,また,N5,not picturable
+まだ,まだ,N5,not picturable
+もう,もう,N5,not picturable
+やる,やる,N5,not picturable
+ゆっくりと,ゆっくりと,N5,not picturable
+よく,よく,N5,not picturable
+りっぱ,りっぱ,N5,alias→立派
+アパート,アパート,N5,alias→マンション
+キロ,キロ,N5,not picturable
+キログラム,キログラム,N5,not picturable
+キロメートル,キロメートル,N5,not picturable
+グラム,グラム,N5,not picturable
+スポーツ,スポーツ,N5,not picturable
+ゼロ,ゼロ,N5,not picturable
+テープレコーダー,テープレコーダー,N5,not picturable
+フィルム,フィルム,N5,not picturable
+ページ,ページ,N5,not picturable
+マッチ,マッチ,N5,not picturable
+メートル,メートル,N5,not picturable
+ラジオカセ,ラジオカセ,N5,not picturable
+ワイシャツ,ワイシャツ,N5,alias→シャツ
+一昨日,おととい,N5,not picturable
+一月,ひとつき,N5,not picturable
+七,しち,N5,not picturable
+七つ,ななつ,N5,not picturable
+丈夫,じょうぶ,N5,alias→強い
+三つ,みっつ,N5,not picturable
+三日,みっか,N5,not picturable
+上手,じょうず,N5,not picturable
+下さい,ください,N5,not picturable
+並べる,ならべる,N5,not picturable
+九,きゅう,N5,not picturable
+九つ,ここのつ,N5,not picturable
+九日,ここのか,N5,not picturable
+二つ,ふたつ,N5,not picturable
+二十日,はつか,N5,not picturable
+二十歳,はたち,N5,not picturable
+二日,ふつか,N5,not picturable
+五,ご,N5,not picturable
+五つ,いつつ,N5,not picturable
+今晩,こんばん,N5,not picturable
+今月,こんげつ,N5,not picturable
+今週,こんしゅう,N5,not picturable
+休み,やすみ,N5,not picturable
+何～,なん～,N5,not picturable
+余り,あまり,N5,not picturable
+作文,さくぶん,N5,not picturable
+便利,べんり,N5,not picturable
+先月,せんげつ,N5,not picturable
+先週,せんしゅう,N5,not picturable
+入口,いりぐち,N5,not picturable
+八,はち,N5,not picturable
+八つ,やっつ,N5,not picturable
+八日,ようか,N5,not picturable
+六,ろく,N5,not picturable
+六つ,むっつ,N5,not picturable
+六日,むいか,N5,not picturable
+出口,でぐち,N5,not picturable
+切符,きっぷ,N5,alias→チケット
+初め,はじめ,N5,not picturable
+初めて,はじめて,N5,not picturable
+勤める,つとめる,N5,alias→仕事
+北,きた,N5,not picturable
+十日,とおか,N5,not picturable
+千,せん,N5,not picturable
+午前,ごぜん,N5,not picturable
+半,はん,N5,not picturable
+叔母さん,おばさん,N5,alias→伯母
+台所,だいどころ,N5,alias→厨房
+四,し,N5,not picturable
+四つ,よっつ,N5,not picturable
+四日,よっか,N5,not picturable
+土曜日,どようび,N5,not picturable
+夏休み,なつやすみ,N5,not picturable
+夕飯,ゆうはん,N5,alias→夕食
+外国,がいこく,N5,not picturable
+外国人,がいこくじん,N5,not picturable
+大使館,たいしかん,N5,not picturable
+天気,てんき,N5,not picturable
+始め,はじめ,N5,not picturable
+宿題,しゅくだい,N5,not picturable
+居る,いる,N5,not picturable
+差す,さす,N5,not picturable
+平仮名,ひらがな,N5,not picturable
+文章,ぶんしょう,N5,not picturable
+日曜日,にちようび,N5,not picturable
+明後日,あさって,N5,not picturable
+易しい,やさしい,N5,not picturable
+昼,ひる,N5,not picturable
+昼御飯,ひるごはん,N5,not picturable
+晩,ばん,N5,not picturable
+晩御飯,ばんごはん,N5,alias→夕食
+晴れる,はれる,N5,not picturable
+曇る,くもる,N5,not picturable
+月曜日,げつようび,N5,not picturable
+朝御飯,あさごはん,N5,alias→朝食
+木曜日,もくようび,N5,not picturable
+来年,らいねん,N5,not picturable
+来月,らいげつ,N5,not picturable
+横,よこ,N5,not picturable
+段々,だんだん,N5,not picturable
+毎年,まいとし,N5,not picturable
+毎晩,まいばん,N5,not picturable
+毎月,まいげつ,N5,not picturable
+毎朝,まいあさ,N5,not picturable
+毎週,まいしゅう,N5,not picturable
+水曜日,すいようび,N5,not picturable
+河,かわ,N5,alias→川
+洋服,ようふく,N5,not picturable
+温い,ぬるい,N5,not picturable
+漢字,かんじ,N5,not picturable
+火曜日,かようび,N5,not picturable
+片仮名,かたかな,N5,not picturable
+物,もの,N5,not picturable
+玄関,げんかん,N5,alias→入口
+留学生,りゅうがくせい,N5,not picturable
+番号,ばんごう,N5,not picturable
+白,しろ,N5,alias→白い
+百,ひゃく,N5,not picturable
+終る,おわる,N5,not picturable
+結構,けっこう,N5,not picturable
+置く,おく,N5,not picturable
+習う,ならう,N5,alias→学ぶ
+脚,あし,N5,alias→足
+茶色,ちゃいろ,N5,not picturable
+行く,いく,N5,not picturable
+西,にし,N5,not picturable
+見る,みる,N5,not picturable
+角,かど,N5,not picturable
+誰か,だれか,N5,not picturable
+赤,あか,N5,alias→赤い
+辞書,じしょ,N5,not picturable
+金曜日,きんようび,N5,not picturable
+青,あお,N5,alias→あおい
+食べ物,たべもの,N5,not picturable
+黄色,きいろ,N5,not picturable
+黄色い,きいろい,N5,alias→黄色
+黒,くろ,N5,alias→黒い
+～か月,～かげつ,N5,not picturable
+～がる,～がる,N5,not picturable
+～くらい,～くらい,N5,not picturable
+～ころ,～ころ,N5,not picturable
+～ごろ,～ごろ,N5,not picturable
+～さん,～さん,N5,not picturable
+～すぎ,～すぎ,N5,not picturable
+～ずつ,～ずつ,N5,not picturable
+～たち,～たち,N5,not picturable
+～だけ,～だけ,N5,not picturable
+～など,～など,N5,not picturable
+～中,～じゅう,N5,not picturable
+～人,～じん,N5,not picturable
+～個,～こ,N5,not picturable
+～側,～がわ,N5,not picturable
+～円,～えん,N5,not picturable
+～冊,～さつ,N5,not picturable
+～分,～ふん,N5,not picturable
+～前,～まえ,N5,not picturable
+～匹,～ひき,N5,not picturable
+～台,～だい,N5,not picturable
+～回,～かい,N5,not picturable
+～屋,～や,N5,not picturable
+～年,～ねん,N5,not picturable
+～度,～ど,N5,not picturable
+～日,～にち,N5,not picturable
+～時,～じ,N5,not picturable
+～時間,～じかん,N5,not picturable
+～月,～がつ,N5,not picturable
+～本,～ほん,N5,not picturable
+～杯,～はい,N5,not picturable
+～枚,～まい,N5,not picturable
+～歳,～さい,N5,not picturable
+～番,～ばん,N5,not picturable
+～語,～ご,N5,not picturable
+～週間,～しゅうかん,N5,not picturable
+～階,～かい,N5,not picturable
+事,こと,N4,not picturable
+君,きみ,N4,not picturable
+暮れる,くれる,N4,not picturable
+考える,かんがえる,N4,not picturable
+彼女,かのじょ,N4,not picturable
+失礼,しつれい,N4,not picturable
+彼,かれ,N4,not picturable
+社長,しゃちょう,N4,not picturable
+確か,たしか,N4,not picturable
+無くなる,なくなる,N4,not picturable
+日,ひ,N4,not picturable
+過ぎる,すぎる,N4,not picturable
+全然,ぜんぜん,N4,not picturable
+以上,いじょう,N4,not picturable
+調べる,しらべる,N4,not picturable
+致す,いたす,N4,not picturable
+点,てん,N4,not picturable
+間,あいだ,N4,not picturable
+申す,もうす,N4,not picturable
+参る,まいる,N4,not picturable
+思い出す,おもいだす,N4,not picturable
+場合,ばあい,N4,not picturable
+止める,とめる,N4,not picturable
+別,べつ,N4,not picturable
+済む,すむ,N4,not picturable
+随分,ずいぶん,N4,not picturable
+以外,いがい,N4,not picturable
+様,よう,N4,not picturable
+ご存じ,ごぞんじ,N4,not picturable
+ご主人,ごしゅじん,N4,not picturable
+行う,おこなう,N4,not picturable
+例えば,たとえば,N4,not picturable
+この間,このあいだ,N4,not picturable
+市,し,N4,not picturable
+利用,りよう,N4,not picturable
+都,と,N4,not picturable
+大体,だいたい,N4,not picturable
+お宅,おたく,N4,not picturable
+申し上げる,もうしあげる,N4,not picturable
+承知,しょうち,N4,not picturable
+寄る,よる,N4,not picturable
+大分,だいぶ,N4,not picturable
+最も,もっとも,N4,not picturable
+あ,あ,N4,not picturable
+あんな,あんな,N4,not picturable
+いくら～ても,いくら～ても,N4,not picturable
+いじめる,いじめる,N4,not picturable
+いただく,頂く,N4,not picturable
+うかがう,うかがう,N4,not picturable
+うまい,うまい,N4,not picturable
+うん,うん,N4,not picturable
+おいでになる,おいでになる,N4,not picturable
+おかげ,お陰,N4,not picturable
+おっしゃる,おっしゃる,N4,not picturable
+おる,おる,N4,not picturable
+お子さん,おこさん,N4,alias→子
+お祝い,おいわい,N4,not picturable
+お金持ち,おかねもち,N4,not picturable
+かまう,かまう,N4,not picturable
+きっと,きっと,N4,not picturable
+けがする,けがする,N4,alias→怪我
+けれど,けれど,N4,not picturable
+けれども,けれども,N4,not picturable
+こう,こう,N4,not picturable
+この頃,このごろ,N4,not picturable
+ごちそう,ごちそう,N4,not picturable
+ごらんになる,ごらんになる,N4,not picturable
+すっと,すっと,N4,not picturable
+すり,すり,N4,not picturable
+すると,すると,N4,not picturable
+それで,それで,N4,not picturable
+それに,それに,N4,not picturable
+それほど,それほど,N4,not picturable
+そんな,そんな,N4,not picturable
+だから,だから,N4,not picturable
+ちっとも,ちっとも,N4,not picturable
+つもり,つもり,N4,not picturable
+できるだけ,できるだけ,N4,not picturable
+とうとう,とうとう,N4,not picturable
+なさる,なさる,N4,not picturable
+なるべく,なるべく,N4,not picturable
+なるほど,なるほど,N4,not picturable
+はず,はず,N4,not picturable
+びっくりする,びっくりする,N4,alias→驚く
+または,または,N4,not picturable
+もし,もし,N4,not picturable
+もちろん,もちろん,N4,not picturable
+やっと,やっと,N4,not picturable
+やっぱり,やっぱり,N4,not picturable
+やはり,やはり,N4,not picturable
+よろしい,よろしい,N4,not picturable
+アジア,アジア,N4,not picturable
+アフリカ,アフリカ,N4,not picturable
+アルコール,アルコール,N4,alias→酒
+アルバイト,アルバイト,N4,alias→バイト
+ガス,ガス,N4,not picturable
+ガソリン,ガソリン,N4,not picturable
+コンピューター,コンピューター,N4,alias→コンピュータ
+スクリーン,スクリーン,N4,alias→画面
+ソフト,ソフト,N4,not picturable
+チェックする,チェックする,N4,not picturable
+テキスト,テキスト,N4,not picturable
+パソコン,パソコン,N4,alias→コンピュータ
+パート,パート,N4,not picturable
+ビル,ビル,N4,alias→建物
+リポート,リポート,N4,alias→報告
+レポート,レポート,N4,alias→報告
+ワープロ,ワープロ,N4,not picturable
+丁寧,ていねい,N4,not picturable
+下げる,さげる,N4,not picturable
+下りる,おりる,N4,not picturable
+下宿,げしゅく,N4,not picturable
+不便,ふべん,N4,not picturable
+世話,せわ,N4,not picturable
+両方,りょうほう,N4,not picturable
+中々,なかなか,N4,not picturable
+中学校,ちゅうがっこう,N4,not picturable
+乗り換える,のりかえる,N4,not picturable
+乗り物,のりもの,N4,not picturable
+乾く,かわく,N4,not picturable
+予約,よやく,N4,not picturable
+予習,よしゅう,N4,not picturable
+交通,こうつう,N4,not picturable
+人口,じんこう,N4,not picturable
+仕方,しかた,N4,not picturable
+代わり,かわり,N4,not picturable
+以下,いか,N4,not picturable
+以内,いない,N4,not picturable
+会場,かいじょう,N4,not picturable
+会話,かいわ,N4,not picturable
+会議室,かいぎしつ,N4,not picturable
+住所,じゅうしょ,N4,not picturable
+倍,ばい,N4,not picturable
+値段,ねだん,N4,not picturable
+入学,にゅうがく,N4,not picturable
+公務員,こうむいん,N4,not picturable
+再来月,さらいげつ,N4,not picturable
+再来週,さらいしゅう,N4,not picturable
+冷える,ひえる,N4,not picturable
+冷房,れいぼう,N4,not picturable
+出席,しゅっせき,N4,not picturable
+出発,しゅっぱつ,N4,not picturable
+割合,わりあい,N4,not picturable
+医学,いがく,N4,not picturable
+取り替える,とりかえる,N4,not picturable
+受付,うけつけ,N4,not picturable
+召し上がる,めしあがる,N4,not picturable
+品物,しなもの,N4,alias→商品
+固い,かたい,N4,not picturable
+国際,こくさい,N4,not picturable
+地理,ちり,N4,not picturable
+堅,かたい,N4,alias→固い
+売り場,うりば,N4,not picturable
+大学生,だいがくせい,N4,not picturable
+大抵,たいてい,N4,not picturable
+太る,ふとる,N4,not picturable
+妻,つま,N4,alias→奥さん
+季節,きせつ,N4,not picturable
+家内,かない,N4,alias→奥さん
+寝坊,ねぼう,N4,not picturable
+専門,せんもん,N4,not picturable
+尋ねる,たずねる,N4,not picturable
+小説,しょうせつ,N4,not picturable
+展覧会,てんらんかい,N4,not picturable
+工業,こうぎょう,N4,not picturable
+差し上げる,さしあげる,N4,not picturable
+市民,しみん,N4,not picturable
+建て,～だて,N4,not picturable
+御～,ご～,N4,not picturable
+復習,ふくしゅう,N4,not picturable
+忘れ物,わすれもの,N4,not picturable
+急行,きゅうこう,N4,not picturable
+打つ,うつ,N4,alias→叩く
+招待,しょうたい,N4,not picturable
+拝見,はいけん,N4,not picturable
+支度,したく,N4,alias→準備
+放送,ほうそう,N4,not picturable
+政治,せいじ,N4,not picturable
+教育,きょういく,N4,not picturable
+数学,すうがく,N4,not picturable
+文化,ぶんか,N4,not picturable
+文学,ぶんがく,N4,not picturable
+文法,ぶんぽう,N4,not picturable
+新聞社,しんぶんしゃ,N4,not picturable
+旅館,りょかん,N4,not picturable
+是非,ぜひ,N4,not picturable
+昼休み,ひるやすみ,N4,not picturable
+昼間,ひるま,N4,not picturable
+景色,けしき,N4,not picturable
+暖房,だんぼう,N4,not picturable
+木綿,もめん,N4,not picturable
+楽む,たのしむ,N4,alias→楽しむ
+機会,きかい,N4,not picturable
+止む,やむ,N4,not picturable
+正月,しょうがつ,N4,not picturable
+歴史,れきし,N4,not picturable
+比べる,くらべる,N4,not picturable
+決して,けっして,N4,not picturable
+沸く,わく,N4,alias→沸かす
+法律,ほうりつ,N4,not picturable
+注意,ちゅうい,N4,not picturable
+浅い,あさい,N4,not picturable
+漬ける,つける,N4,not picturable
+点く,つく,N4,not picturable
+為,ため,N4,not picturable
+熱心,ねっしん,N4,not picturable
+片付ける,かたづける,N4,not picturable
+特急,とっきゅう,N4,not picturable
+生産,せいさん,N4,not picturable
+産業,さんぎょう,N4,not picturable
+用事,ようじ,N4,not picturable
+田舎,いなか,N4,not picturable
+留守,るす,N4,not picturable
+痩せる,やせる,N4,not picturable
+発音,はつおん,N4,not picturable
+盛ん,さかん,N4,not picturable
+直る,なおる,N4,not picturable
+看護婦,かんごふ,N4,alias→看護師
+真中,まんなか,N4,not picturable
+知らせる,しらせる,N4,not picturable
+研究室,けんきゅうしつ,N4,not picturable
+硬,かたい,N4,alias→固い
+祖母,そぼ,N4,alias→おばあさん
+祖父,そふ,N4,alias→おじいさん
+科学,かがく,N4,not picturable
+移る,うつる,N4,not picturable
+程,ほど,N4,not picturable
+競争,きょうそう,N4,not picturable
+答,こたえ,N4,not picturable
+細かい,こまかい,N4,not picturable
+終わり,おわり,N4,not picturable
+経済,けいざい,N4,not picturable
+絹,きぬ,N4,not picturable
+習慣,しゅうかん,N4,not picturable
+翻訳,ほんやく,N4,not picturable
+舟,ふね,N4,alias→船
+苦い,にがい,N4,not picturable
+落す,おとす,N4,alias→落とす
+落る,おちる,N4,alias→落ちる
+複雑,ふくざつ,N4,not picturable
+西洋,せいよう,N4,not picturable
+見つかる,みつかる,N4,not picturable
+見物,けんぶつ,N4,not picturable
+規則,きそく,N4,alias→ルール
+親切,しんせつ,N4,not picturable
+訪ねる,たずねる,N4,alias→伺う
+訳,わけ,N4,not picturable
+講堂,こうどう,N4,not picturable
+講義,こうぎ,N4,not picturable
+貿易,ぼうえき,N4,not picturable
+赤ん坊,あかんぼう,N4,alias→赤ちゃん
+踊り,おどり,N4,alias→踊る
+輸入,ゆにゅう,N4,not picturable
+輸出,ゆしゅつ,N4,not picturable
+込む,こむ,N4,not picturable
+通う,かよう,N4,not picturable
+遊び,あそび,N4,alias→遊ぶ
+道具,どうぐ,N4,not picturable
+遠く,とおく,N4,not picturable
+適当,てきとう,N4,not picturable
+郊外,こうがい,N4,not picturable
+都合,つごう,N4,not picturable
+隅,すみ,N4,not picturable
+電報,でんぽう,N4,not picturable
+非常に,ひじょうに,N4,not picturable
+飛行場,ひこうじょう,N4,alias→空港
+食料品,しょくりょうひん,N4,not picturable
+飾る,かざる,N4,not picturable
+高等学校,こうとうがっこう,N4,not picturable
+髪,かみ,N4,not picturable
+～おき,～おき,N4,not picturable
+～おわる,～おわる,N4,not picturable
+～ございます,～ございます,N4,not picturable
+～しまう,～しまう,N4,not picturable
+～だす,～だす,N4,not picturable
+～ちゃん,～ちゃん,N4,not picturable
+～ついて,～ついて,N4,not picturable
+～にくい,～にくい,N4,not picturable
+～ばかり,～ばかり,N4,not picturable
+～まま,～まま,N4,not picturable
+～やすい,～やすい,N4,not picturable
+～よると,～よると,N4,not picturable
+～代,～だい,N4,not picturable
+～会,～かい,N4,not picturable
+～区,～く,N4,not picturable
+～君,～くん,N4,not picturable
+～員,～いん,N4,not picturable
+～始める,～はじめる,N4,not picturable
+～学部,～がくぶ,N4,not picturable
+～家,～か,N4,not picturable
+～式,～しき,N4,not picturable
+～様,～さま,N4,not picturable
+～町,～ちょう,N4,not picturable
+～目,～め,N4,not picturable
+～続ける,～つづける,N4,not picturable
+～製,～せい,N4,not picturable
+～軒,～けん,N4,not picturable
+お前,おまえ,N3,not picturable
+柄,え,N3,not picturable
+何で,なんで,N3,not picturable
+増す,ます,N3,not picturable
+何か,なにか,N3,not picturable
+反る,かえる,N3,not picturable
+擦る,する,N3,not picturable
+難,なん,N3,not picturable
+溶く,とく,N3,not picturable
+殺す,ころす,N3,not picturable
+診る,みる,N3,not picturable
+澄む,すむ,N3,not picturable
+人間,にんげん,N3,not picturable
+分,ぶ,N3,not picturable
+跡,あと,N3,not picturable
+溜める,ためる,N3,not picturable
+得る,うる,N3,not picturable
+訓,くん,N3,not picturable
+度,たび,N3,not picturable
+金,かね,N3,not picturable
+者,もの,N3,not picturable
+負う,おう,N3,not picturable
+絶対,ぜったい,N3,not picturable
+実は,じつは,N3,not picturable
+異,い,N3,not picturable
+別に,べつに,N3,not picturable
+添う,そう,N3,not picturable
+付ける,つける,N3,not picturable
+捜査,そうさ,N3,not picturable
+今回,こんかい,N3,not picturable
+賭ける,かける,N3,not picturable
+我々,われわれ,N3,not picturable
+去る,さる,N3,not picturable
+件,けん,N3,not picturable
+文,ぶん,N3,not picturable
+何とか,なんとか,N3,not picturable
+全く,まったく,N3,not picturable
+他,た,N3,not picturable
+大,だい,N3,not picturable
+認める,みとめる,N3,not picturable
+地,ち,N3,not picturable
+一体,いったい,N3,not picturable
+元,もと,N3,not picturable
+注す,さす,N3,not picturable
+素,もと,N3,not picturable
+突く,つく,N3,not picturable
+名,な,N3,not picturable
+任せる,まかせる,N3,not picturable
+結局,けっきょく,N3,not picturable
+図,ず,N3,not picturable
+罪,つみ,N3,not picturable
+県,けん,N3,not picturable
+神,かみ,N3,alias→神様
+状況,じょうきょう,N3,not picturable
+当たる,あたる,N3,not picturable
+残す,のこす,N3,not picturable
+自殺,じさつ,N3,not picturable
+乗せる,のせる,N3,not picturable
+課,か,N3,not picturable
+存在,そんざい,N3,not picturable
+気付く,きづく,N3,alias→気づく
+生,せい,N3,not picturable
+湾,わん,N3,not picturable
+視点,してん,N3,not picturable
+担当,たんとう,N3,not picturable
+様子,ようす,N3,not picturable
+問う,とう,N3,alias→うかがう
+望む,のぞむ,N3,not picturable
+当然,とうぜん,N3,not picturable
+嫌う,きらう,N3,not picturable
+恐らく,おそらく,N3,not picturable
+状態,じょうたい,N3,not picturable
+際,さい,N3,not picturable
+面,めん,N3,alias→顔
+楽,らく,N3,not picturable
+事実,じじつ,N3,not picturable
+本人,ほんにん,N3,not picturable
+詳しい,くわしい,N3,not picturable
+取れる,とれる,N3,not picturable
+当たり前,あたりまえ,N3,not picturable
+現れる,あらわれる,N3,not picturable
+身,み,N3,alias→体
+完全,かんぜん,N3,not picturable
+限る,かぎる,N3,not picturable
+求める,もとめる,N3,alias→依頼
+起こる,おこる,N3,not picturable
+判断,はんだん,N3,not picturable
+人物,じんぶつ,N3,not picturable
+塀,へい,N3,alias→壁
+内容,ないよう,N3,not picturable
+役,やく,N3,not picturable
+世の中,よのなか,N3,not picturable
+係,かかり,N3,not picturable
+当時,とうじ,N3,not picturable
+年間,ねんかん,N3,not picturable
+私用,しよう,N3,not picturable
+注,ちゅう,N3,not picturable
+大した,たいした,N3,not picturable
+事情,じじょう,N3,not picturable
+今後,こんご,N3,not picturable
+申し訳,もうしわけ,N3,not picturable
+意識,いしき,N3,not picturable
+相変わらず,あいかわらず,N3,not picturable
+直接,ちょくせつ,N3,not picturable
+氏,し,N3,not picturable
+優秀,ゆうしゅう,N3,not picturable
+討つ,うつ,N3,not picturable
+相当,そうとう,N3,not picturable
+歓声,かんせい,N3,not picturable
+直,じき,N3,not picturable
+偶々,たまたま,N3,not picturable
+不利,ふり,N3,not picturable
+位,くらい,N3,not picturable
+班,はん,N3,not picturable
+場,ば,N3,alias→ところ
+一帯,いったい,N3,not picturable
+抜ける,ぬける,N3,not picturable
+至る,いたる,N3,not picturable
+新た,あらた,N3,not picturable
+原,はら,N3,not picturable
+寧ろ,むしろ,N3,not picturable
+継ぐ,つぐ,N3,not picturable
+性,せい,N3,not picturable
+世間,せけん,N3,not picturable
+揃う,そろう,N3,not picturable
+可能,かのう,N3,not picturable
+世,よ,N3,not picturable
+見事,みごと,N3,not picturable
+軍,ぐん,N3,not picturable
+実際,じっさい,N3,not picturable
+程度,ていど,N3,not picturable
+相,そう,N3,not picturable
+止す,よす,N3,not picturable
+自身,じしん,N3,not picturable
+全,ぜん,N3,not picturable
+同士,どうし,N3,not picturable
+操作,そうさ,N3,not picturable
+裂ける,さける,N3,not picturable
+次第,しだい,N3,not picturable
+級,きゅう,N3,not picturable
+語句,ごく,N3,not picturable
+一致,いっち,N3,not picturable
+要求,ようきゅう,N3,not picturable
+作,さく,N3,not picturable
+公平,こうへい,N3,not picturable
+議員,ぎいん,N3,not picturable
+約,やく,N3,not picturable
+被る,かぶる,N3,not picturable
+優,ゆう,N3,not picturable
+以来,いらい,N3,not picturable
+あいにく,あいにく,N3,not picturable
+あちこち,あちこち,N3,not picturable
+あらゆる,あらゆる,N3,not picturable
+あるいは,あるいは,N3,not picturable
+あんなに,あんなに,N3,not picturable
+あんまり,あんまり,N3,not picturable
+いけない,いけない,N3,not picturable
+いずれ,いずれ,N3,not picturable
+いただきます,いただきます,N3,not picturable
+いつか,いつか,N3,not picturable
+いつでも,いつでも,N3,not picturable
+いつのまにか,いつのまにか,N3,not picturable
+いつまでも,いつまでも,N3,not picturable
+いわゆる,いわゆる,N3,not picturable
+うっかり,うっかり,N3,not picturable
+うなる,うなる,N3,not picturable
+およそ,およそ,N3,not picturable
+お昼,おひる,N3,not picturable
+お目に掛かる,おめにかかる,N3,not picturable
+かなり,かなり,N3,not picturable
+かもしれない,かもしれない,N3,not picturable
+けち,けち,N3,not picturable
+ことによると,ことによると,N3,not picturable
+これら,これら,N3,not picturable
+こんなに,こんなに,N3,not picturable
+さっぱり,さっぱり,N3,not picturable
+さて,さて,N3,not picturable
+ざっと,ざっと,N3,not picturable
+しかも,しかも,N3,not picturable
+しきりに,しきりに,N3,not picturable
+したがって,したがって,N3,not picturable
+しばしば,しばしば,N3,not picturable
+しまった,しまった,N3,not picturable
+じっと,じっと,N3,not picturable
+すくなくとも,すくなくとも,N3,not picturable
+すてき,すてき,N3,alias→素敵
+すなわち,すなわち,N3,not picturable
+すみません,すみません,N3,not picturable
+すれ違う,すれちがう,N3,not picturable
+ずれる,ずれる,N3,not picturable
+そこで,そこで,N3,not picturable
+そっくり,そっくり,N3,not picturable
+そっと,そっと,N3,not picturable
+そのうえ,そのうえ,N3,not picturable
+そのうち,そのうち,N3,not picturable
+そのまま,そのまま,N3,not picturable
+それぞれ,それぞれ,N3,not picturable
+それでも,それでも,N3,not picturable
+それと,それと,N3,not picturable
+それとも,それとも,N3,not picturable
+たしか,たしか,N3,not picturable
+ただ,ただ,N3,not picturable
+たっぷり,たっぷり,N3,alias→いっぱい
+たとえ,たとえ,N3,not picturable
+たびたび,たびたび,N3,not picturable
+たまらない,たまらない,N3,not picturable
+だが,だが,N3,not picturable
+だけど,だけど,N3,not picturable
+だって,だって,N3,not picturable
+ちゃんと,ちゃんと,N3,not picturable
+ちょうだい,ちょうだい,N3,not picturable
+つまり,つまり,N3,not picturable
+できれば,できれば,N3,not picturable
+ですから,ですから,N3,not picturable
+と,と,N3,not picturable
+ところが,ところが,N3,not picturable
+ところで,ところで,N3,not picturable
+とにかく,とにかく,N3,not picturable
+とんでもない,とんでもない,N3,not picturable
+どうしても,どうしても,N3,not picturable
+どうぞよろしく,どうぞよろしく,N3,not picturable
+どこか,どこか,N3,not picturable
+どんなに,どんなに,N3,not picturable
+なお,なお,N3,not picturable
+なぜなら,なぜなら,N3,not picturable
+なにも,なにも,N3,not picturable
+にっこり,にっこり,N3,not picturable
+のんびり,のんびり,N3,not picturable
+はあ,はあ,N3,not picturable
+ばったり,ばったり,N3,not picturable
+ぴったり,ぴったり,N3,not picturable
+ふと,ふと,N3,not picturable
+ほっと,ほっと,N3,not picturable
+ほぼ,ほぼ,N3,not picturable
+ぼんやり,ぼんやり,N3,not picturable
+まあ,まあ,N3,not picturable
+まさか,まさか,N3,not picturable
+まさに,まさに,N3,not picturable
+ますます,ますます,N3,not picturable
+まとまる,まとまる,N3,not picturable
+まとめる,まとめる,N3,not picturable
+まるで,まるで,N3,not picturable
+もしかすると,もしかすると,N3,not picturable
+もしも,もしも,N3,not picturable
+もったいない,もったいない,N3,not picturable
+やがて,やがて,N3,not picturable
+やや,やや,N3,not picturable
+より,より,N3,not picturable
+よろしく,よろしく,N3,not picturable
+わがまま,わがまま,N3,not picturable
+アイスクリーム,アイスクリーム,N3,alias→アイス
+アウト,アウト,N3,not picturable
+アップ,アップ,N3,not picturable
+アンケート,アンケート,N3,not picturable
+イメージ,イメージ,N3,not picturable
+インク,インク,N3,not picturable
+エネルギー,エネルギー,N3,not picturable
+オフィス,オフィス,N3,alias→事務所
+カー,カー,N3,not picturable
+キャプテン,キャプテン,N3,not picturable
+クラシック,クラシック,N3,not picturable
+グループ,グループ,N3,alias→班
+ケース,ケース,N3,not picturable
+コンテスト,コンテスト,N3,not picturable
+サービス,サービス,N3,not picturable
+スケジュール,スケジュール,N3,alias→予定
+スタイル,スタイル,N3,not picturable
+ストレス,ストレス,N3,not picturable
+セット,セット,N3,not picturable
+センター,センター,N3,not picturable
+タイトル,タイトル,N3,not picturable
+タイプライター,タイプライター,N3,not picturable
+ダイヤ,ダイヤ,N3,not picturable
+ダウン,ダウン,N3,not picturable
+ダンス,ダンス,N3,alias→踊る
+デザイン,デザイン,N3,not picturable
+デモ,デモ,N3,not picturable
+トップ,トップ,N3,not picturable
+トン,トン,N3,not picturable
+ドラマ,ドラマ,N3,not picturable
+ノー,ノー,N3,not picturable
+バッグ,バッグ,N3,alias→かばん
+パス,パス,N3,not picturable
+パーセント,パーセント,N3,not picturable
+プラス,プラス,N3,not picturable
+プラン,プラン,N3,alias→計画
+ボーイ,ボーイ,N3,not picturable
+マイナス,マイナス,N3,not picturable
+マスコミ,マスコミ,N3,not picturable
+マスター,マスター,N3,not picturable
+ミス,ミス,N3,not picturable
+ミルク,ミルク,N3,alias→牛乳
+メンバー,メンバー,N3,not picturable
+ユーモア,ユーモア,N3,not picturable
+ヨーロッパ,ヨーロッパ,N3,not picturable
+ラベル,ラベル,N3,not picturable
+一人一人,ひとりひとり,N3,not picturable
+一家,いっか,N3,alias→家族
+一層,いっそう,N3,not picturable
+一度に,いちどに,N3,not picturable
+一方,いっぽう,N3,not picturable
+一時,いちじ,N3,not picturable
+一種,いっしゅ,N3,not picturable
+一般,いっぱん,N3,not picturable
+一言,ひとこと,N3,not picturable
+万一,まんいち,N3,not picturable
+上京,じょうきょう,N3,not picturable
+上等,じょうとう,N3,not picturable
+上達,じょうたつ,N3,not picturable
+下す,おろす,N3,not picturable
+下り,くだり,N3,not picturable
+不,ふ,N3,not picturable
+不可,ふか,N3,not picturable
+不平,ふへい,N3,not picturable
+不正,ふせい,N3,not picturable
+不満,ふまん,N3,not picturable
+不自由,ふじゆう,N3,not picturable
+不足,ふそく,N3,not picturable
+不通,ふつう,N3,not picturable
+世紀,せいき,N3,not picturable
+丘陵,きゅうりょう,N3,alias→丘
+並,なみ,N3,not picturable
+中古,ちゅうこ,N3,not picturable
+中味,なかみ,N3,not picturable
+中央,ちゅうおう,N3,not picturable
+中心,ちゅうしん,N3,not picturable
+中止,ちゅうし,N3,not picturable
+中身,なかみ,N3,not picturable
+丸,まる,N3,not picturable
+主に,おもに,N3,not picturable
+主張,しゅちょう,N3,not picturable
+主義,しゅぎ,N3,not picturable
+主要,しゅよう,N3,not picturable
+乾燥,かんそう,N3,not picturable
+予報,よほう,N3,not picturable
+予想,よそう,N3,not picturable
+予期,よき,N3,not picturable
+予測,よそく,N3,not picturable
+予算,よさん,N3,not picturable
+予防,よぼう,N3,not picturable
+争う,あらそう,N3,not picturable
+互い,たがい,N3,not picturable
+亡くす,なくす,N3,not picturable
+交ざる,まざる,N3,not picturable
+交じる,まじる,N3,not picturable
+交換,こうかん,N3,alias→取り替える
+交際,こうさい,N3,not picturable
+享受,きょうじゅ,N3,not picturable
+人工,じんこう,N3,not picturable
+人種,じんしゅ,N3,not picturable
+人類,じんるい,N3,not picturable
+今に,いまに,N3,not picturable
+今にも,いまにも,N3,not picturable
+仕様,しよう,N3,not picturable
+付き合い,つきあい,N3,not picturable
+付く,つく,N3,not picturable
+付合う,つきあう,N3,not picturable
+代える,かえる,N3,not picturable
+代る,かわる,N3,not picturable
+代理,だいり,N3,not picturable
+代表,だいひょう,N3,not picturable
+代金,だいきん,N3,not picturable
+仮定,かてい,N3,not picturable
+休息,きゅうそく,N3,alias→休む
+休憩,きゅうけい,N3,alias→休む
+休暇,きゅうか,N3,not picturable
+会合,かいごう,N3,alias→会議
+会員,かいいん,N3,alias→メンバー
+会計,かいけい,N3,not picturable
+伝統,でんとう,N3,not picturable
+伝言,でんごん,N3,not picturable
+伸びる,のびる,N3,alias→伸ばす
+位置,いち,N3,alias→ところ
+住,じゅう,N3,not picturable
+住民,じゅうみん,N3,not picturable
+体育,たいいく,N3,not picturable
+何でも,なんでも,N3,not picturable
+余分,よぶん,N3,not picturable
+余裕,よゆう,N3,not picturable
+作曲,さっきょく,N3,not picturable
+作法,さほう,N3,not picturable
+使用,しよう,N3,alias→使う
+例,れい,N3,not picturable
+例え,たとえ,N3,not picturable
+例外,れいがい,N3,not picturable
+供,とも,N3,not picturable
+供給,きょうきゅう,N3,not picturable
+依然,いぜん,N3,not picturable
+価格,かかく,N3,alias→値段
+便,びん,N3,not picturable
+保存,ほぞん,N3,not picturable
+保証,ほしょう,N3,not picturable
+保護,ほご,N3,not picturable
+保障,ほしょう,N3,not picturable
+信仰,しんこう,N3,not picturable
+修正,しゅうせい,N3,not picturable
+修飾,しゅうしょく,N3,not picturable
+個人,こじん,N3,not picturable
+倒産,とうさん,N3,not picturable
+候補,こうほ,N3,not picturable
+借り,かり,N3,not picturable
+値,ね,N3,not picturable
+偉大,いだい,N3,not picturable
+健康,けんこう,N3,not picturable
+偶,たま,N3,not picturable
+備える,そなえる,N3,not picturable
+傷める,いためる,N3,not picturable
+傾向,けいこう,N3,not picturable
+僅か,わずか,N3,not picturable
+働き,はたらき,N3,not picturable
+優れる,すぐれる,N3,not picturable
+先行,せんこう,N3,not picturable
+光景,こうけい,N3,not picturable
+克服,こくふく,N3,not picturable
+免許,めんきょ,N3,not picturable
+党,とう,N3,not picturable
+全体,ぜんたい,N3,not picturable
+全国,ぜんこく,N3,not picturable
+全身,ぜんしん,N3,not picturable
+公正,こうせい,N3,not picturable
+公演,こうえん,N3,not picturable
+共に,ともに,N3,not picturable
+共同,きょうどう,N3,alias→協力
+共通,きょうつう,N3,not picturable
+具える,そなえる,N3,not picturable
+具体,ぐたい,N3,not picturable
+典型,てんけい,N3,not picturable
+円,えん,N3,not picturable
+再び,ふたたび,N3,not picturable
+冒険,ぼうけん,N3,not picturable
+写る,うつる,N3,not picturable
+冷める,さめる,N3,not picturable
+冷静,れいせい,N3,not picturable
+処理,しょり,N3,not picturable
+出,で,N3,not picturable
+出合い,であい,N3,alias→出会う
+出場,しゅつじょう,N3,alias→参加
+出来事,できごと,N3,not picturable
+出版,しゅっぱん,N3,not picturable
+出身,しゅっしん,N3,not picturable
+刀,かたな,N3,alias→剣
+分かれる,わかれる,N3,not picturable
+分析,ぶんせき,N3,not picturable
+分野,ぶんや,N3,not picturable
+切り,きり,N3,not picturable
+切れ,きれ,N3,not picturable
+刊行,かんこう,N3,not picturable
+刑,けい,N3,not picturable
+列車,れっしゃ,N3,alias→汽車
+判,はん,N3,not picturable
+別れ,わかれ,N3,not picturable
+利口,りこう,N3,not picturable
+利益,りえき,N3,not picturable
+制度,せいど,N3,not picturable
+制限,せいげん,N3,not picturable
+刷る,する,N3,not picturable
+券,けん,N3,alias→チケット
+刺激,しげき,N3,not picturable
+前もって,まえもって,N3,not picturable
+前者,ぜんしゃ,N3,not picturable
+前進,ぜんしん,N3,alias→進む
+創造,そうぞう,N3,not picturable
+劇,げき,N3,alias→ドラマ
+加える,くわえる,N3,not picturable
+加わる,くわわる,N3,not picturable
+加味,かみ,N3,not picturable
+加減,かげん,N3,not picturable
+劣る,おとる,N3,not picturable
+助手,じょしゅ,N3,not picturable
+助詞,じょし,N3,not picturable
+労働,ろうどう,N3,not picturable
+効く,きく,N3,not picturable
+効果,こうか,N3,not picturable
+動かす,うごかす,N3,alias→動く
+動揺,どうよう,N3,not picturable
+動詞,どうし,N3,not picturable
+勘,かん,N3,not picturable
+勘定,かんじょう,N3,not picturable
+務め,つとめ,N3,not picturable
+勝ち,かち,N3,alias→勝つ
+勢い,いきおい,N3,not picturable
+勤め,つとめ,N3,alias→仕事
+勧める,すすめる,N3,not picturable
+化学,かがく,N3,not picturable
+区別,くべつ,N3,not picturable
+半ば,なかば,N3,not picturable
+協調,きょうちょう,N3,not picturable
+協議,きょうぎ,N3,not picturable
+単なる,たんなる,N3,not picturable
+単に,たんに,N3,not picturable
+単位,たんい,N3,not picturable
+単純,たんじゅん,N3,not picturable
+単語,たんご,N3,not picturable
+博士,はかせ,N3,not picturable
+占める,しめる,N3,not picturable
+印,しるし,N3,not picturable
+印象,いんしょう,N3,not picturable
+卸す,おろす,N3,not picturable
+厄介,やっかい,N3,alias→面倒
+参考,さんこう,N3,not picturable
+及ぼす,およぼす,N3,not picturable
+友,とも,N3,alias→友達
+友好,ゆうこう,N3,not picturable
+反抗,はんこう,N3,not picturable
+反省,はんせい,N3,not picturable
+収める,おさめる,N3,not picturable
+収入,しゅうにゅう,N3,not picturable
+取り上げる,とりあげる,N3,not picturable
+句,く,N3,not picturable
+只,ただ,N3,not picturable
+可,か,N3,not picturable
+可愛そう,かわいそう,N3,not picturable
+合図,あいず,N3,not picturable
+合計,ごうけい,N3,not picturable
+同一,どういつ,N3,not picturable
+同僚,どうりょう,N3,not picturable
+同志,どうし,N3,not picturable
+同時,どうじ,N3,not picturable
+同様,どうよう,N3,not picturable
+名人,めいじん,N3,not picturable
+名刺,めいし,N3,not picturable
+名詞,めいし,N3,not picturable
+向かい,むかい,N3,not picturable
+否,いや,N3,not picturable
+否定,ひてい,N3,not picturable
+含む,ふくむ,N3,not picturable
+含める,ふくめる,N3,not picturable
+吸収,きゅうしゅう,N3,not picturable
+周囲,しゅうい,N3,alias→周り
+呼吸,こきゅう,N3,alias→息
+命じる,めいじる,N3,not picturable
+咥える,くわえる,N3,not picturable
+哀れ,あわれ,N3,not picturable
+品,しな,N3,not picturable
+哲学,てつがく,N3,not picturable
+唯,ただ,N3,not picturable
+唯一,ゆいいつ,N3,not picturable
+商人,しょうにん,N3,not picturable
+問い,とい,N3,alias→質問
+善,ぜん,N3,not picturable
+器官,きかん,N3,not picturable
+器械,きかい,N3,not picturable
+器用,きよう,N3,alias→お上手
+四季,しき,N3,not picturable
+四角,しかく,N3,not picturable
+回復,かいふく,N3,not picturable
+因る,よる,N3,not picturable
+団体,だんたい,N3,alias→組織
+図る,はかる,N3,not picturable
+図書,としょ,N3,not picturable
+国会,こっかい,N3,not picturable
+国境,こっきょう,N3,not picturable
+国家,こっか,N3,not picturable
+国民,こくみん,N3,not picturable
+国籍,こくせき,N3,not picturable
+国語,こくご,N3,not picturable
+土産,みやげ,N3,alias→お土産
+地下,ちか,N3,not picturable
+地位,ちい,N3,not picturable
+地区,ちく,N3,not picturable
+地域,ちいき,N3,not picturable
+地方,ちほう,N3,not picturable
+型,かた,N3,not picturable
+埋まる,うまる,N3,not picturable
+基,もと,N3,not picturable
+基づく,もとづく,N3,not picturable
+基本,きほん,N3,not picturable
+堀,ほり,N3,not picturable
+場面,ばめん,N3,alias→光景
+塵,ごみ,N3,not picturable
+境,さかい,N3,not picturable
+増やす,ふやす,N3,alias→増える
+増加,ぞうか,N3,not picturable
+墨,すみ,N3,alias→インク
+声明,せいめい,N3,not picturable
+変更,へんこう,N3,alias→変わる
+外れる,はずれる,N3,not picturable
+外交,がいこう,N3,not picturable
+外出,がいしゅつ,N3,not picturable
+多少,たしょう,N3,not picturable
+夜中,よなか,N3,not picturable
+大いに,おおいに,N3,not picturable
+大人しい,おとなしい,N3,not picturable
+大使,たいし,N3,not picturable
+大半,たいはん,N3,not picturable
+大家,おおや,N3,not picturable
+大戦,たいせん,N3,not picturable
+大気,たいき,N3,not picturable
+大統領,だいとうりょう,N3,not picturable
+大臣,だいじん,N3,not picturable
+大部分,だいぶぶん,N3,not picturable
+大陸,たいりく,N3,not picturable
+天候,てんこう,N3,alias→天気
+天然,てんねん,N3,not picturable
+夫人,ふじん,N3,alias→奥さん
+失望,しつぼう,N3,not picturable
+失業,しつぎょう,N3,not picturable
+奇妙,きみょう,N3,alias→変
+契機,けいき,N3,not picturable
+奨学金,しょうがくきん,N3,not picturable
+女史,じょし,N3,not picturable
+好み,このみ,N3,alias→好き
+好む,このむ,N3,alias→気に入る
+妙,みょう,N3,not picturable
+始まり,はじまり,N3,not picturable
+姓,せい,N3,not picturable
+姓名,せいめい,N3,not picturable
+委員,いいん,N3,not picturable
+婚約,こんやく,N3,not picturable
+婦人,ふじん,N3,alias→女
+字体,じたい,N3,not picturable
+季刊,きかん,N3,not picturable
+学,がく,N3,not picturable
+学期,がっき,N3,not picturable
+学歴,がくれき,N3,not picturable
+学習,がくしゅう,N3,alias→勉強
+学者,がくしゃ,N3,not picturable
+宅,たく,N3,alias→家
+安定,あんてい,N3,not picturable
+完了,かんりょう,N3,not picturable
+宗教,しゅうきょう,N3,not picturable
+官僚,かんりょう,N3,not picturable
+定期,ていき,N3,not picturable
+宛てる,あてる,N3,not picturable
+実に,じつに,N3,not picturable
+実力,じつりょく,N3,not picturable
+実施,じっし,N3,not picturable
+実現,じつげん,N3,not picturable
+実行,じっこう,N3,not picturable
+宣伝,せんでん,N3,not picturable
+害,がい,N3,not picturable
+家事,かじ,N3,not picturable
+家賃,やちん,N3,not picturable
+容器,ようき,N3,not picturable
+容易,ようい,N3,not picturable
+宿,やど,N3,not picturable
+寄付,きふ,N3,not picturable
+密,みつ,N3,not picturable
+寮,りょう,N3,not picturable
+対,たい,N3,not picturable
+対する,たいする,N3,not picturable
+対照,たいしょう,N3,not picturable
+対象,たいしょう,N3,not picturable
+専攻,せんこう,N3,not picturable
+尊敬,そんけい,N3,not picturable
+尊重,そんちょう,N3,alias→尊敬
+小,しょう,N3,not picturable
+少々,しょうしょう,N3,not picturable
+少しも,すこしも,N3,not picturable
+尤も,もっとも,N3,not picturable
+就く,つく,N3,not picturable
+州,しゅう,N3,not picturable
+左右,さゆう,N3,not picturable
+巨大,きょだい,N3,alias→でかい
+差,さ,N3,not picturable
+差別,さべつ,N3,not picturable
+市場,いちば,N3,alias→マーケット
+帯,おび,N3,not picturable
+帰す,かえす,N3,not picturable
+常に,つねに,N3,not picturable
+常識,じょうしき,N3,not picturable
+幅,はば,N3,not picturable
+幕,まく,N3,alias→カーテン
+平ら,たいら,N3,not picturable
+平和,へいわ,N3,not picturable
+平均,へいきん,N3,not picturable
+平等,びょうどう,N3,not picturable
+年中,ねんじゅう,N3,not picturable
+年代,ねんだい,N3,not picturable
+年月,としつき,N3,not picturable
+年鑑,ねんかん,N3,not picturable
+年齢,ねんれい,N3,alias→歳
+幸い,さいわい,N3,not picturable
+幸福,こうふく,N3,alias→幸せ
+幸運,こううん,N3,not picturable
+広がる,ひろがる,N3,not picturable
+広まる,ひろまる,N3,not picturable
+広める,ひろめる,N3,not picturable
+広告,こうこく,N3,not picturable
+座席,ざせき,N3,alias→席
+延ばす,のばす,N3,not picturable
+延びる,のびる,N3,not picturable
+延期,えんき,N3,not picturable
+建つ,たつ,N3,not picturable
+建築,けんちく,N3,not picturable
+建設,けんせつ,N3,alias→建築
+引っ張る,ひっぱる,N3,alias→引く
+引用,いんよう,N3,not picturable
+引退,いんたい,N3,not picturable
+弱まる,よわまる,N3,not picturable
+弱める,よわめる,N3,not picturable
+強まる,つよまる,N3,not picturable
+強める,つよめる,N3,not picturable
+強力,きょうりょく,N3,not picturable
+強調,きょうちょう,N3,not picturable
+弾,たま,N3,not picturable
+当り,あたり,N3,not picturable
+形態,けいたい,N3,not picturable
+役割,やくわり,N3,not picturable
+後者,こうしゃ,N3,not picturable
+後輩,こうはい,N3,not picturable
+徐々に,じょじょに,N3,not picturable
+従う,したがう,N3,not picturable
+従兄弟,いとこ,N3,not picturable
+従姉妹,いとこ,N3,alias→従兄弟
+微妙,びみょう,N3,not picturable
+微笑む,ほほえむ,N3,alias→笑顔
+徹夜,てつや,N3,not picturable
+徹底,てってい,N3,not picturable
+心理,しんり,N3,not picturable
+必ずしも,かならずしも,N3,not picturable
+志望,しぼう,N3,not picturable
+応じる,おうじる,N3,not picturable
+快適,かいてき,N3,not picturable
+思い付く,おもいつく,N3,not picturable
+思わず,おもわず,N3,not picturable
+思想,しそう,N3,not picturable
+怠ける,なまける,N3,not picturable
+急激,きゅうげき,N3,not picturable
+急速,きゅうそく,N3,not picturable
+性格,せいかく,N3,not picturable
+性質,せいしつ,N3,not picturable
+恐怖,きょうふ,N3,alias→恐れる
+恩,おん,N3,not picturable
+悪,あく,N3,not picturable
+悪口,わるくち,N3,not picturable
+悲劇,ひげき,N3,not picturable
+情,じょう,N3,not picturable
+意,い,N3,not picturable
+意地,いじ,N3,not picturable
+意地悪,いじわる,N3,not picturable
+意志,いし,N3,not picturable
+意思,いし,N3,not picturable
+愛情,あいじょう,N3,alias→愛
+感じ,かんじ,N3,not picturable
+感動,かんどう,N3,not picturable
+感心,かんしん,N3,not picturable
+感想,かんそう,N3,not picturable
+感覚,かんかく,N3,not picturable
+慎重,しんちょう,N3,not picturable
+慣らす,ならす,N3,not picturable
+慣行,かんこう,N3,not picturable
+憲法,けんぽう,N3,not picturable
+成人,せいじん,N3,alias→大人
+成年,せいねん,N3,not picturable
+成績,せいせき,N3,not picturable
+戦い,たたかい,N3,not picturable
+所為,せい,N3,not picturable
+手伝い,てつだい,N3,alias→助ける
+手段,しゅだん,N3,not picturable
+手間,てま,N3,not picturable
+批判,ひはん,N3,not picturable
+批評,ひひょう,N3,not picturable
+承認,しょうにん,N3,not picturable
+技師,ぎし,N3,not picturable
+抵抗,ていこう,N3,not picturable
+拘束,こうそく,N3,not picturable
+招く,まねく,N3,alias→誘う
+拡大,かくだい,N3,not picturable
+指導,しどう,N3,not picturable
+挑戦,ちょうせん,N3,not picturable
+振り,ふり,N3,not picturable
+振興,しんこう,N3,not picturable
+挿す,さす,N3,not picturable
+捲る,めくる,N3,not picturable
+採集,さいしゅう,N3,not picturable
+接ぐ,つぐ,N3,not picturable
+推薦,すいせん,N3,not picturable
+掲示,けいじ,N3,not picturable
+揃える,そろえる,N3,not picturable
+提案,ていあん,N3,not picturable
+換える,かえる,N3,not picturable
+援助,えんじょ,N3,not picturable
+損,そん,N3,not picturable
+損害,そんがい,N3,not picturable
+支出,ししゅつ,N3,not picturable
+支店,してん,N3,not picturable
+支払,しはらい,N3,not picturable
+支給,しきゅう,N3,not picturable
+支配,しはい,N3,not picturable
+改善,かいぜん,N3,not picturable
+攻める,せめる,N3,alias→襲う
+放れる,はなれる,N3,not picturable
+政府,せいふ,N3,not picturable
+故人,こじん,N3,not picturable
+故郷,こきょう,N3,not picturable
+教え,おしえ,N3,not picturable
+教わる,おそわる,N3,not picturable
+散らす,ちらす,N3,alias→散らばる
+敬意,けいい,N3,alias→尊敬
+数字,すうじ,N3,not picturable
+整理,せいり,N3,not picturable
+文字,もじ,N3,not picturable
+文明,ぶんめい,N3,not picturable
+料金,りょうきん,N3,not picturable
+断つ,たつ,N3,not picturable
+新興,しんこう,N3,not picturable
+新鮮,しんせん,N3,not picturable
+方々,かたがた,N3,not picturable
+方向,ほうこう,N3,not picturable
+既に,すでに,N3,not picturable
+日中,にっちゅう,N3,not picturable
+日常,にちじょう,N3,not picturable
+旧,きゅう,N3,not picturable
+昇る,のぼる,N3,not picturable
+明らか,あきらか,N3,not picturable
+明確,めいかく,N3,not picturable
+映す,うつす,N3,not picturable
+映る,うつる,N3,not picturable
+昨,さく,N3,not picturable
+昼食,ちゅうしょく,N3,alias→昼御飯
+時刻,じこく,N3,alias→時
+景気,けいき,N3,not picturable
+暖まる,あたたまる,N3,not picturable
+暖める,あたためる,N3,alias→暖かい
+暗記,あんき,N3,not picturable
+暮らし,くらし,N3,not picturable
+暮れ,くれ,N3,not picturable
+曜日,ようび,N3,not picturable
+更に,さらに,N3,not picturable
+書物,しょもつ,N3,alias→図書
+書類,しょるい,N3,alias→資料
+替える,かえる,N3,not picturable
+最中,さいちゅう,N3,not picturable
+最終,さいしゅう,N3,alias→最後
+有利,ゆうり,N3,not picturable
+有効,ゆうこう,N3,not picturable
+有機,ゆうき,N3,not picturable
+有無,うむ,N3,not picturable
+有能,ゆうのう,N3,not picturable
+服装,ふくそう,N3,alias→服
+望み,のぞみ,N3,not picturable
+期間,きかん,N3,not picturable
+期限,きげん,N3,not picturable
+末,すえ,N3,not picturable
+札,さつ,N3,not picturable
+材料,ざいりょう,N3,not picturable
+来,らい～,N3,not picturable
+東洋,とうよう,N3,not picturable
+枠,わく,N3,not picturable
+栄養,えいよう,N3,not picturable
+株,かぶ,N3,not picturable
+核,かく,N3,not picturable
+格,かく,N3,not picturable
+案,あん,N3,not picturable
+案外,あんがい,N3,not picturable
+棒,ぼう,N3,not picturable
+棟,とう,N3,not picturable
+検討,けんとう,N3,not picturable
+極,ごく,N3,not picturable
+構成,こうせい,N3,not picturable
+様々,さまざま,N3,not picturable
+模様,もよう,N3,not picturable
+権利,けんり,N3,not picturable
+横切る,よこぎる,N3,not picturable
+横断,おうだん,N3,not picturable
+機嫌,きげん,N3,not picturable
+機械,きかい,N3,not picturable
+機構,きこう,N3,not picturable
+機能,きのう,N3,not picturable
+機関,きかん,N3,not picturable
+欠く,かく,N3,not picturable
+欠ける,かける,N3,not picturable
+欠席,けっせき,N3,not picturable
+欠点,けってん,N3,not picturable
+欠陥,けっかん,N3,not picturable
+次々,つぎつぎ,N3,not picturable
+次ぐ,つぐ,N3,not picturable
+歌謡,かよう,N3,not picturable
+歓迎,かんげい,N3,alias→いらっしゃい
+正,せい,N3,not picturable
+正午,しょうご,N3,alias→昼
+正式,せいしき,N3,not picturable
+正確,せいかく,N3,not picturable
+正規,せいき,N3,not picturable
+歩道,ほどう,N3,not picturable
+残り,のこり,N3,not picturable
+殖やす,ふやす,N3,alias→増える
+段,だん,N3,not picturable
+比較,ひかく,N3,not picturable
+気の毒,きのどく,N3,alias→可哀相
+気体,きたい,N3,not picturable
+気候,きこう,N3,not picturable
+気味,きみ,N3,not picturable
+水洗,すいせん,N3,not picturable
+水準,すいじゅん,N3,not picturable
+永久,えいきゅう,N3,not picturable
+汚す,よごす,N3,not picturable
+汚染,おせん,N3,not picturable
+決まり,きまり,N3,not picturable
+決定,けってい,N3,not picturable
+決心,けっしん,N3,not picturable
+決行,けっこう,N3,not picturable
+沖,おき,N3,not picturable
+治める,おさめる,N3,not picturable
+沿う,そう,N3,not picturable
+泊める,とめる,N3,not picturable
+法,ほう,N3,not picturable
+泳ぎ,およぎ,N3,alias→水泳
+活動,かつどう,N3,not picturable
+活気,かっき,N3,not picturable
+活用,かつよう,N3,not picturable
+活躍,かつやく,N3,not picturable
+流れ,ながれ,N3,not picturable
+流行,りゅうこう,N3,not picturable
+消費,しょうひ,N3,not picturable
+深まる,ふかまる,N3,not picturable
+深める,ふかめる,N3,not picturable
+深刻,しんこく,N3,not picturable
+混ざる,まざる,N3,alias→交ぜる
+混じる,まじる,N3,not picturable
+混乱,こんらん,N3,not picturable
+清む,すむ,N3,not picturable
+清潔,せいけつ,N3,not picturable
+済ませる,すませる,N3,not picturable
+減らす,へらす,N3,alias→減る
+減少,げんしょう,N3,not picturable
+渦,うず,N3,not picturable
+温かい,あたたかい,N3,alias→暖かい
+温まる,あたたまる,N3,not picturable
+温める,あたためる,N3,alias→暖かい
+温暖,おんだん,N3,not picturable
+湿る,しめる,N3,not picturable
+湿度,しつど,N3,not picturable
+湿気,しっけ,N3,not picturable
+満ちる,みちる,N3,not picturable
+満足,まんぞく,N3,not picturable
+滅多に,めったに,N3,not picturable
+滞在,たいざい,N3,not picturable
+演技,えんぎ,N3,not picturable
+演説,えんぜつ,N3,alias→スピーチ
+激しい,はげしい,N3,not picturable
+濠,ほり,N3,not picturable
+濡らす,ぬらす,N3,not picturable
+灯,ひ,N3,alias→光
+灰,はい,N3,not picturable
+為る,する,N3,not picturable
+無,ぶ,N3,not picturable
+無し,なし,N3,not picturable
+無料,むりょう,N3,not picturable
+照明,しょうめい,N3,not picturable
+熱中,ねっちゅう,N3,alias→熱心
+熱帯,ねったい,N3,not picturable
+片付け,かたづけ,N3,not picturable
+版,はん,N3,not picturable
+物事,ものごと,N3,not picturable
+物価,ぶっか,N3,not picturable
+物理,ぶつり,N3,not picturable
+物質,ぶっしつ,N3,not picturable
+特徴,とくちょう,N3,not picturable
+特長,とくちょう,N3,not picturable
+狩り,かり,N3,not picturable
+独り,ひとり,N3,not picturable
+独特,どくとく,N3,not picturable
+独立,どくりつ,N3,not picturable
+独身,どくしん,N3,not picturable
+率,りつ,N3,not picturable
+王様,おうさま,N3,alias→王
+現す,あらわす,N3,not picturable
+現れ,あらわれ,N3,not picturable
+現代,げんだい,N3,not picturable
+現状,げんじょう,N3,not picturable
+現象,げんしょう,N3,not picturable
+現金,げんきん,N3,not picturable
+球,きゅう,N3,not picturable
+理想,りそう,N3,not picturable
+環境,かんきょう,N3,not picturable
+生き物,いきもの,N3,not picturable
+生じる,しょうじる,N3,not picturable
+生まれ,うまれ,N3,not picturable
+生る,なる,N3,not picturable
+生命,せいめい,N3,not picturable
+生地,きじ,N3,not picturable
+生年月日,せいねんがっぴ,N3,not picturable
+生涯,しょうがい,N3,not picturable
+生物,せいぶつ,N3,not picturable
+生理,せいり,N3,not picturable
+生長,せいちょう,N3,not picturable
+用いる,もちいる,N3,not picturable
+申し込む,もうしこむ,N3,not picturable
+男の人,おとこのひと,N3,not picturable
+留める,とめる,N3,not picturable
+留学,りゅうがく,N3,not picturable
+異なる,ことなる,N3,not picturable
+異動,いどう,N3,not picturable
+異常,いじょう,N3,not picturable
+疑問,ぎもん,N3,not picturable
+症状,しょうじょう,N3,not picturable
+癌,がん,N3,not picturable
+発射,はっしゃ,N3,not picturable
+発展,はってん,N3,not picturable
+発明,はつめい,N3,not picturable
+発行,はっこう,N3,not picturable
+発車,はっしゃ,N3,not picturable
+発達,はったつ,N3,not picturable
+皿,さら,N3,alias→お皿
+盛り,さかり,N3,not picturable
+目上,めうえ,N3,not picturable
+目標,もくひょう,N3,not picturable
+直ちに,ただちに,N3,not picturable
+直に,じかに,N3,not picturable
+相続,そうぞく,N3,not picturable
+省く,はぶく,N3,not picturable
+省略,しょうりゃく,N3,not picturable
+真っ赤,まっか,N3,not picturable
+真似,まね,N3,not picturable
+真剣,しんけん,N3,not picturable
+真理,しんり,N3,not picturable
+眺め,ながめ,N3,not picturable
+眺める,ながめる,N3,not picturable
+睡眠,すいみん,N3,alias→寝る
+知らせ,しらせ,N3,not picturable
+知事,ちじ,N3,not picturable
+知合い,しりあい,N3,not picturable
+知恵,ちえ,N3,not picturable
+知能,ちのう,N3,not picturable
+知識,ちしき,N3,not picturable
+石炭,せきたん,N3,not picturable
+破れる,やぶれる,N3,not picturable
+破産,はさん,N3,not picturable
+硬貨,こうか,N3,alias→コイン
+碑,ひ,N3,not picturable
+碗,わん,N3,alias→椀
+確実,かくじつ,N3,not picturable
+磁器,じき,N3,not picturable
+磁気,じき,N3,not picturable
+示す,しめす,N3,not picturable
+礼儀,れいぎ,N3,not picturable
+祝い,いわい,N3,not picturable
+祝う,いわう,N3,not picturable
+神経,しんけい,N3,not picturable
+票,ひょう,N3,not picturable
+祭,まつり,N3,alias→お祭り
+禁煙,きんえん,N3,not picturable
+禅,ぜん,N3,not picturable
+福,ふく,N3,not picturable
+科目,かもく,N3,not picturable
+税,ぜい,N3,not picturable
+税金,ぜいきん,N3,not picturable
+種類,しゅるい,N3,not picturable
+穀物,こくもつ,N3,not picturable
+積む,つむ,N3,alias→溜まる
+積極的,せっきょくてき,N3,not picturable
+穏やか,おだやか,N3,not picturable
+空き,あき,N3,not picturable
+立ち上がる,たちあがる,N3,alias→立てる
+章,しょう,N3,not picturable
+童謡,どうよう,N3,not picturable
+端,はし,N3,not picturable
+競技,きょうぎ,N3,alias→ゲーム
+笑い,わらい,N3,alias→笑う
+等しい,ひとしい,N3,not picturable
+筋,すじ,N3,not picturable
+答案,とうあん,N3,not picturable
+策,さく,N3,not picturable
+管,かん,N3,not picturable
+管理,かんり,N3,not picturable
+節,せつ,N3,not picturable
+節約,せつやく,N3,not picturable
+範囲,はんい,N3,not picturable
+築く,きずく,N3,not picturable
+粋,いき,N3,not picturable
+粗,あら,N3,not picturable
+粗末,そまつ,N3,not picturable
+精々,せいぜい,N3,not picturable
+精巧,せいこう,N3,not picturable
+精神,せいしん,N3,not picturable
+精算,せいさん,N3,not picturable
+納める,おさめる,N3,not picturable
+終える,おえる,N3,alias→終る
+組合,くみあい,N3,not picturable
+経つ,たつ,N3,not picturable
+経る,へる,N3,not picturable
+経由,けいゆ,N3,not picturable
+経緯,けいい,N3,not picturable
+結論,けつろん,N3,not picturable
+絵画,かいが,N3,alias→絵
+絶滅,ぜつめつ,N3,not picturable
+続き,つづき,N3,not picturable
+維持,いじ,N3,not picturable
+綿,めん,N3,alias→木綿
+縁,えん,N3,not picturable
+繋がる,つながる,N3,not picturable
+繋げる,つなげる,N3,not picturable
+罰する,ばっする,N3,not picturable
+罹る,かかる,N3,not picturable
+群,ぐん,N3,alias→班
+義務,ぎむ,N3,not picturable
+羽根,はね,N3,not picturable
+老い,おい,N3,not picturable
+考え,かんがえ,N3,not picturable
+考慮,こうりょ,N3,not picturable
+職,しょく,N3,not picturable
+職業,しょくぎょう,N3,not picturable
+肌,はだ,N3,not picturable
+股,また,N3,not picturable
+肺,はい,N3,not picturable
+能,のう,N3,not picturable
+脂,あぶら,N3,not picturable
+脂肪,しぼう,N3,not picturable
+脇,わき,N3,not picturable
+腐る,くさる,N3,not picturable
+膜,まく,N3,not picturable
+臨む,のぞむ,N3,not picturable
+自動,じどう,N3,not picturable
+自己,じこ,N3,not picturable
+自慢,じまん,N3,not picturable
+自然,しぜん,N3,not picturable
+至急,しきゅう,N3,not picturable
+興奮,こうふん,N3,not picturable
+航海,こうかい,N3,not picturable
+航空,こうくう,N3,not picturable
+芸術,げいじゅつ,N3,not picturable
+苦,く,N3,not picturable
+苦痛,くつう,N3,not picturable
+荒廃,こうはい,N3,not picturable
+莫大,ばくだい,N3,not picturable
+菌,きん,N3,not picturable
+著す,あらわす,N3,not picturable
+著者,ちょしゃ,N3,alias→作家
+蒸し暑い,むしあつい,N3,not picturable
+血液,けつえき,N3,alias→血
+血管,けっかん,N3,not picturable
+衆,しゅう,N3,not picturable
+行き,いき,N3,not picturable
+行儀,ぎょうぎ,N3,alias→作法
+衣料,いりょう,N3,not picturable
+衣服,いふく,N3,alias→服
+表す,あらわす,N3,not picturable
+表情,ひょうじょう,N3,not picturable
+表現,ひょうげん,N3,not picturable
+表面,ひょうめん,N3,not picturable
+被害,ひがい,N3,not picturable
+裁く,さばく,N3,not picturable
+裂く,さく,N3,not picturable
+装置,そうち,N3,not picturable
+補償,ほしょう,N3,not picturable
+裸,はだか,N3,not picturable
+製品,せいひん,N3,not picturable
+製造,せいぞう,N3,not picturable
+要するに,ようするに,N3,not picturable
+要点,ようてん,N3,not picturable
+要素,ようそ,N3,not picturable
+覆う,おおう,N3,not picturable
+見当,けんとう,N3,not picturable
+見掛ける,みかける,N3,not picturable
+見舞い,みまい,N3,not picturable
+見解,けんかい,N3,not picturable
+見送り,みおくり,N3,not picturable
+規制,きせい,N3,not picturable
+視覚,しかく,N3,not picturable
+覚ます,さます,N3,not picturable
+覚める,さめる,N3,not picturable
+親しい,したしい,N3,not picturable
+親戚,しんせき,N3,not picturable
+観光,かんこう,N3,alias→見物
+観察,かんさつ,N3,not picturable
+解く,とく,N3,not picturable
+解ける,とける,N3,not picturable
+解釈,かいしゃく,N3,not picturable
+言わば,いわば,N3,not picturable
+言語,げんご,N3,not picturable
+計,けい,N3,not picturable
+計る,はかる,N3,alias→測る
+計器,けいき,N3,not picturable
+計算,けいさん,N3,alias→勘定
+訓練,くんれん,N3,alias→練習
+記念,きねん,N3,not picturable
+設備,せつび,N3,not picturable
+訳す,やくす,N3,not picturable
+評価,ひょうか,N3,not picturable
+評判,ひょうばん,N3,not picturable
+試し,ためし,N3,not picturable
+詩,し,N3,not picturable
+詩人,しじん,N3,not picturable
+詰める,つめる,N3,not picturable
+話題,わだい,N3,not picturable
+誇り,ほこり,N3,alias→自慢
+語る,かたる,N3,alias→しゃべる
+語学,ごがく,N3,not picturable
+誤り,あやまり,N3,not picturable
+説,せつ,N3,not picturable
+説く,とく,N3,not picturable
+読み,よみ,N3,not picturable
+課程,かてい,N3,not picturable
+課題,かだい,N3,not picturable
+請求,せいきゅう,N3,not picturable
+論じる,ろんじる,N3,not picturable
+論争,ろんそう,N3,not picturable
+論文,ろんぶん,N3,not picturable
+諮る,はかる,N3,not picturable
+諺,ことわざ,N3,not picturable
+講演,こうえん,N3,alias→講義
+警告,けいこく,N3,not picturable
+議会,ぎかい,N3,not picturable
+議論,ぎろん,N3,not picturable
+議長,ぎちょう,N3,alias→会長
+豊か,ゆたか,N3,not picturable
+豊富,ほうふ,N3,not picturable
+豪華,ごうか,N3,not picturable
+負け,まけ,N3,not picturable
+財産,ざいさん,N3,not picturable
+貢献,こうけん,N3,not picturable
+貧しい,まずしい,N3,not picturable
+販売,はんばい,N3,not picturable
+貴重,きちょう,N3,alias→大切
+貸し,かし,N3,not picturable
+費用,ひよう,N3,not picturable
+資本,しほん,N3,not picturable
+資格,しかく,N3,not picturable
+資源,しげん,N3,not picturable
+賛成,さんせい,N3,not picturable
+賞品,しょうひん,N3,alias→賞
+賢い,かしこい,N3,not picturable
+質,しつ,N3,not picturable
+贅沢,ぜいたく,N3,not picturable
+起源,きげん,N3,not picturable
+超す,こす,N3,not picturable
+越える,こえる,N3,alias→超える
+越す,こす,N3,not picturable
+足袋,たび,N3,not picturable
+身体,しんたい,N3,alias→体
+身長,しんちょう,N3,not picturable
+軒,のき,N3,not picturable
+転校,てんこう,N3,not picturable
+載せる,のせる,N3,not picturable
+載る,のる,N3,not picturable
+輝く,かがやく,N3,alias→光る
+辞退,じたい,N3,not picturable
+農家,のうか,N3,not picturable
+農業,のうぎょう,N3,not picturable
+農民,のうみん,N3,not picturable
+辺り,あたり,N3,not picturable
+近代,きんだい,N3,not picturable
+近視,きんし,N3,not picturable
+近頃,ちかごろ,N3,not picturable
+述べる,のべる,N3,not picturable
+追い付く,おいつく,N3,not picturable
+退く,どく,N3,not picturable
+退学,たいがく,N3,not picturable
+逆らう,さからう,N3,not picturable
+途端,とたん,N3,not picturable
+通じる,つうじる,N3,not picturable
+通す,とおす,N3,not picturable
+通り過ぎる,とおりすぎる,N3,not picturable
+通信,つうしん,N3,not picturable
+通勤,つうきん,N3,not picturable
+通学,つうがく,N3,not picturable
+通行,つうこう,N3,not picturable
+通訳,つうやく,N3,not picturable
+通貨,つうか,N3,not picturable
+通過,つうか,N3,not picturable
+速度,そくど,N3,not picturable
+連れ,つれ,N3,not picturable
+連想,れんそう,N3,not picturable
+連続,れんぞく,N3,not picturable
+週,しゅう,N3,not picturable
+進学,しんがく,N3,not picturable
+進歩,しんぽ,N3,not picturable
+進行,しんこう,N3,not picturable
+遂に,ついに,N3,not picturable
+遅れ,おくれ,N3,not picturable
+遅刻,ちこく,N3,not picturable
+運,うん,N3,not picturable
+過程,かてい,N3,not picturable
+道徳,どうとく,N3,not picturable
+道路,どうろ,N3,alias→道
+達する,たっする,N3,not picturable
+違い,ちがい,N3,not picturable
+違いない,ちがいない,N3,not picturable
+違反,いはん,N3,not picturable
+適する,てきする,N3,not picturable
+適切,てきせつ,N3,not picturable
+適度,てきど,N3,not picturable
+適用,てきよう,N3,not picturable
+遭う,あう,N3,alias→会う
+選択,せんたく,N3,not picturable
+選挙,せんきょ,N3,not picturable
+選考,せんこう,N3,alias→選択
+郡,ぐん,N3,not picturable
+都市,とし,N3,alias→街
+酌む,くむ,N3,not picturable
+酢,す,N3,not picturable
+酸化,さんか,N3,not picturable
+酸性,さんせい,N3,not picturable
+酸素,さんそ,N3,not picturable
+重なる,かさなる,N3,not picturable
+重体,じゅうたい,N3,not picturable
+重大,じゅうだい,N3,not picturable
+重視,じゅうし,N3,not picturable
+野,の,N3,not picturable
+野党,やとう,N3,not picturable
+量る,はかる,N3,alias→測る
+金属,きんぞく,N3,not picturable
+金融,きんゆう,N3,not picturable
+金銭,きんせん,N3,alias→お金
+金額,きんがく,N3,not picturable
+針,はり,N3,not picturable
+鉄,てつ,N3,not picturable
+銀,ぎん,N3,not picturable
+鋭い,するどい,N3,not picturable
+鐘,かね,N3,alias→ベル
+長期,ちょうき,N3,not picturable
+閉じる,とじる,N3,not picturable
+間違い,まちがい,N3,not picturable
+間隔,かんかく,N3,not picturable
+関する,かんする,N3,not picturable
+関心,かんしん,N3,not picturable
+関連,かんれん,N3,not picturable
+防ぐ,ふせぐ,N3,not picturable
+降ろす,おろす,N3,not picturable
+降伏,こうふく,N3,not picturable
+除く,のぞく,N3,alias→外す
+陰,かげ,N3,alias→影
+陸,りく,N3,alias→土地
+障害,しょうがい,N3,not picturable
+集まり,あつまり,N3,not picturable
+集団,しゅうだん,N3,alias→班
+雰囲気,ふんいき,N3,not picturable
+電子,でんし,N3,not picturable
+需要,じゅよう,N3,not picturable
+青年,せいねん,N3,not picturable
+非常,ひじょう,N3,not picturable
+非行,ひこう,N3,not picturable
+面接,めんせつ,N3,alias→インタビュー
+革,かわ,N3,not picturable
+頂上,ちょうじょう,N3,alias→トップ
+順,じゅん,N3,not picturable
+順調,じゅんちょう,N3,not picturable
+預ける,あずける,N3,not picturable
+題,だい,N3,not picturable
+題名,だいめい,N3,not picturable
+願い,ねがい,N3,alias→望む
+風景,ふうけい,N3,alias→景色
+飛ばす,とばす,N3,not picturable
+飛び出す,とびだす,N3,not picturable
+飛行,ひこう,N3,alias→航空
+食品,しょくひん,N3,alias→食料品
+食料,しょくりょう,N3,not picturable
+食欲,しょくよく,N3,not picturable
+食物,しょくもつ,N3,alias→食べ物
+食糧,しょくりょう,N3,not picturable
+飼う,かう,N3,not picturable
+飾り,かざり,N3,not picturable
+首相,しゅしょう,N3,not picturable
+首都,しゅと,N3,not picturable
+香り,かおり,N3,not picturable
+馴らす,ならす,N3,not picturable
+馴れる,なれる,N3,not picturable
+駆ける,かける,N3,alias→走る
+騒ぎ,さわぎ,N3,not picturable
+騒音,そうおん,N3,alias→物音
+驚き,おどろき,N3,alias→びっくり
+高まる,たかまる,N3,not picturable
+高める,たかめる,N3,not picturable
+高価,こうか,N3,not picturable
+高速,こうそく,N3,not picturable
+髪の毛,かみのけ,N3,alias→毛
+魅力,みりょく,N3,not picturable
+～敗,はい,N3,not picturable
+～観,かん,N3,not picturable
