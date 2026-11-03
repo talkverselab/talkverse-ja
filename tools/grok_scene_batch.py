@@ -13,6 +13,17 @@ TONE = os.path.join(ROOT, 'data/review/uxui/sian_01_clay.jpg')
 # Grok 은 M4 Chrome(2026-11-03 사용자 지시, ~/talkverse/GROK_M4_LOGIN.md) — 첨부는 브라우저가 있는 M4 경로여야 한다(scp macmini4:/tmp/grok_att/)
 if os.environ.get('GROK_ATT_DIR'):
     SHEET = os.path.join(os.environ['GROK_ATT_DIR'], 'chars_ja_v1.jpg'); TONE = os.path.join(os.environ['GROK_ATT_DIR'], 'sian_01_clay.jpg')
+ATT_DIR = os.environ.get('GROK_ATT_DIR', os.path.join(ROOT, 'data/review/art'))
+# 조연 시트(2026-11-04): 직장 = 다나카·부장·과장·미사키, 학교·오사카 = 하야시·민·호세·집주인 — 해당 조연이 나오는 편에만 첨부 3·4 로
+CAST_WORK = {'田中先輩': '조연 시트(직장) 1번 다나카 선배(30대 여성, 낮게 묶은 짙은 갈색 머리, 회색 재킷·흰 블라우스·남색 슬랙스, 사원증)',
+             '部長': '조연 시트(직장) 2번 부장(50대 남성, 희끗한 짧은 머리, 안경, 진남색 정장·줄무늬 넥타이)',
+             '課長': '조연 시트(직장) 3번 과장(40대 남성, 약간 통통, 스포츠머리, 소매 걷은 하늘색 셔츠·느슨한 넥타이, 부채)',
+             '同僚ミサキ': '조연 시트(직장) 4번 미사키(20대 여성, 갈색 포니테일, 주황 니트 조끼·흰 셔츠·베이지 와이드 팬츠)', '同僚': '조연 시트(직장) 4번 미사키'}
+CAST_SCHOOL = {'林先生': '조연 시트(학교) 1번 하야시 선생님(40대 여성, 단발 흑발, 동그란 안경, 연두색 카디건·남색 스커트)',
+               'ミン': '조연 시트(학교) 2번 민(20대 여성, 긴 흑발 하나로 묶음, 흰 후드·청바지)',
+               'ホセ': '조연 시트(학교) 3번 호세(20대 남성, 짧은 곱슬 갈색 머리, 초록 티셔츠·반바지·샌들)',
+               '大家': '조연 시트(학교) 4번 집주인(60대 남성, 대머리에 흰 수염, 감색 진베이·게다, 부채)'}
+CAST_SHEETS = {'work': os.path.join(ATT_DIR, 'cast_work_v1.jpg'), 'school': os.path.join(ATT_DIR, 'cast_school_v1.jpg')}
 a = sys.argv[1:]
 tab = a[a.index('--tab') + 1] if '--tab' in a else 'project/832d5dbe'
 push = '--push' in a
@@ -28,12 +39,27 @@ if FEMALE:
 
 def who(name):
     if name in CAST: return CAST[name]
+    if name in CAST_WORK: return CAST_WORK[name]
+    if name in CAST_SCHOOL: return CAST_SCHOOL[name]
     return f'{name}(시트에 없는 조연 — 이름·직업에 맞는 차림의 일본인, 같은 점토 톤, 실존 인물 닮지 않게)'
 
 def find(eid):
     if eid.endswith('.json'): return eid
     fs = glob.glob(os.path.join(ROOT, f'assets/data/dialogues/R*/*/{eid}.json'))
     return fs[0] if fs else None
+
+def cast_kinds(ep):
+    sp = set(ep['speakers'].values())
+    return [k for k, m in (('work', CAST_WORK), ('school', CAST_SCHOOL)) if sp & set(m)]
+
+def att_note(ep):
+    ks = cast_kinds(ep); n = 3; out = []
+    for k in ks:
+        out.append(f", 첨부 {n} = 조연 시트({'직장' if k == 'work' else '학교·오사카'}, 왼쪽부터 1~4번 — 그 조연의 얼굴·머리·옷도 그대로)"); n += 1
+    return ''.join(out)
+
+def attachments(ep):
+    return ','.join([SHEET, TONE] + [CAST_SHEETS[k] for k in cast_kinds(ep)])
 
 def prompt(ep, cuts, part):
     sp = ep['speakers']
@@ -43,7 +69,7 @@ def prompt(ep, cuts, part):
         lines.append(f'컷{n}: {ds}')
     cast = ', '.join(f'{k} = {who(v)}' for k, v in sp.items())
     return (f"[SC-{ep['id']}{'-F' if FEMALE else ''}-{part}] **이미지 {len(cuts)}장을 생성해 주세요**(글 설명 없이 그림만, 컷마다 한 장씩 따로 {len(cuts)}장). 일본어 학습 앱 회화의 장면 컷입니다.\n"
-            f"첨부 1 = 우리 앱 인물 기준 그림(이 인물들의 얼굴·머리·옷을 그대로), 첨부 2 = 그림 톤 참고.\n"
+            f"첨부 1 = 우리 앱 인물 기준 그림(이 인물들의 얼굴·머리·옷을 그대로), 첨부 2 = 그림 톤 참고{att_note(ep)}.\n"
             f"톤: 부드러운 펠트·점토 인형, 파스텔·크림 배경, 둥근 얼굴, 따뜻한 조명, 일본의 실제 장소 느낌. 3:2 가로. "
             f"**그림 안에 글자·말풍선·간판 글씨·로고 없음**(말풍선은 앱이 얹습니다). 실존 인물·브랜드 금지.\n"
             f"장면: {ep['scene']}\n등장: {cast}\n"
@@ -100,7 +126,7 @@ def do(eid):
           # 그림은 새 대화에서만 안정적으로 나온다(2026-11-03: 긴 대화에서 그림 없이 "완료"만 답함) → 요청마다 프로젝트 첫 화면으로
           c.call('Page.navigate', url=os.environ.get('GROK_HOME', 'https://grok.com/project/832d5dbe-6d57-4114-b17d-d4a52e41bf45')); time.sleep(8)
           r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, pf.replace('_prompt.md', '_answer.md'),
-                            '--tab', tab, '--wait', '90', '--attach', f'{SHEET},{TONE}'], capture_output=True, text=True)
+                            '--tab', tab, '--wait', '90', '--attach', attachments(ep)], capture_output=True, text=True)
           last = (r.stdout.strip().splitlines() or [''])[-1]
         if last.startswith('LIMIT'):
             print('LIMIT', ep['id'], last, flush=True); return False
