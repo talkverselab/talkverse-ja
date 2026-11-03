@@ -1,0 +1,107 @@
+{
+ "id": "r0_love_a9",
+ "region": "R0",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "반반?",
+ "emoji": "🍜",
+ "scene": "밤 편의점. 마지막 남은 컵라면에 A 와 사쿠라의 손이 동시에 닿는다",
+ "speakers": {
+  "A": "{name}",
+  "B": "サクラ"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: 半分こ?・温めますか?・はい・いただきます",
+ "twist_type": "chaos",
+ "expressions": [
+  "半分こ?",
+  "はい",
+  "半分こ？"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "ja": "あ。",
+   "kana": "あ。",
+   "rd": "아.",
+   "ko": "아.",
+   "note": "あ。 = 아. — 둘이 동시에 같은 걸 집을 때",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "あ。半分こ？",
+   "kana": "あ。はんぶんこ？",
+   "rd": "아. 함분 코?",
+   "ko": "아. 반반?",
+   "note": "半分こ = 반반 나누기",
+   "tags": [
+    "expr:半分こ?",
+    "expr:半分こ？"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "…うん。",
+   "kana": "…うん。",
+   "rd": "… 운.",
+   "ko": "…응.",
+   "note": "うん = 응",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "はい。はい。はい。",
+   "kana": "はい。はい。はい。",
+   "rd": "하이. 하이. 하이.",
+   "ko": "네. 네. 네.",
+   "note": "はい = 자(건넬 때) — 세 번 반복이 웃음 포인트",
+   "tags": [
+    "expr:はい"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "二つでいいのに。",
+   "kana": "ふたつでいいのに。",
+   "rd": "후타츠데이이노니.",
+   "ko": "둘이면 되는데.",
+   "note": "〜でいいのに = ~면 되는데",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "一緒にね。",
+   "kana": "いっしょにね。",
+   "rd": "잇쇼니네.",
+   "ko": "같이 하자.",
+   "note": "一緒に = 같이 · 〜ね = ~하자(다정하게)",
+   "tags": [],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_love_a9_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

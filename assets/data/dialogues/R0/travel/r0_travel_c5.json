@@ -1,0 +1,121 @@
+{
+ "id": "r0_travel_c5",
+ "region": "R0",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "온천 마을 사진 대참사",
+ "emoji": "🐒",
+ "scene": "온천 마을 여행 중. A 가 유카에게 사진을 보내는데…",
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "register": "chat",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: 見て・あ・やばい・笑",
+ "twist_type": "chaos",
+ "expressions": [
+  "見て",
+  "あ",
+  "やばい",
+  "笑",
+  "指",
+  "やばい笑"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "ja": "見て！",
+   "kana": "みて！",
+   "rd": "미테!",
+   "ko": "봐!",
+   "note": "見て = 봐",
+   "tags": [
+    "expr:見て"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "指",
+   "kana": "ゆび",
+   "rd": "유비",
+   "ko": "손가락",
+   "note": "指 = 손가락",
+   "tags": [
+    "expr:指"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "あ",
+   "kana": "あ",
+   "rd": "아",
+   "ko": "아",
+   "note": "あ = 아 — 무슨 일이 생기기 직전",
+   "tags": [
+    "expr:あ"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "サル！まんじゅう！逃げた！",
+   "kana": "さる！まんじゅう！にげた！",
+   "rd": "사루! 만주우! 니게타!",
+   "ko": "원숭이! 만쥬! 도망갔어!",
+   "note": "サル = 원숭이 · 逃げた = 도망갔어",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "やばい笑",
+   "kana": "やばいえみ",
+   "rd": "야바이 와라이",
+   "ko": "헐 ㅋㅋ",
+   "note": "やばい笑 = 헐ㅋㅋ",
+   "tags": [
+    "expr:やばい",
+    "expr:笑",
+    "expr:やばい笑"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "次は一緒に行こ",
+   "kana": "つぎはいっしょにいこ",
+   "rd": "츠기와 잇쇼니 이코",
+   "ko": "다음엔 같이 가자",
+   "note": "次は = 다음엔 · 行こ = 가자",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_travel_c5_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

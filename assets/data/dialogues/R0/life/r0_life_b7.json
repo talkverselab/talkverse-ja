@@ -1,0 +1,116 @@
+{
+ "id": "r0_life_b7",
+ "region": "R0",
+ "island": "life",
+ "kind": "long",
+ "draft": true,
+ "purpose": [
+  "conversation_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "세제 세 개, 거품 대폭발",
+ "emoji": "🫧",
+ "scene": "셰어하우스 세탁실. A 가 세제를 「적당히」 넣었는데…",
+ "speakers": {
+  "A": "{name}",
+  "B": "リク"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: うん・オッケー・ごめん・好きかも",
+ "twist_type": "chaos",
+ "expressions": [
+  "うん",
+  "オッケー",
+  "ごめん",
+  "好きかも",
+  "何個?",
+  "三つ"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "ja": "洗剤、これ?",
+   "kana": "せんざい、これ?",
+   "rd": "센자이, 코레?",
+   "ko": "세제, 이거?",
+   "note": "洗剤 = 세제",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "うん、少し",
+   "kana": "うん、すこし",
+   "rd": "운, 스코시",
+   "ko": "응, 조금",
+   "note": "少し = 조금",
+   "tags": [
+    "expr:うん"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "オッケー",
+   "kana": "おっけー",
+   "rd": "옷케에",
+   "ko": "오케이",
+   "note": "オッケー = 오케이",
+   "tags": [
+    "expr:オッケー"
+   ],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "…何個? 泡、やばい!",
+   "kana": "…なんこ? あわ、やばい!",
+   "rd": "… 낭코? 아와, 야바이!",
+   "ko": "…몇 개? 거품, 대박!",
+   "note": "何個 = 몇 개 · 泡 = 거품",
+   "tags": [
+    "expr:何個?"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "ja": "三つ! ごめん!",
+   "kana": "みっつ! ごめん!",
+   "rd": "밋츠! 고멘!",
+   "ko": "세 개! 미안!",
+   "note": "三つ = 세 개 — 「조금」의 반전",
+   "tags": [
+    "expr:ごめん",
+    "expr:三つ"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "…これ、好きかも",
+   "kana": "…これ、すきかも",
+   "rd": "… 코레, 스키카모",
+   "ko": "…이거, 좋을지도",
+   "note": "好きかも = 좋을지도 — 거품 놀이에 빠짐",
+   "tags": [
+    "expr:好きかも"
+   ],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_life_b7_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

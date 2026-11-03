@@ -1,0 +1,122 @@
+{
+ "id": "r0_friends_c4",
+ "region": "R0",
+ "island": "friends",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "단톡 첫 인사",
+ "emoji": "💬",
+ "scene": "유카가 A 를 친구 단톡방에 초대. A 의 첫 인사 「はじめまして」에 「既読3」만 뜬다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ケン",
+  "C": "ユカ"
+ },
+ "register": "chat",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: はじめまして・よろしく・既読・ごめん・笑",
+ "twist_type": "ignore",
+ "expressions": [
+  "はじめまして",
+  "よろしく",
+  "既読",
+  "ごめん",
+  "笑",
+  "既読3"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "C",
+   "ja": "{name}入れたよ",
+   "kana": "{name}いれたよ",
+   "rd": "{name}이레타요",
+   "ko": "{name} 넣었어",
+   "note": "入れた = (단톡방에) 넣었어",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "はじめまして！",
+   "kana": "はじめまして！",
+   "rd": "하지메마시테!",
+   "ko": "처음 뵙겠습니다!",
+   "note": "はじめまして = 처음 뵙겠습니다",
+   "tags": [
+    "expr:はじめまして"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "よろしく…",
+   "kana": "よろしく…",
+   "rd": "요로시쿠…",
+   "ko": "잘 부탁해…",
+   "note": "よろしく = 잘 부탁해 — 친구끼리 짧게",
+   "tags": [
+    "expr:よろしく"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "既読3…",
+   "kana": "すんで読3…",
+   "rd": "키도쿠 3…",
+   "ko": "읽음 3…",
+   "note": "既読 = 읽음 표시 — 답이 없어 민망한 순간",
+   "tags": [
+    "expr:既読",
+    "expr:既読3"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "C",
+   "ja": "ごめん笑",
+   "kana": "ごめんえみ",
+   "rd": "고멘 와라이",
+   "ko": "미안 ㅋㅋ",
+   "note": "ごめん笑 = 미안ㅋㅋ — 채팅 사과",
+   "tags": [
+    "expr:ごめん",
+    "expr:笑"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "今度ゲームしよ",
+   "kana": "こんどげーむしよ",
+   "rd": "콘도 게에무 시요",
+   "ko": "다음에 게임하자",
+   "note": "今度 = 다음에 · 〜しよ = ~하자",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_friends_c4_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

@@ -1,0 +1,141 @@
+{
+ "id": "r1_travel_c4",
+ "region": "R1",
+ "island": "travel",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "그냥 산이야",
+ "emoji": "🗻",
+ "scene": "신칸센 안. A 가 켄에게 「富士山見えた!」 사진을 보낸다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ケン"
+ },
+ "register": "chat",
+ "twist": 5,
+ "flags": [],
+ "goal": "목표 표현: ほら・うそ・りょ・一緒に",
+ "twist_type": "reveal",
+ "expressions": [
+  "ほら",
+  "うそ",
+  "一緒に",
+  "それ、ただの山"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "ja": "富士山、見えた！",
+   "kana": "ふじさん、みえた！",
+   "rd": "후지산, 미에타!",
+   "ko": "후지산, 보였다!",
+   "note": "見えた = 보였다",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "…どこ？",
+   "kana": "…どこ？",
+   "rd": "… 도코?",
+   "ko": "…어디?",
+   "note": "どこ？ = 어디?",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "ほら、山！",
+   "kana": "ほら、やま！",
+   "rd": "호라, 야마!",
+   "ko": "봐, 산!",
+   "note": "ほら = 봐, 자",
+   "tags": [
+    "expr:ほら"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "それ、ただの山w",
+   "kana": "それ、ただのやまw",
+   "rd": "소레, 타다노 야마 w",
+   "ko": "그거, 그냥 산이야ㅋ",
+   "note": "ただの = 그냥 · w = ㅋ",
+   "tags": [
+    "expr:それ、ただの山"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "富士山、反対側。もう過ぎた。",
+   "kana": "ふじさん、はんたいがわ。もうすぎた。",
+   "rd": "후지산, 한타이가와. 모오 스기타.",
+   "ko": "후지산은 반대쪽. 이미 지나갔어.",
+   "note": "反対側 = 반대쪽 · 過ぎた = 지나갔어",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "マジで？…",
+   "kana": "まじで？…",
+   "rd": "마지데?…",
+   "ko": "진짜?…",
+   "note": "マジで？ = 진짜?",
+   "tags": [
+    "expr:うそ"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 7,
+   "speaker": "B",
+   "ja": "次、一緒に見よ。窓側ゆずる。",
+   "kana": "つぎ、いっしょにみよ。まどがわゆずる。",
+   "rd": "츠기, 잇쇼니 미요. 마도가와 유즈루.",
+   "ko": "다음에 같이 보자. 창가 양보할게.",
+   "note": "窓側 = 창가 · ゆずる = 양보할게 — 심쿵",
+   "tags": [
+    "expr:一緒に"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 8,
+   "speaker": "A",
+   "ja": "約束ね。",
+   "kana": "やくそくね。",
+   "rd": "야쿠소쿠네.",
+   "ko": "약속이야.",
+   "note": "約束 = 약속",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r1_travel_c4_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

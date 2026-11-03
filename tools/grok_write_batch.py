@@ -13,6 +13,19 @@ tpl = open(os.path.join(ROOT, TPL), encoding='utf-8').read()
 tpl = tpl.split('```\n', 1)[1].rsplit('\n```', 1)[0]
 REG = {'casual': '친구·연인 반말', 'polite': '직장·낯선 사이 です・ます(경어)', 'mixed': '인물에 따라 반말·경어 섞임'}
 out = os.path.join(ROOT, 'data/review/write')
+
+def normalize(path, speakers):
+    # Grok 이 화자를 이름(店員·{name}·ケン)으로 쓰면 A/B/C 기호로 바꾼다(2026-11-03)
+    if not os.path.exists(path): return
+    inv = {v: k for k, v in speakers.items()}
+    inv.update({'{name}': 'A', '学習者': 'A', 'A': 'A', 'B': 'B', 'C': 'C', 'D': 'D'})
+    lines = []
+    for ln in open(path, encoding='utf-8').read().splitlines():
+        m = re.match(r'^\s*(\d{1,2})\s*([^:：/]{1,12}?)\s*[:：]\s*(.*)$', ln)
+        if m and m.group(2).strip() in inv:
+            ln = f"{m.group(1)} {inv[m.group(2).strip()]}: {m.group(3)}"
+        lines.append(ln)
+    open(path, 'w', encoding='utf-8').write('\n'.join(lines) + '\n')
 for i, s in enumerate(specs, 1):
     if only and s['id'] not in only:
         continue
@@ -44,6 +57,7 @@ for i, s in enumerate(specs, 1):
     if not last.startswith('OK') and not last.startswith('LIMIT'):
         # TIMEOUT·NOINPUT: 답이 화면에 와 있으면 받고, 없으면 프로젝트 첫 화면으로 새로 열어 한 번 더(2026-11-03 여러 번)
         subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_fetch.py'), tab, dst], capture_output=True, text=True)
+        normalize(dst, s['speakers'])
         got = os.path.exists(dst) and len(re.findall(r'^\s*\d{1,2}\s*[A-D]\s*[:：].*/', open(dst, encoding='utf-8').read(), re.M)) >= nt
         if got:
             last = 'OK(fetched)'
@@ -53,13 +67,16 @@ for i, s in enumerate(specs, 1):
             c = g.CDP(g.tab(tab)); c.call('Page.navigate', url='https://grok.com/' + tab if tab.count('-') >= 4 else 'https://grok.com/project/08a3b12e-5761-4a2b-a074-daa6902fd222'); time.sleep(10)
             last, err = send()
     print(s['id'], last, flush=True)
+    if last.startswith('LIMIT'):
+        print('STOP', s['id'], last, flush=True); sys.exit(1)
     if not last.startswith('OK'):
-        print('STOP', s['id'], err[-400:], flush=True); sys.exit(1)
+        print('SKIPFAIL', s['id'], last, flush=True); continue  # 건너뛰고 끝에 다시(파일이 없으니 재실행하면 다시 요청)
     # grok_send 는 답이 스트리밍 중일 때 끝났다고 볼 때가 있다(2026-11-03 첫 편 4턴에서 잘림) → 16턴이 되고 길이가 멈출 때까지 다시 받는다
     prev, n = -1, 0
     for _ in range(40):
         f = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_fetch.py'), tab, dst], capture_output=True, text=True,
                            env=dict(os.environ, GROK_CDP_PORT=os.environ.get('GROK_CDP_PORT', '9230')))
+        normalize(dst, s['speakers'])
         txt = open(dst, encoding='utf-8').read()
         n = len(re.findall(r'^\s*\d{1,2}\s*[A-D]\s*[:：].*/', txt, re.M))
         if n >= nt and len(txt) == prev:

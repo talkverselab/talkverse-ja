@@ -1,0 +1,111 @@
+{
+ "id": "r0_life_a6",
+ "region": "R0",
+ "island": "life",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "그 푸딩은 내 거였어",
+ "emoji": "🍮",
+ "scene": "셰어하우스 부엌. A 가 냉장고의 푸딩을 먹다가 리쿠에게 들킨다",
+ "speakers": {
+  "A": "{name}",
+  "B": "リク"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: ごめん・え、なんで?・疲れた・あ",
+ "twist_type": "reveal",
+ "expressions": [
+  "ごめん",
+  "え、なんで?",
+  "あ",
+  "疲れてたでしょ"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "あ。",
+   "kana": "あ。",
+   "rd": "아.",
+   "ko": "아.",
+   "note": "あ。 = 아. — 실수를 알아챘을 때",
+   "tags": [
+    "expr:あ"
+   ],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "ごめん！",
+   "kana": "ごめん！",
+   "rd": "고멘!",
+   "ko": "미안!",
+   "note": "ごめん = 미안",
+   "tags": [
+    "expr:ごめん"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "それ…",
+   "kana": "それ…",
+   "rd": "소레…",
+   "ko": "그거…",
+   "note": "それ… = 그거… — 말끝 흐리기",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "{name}のだよ。",
+   "kana": "{name}のだよ。",
+   "rd": "{name}노다요.",
+   "ko": "{name} 거잖아.",
+   "note": "〜のだよ = ~ 거야(소유)",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "ja": "え、なんで？",
+   "kana": "え、なんで？",
+   "rd": "에, 난데?",
+   "ko": "어, 왜?",
+   "note": "なんで？ = 왜?",
+   "tags": [
+    "expr:え、なんで?"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "疲れてたでしょ。",
+   "kana": "つかれてたでしょ。",
+   "rd": "츠카레테타데쇼.",
+   "ko": "피곤했지.",
+   "note": "疲れてたでしょ = 피곤했지? — 심쿵 한마디",
+   "tags": [
+    "expr:疲れてたでしょ"
+   ],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_life_a6_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

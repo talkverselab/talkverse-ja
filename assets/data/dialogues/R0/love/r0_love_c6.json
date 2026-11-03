@@ -1,0 +1,114 @@
+{
+ "id": "r0_love_c6",
+ "region": "R0",
+ "island": "love",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "밤 11시의 실수",
+ "emoji": "🌙",
+ "scene": "밤 11시. 사쿠라가 먼저 「起きてる?」를 보낸다",
+ "speakers": {
+  "A": "{name}",
+  "B": "サクラ"
+ },
+ "register": "chat",
+ "twist": 3,
+ "flags": [],
+ "goal": "목표 표현: 起きてる?・うん・おやすみ・眠い?・違う",
+ "twist_type": "slip",
+ "expressions": [
+  "起きてる?",
+  "うん",
+  "まだ話したい"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "起きてる?",
+   "kana": "おきてる?",
+   "rd": "오키테루?",
+   "ko": "깨어 있어?",
+   "note": "起きてる? = 깨어 있어? — 밤 채팅 첫마디",
+   "tags": [
+    "expr:起きてる?"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "うん",
+   "kana": "うん",
+   "rd": "운",
+   "ko": "응",
+   "note": "うん = 응",
+   "tags": [
+    "expr:うん"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "おはよう",
+   "kana": "おはよう",
+   "rd": "오하요오",
+   "ko": "좋은 아침",
+   "note": "おはよう = 좋은 아침 — 밤새 얘기한 반전",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "おはよう?笑",
+   "kana": "おはよう?えみ",
+   "rd": "오하요오? 와라이",
+   "ko": "좋은 아침? ㅋㅋ",
+   "note": "笑 = ㅋㅋ — 채팅 웃음 표시",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "まだ話したい",
+   "kana": "まだはなしたい",
+   "rd": "마다 하나시타이",
+   "ko": "아직 얘기하고 싶어",
+   "note": "まだ = 아직 · 話したい = 얘기하고 싶어",
+   "tags": [
+    "expr:まだ話したい"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "…僕も",
+   "kana": "…ぼくも",
+   "rd": "… 보쿠모",
+   "ko": "…나도",
+   "note": "僕も = 나도",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_love_c6_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

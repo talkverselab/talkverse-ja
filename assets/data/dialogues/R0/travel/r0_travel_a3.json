@@ -1,0 +1,108 @@
+{
+ "id": "r0_travel_a3",
+ "region": "R0",
+ "island": "travel",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_travel"
+ ],
+ "domain": [
+  "travel"
+ ],
+ "title": "신칸센 자리, 날짜가 내일",
+ "emoji": "🚄",
+ "scene": "신칸센. A 가 앉은 자리에 할머니가 표를 들고 온다",
+ "speakers": {
+  "A": "{name}",
+  "B": "おばあさん"
+ },
+ "register": "polite",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: すみません・え?・ごめんなさい・大丈夫",
+ "twist_type": "reveal",
+ "expressions": [
+  "すみません",
+  "え?",
+  "ごめんなさい"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "すみません、そこ…",
+   "kana": "すみません、そこ…",
+   "rd": "스미마센, 소코…",
+   "ko": "실례합니다, 거기요…",
+   "note": "すみません = 실례합니다 · そこ = 거기",
+   "tags": [
+    "expr:すみません"
+   ],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "え?",
+   "kana": "え?",
+   "rd": "에?",
+   "ko": "네?",
+   "note": "え? = 네? — 되물을 때",
+   "tags": [
+    "expr:え?"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "あ、ごめんなさい",
+   "kana": "あ、ごめんなさい",
+   "rd": "아, 고멘나사이",
+   "ko": "아, 죄송해요",
+   "note": "ごめんなさい = 죄송해요",
+   "tags": [
+    "expr:ごめんなさい"
+   ],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "…明日",
+   "kana": "…あした",
+   "rd": "… 아시타",
+   "ko": "…내일",
+   "note": "明日 = 내일 — 표 날짜를 잘못 봄",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "あら、明日の?",
+   "kana": "あら、あしたの?",
+   "rd": "아라, 아시타노?",
+   "ko": "어머, 내일 거요?",
+   "note": "あら = 어머 — 주로 여성·어른 말투",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "隣、どうぞ",
+   "kana": "となり、どうぞ",
+   "rd": "토나리, 도오조",
+   "ko": "옆자리, 앉으세요",
+   "note": "隣 = 옆자리 · どうぞ = 앉으세요",
+   "tags": [],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_travel_a3_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

@@ -1,0 +1,114 @@
+{
+ "id": "r0_love_a8",
+ "region": "R0",
+ "island": "love",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_love"
+ ],
+ "domain": [
+  "love"
+ ],
+ "title": "자판기 앞 당첨 소동",
+ "emoji": "🥤",
+ "scene": "공원 자판기 앞. 사쿠라가 「おごって」라고 놀리고 A 가 버튼을 누르는데…",
+ "speakers": {
+  "A": "{name}",
+  "B": "サクラ"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: おごって・いいよ・当たり・やばい・一口ちょうだい",
+ "twist_type": "chaos",
+ "expressions": [
+  "おごって",
+  "いいよ",
+  "当たり",
+  "やばい",
+  "一口ちょうだい"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "ねえ{name}、これおごって",
+   "kana": "ねえ{name}、これおごって",
+   "rd": "네에 {name}, 코레 오곳테",
+   "ko": "야 {name}, 이거 사 줘",
+   "note": "おごって = 사 줘(한턱내 줘)",
+   "tags": [
+    "expr:おごって"
+   ],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "いいよ",
+   "kana": "いいよ",
+   "rd": "이이요",
+   "ko": "좋아",
+   "note": "いいよ = 좋아, 그래",
+   "tags": [
+    "expr:いいよ"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "当たり！",
+   "kana": "あたり！",
+   "rd": "아타리!",
+   "ko": "당첨!",
+   "note": "当たり = 당첨",
+   "tags": [
+    "expr:当たり"
+   ],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "熱い！おつりも出た！",
+   "kana": "あつい！おつりもでた！",
+   "rd": "아츠이! 오츠리모 데타!",
+   "ko": "뜨거워! 잔돈도 나왔어!",
+   "note": "熱い = 뜨겁다 · おつり = 거스름돈",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "やばい",
+   "kana": "やばい",
+   "rd": "야바이",
+   "ko": "대박",
+   "note": "やばい = 대박/큰일 — 상황 따라 뜻이 바뀜",
+   "tags": [
+    "expr:やばい"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "一口ちょうだい…あ、…やめ",
+   "kana": "ひとくちちょうだい…あ、…やめ",
+   "rd": "히토쿠치 초오다이… 아,… 야메",
+   "ko": "한 입 줘… 아, …그만",
+   "note": "一口ちょうだい = 한 입 줘 · やめ = 그만",
+   "tags": [
+    "expr:一口ちょうだい"
+   ],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_love_a8_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

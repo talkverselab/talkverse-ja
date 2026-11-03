@@ -1,0 +1,117 @@
+{
+ "id": "r0_life_c5",
+ "region": "R0",
+ "island": "life",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_life"
+ ],
+ "domain": [
+  "life"
+ ],
+ "title": "열쇠 두고 온 밤의 SOS",
+ "emoji": "🔑",
+ "scene": "밤, 문 앞. A 가 열쇠를 두고 나와 리쿠에게 SOS 를 보낸다",
+ "speakers": {
+  "A": "{name}",
+  "B": "リク"
+ },
+ "register": "chat",
+ "twist": 3,
+ "flags": [],
+ "goal": "목표 표현: 助けて・どうした?・違う・今行く",
+ "twist_type": "slip",
+ "expressions": [
+  "助けて",
+  "どうした?",
+  "違う",
+  "今行く"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "A",
+   "ja": "リク、助けて",
+   "kana": "りく、たすけて",
+   "rd": "리쿠, 타스케테",
+   "ko": "리쿠, 도와줘",
+   "note": "助けて = 도와줘",
+   "tags": [
+    "expr:助けて"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "どうした？",
+   "kana": "どうした？",
+   "rd": "도오 시타?",
+   "ko": "무슨 일이야?",
+   "note": "どうした？ = 무슨 일이야?",
+   "tags": [
+    "expr:どうした?"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "かきない",
+   "kana": "かきない",
+   "rd": "카키 나이",
+   "ko": "키 없어",
+   "note": "かぎ(열쇠)를 かき로 오타 — 반전",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "牡蠣？w",
+   "kana": "かき？w",
+   "rd": "카키? w",
+   "ko": "굴?ㅋ",
+   "note": "牡蠣(かき) = 굴 · w = ㅋ",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "ja": "違う！かぎ！",
+   "kana": "ちがう！かぎ！",
+   "rd": "치가우! 카기!",
+   "ko": "아니! 열쇠!",
+   "note": "違う = 아니야 · かぎ = 열쇠",
+   "tags": [
+    "expr:違う"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "今行く…寒くない？",
+   "kana": "いまいく…さむくない？",
+   "rd": "이마 이쿠… 사무쿠나이?",
+   "ko": "지금 갈게… 춥지 않아?",
+   "note": "今行く = 지금 갈게 · 寒くない？ = 안 추워?",
+   "tags": [
+    "expr:今行く"
+   ],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_life_c5_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

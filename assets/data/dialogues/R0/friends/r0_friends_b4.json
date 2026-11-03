@@ -1,0 +1,112 @@
+{
+ "id": "r0_friends_b4",
+ "region": "R0",
+ "island": "friends",
+ "kind": "long",
+ "draft": true,
+ "purpose": [
+  "conversation_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "얼굴만 한 그릇",
+ "emoji": "🍥",
+ "scene": "라멘집, 켄과 둘. 점원이 묻는 말에 A 가 켄을 따라 「はい」만 한다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ケン",
+  "C": "店員"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: はい・無理・余裕・大盛り",
+ "twist_type": "chaos",
+ "expressions": [
+  "はい",
+  "無理",
+  "余裕",
+  "大盛り"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "C",
+   "ja": "大盛り？トッピング全部？",
+   "kana": "おおもり？とっぴんぐぜんぶ？",
+   "rd": "오오모리? 톳핑구 젬부?",
+   "ko": "대사이즈? 토핑 전부?",
+   "note": "大盛り = 곱빼기 · トッピング全部 = 토핑 전부",
+   "tags": [
+    "expr:大盛り"
+   ],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "B",
+   "ja": "はい",
+   "kana": "はい",
+   "rd": "하이",
+   "ko": "응",
+   "note": "はい = 네 — 뜻 모르고 대답",
+   "tags": [
+    "expr:はい"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "は…い",
+   "kana": "は…い",
+   "rd": "와… 이",
+   "ko": "하...이",
+   "note": "は…い = 네… — 그릇 보고 말이 늘어짐",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "…無理",
+   "kana": "…むり",
+   "rd": "… 무리",
+   "ko": "…무리",
+   "note": "無理 = 무리, 못 해",
+   "tags": [
+    "expr:無理"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "余裕",
+   "kana": "よゆう",
+   "rd": "요유우",
+   "ko": "여유",
+   "note": "余裕 = 여유, 껌이지",
+   "tags": [
+    "expr:余裕"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "…手伝う",
+   "kana": "…てつだう",
+   "rd": "… 테츠다우",
+   "ko": "…도와줄게",
+   "note": "手伝う = 도와줄게",
+   "tags": [],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_friends_b4_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "id": "r0_culture_c5",
+ "region": "R0",
+ "island": "culture",
+ "kind": "chat",
+ "draft": true,
+ "purpose": [
+  "conversation_culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "한 번에 레어",
+ "emoji": "🎰",
+ "scene": "켄이 한 달째 노리는 게임 캐릭터. A 가 「一回だけ」 돌려 본다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ケン"
+ },
+ "register": "chat",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: 一回だけ・は?・ごめん・すごい",
+ "twist_type": "reveal",
+ "expressions": [
+  "一回だけ",
+  "は?",
+  "ごめん",
+  "すごい",
+  "すごいじゃん"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "引いた？",
+   "kana": "ひいた？",
+   "rd": "히이타?",
+   "ko": "뽑았어?",
+   "note": "引いた？ = 뽑았어? — 뽑기 게임",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "一回だけ",
+   "kana": "いちかいだけ",
+   "rd": "이치카이다케",
+   "ko": "한 번만",
+   "note": "一回だけ = 한 번만",
+   "tags": [
+    "expr:一回だけ"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 3,
+   "speaker": "A",
+   "ja": "見て",
+   "kana": "みて",
+   "rd": "미테",
+   "ko": "봐",
+   "note": "見て = 봐",
+   "tags": [],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "…は？",
+   "kana": "…は？",
+   "rd": "… 와?",
+   "ko": "…뭐?",
+   "note": "は？ = 뭐? — 어이없을 때",
+   "tags": [
+    "expr:は?"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "ja": "ごめん笑",
+   "kana": "ごめんえみ",
+   "rd": "고멘 와라이",
+   "ko": "미안 ㅋㅋ",
+   "note": "ごめん笑 = 미안ㅋㅋ",
+   "tags": [
+    "expr:ごめん"
+   ],
+   "new": [],
+   "ui": "bubble"
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "おめ…すごいじゃん",
+   "kana": "おめ…すごいじゃん",
+   "rd": "오메… 스고이잔",
+   "ko": "축하… 대단하잖아",
+   "note": "おめ = 축하(おめでとう 줄임) · すごいじゃん = 대단하잖아",
+   "tags": [
+    "expr:すごい",
+    "expr:すごいじゃん"
+   ],
+   "new": [],
+   "ui": "bubble"
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_culture_c5_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

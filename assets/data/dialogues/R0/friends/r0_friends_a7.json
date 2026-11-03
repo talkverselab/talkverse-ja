@@ -1,0 +1,110 @@
+{
+ "id": "r0_friends_a7",
+ "region": "R0",
+ "island": "friends",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_friends"
+ ],
+ "domain": [
+  "friends"
+ ],
+ "title": "강변 셀카 난리",
+ "emoji": "🤳",
+ "scene": "강변 산책. 유카가 「撮ろう!」 하고 셀카를 찍는데 계속 뭔가가 들어온다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: はい、チーズ・もう一回・最高・めっちゃ・ウケる",
+ "twist_type": "chaos",
+ "expressions": [
+  "はい、チーズ",
+  "もう一回",
+  "最高",
+  "最高じゃん"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "{name}、撮ろう！",
+   "kana": "{name}、とろう！",
+   "rd": "{name}, 토로오!",
+   "ko": "{name}, 찍자!",
+   "note": "撮ろう = 찍자",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "いいよ",
+   "kana": "いいよ",
+   "rd": "이이요",
+   "ko": "좋아",
+   "note": "いいよ = 좋아",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "はい、チーズ",
+   "kana": "はい、ちーず",
+   "rd": "하이, 치이즈",
+   "ko": "자, 치즈",
+   "note": "はい、チーズ = 자, 치즈 — 사진 찍을 때",
+   "tags": [
+    "expr:はい、チーズ"
+   ],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "B",
+   "ja": "もう一回！ あ、Vのおじさん… 犬も！？",
+   "kana": "もういちかい！ あ、Vのおじさん… いぬも！？",
+   "rd": "모오 이치카이! 아, V노 오지산… 이누모!?",
+   "ko": "한 번 더! 아, V하는 아저씨… 강아지도!?",
+   "note": "もう一回 = 한 번 더 · おじさん = 아저씨",
+   "tags": [
+    "expr:もう一回"
+   ],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "A",
+   "ja": "最高じゃん",
+   "kana": "さいこうじゃん",
+   "rd": "사이코오잔",
+   "ko": "최고잖아",
+   "note": "最高じゃん = 최고잖아",
+   "tags": [
+    "expr:最高",
+    "expr:最高じゃん"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "B",
+   "ja": "これ、待ち受け",
+   "kana": "これ、まちうけ",
+   "rd": "코레, 마치우케",
+   "ko": "이거 배경화면",
+   "note": "待ち受け = 휴대폰 배경화면",
+   "tags": [],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_friends_a7_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "id": "r0_culture_a3",
+ "region": "R0",
+ "island": "culture",
+ "kind": "short",
+ "draft": true,
+ "purpose": [
+  "conversation_culture"
+ ],
+ "domain": [
+  "culture"
+ ],
+ "title": "변신 유카",
+ "emoji": "🎭",
+ "scene": "코스프레 행사장. 완전 변신한 유카가 「{name}!」 하고 손을 흔드는데 A 는 못 알아본다",
+ "speakers": {
+  "A": "{name}",
+  "B": "ユカ"
+ },
+ "register": "casual",
+ "twist": 4,
+ "flags": [],
+ "goal": "목표 표현: 誰?・うん・めっちゃ・ありがと",
+ "twist_type": "reveal",
+ "expressions": [
+  "誰?",
+  "うん",
+  "めっちゃ",
+  "…誰?"
+ ],
+ "turns": [
+  {
+   "num": 1,
+   "speaker": "B",
+   "ja": "{name}!",
+   "kana": "{name}!",
+   "rd": "{name}!",
+   "ko": "{name}!",
+   "note": "이름 부르며 손 흔들기",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 2,
+   "speaker": "A",
+   "ja": "…誰?",
+   "kana": "…だれ?",
+   "rd": "… 다레?",
+   "ko": "…누구?",
+   "note": "誰? = 누구?",
+   "tags": [
+    "expr:誰?",
+    "expr:…誰?"
+   ],
+   "new": []
+  },
+  {
+   "num": 3,
+   "speaker": "B",
+   "ja": "私!",
+   "kana": "わたし!",
+   "rd": "와타시!",
+   "ko": "나야!",
+   "note": "私 = 나",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 4,
+   "speaker": "A",
+   "ja": "ユカ?!",
+   "kana": "ゆか?!",
+   "rd": "유카?!",
+   "ko": "유카?!",
+   "note": "?! = 놀라서 되묻는 말투 — 반전",
+   "tags": [],
+   "new": []
+  },
+  {
+   "num": 5,
+   "speaker": "B",
+   "ja": "うん、似合う?",
+   "kana": "うん、にあう?",
+   "rd": "운, 니아우?",
+   "ko": "응, 어울려?",
+   "note": "似合う? = 어울려?",
+   "tags": [
+    "expr:うん"
+   ],
+   "new": []
+  },
+  {
+   "num": 6,
+   "speaker": "A",
+   "ja": "やばい…めっちゃ",
+   "kana": "やばい…めっちゃ",
+   "rd": "야바이… 멧차",
+   "ko": "대박… 완전…",
+   "note": "やばい = 대박 · めっちゃ = 완전",
+   "tags": [
+    "expr:めっちゃ"
+   ],
+   "new": []
+  }
+ ],
+ "review": {
+  "grok_write": "data/review/write/r0_culture_a3_grok_write.md",
+  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
+ }
+}
