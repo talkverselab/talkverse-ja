@@ -9,14 +9,16 @@
 출력: 채택한 앞 번호 목록 → cliff_ko.py --only 로 넘긴다.
 """
 import gzip, re, sys, urllib.parse, urllib.request, zipfile, os
+# 공개 지식 DB SPARQL 주소·작품 회차 목록 주소는 저장소에 적지 않는다 — 환경변수 WD_SPARQL·EP_URL(값은 ~/corpus/README_local.txt)
+WD_SPARQL, EP_URL = os.environ['WD_SPARQL'], os.environ['EP_URL']
 src, qid, out = sys.argv[1:4]
 q = f'SELECT DISTINCT ?workid WHERE {{ ?i wdt:P495 wd:{qid} ; wdt:P345 ?workid . FILTER(STRSTARTS(?workid,"tt")) }}'
-req = urllib.request.Request('$WD_SPARQL?' + urllib.parse.urlencode({'query': q}),
+req = urllib.request.Request(WD_SPARQL + '?' + urllib.parse.urlencode({'query': q}),
                              headers={'Accept': 'text/csv', 'User-Agent': 'talkverse-cliff/1.0'})
 ids = {l.strip()[2:].lstrip('0') for l in urllib.request.urlopen(req, timeout=300).read().decode().splitlines() if l.startswith('tt')}
 ep_path = os.path.join(os.path.dirname(out) or '.', 'title.episode.tsv.gz')
 if not os.path.exists(ep_path):
-    urllib.request.urlretrieve('$EP_URL', ep_path)
+    urllib.request.urlretrieve(EP_URL, ep_path)
 eps = set()
 with gzip.open(ep_path, 'rt') as f:
     next(f)
