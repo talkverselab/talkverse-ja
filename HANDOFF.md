@@ -48,7 +48,8 @@
 ## 4. 다음 할 일 (2026-11-03 오후 기준)
 
 **Grok 은 새 계정(유료, 전문가 모델)으로 이어 감 — 2026-11-03 저녁 남은 일 모두 끝냄.** 프로젝트 없이 새 대화(`GROK_HOME=https://grok.com/`, 탭 `--tab grok.com`), M4 `~/chrome-grok-ja` 9230 + 터널, 첨부 `/tmp/grok_att/ja/`. 끝나면 M4 Chrome 끔.
-남은 것: 조연 캐릭터 시트 2장(직장·학교/오사카) → 컷 요청에 첨부, 여자 학습자 컷 한 벌, 학습자 후드 색·유카 머리색 흔들림(접촉 시트로 확인) 재요청 여부는 사용자 결정. 신작 r1_friends_a5(무한리필)는 Grok 빈 답 5회로 뺌.
+**2026-11-03 밤샘 완료(사용자 "니가 판단해서 밤샘작업")**: 조연 캐릭터 시트 2장 `data/review/art/cast_work_v1.jpg`(다나카·부장·과장·미사키)·`cast_school_v1.jpg`(하야시·민·호세·집주인) — 앞으로 중급·고급 컷 요청에 첨부(`tools/grok_scene_batch.py` 의 CAST 에 조연 설명 추가 필요). 여자 학습자 컷 116편(R0·R1 전부, `<편id>_f/`, R2·D1 업로드 완료) — 앱은 프로필 성별이 여자면 `_f` 컷을 먼저 씀(`ArtService.sceneCut`, 커밋 3125bb2); 중급·고급 여자판은 아직. 판단: 기존 컷 재요청 안 함(후드·머리색 차이 작음, 요청문에 색 고정), 택시 기사는 존댓말 유지. 신작 r1_friends_a5(무한리필)는 Grok 빈 답 5회로 뺌. 도구: `tools/grok_image.py`(그림 1장), `tools/run_overnight_female.sh`.
+**출처 이름 정리**: 현재 파일은 def8e2a 로 지움. **커밋 기록까지 지우는 강제 푸시는 사용자 결정 대기** — 다시 쓴 저장소 `/private/tmp/claude-501/-Users-talkverse-talkverse-ja/b7db91e2-87e7-4be6-b087-4ef22eb923fd/scratchpad/ja-scrub`(규칙 `scrub_rules.txt`), 백업 번들 PC `D:\OneDrive\app project\japanese_universe\backup\ja_before_scrub_20261103.bundle`. 허락 뒤: 거기서 `git push --force origin master && git push --force origin --tags`, 그 뒤 이 폴더는 `git fetch && git reset --hard origin/master`(3125bb2 이후 커밋은 다시 쓴 쪽에 없으니 먼저 cherry-pick).
 현황: 회화 215편(R0 47·R1 70·R2 56·R3 42·R4 1 근처), 카오스 약 42%, 장면 컷 215편 전부(R2·D1 업로드), Grok 수정 줄 783턴 검토·70턴 손질(8c663ac). 절벽 v2 절대 기준 R1 62·R2 96·R3 251·R4 778(80% 밖 R5) — 앱 단어표·화면·성과·검사기 반영(5f2106e), 산출 `tools/corpus/`(말뭉치 주소는 저장소 밖 ~/corpus/README_local.txt). TestFlight 최신은 아래 상태표.
 
 ## 4-1. 다른 언어앱 복제(2026-11-02 17:00~20:00)
