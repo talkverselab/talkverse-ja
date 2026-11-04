@@ -126,19 +126,35 @@ class _CoverageMeter extends StatelessWidget {
         ]),
         const SizedBox(height: 10),
         _label(tr('절벽 마일스톤')),
-        LayoutBuilder(builder: (context, c) {
+        // 절벽 구간 4칸 등폭(0→62→96→251→778): 2,500어 선형이면 앞 세 눈금이 왼쪽에 뭉친다(폰 확인 2026-11-04)
+        Builder(builder: (context) {
           final known = cov?.known ?? 0;
-          final frac = (known / 2500).clamp(0.0, 1.0);
-          return Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Stack(children: [
-              Container(height: 8, decoration: BoxDecoration(color: AppColors.line, borderRadius: BorderRadius.circular(4))),
-              Container(height: 8, width: c.maxWidth * frac, decoration: BoxDecoration(color: AppColors.beni, borderRadius: BorderRadius.circular(4))),
-              for (final cl in cliffs.take(3)) Positioned(left: c.maxWidth * cl / 2500 - 1, child: Container(width: 2, height: 8, color: known >= cl ? AppColors.washi : AppColors.muted)),
+          return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+            Row(children: [
+              for (var i = 0; i < cliffs.length; i++) ...[
+                if (i > 0) const SizedBox(width: 3),
+                Expanded(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.horizontal(left: Radius.circular(i == 0 ? 4 : 1), right: Radius.circular(i == cliffs.length - 1 ? 4 : 1)),
+                    child: Stack(children: [
+                      Container(height: 8, color: AppColors.line),
+                      FractionallySizedBox(
+                        widthFactor: ((known - (i == 0 ? 0 : cliffs[i - 1])) / (cliffs[i] - (i == 0 ? 0 : cliffs[i - 1]))).clamp(0.0, 1.0),
+                        child: Container(height: 8, color: AppColors.beni),
+                      ),
+                    ]),
+                  ),
+                ),
+              ],
             ]),
             const SizedBox(height: 5),
-            Wrap(spacing: 10, children: [
-              for (final cl in cliffs)
-                Text('$cl', style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: known >= cl ? AppColors.beni : AppColors.muted)),
+            Row(children: [
+              for (var i = 0; i < cliffs.length; i++) ...[
+                if (i > 0) const SizedBox(width: 3),
+                Expanded(
+                  child: Text('${cliffs[i]}', textAlign: TextAlign.right, style: TextStyle(fontSize: 10, fontWeight: FontWeight.w800, color: known >= cliffs[i] ? AppColors.beni : AppColors.muted)),
+                ),
+              ],
             ]),
           ]);
         }),
@@ -218,10 +234,17 @@ class _IslandGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final svc = DialogueService.instance;
     final islands = DialogueService.islands.where((i) => ['R0', 'R1', 'R2', 'R3'].any((r) => svc.list(region: r, island: i).isNotEmpty)).toList();
+    // 카드 높이 = 가장 줄이 많은 주제 기준(고정 182 는 줄 1~2개 카드에 빈 공간이 컸다 — 폰 확인 2026-11-04)
+    var maxRows = 1;
+    for (final i in islands) {
+      final n = ['R0', 'R1', 'R2', 'R3'].where((r) => svc.list(region: r, island: i).isNotEmpty).length;
+      if (n > maxRows) maxRows = n;
+    }
+    final extent = 14 * 2 + 20 + 8 + maxRows * 22 + 6 + 14.0;
     return GridView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: columns, mainAxisSpacing: 10, crossAxisSpacing: 10, mainAxisExtent: 182),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: columns, mainAxisSpacing: 10, crossAxisSpacing: 10, mainAxisExtent: extent),
       itemCount: islands.length,
       itemBuilder: (context, i) {
         final isl = islands[i];
