@@ -7,11 +7,11 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC). **2026-11-03 밤 출처 이름을 커밋 기록까지 지워 강제 푸시함**(git-filter-repo, 백업 번들 PC `D:\OneDrive\app project\japanese_universe\backup\ja_before_scrub_20261103.bundle`; 옛 브랜치 `master-old-history`·`master-stale`·stash 는 사용자 확인 뒤 삭제). 말뭉치 주소는 저장소 밖 `~/corpus/README_local.txt`. 미커밋 = CRLF 노이즈·도구 부산물·`data/review/*_grok_enrich*`(보류)·`RELAY_*` — 의도적으로만 커밋 |
-| iOS TestFlight | **2611040252**(대사 띠·카드 앞면 한국어·레마 칩·시작 때 그림 내려받기·version.json·이름 묻기) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`. 그 뒤 커밋(폰 그림 잘림 수정 c558734, 단어 345어 620b6eb)은 iOS 미반영 → 다음 `bash tools/ios_release.sh` |
+| iOS TestFlight | **2611041314**(2026-11-04 13:17 업로드 — 폰 그림 잘림 수정 c558734·단어 345어 620b6eb 포함, 처리 뒤 TestFlight 에 뜸) — `tools/ios_release.sh`, 번들 `com.talkverse.japaneseUniverse`. 백업 PC `D:\OneDrive\app project\japanese_universe\ios\` |
 | Android | CI 빌드 = 푸시마다 자동(`.md` 제외). Zealot 「일본어 유니버스」 **빌드 56** https://apps.talkverse.uk/Ultzu/258 (2026-11-04 03:35, c558734 폰 그림 잘림 수정까지). 올리기 `tools/zealot_push.sh --ci "한 줄"` |
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`(janome, `tools/add_lemmas.py`), 카오스 88편(42%)·심쿵 전편. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (215편) |
 | 단어 DB | **8,870어**(JLPT·말뭉치 8,525 + 회화 레마 345 `src=conv`, uk 선별). 시드 = `assets/data/version.json` **db=9**(번들 번호 ≠ 저장 번호면 단어·회화 DB 전부 다시 채움; 데이터 바꾸면 번호 +1 하고 log 한 줄) |
-| 그림(단어) | `https://auth.talkverse.uk/art/ja/manifest` **1,510 항목**(실제 파일 1,377장 + 별칭 — 여러 단어가 한 그림 공유, 앱은 `word`→키). uk 가 그록으로 계속 추가 중: 회화 레마 147장 완료 → **JLPT N5 138 → N4 114 → N3 365**(rank 10001~, 2,521어 중 제외 1,694·별칭 210 = `data/review/write/jlpt_excluded.csv`). 회차당 4장이라 N5 며칠·전체 몇 주 |
+| 그림(단어) | `https://auth.talkverse.uk/art/ja/manifest` **1,762 항목**(2026-11-04 13:00; 08:30 엔 1,510 — 실제 파일 + 별칭 — 여러 단어가 한 그림 공유, 앱은 `word`→키). uk 가 그록으로 계속 추가 중: 회화 레마 147장 완료 → **JLPT N5 138 → N4 114 → N3 365**(rank 10001~, 2,521어 중 제외 1,694·별칭 210 + 회화 레마 재검토 제외 59 = `data/review/write/jlpt_excluded.csv`). 회차당 4장이라 N5 며칠·전체 몇 주 |
 | 그림(장면 컷) | `…/art/ja/scene/manifest[?episode=]` — 남자 215편 전부 + **여자(`<편id>_f`) 215편 전부 완료(2026-11-04 08:30, R2 56·R3 42·R4 1 밤샘)**. D1 `talkverse-db.art_scenes`(id 4867d7bd…) 기준 여자 r0 160·r1 276·r2 336·r3 340·r4 8컷. 저장소 sparse 클론 `~/talkverse/ja-art`(talkverselab/talkversehanja) `talkverse_art/scene/ja/<편id>[_f]/cutN.jpg` 1168×784, R2/D1 직접 업로드 `tools/scene_upload.py`(sha1 같으면 건너뜀) |
 | 그림 기기 내려받기 | `lib/services/content_sync.dart` — 시작 때 매니페스트 둘을 받아 기기 크기(폰 584·512 / 태블릿 1168·512) 목록의 `?v=` 로 버전 계산, 다르면 `SyncScreen`(진행률·「나중에」)에서 바뀐 파일만 받아 앱 지원 폴더 `art/`+`index.json`. 모든 그림은 `artProvider(url)`(기기 파일 우선). 매니페스트가 늘면 새 파일만 받음 |
 | 한자(공용 DB) | `https://hanja-api.talkverse-lab.workers.dev/rest/v1/hanja_chars` + `hanja_mnemonic`. 앱이 받는 것: 모핑 GIF(`gif.talkverse.uk`) · 소리 가족 · 회의·형성 구조(`liushu`·`components`·`explain`·`etym`, 팝업 `_Formation`) · 팁·어원. 패밀리 한자 메뉴 = 앱 자체 `PhoneticRootsScreen`(사용자 결정) |
@@ -41,7 +41,6 @@
 
 - **사용자 결정 대기**: Play 프로텍트 처리 · 조연 시트·여자 컷 품질 피드백 · 옛 브랜치/stash 삭제 · App Store Connect 인앱 상품 `com.talkverse.japaneseUniverse.lifetime`·Play `lang_ja` 등록.
 - **uk 진행 지켜보기**: JLPT N5→N4→N3 617장(수백 장 단위 보고). 매니페스트에 들어오면 앱은 자동.
-- iOS 다음 빌드(`bash tools/ios_release.sh`) — 폰 그림 잘림 수정·단어 345어 포함.
 - 보류: R4 본편 추가, 강화 재작성 v2(`rewrite_grok_v2.md`), 맞춤 회화 launchd 워커(`tools/launchd/com.talkverse.ja.custom-script.plist`, 사용자 확인 뒤), 성과 데스크 폰 레이아웃.
 
 ## 5. 공통 절차(맥미니)
