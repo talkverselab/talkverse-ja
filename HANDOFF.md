@@ -14,16 +14,16 @@
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`, 카오스 88편(42%)·심쿵 전편. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ |
 | 단어 DB | **8,870어**(JLPT·말뭉치 8,525 + 회화 레마 345 `src=conv`). 시드 = `assets/data/version.json` **db=9**(데이터 바꾸면 번호 +1 하고 log 한 줄). 회화 레마 중 63개는 단어장에 없음(감탄사·조동사 조각·이름 등, `missing_lemmas.csv`) — 칩이 회색으로 나오는 것이 정상 |
 | 장면 컷 | **2,232컷 · 430묶음**(남자 215편 1,116 + 여자 `_f` 215편 1,116), 저장소·R2·D1 일치(2026-11-05 전수 확인: 올림 0·같음 2,232). 저장소 sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
-| 단어 그림 | 매니페스트 **1,774 항목**. 통과한 그림은 전부 DB 에 있음. 레벨별 보유: N5 503/735 · N4 322/676 · N3 534/2,135 · 회화 레마 170/345(나머지는 제외·별칭) |
-| 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 392어** — N5 8(재작업 2·발주 뒤 미수신 4·남음 2) · N4 84 · N3 300. 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210). 회화 레마는 남은 것 없음 |
+| 단어 그림 | 매니페스트 **1,775 항목**. 통과한 그림은 전부 DB 에 있음. 레벨별 보유: N5 503/735 · N4 322/676 · N3 534/2,135 · 회화 레마 170/345(나머지는 제외·별칭) |
+| 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 392어** — N5 8(재작업 2·r398 재발주 4·남음 2) · N4 84 · N3 300. 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210). 회화 레마는 남은 것 없음 |
 | 그림 기기 내려받기 | `lib/services/content_sync.dart` — 시작 때 매니페스트 둘을 받아 바뀐 파일만 내려받음(`SyncScreen`). 모든 그림은 `artProvider(url)`(기기 파일 우선) |
 | 한자(공용 DB) | `https://hanja-api.talkverse-lab.workers.dev/rest/v1/hanja_chars` + `hanja_mnemonic`. 패밀리 한자 메뉴 = 앱 자체 `PhoneticRootsScreen`(사용자 결정) |
-| Grok | **일시 중지.** 일본어 M4 Chrome(9230)·터널·배치 모두 꺼짐. 켤 때: 새 계정(전문가 모델), 프로젝트 없이 새 대화, `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 단어 그림 발주는 uk 세션 몫(M4 `~/talkverse-uk/tools/grok_art.py`, 마지막 회차 r397 = 2026-11-04 07:46, r398 은 발주 뒤 미수신) |
+| Grok | **일시 중지.** 일본어 M4 Chrome(9230)·터널·배치 모두 꺼짐. 켤 때: 새 계정(전문가 모델), 프로젝트 없이 새 대화, `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 단어 그림 발주는 uk 세션 몫(M4 `~/talkverse-uk/tools/grok_art.py`, 마지막 회차 r397 = 2026-11-04 07:46, r398 지시서는 GitHub 에 올라가지 못해 Grok 이 받지 못함 — 재개 때 uk 가 10129~10132 와 みんな·クラス 재작업을 다시 발주) |
 
 ## 2. 알아 둘 문제
 
-- **단어 그림 연결이 끊긴 12어를 2026-11-05 D1 에서 직접 고침** — 話·考える·好き·前·彼女·人間·彼·社長·背·日·逃げる·美味い. 그림은 있었는데 단어표 `art_words.concept` 와 그림 `art_images.concept` 이름이 달라 매니페스트에서 빠져 있었다(1,762 → 1,774). `art_words` 12줄만 바꿨으므로 다른 언어 영향 없음.
-- **uk 의 `sync_words` 가 다시 돌면 이 12어가 되돌아간다** — 공개 때 CSV 의 영어 뜻으로 concept 을 다시 계산하기 때문. uk 쪽 도구 수정 전에 그림을 공개했다면 매니페스트에서 12어가 있는지 확인한다.
+- **단어 그림 연결이 끊긴 12어를 2026-11-05 D1 에서 직접 고침** — 話·考える·好き·前·彼女·人間·彼·社長·背·日·逃げる·美味い. 그림은 있었는데 단어표 `art_words.concept` 와 그림 `art_images.concept` 이름이 달라 매니페스트에서 빠져 있었다(1,762 → 1,774, uk 동기화 뒤 1,775). `art_words` 12줄만 바꿨으므로 다른 언어 영향 없음.
+- **재발 방지 완료(uk 세션 보고·매니페스트 확인)** — `sync_words` 가 같은 단어의 그림이 있으면 그림의 concept 을 유지하도록 고쳐졌다. 전 언어 점검에서 같은 불일치는 ja 12·ko 3 이었고 모두 맞췄다.
 
 ## 3. 2026-11-04~05 에 바꾼 것
 
