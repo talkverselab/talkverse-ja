@@ -1,10 +1,10 @@
 group,jlpt,art_rank,word,reading,ko,en,status
 JLPT,N5,10124,みんな,みんな,모두,everyone,재작업 대기
 JLPT,N5,10125,クラス,クラス,"학급, 반",class group,재작업 대기
-JLPT,N5,10129,散歩,さんぽ,산책,stroll,발주됨(미수신)
-JLPT,N5,10130,暑い,あつい,덥다,hot (weather),발주됨(미수신)
-JLPT,N5,10131,曲る,まがる,"(길을) 돌다, 구부러지다",turn (a corner),발주됨(미수신)
-JLPT,N5,10132,涼しい,すずしい,시원하다,cool (weather),발주됨(미수신)
+JLPT,N5,10129,散歩,さんぽ,산책,stroll,재발주 필요
+JLPT,N5,10130,暑い,あつい,덥다,hot (weather),재발주 필요
+JLPT,N5,10131,曲る,まがる,"(길을) 돌다, 구부러지다",turn (a corner),재발주 필요
+JLPT,N5,10132,涼しい,すずしい,시원하다,cool (weather),재발주 필요
 JLPT,N5,10134,秋,あき,가을,autumn,남음
 JLPT,N5,10135,締める,しめる,"매다, 조이다",tie/fasten,남음
 JLPT,N4,10140,林,はやし,숲,"woods, forest",남음
