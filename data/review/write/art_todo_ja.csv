@@ -1,0 +1,393 @@
+group,jlpt,art_rank,word,reading,ko,en,status
+JLPT,N5,10124,みんな,みんな,모두,everyone,재작업 대기
+JLPT,N5,10125,クラス,クラス,"학급, 반",class group,재작업 대기
+JLPT,N5,10129,散歩,さんぽ,산책,stroll,발주됨(미수신)
+JLPT,N5,10130,暑い,あつい,덥다,hot (weather),발주됨(미수신)
+JLPT,N5,10131,曲る,まがる,"(길을) 돌다, 구부러지다",turn (a corner),발주됨(미수신)
+JLPT,N5,10132,涼しい,すずしい,시원하다,cool (weather),발주됨(미수신)
+JLPT,N5,10134,秋,あき,가을,autumn,남음
+JLPT,N5,10135,締める,しめる,"매다, 조이다",tie/fasten,남음
+JLPT,N4,10140,林,はやし,숲,"woods, forest",남음
+JLPT,N4,10141,おつり,おつり,거스름돈,change; balance of money returned to the purchaser,남음
+JLPT,N4,10142,おもちゃ,おもちゃ,장난감,a toy,남음
+JLPT,N4,10143,お土産,おみやげ,선물,souvenir,남음
+JLPT,N4,10145,お見舞い,おみまい,병문안,"calling on someone who is ill, visit",남음
+JLPT,N4,10146,けんかする,けんかする,싸우다,quarrel,남음
+JLPT,N4,10147,ごみ,ごみ,쓰레기,"trash, garbage",남음
+JLPT,N4,10148,ひげ,ひげ,수염,beard,남음
+JLPT,N4,10149,ぶどう,ぶどう,포도,grapes,남음
+JLPT,N4,10150,アクセサリー,アクセサリー,액세서리,accessory,남음
+JLPT,N4,10151,アナウンサー,アナウンサー,아나운서,announcer,남음
+JLPT,N4,10152,エスカレーター,エスカレーター,에스컬레이터,escalator,남음
+JLPT,N4,10153,オートバイ,オートバイ,오토바이,motorcycle (lit: auto-bi(ke)),남음
+JLPT,N4,10154,オーバー,オーバー,오버코트,"overcoat; over, exceeding, exaggeration",남음
+JLPT,N4,10155,カーテン,カーテン,커튼,curtain,남음
+JLPT,N4,10156,ガソリンスタンド,ガソリンスタンド,주유소,"gas station, service station",남음
+JLPT,N4,10157,ガラス,ガラス,유리,"glass, pane",남음
+JLPT,N4,10160,サラダ,サラダ,샐러드,salad,남음
+JLPT,N4,10161,サンダル,サンダル,샌들,sandal,남음
+JLPT,N4,10162,サンドイッチ,サンドイッチ,샌드위치,sandwich,남음
+JLPT,N4,10163,ジャム,ジャム,잼,jam,남음
+JLPT,N4,10164,ステレオ,ステレオ,스테레오,stereo,남음
+JLPT,N4,10165,ステーキ,ステーキ,스테이크,steak,남음
+JLPT,N4,10166,スーツケース,スーツケース,여행 가방,suitcase,남음
+JLPT,N4,10167,スーパー,スーパー,슈퍼마켓,supermarket,남음
+JLPT,N4,10168,テニス,テニス,테니스,tennis,남음
+JLPT,N4,10169,ハンバーグ,ハンバーグ,햄버그스테이크,hamburger steak,남음
+JLPT,N4,10171,ファックス,ファックス,팩스,fax,남음
+JLPT,N4,10172,レジ,レジ,계산대,register,남음
+JLPT,N4,10173,下着,したぎ,속옷,underwear,남음
+JLPT,N4,10174,人形,にんぎょう,인형,"doll, figure",남음
+JLPT,N4,10175,写す,うつす,베끼다,to copy (v.t.); to photograph,남음
+JLPT,N4,10176,動物園,どうぶつえん,동물원,zoo,남음
+JLPT,N4,10177,匂い,におい,냄새,"odor, smell",남음
+JLPT,N4,10178,台風,たいふう,태풍,typhoon,남음
+JLPT,N4,10180,喉,のど,목,throat,남음
+JLPT,N4,10181,噛む,かむ,물다,"to bite, to chew",남음
+JLPT,N4,10183,坂,さか,비탈,"slope, hill",남음
+JLPT,N4,10184,塗る,ぬる,칠하다,"to paint, to plaster",남음
+JLPT,N4,10185,天気予報,てんきよほう,일기 예보,weather forecast,남음
+JLPT,N4,10186,小鳥,ことり,작은 새,small bird,남음
+JLPT,N4,10189,布団,ふとん,이불,futon,남음
+JLPT,N4,10190,床屋,とこや,이발소,barber's (shop),남음
+JLPT,N4,10192,引き出し,ひきだし,서랍,drawer,남음
+JLPT,N4,10193,手袋,てぶくろ,장갑,glove(s),남음
+JLPT,N4,10194,投げる,なげる,던지다,"to pitch, to cast away",남음
+JLPT,N4,10195,押し入れ,おしいれ,벽장,closet,남음
+JLPT,N4,10199,日記,にっき,일기,"diary, journal",남음
+JLPT,N4,10200,枝,えだ,가지,"branch, twig",남음
+JLPT,N4,10201,柔らかい,やわらかい,부드럽다,"soft (in reference to texture), tender",남음
+JLPT,N4,10202,柔道,じゅうどう,유도,judo,남음
+JLPT,N4,10204,歯医者,はいしゃ,치과 의사,dentist,남음
+JLPT,N4,10205,毛,け,털,"hair, fur",남음
+JLPT,N4,10207,水道,すいどう,수도,"water service, water line",남음
+JLPT,N4,10208,汚れる,よごれる,더러워지다,to become dirty,남음
+JLPT,N4,10209,汽車,きしゃ,기차,train (steam),남음
+JLPT,N4,10210,沸かす,わかす,끓이다,to boil,남음
+JLPT,N4,10212,海岸,かいがん,해안,"coast, seashore",남음
+JLPT,N4,10213,消しゴム,けしゴム,지우개,eraser,남음
+JLPT,N4,10214,港,みなと,항구,"harbor, port",남음
+JLPT,N4,10216,湯,ゆ,뜨거운 물,hot water,남음
+JLPT,N4,10217,滑る,すべる,미끄러지다,"to slide, to slip",남음
+JLPT,N4,10218,濡れる,ぬれる,젖다,to get wet,남음
+JLPT,N4,10219,熱,ねつ,열,"fever, temperature",남음
+JLPT,N4,10220,畳,たたみ,다다미,tatami mat (Japanese straw mat),남음
+JLPT,N4,10221,眠い,ねむい,졸리다,"sleepy, drowsy",남음
+JLPT,N4,10222,着物,きもの,기모노,kimono; Japanese traditional dress,남음
+JLPT,N4,10223,砂,すな,모래,sand,남음
+JLPT,N4,10224,祈る,いのる,빌다,to pray; to wish,남음
+JLPT,N4,10225,神社,じんじゃ,신사 (일본 신토 사당),Shinto shrine,남음
+JLPT,N4,10227,米,こめ,쌀,uncooked rice,남음
+JLPT,N4,10228,美術館,びじゅつかん,미술관,"art gallery, art museum",남음
+JLPT,N4,10229,花見,はなみ,꽃놀이,cherry-blossom viewing,남음
+JLPT,N4,10232,虫,むし,벌레,insect,남음
+JLPT,N4,10233,贈り物,おくりもの,선물,a gift; a present,남음
+JLPT,N4,10234,踏む,ふむ,밟다,"to step on, to tread on",남음
+JLPT,N4,10235,辞典,じてん,사전,"encyclopedia, reference book",남음
+JLPT,N4,10241,電灯,でんとう,전등,electric light,남음
+JLPT,N4,10242,駐車場,ちゅうしゃじょう,주차장,parking lot,남음
+JLPT,N4,10243,高校生,こうこうせい,고등학생,high school student,남음
+JLPT,N4,10245,折る,おる,"접다, 부러뜨리다",fold/break,남음
+JLPT,N4,10249,帰り,かえり,"귀가, 돌아오는 길",way back home,남음
+JLPT,N4,10250,揺れる,ゆれる,흔들리다,sway/shake,남음
+JLPT,N4,10252,焼ける,やける,"(고기 등이) 구워지다, 타다",be grilled/burn,남음
+JLPT,N3,10253,尾,お,꼬리,"tail, ridge",남음
+JLPT,N3,10254,田,た,논,rice field,남음
+JLPT,N3,10255,板,いた,판자,"board, plank",남음
+JLPT,N3,10257,酔う,よう,취하다,to get drunk,남음
+JLPT,N3,10258,巣,す,둥지,"nest, breeding place",남음
+JLPT,N3,10259,銅貨,どうか,동전,copper coin,남음
+JLPT,N3,10260,奪う,うばう,빼앗다,"to rob, to deprive",남음
+JLPT,N3,10262,いたずら,いたずら,장난,"trick, practical joke",남음
+JLPT,N3,10263,いらいら,いらいら,초조함,"getting nervous, irritation",남음
+JLPT,N3,10264,うがい,うがい,양치질,gargling,남음
+JLPT,N3,10265,お喋り,おしゃべり,수다,"chattering, talk",남음
+JLPT,N3,10266,お洒落,おしゃれ,멋,"smartly dressed, fashion-conscious",남음
+JLPT,N3,10267,お辞儀,おじぎ,절,bow,남음
+JLPT,N3,10268,かゆい,かゆい,가렵다,"itchy, itching",남음
+JLPT,N3,10269,がっかり,がっかり,실망하다,"feel disappointed, be dejected, lose heart",남음
+JLPT,N3,10270,ぐっすり,ぐっすり,푹 (잠든 모양),"sound asleep, fast asleep",남음
+JLPT,N3,10271,こぼす,こぼす,흘리다,to spill,남음
+JLPT,N3,10272,こぼれる,こぼれる,넘치다,"to overflow, to spill",남음
+JLPT,N3,10273,ごめんなさい,ごめんなさい,미안합니다,"I beg your pardon, excuse me, I'm sorry",남음
+JLPT,N3,10274,しゃべる,しゃべる,수다 떨다,"to talk, to chat, to chatter (same as 話す (はなす))",남음
+JLPT,N3,10275,すっぱい,すっぱい,시다,"sour, acid",남음
+JLPT,N3,10276,はさみ,はさみ,가위,scissors,남음
+JLPT,N3,10277,ぶつかる,ぶつかる,부딪치다,"to strike, to collide with",남음
+JLPT,N3,10278,まぶしい,まぶしい,눈부시다,"dazzling, radiant",남음
+JLPT,N3,10281,ウイスキー,ウイスキー,위스키,whiskey,남음
+JLPT,N3,10283,カード,カード,카드,"card, curd",남음
+JLPT,N3,10284,キャンプ,キャンプ,캠프,camp,남음
+JLPT,N3,10285,クリスマス,クリスマス,크리스마스,Christmas,남음
+JLPT,N3,10286,クリーム,クリーム,크림,cream,남음
+JLPT,N3,10287,グラス,グラス,유리잔,glass; grass,남음
+JLPT,N3,10288,グランド,グランド,운동장,"gland, grand, (electrical) ground",남음
+JLPT,N3,10290,コード,コード,코드,code; cord; chord,남음
+JLPT,N3,10292,サイン,サイン,사인,autograph; sign; sine,남음
+JLPT,N3,10294,ジェット機,ジェットき,제트기,jet plane,남음
+JLPT,N3,10295,ジュース,ジュース,주스,"juice, soft drink; deuce",남음
+JLPT,N3,10296,ジーンズ,ジーンズ,청바지,jeans,남음
+JLPT,N3,10297,スイッチ,スイッチ,스위치,switch,남음
+JLPT,N3,10298,スキー,スキー,스키,ski,남음
+JLPT,N3,10299,スケート,スケート,스케이트,"skate(s), skating",남음
+JLPT,N3,10300,スピーチ,スピーチ,스피치,speech,남음
+JLPT,N3,10301,スープ,スープ,수프,(Western) soup,남음
+JLPT,N3,10302,ソファー,ソファー,소파,"sofa, couch",남음
+JLPT,N3,10303,タオル,タオル,타월,(hand) towel,남음
+JLPT,N3,10304,チーズ,チーズ,치즈,cheese,남음
+JLPT,N3,10305,テント,テント,텐트,tent,남음
+JLPT,N3,10306,デザート,デザート,디저트,dessert,남음
+JLPT,N3,10307,トラック,トラック,트럭,truck; (running) track,남음
+JLPT,N3,10308,トランプ,トランプ,트럼프,playing cards (lit: trump),남음
+JLPT,N3,10310,トンネル,トンネル,터널,tunnel,남음
+JLPT,N3,10311,ドライブ,ドライブ,드라이브,"drive, driving",남음
+JLPT,N3,10312,ドレス,ドレス,드레스,dress,남음
+JLPT,N3,10313,ハイキング,ハイキング,하이킹,hiking,남음
+JLPT,N3,10315,バイオリン,バイオリン,바이올린,violin,남음
+JLPT,N3,10316,バランス,バランス,밸런스,balance,남음
+JLPT,N3,10317,パイプ,パイプ,파이프,pipe; channels official or otherwise,남음
+JLPT,N3,10318,パイロット,パイロット,파일럿,pilot,남음
+JLPT,N3,10319,パスポート,パスポート,여권,passport,남음
+JLPT,N3,10320,ビデオ,ビデオ,비디오,video tape; VCR,남음
+JLPT,N3,10321,ピクニック,ピクニック,피크닉,picnic,남음
+JLPT,N3,10322,ピン,ピン,핀,pin,남음
+JLPT,N3,10323,ブレーキ,ブレーキ,브레이크,a brake,남음
+JLPT,N3,10324,プラスチック,プラスチック,플라스틱,plastic,남음
+JLPT,N3,10325,ベルト,ベルト,벨트,Belt for western clothes,남음
+JLPT,N3,10326,ベンチ,ベンチ,벤치,bench,남음
+JLPT,N3,10327,ホーム,ホーム,(역의) 승강장,platform; home,남음
+JLPT,N3,10328,ボート,ボート,보트,rowing boat,남음
+JLPT,N3,10329,ボール,ボール,공,ball; bowl,남음
+JLPT,N3,10330,マイク,マイク,마이크,mic,남음
+JLPT,N3,10333,メモ,メモ,메모,"memorandum, note",남음
+JLPT,N3,10334,ヨット,ヨット,요트,yacht,남음
+JLPT,N3,10335,ライター,ライター,라이터,lighter; writer,남음
+JLPT,N3,10336,ラケット,ラケット,라켓,racket,남음
+JLPT,N3,10337,ロケット,ロケット,로켓,"locket, rocket",남음
+JLPT,N3,10339,上る,のぼる,오르다,"to ascend, to go up, to climb",남음
+JLPT,N3,10340,主婦,しゅふ,주부,housewife,남음
+JLPT,N3,10341,乗客,じょうきゃく,승객,passenger,남음
+JLPT,N3,10342,乾かす,かわかす,말리다,to dry,남음
+JLPT,N3,10343,交ぜる,まぜる,섞다,"to be mixed, to be blended with",남음
+JLPT,N3,10344,人込み,ひとごみ,인파,crowd of people,남음
+JLPT,N3,10345,仏,ほとけ,부처,Buddha,남음
+JLPT,N3,10346,伸ばす,のばす,늘이다,"to extend, to stretch, to reach out",남음
+JLPT,N3,10347,住宅,じゅうたく,주택,"resident, housing",남음
+JLPT,N3,10348,体温,たいおん,체온,temperature (body),남음
+JLPT,N3,10349,体重,たいじゅう,체중,(body) weight,남음
+JLPT,N3,10350,作家,さっか,작가,"author, writer, novelist",남음
+JLPT,N3,10351,作物,さくもつ,작물,"produce (e.g., agricultural), crops",남음
+JLPT,N3,10352,信号,しんごう,신호,"traffic lights, signal, semaphore",남음
+JLPT,N3,10353,修理,しゅうり,수리,"repairing, mending",남음
+JLPT,N3,10354,俳優,はいゆう,배우,"actor, actress, performer",남음
+JLPT,N3,10355,停留所,ていりゅうじょ,정류장,bus or tram stop,남음
+JLPT,N3,10356,停電,ていでん,정전,failure of electricity,남음
+JLPT,N3,10357,像,ぞう,상,"statue, image",남음
+JLPT,N3,10358,僧,そう,승려,"monk, priest",남음
+JLPT,N3,10359,優勝,ゆうしょう,우승,"overall victory, championship",남음
+JLPT,N3,10360,凍る,こおる,얼다,"to freeze, to be frozen over, to congeal",남음
+JLPT,N3,10361,分ける,わける,나누다,"to divide, to separate",남음
+JLPT,N3,10362,列,れつ,열,"queue, line, row",남음
+JLPT,N3,10363,剥く,むく,(껍질을) 벗기다,"to peel, to skin",남음
+JLPT,N3,10364,劇場,げきじょう,극장,"theater, playhouse",남음
+JLPT,N3,10365,包み,つつみ,보따리,"bundle, package",남음
+JLPT,N3,10366,包装,ほうそう,포장,"packing, wrapping",남음
+JLPT,N3,10367,化粧,けしょう,화장,make-up (cosmetic),남음
+JLPT,N3,10369,印刷,いんさつ,인쇄,printing,남음
+JLPT,N3,10370,双子,ふたご,쌍둥이,"twins, a twin",남음
+JLPT,N3,10371,収穫,しゅうかく,수확,"harvest, crop, ingathering",남음
+JLPT,N3,10372,叫ぶ,さけぶ,외치다,"to shout, to cry",남음
+JLPT,N3,10373,吠える,ほえる,짖다,"to bark, to howl",남음
+JLPT,N3,10374,咳,せき,기침,cough,남음
+JLPT,N3,10375,喜び,よろこび,기쁨,"joy, pleasure, rejoicing",남음
+JLPT,N3,10376,嗅ぐ,かぐ,냄새를 맡다,"to sniff, to smell",남음
+JLPT,N3,10377,囲む,かこむ,둘러싸다,"to surround, to encircle",남음
+JLPT,N3,10378,地平線,ちへいせん,지평선,horizon,남음
+JLPT,N3,10379,埃,ほこり,먼지,dust,남음
+JLPT,N3,10380,塔,とう,탑,"tower, pagoda",남음
+JLPT,N3,10381,墓,はか,무덤,"grave, tomb",남음
+JLPT,N3,10382,夜明け,よあけ,새벽,"dawn, daybreak",남음
+JLPT,N3,10384,女優,じょゆう,여배우,actress,남음
+JLPT,N3,10386,宇宙,うちゅう,우주,"universe, cosmos, space",남음
+JLPT,N3,10387,宝石,ほうせき,보석,"gem, jewel",남음
+JLPT,N3,10388,実験,じっけん,실험,lab work; experiment,남음
+JLPT,N3,10389,家具,かぐ,가구,furniture,남음
+JLPT,N3,10390,審判,しんぱん,심판,"umpire, referee, judgment",남음
+JLPT,N3,10391,小包,こづつみ,소포,"parcel, package",남음
+JLPT,N3,10392,小屋,こや,오두막,"hut, cabin, shed",남음
+JLPT,N3,10393,小銭,こぜに,잔돈,"coins, small change",남음
+JLPT,N3,10394,小麦,こむぎ,밀,wheat,남음
+JLPT,N3,10395,少女,しょうじょ,소녀,young girl,남음
+JLPT,N3,10396,尻,しり,엉덩이,"buttocks, bottom",남음
+JLPT,N3,10397,居眠り,いねむり,졸음,"dozing, nodding off",남음
+JLPT,N3,10398,居間,いま,거실,living room,남음
+JLPT,N3,10399,屋根,やね,지붕,roof,남음
+JLPT,N3,10400,嵐,あらし,폭풍,storm,남음
+JLPT,N3,10402,帰宅,きたく,귀가,returning home,남음
+JLPT,N3,10403,年寄,としより,노인,"old people, the aged",남음
+JLPT,N3,10404,幼い,おさない,어리다,"very young, childish",남음
+JLPT,N3,10405,広げる,ひろげる,펴다,"to spread, to extend, to expand, to enlarge",남음
+JLPT,N3,10406,弁当,べんとう,도시락,box lunch,남음
+JLPT,N3,10407,引越し,ひっこし,이사,"moving, changing residence",남음
+JLPT,N3,10408,強盗,ごうとう,강도,"robbery, burglary",남음
+JLPT,N3,10409,影,かげ,그림자,"shade, shadow, other side",남음
+JLPT,N3,10410,怒り,いかり,분노,anger,남음
+JLPT,N3,10411,慌てる,あわてる,당황하다,to become confused、to panic,남음
+JLPT,N3,10412,手品,てじな,마술,"conjuring trick, magic",남음
+JLPT,N3,10413,投票,とうひょう,투표,"voting, poll",남음
+JLPT,N3,10414,拭く,ふく,닦다,"to wipe, to dry",남음
+JLPT,N3,10416,指揮,しき,지휘,"command, direction",남음
+JLPT,N3,10417,捕まる,つかまる,잡히다,to be arrested; to be caught,남음
+JLPT,N3,10418,掃く,はく,쓸다,"to sweep, to brush, to gather up",남음
+JLPT,N3,10420,握手,あくしゅ,악수,handshake,남음
+JLPT,N3,10421,摘む,つむ,따다,"to pluck, to pick, to trim",남음
+JLPT,N3,10422,教科書,きょうかしょ,교과서,textbook,남음
+JLPT,N3,10424,旗,はた,깃발,flag,남음
+JLPT,N3,10425,日光,にっこう,햇빛,sunlight,남음
+JLPT,N3,10426,束,たば,다발,"bunch, bundle",남음
+JLPT,N3,10427,松,まつ,소나무,pine tree,남음
+JLPT,N3,10428,柵,さく,울타리,"fence, paling",남음
+JLPT,N3,10429,校舎,こうしゃ,교사 (학교 건물),school building,남음
+JLPT,N3,10430,根,ね,뿌리,root,남음
+JLPT,N3,10431,梅,うめ,매화,"plum, lowest (of a three-tier ranking system)",남음
+JLPT,N3,10432,梅雨,ばいう,장마,rainy season,남음
+JLPT,N3,10434,楽器,がっき,악기,musical instrument,남음
+JLPT,N3,10436,殻,から,껍질,"shell, husk, hull",남음
+JLPT,N3,10437,毛布,もうふ,담요,blanket,남음
+JLPT,N3,10438,氷,こおり,얼음,"ice, hail",남음
+JLPT,N3,10439,汗,あせ,땀,"sweat, perspiration",남음
+JLPT,N3,10440,沈む,しずむ,가라앉다,to sink; to feel depressed,남음
+JLPT,N3,10441,油,あぶら,기름,oil,남음
+JLPT,N3,10442,泡,あわ,거품,"bubble, foam",남음
+JLPT,N3,10443,波,なみ,파도,wave,남음
+JLPT,N3,10444,泥,どろ,진흙,mud,남음
+JLPT,N3,10445,注ぐ,そそぐ,붓다,to pour (into),남음
+JLPT,N3,10446,洗剤,せんざい,세제,detergent,남음
+JLPT,N3,10447,消防,しょうぼう,소방,"fire fighting, fire department",남음
+JLPT,N3,10448,混ぜる,まぜる,섞다,"to mix, to stir",남음
+JLPT,N3,10449,混雑,こんざつ,혼잡,"confusion, congestion",남음
+JLPT,N3,10450,渇く,かわく,목마르다,to be thirsty,남음
+JLPT,N3,10451,渋滞,じゅうたい,정체,"congestion (e.g., traffic), delay",남음
+JLPT,N3,10452,測る,はかる,재다,"to measure, to weigh, to survey",남음
+JLPT,N3,10453,溺れる,おぼれる,물에 빠지다,"to be drowned, to indulge in",남음
+JLPT,N3,10455,火災,かさい,화재,"conflagration, fire",남음
+JLPT,N3,10456,炎,ほのお,불꽃,flame,남음
+JLPT,N3,10457,炒める,いためる,볶다,to stir-fry,남음
+JLPT,N3,10458,煙,けむり,연기,"smoke, fumes",남음
+JLPT,N3,10459,牛,うし,소,"cattle, cow",남음
+JLPT,N3,10460,猿,さる,원숭이,monkey,남음
+JLPT,N3,10462,琴,こと,거문고 (일본 현악기),Japanese harp,남음
+JLPT,N3,10463,瓶,びん,병,bottle,남음
+JLPT,N3,10464,画家,がか,화가,painter,남음
+JLPT,N3,10465,畳む,たたむ,개다,to fold (clothes),남음
+JLPT,N3,10466,疲れ,つかれ,피로,"tiredness, fatigue",남음
+JLPT,N3,10467,痛み,いたみ,아픔,"pain, ache, sore",남음
+JLPT,N3,10468,登山,とざん,등산,mountain-climbing,남음
+JLPT,N3,10469,盾,たて,방패,shield,남음
+JLPT,N3,10470,砂漠,さばく,사막,desert,남음
+JLPT,N3,10471,破る,やぶる,찢다,to tear; to violate; to defeat,남음
+JLPT,N3,10472,礼,れい,예,expression of gratitude; bow,남음
+JLPT,N3,10473,笛,ふえ,피리,"flute, whistle",남음
+JLPT,N3,10474,筆,ふで,붓,writing brush,남음
+JLPT,N3,10475,筋肉,きんにく,근육,"muscle, sinews",남음
+JLPT,N3,10476,籠,かご,바구니,"basket, cage",남음
+JLPT,N3,10477,粉,こな,가루,"flour, powder",남음
+JLPT,N3,10478,紐,ひも,끈,"string, cord",남음
+JLPT,N3,10479,綴じる,とじる,철하다,"to bind, to file",남음
+JLPT,N3,10480,縄,なわ,새끼,rope,남음
+JLPT,N3,10481,織る,おる,짜다,to weave,남음
+JLPT,N3,10482,缶,かん,깡통,"can, tin",남음
+JLPT,N3,10483,署名,しょめい,서명,signature,남음
+JLPT,N3,10484,羽,はね,날개,wing,남음
+JLPT,N3,10485,翼,つばさ,날개,wings,남음
+JLPT,N3,10486,老人,ろうじん,노인,"the aged, old person",남음
+JLPT,N3,10488,胃,い,위 (위장),stomach,남음
+JLPT,N3,10489,胡椒,こしょう,후추,pepper,남음
+JLPT,N3,10490,腰,こし,허리,"hip, waist",남음
+JLPT,N3,10491,膝,ひざ,무릎,"knee, lap",남음
+JLPT,N3,10492,臭い,くさい,냄새나다,"stinky, smelly, bad-smelling",남음
+JLPT,N3,10494,芝生,しばふ,잔디,lawn,남음
+JLPT,N3,10495,芽,め,싹,sprout,남음
+JLPT,N3,10496,菓子,かし,과자,"confectionery, sweet",남음
+JLPT,N3,10497,蒔く,まく,(씨를) 뿌리다,to sow (seeds),남음
+JLPT,N3,10498,蒸す,むす,찌다,"to steam, to poultice, to be sultry",남음
+JLPT,N3,10499,虎,とら,호랑이,tiger,남음
+JLPT,N3,10500,虫歯,むしば,충치,"cavity, tooth decay",남음
+JLPT,N3,10501,蚊,か,모기,mosquito,남음
+JLPT,N3,10503,衝突,しょうとつ,충돌,"collision, conflict",남음
+JLPT,N3,10504,袖,そで,소매,sleeve,남음
+JLPT,N3,10505,覗く,のぞく,들여다보다,"to peek in, to look in",남음
+JLPT,N3,10506,観客,かんきゃく,관객,"audience, spectator(s)",남음
+JLPT,N3,10507,診察,しんさつ,진찰,medical examination (of a patient),남음
+JLPT,N3,10508,誕生,たんじょう,탄생,birth,남음
+JLPT,N3,10509,読書,どくしょ,독서,reading,남음
+JLPT,N3,10510,豆,まめ,콩,"beans, peas",남음
+JLPT,N3,10512,貯金,ちょきん,저금,(bank) savings,남음
+JLPT,N3,10513,軍隊,ぐんたい,군대,"army, troops",남음
+JLPT,N3,10514,転ぶ,ころぶ,넘어지다,"to fall down, to fall over",남음
+JLPT,N3,10515,迷子,まいご,미아,lost (stray) child,남음
+JLPT,N3,10516,退屈,たいくつ,지루함,"tedium, boring",남음
+JLPT,N3,10517,郵便,ゆうびん,우편,"mail, postal service",남음
+JLPT,N3,10519,配達,はいたつ,배달,"delivery, distribution",남음
+JLPT,N3,10520,金庫,きんこ,금고,"safe, vault",남음
+JLPT,N3,10521,釣,つり,낚시,fishing,남음
+JLPT,N3,10522,鉄道,てつどう,철도,railway; railroad,남음
+JLPT,N3,10523,鎖,くさり,쇠사슬,chain,남음
+JLPT,N3,10524,雷,かみなり,천둥,thunder,남음
+JLPT,N3,10525,震える,ふるえる,떨리다,"to shiver, to shake, to quake",남음
+JLPT,N3,10526,頬,ほお,볼,cheek (of face),남음
+JLPT,N3,10527,頭痛,ずつう,두통,headache,남음
+JLPT,N3,10528,額,がく,금액,amount; frame,남음
+JLPT,N3,10529,食卓,しょくたく,식탁,dining table,남음
+JLPT,N3,10530,餌,えさ,먹이,"feed, bait",남음
+JLPT,N3,10531,駐車,ちゅうしゃ,주차,"parking (e.g., car)",남음
+JLPT,N3,10533,骨折,こっせつ,골절,bone fracture,남음
+JLPT,N3,10534,黒板,こくばん,칠판,blackboard,남음
+JLPT,N3,10535,鼠,ねずみ,쥐,"mouse, rat",남음
+JLPT,N3,10536,湧く,わく,(물이) 솟다,well up,남음
+JLPT,N3,10541,局,きょく,"(방송)국, 국",bureau/station,남음
+JLPT,N3,10545,ペンキ,ペンキ,페인트,paint,남음
+JLPT,N3,10546,両替,りょうがえ,환전,currency exchange,남음
+JLPT,N3,10547,便り,たより,"소식, 편지",tidings,남음
+JLPT,N3,10548,入場,にゅうじょう,입장,admission,남음
+JLPT,N3,10549,冷ます,さます,식히다,let cool,남음
+JLPT,N3,10550,冷やす,ひやす,차게 하다,chill,남음
+JLPT,N3,10552,刈る,かる,"베다, 깎다",mow/cut (grass),남음
+JLPT,N3,10553,刺さる,ささる,"박히다, 찔리다",stick into,남음
+JLPT,N3,10554,友情,ゆうじょう,우정,friendship,남음
+JLPT,N3,10558,土,つち,흙,soil,남음
+JLPT,N3,10559,地味,じみ,수수하다,plain/subdued,남음
+JLPT,N3,10561,堅い,かたい,"단단하다, 딱딱하다",hard/firm,남음
+JLPT,N3,10562,夢中,むちゅう,"열중, 푹 빠짐",absorbed,남음
+JLPT,N3,10563,学問,がくもん,학문,scholarship,남음
+JLPT,N3,10565,宿泊,しゅくはく,숙박,lodging,남음
+JLPT,N3,10566,寄せる,よせる,가까이 대다,draw near,남음
+JLPT,N3,10567,射す,さす,(빛이) 비치다,shine in,남음
+JLPT,N3,10568,岸,きし,"물가, 기슭",shore,남음
+JLPT,N3,10570,愉快,ゆかい,유쾌하다,merry,남음
+JLPT,N3,10571,押える,おさえる,"누르다, 잡다",hold down,남음
+JLPT,N3,10573,提出,ていしゅつ,제출,submit,남음
+JLPT,N3,10574,撒く,まく,뿌리다,sprinkle/scatter,남음
+JLPT,N3,10575,操縦,そうじゅう,조종,pilot/operate,남음
+JLPT,N3,10579,映える,はえる,"돋보이다, 빛나다",look splendid,남음
+JLPT,N3,10580,書斎,しょさい,서재,study room,남음
+JLPT,N3,10582,気温,きおん,기온,air temperature,남음
+JLPT,N3,10585,注目,ちゅうもく,주목,attention,남음
+JLPT,N3,10586,温度,おんど,온도,temperature,남음
+JLPT,N3,10587,炊く,たく,(밥을) 짓다,cook rice,남음
+JLPT,N3,10588,煮える,にえる,"끓다, 익다",simmer,남음
+JLPT,N3,10590,片付く,かたづく,정리되다,be tidied,남음
+JLPT,N3,10591,生える,はえる,"자라나다, 나다",sprout,남음
+JLPT,N3,10594,申告,しんこく,신고,declare/report,남음
+JLPT,N3,10597,石油,せきゆ,석유,petroleum,남음
+JLPT,N3,10598,硬い,かたい,딱딱하다,hard,남음
+JLPT,N3,10600,結ぶ,むすぶ,"묶다, 매다",tie/bind,남음
+JLPT,N3,10601,繋ぐ,つなぐ,"잇다, 연결하다",connect/join,남음
+JLPT,N3,10602,膳,ぜん,밥상,meal tray,남음
+JLPT,N3,10603,茹でる,ゆでる,삶다,boil (food),남음
+JLPT,N3,10605,記入,きにゅう,기입,fill in,남음
+JLPT,N3,10608,譲る,ゆずる,양보하다,yield/give up,남음
+JLPT,N3,10609,貝,かい,조개,shellfish,남음
+JLPT,N3,10613,重ねる,かさねる,"겹치다, 쌓다",stack,남음
+JLPT,N3,10614,陽気,ようき,"화창한 날씨, 쾌활",genial weather,남음
+JLPT,N3,10615,隊,たい,"대, 부대",squad/team,남음
