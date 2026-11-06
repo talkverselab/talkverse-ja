@@ -1,0 +1,10 @@
+{"ep":"r0_life_a6",
+ "cast":{"B":"riku"},
+ "turns":{
+  "1":{"segs":[["surprised","あ。"]]},
+  "2":{"segs":[["flustered","ごめん！"]]},
+  "3":{"segs":[["shy","それ…"]]},
+  "4":{"segs":[["gentle","{name}のだよ。"]]},
+  "5":{"segs":[["surprised","え、なんで？"]]},
+  "6":{"segs":[["gentle","疲れてたでしょ。","つかれてたでしょ。"]]}
+ }}
