@@ -10,7 +10,8 @@ CUT = {(i['episode'], int(i['cut'])): (_m['base'] + i['key_584'], _m['base'] + i
 # 회화 음성(2026-11-06 사용자 지시): data/tts/audio_ja.json 에 있는 편은 턴마다 재생 버튼 + 전체 듣기
 _af = Path(__file__).resolve().parent.parent / 'data/tts/audio_ja.json'
 AUD = json.load(open(_af, encoding='utf-8')) if _af.exists() else {}
-EMO = {'stiff': '긴장·딱딱', 'flustered': '당황', 'excited': '흥분', 'amused': '유쾌', 'teasing': '놀림', 'shout': '버럭', 'cheerful': '밝음', 'tsukkomi': '츳코미', 'gentle': '다정'}
+EMO = {'stiff': '긴장·딱딱', 'flustered': '당황', 'excited': '흥분', 'amused': '유쾌', 'teasing': '놀림', 'shout': '버럭', 'cheerful': '밝음', 'tsukkomi': '츳코미', 'gentle': '다정',
+       'neutral': '담담', 'polite': '공손', 'sad': '슬픔', 'annoyed': '짜증', 'surprised': '놀람', 'shy': '수줍음', 'worried': '걱정'}
 
 
 def aurl(r):
@@ -18,12 +19,16 @@ def aurl(r):
 
 
 def play(eid, n):
-    rs = [r for r in AUD.get(eid, []) if r['turn'] == n]
+    """턴의 재생 버튼. 모든 턴에 남성판·여성판 두 줄이 있다 — 소리가 같으면(sha1) 버튼 하나만 보인다."""
+    rs = {r['voice']: r for r in AUD.get(eid, []) if r['turn'] == n}
     if not rs:
         return ''
-    emo = ' → '.join(EMO.get(x, x) for x in rs[0]['emotion'].split('+'))
-    lab = {'m': '남자', 'f': '여자', 'c': '재생'}
-    bs = ''.join(f"<button class='pl v{r['voice']}' data-u='{aurl(r)}' onclick='p1(this)'>▶ {lab[r['voice']]}</button>" for r in rs)
+    m, f = rs.get('m'), rs.get('f')
+    emo = ' → '.join(EMO.get(x, x) for x in (m or f)['emotion'].split('+'))
+    if m and f and m['sha1'] != f['sha1']:
+        bs = f"<button class='pl vm' data-u='{aurl(m)}' onclick='p1(this)'>▶ 남자</button><button class='pl vf' data-u='{aurl(f)}' onclick='p1(this)'>▶ 여자</button>"
+    else:
+        bs = f"<button class='pl vc' data-u='{aurl(m or f)}' onclick='p1(this)'>▶ 재생</button>"
     return f"<div class=au>{bs}<span class=em>감정: {emo}</span></div>"
 
 
@@ -31,7 +36,7 @@ def audio_head(e):
     if e['id'] not in AUD:
         return ''
     k = f"{e['id']}:audio"
-    return (f"<div class=aubox><b>🔊 음성 품질 확인</b> — 문장마다 감정을 넣은 생성 음성입니다. 학습자 이름 자리는 예시로 「田中」를 넣었습니다."
+    return (f"<div class=aubox><b>🔊 음성 품질 확인</b> — 문장마다 감정을 넣은 생성 음성입니다. 학습자 이름은 남성판 「アレックス」, 여성판 「エマ」입니다(화면의 대본은 이름 자리 그대로)."
             f"<div class=au><button class=pl onclick=\"pa(this,'m')\">▶ 전체 듣기(남자 학습자)</button><button class=pl onclick=\"pa(this,'f')\">▶ 전체 듣기(여자 학습자)</button></div>"
             f"<div class=rv><textarea data-k='{k}' placeholder='음성 리뷰 — 목소리·감정·억양·속도…'></textarea><button onclick=\"sv(this)\">저장</button></div><div class=rs data-s='{k}'></div></div>")
 
@@ -64,7 +69,7 @@ h1{font-size:20px}h2{font-size:17px;margin:28px 0 4px;color:#b77548}.meta{font-s
 .em{font-size:12px;color:#b77548}.aubox{margin:10px 0;padding:10px 12px;border:1px solid #b77548;border-radius:12px;font-size:14px}.t.now{outline:2px solid #635bff}
 @media(max-width:560px){.cuts{grid-template-columns:1fr}}"""
 parts = [f"<!doctype html><html lang=ko><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>일본어 회화 리뷰</title><style>{css}</style></head><body>",
-         f"<h1>일본어 회화 리뷰 시트</h1><div class=meta>갱신 {datetime.datetime.now():%Y-%m-%d %H:%M} · 턴마다 일본어 / 한글 독음 / 한국어 · 턴 두 개마다 장면 그림(남자·여자 학습자, 누르면 크게) · 고칠 곳은 편 id·턴 번호로</div>" + ''.join(f"<div class=aubox>🔊 <a href='#{k}'>음성 예시 듣기 — {k}</a></div>" for k in AUD) + "<div class=nav>"]
+         f"<h1>일본어 회화 리뷰 시트</h1><div class=meta>갱신 {datetime.datetime.now():%Y-%m-%d %H:%M} · 턴마다 일본어 / 한글 독음 / 한국어 · 턴 두 개마다 장면 그림(남자·여자 학습자, 누르면 크게) · 고칠 곳은 편 id·턴 번호로</div>" + (f"<div class=aubox>🔊 음성이 들어간 편 {len(AUD)}편 — 편마다 「전체 듣기」와 턴별 재생 버튼이 있습니다.</div>" if AUD else '') + "<div class=nav>"]
 parts += [f"<a href='#{e['id']}'>{html.escape(e['title'])}</a>" for e in eps] + ['</div>']
 for e in eps:
     tag = f"<span class=ok>통과 {html.escape(e['approved'])}</span>" if e.get('approved') else "<span class=dr>리뷰 대기</span>"

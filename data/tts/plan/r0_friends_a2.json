@@ -1,0 +1,10 @@
+{"ep":"r0_friends_a2",
+ "cast":{"B":"yuka"},
+ "turns":{
+  "1":{"segs":[["polite","{name}さんは、どこから来ましたか？","{name}さんは、どこからきましたか？"]]},
+  "2":{"segs":[["polite","{country}です。{city}から。"]]},
+  "3":{"segs":[["surprised","へえ！{city}！"],["shy","…{city}？合ってます？","{city}？あってます？"]]},
+  "4":{"segs":[["amused","（笑）もう一回。{city}。","もういっかい。{city}。"]]},
+  "5":{"segs":[["gentle","{name}さんの{city}、行きたいです。","{name}さんの{city}、いきたいです。"]]},
+  "6":{"segs":[["flustered","ぜひ！…あ、「ぜひ」、合ってます？","ぜひ！あ、ぜひ、あってます？"]]}
+ }}
