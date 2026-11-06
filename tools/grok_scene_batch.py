@@ -24,7 +24,9 @@ CAST_SCHOOL = {'林先生': '조연 시트(학교) 1번 하야시 선생님(40�
                'ホセ': '조연 시트(학교) 3번 호세(20대 남성, 짧은 곱슬 갈색 머리, 초록 티셔츠·반바지·샌들)',
                '大家': '조연 시트(학교) 4번 집주인(60대 남성, 대머리에 흰 수염, 감색 진베이·게다, 부채)'}
 CAST_SHEETS = {'work': os.path.join(ATT_DIR, 'cast_work_v1.jpg'), 'school': os.path.join(ATT_DIR, 'cast_school_v1.jpg')}
+ROOM = os.environ.get('GROK_ROOM', '')  # 이어 쓸 대화 주소(https://grok.com/c/<id>)
 a = sys.argv[1:]
+if not ROOM and '--fetch-only' not in a: sys.exit('GROK_ROOM(이어 쓸 대화 주소)을 지정하세요 — 요청마다 새 방 금지')
 tab = a[a.index('--tab') + 1] if '--tab' in a else 'project/832d5dbe'
 push = '--push' in a
 fetch_only = '--fetch-only' in a  # 이미 보낸 요청의 그림만 현재 대화에서 받는다(보내지 않음)
@@ -123,8 +125,10 @@ def do(eid):
         if fetch_only:
             last = 'OK'
         else:
-          # 그림은 새 대화에서만 안정적으로 나온다(2026-11-03: 긴 대화에서 그림 없이 "완료"만 답함) → 요청마다 프로젝트 첫 화면으로
-          c.call('Page.navigate', url=os.environ.get('GROK_HOME', 'https://grok.com/project/832d5dbe-6d57-4114-b17d-d4a52e41bf45')); time.sleep(8)
+          # 한 방에서 이어서(2026-11-06 사용자 지시: 새 방은 통일성이 깨지고 토큰을 많이 씀). 다른 화면에 있을 때만 그 방으로 돌아간다.
+          # 긴 방에서 그림 없이 "완료"만 답하면(2026-11-03) FAIL 로 멈춘다 — 그때만 사용자에게 알리고 GROK_ROOM 을 새 방으로 바꾼다.
+          if ROOM.rsplit('/', 1)[-1] not in (c.ev('location.href') or ''):
+              c.call('Page.navigate', url=ROOM); time.sleep(8)
           r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, pf.replace('_prompt.md', '_answer.md'),
                             '--tab', tab, '--wait', '90', '--attach', attachments(ep)], capture_output=True, text=True)
           last = (r.stdout.strip().splitlines() or [''])[-1]
@@ -142,7 +146,7 @@ def do(eid):
                    c.ev("[...document.querySelectorAll('img')].some(i=>i.src.startsWith('data:image')&&i.naturalWidth>200)")
             new = seen
             if len(new) >= len(chunk) and not busy: break
-            # 답이 끝났는데 그림이 1분 넘게 0장이면 그림 없이 끝난 것(2026-11-03 여러 번) → 빨리 실패하고 새 대화로 재시도
+            # 답이 끝났는데 그림이 1분 넘게 0장이면 그림 없이 끝난 것(2026-11-03 여러 번) → 빨리 실패하고 같은 방에서 재시도
             idle = (idle + 1) if (not busy and not new) else 0
             if idle >= 5: break
             time.sleep(15)
@@ -180,7 +184,7 @@ def git_push(msg):
 
 done, failed = [], []
 for eid in ids:
-    ok = do(eid) or do(eid)  # 그림이 안 오면 새 대화로 한 번 더(2026-11-03 r1_culture_b5: 그림 대신 다른 경로로 1장만 옴)
+    ok = do(eid) or do(eid)  # 그림이 안 오면 같은 방에서 한 번 더(2026-11-03 r1_culture_b5: 그림 대신 다른 경로로 1장만 옴)
     if ok: done.append(eid)
     else:
         failed.append(eid); print('SKIPFAIL', eid, flush=True)
