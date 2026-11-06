@@ -23,7 +23,7 @@ def play(eid, n):
     rs = {r['voice']: r for r in AUD.get(eid, []) if r['turn'] == n}
     if not rs:
         return ''
-    m, f = rs.get('m'), rs.get('f')
+    m, f = rs.get('m') or rs.get('c'), rs.get('f') or rs.get('c')
     emo = ' → '.join(EMO.get(x, x) for x in (m or f)['emotion'].split('+'))
     if m and f and m['sha1'] != f['sha1']:
         bs = f"<button class='pl vm' data-u='{aurl(m)}' onclick='p1(this)'>▶ 남자</button><button class='pl vf' data-u='{aurl(f)}' onclick='p1(this)'>▶ 여자</button>"
