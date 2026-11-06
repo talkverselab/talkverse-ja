@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """전편 회화 음성 생성 진행기(M6 에서 길게 돈다). 묶음마다: 작업 파일 → PC 생성 → 받아 오기 → 받아쓰기 검사·재생성(두 번까지) → mp4·R2·D1.
   <venv>/bin/python tools/tts/run_all.py <작업폴더> [묶음 크기=12]     끝난 편은 <작업폴더>/done.txt 에 적히고 다시 돌리면 건너뛴다.
-PC 쪽은 작업 스케줄러 'TTS job 2060'(run_job.sh)이 3090 대기열(gpu_queue)을 지키며 돈다 — 양보로 멈춰도 있는 파일은 건너뛰고 이어서 한다."""
+PC 쪽은 작업 스케줄러 'TTS job 2060'(run_job.sh)이 돈다 — 참고 음성 2060, 문장 3090. 중간에 멈춰도 있는 파일은 건너뛰고 이어서 한다."""
 import os, subprocess, sys, time
 import ttslib as L
 PC = 'Administrator@100.127.143.37'; HERE = os.path.dirname(os.path.abspath(__file__))
