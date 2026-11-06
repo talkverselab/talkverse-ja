@@ -18,7 +18,7 @@
 | 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 392어** — N5 8(재작업 2·r398 재발주 4·남음 2) · N4 84 · N3 300. 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210). 회화 레마는 남은 것 없음 |
 | 그림 기기 내려받기 | `lib/services/content_sync.dart` — 시작 때 매니페스트 둘을 받아 바뀐 파일만 내려받음(`SyncScreen`). 모든 그림은 `artProvider(url)`(기기 파일 우선) |
 | 한자(공용 DB) | `https://hanja-api.talkverse-lab.workers.dev/rest/v1/hanja_chars` + `hanja_mnemonic`. 패밀리 한자 메뉴 = 앱 자체 `PhoneticRootsScreen`(사용자 결정) |
-| Grok | **일시 중지.** 일본어 M4 Chrome(9230)·터널·배치 모두 꺼짐. 켤 때: 새 계정(전문가 모델), 프로젝트 없이 새 대화, `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 단어 그림 발주는 uk 세션 몫(M4 `~/talkverse-uk/tools/grok_art.py`, 마지막 회차 r397 = 2026-11-04 07:46, r398 지시서는 GitHub 에 올라가지 못해 Grok 이 받지 못함 — 재개 때 uk 가 10129~10132 와 みんな·クラス 재작업을 다시 발주) |
+| Grok | **일시 중지.** 일본어 M4 Chrome(9230)·터널·배치 모두 꺼짐. **한 방에서 이어서 진행(사용자 지시 2026-11-06, 통일성·토큰) — 요청마다 새 방 금지.** 남긴 방 3개는 2026-11-03 마지막 대화(`beaf49fb`·`8616db7e`·`1b19d528`), 나머지 일본어 대화 449개는 삭제. `tools/grok_scene_batch.py` 는 아직 요청마다 새 대화로 가므로 재개 전에 고칠 것. 켤 때: 새 계정(전문가 모델), `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 단어 그림 발주는 uk 세션 몫(M4 `~/talkverse-uk/tools/grok_art.py`, 마지막 회차 r397 = 2026-11-04 07:46, r398 지시서는 GitHub 에 올라가지 못해 Grok 이 받지 못함 — 재개 때 uk 가 10129~10132 와 みんな·クラス 재작업을 다시 발주) |
 
 ## 2. 알아 둘 문제
 
