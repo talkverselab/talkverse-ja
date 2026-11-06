@@ -2,7 +2,7 @@
 
 > 새 세션은 **`CLAUDE.md`(이 리포) → 이 파일** 순서로 읽고 바로 이어간다. 규칙 배경은 CLAUDE.md 절(§1 서명 · §2 배포 · §2-1 Zealot · §2-2 TestFlight · §2-3 톤·두 화면 · §4 공개 저장소 · §5 표시 언어 · §6 공용 인터페이스). 기기·계정은 `~/.claude/CLAUDE.md`. 다른 언어앱이 따라 하는 공통 프롬프터 = `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md`(§5-1 = 2026-11-04 변경 8건 표).
 
-**지금 국면: 사용자 지시(2026-11-06)로 일본어 Grok 재개.** 남은 일은 단어 그림 392어이고 uk 세션이 기존 방에서 발주한다. 장면 컷은 남은 것이 없다.
+**지금 국면: 사용자 지시(2026-11-06)로 일본어 Grok 재개.** 남은 일은 단어 그림이고 **일본어 세션이 직접 발주한다**(uk 는 ja 발주 안 함, 사용자 지시). 장면 컷은 남은 것이 없다.
 
 ## 1. 지금 상태
 
@@ -11,14 +11,14 @@
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC). **2026-11-03 밤 출처 이름을 커밋 기록까지 지워 강제 푸시함**(백업 번들 PC `D:\OneDrive\app project\japanese_universe\backup\ja_before_scrub_20261103.bundle`; 옛 브랜치 `master-old-history`·`master-stale`·stash 는 사용자 확인 뒤 삭제). 말뭉치 주소는 저장소 밖 `~/corpus/README_local.txt`. 미커밋 = 도구 부산물·`data/review/*_grok_enrich*`(보류)·`RELAY_*` — 의도적으로만 커밋 |
 | iOS TestFlight | **2611041314**(폰 그림 잘림 수정·단어 345어 포함). 그 뒤 성과 데스크 폰 레이아웃(1899b81)은 iOS 미반영 → 다음 `bash tools/ios_release.sh` |
 | Android | CI 빌드 = 푸시마다 자동(`.md` 제외). Zealot 「일본어 유니버스」 **빌드 60** https://apps.talkverse.uk/Ultzu/274 (1899b81 까지). 올리기 `tools/zealot_push.sh --ci "한 줄"` |
-| 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`, 카오스 88편(42%)·심쿵 전편. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ |
+| 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`, 카오스 88편(42%)·심쿵 전편. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (2026-11-06 장면 컷 포함, 컷 저장 키 `<편id>[_f]:cutN`) |
 | 단어 DB | **8,870어**(JLPT·말뭉치 8,525 + 회화 레마 345 `src=conv`). 시드 = `assets/data/version.json` **db=9**(데이터 바꾸면 번호 +1 하고 log 한 줄). 회화 레마 중 63개는 단어장에 없음(감탄사·조동사 조각·이름 등, `missing_lemmas.csv`) — 칩이 회색으로 나오는 것이 정상 |
 | 장면 컷 | **2,232컷 · 430묶음**(남자 215편 1,116 + 여자 `_f` 215편 1,116), 저장소·R2·D1 일치(2026-11-05 전수 확인: 올림 0·같음 2,232). 저장소 sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
 | 단어 그림 | 매니페스트 **1,775 항목**. 통과한 그림은 전부 DB 에 있음. 레벨별 보유: N5 503/735 · N4 322/676 · N3 534/2,135 · 회화 레마 170/345(나머지는 제외·별칭) |
 | 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 392어** — N5 8(재작업 2·r398 재발주 4·남음 2) · N4 84 · N3 300. 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210). 회화 레마는 남은 것 없음 |
 | 그림 기기 내려받기 | `lib/services/content_sync.dart` — 시작 때 매니페스트 둘을 받아 바뀐 파일만 내려받음(`SyncScreen`). 모든 그림은 `artProvider(url)`(기기 파일 우선) |
 | 한자(공용 DB) | `https://hanja-api.talkverse-lab.workers.dev/rest/v1/hanja_chars` + `hanja_mnemonic`. 패밀리 한자 메뉴 = 앱 자체 `PhoneticRootsScreen`(사용자 결정) |
-| Grok | **재개(2026-11-06).** 단어 그림은 uk 세션에 요청함. **한 방에서 이어서 진행(사용자 지시 2026-11-06, 통일성·토큰) — 요청마다 새 방 금지.** 남긴 방 3개는 2026-11-03 마지막 대화(`beaf49fb`·`8616db7e`·`1b19d528`), 나머지 일본어 대화 449개는 삭제. `tools/grok_scene_batch.py` 는 `GROK_ROOM=https://grok.com/c/<id>` 필수(실제 Grok 으로는 아직 시험 전). `grok_write_batch.py`·`grok_image.py` 는 아직 새 대화로 간다 — 쓰기 전에 고칠 것. 켤 때: 새 계정(전문가 모델), `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 단어 그림 발주는 uk 세션 몫(M4 `~/talkverse-uk/tools/grok_art.py`, 마지막 회차 r397 = 2026-11-04 07:46, r398 지시서는 GitHub 에 올라가지 못해 Grok 이 받지 못함 — 재개 때 uk 가 10129~10132 와 みんな·クラス 재작업을 다시 발주) |
+| Grok | **재개(2026-11-06).** 단어 그림 = `tools/grok_word_rounds.sh [N] [시트폴더]`(M4 9222·방 `00092f0a`, M4 gh 로그인이 풀려 지시서는 M6 `ja-art` 에서 푸시) → 시트 판정 → M4 `grok_art.py redo/approve/publish ja`(PATH 에 /opt/homebrew/bin). **한 방에서 이어서 진행(사용자 지시 2026-11-06, 통일성·토큰) — 요청마다 새 방 금지.** 남긴 방 3개는 2026-11-03 마지막 대화(`beaf49fb`·`8616db7e`·`1b19d528`), 나머지 일본어 대화 449개는 삭제. `tools/grok_scene_batch.py` 는 `GROK_ROOM=https://grok.com/c/<id>` 필수(실제 Grok 으로는 아직 시험 전). `grok_write_batch.py`·`grok_image.py` 는 아직 새 대화로 간다 — 쓰기 전에 고칠 것. 켤 때: 새 계정(전문가 모델), `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. r399 에서 10129~10132 와 みんな·クラス 재작업 완료(曲る 는 재작업) |
 
 ## 2. 알아 둘 문제
 
