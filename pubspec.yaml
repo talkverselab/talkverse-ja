@@ -19,6 +19,7 @@ dependencies:
   # Util
   csv: ^6.0.0
   flutter_tts: ^4.2.0
+  audioplayers: ^6.1.0 # 회화 생성 음성(mp4) 재생
 
   # Drift (SQLite ORM)
   drift: ^2.20.3

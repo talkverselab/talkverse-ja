@@ -14,7 +14,7 @@ import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
 import 'lemma_chips.dart';
 import 'learner_setup_dialog.dart';
-import '../services/tts_service.dart';
+import '../services/dialogue_audio.dart';
 import 'achievement_desk.dart';
 import 'selectable_ja_text.dart';
 
@@ -47,7 +47,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   late final List<GlobalKey> _keys = List.generate(widget.dialogue.turns.length, (_) => GlobalKey());
 
   Dialogue get d => widget.dialogue;
-  DialogueTurn get turn => d.turns[_i];
+  DialogueTurn get turn => d.view(d.turns[_i]); // 생성 음성이 있으면 그 음성이 읽는 본문(이름·성별판)
 
   @override
   void initState() {
@@ -55,7 +55,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted) return;
       // 대사에 {name} 자리가 있는데 이름이 없으면 먼저 묻는다(앱 켠 뒤 한 번)
-      await ensureLearnerName(context, needed: widget.dialogue.turns.any((t) => t.ja.contains('{name}')));
+      await ensureLearnerName(context, needed: !DialogueAudio.instance.covers(widget.dialogue) && widget.dialogue.turns.any((t) => t.ja.contains('{name}')));
       if (mounted) setState(() {});
       if (widget.autoPlay && mounted) _play();
     });
@@ -64,7 +64,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
   @override
   void dispose() {
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     super.dispose();
   }
 
@@ -74,7 +74,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     while (mounted && my == _session && _i < d.turns.length) {
       final t = d.turns[_i];
       _scrollTo(_i);
-      await TtsService.instance.speakAs(_ttsText(t), gender: _gender(t.speaker), rate: _rate * 0.45);
+      await speakTurn(d, t, rate: _rate); // 생성 음성(mp4) 우선, 없으면 기기 음성
       if (!mounted || my != _session) return;
       await Future.delayed(Duration(milliseconds: (650 / _rate).round())); // 턴 사이 숨
       if (!mounted || my != _session) return;
@@ -91,14 +91,14 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
 
   void _pause() {
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     setState(() => _playing = false);
   }
 
   void _goto(int n, {bool play = false}) {
     n = n.clamp(0, d.turns.length - 1);
     _session++;
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     setState(() {
       _i = n;
       _playing = false;
@@ -107,21 +107,13 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     if (play) _play();
   }
 
-  void _speakOne(DialogueTurn t) => TtsService.instance.speakAs(_ttsText(t), gender: _gender(t.speaker), rate: _rate * 0.45);
+  void _speakOne(DialogueTurn t) => speakTurn(d, t, rate: _rate);
 
   void _scrollTo(int i) {
     final ctx = _keys[i].currentContext;
     if (ctx == null) return;
     Scrollable.ensureVisible(ctx, duration: const Duration(milliseconds: 300), curve: Curves.easeOut, alignment: 0.3);
   }
-
-  String _ttsText(DialogueTurn t) {
-    var s = t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), '');
-    s = s.replaceAll(RegExp(r'[wｗ]+$'), '').trim();
-    return s.isEmpty ? t.kana : s;
-  }
-
-  String _gender(String sp) => LearnerPrefs.voiceGender(sp); // A = 학습자 프로필 성별
 
   @override
   Widget build(BuildContext context) {
@@ -224,7 +216,7 @@ class _Script extends StatelessWidget {
           padding: EdgeInsets.fromLTRB(12, 4, 12, 12 + bottomInset(context)),
           itemCount: d.turns.length,
           itemBuilder: (context, i) {
-            final t = d.turns[i];
+            final t = d.view(d.turns[i]);
             final on = i == current;
             final me = t.speaker == 'A';
             return Padding(

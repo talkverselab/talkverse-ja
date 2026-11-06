@@ -33,7 +33,7 @@ void main() async {
   Purchase.configure({'ja': ('com.talkverse.japaneseUniverse.lifetime', 'lang_ja')});
   await _setOrientations(); // 폰은 세로 고정, 태블릿·폴드 펼침(짧은 변 600 이상)은 회전 허용
   // 그림(장면 컷·단어 그림) 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(사용자 지시 2026-11-04)
-  final needSync = await ContentSync.instance.init(large: _wide ?? false);
+  final needSync = await ContentSync.instance.init(large: _wide ?? false, female: LearnerPrefs.isFemale);
   runApp(JapaneseUniverseApp(syncFirst: needSync));
 }
 

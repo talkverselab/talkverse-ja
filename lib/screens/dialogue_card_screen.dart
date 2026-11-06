@@ -8,7 +8,7 @@ import '../services/achievement_service.dart';
 import '../services/art_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
-import '../services/tts_service.dart';
+import '../services/dialogue_audio.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/lemma_chips.dart';
 
@@ -29,11 +29,11 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
   int _right = 0;
 
   Dialogue get d => widget.dialogue;
-  DialogueTurn get t => d.turns[_order[_pos]];
+  DialogueTurn get t => d.view(d.turns[_order[_pos]]);
 
   @override
   void dispose() {
-    TtsService.instance.stop();
+    DialogueAudio.instance.stop();
     super.dispose();
   }
 
@@ -100,7 +100,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
           padding: EdgeInsets.fromLTRB(16, 6, 16, 20 + bottomInset(context)),
           child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
             _Btn(icon: Icons.close, label: tr('틀렸어요'), color: AppColors.beni, onTap: () => _mark(false)),
-            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.ai, onTap: () => TtsService.instance.speakAs(t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), ''), gender: LearnerPrefs.voiceGender(t.speaker))),
+            _Btn(icon: Icons.volume_up, label: tr('듣기'), color: AppColors.ai, onTap: () => speakTurn(d, t)),
             _Btn(icon: Icons.check, label: tr('맞았어요'), color: AppColors.matcha, onTap: () => _mark(true)),
           ]),
         ),

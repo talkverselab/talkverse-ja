@@ -51,16 +51,16 @@ class _SyncScreenState extends State<SyncScreen> {
                 builder: (context, p, _) => Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                   Center(child: GradText(tr('일본어유니버스'), style: const TextStyle(fontSize: 26, fontWeight: FontWeight.w900))),
                   const SizedBox(height: 28),
-                  Text(tr('그림 준비 중'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+                  Text(tr('그림·음성 준비 중'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi)),
                   const SizedBox(height: 8),
-                  Text(tr('처음 한 번만 그림을 내려받습니다. 다음부터는 바로 열립니다.'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.5)),
+                  Text(tr('새 그림과 회화 음성을 내려받습니다. 받은 것은 다시 받지 않습니다.'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 13, color: AppColors.sumiLight, height: 1.5)),
                   const SizedBox(height: 22),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8),
                     child: LinearProgressIndicator(value: p.total == 0 ? null : p.ratio, minHeight: 10, backgroundColor: AppColors.washiDeep, color: AppColors.beni),
                   ),
                   const SizedBox(height: 10),
-                  Text('${p.done} / ${p.total}   ·   ${trf('그림 {0}장 · 약 {1}MB', [n, mb])}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: AppColors.muted)),
+                  Text('${p.done} / ${p.total}   ·   ${trf('그림·음성 {0}개 · 약 {1}MB', [n, mb])}', textAlign: TextAlign.center, style: const TextStyle(fontSize: 12, color: AppColors.muted)),
                   const SizedBox(height: 28),
                   OutlinedButton(
                     onPressed: _go,
