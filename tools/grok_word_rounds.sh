@@ -11,6 +11,8 @@ import sys, json
 sys.path.insert(0, 'tools'); import grok_art as a
 a.push = lambda: a.git('pull -q --rebase')
 a.grok_send = lambda t: open('/tmp/ja_msg_next.txt', 'w', encoding='utf-8').write(t)
+_w = a.words; _sk = set(a.load_state()['ja'].get('skip', []))  # 이미 그림이 있는 단어는 다시 그리지 않는다(2026-11-06: 41어가 기존 그림을 덮음)
+a.words = lambda l: [w for w in _w(l) if w['rank'] not in _sk]
 a.next_round('ja', 4)
 print('ROUND', json.load(open('docs/art_state.json'))['ja']['round'])
 P" 2>&1)
@@ -29,6 +31,8 @@ a.grok_send(open('/tmp/ja_msg_next.txt', encoding='utf-8').read())\"" 2>&1 | tai
   done_=
   for w in $(seq 1 40); do
     gh api "repos/talkverselab/talkversehanja/commits?per_page=100" --jq '.[].commit.message' 2>/dev/null | grep -q "ja r$R done" && { done_=1; break; }
+    # 2026-11-06 r443: Grok 쪽 GitHub 토큰이 만료돼 푸시 실패 → 다시 푸시를 부탁하면 갱신돼 올라감. 5분 넘으면 한 번만
+    [ $w -eq 10 ] && ssh macmini4 "printf '%s' '방금 r$R 그림을 같은 파일로 다시 푸시해 줘. 마지막 커밋 메시지는 Talkverse art ja r$R done 으로.' > /tmp/grok_msg.txt; GROK_CDP_PORT=9222 /usr/bin/python3 ~/Hanja/tools/grok_cdp.py send /tmp/grok_msg.txt ${GROK_CHAT:-00092f0a}" 2>&1 | tail -1
     sleep 30
   done
   [ -z "$done_" ] && { echo "STOP r$R 20분 안에 완료 없음"; exit 2; }

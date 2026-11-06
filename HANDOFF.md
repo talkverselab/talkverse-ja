@@ -2,7 +2,7 @@
 
 > 새 세션은 **`CLAUDE.md`(이 리포) → 이 파일** 순서로 읽고 바로 이어간다. 규칙 배경은 CLAUDE.md 절(§1 서명 · §2 배포 · §2-1 Zealot · §2-2 TestFlight · §2-3 톤·두 화면 · §4 공개 저장소 · §5 표시 언어 · §6 공용 인터페이스). 기기·계정은 `~/.claude/CLAUDE.md`. 다른 언어앱이 따라 하는 공통 프롬프터 = `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md`(§5-1 = 2026-11-04 변경 8건 표).
 
-**지금 국면: 사용자 지시(2026-11-06)로 일본어 Grok 재개.** 남은 일은 단어 그림이고 **일본어 세션이 직접 발주한다**(uk 는 ja 발주 안 함, 사용자 지시). 장면 컷은 남은 것이 없다.
+**지금 국면: 일본어 단어 그림을 r399~r484 까지 진행하고 Grok 이 멈춰 중단(2026-11-06 20:18).** 단어 방 `00092f0a` 이 r485 에서 이미지 생성 실패, r486 에서 빈 답. 새 방을 열기 전에 사용자에게 묻는다. 일본어 세션이 직접 발주한다(uk 는 ja 발주 안 함, 사용자 지시). 장면 컷은 남은 것이 없다.
 
 ## 1. 지금 상태
 
@@ -14,11 +14,11 @@
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`, 카오스 88편(42%)·심쿵 전편. 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ (2026-11-06 장면 컷 포함, 컷 저장 키 `<편id>[_f]:cutN`) |
 | 단어 DB | **8,870어**(JLPT·말뭉치 8,525 + 회화 레마 345 `src=conv`). 시드 = `assets/data/version.json` **db=9**(데이터 바꾸면 번호 +1 하고 log 한 줄). 회화 레마 중 63개는 단어장에 없음(감탄사·조동사 조각·이름 등, `missing_lemmas.csv`) — 칩이 회색으로 나오는 것이 정상 |
 | 장면 컷 | **2,232컷 · 430묶음**(남자 215편 1,116 + 여자 `_f` 215편 1,116), 저장소·R2·D1 일치(2026-11-05 전수 확인: 올림 0·같음 2,232). 저장소 sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
-| 단어 그림 | 매니페스트 **1,775 항목**. 통과한 그림은 전부 DB 에 있음. 레벨별 보유: N5 503/735 · N4 322/676 · N3 534/2,135 · 회화 레마 170/345(나머지는 제외·별칭) |
-| 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 392어** — N5 8(재작업 2·r398 재발주 4·남음 2) · N4 84 · N3 300. 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210). 회화 레마는 남은 것 없음 |
+| 단어 그림 | 매니페스트 **2,089 항목**(2026-11-06). 통과한 그림은 전부 DB 에 있음 |
+| 앞으로 그릴 목록 | **`data/review/write/art_todo_ja.csv` 89어** — N3 남음 84 · 재작업 5(人込み·劇場·宝石·汗·笛). 그림 없이 두기로 한 단어는 `jlpt_excluded.csv` 1,963줄(그림 불가 1,753 · 별칭 210) |
 | 그림 기기 내려받기 | `lib/services/content_sync.dart` — 시작 때 매니페스트 둘을 받아 바뀐 파일만 내려받음(`SyncScreen`). 모든 그림은 `artProvider(url)`(기기 파일 우선) |
 | 한자(공용 DB) | `https://hanja-api.talkverse-lab.workers.dev/rest/v1/hanja_chars` + `hanja_mnemonic`. 패밀리 한자 메뉴 = 앱 자체 `PhoneticRootsScreen`(사용자 결정) |
-| Grok | **재개(2026-11-06).** 단어 그림 = `tools/grok_word_rounds.sh [N] [시트폴더]`(M4 9222·방 `00092f0a`, M4 gh 로그인이 풀려 지시서는 M6 `ja-art` 에서 푸시) → 시트 판정 → M4 `grok_art.py redo/approve/publish ja`(PATH 에 /opt/homebrew/bin). **한 방에서 이어서 진행(사용자 지시 2026-11-06, 통일성·토큰) — 요청마다 새 방 금지.** 남긴 방 3개는 2026-11-03 마지막 대화(`beaf49fb`·`8616db7e`·`1b19d528`), 나머지 일본어 대화 449개는 삭제. `tools/grok_scene_batch.py` 는 `GROK_ROOM=https://grok.com/c/<id>` 필수(실제 Grok 으로는 아직 시험 전). `grok_write_batch.py`·`grok_image.py` 는 아직 새 대화로 간다 — 쓰기 전에 고칠 것. 켤 때: 새 계정(전문가 모델), `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. r399 에서 10129~10132 와 みんな·クラス 재작업 완료(曲る 는 재작업) |
+| Grok | **재개(2026-11-06).** 단어 그림 = `tools/grok_word_rounds.sh [N] [시트폴더]`(M4 9222·방 `00092f0a`, M4 gh 로그인이 풀려 지시서는 M6 `ja-art` 에서 푸시) → 시트 판정 → M4 `grok_art.py redo/approve/publish ja`(PATH 에 /opt/homebrew/bin). **한 방에서 이어서 진행(사용자 지시 2026-11-06, 통일성·토큰) — 요청마다 새 방 금지.** 남긴 방 3개는 2026-11-03 마지막 대화(`beaf49fb`·`8616db7e`·`1b19d528`), 나머지 일본어 대화 449개는 삭제. `tools/grok_scene_batch.py` 는 `GROK_ROOM=https://grok.com/c/<id>` 필수(실제 Grok 으로는 아직 시험 전). `grok_write_batch.py`·`grok_image.py` 는 아직 새 대화로 간다 — 쓰기 전에 고칠 것. 켤 때: 새 계정(전문가 모델), `GROK_HOME=https://grok.com/`, `--tab grok.com`, 프로필 `~/chrome-grok-ja`, 터널 `ssh -fN -L 9230:127.0.0.1:9230 macmini4`, 첨부 `/tmp/grok_att/ja/`, 한 번에 한 작업, 4장/요청, 끝나면 M4 Chrome 끔. 마지막 성공 r484. 시트 판정은 세션이 직접. 이미 그림 있는 단어는 상태 `skip` 으로 제외(스크립트가 거름). r400~r439 에서 41어가 다시 그려져 39어는 새 그림으로 바뀜 — 되돌릴지는 사용자 결정 대기 |
 
 ## 2. 알아 둘 문제
 
@@ -50,7 +50,7 @@
 
 ## 5. 다음 할 일
 
-- **사용자 결정 대기**: Play 프로텍트 「피싱」 경고 처리(이메일 로그인 숨기기 vs Play 내부 테스트) · 조연 시트·여자 컷 품질 피드백 · 옛 브랜치/stash 삭제 · App Store Connect 인앱 상품 `com.talkverse.japaneseUniverse.lifetime`·Play `lang_ja` 등록.
+- **사용자 결정 대기**: 일본어 Grok 재개 시점과 새 방 허용(uk 쪽 재개 지시 2026-11-09 13:30) · 39어 새 그림 유지/되돌리기 · Play 프로텍트 「피싱」 경고 처리(이메일 로그인 숨기기 vs Play 내부 테스트) · 조연 시트·여자 컷 품질 피드백 · 옛 브랜치/stash 삭제 · App Store Connect 인앱 상품 `com.talkverse.japaneseUniverse.lifetime`·Play `lang_ja` 등록.
 - iOS 다음 빌드 때 성과 데스크 수정 포함.
 - 보류: R4 본편 추가, 강화 재작성 v2(`rewrite_grok_v2.md`), 맞춤 회화 launchd 워커(`tools/launchd/com.talkverse.ja.custom-script.plist`, 사용자 확인 뒤).
 
