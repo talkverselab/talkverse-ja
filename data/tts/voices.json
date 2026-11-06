@@ -1,0 +1,20 @@
+{
+ "base_text": "今日は午後から会議があるので、資料を準備しておきます。",
+ "voices": {
+  "am": {"desc": "A young Japanese man in his twenties, clear and gentle voice", "kansai": false},
+  "af": {"desc": "A young Japanese woman in her twenties, clear and soft voice", "kansai": false},
+  "kacho": {"desc": "A Japanese man in his fifties, deep, warm and slightly rough voice, speaking Osaka dialect", "kansai": true},
+  "misaki": {"desc": "A Japanese woman in her late twenties, bright, lively and quick voice, speaking Osaka dialect", "kansai": true}
+ },
+ "emotions": {
+  "stiff": {"instruct": "very nervous and stiff, formal and overly polite", "ref": "本日はお時間をいただき、誠にありがとうございます。精一杯努めますので、どうぞよろしくお願いいたします。"},
+  "flustered": {"instruct": "flustered and embarrassed, stammering, unsure", "ref": "え、あの、それは、ちょっと待ってください…なんて言えばいいのか、わからなくて…"},
+  "excited": {"instruct": "excited, bursting with courage, bright and loud", "ref": "やった、言えました！ 自分でも驚きました、本当にありがとうございます！"},
+  "amused": {"instruct": "amused, laughing warmly, relaxed", "ref_kansai": "ははは、おもろいなあ。ええやんええやん、その調子で行こか。"},
+  "teasing": {"instruct": "teasing, playful and mischievous", "ref_kansai": "なんや、そんな顔して。ほら、ほんまのこと言うてみ、誰にも言わへんから。"},
+  "shout": {"instruct": "surprised and loud, an exaggerated comic retort", "ref_kansai": "ちょっと待てや！ 何言うとんねん、そんなんあかんやろ！"},
+  "cheerful": {"instruct": "cheerful, friendly and energetic", "ref_kansai": "なあなあ、今日めっちゃええ天気やん！ お昼みんなで行こ、絶対楽しいで！"},
+  "tsukkomi": {"instruct": "exasperated comic retort, quick and sharp, half laughing", "ref_kansai": "いやいや、なんでそうなるん！ そこは止めなあかんとこやろ、もう！"},
+  "gentle": {"instruct": "soft, tender and quiet, a little shy", "ref_kansai": "大丈夫やで。ちゃんと見とったから。また、明日な。"}
+ }
+}

@@ -7,6 +7,33 @@ from pathlib import Path
 out = Path(sys.argv[1]); eps = [json.load(open(p, encoding='utf-8')) for p in sys.argv[2:]]
 _m = json.load(urllib.request.urlopen(urllib.request.Request(f'https://auth.talkverse.uk/art/ja/scene/manifest?t={datetime.datetime.now():%s}', headers={'User-Agent': 'talkverse-ja/0.1'}), timeout=60))
 CUT = {(i['episode'], int(i['cut'])): (_m['base'] + i['key_584'], _m['base'] + i['key_1168']) for i in _m['items']}
+# 회화 음성(2026-11-06 사용자 지시): data/tts/audio_ja.json 에 있는 편은 턴마다 재생 버튼 + 전체 듣기
+_af = Path(__file__).resolve().parent.parent / 'data/tts/audio_ja.json'
+AUD = json.load(open(_af, encoding='utf-8')) if _af.exists() else {}
+EMO = {'stiff': '긴장·딱딱', 'flustered': '당황', 'excited': '흥분', 'amused': '유쾌', 'teasing': '놀림', 'shout': '버럭', 'cheerful': '밝음', 'tsukkomi': '츳코미', 'gentle': '다정'}
+
+
+def aurl(r):
+    return f"https://auth.talkverse.uk/art/{r['key']}?v={r['sha1'][:8]}"
+
+
+def play(eid, n):
+    rs = [r for r in AUD.get(eid, []) if r['turn'] == n]
+    if not rs:
+        return ''
+    emo = ' → '.join(EMO.get(x, x) for x in rs[0]['emotion'].split('+'))
+    lab = {'m': '남자', 'f': '여자', 'c': '재생'}
+    bs = ''.join(f"<button class='pl v{r['voice']}' data-u='{aurl(r)}' onclick='p1(this)'>▶ {lab[r['voice']]}</button>" for r in rs)
+    return f"<div class=au>{bs}<span class=em>감정: {emo}</span></div>"
+
+
+def audio_head(e):
+    if e['id'] not in AUD:
+        return ''
+    k = f"{e['id']}:audio"
+    return (f"<div class=aubox><b>🔊 음성 품질 확인</b> — 문장마다 감정을 넣은 생성 음성입니다. 학습자 이름 자리는 예시로 「田中」를 넣었습니다."
+            f"<div class=au><button class=pl onclick=\"pa(this,'m')\">▶ 전체 듣기(남자 학습자)</button><button class=pl onclick=\"pa(this,'f')\">▶ 전체 듣기(여자 학습자)</button></div>"
+            f"<div class=rv><textarea data-k='{k}' placeholder='음성 리뷰 — 목소리·감정·억양·속도…'></textarea><button onclick=\"sv(this)\">저장</button></div><div class=rs data-s='{k}'></div></div>")
 
 
 def fig(eid, n, label):
@@ -33,21 +60,23 @@ h1{font-size:20px}h2{font-size:17px;margin:28px 0 4px;color:#b77548}.meta{font-s
 .rs{font-size:11px;color:#6b7c93;margin-top:2px}.ep{margin:0 0 6px}.ep textarea{min-height:46px}
 .cuts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:16px 0 8px}.cuts figure{margin:0;min-width:0}.cuts figure:only-child{grid-column:1/-1;max-width:584px}
 .cuts img{display:block;width:100%;height:auto;border-radius:10px;background:#eef1f5}.cuts figcaption{font-size:11.5px;color:#6b7c93;margin-top:3px}.nopic{aspect-ratio:3/2;display:flex;align-items:center;justify-content:center;border-radius:10px;background:#fff1e0;color:#b77548;font-size:13px}
+.au{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:6px}.pl{border:1px solid #cfd8e3;border-radius:16px;padding:5px 12px;background:#fff;color:#0a2540;font-size:13px;cursor:pointer}.pl.on{background:#635bff;border-color:#635bff;color:#fff}
+.em{font-size:12px;color:#b77548}.aubox{margin:10px 0;padding:10px 12px;border:1px solid #b77548;border-radius:12px;font-size:14px}.t.now{outline:2px solid #635bff}
 @media(max-width:560px){.cuts{grid-template-columns:1fr}}"""
 parts = [f"<!doctype html><html lang=ko><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>일본어 회화 리뷰</title><style>{css}</style></head><body>",
-         f"<h1>일본어 회화 리뷰 시트</h1><div class=meta>갱신 {datetime.datetime.now():%Y-%m-%d %H:%M} · 턴마다 일본어 / 한글 독음 / 한국어 · 턴 두 개마다 장면 그림(남자·여자 학습자, 누르면 크게) · 고칠 곳은 편 id·턴 번호로</div><div class=nav>"]
+         f"<h1>일본어 회화 리뷰 시트</h1><div class=meta>갱신 {datetime.datetime.now():%Y-%m-%d %H:%M} · 턴마다 일본어 / 한글 독음 / 한국어 · 턴 두 개마다 장면 그림(남자·여자 학습자, 누르면 크게) · 고칠 곳은 편 id·턴 번호로</div>" + ''.join(f"<div class=aubox>🔊 <a href='#{k}'>음성 예시 듣기 — {k}</a></div>" for k in AUD) + "<div class=nav>"]
 parts += [f"<a href='#{e['id']}'>{html.escape(e['title'])}</a>" for e in eps] + ['</div>']
 for e in eps:
     tag = f"<span class=ok>통과 {html.escape(e['approved'])}</span>" if e.get('approved') else "<span class=dr>리뷰 대기</span>"
     sp = ' · '.join(f'{k}={v}' for k, v in e['speakers'].items())
     parts.append(f"<h2 id='{e['id']}'>{html.escape(e.get('emoji',''))} {html.escape(e['title'])} <small>{e['id']}</small></h2>"
                  f"<div class='rv ep'><textarea data-k='{e['id']}:all' placeholder='이 편 전체 리뷰 — 통과 / 다시 / 턴이 너무 짧다 등…'></textarea><button onclick=\"sv(this)\">저장</button></div><div class=rs data-s='{e['id']}:all'></div>"
-                 f"<div class=meta>{tag}<br>{html.escape(e['scene'])}<br>{e['region']} · {e.get('register')} · 턴 {len(e['turns'])} · 반전 {e.get('twist')}턴 · {html.escape(sp)}</div>")
+                 f"<div class=meta>{tag}<br>{html.escape(e['scene'])}<br>{e['region']} · {e.get('register')} · 턴 {len(e['turns'])} · 반전 {e.get('twist')}턴 · {html.escape(sp)}</div>" + audio_head(e))
     for t in e['turns']:
         key = f"{e['id']}:{t['num']}"
         if t['num'] % 2:
             parts.append(cuts(e, (t['num'] + 1) // 2))
-        parts.append(f"<div class='t {t['speaker']}'><div class=sp>{t['num']} {t['speaker']}{' · '+t['at'] if t.get('at') else ''}</div><div class=ja>{html.escape(t['ja'])}</div><div class=rd>{html.escape(t.get('rd',''))}</div><div class=ko>{html.escape(t['ko'])}</div>"
+        parts.append(f"<div class='t {t['speaker']}'><div class=sp>{t['num']} {t['speaker']}{' · '+t['at'] if t.get('at') else ''}</div><div class=ja>{html.escape(t['ja'])}</div><div class=rd>{html.escape(t.get('rd',''))}</div><div class=ko>{html.escape(t['ko'])}</div>{play(e['id'], t['num'])}"
                      f"<div class=rv><textarea data-k='{key}' placeholder='이 턴 리뷰…'></textarea><button onclick=\"sv(this)\">저장</button></div><div class=rs data-s='{key}'></div></div>")
     if e.get('review', {}).get('final'):
         parts.append(f"<div class=meta>최종: {html.escape(e['review']['final'])}</div>")
@@ -63,6 +92,15 @@ async function sv(btn){const ta=btn.previousElementSibling,k=ta.dataset.k,text=t
  try{const r=await fetch(API,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({key:k,text,at})});
   if(!r.ok)throw new Error(r.status);st(k,'서버 저장됨 '+at,'ok');}
  catch(e){st(k,'폰에만 저장됨 '+at+' (서버 연결 안 됨)','err');}}
+const AU=new Audio();AU.preload='auto';let Q=[],B=null;
+function off(){if(B)B.classList.remove('on');document.querySelectorAll('.t.now').forEach(x=>x.classList.remove('now'));}
+function stop(){Q=[];AU.pause();off();B=null;}
+function go(b,u){off();B=b;b.classList.add('on');AU.src=u;AU.play().catch(()=>stop());}
+function p1(b){if(B===b&&!AU.paused){stop();return;}stop();go(b,b.dataset.u);}
+function pa(b,g){if(B===b){stop();return;}stop();const box=b.closest('.aubox');let e=box;const L=[];while((e=e.nextElementSibling)&&e.tagName!=='H2'){if(!e.classList.contains('t'))continue;const x=e.querySelector('.pl.v'+g)||e.querySelector('.pl.vc');if(x)L.push(x);}
+ Q=L.slice();B=b;b.classList.add('on');nx();}
+function nx(){const x=Q.shift();if(!x){stop();return;}const t=x.closest('.t');document.querySelectorAll('.t.now').forEach(y=>y.classList.remove('now'));t.classList.add('now');t.scrollIntoView({block:'center',behavior:'smooth'});AU.src=x.dataset.u;AU.play().catch(()=>stop());}
+AU.onended=()=>{if(Q.length){setTimeout(nx,350);}else{stop();}};
 (async()=>{fill(ld());try{const r=await fetch(API);if(r.ok){fill(await r.json());}}catch(e){}})();
 </script></body></html>""")
 out.write_text('\n'.join(parts), encoding='utf-8'); print(out, len(eps))
