@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'content_sync.dart';
 import 'learner_prefs.dart';
 
 /// 새 회화(R0~R4, 주제별 JSON) 로더 — 2026-11-03.
@@ -64,6 +65,11 @@ class DialogueTurn {
         lemmas: [for (final l in (j['lemmas'] as List? ?? const [])) if (l is List && l.length >= 2) Lemma('${l[0]}', '${l[1]}', l.length > 2 ? '${l[2]}' : '')],
       );
 
+  /// 본문만 바꾼 사본(생성 음성이 읽은 판 — 이름을 넣었거나 남성판·여성판).
+  DialogueTurn withText({String? ja, String? kana, String? rd, String? ko}) => DialogueTurn(
+        num: num, speaker: speaker, ja: ja ?? this.ja, kana: kana ?? this.kana, rd: rd ?? this.rd, ko: ko ?? this.ko,
+        note: note, tags: tags, lemmas: lemmas, newWords: newWords, at: at, stamp: stamp, bubble: bubble, art: art);
+
   /// 그림 조회용 핵심 단어 후보: new → expr 태그 → 없음.
   List<String> get pictureWords {
     final out = <String>[...newWords];
@@ -122,6 +128,12 @@ class Dialogue {
         art: j['art'] as String?,
       );
   bool get isChat => kind == 'chat';
+  /// 화면에 보일 턴: 생성 음성이 있으면 그 음성이 읽는 본문(학습자 성별판, 이름이 들어간 글) — 듣는 말과 글이 같아야 한다(2026-11-06).
+  DialogueTurn view(DialogueTurn t) {
+    final l = ContentSync.instance.audioIndex[id]?[t.num]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+    if (l == null || l.text.isEmpty) return t;
+    return t.withText(ja: l.text, kana: l.reading, rd: l.rd, ko: l.ko);
+  }
   /// 화자 표시 이름: `{name}`(학습자 자리) → 「나」, 그 밖의 중괄호는 뗀다.
   String speakerName(String sp) {
     final raw = speakers[sp] ?? sp;
