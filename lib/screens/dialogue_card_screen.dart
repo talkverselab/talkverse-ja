@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/content_sync.dart';
+import '../widgets/furigana_toggle.dart';
 
 import '../core/l10n.dart';
 import '../core/platform.dart';
@@ -75,6 +76,7 @@ class _DialogueCardScreenState extends State<DialogueCardScreen> {
           const SizedBox(height: 2),
           Text('${_pos + 1} / ${_order.length}', style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 2)),
         ]),
+        actions: const [FuriganaToggleAction()],
       ),
       body: Column(children: [
         Expanded(

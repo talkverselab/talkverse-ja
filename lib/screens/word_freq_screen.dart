@@ -7,7 +7,9 @@ import 'package:flutter/services.dart' show rootBundle;
 import '../core/l10n.dart';
 import '../core/platform.dart';
 import '../core/theme.dart';
+import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
+import '../widgets/furigana_toggle.dart';
 import '../services/word_service.dart' show WordService;
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_art_thumb.dart';
@@ -46,7 +48,16 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
   @override
   void initState() {
     super.initState();
+    LearnerPrefs.furigana.addListener(_onFuri);
     _load();
+  }
+
+  void _onFuri() { if (mounted) setState(() {}); }
+
+  @override
+  void dispose() {
+    LearnerPrefs.furigana.removeListener(_onFuri);
+    super.dispose();
   }
 
   Future<void> _load() async {
@@ -114,6 +125,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
+        actions: const [FuriganaToggleAction()],
       ),
       body: _loading
           ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
@@ -278,7 +290,7 @@ class _WordTile extends StatelessWidget {
                   children: [
                     Text(w.region == 'C' ? '会' : '#${w.rank}', style: TextStyle(fontSize: 9, color: color, fontWeight: FontWeight.w800)),
                     const Spacer(),
-                    if (w.kana.isNotEmpty)
+                    if (w.kana.isNotEmpty && LearnerPrefs.furigana.value)
                       Text(w.kana, maxLines: 1, overflow: TextOverflow.ellipsis,
                           style: const TextStyle(fontSize: 9, color: AppColors.sumiLight)),
                   ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
+import '../widgets/furigana_toggle.dart';
 import '../core/platform.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
@@ -42,6 +43,7 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
       appBar: AppBar(
         title: Text(tr('회화'), style: const TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 16)),
         actions: [
+          const FuriganaToggleAction(),
           // 「너무 힘들면 왕초보 모드」 — 기본은 초보(R1)
           Padding(
             padding: const EdgeInsets.only(right: 8),
@@ -260,6 +262,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
               style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 1)),
         ]),
         actions: [
+          const FuriganaToggleAction(),
           IconButton(
             tooltip: tr('그림 카드(글자 없이)'),
             icon: const Icon(Icons.style_outlined, color: AppColors.ai),
@@ -355,7 +358,7 @@ class _Bubble extends StatelessWidget {
                 ]),
                 const SizedBox(height: 4),
                 // 한자를 누르면 한자 팝업(글자 형성·그림) — 사용자가 좋아한 그 창 그대로
-                SelectableJaText(text: LearnerPrefs.fill(t.ja), style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
+                SelectableJaText(text: LearnerPrefs.fill(t.ja), lemmas: t.lemmas, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
                 if (t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w700)),
                 if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
                 const SizedBox(height: 3),

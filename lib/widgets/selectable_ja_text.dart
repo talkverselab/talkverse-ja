@@ -9,26 +9,60 @@ import 'morph_player.dart';
 import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
+import '../services/dialogue_service.dart' show Lemma;
+import '../services/learner_prefs.dart';
 import 'furigana_text.dart';
 import 'japanese_decor.dart';
 import 'word_sheet.dart';
 import '../core/platform.dart';
 import '../core/l10n.dart';
 
-/// 문장 내 한자를 탭하면 한자 정보 시트를 띄움. 가나·기호는 일반 텍스트.
+/// 문장 본문 — 레마(내용어)마다 **탭하면 단어창**, 한자는 길게 누르면(레마 밖 한자는 탭으로) 한자 시트. 후리가나는 레마 읽기로 얹는다
+/// (전역 설정 `LearnerPrefs.furigana`, 기본 미표시). 사용자 지시 2026-11-07 "문장 레마별로 단어창 바로 뜨게 … 한자도 되고 레마가 되는 경우".
+/// 규칙: 레마 안의 글자 = 탭 → 단어창(단어장에 없으면 그 글자가 한자일 때 한자 시트) · 길게 → 한자 시트. 레마 밖 한자 = 탭 → 한자 시트.
 class SelectableJaText extends StatefulWidget {
   final String text;
   final TextStyle? style;
   final String? highlightText;
+  final List<Lemma> lemmas;
 
-  const SelectableJaText({super.key, required this.text, this.style, this.highlightText});
+  const SelectableJaText({super.key, required this.text, this.style, this.highlightText, this.lemmas = const []});
 
   @override
   State<SelectableJaText> createState() => _SelectableJaTextState();
 }
 
+class _Span {
+  final String text;
+  final Lemma? lemma;
+  const _Span(this.text, this.lemma);
+}
+
 class _SelectableJaTextState extends State<SelectableJaText> {
   int? _focused;
+  Map<String, WordEntry> _words = const {};
+  String _loadedFor = '';
+
+  @override
+  void initState() {
+    super.initState();
+    _loadWords();
+  }
+
+  @override
+  void didUpdateWidget(covariant SelectableJaText old) {
+    super.didUpdateWidget(old);
+    if (old.text != widget.text || old.lemmas.length != widget.lemmas.length) _loadWords();
+  }
+
+  Future<void> _loadWords() async {
+    if (widget.lemmas.isEmpty) return;
+    final key = widget.lemmas.map((l) => l.base).join('|');
+    if (key == _loadedFor) return;
+    _loadedFor = key;
+    final found = await WordService.instance.byLemmas(widget.lemmas.map((l) => l.base), readings: {for (final l in widget.lemmas) l.base: l.reading});
+    if (mounted) setState(() => _words = found);
+  }
 
   Future<void> _openChar(String char) async {
     await KanjiIndexService.instance.ensureLoaded();
@@ -38,37 +72,124 @@ class _SelectableJaTextState extends State<SelectableJaText> {
     if (mounted) setState(() => _focused = null);
   }
 
+  Future<void> _openLemma(Lemma l, String tappedChar) async {
+    final w = _words[l.base];
+    if (w != null) {
+      await showWordSheet(context, w);
+      if (mounted) setState(() => _focused = null);
+      return;
+    }
+    if (KanjiIndexService.isKanji(tappedChar)) {
+      await _openChar(tappedChar);
+      return;
+    }
+    if (mounted) setState(() => _focused = null);
+  }
+
+  /// 문장을 레마 표면형 단위로 쪼갠다(긴 표면형 우선, 왼쪽부터 탐욕 매칭). 레마에 안 걸리는 글자는 한 글자씩.
+  List<_Span> _split() {
+    final chars = widget.text.characters.toList();
+    final lemmas = [...widget.lemmas.where((l) => l.surface.isNotEmpty)]..sort((a, b) => b.surface.length.compareTo(a.surface.length));
+    final out = <_Span>[];
+    var i = 0;
+    while (i < chars.length) {
+      Lemma? hit;
+      for (final l in lemmas) {
+        final n = l.surface.characters.length;
+        if (i + n <= chars.length && chars.sublist(i, i + n).join() == l.surface) { hit = l; break; }
+      }
+      if (hit != null) {
+        out.add(_Span(hit.surface, hit));
+        i += hit.surface.characters.length;
+      } else {
+        out.add(_Span(chars[i], null));
+        i++;
+      }
+    }
+    return out;
+  }
+
+  /// 레마 표면형의 후리가나 — 앞뒤 가나(접두 お·오쿠리가나)는 읽기에서 떼고, 한자가 든 가운데 토막 위에만 얹는다.
+  /// 반환: (앞 가나, 한자 토막, 토막 읽기, 뒤 가나). 읽기가 안 맞으면 토막 읽기 '' (루비 없음).
+  static (String, String, String, String) _ruby(String surface, String reading) {
+    final sc = surface.characters.toList();
+    var a = 0;
+    while (a < sc.length && !KanjiIndexService.isKanji(sc[a])) { a++; }
+    var b = sc.length;
+    while (b > a && !KanjiIndexService.isKanji(sc[b - 1])) { b--; }
+    if (a >= b) return (surface, '', '', '');
+    final pre = sc.sublist(0, a).join(), mid = sc.sublist(a, b).join(), post = sc.sublist(b).join();
+    var r = reading;
+    if (pre.isNotEmpty) { if (!r.startsWith(pre)) return (pre, mid, '', post); r = r.substring(pre.length); }
+    if (post.isNotEmpty) { if (!r.endsWith(post)) return (pre, mid, '', post); r = r.substring(0, r.length - post.length); }
+    return (pre, mid, r, post);
+  }
+
   @override
   Widget build(BuildContext context) {
     final style = widget.style ?? const TextStyle(fontSize: 20, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.3);
-    final chars = widget.text.characters.toList();
-
-    return Wrap(
-      crossAxisAlignment: WrapCrossAlignment.center,
-      children: List.generate(chars.length, (i) {
-        final c = chars[i];
-        if (!KanjiIndexService.isKanji(c)) {
-          return Text(c, style: style);
-        }
-        final focused = _focused == i;
-        final highlighted = widget.highlightText != null && widget.highlightText!.contains(c);
-        return Material(
-          color: focused ? AppColors.beni.withValues(alpha: 0.18) : (highlighted ? AppColors.kin.withValues(alpha: 0.3) : Colors.transparent),
-          child: InkWell(
-            onTap: () {
-              setState(() => _focused = i);
-              _openChar(c);
-            },
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 1),
-              decoration: BoxDecoration(
-                border: Border(bottom: BorderSide(color: (style.color ?? AppColors.sumi).withValues(alpha: 0.35), width: 1)),
+    final rubyStyle = TextStyle(fontSize: (style.fontSize ?? 20) * 0.5, color: AppColors.ai, fontWeight: FontWeight.w700, height: 1.0);
+    final spans = _split();
+    return ValueListenableBuilder<bool>(
+      valueListenable: LearnerPrefs.furigana,
+      builder: (context, furi, _) {
+        final children = <Widget>[];
+        var idx = 0;
+        for (final sp in spans) {
+          final i = idx++;
+          if (sp.lemma == null) {
+            final c = sp.text;
+            if (!KanjiIndexService.isKanji(c)) { children.add(Text(c, style: style)); continue; }
+            final focused = _focused == i;
+            final highlighted = widget.highlightText != null && widget.highlightText!.contains(c);
+            children.add(Material(
+              color: focused ? AppColors.beni.withValues(alpha: 0.18) : (highlighted ? AppColors.kin.withValues(alpha: 0.3) : Colors.transparent),
+              child: InkWell(
+                onTap: () { setState(() => _focused = i); _openChar(c); },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 1),
+                  decoration: BoxDecoration(border: Border(bottom: BorderSide(color: (style.color ?? AppColors.sumi).withValues(alpha: 0.35), width: 1))),
+                  child: Text(c, style: style),
+                ),
               ),
-              child: Text(c, style: style),
+            ));
+            continue;
+          }
+          final l = sp.lemma!;
+          final inDict = _words.containsKey(l.base);
+          final focused = _focused == i;
+          final (pre, mid, rd, post) = _ruby(sp.text, l.reading);
+          final hasKanji = mid.isNotEmpty;
+          final showRuby = furi && hasKanji && rd.isNotEmpty;
+          // 한자 토막: 탭 → 단어창(없으면 한자), 길게 → 한자 시트(첫 한자)
+          final firstKanji = hasKanji ? mid.characters.firstWhere(KanjiIndexService.isKanji, orElse: () => '') : '';
+          Widget piece(String t, {bool kanji = false}) => Container(
+                padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 1),
+                decoration: BoxDecoration(
+                  border: Border(bottom: BorderSide(color: (inDict ? AppColors.ai : (style.color ?? AppColors.sumi)).withValues(alpha: kanji ? 0.5 : 0.25), width: inDict ? 1.2 : 1)),
+                ),
+                child: Text(t, style: style),
+              );
+          final body = Row(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.end, children: [
+            if (pre.isNotEmpty) piece(pre),
+            if (hasKanji)
+              Column(mainAxisSize: MainAxisSize.min, children: [
+                if (showRuby) Text(rd, style: rubyStyle),
+                piece(mid, kanji: true),
+              ]),
+            if (post.isNotEmpty) piece(post),
+          ]);
+          children.add(Material(
+            color: focused ? AppColors.beni.withValues(alpha: 0.18) : Colors.transparent,
+            child: InkWell(
+              onTap: () { setState(() => _focused = i); _openLemma(l, firstKanji); },
+              onLongPress: firstKanji.isEmpty ? null : () { setState(() => _focused = i); _openChar(firstKanji); },
+              child: body,
             ),
-          ),
-        );
-      }),
+          ));
+        }
+        return Wrap(crossAxisAlignment: WrapCrossAlignment.end, children: children);
+      },
     );
   }
 }

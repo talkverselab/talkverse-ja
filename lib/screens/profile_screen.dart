@@ -9,6 +9,7 @@ import '../services/learner_prefs.dart';
 import '../services/account.dart';
 import '../services/purchase.dart';
 import '../widgets/achievement_desk.dart';
+import '../widgets/furigana_toggle.dart';
 import 'about_screen.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
@@ -191,6 +192,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 title: tr('언어 / Language'),
                 subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
                 onTap: AppLangPrefs.next),
+            _SettingItem(
+                icon: Icons.text_fields,
+                title: tr('후리가나'),
+                subtitle: LearnerPrefs.furigana.value ? tr('표시 — 탭하면 숨김') : tr('미표시(기본) — 힘들어도 보지 않고 익혀보세요'),
+                onTap: () async { await FuriganaToggleAction.toggle(context); if (mounted) setState(() {}); }),
           ]),
           const SizedBox(height: 16),
           _SectionTitle(tr('정보')),
