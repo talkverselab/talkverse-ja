@@ -22,7 +22,11 @@ def build(wav, ep, num, tag, n, out, tmp):
     parts = []
     for i in range(n):
         o = f'{tmp}/{ep}_{num}_{i}_{tag}.wav'
-        run('ffmpeg', '-y', '-i', f'{wav}/{ep}/{num:02d}_{i}_{tag}.wav', '-af', TRIM, '-ar', '24000', '-ac', '1', o); parts.append(o)
+        src = f'{wav}/{ep}/{num:02d}_{i}_{tag}.wav'
+        run('ffmpeg', '-y', '-i', src, '-af', TRIM, '-ar', '24000', '-ac', '1', o)
+        if os.path.getsize(o) < 1000:            # 소리가 작아 무음 자르기에 전부 잘려 나간 조각(ffmpeg 는 0 을 돌려준다) → 자르지 않고 쓴다
+            run('ffmpeg', '-y', '-i', src, '-ar', '24000', '-ac', '1', o)
+        parts.append(o)
     gap = f'{tmp}/gap.wav'
     if not os.path.exists(gap):
         run('ffmpeg', '-y', '-f', 'lavfi', '-i', 'anullsrc=r=24000:cl=mono', '-t', '0.22', gap)
