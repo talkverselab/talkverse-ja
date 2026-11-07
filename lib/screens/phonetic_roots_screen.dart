@@ -30,13 +30,7 @@ class _Root {
       {required this.root, required this.on, this.ko, required this.members, required this.bestRank});
 
   /// 절벽구간 (회화 빈도 기준)
-  String get region => bestRank <= 294
-      ? 'R1'
-      : bestRank <= 437
-          ? 'R2'
-          : bestRank <= 998
-              ? 'R3'
-              : 'R4';
+  String get region => KanjiIndexService.regionOf(bestRank);
 }
 
 const Map<String, Color> _regionColors = {
@@ -44,6 +38,7 @@ const Map<String, Color> _regionColors = {
   'R2': AppColors.beniLight,
   'R3': AppColors.kin,
   'R4': AppColors.matcha,
+  'R5': AppColors.muted,
 };
 
 class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
@@ -194,7 +189,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
                     height: 34,
                     child: ListView(
                       scrollDirection: Axis.horizontal,
-                      children: ['ALL', 'R1', 'R2', 'R3', 'R4'].map((k) {
+                      children: ['ALL', 'R1', 'R2', 'R3', 'R4', 'R5'].map((k) {
                         final selected = _region == k;
                         final c = _regionColors[k] ?? AppColors.sumi;
                         final label = k == 'ALL'
