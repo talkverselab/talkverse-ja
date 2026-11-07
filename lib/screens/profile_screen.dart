@@ -1,17 +1,15 @@
-import 'package:drift/drift.dart' hide Column;
 import 'package:flutter/material.dart';
 
-import 'update_screen.dart';
-import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../core/pane.dart';
 import '../core/theme.dart';
 import '../main.dart';
-import '../services/memo_service.dart';
 import '../services/learner_prefs.dart';
 import '../services/account.dart';
 import '../services/purchase.dart';
 import '../widgets/achievement_desk.dart';
+import 'about_screen.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import '../widgets/japanese_decor.dart';
@@ -27,53 +25,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  int _memoCount = 0;
-  int _turns = 0;
-  int _kanji = 0;
-  int _words = 0;
-  int _jlptWords = 0;
 
-  @override
-  void initState() {
-    super.initState();
-    _load();
-  }
-
-  Future<void> _load() async {
-    final memo = await MemoService.instance.count();
-    final turns = await appDb.turns.count().getSingle();
-    final kanji = await appDb.kanji.count().getSingle();
-    final words = await appDb.words.count().getSingle();
-    final jlpt = await appDb.jlptWords.count().getSingle();
-    if (!mounted) return;
-    setState(() {
-      _memoCount = memo;
-      _turns = turns;
-      _kanji = kanji;
-      _words = words;
-      _jlptWords = jlpt;
-    });
-  }
-
-  Future<void> _exportMemos() async {
-    final all = await MemoService.instance.all();
-    if (all.isEmpty) {
-      if (mounted) {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(tr('메모가 없어요'))));
-      }
-      return;
-    }
-    final buf = StringBuffer(tr('# 일본어유니버스 메모 export\n\n'));
-    for (final m in all) {
-      buf.writeln('- [${m.patternId} #${m.idx}] ${m.value}');
-    }
-    await Clipboard.setData(ClipboardData(text: buf.toString()));
-    if (mounted) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(trf('메모 {0}건 클립보드 복사 완료', [all.length])), backgroundColor: AppColors.matcha),
-      );
-    }
-  }
 
   Future<void> _resetProgress() async {
     final ok = await showDialog<bool>(
@@ -166,7 +118,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   @override
   Widget build(BuildContext context) {
     final children = <Widget>[
-          const UpdateEntryTile(),
           Container(
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
@@ -201,24 +152,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
           const SizedBox(height: 8),
           const AchievementDesk(),
           const SizedBox(height: 18),
-          _SectionTitle(tr('데이터')),
+          _SectionTitle(tr('기록')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
-            _SettingItem(icon: Icons.chat_bubble_outline, title: tr('회화 턴'), subtitle: trf('{0}턴 (L1 ep1 · 민준×사쿠라)', [_turns])),
-            _SettingItem(icon: Icons.translate, title: tr('한자 DB'), subtitle: trf('{0}자 · JLPT N5-N1 + 회화 빈도', [_kanji])),
-            _SettingItem(icon: Icons.menu_book, title: tr('JLPT 단어 · 후리가나'), subtitle: trf('{0}어 · 한자↔읽기↔단어 링크', [_jlptWords])),
-            _SettingItem(icon: Icons.format_list_numbered, title: tr('단어 빈도'), subtitle: trf('{0}어 · R1-R4', [_words])),
-          ]),
-          const SizedBox(height: 16),
-          _SectionTitle(tr('메모 · 기록')),
-          const SizedBox(height: 8),
-          _SettingsGroup(items: [
-            _SettingItem(
-              icon: Icons.sticky_note_2_outlined,
-              title: tr('메모 내보내기'),
-              subtitle: trf('{0}건 → 클립보드 (Claude 검수용)', [_memoCount]),
-              onTap: _exportMemos,
-            ),
             _SettingItem(
               icon: Icons.restart_alt,
               title: tr('학습 기록 초기화'),
@@ -255,15 +191,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 title: tr('언어 / Language'),
                 subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
                 onTap: AppLangPrefs.next),
-            _SettingItem(icon: Icons.volume_up, title: tr('TTS 음성'), subtitle: tr('시스템 ja-JP · 남/녀 피치 구분')),
-            _SettingItem(icon: Icons.palette, title: tr('테마'), subtitle: tr('낮 · talkverse.uk 구리 #B77548')),
           ]),
           const SizedBox(height: 16),
           _SectionTitle(tr('정보')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
+            _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자를 나누는 기준'), onTap: () => openPane(context, (_) => const AboutScreen())),
             _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha'),
-            _SettingItem(icon: Icons.code, title: 'Stack', subtitle: 'Flutter 3.41 · Material 3 · Drift SQLite'),
             _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어유니버스 · 2026')),
           ]),
           const SizedBox(height: 20),

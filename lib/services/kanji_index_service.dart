@@ -119,7 +119,7 @@ class KanjiStage {
   final int stage; // 전체 통번호 (1..)
   final int? level; // 5..1, null=기타(JLPT 밖 회화 한자)
   final int indexInLevel;
-  final String? freqLabel; // 빈도순 모드의 절벽구간 라벨 (R1~R4)
+  final String? freqLabel; // 빈도순 모드의 절벽구간 라벨 (R1~R5)
   final List<KanjiEntry> chars;
   const KanjiStage(
       {required this.stage, required this.level, required this.indexInLevel, required this.chars, this.freqLabel});
@@ -213,15 +213,19 @@ class KanjiIndexService {
     return out;
   }
 
-  /// 회화 빈도순 (레벨 무시) 20자 단위 단계. 절벽구간(R1~R4) 진행.
+  /// 한자 절벽 경계(글자 기준, 2026-11-07 재산출 — 단어 절벽과 같은 말뭉치·공식: 누적 55/60/70/80% 첫 순위, 80% 밖 = R5).
+  /// data/corpus/cliff_v2/ja_kanji_cliff_summary.json. 2,000위 누적 98.9%.
+  static const kanjiCliffs = [171, 217, 340, 532];
+  static String regionOf(int rank) =>
+      rank <= 171 ? 'R1' : rank <= 217 ? 'R2' : rank <= 340 ? 'R3' : rank <= 532 ? 'R4' : 'R5';
+
+  /// 회화 빈도순 (레벨 무시) 20자 단위 단계. 절벽구간(R1~R5) 진행.
   /// level 필드에는 그 단계 첫 한자의 JLPT를 참고로 담지 않고 null을 둔다.
   List<KanjiStage> stagesByFreq() {
     final pool = _all.where((e) => e.meanings.isNotEmpty && e.rank < 9999).toList()
       ..sort((a, b) => a.rank.compareTo(b.rank));
     final out = <KanjiStage>[];
     var n = 0;
-    String regionOf(int rank) =>
-        rank <= 294 ? 'R1' : rank <= 437 ? 'R2' : rank <= 998 ? 'R3' : 'R4';
     for (var i = 0; i < pool.length; i += stageSize) {
       n++;
       final chars = pool.sublist(i, (i + stageSize).clamp(0, pool.length));

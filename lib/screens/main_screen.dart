@@ -11,7 +11,6 @@ import '../services/deck_service.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
-import 'conversation_screen.dart';
 import 'custom_script_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
@@ -27,8 +26,8 @@ import 'phonetic_roots_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
-import 'topic_vocab_screen.dart';
 import 'word_freq_screen.dart';
+import 'about_screen.dart';
 
 /// 메인 — 탭 4개: 배우기(오늘의 학습·기초 수업·에피소드 단원) · 복습(문장 카드·덱·한자 퀴즈) · 탐색(사전·단어·한자음…) · 나(진행·설정).
 /// 한자유니버스와 같은 구조(사용자 지시 2026-11-01: 아이패드·갤탭·폴드 UX 를 한자앱 기준으로).
@@ -49,7 +48,7 @@ class _MainScreenState extends State<MainScreen> {
     (Icons.menu_book_outlined, Icons.menu_book, tr('배우기')),
     (Icons.style_outlined, Icons.style, tr('복습')),
     (Icons.explore_outlined, Icons.explore, tr('탐색')),
-    (Icons.person_outline, Icons.person, tr('나')),
+    (Icons.person_outline, Icons.person, tr('프로필')),
   ];
 
   @override
@@ -144,6 +143,30 @@ class _MainScreenState extends State<MainScreen> {
                       label: Text(t.$3),
                     ),
                 ],
+                // 맨 아래 「앱 소개」 — 절벽구간 설명(사용자 지시 2026-11-07)
+                trailing: Expanded(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Padding(
+                      padding: const EdgeInsets.only(bottom: 16),
+                      child: InkWell(
+                        onTap: () => openPane(context, (_) => const AboutScreen()),
+                        borderRadius: BorderRadius.circular(8),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+                          child: Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              const Icon(Icons.info_outline, color: AppColors.muted, size: 22),
+                              const SizedBox(height: 4),
+                              Text(tr('앱 소개'), style: const TextStyle(color: AppColors.muted, fontSize: 11, fontWeight: FontWeight.w600)),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
               const VerticalDivider(
                 width: 1,
@@ -483,6 +506,14 @@ class _LearnTabState extends State<LearnTab> {
               onTap: () => openPane(context, (_) => const KanaChartScreen()),
             ),
             _NavRow(
+              seal: '漢字',
+              sealColor: AppColors.beni,
+              title: tr('한자 배우기'),
+              subtitle: tr('글자 형성·소리 가족·그림 · 단계별 20자 → 문제'),
+              onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
+            ),
+            _section(tr('문법')),
+            _NavRow(
               seal: '助詞',
               sealColor: AppColors.ai,
               title: tr('조사'),
@@ -490,34 +521,7 @@ class _LearnTabState extends State<LearnTab> {
               onTap: () =>
                   openPane(context, (_) => const GrammarLessonScreen()),
             ),
-            _NavRow(
-              seal: '漢字',
-              sealColor: AppColors.beni,
-              title: tr('한자 배우기'),
-              subtitle: tr('글자 형성·소리 가족·그림 · 단계별 20자 → 문제'),
-              onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
-            ),
-            _NavRow(
-              seal: '音符',
-              sealColor: AppColors.ai,
-              title: tr('패밀리 한자'),
-              subtitle: tr('소리 부품이 같은 한자 가족 · 工·方·令·青…'),
-              onTap: () => openPane(context, (_) => const PhoneticRootsScreen()), // 사용자 지시 2026-11-02 밤 "원래 니 구조가 더 좋았어" — 앱 자체 발음부 화면으로 원복(한자앱식 HanjaFamilyScreen 은 파일만 남김)
-            ),
-            _NavRow(
-              seal: '漢字',
-              sealColor: AppColors.sumi,
-              title: tr('한자 단계'),
-              subtitle: tr('JLPT N5→N1 4지선다'),
-              onTap: () => openPane(context, (_) => const KanjiStagesScreen()),
-            ),
-            _NavRow(
-              seal: '会話',
-              title: tr('회화'),
-              subtitle: 'Conversation',
-              onTap: () => openPane(context, (_) => const ConversationScreen()),
-            ),
-            _section(tr('회화 (새)')),
+            _section(tr('회화')),
             _NavRow(
               seal: '会話',
               sealColor: AppColors.beni,
@@ -535,22 +539,15 @@ class _LearnTabState extends State<LearnTab> {
             _section(tr('단어')),
             _NavRow(
               seal: '語彙',
-              title: tr('절벽 단어 R1~R4'),
-              subtitle: tr('빈도 2,500 · 그림 카드'),
+              title: tr('절벽 단어 R1~R5'),
+              subtitle: tr('빈도 2,000 · 20어 단원 · 회화 단어 포함'),
               onTap: () => openPane(context, (_) => const WordFreqScreen()),
-            ),
-            _NavRow(
-              seal: '単語',
-              sealColor: AppColors.kinDeep,
-              title: tr('필수 단어'),
-              subtitle: tr('Day별 975어 · 외우기'),
-              onTap: () => openPane(context, (_) => const TopicVocabScreen()),
             ),
             _NavRow(
               seal: 'N5',
               sealColor: AppColors.matcha,
               title: tr('JLPT 단어'),
-              subtitle: tr('8,600어 · 후리가나'),
+              subtitle: 'N5 735 · N4 676 · N3 2,135 · N2 1,744 · N1 2,698',
               onTap: () => openPane(context, (_) => const JlptWordsScreen()),
             ),
             _section(tr('에피소드')),
@@ -596,6 +593,14 @@ class _LearnTabState extends State<LearnTab> {
             ),
             const SizedBox(height: 10),
             for (final l in _lessons) _LessonRow(lesson: l, onReturn: _load),
+            _section(tr('참고')),
+            _NavRow(
+              seal: '音符',
+              sealColor: AppColors.ai,
+              title: tr('패밀리 한자'),
+              subtitle: tr('소리 부품이 같은 한자 가족 · 工·方·令·青…'),
+              onTap: () => openPane(context, (_) => const PhoneticRootsScreen()), // 사용자 지시 2026-11-02 밤 "원래 니 구조가 더 좋았어" — 앱 자체 발음부 화면으로 원복(한자앱식 HanjaFamilyScreen 은 파일만 남김)
+            ),
           ],
         ),
       ],
@@ -892,20 +897,13 @@ class ExploreTab extends StatelessWidget {
           seal: 'N5',
           sealColor: AppColors.matcha,
           title: tr('JLPT 단어'),
-          subtitle: tr('8,600어 · 후리가나'),
+          subtitle: 'N5 735 · N4 676 · N3 2,135 · N2 1,744 · N1 2,698',
           onTap: () => openPane(context, (_) => const JlptWordsScreen()),
         ),
         _NavRow(
-          seal: '単語',
-          sealColor: AppColors.kinDeep,
-          title: tr('필수 단어'),
-          subtitle: tr('Day별 975어 · 외우기'),
-          onTap: () => openPane(context, (_) => const TopicVocabScreen()),
-        ),
-        _NavRow(
           seal: '語彙',
-          title: tr('단어 빈도'),
-          subtitle: 'Vocabulary 2500',
+          title: tr('절벽 단어 R1~R5'),
+          subtitle: tr('빈도 2,000 · 20어 단원 · 회화 단어 포함'),
           onTap: () => openPane(context, (_) => const WordFreqScreen()),
         ),
         _NavRow(
@@ -922,7 +920,7 @@ class ExploreTab extends StatelessWidget {
 
 // ────────── 나 ──────────
 
-/// 나: 진행·달성률 + 프로필·설정(표시 언어·앱 업데이트·기록 초기화).
+/// 나: 진행·달성률 + 프로필·설정(표시 언어·기록 초기화). 앱 업데이트 타일은 2026-11-07 사용자 지시로 뺌(배포는 스토어·TestFlight).
 class MeTab extends StatelessWidget {
   const MeTab({super.key});
 
@@ -943,7 +941,6 @@ class MeTab extends StatelessWidget {
           subtitle: tr('학습 기록 · 달성률'),
           onTap: () => openPane(context, (_) => const ProgressScreen()),
         ),
-        _section(tr('프로필 · 설정')),
         const ProfileScreen(embedded: true),
       ],
     );

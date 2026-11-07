@@ -66,7 +66,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             Text(
-                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R4)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
+                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R5)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -194,16 +194,18 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
   }
 
   static Map<String, String> get _regionNames => {
-    'R1': tr('R1 · 회화 1-294 절벽'),
-    'R2': 'R2 · 295-437',
-    'R3': 'R3 · 438-998',
-    'R4': 'R4 · 999-',
+    'R1': tr('R1 · 회화 1-171 절벽'),
+    'R2': 'R2 · 172-217',
+    'R3': 'R3 · 218-340',
+    'R4': 'R4 · 341-532',
+    'R5': 'R5 · 533-',
   };
   static const _regionColors = {
     'R1': AppColors.beni,
     'R2': AppColors.beniLight,
     'R3': AppColors.kin,
     'R4': AppColors.matcha,
+    'R5': AppColors.muted,
   };
 
   int get _keyOffset => _byFreq ? 500 : 0;
