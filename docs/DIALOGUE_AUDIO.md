@@ -47,7 +47,7 @@
 
 **PC 출력 폴더는 언어별로 나눈다** — 참고 음성 `out/ref_<lang>/<목소리>_<감정>.wav`, 조각 `out/<lang>/<편id>/…`, 재생성 `out/retake_<lang>/…`. 목소리 이름(am·af·man_y…)과 편 id(r0_culture_a1…)가 언어마다 같아서, 한 폴더를 쓰면 생성기가 다른 언어 파일을 "이미 있음"으로 건너뛰어 그 목소리를 그대로 쓴다(한국어 첫 시험에서 27조각 중 18개가 일본어 소리로 나옴, 2026-11-07). 일본어는 처음 만든 것이라 `out/ref/`·`out/<편id>/`가 일본어 몫이다 — 다른 언어는 `make_jobs.py`·`qa.py`·`pack.py`·`run_all.py`의 `out/ref/`·`out/` 접두를 `ref_<lang>/`·`<lang>/`로 바꿔 쓴다(한국어는 `out/ref_ko/`로 분리함).
 
-1. 감정 계획: 편마다 `data/tts/plan/<편id>.json` — 작성법 `data/tts/PLAN_GUIDE.md`, 검사 `check_plan.py`(215편 문제 0 이어야 한다).
+1. 감정 계획: 편마다 `data/tts/plan/<편id>.json` — **2026-11-07 부터는 회화 편 JSON 의 감정 열(`turn.emotion`/`segs`, 편 `cast`·`fill`)에서 `tools/tts/plan_from_ep.py` 가 자동 생성**하고, `make_jobs.py`·`run_all.py` 도 계획이 없으면 스스로 만든다(`ttslib.plan`). 손으로 쓰는 것은 2026-11-07 이전 215편뿐. 작성법 `data/tts/PLAN_GUIDE.md`, 검사 `check_plan.py`(문제 0 이어야 한다). 다른 언어도 회화 파일에 같은 열을 두고 같은 변환기를 둔다(사용자 지시, 모든 언어 세션).
 2. 참고 음성: `make_jobs.py <폴더> --refs` → 인물 기본 목소리 + (목소리, 감정)별 참고 음성 `out/ref/<목소리>_<감정>.wav`. **일본어 22목소리×16감정 약 45분(2060).**
 3. 문장 조각 생성: `make_jobs.py <폴더> <편id>...` → MOSS 가 참고 음성을 따라 조각을 읽는다. 조각 = 턴 안의 감정 단위(`<턴>_<조각>_<m|f|c>.wav`, c = 두 판이 같은 조각).
 4. 검사: `qa.py <wav폴더> <편id>... [--jobs <재생성 작업 파일>]` — mlx-whisper 받아쓰기(히라가나 비교 유사도 ≥0.72) + 길이 범위 + **최대 음량(-30dB 미만 = 생성 실패)**. 나쁜 조각은 seed 를 바꿔 다시 만들고(세 번까지) 가장 나은 판을 본 파일로 고른다. 결과는 `<wav폴더>/qa.json`.

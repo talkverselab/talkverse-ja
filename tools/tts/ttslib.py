@@ -43,9 +43,22 @@ def fill(s, F, key):
     return s
 
 
+def plan(ep):
+    """감정 계획. 파일이 없으면 편 JSON 의 감정 열(emotion/segs)로 만들어 저장한다(plan_from_ep.py)."""
+    f = f'{R}/data/tts/plan/{ep}.json'
+    if not os.path.exists(f):
+        import plan_from_ep
+        P, err = plan_from_ep.build(ep)
+        if err:
+            raise SystemExit(f'{ep}: 감정 계획 없음 — {err}. 편 JSON 턴에 emotion/segs 를 쓰거나 data/tts/plan/{ep}.json 을 만들 것')
+        json.dump(P, open(f, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+        print('감정 계획 자동 생성', ep)
+    return json.load(open(f, encoding='utf-8'))
+
+
 def turns(ep):
     """[{num, speaker, m:{voice,text,reading,rd,ko,segs:[(감정,읽기)]}, f:{…}, same:bool}] — 소리 없는 턴은 뺀다."""
-    P = json.load(open(f'{R}/data/tts/plan/{ep}.json', encoding='utf-8')); d = json.load(open(EP[ep], encoding='utf-8'))
+    P = plan(ep); d = json.load(open(EP[ep], encoding='utf-8'))
     out = []
     for t in d['turns']:
         T = P['turns'][str(t['num'])]; row = {'num': t['num'], 'speaker': t['speaker']}

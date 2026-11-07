@@ -195,6 +195,22 @@ def check_file(path, exprs, cum_vocab, island_seen, fix_rd, forbidden):
         for bad in forbidden:
             if bad and bad in ja + t.get('ko', '') + t.get('note', ''):
                 E(f'턴 {n}: 금지어 "{bad}"')
+    # 음성용 감정 열(2026-11-07 사용자 지시) — 감정 계획 파일이 따로 없는 편은 소리 낼 글이 있는 턴마다 emotion 또는 segs 가 있어야 한다
+    if not (ROOT / f'data/tts/plan/{eid}.json').exists():
+        emos = {'emotion': 0, 'neutral': 0}
+        for t in turns:
+            if not re.sub(r'[\s　…。、！？!?.・〜~♪]', '', t.get('ja', '')):
+                continue
+            segs = t.get('segs') or ([[t['emotion'], t['ja']]] if t.get('emotion') else None)
+            if not segs:
+                E(f"턴 {t.get('num')}: 음성 감정(emotion/segs) 없음 — data/tts/PLAN_GUIDE.md 16감정")
+                continue
+            emos['emotion'] += 1
+            emos['neutral'] += all(s[0] == 'neutral' for s in segs)
+            if t.get('segs') and re.sub(r'[\s　…]|（[^）]*）|\([^)]*\)', '', ''.join(s[1] for s in segs)) != re.sub(r'[\s　…]|（[^）]*）|\([^)]*\)', '', t['ja']):
+                E(f"턴 {t.get('num')}: segs 를 이어 붙인 글이 ja 와 다름")
+        if emos['emotion'] and emos['neutral'] > emos['emotion'] / 2:
+            W(f"neutral 턴 {emos['neutral']}/{emos['emotion']} — 밋밋함, 대사 맥락대로 감정을 고를 것")
     # 편 단위
     if sum(expr_hits.values()) < 2:
         E(f'표현 풀 노출 {sum(expr_hits.values())}회 < 2')
