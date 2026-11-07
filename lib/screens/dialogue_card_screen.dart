@@ -160,7 +160,7 @@ class _CardText extends StatelessWidget {
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                 Text('$name · ${t.num}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
                 const SizedBox(height: 8),
-                Text(LearnerPrefs.fill(t.ja), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.3)),
+                Text(LearnerPrefs.fill(t.shown), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.3)),
                 if (t.kana.isNotEmpty && t.kana != t.ja) ...[const SizedBox(height: 6), Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700))],
                 if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
                 const SizedBox(height: 12),

@@ -32,6 +32,7 @@ class DialogueTurn {
   final bool bubble; // 채팅 말풍선 표시
   final String? art; // 장면 그림 URL(나중에 채움)
   final List<Lemma> lemmas; // 문장 내용어(표면형·기본형·읽기) — 단어장 연결(2026-11-04)
+  final String? emoji; // 문장 끝 어조사(ね·よ·な·かな…) 턴의 감정 이모지 — 화면에만 붙이고 음성·읽기에는 안 들어간다(2026-11-07)
   const DialogueTurn({
     required this.num,
     required this.speaker,
@@ -42,6 +43,7 @@ class DialogueTurn {
     required this.note,
     required this.tags,
     this.lemmas = const [],
+    this.emoji,
     required this.newWords,
     this.at,
     this.stamp,
@@ -62,13 +64,17 @@ class DialogueTurn {
         stamp: j['stamp'] as String?,
         bubble: j['ui'] == 'bubble',
         art: j['art'] as String?,
+        emoji: j['emoji'] as String?,
         lemmas: [for (final l in (j['lemmas'] as List? ?? const [])) if (l is List && l.length >= 2) Lemma('${l[0]}', '${l[1]}', l.length > 2 ? '${l[2]}' : '')],
       );
 
   /// 본문만 바꾼 사본(생성 음성이 읽은 판 — 이름을 넣었거나 남성판·여성판).
   DialogueTurn withText({String? ja, String? kana, String? rd, String? ko}) => DialogueTurn(
         num: num, speaker: speaker, ja: ja ?? this.ja, kana: kana ?? this.kana, rd: rd ?? this.rd, ko: ko ?? this.ko,
-        note: note, tags: tags, lemmas: lemmas, newWords: newWords, at: at, stamp: stamp, bubble: bubble, art: art);
+        note: note, tags: tags, lemmas: lemmas, emoji: emoji, newWords: newWords, at: at, stamp: stamp, bubble: bubble, art: art);
+
+  /// 화면에 보이는 본문 = ja + 어조사 이모지. 음성·TTS 는 ja 를 쓴다.
+  String get shown => emoji == null || emoji!.isEmpty ? ja : '$ja $emoji';
 
   /// 그림 조회용 핵심 단어 후보: new → expr 태그 → 없음.
   List<String> get pictureWords {
