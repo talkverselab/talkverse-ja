@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import '../widgets/word_art_thumb.dart';
 
 import '../core/theme.dart';
+import '../services/learner_prefs.dart';
+import '../widgets/furigana_toggle.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
@@ -32,12 +34,12 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
   Map<int?, int> _counts = {};
   bool _loading = true;
   bool _loadingMore = false;
-  bool _showRuby = true;
   Timer? _debounce;
 
   @override
   void initState() {
     super.initState();
+    LearnerPrefs.furigana.addListener(_onFuri);
     _level = widget.initialLevel;
     _scroll.addListener(_onScroll);
     _init();
@@ -81,8 +83,11 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
     _debounce = Timer(const Duration(milliseconds: 250), _reload);
   }
 
+  void _onFuri() { if (mounted) setState(() {}); }
+
   @override
   void dispose() {
+    LearnerPrefs.furigana.removeListener(_onFuri);
     _debounce?.cancel();
     _ctrl.dispose();
     _scroll.dispose();
@@ -101,6 +106,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final showRuby = LearnerPrefs.furigana.value;
     final searching = _ctrl.text.trim().isNotEmpty;
     final total = _counts.values.fold<int>(0, (a, b) => a + b);
     return Scaffold(
@@ -116,12 +122,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
         ),
         actions: [
           const KoReadingToggleAction(),
-          IconButton(
-            tooltip: tr('후리가나'),
-            icon: Text('ふ',
-                style: TextStyle(fontWeight: FontWeight.w900, fontSize: 16, color: _showRuby ? AppColors.beni : AppColors.sumiLight)),
-            onPressed: () => setState(() => _showRuby = !_showRuby),
-          ),
+          const FuriganaToggleAction(),
         ],
       ),
       body: Column(
@@ -199,7 +200,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                         padding: const EdgeInsets.only(bottom: 80),
                         itemCount: _words.length,
                         separatorBuilder: (_, _) => Container(height: 0.5, color: AppColors.kin.withValues(alpha: 0.3)),
-                        itemBuilder: (context, i) => _WordRow(word: _words[i], showRuby: _showRuby),
+                        itemBuilder: (context, i) => _WordRow(word: _words[i], showRuby: showRuby),
                       ),
           ),
         ],

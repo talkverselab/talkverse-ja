@@ -7,14 +7,23 @@ class LearnerPrefs {
   LearnerPrefs._();
   static const _kName = 'learner_name';
   static const _kGender = 'learner_gender'; // male | female
+  static const _kFurigana = 'furigana_show';
 
   static final ValueNotifier<String> name = ValueNotifier('');
   static final ValueNotifier<String> gender = ValueNotifier('male');
+  /// 후리가나 표시 — 기본 **미표시**(사용자 지시 2026-11-07 "힘들어도 후리가나를 보지 않고 익혀보세요"). 문장·단어 어디서나 이 값 하나.
+  static final ValueNotifier<bool> furigana = ValueNotifier(false);
 
   static Future<void> load() async {
     final p = await SharedPreferences.getInstance();
     name.value = p.getString(_kName) ?? '';
     gender.value = p.getString(_kGender) ?? 'male';
+    furigana.value = p.getBool(_kFurigana) ?? false;
+  }
+
+  static Future<void> setFurigana(bool v) async {
+    furigana.value = v;
+    (await SharedPreferences.getInstance()).setBool(_kFurigana, v);
   }
 
   static Future<void> setName(String v) async {

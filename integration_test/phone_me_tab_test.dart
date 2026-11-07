@@ -42,7 +42,7 @@ void main() {
       await t.tap(later.first);
       await wait(t, 1200);
     }
-    await t.tap(find.text('나').last);
+    await t.tap(find.text('프로필').last);
     await wait(t, 2500);
     await shot(t, '30_me_top');
     final s = find.byType(Scrollable).first;
