@@ -14,9 +14,15 @@ def dur(f):
     return float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', f], capture_output=True, text=True).stdout or 0)
 
 
+def peak(f):
+    o = subprocess.run(['ffmpeg', '-hide_banner', '-i', f, '-af', 'volumedetect', '-f', 'null', '-'], capture_output=True, text=True).stderr
+    m = re.search(r'max_volume: (-?[\d.]+) dB', o)
+    return float(m.group(1)) if m else -99.0
+
+
 def score(f, text):
     w = norm(text); d = dur(f)
-    if d <= 0:
+    if d <= 0 or peak(f) < -30:            # 거의 무음으로 나온 조각(생성 실패)
         return 0.0, d
     if d > 2.2 + 0.42 * len(w) or d < 0.05 * len(w):
         return 0.0, d
