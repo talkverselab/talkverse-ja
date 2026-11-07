@@ -358,7 +358,7 @@ class _Bubble extends StatelessWidget {
                 ]),
                 const SizedBox(height: 4),
                 // 한자를 누르면 한자 팝업(글자 형성·그림) — 사용자가 좋아한 그 창 그대로
-                SelectableJaText(text: LearnerPrefs.fill(t.ja), lemmas: t.lemmas, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
+                SelectableJaText(text: LearnerPrefs.fill(t.shown), lemmas: t.lemmas, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.4)),
                 if (t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 12, color: AppColors.ai, fontWeight: FontWeight.w700)),
                 if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
                 const SizedBox(height: 3),

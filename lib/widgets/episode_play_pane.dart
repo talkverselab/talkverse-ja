@@ -243,7 +243,7 @@ class _Script extends StatelessWidget {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        SelectableJaText(text: LearnerPrefs.fill(t.ja), lemmas: t.lemmas, style: TextStyle(fontSize: on ? 16.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+                        SelectableJaText(text: LearnerPrefs.fill(t.shown), lemmas: t.lemmas, style: TextStyle(fontSize: on ? 16.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
                         if (showKana && t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 11.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
                         if (showRd && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 11.5, color: AppColors.muted)),
                         if (showKo) Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.sumiLight, height: 1.35)),
@@ -338,7 +338,7 @@ class _Caption extends StatelessWidget {
         child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
           Expanded(
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              SelectableJaText(text: LearnerPrefs.fill(turn.ja), lemmas: turn.lemmas, style: TextStyle(fontSize: wide ? 20 : 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+              SelectableJaText(text: LearnerPrefs.fill(turn.shown), lemmas: turn.lemmas, style: TextStyle(fontSize: wide ? 20 : 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
               if (showKana && turn.kana.isNotEmpty && turn.kana != turn.ja) Text(LearnerPrefs.fill(turn.kana), style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
               if (showRd && turn.rd.isNotEmpty) Text(LearnerPrefs.fill(turn.rd, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
               if (showKo) Padding(padding: const EdgeInsets.only(top: 2), child: Text(LearnerPrefs.fill(turn.ko, ko: true), style: const TextStyle(fontSize: 13.5, color: AppColors.sumiLight, height: 1.35))),
@@ -503,7 +503,7 @@ class SceneCut extends StatelessWidget {
             child: bubble
                 ? Column(children: [
                     Expanded(child: pic),
-                    _LineStrip(speaker: dialogue.speakerName(turn.speaker), me: me, text: LearnerPrefs.fill(turn.ja), small: c.maxHeight < 220),
+                    _LineStrip(speaker: dialogue.speakerName(turn.speaker), me: me, text: LearnerPrefs.fill(turn.shown), small: c.maxHeight < 220),
                   ])
                 : pic,
           ),
