@@ -45,6 +45,8 @@
 
 생성 서버 = PC(ssh `Administrator@100.127.143.37`) WSL `/root/tts`(venv `moss`·`vox`, HF 캐시 `/root/tts/hf`). 참고 음성은 VoxCPM2(`D:\tts_test\vox_batch.py`, 2060), 문장은 MOSS-TTS 8B bf16(`moss_batch.py`, 3090, `MOSS_BF16=1`). 두 스크립트는 작업 스케줄러 'TTS job 2060'(`run_job.sh`) 하나로 돈다 — 작업 파일 `D:\tts_test\job\vox_jobs.json`·`moss_jobs.json`, 결과 `job\out\`, 로그 `job\job.log`(JOB_START/JOB_END). GPU 대기열 규칙(D:\gpu_queue)은 2026-11-07 사용자 지시로 폐지 — 확인 없이 바로 쓴다.
 
+**PC 출력 폴더는 언어별로 나눈다** — 참고 음성 `out/ref_<lang>/<목소리>_<감정>.wav`, 조각 `out/<lang>/<편id>/…`, 재생성 `out/retake_<lang>/…`. 목소리 이름(am·af·man_y…)과 편 id(r0_culture_a1…)가 언어마다 같아서, 한 폴더를 쓰면 생성기가 다른 언어 파일을 "이미 있음"으로 건너뛰어 그 목소리를 그대로 쓴다(한국어 첫 시험에서 27조각 중 18개가 일본어 소리로 나옴, 2026-11-07). 일본어는 처음 만든 것이라 `out/ref/`·`out/<편id>/`가 일본어 몫이다 — 다른 언어는 `make_jobs.py`·`qa.py`·`pack.py`·`run_all.py`의 `out/ref/`·`out/` 접두를 `ref_<lang>/`·`<lang>/`로 바꿔 쓴다(한국어는 `out/ref_ko/`로 분리함).
+
 1. 감정 계획: 편마다 `data/tts/plan/<편id>.json` — 작성법 `data/tts/PLAN_GUIDE.md`, 검사 `check_plan.py`(215편 문제 0 이어야 한다).
 2. 참고 음성: `make_jobs.py <폴더> --refs` → 인물 기본 목소리 + (목소리, 감정)별 참고 음성 `out/ref/<목소리>_<감정>.wav`. **일본어 22목소리×16감정 약 45분(2060).**
 3. 문장 조각 생성: `make_jobs.py <폴더> <편id>...` → MOSS 가 참고 음성을 따라 조각을 읽는다. 조각 = 턴 안의 감정 단위(`<턴>_<조각>_<m|f|c>.wav`, c = 두 판이 같은 조각).
