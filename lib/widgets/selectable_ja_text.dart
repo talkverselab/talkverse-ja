@@ -161,7 +161,7 @@ class _SelectableJaTextState extends State<SelectableJaText> {
           final (pre, mid, rd, post) = _ruby(sp.text, l.reading);
           final hasKanji = mid.isNotEmpty;
           final showRuby = furi && hasKanji && rd.isNotEmpty;
-          // 한자 토막: 탭 → 단어창(없으면 한자), 길게 → 한자 시트(첫 한자)
+          // 한자 글자 탭 → 한자 시트, 가나 부분 탭/아무 데나 길게 → 단어창
           final firstKanji = hasKanji ? mid.characters.firstWhere(KanjiIndexService.isKanji, orElse: () => '') : '';
           Widget piece(String t, {bool kanji = false}) => Container(
                 padding: const EdgeInsets.symmetric(horizontal: 1, vertical: 1),
@@ -175,15 +175,23 @@ class _SelectableJaTextState extends State<SelectableJaText> {
             if (hasKanji)
               Column(mainAxisSize: MainAxisSize.min, children: [
                 if (showRuby) Text(rd, style: rubyStyle),
-                piece(mid, kanji: true),
+                // 레마 안의 한자도 한 글자씩 탭 → 한자 시트(사용자 지시 2026-11-08 "레마 안에서도 한자는 누를 수 있게")
+                Row(mainAxisSize: MainAxisSize.min, children: [
+                  for (final ch in mid.characters)
+                    if (KanjiIndexService.isKanji(ch))
+                      InkWell(onTap: () { setState(() => _focused = i); _openChar(ch); }, child: piece(ch, kanji: true))
+                    else
+                      piece(ch),
+                ]),
               ]),
             if (post.isNotEmpty) piece(post),
           ]);
           children.add(Material(
             color: focused ? AppColors.beni.withValues(alpha: 0.18) : Colors.transparent,
             child: InkWell(
+              // 한자 글자는 위에서 한자 시트를 연다. 가나 부분 탭·길게 누르기 → 단어창(단어장에 없으면 첫 한자)
               onTap: () { setState(() => _focused = i); _openLemma(l, firstKanji); },
-              onLongPress: firstKanji.isEmpty ? null : () { setState(() => _focused = i); _openChar(firstKanji); },
+              onLongPress: () { setState(() => _focused = i); _openLemma(l, firstKanji); },
               child: body,
             ),
           ));

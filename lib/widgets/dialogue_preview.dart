@@ -8,7 +8,9 @@ import '../services/dialogue_service.dart';
 import '../services/learner_prefs.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
+import '../services/kanji_index_service.dart';
 import 'japanese_decor.dart';
+import 'selectable_ja_text.dart';
 import 'word_sheet.dart';
 
 /// 회화 시작 전 「새 단어·문법」 미리보기(사용자 지시 2026-11-08: "회화 초반에 그 회화에 나오는 한자 단어 등을 보여줘야…
@@ -158,7 +160,22 @@ class _Row extends StatelessWidget {
                 flex: 5,
                 child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
                   if (item.reading.isNotEmpty) Text(item.reading, style: const TextStyle(fontSize: 11, color: AppColors.ai, fontWeight: FontWeight.w600)),
-                  Text(item.term, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+                  Wrap(children: [
+                    for (final ch in item.term.characters)
+                      if (KanjiIndexService.isKanji(ch))
+                        InkWell(
+                          onTap: () async {
+                            await KanjiIndexService.instance.ensureLoaded();
+                            if (context.mounted) showKanjiSheet(context, char: ch, entry: KanjiIndexService.instance.lookup(ch));
+                          },
+                          child: Container(
+                            decoration: BoxDecoration(border: Border(bottom: BorderSide(color: AppColors.sumi.withValues(alpha: 0.4)))),
+                            child: Text(ch, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+                          ),
+                        )
+                      else
+                        Text(ch, style: const TextStyle(fontSize: 17, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+                  ]),
                 ]),
               ),
               const SizedBox(width: 10),
