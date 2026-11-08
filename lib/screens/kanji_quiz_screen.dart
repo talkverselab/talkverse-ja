@@ -11,7 +11,7 @@ import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart';
 import '../core/l10n.dart';
 
-/// 한자 4지선다 퀴즈 — 현재 단계 출제, 누적 단계는 오답 풀.
+/// 한자 4~8지선다 퀴즈(단계가 오를수록 보기 증가, 헷갈리는 오답 우선) — 현재 단계 출제, 누적 단계는 오답 풀.
 class KanjiQuizScreen extends StatefulWidget {
   final int stage;
   final List<KanjiStage> allStages;
@@ -54,18 +54,28 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
     }
     final current = List<KanjiEntry>.from(cur.chars)..shuffle(_rand);
     final qs = <_Q>[];
+    // 어렵게(사용자 지시 2026-11-08 "어렵게 4-8지선다로"): 단계가 오를수록 보기 4→8개, 오답은 헷갈리는 것부터 —
+    // ① 같은 음독을 가진 한자 ② 같은 획수 ±1 ③ 같은 JLPT 급 ④ 나머지.
+    final n = (4 + (cur.stage - 1)).clamp(4, 8);
+    Set<String> ons(KanjiEntry k) => {for (final r in k.readings) if (r.kind == '음독') r.reading};
     for (final e in current) {
       final correct = e.meaning;
-      final distractors = <String>[];
+      final eOn = ons(e);
+      int score(KanjiEntry d) {
+        var sc = 0;
+        if (ons(d).intersection(eOn).isNotEmpty) sc += 4;
+        if (e.strokes != null && d.strokes != null && (e.strokes! - d.strokes!).abs() <= 1) sc += 2;
+        if (e.jlpt != null && d.jlpt == e.jlpt) sc += 1;
+        return sc;
+      }
       final candidates = pool.where((x) => x.char != e.char).toList()..shuffle(_rand);
+      candidates.sort((a, b) => score(b).compareTo(score(a)));
+      final distractors = <String>[];
       for (final d in candidates) {
         final m = d.meaning;
         if (m.isEmpty || m == correct || distractors.contains(m)) continue;
         distractors.add(m);
-        if (distractors.length >= 3) break;
-      }
-      while (distractors.length < 3) {
-        distractors.add('(...)');
+        if (distractors.length >= n - 1) break;
       }
       final options = [correct, ...distractors]..shuffle(_rand);
       qs.add(_Q(entry: e, options: options, correctIndex: options.indexOf(correct)));
@@ -209,7 +219,7 @@ class _KanjiQuizScreenState extends State<KanjiQuizScreen> {
             Text(trf('한자 단계 {0} · {1}', [widget.stage, widget.allStages[widget.stage - 1].levelLabel]),
                 style: const TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
-            Text(tr('훈음 4지선다 · 누적'),
+            Text(trf('훈음 {0}지선다 · 누적', [_questions.isEmpty ? 4 : _questions.first.options.length]),
                 style: TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -393,7 +403,7 @@ class _OptionTile extends StatelessWidget {
         icon = Icons.cancel;
       }
     }
-    const labels = ['A', 'B', 'C', 'D'];
+    const labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
 
     return InkWell(
       onTap: onTap,

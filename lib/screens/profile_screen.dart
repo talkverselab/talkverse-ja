@@ -11,6 +11,7 @@ import '../services/purchase.dart';
 import '../widgets/achievement_desk.dart';
 import '../widgets/furigana_toggle.dart';
 import 'about_screen.dart';
+import 'app_guide_screen.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import '../widgets/japanese_decor.dart';
@@ -202,6 +203,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _SectionTitle(tr('정보')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
+            _SettingItem(icon: Icons.help_outline, title: tr('앱 사용법'), subtitle: tr('처음이라면 이 순서로'), onTap: () => openPane(context, (_) => const AppGuideScreen())),
             _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자를 나누는 기준'), onTap: () => openPane(context, (_) => const AboutScreen())),
             _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha'),
             _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어유니버스 · 2026')),

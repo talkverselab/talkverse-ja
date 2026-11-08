@@ -90,6 +90,5 @@ flutter:
     - assets/data/hanja/confuse.json
     - assets/data/grammar/particles.json
     - assets/data/decks/
-    - assets/data/vocab/essential_days.json
     - assets/data/vocab/gairaigo.json
     - assets/images/ipa/

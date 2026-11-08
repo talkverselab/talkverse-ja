@@ -28,6 +28,7 @@ import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
 import 'word_freq_screen.dart';
 import 'about_screen.dart';
+import 'app_guide_screen.dart';
 
 /// 메인 — 탭 4개: 배우기(오늘의 학습·기초 수업·에피소드 단원) · 복습(문장 카드·덱·한자 퀴즈) · 탐색(사전·단어·한자음…) · 나(진행·설정).
 /// 한자유니버스와 같은 구조(사용자 지시 2026-11-01: 아이패드·갤탭·폴드 UX 를 한자앱 기준으로).
@@ -143,26 +144,19 @@ class _MainScreenState extends State<MainScreen> {
                       label: Text(t.$3),
                     ),
                 ],
-                // 맨 아래 「앱 소개」 — 절벽구간 설명(사용자 지시 2026-11-07)
+                // 맨 아래 「앱 사용법」(2026-11-08)·「앱 소개」(절벽구간, 2026-11-07)
                 trailing: Expanded(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 16),
-                      child: InkWell(
-                        onTap: () => openPane(context, (_) => const AboutScreen()),
-                        borderRadius: BorderRadius.circular(8),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              const Icon(Icons.info_outline, color: AppColors.muted, size: 22),
-                              const SizedBox(height: 4),
-                              Text(tr('앱 소개'), style: const TextStyle(color: AppColors.muted, fontSize: 11, fontWeight: FontWeight.w600)),
-                            ],
-                          ),
-                        ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          _RailLink(icon: Icons.help_outline, label: tr('앱 사용법'), onTap: () => openPane(context, (_) => const AppGuideScreen())),
+                          const SizedBox(height: 6),
+                          _RailLink(icon: Icons.info_outline, label: tr('앱 소개'), onTap: () => openPane(context, (_) => const AboutScreen())),
+                        ],
                       ),
                     ),
                   ),
@@ -812,7 +806,7 @@ class ReviewTab extends StatelessWidget {
           seal: '漢字',
           sealColor: AppColors.sumi,
           title: tr('한자 퀴즈'),
-          subtitle: tr('JLPT N5→N1 4지선다'),
+          subtitle: tr('JLPT N5→N1 · 4~8지선다 · 헷갈리는 보기'),
           onTap: () => openPane(context, (_) => const KanjiStagesScreen()),
         ),
         _NavRow(
@@ -829,7 +823,7 @@ class ReviewTab extends StatelessWidget {
 
 // ────────── 탐색 ──────────
 
-/// 탐색: 사전·단어·한자음·발음부·외래어 — 참고 자료는 오른쪽 칸에.
+/// 탐색: 사전·단어·한자음·외래어(발음부는 배우기 → 참고 「패밀리 한자」 하나로 합침, 2026-11-08) — 참고 자료는 오른쪽 칸에.
 class ExploreTab extends StatelessWidget {
   const ExploreTab({super.key});
 
@@ -884,13 +878,6 @@ class ExploreTab extends StatelessWidget {
           title: tr('한자음'),
           subtitle: tr('한국 한자음 ↔ 音読み'),
           onTap: () => openPane(context, (_) => const HanjaSoundScreen()),
-        ),
-        _NavRow(
-          seal: '音符',
-          sealColor: const Color(0xFF6A1B9A),
-          title: tr('발음부'),
-          subtitle: tr('音符 · 한자 가족'),
-          onTap: () => openPane(context, (_) => const PhoneticRootsScreen()),
         ),
         _section(tr('단어')),
         _NavRow(
@@ -999,4 +986,28 @@ class _TodayReviewState extends State<_TodayReview> {
       title: tr('오늘의 복습'),
     );
   }
+}
+
+/// 레일 맨 아래 작은 링크(앱 사용법·앱 소개).
+class _RailLink extends StatelessWidget {
+  final IconData icon;
+  final String label;
+  final VoidCallback onTap;
+  const _RailLink({required this.icon, required this.label, required this.onTap});
+  @override
+  Widget build(BuildContext context) => InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(8),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 6),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Icon(icon, color: AppColors.muted, size: 22),
+              const SizedBox(height: 4),
+              Text(label, style: const TextStyle(color: AppColors.muted, fontSize: 11, fontWeight: FontWeight.w600)),
+            ],
+          ),
+        ),
+      );
 }

@@ -66,7 +66,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             Text(
-                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R5)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
+                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4~8지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R5)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -157,7 +157,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                           Text('N5 ${KanjiIndexService.instance.forLevel(5).length} · N4 ${KanjiIndexService.instance.forLevel(4).length} · N3 ${KanjiIndexService.instance.forLevel(3).length} · N2 ${KanjiIndexService.instance.forLevel(2).length} · N1 ${KanjiIndexService.instance.forLevel(1).length}',
                               style: const TextStyle(color: AppColors.washi, fontSize: 14, fontWeight: FontWeight.w900, height: 1.2)),
                           const SizedBox(height: 4),
-                          Text(trf('누적 4지선다 — 훈음 맞추기 · 80% 이상 통과 {0}/{1}', [done, stages.length]),
+                          Text(trf('누적 4~8지선다 — 훈음 맞추기 · 80% 이상 통과 {0}/{1}', [done, stages.length]),
                               style: TextStyle(color: AppColors.washi.withValues(alpha: 0.9), fontSize: 11, height: 1.5)),
                         ],
                       ),
