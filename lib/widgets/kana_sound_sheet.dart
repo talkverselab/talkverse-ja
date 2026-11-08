@@ -177,7 +177,7 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
               ],
               if (!p.vowelOnly) ...[
                 const SizedBox(height: 6),
-                // 자음 조음 위치 그림 (위키미디어 자료)
+                // 자음 조음 위치 그림 — 임시, 출시 전 Grok 그림으로 교체(docs/ARTICULATION_ART.md)
                 InkWell(
                   onTap: () => setState(() => _showChart = !_showChart),
                   child: Padding(
@@ -211,13 +211,6 @@ class _KanaSoundSheetState extends State<_KanaSoundSheet> {
                         'assets/images/ipa/places_of_articulation.png',
                         fit: BoxFit.contain,
                       ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 4),
-                    child: Text(
-                      tr('그림: Wikimedia Commons IPA 자료 (CC BY-SA)'),
-                      style: TextStyle(fontSize: 9, color: AppColors.sumiLight),
                     ),
                   ),
                 ],
