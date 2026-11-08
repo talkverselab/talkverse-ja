@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
+import '../widgets/dialogue_preview.dart';
 import '../widgets/furigana_toggle.dart';
 import '../core/platform.dart';
 import '../core/pane.dart';
@@ -239,6 +240,8 @@ class _DialogueScreenState extends State<DialogueScreen> {
   void initState() {
     super.initState();
     DialogueService.instance.setLastOpened(d.id);
+    // 처음 여는 편이면 새 단어·문법을 먼저 보여 준다(2026-11-08)
+    WidgetsBinding.instance.addPostFrameCallback((_) { if (mounted) maybeShowDialoguePreview(context, d); });
   }
 
   @override
@@ -262,6 +265,11 @@ class _DialogueScreenState extends State<DialogueScreen> {
               style: const TextStyle(color: AppColors.muted, fontSize: 10, letterSpacing: 1)),
         ]),
         actions: [
+          IconButton(
+            tooltip: tr('새 단어 · 문법'),
+            icon: const Icon(Icons.menu_book_outlined, color: AppColors.beni),
+            onPressed: () => showDialoguePreview(context, d),
+          ),
           const FuriganaToggleAction(),
           IconButton(
             tooltip: tr('그림 카드(글자 없이)'),
