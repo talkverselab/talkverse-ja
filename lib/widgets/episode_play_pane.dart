@@ -129,7 +129,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
       onTap: (i) => _goto(i, play: true),
       onSpeak: _speakOne,
     );
-    final cut = _CutPanel(d: d, turn: turn, showKana: _showKana, showRd: _showRd, showKo: _showKo, onSpeak: () => _speakOne(turn));
+    Widget cutFor(bool side) => _CutPanel(side: side, d: d, turn: turn, showKana: _showKana, showRd: _showRd, showKo: _showKo, onSpeak: () => _speakOne(turn));
     final controls = _ControlBar(
       playing: _playing,
       index: _i,
@@ -154,12 +154,13 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
               ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
                   Expanded(flex: 4, child: script),
                   const VerticalDivider(width: 1, color: AppColors.line),
-                  Expanded(flex: 6, child: cut),
+                  Expanded(flex: 6, child: cutFor(true)),
                 ])
               : Column(children: [
                   // 폰: 그림은 3:2 비율 그대로(잘리지 않게), 캡션은 자연 높이(길면 안에서 스크롤) — 위 칸 최대 62%, 나머지가 스크립트.
                   // 넓은 칸(아이패드 세로): 전처럼 고정 높이.
-                  if (wide) SizedBox(height: (c.maxHeight * 0.44).clamp(240, 520), child: cut) else ConstrainedBox(constraints: BoxConstraints(maxHeight: c.maxHeight * 0.62), child: cut),
+                  // 넓은 칸(아이패드 세로·두 화면 오른쪽 칸)도 폰과 같이 그림 비율을 지킨다(사용자 지시 2026-11-08 "그림짤림" — 고정 높이 + cover 로 위아래가 잘렸다).
+                  ConstrainedBox(constraints: BoxConstraints(maxHeight: c.maxHeight * 0.62), child: cutFor(false)),
                   const Divider(height: 1, color: AppColors.line),
                   Expanded(child: script),
                 ]),
@@ -286,14 +287,15 @@ class _CutPanel extends StatelessWidget {
   final DialogueTurn turn;
   final bool showKana, showRd, showKo;
   final VoidCallback onSpeak;
-  const _CutPanel({required this.d, required this.turn, required this.showKana, required this.showRd, required this.showKo, required this.onSpeak});
+  final bool side; // true = 왼쪽 스크립트·오른쪽 컷(세로 공간 넉넉), false = 컷 위·스크립트 아래
+  const _CutPanel({required this.side, required this.d, required this.turn, required this.showKana, required this.showRd, required this.showKo, required this.onSpeak});
 
   @override
   Widget build(BuildContext context) {
     final wide = isWide(context);
     return Padding(
       padding: EdgeInsets.fromLTRB(wide ? 16 : 12, 10, wide ? 16 : 12, 10),
-      child: Column(mainAxisSize: wide ? MainAxisSize.max : MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
+      child: Column(mainAxisSize: side ? MainAxisSize.max : MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
         if (wide)
           Padding(
             padding: const EdgeInsets.only(bottom: 8),
@@ -306,12 +308,18 @@ class _CutPanel extends StatelessWidget {
             ]),
           ),
         // 문장은 아래 _Caption 에(그림을 덮지 않음). 폰은 그림을 3:2 비율로 두고(사용자 지시 2026-11-04 "짤린다") 캡션이 길면 캡션만 스크롤.
-        if (wide) Expanded(child: SceneCut(dialogue: d, turn: turn)) else AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn)),
+        // 어느 배치든 그림은 원본 비율(1168:784) — 남는 칸은 여백으로 두고 자르지 않는다.
+        if (side)
+          Expanded(child: Center(child: AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn))))
+        else if (wide) // 넓은 칸 세로 배치: 그림 3 : 캡션 2 로 나누고 그림은 그 안에서 비율 유지
+          Flexible(flex: 3, child: Center(child: AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn))))
+        else
+          AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn)),
         const SizedBox(height: 10),
-        if (wide)
+        if (side)
           _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak)
         else
-          Flexible(child: SingleChildScrollView(child: _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak))),
+          Flexible(flex: 2, child: SingleChildScrollView(child: _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak))),
       ]),
     );
   }
