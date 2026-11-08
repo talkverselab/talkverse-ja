@@ -48,7 +48,7 @@ class _MainScreenState extends State<MainScreen> {
     (Icons.menu_book_outlined, Icons.menu_book, tr('배우기')),
     (Icons.style_outlined, Icons.style, tr('복습')),
     (Icons.explore_outlined, Icons.explore, tr('탐색')),
-    (Icons.person_outline, Icons.person, tr('프로필')),
+    (Icons.person_outline, Icons.person, tr('설정 및 프로필')),
   ];
 
   @override
@@ -918,9 +918,9 @@ class ExploreTab extends StatelessWidget {
   }
 }
 
-// ────────── 나 ──────────
+// ────────── 설정 및 프로필 ──────────
 
-/// 나: 진행·달성률 + 프로필·설정(표시 언어·기록 초기화). 앱 업데이트 타일은 2026-11-07 사용자 지시로 뺌(배포는 스토어·TestFlight).
+/// 설정 및 프로필 탭: 진행·달성률 + 프로필·설정(표시 언어·기록 초기화). 앱 업데이트 타일은 2026-11-07 사용자 지시로 뺌(배포는 스토어·TestFlight).
 class MeTab extends StatelessWidget {
   const MeTab({super.key});
 

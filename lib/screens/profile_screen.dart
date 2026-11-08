@@ -220,7 +220,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     if (widget.embedded) return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: children);
     return Scaffold(
       backgroundColor: AppColors.washi,
-      appBar: AppBar(title: Text(tr('프로필 · 설정'))),
+      appBar: AppBar(title: Text(tr('설정 및 프로필'))),
       body: ListView(padding: const EdgeInsets.all(16), children: children),
     );
   }
