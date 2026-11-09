@@ -1,11 +1,13 @@
 #!/bin/zsh
 # 일본어 단어 그림 회차 N번 돌리기(2026-11-06 사용자 지시로 일본어 세션 직접 진행). 사용: tools/grok_word_rounds.sh [N=10] [시트폴더]
 # M4 의 gh 는 로그인이 풀려 있어(r398 이 그래서 GitHub 에 못 올라감) 지시서 커밋은 M6 ja-art 클론에서 올린다.
-# 공개는 하지 않는다 — 시트를 보고 M4 에서 redo·approve·publish. 한 방 진행: GROK_CHAT 고정, 새 대화 금지.
+# 공개는 하지 않는다 — 시트를 보고 M4 에서 redo·approve·publish. 한 방 진행: GROK_CHAT 고정(2026-11-09 옛 계정 재로그인 뒤 「일본어 회화 검수」 프로젝트 새 방 5ab018b8 — 00092f0a 는 다른 계정이라 없음), 새 대화 금지.
 N=${1:-10}; SHEETS=${2:-/tmp/ja_sheets}; mkdir -p $SHEETS
 A=${ART:-/private/tmp/claude-501/-Users-talkverse-talkverse-uk/0de9ae3e-58ba-4cc7-8fae-95c652558801/scratchpad/art}
-ENV="export PATH=/opt/homebrew/bin:\$HOME/.local/bin:\$PATH ART=$A GROK_CHAT=${GROK_CHAT:-00092f0a} GROK_CDP_PORT=${GROK_CDP_PORT:-9230}; cd ~/talkverse-uk"
+ENV="export PATH=/opt/homebrew/bin:\$HOME/.local/bin:\$PATH ART=$A GROK_CHAT=${GROK_CHAT:-5ab018b8} GROK_CDP_PORT=${GROK_CDP_PORT:-9230}; cd ~/talkverse-uk"
 for i in $(seq 1 $N); do
+  # RESUME=<회차>: 이미 발주 준비(지시서 푸시)까지 된 회차를 보내기부터 다시(2026-11-09 r487 이 옛 방으로 가다 실패)
+  if [ -n "$RESUME" ]; then R=$RESUME; RESUME=; echo "RESUME r$R"; else
   out=$(ssh macmini4 "$ENV; /usr/bin/python3 - <<'P'
 import sys, json
 sys.path.insert(0, 'tools'); import grok_art as a
@@ -26,14 +28,22 @@ P" 2>&1)
     sleep 10; ssh macmini4 "git -C $A pull -q --rebase"
   done
   [ -z "$ok" ] && { echo "STOP r$R 지시서 푸시 실패"; exit 1; }
-  ssh macmini4 "$ENV; /usr/bin/python3 -c \"
-import sys; sys.path.insert(0, 'tools'); import grok_art as a
-a.grok_send(open('/tmp/ja_msg_next.txt', encoding='utf-8').read())\"" 2>&1 | tail -1
+  fi
+  # 보내기: 일본어 사본 grok_cdp.py(「보내기」 버튼 대응, 2026-11-09) — 챗에 실제로 들어갔는지 확인, 아니면 3번까지 재전송
+  scp -q ${0:A:h}/grok_cdp.py macmini4:/tmp/ja_grok_cdp.py
+  sent=
+  for s in 1 2 3; do
+    ssh macmini4 "$ENV; /usr/bin/python3 /tmp/ja_grok_cdp.py send /tmp/ja_msg_next.txt \$GROK_CHAT" 2>&1 | tail -1
+    sleep 10
+    ssh macmini4 "$ENV; /usr/bin/python3 /tmp/ja_grok_cdp.py read \$GROK_CHAT 3000" 2>/dev/null | grep -q "ja_r$R.md" && { sent=1; break; }
+    sleep 15
+  done
+  [ -z "$sent" ] && { echo "STOP r$R 발주가 챗에 들어가지 않음"; exit 3; }
   done_=
   for w in $(seq 1 40); do
     gh api "repos/talkverselab/talkversehanja/commits?per_page=100" --jq '.[].commit.message' 2>/dev/null | grep -q "ja r$R done" && { done_=1; break; }
     # 2026-11-06 r443: Grok 쪽 GitHub 토큰이 만료돼 푸시 실패 → 다시 푸시를 부탁하면 갱신돼 올라감. 5분 넘으면 한 번만
-    [ $w -eq 10 ] && ssh macmini4 "printf '%s' '방금 r$R 그림을 같은 파일로 다시 푸시해 줘. 마지막 커밋 메시지는 Talkverse art ja r$R done 으로.' > /tmp/grok_msg.txt; GROK_CDP_PORT=${GROK_CDP_PORT:-9230} /usr/bin/python3 ~/Hanja/tools/grok_cdp.py send /tmp/grok_msg.txt ${GROK_CHAT:-00092f0a}" 2>&1 | tail -1
+    [ $w -eq 10 ] && ssh macmini4 "printf '%s' '방금 r$R 그림을 같은 파일로 다시 푸시해 줘. 마지막 커밋 메시지는 Talkverse art ja r$R done 으로.' > /tmp/grok_msg.txt; GROK_CDP_PORT=${GROK_CDP_PORT:-9230} /usr/bin/python3 /tmp/ja_grok_cdp.py send /tmp/grok_msg.txt ${GROK_CHAT:-5ab018b8}" 2>&1 | tail -1
     sleep 30
   done
   [ -z "$done_" ] && { echo "STOP r$R 20분 안에 완료 없음"; exit 2; }
