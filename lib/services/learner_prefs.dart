@@ -45,6 +45,6 @@ class LearnerPrefs {
   static String fill(String text, {bool ko = false}) {
     if (!text.contains('{')) return text;
     final n = name.value.isNotEmpty ? name.value : (ko ? '○○' : '〇〇');
-    return text.replaceAll('{name}', n).replaceAll(RegExp(r'\{(country|city|lang)\}'), ko ? '○○' : '〇〇');
+    return text.replaceAll('{name}', n).replaceAll(RegExp(r'\{[a-z_]+\}'), ko ? '○○' : '〇〇'); // 그 밖의 자리({hotel}·{photo_word} 등)도 — 음성이 있는 턴은 음성 본문(값이 채워진 글)이 먼저 보인다
   }
 }

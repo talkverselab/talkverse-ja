@@ -40,13 +40,9 @@
   "4": {
    "segs": [
     [
-     "excited",
-     "{photo_word}！"
-    ],
-    [
      "surprised",
-     "目、閉じた。鳩！",
-     "め、とじた。はと！"
+     "{photo_word}！",
+     "{photo_word}！"
     ]
    ]
   },
