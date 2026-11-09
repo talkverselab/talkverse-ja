@@ -1,7 +1,7 @@
 # 맞춤 회화(고유 스크립트) — 앱 · Cloudflare · 코드 서버 계약 (2026-11-02)
 
 사용자 지시(2026-11-02): "유료 버전에는 도메인·상황·레벨(왕초보·초보·중급·고급)을 선택하면 고유 스크립트를 만들어 주는 메뉴.
-고유 스크립트는 ID 와 함께 Cloudflare 에 저장. 생성은 API 를 쓰지 않고 **우리 코드 서버(맥미니 Claude Code)와 Grok** 을 거친다.
+고유 스크립트는 ID 와 함께 Cloudflare 에 저장. 생성은 API 를 쓰지 않고 **우리 코드 서버(맥미니 Claude Code)** 만 쓴다 — 2026-11-09 사용자 지시 "AI 재생성은 그냥 클로드로만"으로 Grok 재작성 단계 삭제(그림 Grok 한도와 겹치지 않게). 한도: 무료 평생 1편 / 이용권 한 달 5편·하루 1편 / 종합 이용권 한 달 10편(한국 시간), 넘으면 402 paid_required · 429 monthly_limit(limit·used) · 429 daily_limit. 앱은 맞춤 회화 화면 위에 「AI 가 만든 회화」 표시와 신고(메일) 버튼을 둔다.
 **1회는 무료.** 많이 쓰면 그때 생각한다(과금·큐 최적화는 지금 하지 않음)."
 
 ## 1. 흐름
@@ -14,7 +14,7 @@
                                                    ③ GET /api/script/ja/pending (키) ←── tools/custom_script_worker.py(launchd 5분)
                                                    ④ POST …/<id>/claim → writing
                                                                                         ⑤ claude-lab -p (초안 JSON, tools/prompts/custom_script.md)
-                                                                                        ⑥ Grok 재작성(tools/grok_send.py, 「일본어 회화 검수」 프로젝트)
+                                                                                        (⑥ Grok 재작성 — 2026-11-09 삭제)
                                                                                         ⑦ tools/check_dialogues.py 검사 → 통과 못 하면 초안으로
                                                    ⑧ POST …/<id>/result {status:'ready', dialogue} ←──
 ⑨ 앱이 ready 를 받으면 dialogue 를 로컬에 저장하고 기존 편과 같은 화면(재생 패널·그림 카드·라이트너)으로 연다
@@ -74,5 +74,5 @@ CREATE TABLE IF NOT EXISTS paid_devices (device TEXT PRIMARY KEY, note TEXT, cre
 ## 5. 코드 서버(맥미니, 이 폴더)
 
 - `tools/custom_script_worker.py` — launchd `com.talkverse.ja.custom-script`(5분, `~/Library/LaunchAgents`, 아직 올리지 않음 — Worker 끝나고 사용자 확인 뒤). 흐름은 §1 ③~⑧. 키는 환경변수 `TALKVERSE_SCRIPT_KEY`(launchd 는 `doppler run -p keys -c prd --` 로 감싼다).
-- 초안: `~/bin/claude-lab -p` 에 `tools/prompts/custom_script.md`(도메인·상황·레벨·인물표·톤 규칙 `docs/DIALOGUE_WORKFLOW_JA.md` §5 요약)를 넣어 JSON 만 받는다. 재작성: 기존 `tools/prompts/rewrite_grok.md` 를 그대로 Grok 「일본어 회화 검수」 프로젝트에. 독음은 `tools/rd_ja.py`, 검사는 `tools/check_dialogues.py --file`.
+- 초안: `~/bin/claude-lab -p` 에 `tools/prompts/custom_script.md`(도메인·상황·레벨·인물표·톤 규칙 `docs/DIALOGUE_WORKFLOW_JA.md` §5 요약)를 넣어 JSON 만 받는다. (재작성 단계 없음 — Claude 초안이 최종.) 독음은 `tools/rd_ja.py`, 검사는 `tools/check_dialogues.py --file`.
 - 한 번에 1편, 편당 5~15분. 실패 3회면 failed.

@@ -6,6 +6,7 @@ import '../core/l10n.dart';
 import '../core/pane.dart';
 import '../core/platform.dart';
 import '../core/theme.dart';
+import '../services/purchase.dart';
 import '../services/custom_script_service.dart';
 import '../services/dialogue_service.dart';
 import '../services/entitlement.dart';
@@ -83,6 +84,10 @@ class _CustomScriptScreenState extends State<CustomScriptScreen> {
           _snack(tr('첫 1편은 무료예요. 다음 편부터는 이용권이 필요해요'), AppColors.kinDeep);
           Entitlement.showPaywall(context);
         }
+      case 'monthly_limit':
+        _snack(trf('이번 달 맞춤 회화를 모두 만들었어요({0}편). 다음 달 1일(한국 시간)에 다시 만들 수 있어요', [_svc.lastLimit ?? 5]), AppColors.kinDeep);
+      case 'daily_limit':
+        _snack(tr('맞춤 회화는 하루 1편까지예요. 내일(한국 시간) 다시 만들어 주세요'), AppColors.kinDeep);
       case 'offline':
         _snack(tr('지금은 만들 수 없어요. 잠시 뒤 다시 시도해 주세요'), AppColors.beni);
       default:
@@ -249,8 +254,16 @@ class _Form extends StatelessWidget {
         ),
       ),
       const SizedBox(height: 6),
-      Center(child: Text(tr('첫 1편 무료 · 완성되면 「내 맞춤 회화」에 들어와요'), style: const TextStyle(fontSize: 11, color: AppColors.muted))),
+      Center(child: Text(_usage(), textAlign: TextAlign.center, style: const TextStyle(fontSize: 11.5, color: AppColors.muted, height: 1.4))),
     ]);
+  }
+
+  /// 한도 안내(2026-11-09): 무료 평생 1편 / 이용권 한 달 5편 / 종합 이용권 한 달 10편 · 하루 1편(한국 시간).
+  String _usage() {
+    final svc = CustomScriptService.instance;
+    if (!Entitlement.premium) return tr('무료 1편 · 이용권이 있으면 한 달 5편(하루 1편) · 완성되면 「내 맞춤 회화」에');
+    final cap = svc.lastLimit ?? (Purchase.owned.value.keys.any((k) => k.startsWith('all_')) ? 10 : 5);
+    return trf('이번 달 {0}/{1}편 · 하루 1편 · 완성되면 「내 맞춤 회화」에', [svc.usedThisMonth().clamp(0, cap), cap]);
   }
 
   Widget _step(int n, String title) => Padding(

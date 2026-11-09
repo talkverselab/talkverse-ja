@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 """맞춤 회화 코드 서버 워커 — 2026-11-02. 계약: docs/CUSTOM_SCRIPT_API.md §1·§5.
 
-Cloudflare 에 쌓인 요청(queued)을 하나 가져와 ① claude-lab -p 초안(JSON) → ② Grok 재작성(「일본어 회화 검수」 프로젝트)
-→ ③ 독음·검사 → ④ 결과를 같은 ID 에 올린다. 외부 LLM API 없음(Claude Code 구독 + Grok 웹).
-  /usr/bin/python3 tools/custom_script_worker.py [--once] [--dry] [--id ja-xxxxxxxx] [--no-grok]
+Cloudflare 에 쌓인 요청(queued)을 하나 가져와 ① claude-lab -p 로 편(JSON) 작성 → ② 독음·검사 → ③ 결과를 같은 ID 에 올린다.
+생성은 Claude 만 쓴다(사용자 지시 2026-11-09 "AI 재생성은 그냥 클로드로만" — Grok 재작성 단계 삭제, 그림 Grok 한도와 겹치지 않게). 외부 LLM API 없음.
+  /usr/bin/python3 tools/custom_script_worker.py [--once] [--dry] [--id ja-xxxxxxxx]
 환경변수 TALKVERSE_SCRIPT_KEY(필수, launchd 는 `doppler run -p keys -c prd --` 로 감싼다). 한 번 실행에 1편.
 로그: ~/logs/custom_script/<id>.log, 작업 파일: data/custom_scripts/<id>.json(초안·결과 보관, 공개 저장소에는 올리지 않음 — .gitignore).
 """
@@ -16,14 +16,12 @@ KEY = os.environ.get('TALKVERSE_SCRIPT_KEY', '')
 WORK = ROOT / 'data/custom_scripts'
 LOGD = Path.home() / 'logs/custom_script'
 PROMPT = ROOT / 'tools/prompts/custom_script.md'
-REWRITE = ROOT / 'tools/prompts/rewrite_grok.md'
-GROK_TAB = 'project/08a3b12e'  # 「일본어 회화 검수」(2026-11-02 재생성 — 옛 84ed846e 는 다른 세션이 실수로 삭제)
 # apply_rewrite·check_dialogues 는 janome 이 필요 → ~/.venvs/ja (없으면 시스템 python3). 2026-11-02 세션 venv 에만 있던 것을 고정.
 PY = str(Path.home() / '.venvs/ja/bin/python3') if (Path.home() / '.venvs/ja/bin/python3').exists() else sys.executable
 ISLAND_KO = {'survival': '서바이벌', 'friends': '친구', 'love': '사랑', 'life': '생활', 'travel': '여행', 'culture': '문화', 'work': '일', 'study': '학업'}
 LEVEL = {'R0': ('왕초보', '4~6', '2~4'), 'R1': ('초보', '6~8', '3~8'), 'R2': ('중급', '8~12', '5~12'), 'R3': ('고급', '12~16', '8~18')}
 a = sys.argv[1:]
-DRY, ONCE, NOGROK = '--dry' in a, '--once' in a or True, '--no-grok' in a
+DRY, ONCE = '--dry' in a, '--once' in a or True
 ONLY = a[a.index('--id') + 1] if '--id' in a else None
 
 
@@ -77,32 +75,6 @@ def draft(item, f):
     return ep
 
 
-def grok_rewrite(ep, wd, f):
-    tpl = REWRITE.read_text(encoding='utf-8').split('```')[1].strip()
-    roles = ' · '.join(f'{k} = {v}' for k, v in ep['speakers'].items()) + ' (A = 학습자)'
-    lines = '\n'.join(f"{t['num']} {t['speaker']}: {t['ja']} / {t['ko']}" for t in ep['turns'])
-    body = (tpl.replace('{{name}}', '{name}').replace('{{country}}', '{country}').replace('{{city}}', '{city}')
-            .replace('{code}', ep['id']).replace('{roles}', roles).replace('{scene}', ep.get('scene', '')).replace('{register}', ep.get('register', ''))
-            .replace('{n}', str(len(ep['turns']))).replace('{targets}', '·'.join(ep.get('expressions', []))).replace('{twist}', str(ep.get('twist', 0)))
-            .replace('{lines}', lines))
-    pf, af = wd / 'rewrite_prompt.md', wd / 'rewrite_answer.md'
-    pf.write_text(body, encoding='utf-8')
-    log(f, 'Grok 재작성 요청')
-    r = subprocess.run([sys.executable, str(ROOT / 'tools/grok_send.py'), str(pf), str(af), '--tab', GROK_TAB, '--wait', '600'], cwd=ROOT, capture_output=True, text=True, timeout=700)
-    last = (r.stdout.strip().splitlines() or [''])[-1]
-    log(f, 'Grok: ' + last)
-    if not last.startswith('OK'):
-        return False
-    jf = wd / 'draft.json'
-    json.dump(ep, open(jf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
-    r = subprocess.run([PY, str(ROOT / 'tools/apply_rewrite.py'), str(jf), str(af)], cwd=ROOT, capture_output=True, text=True)
-    log(f, 'apply: ' + (r.stdout.strip() or r.stderr.strip())[-200:])
-    if r.returncode == 0:
-        ep.clear(); ep.update(json.load(open(jf, encoding='utf-8')))
-        return True
-    return False
-
-
 def finish(ep, wd, f):
     jf = wd / 'final.json'
     json.dump(ep, open(jf, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
@@ -135,9 +107,6 @@ def main():
     try:
         ep = draft(item, f)
         log(f, f"초안 {len(ep['turns'])}턴 「{ep.get('title', '')}」")
-        if not NOGROK:
-            ok = grok_rewrite(ep, wd, f)
-            log(f, '재작성 ' + ('반영' if ok else '실패 → 초안 사용'))
         ep = finish(ep, wd, f)
         code, j = api('POST', f"/{item['id']}/result", {'status': 'ready', 'dialogue': ep})
         log(f, f'result {code} {j}')

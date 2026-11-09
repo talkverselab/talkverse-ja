@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
 import '../widgets/dialogue_preview.dart';
+import '../widgets/legal_links.dart';
 import '../widgets/furigana_toggle.dart';
 import '../core/platform.dart';
 import '../core/pane.dart';
@@ -278,7 +279,14 @@ class _DialogueScreenState extends State<DialogueScreen> {
           ),
         ],
       ),
-      body: wide
+      body: Column(children: [
+        if (d.kind == 'custom') AiContentBanner(id: d.id), // AI 생성 표시 + 신고(2026-11-09)
+        Expanded(child: _body(wide)),
+      ]),
+    );
+  }
+
+  Widget _body(bool wide) => wide
           ? EpisodePlayPane(key: ValueKey(d.id), dialogue: d, autoPlay: false)
           : Column(children: [
               Padding(
@@ -306,9 +314,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
                   itemBuilder: (context, i) => _Bubble(d: d, t: d.view(d.turns[i]), onPlayFrom: () => _openPlay(at: i)),
                 ),
               ),
-            ]),
-    );
-  }
+            ]);
 }
 
 class _PlayFull extends StatelessWidget {

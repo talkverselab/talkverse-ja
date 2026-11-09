@@ -10,9 +10,9 @@ import 'dialogue_service.dart';
 
 /// 맞춤 회화(고유 스크립트) — 2026-11-02. 계약: `docs/CUSTOM_SCRIPT_API.md`.
 ///
-/// 도메인·상황·레벨을 고르면 Cloudflare 에 요청이 ID 로 저장되고, 맥미니 코드 서버 + Grok 이 편을 만들어
+/// 도메인·상황·레벨을 고르면 Cloudflare 에 요청이 ID 로 저장되고, 맥미니 코드 서버(Claude)가 편을 만들어
 /// 같은 ID 에 넣는다. 앱은 ID 목록을 들고 상태를 확인하고, ready 편은 로컬에 보관해 오프라인에서도 연다.
-/// 첫 1편 무료(서버가 device 기준으로 센다). 외부 LLM API 는 쓰지 않는다.
+/// 첫 1편 무료, 유료는 한 달 5편(종합 10편)·하루 1편(서버가 device 기준으로 센다). 외부 LLM API 는 쓰지 않는다.
 class CustomScriptItem {
   final String id;
   String status; // queued · writing · ready · failed · local(서버에 못 보냄)
@@ -155,6 +155,15 @@ class CustomScriptService {
     if (res == null) return (item: null, error: 'offline');
     final (code, j) = res;
     if (code == 402) return (item: null, error: 'paid_required');
+    // 한도(2026-11-09): 유료 한 달 5편·종합 10편, 하루 1편(한국 시간). 서버가 429 로 알린다.
+    if (code == 429) {
+      final e = (j['error'] ?? '').toString();
+      if (e == 'monthly_limit') {
+        lastLimit = (j['limit'] as num?)?.toInt() ?? lastLimit;
+        return (item: null, error: 'monthly_limit');
+      }
+      if (e == 'daily_limit') return (item: null, error: 'daily_limit');
+    }
     if (code != 200 && code != 201 || j['id'] == null) return (item: null, error: (j['error'] ?? 'HTTP $code').toString());
     final it = CustomScriptItem(
       id: j['id'] as String,
@@ -194,6 +203,16 @@ class CustomScriptService {
     }
     if (changed) await _save();
     return changed;
+  }
+
+  /// 서버가 마지막으로 알려 준 한 달 한도(없으면 null — 화면이 이용권으로 추정).
+  int? lastLimit;
+
+  /// 이번 달(한국 시간) 이 기기에서 만든 편 수 — 서버와 같은 기준(실패 제외).
+  int usedThisMonth() {
+    final kst = DateTime.now().toUtc().add(const Duration(hours: 9));
+    final start = DateTime.utc(kst.year, kst.month).subtract(const Duration(hours: 9));
+    return _items.where((e) => e.status != 'failed' && (DateTime.tryParse(e.createdAt)?.isAfter(start) ?? false)).length;
   }
 
   Future<void> remove(String id) async {
