@@ -18,7 +18,7 @@
 | 절벽 단어 화면 | `word_freq_screen.dart` — 20어 단원·네모 타일·「절벽구간 단어만 / 회화 단어 포함(+837)」. 회화 단어 목록 `assets/data/freq/conv_words_ja.json`(`tools/freq/conv_words.py`, 회화 레마 중 2,000위 밖·단어장에 있는 것, 이름·지시어 제외) |
 | 장면 컷 | 2,232컷 · 430묶음(남자 215편 + 여자 `_f` 215편), 저장소·R2·D1 일치. sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
 | 단어 그림 | 매니페스트 2,089 항목. 남은 목록 `data/review/write/art_todo_ja.csv` 89어(N3 84 · 재작업 5 人込み·劇場·宝石·汗·笛). 그림 없이 두는 단어 `jlpt_excluded.csv` |
-| Grok | **2026-11-09 새 계정으로 로그인됨**(uk 공지 — 사용자 지시로 M4 uk 크롬 9231 쿠키를 `~/talkverse-uk/tools/grok_cookie_sync.py 9231 9230` 으로 옮김, 주간 한도 새로 시작). ja 전용 Chrome = M4 `~/chrome-grok-ja` 포트 **9230**(uk 9231, 한자 9222). **옛 방 `00092f0a`·프로젝트 08a3b12e·832d5dbe 는 새 계정에 없음** — 다음 Grok 작업 때 새 프로젝트를 하나 만들고 GitHub 커넥터 푸시 시험부터, 그 한 방에서만. `tools/grok_word_rounds.sh` 는 9230 사용으로 고쳐 둠(baa3f77), GROK_CHAT 은 새 방 id 로. 4장/요청, 한 번에 한 작업, 끝나면 탭 닫기. r400~r439 의 39어 새 그림 유지/되돌리기는 사용자 결정 대기 |
+| Grok | **2026-11-09 재개 — 옛 계정 다시 로그인**(허브 공지 `~/logs/rc/RELAY_grok_20261109.md`, uk 공지). ja 전용 Chrome = M4 `~/chrome-grok-ja` 포트 **9230**(uk 9231, 한자 9222). 로그인이 풀리면 `ssh macmini4 /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 9230`(값은 출력·파일에 안 남음). 옛 프로젝트 「일본어 회화 검수」 08a3b12e·방 `00092f0a` 그대로 열림(11-09 확인). 같은 계정이라 주간 한도를 uk 와 함께 씀 — uk 의 방은 건드리지 않는다. `tools/grok_word_rounds.sh` 는 9230 사용으로 고쳐 둠(baa3f77). 4장/요청, 한 번에 한 작업, 끝나면 탭 닫기. r400~r439 의 39어 새 그림 유지/되돌리기는 사용자 결정 대기 |
 | PC 생성 서버 | WSL `/root/tts`(venv moss·vox), `D:\tts_test\{run_job.sh,vox_batch.py,moss_batch.py}`, 작업 스케줄러 'TTS job 2060'. **3090 대기열 규칙(D:\gpu_queue) 폐지**(2026-11-07 사용자 지시, gpuq.py 는 항상 "진행 가능" 스텁) |
 
 ## 2. 2026-11-07 에 바꾼 것(사용자 지시)
