@@ -36,8 +36,8 @@ class _MorphPlayerState extends State<MorphPlayer> {
         alignment: Alignment.center,
         decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(14)),
         child: Column(mainAxisSize: MainAxisSize.min, children: [
-          Text(widget.glyph, style: TextStyle(fontSize: widget.compact ? 32 : 48, color: AppColors.muted)),
-          Text(tr('그림 준비 중'), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
+          // 그림이 없는 글자는 글자만 크게(출시 기준 2026-11-09 — 「준비 중」 문구 없음)
+          Text(widget.glyph, style: TextStyle(fontSize: widget.compact ? 40 : 60, color: AppColors.sumi, fontWeight: FontWeight.w700)),
         ]),
       );
     }
