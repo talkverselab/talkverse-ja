@@ -18,7 +18,7 @@
 | 절벽 단어 화면 | `word_freq_screen.dart` — 20어 단원·네모 타일·「절벽구간 단어만 / 회화 단어 포함(+837)」. 회화 단어 목록 `assets/data/freq/conv_words_ja.json`(`tools/freq/conv_words.py`, 회화 레마 중 2,000위 밖·단어장에 있는 것, 이름·지시어 제외) |
 | 장면 컷 | 2,232컷 · 430묶음(남자 215편 + 여자 `_f` 215편), 저장소·R2·D1 일치. sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
 | 단어 그림 | 매니페스트 2,089 항목. 남은 목록 `data/review/write/art_todo_ja.csv` 89어(N3 84 · 재작업 5 人込み·劇場·宝石·汗·笛). 그림 없이 두는 단어 `jlpt_excluded.csv` |
-| Grok | **단어 그림은 uk 담당(사용자 지시 2026-11-09 "단어는 uk에 맡겨 리스트만 전달")** — ja 는 목록만 만든다. JLPT N5~N2 공백 목록 talkversehanja `talkverse_art/words/ja_r6_jlpt_gap.csv`(49807d6c, 새로 2,148·공유 alias_of 1,130) 전달. 인계 시점 r487 완료·r488 발주됨(방 5ab018b8, 「일본어 회화 검수」 08a3b12e, 옛 계정). 다 그린 뒤 사용자 일괄 리뷰(39어 포함), 공개는 리뷰 뒤. ja 전용 Chrome = M4 `~/chrome-grok-ja` 9230(회화 장면 컷 등 ja 몫 Grok 작업용), 로그인 풀리면 `ssh macmini4 /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 9230`. 전송 버튼이 「보내기」로 바뀜 → ja 사본 `tools/grok_cdp.py` 사용 |
+| Grok | **단어 그림은 uk 담당(사용자 지시 2026-11-09 "단어는 uk에 맡겨 리스트만 전달")** — ja 는 목록만 만든다. JLPT N5~N2 공백 목록 talkversehanja `talkverse_art/words/ja_r6_jlpt_gap.csv`(49807d6c, 새로 2,148·공유 alias_of 1,130) 전달. 인계 시점 r487 완료·r488 발주됨(방 5ab018b8, 「일본어 회화 검수」 08a3b12e, 옛 계정). 리뷰·공개도 uk 가 회차를 모아서 함(사용자 11-09 — 11-09 기준 누적 공개 1,876장). ja 전용 Chrome = M4 `~/chrome-grok-ja` 9230(회화 장면 컷 등 ja 몫 Grok 작업용), 로그인 풀리면 `ssh macmini4 /usr/bin/python3 ~/talkverse-uk/tools/grok_cookie_sync.py 9231 9230`. 전송 버튼이 「보내기」로 바뀜 → ja 사본 `tools/grok_cdp.py` 사용 |
 | PC 생성 서버 | WSL `/root/tts`(venv moss·vox), `D:\tts_test\{run_job.sh,vox_batch.py,moss_batch.py}`, 작업 스케줄러 'TTS job 2060'. **3090 대기열 규칙(D:\gpu_queue) 폐지**(2026-11-07 사용자 지시, gpuq.py 는 항상 "진행 가능" 스텁) |
 
 ## 2. 2026-11-07 에 바꾼 것(사용자 지시)
