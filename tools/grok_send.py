@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Grok 프로젝트 챗에 프롬프트 파일을 보내고 답을 기다려 저장한다. 한도 문구가 뜨면 LIMIT 줄을 출력(세션이 CronCreate 로 재개).
-  /usr/bin/python3 tools/grok_send.py <프롬프트파일> <저장파일> [--tab project/08a3b12e] [--wait 300] [--attach a.png,b.png]
+  /usr/bin/python3 tools/grok_send.py <프롬프트파일> <저장파일> [--tab project/08a3b12e] [--wait 180(상한)] [--attach a.png,b.png]
 출력 마지막 줄: OK <저장파일> | LIMIT <HH:MM 또는 ?> <문구> | TIMEOUT | NOINPUT
 """
 import re, sys, time
@@ -11,7 +11,7 @@ g.BASE = 'http://127.0.0.1:' + os.environ.get('GROK_CDP_PORT', '9230')  # 이 �
 a = sys.argv[1:]
 src, dst = a[0], a[1]
 frag = a[a.index('--tab') + 1] if '--tab' in a else 'project/08a3b12e'
-wait = int(a[a.index('--wait') + 1]) if '--wait' in a else 300
+wait = min(180, int(a[a.index('--wait') + 1]) if '--wait' in a else 180)  # 3분 상한(사용자 지시 2026-11-10 "그록 3분만, 넘으면 대화방 중지 — 토큰 낭비")
 attach = [x for x in a[a.index('--attach') + 1].split(',') if x] if '--attach' in a else []  # 첨부 파일(쉼표 구분, 절대경로) — input[type=file] 에 DOM.setFileInputFiles
 LIMIT_RE = re.compile(r'(한도|limit|제한|rate|너무 많|사용량|초기화|다시 시도|try again|upgrade|SuperGrok)', re.I)
 TIME_RE = re.compile(r'(\d{1,2}):(\d{2})')
@@ -35,7 +35,7 @@ if attach:
     print('attached', len(attach))
 c.ev("document.querySelector('.ProseMirror').focus()")
 c.call('Input.insertText', text=text); time.sleep(1)
-c.ev("(()=>{const b=[...document.querySelectorAll('button')].find(e=>(e.getAttribute('aria-label')||'')==='제출');if(b)b.click()})()")
+c.ev("(()=>{const b=[...document.querySelectorAll('button')].find(e=>/^(제출|보내기)$/.test(e.getAttribute('aria-label')||''));if(b)b.click()})()")
 time.sleep(3)
 left = c.ev("document.querySelector('.ProseMirror').innerText.trim().length")
 if left > 5:
@@ -58,4 +58,6 @@ while time.time() - t0 < wait:
         if not reloaded and len(els[-1]) <= 150:
             c.call('Page.reload'); reloaded = True; time.sleep(9); c = g.CDP(g.tab(frag)); continue
     time.sleep(8)
+import subprocess  # 3분 넘김 → 그 방 생성 중지
+subprocess.run(['/usr/bin/python3', os.path.join(os.path.dirname(os.path.abspath(__file__)), 'grok_stop.py'), frag])
 print('TIMEOUT'); sys.exit(1)

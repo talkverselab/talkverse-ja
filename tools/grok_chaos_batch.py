@@ -19,7 +19,7 @@ for p in picks:
     pr = (tpl.replace('{tag}', ({'simkung': 'S-', 'boost': 'B-'}.get(KIND, 'C-')) + p['id']).replace('{twist}', str(ep['twist'])).replace('{cast}', cast).replace('{scene}', ep['scene'])
           .replace('{idea}', p['idea']).replace('{n}', str(len(ep['turns']))).replace('{level}', ep['region']).replace('{lines}', lines).replace('{{name}}', '{name}'))
     pf = dst.replace('.md', '_prompt.md'); open(pf, 'w', encoding='utf-8').write(pr)
-    r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, dst, '--tab', tab, '--wait', '600'], capture_output=True, text=True)
+    r = subprocess.run(['/usr/bin/python3', os.path.join(ROOT, 'tools/grok_send.py'), pf, dst, '--tab', tab, '--wait', '180'], capture_output=True, text=True)
     last = (r.stdout.strip().splitlines() or [''])[-1]
     if not last.startswith('OK'): print('STOP', p['id'], last, flush=True); sys.exit(1)
     prev = -1
