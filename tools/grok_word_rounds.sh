@@ -32,7 +32,9 @@ P" 2>&1)
   # 보내기: 일본어 사본 grok_cdp.py(「보내기」 버튼 대응, 2026-11-09) — 챗에 실제로 들어갔는지 확인, 아니면 3번까지 재전송
   scp -q ${0:A:h}/grok_cdp.py macmini4:/tmp/ja_grok_cdp.py
   sent=
-  for s in 1 2 3; do
+  # 이미 그 챗에 들어간 회차면 다시 보내지 않는다(RESUME 때)
+  ssh macmini4 "$ENV; /usr/bin/python3 /tmp/ja_grok_cdp.py read \$GROK_CHAT 6000" 2>/dev/null | grep -q "ja_r$R.md" && { sent=1; echo "r$R 이미 발주됨"; }
+  [ -z "$sent" ] && for s in 1 2 3; do
     ssh macmini4 "$ENV; /usr/bin/python3 /tmp/ja_grok_cdp.py send /tmp/ja_msg_next.txt \$GROK_CHAT" 2>&1 | tail -1
     sleep 10
     ssh macmini4 "$ENV; /usr/bin/python3 /tmp/ja_grok_cdp.py read \$GROK_CHAT 3000" 2>/dev/null | grep -q "ja_r$R.md" && { sent=1; break; }
@@ -47,7 +49,16 @@ P" 2>&1)
     sleep 30
   done
   [ -z "$done_" ] && { echo "STOP r$R 20분 안에 완료 없음"; exit 2; }
-  ssh macmini4 "$ENV; python3 tools/grok_art.py auto ja 2>&1 | grep -v -e Deprecat -e getdata | tail -3"
+  # 가져오기: M4 ssh 에서는 GitHub 인증이 안 돼(git pull 128, 2026-11-09) M6 에서 받아 M4 작업 클론으로 넘긴 뒤, 잠금 잡고 pull 없이 ingest
+  git -C ~/talkverse/ja-art pull -q origin main 2>&1 | tail -1
+  ssh macmini4 "git -C $A pull -q --rebase macmini6:talkverse/ja-art main 2>&1 | tail -1; $ENV; /usr/bin/python3 - <<'P' 2>&1 | grep -v -e Deprecat -e getdata | tail -3
+import sys, fcntl
+sys.path.insert(0, 'tools'); import grok_art as a
+_lk = open('/tmp/grok_art.lock', 'w'); fcntl.flock(_lk, fcntl.LOCK_EX)
+_g = a.git
+a.git = lambda c: '' if c.startswith('pull') else _g(c)
+a.ingest('ja')
+P"
   scp -q macmini4:talkverse-uk/docs/art_sheet_ja_latest.jpg $SHEETS/r$R.jpg
   echo "OK r$R"
 done
