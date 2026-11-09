@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
+import '../widgets/legal_links.dart';
 import '../core/l10n.dart';
 import '../core/theme.dart';
 import '../services/account.dart';
@@ -96,6 +97,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     const Center(child: Padding(padding: EdgeInsets.all(24), child: CircularProgressIndicator(color: AppColors.beni)))
                   else
                     for (final p in const ['google', 'naver', 'kakao', 'apple']) Padding(padding: const EdgeInsets.only(bottom: 12), child: _button(p)),
+                  // 로그인 동의 안내(출시 점검 2026-11-09)
+                  const SizedBox(height: 4),
+                  LegalLinks(lead: tr('로그인하면 이용약관에 동의하고, 개인정보처리방침에 따른 정보(이메일·이름·계정 ID) 수집에 동의하는 것으로 봅니다.')),
                   if (error != null) ...[
                     const SizedBox(height: 8),
                     Text(error!, textAlign: TextAlign.center, style: const TextStyle(color: Colors.redAccent, fontSize: 13)),

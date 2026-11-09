@@ -251,7 +251,7 @@ class _Script extends StatelessWidget {
                         if (on && t.note.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 4), child: Text('💡 ${t.note}', style: const TextStyle(fontSize: 11, color: AppColors.beniDeep, height: 1.35))),
                       ]),
                     ),
-                    IconButton(
+                    IconButton(tooltip: tr('듣기'), 
                       visualDensity: VisualDensity.compact,
                       onPressed: () => onSpeak(t),
                       icon: Icon(Icons.volume_up_outlined, size: 18, color: on ? AppColors.beni : AppColors.sumi),
@@ -353,7 +353,7 @@ class _Caption extends StatelessWidget {
               if (turn.lemmas.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 8), child: LemmaChips(turn: turn, compact: !wide)),
             ]),
           ),
-          IconButton(onPressed: onSpeak, icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 26)),
+          IconButton(tooltip: tr('듣기'), onPressed: onSpeak, icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 26)),
         ]),
       ),
     );

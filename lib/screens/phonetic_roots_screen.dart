@@ -466,11 +466,11 @@ class _FamilySheet extends StatelessWidget {
                     ],
                   ),
                 ),
-                IconButton(
+                IconButton(tooltip: tr('듣기'), 
                   icon: const Icon(Icons.volume_up, color: AppColors.beni),
                   onPressed: () => TtsService.instance.speak(root.on),
                 ),
-                IconButton(
+                IconButton(tooltip: tr('닫기'), 
                   icon: const Icon(Icons.close, color: AppColors.sumi),
                   onPressed: () => Navigator.pop(context),
                 ),

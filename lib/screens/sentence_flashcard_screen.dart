@@ -288,7 +288,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
                           const SizedBox(width: 8),
                           _StateChip(state: state),
                           if (showJaSide)
-                            IconButton(
+                            IconButton(tooltip: tr('듣기'), 
                               icon: const Icon(Icons.volume_up,
                                   color: AppColors.beni),
                               onPressed: () => TtsService.instance.speakAs(

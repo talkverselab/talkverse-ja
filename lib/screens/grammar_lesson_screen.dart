@@ -238,7 +238,7 @@ class _ParticleTileState extends State<_ParticleTile> {
                                       ],
                                     ),
                                   ),
-                                  IconButton(
+                                  IconButton(tooltip: tr('듣기'), 
                                     icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 20),
                                     onPressed: () => TtsService.instance.speak(ex['ja'] as String),
                                   ),

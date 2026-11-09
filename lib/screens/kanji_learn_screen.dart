@@ -174,15 +174,15 @@ class _Bottom extends StatelessWidget {
       decoration: const BoxDecoration(color: AppColors.washi, border: Border(top: BorderSide(color: AppColors.line))),
       child: Column(mainAxisSize: MainAxisSize.min, children: [
         Row(children: [
-          IconButton(onPressed: idx > 0 ? onPrev : null, icon: const Icon(Icons.chevron_left), color: AppColors.sumi),
+          IconButton(tooltip: tr('이전'), onPressed: idx > 0 ? onPrev : null, icon: const Icon(Icons.chevron_left), color: AppColors.sumi),
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8),
               child: BrushDivider(height: 4, color: AppColors.kin.withValues(alpha: 0.4)),
             ),
           ),
-          IconButton(onPressed: onSpeak, icon: const Icon(Icons.volume_up), color: AppColors.beni),
-          IconButton(onPressed: !last ? onNext : null, icon: const Icon(Icons.chevron_right), color: AppColors.sumi),
+          IconButton(tooltip: tr('듣기'), onPressed: onSpeak, icon: const Icon(Icons.volume_up), color: AppColors.beni),
+          IconButton(tooltip: tr('다음'), onPressed: !last ? onNext : null, icon: const Icon(Icons.chevron_right), color: AppColors.sumi),
         ]),
         if (last || allSeen)
           SizedBox(

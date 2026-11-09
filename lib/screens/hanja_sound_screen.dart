@@ -402,14 +402,14 @@ class _FamilySheet extends StatelessWidget {
                     ],
                   ),
                 ),
-                IconButton(
+                IconButton(tooltip: tr('듣기'), 
                   icon: const Icon(Icons.volume_up, color: AppColors.beni),
                   onPressed: () {
                     final on = group.rep.on;
                     if (on.isNotEmpty) TtsService.instance.speak(on.first.reading);
                   },
                 ),
-                IconButton(
+                IconButton(tooltip: tr('닫기'), 
                   icon: const Icon(Icons.close, color: AppColors.sumi),
                   onPressed: () => Navigator.pop(context),
                 ),

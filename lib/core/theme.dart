@@ -38,7 +38,7 @@ class AppColors {
 
   // 사이트 토큰 그대로
   static const Color line = Color(0xFFE6EBF1);
-  static const Color muted = Color(0xFF6B7C93);
+  static const Color muted = Color(0xFF627389); // 흰 바탕 대비 4.85:1(AA, 출시 점검 2026-11-09 — 이전 6B7C93 은 4.26)
 
   // 가나 행 컬러 (50음도 시각 학습용) — 학습 의미가 있어 그대로
   static const Color kanaVowel = Color(0xFFE53935);

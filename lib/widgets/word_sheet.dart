@@ -59,7 +59,7 @@ class _WordSheetState extends State<WordSheet> {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Expanded(child: FuriganaText(segs: w.segs, fontSize: 34)),
-                    IconButton(
+                    IconButton(tooltip: tr('듣기'), 
                       icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 28),
                       onPressed: () => TtsService.instance.speak(w.kana),
                     ),

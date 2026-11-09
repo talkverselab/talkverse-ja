@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../widgets/legal_links.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
 import '../main.dart';
@@ -72,8 +73,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
           ],
           _SettingItem(
             icon: Icons.workspace_premium_outlined,
-            title: tr('평생 이용권'),
-            subtitle: Account.has('ja') || Purchase.owns('ja') ? tr('보유 중 — 맞춤 회화 무제한') : tr('맞춤 회화 무제한 · 구매 또는 이전 구매 복원'),
+            title: tr('이용권'),
+            subtitle: Account.has('ja') || Purchase.owns('ja') ? tr('보유 중 — 맞춤 회화 무제한') : tr('1개월·3개월·1년·평생 · 구매 또는 이전 구매 복원'),
             onTap: () => PaywallScreen.show(context),
           ),
         ]),
@@ -205,6 +206,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _SettingsGroup(items: [
             _SettingItem(icon: Icons.help_outline, title: tr('앱 사용법'), subtitle: tr('처음이라면 이 순서로'), onTap: () => openPane(context, (_) => const AppGuideScreen())),
             _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자를 나누는 기준'), onTap: () => openPane(context, (_) => const AboutScreen())),
+            _SettingItem(icon: Icons.description_outlined, title: tr('이용약관'), subtitle: 'talkverse.uk/terms', onTap: () => Legal.open(Legal.terms)),
+            _SettingItem(icon: Icons.privacy_tip_outlined, title: tr('개인정보처리방침'), subtitle: 'talkverse.uk/talkverse/ja/privacy', onTap: () => Legal.open(Legal.privacy)),
             _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha'),
             _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어유니버스 · 2026')),
           ]),

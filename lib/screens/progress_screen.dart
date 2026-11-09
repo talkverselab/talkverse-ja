@@ -132,7 +132,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
         ),
         centerTitle: true,
         actions: [
-          IconButton(
+          IconButton(tooltip: tr('새로 고침'), 
             icon: const Icon(Icons.refresh, color: AppColors.sumi),
             onPressed: () {
               setState(() => _loading = true);

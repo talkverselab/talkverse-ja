@@ -329,7 +329,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          IconButton(
+                          IconButton(tooltip: tr('듣기'), 
                             icon: const Icon(Icons.volume_up, color: AppColors.beni),
                             onPressed: () => TtsService.instance.speak(card.kana.isNotEmpty ? card.kana : card.front),
                           ),

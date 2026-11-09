@@ -328,7 +328,7 @@ class _KanjiInfoBodyState extends State<KanjiInfoBody> {
                 ],
               ),
             ),
-            IconButton(
+            IconButton(tooltip: tr('듣기'), 
               icon: const Icon(Icons.volume_up, color: AppColors.beni),
               onPressed: () {
                 final kun = e?.kun;

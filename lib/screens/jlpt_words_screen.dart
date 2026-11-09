@@ -139,7 +139,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                 hintStyle: const TextStyle(color: AppColors.sumiLight, fontSize: 13),
                 prefixIcon: const Icon(Icons.search, color: AppColors.beni),
                 suffixIcon: searching
-                    ? IconButton(
+                    ? IconButton(tooltip: tr('닫기'), 
                         icon: const Icon(Icons.close, size: 18, color: AppColors.sumiLight),
                         onPressed: () {
                           _ctrl.clear();

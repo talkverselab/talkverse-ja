@@ -1,5 +1,6 @@
 // Talkverse 공통 복습 화면 — 오늘 할 카드 칸 · 전체 화면 세션 · 빠른 분류 · 설정.
 // 앱은 카드 내용을 ReviewFaceResolver 로 넘긴다(id → 앞/뒷면). 색은 앱 테마(Theme.of) 를 따른다.
+import '../core/l10n.dart';
 import 'dart:io';
 import '../services/content_sync.dart';
 
@@ -233,7 +234,7 @@ class _ReviewSessionScreenState extends State<ReviewSessionScreen> {
                       child: Text('💡 ${item!.hint}', textAlign: TextAlign.center, style: TextStyle(color: cs.tertiary)),
                     ),
                   if (widget.speak != null)
-                    IconButton(icon: const Icon(Icons.volume_up), onPressed: () => widget.speak!(id, face)),
+                    IconButton(tooltip: tr('듣기'), icon: const Icon(Icons.volume_up), onPressed: () => widget.speak!(id, face)),
                 ],
               ]),
             ),
@@ -372,7 +373,7 @@ class ReviewSettingsSection extends StatelessWidget {
           subtitle: Text(svc.reminderMinutes == null
               ? ReviewText.t('끔', 'Off')
               : '${(svc.reminderMinutes! ~/ 60).toString().padLeft(2, '0')}:${(svc.reminderMinutes! % 60).toString().padLeft(2, '0')}'),
-          trailing: svc.reminderMinutes == null ? null : IconButton(icon: const Icon(Icons.close), onPressed: () async {
+          trailing: svc.reminderMinutes == null ? null : IconButton(tooltip: tr('닫기'), icon: const Icon(Icons.close), onPressed: () async {
             await svc.setReminder(null);
             onReminderChanged?.call(null);
           }),

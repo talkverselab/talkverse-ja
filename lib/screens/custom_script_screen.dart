@@ -80,7 +80,7 @@ class _CustomScriptScreenState extends State<CustomScriptScreen> {
         if (Entitlement.premium) {
           _snack(tr('이용권은 있지만 서버가 확인하지 못했어요. 로그인 상태를 확인해 주세요'), AppColors.kinDeep);
         } else {
-          _snack(tr('첫 1편은 무료예요. 다음 편부터는 평생 이용권이 필요해요'), AppColors.kinDeep);
+          _snack(tr('첫 1편은 무료예요. 다음 편부터는 이용권이 필요해요'), AppColors.kinDeep);
           Entitlement.showPaywall(context);
         }
       case 'offline':
@@ -342,7 +342,7 @@ class _Row extends StatelessWidget {
             ? const Icon(Icons.chevron_right, color: AppColors.muted)
             : item.isWorking
                 ? const SizedBox(width: 18, height: 18, child: CircularProgressIndicator(strokeWidth: 2, color: AppColors.ai))
-                : IconButton(icon: const Icon(Icons.close, size: 18, color: AppColors.muted), onPressed: onRemove),
+                : IconButton(tooltip: tr('닫기'), icon: const Icon(Icons.close, size: 18, color: AppColors.muted), onPressed: onRemove),
       ),
     );
   }
