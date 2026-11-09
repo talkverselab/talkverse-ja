@@ -9,6 +9,7 @@ for i in $(seq 1 $N); do
   out=$(ssh macmini4 "$ENV; /usr/bin/python3 - <<'P'
 import sys, json
 sys.path.insert(0, 'tools'); import grok_art as a
+import fcntl; _lk = open('/tmp/grok_art.lock', 'w'); fcntl.flock(_lk, fcntl.LOCK_EX)  # uk 의 ko 회차와 art_state.json 을 같이 쓴다 — CLI 와 같은 잠금(2026-11-09 uk 안내)
 a.push = lambda: a.git('pull -q --rebase')
 a.grok_send = lambda t: open('/tmp/ja_msg_next.txt', 'w', encoding='utf-8').write(t)
 _w = a.words; _sk = set(a.load_state()['ja'].get('skip', []))  # 이미 그림이 있는 단어는 다시 그리지 않는다(2026-11-06: 41어가 기존 그림을 덮음)
