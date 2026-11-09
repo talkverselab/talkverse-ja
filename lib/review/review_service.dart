@@ -1,4 +1,4 @@
-// Talkverse 공통 복습 서비스 — 엔진 + 저장(기기 JSON 파일) + 설정(SharedPreferences).
+// Talkverse 공통 복습 서비스 — 엔진 + 저장(기기 JSON 파일) + 설정(Prefs).
 // 앱은 시작 때 ReviewService.instance.load() 한 번, 화면은 changes(ValueNotifier) 를 듣는다.
 // 저장 파일: <앱 문서 폴더>/review_items.json  {v:1, items:{id:{l,d,r,x,t,h,i}}, started:{yyyy-mm-dd:n}}
 import 'dart:async';
@@ -7,7 +7,7 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import 'review_engine.dart';
 
@@ -44,7 +44,7 @@ class ReviewService {
       }
     } catch (_) {}
     try {
-      final p = await SharedPreferences.getInstance();
+      final p = await Prefs.getInstance();
       newPerDay = p.getInt('review_new_per_day') ?? 20;
       direction = ReviewDirection.values[p.getInt('review_direction') ?? 0];
       reminderMinutes = p.getInt('review_reminder');
@@ -84,7 +84,7 @@ class ReviewService {
 
   /// 옛 '알아요' 상태 이전 — 앱 업데이트 때 한 번(이미 한 적 있으면 건너뜀).
   Future<void> migrateKnownOnce(Iterable<String> ids) async {
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
     if (p.getBool('review_migrated_v1') ?? false) return;
     for (final id in ids) {
       engine.migrateKnown(item(id));
@@ -105,19 +105,19 @@ class ReviewService {
 
   Future<void> setNewPerDay(int n) async {
     newPerDay = n;
-    (await SharedPreferences.getInstance()).setInt('review_new_per_day', n);
+    (await Prefs.getInstance()).setInt('review_new_per_day', n);
     changes.value++;
   }
 
   Future<void> setDirection(ReviewDirection d) async {
     direction = d;
-    (await SharedPreferences.getInstance()).setInt('review_direction', d.index);
+    (await Prefs.getInstance()).setInt('review_direction', d.index);
     changes.value++;
   }
 
   Future<void> setReminder(int? minutes) async {
     reminderMinutes = minutes;
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
     minutes == null ? p.remove('review_reminder') : p.setInt('review_reminder', minutes);
     changes.value++;
   }

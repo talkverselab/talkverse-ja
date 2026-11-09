@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:drift/drift.dart';
 
 import '../data/db/app_database.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../core/l10n.dart';
 
 /// 후리가나 분절 1개 — text 위에 reading (null 이면 가나/기호 그대로)

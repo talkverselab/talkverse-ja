@@ -1,3 +1,4 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 import 'dart:math';
 
@@ -32,7 +33,7 @@ class _GrammarLessonScreenState extends State<GrammarLessonScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/grammar/particles.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/grammar/particles.json'));
     if (!mounted) return;
     setState(() => _data = json.decode(raw) as Map<String, dynamic>);
   }

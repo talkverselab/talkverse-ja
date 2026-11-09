@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../widgets/legal_links.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../services/learner_prefs.dart';
 import '../services/account.dart';
 import '../services/purchase.dart';
@@ -51,7 +51,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     await appDb.delete(appDb.userProgress).go();
     await appDb.delete(appDb.kanjiProgress).go();
     await appDb.delete(appDb.stageResults).go();
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     for (final k in prefs.getKeys().where((k) => k.startsWith('card:')).toList()) {
       await prefs.remove(k);
     }
@@ -189,6 +189,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
           _SectionTitle(tr('설정')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
+            // 통합 앱(Talkverse)에서만: 다른 언어 앱으로(2026-11-09)
+            if (switchLanguage != null)
+              _SettingItem(icon: Icons.swap_horiz, title: tr('다른 언어 배우기'), subtitle: tr('Talkverse 의 다른 언어로 이동'), onTap: switchLanguage!),
             _SettingItem(
                 icon: Icons.language,
                 title: tr('언어 / Language'),

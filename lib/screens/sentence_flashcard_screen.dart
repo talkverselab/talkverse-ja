@@ -1,10 +1,10 @@
 import 'package:drift/drift.dart' hide Column;
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/theme.dart';
 import '../data/db/app_database.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
@@ -46,7 +46,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
   bool _flipped = false;
   bool _koFirst = true;
   bool _showHint = true;
-  SharedPreferences? _prefs;
+  Prefs? _prefs;
 
   @override
   void initState() {
@@ -55,7 +55,7 @@ class _SentenceFlashcardScreenState extends State<SentenceFlashcardScreen> {
   }
 
   Future<void> _load() async {
-    _prefs = await SharedPreferences.getInstance();
+    _prefs = await Prefs.getInstance();
     _koFirst = _prefs!.getBool(_kKoFirst) ?? true;
     _showHint = _prefs!.getBool(_kShowHint) ?? true;
 

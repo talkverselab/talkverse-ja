@@ -1,3 +1,4 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
@@ -143,14 +144,14 @@ class KanjiIndexService {
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    final raw = await rootBundle.loadString('assets/data/kanji/kanji_db.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/kanji/kanji_db.json'));
     final json = jsonDecode(raw) as Map<String, dynamic>;
     _all = (json['entries'] as List)
         .map((e) => KanjiEntry.fromDbJson(e as Map<String, dynamic>))
         .toList();
     // 예시 단어 (구 kanji_index.json) 병합 — 한국어 뜻 있는 회화 단어
     try {
-      final raw2 = await rootBundle.loadString('assets/data/kanji/kanji_index.json');
+      final raw2 = await rootBundle.loadString(assetPath('assets/data/kanji/kanji_index.json'));
       final j2 = jsonDecode(raw2) as Map<String, dynamic>;
       final byChar = {for (final e in _all) e.char: e};
       final merged = <String, KanjiEntry>{};

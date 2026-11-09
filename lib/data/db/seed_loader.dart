@@ -1,9 +1,10 @@
+import '../../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:csv/csv.dart';
 import 'package:drift/drift.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../../core/prefs.dart';
 
 import 'app_database.dart';
 
@@ -17,7 +18,7 @@ class SeedLoader {
   /// 옛 키(`db_seeded_v7`·`words_seeded_v3`)는 더 쓰지 않는다 — 번호는 version.json 한 곳에서만 올린다.
   static const _kDbVersion = 'db_version';
   Future<void> seedIfNeeded() async {
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     final bundled = await bundledVersion();
     if (prefs.getInt(_kDbVersion) == bundled) return;
     await _seedKanji();
@@ -30,7 +31,7 @@ class SeedLoader {
 
   static Future<int> bundledVersion() async {
     try {
-      final j = json.decode(await rootBundle.loadString('assets/data/version.json')) as Map<String, dynamic>;
+      final j = json.decode(await rootBundle.loadString(assetPath('assets/data/version.json'))) as Map<String, dynamic>;
       return (j['db'] as num).toInt();
     } catch (_) {
       return 0;
@@ -47,14 +48,14 @@ class SeedLoader {
   }
 
   Future<void> _seedKanji() async {
-    final raw = await rootBundle.loadString('assets/data/kanji/kanji_db.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/kanji/kanji_db.json'));
     final data = json.decode(raw) as Map<String, dynamic>;
     final entries = (data['entries'] as List?) ?? [];
 
     // 한국 한자 crossref (ko_hanja) 병합
     final koMap = <String, String>{};
     try {
-      final hraw = await rootBundle.loadString('assets/data/hanja/hanja_crossref.json');
+      final hraw = await rootBundle.loadString(assetPath('assets/data/hanja/hanja_crossref.json'));
       final hdata = json.decode(hraw) as Map<String, dynamic>;
       for (final e in (hdata['entries'] as List? ?? []).whereType<Map>()) {
         final ja = e['ja_kanji'] as String?;
@@ -111,7 +112,7 @@ class SeedLoader {
 
   /// JLPT 어휘 + 후리가나 분절 시딩
   Future<void> _seedJlptWords() async {
-    final raw = await rootBundle.loadString('assets/data/words/words_jlpt.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/words/words_jlpt.json'));
     final data = json.decode(raw) as Map<String, dynamic>;
     final entries = (data['entries'] as List?) ?? [];
     final words = <Insertable<JlptWordRow>>[];
@@ -158,7 +159,7 @@ class SeedLoader {
   }
 
   Future<void> _seedWords() async {
-    final raw = await rootBundle.loadString('assets/data/freq/lang_ja_with_regions.csv');
+    final raw = await rootBundle.loadString(assetPath('assets/data/freq/lang_ja_with_regions.csv'));
     final rows = const CsvToListConverter(eol: '\n').convert(raw);
     final batch = <Insertable<WordRow>>[];
     for (var i = 1; i < rows.length; i++) {
@@ -181,7 +182,7 @@ class SeedLoader {
     for (final level in ['L1', 'L2', 'L3']) {
       final Map<String, dynamic> data;
       try {
-        final raw = await rootBundle.loadString('assets/data/dialogues/$level.json');
+        final raw = await rootBundle.loadString(assetPath('assets/data/dialogues/$level.json'));
         data = json.decode(raw) as Map<String, dynamic>;
       } catch (_) {
         continue;

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/theme.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../services/kanji_index_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../core/l10n.dart';

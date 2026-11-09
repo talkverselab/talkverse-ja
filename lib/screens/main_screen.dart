@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../core/l10n.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../review/review_engine.dart';
 import '../review/review_ui.dart';
 import '../services/art_service.dart';

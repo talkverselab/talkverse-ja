@@ -1,3 +1,4 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -50,7 +51,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
   }
 
   Future<void> _load() async {
-    final raw = await rootBundle.loadString('assets/data/vocab/gairaigo.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/vocab/gairaigo.json'));
     final j = json.decode(raw) as Map<String, dynamic>;
     final branches = <_Branch>[];
     for (final b in (j['branches'] as List).cast<Map<String, dynamic>>()) {

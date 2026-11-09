@@ -1,3 +1,4 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart' show rootBundle;
@@ -77,7 +78,7 @@ class DeckService {
     final out = <Deck>[];
     for (final f in _files) {
       try {
-        final raw = await rootBundle.loadString('assets/data/decks/$f');
+        final raw = await rootBundle.loadString(assetPath('assets/data/decks/$f'));
         out.add(Deck.fromJson(json.decode(raw) as Map<String, dynamic>));
       } catch (_) {}
     }

@@ -1,3 +1,4 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -55,7 +56,7 @@ class _PhoneticRootsScreenState extends State<PhoneticRootsScreen> {
 
   Future<void> _load() async {
     await KanjiIndexService.instance.ensureLoaded();
-    final raw = await rootBundle.loadString('assets/data/kanji/phonetic_ja.json');
+    final raw = await rootBundle.loadString(assetPath('assets/data/kanji/phonetic_ja.json'));
     final j = json.decode(raw) as Map<String, dynamic>;
     final rootsJson = (j['roots'] as Map).cast<String, dynamic>();
     final charsJson = (j['chars'] as Map).cast<String, dynamic>();

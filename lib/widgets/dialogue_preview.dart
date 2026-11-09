@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/l10n.dart';
 import '../core/platform.dart';
@@ -67,7 +67,7 @@ Future<List<PreviewItem>> buildPreview(Dialogue d) async {
 
 /// 편을 처음 열면 한 번 띄운다.
 Future<void> maybeShowDialoguePreview(BuildContext context, Dialogue d) async {
-  final p = await SharedPreferences.getInstance();
+  final p = await Prefs.getInstance();
   final key = 'preview_seen_${d.id}';
   if (p.getBool(key) ?? false) return;
   await p.setBool(key, true);

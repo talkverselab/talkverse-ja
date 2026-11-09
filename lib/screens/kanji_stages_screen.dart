@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../core/pane.dart';
 import '../core/theme.dart';
-import '../main.dart';
+import '../embed.dart';
 import '../services/kanji_index_service.dart';
 import '../widgets/japanese_decor.dart';
 import 'kanji_learn_screen.dart';

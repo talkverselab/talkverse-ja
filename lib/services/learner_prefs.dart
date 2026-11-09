@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 /// 학습자 프로필(「나」) — 2026-11-02 사용자 지시 "성별이 정해지면 나가 나오는 거니까".
 /// 회화의 화자 A = 학습자. 성별 → A 의 목소리(나중엔 장면 그림의 A 도), 이름 → `{name}` 자리.
@@ -15,7 +15,7 @@ class LearnerPrefs {
   static final ValueNotifier<bool> furigana = ValueNotifier(false);
 
   static Future<void> load() async {
-    final p = await SharedPreferences.getInstance();
+    final p = await Prefs.getInstance();
     name.value = p.getString(_kName) ?? '';
     gender.value = p.getString(_kGender) ?? 'male';
     furigana.value = p.getBool(_kFurigana) ?? false;
@@ -23,17 +23,17 @@ class LearnerPrefs {
 
   static Future<void> setFurigana(bool v) async {
     furigana.value = v;
-    (await SharedPreferences.getInstance()).setBool(_kFurigana, v);
+    (await Prefs.getInstance()).setBool(_kFurigana, v);
   }
 
   static Future<void> setName(String v) async {
     name.value = v.trim();
-    (await SharedPreferences.getInstance()).setString(_kName, name.value);
+    (await Prefs.getInstance()).setString(_kName, name.value);
   }
 
   static Future<void> setGender(String v) async {
     gender.value = v == 'female' ? 'female' : 'male';
-    (await SharedPreferences.getInstance()).setString(_kGender, gender.value);
+    (await Prefs.getInstance()).setString(_kGender, gender.value);
   }
 
   static bool get isFemale => gender.value == 'female';

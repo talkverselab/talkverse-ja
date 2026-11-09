@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show debugPrint;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 /// 한자유니버스 공용 DB(Cloudflare D1 `hanja-db`, Worker `hanja-api`) 읽기 — 그림(GIF)·외우는 팁·어원·구성·소리 가족.
 ///
@@ -12,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// - 그림: 일본 자형(jp) ≠ 한국 정자(kr)면 `gif_jp`(상태 ok)만, 같으면 `gif`(ok). 자형이 다른데 일본어 GIF 가 없으면
 ///   정자 GIF 로 대신하지 않는다(사용자 지시 2026-10-11). 리뷰 승인(ok) 아닌 그림은 보여 주지 않는다.
 /// - 팁·어원은 `hanja_mnemonic`(lang=ko). form 은 kr/cn 뿐이라 jp 자형이 cn 과 같으면 cn, 아니면 kr 을 쓴다.
-/// - 기기 캐시: SharedPreferences 에 글자별 JSON(7일). 오프라인·실패면 null → 화면은 번들 데이터만으로 동작.
+/// - 기기 캐시: Prefs 에 글자별 JSON(7일). 오프라인·실패면 null → 화면은 번들 데이터만으로 동작.
 class HanjaSharedService {
   HanjaSharedService._();
   static final HanjaSharedService instance = HanjaSharedService._();
@@ -25,7 +25,7 @@ class HanjaSharedService {
 
   final Map<String, HanjaInfo?> _mem = {};
   final Map<String, Future<HanjaInfo?>> _inflight = {};
-  SharedPreferences? _prefs;
+  Prefs? _prefs;
 
   /// 한자 1자(일본 자형 또는 정자)의 공용 데이터. 없거나 네트워크 실패면 null.
   Future<HanjaInfo?> info(String ch) {
@@ -37,7 +37,7 @@ class HanjaSharedService {
   }
 
   Future<HanjaInfo?> _load(String ch) async {
-    _prefs ??= await SharedPreferences.getInstance();
+    _prefs ??= await Prefs.getInstance();
     final key = 'hanja_shared2:$ch'; // v2 = 부품 구조(base·code·hun) 포함
     final cached = _prefs!.getString(key);
     if (cached != null) {

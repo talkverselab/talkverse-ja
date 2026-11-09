@@ -1,8 +1,8 @@
+import '../core/embed_env.dart';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:path_provider/path_provider.dart';
 
 /// 한자유니버스 모핑 그림(그림 → 글자) 기기 캐시 — 한자앱 `lib/data/morph_cache.dart` 복제(한자 세션 지시 2026-11-02).
 /// 파일은 `https://gif.talkverse.uk/<이름>`. 앱은 `<stem>_768.webp`(폰) / `_1024.webp`(짧은 변 600pt 이상)를 먼저 쓰고 없으면 .gif.
@@ -19,7 +19,7 @@ class MorphCache {
 
   static Future<Directory> _root() async {
     if (_dir != null) return _dir!;
-    final d = Directory('${(await getApplicationSupportDirectory()).path}/morph');
+    final d = Directory('${await dataDir()}/morph');
     if (!await d.exists()) await d.create(recursive: true);
     return _dir = d;
   }

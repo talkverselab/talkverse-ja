@@ -1,9 +1,9 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show debugPrint;
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:path_provider/path_provider.dart';
 
 /// 한자유니버스 가족 DB — 한자 세션 지시(2026-11-02) "GIF DB 와 가족 DB 를 일본어앱에 그대로".
 /// - 전체 글자표(`hanja_chars` ≈ 4,200행, 5쪽)를 앱 지원 폴더에 7일 캐시 → 소리 가족(`phonetic` 코드가 같은 글자 묶음, 한자앱 `families`).
@@ -92,12 +92,12 @@ class HanjaFamilyService {
   Future<void> _load() async {
     // 번들(책 가족·헷갈리는 쌍)
     try {
-      final b = json.decode(await rootBundle.loadString('assets/data/hanja/book.json')) as Map<String, dynamic>;
+      final b = json.decode(await rootBundle.loadString(assetPath('assets/data/hanja/book.json'))) as Map<String, dynamic>;
       for (final f in (b['families'] as List? ?? const [])) {
         final m = f as Map<String, dynamic>;
         book.add(BookFamily(sound: m['sound'] as String? ?? '', page: (m['page'] as num?)?.toInt() ?? 0, codes: (m['chars'] as List? ?? const []).cast<String>()));
       }
-      final c = json.decode(await rootBundle.loadString('assets/data/hanja/confuse.json')) as Map<String, dynamic>;
+      final c = json.decode(await rootBundle.loadString(assetPath('assets/data/hanja/confuse.json'))) as Map<String, dynamic>;
       for (final p in (c['pairs'] as List? ?? const [])) {
         final m = p as Map<String, dynamic>;
         final a = m['a'] as Map<String, dynamic>, bb = m['b'] as Map<String, dynamic>;
@@ -110,7 +110,7 @@ class HanjaFamilyService {
     List<dynamic>? rows;
     File? cache;
     try {
-      cache = File('${(await getApplicationSupportDirectory()).path}/hanja_chars_v1.json');
+      cache = File('${await dataDir()}/hanja_chars_v1.json');
       if (await cache.exists() && DateTime.now().difference(await cache.lastModified()) < _ttl) {
         rows = json.decode(await cache.readAsString()) as List<dynamic>;
       }
@@ -147,7 +147,7 @@ class HanjaFamilyService {
     }
     // 앱 자체 발음부 판정(assets/data/kanji/phonetic_ja.json: chars[글자] = {phonetic: 뿌리 글자}) — 공용 DB 에 없는 쌍을 더한다
     try {
-      final pj = json.decode(await rootBundle.loadString('assets/data/kanji/phonetic_ja.json')) as Map<String, dynamic>;
+      final pj = json.decode(await rootBundle.loadString(assetPath('assets/data/kanji/phonetic_ja.json'))) as Map<String, dynamic>;
       final chars = pj['chars'] as Map<String, dynamic>? ?? const {};
       chars.forEach((glyph, v) {
         final rootGlyph = (v as Map)['phonetic'] as String?;

@@ -1,7 +1,8 @@
+import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import 'content_sync.dart';
 import 'learner_prefs.dart';
@@ -189,7 +190,7 @@ class DialogueService {
   String? get lastOpenedId => _lastOpened;
   Future<void> setLastOpened(String id) async {
     _lastOpened = id;
-    (await SharedPreferences.getInstance()).setString(_prefLast, id);
+    (await Prefs.getInstance()).setString(_prefLast, id);
   }
 
   final Map<String, Dialogue> _byId = {};
@@ -200,16 +201,17 @@ class DialogueService {
   String get level => _level;
   Future<void> setLevel(String lv) async {
     _level = lv;
-    (await SharedPreferences.getInstance()).setString(_prefLevel, lv);
+    (await Prefs.getInstance()).setString(_prefLevel, lv);
   }
 
   Future<void> ensureLoaded() async {
     if (_loaded) return;
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     _level = prefs.getString(_prefLevel) ?? 'R1';
     _lastOpened = prefs.getString(_prefLast);
     final manifest = await AssetManifest.loadFromAssetBundle(rootBundle);
-    final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(p));
+    // 매니페스트 키는 통합 앱이면 packages/japanese_universe/ 가 붙어 있다 — 비교만 접두를 떼고, 읽기는 키 그대로
+    final paths = manifest.listAssets().where((p) => RegExp(r'^assets/data/dialogues/R[0-4]/[^/]+/[^/]+\.json$').hasMatch(stripAssetPrefix(p)));
     for (final p in paths) {
       try {
         final d = Dialogue.fromJson(json.decode(await rootBundle.loadString(p)) as Map<String, dynamic>);

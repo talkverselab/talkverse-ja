@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../services/content_sync.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import '../core/prefs.dart';
 
 import '../core/pane.dart';
 import '../core/theme.dart';
@@ -34,7 +34,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
 
   Future<void> _load() async {
     await DeckService.instance.ensureLoaded();
-    final prefs = await SharedPreferences.getInstance();
+    final prefs = await Prefs.getInstance();
     final known = <String, int>{};
     for (final d in DeckService.instance.decks) {
       known[d.id] = d.cards.where((c) => prefs.getInt('card:${c.id}') == 2).length;
@@ -159,7 +159,7 @@ class _DeckRow extends StatelessWidget {
   }
 }
 
-/// 덱 카드 세션 — 앞면 일본어(가나) → 뒤집으면 뜻. 3단계 평가는 SharedPreferences('card:{id}') 저장.
+/// 덱 카드 세션 — 앞면 일본어(가나) → 뒤집으면 뜻. 3단계 평가는 Prefs('card:{id}') 저장.
 class DeckSessionScreen extends StatefulWidget {
   final Deck deck;
   const DeckSessionScreen({super.key, required this.deck});
@@ -173,7 +173,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
   bool _flipped = false;
   bool _reverse = false; // false = 앞면 한국어(뜻·그림) → 일본어 맞히기(기본), true = 일본어 앞면
   final List<int> _retry = []; // 틀린 카드는 세션 끝에 다시
-  SharedPreferences? _prefs;
+  Prefs? _prefs;
   final Map<String, int> _states = {}; // 0 몰라요 1 보통 2 알아요
 
   @override
@@ -183,7 +183,7 @@ class _DeckSessionScreenState extends State<DeckSessionScreen> {
   }
 
   Future<void> _load() async {
-    _prefs = await SharedPreferences.getInstance();
+    _prefs = await Prefs.getInstance();
     if (!mounted) return;
     setState(() {
       for (final c in widget.deck.cards) {

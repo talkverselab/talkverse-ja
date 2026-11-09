@@ -441,6 +441,9 @@ const Map<String, String> kDictEn = {
   // 정가 표기(2026-11-09)
   '출시 기념 {0}% 할인': 'Launch offer {0}% off',
   '정가': 'Regular price',
+  // 통합 앱(2026-11-09)
+  '다른 언어 배우기': 'Learn another language',
+  'Talkverse 의 다른 언어로 이동': 'Switch to another Talkverse language',
 };
 
 const Map<String, String> kDictJa = {
@@ -835,6 +838,9 @@ const Map<String, String> kDictJa = {
   // 정가 표기(2026-11-09)
   '출시 기념 {0}% 할인': 'リリース記念 {0}%オフ',
   '정가': '定価',
+  // 통합 앱(2026-11-09)
+  '다른 언어 배우기': '他の言語を学ぶ',
+  'Talkverse 의 다른 언어로 이동': 'Talkverse の他の言語へ',
 };
 
 const Map<String, String> kDictZh = {
@@ -1229,4 +1235,7 @@ const Map<String, String> kDictZh = {
   // 정가 표기(2026-11-09)
   '출시 기념 {0}% 할인': '上线优惠 {0}%',
   '정가': '原价',
+  // 통합 앱(2026-11-09)
+  '다른 언어 배우기': '学习其他语言',
+  'Talkverse 의 다른 언어로 이동': '切换到 Talkverse 的其他语言',
 };
