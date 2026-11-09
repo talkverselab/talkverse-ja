@@ -10,15 +10,18 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'account.dart';
 
 /// 판매 상품 하나(가격은 스토어가 정한다 — [krw] 는 스토어 가격을 못 받았을 때의 참고가).
-/// 가격·상품 ID 규칙 = Talkverse 공통(2026-11-09 사용자 결정): 언어 1개 `lang_<코드>_1m`·`_3m`·`_1y`(자동 갱신 구독)·`_life`(비소모성),
+/// 가격·상품 ID 규칙 = Talkverse 공통(2026-11-09 사용자 최종 확정, ~/talkverse/PRICING.md 앱 정가/할인가): 언어 1개 `lang_<코드>_1m`·`_3m`·`_1y`(자동 갱신 구독)·`_life`(비소모성),
 /// 종합 패키지(모든 언어) `all_1y`·`all_life`. 앱 안에서는 사이트 가격을 안내·유도하지 않는다(스토어 규정).
 class Plan {
   final String id;
   final int months; // 0 = 평생
   final bool bundle;
-  final int krw;
-  const Plan(this.id, this.months, this.krw, {this.bundle = false});
+  final int krw; // 앱 할인가(스토어 판매가) — 스토어 가격을 못 받았을 때 표시
+  final int listKrw; // 앱 정가(취소선 표기용, ~/talkverse/PRICING.md)
+  const Plan(this.id, this.months, this.krw, {this.listKrw = 0, this.bundle = false});
   bool get lifetime => months == 0;
+  bool get discounted => listKrw > krw;
+  int get discountPct => discounted ? ((1 - krw / listKrw) * 100).round() : 0;
 }
 
 /// 앱 안 결제 — Talkverse 공용 클라이언트(한자앱 방식). 결제는 스토어(iOS StoreKit 2 · Android Play Billing),

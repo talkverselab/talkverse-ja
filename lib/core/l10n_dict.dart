@@ -438,6 +438,9 @@ const Map<String, String> kDictEn = {
   '맞춤 회화는 하루 1편까지예요. 내일(한국 시간) 다시 만들어 주세요': 'Custom dialogues are limited to 1 a day. Please try again tomorrow (KST).',
   'AI 가 만든 회화입니다. 어색하거나 부적절한 내용이 있으면 신고해 주세요.': 'This dialogue was made by AI. If anything is unnatural or inappropriate, please report it.',
   '신고': 'Report',
+  // 정가 표기(2026-11-09)
+  '출시 기념 {0}% 할인': 'Launch offer {0}% off',
+  '정가': 'Regular price',
 };
 
 const Map<String, String> kDictJa = {
@@ -829,6 +832,9 @@ const Map<String, String> kDictJa = {
   '맞춤 회화는 하루 1편까지예요. 내일(한국 시간) 다시 만들어 주세요': 'カスタム会話は1日1本までです。明日（韓国時間）また作ってください',
   'AI 가 만든 회화입니다. 어색하거나 부적절한 내용이 있으면 신고해 주세요.': 'AI が作った会話です。不自然・不適切な内容があれば報告してください。',
   '신고': '報告',
+  // 정가 표기(2026-11-09)
+  '출시 기념 {0}% 할인': 'リリース記念 {0}%オフ',
+  '정가': '定価',
 };
 
 const Map<String, String> kDictZh = {
@@ -1220,4 +1226,7 @@ const Map<String, String> kDictZh = {
   '맞춤 회화는 하루 1편까지예요. 내일(한국 시간) 다시 만들어 주세요': '定制会话每天限1篇，请明天（韩国时间）再试',
   'AI 가 만든 회화입니다. 어색하거나 부적절한 내용이 있으면 신고해 주세요.': '此会话由 AI 生成。如有不自然或不当内容，请举报。',
   '신고': '举报',
+  // 정가 표기(2026-11-09)
+  '출시 기념 {0}% 할인': '上线优惠 {0}%',
+  '정가': '原价',
 };

@@ -1,48 +1,49 @@
-# 데이터 안전 / 앱 개인정보 보호 답안 — 일본어 유니버스 (한자앱 문안 복사, 2026-11-02)
+# 데이터 안전 / 앱 개인정보 보호 답안 — 일본어 유니버스 (2026-11-09 전체 다시 씀)
 
-근거(1.0 심사판 앱 사실): **Talkverse 계정 로그인은 선택**(Apple 로그인, 이메일(데모) 로그인; 서버 auth.talkverse.uk = Cloudflare). 로그인하면 이메일·이름(제공자가 주는 범위)·계정 ID·세션 토큰을 서버에 저장. **인앱 구입** 1개(비소모성 평생 이용권) — 결제는 App Store/Google Play 가 처리, 앱·서버는 영수증(거래 번호·상품 ID)만 확인. 학습 기록·설정은 기기 안(shared_preferences)에만 저장. 학습 자료(단어 그림·한자 정보·맞춤 회화)는 talkverse.uk·auth.talkverse.uk·hanja-api 에서 받는다(맞춤 회화 요청은 기기 ID·주제·상황·레벨만 서버에 저장). 광고·분석·크래시 SDK 없음. 권한 = INTERNET 만. 추적 없음.
+원본은 talkverse-uk `docs/legal/` — 바꾸면 uk 에 알린다. 방침: https://talkverse.uk/talkverse/ja/privacy/ (2026-11-09 uk 가 동기화 없음·회화 음성 파일·삭제 경로·구독을 반영).
 
-> 맞춤 회화 요청(기기 ID·주제·상황·레벨)은 Cloudflare D1 에 저장된다 — 사용자 콘텐츠(기타)로 답하거나 심사 메모에 명시.
+## 앱 사실(2026-11-09 빌드 기준)
 
-## App Store — 앱 개인정보 보호(App Privacy)
+- **로그인은 선택**(Apple·Google·카카오·네이버, 심사용 이메일; 서버 auth.talkverse.uk = Cloudflare). 로그인하면 이메일·이름(제공자가 주는 범위)·계정 ID·세션 토큰을 서버에 저장. **학습 기록 동기화는 없다** — 학습 기록·설정은 기기 안(shared_preferences·로컬 DB)에만.
+- **인앱 구입 6개**: 자동 갱신 구독 `lang_ja_1m`·`_3m`·`_1y`·`all_1y`, 비소모성 `lang_ja_life`·`all_life`. 결제는 App Store/Google Play, 앱·서버는 영수증(거래 번호·상품 ID)만 확인.
+- **맞춤 회화(AI 생성)**: 요청 내용(주제·상황·레벨·선택한 이름)과 기기 식별자(앱이 만든 무작위 값)를 talkverse.uk(Cloudflare D1)에 저장, 로그인했으면 이용권 확인용 토큰을 함께 보냄. 화면에 「AI 가 만든 회화」 표시와 신고(메일) 버튼.
+- **내려받는 것**: 장면·단어 그림, 회화 음성 파일(mp4, 서버에서 미리 만든 것), 한자 정보 — 기기에 저장. 사용자 음성은 보내지 않는다(마이크 권한 없음).
+- 광고·분석·크래시·추적 SDK 없음. 권한 = 인터넷만(2026-11-09 Android 설치 권한·iOS 마이크/음성 인식 설명문 삭제).
+
+## App Store — 앱 개인정보 보호
 
 | 질문 | 답 |
 |---|---|
-| 이 앱에서 데이터를 수집하나요? | **예** |
-| 연락처 정보 → 이메일 주소 | 수집 · 용도 **앱 기능**(계정 로그인·구매 복원) · **사용자와 연결됨** · 추적 아님 |
-| 연락처 정보 → 이름 | 수집(Apple/Google 로그인이 넘기는 경우만, 선택) · 앱 기능 · 사용자와 연결됨 · 추적 아님 |
-| 식별자 → 사용자 ID | 수집(Talkverse 계정 ID) · 앱 기능 · 사용자와 연결됨 · 추적 아님 |
-| 구매 → 구매 내역 | 수집(이용권 복원·기기 간 공유) · 앱 기능 · 사용자와 연결됨 · 추적 아님 |
-| 사용 데이터·진단·위치·건강·금융·검색·브라우징·기타 | **수집 안 함** |
+| 데이터를 수집하나요? | **예** |
+| 연락처 정보 → 이메일 주소 | 수집 · 앱 기능(계정·구매 공유) · 사용자와 연결 · 추적 아님 |
+| 연락처 정보 → 이름 | 수집(로그인 제공자가 넘기는 경우만) · 앱 기능 · 사용자와 연결 · 추적 아님 |
+| 식별자 → 사용자 ID | 수집(Talkverse 계정 ID) · 앱 기능 · 사용자와 연결 · 추적 아님 |
+| 식별자 → 기기 ID | 수집(맞춤 회화 요청용 무작위 기기 식별자) · 앱 기능 · 사용자와 연결 안 됨(로그인 시 연결될 수 있음) · 추적 아님 |
+| 구매 → 구매 내역 | 수집(이용권 복원·기기 간 공유) · 앱 기능 · 사용자와 연결 · 추적 아님 |
+| 사용자 콘텐츠 → 기타 | 수집(맞춤 회화 요청 문구) · 앱 기능 · 추적 아님 |
+| 위치·건강·금융·사용 데이터·진단·검색·브라우징·오디오 | **수집 안 함** |
 | 추적(ATT) | **아니요** |
-| 개인정보처리방침 URL | https://talkverse.uk/talkverse/ja/privacy/ (§8 계정(선택)·결제 — 2026-11-02 반영됨) |
 
-- "수집"은 로그인한 사용자에게만 해당하지만 App Privacy 는 앱 기준으로 답하므로 위처럼 표시한다. 심사 메모에 "로그인은 선택"을 적는다.
-- 1.1 에서 진도 동기화를 넣으면 **사용자 콘텐츠 → 기타 사용자 콘텐츠(학습 진도)** 추가.
+### Privacy Manifest(PrivacyInfo.xcprivacy) — **아직 없음, 출시 전 추가**
+- `NSPrivacyTracking` = false, `NSPrivacyTrackingDomains` = 빈 값.
+- `NSPrivacyCollectedDataTypes`: EmailAddress·Name·UserID·DeviceID·PurchaseHistory·OtherUserContent(linked 는 위 표대로, tracking=false, purpose=AppFunctionality).
+- 필수 사유 API: UserDefaults `CA92.1`(shared_preferences), 파일 타임스탬프 `C617.1`(path_provider·캐시 확인에 쓰면). 플러그인 자체 매니페스트와 겹쳐도 무방.
 
-### Privacy Manifest(PrivacyInfo.xcprivacy)
-- `NSPrivacyTracking` = false. `NSPrivacyCollectedDataTypes`: EmailAddress·Name·UserID·PurchaseHistory(각 linked=true, tracking=false, purposes=AppFunctionality).
-- 필수 사유 API: UserDefaults(`CA92.1`, shared_preferences) — 플러그인 매니페스트 포함 여부 확인, 없으면 Runner 에 추가. flutter_secure_storage(키체인)는 필수 사유 API 아님.
-
-## Google Play — 데이터 보안(Data safety)
+## Google Play — 데이터 보안
 
 | 질문 | 답 |
 |---|---|
-| 앱이 사용자 데이터를 수집하거나 공유하나요? | **예(수집)**, 공유 없음 |
-| 수집 항목 | 개인 정보 → **이메일 주소**(선택, 계정 관리) · **이름**(선택, 계정 관리) · **사용자 ID**(계정 관리) / 금융 정보 → **구매 내역**(앱 기능: 이용권 복원) |
-| 필수 여부 | 모두 **선택**(로그인·구매를 해야만 수집) |
-| 전송 중 암호화 | **예**(HTTPS) |
-| 사용자가 데이터 삭제를 요청할 수 있나요? | **예** — 앱 안 "나 → 계정 → 계정 삭제" + 웹 안내 URL **https://talkverse.uk/account/delete** |
-| 데이터 처리 방식(임시 처리) | 아니요 |
-| 독립 보안 검토(MASA) | 아니요 |
+| 사용자 데이터를 수집·공유하나요? | **수집 예**, 공유 없음 |
+| 수집 항목 | 개인 정보 → 이메일 주소·이름(선택, 계정 관리) · 사용자 ID(계정 관리) / 기기 또는 기타 ID(맞춤 회화 요청) / 금융 정보 → 구매 내역(이용권) / 앱 활동 → 기타 사용자 생성 콘텐츠(맞춤 회화 요청 문구) |
+| 필수 여부 | 모두 선택(로그인·구매·맞춤 회화를 써야만) |
+| 전송 중 암호화 | 예(HTTPS) |
+| 삭제 요청 | 예 — 앱 「설정 및 프로필 → 계정 → 계정 삭제」 + https://talkverse.uk/account/delete |
 | 개인정보처리방침 URL | https://talkverse.uk/talkverse/ja/privacy/ |
 
-### 그 밖의 Play Console "앱 콘텐츠"
+### 그 밖의 Play Console 「앱 콘텐츠」
 | 항목 | 답 |
 |---|---|
 | 광고 | 아니요 |
-| 앱 액세스 권한 | **모든 기능이 로그인 없이 사용 가능**(로그인은 선택) — 그래도 심사용 데모 계정을 "안내"에 적는다(이메일 로그인 review@talkverse.uk) |
-| 대상 연령층 | checklist.md "대상 연령" |
-| 뉴스·코로나·정부·금융·건강 | 아니요 |
+| 앱 액세스 | 모든 학습 기능은 로그인 없이 — 심사용 데모 계정 review@talkverse.uk(맞춤 회화 여러 편 확인용) |
+| 대상 연령 | 전체(만 14세 미만 개인정보 미수집 — 방침 §5), IARC 설문: 사용자 간 소통 없음, 디지털 구매 있음, AI 생성 콘텐츠 있음(신고 기능) |
 | 광고 ID | 아니요 |
-| 디지털 구매(IARC) | **예** — 인앱 구입 |

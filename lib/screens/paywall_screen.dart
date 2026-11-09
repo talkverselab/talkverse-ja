@@ -156,7 +156,7 @@ class _PaywallScreenState extends State<PaywallScreen> {
       child: Semantics(
         selected: on,
         button: true,
-        label: '${_title(p)} $price ${_terms(p)}',
+        label: '${_title(p)} $price${p.discounted ? ' (${tr('정가')} ${_won(p.listKrw)})' : ''} ${_terms(p)}',
         child: InkWell(
           borderRadius: BorderRadius.circular(12),
           onTap: busy ? null : () => setState(() => _sel = p.id),
@@ -176,7 +176,13 @@ class _PaywallScreenState extends State<PaywallScreen> {
                   Text(_terms(p), style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight)),
                 ]),
               ),
-              Text(price, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+              Column(crossAxisAlignment: CrossAxisAlignment.end, mainAxisSize: MainAxisSize.min, children: [
+                if (p.discounted)
+                  Text(_won(p.listKrw), style: const TextStyle(fontSize: 11.5, color: AppColors.muted, decoration: TextDecoration.lineThrough)),
+                Text(price, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+                if (p.discounted)
+                  Text(trf('출시 기념 {0}% 할인', [p.discountPct]), style: const TextStyle(fontSize: 10.5, color: AppColors.beniDeep, fontWeight: FontWeight.w800)),
+              ]),
             ]),
           ),
         ),

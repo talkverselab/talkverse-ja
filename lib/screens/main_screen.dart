@@ -324,7 +324,8 @@ class LearnTab extends StatefulWidget {
 
 class _LearnTabState extends State<LearnTab> {
   String _filter = tr('전체');
-  final List<String> _filters = [tr('전체'), 'L1', 'L2', 'L3'];
+  List<String> _readyLevels = const [];
+  List<String> get _filters => [tr('전체'), ..._readyLevels];
   List<_LessonItem> _lessons = [];
   EpisodeMeta? _today;
   int _todayLearned = 0;
@@ -357,21 +358,21 @@ class _LearnTabState extends State<LearnTab> {
                 t.episodeId == meta.id,
           )
           .toList();
+      if (epTurns.isEmpty) continue; // 내용 없는 편은 「오늘의 학습」에도 안 띄운다
       final learned = epTurns.where((t) => learnedIds.contains(t.id)).length;
-      if (epTurns.isEmpty ||
-          learned < epTurns.length ||
-          meta == EpisodeCatalog.instance.all.last) {
-        today = meta;
-        todayLearned = learned;
-        todayTotal = epTurns.isEmpty ? 40 : epTurns.length;
-        break;
-      }
+      today = meta; // 다 끝냈으면 마지막 편이 남는다
+      todayLearned = learned;
+      todayTotal = epTurns.length;
+      if (learned < epTurns.length) break;
     }
 
     final items = <_LessonItem>[];
+    final ready = <String>[];
     for (final level in ['L1', 'L2', 'L3']) {
-      final metas = EpisodeCatalog.instance.plannedForLevel(level);
+      // 출시 기준(2026-11-09, 지침 2.1): 내용이 없는 편(「준비 중」)은 목록에 두지 않는다.
+      final metas = EpisodeCatalog.instance.plannedForLevel(level).where((m) => turns.any((t) => t.level == level && t.dialect == 'north' && t.episodeId == m.id)).toList();
       if (metas.isEmpty) continue;
+      ready.add(level);
       if (_filter != tr('전체') && _filter != level) continue;
       items.add(
         _LessonItem.header(
@@ -405,7 +406,7 @@ class _LearnTabState extends State<LearnTab> {
         items.add(
           _LessonItem(
             '${level == 'L1' ? 'EP' : 'D'}${i + 1}',
-            '${meta.emoji} ${meta.title}${total == 0 ? ' (${tr('준비 중')})' : ''}',
+            '${meta.emoji} ${meta.title}',
             state,
             meta: meta,
             learned: learned,
@@ -417,6 +418,7 @@ class _LearnTabState extends State<LearnTab> {
     if (mounted) {
       setState(() {
         _lessons = items;
+        _readyLevels = ready;
         _today = today;
         _todayLearned = todayLearned;
         _todayTotal = todayTotal;
@@ -544,8 +546,8 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: 'N5 735 · N4 676 · N3 2,135 · N2 1,744 · N1 2,698',
               onTap: () => openPane(context, (_) => const JlptWordsScreen()),
             ),
-            _section(tr('에피소드')),
-            SizedBox(
+            if (_lessons.isNotEmpty) _section(tr('에피소드')),
+            if (_readyLevels.length > 1) SizedBox(
               height: 36,
               child: ListView.separated(
                 scrollDirection: Axis.horizontal,

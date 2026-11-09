@@ -30,14 +30,14 @@ void main() async {
   // Talkverse ID 로그인(선택) + 스토어 결제(평생 이용권 lang 'ja') — 한자앱 방식, APP_GUIDE 2026-11-02
   Account.load(); // 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
   await Entitlement.load();
-  // 가격·상품 ID = Talkverse 공통(2026-11-09). 스토어 등록은 사용자(docs/STORE_PRODUCTS.md).
+  // 가격·상품 ID = Talkverse 공통(사용자 최종 확정 2026-11-09, ~/talkverse/PRICING.md 「앱 정가/앱 할인가」). 스토어 판매가 = 할인가.
   Purchase.configure('ja', const [
-    Plan('lang_ja_1m', 1, 3900),
-    Plan('lang_ja_3m', 3, 8900),
-    Plan('lang_ja_1y', 12, 19900),
-    Plan('lang_ja_life', 0, 49000),
-    Plan('all_1y', 12, 129000, bundle: true),
-    Plan('all_life', 0, 329000, bundle: true),
+    Plan('lang_ja_1m', 1, 3900, listKrw: 5500),
+    Plan('lang_ja_3m', 3, 9000, listKrw: 12900),
+    Plan('lang_ja_1y', 12, 19900, listKrw: 28500),
+    Plan('lang_ja_life', 0, 49000, listKrw: 69900),
+    Plan('all_1y', 12, 79000, listKrw: 112900, bundle: true),
+    Plan('all_life', 0, 329000, listKrw: 469000, bundle: true),
   ]);
   await _setOrientations(); // 폰은 세로 고정, 태블릿·폴드 펼침(짧은 변 600 이상)은 회전 허용
   // 그림(장면 컷·단어 그림) 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(사용자 지시 2026-11-04)
