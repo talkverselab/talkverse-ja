@@ -14,6 +14,7 @@ import '../services/word_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_sheet.dart';
 import '../core/l10n.dart';
+import 'word_unit_flash_screen.dart';
 
 /// JLPT 단어 — 레벨 탭(N5→N1·회화) · 검색 · 단어 카드 격자(그림·후리가나·읽기·뜻) → 단어 시트.
 class JlptWordsScreen extends StatefulWidget {
@@ -26,6 +27,9 @@ class JlptWordsScreen extends StatefulWidget {
 
 class _JlptWordsScreenState extends State<JlptWordsScreen> {
   static const _levels = <int?>[5, 4, 3, 2, 1, null];
+  static const _unit = 20;
+
+  List<WordEntry> _slice(int u) => _words.sublist(u * _unit, ((u + 1) * _unit).clamp(0, _words.length));
 
   int? _level;
   final _ctrl = TextEditingController();
@@ -195,27 +199,59 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                 ? const Center(child: CircularProgressIndicator(color: AppColors.beni))
                 : _words.isEmpty
                     ? Center(child: Text(tr('결과 없음'), style: TextStyle(color: AppColors.sumiLight)))
-                    // 목록이 아니라 카드 격자(사용자 지시 2026-11-10 "목록을 카드로") — 폰 2열, 넓을수록 열이 는다.
-                    : GridView.builder(
+                    // 카드 격자(사용자 지시 2026-11-10) · 급별 화면은 20어 단원 + 단원 플래시카드(2026-11-11), 검색 결과는 한 격자.
+                    : CustomScrollView(
                         controller: _scroll,
-                        padding: EdgeInsets.fromLTRB(12, 6, 12, 24 + bottomInset(context)),
-                        gridDelegate: WordCard.grid,
-                        itemCount: _words.length,
-                        itemBuilder: (context, i) {
-                          final w = _words[i];
-                          return WordCard(
-                            word: w.surface,
-                            segs: w.segs,
-                            kana: w.kana,
-                            gloss: w.gloss,
-                            dimGloss: !w.hasKo,
-                            badge: w.jlpt == null ? '会' : 'N${w.jlpt}',
-                            badgeColor: levelColor(w.jlpt),
-                            showRuby: showRuby,
-                            onTap: () => showWordSheet(context, w),
-                            onSpeak: () => TtsService.instance.speak(w.kana),
-                          );
-                        },
+                        slivers: [
+                          if (!searching)
+                            const SliverPadding(
+                              padding: EdgeInsets.fromLTRB(12, 6, 12, 0),
+                              sliver: SliverToBoxAdapter(child: SentenceTip()),
+                            ),
+                          for (var u = 0; u < (searching ? 1 : (_words.length / _unit).ceil()); u++) ...[
+                            if (!searching)
+                              SliverToBoxAdapter(
+                                child: Padding(
+                                  padding: const EdgeInsets.fromLTRB(14, 10, 8, 0),
+                                  child: Row(children: [
+                                    Text(trf('{0}단원', [u + 1]), style: const TextStyle(color: AppColors.sumi, fontSize: 14, fontWeight: FontWeight.w800)),
+                                    const SizedBox(width: 8),
+                                    Text('${u * _unit + 1}-${((u + 1) * _unit).clamp(0, _words.length)}', style: const TextStyle(color: AppColors.sumiLight, fontSize: 11)),
+                                    const Spacer(),
+                                    UnitFlashButton(
+                                      title: '${_level == null ? tr('회화') : 'N$_level'} · ${trf('{0}단원', [u + 1])}',
+                                      words: () => [for (final w in _slice(u)) StudyWord(word: w.surface, kana: w.kana == w.surface ? '' : w.kana, gloss: w.gloss)],
+                                    ),
+                                  ]),
+                                ),
+                              ),
+                            SliverPadding(
+                              padding: const EdgeInsets.fromLTRB(12, 6, 12, 4),
+                              sliver: SliverGrid(
+                                gridDelegate: WordCard.grid,
+                                delegate: SliverChildBuilderDelegate(
+                                  childCount: searching ? _words.length : _slice(u).length, // 검색은 한 격자
+                                  (context, i) {
+                                    final w = _words[searching ? i : u * _unit + i];
+                                    return WordCard(
+                                      word: w.surface,
+                                      segs: w.segs,
+                                      kana: w.kana,
+                                      gloss: w.gloss,
+                                      dimGloss: !w.hasKo,
+                                      badge: w.jlpt == null ? '会' : 'N${w.jlpt}',
+                                      badgeColor: levelColor(w.jlpt),
+                                      showRuby: showRuby,
+                                      onTap: () => showWordSheet(context, w),
+                                      onSpeak: () => TtsService.instance.speak(w.kana),
+                                    );
+                                  },
+                                ),
+                              ),
+                            ),
+                          ],
+                          SliverToBoxAdapter(child: SizedBox(height: 24 + bottomInset(context))),
+                        ],
                       ),
           ),
         ],

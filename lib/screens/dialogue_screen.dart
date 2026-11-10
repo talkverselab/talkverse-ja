@@ -317,6 +317,9 @@ class _DialogueScreenState extends State<DialogueScreen> {
             ]);
 }
 
+/// 편의 [at] 번째 턴부터 전체 화면 재생으로 연다(단어 카드의 회화 문장 → 그 회화로).
+Future<void> openDialogueAt(BuildContext context, Dialogue dialogue, int at) => openFull(context, (_) => _PlayFull(dialogue: dialogue, at: at));
+
 class _PlayFull extends StatelessWidget {
   final Dialogue dialogue;
   final int at;

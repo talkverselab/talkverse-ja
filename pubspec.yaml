@@ -86,6 +86,7 @@ flutter:
     - assets/data/version.json
     - assets/data/freq/lang_ja_with_regions.csv
     - assets/data/freq/conv_words_ja.json
+    - assets/data/freq/cliff_notes_ja.json
     - assets/data/hanja/hanja_crossref.json
     - assets/data/hanja/book.json
     - assets/data/hanja/confuse.json

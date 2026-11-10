@@ -14,6 +14,7 @@ import '../widgets/furigana_toggle.dart';
 import '../services/word_service.dart' show WordService;
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_card.dart';
+import 'word_unit_flash_screen.dart';
 
 /// 절벽 단어 — 회화 빈도 1~2,000위를 절벽구간(R1~R5)별 **20어 단원**으로, 단어는 **네모 타일**로 보여 준다(사용자 지시 2026-11-07).
 /// 위 버튼 「절벽구간 단어만 / 회화 단어 포함」 — 포함이면 215편 회화에 나오지만 2,000위 밖인 단어(assets/data/freq/conv_words_ja.json)가
@@ -81,6 +82,21 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
         e.ko = w.gloss;
       }
     }
+    // 단어 DB 에 없는 조사·조동사·접사 등은 분류표의 읽기·뜻·품사로 채운다(문법 카드, 2026-11-11)
+    try {
+      final j = json.decode(await rootBundle.loadString(assetPath('assets/data/freq/cliff_notes_ja.json'))) as Map<String, dynamic>;
+      final notes = (j['words'] as Map).cast<String, dynamic>();
+      for (final e in entries) {
+        final n = notes[e.word] as Map<String, dynamic>?;
+        if (n == null) continue;
+        e.grammar = n['g'] == 1;
+        e.pos = (n['pos'] as String?) ?? '';
+        if (e.grammar || e.ko.isEmpty) {
+          e.ko = (n['ko'] as String?) ?? e.ko;
+          e.kana = (n['k'] as String?) ?? e.kana;
+        }
+      }
+    } catch (_) {}
     final conv = <WordEntry>[];
     try {
       final j = json.decode(await rootBundle.loadString(assetPath('assets/data/freq/conv_words_ja.json'))) as Map<String, dynamic>;
@@ -122,7 +138,7 @@ class _WordFreqScreenState extends State<WordFreqScreen> {
           children: [
             Text(tr('절벽 단어'), style: const TextStyle(color: AppColors.sumi, fontSize: 16, fontWeight: FontWeight.w800)),
             const SizedBox(height: 2),
-            Text(trf('회화 빈도 {0}위 · {1}어 단원 · 탭하면 발음', ['2,000', kUnit]),
+            Text(trf('회화 빈도 {0}위 · {1}어 단원 · 탭하면 회화 문장', ['2,000', kUnit]),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
@@ -239,6 +255,7 @@ class _UnitBlock extends StatelessWidget {
                 const SizedBox(width: 8),
                 Text(range, style: const TextStyle(color: AppColors.sumiLight, fontSize: 11)),
                 const Spacer(),
+                UnitFlashButton(title: trf('{0}단원', [index]), words: () => [for (final w in words) w.study]),
                 if (region != null)
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
@@ -260,9 +277,11 @@ class _UnitBlock extends StatelessWidget {
                 word: w.word,
                 kana: w.kana,
                 gloss: w.ko,
-                badge: w.region == 'C' ? '会' : '#${w.rank}',
-                badgeColor: region?.color ?? AppColors.sumi,
+                badge: w.region == 'C' ? '会' : (w.grammar ? '${tr('문법')} #${w.rank}' : '#${w.rank}'),
+                badgeColor: w.grammar ? AppColors.ai : (region?.color ?? AppColors.sumi),
                 artRank: w.region == 'C' ? null : w.rank,
+                note: w.grammar ? posLabel(w.pos) : null,
+                onTap: () => showStudyWordSheet(context, w.study),
                 onSpeak: () => TtsService.instance.speak(w.word),
               );
             },
@@ -281,6 +300,9 @@ class WordEntry {
   final String region; // R1~R5 · C(회화 단어)
   String kana = '';
   String ko = '';
+  String pos = '';
+  bool grammar = false; // 조사·조동사·접사 — 그림 대신 문법 카드
+  StudyWord get study => StudyWord(word: word, kana: kana, gloss: ko, pos: pos, grammar: grammar, artRank: region == 'C' ? null : rank);
   WordEntry({required this.rank, required this.word, required this.cumPct, required this.region});
 }
 
