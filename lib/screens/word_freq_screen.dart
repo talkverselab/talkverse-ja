@@ -13,7 +13,7 @@ import '../services/tts_service.dart';
 import '../widgets/furigana_toggle.dart';
 import '../services/word_service.dart' show WordService;
 import '../widgets/japanese_decor.dart';
-import '../widgets/word_art_thumb.dart';
+import '../widgets/word_card.dart';
 
 /// 절벽 단어 — 회화 빈도 1~2,000위를 절벽구간(R1~R5)별 **20어 단원**으로, 단어는 **네모 타일**로 보여 준다(사용자 지시 2026-11-07).
 /// 위 버튼 「절벽구간 단어만 / 회화 단어 포함」 — 포함이면 215편 회화에 나오지만 2,000위 밖인 단어(assets/data/freq/conv_words_ja.json)가
@@ -226,7 +226,6 @@ class _UnitBlock extends StatelessWidget {
     final range = first.region == 'C'
         ? trf('회화 {0}-{1}', [first.rank, last.rank])
         : '#${first.rank}-${last.rank}';
-    final cols = (MediaQuery.sizeOf(context).width / 112).floor().clamp(3, 8);
     return Padding(
       padding: const EdgeInsets.only(bottom: 14),
       child: Column(
@@ -253,9 +252,20 @@ class _UnitBlock extends StatelessWidget {
           GridView.builder(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: cols, mainAxisSpacing: 6, crossAxisSpacing: 6),
+            gridDelegate: WordCard.grid,
             itemCount: words.length,
-            itemBuilder: (context, i) => _WordTile(w: words[i], color: region?.color ?? AppColors.sumi),
+            itemBuilder: (context, i) {
+              final w = words[i];
+              return WordCard(
+                word: w.word,
+                kana: w.kana,
+                gloss: w.ko,
+                badge: w.region == 'C' ? '会' : '#${w.rank}',
+                badgeColor: region?.color ?? AppColors.sumi,
+                artRank: w.region == 'C' ? null : w.rank,
+                onSpeak: () => TtsService.instance.speak(w.word),
+              );
+            },
           ),
         ],
       ),
@@ -264,57 +274,6 @@ class _UnitBlock extends StatelessWidget {
 }
 
 /// 네모 타일 — 그림(있으면) · 단어 · 읽기 · 뜻. 탭하면 발음.
-class _WordTile extends StatelessWidget {
-  final WordEntry w;
-  final Color color;
-  const _WordTile({required this.w, required this.color});
-
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () => TtsService.instance.speak(w.word),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppColors.washi,
-          border: Border.all(color: AppColors.line),
-          borderRadius: BorderRadius.circular(8),
-          boxShadow: kCardShadow,
-        ),
-        padding: const EdgeInsets.all(6),
-        child: LayoutBuilder(
-          builder: (context, c) {
-            final art = (c.maxHeight * 0.42).clamp(28.0, 72.0);
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
-                  children: [
-                    Text(w.region == 'C' ? '会' : '#${w.rank}', style: TextStyle(fontSize: 9, color: color, fontWeight: FontWeight.w800)),
-                    const Spacer(),
-                    if (w.kana.isNotEmpty && LearnerPrefs.furigana.value)
-                      Text(w.kana, maxLines: 1, overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(fontSize: 9, color: AppColors.sumiLight)),
-                  ],
-                ),
-                const SizedBox(height: 2),
-                WordArtThumb(word: w.word, rank: w.region == 'C' ? null : w.rank, size: art),
-                const SizedBox(height: 4),
-                FittedBox(
-                  fit: BoxFit.scaleDown,
-                  child: Text(w.word, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-                ),
-                if (w.ko.isNotEmpty)
-                  Text(w.ko, maxLines: 1, overflow: TextOverflow.ellipsis, textAlign: TextAlign.center,
-                      style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
-              ],
-            );
-          },
-        ),
-      ),
-    );
-  }
-}
-
 class WordEntry {
   final int rank;
   final String word;

@@ -2,6 +2,8 @@ import '../core/embed_env.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+
+import '../widgets/word_card.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 import '../core/theme.dart';
@@ -194,92 +196,27 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
           ),
         ),
         const SizedBox(height: 12),
-        ..._visible(b).map(_wordRow),
+        GridView.count(
+          shrinkWrap: true,
+          physics: const NeverScrollableScrollPhysics(),
+          crossAxisCount: (MediaQuery.sizeOf(context).width / 210).ceil().clamp(2, 4),
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+          childAspectRatio: 0.78,
+          children: _visible(b).map(_wordCard).toList(),
+        ),
       ],
     );
   }
 
-  Widget _wordRow(_Word w) {
-    final borderColor = w.ex ? const Color(0xFFB26A00) : AppColors.kin.withValues(alpha: 0.5);
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
-      child: Container(
-        decoration: BoxDecoration(
-          color: AppColors.washi,
-          border: Border.all(color: borderColor, width: w.ex ? 1.2 : 1),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(12, 8, 8, 8),
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Flexible(
-                          child: Text(w.ja,
-                              style: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi)),
-                        ),
-                        const SizedBox(width: 8),
-                        if (w.jlpt != null)
-                          Padding(
-                            padding: const EdgeInsets.only(right: 6),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                  horizontal: 5, vertical: 1),
-                              decoration: BoxDecoration(
-                                color: AppColors.matcha.withValues(alpha: 0.12),
-                                border: Border.all(color: AppColors.matcha),
-                              ),
-                              child: Text('N${w.jlpt}',
-                                  style: const TextStyle(
-                                      fontSize: 9,
-                                      fontWeight: FontWeight.w800,
-                                      color: AppColors.matcha)),
-                            ),
-                          ),
-                        if (w.ex)
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 1),
-                            decoration: BoxDecoration(
-                              color: const Color(0xFFB26A00).withValues(alpha: 0.12),
-                              border: Border.all(color: const Color(0xFFB26A00)),
-                            ),
-                            child: Text(tr('예외'),
-                                style: TextStyle(
-                                    fontSize: 9, fontWeight: FontWeight.w800, color: Color(0xFFB26A00))),
-                          ),
-                      ],
-                    ),
-                    KoReadingText(w.ja,
-                        style: const TextStyle(fontSize: 11, color: AppColors.sumiLight)),
-                    const SizedBox(height: 2),
-                    Text(w.en.isEmpty ? w.ko : '${w.en} · ${w.ko}',
-                        style: const TextStyle(
-                            fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
-                    if (w.note != null)
-                      Padding(
-                        padding: const EdgeInsets.only(top: 2),
-                        child: Text(w.note!,
-                            style: const TextStyle(
-                                fontSize: 11, color: AppColors.sumiLight, height: 1.4)),
-                      ),
-                  ],
-                ),
-              ),
-              IconButton(
-                icon: const Icon(Icons.play_circle_fill, color: AppColors.beni, size: 32),
-                tooltip: tr('재생'),
-                onPressed: () => TtsService.instance.speak(w.ja),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
+  Widget _wordCard(_Word w) => WordCard(
+        word: w.ja,
+        kana: w.ja,
+        gloss: w.en.isEmpty ? w.ko : '${w.en} · ${w.ko}',
+        note: w.note ?? (w.ex ? tr('예외') : null),
+        badge: w.ex ? tr('예외') : (w.jlpt != null ? 'N${w.jlpt}' : null),
+        badgeColor: w.ex ? const Color(0xFFB26A00) : AppColors.matcha,
+        borderColor: w.ex ? const Color(0xFFB26A00) : null,
+        onSpeak: () => TtsService.instance.speak(w.ja),
+      );
 }

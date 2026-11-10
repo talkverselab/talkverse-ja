@@ -3,8 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import '../core/platform.dart';
-import '../services/art_service.dart';
-import '../services/content_sync.dart';
+import '../widgets/word_card.dart';
 
 import '../core/theme.dart';
 import '../services/learner_prefs.dart';
@@ -12,7 +11,6 @@ import '../widgets/furigana_toggle.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
-import '../widgets/furigana_text.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_sheet.dart';
 import '../core/l10n.dart';
@@ -201,87 +199,27 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                     : GridView.builder(
                         controller: _scroll,
                         padding: EdgeInsets.fromLTRB(12, 6, 12, 24 + bottomInset(context)),
-                        gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(maxCrossAxisExtent: 210, mainAxisSpacing: 10, crossAxisSpacing: 10, childAspectRatio: 0.78),
+                        gridDelegate: WordCard.grid,
                         itemCount: _words.length,
-                        itemBuilder: (context, i) => _WordCard(word: _words[i], showRuby: showRuby),
+                        itemBuilder: (context, i) {
+                          final w = _words[i];
+                          return WordCard(
+                            word: w.surface,
+                            segs: w.segs,
+                            kana: w.kana,
+                            gloss: w.gloss,
+                            dimGloss: !w.hasKo,
+                            badge: w.jlpt == null ? '会' : 'N${w.jlpt}',
+                            badgeColor: levelColor(w.jlpt),
+                            showRuby: showRuby,
+                            onTap: () => showWordSheet(context, w),
+                            onSpeak: () => TtsService.instance.speak(w.kana),
+                          );
+                        },
                       ),
           ),
         ],
       ),
-    );
-  }
-}
-
-/// 단어 카드 — 위: 단어 그림(없으면 단어를 크게), 아래: 표기(후리가나)·읽기·뜻. 누르면 단어 시트.
-class _WordCard extends StatelessWidget {
-  final WordEntry word;
-  final bool showRuby;
-  const _WordCard({required this.word, required this.showRuby});
-
-  @override
-  Widget build(BuildContext context) {
-    final w = word;
-    final color = _JlptWordsScreenState.levelColor(w.jlpt);
-    return FutureBuilder<String?>(
-      future: ArtService.instance.urlFor(w.surface),
-      builder: (context, snap) {
-        final url = snap.data;
-        Widget bigWord() => Container(
-              color: AppColors.washiDeep,
-              alignment: Alignment.center,
-              padding: const EdgeInsets.fromLTRB(10, 22, 10, 8),
-              child: FittedBox(fit: BoxFit.scaleDown, child: FuriganaText(segs: w.segs, fontSize: 34, showRuby: showRuby)),
-            );
-        return Container(
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(color: AppColors.washi, border: Border.all(color: AppColors.line), borderRadius: BorderRadius.circular(14), boxShadow: kCardShadow),
-          child: Material(
-            color: Colors.transparent,
-            child: InkWell(
-              onTap: () => showWordSheet(context, w),
-              child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                Expanded(
-                  child: Stack(fit: StackFit.expand, children: [
-                    if (url == null) bigWord() else Image(image: artProvider(url), fit: BoxFit.cover, errorBuilder: (_, _, _) => bigWord()),
-                    Positioned(
-                      left: 8,
-                      top: 8,
-                      child: Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
-                        decoration: BoxDecoration(color: color, borderRadius: BorderRadius.circular(6)),
-                        child: Text(w.jlpt == null ? '会' : 'N${w.jlpt}', style: const TextStyle(fontSize: 10, fontWeight: FontWeight.w900, color: Colors.white)),
-                      ),
-                    ),
-                    Positioned(
-                      right: 2,
-                      top: 2,
-                      child: IconButton(
-                        tooltip: tr('듣기'),
-                        visualDensity: VisualDensity.compact,
-                        onPressed: () => TtsService.instance.speak(w.kana),
-                        icon: Container(
-                          padding: const EdgeInsets.all(4),
-                          decoration: BoxDecoration(color: AppColors.washi.withValues(alpha: 0.9), shape: BoxShape.circle),
-                          child: const Icon(Icons.volume_up, size: 16, color: AppColors.beni),
-                        ),
-                      ),
-                    ),
-                  ]),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 7, 10, 9),
-                  child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisSize: MainAxisSize.min, children: [
-                    if (url != null) FittedBox(fit: BoxFit.scaleDown, alignment: Alignment.centerLeft, child: FuriganaText(segs: w.segs, fontSize: 19, showRuby: showRuby)),
-                    KoReadingText(w.kana, style: const TextStyle(fontSize: 10.5, color: AppColors.sumiLight)),
-                    const SizedBox(height: 2),
-                    Text(w.gloss, maxLines: 2, overflow: TextOverflow.ellipsis, style: TextStyle(fontSize: w.hasKo ? 13 : 11, fontWeight: FontWeight.w700, color: w.hasKo ? AppColors.sumi : AppColors.sumiLight, height: 1.3)),
-                  ]),
-                ),
-              ]),
-            ),
-          ),
-        );
-      },
     );
   }
 }

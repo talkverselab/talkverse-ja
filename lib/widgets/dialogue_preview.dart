@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+
+import 'word_card.dart';
 import '../core/prefs.dart';
 
 import '../core/l10n.dart';
@@ -121,7 +123,25 @@ class _PreviewSheet extends StatelessWidget {
             const SizedBox(height: 16),
             Text(trf('단어 {0}', [words.length]), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumiLight)),
             const SizedBox(height: 8),
-            for (final w in words) _Row(item: w),
+            GridView.builder(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              gridDelegate: WordCard.grid,
+              itemCount: words.length,
+              itemBuilder: (context, i) {
+                final w = words[i];
+                void speak() => TtsService.instance.speak(w.term.replaceAll(RegExp(r'^[〜~]'), ''));
+                return WordCard(
+                  word: w.term,
+                  segs: w.entry?.segs,
+                  kana: w.reading,
+                  gloss: w.meaning,
+                  showRuby: LearnerPrefs.furigana.value,
+                  onTap: w.entry == null ? speak : () => showWordSheet(context, w.entry!),
+                  onSpeak: speak,
+                );
+              },
+            ),
           ],
           if (grammar.isNotEmpty) ...[
             const SizedBox(height: 16),
