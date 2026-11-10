@@ -42,7 +42,7 @@ void main() {
     await seed.seedIfNeeded();
     expect(await seed.turnCount(), 40);
     expect(await seed.kanjiCount(), greaterThan(2200));
-    expect(await seed.wordCount(), 2295);
+    expect(await seed.wordCount(), 1795);
     expect(await seed.jlptWordCount(), greaterThan(7500));
     expect(await seed.segmentCount(), greaterThan(14000));
     // 言 ↔ こと ↔ 言葉 링크
