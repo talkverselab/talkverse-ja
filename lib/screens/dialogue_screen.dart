@@ -128,7 +128,7 @@ class _TodayCut extends StatelessWidget {
       Text(d.scene, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
       const SizedBox(height: 10),
       FilledButton.icon(
-        onPressed: () => openFull(context, (_) => DialogueScreen(dialogue: d)) /* 회화는 왼쪽 메뉴 칸까지 써서 전체 화면 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
+        onPressed: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
         style: FilledButton.styleFrom(backgroundColor: AppColors.beni, foregroundColor: Colors.white, shape: const StadiumBorder(), visualDensity: VisualDensity.compact),
         icon: const Icon(Icons.menu_book_rounded, size: 18),
         label: Text(tr('읽기 시작'), style: const TextStyle(fontWeight: FontWeight.w800)),
@@ -211,7 +211,7 @@ class DialogueListScreen extends StatelessWidget {
             child: Material(
               color: Colors.transparent,
               child: ListTile(
-                onTap: () => openFull(context, (_) => DialogueScreen(dialogue: d)) /* 회화는 왼쪽 메뉴 칸까지 써서 전체 화면 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
+                onTap: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
                 leading: Text(d.emoji, style: const TextStyle(fontSize: 24)),
                 title: Text(d.title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.sumi)),
                 subtitle: Text('${d.isChat ? '💬 ' : ''}${d.scene}', maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11, color: AppColors.muted, height: 1.3)),

@@ -44,6 +44,20 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   int _index = 0;
   final _pane = GlobalKey<NavigatorState>();
+  final _wide = GlobalKey<NavigatorState>(); // 레일 오른쪽 전체(목록 칸 + 오른쪽 칸)를 덮는 넓은 칸
+  bool _wideOpen = false;
+  late final _wideObs = _CountObserver((n) {
+    final open = n > 1;
+    if (open == _wideOpen) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) setState(() => _wideOpen = open);
+    });
+  });
+
+  void _selectTab(int i) {
+    _wide.currentState?.popUntil((r) => r.isFirst); // 탭을 바꾸면 넓은 칸(회화)을 닫는다
+    setState(() => _index = i);
+  }
 
   static List<(IconData, IconData, String)> get _tabs => [
     (Icons.menu_book_outlined, Icons.menu_book, tr('배우기')),
@@ -106,15 +120,16 @@ class _MainScreenState extends State<MainScreen> {
     ); // 폴드 펼침(≈740) 은 300, 아이패드는 더 넓게
     return Pane(
       navKey: _pane,
+      wideKey: _wide,
       child: NavigatorPopHandler(
-        onPopWithResult: (_) => _pane.currentState?.maybePop(),
+        onPopWithResult: (_) => _wideOpen ? _wide.currentState?.maybePop() : _pane.currentState?.maybePop(),
         child: Scaffold(
           appBar: appBar,
           body: Row(
             children: [
               NavigationRail(
                 selectedIndex: _index,
-                onDestinationSelected: (i) => setState(() => _index = i),
+                onDestinationSelected: _selectTab,
                 labelType: w >= 900
                     ? NavigationRailLabelType.all
                     : NavigationRailLabelType.selected,
@@ -167,22 +182,46 @@ class _MainScreenState extends State<MainScreen> {
                 thickness: 1,
                 color: AppColors.line,
               ),
-              SizedBox(width: left, child: stack),
-              const VerticalDivider(
-                width: 1,
-                thickness: 1,
-                color: AppColors.line,
-              ),
               Expanded(
-                child: ClipRect(
-                  child: Navigator(
-                    key: _pane,
-                    onGenerateInitialRoutes: (_, _) => [
-                      MaterialPageRoute(
-                        builder: (_) => const _PanePlaceholder(),
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Row(
+                      children: [
+                        SizedBox(width: left, child: stack),
+                        const VerticalDivider(
+                          width: 1,
+                          thickness: 1,
+                          color: AppColors.line,
+                        ),
+                        Expanded(
+                          child: ClipRect(
+                            child: Navigator(
+                              key: _pane,
+                              onGenerateInitialRoutes: (_, _) => [
+                                MaterialPageRoute(
+                                  builder: (_) => const _PanePlaceholder(),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    // 넓은 칸: 비어 있을 때는 투명하고 터치를 통과시킨다. 회화 편을 열면 목록 칸 + 오른쪽 칸을 덮는다.
+                    IgnorePointer(
+                      ignoring: !_wideOpen,
+                      child: ClipRect(
+                        child: Navigator(
+                          key: _wide,
+                          observers: [_wideObs],
+                          onGenerateInitialRoutes: (_, _) => [
+                            PageRouteBuilder(opaque: false, pageBuilder: (_, _, _) => const SizedBox.shrink()),
+                          ],
+                        ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ],
@@ -191,6 +230,19 @@ class _MainScreenState extends State<MainScreen> {
       ),
     );
   }
+}
+
+/// Navigator 에 쌓인 화면 수를 알려 준다(넓은 칸이 열렸는지 판단).
+class _CountObserver extends NavigatorObserver {
+  final void Function(int) onCount;
+  int _n = 0;
+  _CountObserver(this.onCount);
+  @override
+  void didPush(Route route, Route? previousRoute) => onCount(++_n);
+  @override
+  void didPop(Route route, Route? previousRoute) => onCount(--_n);
+  @override
+  void didRemove(Route route, Route? previousRoute) => onCount(--_n);
 }
 
 /// 오른쪽 칸이 비어 있을 때.
