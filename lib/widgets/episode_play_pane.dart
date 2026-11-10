@@ -21,7 +21,7 @@ import 'selectable_ja_text.dart';
 
 /// 「모든 문장 듣기」 재생 패널 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02, `data/review/uxui/sian_02.md`).
 ///
-/// 장면 컷이 주인공. 아이패드(가로 720 이상): 왼쪽 = 대화 스크립트 목록(번호·화자·일본어·한국어), 오른쪽 = 큰 장면 컷(말풍선) + 현재 문장 캡션.
+/// 장면 컷이 주인공. 아이패드(가로 720 이상): 왼쪽 = 대화 스크립트 목록(번호·화자·일본어·한국어), 오른쪽 = 큰 장면 컷(그림만 — 글은 스크립트의 현재 줄).
 /// 폰: 장면 컷이 위(화면 대부분), 스크립트가 아래. 하단 고정 컨트롤 = ▶ 재생 · 진행 슬라이더 · 속도 · 자막 단계(日本語/かな/독음/한국어).
 /// 컷 전환은 400ms 페이드. 그림: 턴 `art`(장면 그림) → 핵심 단어 그림 → 장면 카드. 장면 그림은 나중에 JSON `art` 에 채운다.
 /// `autoPlay: false` 면 편 화면(읽기 모드)으로도 쓴다 — 같은 레이아웃에서 ▶ 를 누르면 순차 재생.
@@ -118,7 +118,6 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
 
   @override
   Widget build(BuildContext context) {
-    final wide = isWide(context);
     final script = _Script(
       d: d,
       current: _i,
@@ -129,7 +128,7 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
       onTap: (i) => _goto(i, play: true),
       onSpeak: _speakOne,
     );
-    Widget cutFor(bool side) => _CutPanel(side: side, d: d, turn: turn, showKana: _showKana, showRd: _showRd, showKo: _showKo, onSpeak: () => _speakOne(turn));
+    Widget cutFor(bool side) => _CutPanel(side: side, d: d, turn: turn);
     final controls = _ControlBar(
       playing: _playing,
       index: _i,
@@ -146,21 +145,20 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
       onKo: () => setState(() => _showKo = !_showKo),
     );
     return LayoutBuilder(builder: (context, c) {
-      // 칸이 넓으면(아이패드 가로·전체 화면 900 이상) 좌 스크립트 · 우 컷, 좁으면(아이패드 세로 오른쪽 칸·폰) 컷 위 · 스크립트 아래
-      final sideBySide = wide && c.maxWidth >= 900;
+      // 장면 칸에는 그림만, 글(문장·읽기·뜻·단어)은 전부 스크립트의 현재 줄에(사용자 지시 2026-11-10 — 같은 대사가 장면 캡션과 스크립트에 두 번 나오고 아래가 잘렸다).
+      // 칸이 가로로 길면(아이패드 가로의 오른쪽 칸·전체 화면·폰 가로) 좌 스크립트 · 우 그림, 세로로 길면 그림 위 · 스크립트 아래.
+      final sideBySide = c.maxWidth >= 600 && c.maxWidth > c.maxHeight * 1.1;
       final body = Column(children: [
         Expanded(
           child: sideBySide
               ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                  Expanded(flex: 4, child: script),
+                  Expanded(flex: c.maxWidth >= 900 ? 4 : 5, child: script),
                   const VerticalDivider(width: 1, color: AppColors.line),
-                  Expanded(flex: 6, child: cutFor(true)),
+                  Expanded(flex: c.maxWidth >= 900 ? 6 : 5, child: cutFor(true)),
                 ])
               : Column(children: [
-                  // 폰: 그림은 3:2 비율 그대로(잘리지 않게), 캡션은 자연 높이(길면 안에서 스크롤) — 위 칸 최대 62%, 나머지가 스크립트.
-                  // 넓은 칸(아이패드 세로): 전처럼 고정 높이.
-                  // 넓은 칸(아이패드 세로·두 화면 오른쪽 칸)도 폰과 같이 그림 비율을 지킨다(사용자 지시 2026-11-08 "그림짤림" — 고정 높이 + cover 로 위아래가 잘렸다).
-                  ConstrainedBox(constraints: BoxConstraints(maxHeight: c.maxHeight * 0.62), child: cutFor(false)),
+                  // 그림은 원본 비율 그대로(자르지 않음), 높이는 칸의 절반까지 — 나머지는 스크립트.
+                  ConstrainedBox(constraints: BoxConstraints(maxHeight: c.maxHeight * 0.5), child: cutFor(false)),
                   const Divider(height: 1, color: AppColors.line),
                   Expanded(child: script),
                 ]),
@@ -244,10 +242,11 @@ class _Script extends StatelessWidget {
                     const SizedBox(width: 8),
                     Expanded(
                       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                        SelectableJaText(text: LearnerPrefs.fill(t.shown), lemmas: t.lemmas, style: TextStyle(fontSize: on ? 16.5 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
+                        SelectableJaText(text: LearnerPrefs.fill(t.shown), lemmas: t.lemmas, style: TextStyle(fontSize: on ? 18 : 15, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
                         if (showKana && t.kana.isNotEmpty && t.kana != t.ja) Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 11.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
                         if (showRd && t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 11.5, color: AppColors.muted)),
                         if (showKo) Text(LearnerPrefs.fill(t.ko, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.sumiLight, height: 1.35)),
+                        if (on && t.lemmas.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 6), child: LemmaChips(turn: t, compact: !isWide(context))),
                         if (on && t.note.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 4), child: Text('💡 ${t.note}', style: const TextStyle(fontSize: 11, color: AppColors.beniDeep, height: 1.35))),
                       ]),
                     ),
@@ -281,81 +280,33 @@ class _SpeakerDot extends StatelessWidget {
       );
 }
 
-/// 오른쪽(또는 위) 장면 컷 + 캡션.
+/// 오른쪽(또는 위) 장면 컷 — 그림만. 글은 스크립트의 현재 줄에 있다.
 class _CutPanel extends StatelessWidget {
   final Dialogue d;
   final DialogueTurn turn;
-  final bool showKana, showRd, showKo;
-  final VoidCallback onSpeak;
-  final bool side; // true = 왼쪽 스크립트·오른쪽 컷(세로 공간 넉넉), false = 컷 위·스크립트 아래
-  const _CutPanel({required this.side, required this.d, required this.turn, required this.showKana, required this.showRd, required this.showKo, required this.onSpeak});
+  final bool side; // true = 왼쪽 스크립트·오른쪽 그림, false = 그림 위·스크립트 아래
+  const _CutPanel({required this.side, required this.d, required this.turn});
 
   @override
   Widget build(BuildContext context) {
-    final wide = isWide(context);
+    // 어느 배치든 그림은 원본 비율(1168:784) — 남는 칸은 여백으로 두고 자르지 않는다.
+    final pic = AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn));
+    if (!side) return Padding(padding: const EdgeInsets.fromLTRB(12, 10, 12, 10), child: Align(heightFactor: 1, child: pic));
     return Padding(
-      padding: EdgeInsets.fromLTRB(wide ? 16 : 12, 10, wide ? 16 : 12, 10),
-      child: Column(mainAxisSize: side ? MainAxisSize.max : MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, children: [
-        if (wide)
-          Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: Row(children: [
-              const Icon(Icons.image_outlined, size: 16, color: AppColors.sumi),
-              const SizedBox(width: 6),
-              Text(tr('회화 장면'), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-              const Spacer(),
-              Text(d.speakerName(turn.speaker), style: const TextStyle(fontSize: 11, color: AppColors.muted, fontWeight: FontWeight.w700)),
-            ]),
-          ),
-        // 문장은 아래 _Caption 에(그림을 덮지 않음). 폰은 그림을 3:2 비율로 두고(사용자 지시 2026-11-04 "짤린다") 캡션이 길면 캡션만 스크롤.
-        // 어느 배치든 그림은 원본 비율(1168:784) — 남는 칸은 여백으로 두고 자르지 않는다.
-        if (side)
-          Expanded(child: Center(child: AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn))))
-        else if (wide) // 넓은 칸 세로 배치: 그림 3 : 캡션 2 로 나누고 그림은 그 안에서 비율 유지
-          Flexible(flex: 3, child: Center(child: AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn))))
-        else
-          AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn)),
-        const SizedBox(height: 10),
-        if (side)
-          _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak)
-        else
-          Flexible(flex: 2, child: SingleChildScrollView(child: _Caption(d: d, turn: turn, showKana: showKana, showRd: showRd, showKo: showKo, onSpeak: onSpeak))),
+      padding: const EdgeInsets.fromLTRB(16, 12, 16, 10),
+      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+        Padding(
+          padding: const EdgeInsets.only(bottom: 8),
+          child: Row(children: [
+            const Icon(Icons.image_outlined, size: 16, color: AppColors.sumi),
+            const SizedBox(width: 6),
+            Text(tr('회화 장면'), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+            const Spacer(),
+            Text(d.speakerName(turn.speaker), style: const TextStyle(fontSize: 11, color: AppColors.muted, fontWeight: FontWeight.w700)),
+          ]),
+        ),
+        Expanded(child: Align(alignment: Alignment.topCenter, child: pic)),
       ]),
-    );
-  }
-}
-
-/// 현재 문장 캡션(한자를 누르면 한자 팝업).
-class _Caption extends StatelessWidget {
-  final Dialogue d;
-  final DialogueTurn turn;
-  final bool showKana, showRd, showKo;
-  final VoidCallback onSpeak;
-  const _Caption({required this.d, required this.turn, required this.showKana, required this.showRd, required this.showKo, required this.onSpeak});
-
-  @override
-  Widget build(BuildContext context) {
-    final wide = isWide(context);
-    return AnimatedSwitcher(
-      duration: const Duration(milliseconds: 300),
-      child: Container(
-        key: ValueKey(turn.num),
-        width: double.infinity,
-        padding: EdgeInsets.fromLTRB(16, wide ? 12 : 10, 12, wide ? 12 : 10),
-        decoration: BoxDecoration(color: AppColors.washi, border: Border.all(color: AppColors.beni, width: 1.3), borderRadius: BorderRadius.circular(14), boxShadow: kCardShadow),
-        child: Row(crossAxisAlignment: CrossAxisAlignment.center, children: [
-          Expanded(
-            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              SelectableJaText(text: LearnerPrefs.fill(turn.shown), lemmas: turn.lemmas, style: TextStyle(fontSize: wide ? 20 : 17, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.35)),
-              if (showKana && turn.kana.isNotEmpty && turn.kana != turn.ja) Text(LearnerPrefs.fill(turn.kana), style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
-              if (showRd && turn.rd.isNotEmpty) Text(LearnerPrefs.fill(turn.rd, ko: true), style: const TextStyle(fontSize: 12.5, color: AppColors.muted)),
-              if (showKo) Padding(padding: const EdgeInsets.only(top: 2), child: Text(LearnerPrefs.fill(turn.ko, ko: true), style: const TextStyle(fontSize: 13.5, color: AppColors.sumiLight, height: 1.35))),
-              if (turn.lemmas.isNotEmpty) Padding(padding: const EdgeInsets.only(top: 8), child: LemmaChips(turn: turn, compact: !wide)),
-            ]),
-          ),
-          IconButton(tooltip: tr('듣기'), onPressed: onSpeak, icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 26)),
-        ]),
-      ),
     );
   }
 }
