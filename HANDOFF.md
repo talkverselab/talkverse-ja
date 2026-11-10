@@ -8,10 +8,11 @@
 
 | 항목 | 값 |
 |---|---|
-| 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 d26aa0a. 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 74** https://apps.talkverse.uk/Ultzu/430. 로컬 빌드 `flutter build apk --release --build-number=75` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
-| iOS TestFlight | **2611091529**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
-| 빌드 캐시 | **2026-11-10 정리로 `build/`·`.dart_tool/`·`android/.gradle`·`ios/Pods` 삭제** — 다음 빌드 전 `flutter pub get` 과 `cd ios && pod install`(ios_release.sh 가 flutter build ipa 로 다시 받음) 필요, 첫 빌드는 오래 걸림 |
+| 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 단어 카드 커밋(2026-11-10 저녁). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
+| Android | Zealot 「일본어 유니버스」 **빌드 79** https://apps.talkverse.uk/Ultzu/443. 로컬 빌드 `flutter build apk --release --build-number=80` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| iOS TestFlight | **2611101751**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
+| 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
+| 빌드 캐시 | **2026-11-10 정리로 `build/`·`.dart_tool/`·`android/.gradle`·`ios/Pods` 삭제**했다가 같은 날 저녁 빌드로 다시 생김(build 1.4GB·.dart_tool 등) — 디스크가 차면 다시 지워도 됨 |
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`·`emotion`·`segs`(감정 열), 어조사 턴 `emoji`. 검사 `tools/check_dialogues.py`(남은 오류 4 = r1_culture_a3, r1_life_c2×3, 원래 있던 것). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ |
 | 회화 일상성 정리 | 2026-11-09 사용자 지시(uk 경유) 「반전·러브·플러팅은 그대로, 일상 회화 안에서」 — 카오스 강화가 덧붙인 엉뚱한 사고를 걷어냄: 71편 179턴(목록 `data/review/chaos/daily_fix_reverted.json`, 커밋 6eb75a5). **대본은 끝, 음성은 아직** — 앱은 그 턴에 옛 음성(옛 글 기준)을 들려준다 |
 | 회화 음성 | 215편 · D1 `audio_lines` 4,384줄, R2 `audio/ja/<편>/<NN>_<m\|f>.mp4`, 매니페스트 `data/tts/audio_ja.json`, 작업 폴더 `~/tts_work/ja`(done.txt 215). 절차 `docs/DIALOGUE_AUDIO.md`. **D1 대조(11-10): 31편이 D1 턴 수 < 대본 턴 수**(예 r3_love_b5 12/16, r0_friends_c3 6/8) — 나중에 늘어난 턴으로 보이며 음성 생성이 필요(새벽에만). 정확한 목록 뽑기는 디스크가 차서 못 끝냄 |
@@ -46,7 +47,7 @@
 ```bash
 cd ~/talkverse/ja && flutter pub get && flutter analyze && flutter test
 git add <바꾼 파일만> && git commit && git push origin master
-flutter build apk --release --build-number=75 && tools/zealot_push.sh "변경 한 줄"
+flutter build apk --release --build-number=80 && tools/zealot_push.sh "변경 한 줄"
 bash tools/ios_release.sh                                    # Android 와 항상 같이
 python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)
 /usr/bin/python3 tools/scene_upload.py [<편id> ...]          # 장면 컷 R2/D1(sha1 같으면 건너뜀)
