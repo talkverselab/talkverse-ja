@@ -22,4 +22,16 @@ void main() {
       expect(find.text('N1'), findsOneWidget);
     });
   }
+
+  for (final w in const [150.0, 210.0]) {
+    testWidgets('compact word card fits width $w', (tester) async {
+      late BuildContext ctx;
+      final card = WordCard(word: 'コミュニケーション', kana: 'こみゅにけーしょん', gloss: 'communication · 커뮤니케이션 · 의사소통', note: '예외', badge: '문법 #1999', onSpeak: () {});
+      await tester.pumpWidget(MaterialApp(
+        home: Scaffold(body: Center(child: SizedBox(width: w, height: 74, child: Builder(builder: (c) { ctx = c; return card.renderCompact(ctx); })))),
+      ));
+      await tester.pump(const Duration(milliseconds: 300));
+      expect(tester.takeException(), isNull);
+    });
+  }
 }

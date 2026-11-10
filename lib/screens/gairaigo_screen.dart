@@ -196,20 +196,12 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
           ),
         ),
         const SizedBox(height: 12),
-        GridView.count(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          crossAxisCount: (MediaQuery.sizeOf(context).width / 210).ceil().clamp(2, 4),
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
-          childAspectRatio: 0.78,
-          children: _visible(b).map(_wordCard).toList(),
-        ),
+        WordCardGrid(cards: _visible(b).map(_wordCard).toList()),
       ],
     );
   }
 
-  Widget _wordCard(_Word w) => WordCard(
+  WordCard _wordCard(_Word w) => WordCard(
         word: w.ja,
         kana: w.ja,
         gloss: w.en.isEmpty ? w.ko : '${w.en} · ${w.ko}',

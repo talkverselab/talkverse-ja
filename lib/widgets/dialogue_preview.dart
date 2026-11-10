@@ -123,13 +123,9 @@ class _PreviewSheet extends StatelessWidget {
             const SizedBox(height: 16),
             Text(trf('단어 {0}', [words.length]), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumiLight)),
             const SizedBox(height: 8),
-            GridView.builder(
-              shrinkWrap: true,
-              physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: WordCard.grid,
-              itemCount: words.length,
-              itemBuilder: (context, i) {
-                final w = words[i];
+            WordCardGrid(cards: [
+              for (final w in words)
+                () {
                 void speak() => TtsService.instance.speak(w.term.replaceAll(RegExp(r'^[〜~]'), ''));
                 return WordCard(
                   word: w.term,
@@ -140,8 +136,8 @@ class _PreviewSheet extends StatelessWidget {
                   onTap: w.entry == null ? speak : () => showWordSheet(context, w.entry!),
                   onSpeak: speak,
                 );
-              },
-            ),
+                }(),
+            ]),
           ],
           if (grammar.isNotEmpty) ...[
             const SizedBox(height: 16),

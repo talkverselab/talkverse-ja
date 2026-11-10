@@ -266,14 +266,9 @@ class _UnitBlock extends StatelessWidget {
               ],
             ),
           ),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: WordCard.grid,
-            itemCount: words.length,
-            itemBuilder: (context, i) {
-              final w = words[i];
-              return WordCard(
+          WordCardGrid(cards: [
+            for (final w in words)
+              WordCard(
                 word: w.word,
                 kana: w.kana,
                 gloss: w.ko,
@@ -283,9 +278,8 @@ class _UnitBlock extends StatelessWidget {
                 note: w.grammar ? posLabel(w.pos) : null,
                 onTap: () => showStudyWordSheet(context, w.study),
                 onSpeak: () => TtsService.instance.speak(w.word),
-              );
-            },
-          ),
+              ),
+          ]),
         ],
       ),
     );

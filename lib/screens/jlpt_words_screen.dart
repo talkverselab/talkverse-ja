@@ -227,13 +227,10 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                               ),
                             SliverPadding(
                               padding: const EdgeInsets.fromLTRB(12, 6, 12, 4),
-                              sliver: SliverGrid(
-                                gridDelegate: WordCard.grid,
-                                delegate: SliverChildBuilderDelegate(
-                                  childCount: searching ? _words.length : _slice(u).length, // 검색은 한 격자
-                                  (context, i) {
-                                    final w = _words[searching ? i : u * _unit + i];
-                                    return WordCard(
+                              sliver: SliverToBoxAdapter(
+                                child: WordCardGrid(cards: [
+                                  for (final w in searching ? _words : _slice(u))
+                                    WordCard(
                                       word: w.surface,
                                       segs: w.segs,
                                       kana: w.kana,
@@ -244,9 +241,8 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                                       showRuby: showRuby,
                                       onTap: () => showWordSheet(context, w),
                                       onSpeak: () => TtsService.instance.speak(w.kana),
-                                    );
-                                  },
-                                ),
+                                    ),
+                                ]),
                               ),
                             ),
                           ],
