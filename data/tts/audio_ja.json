@@ -478,8 +478,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_culture_a2/03_m.mp4",
-"sha1": "110bc0078bc0bc67c4b227edf6b0a80abfd18558",
-"ms": 2723
+"sha1": "d921aec1469290aee27a8dc3c68794b9500014b0",
+"ms": 2144
 },
 {
 "turn": 3,
@@ -487,8 +487,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_culture_a2/03_f.mp4",
-"sha1": "fb4876b820f887202d977645187c1dff6a8bfc77",
-"ms": 2280
+"sha1": "ba3d52e26c4d7688b4a8da0c0ea208d693bfb17f",
+"ms": 2424
 },
 {
 "turn": 4,
@@ -496,8 +496,8 @@
 "speaker": "yuka",
 "emotion": "surprised",
 "key": "audio/ja/r0_culture_a2/04_m.mp4",
-"sha1": "6d4a2a5105e9d91dd26264f4d5679b08a8ef939b",
-"ms": 1011
+"sha1": "29433f8b29500cb57a13864d42da121d48d416b2",
+"ms": 675
 },
 {
 "turn": 4,
@@ -505,8 +505,8 @@
 "speaker": "yuka",
 "emotion": "surprised",
 "key": "audio/ja/r0_culture_a2/04_f.mp4",
-"sha1": "6d4a2a5105e9d91dd26264f4d5679b08a8ef939b",
-"ms": 1011
+"sha1": "29433f8b29500cb57a13864d42da121d48d416b2",
+"ms": 675
 },
 {
 "turn": 5,
@@ -822,19 +822,19 @@
 "turn": 8,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+annoyed",
+"emotion": "annoyed",
 "key": "audio/ja/r0_culture_b2/08_m.mp4",
-"sha1": "e5d3c4043398f1e5c546c2ab3246eff3c6bfd7ee",
-"ms": 4300
+"sha1": "148bccf74bd38039a50159b85600781b8a800fc8",
+"ms": 3300
 },
 {
 "turn": 8,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+annoyed",
+"emotion": "annoyed",
 "key": "audio/ja/r0_culture_b2/08_f.mp4",
-"sha1": "832fc6f4b45cb2a110b90967c106dbedda6ad192",
-"ms": 5300
+"sha1": "286d06413e839177a3dfe52516c351b2a9cb965a",
+"ms": 3500
 }
 ],
 "r0_culture_b4": [
@@ -934,8 +934,8 @@
 "speaker": "am",
 "emotion": "surprised",
 "key": "audio/ja/r0_culture_b4/06_m.mp4",
-"sha1": "e17dfb26f7dc33feb919ecfe037c353bb4759d99",
-"ms": 3500
+"sha1": "bf15a52ded6bfca6f881348c402cef3ea99d3543",
+"ms": 3100
 },
 {
 "turn": 6,
@@ -943,8 +943,8 @@
 "speaker": "af",
 "emotion": "surprised",
 "key": "audio/ja/r0_culture_b4/06_f.mp4",
-"sha1": "d4140c713088b537cadc12ec48b973e345d510e7",
-"ms": 2571
+"sha1": "4cf250022ce3cb6bee4cc79a152935ed00141f94",
+"ms": 3600
 },
 {
 "turn": 7,
@@ -952,8 +952,8 @@
 "speaker": "ken",
 "emotion": "teasing",
 "key": "audio/ja/r0_culture_b4/07_m.mp4",
-"sha1": "ae6390deeee1da7b2826ddd48618fbfdedfde33d",
-"ms": 1593
+"sha1": "7bda5dd2fdc32845a4f468af6e58bd5b45713b74",
+"ms": 3300
 },
 {
 "turn": 7,
@@ -961,8 +961,8 @@
 "speaker": "ken",
 "emotion": "teasing",
 "key": "audio/ja/r0_culture_b4/07_f.mp4",
-"sha1": "ae6390deeee1da7b2826ddd48618fbfdedfde33d",
-"ms": 1593
+"sha1": "7bda5dd2fdc32845a4f468af6e58bd5b45713b74",
+"ms": 3300
 },
 {
 "turn": 8,
@@ -970,8 +970,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r0_culture_b4/08_m.mp4",
-"sha1": "b8fa2eab1433f3f779f0d158e594810979a149da",
-"ms": 2325
+"sha1": "55152d037d21d67801e1fa4c2a792976b6ee9ad0",
+"ms": 2860
 },
 {
 "turn": 8,
@@ -979,8 +979,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r0_culture_b4/08_f.mp4",
-"sha1": "64c27d11ef927dfbe92aedb138e0f7d8d7636672",
-"ms": 2680
+"sha1": "98b66273b41f7b26ffac7aec4fe7c94ba11c042b",
+"ms": 3400
 }
 ],
 "r0_culture_c1": [
@@ -1956,19 +1956,19 @@
 "turn": 4,
 "voice": "m",
 "speaker": "am",
-"emotion": "excited+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r0_friends_a6/04_m.mp4",
-"sha1": "68ee57e689936e66926e1ef6c4f12853fdc365bf",
-"ms": 3200
+"sha1": "bd728b66c08886f54848545f35d25adbed9ab98f",
+"ms": 1274
 },
 {
 "turn": 4,
 "voice": "f",
 "speaker": "af",
-"emotion": "excited+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r0_friends_a6/04_f.mp4",
-"sha1": "f3696aae0fe5d12380ce16b19f71d12c6653938c",
-"ms": 5600
+"sha1": "3f0baf8f71ad1daf9b19a1c7a3c8c90a0615cd0b",
+"ms": 1912
 },
 {
 "turn": 5,
@@ -2041,8 +2041,8 @@
 "speaker": "af",
 "emotion": "cheerful",
 "key": "audio/ja/r0_friends_a7/02_f.mp4",
-"sha1": "715215be2b65a9cee4d5c27bbac155a72e47e3a5",
-"ms": 1560
+"sha1": "046ad889fb6402e91877524aa7937328d208564b",
+"ms": 835
 },
 {
 "turn": 3,
@@ -2066,19 +2066,19 @@
 "turn": 4,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "cheerful+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r0_friends_a7/04_m.mp4",
-"sha1": "9635602641fed1c246a326ebd9192a8428b649b3",
-"ms": 6200
+"sha1": "d1f5da62383ca6e25ad2f6e665690072c4c8f863",
+"ms": 4900
 },
 {
 "turn": 4,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "cheerful+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r0_friends_a7/04_f.mp4",
-"sha1": "9635602641fed1c246a326ebd9192a8428b649b3",
-"ms": 6200
+"sha1": "d1f5da62383ca6e25ad2f6e665690072c4c8f863",
+"ms": 4900
 },
 {
 "turn": 5,
@@ -2526,8 +2526,8 @@
 "speaker": "yuka",
 "emotion": "worried",
 "key": "audio/ja/r0_friends_c3/05_m.mp4",
-"sha1": "f52321a8a4dc85236751fafcc30af3c62c5f6d86",
-"ms": 1800
+"sha1": "dc60598c10ef828225e7aec3c10d43faf5a81488",
+"ms": 2024
 },
 {
 "turn": 5,
@@ -2535,8 +2535,8 @@
 "speaker": "yuka",
 "emotion": "worried",
 "key": "audio/ja/r0_friends_c3/05_f.mp4",
-"sha1": "f52321a8a4dc85236751fafcc30af3c62c5f6d86",
-"ms": 1800
+"sha1": "dc60598c10ef828225e7aec3c10d43faf5a81488",
+"ms": 2024
 },
 {
 "turn": 6,
@@ -2580,8 +2580,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_friends_c3/08_m.mp4",
-"sha1": "91e27045aa2c1345de7228fb4edebef70728fe57",
-"ms": 1532
+"sha1": "2c7d4a12ffa66af18fcbbb92041db98980eaaf52",
+"ms": 1292
 },
 {
 "turn": 8,
@@ -2589,8 +2589,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_friends_c3/08_f.mp4",
-"sha1": "bed5fa02a228b4727613b26811a840788940dcac",
-"ms": 3300
+"sha1": "9650e0570b24fe21881251606b1b35ae64fb1309",
+"ms": 639
 }
 ],
 "r0_friends_c4": [
@@ -3274,19 +3274,19 @@
 "turn": 6,
 "voice": "m",
 "speaker": "am",
-"emotion": "polite+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r0_life_b1/06_m.mp4",
-"sha1": "e159e119d042390306021ec1a44bcb16633454fd",
-"ms": 4100
+"sha1": "6db2479a420487192c50011ef89c54abb982ba2d",
+"ms": 3100
 },
 {
 "turn": 6,
 "voice": "f",
 "speaker": "af",
-"emotion": "polite+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r0_life_b1/06_f.mp4",
-"sha1": "58cad6a39405b12dd90050765a7f635181113f9b",
-"ms": 4700
+"sha1": "ba9a832630af15910d2240a12500013e59f47447",
+"ms": 2041
 },
 {
 "turn": 7,
@@ -3532,8 +3532,8 @@
 "speaker": "riku",
 "emotion": "surprised",
 "key": "audio/ja/r0_life_b7/04_m.mp4",
-"sha1": "3a2cc602cd3f6f9633247c7968b9db831354d423",
-"ms": 3300
+"sha1": "7f48fa46816e49e9d969d05b5e860c1db53d2468",
+"ms": 4500
 },
 {
 "turn": 4,
@@ -3541,8 +3541,8 @@
 "speaker": "riku",
 "emotion": "surprised",
 "key": "audio/ja/r0_life_b7/04_f.mp4",
-"sha1": "3a2cc602cd3f6f9633247c7968b9db831354d423",
-"ms": 3300
+"sha1": "7f48fa46816e49e9d969d05b5e860c1db53d2468",
+"ms": 4500
 },
 {
 "turn": 5,
@@ -4039,31 +4039,13 @@
 "ms": 3100
 },
 {
-"turn": 6,
-"voice": "m",
-"speaker": "am",
-"emotion": "flustered",
-"key": "audio/ja/r0_love_a4/06_m.mp4",
-"sha1": "efdfbdf0175286019764dba13e34c616f8c3bc06",
-"ms": 552
-},
-{
-"turn": 6,
-"voice": "f",
-"speaker": "af",
-"emotion": "flustered",
-"key": "audio/ja/r0_love_a4/06_f.mp4",
-"sha1": "cc6af8ae7eef40a257713df6abada396b551a17a",
-"ms": 767
-},
-{
 "turn": 7,
 "voice": "m",
 "speaker": "sakura",
 "emotion": "shout",
 "key": "audio/ja/r0_love_a4/07_m.mp4",
-"sha1": "092e69cda43c4838e9771904b0512a1558da8f44",
-"ms": 1966
+"sha1": "d1e52637086eaf66ec85acb843155ab1b9e45fe8",
+"ms": 2904
 },
 {
 "turn": 7,
@@ -4071,8 +4053,8 @@
 "speaker": "sakura",
 "emotion": "shout",
 "key": "audio/ja/r0_love_a4/07_f.mp4",
-"sha1": "092e69cda43c4838e9771904b0512a1558da8f44",
-"ms": 1966
+"sha1": "d1e52637086eaf66ec85acb843155ab1b9e45fe8",
+"ms": 2904
 },
 {
 "turn": 8,
@@ -4080,8 +4062,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_a4/08_m.mp4",
-"sha1": "02e989cb6d7c9c4501d59585e54d8e9c4b1ca935",
-"ms": 1695
+"sha1": "f5afa397c36a8b32d58d3bad334c5f119519f803",
+"ms": 1527
 },
 {
 "turn": 8,
@@ -4089,8 +4071,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_a4/08_f.mp4",
-"sha1": "ebba39deac90513603c14131ee37d462e36b1e96",
-"ms": 2224
+"sha1": "ebe639fb3d69197e7cf91141d457874123a4def6",
+"ms": 1541
 }
 ],
 "r0_love_a5": [
@@ -4812,8 +4794,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_c2/06_m.mp4",
-"sha1": "5d69ea5292f8c4a3ba8d1aef13d46c8e0f3cbee4",
-"ms": 2328
+"sha1": "6a6bbfa15f2c1a1ae42761b795a861c68ff7ad40",
+"ms": 3900
 },
 {
 "turn": 6,
@@ -4821,8 +4803,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_c2/06_f.mp4",
-"sha1": "eaecce33d38ded16e8375fa179deeab80d61d114",
-"ms": 2560
+"sha1": "15cccc2b6d5ad327c31e82f88b3388ec8632ee77",
+"ms": 3500
 },
 {
 "turn": 7,
@@ -4830,8 +4812,8 @@
 "speaker": "sakura",
 "emotion": "teasing",
 "key": "audio/ja/r0_love_c2/07_m.mp4",
-"sha1": "2efba11b8adcd1a2f36177448a14d393f0b185db",
-"ms": 656
+"sha1": "c987bbf0d6fa9d707f77754a71dd13e8b543b75d",
+"ms": 1855
 },
 {
 "turn": 7,
@@ -4839,8 +4821,8 @@
 "speaker": "sakura",
 "emotion": "teasing",
 "key": "audio/ja/r0_love_c2/07_f.mp4",
-"sha1": "2efba11b8adcd1a2f36177448a14d393f0b185db",
-"ms": 656
+"sha1": "c987bbf0d6fa9d707f77754a71dd13e8b543b75d",
+"ms": 1855
 },
 {
 "turn": 8,
@@ -4848,8 +4830,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_c2/08_m.mp4",
-"sha1": "c861823e56789f2c51b07a6c498b0e46cb821c29",
-"ms": 1550
+"sha1": "873b26d38911faa2a832d5875adce654aed1909e",
+"ms": 1355
 },
 {
 "turn": 8,
@@ -4857,8 +4839,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_love_c2/08_f.mp4",
-"sha1": "c57c62758b9d9f329c57e3587547c93cbc91bdbc",
-"ms": 1507
+"sha1": "f72e26b0700f5651d10667bf1046759bf4ae7b8b",
+"ms": 741
 }
 ],
 "r0_love_c3": [
@@ -5068,8 +5050,8 @@
 "speaker": "am",
 "emotion": "surprised",
 "key": "audio/ja/r0_love_c4/06_m.mp4",
-"sha1": "4f15fd7e3e8f56112349e4dc4ecab977c9450ef3",
-"ms": 2611
+"sha1": "bcb871a396829e78034365ffe0ecf94b9995382b",
+"ms": 2841
 },
 {
 "turn": 6,
@@ -5077,8 +5059,8 @@
 "speaker": "af",
 "emotion": "surprised",
 "key": "audio/ja/r0_love_c4/06_f.mp4",
-"sha1": "e8254c0b933381f6e376227ec425154322555fca",
-"ms": 1710
+"sha1": "b5f663e9d8740306563218c8f5f6af376c6860fe",
+"ms": 3300
 },
 {
 "turn": 7,
@@ -5086,8 +5068,8 @@
 "speaker": "sakura",
 "emotion": "amused",
 "key": "audio/ja/r0_love_c4/07_m.mp4",
-"sha1": "6883ff97d344bfc9c7241129864b78a3b7919d13",
-"ms": 991
+"sha1": "f6c03d0c160ad9c67d6e30d31ff4f7df4705064f",
+"ms": 1951
 },
 {
 "turn": 7,
@@ -5095,8 +5077,8 @@
 "speaker": "sakura",
 "emotion": "amused",
 "key": "audio/ja/r0_love_c4/07_f.mp4",
-"sha1": "6883ff97d344bfc9c7241129864b78a3b7919d13",
-"ms": 991
+"sha1": "f6c03d0c160ad9c67d6e30d31ff4f7df4705064f",
+"ms": 1951
 },
 {
 "turn": 8,
@@ -5104,8 +5086,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r0_love_c4/08_m.mp4",
-"sha1": "98967aae578ae028b74886f53c673faa8882a9ce",
-"ms": 983
+"sha1": "649563ecf533644531f30416e580192fc90da297",
+"ms": 1622
 },
 {
 "turn": 8,
@@ -5113,8 +5095,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r0_love_c4/08_f.mp4",
-"sha1": "38c016d353fb20212388e9b61c4eb3add65d703b",
-"ms": 1308
+"sha1": "f672142b072b8baf9cc84a998cb57959ba9424f0",
+"ms": 2128
 }
 ],
 "r0_love_c5": [
@@ -5380,8 +5362,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r0_travel_a1/04_m.mp4",
-"sha1": "8b70d9af09807e53c0fd3e8e9b1fa36e0b02a946",
-"ms": 1529
+"sha1": "b8ff05dc831cc4e7a3e9f739b238fdbb16e564ae",
+"ms": 675
 },
 {
 "turn": 4,
@@ -5389,8 +5371,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r0_travel_a1/04_f.mp4",
-"sha1": "19fc1ebf306cc034be6e4b6f808de68710619ac2",
-"ms": 2282
+"sha1": "fa78c1e5a5b088904648432ee1c12da9bec7b3a7",
+"ms": 764
 },
 {
 "turn": 5,
@@ -5416,8 +5398,8 @@
 "speaker": "am",
 "emotion": "stiff",
 "key": "audio/ja/r0_travel_a1/06_m.mp4",
-"sha1": "6811080be3a0aae8e9fbccfdcc57ed5ba77c6746",
-"ms": 2100
+"sha1": "31bbc139e54957c8da81940d71eb0a3d4b7c292f",
+"ms": 2230
 },
 {
 "turn": 6,
@@ -5425,8 +5407,8 @@
 "speaker": "af",
 "emotion": "stiff",
 "key": "audio/ja/r0_travel_a1/06_f.mp4",
-"sha1": "981183cc6073652fa1e050160ca94772dc5d9c83",
-"ms": 736
+"sha1": "fc224f58c3d295e1955d9eb72405c85da5350804",
+"ms": 2673
 },
 {
 "turn": 7,
@@ -5452,8 +5434,8 @@
 "speaker": "am",
 "emotion": "excited",
 "key": "audio/ja/r0_travel_a1/08_m.mp4",
-"sha1": "0420ce1e9909748ec8e3bb8981205d5535a420f6",
-"ms": 1475
+"sha1": "99dda8b076e78864deea1d86a45e4bcd584ddc13",
+"ms": 3200
 },
 {
 "turn": 8,
@@ -5461,8 +5443,8 @@
 "speaker": "af",
 "emotion": "excited",
 "key": "audio/ja/r0_travel_a1/08_f.mp4",
-"sha1": "785821e96a105d8726281957f7e58c56e8388a44",
-"ms": 844
+"sha1": "89c2410bb8b4845b9061341b1aa20c2bc6932dc8",
+"ms": 3900
 }
 ],
 "r0_travel_a2": [
@@ -6878,8 +6860,8 @@
 "speaker": "yuka",
 "emotion": "tsukkomi",
 "key": "audio/ja/r1_culture_b5/06_m.mp4",
-"sha1": "8a09f2cdcd707c3e9fbf811c5bebd9c9b9c5f004",
-"ms": 3500
+"sha1": "fd2d1d12fa5e1098837ca684c2d867ccfeff0aa0",
+"ms": 3800
 },
 {
 "turn": 6,
@@ -6887,26 +6869,26 @@
 "speaker": "yuka",
 "emotion": "tsukkomi",
 "key": "audio/ja/r1_culture_b5/06_f.mp4",
-"sha1": "8a09f2cdcd707c3e9fbf811c5bebd9c9b9c5f004",
-"ms": 3500
+"sha1": "fd2d1d12fa5e1098837ca684c2d867ccfeff0aa0",
+"ms": 3800
 },
 {
 "turn": 7,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_culture_b5/07_m.mp4",
-"sha1": "a0b32847869946e121cc1ee2f93fb4a361de7ffa",
-"ms": 2932
+"sha1": "4f7300545b864edb4f04a43aa1887749beff97f8",
+"ms": 2700
 },
 {
 "turn": 7,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_culture_b5/07_f.mp4",
-"sha1": "7f529c9f69c069897084451301468c5b587229a2",
-"ms": 4300
+"sha1": "38a735e7e283986cd949e20f9bee56b9ca861553",
+"ms": 3700
 },
 {
 "turn": 8,
@@ -7628,8 +7610,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b1/05_m.mp4",
-"sha1": "e6e31d87727d8ecc3b9c91ff451daab8725af601",
-"ms": 3200
+"sha1": "6b3cac979f04fd200a2bc52ec804cca008858181",
+"ms": 4500
 },
 {
 "turn": 5,
@@ -7637,8 +7619,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b1/05_f.mp4",
-"sha1": "356e6e70196f94f57ac8bca02aa927f1959ec8f5",
-"ms": 2867
+"sha1": "ff48d854422e549a76f597c13d03ccd636282dd6",
+"ms": 4000
 },
 {
 "turn": 6,
@@ -7662,19 +7644,19 @@
 "turn": 7,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+worried",
+"emotion": "worried",
 "key": "audio/ja/r1_friends_b1/07_m.mp4",
-"sha1": "14016486bca526a52a9067c582240aab918c69af",
+"sha1": "814393e32831b7e78f78966134abe9b2ae0d7de6",
 "ms": 3300
 },
 {
 "turn": 7,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+worried",
+"emotion": "worried",
 "key": "audio/ja/r1_friends_b1/07_f.mp4",
-"sha1": "59304dfad4d196b1f304ba0647a1ec217be8587e",
-"ms": 4200
+"sha1": "0bc7811c6a0bba5d6e53f6be1f989265b72de33d",
+"ms": 2958
 },
 {
 "turn": 8,
@@ -7772,19 +7754,19 @@
 "turn": 5,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "teasing+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r1_friends_b2/05_m.mp4",
-"sha1": "59ba81e49545c9542b12c5206cac283ab1af9282",
-"ms": 5200
+"sha1": "cb625207efc12ed6e97e8467f1462232781cf798",
+"ms": 3400
 },
 {
 "turn": 5,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "teasing+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r1_friends_b2/05_f.mp4",
-"sha1": "59ba81e49545c9542b12c5206cac283ab1af9282",
-"ms": 5200
+"sha1": "cb625207efc12ed6e97e8467f1462232781cf798",
+"ms": 3400
 },
 {
 "turn": 6,
@@ -7792,8 +7774,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b2/06_m.mp4",
-"sha1": "ce202c19ccc23ee65a67856ec5d8b2a838fac089",
-"ms": 1829
+"sha1": "4a9c3cef86f7dbb79c72c0b55814eb250a8061d7",
+"ms": 3400
 },
 {
 "turn": 6,
@@ -7801,8 +7783,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b2/06_f.mp4",
-"sha1": "c1d032abbf459b0c14947c222e7fc0318e2c2c7b",
-"ms": 2368
+"sha1": "cfb2a4245698dc277ecc7fa3576d3ea204a87b76",
+"ms": 3200
 },
 {
 "turn": 7,
@@ -7828,8 +7810,8 @@
 "speaker": "am",
 "emotion": "teasing",
 "key": "audio/ja/r1_friends_b2/08_m.mp4",
-"sha1": "1d007418daee04f2e4133b27a80dde3aaa0129e2",
-"ms": 4400
+"sha1": "7be249092c7f3fd6f777ebcd8f313d2f52e7f864",
+"ms": 2007
 },
 {
 "turn": 8,
@@ -7837,8 +7819,8 @@
 "speaker": "af",
 "emotion": "teasing",
 "key": "audio/ja/r1_friends_b2/08_f.mp4",
-"sha1": "1d29006ed2f63970756615a8cb9731082985a3f1",
-"ms": 4000
+"sha1": "6c99c369c714e3fb60bd20ab171202f91d3c4813",
+"ms": 3300
 }
 ],
 "r1_friends_b4": [
@@ -7920,8 +7902,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b4/05_m.mp4",
-"sha1": "4bd9af18e9e7600ec0c683819e49fbdc8ab0c373",
-"ms": 1727
+"sha1": "e3aa0fe3bbd0e1041c102b716b2d054b0dd95460",
+"ms": 1910
 },
 {
 "turn": 5,
@@ -7929,8 +7911,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_b4/05_f.mp4",
-"sha1": "8a3ae6ce82178682b63cfd16562b729a7a34b522",
-"ms": 1959
+"sha1": "55c45709ef385e87b58a366aadf914b2e00e902c",
+"ms": 1838
 },
 {
 "turn": 6,
@@ -7938,8 +7920,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r1_friends_b4/06_m.mp4",
-"sha1": "483bc55c358bc4f1c7e54d658d9586e7d22deb5d",
-"ms": 1547
+"sha1": "65db5ffe78debdbec33a54e21dd7497563e481b0",
+"ms": 4300
 },
 {
 "turn": 6,
@@ -7947,8 +7929,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r1_friends_b4/06_f.mp4",
-"sha1": "483bc55c358bc4f1c7e54d658d9586e7d22deb5d",
-"ms": 1547
+"sha1": "352fad40f81f2df2e00e8f36916306babe3384d4",
+"ms": 3500
 },
 {
 "turn": 7,
@@ -7956,8 +7938,8 @@
 "speaker": "ken",
 "emotion": "shy",
 "key": "audio/ja/r1_friends_b4/07_m.mp4",
-"sha1": "74c0cb53441970e074c2a5763071c3188545d1c4",
-"ms": 1152
+"sha1": "16365d9ba371a6fab9da7d1763c11327d1a374ea",
+"ms": 4100
 },
 {
 "turn": 7,
@@ -7965,8 +7947,8 @@
 "speaker": "ken",
 "emotion": "shy",
 "key": "audio/ja/r1_friends_b4/07_f.mp4",
-"sha1": "74c0cb53441970e074c2a5763071c3188545d1c4",
-"ms": 1152
+"sha1": "16365d9ba371a6fab9da7d1763c11327d1a374ea",
+"ms": 4100
 },
 {
 "turn": 8,
@@ -7974,8 +7956,8 @@
 "speaker": "am",
 "emotion": "excited",
 "key": "audio/ja/r1_friends_b4/08_m.mp4",
-"sha1": "3664de9352ae1e4d871fa4839a7f7ba0de1848fa",
-"ms": 1947
+"sha1": "ca9ae8cbd46cbfb035ef754aaae3723dec080781",
+"ms": 1736
 },
 {
 "turn": 8,
@@ -7983,8 +7965,8 @@
 "speaker": "af",
 "emotion": "excited",
 "key": "audio/ja/r1_friends_b4/08_f.mp4",
-"sha1": "d1cacd8be952c586800ffa9a9d4b2e7048414c9d",
-"ms": 1966
+"sha1": "cabf46fcdc00ae742ae10fdb577e1f32e7c4cc87",
+"ms": 1989
 }
 ],
 "r1_friends_b5": [
@@ -8650,8 +8632,8 @@
 "speaker": "yuka",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_c2/05_m.mp4",
-"sha1": "0af745901c5e74973853f535b2d3cf84ebd13549",
-"ms": 2363
+"sha1": "452c79b8df3bf40acf2ba401bd9c157e7d248c6a",
+"ms": 1743
 },
 {
 "turn": 5,
@@ -8659,8 +8641,8 @@
 "speaker": "yuka",
 "emotion": "flustered",
 "key": "audio/ja/r1_friends_c2/05_f.mp4",
-"sha1": "0af745901c5e74973853f535b2d3cf84ebd13549",
-"ms": 2363
+"sha1": "452c79b8df3bf40acf2ba401bd9c157e7d248c6a",
+"ms": 1743
 },
 {
 "turn": 6,
@@ -8668,8 +8650,8 @@
 "speaker": "yuka",
 "emotion": "gentle",
 "key": "audio/ja/r1_friends_c2/06_m.mp4",
-"sha1": "836c38f8f3fda231988c175702a2ef8add38e20c",
-"ms": 3100
+"sha1": "9c75888bda7623d7c42508aee531bbc5eef4de43",
+"ms": 2819
 },
 {
 "turn": 6,
@@ -8677,8 +8659,8 @@
 "speaker": "yuka",
 "emotion": "gentle",
 "key": "audio/ja/r1_friends_c2/06_f.mp4",
-"sha1": "f69f3db0432aacba1b4c22626b55191dfacffd0a",
-"ms": 3200
+"sha1": "9c75888bda7623d7c42508aee531bbc5eef4de43",
+"ms": 2819
 },
 {
 "turn": 7,
@@ -8686,8 +8668,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r1_friends_c2/07_m.mp4",
-"sha1": "4057a2de188fddf5dd0f18fc017690e426c64ce2",
-"ms": 2109
+"sha1": "d97bacf57733a2dacdc61504e19dad9ca2b74cc9",
+"ms": 2078
 },
 {
 "turn": 7,
@@ -8695,8 +8677,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r1_friends_c2/07_f.mp4",
-"sha1": "e6cb3923821f4dd2bce95adc12186e2f23eb6139",
-"ms": 2724
+"sha1": "a74355f672aa5884649cc17964c288eec6e521d3",
+"ms": 2806
 },
 {
 "turn": 8,
@@ -9106,8 +9088,8 @@
 "speaker": "man_y",
 "emotion": "polite",
 "key": "audio/ja/r1_life_a1/06_m.mp4",
-"sha1": "04cb1496cfb43588473e41ecfbe37a72c6fc2e49",
-"ms": 1056
+"sha1": "8dd20ee2ab389f2e3e4c00090a1e69c0ff22c57f",
+"ms": 1359
 },
 {
 "turn": 6,
@@ -9115,8 +9097,8 @@
 "speaker": "man_y",
 "emotion": "polite",
 "key": "audio/ja/r1_life_a1/06_f.mp4",
-"sha1": "04cb1496cfb43588473e41ecfbe37a72c6fc2e49",
-"ms": 1056
+"sha1": "8dd20ee2ab389f2e3e4c00090a1e69c0ff22c57f",
+"ms": 1359
 },
 {
 "turn": 7,
@@ -9124,8 +9106,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a1/07_m.mp4",
-"sha1": "3e5d48e30c1877201438c96ff54b10e7e888936a",
-"ms": 3200
+"sha1": "9d4d45182e48a4a4b17b6aebfc0289df9d5afa31",
+"ms": 1639
 },
 {
 "turn": 7,
@@ -9133,8 +9115,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a1/07_f.mp4",
-"sha1": "2171becf1603c833e6e92694af7de42027559e1b",
-"ms": 4000
+"sha1": "055260508989535c2f7fc0425e069cec9473f5ad",
+"ms": 1559
 },
 {
 "turn": 8,
@@ -9398,8 +9380,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a3/06_m.mp4",
-"sha1": "9c88ec46460ff8b4053b7bee250fc0eee9b51da4",
-"ms": 3800
+"sha1": "a9585624f2c4017f33c33e529b182127793f16b2",
+"ms": 3700
 },
 {
 "turn": 6,
@@ -9407,8 +9389,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a3/06_f.mp4",
-"sha1": "684ec245537e328ed69c967348bdd1cbf1278d6f",
-"ms": 4400
+"sha1": "c6e326e9717e2f0eb4a955d4648ce241249bff3a",
+"ms": 3500
 },
 {
 "turn": 7,
@@ -9434,8 +9416,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a3/08_m.mp4",
-"sha1": "80b40fb1d17ca562e46846ac304a9fba0de6f00e",
-"ms": 2601
+"sha1": "99f6285d80862931659b097a1a1035d54feae202",
+"ms": 3600
 },
 {
 "turn": 8,
@@ -9443,8 +9425,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_a3/08_f.mp4",
-"sha1": "43688bf0165c41006e4708839ebe6f76a7ab6997",
-"ms": 2599
+"sha1": "a3d3dd839af35212aba6120c1bd93c8169103567",
+"ms": 2950
 }
 ],
 "r1_life_a4": [
@@ -9834,19 +9816,19 @@
 "turn": 6,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_life_a7/06_m.mp4",
-"sha1": "947247b79c21b7613b9428785092e8cc5fcf2c28",
-"ms": 3300
+"sha1": "387b09a59c706e08d2a2adb070d4cdc9863e6027",
+"ms": 3400
 },
 {
 "turn": 6,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_life_a7/06_f.mp4",
-"sha1": "947247b79c21b7613b9428785092e8cc5fcf2c28",
-"ms": 3300
+"sha1": "387b09a59c706e08d2a2adb070d4cdc9863e6027",
+"ms": 3400
 },
 {
 "turn": 7,
@@ -10382,19 +10364,19 @@
 "turn": 5,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_life_b5/05_m.mp4",
-"sha1": "198c479ae4eaa52881d7e9c876d59b747a897022",
-"ms": 2598
+"sha1": "0afa4660f5711b520a6a207d478aad172aab8b4a",
+"ms": 1480
 },
 {
 "turn": 5,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r1_life_b5/05_f.mp4",
-"sha1": "b81e3d96beda9d5947c12b126fbc1ded539e9e3d",
-"ms": 3800
+"sha1": "855cf8c0daf0fc845e785141a5f920c399562cfa",
+"ms": 2469
 },
 {
 "turn": 6,
@@ -10402,8 +10384,8 @@
 "speaker": "riku",
 "emotion": "worried",
 "key": "audio/ja/r1_life_b5/06_m.mp4",
-"sha1": "20a637ea2477e889b1ddb1a0f72f9784380c8aae",
-"ms": 3200
+"sha1": "6f65f696deee42017918139f3095ec0287fb05ec",
+"ms": 3400
 },
 {
 "turn": 6,
@@ -10411,8 +10393,8 @@
 "speaker": "riku",
 "emotion": "worried",
 "key": "audio/ja/r1_life_b5/06_f.mp4",
-"sha1": "20a637ea2477e889b1ddb1a0f72f9784380c8aae",
-"ms": 3200
+"sha1": "6f65f696deee42017918139f3095ec0287fb05ec",
+"ms": 3400
 },
 {
 "turn": 7,
@@ -10420,8 +10402,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_b5/07_m.mp4",
-"sha1": "5a83dda9c42768bb9fd252c41f93a416eaaf8069",
-"ms": 2960
+"sha1": "99315bde47ccebbdede5a0a943958ddb4cafef9d",
+"ms": 3500
 },
 {
 "turn": 7,
@@ -10429,8 +10411,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_b5/07_f.mp4",
-"sha1": "6418553a1a6180c456c7095503b2e0a4fb9a73f1",
-"ms": 2677
+"sha1": "81e951f3b7cfb8e6b6208ae5f677d169c23d3e6d",
+"ms": 2940
 },
 {
 "turn": 8,
@@ -10512,8 +10494,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_b6/04_m.mp4",
-"sha1": "c73258db33e72809983b916cec9202601c94ed67",
-"ms": 3300
+"sha1": "b0ce79b33c9a483c2e133518d6677ed369200e58",
+"ms": 3800
 },
 {
 "turn": 4,
@@ -10521,8 +10503,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_life_b6/04_f.mp4",
-"sha1": "165dc7e7a626904f50983cd67492ab07da202cae",
-"ms": 4100
+"sha1": "751430e16580b940f95e16bd9cd307cfb077ee42",
+"ms": 3200
 },
 {
 "turn": 5,
@@ -10566,8 +10548,8 @@
 "speaker": "am",
 "emotion": "shy",
 "key": "audio/ja/r1_life_b6/07_m.mp4",
-"sha1": "3028a58e5355c08b9d9195d71876c5e13e9a2c4f",
-"ms": 351
+"sha1": "4b52b2a949a382875a5d1788699072fb99188203",
+"ms": 2026
 },
 {
 "turn": 7,
@@ -11334,8 +11316,8 @@
 "speaker": "am",
 "emotion": "stiff",
 "key": "audio/ja/r1_love_a1/02_m.mp4",
-"sha1": "59391bb3a8d8edcdc7557ce1d15bc92f557d6866",
-"ms": 2359
+"sha1": "5cb27acea3215fa151a3818a9f6c777570ca592b",
+"ms": 3600
 },
 {
 "turn": 2,
@@ -11343,8 +11325,8 @@
 "speaker": "af",
 "emotion": "stiff",
 "key": "audio/ja/r1_love_a1/02_f.mp4",
-"sha1": "422d33883aecb3ce23ac98f33cbe32f7438a6855",
-"ms": 1985
+"sha1": "12c22f4ce7e8caf6d45848b304c89278b577df3f",
+"ms": 3900
 },
 {
 "turn": 3,
@@ -11406,8 +11388,8 @@
 "speaker": "am",
 "emotion": "shy+cheerful",
 "key": "audio/ja/r1_love_a1/06_m.mp4",
-"sha1": "44dc60ad2fd32eccc0451eabf693b299e0af7cd3",
-"ms": 3600
+"sha1": "f9311e58cbeb338cf33657bc23d27631381332cd",
+"ms": 4800
 },
 {
 "turn": 6,
@@ -11442,8 +11424,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_love_a1/08_m.mp4",
-"sha1": "f4690bf3e32aeb31749459459ab6378e503636d4",
-"ms": 1697
+"sha1": "0d4914f1868024cbb98e34b8ad7074886ada9303",
+"ms": 3200
 },
 {
 "turn": 8,
@@ -11451,8 +11433,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_love_a1/08_f.mp4",
-"sha1": "35489203efdeaafe2f1fa9054c94b172a3c76925",
-"ms": 2042
+"sha1": "a0041f80bf9d346960c209e00100d52a6e5f8503",
+"ms": 3900
 }
 ],
 "r1_love_a2": [
@@ -11662,8 +11644,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_love_a3/06_m.mp4",
-"sha1": "5753bc026e4657e412b2b97d2339de9df21a8c2a",
-"ms": 3900
+"sha1": "ec56210bd6c08ad577828ad6f1541e345c62c71a",
+"ms": 3700
 },
 {
 "turn": 6,
@@ -11671,8 +11653,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_love_a3/06_f.mp4",
-"sha1": "18ed306d287c28c2d93652f5db854a87b56fdc63",
-"ms": 3200
+"sha1": "58745c9926556c0340bacc2579402563a4c1fbd6",
+"ms": 2987
 },
 {
 "turn": 7,
@@ -11680,8 +11662,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r1_love_a3/07_m.mp4",
-"sha1": "5562b286a1a0749675064469ccecb3519c2611b7",
-"ms": 1434
+"sha1": "9522a0cb9e74ff2a0b4a24ae23b76bbc5d84980e",
+"ms": 447
 },
 {
 "turn": 7,
@@ -13688,8 +13670,8 @@
 "speaker": "man_m",
 "emotion": "flustered",
 "key": "audio/ja/r1_travel_a3/05_m.mp4",
-"sha1": "ff624e9998e44aa939f7c338f470d31135d9dff4",
-"ms": 2548
+"sha1": "030eb41a7eb41707507b8536a8b03190c65c8045",
+"ms": 2575
 },
 {
 "turn": 5,
@@ -13697,8 +13679,8 @@
 "speaker": "man_m",
 "emotion": "flustered",
 "key": "audio/ja/r1_travel_a3/05_f.mp4",
-"sha1": "ff624e9998e44aa939f7c338f470d31135d9dff4",
-"ms": 2548
+"sha1": "030eb41a7eb41707507b8536a8b03190c65c8045",
+"ms": 2575
 },
 {
 "turn": 6,
@@ -13706,8 +13688,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r1_travel_a3/06_m.mp4",
-"sha1": "dee9565c63f5e7494b19e80d8437c672d3e1d4d3",
-"ms": 1732
+"sha1": "bbb0bbf52b41ab27b637aabdd6e608df9df6c669",
+"ms": 1287
 },
 {
 "turn": 6,
@@ -13715,8 +13697,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r1_travel_a3/06_f.mp4",
-"sha1": "86598406ff96b69025cdb9c782ae3170d195839d",
-"ms": 1752
+"sha1": "707019880ee2979af9448ef006895499bedcbd16",
+"ms": 1910
 },
 {
 "turn": 7,
@@ -13742,8 +13724,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r1_travel_a3/08_m.mp4",
-"sha1": "aec66acdadadad509f7ae2a8db57c0a867ed2b36",
-"ms": 2285
+"sha1": "dc306bb66a27eef3ae78423cf760e1e2fe364978",
+"ms": 2835
 },
 {
 "turn": 8,
@@ -13751,8 +13733,8 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r1_travel_a3/08_f.mp4",
-"sha1": "1a42f96be847aa1156c38fdcecc7dc06bc3ab2c5",
-"ms": 2388
+"sha1": "cdff603db2bf4537816a13119f8473e9858e663c",
+"ms": 3600
 }
 ],
 "r1_travel_a4": [
@@ -14454,8 +14436,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r1_travel_b1/07_m.mp4",
-"sha1": "70b69925baa971232feebe96f54b25acd5f043a7",
-"ms": 3200
+"sha1": "0e294258118e8d120d32e7a4a6324947123e20d3",
+"ms": 8000
 },
 {
 "turn": 7,
@@ -14463,26 +14445,26 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r1_travel_b1/07_f.mp4",
-"sha1": "9404bd0e2c3283acf5a6c9e55bf7e90bd35f3933",
-"ms": 2489
+"sha1": "7378d1378733aa8b57c9438db86e2d48db51c107",
+"ms": 4900
 },
 {
 "turn": 8,
 "voice": "m",
 "speaker": "man_m",
-"emotion": "shout+worried",
+"emotion": "worried",
 "key": "audio/ja/r1_travel_b1/08_m.mp4",
-"sha1": "dde952be04db7ef2dd7cf1027c5941f4d38fad92",
-"ms": 3200
+"sha1": "0c26b6cd879c4a6c9995c001de1c86435ebf3741",
+"ms": 3100
 },
 {
 "turn": 8,
 "voice": "f",
 "speaker": "man_m",
-"emotion": "shout+worried",
+"emotion": "worried",
 "key": "audio/ja/r1_travel_b1/08_f.mp4",
-"sha1": "dde952be04db7ef2dd7cf1027c5941f4d38fad92",
-"ms": 3200
+"sha1": "0c26b6cd879c4a6c9995c001de1c86435ebf3741",
+"ms": 3100
 }
 ],
 "r1_travel_b2": [
@@ -15166,8 +15148,8 @@
 "speaker": "man_m",
 "emotion": "neutral",
 "key": "audio/ja/r1_travel_b6/06_m.mp4",
-"sha1": "dc808749fc2cde3717f7719006df3a9db0dca6f6",
-"ms": 2347
+"sha1": "4c761fd3f04d026036c3c8cdc7dd9843bdb0888e",
+"ms": 767
 },
 {
 "turn": 6,
@@ -15175,8 +15157,8 @@
 "speaker": "man_m",
 "emotion": "neutral",
 "key": "audio/ja/r1_travel_b6/06_f.mp4",
-"sha1": "dc808749fc2cde3717f7719006df3a9db0dca6f6",
-"ms": 2347
+"sha1": "4c761fd3f04d026036c3c8cdc7dd9843bdb0888e",
+"ms": 767
 },
 {
 "turn": 7,
@@ -15184,8 +15166,8 @@
 "speaker": "am",
 "emotion": "surprised",
 "key": "audio/ja/r1_travel_b6/07_m.mp4",
-"sha1": "52a8ee7e547dd49a8f072653bfb4477779091e4d",
-"ms": 3100
+"sha1": "4c7eeafb57cd0c06f9e732b0c27fd9d3e343d173",
+"ms": 2627
 },
 {
 "turn": 7,
@@ -15193,8 +15175,8 @@
 "speaker": "af",
 "emotion": "surprised",
 "key": "audio/ja/r1_travel_b6/07_f.mp4",
-"sha1": "8a1f33cbb93edd52effe7d11164e6558401ead15",
-"ms": 3300
+"sha1": "e37f6d62b1bef5f68eb93a5578d81f175686091d",
+"ms": 2423
 },
 {
 "turn": 8,
@@ -15440,8 +15422,8 @@
 "speaker": "am",
 "emotion": "worried",
 "key": "audio/ja/r1_travel_c1/05_m.mp4",
-"sha1": "db43935a5302579f5e89c55f67efa88e67c5da2c",
-"ms": 2116
+"sha1": "d477ccd41e036caea39af06b96dbe049a927775d",
+"ms": 656
 },
 {
 "turn": 5,
@@ -15449,8 +15431,8 @@
 "speaker": "af",
 "emotion": "worried",
 "key": "audio/ja/r1_travel_c1/05_f.mp4",
-"sha1": "fda4a49e93976231a131c8ee7c4594a8200157a9",
-"ms": 3800
+"sha1": "66450dbde5cda2cbf0087b9c03dede16e5ae0cbf",
+"ms": 1295
 },
 {
 "turn": 6,
@@ -15458,8 +15440,8 @@
 "speaker": "yuka",
 "emotion": "surprised",
 "key": "audio/ja/r1_travel_c1/06_m.mp4",
-"sha1": "5807e0e52c7f37246c0b534b40216cb0089a87a5",
-"ms": 3700
+"sha1": "d1df352adf09194f0096d5d0e1901a730107fc4e",
+"ms": 3600
 },
 {
 "turn": 6,
@@ -15467,8 +15449,8 @@
 "speaker": "yuka",
 "emotion": "surprised",
 "key": "audio/ja/r1_travel_c1/06_f.mp4",
-"sha1": "5807e0e52c7f37246c0b534b40216cb0089a87a5",
-"ms": 3700
+"sha1": "d1df352adf09194f0096d5d0e1901a730107fc4e",
+"ms": 3600
 },
 {
 "turn": 7,
@@ -15476,8 +15458,8 @@
 "speaker": "am",
 "emotion": "tsukkomi",
 "key": "audio/ja/r1_travel_c1/07_m.mp4",
-"sha1": "9e2dbb14bca6876ac26d03509c9ad840a38cfdcb",
-"ms": 1734
+"sha1": "4a9dbde50e508134cb62f87174fc69f30db4cc01",
+"ms": 1822
 },
 {
 "turn": 7,
@@ -15485,8 +15467,8 @@
 "speaker": "af",
 "emotion": "tsukkomi",
 "key": "audio/ja/r1_travel_c1/07_f.mp4",
-"sha1": "0d5b8d62ad320d35bbfcdd630dfe937c82fc7615",
-"ms": 2243
+"sha1": "d526207851e1c128e1a9bfc9315c6eda0ab19f5e",
+"ms": 1919
 },
 {
 "turn": 8,
@@ -16255,31 +16237,13 @@
 "ms": 3500
 },
 {
-"turn": 7,
-"voice": "m",
-"speaker": "am",
-"emotion": "flustered",
-"key": "audio/ja/r2_culture_b2/07_m.mp4",
-"sha1": "dc885c002f979f9919e6860cd1fab4ae5cb8e00a",
-"ms": 2336
-},
-{
-"turn": 7,
-"voice": "f",
-"speaker": "af",
-"emotion": "flustered",
-"key": "audio/ja/r2_culture_b2/07_f.mp4",
-"sha1": "ac7e46c9be26fe963ebafae42740207dddde83c8",
-"ms": 2523
-},
-{
 "turn": 8,
 "voice": "m",
 "speaker": "ken",
 "emotion": "neutral",
 "key": "audio/ja/r2_culture_b2/08_m.mp4",
-"sha1": "7bac379d554d00275682c75beb5627fcfd46b6ad",
-"ms": 1699
+"sha1": "8417761dbe9d60d11b274ba245f81bc4feb26124",
+"ms": 2931
 },
 {
 "turn": 8,
@@ -16287,8 +16251,8 @@
 "speaker": "ken",
 "emotion": "neutral",
 "key": "audio/ja/r2_culture_b2/08_f.mp4",
-"sha1": "7bac379d554d00275682c75beb5627fcfd46b6ad",
-"ms": 1699
+"sha1": "8417761dbe9d60d11b274ba245f81bc4feb26124",
+"ms": 2931
 },
 {
 "turn": 9,
@@ -16296,8 +16260,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b2/09_m.mp4",
-"sha1": "f94216df380463e78b65644898d090c4e729891a",
-"ms": 5300
+"sha1": "c676d92b28c444bde6f06734ada1fce219aceb6f",
+"ms": 2252
 },
 {
 "turn": 9,
@@ -16305,8 +16269,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b2/09_f.mp4",
-"sha1": "c2479d53c4760ca613dbfc50525abb40ef51ba0a",
-"ms": 4300
+"sha1": "2b6b7e364243addc408829e61aab64cc729b733a",
+"ms": 2144
 },
 {
 "turn": 10,
@@ -16460,8 +16424,8 @@
 "speaker": "am",
 "emotion": "shy",
 "key": "audio/ja/r2_culture_b3/06_m.mp4",
-"sha1": "bf97445ac3dbe683a6ebbc1cdf61d2685e125e0f",
-"ms": 2129
+"sha1": "af81776a24a9d960c51efb55da8319c2acf1e44a",
+"ms": 621
 },
 {
 "turn": 6,
@@ -16532,8 +16496,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b3/10_m.mp4",
-"sha1": "a80108af313adfbb8eea6453bb5c7b840b3afb11",
-"ms": 5400
+"sha1": "640c92b5d1fb16ff7eaf2d470fc21154222019c5",
+"ms": 1820
 },
 {
 "turn": 10,
@@ -16541,8 +16505,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b3/10_f.mp4",
-"sha1": "3b6d0c51b97bd9950dda1016800b3e500ca49076",
-"ms": 4200
+"sha1": "fad224c2dedc789be7b50422e35648af396342cd",
+"ms": 1460
 },
 {
 "turn": 11,
@@ -16550,8 +16514,8 @@
 "speaker": "yuka",
 "emotion": "excited",
 "key": "audio/ja/r2_culture_b3/11_m.mp4",
-"sha1": "8a2b93d8c3250da687d7a16f71c21fc6cb1d69bb",
-"ms": 2796
+"sha1": "6e3f5ef399faa221bef4eaabfcb557e911179c62",
+"ms": 2986
 },
 {
 "turn": 11,
@@ -16559,8 +16523,8 @@
 "speaker": "yuka",
 "emotion": "excited",
 "key": "audio/ja/r2_culture_b3/11_f.mp4",
-"sha1": "8a2b93d8c3250da687d7a16f71c21fc6cb1d69bb",
-"ms": 2796
+"sha1": "6e3f5ef399faa221bef4eaabfcb557e911179c62",
+"ms": 2986
 },
 {
 "turn": 12,
@@ -17168,8 +17132,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b6/10_m.mp4",
-"sha1": "6620a093785f920e862495c9cd284c4909b88c5f",
-"ms": 3200
+"sha1": "b6f4dd942e3720ea8d85921ed6ae356ac147fdd4",
+"ms": 1332
 },
 {
 "turn": 10,
@@ -17177,8 +17141,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b6/10_f.mp4",
-"sha1": "908c16242e5e7127ec8891af0351a0163fe0e3ed",
-"ms": 3200
+"sha1": "6483ab8e639f02344b1e5fa7481529ce323ae6c1",
+"ms": 2392
 },
 {
 "turn": 11,
@@ -17186,8 +17150,8 @@
 "speaker": "ken",
 "emotion": "worried",
 "key": "audio/ja/r2_culture_b6/11_m.mp4",
-"sha1": "1d9600094726569a419d360ed9245ad45bf507b9",
-"ms": 3400
+"sha1": "5828f333afc0a7f093870f0308242314e3ec0418",
+"ms": 2759
 },
 {
 "turn": 11,
@@ -17195,8 +17159,8 @@
 "speaker": "ken",
 "emotion": "worried",
 "key": "audio/ja/r2_culture_b6/11_f.mp4",
-"sha1": "1d9600094726569a419d360ed9245ad45bf507b9",
-"ms": 3400
+"sha1": "5828f333afc0a7f093870f0308242314e3ec0418",
+"ms": 2759
 },
 {
 "turn": 12,
@@ -17204,8 +17168,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b6/12_m.mp4",
-"sha1": "1fbad1ba8749535d253be0e46bfbb8a761122245",
-"ms": 5200
+"sha1": "eaecc24091dcac81879102f03f9f80e5df3353c7",
+"ms": 3400
 },
 {
 "turn": 12,
@@ -17213,8 +17177,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b6/12_f.mp4",
-"sha1": "950ac9ae26159c15b29db4e31355f1e0a8dd5c25",
-"ms": 4100
+"sha1": "92917e62fd464a150127340b101141cf7a46b889",
+"ms": 3500
 }
 ],
 "r2_culture_b7": [
@@ -17368,8 +17332,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b7/09_m.mp4",
-"sha1": "2ee89707612acc0ba24f56877271c8095e88888a",
-"ms": 1847
+"sha1": "854290928a86b09b26d00469f61657045ef6b3c1",
+"ms": 379
 },
 {
 "turn": 9,
@@ -17377,8 +17341,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_culture_b7/09_f.mp4",
-"sha1": "311c5abc29d97f465d7a3db56e8f78cd84a803fe",
-"ms": 2145
+"sha1": "038eb3a778f28886ce77fd59272c8c112bab77b8",
+"ms": 1526
 },
 {
 "turn": 10,
@@ -17404,8 +17368,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r2_culture_b7/11_m.mp4",
-"sha1": "abd483572bdaca28e6013277795812bac100596c",
-"ms": 3200
+"sha1": "7ab0dce2c758bd31a952d33e7bf376281f4c6f16",
+"ms": 2197
 },
 {
 "turn": 11,
@@ -17413,8 +17377,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r2_culture_b7/11_f.mp4",
-"sha1": "abd483572bdaca28e6013277795812bac100596c",
-"ms": 3200
+"sha1": "7ab0dce2c758bd31a952d33e7bf376281f4c6f16",
+"ms": 2197
 },
 {
 "turn": 12,
@@ -17422,8 +17386,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r2_culture_b7/12_m.mp4",
-"sha1": "91c89e3acc75ea9db0d635c3ca4be4f021e36048",
-"ms": 2671
+"sha1": "02cb8060d2eda140185c03fd5d6d4881b6a1dc0c",
+"ms": 2491
 },
 {
 "turn": 12,
@@ -17431,8 +17395,8 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r2_culture_b7/12_f.mp4",
-"sha1": "d6905622a6f4bdec06e76dee25df392ee4ed1b3b",
-"ms": 3100
+"sha1": "1f11ae6b4034eb3e598914132a8cbab047c6620e",
+"ms": 3800
 }
 ],
 "r2_culture_b8": [
@@ -17784,19 +17748,19 @@
 "turn": 8,
 "voice": "m",
 "speaker": "am",
-"emotion": "neutral+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b1/08_m.mp4",
-"sha1": "35fe1681ccad0214fdc3d06b0c2d03d789a9c8e0",
-"ms": 5300
+"sha1": "51d140b31d2287310c34a006926709f5ea2ace8c",
+"ms": 2997
 },
 {
 "turn": 8,
 "voice": "f",
 "speaker": "af",
-"emotion": "neutral+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b1/08_f.mp4",
-"sha1": "9819a1e2b6bf45a8287d9a43ae7605ff9b7bc0c0",
-"ms": 4300
+"sha1": "b5f84ea8ebaba71603d91b97e923c6653ce64cf6",
+"ms": 3500
 },
 {
 "turn": 9,
@@ -17804,8 +17768,8 @@
 "speaker": "ken",
 "emotion": "amused",
 "key": "audio/ja/r2_friends_b1/09_m.mp4",
-"sha1": "fd74f4c0adaf24a14fea7fdd278705c2ea7d6e2b",
-"ms": 3500
+"sha1": "7a90849e87f8f79a552596a6bbe3553d6f62fb6b",
+"ms": 2488
 },
 {
 "turn": 9,
@@ -17813,8 +17777,8 @@
 "speaker": "ken",
 "emotion": "amused",
 "key": "audio/ja/r2_friends_b1/09_f.mp4",
-"sha1": "fd74f4c0adaf24a14fea7fdd278705c2ea7d6e2b",
-"ms": 3500
+"sha1": "7a90849e87f8f79a552596a6bbe3553d6f62fb6b",
+"ms": 2488
 },
 {
 "turn": 10,
@@ -17822,8 +17786,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b1/10_m.mp4",
-"sha1": "d17f4dbcf10f47f319679f5285d08acdf76f5c68",
-"ms": 2181
+"sha1": "3bb3a4256544731ea70f9d6ebd65d62d6c9c89c0",
+"ms": 1817
 },
 {
 "turn": 10,
@@ -17831,26 +17795,26 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b1/10_f.mp4",
-"sha1": "bccc8f522e6d451c8ebba33b4255d3ec894c52c3",
-"ms": 2340
+"sha1": "449eebb8e9b473c6526ff9dda65378d4907b69f5",
+"ms": 1896
 },
 {
 "turn": 11,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "worried+annoyed",
+"emotion": "annoyed",
 "key": "audio/ja/r2_friends_b1/11_m.mp4",
-"sha1": "a4b243e37e76a15b64f7bf0dd571f792b0a52ce5",
-"ms": 3300
+"sha1": "d53810c948fedb5146aac85ed67d797a3839db56",
+"ms": 2591
 },
 {
 "turn": 11,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "worried+annoyed",
+"emotion": "annoyed",
 "key": "audio/ja/r2_friends_b1/11_f.mp4",
-"sha1": "a4b243e37e76a15b64f7bf0dd571f792b0a52ce5",
-"ms": 3300
+"sha1": "d53810c948fedb5146aac85ed67d797a3839db56",
+"ms": 2591
 },
 {
 "turn": 12,
@@ -18240,8 +18204,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r2_friends_b3/09_m.mp4",
-"sha1": "334d68e51eae868fc8ceec8a54656cf84d087137",
-"ms": 1883
+"sha1": "2bf086d0b34f3cc2d1ffe325ae103ad4c50dc4f5",
+"ms": 4500
 },
 {
 "turn": 9,
@@ -18249,8 +18213,8 @@
 "speaker": "yuka",
 "emotion": "teasing",
 "key": "audio/ja/r2_friends_b3/09_f.mp4",
-"sha1": "334d68e51eae868fc8ceec8a54656cf84d087137",
-"ms": 1883
+"sha1": "2bf086d0b34f3cc2d1ffe325ae103ad4c50dc4f5",
+"ms": 4500
 },
 {
 "turn": 10,
@@ -18258,8 +18222,8 @@
 "speaker": "am",
 "emotion": "shy",
 "key": "audio/ja/r2_friends_b3/10_m.mp4",
-"sha1": "268bd2cc0f350d8c79720b50e5088ec07e9de4bf",
-"ms": 2108
+"sha1": "8b5316fcf1d8a904788958320596c4d606a25b8f",
+"ms": 3700
 },
 {
 "turn": 10,
@@ -18267,8 +18231,8 @@
 "speaker": "af",
 "emotion": "shy",
 "key": "audio/ja/r2_friends_b3/10_f.mp4",
-"sha1": "6a3d71b16361979a5516bf76b73ac505ffdba620",
-"ms": 2316
+"sha1": "d1938670e1b4167347baa9645fc33001c5528001",
+"ms": 3400
 },
 {
 "turn": 11,
@@ -18276,8 +18240,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r2_friends_b3/11_m.mp4",
-"sha1": "e3c10a2df0c2c460683e83ca84907b8d3dc5747a",
-"ms": 2539
+"sha1": "c447139456a60001b039fc294bdea4c43d464538",
+"ms": 2794
 },
 {
 "turn": 11,
@@ -18285,8 +18249,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r2_friends_b3/11_f.mp4",
-"sha1": "e3c10a2df0c2c460683e83ca84907b8d3dc5747a",
-"ms": 2539
+"sha1": "c447139456a60001b039fc294bdea4c43d464538",
+"ms": 2794
 },
 {
 "turn": 12,
@@ -18294,8 +18258,8 @@
 "speaker": "am",
 "emotion": "worried",
 "key": "audio/ja/r2_friends_b3/12_m.mp4",
-"sha1": "50e0358185976e1b67831ef39ba848a2fe1931c9",
-"ms": 1418
+"sha1": "b5a840f60e8a963733da401027fc8d32604ea2ad",
+"ms": 2271
 },
 {
 "turn": 12,
@@ -18303,8 +18267,8 @@
 "speaker": "af",
 "emotion": "worried",
 "key": "audio/ja/r2_friends_b3/12_f.mp4",
-"sha1": "266e9b85c1b2f4839c072135a060c00d3c9a3505",
-"ms": 2350
+"sha1": "3a9ebf4a0b7eb400fccb8d6fc46df523647a7cf8",
+"ms": 2581
 }
 ],
 "r2_friends_b4": [
@@ -18332,8 +18296,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b4/02_m.mp4",
-"sha1": "ca7a8cfeb1036f69f73f72fb7f5d643f4ebf2b68",
-"ms": 3400
+"sha1": "8b51011c8308731b2ed615793217fb1df34984e5",
+"ms": 1592
 },
 {
 "turn": 2,
@@ -18341,8 +18305,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b4/02_f.mp4",
-"sha1": "622465d0adf5c5b47f7982834d1ac2d9da36b941",
-"ms": 4900
+"sha1": "81dc89debf0eebba5ff8b2245f3c9b6c0e3e1bbe",
+"ms": 2543
 },
 {
 "turn": 3,
@@ -18366,37 +18330,37 @@
 "turn": 4,
 "voice": "m",
 "speaker": "am",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b4/04_m.mp4",
-"sha1": "e8e0e30b04f5c31df3b12b7629c601e2cbbb9d81",
-"ms": 3100
+"sha1": "d0e81e4846c359ccc037270898f27386490fedb3",
+"ms": 2912
 },
 {
 "turn": 4,
 "voice": "f",
 "speaker": "af",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b4/04_f.mp4",
-"sha1": "d41a8cb2b8da7cc475b649b216086b58bc17c4c4",
-"ms": 2851
+"sha1": "2add9975078b77df481093ece2f8fe712dcff79c",
+"ms": 2894
 },
 {
 "turn": 5,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "stiff+worried",
+"emotion": "worried",
 "key": "audio/ja/r2_friends_b4/05_m.mp4",
-"sha1": "a4936a62d3136c7ddf9958610009e0a8e021269f",
-"ms": 4100
+"sha1": "f92b342f8e2507e1052b37a23066875ca21edcd4",
+"ms": 3300
 },
 {
 "turn": 5,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "stiff+worried",
+"emotion": "worried",
 "key": "audio/ja/r2_friends_b4/05_f.mp4",
-"sha1": "a4936a62d3136c7ddf9958610009e0a8e021269f",
-"ms": 4100
+"sha1": "f92b342f8e2507e1052b37a23066875ca21edcd4",
+"ms": 3300
 },
 {
 "turn": 6,
@@ -19074,19 +19038,19 @@
 "turn": 9,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "tsukkomi+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b7/09_m.mp4",
-"sha1": "4351a17d4bbad1a49440b9b81a82bcb36b48b9bf",
-"ms": 3600
+"sha1": "9cea58da3df2e6e485f82033edc7425512a87f9b",
+"ms": 3300
 },
 {
 "turn": 9,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "tsukkomi+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_friends_b7/09_f.mp4",
-"sha1": "4351a17d4bbad1a49440b9b81a82bcb36b48b9bf",
-"ms": 3600
+"sha1": "9cea58da3df2e6e485f82033edc7425512a87f9b",
+"ms": 3300
 },
 {
 "turn": 10,
@@ -19094,8 +19058,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b7/10_m.mp4",
-"sha1": "ede95df71ce09e4afcd1d806ae9dc400e71ae41e",
-"ms": 2486
+"sha1": "cafbf7ced3c0d68af5ecdec992d4acc3efcccde1",
+"ms": 1960
 },
 {
 "turn": 10,
@@ -19103,8 +19067,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_friends_b7/10_f.mp4",
-"sha1": "8e0b04a07493419eba9361f6c9f54965b7a05514",
-"ms": 2441
+"sha1": "fdd26cc6246f91cbda66c0cb823c50226672a1af",
+"ms": 1983
 },
 {
 "turn": 11,
@@ -19130,8 +19094,8 @@
 "speaker": "am",
 "emotion": "tsukkomi",
 "key": "audio/ja/r2_friends_b7/12_m.mp4",
-"sha1": "e7cfd030fcf9ce69e5a2d75ceb9aa2fa288c07fb",
-"ms": 1806
+"sha1": "000168c40df5b8c8edaa838e708ddf41117e49f1",
+"ms": 2380
 },
 {
 "turn": 12,
@@ -19139,8 +19103,8 @@
 "speaker": "af",
 "emotion": "tsukkomi",
 "key": "audio/ja/r2_friends_b7/12_f.mp4",
-"sha1": "66c17cdca9ee22427123c3a3b450ff6c1e119544",
-"ms": 2382
+"sha1": "9a120c3b57828546aa497deef3f473590b4abc6b",
+"ms": 2116
 }
 ],
 "r2_friends_b8": [
@@ -19667,8 +19631,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_life_b2/05_f.mp4",
-"sha1": "32627e36ca6cf6190db7bb7a812ba93b1e900735",
-"ms": 3200
+"sha1": "351feae03026eac9b97827f40584168eb3b2fcbd",
+"ms": 2749
 },
 {
 "turn": 6,
@@ -19676,8 +19640,8 @@
 "speaker": "woman_m",
 "emotion": "polite",
 "key": "audio/ja/r2_life_b2/06_m.mp4",
-"sha1": "f81bbb159e34db7dcf924ff593b8e0b936e72f1c",
-"ms": 3900
+"sha1": "d719faa11e64f15470153f60b70b06b5a8da769a",
+"ms": 4100
 },
 {
 "turn": 6,
@@ -19685,8 +19649,8 @@
 "speaker": "woman_m",
 "emotion": "polite",
 "key": "audio/ja/r2_life_b2/06_f.mp4",
-"sha1": "f81bbb159e34db7dcf924ff593b8e0b936e72f1c",
-"ms": 3900
+"sha1": "d719faa11e64f15470153f60b70b06b5a8da769a",
+"ms": 4100
 },
 {
 "turn": 7,
@@ -19766,8 +19730,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_life_b2/11_m.mp4",
-"sha1": "2efd6fc0ebfac9e1a016a0f9ac0512d75d4e28a6",
-"ms": 4000
+"sha1": "b40107bd8b998e4bd7f34ac9cb6946b5bd484f70",
+"ms": 857
 },
 {
 "turn": 11,
@@ -19775,8 +19739,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_life_b2/11_f.mp4",
-"sha1": "20ebb4f6d5a99a69498d5c113bf8ce45033ca8d7",
-"ms": 5200
+"sha1": "bebfc51430d7ec92b74da0b12ef9e52c13ce900b",
+"ms": 3100
 },
 {
 "turn": 12,
@@ -20128,19 +20092,19 @@
 "turn": 7,
 "voice": "m",
 "speaker": "woman_y",
-"emotion": "amused+polite",
+"emotion": "polite",
 "key": "audio/ja/r2_life_b5/07_m.mp4",
-"sha1": "aa7bc99848f957211f389303d8cb634084759759",
-"ms": 4700
+"sha1": "f5d680085473617e5e63ca7ca21d337d97fd9c23",
+"ms": 2743
 },
 {
 "turn": 7,
 "voice": "f",
 "speaker": "woman_y",
-"emotion": "amused+polite",
+"emotion": "polite",
 "key": "audio/ja/r2_life_b5/07_f.mp4",
-"sha1": "aa7bc99848f957211f389303d8cb634084759759",
-"ms": 4700
+"sha1": "f5d680085473617e5e63ca7ca21d337d97fd9c23",
+"ms": 2743
 },
 {
 "turn": 8,
@@ -20184,8 +20148,8 @@
 "speaker": "am",
 "emotion": "worried",
 "key": "audio/ja/r2_life_b5/10_m.mp4",
-"sha1": "e8cdb48b53a431ca2fb8fa7fc9259420bf1200dc",
-"ms": 929
+"sha1": "69d482272b0889b72dfb2b6942d99f4077008fbc",
+"ms": 2749
 },
 {
 "turn": 10,
@@ -20193,8 +20157,8 @@
 "speaker": "af",
 "emotion": "worried",
 "key": "audio/ja/r2_life_b5/10_f.mp4",
-"sha1": "124d9554c9b38de68df219f848555b4816213349",
-"ms": 1966
+"sha1": "847832a8f27f7ce968ca4dbf3b339dbced10d2cb",
+"ms": 2753
 },
 {
 "turn": 11,
@@ -20218,19 +20182,19 @@
 "turn": 12,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+shy",
+"emotion": "shy",
 "key": "audio/ja/r2_life_b5/12_m.mp4",
-"sha1": "5524b584e11e2a85036fbee8f453523865ed193a",
-"ms": 4100
+"sha1": "af299c6b4e31ef4cc7a2ab4323afdf1d597bfc97",
+"ms": 2897
 },
 {
 "turn": 12,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+shy",
+"emotion": "shy",
 "key": "audio/ja/r2_life_b5/12_f.mp4",
-"sha1": "e3774fae3b3a504635ea9d6983d4305adb83d485",
-"ms": 5000
+"sha1": "2d1ea57c2698f68fb865d6bb9c94ab7e4f396901",
+"ms": 3500
 }
 ],
 "r2_life_b6": [
@@ -21020,8 +20984,8 @@
 "speaker": "sakura",
 "emotion": "shy",
 "key": "audio/ja/r2_love_b2/09_m.mp4",
-"sha1": "eb6fdfbff67c5cd5cded4a9b1486e0b4184c85d7",
-"ms": 5000
+"sha1": "965edb4aa4dea9ccbd2564e73e818ef2ffaac544",
+"ms": 2407
 },
 {
 "turn": 9,
@@ -21029,8 +20993,8 @@
 "speaker": "sakura",
 "emotion": "shy",
 "key": "audio/ja/r2_love_b2/09_f.mp4",
-"sha1": "eb6fdfbff67c5cd5cded4a9b1486e0b4184c85d7",
-"ms": 5000
+"sha1": "965edb4aa4dea9ccbd2564e73e818ef2ffaac544",
+"ms": 2407
 },
 {
 "turn": 10,
@@ -21038,8 +21002,8 @@
 "speaker": "am",
 "emotion": "neutral",
 "key": "audio/ja/r2_love_b2/10_m.mp4",
-"sha1": "989294bf392346912664fb8ad36e8c45d9823cb4",
-"ms": 2966
+"sha1": "c20740354d037398fac19d4d98b692782183bbbb",
+"ms": 898
 },
 {
 "turn": 10,
@@ -21047,8 +21011,8 @@
 "speaker": "af",
 "emotion": "neutral",
 "key": "audio/ja/r2_love_b2/10_f.mp4",
-"sha1": "44dd1927f5e8467c004db73a86d8d880e9f70e76",
-"ms": 2860
+"sha1": "3cccba8f8d20e5d23c2f817d091e2af6510a28a2",
+"ms": 1418
 },
 {
 "turn": 11,
@@ -21074,8 +21038,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r2_love_b2/12_m.mp4",
-"sha1": "aa03c8bcadbae16dec5e7de6033f8a8303d5c8b5",
-"ms": 3200
+"sha1": "80aac116c3c93f452fd66531eb36c8b592a71c73",
+"ms": 3800
 },
 {
 "turn": 12,
@@ -21083,8 +21047,8 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r2_love_b2/12_f.mp4",
-"sha1": "517803bf81ad763f3c6e2a83db2418c81bda6616",
-"ms": 2885
+"sha1": "86b1a7057d652c994895f966fc1330cdd64e5f49",
+"ms": 3500
 }
 ],
 "r2_love_b3": [
@@ -21128,19 +21092,19 @@
 "turn": 3,
 "voice": "m",
 "speaker": "am",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_love_b3/03_m.mp4",
-"sha1": "462b05704179aaccb0ce6ff68883895617600a1b",
-"ms": 4300
+"sha1": "cd2e84d41a3079c92dedd48663f35a33711db3b7",
+"ms": 4000
 },
 {
 "turn": 3,
 "voice": "f",
 "speaker": "af",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_love_b3/03_f.mp4",
-"sha1": "62f2d42b1297a185d2ba7105982b8fb751c5adbb",
-"ms": 4900
+"sha1": "835acf1e0c5e5748750f04d4e40dd5584d45ee08",
+"ms": 4100
 },
 {
 "turn": 4,
@@ -21238,8 +21202,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_love_b3/09_m.mp4",
-"sha1": "e1d9c4c8f3ee668fc232f2606a696383ad14e548",
-"ms": 4100
+"sha1": "e8e4742ae573ca66019a0a5dbbe4735ffb3faee1",
+"ms": 1877
 },
 {
 "turn": 9,
@@ -21247,8 +21211,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_love_b3/09_f.mp4",
-"sha1": "ad4af3a03f832090799c40a23fdb80e7840bc0bb",
-"ms": 4500
+"sha1": "395c648adeec17f1ef847a8566540ae51c4b4a86",
+"ms": 1274
 },
 {
 "turn": 10,
@@ -21272,19 +21236,19 @@
 "turn": 11,
 "voice": "m",
 "speaker": "am",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_love_b3/11_m.mp4",
-"sha1": "acae6b9d4841a17b659f8dbeabb4da9a12d3f549",
-"ms": 2384
+"sha1": "c0bbc1d25f01ccb4bac7fd5f23df4de55b09383d",
+"ms": 1557
 },
 {
 "turn": 11,
 "voice": "f",
 "speaker": "af",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_love_b3/11_f.mp4",
-"sha1": "8c4d9388b30553108246c2d47483ab9e6633e2a1",
-"ms": 5300
+"sha1": "94e6a5252ee3bf378348423efc283bf602a6d2a9",
+"ms": 2786
 },
 {
 "turn": 12,
@@ -22692,8 +22656,8 @@
 "speaker": "am",
 "emotion": "cheerful",
 "key": "audio/ja/r2_study_b2/07_m.mp4",
-"sha1": "4e82c91753b250b1ebe3d624acba8726e7b2057b",
-"ms": 2936
+"sha1": "ced90f89aadfea76739065b8090b790354f8e307",
+"ms": 2724
 },
 {
 "turn": 7,
@@ -22701,8 +22665,8 @@
 "speaker": "af",
 "emotion": "cheerful",
 "key": "audio/ja/r2_study_b2/07_f.mp4",
-"sha1": "41c3b8296dbd48e407c6de5a779b951062b2a990",
-"ms": 3400
+"sha1": "228243d25132179a6d5ed4d9eaf414534adfdeb8",
+"ms": 3500
 },
 {
 "turn": 8,
@@ -22710,8 +22674,8 @@
 "speaker": "min",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b2/08_m.mp4",
-"sha1": "adadcd7a082291f8f2a9de1cffc0a3d084c82cb4",
-"ms": 2528
+"sha1": "c5216004ea4a989ce1169db329e77d503f86290e",
+"ms": 725
 },
 {
 "turn": 8,
@@ -22719,8 +22683,8 @@
 "speaker": "min",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b2/08_f.mp4",
-"sha1": "adadcd7a082291f8f2a9de1cffc0a3d084c82cb4",
-"ms": 2528
+"sha1": "c5216004ea4a989ce1169db329e77d503f86290e",
+"ms": 725
 },
 {
 "turn": 9,
@@ -23510,8 +23474,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b7/07_m.mp4",
-"sha1": "d25c714513d234cfc5289d7866dbcd6974498858",
-"ms": 5000
+"sha1": "09a466ba605cd09de4a294f41a36edc5155353e9",
+"ms": 3200
 },
 {
 "turn": 7,
@@ -23519,8 +23483,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b7/07_f.mp4",
-"sha1": "4429e1f5b252fea7a8a176c65b9b55bb977c2240",
-"ms": 5900
+"sha1": "cd232a1c555bbc33452cfc4a06047d610bfd4d40",
+"ms": 2676
 },
 {
 "turn": 8,
@@ -23528,8 +23492,8 @@
 "speaker": "jose",
 "emotion": "worried",
 "key": "audio/ja/r2_study_b7/08_m.mp4",
-"sha1": "551221e01e4b0097cf77b64220d8acd23d8ffdea",
-"ms": 5600
+"sha1": "b051c6e96ce28f7a68015599dacf5a8f6e2c68ec",
+"ms": 3400
 },
 {
 "turn": 8,
@@ -23537,26 +23501,26 @@
 "speaker": "jose",
 "emotion": "worried",
 "key": "audio/ja/r2_study_b7/08_f.mp4",
-"sha1": "551221e01e4b0097cf77b64220d8acd23d8ffdea",
-"ms": 5600
+"sha1": "b051c6e96ce28f7a68015599dacf5a8f6e2c68ec",
+"ms": 3400
 },
 {
 "turn": 9,
 "voice": "m",
 "speaker": "min",
-"emotion": "worried+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r2_study_b7/09_m.mp4",
-"sha1": "b3ef386815c4e1cb22553b85da28e37604b1e7b1",
-"ms": 5800
+"sha1": "7e5e0b12c94cc9cde018d87662757818ce725660",
+"ms": 2377
 },
 {
 "turn": 9,
 "voice": "f",
 "speaker": "min",
-"emotion": "worried+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r2_study_b7/09_f.mp4",
-"sha1": "b3ef386815c4e1cb22553b85da28e37604b1e7b1",
-"ms": 5800
+"sha1": "7e5e0b12c94cc9cde018d87662757818ce725660",
+"ms": 2377
 },
 {
 "turn": 10,
@@ -24090,19 +24054,19 @@
 "turn": 4,
 "voice": "m",
 "speaker": "am",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b2/04_m.mp4",
-"sha1": "0ed5cac6f18a680191429f994c18ec1881f1c7c4",
-"ms": 6000
+"sha1": "7bcab68e89231de65283b8ea0d07c364f0a13f77",
+"ms": 2354
 },
 {
 "turn": 4,
 "voice": "f",
 "speaker": "af",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b2/04_f.mp4",
-"sha1": "f4b9fd87f205220cb64c04df37b4cc6f21d7ee86",
-"ms": 5200
+"sha1": "b799fb4992083aa6aa6f15f2fc66344398935c9c",
+"ms": 2923
 },
 {
 "turn": 5,
@@ -24126,19 +24090,19 @@
 "turn": 6,
 "voice": "m",
 "speaker": "am",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b2/06_m.mp4",
-"sha1": "a3c703d8aa659f7a75d84551071fd1962a0768e9",
-"ms": 5200
+"sha1": "44eaa3812c57785211b728ff195f927cb20ac16f",
+"ms": 4800
 },
 {
 "turn": 6,
 "voice": "f",
 "speaker": "af",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b2/06_f.mp4",
-"sha1": "539fea5b2bf37d522de466c52614a00c5825624b",
-"ms": 7100
+"sha1": "4b0409c8075074850755cd9c6e0015ba970c7196",
+"ms": 4700
 },
 {
 "turn": 7,
@@ -24198,19 +24162,19 @@
 "turn": 10,
 "voice": "m",
 "speaker": "am",
-"emotion": "excited+cheerful",
+"emotion": "cheerful",
 "key": "audio/ja/r2_travel_b2/10_m.mp4",
-"sha1": "a629eeebe426f4e2115d555e5bcb3677b04bbaca",
-"ms": 5600
+"sha1": "2791c369380d983f93ece3e66b28ebbac9ecbf49",
+"ms": 2262
 },
 {
 "turn": 10,
 "voice": "f",
 "speaker": "af",
-"emotion": "excited+cheerful",
+"emotion": "cheerful",
 "key": "audio/ja/r2_travel_b2/10_f.mp4",
-"sha1": "b38f65403e9e94f24c85b2a6f33d91fa1382b0b8",
-"ms": 6200
+"sha1": "52e57a258fd3db51ee22b4596fda6bf9ab939d39",
+"ms": 2964
 },
 {
 "turn": 11,
@@ -24616,19 +24580,19 @@
 "turn": 9,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/09_m.mp4",
-"sha1": "b8d4b7b07df822bd79319e58abe06bd6c5ba75ca",
-"ms": 3700
+"sha1": "60499e08d4867284590d8275a6d3a83a4e7ec040",
+"ms": 2582
 },
 {
 "turn": 9,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/09_f.mp4",
-"sha1": "b6690bc0883965055589afec651602911a1984f2",
-"ms": 4100
+"sha1": "5c079993b1cd26fd9e97fc55fba4a31048cb3ba7",
+"ms": 2853
 },
 {
 "turn": 10,
@@ -24636,8 +24600,8 @@
 "speaker": "sakura",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/10_m.mp4",
-"sha1": "fdd2749fb53f4174b39c1588cc21b20622aac50e",
-"ms": 2134
+"sha1": "51b7770060d9d8e971ccb42239aa6e5af97da4a8",
+"ms": 5200
 },
 {
 "turn": 10,
@@ -24645,8 +24609,8 @@
 "speaker": "sakura",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/10_f.mp4",
-"sha1": "fdd2749fb53f4174b39c1588cc21b20622aac50e",
-"ms": 2134
+"sha1": "51b7770060d9d8e971ccb42239aa6e5af97da4a8",
+"ms": 5200
 },
 {
 "turn": 11,
@@ -24654,8 +24618,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/11_m.mp4",
-"sha1": "270ea229625baf612410eaae918212d168df67df",
-"ms": 3800
+"sha1": "f754b3d9a671ee846f4c7f2b7774044fad480957",
+"ms": 4000
 },
 {
 "turn": 11,
@@ -24663,7 +24627,7 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b4/11_f.mp4",
-"sha1": "4f01bad7e2f3798dcc35ecd95f8d82a008b7ad4b",
+"sha1": "c25ca770c3353570f5055371e297e5472e26d65c",
 "ms": 3800
 },
 {
@@ -24926,19 +24890,19 @@
 "turn": 2,
 "voice": "m",
 "speaker": "am",
-"emotion": "amused+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b6/02_m.mp4",
-"sha1": "078b18adada22e5d34579d4409aa096a1ced04d6",
-"ms": 5500
+"sha1": "dd8035ea2f1b9867a09aee618d56ff83d8a6c2f9",
+"ms": 2593
 },
 {
 "turn": 2,
 "voice": "f",
 "speaker": "af",
-"emotion": "amused+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_travel_b6/02_f.mp4",
-"sha1": "dd8e35efb194031f7f9928fc78bfa77a787f21ce",
-"ms": 6800
+"sha1": "dd6d14e9614d3b61fb5921720847fd10429cf25b",
+"ms": 4400
 },
 {
 "turn": 3,
@@ -25000,8 +24964,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b6/06_m.mp4",
-"sha1": "b3bf1fbdfd5ba536a7d1d2b9c0a738277eebf058",
-"ms": 1686
+"sha1": "11d8ecdebe98029f4d5bde388b716807286599dd",
+"ms": 2739
 },
 {
 "turn": 6,
@@ -25009,8 +24973,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_travel_b6/06_f.mp4",
-"sha1": "e8ea4fe13a7ba9c0fe3b245f09ef56de2fdff02f",
-"ms": 2137
+"sha1": "9aa05ee6af7b25140c132da59af858374e8a1adf",
+"ms": 1988
 },
 {
 "turn": 7,
@@ -25045,8 +25009,8 @@
 "speaker": "af",
 "emotion": "shy",
 "key": "audio/ja/r2_travel_b6/08_f.mp4",
-"sha1": "b2fca6eafcdb55413ef7f7d80fb124a7f7d95013",
-"ms": 4400
+"sha1": "d9530bab5159212ae04512b12b39196ebb796597",
+"ms": 2184
 },
 {
 "turn": 9,
@@ -25072,8 +25036,8 @@
 "speaker": "am",
 "emotion": "cheerful",
 "key": "audio/ja/r2_travel_b6/10_m.mp4",
-"sha1": "424eca2b58305cbea3f46f19f06c3d804a5853cc",
-"ms": 1827
+"sha1": "b040b46c8d8f151a546bb40014bc9f8f5fec3aa6",
+"ms": 2351
 },
 {
 "turn": 10,
@@ -25081,8 +25045,8 @@
 "speaker": "af",
 "emotion": "cheerful",
 "key": "audio/ja/r2_travel_b6/10_f.mp4",
-"sha1": "69eba041520a8ba24776cd5abd1ba9eab797ffe9",
-"ms": 1800
+"sha1": "06714e6be09a0485e5d3eca5213dda37477aee19",
+"ms": 2477
 },
 {
 "turn": 11,
@@ -25652,19 +25616,19 @@
 "turn": 7,
 "voice": "m",
 "speaker": "am",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_work_b1/07_m.mp4",
-"sha1": "4db156f8ad6a88c0cc5cc65a1d1f16970df330cf",
-"ms": 2926
+"sha1": "c8357db96f5c88774b8882b7c9521be5e04783d5",
+"ms": 623
 },
 {
 "turn": 7,
 "voice": "f",
 "speaker": "af",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_work_b1/07_f.mp4",
-"sha1": "a38192aed1cf399753d762b893fa99daacc922af",
-"ms": 3800
+"sha1": "ac9b51554b74d807bfe58a6179c392906b3304c7",
+"ms": 756
 },
 {
 "turn": 9,
@@ -25672,8 +25636,8 @@
 "speaker": "man_m",
 "emotion": "stiff",
 "key": "audio/ja/r2_work_b1/09_m.mp4",
-"sha1": "01f8b2fd0171f9b47b09ad1ad4f5672b55697998",
-"ms": 1533
+"sha1": "2bce8f1596484c3d2ff337f1212ac331446bf945",
+"ms": 941
 },
 {
 "turn": 9,
@@ -25681,26 +25645,26 @@
 "speaker": "man_m",
 "emotion": "stiff",
 "key": "audio/ja/r2_work_b1/09_f.mp4",
-"sha1": "01f8b2fd0171f9b47b09ad1ad4f5672b55697998",
-"ms": 1533
+"sha1": "2bce8f1596484c3d2ff337f1212ac331446bf945",
+"ms": 941
 },
 {
 "turn": 10,
 "voice": "m",
 "speaker": "am",
-"emotion": "worried+sad",
+"emotion": "sad",
 "key": "audio/ja/r2_work_b1/10_m.mp4",
-"sha1": "538dbf3b2a8648fb677ed2cdb9d69bb32f9481d2",
-"ms": 4300
+"sha1": "28826442a427c8b76cd8e68cabc9281ace1a4a14",
+"ms": 2745
 },
 {
 "turn": 10,
 "voice": "f",
 "speaker": "af",
-"emotion": "worried+sad",
+"emotion": "sad",
 "key": "audio/ja/r2_work_b1/10_f.mp4",
-"sha1": "f80ece7f921e1eef9132c48e42415e95c28321ab",
-"ms": 5600
+"sha1": "891c4a9aa09a7b58edddd508d1cebf53423cf9b9",
+"ms": 2451
 },
 {
 "turn": 11,
@@ -26234,19 +26198,19 @@
 "turn": 6,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+sad",
+"emotion": "sad",
 "key": "audio/ja/r2_work_b4/06_m.mp4",
-"sha1": "3f7b25be7ba6200d7a47300b64067e5547089479",
-"ms": 4500
+"sha1": "2e8d5c6103ccd477407f646f4223bb14c788a4e7",
+"ms": 2618
 },
 {
 "turn": 6,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+sad",
+"emotion": "sad",
 "key": "audio/ja/r2_work_b4/06_f.mp4",
-"sha1": "810ba0bfb6ee25c6fa238d2fe8d473b74adbd3f7",
-"ms": 4100
+"sha1": "2c6e6173063453e5c494bcc091b4c8334972dabf",
+"ms": 3300
 },
 {
 "turn": 7,
@@ -26270,19 +26234,19 @@
 "turn": 8,
 "voice": "m",
 "speaker": "am",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_work_b4/08_m.mp4",
-"sha1": "85d67a4d9c10ff66e17eb6969fab340816247bf4",
-"ms": 4500
+"sha1": "c885019067400028cecee329ca08c784163e542c",
+"ms": 5300
 },
 {
 "turn": 8,
 "voice": "f",
 "speaker": "af",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_work_b4/08_f.mp4",
-"sha1": "5e421193be7ed06139cc775e6f30421e26a2aea9",
-"ms": 4700
+"sha1": "971a4463be914b5faf5581574436d07d30993238",
+"ms": 5200
 },
 {
 "turn": 9,
@@ -26308,8 +26272,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r2_work_b4/10_m.mp4",
-"sha1": "eb6492f94737c9251398bf487dc5746cae0aabaa",
-"ms": 3900
+"sha1": "71d2465fc8a5b7f248201d946af41c2c53dce7b4",
+"ms": 2327
 },
 {
 "turn": 10,
@@ -26317,8 +26281,8 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r2_work_b4/10_f.mp4",
-"sha1": "e2c7ee3cf39e27683faad93f7e2a7610fb514483",
-"ms": 4200
+"sha1": "5665240710397f388ac5f5d6b097c425c4a1646a",
+"ms": 3200
 },
 {
 "turn": 11,
@@ -27362,8 +27326,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b1/10_m.mp4",
-"sha1": "e61ca8777a7115badb23d527786099653dddbede",
-"ms": 4000
+"sha1": "905923a684265933c39acc4611f16bea4a7b5f2f",
+"ms": 3200
 },
 {
 "turn": 10,
@@ -27371,8 +27335,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b1/10_f.mp4",
-"sha1": "7033309b5cf715f4a85d1ee5bccfd36cfda7ddbf",
-"ms": 4900
+"sha1": "69abf6e8170e57add084f7a07aad5dfc77960b37",
+"ms": 2910
 },
 {
 "turn": 11,
@@ -27380,8 +27344,8 @@
 "speaker": "man_m_ks",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b1/11_m.mp4",
-"sha1": "19f6c561f809dd368bf709e914ca7a1eecd2a024",
-"ms": 2954
+"sha1": "5bc7f39e5d3bf748314b200c12e9e27f85f98779",
+"ms": 2723
 },
 {
 "turn": 11,
@@ -27389,8 +27353,8 @@
 "speaker": "man_m_ks",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b1/11_f.mp4",
-"sha1": "19f6c561f809dd368bf709e914ca7a1eecd2a024",
-"ms": 2954
+"sha1": "5bc7f39e5d3bf748314b200c12e9e27f85f98779",
+"ms": 2723
 },
 {
 "turn": 12,
@@ -27398,8 +27362,8 @@
 "speaker": "sakura",
 "emotion": "excited",
 "key": "audio/ja/r3_culture_b1/12_m.mp4",
-"sha1": "497cad77494acb2693a6287d64a202c950bf674c",
-"ms": 3300
+"sha1": "bcb4fac065eb5904362fc2b671b1903a4915db8d",
+"ms": 2955
 },
 {
 "turn": 12,
@@ -27407,8 +27371,8 @@
 "speaker": "sakura",
 "emotion": "excited",
 "key": "audio/ja/r3_culture_b1/12_f.mp4",
-"sha1": "497cad77494acb2693a6287d64a202c950bf674c",
-"ms": 3300
+"sha1": "bcb4fac065eb5904362fc2b671b1903a4915db8d",
+"ms": 2955
 },
 {
 "turn": 13,
@@ -27670,8 +27634,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b2/11_m.mp4",
-"sha1": "ffca9e0d96b9a5cf37145d23c30c6900f30c7d55",
-"ms": 3900
+"sha1": "cde698cd4270afb9d07f15c3d31393c1ab2756df",
+"ms": 2369
 },
 {
 "turn": 11,
@@ -27679,8 +27643,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b2/11_f.mp4",
-"sha1": "be4610cb4fca67e921b7378e4e3a706e51bc6db5",
-"ms": 3700
+"sha1": "ff725ea75f58956ac6fff100e7f428fd42cbe14c",
+"ms": 3300
 },
 {
 "turn": 12,
@@ -27924,8 +27888,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b3/09_m.mp4",
-"sha1": "83a2ff05b1f535777a5e16b508d7818fee6173b4",
-"ms": 2967
+"sha1": "e0509d74d655827831137c0617dfb3a833693daf",
+"ms": 1958
 },
 {
 "turn": 9,
@@ -27933,8 +27897,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b3/09_f.mp4",
-"sha1": "e72ad34a9334bd3a2078708b5d33e2802cae31d0",
-"ms": 3200
+"sha1": "534535bb4876319394bc8cd58443b8a2cd0c05a1",
+"ms": 2108
 },
 {
 "turn": 10,
@@ -28268,8 +28232,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b4/12_m.mp4",
-"sha1": "5ab7ca779d8963c23c5e66b8407097848526150c",
-"ms": 6100
+"sha1": "f6af70c3ad702ab5d6d1b4a6223719cd87c0288a",
+"ms": 2024
 },
 {
 "turn": 12,
@@ -28277,8 +28241,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b4/12_f.mp4",
-"sha1": "0cc2ab751d188a6547032e9591105560d2d4a263",
-"ms": 4000
+"sha1": "a0bf27b3fae6d5b7dbb797898157571907698658",
+"ms": 2271
 },
 {
 "turn": 13,
@@ -28286,8 +28250,8 @@
 "speaker": "sakura",
 "emotion": "shy",
 "key": "audio/ja/r3_culture_b4/13_m.mp4",
-"sha1": "3cdbbe1f020c8d6ab31520fba62bc516c9e41db1",
-"ms": 5800
+"sha1": "752251026de590f2381721060873c103fd7f4640",
+"ms": 1759
 },
 {
 "turn": 13,
@@ -28295,8 +28259,8 @@
 "speaker": "sakura",
 "emotion": "shy",
 "key": "audio/ja/r3_culture_b4/13_f.mp4",
-"sha1": "3cdbbe1f020c8d6ab31520fba62bc516c9e41db1",
-"ms": 5800
+"sha1": "752251026de590f2381721060873c103fd7f4640",
+"ms": 1759
 },
 {
 "turn": 14,
@@ -28866,8 +28830,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b6/13_m.mp4",
-"sha1": "ad253d71d7f69337a64081503cd0ded120563167",
-"ms": 4400
+"sha1": "9cb1533892fc8c9ffd71269e826ff0ab7f5dd665",
+"ms": 3300
 },
 {
 "turn": 13,
@@ -28875,8 +28839,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_culture_b6/13_f.mp4",
-"sha1": "95d6cd1267a6518ac6fc4526ea29dad5b26b035b",
-"ms": 4000
+"sha1": "3306b21723bb43fe59d40e8d345f47e0edf4c566",
+"ms": 3200
 },
 {
 "turn": 14,
@@ -29695,40 +29659,22 @@
 "ms": 2490
 },
 {
-"turn": 11,
-"voice": "m",
-"speaker": "ken",
-"emotion": "flustered",
-"key": "audio/ja/r3_friends_b3/11_m.mp4",
-"sha1": "1569caaf2b378d8d141af54e01d3199c71f3c1dc",
-"ms": 2099
-},
-{
-"turn": 11,
-"voice": "f",
-"speaker": "ken",
-"emotion": "flustered",
-"key": "audio/ja/r3_friends_b3/11_f.mp4",
-"sha1": "1569caaf2b378d8d141af54e01d3199c71f3c1dc",
-"ms": 2099
-},
-{
 "turn": 12,
 "voice": "m",
 "speaker": "am",
-"emotion": "teasing+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_friends_b3/12_m.mp4",
-"sha1": "430670dd91afa2fc43307e5152c1cd66b68a19fc",
-"ms": 4400
+"sha1": "c67969705210c054ce16765ae61e0ecce91c4df0",
+"ms": 2772
 },
 {
 "turn": 12,
 "voice": "f",
 "speaker": "af",
-"emotion": "teasing+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_friends_b3/12_f.mp4",
-"sha1": "6b7d6e80c374d263ce61b01087795f125685f34f",
-"ms": 4500
+"sha1": "2039292bbb0315c1864aa9a203c71fb0579d4c59",
+"ms": 3500
 },
 {
 "turn": 13,
@@ -29754,8 +29700,8 @@
 "speaker": "yuka",
 "emotion": "shy",
 "key": "audio/ja/r3_friends_b3/14_m.mp4",
-"sha1": "cf3293253c25a07c72fa8d741b7116f3182d2b59",
-"ms": 3300
+"sha1": "c60fc7de0de6fc6268fe1bc5c3aedec39cadb299",
+"ms": 1633
 },
 {
 "turn": 14,
@@ -29763,8 +29709,8 @@
 "speaker": "yuka",
 "emotion": "shy",
 "key": "audio/ja/r3_friends_b3/14_f.mp4",
-"sha1": "cf3293253c25a07c72fa8d741b7116f3182d2b59",
-"ms": 3300
+"sha1": "c60fc7de0de6fc6268fe1bc5c3aedec39cadb299",
+"ms": 1633
 },
 {
 "turn": 15,
@@ -29772,8 +29718,8 @@
 "speaker": "ken",
 "emotion": "shy",
 "key": "audio/ja/r3_friends_b3/15_m.mp4",
-"sha1": "0d203ddce56703a0899dfcea89cd4638158e96ed",
-"ms": 436
+"sha1": "a1628dc197db1770028d3c18196b0f85118aa16e",
+"ms": 1245
 },
 {
 "turn": 15,
@@ -29781,8 +29727,8 @@
 "speaker": "ken",
 "emotion": "shy",
 "key": "audio/ja/r3_friends_b3/15_f.mp4",
-"sha1": "9538e8f74cede436202f2efd8539678c31e1d7e2",
-"ms": 363
+"sha1": "0a113acbd3554ecfb3e64e446648aa76c52988b9",
+"ms": 792
 },
 {
 "turn": 16,
@@ -30278,37 +30224,37 @@
 "turn": 12,
 "voice": "m",
 "speaker": "am",
-"emotion": "surprised+tsukkomi",
+"emotion": "tsukkomi",
 "key": "audio/ja/r3_friends_b5/12_m.mp4",
-"sha1": "3c7a3c94a2b98abc5560f4d3f44185f482abbffc",
-"ms": 6000
+"sha1": "7a38e92737a52d46fde4d83c410e197d260f7280",
+"ms": 3300
 },
 {
 "turn": 12,
 "voice": "f",
 "speaker": "af",
-"emotion": "surprised+tsukkomi",
+"emotion": "tsukkomi",
 "key": "audio/ja/r3_friends_b5/12_f.mp4",
-"sha1": "16a0f9a1bb7a0cf4a5f611b176f1f72b3c38a4ab",
-"ms": 6500
+"sha1": "9c3d269f6ba69f18cd18f6e2c71e04f742b26884",
+"ms": 3200
 },
 {
 "turn": 13,
 "voice": "m",
 "speaker": "yuka",
-"emotion": "tsukkomi+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_friends_b5/13_m.mp4",
-"sha1": "881c5954e553a105dd241473571058a4bc9a9737",
-"ms": 4900
+"sha1": "1b5ce262225511b5e9d882e04e6c1ad0c41f95fb",
+"ms": 3300
 },
 {
 "turn": 13,
 "voice": "f",
 "speaker": "yuka",
-"emotion": "tsukkomi+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_friends_b5/13_f.mp4",
-"sha1": "881c5954e553a105dd241473571058a4bc9a9737",
-"ms": 4900
+"sha1": "1b5ce262225511b5e9d882e04e6c1ad0c41f95fb",
+"ms": 3300
 },
 {
 "turn": 14,
@@ -30316,8 +30262,8 @@
 "speaker": "am",
 "emotion": "tsukkomi",
 "key": "audio/ja/r3_friends_b5/14_m.mp4",
-"sha1": "3a86c7caff901e4696eed39103ca17d592606494",
-"ms": 2465
+"sha1": "da5db16cc51b3c0394d21bcbb0e95f57ddc7560f",
+"ms": 623
 },
 {
 "turn": 14,
@@ -30325,8 +30271,8 @@
 "speaker": "af",
 "emotion": "tsukkomi",
 "key": "audio/ja/r3_friends_b5/14_f.mp4",
-"sha1": "e3f29501603fcd35023454bfb9e6f9b6d64b64cf",
-"ms": 2664
+"sha1": "72b8eb0f7d0e7efef75ffc2ea53febafc14333ef",
+"ms": 914
 },
 {
 "turn": 15,
@@ -31076,55 +31022,55 @@
 "turn": 8,
 "voice": "m",
 "speaker": "am",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_life_b2/08_m.mp4",
-"sha1": "0e40b83ccff22d34e1ccbb5ea8503df516009bd0",
-"ms": 4100
+"sha1": "6b516616080e15d1fa231d9768ceca868ea029b1",
+"ms": 1895
 },
 {
 "turn": 8,
 "voice": "f",
 "speaker": "af",
-"emotion": "cheerful+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_life_b2/08_f.mp4",
-"sha1": "200fe927323c3fc500199fe15090a5bc0b09ae28",
-"ms": 4900
+"sha1": "da6850b7c98e57ec54cb55b10ff422c6848e0c81",
+"ms": 2687
 },
 {
 "turn": 9,
 "voice": "m",
 "speaker": "misaki",
-"emotion": "amused+excited",
+"emotion": "excited",
 "key": "audio/ja/r3_life_b2/09_m.mp4",
-"sha1": "ee22fb641efb3c108510d793848151bfa51f8aff",
-"ms": 4400
+"sha1": "050b1fad6ff2b163c36f74c2e168ef4fef81dd55",
+"ms": 3100
 },
 {
 "turn": 9,
 "voice": "f",
 "speaker": "misaki",
-"emotion": "amused+excited",
+"emotion": "excited",
 "key": "audio/ja/r3_life_b2/09_f.mp4",
-"sha1": "ee22fb641efb3c108510d793848151bfa51f8aff",
-"ms": 4400
+"sha1": "050b1fad6ff2b163c36f74c2e168ef4fef81dd55",
+"ms": 3100
 },
 {
 "turn": 10,
 "voice": "m",
 "speaker": "am",
-"emotion": "cheerful+tsukkomi",
+"emotion": "tsukkomi",
 "key": "audio/ja/r3_life_b2/10_m.mp4",
-"sha1": "a1e30c698716674cd30ad8a8386091caf2257300",
-"ms": 3300
+"sha1": "3a4003bb5ee542f4b4e203b788c9711468d9f10a",
+"ms": 1783
 },
 {
 "turn": 10,
 "voice": "f",
 "speaker": "af",
-"emotion": "cheerful+tsukkomi",
+"emotion": "tsukkomi",
 "key": "audio/ja/r3_life_b2/10_f.mp4",
-"sha1": "b13d48555535db1a0dbd5e544a9f233ec7bd2d88",
-"ms": 3400
+"sha1": "1bb3b38d0950c52a65f4817daa68114cf6e09d1c",
+"ms": 1385
 },
 {
 "turn": 11,
@@ -32728,8 +32674,8 @@
 "speaker": "sakura",
 "emotion": "flustered",
 "key": "audio/ja/r3_love_b3/05_m.mp4",
-"sha1": "aafcb209673e68a4541d1743861d9e26ba5afa0c",
-"ms": 4400
+"sha1": "f7996708e0b173f7f4d176b9d7c1f7d99f8cd860",
+"ms": 1382
 },
 {
 "turn": 5,
@@ -32737,26 +32683,26 @@
 "speaker": "sakura",
 "emotion": "flustered",
 "key": "audio/ja/r3_love_b3/05_f.mp4",
-"sha1": "aafcb209673e68a4541d1743861d9e26ba5afa0c",
-"ms": 4400
+"sha1": "f7996708e0b173f7f4d176b9d7c1f7d99f8cd860",
+"ms": 1382
 },
 {
 "turn": 6,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_love_b3/06_m.mp4",
-"sha1": "5c693d7bd69a808f9bcee6bcbea17a2fc2ea4850",
-"ms": 5600
+"sha1": "9baf8e838c8737d2a47bbd74d8a80805ddb0355a",
+"ms": 3900
 },
 {
 "turn": 6,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_love_b3/06_f.mp4",
-"sha1": "36b61cfcbe782d79dcc38806d89e8288000a6628",
-"ms": 6200
+"sha1": "4179f2754d45b462c3c906c3b29ace1f9d960fd9",
+"ms": 4600
 },
 {
 "turn": 7,
@@ -32764,8 +32710,8 @@
 "speaker": "woman_m",
 "emotion": "amused",
 "key": "audio/ja/r3_love_b3/07_m.mp4",
-"sha1": "d2fdec7c7115602fc141b1db832c01f0090f1d8b",
-"ms": 959
+"sha1": "e0f613dd3c9daab84301afd83073d39e4be1584a",
+"ms": 2896
 },
 {
 "turn": 7,
@@ -32773,8 +32719,8 @@
 "speaker": "woman_m",
 "emotion": "amused",
 "key": "audio/ja/r3_love_b3/07_f.mp4",
-"sha1": "d2fdec7c7115602fc141b1db832c01f0090f1d8b",
-"ms": 959
+"sha1": "e0f613dd3c9daab84301afd83073d39e4be1584a",
+"ms": 2896
 },
 {
 "turn": 8,
@@ -34088,8 +34034,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b2/09_m.mp4",
-"sha1": "9776b3a83aead0ee5d74eee48784558357d1a9db",
-"ms": 3300
+"sha1": "a8f5d46d738bb6d546865154cd5dd90a586b9068",
+"ms": 4100
 },
 {
 "turn": 9,
@@ -34097,8 +34043,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b2/09_f.mp4",
-"sha1": "991a329d49d0a08d1bbdfe1f7c069068d08b59e8",
-"ms": 3700
+"sha1": "a1b82913a3060cba7c6e3558620f4506538cda02",
+"ms": 3500
 },
 {
 "turn": 10,
@@ -34106,8 +34052,8 @@
 "speaker": "woman_y_ks",
 "emotion": "amused",
 "key": "audio/ja/r3_study_b2/10_m.mp4",
-"sha1": "3e0d308a52588fc56e7e963a10cc8a8a6fe2fde1",
-"ms": 3600
+"sha1": "e8be22390cbad333d74145c5b9b770b60fc4eaac",
+"ms": 3500
 },
 {
 "turn": 10,
@@ -34115,8 +34061,8 @@
 "speaker": "woman_y_ks",
 "emotion": "amused",
 "key": "audio/ja/r3_study_b2/10_f.mp4",
-"sha1": "3e0d308a52588fc56e7e963a10cc8a8a6fe2fde1",
-"ms": 3600
+"sha1": "e8be22390cbad333d74145c5b9b770b60fc4eaac",
+"ms": 3500
 },
 {
 "turn": 11,
@@ -34396,8 +34342,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b3/10_m.mp4",
-"sha1": "df585a84891068d3e2f719fa6c4407647213987c",
-"ms": 4700
+"sha1": "f879531923d31fb537d242f02d5de3f17c4e7f9d",
+"ms": 4500
 },
 {
 "turn": 10,
@@ -34405,26 +34351,26 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b3/10_f.mp4",
-"sha1": "fba80f98da69d9d4b0f97faf195d39f31826a8a9",
-"ms": 5700
+"sha1": "d5a9d67d823faba1d77d58950f0033b8afa18eee",
+"ms": 4000
 },
 {
 "turn": 11,
 "voice": "m",
 "speaker": "min",
-"emotion": "worried+neutral",
+"emotion": "neutral",
 "key": "audio/ja/r3_study_b3/11_m.mp4",
-"sha1": "dc8fdf154b829b18dae6ef5de01df93cde5c0755",
-"ms": 4600
+"sha1": "10d1a43bd1fbfcb8d5310123294134f3238ae313",
+"ms": 3100
 },
 {
 "turn": 11,
 "voice": "f",
 "speaker": "min",
-"emotion": "worried+neutral",
+"emotion": "neutral",
 "key": "audio/ja/r3_study_b3/11_f.mp4",
-"sha1": "dc8fdf154b829b18dae6ef5de01df93cde5c0755",
-"ms": 4600
+"sha1": "10d1a43bd1fbfcb8d5310123294134f3238ae313",
+"ms": 3100
 },
 {
 "turn": 12,
@@ -34432,8 +34378,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r3_study_b3/12_m.mp4",
-"sha1": "6382968ba17c55700ceb8b8253d6c036a2500d7c",
-"ms": 8300
+"sha1": "5134f8e8dbddc90773a900f5922dd6213d5319b0",
+"ms": 2990
 },
 {
 "turn": 12,
@@ -34441,8 +34387,8 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r3_study_b3/12_f.mp4",
-"sha1": "f2f8eee4e4b9222fb1ebe184a78c871a68d902ec",
-"ms": 8600
+"sha1": "7ed30addacbb0d0ef06be830964b1984fd9a49e8",
+"ms": 3300
 },
 {
 "turn": 13,
@@ -35320,8 +35266,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b6/13_m.mp4",
-"sha1": "d666ea7cfcd3394a752fc0dfacfaf141fbc6c98d",
-"ms": 5600
+"sha1": "7d521292a00e5fe4e8872d542920136a991f2052",
+"ms": 2908
 },
 {
 "turn": 13,
@@ -35329,44 +35275,44 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_study_b6/13_f.mp4",
-"sha1": "f846a9f19ecfb31e0c9a0b0142768e32bfbcc118",
-"ms": 6700
+"sha1": "45b5fdbabdf0d172b16d6ee331d46b2c595cc4bc",
+"ms": 2910
 },
 {
 "turn": 14,
 "voice": "m",
 "speaker": "woman_m",
-"emotion": "gentle+cheerful",
+"emotion": "cheerful",
 "key": "audio/ja/r3_study_b6/14_m.mp4",
-"sha1": "eca019d0717c1babf494a16791adc59dc01c60fc",
-"ms": 5000
+"sha1": "d6753c4b28f6b0be084a5447e43fb567d452edea",
+"ms": 2657
 },
 {
 "turn": 14,
 "voice": "f",
 "speaker": "woman_m",
-"emotion": "gentle+cheerful",
+"emotion": "cheerful",
 "key": "audio/ja/r3_study_b6/14_f.mp4",
-"sha1": "eca019d0717c1babf494a16791adc59dc01c60fc",
-"ms": 5000
+"sha1": "d6753c4b28f6b0be084a5447e43fb567d452edea",
+"ms": 2657
 },
 {
 "turn": 15,
 "voice": "m",
 "speaker": "min",
-"emotion": "cheerful+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_study_b6/15_m.mp4",
-"sha1": "616ea470aaa88ea97badc000d6fa411083f024a1",
-"ms": 3900
+"sha1": "e7970e61dfba11d3652e126acc0849bd29d0e69a",
+"ms": 2511
 },
 {
 "turn": 15,
 "voice": "f",
 "speaker": "min",
-"emotion": "cheerful+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_study_b6/15_f.mp4",
-"sha1": "616ea470aaa88ea97badc000d6fa411083f024a1",
-"ms": 3900
+"sha1": "e7970e61dfba11d3652e126acc0849bd29d0e69a",
+"ms": 2511
 },
 {
 "turn": 16,
@@ -35720,8 +35666,8 @@
 "speaker": "am",
 "emotion": "surprised",
 "key": "audio/ja/r3_travel_b2/04_m.mp4",
-"sha1": "fcc08d7483673be6175bc6e19ac8cc715f598f75",
-"ms": 1969
+"sha1": "b399f6618a86a5f043f0d9d73f387c212a26a268",
+"ms": 501
 },
 {
 "turn": 4,
@@ -35828,8 +35774,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r3_travel_b2/10_m.mp4",
-"sha1": "d7a18987152093950bd4b872dad11daf2c88fe93",
-"ms": 4300
+"sha1": "6be2845e74191c4c99c46bf4932bac084e8d164e",
+"ms": 1535
 },
 {
 "turn": 10,
@@ -35837,8 +35783,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r3_travel_b2/10_f.mp4",
-"sha1": "1547f66df02a407bc63f207dd4c5b89b098347b0",
-"ms": 5400
+"sha1": "89e3b5610075578aac7d55e1e2149b654822a7d9",
+"ms": 1695
 },
 {
 "turn": 11,
@@ -35846,8 +35792,8 @@
 "speaker": "sakura",
 "emotion": "surprised",
 "key": "audio/ja/r3_travel_b2/11_m.mp4",
-"sha1": "295ee722193c4a6e48bc4e6f39884a72ea1dcee3",
-"ms": 3400
+"sha1": "c648d845d22465b4147849992eccf45601efb381",
+"ms": 1788
 },
 {
 "turn": 11,
@@ -35855,8 +35801,8 @@
 "speaker": "sakura",
 "emotion": "surprised",
 "key": "audio/ja/r3_travel_b2/11_f.mp4",
-"sha1": "295ee722193c4a6e48bc4e6f39884a72ea1dcee3",
-"ms": 3400
+"sha1": "c648d845d22465b4147849992eccf45601efb381",
+"ms": 1788
 },
 {
 "turn": 12,
@@ -35882,8 +35828,8 @@
 "speaker": "sakura",
 "emotion": "amused",
 "key": "audio/ja/r3_travel_b2/13_m.mp4",
-"sha1": "6ba6df6021b31e77ccc125988c017a67e786a019",
-"ms": 4300
+"sha1": "b1bf7ec956c7c02683bc844c51c7124153fdda66",
+"ms": 2824
 },
 {
 "turn": 13,
@@ -35891,8 +35837,8 @@
 "speaker": "sakura",
 "emotion": "amused",
 "key": "audio/ja/r3_travel_b2/13_f.mp4",
-"sha1": "6ba6df6021b31e77ccc125988c017a67e786a019",
-"ms": 4300
+"sha1": "b1bf7ec956c7c02683bc844c51c7124153fdda66",
+"ms": 2824
 },
 {
 "turn": 14,
@@ -36154,8 +36100,8 @@
 "speaker": "sakura",
 "emotion": "excited",
 "key": "audio/ja/r3_travel_b3/13_m.mp4",
-"sha1": "f5763d8cd7526c4414776aff753a58425bc9539f",
-"ms": 3600
+"sha1": "bc679bec20c69546385e8f9821eea87c10deb092",
+"ms": 1073
 },
 {
 "turn": 13,
@@ -36163,8 +36109,8 @@
 "speaker": "sakura",
 "emotion": "excited",
 "key": "audio/ja/r3_travel_b3/13_f.mp4",
-"sha1": "f5763d8cd7526c4414776aff753a58425bc9539f",
-"ms": 3600
+"sha1": "bc679bec20c69546385e8f9821eea87c10deb092",
+"ms": 1073
 },
 {
 "turn": 14,
@@ -36172,8 +36118,8 @@
 "speaker": "am",
 "emotion": "amused",
 "key": "audio/ja/r3_travel_b3/14_m.mp4",
-"sha1": "7ce6c2486995921bd43602a22c6425f0540f62ee",
-"ms": 2251
+"sha1": "432889dbb8760d6e69a12eadb3fd46e4a0a82b12",
+"ms": 2016
 },
 {
 "turn": 14,
@@ -36181,26 +36127,26 @@
 "speaker": "af",
 "emotion": "amused",
 "key": "audio/ja/r3_travel_b3/14_f.mp4",
-"sha1": "ed648849ad5afaf63a66cd6b956e67653a7139a0",
-"ms": 2978
+"sha1": "928f51504d8d0e9aef3c05d7e749636601f559b9",
+"ms": 1512
 },
 {
 "turn": 15,
 "voice": "m",
 "speaker": "sakura",
-"emotion": "gentle+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_travel_b3/15_m.mp4",
-"sha1": "616fe17e96f390ec74706e6ea7f19f5fbe397937",
-"ms": 8200
+"sha1": "f25f9b829e5f63658cfee60879cf38d4278cf167",
+"ms": 6700
 },
 {
 "turn": 15,
 "voice": "f",
 "speaker": "sakura",
-"emotion": "gentle+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_travel_b3/15_f.mp4",
-"sha1": "b70af8ab64a9d0a098a5db673ab2450d6c803bb2",
-"ms": 8400
+"sha1": "5a82ce5efa21d350aa76f8b8ec4d9c33873e4658",
+"ms": 5700
 },
 {
 "turn": 16,
@@ -37276,19 +37222,19 @@
 "turn": 11,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+stiff",
+"emotion": "stiff",
 "key": "audio/ja/r3_work_b2/11_m.mp4",
-"sha1": "2238ee1690aa4cd58f51d0b72e4b616ea80d402b",
-"ms": 7800
+"sha1": "76d217313b2a1d85168d376426688faa1c1ba11b",
+"ms": 4900
 },
 {
 "turn": 11,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+stiff",
+"emotion": "stiff",
 "key": "audio/ja/r3_work_b2/11_f.mp4",
-"sha1": "fc29e14359975be9bf83de016afa912fbba93719",
-"ms": 7200
+"sha1": "d47d571b41443a630484483401585608233e56e0",
+"ms": 6100
 },
 {
 "turn": 12,
@@ -37296,8 +37242,8 @@
 "speaker": "kacho",
 "emotion": "amused",
 "key": "audio/ja/r3_work_b2/12_m.mp4",
-"sha1": "3d10a99714be48ee11787af75588570291f91675",
-"ms": 4600
+"sha1": "6cd1f486e308666197102a036ce1ab6137941236",
+"ms": 3400
 },
 {
 "turn": 12,
@@ -37305,8 +37251,8 @@
 "speaker": "kacho",
 "emotion": "amused",
 "key": "audio/ja/r3_work_b2/12_f.mp4",
-"sha1": "3d10a99714be48ee11787af75588570291f91675",
-"ms": 4600
+"sha1": "6cd1f486e308666197102a036ce1ab6137941236",
+"ms": 3400
 },
 {
 "turn": 13,
@@ -37314,8 +37260,8 @@
 "speaker": "misaki",
 "emotion": "polite",
 "key": "audio/ja/r3_work_b2/13_m.mp4",
-"sha1": "6d65854a888a16ca6466f84f2b6985650e97360b",
-"ms": 2003
+"sha1": "b94fa93dd439435111a8676ea0e050b353916d2b",
+"ms": 2737
 },
 {
 "turn": 13,
@@ -37323,8 +37269,8 @@
 "speaker": "misaki",
 "emotion": "polite",
 "key": "audio/ja/r3_work_b2/13_f.mp4",
-"sha1": "6d65854a888a16ca6466f84f2b6985650e97360b",
-"ms": 2003
+"sha1": "b94fa93dd439435111a8676ea0e050b353916d2b",
+"ms": 2737
 },
 {
 "turn": 14,
@@ -37550,8 +37496,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_work_b3/10_m.mp4",
-"sha1": "d82f9aa6fe7ea1f480fb9309512c6a8c0b0e2bab",
-"ms": 6800
+"sha1": "34bfcb970fea167b6f2d8ecd4bf2d30a114d48ae",
+"ms": 4100
 },
 {
 "turn": 10,
@@ -37559,8 +37505,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_work_b3/10_f.mp4",
-"sha1": "357fcf0bda0e4828727b2ba7c668bc11a8461509",
-"ms": 7000
+"sha1": "b37c2a28b68ea7aa1cafe714bd50ffbea1351585",
+"ms": 3800
 },
 {
 "turn": 11,
@@ -37568,8 +37514,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_work_b3/11_m.mp4",
-"sha1": "8cb902d10dce69ac112f24334946e75bcdda41f2",
-"ms": 4700
+"sha1": "8c0e67615cbeff188bff5e527159d0090756aa7c",
+"ms": 2487
 },
 {
 "turn": 11,
@@ -37577,8 +37523,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_work_b3/11_f.mp4",
-"sha1": "14dbc0c960cc1c384119e9f36c3f2b9ed1f990b1",
-"ms": 5400
+"sha1": "1ef7558feabb02cb07d7683874738ca11dea7bda",
+"ms": 3900
 },
 {
 "turn": 12,
@@ -37694,37 +37640,37 @@
 "turn": 2,
 "voice": "m",
 "speaker": "misaki",
-"emotion": "flustered+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_work_b4/02_m.mp4",
-"sha1": "bf6ad91a08094994d6dcb6edb4f850e941211641",
-"ms": 5800
+"sha1": "895aa0173ffe8d2e4e5715fd697796522ada76f6",
+"ms": 2463
 },
 {
 "turn": 2,
 "voice": "f",
 "speaker": "misaki",
-"emotion": "flustered+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_work_b4/02_f.mp4",
-"sha1": "bf6ad91a08094994d6dcb6edb4f850e941211641",
-"ms": 5800
+"sha1": "895aa0173ffe8d2e4e5715fd697796522ada76f6",
+"ms": 2463
 },
 {
 "turn": 3,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_work_b4/03_m.mp4",
-"sha1": "0e93e21ec9d4e1bfb0bed36f7a2307ceb6915751",
-"ms": 4800
+"sha1": "cee8456d35cab6a6c605dc32e115dc0d11dbfb55",
+"ms": 2082
 },
 {
 "turn": 3,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_work_b4/03_f.mp4",
-"sha1": "c13555adbee80c1969150d01cd289f07870ed292",
-"ms": 4500
+"sha1": "16ca09b698be2a55a11795abf618794acbbd8faa",
+"ms": 2534
 },
 {
 "turn": 4,
@@ -37820,19 +37766,19 @@
 "turn": 9,
 "voice": "m",
 "speaker": "am",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_work_b4/09_m.mp4",
-"sha1": "e0ad8b258861596983d8a068ca98cb8764f962e8",
-"ms": 5700
+"sha1": "5c7ee92ad90b66801bf1b44756939f17c0e24316",
+"ms": 1482
 },
 {
 "turn": 9,
 "voice": "f",
 "speaker": "af",
-"emotion": "excited+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_work_b4/09_f.mp4",
-"sha1": "d7df0889ad565c47e65801495702d7cb2912640d",
-"ms": 5900
+"sha1": "c168241a3a645162af96ececc317a27bd6ceebaf",
+"ms": 1539
 },
 {
 "turn": 10,
@@ -37840,8 +37786,8 @@
 "speaker": "kacho",
 "emotion": "gentle",
 "key": "audio/ja/r3_work_b4/10_m.mp4",
-"sha1": "cdf2e046ee3f48c1d676247b7b5e1e82f0e56ebe",
-"ms": 4000
+"sha1": "4bc37f433414b8649f12bf6bff0bb6e6acf3d8a4",
+"ms": 5500
 },
 {
 "turn": 10,
@@ -37849,8 +37795,8 @@
 "speaker": "kacho",
 "emotion": "gentle",
 "key": "audio/ja/r3_work_b4/10_f.mp4",
-"sha1": "cdf2e046ee3f48c1d676247b7b5e1e82f0e56ebe",
-"ms": 4000
+"sha1": "4bc37f433414b8649f12bf6bff0bb6e6acf3d8a4",
+"ms": 5500
 },
 {
 "turn": 11,
@@ -38164,19 +38110,19 @@
 "turn": 12,
 "voice": "m",
 "speaker": "am",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_work_b5/12_m.mp4",
-"sha1": "676f5dbadf769b5a629a5ac43092a3e4cb16a936",
-"ms": 6000
+"sha1": "4565cc2833eb232447a75db88b27f2592cb1eb8d",
+"ms": 1955
 },
 {
 "turn": 12,
 "voice": "f",
 "speaker": "af",
-"emotion": "stiff+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r3_work_b5/12_f.mp4",
-"sha1": "0f934e15f9a37634cdf5485675b2d07736bd09eb",
-"ms": 6100
+"sha1": "22f6bd99aebf2906f2ea0350d1f96f0d3762d272",
+"ms": 2116
 },
 {
 "turn": 13,
@@ -38472,19 +38418,19 @@
 "turn": 13,
 "voice": "m",
 "speaker": "am",
-"emotion": "flustered+tsukkomi+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_work_b6/13_m.mp4",
-"sha1": "ae29fe38363bfaef29cf3f6f87c1e1fbeed9b589",
-"ms": 8600
+"sha1": "eecec9f609a90e407c8265d9645c22b7033ae613",
+"ms": 3800
 },
 {
 "turn": 13,
 "voice": "f",
 "speaker": "af",
-"emotion": "flustered+tsukkomi+amused",
+"emotion": "amused",
 "key": "audio/ja/r3_work_b6/13_f.mp4",
-"sha1": "68f5eceea2ca52e864aa40a0e757d8197b0eac52",
-"ms": 8800
+"sha1": "f1ada003070082aca2caebd9bfe2190a8656a37d",
+"ms": 4300
 },
 {
 "turn": 14,
@@ -38492,8 +38438,8 @@
 "speaker": "kacho",
 "emotion": "amused",
 "key": "audio/ja/r3_work_b6/14_m.mp4",
-"sha1": "9fce47822bb0a12869cf939d72024deee5576e21",
-"ms": 4500
+"sha1": "0cce86bd5b37ca48097e9046db7465a52d5816c9",
+"ms": 2598
 },
 {
 "turn": 14,
@@ -38501,26 +38447,26 @@
 "speaker": "kacho",
 "emotion": "amused",
 "key": "audio/ja/r3_work_b6/14_f.mp4",
-"sha1": "9fce47822bb0a12869cf939d72024deee5576e21",
-"ms": 4500
+"sha1": "0cce86bd5b37ca48097e9046db7465a52d5816c9",
+"ms": 2598
 },
 {
 "turn": 15,
 "voice": "m",
 "speaker": "misaki",
-"emotion": "cheerful+gentle+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_work_b6/15_m.mp4",
-"sha1": "c1a1c7b172834c91bd8fffa4c64b3c1ad7400352",
-"ms": 6600
+"sha1": "588e6820c5ffa1011f33abd08de1da3bee2b4d67",
+"ms": 2190
 },
 {
 "turn": 15,
 "voice": "f",
 "speaker": "misaki",
-"emotion": "cheerful+gentle+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_work_b6/15_f.mp4",
-"sha1": "c1a1c7b172834c91bd8fffa4c64b3c1ad7400352",
-"ms": 6600
+"sha1": "588e6820c5ffa1011f33abd08de1da3bee2b4d67",
+"ms": 2190
 },
 {
 "turn": 16,
@@ -38874,8 +38820,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r1_culture_a6/05_m.mp4",
-"sha1": "c8a2e1ea1c2e08c84481b21e8c2e832c7ab63305",
-"ms": 1849
+"sha1": "2b888c47616c9453d00ef07b392c1782e6067646",
+"ms": 2162
 },
 {
 "turn": 5,
@@ -38883,8 +38829,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r1_culture_a6/05_f.mp4",
-"sha1": "c8a2e1ea1c2e08c84481b21e8c2e832c7ab63305",
-"ms": 1849
+"sha1": "2b888c47616c9453d00ef07b392c1782e6067646",
+"ms": 2162
 },
 {
 "turn": 6,
@@ -38892,8 +38838,8 @@
 "speaker": "am",
 "emotion": "sad",
 "key": "audio/ja/r1_culture_a6/06_m.mp4",
-"sha1": "c871ced804c3b0499c0a51d52c969b3e2e21a762",
-"ms": 1140
+"sha1": "6f8fd0b464bc76615028957a07a1288ae5bd4403",
+"ms": 3900
 },
 {
 "turn": 6,
@@ -38901,8 +38847,8 @@
 "speaker": "af",
 "emotion": "sad",
 "key": "audio/ja/r1_culture_a6/06_f.mp4",
-"sha1": "8c45b11837ccc428443262a56b958550b1f562c5",
-"ms": 1112
+"sha1": "3df71bd95195989909a3b3160a067a5b83227baf",
+"ms": 2862
 },
 {
 "turn": 7,
@@ -38928,8 +38874,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r1_culture_a6/08_m.mp4",
-"sha1": "f0ae878042a91411c6d3d50ae231012f9fa1429b",
-"ms": 1401
+"sha1": "1f2352ad4f22e56d6f3d6f2d5e5492c720149259",
+"ms": 4400
 },
 {
 "turn": 8,
@@ -38937,8 +38883,8 @@
 "speaker": "yuka",
 "emotion": "amused",
 "key": "audio/ja/r1_culture_a6/08_f.mp4",
-"sha1": "f0ae878042a91411c6d3d50ae231012f9fa1429b",
-"ms": 1401
+"sha1": "8245ff862ae2409487932d5afd49ca885b9438a8",
+"ms": 3400
 }
 ],
 "r2_life_b4": [
@@ -38964,19 +38910,19 @@
 "turn": 2,
 "voice": "m",
 "speaker": "am",
-"emotion": "worried+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_life_b4/02_m.mp4",
-"sha1": "19715df68889e80631d637c2abaef2b2b484d273",
-"ms": 5300
+"sha1": "f58fdefe17b7b6956455114aa6eddf0a341767db",
+"ms": 3900
 },
 {
 "turn": 2,
 "voice": "f",
 "speaker": "af",
-"emotion": "worried+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_life_b4/02_f.mp4",
-"sha1": "e9d7ba495479460d481ec07191643907b8d507c9",
-"ms": 5100
+"sha1": "850bfe815f99e15fcdda4110a6970975c43018cf",
+"ms": 4000
 },
 {
 "turn": 3,
@@ -39000,19 +38946,19 @@
 "turn": 4,
 "voice": "m",
 "speaker": "am",
-"emotion": "polite+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_life_b4/04_m.mp4",
-"sha1": "db0cfd08651752ba77520f2c138f2fd91af0f92f",
-"ms": 5200
+"sha1": "4054183886fcb8dcd44d9e15d83c7e3071ab58c4",
+"ms": 2174
 },
 {
 "turn": 4,
 "voice": "f",
 "speaker": "af",
-"emotion": "polite+flustered",
+"emotion": "flustered",
 "key": "audio/ja/r2_life_b4/04_f.mp4",
-"sha1": "14ec9cdd79511ee4d69331a42d201278e2982326",
-"ms": 4900
+"sha1": "929a9e0e1780136418689cc0ac07583d580eed42",
+"ms": 2567
 },
 {
 "turn": 5,
@@ -39020,8 +38966,8 @@
 "speaker": "man_m",
 "emotion": "polite",
 "key": "audio/ja/r2_life_b4/05_m.mp4",
-"sha1": "252b7f514bc96bc54b188fce8befbdfc8194197d",
-"ms": 2792
+"sha1": "d2c866c42eebf86e781af0e97de6275e04b5a95d",
+"ms": 3800
 },
 {
 "turn": 5,
@@ -39029,8 +38975,8 @@
 "speaker": "man_m",
 "emotion": "polite",
 "key": "audio/ja/r2_life_b4/05_f.mp4",
-"sha1": "97bd4038b4caeda3244e474c0b69978d96bcc79e",
-"ms": 2695
+"sha1": "ff4bfa027d3bfabf9f660352feeded523b76e33a",
+"ms": 3500
 },
 {
 "turn": 6,
@@ -39510,8 +39456,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b3/09_m.mp4",
-"sha1": "d5137e7cd5c7e5362d2473b17d75b8b9e5a1275c",
-"ms": 3800
+"sha1": "55d3ffe02c3c54a1eb3a53c7ddbde7b2d4e9ef24",
+"ms": 1248
 },
 {
 "turn": 9,
@@ -39519,8 +39465,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r2_study_b3/09_f.mp4",
-"sha1": "43d332110e339b5ade508923d428ec8d94a29fac",
-"ms": 3700
+"sha1": "320b448d18f9379de94af7b79d11e281eb93b3f8",
+"ms": 1560
 },
 {
 "turn": 10,
@@ -39528,8 +39474,8 @@
 "speaker": "min",
 "emotion": "surprised",
 "key": "audio/ja/r2_study_b3/10_m.mp4",
-"sha1": "afa1729cbac9a7d6cfb27885a1c2472ab8b6ab7b",
-"ms": 3300
+"sha1": "2e39e7ed5425209a7cde9926eac9c9388c56d747",
+"ms": 1636
 },
 {
 "turn": 10,
@@ -39537,8 +39483,8 @@
 "speaker": "min",
 "emotion": "surprised",
 "key": "audio/ja/r2_study_b3/10_f.mp4",
-"sha1": "afa1729cbac9a7d6cfb27885a1c2472ab8b6ab7b",
-"ms": 3300
+"sha1": "2e39e7ed5425209a7cde9926eac9c9388c56d747",
+"ms": 1636
 },
 {
 "turn": 11,
@@ -39546,8 +39492,8 @@
 "speaker": "am",
 "emotion": "stiff",
 "key": "audio/ja/r2_study_b3/11_m.mp4",
-"sha1": "d8e4db4653752b937d5946123319af98d2395def",
-"ms": 2520
+"sha1": "deb3da5c97d0a7528afd55e9ac617911444871ea",
+"ms": 3500
 },
 {
 "turn": 11,
@@ -39555,26 +39501,26 @@
 "speaker": "af",
 "emotion": "stiff",
 "key": "audio/ja/r2_study_b3/11_f.mp4",
-"sha1": "645f764c7f549109f0b40cb47e63f171b5d432ae",
-"ms": 2462
+"sha1": "0a14776a076a05595098fac511b38040da5c97d1",
+"ms": 4300
 },
 {
 "turn": 12,
 "voice": "m",
 "speaker": "woman_m",
-"emotion": "amused+gentle",
+"emotion": "gentle",
 "key": "audio/ja/r2_study_b3/12_m.mp4",
-"sha1": "54b6102677c38def77122d28f5bc35d7efd7de81",
-"ms": 6500
+"sha1": "18abecf460338b3e2bf8589f249959cbbbf03bcd",
+"ms": 5300
 },
 {
 "turn": 12,
 "voice": "f",
 "speaker": "woman_m",
-"emotion": "amused+gentle",
+"emotion": "gentle",
 "key": "audio/ja/r2_study_b3/12_f.mp4",
-"sha1": "54b6102677c38def77122d28f5bc35d7efd7de81",
-"ms": 6500
+"sha1": "18abecf460338b3e2bf8589f249959cbbbf03bcd",
+"ms": 5300
 }
 ],
 "r3_love_b1": [
@@ -39798,19 +39744,19 @@
 "turn": 13,
 "voice": "m",
 "speaker": "sakura",
-"emotion": "shy+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_love_b1/13_m.mp4",
-"sha1": "51dfc9ffbd5e618b229cb0d0f2db473d6fa97708",
-"ms": 6900
+"sha1": "7c5ef21bea029b9d77545a9cd2b2d6f22f0778ff",
+"ms": 4700
 },
 {
 "turn": 13,
 "voice": "f",
 "speaker": "sakura",
-"emotion": "shy+surprised",
+"emotion": "surprised",
 "key": "audio/ja/r3_love_b1/13_f.mp4",
-"sha1": "51dfc9ffbd5e618b229cb0d0f2db473d6fa97708",
-"ms": 6900
+"sha1": "7c5ef21bea029b9d77545a9cd2b2d6f22f0778ff",
+"ms": 4700
 },
 {
 "turn": 14,
@@ -39818,8 +39764,8 @@
 "speaker": "am",
 "emotion": "flustered",
 "key": "audio/ja/r3_love_b1/14_m.mp4",
-"sha1": "ff2a5e0079fe58818b10d88e23d9e1ea4a2be25b",
-"ms": 6700
+"sha1": "f217bd25230308af64bb3d1da020134c64bbe064",
+"ms": 4400
 },
 {
 "turn": 14,
@@ -39827,8 +39773,8 @@
 "speaker": "af",
 "emotion": "flustered",
 "key": "audio/ja/r3_love_b1/14_f.mp4",
-"sha1": "eaf23d9675833fb30ec5f2d079b3dbbbd01995ce",
-"ms": 6200
+"sha1": "55b5087990efd635733aecd07f1d565e1501aa90",
+"ms": 5200
 },
 {
 "turn": 15,
@@ -39836,8 +39782,8 @@
 "speaker": "man_y",
 "emotion": "polite",
 "key": "audio/ja/r3_love_b1/15_m.mp4",
-"sha1": "75f44b8d8e4f15be5b6a7bd30a7353a10a6768e0",
-"ms": 3300
+"sha1": "5d87c94171455d94be35b9d359d81ee5da320c41",
+"ms": 2471
 },
 {
 "turn": 15,
@@ -39845,8 +39791,8 @@
 "speaker": "man_y",
 "emotion": "polite",
 "key": "audio/ja/r3_love_b1/15_f.mp4",
-"sha1": "75f44b8d8e4f15be5b6a7bd30a7353a10a6768e0",
-"ms": 3300
+"sha1": "5d87c94171455d94be35b9d359d81ee5da320c41",
+"ms": 2471
 },
 {
 "turn": 16,

@@ -2,7 +2,7 @@
 
 > 새 세션은 **`CLAUDE.md`(이 리포) → 이 파일** 순서로 읽고 바로 이어간다. 규칙 배경은 CLAUDE.md 절(§1 서명 · §2 배포 · §2-1 Zealot · §2-2 TestFlight · §2-3 톤·두 화면 · §4 공개 저장소 · §5 표시 언어 · §6 공용 인터페이스). 기기·계정은 `~/.claude/CLAUDE.md`. 다른 언어앱 공통 프롬프터 = `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md`(uk 관리).
 
-**지금 국면(2026-11-11 새벽): 사용자 지시로 화면·내려받기 개편을 이어서 빌드 중.** 11-10~11 변동 사항은 아래 「0. 변동 기록」에 날짜순으로 한 벌. 새벽 음성 재생성(179턴)은 uk 의 「지금 시작」을 기다리는 상태 그대로.
+**지금 국면(2026-11-11 새벽): 사용자 지시로 화면·내려받기 개편을 이어서 빌드 중.** 11-10~11 변동 사항은 아래 「0. 변동 기록」에 날짜순으로 한 벌. 11-09 일상성 정리 179턴의 음성 재생성은 11-11 새벽에 끝났다(아래 표).
 
 ## 0. 변동 기록(2026-11-10 ~ 11, 빌드 번호와 함께)
 
@@ -32,8 +32,8 @@
 | 내려받기 설정·변경 기록(2026-11-10 사용자 지시) | 설정 및 프로필 → 내려받기 설정: 회화 단계 R0~R4·단어 급 N5~N1·그 밖·음성 여부(저장), 고르지 않은 것은 기기에서 삭제, 장면 컷은 학습자 성별 판만. 변경 기록 = `art/sync_log.json`·`ja_db_log`. DB 는 바뀐 표만 다시 채움. **서버 쪽(콘텐츠 번호 `/art/ja/head`·`changes`)은 2026-11-11 uk 가 배포**(사용자 승인, talkverse-auth 1fd8452f, D1 `content_log` + 방아쇠 12개). 11-11 실측: head 1818, `changes?since=1810` → 8줄(kind·op·id·item, 앱 `patchManifest` 형식과 일치), `since=0`·head 초과 → `reset:true`(앱은 전체 받기로 넘어감). 앱은 다음 시작(또는 「다시 받기」) 때 번호를 저장하고 그다음부터 변경분만 받는다 — 기기 화면에서 콘텐츠 번호가 숫자로 보이는지는 사용자 확인 대기. 사용자 확정 UX 는 uk 가 공통 프롬프터 「2026-11-10 확정 UX」 절에 메모함 |
 | 빌드 캐시 | **2026-11-10 정리로 `build/`·`.dart_tool/`·`android/.gradle`·`ios/Pods` 삭제**했다가 같은 날 저녁 빌드로 다시 생김(build 1.4GB·.dart_tool 등) — 디스크가 차면 다시 지워도 됨 |
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`·`emotion`·`segs`(감정 열), 어조사 턴 `emoji`. 검사 `tools/check_dialogues.py`(남은 오류 4 = r1_culture_a3, r1_life_c2×3, 원래 있던 것). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ |
-| 회화 일상성 정리 | 2026-11-09 사용자 지시(uk 경유) 「반전·러브·플러팅은 그대로, 일상 회화 안에서」 — 카오스 강화가 덧붙인 엉뚱한 사고를 걷어냄: 71편 179턴(목록 `data/review/chaos/daily_fix_reverted.json`, 커밋 6eb75a5). **대본은 끝, 음성은 아직** — 앱은 그 턴에 옛 음성(옛 글 기준)을 들려준다 |
-| 회화 음성 | 215편 · D1 `audio_lines` 4,384줄, R2 `audio/ja/<편>/<NN>_<m\|f>.mp4`, 매니페스트 `data/tts/audio_ja.json`, 작업 폴더 `~/tts_work/ja`(done.txt 215). 절차 `docs/DIALOGUE_AUDIO.md`. **D1 대조(11-10): 31편이 D1 턴 수 < 대본 턴 수**(예 r3_love_b5 12/16, r0_friends_c3 6/8) — 나중에 늘어난 턴으로 보이며 음성 생성이 필요(새벽에만). 정확한 목록 뽑기는 디스크가 차서 못 끝냄 |
+| 회화 일상성 정리 | 2026-11-09 사용자 지시(uk 경유) 「반전·러브·플러팅은 그대로, 일상 회화 안에서」 — 카오스 강화가 덧붙인 엉뚱한 사고를 걷어냄: 71편 179턴(목록 `data/review/chaos/daily_fix_reverted.json`, 커밋 6eb75a5). **대본·음성 모두 끝** — 음성은 11-11 02:41~04:16 재생성(`tools/tts/redo_turns.sh`, 작업 폴더 `~/tts_work/ja_redo`), 서버 매니페스트 본문과 대본 대조 결과 불일치 0(이름 자리표·m/f 판 차이만) |
+| 회화 음성 | 215편 · D1 `audio_lines` 4,384줄, R2 `audio/ja/<편>/<NN>_<m\|f>.mp4`, 매니페스트 `data/tts/audio_ja.json`, 작업 폴더 `~/tts_work/ja`(done.txt 215). 절차 `docs/DIALOGUE_AUDIO.md`. **음성 없는 턴(11-11 서버 매니페스트 대조): 35편 44턴 전부 대사가 없는 턴**(「……。」·괄호 지문·♡ 뿐) — 생성 대상이 아니다. 말이 있는데 음성이 없는 턴은 0 |
 | 장면 컷 | 2,232컷 · 430묶음(남 215 + 여 `_f` 215). **11-10 대조: 로컬·D1 sha1 전부 일치(올릴 것 없음)**. sparse 클론 `~/talkverse/ja-art`, 업로드 `tools/scene_upload.py` |
 | 단어 DB | 8,870어, 시드 `assets/data/version.json`(데이터 바꾸면 db 번호 +1). 회화·단어·문법은 앱 번들(서버 표 없음) |
 | 단어 그림 | **uk 담당**(그리기·리뷰·공개·D1/R2 업로드까지, 사용자 지시 2026-11-09). ja 는 목록만 — JLPT N5~N2 공백 목록 talkversehanja `talkverse_art/words/ja_r6_jlpt_gap.csv`(49807d6c) 전달 완료 |
@@ -42,10 +42,8 @@
 
 ## 2. 다음 할 일
 
-1. **uk 의 「지금 시작」을 받으면(새벽 01~07시)**: `nohup zsh tools/tts/redo_turns.sh data/review/chaos/daily_fix_reverted.json ~/tts_work/ja_redo > ~/tts_work/ja_redo/run.log 2>&1 &` — PC 의 그 턴 조각 삭제 → run_all 이 71편만 생성·검사·R2·D1(편 단위 교체). 끝(`REDO_END`) → uk 에 「GPU 끝」 → `python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)` 커밋 → uk 에 「REVIEW_ja 갱신」.
-2. 음성이 빠진 31편의 턴 목록을 뽑아(D1 `audio_lines` turn vs 대본 턴) 같은 방식으로 새벽에 생성 — redo 목록 json 에 합쳐 한 번에 돌려도 된다.
-3. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
-4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
+1. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
+2. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
 
 ## 3. 지울 후보(애매해서 남겨 둠 — 사용자·허브 판단)
 
