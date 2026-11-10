@@ -3,6 +3,7 @@ import '../core/prefs.dart';
 
 import 'kana_hangul_map.dart';
 import '../core/l10n.dart';
+import 'romaji.dart';
 
 /// 가나 → 한글독음 변환 + 전역 표시 설정 (모든 메뉴 공용).
 class KoReading {
@@ -15,6 +16,7 @@ class KoReading {
   /// 'きょうは いい てんき' → '쿄우와 이이 텐키' 식의 학습용 근사 표기.
   /// ん→ㄴ받침, っ→ㅅ받침, ー는 생략. 가나 이외 문자는 그대로 통과.
   static String convert(String kana) {
+    if (!AppLangPrefs.isKo) return Romaji.fromKana(kana); // 한국어가 아닌 UI 는 로마자(2026-11-11)
     final out = StringBuffer();
     String? pending; // 직전 한글 음절 (받침 병합용)
     void flush() {

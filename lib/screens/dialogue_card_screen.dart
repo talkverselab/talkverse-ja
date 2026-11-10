@@ -162,7 +162,7 @@ class _CardText extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(LearnerPrefs.fill(t.shown), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.w900, color: AppColors.beni, height: 1.3)),
                 if (t.kana.isNotEmpty && t.kana != t.ja) ...[const SizedBox(height: 6), Text(LearnerPrefs.fill(t.kana), style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700))],
-                if (t.rd.isNotEmpty) Text(LearnerPrefs.fill(t.rd, ko: true), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
+                if (t.rd.isNotEmpty) Text(LearnerPrefs.readingLine(t.rd, t.kana), style: const TextStyle(fontSize: 13, color: AppColors.muted)),
                 const SizedBox(height: 12),
                 const BrushDivider(height: 2),
                 const SizedBox(height: 10),

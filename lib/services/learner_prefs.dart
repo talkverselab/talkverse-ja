@@ -1,3 +1,5 @@
+import '../core/l10n.dart';
+import 'romaji.dart';
 import 'package:flutter/foundation.dart';
 import '../core/prefs.dart';
 
@@ -42,6 +44,9 @@ class LearnerPrefs {
   static String voiceGender(String speaker) => speaker == 'A' ? gender.value : (speaker == 'C' ? 'male' : 'female');
 
   /// 본문의 `{name}` 치환. 이름이 없으면 일본어 관용 자리표시 「〇〇」(한국어 줄은 「○○」).
+  /// 회화 턴의 독음 한 줄 — 한국어 UI 는 한글 독음(rd), 그 밖은 가나에서 만든 로마자.
+  static String readingLine(String rd, String kana) => AppLangPrefs.isKo ? fill(rd, ko: true) : Romaji.fromKana(fill(kana));
+
   static String fill(String text, {bool ko = false}) {
     if (!text.contains('{')) return text;
     final n = name.value.isNotEmpty ? name.value : (ko ? '○○' : '〇〇');

@@ -66,7 +66,7 @@ class _KanjiStagesScreenState extends State<KanjiStagesScreen> {
                 style: TextStyle(color: AppColors.sumi, fontWeight: FontWeight.w800, fontSize: 15)),
             const SizedBox(height: 2),
             Text(
-                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4~8지선다 (누적)', [_byFreq ? '회화 빈도순(절벽 R1→R5)' : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
+                trf(widget.learn ? '{0} · {1}자 × {2}단계 · 글자 먼저, 그다음 문제' : '{0} · {1}자 × {2}단계 · 4~8지선다 (누적)', [_byFreq ? tr('회화 빈도순(절벽 R1→R5)') : 'N5→N1', KanjiIndexService.stageSize, stages?.length ?? '-']),
                 style: const TextStyle(color: AppColors.sumiLight, fontSize: 10, letterSpacing: 2)),
           ],
         ),
