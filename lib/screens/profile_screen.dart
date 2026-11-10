@@ -1,3 +1,4 @@
+import '../widgets/sync_status_card.dart';
 import 'package:flutter/material.dart';
 
 import 'download_settings_screen.dart';
@@ -210,6 +211,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 subtitle: LearnerPrefs.furigana.value ? tr('표시 — 탭하면 숨김') : tr('미표시(기본) — 힘들어도 보지 않고 익혀보세요'),
                 onTap: () async { await FuriganaToggleAction.toggle(context); if (mounted) setState(() {}); }),
           ]),
+          const SizedBox(height: 10),
+          const SyncStatusCard(),
           const SizedBox(height: 16),
           _SectionTitle(tr('정보')),
           const SizedBox(height: 8),

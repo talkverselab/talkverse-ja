@@ -169,7 +169,7 @@ class _DownloadSettingsScreenState extends State<DownloadSettingsScreen> {
               if ((e['chg'] as Map?)?.isNotEmpty ?? false) '~ ${_counts(e['chg'] as Map?)}',
               if ((e['del'] as Map?)?.isNotEmpty ?? false) '− ${_counts(e['del'] as Map?)}',
             ],
-            tag: switch (e['reason']) { 'first' => tr('첫 설치'), 'choice' => tr('선택 변경'), _ => tr('서버 변경') },
+            tag: switch (e['reason']) { 'first' => tr('첫 설치'), 'choice' => tr('선택 변경'), 'restart' => tr('다시 받기'), _ => tr('서버 변경') },
           ),
         for (final e in _dbLog.take(20))
           _LogRow(

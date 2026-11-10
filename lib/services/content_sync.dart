@@ -75,6 +75,7 @@ class ContentSync {
   static const _prefSeq = 'content_seq'; // 서버 콘텐츠 번호(변경 기록의 마지막 줄 번호)
   static const _prefDialogue = 'sync_dialogue_levels', _prefWords = 'sync_word_levels', _prefAudioOn = 'sync_audio';
   static const _oldPrefs = ['art_scene_manifest_v1', 'art_audio_manifest_v1']; // 옛 저장 자리(1.7MB 를 설정 저장소에 두던 것) — 파일로 옮김
+  static const _prefLastAt = 'sync_last_at'; // 마지막으로 다 받은 시각(ms)
   static const _concurrency = 6;
 
   final ValueNotifier<SyncProgress> progress = ValueNotifier(const SyncProgress('idle', 0, 0, false));
@@ -91,6 +92,7 @@ class ContentSync {
   bool _cancel = false;
   int appBuild = 0;
   int? seq; // 서버 콘텐츠 번호(서버가 주지 않으면 null)
+  DateTime? lastAt; // 마지막으로 고른 몫을 다 받은 시각
   SyncChoice choice = SyncChoice.all;
   Map<String, Map<int, String>> sceneIndex = {}; // 편id → {컷 → 키(?v 포함)} — ArtService 가 네트워크 전에 본다
   Map<String, Map<int, Map<String, AudioLine>>> audioIndex = {}; // 편id → {턴 → {m|f → 음성}}
@@ -131,6 +133,8 @@ class ContentSync {
       audio: prefs.getBool(_prefAudioOn) ?? true,
     );
     seq = prefs.getInt(_prefSeq);
+    final at = prefs.getInt(_prefLastAt);
+    lastAt = at == null ? null : DateTime.fromMillisecondsSinceEpoch(at);
     _rebuild();
     progress.value = const SyncProgress('manifest', 0, 0, true);
     final ok = await _refresh(prefs);
@@ -150,6 +154,7 @@ class ContentSync {
     final need = missing > 0 && stored != _wantedVersion;
     progress.value = SyncProgress(need ? 'download' : 'done', _wanted.length - missing, _wanted.length, false);
     if (!need && stored != _wantedVersion && _wantedVersion != null) await prefs.setString(_prefVersion, _wantedVersion!);
+    if (missing == 0 && _wanted.isNotEmpty) await _markDone(prefs);
     return need;
   }
 
@@ -212,10 +217,12 @@ class ContentSync {
   }
 
   /// 서버에서 목록을 새로 맞춘다. 콘텐츠 번호가 있으면 변경분만, 없으면 매니페스트 전체.
-  Future<bool> _refresh(Prefs prefs) async {
+  Future<bool> _refresh(Prefs prefs, {bool force = false}) async {
+    // force = 「다시 받기」: 변경분 건너뛰고 전체를, 서버 캐시(max-age=300)를 피하게 ?t=시각 을 붙여 받는다
+    final bust = force ? '?t=${DateTime.now().millisecondsSinceEpoch}' : '';
     try {
       // 1) 변경분만: 저장본 셋이 다 있고 콘텐츠 번호를 알 때
-      if (seq != null && _bodies.length == 3) {
+      if (!force && seq != null && _bodies.length == 3) {
         final c = await _get('$_root/changes?since=$seq');
         final j = c == null ? null : json.decode(c);
         if (j is Map && j['head'] is int && j['reset'] != true) {
@@ -235,17 +242,17 @@ class ContentSync {
       // 2) 전체: 번호를 먼저 받아 둔다(그 뒤에 생긴 변경은 다음에 다시 덧입혀도 결과가 같다)
       int? head;
       try {
-        final h = await _get('$_root/head');
+        final h = await _get('$_root/head$bust');
         final hj = h == null ? null : json.decode(h);
         if (hj is Map && hj['head'] is int) head = hj['head'] as int;
       } catch (_) {}
-      final w = await _get(wordsManifestUrl);
-      final s = await _get(sceneManifestUrl);
+      final w = await _get('$wordsManifestUrl$bust');
+      final s = await _get('$sceneManifestUrl$bust');
       if (w == null || s == null) return false;
       await _saveBody('words', w);
       await _saveBody('scene', s);
       try {
-        final a = await _get(audioManifestUrl);
+        final a = await _get('$audioManifestUrl$bust');
         if (a != null) await _saveBody('audio', a);
       } catch (e) {
         debugPrint('ContentSync: 음성 매니페스트 없음 $e');
@@ -477,12 +484,71 @@ class ContentSync {
     await _saveIndex();
     final left = _wanted.entries.where((e) => _index[e.key] != e.value).length;
     if (left == 0 && _wantedVersion != null) {
-      (await Prefs.getInstance()).setString(_prefVersion, _wantedVersion!);
+      final prefs = await Prefs.getInstance();
+      await prefs.setString(_prefVersion, _wantedVersion!);
+      await _markDone(prefs);
     }
     progress.value = SyncProgress(left == 0 ? 'done' : 'download', _wanted.length - left, _wanted.length, false);
   }
 
   void cancel() => _cancel = true;
+
+  Future<void> _markDone(Prefs prefs) async {
+    lastAt = DateTime.now();
+    await prefs.setInt(_prefLastAt, lastAt!.millisecondsSinceEpoch);
+  }
+
+  /// 종류별 진행 — word·scene·audio → (기기에 받은 수, 고른 몫 전체).
+  Map<String, (int, int)> get kindProgress {
+    final out = {'word': (0, 0), 'scene': (0, 0), 'audio': (0, 0)};
+    _wanted.forEach((k, v) {
+      final kind = _kindOf(k);
+      final (d, t) = out[kind]!;
+      out[kind] = (d + (_index[k] == v ? 1 : 0), t + 1);
+    });
+    return out;
+  }
+
+  /// 「다시 받기」(사용자 지시 2026-11-11): 돌던 내려받기를 멈추고, 매니페스트를 캐시 무시로 새로 받아
+  /// 동기화를 처음부터 다시 돌린다. 기기에서 사라진 파일은 색인에서 빼 다시 받게 한다. 돌려주는 값 = 서버에 닿았는지.
+  bool restarting = false;
+  Future<bool> restart() async {
+    if (restarting) return false;
+    restarting = true;
+    try {
+      _cancel = true;
+      try {
+        await _running;
+      } catch (_) {}
+      final prefs = await Prefs.getInstance();
+      progress.value = const SyncProgress('manifest', 0, 0, true);
+      final ok = await _refresh(prefs, force: true);
+      if (!ok) {
+        final missing = _wanted.entries.where((e) => _index[e.key] != e.value).length;
+        progress.value = SyncProgress('offline', _wanted.length - missing, _wanted.length, false);
+        return false;
+      }
+      // 색인에는 있는데 파일이 없는 것 → 다시 받는다
+      if (_dir != null) {
+        var lost = 0;
+        for (final k in _index.keys.toList()) {
+          if (!await File('${_dir!.path}/$k').exists()) {
+            _index.remove(k);
+            lost++;
+          }
+        }
+        if (lost > 0) await _saveIndex();
+      }
+      await _prune();
+      await _logDiff('restart');
+      await prefs.remove(_prefVersion);
+      await _settle(prefs);
+    } finally {
+      restarting = false;
+    }
+    unawaited(download());
+    return true;
+  }
 
   Future<bool> _fetchFile(String key, String v) async {
     try {

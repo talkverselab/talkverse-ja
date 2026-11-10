@@ -134,15 +134,23 @@ class ArtService {
 
   Future<void> _ensure() => _loading ??= _load();
 
+  /// 단어 그림 목록을 캐시 무시로 새로 받는다(「다시 받기」).
+  Future<void> reload() {
+    _bust = true;
+    return _loading = _load().whenComplete(() => _bust = false);
+  }
+
+  bool _bust = false;
+
   Future<void> _load() async {
     final prefs = await Prefs.getInstance();
     final at = prefs.getInt(_prefAt) ?? 0;
     final cached = prefs.getString(_prefKey);
     final fresh = DateTime.now().millisecondsSinceEpoch - at < _ttl.inMilliseconds;
-    if (cached != null && fresh && _apply(cached)) return;
+    if (!_bust && cached != null && fresh && _apply(cached)) return;
     try {
       final client = HttpClient()..connectionTimeout = const Duration(seconds: 8);
-      final req = await client.getUrl(Uri.parse(manifestUrl));
+      final req = await client.getUrl(Uri.parse(_bust ? '$manifestUrl?t=${DateTime.now().millisecondsSinceEpoch}' : manifestUrl));
       final res = await req.close().timeout(const Duration(seconds: 12));
       if (res.statusCode == 200) {
         final body = await res.transform(utf8.decoder).join();
