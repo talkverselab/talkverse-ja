@@ -279,6 +279,9 @@ class _FamilyDetailState extends State<_FamilyDetail> {
   }
 }
 
+/// 가족 화면을 바로 연다(단어 시트·플래시카드의 「가족 지도」).
+Future<void> openHanjaFamily(BuildContext context, HanjaChar root) => openFull(context, (_) => _FamilyDetailScreen(root: root));
+
 class _FamilyDetailScreen extends StatelessWidget {
   final HanjaChar root;
   const _FamilyDetailScreen({required this.root});

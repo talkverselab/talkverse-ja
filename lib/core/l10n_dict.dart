@@ -492,6 +492,9 @@ const Map<String, String> kDictEn = {
   '연체사': 'Adnominal',
   '대명사': 'Pronoun',
   '명사': 'Noun',
+  '한자 가족': 'Kanji family',
+  '가족 지도': 'Family map',
+  '{0} — 소리 부품 「{1}」({2}) 가족 {3}자': '{0} — sound part 「{1}」({2}) family, {3} kanji',
 };
 
 const Map<String, String> kDictJa = {
@@ -937,6 +940,9 @@ const Map<String, String> kDictJa = {
   '연체사': '連体詞',
   '대명사': '代名詞',
   '명사': '名詞',
+  '한자 가족': '漢字ファミリー',
+  '가족 지도': 'ファミリーマップ',
+  '{0} — 소리 부품 「{1}」({2}) 가족 {3}자': '{0} — 音符「{1}」({2})のファミリー {3}字',
 };
 
 const Map<String, String> kDictZh = {
@@ -1382,4 +1388,7 @@ const Map<String, String> kDictZh = {
   '연체사': '连体词',
   '대명사': '代词',
   '명사': '名词',
+  '한자 가족': '汉字家族',
+  '가족 지도': '家族图',
+  '{0} — 소리 부품 「{1}」({2}) 가족 {3}자': '{0} — 声旁「{1}」({2})家族 {3}字',
 };

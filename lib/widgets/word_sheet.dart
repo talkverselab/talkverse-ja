@@ -5,6 +5,7 @@ import '../services/kanji_index_service.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
 import 'furigana_text.dart';
+import 'word_kanji_families.dart';
 import 'japanese_decor.dart';
 import 'selectable_ja_text.dart';
 import '../core/platform.dart';
@@ -106,6 +107,7 @@ class _WordSheetState extends State<WordSheet> {
                   const SizedBox(height: 8),
                   ...kanjiSegs.map((s) => _KanjiSegRow(seg: s, loaded: _loaded)),
                 ],
+                WordKanjiFamilies(word: w.surface),
               ],
             ),
           ),

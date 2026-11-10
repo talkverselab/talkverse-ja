@@ -10,6 +10,7 @@ import '../services/content_sync.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../services/word_examples.dart';
+import '../widgets/word_kanji_families.dart';
 import 'dialogue_screen.dart' show openDialogueAt;
 
 /// 단원 플래시카드·단어 시트에 넘기는 단어 한 개(절벽·JLPT 공용).
@@ -145,6 +146,7 @@ Future<void> showStudyWordSheet(BuildContext context, StudyWord w) => showModalB
               const SizedBox(height: 14),
               const SentenceTip(),
               WordExampleList(word: w),
+              WordKanjiFamilies(word: w.word),
             ]),
           ),
         ),
@@ -340,6 +342,7 @@ class _WordUnitFlashScreenState extends State<WordUnitFlashScreen> {
           const SizedBox(height: 12),
           Text(tr('회화 문장'), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.sumiLight, letterSpacing: 1)),
           WordExampleList(word: w, max: 2),
+          WordKanjiFamilies(word: w.word, maxMembers: 6),
         ]),
       );
 }
