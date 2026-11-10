@@ -9,9 +9,10 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 단어 카드 커밋(2026-11-10 저녁). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 79** https://apps.talkverse.uk/Ultzu/443. 로컬 빌드 `flutter build apk --release --build-number=80` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
-| iOS TestFlight | **2611101751**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
+| Android | Zealot 「일본어 유니버스」 **빌드 80**(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=81` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| iOS TestFlight | **2611101821**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
 | 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
+| 내려받기 설정·변경 기록(2026-11-10 사용자 지시) | 설정 및 프로필 → 내려받기 설정: 회화 단계 R0~R4·단어 급 N5~N1·그 밖·음성 여부(저장), 고르지 않은 것은 기기에서 삭제, 장면 컷은 학습자 성별 판만. 변경 기록 = `art/sync_log.json`·`ja_db_log`. DB 는 바뀐 표만 다시 채움. **서버 쪽(콘텐츠 번호 `/art/ja/head`·`changes`)은 미배포** — 규격 `docs/CONTENT_SYNC.md` 를 uk 에 전달, uk 가 사용자 승인을 묻는 중(배포되면 "배포함" → 앱 설정 화면의 콘텐츠 번호가 「—」에서 숫자로 바뀌는지 확인). 사용자 확정 UX 는 uk 가 공통 프롬프터 「2026-11-10 확정 UX」 절에 메모함 |
 | 빌드 캐시 | **2026-11-10 정리로 `build/`·`.dart_tool/`·`android/.gradle`·`ios/Pods` 삭제**했다가 같은 날 저녁 빌드로 다시 생김(build 1.4GB·.dart_tool 등) — 디스크가 차면 다시 지워도 됨 |
 | 회화 | **215편**(R0 47 · R1 70 · R2 56 · R3 41 · R4 1), `assets/data/dialogues/<R>/<주제>/*.json`, 턴마다 `lemmas`·`emotion`·`segs`(감정 열), 어조사 턴 `emoji`. 검사 `tools/check_dialogues.py`(남은 오류 4 = r1_culture_a3, r1_life_c2×3, 원래 있던 것). 리뷰 페이지 https://talkverse.uk/talkverse/review/ja/ |
 | 회화 일상성 정리 | 2026-11-09 사용자 지시(uk 경유) 「반전·러브·플러팅은 그대로, 일상 회화 안에서」 — 카오스 강화가 덧붙인 엉뚱한 사고를 걷어냄: 71편 179턴(목록 `data/review/chaos/daily_fix_reverted.json`, 커밋 6eb75a5). **대본은 끝, 음성은 아직** — 앱은 그 턴에 옛 음성(옛 글 기준)을 들려준다 |
@@ -47,7 +48,7 @@
 ```bash
 cd ~/talkverse/ja && flutter pub get && flutter analyze && flutter test
 git add <바꾼 파일만> && git commit && git push origin master
-flutter build apk --release --build-number=80 && tools/zealot_push.sh "변경 한 줄"
+flutter build apk --release --build-number=81 && tools/zealot_push.sh "변경 한 줄"
 bash tools/ios_release.sh                                    # Android 와 항상 같이
 python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)
 /usr/bin/python3 tools/scene_upload.py [<편id> ...]          # 장면 컷 R2/D1(sha1 같으면 건너뜀)
