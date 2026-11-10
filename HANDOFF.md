@@ -9,9 +9,9 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 단원 플래시카드·문법 카드 커밋 3eac928(2026-11-11). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 82**(https://apps.talkverse.uk/Ultzu/448)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=83` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
-| iOS TestFlight | **2611110029**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
-| 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
+| Android | Zealot 「일본어 유니버스」 **빌드 83**(https://apps.talkverse.uk/Ultzu/449)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=84` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| iOS TestFlight | **2611110044**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
+| 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(`WordCardGrid` — 그림 있는 단어는 그림 카드, **그림 없는 단어는 그 아래 낮은 카드**(빈칸 지적 2026-11-11); JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
 | 단어 단원 플래시카드·문법 카드(2026-11-11 사용자 지시, uk 경유) | 절벽·JLPT 단어를 **20어 단원**으로, 단원 머리줄 「플래시카드」 → `lib/screens/word_unit_flash_screen.dart`(앞 그림·표기 → 뒤 읽기·뜻 + 그 단어가 나온 회화 문장, 탭하면 그 턴부터 회화 재생 `openDialogueAt`; 몰라요 는 끝에 다시, 상태 `wcard:<낱말>`). 안내 「문장으로 외우는 게 더 좋아요」(`SentenceTip`) = 플래시카드·단어 시트·JLPT 목록 위. 예문 찾기 `lib/services/word_examples.dart`(lemmas → 없으면 글자 포함). 절벽 목록은 uk 분류표(talkversehanja `talkverse_art/words/ja_cliff_class_20261111.csv`)를 `python3 tools/freq/cliff_class.py <분류표>` 로 반영: noise 205줄 삭제(**순위 번호는 그대로** — 그림 번호가 순위, 2,000위 안 1,795어), 그 밖 647어의 읽기·뜻·품사 = `assets/data/freq/cliff_notes_ja.json`(문법 334어는 그림 대신 문법 카드). 시드 db 12. 2,001~2,500위 줄은 사용자 지시(2026-11-11 "2000단어 이상은 중요하지 않지")로 파일에서 잘라냄. 테스트 `test/word_unit_flash_test.dart` |
 | 내려받기 설정·변경 기록(2026-11-10 사용자 지시) | 설정 및 프로필 → 내려받기 설정: 회화 단계 R0~R4·단어 급 N5~N1·그 밖·음성 여부(저장), 고르지 않은 것은 기기에서 삭제, 장면 컷은 학습자 성별 판만. 변경 기록 = `art/sync_log.json`·`ja_db_log`. DB 는 바뀐 표만 다시 채움. **서버 쪽(콘텐츠 번호 `/art/ja/head`·`changes`)은 미배포** — 규격 `docs/CONTENT_SYNC.md` 를 uk 에 전달, uk 가 사용자 승인을 묻는 중(배포되면 "배포함" → 앱 설정 화면의 콘텐츠 번호가 「—」에서 숫자로 바뀌는지 확인). 사용자 확정 UX 는 uk 가 공통 프롬프터 「2026-11-10 확정 UX」 절에 메모함 |
 | 빌드 캐시 | **2026-11-10 정리로 `build/`·`.dart_tool/`·`android/.gradle`·`ios/Pods` 삭제**했다가 같은 날 저녁 빌드로 다시 생김(build 1.4GB·.dart_tool 등) — 디스크가 차면 다시 지워도 됨 |
@@ -49,7 +49,7 @@
 ```bash
 cd ~/talkverse/ja && flutter pub get && flutter analyze && flutter test
 git add <바꾼 파일만> && git commit && git push origin master
-flutter build apk --release --build-number=83 && tools/zealot_push.sh "변경 한 줄"
+flutter build apk --release --build-number=84 && tools/zealot_push.sh "변경 한 줄"
 bash tools/ios_release.sh                                    # Android 와 항상 같이
 python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)
 /usr/bin/python3 tools/scene_upload.py [<편id> ...]          # 장면 컷 R2/D1(sha1 같으면 건너뜀)
