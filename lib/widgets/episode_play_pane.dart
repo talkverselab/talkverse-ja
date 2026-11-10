@@ -21,7 +21,7 @@ import 'selectable_ja_text.dart';
 
 /// 「모든 문장 듣기」 재생 패널 — Grok UXUI 시안 02 「만화책 읽기형」(사용자 확정 2026-11-02, `data/review/uxui/sian_02.md`).
 ///
-/// 장면 컷이 주인공. 아이패드(가로 720 이상): 왼쪽 = 대화 스크립트 목록(번호·화자·일본어·한국어), 오른쪽 = 큰 장면 컷(그림만 — 글은 스크립트의 현재 줄).
+/// 장면 컷이 주인공. 가로로 긴 칸(아이패드 가로 전체 화면): 왼쪽 = 큰 장면 컷(그림만), 오른쪽 = 대화 스크립트 목록(번호·화자·일본어·읽기·한국어, 현재 줄에 단어 칩).
 /// 폰: 장면 컷이 위(화면 대부분), 스크립트가 아래. 하단 고정 컨트롤 = ▶ 재생 · 진행 슬라이더 · 속도 · 자막 단계(日本語/かな/독음/한국어).
 /// 컷 전환은 400ms 페이드. 그림: 턴 `art`(장면 그림) → 핵심 단어 그림 → 장면 카드. 장면 그림은 나중에 JSON `art` 에 채운다.
 /// `autoPlay: false` 면 편 화면(읽기 모드)으로도 쓴다 — 같은 레이아웃에서 ▶ 를 누르면 순차 재생.
@@ -146,15 +146,16 @@ class _EpisodePlayPaneState extends State<EpisodePlayPane> {
     );
     return LayoutBuilder(builder: (context, c) {
       // 장면 칸에는 그림만, 글(문장·읽기·뜻·단어)은 전부 스크립트의 현재 줄에(사용자 지시 2026-11-10 — 같은 대사가 장면 캡션과 스크립트에 두 번 나오고 아래가 잘렸다).
-      // 칸이 가로로 길면(아이패드 가로의 오른쪽 칸·전체 화면·폰 가로) 좌 스크립트 · 우 그림, 세로로 길면 그림 위 · 스크립트 아래.
+      // 칸이 가로로 길면(아이패드 가로 전체 화면·폰 가로) 좌 그림 · 우 스크립트, 세로로 길면 그림 위 · 스크립트 아래.
       final sideBySide = c.maxWidth >= 600 && c.maxWidth > c.maxHeight * 1.1;
       final body = Column(children: [
         Expanded(
           child: sideBySide
               ? Row(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-                  Expanded(flex: c.maxWidth >= 900 ? 4 : 5, child: script),
+                  // 왼쪽 = 그림(장면을 먼저 보고), 오른쪽 = 스크립트(읽고 누르는 쪽 — 오른손이 닿는 자리). 넓을수록 그림 몫을 키운다.
+                  Expanded(flex: c.maxWidth >= 900 ? 11 : 5, child: cutFor(true)),
                   const VerticalDivider(width: 1, color: AppColors.line),
-                  Expanded(flex: c.maxWidth >= 900 ? 6 : 5, child: cutFor(true)),
+                  Expanded(flex: c.maxWidth >= 900 ? 9 : 5, child: script),
                 ])
               : Column(children: [
                   // 그림은 원본 비율 그대로(자르지 않음), 높이는 칸의 절반까지 — 나머지는 스크립트.
@@ -284,7 +285,7 @@ class _SpeakerDot extends StatelessWidget {
 class _CutPanel extends StatelessWidget {
   final Dialogue d;
   final DialogueTurn turn;
-  final bool side; // true = 왼쪽 스크립트·오른쪽 그림, false = 그림 위·스크립트 아래
+  final bool side; // true = 왼쪽 그림·오른쪽 스크립트, false = 그림 위·스크립트 아래
   const _CutPanel({required this.side, required this.d, required this.turn});
 
   @override
@@ -292,20 +293,13 @@ class _CutPanel extends StatelessWidget {
     // 어느 배치든 그림은 원본 비율(1168:784) — 남는 칸은 여백으로 두고 자르지 않는다.
     final pic = AspectRatio(aspectRatio: 1168 / 784, child: SceneCut(dialogue: d, turn: turn));
     if (!side) return Padding(padding: const EdgeInsets.fromLTRB(12, 10, 12, 10), child: Align(heightFactor: 1, child: pic));
+    // 나란히: 그림을 칸 가운데에 크게, 그 아래에 장면 설명 한 줄(대사는 여기 두지 않는다).
     return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 12, 16, 10),
-      child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-        Padding(
-          padding: const EdgeInsets.only(bottom: 8),
-          child: Row(children: [
-            const Icon(Icons.image_outlined, size: 16, color: AppColors.sumi),
-            const SizedBox(width: 6),
-            Text(tr('회화 장면'), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-            const Spacer(),
-            Text(d.speakerName(turn.speaker), style: const TextStyle(fontSize: 11, color: AppColors.muted, fontWeight: FontWeight.w700)),
-          ]),
-        ),
-        Expanded(child: Align(alignment: Alignment.topCenter, child: pic)),
+      padding: const EdgeInsets.fromLTRB(20, 14, 20, 12),
+      child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+        Flexible(child: pic),
+        const SizedBox(height: 10),
+        Text(d.scene, textAlign: TextAlign.center, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12.5, color: AppColors.muted, height: 1.4)),
       ]),
     );
   }
