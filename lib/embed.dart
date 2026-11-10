@@ -58,7 +58,14 @@ Future<void> embedInit({bool standalone = false}) async {
   // 그림(장면 컷·단어 그림)·회화 음성 기기 내려받기: 버전이 다르면 로딩 화면에서 받고 시작(2026-11-04)
   final v = WidgetsBinding.instance.platformDispatcher.views.first;
   final wide = v.physicalSize.shortestSide / v.devicePixelRatio >= 600;
-  _syncFirst = await ContentSync.instance.init(large: wide, female: LearnerPrefs.isFemale);
+  // 단어 그림을 급별로 골라 받을 수 있게 표기 → JLPT 급을 넘긴다(2026-11-10)
+  final jlpt = <String, int>{};
+  try {
+    for (final r in await appDb.customSelect('SELECT surface, MAX(jlpt) j FROM jlpt_words WHERE jlpt IS NOT NULL GROUP BY surface').get()) {
+      jlpt[r.data['surface'] as String] = r.data['j'] as int;
+    }
+  } catch (_) {}
+  _syncFirst = await ContentSync.instance.init(large: wide, female: LearnerPrefs.isFemale, jlpt: jlpt);
 }
 
 /// runApp 에 넘기는 위젯(통합 앱은 이 언어 화면으로). [onSwitchLanguage] 가 있으면 설정 및 프로필에 「다른 언어 배우기」.

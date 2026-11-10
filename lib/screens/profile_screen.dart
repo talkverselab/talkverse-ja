@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'download_settings_screen.dart';
+
 import '../core/prefs.dart';
 
 import '../widgets/legal_links.dart';
@@ -197,6 +199,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 title: tr('언어 / Language'),
                 subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
                 onTap: AppLangPrefs.next),
+            _SettingItem(
+                icon: Icons.download_outlined,
+                title: tr('내려받기 설정'),
+                subtitle: tr('받을 회화 단계·단어 급 고르기 · 변경 기록'),
+                onTap: () => openPane(context, (_) => const DownloadSettingsScreen())),
             _SettingItem(
                 icon: Icons.text_fields,
                 title: tr('후리가나'),
