@@ -4,6 +4,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '영상을 불러오지 못했어요': 'Could not load the video',
   '한국어와 다른 곳만 잠깐': 'Only where it differs from Korean',
   '외국어 발음 규칙': 'Loanword sound rules', '영어 소리 → 가타카나 · 규칙 한눈에 · 16줄기': 'English sounds → katakana · rules at a glance · 16 groups', '📏 규칙 한눈에': '📏 Rules at a glance', '예) {0}': 'e.g. {0}', 
   '영상 준비 중': 'Video coming soon', '영상': 'Video', 
@@ -640,6 +641,7 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '영상을 불러오지 못했어요': '動画を読み込めませんでした',
   '한국어와 다른 곳만 잠깐': '韓国語と違うところだけ',
   '외국어 발음 규칙': '外来語の発音ルール', '영어 소리 → 가타카나 · 규칙 한눈에 · 16줄기': '英語の音 → カタカナ · ルール一覧 · 16系統', '📏 규칙 한눈에': '📏 ルール一覧', '예) {0}': '例) {0}', 
   '영상 준비 중': '動画準備中', '영상': '動画', 
@@ -1114,6 +1116,7 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '영상을 불러오지 못했어요': '视频加载失败',
   '한국어와 다른 곳만 잠깐': '只讲和韩语不同的地方',
   '외국어 발음 규칙': '外来语发音规则', '영어 소리 → 가타카나 · 규칙 한눈에 · 16줄기': '英语发音 → 片假名 · 规则一览 · 16类', '📏 규칙 한눈에': '📏 规则一览', '예) {0}': '例) {0}', 
   '영상 준비 중': '视频准备中', '영상': '视频', 

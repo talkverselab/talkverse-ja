@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
+import 'package:video_player/video_player.dart';
 
 import '../core/embed_env.dart';
 import '../core/l10n.dart';
@@ -306,19 +307,7 @@ class _Memorize extends StatelessWidget {
     const jaStyle = TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.45);
     const koStyle = TextStyle(fontSize: 14, color: AppColors.sumi, height: 1.45);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
-      AspectRatio(
-        aspectRatio: 16 / 9,
-        child: Container(
-          key: const ValueKey('memorize-video'),
-          decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
-          alignment: Alignment.center,
-          child: Column(mainAxisSize: MainAxisSize.min, children: [
-            const Text('🎬', style: TextStyle(fontSize: 36)),
-            const SizedBox(height: 6),
-            Text(video.isEmpty ? tr('영상 준비 중') : tr('영상'), style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
-          ]),
-        ),
-      ),
+      LessonVideo(url: video),
       const SizedBox(height: 12),
       Container(
         padding: const EdgeInsets.all(12),
@@ -361,5 +350,80 @@ class _Memorize extends StatelessWidget {
           ),
       ],
     ]);
+  }
+}
+
+/// 회차 영상 — 주소가 비었으면 「영상 준비 중」 칸, 있으면 서버에서 바로 틀기(앱에 넣지 않는다). 탭 = 재생/멈춤.
+class LessonVideo extends StatefulWidget {
+  final String url;
+  const LessonVideo({super.key, required this.url});
+  @override
+  State<LessonVideo> createState() => _LessonVideoState();
+}
+
+class _LessonVideoState extends State<LessonVideo> {
+  VideoPlayerController? _c;
+  bool _failed = false;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.url.isEmpty) return;
+    final c = VideoPlayerController.networkUrl(Uri.parse(widget.url));
+    _c = c;
+    c.initialize().then((_) {
+      if (mounted) setState(() {});
+    }).catchError((Object e) {
+      debugPrint('LessonVideo: $e');
+      if (mounted) setState(() => _failed = true);
+    });
+    c.addListener(() {
+      if (mounted) setState(() {});
+    });
+  }
+
+  @override
+  void dispose() {
+    _c?.dispose();
+    super.dispose();
+  }
+
+  Widget _box(Widget child) => Container(
+        key: const ValueKey('memorize-video'),
+        clipBehavior: Clip.antiAlias,
+        decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
+        alignment: Alignment.center,
+        child: child,
+      );
+
+  @override
+  Widget build(BuildContext context) {
+    final c = _c;
+    if (c == null || _failed) {
+      return AspectRatio(
+        aspectRatio: 16 / 9,
+        child: _box(Column(mainAxisSize: MainAxisSize.min, children: [
+          const Text('🎬', style: TextStyle(fontSize: 36)),
+          const SizedBox(height: 6),
+          Text(_failed ? tr('영상을 불러오지 못했어요') : tr('영상 준비 중'), style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
+        ])),
+      );
+    }
+    final v = c.value;
+    if (!v.isInitialized) return AspectRatio(aspectRatio: 16 / 9, child: _box(const CircularProgressIndicator()));
+    return AspectRatio(
+      aspectRatio: v.aspectRatio,
+      child: GestureDetector(
+        onTap: () {
+          if (v.position >= v.duration) c.seekTo(Duration.zero);
+          v.isPlaying ? c.pause() : c.play();
+        },
+        child: _box(Stack(fit: StackFit.expand, children: [
+          VideoPlayer(c),
+          if (!v.isPlaying) const Center(child: Icon(Icons.play_circle_fill, size: 64, color: Colors.white70)),
+          Align(alignment: Alignment.bottomCenter, child: VideoProgressIndicator(c, allowScrubbing: true)),
+        ])),
+      ),
+    );
   }
 }
