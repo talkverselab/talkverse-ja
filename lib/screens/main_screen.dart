@@ -26,6 +26,7 @@ import 'sense_course_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
+import 'sentence_units_screen.dart';
 import 'word_freq_screen.dart';
 import 'about_screen.dart';
 import 'app_guide_screen.dart';
@@ -841,6 +842,13 @@ class ReviewTab extends StatelessWidget {
         const _TodayReview(),
         const SizedBox(height: 12),
         _section(tr('복습')),
+        _NavRow(
+          seal: '十文',
+          sealColor: AppColors.ai,
+          title: tr('문장 단원'),
+          subtitle: tr('회화에 나온 줄 10문장씩 · 다시/알았음 · 숙련도 %'),
+          onTap: () => openPane(context, (_) => const SentenceUnitsScreen()),
+        ),
         _NavRow(
           seal: '文',
           title: tr('문장 플래시카드'),
