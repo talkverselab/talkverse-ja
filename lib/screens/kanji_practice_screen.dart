@@ -20,6 +20,8 @@ import '../widgets/selectable_ja_text.dart' show showKanjiSheet;
 const int kFamiliesPerDay = 3;
 const int kMinMembers = 3;
 const _kDone = 'kanji_practice_done';
+const _kWrong = 'kanji_practice_wrong'; // 틀린 글자(맞히면 빠짐) — 누적 복습에서 먼저 낸다
+const int kReviewSize = 20;
 
 class KFamily {
   final String root;
@@ -55,6 +57,14 @@ class KanjiPractice {
   }
 
   static Future<Set<String>> done() async => ((await Prefs.getInstance()).getStringList(_kDone) ?? const []).toSet();
+  static Future<Set<String>> wrong() async => ((await Prefs.getInstance()).getStringList(_kWrong) ?? const []).toSet();
+  static Future<void> answer(String c, bool ok) async {
+    final p = await Prefs.getInstance();
+    final s = (p.getStringList(_kWrong) ?? <String>[]).toSet();
+    ok ? s.remove(c) : s.add(c);
+    await p.setStringList(_kWrong, s.toList());
+  }
+
   static Future<void> markDone(int day) async {
     final p = await Prefs.getInstance();
     await p.setStringList(_kDone, {...?p.getStringList(_kDone), '$day'}.toList());
@@ -123,8 +133,29 @@ class _KanjiPracticeScreenState extends State<KanjiPracticeScreen> {
             style: const TextStyle(fontSize: 12, color: AppColors.muted)),
         Text(trf('{0}/{1}일 마침', [_done.length, days.length]), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
         const SizedBox(height: 10),
+        _reviewButton(days),
+        const SizedBox(height: 10),
         for (var i = 0; i < days.length; i++) _dayRow(i + 1, days[i], next == i + 1),
       ],
+    );
+  }
+
+  /// 누적 복습 — 마친 날의 패밀리 전부에서 20문제, 틀린 글자 먼저.
+  Widget _reviewButton(List<List<KFamily>> days) {
+    final learned = [for (var i = 0; i < days.length; i++) if (_done.contains('${i + 1}')) ...days[i]];
+    final n = learned.fold<int>(0, (a, f) => a + f.members.length);
+    return FilledButton.icon(
+      key: const ValueKey('kp-review'),
+      style: FilledButton.styleFrom(backgroundColor: AppColors.kinDeep, minimumSize: const Size.fromHeight(52), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
+      onPressed: learned.isEmpty
+          ? null
+          : () async {
+              await openFull(context, (_) => KanjiReviewScreen(learned: learned, all: days.expand((d) => d).toList()));
+              _load();
+            },
+      icon: const Icon(Icons.replay),
+      label: Text(learned.isEmpty ? tr('누적 복습 — 1일차를 마치면 열려요') : trf('누적 복습 · {0}패밀리 {1}자에서 {2}문제', [learned.length, n, min(kReviewSize, n)]),
+          style: const TextStyle(fontWeight: FontWeight.w800)),
     );
   }
 
@@ -260,6 +291,7 @@ class _KanjiPracticeDayScreenState extends State<KanjiPracticeDayScreen> {
                     ? null
                     : () {
                         TtsService.instance.speak(_readingOf(c));
+                        KanjiPractice.answer(c, o == fam.root);
                         setState(() {
                           _picked = o;
                           if (o == fam.root) _right++;
@@ -333,6 +365,149 @@ class _Tile extends StatelessWidget {
           if (!big && mean.isNotEmpty) Text(mean, maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 10, color: AppColors.sumiLight)),
         ]),
       ),
+    );
+  }
+}
+
+/// 누적 복습 — 지금까지 마친 패밀리의 글자를 섞어 [kReviewSize] 문제. 틀린 적 있는 글자부터, 보기는 정답 + 배운 패밀리 3개(모자라면 전체에서).
+class KanjiReviewScreen extends StatefulWidget {
+  final List<KFamily> learned;
+  final List<KFamily> all;
+  const KanjiReviewScreen({super.key, required this.learned, required this.all});
+  @override
+  State<KanjiReviewScreen> createState() => _KanjiReviewScreenState();
+}
+
+class _KanjiReviewScreenState extends State<KanjiReviewScreen> {
+  final _rnd = Random();
+  List<(String, KFamily, List<String>)>? _qs;
+  int _i = 0;
+  String? _picked;
+  int _right = 0;
+  final Set<String> _missed = {};
+
+  @override
+  void initState() {
+    super.initState();
+    _build();
+  }
+
+  Future<void> _build() async {
+    final wrong = await KanjiPractice.wrong();
+    final pairs = [for (final f in widget.learned) for (final m in f.members) (m, f)]..shuffle(_rnd);
+    pairs.sort((a, b) => (wrong.contains(b.$1) ? 1 : 0) - (wrong.contains(a.$1) ? 1 : 0)); // 틀린 글자 먼저(안에서는 섞인 채)
+    final picked = pairs.take(kReviewSize).toList()..shuffle(_rnd);
+    List<String> opts(KFamily f) {
+      final others = [for (final o in widget.learned) if (o.root != f.root) o.root]..shuffle(_rnd);
+      if (others.length < 3) others.addAll(([for (final o in widget.all) if (o.root != f.root && !others.contains(o.root)) o.root]..shuffle(_rnd)).take(3 - others.length));
+      return [f.root, ...others.take(3)]..shuffle(_rnd);
+    }
+    if (mounted) setState(() => _qs = [for (final p in picked) (p.$1, p.$2, opts(p.$2))]);
+  }
+
+  void _again() => setState(() {
+        _qs = null;
+        _i = 0;
+        _picked = null;
+        _right = 0;
+        _missed.clear();
+        _build();
+      });
+
+  @override
+  Widget build(BuildContext context) {
+    final qs = _qs;
+    return Scaffold(
+      backgroundColor: AppColors.washi,
+      appBar: AppBar(title: Text(tr('누적 복습'))),
+      body: qs == null
+          ? const Center(child: CircularProgressIndicator())
+          : _i >= qs.length
+              ? _summary(qs.length)
+              : _question(qs[_i], qs.length),
+    );
+  }
+
+  Widget _summary(int n) => Center(
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            const Text('🎉', style: TextStyle(fontSize: 44)),
+            const SizedBox(height: 10),
+            Text(trf('{0}문제 중 {1}개 맞힘', [n, _right]), style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.sumi)),
+            if (_missed.isNotEmpty) ...[
+              const SizedBox(height: 10),
+              Text(tr('틀린 글자 — 다음 복습에 먼저 나와요'), style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
+              const SizedBox(height: 6),
+              Wrap(spacing: 8, children: [
+                for (final c in _missed)
+                  ActionChip(label: Text(c, style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w900)), onPressed: () => showKanjiSheet(context, char: c, entry: KanjiIndexService.instance.lookup(c))),
+              ]),
+            ],
+            const SizedBox(height: 16),
+            Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+              OutlinedButton(key: const ValueKey('kr-again'), onPressed: _again, child: Text(tr('한 번 더'))),
+              const SizedBox(width: 10),
+              FilledButton(onPressed: () => Navigator.of(context).maybePop(), style: FilledButton.styleFrom(backgroundColor: AppColors.sumi), child: Text(tr('나가기'))),
+            ]),
+          ]),
+        ),
+      );
+
+  Widget _question((String, KFamily, List<String>) q, int n) {
+    final (c, fam, options) = q;
+    return Padding(
+      padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + bottomInset(context)),
+      child: Column(children: [
+        Text('${_i + 1} / $n', style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
+        const SizedBox(height: 16),
+        Text(c, style: const TextStyle(fontSize: 96, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+        if (_picked != null) Text('${_readingOf(c)}  ${_meaningOf(c)}', style: const TextStyle(fontSize: 15, color: AppColors.ai, fontWeight: FontWeight.w700)),
+        const SizedBox(height: 12),
+        Text(tr('이 글자의 패밀리(소리 부품)는?'), style: const TextStyle(fontSize: 14, color: AppColors.sumi)),
+        const SizedBox(height: 14),
+        Wrap(spacing: 12, runSpacing: 12, alignment: WrapAlignment.center, children: [
+          for (final o in options)
+            SizedBox(
+              width: 88,
+              height: 72,
+              child: OutlinedButton(
+                key: ValueKey('kr-opt-$o'),
+                style: OutlinedButton.styleFrom(
+                  backgroundColor: _picked == null ? null : (o == fam.root ? const Color(0x3336A35B) : (o == _picked ? const Color(0x33D83A3A) : null)),
+                  side: BorderSide(color: _picked != null && o == fam.root ? AppColors.matcha : AppColors.line, width: 1.4),
+                ),
+                onPressed: _picked != null
+                    ? null
+                    : () {
+                        final ok = o == fam.root;
+                        TtsService.instance.speak(_readingOf(c));
+                        KanjiPractice.answer(c, ok);
+                        setState(() {
+                          _picked = o;
+                          if (ok) {
+                            _right++;
+                          } else {
+                            _missed.add(c);
+                          }
+                        });
+                      },
+                child: Text(o, style: const TextStyle(fontSize: 30, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+              ),
+            ),
+        ]),
+        const Spacer(),
+        if (_picked != null)
+          FilledButton(
+            key: const ValueKey('kr-next'),
+            style: FilledButton.styleFrom(backgroundColor: AppColors.sumi, minimumSize: const Size.fromHeight(48)),
+            onPressed: () => setState(() {
+              _i++;
+              _picked = null;
+            }),
+            child: Text(tr('다음 →')),
+          ),
+      ]),
     );
   }
 }

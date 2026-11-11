@@ -38,4 +38,23 @@ void main() {
       expect(find.textContaining('맞힘'), findsOneWidget);
     });
   }
+
+  testWidgets('누적 복습: 1일차 마친 뒤 열림, 틀린 글자 기록', (t) async {
+    await KanjiPractice.markDone(1);
+    t.view.physicalSize = const Size(390, 2400);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: KanjiPracticeScreen()));
+    await t.pumpAndSettle();
+    await t.tap(find.byKey(const ValueKey('kp-review')));
+    await t.pumpAndSettle();
+    for (var i = 0; i < 30 && find.textContaining('맞힘').evaluate().isEmpty; i++) {
+      await t.tap(find.byType(OutlinedButton).first);
+      await t.pumpAndSettle();
+      await t.tap(find.byKey(const ValueKey('kr-next')));
+      await t.pumpAndSettle();
+    }
+    expect(t.takeException(), isNull);
+    expect(find.textContaining('20문제 중'), findsOneWidget);
+  });
 }
