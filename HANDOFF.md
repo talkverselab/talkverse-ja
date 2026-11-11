@@ -16,17 +16,18 @@
 | 84 / 2611110050 | 단어 속 한자 → 한자 가족(`WordKanjiFamilies`: 단어 시트·절벽 시트·플래시카드 뒷면) | 사용자 11-11 |
 | 85 / 2611110136 | 프로필 「내려받기 현황」(`lib/widgets/sync_status_card.dart`: 단어 그림·장면 컷·음성 받은 수/전체·%·막대, 마지막으로 받은 때·콘텐츠 번호·단어표 번호) + 「다시 받기」(`ContentSync.restart()` — 매니페스트 `?t=` 로 새로, 사라진 파일 다시 받음, `ArtService.reload()`) | 사용자 11-11(uk 경유) |
 | 86 / 2611110231 | **회화 12+ 기준 정리**: uk 점검표 `data/review/ja_12plus_audit_20261111.csv` 의 high·medium 전부 + 콜백 1 = 6편 16턴(`data/review/rating12_turns_20261111.json`). 막차 놓치기 → 「あと何分話せるかな」·천천히 걷기(r2_love_b1, r3_friends_b1·b2 콜백), 혼욕 → 족욕(r2_love_b5), 한 방 두근 → 트윈 되뇌기(r1_travel_b2), 일부러? → 잔액 0?(r1_love_a5). **음성도 같은 날 02:39 재생성·R2·D1 반영, 서버 본문 대조 불일치 0**. 장면 컷은 바뀐 줄과 어긋남 없음(다시 그리지 않음). low 13줄은 손대지 않음 | 사용자 11-11(uk 경유) |
-| **87 / 2611110236** | **글로벌판 1단계(영어 화자 → 일본어)**: uk 자료 `data/i18n/` — kDictEn 115줄 추가, 단어 영어 뜻 537개 채움(db 13), 한국어가 아닌 UI 는 한글 독음 자리에 로마자(`lib/services/romaji.dart`, `KoReading.convert`·`LearnerPrefs.readingLine`) | 사용자 결정 11-11(uk 경유) |
+| 87 / 2611110236 | **글로벌판 1단계(영어 화자 → 일본어)**: uk 자료 `data/i18n/` — kDictEn 115줄 추가, 단어 영어 뜻 537개 채움(db 13), 한국어가 아닌 UI 는 한글 독음 자리에 로마자(`lib/services/romaji.dart`, `KoReading.convert`·`LearnerPrefs.readingLine`) | 사용자 결정 11-11(uk 경유) |
+| **88 / 2611111003** | **12+ 점검표 low 줄 정리(사용자 승인 11-11)**: 클럽 → 음악 페스티벌(r1_love_a3·r0_love_a7 장면), 데이팅앱 → 언어교환 앱(장면·`where` 분류 7편), 침대 → 소파(r0_love_c4 2·r1_love_c1 3), 음성 삭제 거부 → 「やだ。…うそ。もう一回聞いたら消すね」(r1_love_c3 8). 음주·뽑기·목욕 문화 줄은 대사 유지. 고친 3턴 음성은 `data/review/rating12_low_turns_20261111.json` → 작업 폴더 `~/tts_work/ja_redolow`(11-12 01시 자동 시작으로 걸어 둠, 그때까지 그 3턴은 옛 음성) |
 
-아직 안 된 것: 12+ 관련 — 목욕탕 장면 컷(r3_culture_b3 남자판 컷 1·2·4 상반신에 수건, r1_travel_a5_f 컷 4 탕 안 어깨)은 노출은 아니나 다시 그릴 후보(Grok 한도 11/16 초기화 뒤), low 13줄(클럽·데이팅앱·음주 등) 처리 여부는 사용자 결정 · 영어 UI — content 162줄(한국어 비교 발음 설명 등)은 아직 한국어 그대로, 조사 は·へ 로마자는 글자대로(ha·he), 회화 영어 번역 칸 이름은 `en`·`note_en`(로마자는 앱이 가나에서 만듦)으로 uk 에 답함 · 실기기 화면 확인(전부 테스트·analyze 만 통과) · 기기에서 콘텐츠 번호가 숫자로 나오는지(서버는 11-11 배포됨) · 지운 목록 줄은 git 히스토리에 남음(재작성은 사용자 결정).
+아직 안 된 것: 12+ 관련 — 목욕탕 장면 컷(r3_culture_b3 남자판 컷 1·2·4 상반신에 수건, r1_travel_a5_f 컷 4 탕 안 어깨)은 노출은 아니나 **다시 그리기로 결정(사용자 11-11) — Grok 한도 11/16 초기화 뒤** · 영어 UI — content 162줄(한국어 비교 발음 설명 등)은 아직 한국어 그대로, 조사 は·へ 로마자는 글자대로(ha·he), 회화 영어 번역 칸 이름은 `en`·`note_en`(로마자는 앱이 가나에서 만듦)으로 uk 에 답함 · 실기기 화면 확인(전부 테스트·analyze 만 통과) · 기기에서 콘텐츠 번호가 숫자로 나오는지(서버는 11-11 배포됨) · 지운 목록 줄은 git 히스토리에 남음(재작성은 사용자 결정).
 
 ## 1. 지금 상태
 
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 프로필 내려받기 현황 커밋 700d548(2026-11-11). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 87**(https://apps.talkverse.uk/Ultzu/454)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=88` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
-| iOS TestFlight | **2611110236**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
+| Android | Zealot 「일본어 유니버스」 **빌드 88**(https://apps.talkverse.uk/Ultzu/455)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=89` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| iOS TestFlight | **2611111003**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
 | 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(`WordCardGrid` — 그림 있는 단어는 그림 카드, **그림 없는 단어는 그 아래 낮은 카드**(빈칸 지적 2026-11-11); JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
 | 단어 단원 플래시카드·문법 카드(2026-11-11 사용자 지시, uk 경유) | 절벽·JLPT 단어를 **20어 단원**으로, 단원 머리줄 「플래시카드」 → `lib/screens/word_unit_flash_screen.dart`(앞 그림·표기 → 뒤 읽기·뜻 + 그 단어가 나온 회화 문장, 탭하면 그 턴부터 회화 재생 `openDialogueAt`; 몰라요 는 끝에 다시, 상태 `wcard:<낱말>`). 안내 「문장으로 외우는 게 더 좋아요」(`SentenceTip`) = 플래시카드·단어 시트·JLPT 목록 위. 예문 찾기 `lib/services/word_examples.dart`(lemmas → 없으면 글자 포함). 절벽 목록은 uk 분류표(talkversehanja `talkverse_art/words/ja_cliff_class_20261111.csv`)를 `python3 tools/freq/cliff_class.py <분류표>` 로 반영: noise 205줄 삭제(**순위 번호는 그대로** — 그림 번호가 순위, 2,000위 안 1,795어), 그 밖 647어의 읽기·뜻·품사 = `assets/data/freq/cliff_notes_ja.json`(문법 334어는 그림 대신 문법 카드). 시드 db 12. 2,001~2,500위 줄은 사용자 지시(2026-11-11 "2000단어 이상은 중요하지 않지")로 파일에서 잘라냄. **단어 속 한자 → 한자 가족**(2026-11-11 사용자 지시): `lib/widgets/word_kanji_families.dart` `WordKanjiFamilies` 를 단어 시트·절벽 단어 시트·플래시카드 뒷면에 — 씨앗 + 같은 소리 가족 글자(탭 = 한자 팝업), 「가족 지도」 = `openHanjaFamily`. 테스트 `test/word_unit_flash_test.dart`·`word_kanji_families_test.dart` |
 | 내려받기 설정·변경 기록(2026-11-10 사용자 지시) | 설정 및 프로필 → 내려받기 설정: 회화 단계 R0~R4·단어 급 N5~N1·그 밖·음성 여부(저장), 고르지 않은 것은 기기에서 삭제, 장면 컷은 학습자 성별 판만. 변경 기록 = `art/sync_log.json`·`ja_db_log`. DB 는 바뀐 표만 다시 채움. **서버 쪽(콘텐츠 번호 `/art/ja/head`·`changes`)은 2026-11-11 uk 가 배포**(사용자 승인, talkverse-auth 1fd8452f, D1 `content_log` + 방아쇠 12개). 11-11 실측: head 1818, `changes?since=1810` → 8줄(kind·op·id·item, 앱 `patchManifest` 형식과 일치), `since=0`·head 초과 → `reset:true`(앱은 전체 받기로 넘어감). 앱은 다음 시작(또는 「다시 받기」) 때 번호를 저장하고 그다음부터 변경분만 받는다 — 기기 화면에서 콘텐츠 번호가 숫자로 보이는지는 사용자 확인 대기. 사용자 확정 UX 는 uk 가 공통 프롬프터 「2026-11-10 확정 UX」 절에 메모함 |
@@ -42,8 +43,10 @@
 
 ## 2. 다음 할 일
 
-1. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
-2. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
+1. **git 기록 다시 쓰기(사용자 승인 11-11) — 강제 푸시만 남음**: 지운 이름이 든 옛 단어표 5개 판본을 걸러낸 사본이 `~/talkverse/ja-rewrite/rw.git`(mirror, master 8dd6340, 트리는 08c0a0a 와 같음). 세션은 강제 푸시가 권한 정책에 막혀 사용자가 실행: `cd ~/talkverse/ja-rewrite/rw.git && git push --force origin master`. 그 뒤 작업 폴더는 `git fetch origin && git reset --soft origin/master`. 사본을 만든 뒤 master 에 새 커밋이 생겼으면 사본부터 다시 만들 것(절차: mirror clone → filter-repo blob 콜백으로 잡음 줄·2,000위 밖 제거). GitHub 쪽에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청이 필요.
+2. **PC 꺼짐(11-11 10:10 확인, ping 무응답)**: 빌드 88 APK 의 PC 백업 미완 — PC 가 켜지면 `scp build/app/outputs/flutter-apk/app-release.apk "pc:D:/OneDrive/app project/japanese_universe/japanese_universe-latest.apk"`. 01시 음성 3턴도 PC 가 켜져 있어야 돈다(`~/tts_work/ja_redolow/run.log` 에 `REDO_END` 확인 → `data/tts/audio_ja.json` 커밋).
+3. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
+4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
 
 ## 3. 지울 후보(애매해서 남겨 둠 — 사용자·허브 판단)
 
@@ -63,7 +66,7 @@
 ```bash
 cd ~/talkverse/ja && flutter pub get && flutter analyze && flutter test
 git add <바꾼 파일만> && git commit && git push origin master
-flutter build apk --release --build-number=88 && tools/zealot_push.sh "변경 한 줄"
+flutter build apk --release --build-number=89 && tools/zealot_push.sh "변경 한 줄"
 bash tools/ios_release.sh                                    # Android 와 항상 같이
 python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)
 /usr/bin/python3 tools/scene_upload.py [<편id> ...]          # 장면 컷 R2/D1(sha1 같으면 건너뜀)
