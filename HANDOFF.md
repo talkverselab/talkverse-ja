@@ -44,7 +44,7 @@
 ## 2. 다음 할 일
 
 1. **git 기록 다시 쓰기 끝(11-11, 사용자 실행)**: 지운 이름이 든 옛 단어표 5개 판본을 기록에서 걸러 강제 푸시 — 원격을 새로 받아 이름 검색 0건 확인. 커밋 해시가 전부 바뀌었으니 다른 곳의 clone 은 다시 받을 것. GitHub 에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청해야 사라진다(사용자 결정). 이 작업 폴더의 옛 가지 `master-old-history`·`master-stale` 과 reflog 에는 옛 기록이 로컬로만 남아 있다.
-2. **M6 재부팅(11-11 낮)으로 대기 작업 두 개가 꺼짐 — 다시 걸 것**(PC 는 22시 이후 켜짐): ① 백업 `nohup zsh ~/tts_work/ja_backup_wait.sh > ~/tts_work/ja_backup_wait.log 2>&1 &`(빌드 88 APK·iOS 2611111003 IPA 사본은 `~/tts_work/ja_b88.apk`·`ja_2611111003.ipa`, 끝나면 `BACKUP_END`) ② low 3턴 음성 `nohup zsh tools/tts/redo_turns.sh data/review/rating12_low_turns_20261111.json ~/tts_work/ja_redolow > ~/tts_work/ja_redolow/run.log 2>&1 &`(01시까지 스스로 대기, `REDO_END` → 서버 본문 대조 → `data/tts/audio_ja.json` 커밋).
+2. **PC 백업은 사용자가 명령할 때만**(11-11 지시 — 자동 대기 걸지 말 것, PC 는 22시 이후 켜짐): 빌드 88 APK·iOS 2611111003 IPA 사본이 `~/tts_work/ja_b88.apk`·`ja_2611111003.ipa` 에 있고, 지시가 오면 `zsh ~/tts_work/ja_backup_wait.sh`(PC `D:\OneDrive\app project\japanese_universe\` 로 복사, 끝나면 `BACKUP_END`). **low 3턴 음성**은 M6 재부팅으로 대기가 꺼지면 다시 걸 것: `nohup zsh tools/tts/redo_turns.sh data/review/rating12_low_turns_20261111.json ~/tts_work/ja_redolow > ~/tts_work/ja_redolow/run.log 2>&1 &`(01시까지 스스로 대기, `REDO_END` → 서버 본문 대조 → `data/tts/audio_ja.json` 커밋).
 3. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
 4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
 
