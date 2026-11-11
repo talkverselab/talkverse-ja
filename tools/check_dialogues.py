@@ -254,6 +254,13 @@ def main():
         all_err += len(errs)
         print(f'{f.relative_to(ROOT)}: 오류 {len(errs)} 경고 {len(warns)}')
     print('총 오류', all_err)
+    # 턴 번호 잠금(출시 뒤 번호 다시 매기기 경고) — 학습 기록 id `s:<편 id>:<턴 번호>`
+    import turn_lock
+    if turn_lock.LOCK.exists():
+        warns, _ = turn_lock.check(json.load(open(turn_lock.LOCK, encoding='utf-8')), turn_lock.current())
+        for w in warns:
+            print('  warn [턴 번호 잠금]', w)
+        print('턴 번호 잠금 경고', len(warns))
     sys.exit(1 if all_err else 0)
 
 
