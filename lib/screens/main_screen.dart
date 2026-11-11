@@ -571,6 +571,13 @@ class _LearnTabState extends State<LearnTab> {
               onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
             ),
             _NavRow(
+              seal: 'カナ',
+              sealColor: AppColors.matcha,
+              title: tr('외국어 발음 규칙'),
+              subtitle: tr('영어 소리 → 가타카나 · 규칙 한눈에 · 16줄기'),
+              onTap: () => openPane(context, (_) => const GairaigoScreen(rulesFirst: true)),
+            ),
+            _NavRow(
               seal: '練習',
               sealColor: AppColors.kinDeep,
               title: tr('한자 연습'),
