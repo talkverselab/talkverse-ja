@@ -6,5 +6,5 @@
 - 구간(**절대 기준**, 2026-11-03 사용자 지시로 19개 언어와 통일 — 누적 55·60·70·80% 에 처음 닿는 순위): **R1 = 62위(55.1%) · R2 = 96위(60.1%) · R3 = 251위(70.0%) · R4 = 778위(80.0%)**, 779~2,500위 = R5(80% 밖). 같은 날 처음 낸 최대치 비례값은 R1 107 · R2 179 · R3 603 · R4 2,500.
 - 옛 표(해외 작품 일본어 자막 기성 빈도표, た·ます 누락·활용형 섞임) 대비: R1 294 → 62, R2 437 → 96, R3 998 → 251, R4 2,500 → 778, 2,500위 최대 누적 80.3% → 89.0%.
 - 한계: 200편·95만 토큰으로 한국어(4,268편·2,322만)보다 작다. 표기 흔들림(言う/いう 등)은 합치지 않았다.
-- 파일: `lang_ja_top2500.csv`(rank,word,pos,frequency,cum_pct,region), `ja_cliff_summary.json`. 재현: `tools/corpus/run_cliff.sh`(JA_SUB_URL 필요) 또는 `select_titles.py <zip> Q17 <목록>` → `cliff_ja.py <zip> <출력> --only <목록>`.
+- 파일: `lang_ja_top2500.csv`(rank,word,pos,frequency,cum_pct,region — 2026-11-11 잡음 줄과 2,000위 밖을 뺀 1,795줄, 순위 번호는 그대로), `ja_cliff_summary.json`. 재현: `tools/corpus/run_cliff.sh`(JA_SUB_URL 필요) 또는 `select_titles.py <zip> Q17 <목록>` → `cliff_ja.py <zip> <출력> --only <목록>`.
 - **앱 데이터(assets/data/freq/lang_ja_with_regions.csv)는 아직 옛 표 그대로** — 교체 여부는 사용자 결정.
