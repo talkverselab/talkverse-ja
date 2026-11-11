@@ -20,6 +20,7 @@ import 'hanja_sound_screen.dart';
 import 'jlpt_words_screen.dart';
 import 'kana_chart_screen.dart';
 import 'kanji_dictionary_screen.dart';
+import 'kanji_practice_screen.dart';
 import 'kanji_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
 import 'sense_course_screen.dart';
@@ -568,6 +569,13 @@ class _LearnTabState extends State<LearnTab> {
               title: tr('한자 배우기'),
               subtitle: tr('글자 형성·소리 가족·그림 · 단계별 20자 → 문제'),
               onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
+            ),
+            _NavRow(
+              seal: '練習',
+              sealColor: AppColors.kinDeep,
+              title: tr('한자 연습'),
+              subtitle: tr('패밀리가 큰 한자부터 · 하루 3패밀리 · 94패밀리'),
+              onTap: () => openPane(context, (_) => const KanjiPracticeScreen()),
             ),
             _section(tr('회화')),
             _NavRow(
