@@ -90,7 +90,7 @@ flutter:
     - assets/data/hanja/hanja_crossref.json
     - assets/data/hanja/book.json
     - assets/data/hanja/confuse.json
-    - assets/data/grammar/particles.json
+    - assets/data/grammar/sense_course.json
     - assets/data/decks/
     - assets/data/vocab/gairaigo.json
     - assets/images/ipa/

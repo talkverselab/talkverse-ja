@@ -16,7 +16,7 @@ void main() {
       await t.pump(const Duration(milliseconds: 200));
       expect(t.takeException(), isNull);
       // 초기화는 정보 아래(맨 끝), 학습 설정은 내려받기 위
-      final dy = (String s) => t.getTopLeft(find.text(s).first).dy;
+      double dy(String s) => t.getTopLeft(find.text(s).first).dy;
       expect(dy('학습 설정') < dy('내려받기'), isTrue);
       expect(dy('내려받기') < dy('앱 설정'), isTrue);
       expect(dy('정보') < dy('학습 기록 초기화'), isTrue);

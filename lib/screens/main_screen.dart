@@ -16,13 +16,13 @@ import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
 import 'gairaigo_screen.dart';
-import 'grammar_lesson_screen.dart';
 import 'hanja_sound_screen.dart';
 import 'jlpt_words_screen.dart';
 import 'kana_chart_screen.dart';
 import 'kanji_dictionary_screen.dart';
 import 'kanji_stages_screen.dart';
 import 'phonetic_roots_screen.dart';
+import 'sense_course_screen.dart';
 import 'profile_screen.dart';
 import 'progress_screen.dart';
 import 'sentence_flashcard_screen.dart';
@@ -545,6 +545,14 @@ class _LearnTabState extends State<LearnTab> {
                   _load();
                 },
               ),
+            _section(tr('정규과정')),
+            _NavRow(
+              seal: '感覚',
+              sealColor: AppColors.ai,
+              title: tr('언어감각 익히기'),
+              subtitle: tr('L1 조사 익히기부터 · 문법 짧게 → 문장으로 감 익히기'),
+              onTap: () => openPane(context, (_) => const SenseCourseScreen()),
+            ),
             _section(tr('기초')),
             _NavRow(
               seal: 'かな',
@@ -559,15 +567,6 @@ class _LearnTabState extends State<LearnTab> {
               title: tr('한자 배우기'),
               subtitle: tr('글자 형성·소리 가족·그림 · 단계별 20자 → 문제'),
               onTap: () => openPane(context, (_) => const KanjiStagesScreen(learn: true)),
-            ),
-            _section(tr('문법')),
-            _NavRow(
-              seal: '助詞',
-              sealColor: AppColors.ai,
-              title: tr('조사'),
-              subtitle: tr('助詞 핵심 20'),
-              onTap: () =>
-                  openPane(context, (_) => const GrammarLessonScreen()),
             ),
             _section(tr('회화')),
             _NavRow(
@@ -862,13 +861,6 @@ class ReviewTab extends StatelessWidget {
           title: tr('한자 퀴즈'),
           subtitle: tr('JLPT N5→N1 · 4~8지선다 · 헷갈리는 보기'),
           onTap: () => openPane(context, (_) => const KanjiStagesScreen()),
-        ),
-        _NavRow(
-          seal: '助詞',
-          sealColor: AppColors.ai,
-          title: tr('조사 테스트'),
-          subtitle: tr('助詞 핵심 20'),
-          onTap: () => openPane(context, (_) => const GrammarLessonScreen()),
         ),
       ],
     );
