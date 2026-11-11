@@ -1,5 +1,6 @@
 import '../widgets/sync_status_card.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 import 'download_settings_screen.dart';
 
@@ -31,6 +32,36 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+  String? _version; // 실제 버전·빌드 번호(예: 0.1.0 · 빌드 88)
+
+  @override
+  void initState() {
+    super.initState();
+    PackageInfo.fromPlatform().then((i) {
+      if (mounted) setState(() => _version = '${i.version} · ${tr('빌드')} ${i.buildNumber}');
+    }).catchError((_) {});
+  }
+
+  /// 표시 언어 고르기 — 탭마다 돌리지 않고 목록에서 고른다(바꾸면 앱이 새로 그려진다).
+  Future<void> _pickLanguage() async {
+    final picked = await showDialog<AppLang>(
+      context: context,
+      builder: (c) => SimpleDialog(
+        backgroundColor: AppColors.washi,
+        title: Text(tr('언어 / Language')),
+        children: [
+          for (final l in AppLang.values)
+            ListTile(
+              key: ValueKey('lang-${l.name}'),
+              title: Text(l.label, style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.sumi)),
+              trailing: l == AppLangPrefs.lang.value ? const Icon(Icons.check, color: AppColors.beni, size: 20) : null,
+              onTap: () => Navigator.pop(c, l),
+            ),
+        ],
+      ),
+    );
+    if (picked != null && picked != AppLangPrefs.lang.value) await AppLangPrefs.set(picked);
+  }
 
 
   Future<void> _resetProgress() async {
@@ -123,30 +154,38 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final name = LearnerPrefs.name.value;
     final children = <Widget>[
-          Container(
-            padding: const EdgeInsets.all(18),
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(colors: [AppColors.beniDeep, AppColors.beni]),
-              border: Border.all(color: AppColors.kin, width: 1.5),
-            ),
-            child: Row(
-              children: [
-                const SealStamp(text: '学', size: 60, color: AppColors.sumi),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(tr('학습자'),
-                          style: TextStyle(color: AppColors.washi, fontSize: 20, fontWeight: FontWeight.w900, letterSpacing: 2)),
-                      const SizedBox(height: 4),
-                      Text(tr('한국 화자 → 일본어 · 도쿄 표준어'),
-                          style: TextStyle(color: AppColors.kinBright.withValues(alpha: 0.95), fontSize: 12, fontWeight: FontWeight.w600, letterSpacing: 1)),
-                    ],
+          // 맨 위 카드: 이름이 있으면 이름(누르면 고침)
+          InkWell(
+            onTap: _editName,
+            child: Container(
+              padding: const EdgeInsets.all(18),
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(colors: [AppColors.beniDeep, AppColors.beni]),
+                border: Border.all(color: AppColors.kin, width: 1.5),
+              ),
+              child: Row(
+                children: [
+                  const SealStamp(text: '学', size: 60, color: AppColors.sumi),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(name.isNotEmpty ? name : tr('학습자'),
+                            maxLines: 1,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(color: AppColors.washi, fontSize: 20, fontWeight: FontWeight.w900, letterSpacing: name.isNotEmpty ? 0.5 : 2)),
+                        const SizedBox(height: 4),
+                        Text(AppLangPrefs.isKo ? tr('한국 화자 → 일본어 · 도쿄 표준어') : tr('일본어 · 도쿄 표준어'),
+                            style: TextStyle(color: AppColors.kinBright.withValues(alpha: 0.95), fontSize: 12, fontWeight: FontWeight.w600, letterSpacing: 1)),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                  Icon(Icons.edit_outlined, size: 18, color: AppColors.washi.withValues(alpha: 0.8)),
+                ],
+              ),
             ),
           ),
           const SizedBox(height: 18),
@@ -158,6 +197,87 @@ class _ProfileScreenState extends State<ProfileScreen> {
           const SizedBox(height: 8),
           const AchievementDesk(),
           const SizedBox(height: 18),
+          _SectionTitle(tr('학습 설정')),
+          const SizedBox(height: 8),
+          _SettingsGroup(items: [
+            _SettingItem(
+              icon: Icons.badge_outlined,
+              title: tr('이름'),
+              subtitle: name.isNotEmpty ? trf('{0} — 회화 속 「나」로 나와요', [name]) : tr('없음 — 회화에서 「〇〇」로 보여요'),
+              onTap: _editName,
+            ),
+            _SettingItem(
+              icon: LearnerPrefs.isFemale ? Icons.face_3 : Icons.face,
+              title: tr('성별'),
+              subtitle: tr('회화 속 「나」의 목소리'),
+              trailing: Row(mainAxisSize: MainAxisSize.min, children: [
+                for (final g in const ['male', 'female'])
+                  Padding(
+                    padding: const EdgeInsets.only(left: 6),
+                    child: ChoiceChip(
+                      key: ValueKey('gender-$g'),
+                      label: Text(g == 'male' ? tr('남성') : tr('여성'), style: const TextStyle(fontSize: 12)),
+                      selected: LearnerPrefs.gender.value == g,
+                      visualDensity: VisualDensity.compact,
+                      materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                      showCheckmark: false,
+                      onSelected: (_) async {
+                        await LearnerPrefs.setGender(g);
+                        if (mounted) setState(() {});
+                      },
+                    ),
+                  ),
+              ]),
+            ),
+            _SettingItem(
+              icon: Icons.text_fields,
+              title: tr('후리가나'),
+              subtitle: tr('기본은 끔 — 힘들어도 보지 않고 익혀보세요'),
+              trailing: Switch(
+                key: const ValueKey('furigana-switch'),
+                value: LearnerPrefs.furigana.value,
+                onChanged: (_) async { await FuriganaToggleAction.toggle(context); if (mounted) setState(() {}); },
+              ),
+            ),
+          ]),
+          const SizedBox(height: 18),
+          _SectionTitle(tr('내려받기')),
+          const SizedBox(height: 8),
+          const SyncStatusCard(),
+          const SizedBox(height: 8),
+          _SettingsGroup(items: [
+            _SettingItem(
+                icon: Icons.download_outlined,
+                title: tr('내려받기 설정'),
+                subtitle: tr('받을 회화 단계·단어 급 고르기 · 변경 기록'),
+                onTap: () => openPane(context, (_) => const DownloadSettingsScreen())),
+          ]),
+          const SizedBox(height: 18),
+          _SectionTitle(tr('앱 설정')),
+          const SizedBox(height: 8),
+          _SettingsGroup(items: [
+            _SettingItem(
+                icon: Icons.language,
+                title: tr('언어 / Language'),
+                subtitle: AppLangPrefs.lang.value.label,
+                onTap: _pickLanguage),
+            // 통합 앱(Talkverse)에서만: 다른 언어 앱으로(2026-11-09)
+            if (switchLanguage != null)
+              _SettingItem(icon: Icons.swap_horiz, title: tr('다른 언어 배우기'), subtitle: tr('Talkverse 의 다른 언어로 이동'), onTap: switchLanguage!),
+          ]),
+          const SizedBox(height: 18),
+          _SectionTitle(tr('정보')),
+          const SizedBox(height: 8),
+          _SettingsGroup(items: [
+            _SettingItem(icon: Icons.help_outline, title: tr('앱 사용법'), subtitle: tr('처음이라면 이 순서로'), onTap: () => openPane(context, (_) => const AppGuideScreen())),
+            _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자를 나누는 기준'), onTap: () => openPane(context, (_) => const AboutScreen())),
+            _SettingItem(icon: Icons.description_outlined, title: tr('이용약관'), subtitle: 'talkverse.uk/terms', onTap: () => Legal.open(Legal.terms)),
+            _SettingItem(icon: Icons.privacy_tip_outlined, title: tr('개인정보처리방침'), subtitle: 'talkverse.uk/talkverse/ja/privacy', onTap: () => Legal.open(Legal.privacy)),
+            _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: _version ?? '—'),
+            _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어 유니버스 · 2026')),
+          ]),
+          const SizedBox(height: 18),
+          // 되돌릴 수 없는 것은 맨 아래에
           _SectionTitle(tr('기록')),
           const SizedBox(height: 8),
           _SettingsGroup(items: [
@@ -167,62 +287,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
               subtitle: tr('회화·한자·복습 기록 삭제'),
               onTap: _resetProgress,
             ),
-          ]),
-          const SizedBox(height: 16),
-          _SectionTitle(tr('학습자 프로필')),
-          const SizedBox(height: 8),
-          _SettingsGroup(items: [
-            _SettingItem(
-              icon: Icons.badge_outlined,
-              title: tr('이름'),
-              subtitle: LearnerPrefs.name.value.isNotEmpty ? trf('{0} — 회화 속 「나」로 나와요', [LearnerPrefs.name.value]) : tr('없음 — 회화에서 「〇〇」로 보여요'),
-              onTap: _editName,
-            ),
-            _SettingItem(
-              icon: LearnerPrefs.isFemale ? Icons.face_3 : Icons.face,
-              title: tr('성별 (화자 「나」의 목소리)'),
-              subtitle: LearnerPrefs.isFemale ? tr('여성 — 탭하면 남성') : tr('남성 — 탭하면 여성'),
-              onTap: () async {
-                await LearnerPrefs.setGender(LearnerPrefs.isFemale ? 'male' : 'female');
-                if (mounted) setState(() {});
-              },
-            ),
-          ]),
-          const SizedBox(height: 16),
-          _SectionTitle(tr('설정')),
-          const SizedBox(height: 8),
-          _SettingsGroup(items: [
-            // 통합 앱(Talkverse)에서만: 다른 언어 앱으로(2026-11-09)
-            if (switchLanguage != null)
-              _SettingItem(icon: Icons.swap_horiz, title: tr('다른 언어 배우기'), subtitle: tr('Talkverse 의 다른 언어로 이동'), onTap: switchLanguage!),
-            _SettingItem(
-                icon: Icons.language,
-                title: tr('언어 / Language'),
-                subtitle: '${AppLangPrefs.lang.value.label}  →  ${AppLangPrefs.peekNext().label}',
-                onTap: AppLangPrefs.next),
-            _SettingItem(
-                icon: Icons.download_outlined,
-                title: tr('내려받기 설정'),
-                subtitle: tr('받을 회화 단계·단어 급 고르기 · 변경 기록'),
-                onTap: () => openPane(context, (_) => const DownloadSettingsScreen())),
-            _SettingItem(
-                icon: Icons.text_fields,
-                title: tr('후리가나'),
-                subtitle: LearnerPrefs.furigana.value ? tr('표시 — 탭하면 숨김') : tr('미표시(기본) — 힘들어도 보지 않고 익혀보세요'),
-                onTap: () async { await FuriganaToggleAction.toggle(context); if (mounted) setState(() {}); }),
-          ]),
-          const SizedBox(height: 10),
-          const SyncStatusCard(),
-          const SizedBox(height: 16),
-          _SectionTitle(tr('정보')),
-          const SizedBox(height: 8),
-          _SettingsGroup(items: [
-            _SettingItem(icon: Icons.help_outline, title: tr('앱 사용법'), subtitle: tr('처음이라면 이 순서로'), onTap: () => openPane(context, (_) => const AppGuideScreen())),
-            _SettingItem(icon: Icons.menu_book_outlined, title: tr('앱 소개'), subtitle: tr('절벽구간 — 단어·한자를 나누는 기준'), onTap: () => openPane(context, (_) => const AboutScreen())),
-            _SettingItem(icon: Icons.description_outlined, title: tr('이용약관'), subtitle: 'talkverse.uk/terms', onTap: () => Legal.open(Legal.terms)),
-            _SettingItem(icon: Icons.privacy_tip_outlined, title: tr('개인정보처리방침'), subtitle: 'talkverse.uk/talkverse/ja/privacy', onTap: () => Legal.open(Legal.privacy)),
-            _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: '0.1.0 · alpha'),
-            _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어유니버스 · 2026')),
           ]),
           const SizedBox(height: 20),
           const BrushDivider(),
@@ -281,9 +345,8 @@ class _SettingsGroup extends StatelessWidget {
               ),
               title: Text(items[i].title, style: const TextStyle(fontWeight: FontWeight.w700, color: AppColors.sumi)),
               subtitle: Text(items[i].subtitle, style: const TextStyle(color: AppColors.sumiLight, fontSize: 11)),
-              trailing: items[i].onTap != null
-                  ? const Icon(Icons.chevron_right, color: AppColors.beni, size: 18)
-                  : null,
+              trailing: items[i].trailing ??
+                  (items[i].onTap != null ? const Icon(Icons.chevron_right, color: AppColors.beni, size: 18) : null),
             ),
             if (i < items.length - 1) Container(height: 0.5, color: AppColors.kin.withValues(alpha: 0.3)),
           ],
@@ -298,5 +361,6 @@ class _SettingItem {
   final String title;
   final String subtitle;
   final VoidCallback? onTap;
-  const _SettingItem({required this.icon, required this.title, required this.subtitle, this.onTap});
+  final Widget? trailing; // 스위치·고르기 칩(없으면 누를 수 있을 때 화살표)
+  const _SettingItem({required this.icon, required this.title, required this.subtitle, this.onTap, this.trailing});
 }
