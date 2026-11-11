@@ -60,8 +60,9 @@ class _FamilyRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 이 단어의 글자 → 씨앗 → JLPT 글자 순으로, 넘치면 「+N」
-    final rest = [for (final m in members) if (m.jp != char && m.code != root.code) m]..sort((a, b) => (_jlpt(b) ? 1 : 0) - (_jlpt(a) ? 1 : 0));
+    // 이 단어의 글자 → 씨앗 → 나머지는 회화에서 많이 쓰이는 순(「패밀리 한자」 화면과 같은 기준, 순위 없으면 JLPT 글자 먼저), 넘치면 「+N」
+    int rankOf(HanjaChar h) => KanjiIndexService.instance.lookup(h.jp)?.rank ?? (_jlpt(h) ? 9000 : 9999);
+    final rest = [for (final m in members) if (m.jp != char && m.code != root.code) m]..sort((a, b) => rankOf(a).compareTo(rankOf(b)));
     final self = HanjaFamilyService.instance.byGlyph[char];
     final list = <HanjaChar>[?self, if (self?.code != root.code) root, ...rest];
     final shown = list.take(max).toList();
