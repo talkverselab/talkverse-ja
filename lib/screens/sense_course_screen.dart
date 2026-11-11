@@ -186,7 +186,8 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
     final (lv, ls) = all[widget.index];
     final lessons = (lv['lessons'] as List);
     final n = lessons.indexOf(ls) + 1;
-    final points = (ls['points'] as List).cast<Map<String, dynamic>>();
+    final points = ((ls['points'] as List?) ?? const []).cast<Map<String, dynamic>>();
+    final memorize = ls['kind'] == 'memorize';
     final last = widget.index + 1 >= all.length;
     return Scaffold(
       backgroundColor: AppColors.washi,
@@ -196,7 +197,7 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
       ),
       body: ListView(
         padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
-        children: [for (final p in points) _Point(point: p)],
+        children: memorize ? [_Memorize(lesson: ls)] : [for (final p in points) _Point(point: p)],
       ),
       bottomNavigationBar: Padding(
         padding: EdgeInsets.fromLTRB(16, 8, 16, 16 + bottomInset(context)),
@@ -264,5 +265,91 @@ class _Point extends StatelessWidget {
           ),
       ]),
     );
+  }
+}
+
+/// 「5문장을 암기하세요」 회차 — 영상 → 안내 한 줄 → 문장만(조사 설명 없음).
+/// 문장 표시 `{글자|번호}` = 조사·て형 자리. 같은 번호는 일본어·한국어에서 같은 색 — 두 말의 조사를 견줘 보게(사용자 지시 2026-11-11).
+const _kMarkColors = [
+  Color(0xFFD83A3A), Color(0xFF2F6FDB), Color(0xFF1E9E5A), Color(0xFFE08A00), Color(0xFF8E44AD),
+  Color(0xFF00897B), Color(0xFFC2185B), Color(0xFF5D4037), Color(0xFF3949AB), Color(0xFF7CB342),
+];
+
+final _kMark = RegExp(r'\{([^|}]+)\|(\d+)\}');
+
+/// 표시 없앤 본문(듣기용).
+String plainMarked(String s) => s.replaceAllMapped(_kMark, (m) => m.group(1)!);
+
+List<InlineSpan> markedSpans(String s, TextStyle base) {
+  final out = <InlineSpan>[];
+  var i = 0;
+  for (final m in _kMark.allMatches(s)) {
+    if (m.start > i) out.add(TextSpan(text: s.substring(i, m.start)));
+    final c = _kMarkColors[(int.parse(m.group(2)!) - 1) % _kMarkColors.length];
+    out.add(TextSpan(
+        text: m.group(1),
+        style: TextStyle(color: c, fontWeight: FontWeight.w900, decoration: TextDecoration.underline, decorationColor: c.withValues(alpha: 0.5), decorationThickness: 2)));
+    i = m.end;
+  }
+  if (i < s.length) out.add(TextSpan(text: s.substring(i)));
+  return out;
+}
+
+class _Memorize extends StatelessWidget {
+  final Map<String, dynamic> lesson;
+  const _Memorize({required this.lesson});
+
+  @override
+  Widget build(BuildContext context) {
+    final sentences = (lesson['sentences'] as List).cast<Map<String, dynamic>>();
+    final video = (lesson['video'] as String?) ?? '';
+    const jaStyle = TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.45);
+    const koStyle = TextStyle(fontSize: 14, color: AppColors.sumi, height: 1.45);
+    return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
+      AspectRatio(
+        aspectRatio: 16 / 9,
+        child: Container(
+          key: const ValueKey('memorize-video'),
+          decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line)),
+          alignment: Alignment.center,
+          child: Column(mainAxisSize: MainAxisSize.min, children: [
+            const Text('🎬', style: TextStyle(fontSize: 36)),
+            const SizedBox(height: 6),
+            Text(video.isEmpty ? tr('영상 준비 중') : tr('영상'), style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
+          ]),
+        ),
+      ),
+      const SizedBox(height: 12),
+      Container(
+        padding: const EdgeInsets.all(12),
+        decoration: BoxDecoration(color: AppColors.washiDeep, borderRadius: BorderRadius.circular(10)),
+        child: Text('💡 ${lesson['note'] ?? ''}', style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.w700, color: AppColors.sumi, height: 1.45)),
+      ),
+      const SizedBox(height: 6),
+      for (var i = 0; i < sentences.length; i++)
+        Container(
+          margin: const EdgeInsets.only(top: 10),
+          padding: const EdgeInsets.fromLTRB(14, 12, 6, 12),
+          decoration: BoxDecoration(color: AppColors.washi, borderRadius: BorderRadius.circular(12), border: Border.all(color: AppColors.line), boxShadow: kCardShadow),
+          child: Row(crossAxisAlignment: CrossAxisAlignment.start, children: [
+            Text('${i + 1}', style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.ai)),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                Text.rich(TextSpan(style: jaStyle, children: markedSpans(sentences[i]['ja'] as String, jaStyle))),
+                if (sentences[i]['kana'] != null)
+                  Text(sentences[i]['kana'] as String, style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight)),
+                const SizedBox(height: 4),
+                Text.rich(TextSpan(style: koStyle, children: markedSpans(sentences[i]['ko'] as String, koStyle))),
+              ]),
+            ),
+            IconButton(
+              tooltip: tr('듣기'),
+              icon: const Icon(Icons.volume_up, color: AppColors.beni, size: 22),
+              onPressed: () => TtsService.instance.speak(plainMarked(sentences[i]['ja'] as String)),
+            ),
+          ]),
+        ),
+    ]);
   }
 }

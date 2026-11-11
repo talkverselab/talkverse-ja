@@ -34,4 +34,17 @@ void main() {
     expect(find.textContaining('L1-2'), findsNothing);
     expect(find.textContaining('を · に'), findsWidgets);
   });
+
+  testWidgets('L1 5회 암기 — 영상 자리·안내·5문장, 조사 색 표시가 글자에 안 남음', (t) async {
+    t.view.physicalSize = const Size(320, 3000);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 4)));
+    await t.pumpAndSettle();
+    expect(t.takeException(), isNull);
+    expect(find.byKey(const ValueKey('memorize-video')), findsOneWidget);
+    expect(find.textContaining('일부러 조사를 설명하지 않았어요'), findsOneWidget);
+    expect(find.textContaining('{', findRichText: true), findsNothing);
+    expect(plainMarked('雨{の|1}日'), '雨の日');
+  });
 }

@@ -4,6 +4,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '영상 준비 중': 'Video coming soon', '영상': 'Video', 
   // 한자 누적 복습(2026-11-11)
   '누적 복습': 'Cumulative review', '누적 복습 — 1일차를 마치면 열려요': 'Cumulative review — opens after Day 1', '누적 복습 · {0}패밀리 {1}자에서 {2}문제': 'Cumulative review · {2} questions from {0} families, {1} kanji', '틀린 글자 — 다음 복습에 먼저 나와요': 'Missed kanji come first next time', 
   // 한자 연습(2026-11-11)
@@ -637,6 +638,7 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '영상 준비 중': '動画準備中', '영상': '動画', 
   // 한자 누적 복습(2026-11-11)
   '누적 복습': '累積復習', '누적 복습 — 1일차를 마치면 열려요': '累積復習 — 1日目を終えると開きます', '누적 복습 · {0}패밀리 {1}자에서 {2}문제': '累積復習 · {0}家族 {1}字から{2}問', '틀린 글자 — 다음 복습에 먼저 나와요': '間違えた字 — 次の復習で先に出ます', 
   // 한자 연습(2026-11-11)
@@ -1108,6 +1110,7 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '영상 준비 중': '视频准备中', '영상': '视频', 
   // 한자 누적 복습(2026-11-11)
   '누적 복습': '累积复习', '누적 복습 — 1일차를 마치면 열려요': '累积复习 — 完成第1天后开放', '누적 복습 · {0}패밀리 {1}자에서 {2}문제': '累积复习 · 从{0}个家族{1}字中出{2}题', '틀린 글자 — 다음 복습에 먼저 나와요': '答错的字 — 下次复习优先出现', 
   // 한자 연습(2026-11-11)
