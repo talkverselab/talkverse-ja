@@ -350,6 +350,16 @@ class _Memorize extends StatelessWidget {
             ),
           ]),
         ),
+      if ((lesson['footnotes'] as List?)?.isNotEmpty ?? false) ...[
+        const SizedBox(height: 16),
+        Text(tr('한국어와 다른 곳만 잠깐'), style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.sumiLight)),
+        const SizedBox(height: 4),
+        for (final f in (lesson['footnotes'] as List).cast<String>())
+          Padding(
+            padding: const EdgeInsets.only(top: 3),
+            child: Text('· $f', style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight, height: 1.45)),
+          ),
+      ],
     ]);
   }
 }
