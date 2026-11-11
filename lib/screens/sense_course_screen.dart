@@ -84,12 +84,14 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
 
   Widget _body(Map<String, dynamic> d) {
     final all = SenseCourse.flat(d);
-    final next = all.indexWhere((e) => !_done.contains(e.$2['id']));
+    bool isRef(Map<String, dynamic> l) => l['kind'] == 'ref';
+    final next = all.indexWhere((e) => !isRef(e.$2) && !_done.contains(e.$2['id']));
+    final real = all.where((e) => !isRef(e.$2)).toList();
     final children = <Widget>[
       Text(tr('문법을 짧게 보고, 문장으로 감을 익혀요.'),
           style: const TextStyle(fontSize: 13, color: AppColors.sumiLight)),
       const SizedBox(height: 4),
-      Text(trf('{0}/{1}회 마침', [_done.length, all.length]),
+      Text(trf('{0}/{1}회 마침', [real.where((e) => _done.contains(e.$2['id'])).length, real.length]),
           style: const TextStyle(fontSize: 12, color: AppColors.muted)),
     ];
     var i = 0;
@@ -121,7 +123,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
                 child: Row(children: [
                   SizedBox(
                     width: 44,
-                    child: Text(trf('{0}회', [n]),
+                    child: Text(isRef(ls) ? tr('참고') : trf('{0}회', [n]),
                         style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.ai)),
                   ),
                   Expanded(
@@ -138,7 +140,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
           ),
         ));
         i++;
-        n++;
+        if (!isRef(ls)) n++;
       }
     }
     return ListView(padding: EdgeInsets.fromLTRB(16, 12, 16, 24 + bottomInset(context)), children: children);
@@ -167,9 +169,16 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
 
   Future<void> _finish() async {
     final all = _all!;
+    if (all[widget.index].$2['kind'] == 'ref') {
+      Navigator.of(context).pop(); // 참고는 기록하지 않는다
+      return;
+    }
     await SenseCourse.markDone(all[widget.index].$2['id'] as String);
     if (!mounted) return;
-    final nextIdx = widget.index + 1;
+    var nextIdx = widget.index + 1;
+    while (nextIdx < all.length && all[nextIdx].$2['kind'] == 'ref') {
+      nextIdx++;
+    }
     if (nextIdx < all.length) {
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) => SenseLessonScreen(index: nextIdx)));
@@ -186,14 +195,15 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
     }
     final (lv, ls) = all[widget.index];
     final lessons = (lv['lessons'] as List);
-    final n = lessons.indexOf(ls) + 1;
+    final isRef = ls['kind'] == 'ref';
+    final n = lessons.take(lessons.indexOf(ls) + 1).where((l) => (l as Map)['kind'] != 'ref').length;
     final points = ((ls['points'] as List?) ?? const []).cast<Map<String, dynamic>>();
     final memorize = ls['kind'] == 'memorize';
-    final last = widget.index + 1 >= all.length;
+    final last = !all.skip(widget.index + 1).any((e) => e.$2['kind'] != 'ref');
     return Scaffold(
       backgroundColor: AppColors.washi,
       appBar: AppBar(
-        title: Text('${lv['id']} · ${trf('{0}회', [n])}  ${ls['title']}', overflow: TextOverflow.ellipsis),
+        title: Text('${lv['id']} · ${isRef ? tr('참고') : trf('{0}회', [n])}  ${ls['title']}', overflow: TextOverflow.ellipsis),
         actions: const [KoReadingToggleAction()],
       ),
       body: ListView(
@@ -206,7 +216,7 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
           key: const ValueKey('sense-finish'),
           style: FilledButton.styleFrom(backgroundColor: AppColors.ai, minimumSize: const Size.fromHeight(48)),
           onPressed: _finish,
-          child: Text(last ? tr('마침') : tr('마침 · 다음 회')),
+          child: Text(isRef ? tr('닫기') : (last ? tr('마침') : tr('마침 · 다음 회'))),
         ),
       ),
     );
