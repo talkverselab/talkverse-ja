@@ -2,12 +2,13 @@
 # 대본을 고친 턴만 회화 음성 다시 만들기(2026-11-09 일상회화 정리 뒤).
 #   zsh tools/tts/redo_turns.sh <턴목록.json> [작업폴더=~/tts_work/ja_redo]
 #   턴목록.json = {"<편id>": [턴번호, ...], ...}  (예: data/review/chaos/daily_fix_reverted.json)
-# 음성은 새벽 01:00~07:00 KST 에만(전역 원칙 2026-11-09) — 01시 전이면 기다렸다가 시작한다.
+# 음성은 00:01~10:00 KST 에만(사용자 지시 2026-11-11, 그 전 원칙은 01~07시) — 그 밖의 시간이면 기다렸다가 시작한다.
+#   TTS_NOW=1 을 주면 기다리지 않고 바로 시작(사용자가 "지금 돌려"라고 한 때만).
 # 순서: PC 의 그 턴 조각 wav 삭제(out/<편>/<턴 두 자리>_*.wav) → run_all.py 가 그 편들만(나머지 편은 done.txt) 생성·검사·mp4·R2·D1(편 단위 교체).
 set -e
 LIST=${1:?턴목록.json}; WORK=${2:-$HOME/tts_work/ja_redo}
 R=${0:A:h:h:h}; PY=$HOME/.venvs/tts_ja/bin/python; PC=Administrator@100.127.143.37
-while :; do h=$(date +%H); [ "$h" -ge 1 ] && [ "$h" -lt 7 ] && break; echo "$(date '+%m-%d %H:%M') 새벽 대기"; sleep 600; done
+while [ -z "$TTS_NOW" ]; do h=$(date +%H); [ "$h" -lt 10 ] && break; echo "$(date '+%m-%d %H:%M') 새벽 대기"; sleep 600; done
 mkdir -p $WORK
 EPS=$(python3 -c "import json,sys;print(' '.join(json.load(open('$LIST'))))")
 python3 - "$LIST" "$WORK" "$R" <<'P'
