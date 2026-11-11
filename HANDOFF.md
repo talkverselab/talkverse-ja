@@ -43,7 +43,7 @@
 
 ## 2. 다음 할 일
 
-1. **git 기록 다시 쓰기(사용자 승인 11-11) — 강제 푸시만 남음**: 지운 이름이 든 옛 단어표 5개 판본을 걸러낸 사본이 `~/talkverse/ja-rewrite/rw.git`(mirror, master 8dd6340, 트리는 08c0a0a 와 같음). 세션은 강제 푸시가 권한 정책에 막혀 사용자가 실행: `cd ~/talkverse/ja-rewrite/rw.git && git push --force origin master`. 그 뒤 작업 폴더는 `git fetch origin && git reset --soft origin/master`. 사본을 만든 뒤 master 에 새 커밋이 생겼으면 사본부터 다시 만들 것(절차: mirror clone → filter-repo blob 콜백으로 잡음 줄·2,000위 밖 제거). GitHub 쪽에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청이 필요.
+1. **git 기록 다시 쓰기 끝(11-11, 사용자 실행)**: 지운 이름이 든 옛 단어표 5개 판본을 기록에서 걸러 강제 푸시 — 원격을 새로 받아 이름 검색 0건 확인. 커밋 해시가 전부 바뀌었으니 다른 곳의 clone 은 다시 받을 것. GitHub 에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청해야 사라진다(사용자 결정). 이 작업 폴더의 옛 가지 `master-old-history`·`master-stale` 과 reflog 에는 옛 기록이 로컬로만 남아 있다.
 2. **PC 꺼짐(11-11 10:10 확인, ping 무응답)**: 빌드 88 APK 의 PC 백업 미완 — PC 가 켜지면 `scp build/app/outputs/flutter-apk/app-release.apk "pc:D:/OneDrive/app project/japanese_universe/japanese_universe-latest.apk"`. 01시 음성 3턴도 PC 가 켜져 있어야 돈다(`~/tts_work/ja_redolow/run.log` 에 `REDO_END` 확인 → `data/tts/audio_ja.json` 커밋).
 3. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기 · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
 4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
