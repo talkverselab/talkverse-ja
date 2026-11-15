@@ -335,6 +335,7 @@ class _Memorize extends StatelessWidget {
             const SizedBox(width: 10),
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+                if (sentences[i]['who'] != null) Text(sentences[i]['who'] as String, style: const TextStyle(fontSize: 11, fontWeight: FontWeight.w800, color: AppColors.sumiLight)),
                 Text.rich(TextSpan(style: jaStyle, children: markedSpans(sentences[i]['ja'] as String, jaStyle))),
                 if (sentences[i]['kana'] != null)
                   Text(sentences[i]['kana'] as String, style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight)),

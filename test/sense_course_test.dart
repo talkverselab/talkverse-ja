@@ -18,13 +18,13 @@ void main() {
       expect(find.byKey(const ValueKey('sense-L1-5')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L1-ref')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L1-1')), findsNothing);
-      expect(find.text('참고'), findsOneWidget);
-      expect(find.text('0/21회 마침'), findsOneWidget);
+      expect(find.text('참고'), findsNWidgets(2));
+      expect(find.text('0/18회 마침'), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L6-4')), findsOneWidget);
     });
   }
 
-  testWidgets('암기 회차 — 영상 자리·안내·색 표시가 글자에 안 남음, 마침 → 참고를 건너뛰고 L2 1회', (t) async {
+  testWidgets('암기 회차 — 영상 자리·안내·색 표시가 글자에 안 남음, 마침 → 참고를 건너뛰고 L2 1회(서술어 대화)', (t) async {
     t.view.physicalSize = const Size(320, 3000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);
@@ -40,7 +40,7 @@ void main() {
     await t.pump(const Duration(milliseconds: 500));
     await t.pump(const Duration(milliseconds: 500));
     expect(await SenseCourse.done(), contains('L1-5'));
-    expect(find.textContaining('AはBです'), findsWidgets);
+    expect(find.textContaining('アニメ', findRichText: true), findsWidgets);
   });
 
   testWidgets('참고 — 조사 전부, 닫기는 기록 안 함', (t) async {
