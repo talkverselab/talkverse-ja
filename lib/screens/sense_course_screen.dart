@@ -13,6 +13,7 @@ import '../core/theme.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart';
+import 'gairaigo_screen.dart';
 
 /// 언어감각 익히기 — 정규과정(2026-11-11 사용자 지시). L1 조사 익히기부터 L 단계 × 4회.
 /// 회차 = 문법 짧은 설명(points.tip) → 감 익히는 문장(points.sentences). 데이터 `assets/data/grammar/sense_course.json`.
@@ -68,6 +69,11 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
   }
 
   Future<void> _open(int index) async {
+    final ls = SenseCourse.flat(_data!)[index].$2;
+    if (ls['open'] == 'gairaigo') {
+      await openPane(context, (_) => const GairaigoScreen(rulesFirst: true)); // 참고 = 외국어 발음 규칙 화면
+      return;
+    }
     await openFull(context, (_) => SenseLessonScreen(index: index));
     _load();
   }
@@ -106,6 +112,22 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
         final idx = i;
         final isDone = _done.contains(ls['id']);
         final isNext = idx == next;
+        if (ls['open'] != null) {
+          // 다른 메뉴로 가는 버튼(회차 아님)
+          children.add(Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: OutlinedButton.icon(
+              key: ValueKey('sense-${ls['id']}'),
+              style: OutlinedButton.styleFrom(
+                  foregroundColor: AppColors.ai, side: const BorderSide(color: AppColors.ai), minimumSize: const Size.fromHeight(46), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
+              onPressed: () => _open(idx),
+              icon: const Icon(Icons.open_in_new, size: 18),
+              label: Text(tr(ls['title'] as String), style: const TextStyle(fontWeight: FontWeight.w800)),
+            ),
+          ));
+          i++;
+          continue;
+        }
         children.add(Padding(
           padding: const EdgeInsets.only(bottom: 8),
           child: Material(
@@ -359,6 +381,17 @@ class _Memorize extends StatelessWidget {
             padding: const EdgeInsets.only(top: 3),
             child: Text('· $f', style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight, height: 1.45)),
           ),
+      ],
+      if (lesson['link'] == 'gairaigo') ...[
+        const SizedBox(height: 16),
+        OutlinedButton.icon(
+          key: const ValueKey('memorize-link'),
+          style: OutlinedButton.styleFrom(
+              foregroundColor: AppColors.ai, side: const BorderSide(color: AppColors.ai), minimumSize: const Size.fromHeight(46), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12))),
+          onPressed: () => openPane(context, (_) => const GairaigoScreen(rulesFirst: true)),
+          icon: const Icon(Icons.open_in_new, size: 18),
+          label: Text(tr('외국어 단어 익히기 메뉴 열기'), style: const TextStyle(fontWeight: FontWeight.w800)),
+        ),
       ],
     ]);
   }
