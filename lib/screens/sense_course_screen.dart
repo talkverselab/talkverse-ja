@@ -24,7 +24,8 @@ const _kAsset = 'assets/data/grammar/sense_course.json';
 class SenseCourse {
   static Map<String, dynamic>? _cache;
   static Future<Map<String, dynamic>> load() async =>
-      _cache ??= json.decode(await rootBundle.loadString(assetPath(_kAsset))) as Map<String, dynamic>;
+      // loadString 은 큰 파일을 다른 isolate 에서 풀어 위젯 테스트가 멈춘다 — 바이트로 읽어 여기서 푼다.
+      _cache ??= json.decode(utf8.decode((await rootBundle.load(assetPath(_kAsset))).buffer.asUint8List())) as Map<String, dynamic>;
 
   static Future<Set<String>> done() async => ((await Prefs.getInstance()).getStringList(_kDoneKey) ?? const []).toSet();
 
