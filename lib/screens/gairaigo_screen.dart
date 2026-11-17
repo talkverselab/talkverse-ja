@@ -12,6 +12,8 @@ import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../core/platform.dart';
 import '../core/l10n.dart';
+import '../core/pane.dart';
+import 'gairaigo_quiz_screen.dart';
 
 /// 영어등유래단어 — 외래어가 일본어로 음차되는 규칙(영어) + 유래 언어별 줄기.
 /// 예외는 [예외] 배지.
@@ -34,7 +36,7 @@ class _Word {
   final String ja, en, ko;
   final String? note;
   final bool ex;
-  final int st; // 1=핵심 큐레이션, 2=JLPT 전체
+  final int st; // 1=핵심 큐레이션, 2=N5~N3, 3=N2·N1
   final int? jlpt;
   const _Word(
     this.ja,
@@ -53,7 +55,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
   late int _tab = widget.rulesFirst ? -1 : 0; // -1 = 규칙 한눈에
   String _intro = '';
   List<List<String>> _table = [];
-  int _stage = 1; // 1단계(핵심) 디폴트 · 2단계(JLPT 전체)
+  int _stage = 1; // 1단계(핵심) 디폴트 · 2단계(N3까지) · 3단계(전체)
 
   List<_Word> _visible(_Branch b) =>
       b.words.where((w) => w.st <= _stage).toList();
@@ -151,7 +153,7 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: [1, 2].map((st) {
+                      children: [...[1, 2, 3].map((st) {
                         final selected = _stage == st;
                         final n = _branches.fold(
                           0,
@@ -178,7 +180,9 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                               child: Text(
                                 st == 1
                                     ? trf('1단계 핵심 {0}', [n])
-                                    : trf('2단계 JLPT 전체 {0}', [n]),
+                                    : st == 2
+                                    ? trf('2단계 N3까지 {0}', [n])
+                                    : trf('3단계 전체 {0}', [n]),
                                 style: TextStyle(
                                   color: selected
                                       ? AppColors.washi
@@ -190,7 +194,39 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                             ),
                           ),
                         );
-                      }).toList(),
+                      }),
+                        GestureDetector(
+                          key: const ValueKey('gairaigo-quiz'),
+                          onTap: () => openFull(
+                            context,
+                            (_) => GairaigoQuizScreen(
+                              words: [
+                                for (final b in _branches)
+                                  for (final w in _visible(b))
+                                    GQWord(w.ja, w.en, w.ko),
+                              ],
+                            ),
+                          ),
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 14,
+                              vertical: 7,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.washi,
+                              border: Border.all(color: AppColors.beni, width: 1.2),
+                            ),
+                            child: Text(
+                              tr('📝 퀴즈 복습'),
+                              style: const TextStyle(
+                                color: AppColors.beni,
+                                fontWeight: FontWeight.w800,
+                                fontSize: 12,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
