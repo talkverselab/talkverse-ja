@@ -124,7 +124,7 @@ Worker 에 필요한 것은 **경로 하나** — `/art/script/<lang>/<경로>.j
 **앱(`lib/services/script_sync.dart`)**
 
 - 앱 안 기준표 `assets/data/script_rev.json` = 이 빌드의 `rev` 와 파일별 sha.
-- 켤 때 기기 상태만 읽고(네트워크 없음) 원고를 띄운 뒤, 뒤에서 `index.json` 을 받는다. **서버 rev 가 앱 안 rev 보다 클 때만** 앱 안 것과 sha 가 다른 파일을 받아 `Application Support/ja/script/files/<경로>` 에 둔다. 전부 받아 sha·JSON 을 확인한 뒤에만 `state.json` 을 바꾼다 — 중간에 실패하면 지금 것 그대로.
+- **앱을 켤 때마다 무조건** `index.json` 을 받는다(사용자 지시 2026-11-17 — 그림·음성 내려받기의 단계 선택·「나중에」와 상관없이 따로, `embedInit` 에서 첫 화면 전에). 15초(`ScriptSync.startupWait`)까지 기다리고, 못 끝내면 앱을 열고 뒤에서 마저 받는다. **서버 rev 가 앱 안 rev 보다 클 때만** 앱 안 것과 sha 가 다른 파일을 받아 `Application Support/ja/script/files/<경로>` 에 둔다. 전부 받아 sha·JSON 을 확인한 뒤에만 `state.json` 을 바꾼다 — 중간에 실패하면 지금 것 그대로.
 - 받은 뒤 회화 목록을 다시 읽는다(`DialogueService.revision`). 이미 열려 있는 화면은 다음에 열 때부터 새 원고.
 - index 에 없는 앱 안 편은 숨기고, 앱 안에 없는 새 편은 더한다.
 - rev 가 같거나 큰 새 빌드를 깔면 받아 둔 파일을 지운다(앱 안 원고가 더 새것).

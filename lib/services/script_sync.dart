@@ -14,6 +14,8 @@ import '../core/embed_env.dart';
 ///   파일은 `GET <root>/<경로>?v=<sha>`. 경로는 `assets/data/` 아래 상대 경로.
 /// - 앱 안 기준표 `assets/data/script_rev.json` — 이 빌드를 만들 때의 `rev`·파일별 sha(올리는 도구 `tools/script_publish.py` 가 쓴다).
 /// - 서버 rev 가 앱 안 rev 보다 **클 때만** 받는다. 새 빌드(rev 가 같거나 큼)를 깔면 기기의 덮어쓴 파일은 지운다 — 앱 안 원고가 더 새것.
+/// - **앱을 켤 때마다 무조건** 확인해 받는다(사용자 지시 2026-11-17) — 그림·음성 내려받기(`ContentSync`)의 선택·「나중에」와 상관없이 따로 돈다.
+///   시작 화면은 [startupWait] 까지만 기다리고, 그때까지 못 끝내면 앱을 열고 뒤에서 마저 받는다.
 /// - 전부 받아 확인(sha·JSON)한 뒤에만 바꾼다. 실패하면 지금 것 그대로. 서버가 없어도(404·오프라인) 앱 안 원고로 돈다.
 /// - 회화: 서버 목록에 없는 편은 숨기고(`removed`), 앱에 없는 새 편은 더한다(`added`).
 /// 규격 = `docs/CONTENT_SYNC.md` §6.
@@ -30,6 +32,7 @@ class ScriptSync {
 
   static const root = 'https://auth.talkverse.uk/art/script/ja';
   static const _kBaseline = 'assets/data/script_rev.json';
+  static const startupWait = Duration(seconds: 15);
 
   Directory? _testDir;
   Map<String, dynamic>? _testBaseline;
@@ -98,7 +101,13 @@ class ScriptSync {
   }
 
   /// 서버 판을 확인하고 바뀐 파일을 받는다. 무엇이든 바뀌었으면 true(읽어 둔 원고를 다시 읽을 것).
-  Future<bool> refresh() async {
+  /// 동시에 두 번 불러도 한 번만 돈다(앱 시작 때 기다리는 호출 + 회화를 읽은 뒤의 호출).
+  /// 이번 실행에서 서버 목록을 한 번 확인했으면 다시 묻지 않는다.
+  Future<bool> refresh() => _checked ? Future.value(false) : (_running ??= _refresh().whenComplete(() => _running = null));
+  bool _checked = false;
+  Future<bool>? _running;
+
+  Future<bool> _refresh() async {
     await init();
     if (_dir == null) return false;
     try {
@@ -106,26 +115,40 @@ class ScriptSync {
       if (body == null) return false;
       final j = json.decode(body) as Map<String, dynamic>;
       final r = (j['rev'] as int?) ?? 0;
-      if (r <= baseRev || r == rev) return false;
+      if (r <= baseRev || r == rev) {
+        _checked = true;
+        return false;
+      }
       final files = ((j['files'] as Map?) ?? const {}).map((k, v) => MapEntry('$k', '$v'));
       if (files.keys.any((p) => !RegExp(r'^[\w./-]+\.json$').hasMatch(p) || p.contains('..'))) return false;
       final over = <String, String>{};
+      final need = <MapEntry<String, String>>[];
       for (final e in files.entries) {
         if (_base[e.key] == e.value) continue; // 앱 안 것과 같다
-        final f = File('${_dir!.path}/files/${e.key}');
-        if (_over[e.key] == e.value && await f.exists()) {
+        if (_over[e.key] == e.value && await File('${_dir!.path}/files/${e.key}').exists()) {
           over[e.key] = e.value; // 이미 받은 판
-          continue;
+        } else {
+          need.add(e);
         }
+      }
+      Future<bool> one(MapEntry<String, String> e) async {
         final text = await (_fetch ?? _get)('$root/${e.key}?v=${e.value}');
-        if (text == null) return false;
-        if (!sha1.convert(utf8.encode(text)).toString().startsWith(e.value)) return false;
+        if (text == null || !sha1.convert(utf8.encode(text)).toString().startsWith(e.value)) return false;
         json.decode(text);
+        final f = File('${_dir!.path}/files/${e.key}');
         await f.parent.create(recursive: true);
         final tmp = File('${f.path}.tmp');
         await tmp.writeAsString(text, flush: true);
         await tmp.rename(f.path);
-        over[e.key] = e.value;
+        return true;
+      }
+
+      for (var i = 0; i < need.length; i += 8) {
+        final part = need.sublist(i, i + 8 > need.length ? need.length : i + 8);
+        if ((await Future.wait(part.map(one))).contains(false)) return false;
+        for (final e in part) {
+          over[e.key] = e.value;
+        }
       }
       final removed = {for (final p in _base.keys) if (!files.containsKey(p)) p};
       await File('${_dir!.path}/state.json').writeAsString(json.encode({'rev': r, 'files': over, 'removed': removed.toList()}), flush: true);
@@ -137,6 +160,7 @@ class ScriptSync {
       rev = r;
       _over = over;
       _removed = removed;
+      _checked = true;
       return true;
     } catch (e) {
       debugPrint('ScriptSync: 받기 실패 $e');

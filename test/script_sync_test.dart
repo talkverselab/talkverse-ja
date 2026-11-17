@@ -45,10 +45,10 @@ void main() {
     expect(s.added.toList(), [c]);
     expect(asked.length, 3);
 
-    // 같은 판을 다시 물으면 아무것도 안 받는다
+    // 같은 실행에서는 다시 묻지 않는다
     asked.clear();
     expect(await s.refresh(), isFalse);
-    expect(asked.length, 1);
+    expect(asked, isEmpty);
 
     // 다시 켠 앱(같은 빌드)은 받은 것을 그대로 쓴다
     final again = ScriptSync.forTest(dir: dir, fetch: (_) async => null, baseline: base(2));
