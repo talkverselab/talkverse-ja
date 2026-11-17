@@ -37,6 +37,7 @@
 | **108 / 2611151557** | **언어감각 L4·L5(사용자 지시 11-15, grammar-anim 경유 — 소장본에서 뽑은 문법 목록 C·D 묶음, 책 이름·원문은 싣지 않고 예문은 새로 지음)**: L4 「한국어 하나, 일본어 둘」 대화 19줄(いる/ある, の, くれる/あげる, もらう/受ける, ている·知らない, だけ/ばかり, 着る/はく, の/こと, だと思う, 수동, やすい, たら) · L5 「한국어에 없는 꼴」 대화 14줄(연체수식에 の 없음, い·な형용사 부정·과거·꾸밈·연결·부사, いい→よかった, すぎる, ないで, て형 음편, 가능형, 말끝 よ·ね·ぞ·の·な). 둘 다 암기 형식 1회, 참고 줄 없음, 영상 자리 비어 있음(grammar-anim 이 이 대화를 토대로 제작). **옛 L4~L7 → L6~L9**(회차 id 그대로). 전체 21회. `SenseCourse.load` 는 `rootBundle.load`+utf8(파일이 50KB 를 넘으면 loadString 이 테스트에서 멈춤) | 사용자 11-15 |
 | **109 / 2611171118** | **언어감각 L6 「높임말 익히기」(사용자 결정 11-17 「높임말 급 따로 두기」)**: 가게·회사 응대 대화 7줄(통째로 외울 문장 5개 포함 — いらっしゃいませ, お世話になっております, 席を外しております, 少々お待ちください, 失礼いたします), 빨강 = 상대를 높임 · 파랑 = 우리 쪽을 낮춤. **겹치는 옛 회차 4개 삭제(사용자 결정 「지움」)**: `L3-2` 〜ています · `L3-4` 형용사 두 가지 · `L4-1` 반말 · `L6-4` 높임말 맛보기. 옛 급은 L7~L10(회차 id 그대로), 전체 18회. 서버 임시 영상 2개(`video/ja/sense/L1-5_sample_v1.mp4`, `audio/ja/_sense/L1-5_sample_v1.mp4`) 삭제 | 사용자 11-17 |
 | **110 / 2611171123** | **외국어 단어(사용자 지시 11-17)**: 줄기 규칙 설명을 한두 문장으로 줄임 · 단계를 **3단계**로(1 핵심 303 · 2 N3까지 455 · 3 전체 763 — 데이터 `st` 1/2/3) · **퀴즈 복습**(`gairaigo_quiz_screen.dart`, JLPT 문자·어휘 꼴: 표기 고르기 + 뜻 고르기, 보기 1~4, 10문제, 틀린 단어 먼저 — Prefs `gairaigo_quiz_wrong`; 틀린 표기 보기는 ッ·ー 빼고 넣기·탁음 바꾸기로 만듦). **배우기 → 기초의 「한자 배우기」 줄 삭제**(한자 연습이 있어서) | 사용자 11-17 |
+| **111 / 2611171128** | **회화 첫 화면 카드의 「〇〇」(사용자 지시 11-17)**: 「오늘의 컷·이어서 읽기」 대사 띠가 원고(`{name}`)를 그대로 써서 〇〇 로 보이던 것 — `SceneCut` 대사 띠를 `dialogue.view(turn)`(음성 본문 = 이름이 든 글)으로. 장면 설명의 「A」(학습자)는 `Dialogue.sceneShown` 으로 이름(없으면 「나」) | 사용자 11-17 |
 
 아직 안 된 것: 12+ 관련 — 목욕탕 장면 컷(r3_culture_b3 남자판 컷 1·2·4 상반신에 수건, r1_travel_a5_f 컷 4 탕 안 어깨)은 노출은 아니나 **다시 그리기로 결정(사용자 11-11) — Grok 한도 11/16 초기화 뒤** · 영어 UI — content 162줄(한국어 비교 발음 설명 등)은 아직 한국어 그대로, 조사 は·へ 로마자는 글자대로(ha·he), 회화 영어 번역 칸 이름은 `en`·`note_en`(로마자는 앱이 가나에서 만듦)으로 uk 에 답함 · 실기기 화면 확인(전부 테스트·analyze 만 통과) · 기기에서 콘텐츠 번호가 숫자로 나오는지(서버는 11-11 배포됨) · 지운 목록 줄은 git 히스토리에 남음(재작성은 사용자 결정).
 
@@ -45,7 +46,7 @@
 | 항목 | 값 |
 |---|---|
 | 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 프로필 내려받기 현황 커밋 700d548(2026-11-11). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 110**(https://apps.talkverse.uk/Ultzu/484)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=111` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| Android | Zealot 「일본어 유니버스」 **빌드 111**(https://apps.talkverse.uk/Ultzu/485)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=112` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
 | iOS TestFlight | **2611151557**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
 | 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(`WordCardGrid` — 그림 있는 단어는 그림 카드, **그림 없는 단어는 그 아래 낮은 카드**(빈칸 지적 2026-11-11); JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
 | 단어 단원 플래시카드·문법 카드(2026-11-11 사용자 지시, uk 경유) | 절벽·JLPT 단어를 **20어 단원**으로, 단원 머리줄 「플래시카드」 → `lib/screens/word_unit_flash_screen.dart`(앞 그림·표기 → 뒤 읽기·뜻 + 그 단어가 나온 회화 문장, 탭하면 그 턴부터 회화 재생 `openDialogueAt`; 몰라요 는 끝에 다시, 상태 `wcard:<낱말>`). 안내 「문장으로 외우는 게 더 좋아요」(`SentenceTip`) = 플래시카드·단어 시트·JLPT 목록 위. 예문 찾기 `lib/services/word_examples.dart`(lemmas → 없으면 글자 포함). 절벽 목록은 uk 분류표(talkversehanja `talkverse_art/words/ja_cliff_class_20261111.csv`)를 `python3 tools/freq/cliff_class.py <분류표>` 로 반영: noise 205줄 삭제(**순위 번호는 그대로** — 그림 번호가 순위, 2,000위 안 1,795어), 그 밖 647어의 읽기·뜻·품사 = `assets/data/freq/cliff_notes_ja.json`(문법 334어는 그림 대신 문법 카드). 시드 db 12. 2,001~2,500위 줄은 사용자 지시(2026-11-11 "2000단어 이상은 중요하지 않지")로 파일에서 잘라냄. **단어 속 한자 → 한자 가족**(2026-11-11 사용자 지시): `lib/widgets/word_kanji_families.dart` `WordKanjiFamilies` 를 단어 시트·절벽 단어 시트·플래시카드 뒷면에 — 씨앗 + 같은 소리 가족 글자(탭 = 한자 팝업), 「가족 지도」 = `openHanjaFamily`. 테스트 `test/word_unit_flash_test.dart`·`word_kanji_families_test.dart` |
@@ -86,7 +87,7 @@
 ```bash
 cd ~/talkverse/ja && flutter pub get && flutter analyze && flutter test
 git add <바꾼 파일만> && git commit && git push origin master
-flutter build apk --release --build-number=111 && tools/zealot_push.sh "변경 한 줄"
+flutter build apk --release --build-number=112 && tools/zealot_push.sh "변경 한 줄"
 bash tools/ios_release.sh                                    # Android 와 항상 같이
 python3 tools/review_html.py data/review/REVIEW_ja.html $(find assets/data/dialogues/R* -name '*.json' | sort)
 /usr/bin/python3 tools/scene_upload.py [<편id> ...]          # 장면 컷 R2/D1(sha1 같으면 건너뜀)

@@ -125,7 +125,7 @@ class _TodayCut extends StatelessWidget {
       const SizedBox(height: 2),
       Text('${d.region} · ${tr(DialogueService.islandKo[d.island] ?? d.island)} · ${trf('{0}턴', [d.turns.length])}', style: const TextStyle(fontSize: 11, color: AppColors.muted)),
       const SizedBox(height: 6),
-      Text(d.scene, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
+      Text(d.sceneShown, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
       const SizedBox(height: 10),
       FilledButton.icon(
         onPressed: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
@@ -214,7 +214,7 @@ class DialogueListScreen extends StatelessWidget {
                 onTap: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
                 leading: Text(d.emoji, style: const TextStyle(fontSize: 24)),
                 title: Text(d.title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.sumi)),
-                subtitle: Text('${d.isChat ? '💬 ' : ''}${d.scene}', maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11, color: AppColors.muted, height: 1.3)),
+                subtitle: Text('${d.isChat ? '💬 ' : ''}${d.sceneShown}', maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11, color: AppColors.muted, height: 1.3)),
                 trailing: Text(trf('{0}턴', [d.turns.length]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
               ),
             ),
@@ -304,7 +304,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
               ),
               Padding(
                 padding: const EdgeInsets.fromLTRB(20, 4, 20, 4),
-                child: Text(d.scene, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
+                child: Text(d.sceneShown, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
               ),
               const BrushDivider(height: 2),
               Expanded(

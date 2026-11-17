@@ -141,6 +141,8 @@ class Dialogue {
     if (l == null || l.text.isEmpty) return t;
     return t.withText(ja: l.text, kana: l.reading, rd: l.rd, ko: l.ko);
   }
+  /// 화면에 보일 장면 설명 — 원고의 「A」(학습자)를 이름(없으면 「나」)으로(사용자 지시 2026-11-17).
+  String get sceneShown => scene.replaceAllMapped(RegExp(r'(?<![A-Za-z])A(?![A-Za-z]) ?(?=[가-힣])'), (_) => speakerName('A'));
   /// 화자 표시 이름: `{name}`(학습자 자리) → 「나」, 그 밖의 중괄호는 뗀다.
   String speakerName(String sp) {
     final raw = speakers[sp] ?? sp;
