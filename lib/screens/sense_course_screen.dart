@@ -15,7 +15,7 @@ import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart';
 import 'gairaigo_screen.dart';
 
-/// 언어감각 익히기 — 정규과정(2026-11-11 사용자 지시). L1 조사 익히기부터 L 단계 × 4회.
+/// 언어감각 익히기 — 정규과정(2026-11-11 사용자 지시). L1~L10, 급마다 외울 대화 1회 + 참고(2026-11-17 전면 수정).
 /// 회차 = 문법 짧은 설명(points.tip) → 감 익히는 문장(points.sentences). 데이터 `assets/data/grammar/sense_course.json`.
 /// 내용은 간단하게 시작해 차차 늘린다 — 회차를 늘리려면 JSON 에 lessons 만 더하면 된다.
 const _kDoneKey = 'sense_course_done';
@@ -95,7 +95,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
     final next = all.indexWhere((e) => !isRef(e.$2) && !_done.contains(e.$2['id']));
     final real = all.where((e) => !isRef(e.$2)).toList();
     final children = <Widget>[
-      Text(tr('문법을 짧게 보고, 문장으로 감을 익혀요.'),
+      Text(tr('영상을 보고, 대화를 통째로 외워요. 규칙은 참고에만 있어요.'),
           style: const TextStyle(fontSize: 13, color: AppColors.sumiLight)),
       const SizedBox(height: 4),
       Text(trf('{0}/{1}회 마침', [real.where((e) => _done.contains(e.$2['id'])).length, real.length]),

@@ -6,13 +6,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 void main() {
   setUp(() => SharedPreferences.setMockInitialValues({}));
 
-  test('3자 이상 패밀리 94개, 큰 가족부터, 하루 3패밀리', () async {
+  test('3자 이상 패밀리 94개, 큰 가족부터, 하루 3자', () async {
     final days = await KanjiPractice.days();
-    final fams = days.expand((d) => d).toList();
-    expect(fams.length, 94);
-    expect(days.length, 32);
-    expect(fams.first.members.length >= fams.last.members.length, isTrue);
-    expect(fams.every((f) => f.members.length >= 3), isTrue);
+    expect(KanjiPractice.roots.length, 94);
+    expect(days.expand((d) => d).map((f) => f.root).toSet().length, 94);
+    final per = [for (final d in days) d.fold<int>(0, (a, f) => a + f.members.length)];
+    expect(per.sublist(0, per.length - 1).every((n) => n == 3), isTrue);
+    expect(days.first.first.root, KanjiPractice.roots.first);
   });
 
   for (final w in const [320.0, 900.0]) {
@@ -40,7 +40,9 @@ void main() {
   }
 
   testWidgets('누적 복습: 1일차 마친 뒤 열림, 틀린 글자 기록', (t) async {
-    await KanjiPractice.markDone(1);
+    for (var d = 1; d <= 7; d++) {
+      await KanjiPractice.markDone(d);
+    }
     t.view.physicalSize = const Size(390, 2400);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);

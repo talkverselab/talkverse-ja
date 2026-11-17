@@ -153,48 +153,50 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
-                      children: [...[1, 2, 3].map((st) {
-                        final selected = _stage == st;
-                        final n = _branches.fold(
-                          0,
-                          (s, b) => s + b.words.where((w) => w.st <= st).length,
-                        );
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: GestureDetector(
-                            onTap: () => setState(() => _stage = st),
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 14,
-                                vertical: 7,
-                              ),
-                              decoration: BoxDecoration(
-                                color: selected
-                                    ? AppColors.ai
-                                    : AppColors.washi,
-                                border: Border.all(
-                                  color: AppColors.ai,
-                                  width: selected ? 1.5 : 0.8,
+                      children: [
+                        ...[1, 2, 3].map((st) {
+                          final selected = _stage == st;
+                          final n = _branches.fold(
+                            0,
+                            (s, b) =>
+                                s + b.words.where((w) => w.st <= st).length,
+                          );
+                          return Padding(
+                            padding: const EdgeInsets.only(right: 8),
+                            child: GestureDetector(
+                              onTap: () => setState(() => _stage = st),
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 14,
+                                  vertical: 7,
                                 ),
-                              ),
-                              child: Text(
-                                st == 1
-                                    ? trf('1단계 핵심 {0}', [n])
-                                    : st == 2
-                                    ? trf('2단계 N3까지 {0}', [n])
-                                    : trf('3단계 전체 {0}', [n]),
-                                style: TextStyle(
+                                decoration: BoxDecoration(
                                   color: selected
-                                      ? AppColors.washi
-                                      : AppColors.ai,
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 12,
+                                      ? AppColors.ai
+                                      : AppColors.washi,
+                                  border: Border.all(
+                                    color: AppColors.ai,
+                                    width: selected ? 1.5 : 0.8,
+                                  ),
+                                ),
+                                child: Text(
+                                  st == 1
+                                      ? trf('1단계 핵심 {0}', [n])
+                                      : st == 2
+                                      ? trf('2단계 N3까지 {0}', [n])
+                                      : trf('3단계 전체 {0}', [n]),
+                                  style: TextStyle(
+                                    color: selected
+                                        ? AppColors.washi
+                                        : AppColors.ai,
+                                    fontWeight: FontWeight.w800,
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        );
-                      }),
+                          );
+                        }),
                         GestureDetector(
                           key: const ValueKey('gairaigo-quiz'),
                           onTap: () => openFull(
@@ -214,7 +216,10 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                             ),
                             decoration: BoxDecoration(
                               color: AppColors.washi,
-                              border: Border.all(color: AppColors.beni, width: 1.2),
+                              border: Border.all(
+                                color: AppColors.beni,
+                                width: 1.2,
+                              ),
                             ),
                             child: Text(
                               tr('📝 퀴즈 복습'),
@@ -237,12 +242,10 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                     horizontal: 12,
                     vertical: 8,
                   ),
-                  child: SizedBox(
-                    height: 34,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: _branches.length + 1,
-                      itemBuilder: (context, k) {
+                  // 줄기 칩 두 줄(사용자 지시 2026-11-17) — 가로로 함께 넘긴다
+                  child: Builder(
+                    builder: (context) {
+                      Widget chip(int k) {
                         final i = k - 1;
                         if (i < 0) {
                           final selected = _tab == -1;
@@ -312,8 +315,31 @@ class _GairaigoScreenState extends State<GairaigoScreen> {
                             ),
                           ),
                         );
-                      },
-                    ),
+                      }
+
+                      final n = _branches.length + 1;
+                      final half = (n + 1) ~/ 2;
+                      return SingleChildScrollView(
+                        key: const ValueKey('gairaigo-chips'),
+                        scrollDirection: Axis.horizontal,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                for (var k = 0; k < half; k++) chip(k),
+                              ],
+                            ),
+                            const SizedBox(height: 6),
+                            Row(
+                              children: [
+                                for (var k = half; k < n; k++) chip(k),
+                              ],
+                            ),
+                          ],
+                        ),
+                      );
+                    },
                   ),
                 ),
                 const AsanohaDivider(height: 8),

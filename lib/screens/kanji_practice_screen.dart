@@ -15,11 +15,12 @@ import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart' show showKanjiSheet;
 
 /// 한자 연습(사용자 지시 2026-11-11 「패밀리가 많은 한자부터 가르치게」).
-/// 소리 부품이 같은 글자가 3자 이상인 패밀리 94개를 큰 가족부터, 하루 3패밀리씩(3달·주 3일 기준 ≈ 32일·11주).
+/// 소리 부품이 같은 글자가 3자 이상인 패밀리 94개를 큰 가족부터, **하루 3자씩**(사용자 지시 2026-11-17 — 그 전에는 하루 3패밀리).
+/// 하루치 = 그날 글자가 든 패밀리 조각들(같은 패밀리가 여러 날에 걸친다).
 /// 하루 = 패밀리 보기(가족 글자는 회화 빈도순) → 「이 글자의 패밀리는?」 문제 → 마침 기록(Prefs `kanji_practice_done`).
-const int kFamiliesPerDay = 3;
+const int kCharsPerDay = 3;
 const int kMinMembers = 3;
-const _kDone = 'kanji_practice_done';
+const _kDone = 'kanji_practice_done_v2'; // v2 = 하루 3자 기준(옛 하루 3패밀리 기록과 날 번호가 달라 새 키)
 const _kWrong = 'kanji_practice_wrong'; // 틀린 글자(맞히면 빠짐) — 누적 복습에서 먼저 낸다
 const int kReviewSize = 20;
 
@@ -33,6 +34,7 @@ class KFamily {
 
 class KanjiPractice {
   static List<List<KFamily>>? _days;
+  static List<String> roots = const [];
 
   static Future<List<List<KFamily>>> days() async {
     if (_days != null) return _days!;
@@ -53,7 +55,21 @@ class KanjiPractice {
       final c = b.members.length.compareTo(a.members.length);
       return c != 0 ? c : rank(a.members.first).compareTo(rank(b.members.first));
     });
-    return _days = [for (var i = 0; i < fams.length; i += kFamiliesPerDay) fams.sublist(i, min(i + kFamiliesPerDay, fams.length))];
+    KanjiPractice.roots = [for (final f in fams) f.root];
+    final pairs = [for (final f in fams) for (final m in f.members) (f, m)];
+    final days = <List<KFamily>>[];
+    for (var i = 0; i < pairs.length; i += kCharsPerDay) {
+      final day = <KFamily>[];
+      for (final (f, m) in pairs.sublist(i, min(i + kCharsPerDay, pairs.length))) {
+        if (day.isNotEmpty && day.last.root == f.root) {
+          day.last.members.add(m);
+        } else {
+          day.add(KFamily(f.root, f.on, f.ko, [m]));
+        }
+      }
+      days.add(day);
+    }
+    return _days = days;
   }
 
   static Future<Set<String>> done() async => ((await Prefs.getInstance()).getStringList(_kDone) ?? const []).toSet();
@@ -121,15 +137,15 @@ class _KanjiPracticeScreenState extends State<KanjiPracticeScreen> {
   }
 
   Widget _body(List<List<KFamily>> days) {
-    final fams = days.fold<int>(0, (a, d) => a + d.length);
-    final chars = days.expand((d) => d).fold<int>(0, (a, f) => a + f.members.length + 1);
+    final fams = days.expand((d) => d).map((f) => f.root).toSet().length;
+    final chars = days.expand((d) => d).fold<int>(0, (a, f) => a + f.members.length);
     final next = List.generate(days.length, (i) => i + 1).firstWhere((n) => !_done.contains('$n'), orElse: () => -1);
     return ListView(
       padding: EdgeInsets.fromLTRB(16, 12, 16, 24 + bottomInset(context)),
       children: [
         Text(tr('패밀리가 큰 한자부터 — 소리 부품 하나로 여러 글자를 한 번에'), style: const TextStyle(fontSize: 13, color: AppColors.sumiLight)),
         const SizedBox(height: 4),
-        Text(trf('{0}패밀리 · {1}자 · 하루 {2}패밀리 · {3}일 (주 3일이면 약 {4}주)', [fams, chars, kFamiliesPerDay, days.length, (days.length / 3).ceil()]),
+        Text(trf('{0}패밀리 · {1}자 · 하루 {2}자 · {3}일', [fams, chars, kCharsPerDay, days.length]),
             style: const TextStyle(fontSize: 12, color: AppColors.muted)),
         Text(trf('{0}/{1}일 마침', [_done.length, days.length]), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
         const SizedBox(height: 10),
@@ -154,7 +170,7 @@ class _KanjiPracticeScreenState extends State<KanjiPracticeScreen> {
               _load();
             },
       icon: const Icon(Icons.replay),
-      label: Text(learned.isEmpty ? tr('누적 복습 — 1일차를 마치면 열려요') : trf('누적 복습 · {0}패밀리 {1}자에서 {2}문제', [learned.length, n, min(kReviewSize, n)]),
+      label: Text(learned.isEmpty ? tr('누적 복습 — 1일차를 마치면 열려요') : trf('누적 복습 · {0}패밀리 {1}자에서 {2}문제', [learned.map((f) => f.root).toSet().length, n, min(kReviewSize, n)]),
           style: const TextStyle(fontWeight: FontWeight.w800)),
     );
   }
@@ -178,9 +194,9 @@ class _KanjiPracticeScreenState extends State<KanjiPracticeScreen> {
             child: Row(children: [
               SizedBox(width: 56, child: Text(trf('{0}일차', [n]), style: const TextStyle(fontSize: 13, fontWeight: FontWeight.w800, color: AppColors.ai))),
               Expanded(
-                child: Text(fams.map((f) => f.root).join(' · '), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+                child: Text(fams.expand((f) => f.members).join('  '), style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: AppColors.sumi)),
               ),
-              Text(trf('{0}자', [fams.fold<int>(0, (a, f) => a + f.members.length + 1)]), style: const TextStyle(fontSize: 12, color: AppColors.sumiLight)),
+              Flexible(child: Text(fams.map((f) => trf('「{0}」 패밀리', [f.root])).join(' · '), maxLines: 1, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight))),
               const SizedBox(width: 8),
               if (isDone)
                 const Icon(Icons.check_circle, color: AppColors.matcha, size: 20)
@@ -205,13 +221,22 @@ class KanjiPracticeDayScreen extends StatefulWidget {
 
 class _KanjiPracticeDayScreenState extends State<KanjiPracticeDayScreen> {
   bool _quiz = false;
-  late List<(String, KFamily)> _qs;
+  late List<(String, KFamily, List<String>)> _qs;
   int _i = 0;
   String? _picked;
   int _right = 0;
 
   void _startQuiz() {
-    _qs = [for (final f in widget.families) for (final m in f.members) (m, f)]..shuffle();
+    // 보기 = 정답 + 그날의 다른 패밀리 + 모자라면 전체 패밀리에서 채워 4개
+    List<String> opts(KFamily f) {
+      final o = <String>{f.root, ...widget.families.map((x) => x.root)};
+      for (final r in [...KanjiPractice.roots]..shuffle()) {
+        if (o.length >= 4) break;
+        o.add(r);
+      }
+      return o.toList()..shuffle();
+    }
+    _qs = [for (final f in widget.families) for (final m in f.members) (m, f, opts(f))]..shuffle();
     setState(() {
       _quiz = true;
       _i = 0;
@@ -225,7 +250,7 @@ class _KanjiPracticeDayScreenState extends State<KanjiPracticeDayScreen> {
     final finished = _quiz && _i >= _qs.length;
     return Scaffold(
       backgroundColor: AppColors.washi,
-      appBar: AppBar(title: Text('${trf('{0}일차', [widget.day])}  ${widget.families.map((f) => f.root).join(' · ')}')),
+      appBar: AppBar(title: Text('${trf('{0}일차', [widget.day])}  ${widget.families.expand((f) => f.members).join(' ')}')),
       body: !_quiz
           ? ListView(
               padding: const EdgeInsets.fromLTRB(16, 12, 16, 16),
@@ -264,8 +289,7 @@ class _KanjiPracticeDayScreenState extends State<KanjiPracticeDayScreen> {
       );
 
   Widget _question() {
-    final (c, fam) = _qs[_i];
-    final options = widget.families.map((f) => f.root).toList();
+    final (c, fam, options) = _qs[_i];
     return Padding(
       padding: EdgeInsets.fromLTRB(16, 16, 16, 16 + bottomInset(context)),
       child: Column(children: [
@@ -332,7 +356,7 @@ class _FamilyCard extends StatelessWidget {
             const SizedBox(width: 12),
             Expanded(
               child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Text(trf('「{0}」 패밀리 · {1}자', [f.root, f.members.length + 1]), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.sumi)),
+                Text(trf('「{0}」 패밀리', [f.root]), style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w900, color: AppColors.sumi)),
                 Text(trf('소리 {0} · 한국음 {1}', [f.on, f.ko]), style: const TextStyle(fontSize: 12.5, color: AppColors.ai, fontWeight: FontWeight.w700)),
                 Text(tr('이 부품이 들어간 글자는 소리가 비슷해요'), style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight)),
               ]),
@@ -398,8 +422,8 @@ class _KanjiReviewScreenState extends State<KanjiReviewScreen> {
     pairs.sort((a, b) => (wrong.contains(b.$1) ? 1 : 0) - (wrong.contains(a.$1) ? 1 : 0)); // 틀린 글자 먼저(안에서는 섞인 채)
     final picked = pairs.take(kReviewSize).toList()..shuffle(_rnd);
     List<String> opts(KFamily f) {
-      final others = [for (final o in widget.learned) if (o.root != f.root) o.root]..shuffle(_rnd);
-      if (others.length < 3) others.addAll(([for (final o in widget.all) if (o.root != f.root && !others.contains(o.root)) o.root]..shuffle(_rnd)).take(3 - others.length));
+      final others = {for (final o in widget.learned) if (o.root != f.root) o.root}.toList()..shuffle(_rnd);
+      if (others.length < 3) others.addAll(({for (final o in widget.all) if (o.root != f.root && !others.contains(o.root)) o.root}.toList()..shuffle(_rnd)).take(3 - others.length));
       return [f.root, ...others.take(3)]..shuffle(_rnd);
     }
     if (mounted) setState(() => _qs = [for (final p in picked) (p.$1, p.$2, opts(p.$2))]);
