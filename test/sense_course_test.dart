@@ -28,8 +28,9 @@ void main() {
       expect(find.byKey(const ValueKey('sense-L1-ref')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L1-1')), findsNothing);
       expect(find.text('참고'), findsNWidgets(2));
-      expect(find.text('0/21회 마침'), findsOneWidget);
-      expect(find.byKey(const ValueKey('sense-L6-4')), findsOneWidget);
+      expect(find.text('0/18회 마침'), findsOneWidget);
+      expect(find.byKey(const ValueKey('sense-L6-talk')), findsOneWidget);
+      expect(find.byKey(const ValueKey('sense-L6-4')), findsNothing);
       expect(find.byKey(const ValueKey('sense-L3-ref')), findsOneWidget);
       expect(find.text('외국어 단어 익히기 메뉴 열기'), findsOneWidget);
     });
