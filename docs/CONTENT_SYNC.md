@@ -9,7 +9,8 @@
 
 | 자료 | 어디에 | 앱이 받는 법 |
 |---|---|---|
-| 단어·한자·회화 본문 | 앱 번들 `assets/data/**` → 기기 SQLite(drift) | `version.json` 의 `db` 번호가 바뀌면 다시 채움 |
+| 단어·한자 | 앱 번들 `assets/data/**` → 기기 SQLite(drift) | `version.json` 의 `db` 번호가 바뀌면 다시 채움 |
+| 회화 원고·언어감각 과정 | 앱 번들이 바탕 + R2 `script/ja/**`(더 새 판) | `GET …/art/script/ja/index.json` → 바뀐 파일만(§6) |
 | 단어 그림 | R2 `talkverse-art` + D1 `talkverse-db` `art_images`(그림)·`art_words`(언어별 낱말 → 개념) | `GET auth.talkverse.uk/art/ja/manifest` |
 | 장면 컷 | R2 + D1 `art_scenes`(lang, episode, cut, sha1) | `GET …/art/ja/scene/manifest` |
 | 회화 음성 | R2 + D1 `audio_lines`(lang, episode, turn, voice, sha1, 본문 넷) | `GET …/art/ja/audio/manifest` |
@@ -101,4 +102,47 @@ GET /art/<lang>/changes?since=N   → {"lang":"ja","head":1250,"items":[{"kind":
 
 - §3 서버 배포(uk 세션·사용자 승인) → 배포 뒤 앱에서 콘텐츠 번호가 「—」에서 숫자로 바뀌는지 확인.
 - 다른 언어 앱은 공통 프롬프터로 같은 구조를 따라간다(uk 관리).
-- 단어·회화 본문 자체를 급별로 서버에서 받게 하려면(지금은 3.5MB 가 번들에 통째로) 본문을 D1/R2 로 옮기는 별도 작업이 필요 — 사용자 결정.
+- 회화 원고는 §6 으로 서버 판을 덮어쓴다(2026-11-17). 단어·한자 본문을 급별로 서버에서 받게 하는 것은 별도 작업 — 사용자 결정.
+- §6 의 Worker 경로(`/art/script/<lang>/…json`) 배포 — uk 세션·사용자 승인. 배포 전에는 앱이 404 를 받고 앱 안 원고로 돈다.
+
+## 6. 원고 덮어쓰기 — 심사·새 빌드 없이 회화 원고 고치기 (2026-11-17)
+
+사용자 지시(2026-11-17): 정식 출시 뒤에도 심사 없이 원고를 고칠 수 있게, 회화 원고를 서버에서 받아 앱 안 원고 위에 덮어쓴다.
+
+**대상**: 회화 편 `assets/data/dialogues/R0~R4/**.json`(216개 중 편 215) + 언어감각 과정 `assets/data/grammar/sense_course.json`. 단어·한자·외국어 단어는 아직 앱 안에만 있다.
+
+**서버(R2 `talkverse-art`)**
+
+```
+script/ja/index.json        {"rev": 7, "files": {"dialogues/R0/friends/r0_friends_a2.json": "<sha1 앞 12자리>", …}}   경로 = assets/data/ 아래 상대 경로
+script/ja/<경로>             그 파일 그대로(바이트가 같아야 sha 가 맞는다)
+```
+
+앱이 읽는 주소: `GET https://auth.talkverse.uk/art/script/ja/index.json`, `GET …/art/script/ja/<경로>?v=<sha>`.
+Worker 에 필요한 것은 **경로 하나** — `/art/script/<lang>/<경로>.json` 을 R2 `script/<lang>/<경로>.json` 에서 그대로 내주기(`application/json; charset=utf-8`, CORS `*`). `index.json` 은 `Cache-Control: no-cache`(또는 max-age 60 이하), 나머지는 `?v=` 가 붙으므로 길게 잡아도 된다. D1·변경 기록(`content_log`)은 쓰지 않는다.
+
+**앱(`lib/services/script_sync.dart`)**
+
+- 앱 안 기준표 `assets/data/script_rev.json` = 이 빌드의 `rev` 와 파일별 sha.
+- 켤 때 기기 상태만 읽고(네트워크 없음) 원고를 띄운 뒤, 뒤에서 `index.json` 을 받는다. **서버 rev 가 앱 안 rev 보다 클 때만** 앱 안 것과 sha 가 다른 파일을 받아 `Application Support/ja/script/files/<경로>` 에 둔다. 전부 받아 sha·JSON 을 확인한 뒤에만 `state.json` 을 바꾼다 — 중간에 실패하면 지금 것 그대로.
+- 받은 뒤 회화 목록을 다시 읽는다(`DialogueService.revision`). 이미 열려 있는 화면은 다음에 열 때부터 새 원고.
+- index 에 없는 앱 안 편은 숨기고, 앱 안에 없는 새 편은 더한다.
+- rev 가 같거나 큰 새 빌드를 깔면 받아 둔 파일을 지운다(앱 안 원고가 더 새것).
+- 서버가 없거나(404) 오프라인이면 앱 안 원고로 돈다.
+- 시험 `test/script_sync_test.dart`.
+
+**올리는 법(`tools/script_publish.py`)**
+
+```
+python3 tools/script_publish.py             # 바뀐 파일만 보여 준다
+python3 tools/script_publish.py --publish   # 턴 번호 잠금 검사 → 바뀐 파일 → index.json → 기준표 rev+1
+git add assets/data/script_rev.json … && git commit   # 기준표를 꼭 커밋(다음 빌드가 같은 rev 를 싣게)
+```
+
+**주의**
+
+- 편 id·턴 번호를 다시 매기지 않는다(학습 기록·음성·그림이 그 번호에 묶여 있다 — `tools/turn_lock.py`).
+- 음성이 있는 턴은 화면 글자가 음성 본문(`audio_lines`)을 따른다. 대사를 고치면 그 턴 음성도 다시 만들어야 화면이 바뀐다.
+- 새 편은 원고만 올리면 글자로는 바로 보이고, 그림·음성은 따로 올려야 한다.
+- 원고를 고치고 올리지 않은 채 빌드만 내면 그 빌드만 새 원고를 갖는다(옛 빌드는 그대로) — 고쳤으면 `--publish` 까지.
+- 이 기능이 든 빌드(113~)부터 받는다. 그 전 빌드는 앱 안 원고만 쓴다.

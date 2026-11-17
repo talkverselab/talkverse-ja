@@ -85,6 +85,7 @@ flutter:
     - assets/data/kanji/phonetic_ja.json
     - assets/data/words/words_jlpt.json
     - assets/data/version.json
+    - assets/data/script_rev.json
     - assets/data/freq/lang_ja_with_regions.csv
     - assets/data/freq/conv_words_ja.json
     - assets/data/freq/cliff_notes_ja.json

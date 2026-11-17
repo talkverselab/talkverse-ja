@@ -1,10 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
+import '../services/script_sync.dart';
 import 'package:video_player/video_player.dart';
 
-import '../core/embed_env.dart';
 import '../core/l10n.dart';
 import '../core/pane.dart';
 import '../core/platform.dart';
@@ -25,7 +24,7 @@ class SenseCourse {
   static Map<String, dynamic>? _cache;
   static Future<Map<String, dynamic>> load() async =>
       // loadString 은 큰 파일을 다른 isolate 에서 풀어 위젯 테스트가 멈춘다 — 바이트로 읽어 여기서 푼다.
-      _cache ??= json.decode(utf8.decode((await rootBundle.load(assetPath(_kAsset))).buffer.asUint8List())) as Map<String, dynamic>;
+      _cache ??= json.decode(await ScriptSync.instance.load(_kAsset.substring('assets/data/'.length))) as Map<String, dynamic>;
 
   static Future<Set<String>> done() async => ((await Prefs.getInstance()).getStringList(_kDoneKey) ?? const []).toSet();
 
