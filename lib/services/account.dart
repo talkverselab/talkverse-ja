@@ -9,6 +9,8 @@ import 'package:flutter_web_auth_2/flutter_web_auth_2.dart';
 import 'package:http/http.dart' as http;
 import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 
+import '../core/embed_env.dart';
+
 /// Talkverse ID — 언어앱·한자앱·talkverse.uk 공용 계정(auth.talkverse.uk). 한자앱 `lib/data/account.dart` 복제(2026-11-02, APP_GUIDE).
 /// 로그인은 선택: 안 해도 앱 전체가 동작한다. 로그인하면 이용권(lang = 'ja')을 서버에서 받는다.
 /// 앱: 브라우저(ASWebAuthenticationSession/Custom Tabs)로 /oauth/<p>/start(PKCE) → talkverse.ja://auth?code= → POST /token.
@@ -16,7 +18,8 @@ import 'package:sign_in_with_apple/sign_in_with_apple.dart';
 class Account {
   Account._();
   static const base = 'https://auth.talkverse.uk';
-  static const clientId = 'ja';
+  /// 통합 앱 안에서는 공용 클라이언트(다른 언어 패키지와 같은 꼴 — uk 요청 2026-11-18).
+  static String get clientId => embedded ? 'talkverse' : 'ja';
   static const scheme = 'talkverse.ja';
   static const _redirect = '$scheme://auth';
 
