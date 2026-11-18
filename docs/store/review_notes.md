@@ -1,4 +1,4 @@
-# 심사 메모(App Review Notes) — 일본어 유니버스 (2026-11-09 전체 다시 씀)
+# 심사 메모(App Review Notes) — 일본어 유니버스 (2026-11-09 전체 다시 씀, 11-18 [Network] 에 원고 받기·수업 영상 추가)
 
 일본어 유니버스 = 회화·단어·한자·복습 전부 무료 + 맞춤 회화(AI 생성, 첫 1편 무료, 그다음은 이용권 — 한 달 5편·하루 1편, 종합 이용권 한 달 10편) + Talkverse ID 로그인(선택) + 인앱 구입 6개(`docs/STORE_PRODUCTS.md`). 원본은 talkverse-uk `docs/legal/` — 바꾸면 uk 에 알린다. 4.3 차별화 근거는 `docs/store/listing.md`.
 
@@ -19,10 +19,10 @@ This app is one of a family of language-specific apps by Universal Talking Lab (
 
 [AI-generated content] Custom dialogues are written by AI on our server from the topic/situation/level the user picks. They are labelled "AI 가 만든 회화" at the top with a Report button (opens an email with the dialogue ID). Limits: 1 free, then 5 per month and 1 per day with a pass (10 per month with the all-languages pass).
 
-[Network] Scene pictures, word pictures, recorded dialogue audio and custom dialogues are downloaded and cached; offline the app keeps working with what is cached.
+[Network] Scene pictures, word pictures, recorded dialogue audio, short lesson videos and custom dialogues are downloaded and cached; offline the app keeps working with what is cached. At launch the app also checks our server for corrected dialogue text (JSON data only — typo and wording fixes to the bundled lessons; no executable code is downloaded) and falls back to the bundled text when offline.
 ```
 
-한국어 요약(메모에 같이 적어도 됨): 언어별로 따로 만든 앱(4.3) · 로그인 선택(설정 및 프로필 → 계정) · 데모 계정 review@talkverse.uk · 계정 삭제 경로 · 인앱 구입 6개와 결제 시트 표기 · 맞춤 회화 = AI 생성, 표시·신고 버튼, 한도 · 그림·음성은 내려받아 저장.
+한국어 요약(메모에 같이 적어도 됨): 언어별로 따로 만든 앱(4.3) · 로그인 선택(설정 및 프로필 → 계정) · 데모 계정 review@talkverse.uk · 계정 삭제 경로 · 인앱 구입 6개와 결제 시트 표기 · 맞춤 회화 = AI 생성, 표시·신고 버튼, 한도 · 그림·음성·수업 영상은 내려받아 저장 · 켤 때 회화 원고 고친 판(글자 데이터만, 코드 아님)을 확인.
 
 ## IAP 상품 심사 스크린샷
 
