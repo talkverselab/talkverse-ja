@@ -123,7 +123,7 @@
    "kana": "{photo_word}！",
    "rd": "{photo_word}!",
    "ko": "{photo_word}!",
-   "note": "학습자 나라의 사진 구호(변수) — 반전: 구호가 다르다",
+   "note": "학습자 나라의 사진 구호(변수) — 구호가 다르다",
    "tags": [
     "var:photo_word"
    ],
