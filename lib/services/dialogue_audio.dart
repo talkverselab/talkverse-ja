@@ -20,17 +20,20 @@ class DialogueAudio {
   Completer<void>? _wait;
   int _gen = 0;
 
-  /// 이 턴에 쓸 음성(없으면 null).
-  AudioLine? line(String episodeId, int turn) {
-    return ContentSync.instance.audioIndex[episodeId]?[turn]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+  /// 이 턴에 쓸 음성(없으면 null). [script] 를 주면 녹음 글이 지금 원고와 맞을 때만 — 대사를 고친 뒤 옛 녹음이 남아 있으면
+  /// null 이 되어 기기 TTS 로 읽는다(사용자 지시 2026-11-22 「음성이 없는 건 TTS 로」). 새 녹음이 올라오면 다시 녹음이 먼저.
+  AudioLine? line(String episodeId, int turn, {String? script}) {
+    final l = ContentSync.instance.audioIndex[episodeId]?[turn]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+    if (l == null || script == null) return l;
+    return audioFitsScript(l.text, script) ? l : null;
   }
 
   /// 이름 자리가 있는 턴마다 음성이 있는가(있으면 이름을 묻지 않는다 — 음성판의 이름으로 보인다).
-  bool covers(Dialogue d) => d.turns.every((t) => !t.ja.contains('{name}') || line(d.id, t.num) != null);
+  bool covers(Dialogue d) => d.turns.every((t) => !t.ja.contains('{name}') || line(d.id, t.num, script: t.ja) != null);
 
   /// 음성을 끝까지 재생한다. 음성이 없거나 재생에 실패하면 false(부르는 쪽이 TTS 로 넘긴다).
-  Future<bool> play(String episodeId, int turn, {double rate = 1.0}) async {
-    final l = line(episodeId, turn);
+  Future<bool> play(String episodeId, int turn, {double rate = 1.0, String? script}) async {
+    final l = line(episodeId, turn, script: script);
     if (l == null) return false;
     final my = ++_gen;
     try {
@@ -73,8 +76,23 @@ class DialogueAudio {
 
 /// 턴 하나 읽기: 생성 음성이 있으면 그것, 없으면 기기 음성. 끝날 때까지 기다린다.
 Future<void> speakTurn(Dialogue d, DialogueTurn t, {double rate = 1.0}) async {
-  if (await DialogueAudio.instance.play(d.id, t.num, rate: rate)) return;
+  // 녹음 우선 → 없거나(서버 목록에 없는 편·줄) 옛 대사 녹음이면 기기 TTS
+  if (await DialogueAudio.instance.play(d.id, t.num, rate: rate, script: t.ja)) return;
   var s = t.ja.replaceAll(RegExp(r'[（(][^)）]*[)）]'), '').replaceAll(RegExp(r'\{[a-z_]+\}'), '');
   s = s.replaceAll(RegExp(r'[wｗ]+$'), '').trim();
   await TtsService.instance.speakAs(s.isEmpty ? t.kana : s, gender: LearnerPrefs.voiceGender(t.speaker), rate: rate * 0.45);
+}
+
+/// 녹음 글이 원고 줄과 같은 말인가. 자리 표시({name}·{drama} …)는 아무 글이나, 성별판에서 바뀌는 말(僕/私·くん/さん·彼女/彼氏 …)과
+/// 문장부호는 보지 않는다 — 대사 자체를 다시 쓴 줄만 「안 맞음」(2026-11-22, 서버 음성 4380줄로 확인: 안 맞음 0).
+bool audioFitsScript(String audio, String script) {
+  const loose = ['僕', '私', '俺', 'あたし', 'わたし', 'ぼく', 'おれ', 'くん', 'さん', 'ちゃん', '彼女', '彼氏', 'だよ', 'だぜ', 'わよ'];
+  String norm(String s) {
+    for (final w in loose) {
+      s = s.replaceAll(w, '');
+    }
+    return s.replaceAll(RegExp(r'[\s　、。，,.！!？?…・「」『』（）()〜~ー―\-wｗ♪♡]'), '');
+  }
+  final parts = script.split(RegExp(r'\{[a-z_]+\}')).map((p) => RegExp.escape(norm(p)));
+  return RegExp('^${parts.join('.*?')}\$').hasMatch(norm(audio));
 }

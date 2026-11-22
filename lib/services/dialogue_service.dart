@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart' show AssetManifest, rootBundle;
 import '../core/prefs.dart';
 
-import 'content_sync.dart';
+import 'dialogue_audio.dart';
 import 'learner_prefs.dart';
 import 'script_sync.dart';
 
@@ -140,7 +140,7 @@ class Dialogue {
   bool get isChat => kind == 'chat';
   /// 화면에 보일 턴: 생성 음성이 있으면 그 음성이 읽는 본문(학습자 성별판, 이름이 들어간 글) — 듣는 말과 글이 같아야 한다(2026-11-06).
   DialogueTurn view(DialogueTurn t) {
-    final l = ContentSync.instance.audioIndex[id]?[t.num]?[LearnerPrefs.isFemale ? 'f' : 'm'];
+    final l = DialogueAudio.instance.line(id, t.num, script: t.ja); // 옛 대사 녹음이면 null → 원고 글 그대로
     if (l == null || l.text.isEmpty) return t;
     return t.withText(ja: l.text, kana: l.reading, rd: l.rd, ko: l.ko);
   }
