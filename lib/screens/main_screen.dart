@@ -12,6 +12,7 @@ import '../services/tts_service.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'custom_script_screen.dart';
+import 'curriculum_screen.dart';
 import 'dialogue_screen.dart';
 import 'episode_screen.dart';
 import 'flashcard_screen.dart';
@@ -577,6 +578,9 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: tr('패밀리가 큰 한자부터 · 하루 3자'),
               onTap: () => openPane(context, (_) => const KanjiPracticeScreen()),
             ),
+            // 토크버스 커리큘럼 — 전 언어 공통 메뉴, 회화 메뉴 위(사용자 지시 2026-11-22, 기준 ~/talkverse/CURRICULUM_SPEC.md)
+            _section(tr('토크버스 커리큘럼')),
+            const CurriculumHomeCard(),
             _section(tr('회화')),
             _NavRow(
               seal: '会話',
