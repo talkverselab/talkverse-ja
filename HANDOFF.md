@@ -74,7 +74,7 @@
 
 1. **git 기록 다시 쓰기 끝(11-11, 사용자 실행)**: 지운 이름이 든 옛 단어표 5개 판본을 기록에서 걸러 강제 푸시 — 원격을 새로 받아 이름 검색 0건 확인. 커밋 해시가 전부 바뀌었으니 다른 곳의 clone 은 다시 받을 것. GitHub 에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청해야 사라진다(사용자 결정). 이 작업 폴더의 옛 가지 `master-old-history`·`master-stale` 과 reflog 에는 옛 기록이 로컬로만 남아 있다.
 2. **PC 백업은 사용자가 명령할 때만**(11-11 지시 — 자동 대기 걸지 말 것): 빌드 89 APK·iOS 2611111257 IPA 는 11-11 16:50 PC `D:\OneDrive\app project\japanese_universe\` 에 백업 끝(크기 대조), 맥 사본 삭제. low 3턴 음성도 11-11 17:06 끝 — 남은 대기 작업 없음. 맥이 재부팅으로 후처리 중에 끊기면 PC 조각은 남으므로 `cd tools/tts && ~/.venvs/tts_ja/bin/python run_all.py <작업폴더> 12` 로 이어서(조각 삭제 생략).
-3. 사용자 결정 대기: **문법 애니 MD1 일본어판 영상 둘 곳**(grammar-anim 세션이 M6 `~/talkverse/grammar-anim/anim/md1ja/` 에 넣음 — ep2·3·6 + 11-22 ep4 が·は 57초 · ep5 〜ます·〜です 61초 · ep0 발음 2분 24초(압축본 `_cc_small` 19MB), 각 `_cc.mp4`·`.en.srt`, ep1 은 렌더 중; 앱에 넣지 않고 대기) · 맞춤 회화 워커 launchd 켜기(**심사 뒤**, 사용자 11-22 「심사뒤」) · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
+3. 사용자 결정 대기: **문법 애니 MD1 일본어판 영상 둘 곳**(grammar-anim 세션이 M6 `~/talkverse/grammar-anim/anim/md1ja/` 에 넣음 — ep2·3·6 + 11-22 ep4 が·は 57초 · ep5 〜ます·〜です 61초 · ep0 발음 2분 24초(압축본 `_cc_small` 19MB) · 11-23 ep1 격 표지 81초(압축본 12MB) — 0~6편 7편 모두 도착, 각 `_cc.mp4`·`.en.srt`; 앱에 넣지 않고 대기) · 맞춤 회화 워커 launchd 켜기(**심사 뒤**, 사용자 11-22 「심사뒤」) · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 음성 qa ok=false 81조각 재시도 여부.
 4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
 
 ## 3. 지울 후보(애매해서 남겨 둠 — 사용자·허브 판단)
