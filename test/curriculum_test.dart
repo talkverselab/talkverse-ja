@@ -127,4 +127,14 @@ void main() {
     }
     expect(find.textContaining('100'), findsOneWidget);
   });
+
+  for (final w in [300.0, 390.0]) {
+    testWidgets('코스 고르기 줄 — 폭 $w 에서 넘치지 않음', (t) async {
+      await t.pumpWidget(MaterialApp(
+        home: Scaffold(body: Center(child: SizedBox(width: w, child: CoursePickBar(count: 5, onCount: (_) {}, onRecommend: () {})))),
+      ));
+      expect(t.takeException(), isNull);
+      expect(find.byType(ChoiceChip), findsNWidgets(3));
+    });
+  }
 }
