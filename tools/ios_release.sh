@@ -53,7 +53,10 @@ VER="$(grep '^version:' pubspec.yaml | awk '{print $2}' | cut -d+ -f1)"
 REV="$(git rev-parse --short HEAD)"
 STAMP="$(TZ=Asia/Seoul date +%Y%m%d_%H%M)"
 NAME="${APP}_${VER}_${BUILD}_${STAMP}_${REV}_appstore.ipa"
-if ssh -o ConnectTimeout=10 "$PC" "powershell -NoProfile -Command \"New-Item -ItemType Directory -Force -Path 'D:\\OneDrive\\app project\\$APP\\ios' | Out-Null\"" \
+# PC 백업은 사용자가 명령할 때만(사용자 지시 2026-11-11) — --pc-backup 을 줄 때만 복사
+if [[ " $* " != *" --pc-backup "* ]]; then
+  echo "PC 백업 건너뜀(--pc-backup 없음) — $IPA"
+elif ssh -o ConnectTimeout=10 "$PC" "powershell -NoProfile -Command \"New-Item -ItemType Directory -Force -Path 'D:\\OneDrive\\app project\\$APP\\ios' | Out-Null\"" \
    && scp -q "$IPA" "$PC:D:/OneDrive/app project/$APP/ios/$NAME"; then
   echo "백업 완료: OneDrive/app project/$APP/ios/$NAME"
 else
