@@ -585,8 +585,10 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: tr('모든 문장 듣기 · 그림 카드 · 왕초보/초보'),
               onTap: () => openPane(context, (_) => const DialogueHomeScreen()),
             ),
-            _NavRow(
-              seal: '✨',
+            // 맞춤 회화는 만드는 쪽(워커)이 켜져 있을 때만 — 꺼진 채로 보이면 「접수됐어요」 뒤 아무것도 오지 않는다(스토어 심사, 2026-11-22).
+            if (kCustomScriptLive)
+              _NavRow(
+                seal: '✨',
               sealColor: AppColors.kinDeep,
               title: tr('맞춤 회화 만들기'),
               subtitle: tr('주제·상황·레벨 → 나만의 1편 · 첫 편 무료'),

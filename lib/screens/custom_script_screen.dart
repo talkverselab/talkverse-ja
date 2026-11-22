@@ -367,6 +367,9 @@ class _Row extends StatelessWidget {
       );
 }
 
+/// 맞춤 회화 메뉴를 보일지 — 워커(launchd)를 켜는 것은 사용자 결정 대기(HANDOFF). 켜면 true 로.
+const bool kCustomScriptLive = false;
+
 /// 주제별 회화 홈 상단 진입 카드.
 class CustomScriptEntryCard extends StatelessWidget {
   const CustomScriptEntryCard({super.key});
