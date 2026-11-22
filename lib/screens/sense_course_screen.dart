@@ -34,9 +34,27 @@ class SenseCourse {
     await p.setStringList(_kDoneKey, s.toList());
   }
 
-  /// 모든 회차를 순서대로 (레벨, 회차) 쌍으로.
+  /// 서버 원고가 새로 받아졌으면 다시 읽게 캐시를 비운다(바뀌었으면 true). 문법 내용은 심사 없이 서버에서 고친다(사용자 지시 11-23).
+  static Future<bool> refresh() async {
+    final changed = await ScriptSync.instance.refresh();
+    if (changed) _cache = null;
+    return changed;
+  }
+
+  /// 내용이 있는 회차인가 — 외울 문장·참고 항목·다른 메뉴 버튼 중 하나라도 있어야 보인다.
+  static bool hasContent(Map<String, dynamic> ls) =>
+      ls['open'] != null || ((ls['sentences'] as List?)?.isNotEmpty ?? false) || ((ls['points'] as List?)?.isNotEmpty ?? false);
+
+  /// 보일 급: 스텝 1~10 의 틀은 데이터(서버 파일)에 두고, 내용이 있는 회차가 하나도 없는 급은 숨긴다 — 서버에 내용이 올라오면 저절로 나타난다(11-23).
+  static List<Map<String, dynamic>> levels(Map<String, dynamic> d) => [
+        for (final lv in ((d['levels'] as List?) ?? const []).cast<Map<String, dynamic>>())
+          if (((lv['lessons'] as List?) ?? const []).cast<Map<String, dynamic>>().any(hasContent))
+            {...lv, 'lessons': (lv['lessons'] as List).cast<Map<String, dynamic>>().where(hasContent).toList()},
+      ];
+
+  /// 모든 회차를 순서대로 (레벨, 회차) 쌍으로 — 보이는 급·회차만.
   static List<(Map<String, dynamic>, Map<String, dynamic>)> flat(Map<String, dynamic> d) => [
-        for (final lv in (d['levels'] as List).cast<Map<String, dynamic>>())
+        for (final lv in levels(d))
           for (final ls in (lv['lessons'] as List).cast<Map<String, dynamic>>()) (lv, ls),
       ];
 }
@@ -58,7 +76,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
     _load();
   }
 
-  Future<void> _load() async {
+  Future<void> _load({bool check = true}) async {
     final d = await SenseCourse.load();
     final done = await SenseCourse.done();
     if (!mounted) return;
@@ -66,6 +84,8 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
       _data = d;
       _done = done;
     });
+    // 서버에 더 새 문법 원고가 있으면 받아서 다시 그린다
+    if (check && await SenseCourse.refresh() && mounted) _load(check: false);
   }
 
   Future<void> _open(int index) async {
@@ -101,7 +121,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
           style: const TextStyle(fontSize: 12, color: AppColors.muted)),
     ];
     var i = 0;
-    for (final lv in (d['levels'] as List).cast<Map<String, dynamic>>()) {
+    for (final lv in SenseCourse.levels(d)) {
       children.add(Padding(
         padding: const EdgeInsets.fromLTRB(2, 18, 2, 8),
         child: Text('${lv['id']}  ${lv['title']}',

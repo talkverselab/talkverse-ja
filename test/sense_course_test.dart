@@ -1,3 +1,6 @@
+import 'dart:convert';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:japanese_universe/screens/sense_course_screen.dart';
@@ -68,5 +71,30 @@ void main() {
     await t.tap(find.byKey(const ValueKey('sense-finish')));
     await t.pump(const Duration(milliseconds: 300));
     expect(await SenseCourse.done(), isNot(contains('L1-ref')));
+  });
+
+  test('빈 스텝 숨김 — 내용 있는 회차가 없는 급은 안 보이고, 내용이 생기면 나타남(서버 파일 그대로 읽음)', () {
+    Map<String, dynamic> lv(String id, List<Map<String, dynamic>> ls) => {'id': id, 'title': id, 'lessons': ls};
+    final d = {
+      'levels': [
+        lv('L1', [{'id': 'L1-a', 'sentences': ['x']}, {'id': 'L1-empty', 'sentences': []}]),
+        lv('L2', [{'id': 'L2-a', 'sentences': []}]),
+        lv('L3', []),
+        lv('L4', [{'id': 'L4-ref', 'points': [{}]}]),
+        lv('L5', [{'id': 'L5-open', 'open': 'gairaigo'}]),
+      ]
+    };
+    expect(SenseCourse.levels(d).map((l) => l['id']), ['L1', 'L4', 'L5']);
+    expect(SenseCourse.flat(d).map((e) => e.$2['id']), ['L1-a', 'L4-ref', 'L5-open']);
+    (d['levels']![1]['lessons'] as List)[0]['sentences'] = ['새 문장'];
+    expect(SenseCourse.levels(d).map((l) => l['id']), ['L1', 'L2', 'L4', 'L5']);
+  });
+
+  test('묶음 원고 — 스텝 1~10 이 모두 데이터에 있고 지금은 10개 모두 내용 있음', () async {
+    final raw = File('assets/data/grammar/sense_course.json').readAsStringSync();
+    final d = json.decode(raw) as Map<String, dynamic>;
+    expect((d['levels'] as List).map((l) => l['id']), [for (var i = 1; i <= 10; i++) 'L$i']);
+    expect(SenseCourse.levels(d).length, 10);
+    expect(File('tools/script_publish.py').readAsStringSync(), contains('grammar/sense_course.json'));
   });
 }
