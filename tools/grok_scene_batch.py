@@ -87,8 +87,8 @@ def imgs_ready(c, want):
 
 def last_imgs(c):
     # 마지막 답 근처의 생성 그림(assets.grok.com) — 답 요소 밖 갤러리에 붙는 경우가 있어 문서 전체에서 마지막 것들을 본다
-    # 첨부 썸네일(64px 안팎)은 빼고, 생성 그림(가로 300px 이상)만
-    return c.ev("[...document.querySelectorAll('img')].filter(i=>i.src.includes('assets.grok.com')&&i.naturalWidth>=300).map(i=>i.src)") or []
+    # 첨부 썸네일(64px 안팎)은 빼고, 생성 그림(가로 300px 이상)만. 새 방에서는 첨부도 같은 주소·크기로 떠서 '/generated/' 만(2026-11-22 첨부가 컷1·2 로 저장됨)
+    return c.ev("[...document.querySelectorAll('img')].filter(i=>i.src.includes('assets.grok.com')&&i.src.includes('/generated/')&&i.naturalWidth>=300).map(i=>i.src)") or []
 
 def fetch_b64(c, url):
     js = ("fetch(%s,{credentials:'include'}).then(r=>r.blob()).then(b=>new Promise(ok=>{const f=new FileReader();f.onload=()=>ok(f.result);f.readAsDataURL(b)}))" % json.dumps(url))
