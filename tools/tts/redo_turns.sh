@@ -23,5 +23,5 @@ P
 scp -q $WORK/del.ps1 $PC:D:/tts_test/job/del_redo.ps1
 ssh $PC "powershell -NoProfile -File D:\\tts_test\\job\\del_redo.ps1"
 echo "$(date '+%m-%d %H:%M') PC 조각 삭제 끝 — 생성 시작"
-cd $R/tools/tts && $PY run_all.py $WORK 12
+cd $R/tools/tts && QA_TURNS=${LIST:A} $PY run_all.py $WORK 12
 echo "$(date '+%m-%d %H:%M') REDO_END"
