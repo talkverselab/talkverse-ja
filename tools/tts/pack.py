@@ -51,7 +51,9 @@ def main():
     mf = f'{R}/data/tts/audio_ja.json'
     MIN = float(os.environ.get('QA_MIN', '0'))   # 이 점수 밑 조각이 든 줄은 목록에 넣지 않음(uk 11-23: 3번 뒤에도 0.85 미만 제외)
     QA = json.load(open(f'{wav}/qa.json', encoding='utf-8')) if MIN and os.path.exists(f'{wav}/qa.json') else {}
-    low = lambda ep, num, tag, n: [k for i in range(n) for k in [f'{ep}/{num:02d}_{i}_{tag}.wav'] if QA.get(k, {}).get('sim', 1) < MIN]
+    # 하한은 이 회차에 다시 만든 턴에만(uk 11-23 사용자 결정): redo_turns 가 QA_TURNS=<턴목록.json> 을 넘기면 그 턴만, 없으면(편 전체 생성) 모두
+    TL = json.load(open(os.environ['QA_TURNS'], encoding='utf-8')) if os.environ.get('QA_TURNS') else None
+    low = lambda ep, num, tag, n: [] if TL is not None and num not in TL.get(ep, []) else [k for i in range(n) for k in [f'{ep}/{num:02d}_{i}_{tag}.wav'] if QA.get(k, {}).get('sim', 1) < MIN]
     for ep in eps:
         rows = []
         for t in L.turns(ep):
