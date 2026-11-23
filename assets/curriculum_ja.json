@@ -1,6 +1,6 @@
 {
  "lang": "ja",
- "rev": 2,
+ "rev": 3,
  "stages": [
   {
    "n": 1,
@@ -278,7 +278,13 @@
    "title": "4단계",
    "desc": "의견·설명·긴 대화",
    "dialogueIds": [
-    "r4_love_b1"
+    "r4_culture_b1",
+    "r4_friends_b1",
+    "r4_life_b1",
+    "r4_love_b1",
+    "r4_study_b1",
+    "r4_travel_b1",
+    "r4_work_b1"
    ],
    "pick": [
     3,
@@ -544,7 +550,13 @@
      "id": "N2",
      "title": "N2",
      "dialogueIds": [
-      "r4_love_b1"
+      "r4_culture_b1",
+      "r4_friends_b1",
+      "r4_life_b1",
+      "r4_love_b1",
+      "r4_study_b1",
+      "r4_travel_b1",
+      "r4_work_b1"
      ],
      "wordSet": "jlpt_n2",
      "pass": 80,

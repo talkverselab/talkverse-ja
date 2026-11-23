@@ -56,6 +56,12 @@ flutter:
     - assets/data/dialogues/_meta.json
     - assets/curriculum_ja.json
     - assets/data/dialogues/R4/love/
+    - assets/data/dialogues/R4/culture/
+    - assets/data/dialogues/R4/friends/
+    - assets/data/dialogues/R4/life/
+    - assets/data/dialogues/R4/study/
+    - assets/data/dialogues/R4/travel/
+    - assets/data/dialogues/R4/work/
     - assets/data/dialogues/R0/culture/
     - assets/data/dialogues/R0/friends/
     - assets/data/dialogues/R0/life/
