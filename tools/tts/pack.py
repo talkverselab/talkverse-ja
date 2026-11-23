@@ -49,11 +49,17 @@ def main():
     UP = '--upload' in sys.argv; a = [x for x in sys.argv[1:] if x != '--upload']; wav, eps = a[0], a[1:]
     tmp = tempfile.mkdtemp(); q = lambda s: "'" + s.replace("'", "''") + "'"
     mf = f'{R}/data/tts/audio_ja.json'
+    MIN = float(os.environ.get('QA_MIN', '0'))   # 이 점수 밑 조각이 든 줄은 목록에 넣지 않음(uk 11-23: 3번 뒤에도 0.85 미만 제외)
+    QA = json.load(open(f'{wav}/qa.json', encoding='utf-8')) if MIN and os.path.exists(f'{wav}/qa.json') else {}
+    low = lambda ep, num, tag, n: [k for i in range(n) for k in [f'{ep}/{num:02d}_{i}_{tag}.wav'] if QA.get(k, {}).get('sim', 1) < MIN]
     for ep in eps:
         rows = []
         for t in L.turns(ep):
             for g in 'mf':
                 x = t[g]; tag = 'c' if t['same'] else g; f = f"{tmp}/{ep}_{t['num']:02d}_{g}.mp4"
+                bad = low(ep, t['num'], tag, len(x['segs']))
+                if bad:
+                    open(f'{wav}/dropped.txt', 'a').write(' '.join(bad) + '\n'); print('뺌', ep, t['num'], g, flush=True); continue
                 d = build(wav, ep, t['num'], tag, len(x['segs']), f, tmp)
                 rows.append(dict(turn=t['num'], voice=g, speaker=x['voice'], emotion='+'.join(s[0] for s in x['segs']), key=f"audio/ja/{ep}/{t['num']:02d}_{g}.mp4",
                                  sha1=hashlib.sha1(open(f, 'rb').read()).hexdigest(), ms=int(d * 1000), text=x['text'], reading=x['reading'], rd=x['rd'], ko=x['ko'], f=f))
