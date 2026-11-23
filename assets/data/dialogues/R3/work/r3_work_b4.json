@@ -525,18 +525,5 @@
    "emoji": "😏"
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_work_b4_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "simkung": "data/review/chaos/r3_work_b4_grok_simkung.md: 턴 [11] 교체 · 심쿵: 11번 턴, 미사키가 과자를 나누며 A 몫을 더 크게 쪼개 줌",
-  "boost_turns": [
-   2,
-   3,
-   9,
-   11
-  ],
-  "boost": "data/review/chaos/r3_work_b4_grok_boost.md: 턴 [2, 3, 9] 교체 · 요약: 카오스 2 · 심쿵 없음",
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 3, 9] 를 강화 전 원문으로 되돌림(심쿵 [] 유지) · 손질 턴 9,10"
- },
  "twist_type": "chaos"
 }

@@ -10,6 +10,7 @@ import '../services/curriculum_service.dart';
 import '../services/dialogue_audio.dart';
 import '../services/curriculum_plan.dart';
 import '../services/dialogue_service.dart';
+import '../services/paywall_gate.dart';
 import '../services/word_service.dart';
 import '../widgets/japanese_decor.dart';
 
@@ -35,6 +36,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   @override
   void dispose() {
     _svc.changed.removeListener(_onChanged);
+    PaywallGate.changes.removeListener(_onChanged);
     super.dispose();
   }
 
@@ -46,11 +48,12 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
   void initState() {
     super.initState();
     _svc.changed.addListener(_onChanged);
+    PaywallGate.changes.addListener(_onChanged);
     _svc.ensureLoaded().then((_) {
       if (!mounted) return;
       setState(() {
         _loading = false;
-        _levelPick = _st.level == null || _svc.levelList().isEmpty; // 서버 목록에서 빠진 단계면 다시 고르기
+        _levelPick = _st.level == null || _svc.levelList().isEmpty || !_levelOpen(_svc.levelOf()); // 서버 목록에서 빠진 단계·이용권이 끝난 단계면 다시 고르기
         _pickCount = _defaultPick();
         _picking = _st.level != null && _st.course == null;
       });
@@ -74,7 +77,11 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     }
   }
 
+  bool _levelOpen(CurLevel? l) => l == null || l.free || PaywallGate.premium;
+
   Future<void> _setLevel(String lv) async {
+    // 2단계·JLPT 준비 등 잠긴 단계는 결제 화면 먼저(PAYWALL_SPEC)
+    if (!await PaywallGate.pass(context, _svc.levelOf(lv)?.free ?? true) || !mounted) return;
     _st.level = lv;
     await _svc.save();
     setState(() {
@@ -195,7 +202,7 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
             Text(trf('{0}편 · 통과 {1}', [list.length, passed]), style: const TextStyle(fontSize: 12, color: AppColors.muted)),
           ]),
         ),
-        if (suggest) _pill(tr('추천'), AppColors.matcha),
+        if (!_levelOpen(l)) const LockBadge() else if (suggest) _pill(tr('추천'), AppColors.matcha),
       ]),
     );
   }

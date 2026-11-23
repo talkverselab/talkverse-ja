@@ -285,13 +285,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_culture_a4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(5턴 一緒に行こう)",
-  "boost": "data/review/chaos/r1_culture_a4_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
-  "boost_turns": [
-   5
-  ]
- },
  "twist_type": "slip"
 }

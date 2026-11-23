@@ -342,15 +342,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_friends_b1_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "boost": "data/review/chaos/r1_friends_b1_grok_boost.md: 턴 [5, 7] 교체 · 요약: 카오스 5 · 심쿵 없음",
-  "boost_turns": [
-   5,
-   7
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 7] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)"
- },
  "twist_type": "chaos"
 }

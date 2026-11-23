@@ -581,9 +581,5 @@
    "emoji": "🥰"
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r3_life_b4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지"
- },
  "twist_type": "reveal"
 }

@@ -8,6 +8,7 @@ import '../core/platform.dart';
 import '../core/pane.dart';
 import '../core/theme.dart';
 import '../services/dialogue_service.dart';
+import '../services/paywall_gate.dart';
 import '../services/learner_prefs.dart';
 import '../services/dialogue_audio.dart';
 import '../widgets/episode_play_pane.dart';
@@ -31,7 +32,7 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
   @override
   void initState() {
     super.initState();
-    DialogueService.instance.ensureLoaded().then((_) {
+    Future.wait([DialogueService.instance.ensureLoaded(), PaywallGate.ensure()]).then((_) {
       if (mounted) setState(() => _loading = false);
     });
   }
@@ -72,8 +73,8 @@ class _DialogueHomeScreenState extends State<DialogueHomeScreen> {
               children: [
                 _TodayCut(level: level),
                 const SizedBox(height: 10),
-                const CustomScriptEntryCard(),
-                const SizedBox(height: 10),
+                // 맞춤 회화는 워커가 켜질 때까지 숨김(홈 메뉴와 같은 스위치 — 심사 2026-11-23 점검에서 이 입구가 남아 있던 것 발견)
+                if (kCustomScriptLive) ...[const CustomScriptEntryCard(), const SizedBox(height: 10)],
                 _hint(level),
                 const SizedBox(height: 8),
                 for (final lv in ['R0', 'R1', 'R2', 'R3', 'R4'])
@@ -128,7 +129,10 @@ class _TodayCut extends StatelessWidget {
       Text(d.sceneShown, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 12, color: AppColors.sumiLight, height: 1.4)),
       const SizedBox(height: 10),
       FilledButton.icon(
-        onPressed: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
+        onPressed: () async {
+          if (!await PaywallGate.pass(context, PaywallGate.dialogueFree(d)) || !context.mounted) return;
+          openWide(context, (_) => DialogueScreen(dialogue: d)); /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */
+        },
         style: FilledButton.styleFrom(backgroundColor: AppColors.beni, foregroundColor: Colors.white, shape: const StadiumBorder(), visualDensity: VisualDensity.compact),
         icon: const Icon(Icons.menu_book_rounded, size: 18),
         label: Text(tr('읽기 시작'), style: const TextStyle(fontWeight: FontWeight.w800)),
@@ -206,16 +210,20 @@ class DialogueListScreen extends StatelessWidget {
         separatorBuilder: (_, _) => const SizedBox(height: 8),
         itemBuilder: (context, i) {
           final d = list[i];
+          final locked = !PaywallGate.dialogueOpen(d); // 회화 2단계(R2) 이상은 이용권 — 숨기지 않고 자물쇠(PAYWALL_SPEC)
           return Container(
             decoration: BoxDecoration(color: AppColors.washi, border: Border.all(color: AppColors.line), borderRadius: BorderRadius.circular(14), boxShadow: kCardShadow),
             child: Material(
               color: Colors.transparent,
               child: ListTile(
-                onTap: () => openWide(context, (_) => DialogueScreen(dialogue: d)) /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */,
+                onTap: () async {
+                  if (!await PaywallGate.pass(context, PaywallGate.dialogueFree(d)) || !context.mounted) return;
+                  openWide(context, (_) => DialogueScreen(dialogue: d)); /* 넓은 화면: 레일만 남기고 목록 칸까지 — 좌 그림·우 스크립트(사용자 지시 2026-11-10) */
+                },
                 leading: Text(d.emoji, style: const TextStyle(fontSize: 24)),
                 title: Text(d.title, style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w800, color: AppColors.sumi)),
                 subtitle: Text('${d.isChat ? '💬 ' : ''}${d.sceneShown}', maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 11, color: AppColors.muted, height: 1.3)),
-                trailing: Text(trf('{0}턴', [d.turns.length]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
+                trailing: locked ? const LockBadge() : Text(trf('{0}턴', [d.turns.length]), style: const TextStyle(fontSize: 11, color: AppColors.muted)),
               ),
             ),
           );

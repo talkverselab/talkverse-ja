@@ -434,17 +434,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_culture_b7_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(1턴 お願いします). 6턴 大丈夫ですよ 는 미반영",
-  "boost": "data/review/chaos/r2_culture_b7_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 10",
-  "boost_turns": [
-   9,
-   10,
-   11,
-   12
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [10] 유지) · 손질 턴 12"
- },
  "twist_type": "chaos"
 }

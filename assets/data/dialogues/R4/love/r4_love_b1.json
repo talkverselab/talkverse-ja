@@ -622,8 +622,5 @@
  "twist_type": "emotion",
  "cast": {
   "C": "man_y"
- },
- "review": {
-  "grok_write": "r4_love_b1_grok_write.md 2026-11-18 — 16턴 모두 Grok 작성 그대로(사용자 지시 「Grok으로 다시 써」)"
  }
 }

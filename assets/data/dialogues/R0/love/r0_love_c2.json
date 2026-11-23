@@ -267,17 +267,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_c2_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "level_note": "2026-11-02 길이 기준(턴당 평균 6.5자 ≤ 8.0)으로 왕초보(R0)에 배정",
-  "boost": "data/review/chaos/r0_love_c2_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 없음",
-  "boost_turns": [
-   6,
-   7,
-   8
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7, 8] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)"
- },
  "twist_type": "chaos"
 }

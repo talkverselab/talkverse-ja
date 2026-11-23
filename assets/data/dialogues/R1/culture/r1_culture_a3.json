@@ -422,14 +422,5 @@
    "emoji": "🤩"
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(4턴 最高)",
-  "enrich": "r1_culture_a3_grok_enrich.md: 8턴 교체 · 킥: ‘무서워’라고 오타 냈다가 급하게 ‘귀여워 최고’로 고치고, 마지막에 草를 연발하는 상황. · 강화 재작성 v2 반영",
-  "boost": "data/review/chaos/r1_culture_a3_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
-  "boost_turns": [
-   7
-  ]
- },
  "twist_type": "slip"
 }

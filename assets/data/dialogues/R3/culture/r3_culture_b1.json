@@ -545,16 +545,5 @@
    ]
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_culture_b1_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "boost": "data/review/chaos/r3_culture_b1_grok_boost.md: 턴 [10, 11, 12] 교체 · 요약: 카오스 10 · 심쿵 없음",
-  "boost_turns": [
-   10,
-   11,
-   12
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [10, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)"
- },
  "twist_type": "chaos"
 }

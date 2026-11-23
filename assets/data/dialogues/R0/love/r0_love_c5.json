@@ -162,9 +162,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_write": "data/review/write/r0_love_c5_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
- }
+ ]
 }

@@ -1,6 +1,6 @@
 {
  "lang": "ja",
- "rev": 1,
+ "rev": 2,
  "stages": [
   {
    "n": 1,
@@ -134,7 +134,8 @@
     "light": 1,
     "normal": 2,
     "focus": 3
-   }
+   },
+   "free": true
   },
   {
    "n": 2,
@@ -208,7 +209,8 @@
     "light": 1,
     "normal": 2,
     "focus": 3
-   }
+   },
+   "free": false
   },
   {
    "n": 3,
@@ -268,7 +270,8 @@
     "light": 1,
     "normal": 2,
     "focus": 3
-   }
+   },
+   "free": false
   },
   {
    "n": 4,
@@ -287,7 +290,8 @@
     "light": 1,
     "normal": 2,
     "focus": 3
-   }
+   },
+   "free": false
   }
  ],
  "prep": [
@@ -417,7 +421,8 @@
       "r1_travel_c4"
      ],
      "wordSet": "jlpt_n5",
-     "pass": 80
+     "pass": 80,
+     "free": false
     },
     {
      "id": "N4",
@@ -481,7 +486,8 @@
       "r2_work_b8"
      ],
      "wordSet": "jlpt_n4",
-     "pass": 80
+     "pass": 80,
+     "free": false
     },
     {
      "id": "N3",
@@ -531,7 +537,8 @@
       "r3_work_b6"
      ],
      "wordSet": "jlpt_n3",
-     "pass": 80
+     "pass": 80,
+     "free": false
     },
     {
      "id": "N2",
@@ -540,9 +547,12 @@
       "r4_love_b1"
      ],
      "wordSet": "jlpt_n2",
-     "pass": 80
+     "pass": 80,
+     "free": false
     }
    ]
   }
- ]
+ ],
+ "freeSteps": 2,
+ "freeSenseLevels": 1
 }

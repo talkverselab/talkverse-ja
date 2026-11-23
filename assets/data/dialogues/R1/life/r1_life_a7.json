@@ -241,10 +241,5 @@
    ],
    "emoji": "😄"
   }
- ],
- "review": {
-  "grok_write": "data/review/write/r1_life_a7_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 6"
- }
+ ]
 }

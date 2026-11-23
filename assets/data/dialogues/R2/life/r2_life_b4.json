@@ -457,16 +457,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_life_b4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(2턴 どういう意味ですか)",
-  "boost": "data/review/chaos/r2_life_b4_grok_boost.md: 턴 [2, 4, 5] 교체 · 요약: 카오스 2 · 심쿵 없음",
-  "boost_turns": [
-   2,
-   4,
-   5
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 4, 5] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)"
- },
  "twist_type": "chaos"
 }

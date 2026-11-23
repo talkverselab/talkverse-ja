@@ -274,7 +274,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             _SettingItem(icon: Icons.description_outlined, title: tr('이용약관'), subtitle: 'talkverse.uk/terms', onTap: () => Legal.open(Legal.terms)),
             _SettingItem(icon: Icons.privacy_tip_outlined, title: tr('개인정보처리방침'), subtitle: 'talkverse.uk/talkverse/ja/privacy', onTap: () => Legal.open(Legal.privacy)),
             _SettingItem(icon: Icons.info_outline, title: tr('앱 버전'), subtitle: _version ?? '—'),
-            _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: tr('일본어 유니버스 · 2026')),
+            _SettingItem(icon: Icons.copyright, title: tr('저작권'), subtitle: 'Talkverse · 2026'),
           ]),
           const SizedBox(height: 18),
           // 되돌릴 수 없는 것은 맨 아래에

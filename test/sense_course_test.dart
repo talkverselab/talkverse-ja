@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:japanese_universe/screens/sense_course_screen.dart';
+import 'package:japanese_universe/services/purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// 과정 데이터가 커서(50KB 넘음) 에셋 읽기가 실제 비동기로 돈다 — pumpAndSettle 대신 실제 시간으로 기다린다.
@@ -45,6 +46,8 @@ void main() {
     t.view.physicalSize = const Size(320, 3000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);
+    Purchase.owned.value = {'all_life': 0}; // L2 는 이용권(2급부터) — 이 테스트는 산 사람 기준
+    addTearDown(() => Purchase.owned.value = const {});
     await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 0)));
     await settle(t, find.byKey(const ValueKey('sense-finish')));
     expect(t.takeException(), isNull);
@@ -96,5 +99,16 @@ void main() {
     expect((d['levels'] as List).map((l) => l['id']), [for (var i = 1; i <= 10; i++) 'L$i']);
     expect(SenseCourse.levels(d).length, 10);
     expect(File('tools/script_publish.py').readAsStringSync(), contains('grammar/sense_course.json'));
+  });
+
+  testWidgets('언어감각 목록 — 이용권 없으면 2급부터 자물쇠', (t) async {
+    t.view.physicalSize = const Size(400, 6000);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: SenseCourseScreen()));
+    await settle(t, find.text('L1  조사 익히기'));
+    expect(find.byIcon(Icons.lock_outline), findsWidgets);
+    expect(find.descendant(of: find.byKey(const ValueKey('sense-L1-5')), matching: find.byIcon(Icons.lock_outline)), findsNothing);
+    expect(find.descendant(of: find.byKey(const ValueKey('sense-L2-talk')), matching: find.byIcon(Icons.lock_outline)), findsOneWidget);
   });
 }

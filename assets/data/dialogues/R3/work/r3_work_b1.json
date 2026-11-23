@@ -678,13 +678,5 @@
    ]
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_work_b1_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "simkung": "data/review/chaos/r3_work_b1_grok_simkung.md: 턴 [14] 교체 · 심쿵: 14번 턴, 미사키가 무심하게 「내일도 올 거지? …와 줘」라고 다정하게 말함",
-  "boost_turns": [
-   14
-  ]
- },
  "twist_type": "slip"
 }

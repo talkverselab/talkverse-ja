@@ -500,10 +500,5 @@
    "rd_manual": true
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_love_b1_grok_rewrite.md [J11]",
-  "final": "2026-11-02 Grok 재작성본 그대로(8턴 また会いたいし, 9턴 マジで?, 12턴 楽しみ)",
-  "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [8, 10, 12] 고침(설렘·반전은 유지)"
- },
  "twist_type": "emotion"
 }

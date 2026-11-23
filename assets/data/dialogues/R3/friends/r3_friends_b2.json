@@ -493,10 +493,5 @@
    "emoji": "😏"
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r3_friends_b2_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [3] 고침(설렘·반전은 유지)"
- },
  "twist_type": "slip"
 }

@@ -15,6 +15,7 @@
 import glob
 import hashlib
 import json
+import re
 import subprocess
 import sys
 import tempfile
@@ -27,12 +28,27 @@ BUCKET = 'talkverse-art'
 PREFIX = 'script/ja'
 
 
+# 공개 원고에 들어가면 안 되는 작업 기록 칸·AI 이름(출처를 드러내지 말 것 — 심사 점검 2026-11-23). 작업 기록은 data/review/work_log_ja.json.
+WORK_KEYS = ('review', 'approved', 'grok', 'grok_rewrite', 'prev', 'src')
+AI_NAMES = re.compile(rb'claude|grok|gemini|chatgpt|openai|anthropic', re.I)
+
+
+def bundled_dirs():
+    """pubspec 에 실린 회화 폴더 — 아직 앱에 안 실은 편(음성 대기 중인 새 편)은 서버에도 올리지 않는다."""
+    t = (ROOT / 'pubspec.yaml').read_text(encoding='utf-8')
+    return set(re.findall(r'-\s*assets/data/(dialogues/R\d/[^/\s]+)/', t))
+
+
 def current():
-    paths = sorted(glob.glob(str(DATA / 'dialogues/R[0-4]/*/*.json'))) + [str(DATA / 'grammar/sense_course.json')]
+    dirs = bundled_dirs()
+    paths = [p for p in sorted(glob.glob(str(DATA / 'dialogues/R[0-4]/*/*.json'))) if str(Path(p).parent.relative_to(DATA)) in dirs]
+    paths += [str(DATA / 'grammar/sense_course.json')]
     out = {}
     for p in paths:
         b = Path(p).read_bytes()
-        json.loads(b)  # 깨진 JSON 은 올리지 않는다
+        j = json.loads(b)  # 깨진 JSON 은 올리지 않는다
+        if isinstance(j, dict) and any(k in j for k in WORK_KEYS) or AI_NAMES.search(b):
+            sys.exit(f'작업 기록 칸·AI 이름이 남아 있음 — 빼고 다시: {p}')
         out[str(Path(p).relative_to(DATA))] = hashlib.sha1(b).hexdigest()[:12]
     return out
 

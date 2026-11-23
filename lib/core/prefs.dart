@@ -33,6 +33,9 @@ class Prefs {
 
   String _k(String k) => '$storePrefix$k';
 
+  /// 언어 접두 없는 공용 키(22개 언어 공통 — 종합 이용권 `all_entitlement_v1` 등).
+  SharedPreferences get raw => _p;
+
   Object? get(String k) => _p.get(_k(k));
   String? getString(String k) => _p.getString(_k(k));
   bool? getBool(String k) => _p.getBool(_k(k));

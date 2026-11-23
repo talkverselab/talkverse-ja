@@ -323,10 +323,5 @@
    "rd": "오보에타.… 츠인, 츠인, 츠인."
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_travel_b2_grok_rewrite.md",
-  "final": "2026-11-03 Grok 2턴 「違います」 덧붙임은 문맥상 어색해 미반영",
-  "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [3, 8] 고침(설렘·반전은 유지)"
- },
  "twist_type": "slip"
 }

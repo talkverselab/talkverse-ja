@@ -309,16 +309,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_travel_b4_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "chaos": "data/review/chaos/r1_travel_b4_grok_chaos.md: 턴 [5, 6, 7, 8] 교체 · 카오스: 기사·내비·A가 각자 다른 역을 말함 + 미터기 계속 상승",
-  "boost_turns": [
-   5,
-   6,
-   7,
-   8
-  ]
- },
  "twist_type": "chaos"
 }

@@ -562,14 +562,5 @@
    "emoji": "🥰"
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_culture_b3_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "simkung": "data/review/chaos/r3_culture_b3_grok_simkung.md: 턴 [16] 교체 · 심쿵: 16번 턴, 할아버지가 「내일도 올래? …혼자 들어가는 것보다 좋지」라고 다정하게 말함",
-  "boost_turns": [
-   16
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 9"
- },
  "twist_type": "reveal"
 }

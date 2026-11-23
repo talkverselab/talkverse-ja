@@ -13,6 +13,7 @@ import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../widgets/selectable_ja_text.dart';
 import 'gairaigo_screen.dart';
+import '../services/paywall_gate.dart';
 
 /// 언어감각 익히기 — 정규과정(2026-11-11 사용자 지시). L1~L10, 급마다 외울 대화 1회 + 참고(2026-11-17 전면 수정).
 /// 회차 = 문법 짧은 설명(points.tip) → 감 익히는 문장(points.sentences). 데이터 `assets/data/grammar/sense_course.json`.
@@ -88,7 +89,14 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
     if (check && await SenseCourse.refresh() && mounted) _load(check: false);
   }
 
+  /// 회차가 든 급 순번(0부터) — 언어감각 2급부터 이용권(freeSenseLevels, PAYWALL_SPEC).
+  int _levelIndex(int index) {
+    final lv = SenseCourse.flat(_data!)[index].$1;
+    return SenseCourse.levels(_data!).indexWhere((l) => l['id'] == lv['id']);
+  }
+
   Future<void> _open(int index) async {
+    if (!await PaywallGate.pass(context, PaywallGate.senseLevelFree(_levelIndex(index))) || !mounted) return;
     final ls = SenseCourse.flat(_data!)[index].$2;
     if (ls['open'] == 'gairaigo') {
       await openPane(context, (_) => const GairaigoScreen(rulesFirst: true)); // 참고 = 외국어 발음 규칙 화면
@@ -121,7 +129,8 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
           style: const TextStyle(fontSize: 12, color: AppColors.muted)),
     ];
     var i = 0;
-    for (final lv in SenseCourse.levels(d)) {
+    for (final (li, lv) in SenseCourse.levels(d).indexed) {
+      final locked = !PaywallGate.premium && !PaywallGate.senseLevelFree(li);
       children.add(Padding(
         padding: const EdgeInsets.fromLTRB(2, 18, 2, 8),
         child: Text('${lv['id']}  ${lv['title']}',
@@ -172,7 +181,9 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
                     child: Text(ls['title'] as String,
                         style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700, color: AppColors.sumi)),
                   ),
-                  if (isDone)
+                  if (locked)
+                    const LockBadge()
+                  else if (isDone)
                     const Icon(Icons.check_circle, color: AppColors.matcha, size: 20)
                   else if (isNext)
                     Text(tr('다음'), style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w800, color: AppColors.ai)),
@@ -222,6 +233,15 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
       nextIdx++;
     }
     if (nextIdx < all.length) {
+      // 다음 회차가 잠긴 급(2급~)이면 결제 화면 먼저 — 안 사면 목록으로
+      final d = await SenseCourse.load();
+      final li = SenseCourse.levels(d).indexWhere((l) => l['id'] == all[nextIdx].$1['id']);
+      if (!mounted) return;
+      if (!await PaywallGate.pass(context, PaywallGate.senseLevelFree(li))) {
+        if (mounted) Navigator.of(context).pop();
+        return;
+      }
+      if (!mounted) return;
       Navigator.of(context).pushReplacement(
           MaterialPageRoute(builder: (_) => SenseLessonScreen(index: nextIdx)));
     } else {

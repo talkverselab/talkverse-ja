@@ -1,0 +1,2080 @@
+{
+ "r0_culture_a1": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_a1_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_a1_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_a2": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_a2_grok_boost.md: 턴 [3, 4, 8] 교체 · 요약: 카오스 3 · 심쿵 8",
+   "boost_turns": [
+    3,
+    4,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [3, 4] 를 강화 전 원문으로 되돌림(심쿵 [8] 유지)",
+   "final": "2026-11-03 Grok 반영(3턴 わかんない)",
+   "grok_rewrite": "data/review/r1_culture_a2_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_a3": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_culture_a3_grok_write.md"
+  }
+ },
+ "r0_culture_b2": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_b2_grok_boost.md: 턴 [3, 8] 교체 · 요약: 카오스 8 · 심쿵 3",
+   "boost_turns": [
+    3,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [8] 를 강화 전 원문으로 되돌림(심쿵 [3] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_b2_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.5자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_b4": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_b4_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 5",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7, 8] 를 강화 전 원문으로 되돌림(심쿵 [5] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_b4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_c1": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_c1_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_c1_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.6자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_c2": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_c2_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 반영(1턴 どう?)",
+   "grok_rewrite": "data/review/r1_culture_c2_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_c3": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_c3_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.2자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_c4": {
+  "review": {
+   "boost": "data/review/chaos/r0_culture_c4_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+   "boost_turns": [
+    6
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_c4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.4자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_culture_c5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_culture_c5_grok_write.md"
+  }
+ },
+ "r0_friends_a2": {
+  "review": {
+   "boost": "data/review/chaos/r0_friends_a2_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+   "boost_turns": [
+    5
+   ],
+   "final": "2026-11-03 Grok J15: 5턴 そうなんだ 추가 제안은 억지라 미반영, 나머지 유지",
+   "grok_rewrite": "data/review/r1_friends_a2_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.7자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_friends_a5": {
+  "review": {
+   "boost": "data/review/chaos/r0_friends_a5_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+   "boost_turns": [
+    6
+   ],
+   "final": "2026-11-03 Grok J18 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_a5_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_friends_a6": {
+  "review": {
+   "boost": "data/review/chaos/r0_friends_a6_grok_boost.md: 턴 [4, 5] 교체 · 요약: 카오스 4 · 심쿵 5",
+   "boost_turns": [
+    4,
+    5
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [4] 를 강화 전 원문으로 되돌림(심쿵 [5] 유지)",
+   "final": "2026-11-03 Grok J19 반영(5턴 爆笑)",
+   "grok_rewrite": "data/review/r1_friends_a6_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 5.5자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_friends_a7": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 4",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_friends_a7_grok_write.md"
+  }
+ },
+ "r0_friends_a8": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_friends_a8_grok_write.md"
+  }
+ },
+ "r0_friends_b3": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 ひま? 추가)",
+   "grok_rewrite": "data/review/r1_friends_b3_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_friends_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_friends_b4_grok_write.md"
+  }
+ },
+ "r0_friends_c3": {
+  "review": {
+   "boost": "data/review/chaos/r0_friends_c3_grok_boost.md: 턴 [7, 8] 교체 · 요약: 카오스 8 · 심쿵 7",
+   "boost_turns": [
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_c3_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 5.1자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_friends_c4": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_friends_c4_grok_write.md"
+  }
+ },
+ "r0_life_a5": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_a5_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_life_a6": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_life_a6_grok_write.md"
+  }
+ },
+ "r0_life_a7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_life_a7_grok_write.md"
+  }
+ },
+ "r0_life_a8": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_life_a8_grok_write.md"
+  }
+ },
+ "r0_life_b1": {
+  "review": {
+   "boost": "data/review/chaos/r0_life_b1_grok_boost.md: 턴 [6, 7] 교체 · 요약: 카오스 6 · 심쿵 7",
+   "boost_turns": [
+    6,
+    7
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_b1_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.1자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_life_b6": {
+  "review": {
+   "boost": "data/review/chaos/r0_life_b6_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_b6_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_life_b7": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 4",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_life_b7_grok_write.md"
+  }
+ },
+ "r0_life_c4": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(7턴 付き合うよ)",
+   "grok_rewrite": "data/review/r1_life_c4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.8자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_life_c5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_life_c5_grok_write.md"
+  }
+ },
+ "r0_love_a3": {
+  "review": {
+   "boost": "data/review/chaos/r0_love_a3_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+   "boost_turns": [
+    5
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_love_a3_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 8.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_a4": {
+  "review": {
+   "boost": "data/review/chaos/r0_love_a4_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 없음",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7, 8] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 이 6턴 침묵(…)을 「ごめん…」으로 바꾸자 했지만 설렘의 침묵이 의도라 초안 유지",
+   "grok_rewrite": "data/review/r1_love_a4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 5.2자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_a5": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_love_a5_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.8자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_a6": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_love_a6_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 5.4자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_a7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_love_a7_grok_write.md"
+  }
+ },
+ "r0_love_a8": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_love_a8_grok_write.md"
+  }
+ },
+ "r0_love_a9": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_love_a9_grok_write.md"
+  }
+ },
+ "r0_love_c2": {
+  "review": {
+   "boost": "data/review/chaos/r0_love_c2_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 없음",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7, 8] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_love_c2_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.5자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_c3": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 眠い?)",
+   "grok_rewrite": "data/review/r1_love_c3_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 5.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_c4": {
+  "review": {
+   "boost": "data/review/chaos/r0_love_c4_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 없음",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7, 8] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 반영(3턴 かわいいの)",
+   "grok_rewrite": "data/review/r1_love_c4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.0자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_love_c5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_love_c5_grok_write.md"
+  }
+ },
+ "r0_love_c6": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_love_c6_grok_write.md"
+  }
+ },
+ "r0_travel_a1": {
+  "review": {
+   "boost": "data/review/chaos/r0_travel_a1_grok_boost.md: 턴 [4, 6, 7, 8] 교체 · 요약: 카오스 4 · 심쿵 7",
+   "boost_turns": [
+    4,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [4, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_a1_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 6.9자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_travel_a2": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_travel_a2_grok_write.md"
+  }
+ },
+ "r0_travel_a3": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_travel_a3_grok_write.md"
+  }
+ },
+ "r0_travel_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_travel_b1_grok_write.md"
+  }
+ },
+ "r0_travel_c4": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 寂しい)",
+   "grok_rewrite": "data/review/r1_travel_c4_grok_rewrite.md",
+   "level_note": "2026-11-02 길이 기준(턴당 평균 7.8자 ≤ 8.0)으로 왕초보(R0)에 배정"
+  }
+ },
+ "r0_travel_c5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r0_travel_c5_grok_write.md"
+  }
+ },
+ "r1_culture_a3": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_a3_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "enrich": "r1_culture_a3_grok_enrich.md: 8턴 교체 · 킥: ‘무서워’라고 오타 냈다가 급하게 ‘귀여워 최고’로 고치고, 마지막에 草를 연발하는 상황. · 강화 재작성 v2 반영",
+   "final": "2026-11-03 Grok 반영(4턴 最高)",
+   "grok_rewrite": "data/review/r1_culture_a3_grok_rewrite.md"
+  }
+ },
+ "r1_culture_a4": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_a4_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+   "boost_turns": [
+    5
+   ],
+   "final": "2026-11-03 Grok 반영(5턴 一緒に行こう)",
+   "grok_rewrite": "data/review/r1_culture_a4_grok_rewrite.md"
+  }
+ },
+ "r1_culture_a5": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_a5_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_a5_grok_rewrite.md"
+  }
+ },
+ "r1_culture_a6": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_a6_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 7",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 반영(3턴 うまい?)",
+   "grok_rewrite": "data/review/r1_culture_a6_grok_rewrite.md"
+  }
+ },
+ "r1_culture_b1": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_b1_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 1턴 「ここだ！」 중복 추가는 미반영",
+   "grok_rewrite": "data/review/r1_culture_b1_grok_rewrite.md"
+  }
+ },
+ "r1_culture_b3": {
+  "review": {
+   "final": "2026-11-03 Grok 4턴 「返すまで」 덧붙임은 어색해 미반영",
+   "grok_rewrite": "data/review/r1_culture_b3_grok_rewrite.md"
+  }
+ },
+ "r1_culture_b5": {
+  "review": {
+   "boost": "data/review/chaos/r1_culture_b5_grok_boost.md: 턴 [6, 7] 교체 · 요약: 카오스 6 · 심쿵 없음",
+   "boost_turns": [
+    6,
+    7
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_culture_b5_grok_rewrite.md"
+  }
+ },
+ "r1_culture_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 どっち派?)",
+   "grok_rewrite": "data/review/r1_culture_b6_grok_rewrite.md"
+  }
+ },
+ "r1_friends_a1": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_a1_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+   "boost_turns": [
+    6
+   ],
+   "final": "2026-11-03 Grok J14 반영(2턴 よろしくお願いします 추가, 3턴 全然)",
+   "grok_rewrite": "data/review/r1_friends_a1_grok_rewrite.md"
+  }
+ },
+ "r1_friends_a3": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_a3_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+   "boost_turns": [
+    5
+   ],
+   "final": "2026-11-03 Grok J16 반영(5턴 マジで 추가)",
+   "grok_rewrite": "data/review/r1_friends_a3_grok_rewrite.md"
+  }
+ },
+ "r1_friends_a4": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_a4_grok_boost.md: 턴 [5] 교체 · 요약: 카오스 없음 · 심쿵 5",
+   "boost_turns": [
+    5
+   ],
+   "final": "2026-11-03 Grok J17: 「タメ口でいいよ？」「会おう！わかった？」 제안은 부자연(의문형 오류·억지)이라 미반영, 초안 유지",
+   "grok_rewrite": "data/review/r1_friends_a4_grok_rewrite.md"
+  }
+ },
+ "r1_friends_a6": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_friends_a6_grok_write.md"
+  }
+ },
+ "r1_friends_b1": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_b1_grok_boost.md: 턴 [5, 7] 교체 · 요약: 카오스 5 · 심쿵 없음",
+   "boost_turns": [
+    5,
+    7
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 7] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_b1_grok_rewrite.md"
+  }
+ },
+ "r1_friends_b2": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_b2_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 7",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지) · 손질 턴 8",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_b2_grok_rewrite.md"
+  }
+ },
+ "r1_friends_b4": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_b4_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 7",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지) · 손질 턴 6",
+   "final": "2026-11-03 Grok 반영(2턴 よろしく, 6턴 爆笑)",
+   "grok_rewrite": "data/review/r1_friends_b4_grok_rewrite.md"
+  }
+ },
+ "r1_friends_b5": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_b5_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_b5_grok_rewrite.md"
+  }
+ },
+ "r1_friends_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_b6_grok_rewrite.md"
+  }
+ },
+ "r1_friends_b7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_friends_b7_grok_write.md"
+  }
+ },
+ "r1_friends_c1": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_c1_grok_rewrite.md"
+  }
+ },
+ "r1_friends_c2": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_c2_grok_boost.md: 턴 [5, 6, 7] 교체 · 요약: 카오스 6 · 심쿵 5",
+   "boost_turns": [
+    5,
+    6,
+    7
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7] 를 강화 전 원문으로 되돌림(심쿵 [5] 유지) · 손질 턴 5",
+   "final": "2026-11-03 Grok 반영(5턴 今起きた)",
+   "grok_rewrite": "data/review/r1_friends_c2_grok_rewrite.md"
+  }
+ },
+ "r1_friends_c4": {
+  "review": {
+   "boost": "data/review/chaos/r1_friends_c4_grok_boost.md: 턴 [6] 교체 · 요약: 카오스 없음 · 심쿵 6",
+   "boost_turns": [
+    6
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_friends_c4_grok_rewrite.md"
+  }
+ },
+ "r1_friends_c5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_friends_c5_grok_write.md"
+  }
+ },
+ "r1_life_a1": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_a1_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 7 · 심쿵 8",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7] 를 강화 전 원문으로 되돌림(심쿵 [8] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_a1_grok_rewrite.md"
+  }
+ },
+ "r1_life_a2": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_a2_grok_rewrite.md"
+  }
+ },
+ "r1_life_a3": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_a3_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 7",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 반영(4턴 どこで?). 6턴 ありがとう 추가는 킥을 늘어뜨려 미반영",
+   "grok_rewrite": "data/review/r1_life_a3_grok_rewrite.md"
+  }
+ },
+ "r1_life_a4": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_a4_grok_rewrite.md"
+  }
+ },
+ "r1_life_a6": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_a6_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 반영(3턴 痛いです)",
+   "grok_rewrite": "data/review/r1_life_a6_grok_rewrite.md"
+  }
+ },
+ "r1_life_a7": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 6",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_life_a7_grok_write.md"
+  }
+ },
+ "r1_life_b2": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_b2_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_b2_grok_rewrite.md"
+  }
+ },
+ "r1_life_b3": {
+  "review": {
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chaos": "data/review/chaos/r1_life_b3_grok_chaos.md: 턴 [5, 6, 7, 8] 교체 · 카오스: 앱 주소 오류로 옆 건물 대기 + 다른 배달원 전화 + 창 손 흔들다 눈 마주침",
+   "final": "2026-11-03 Grok 1턴 「遅い」 추가 제안은 2턴 遅いね 와 겹쳐 미반영 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
+   "grok_rewrite": "data/review/r1_life_b3_grok_rewrite.md"
+  }
+ },
+ "r1_life_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 かな)",
+   "grok_rewrite": "data/review/r1_life_b4_grok_rewrite.md"
+  }
+ },
+ "r1_life_b5": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_b5_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 8",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 7] 를 강화 전 원문으로 되돌림(심쿵 [8] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 ダメ)",
+   "grok_rewrite": "data/review/r1_life_b5_grok_rewrite.md"
+  }
+ },
+ "r1_life_b6": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 4",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_life_b6_grok_write.md"
+  }
+ },
+ "r1_life_b7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_life_b7_grok_write.md"
+  }
+ },
+ "r1_life_c1": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_c1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_c1_grok_rewrite.md"
+  }
+ },
+ "r1_life_c2": {
+  "review": {
+   "enrich": "r1_life_c2_grok_enrich.md: 8턴 교체 · 킥: ‘먼저 먹어’라고 했는데 리쿠가 카레까지 만들어 두고, 편의점보다 낫다고 받아치는 상황. · 강화 재작성 v2 반영",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_c2_grok_rewrite.md"
+  }
+ },
+ "r1_life_c3": {
+  "review": {
+   "boost": "data/review/chaos/r1_life_c3_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_life_c3_grok_rewrite.md"
+  }
+ },
+ "r1_life_c4": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_life_c4_grok_write.md"
+  }
+ },
+ "r1_love_a1": {
+  "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)",
+  "review": {
+   "boost": "data/review/chaos/r1_love_a1_grok_boost.md: 턴 [2, 7, 8] 교체 · 요약: 카오스 2 · 심쿵 7",
+   "boost_turns": [
+    2,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-02 Grok 재작성본 반영(3턴 完全に面接じゃん, 7턴 いらないって). 6턴은 Grok 이 さん 을 뺐지만 7턴 「さん、いらない」가 성립하려면 A 가 さん 을 붙여야 하므로 초안(サクラさん) 유지",
+   "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md [J09]"
+  }
+ },
+ "r1_love_a2": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(2턴 いいね)",
+   "grok_rewrite": "data/review/r1_love_a2_grok_rewrite.md"
+  }
+ },
+ "r1_love_a3": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 6",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_a3_grok_write.md"
+  }
+ },
+ "r1_love_a4": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_a4_grok_write.md"
+  }
+ },
+ "r1_love_a5": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_a5_grok_write.md",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [7, 8] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r1_love_a6": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_a6_grok_write.md"
+  }
+ },
+ "r1_love_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_b1_grok_write.md"
+  }
+ },
+ "r1_love_b2": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_b2_grok_write.md"
+  }
+ },
+ "r1_love_b3": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_b3_grok_write.md"
+  }
+ },
+ "r1_love_c1": {
+  "review": {
+   "boost": "data/review/chaos/r1_love_c1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-02 Grok 재작성본 그대로(4턴 さん 삭제, 5턴 !?)",
+   "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md [J10]"
+  }
+ },
+ "r1_love_c2": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_c2_grok_write.md"
+  }
+ },
+ "r1_love_c3": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_love_c3_grok_write.md"
+  }
+ },
+ "r1_survival_s1": {
+  "approved": "2026-11-02 사용자 리뷰 통과(Grok J07 재작성본)",
+  "review": {
+   "boost": "data/review/chaos/r1_survival_s1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-02 Grok 재작성본 그대로(3턴 大丈夫ですよ 복귀, 5턴 と/も 연결, 6턴 え、全部? 놀람, 7턴 しときます)",
+   "grok_rewrite": "data/review/r1_survival_s1_grok_rewrite.md [J07]"
+  }
+ },
+ "r1_survival_s2": {
+  "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)",
+  "review": {
+   "boost": "data/review/chaos/r1_survival_s2_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-02 Grok 재작성본 그대로(7턴 점원 확인형, 8턴 爆笑)",
+   "grok_rewrite": "data/review/r1_survival_s2_grok_rewrite.md [J08]"
+  }
+ },
+ "r1_survival_s3": {
+  "review": {
+   "boost": "data/review/chaos/r1_survival_s3_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-03 Grok J13 전부 유지(5턴 '기억하기 쉬운 한 줄' 평)",
+   "grok_rewrite": "data/review/r1_survival_s3_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a2": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_a2_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a3": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_a3_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 7",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_a3_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a4": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_a4_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_a4_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a5": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(4턴 すみません)",
+   "grok_rewrite": "data/review/r1_travel_a5_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a6": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(7턴 助かりました)",
+   "grok_rewrite": "data/review/r1_travel_a6_grok_rewrite.md"
+  }
+ },
+ "r1_travel_a7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_travel_a7_grok_write.md"
+  }
+ },
+ "r1_travel_b1": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_b1_grok_boost.md: 턴 [7, 8] 교체 · 요약: 카오스 7 · 심쿵 없음",
+   "boost_turns": [
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 8] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_b1_grok_rewrite.md"
+  }
+ },
+ "r1_travel_b2": {
+  "review": {
+   "final": "2026-11-03 Grok 2턴 「違います」 덧붙임은 문맥상 어색해 미반영",
+   "grok_rewrite": "data/review/r1_travel_b2_grok_rewrite.md",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [3, 8] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r1_travel_b3": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_b3_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_b3_grok_rewrite.md"
+  }
+ },
+ "r1_travel_b4": {
+  "review": {
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "chaos": "data/review/chaos/r1_travel_b4_grok_chaos.md: 턴 [5, 6, 7, 8] 교체 · 카오스: 기사·내비·A가 각자 다른 역을 말함 + 미터기 계속 상승",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_b4_grok_rewrite.md"
+  }
+ },
+ "r1_travel_b5": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_b5_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 반영(5턴 入っていますか). 7턴 抜いてください 는 새우가 없다는 답 뒤라 미반영",
+   "grok_rewrite": "data/review/r1_travel_b5_grok_rewrite.md"
+  }
+ },
+ "r1_travel_b6": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_b6_grok_boost.md: 턴 [6, 7, 8] 교체 · 요약: 카오스 6 · 심쿵 8",
+   "boost_turns": [
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7] 를 강화 전 원문으로 되돌림(심쿵 [8] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_b6_grok_rewrite.md"
+  }
+ },
+ "r1_travel_b7": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_travel_b7_grok_write.md"
+  }
+ },
+ "r1_travel_c1": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_c1_grok_boost.md: 턴 [5, 6, 7, 8] 교체 · 요약: 카오스 5 · 심쿵 8",
+   "boost_turns": [
+    5,
+    6,
+    7,
+    8
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 7] 를 강화 전 원문으로 되돌림(심쿵 [8] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_c1_grok_rewrite.md"
+  }
+ },
+ "r1_travel_c2": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_c2_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_c2_grok_rewrite.md"
+  }
+ },
+ "r1_travel_c3": {
+  "review": {
+   "boost": "data/review/chaos/r1_travel_c3_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r1_travel_c3_grok_rewrite.md"
+  }
+ },
+ "r1_travel_c4": {
+  "review": {
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r1_travel_c4_grok_write.md"
+  }
+ },
+ "r2_culture_b1": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b1_grok_boost.md: 턴 [9] 교체 · 요약: 카오스 없음 · 심쿵 9",
+   "boost_turns": [
+    9
+   ],
+   "final": "2026-11-03 Grok 반영(2턴 どういう意味, 켄에게는 반말). 5·7턴 덧붙임은 미반영",
+   "grok_rewrite": "data/review/r2_culture_b1_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b2_grok_boost.md: 턴 [7, 8, 9, 11] 교체 · 요약: 카오스 7 · 심쿵 11",
+   "boost_turns": [
+    7,
+    8,
+    9,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 8, 9] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_culture_b2_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b3": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b3_grok_boost.md: 턴 [7, 10, 11] 교체 · 요약: 카오스 10 · 심쿵 7",
+   "boost_turns": [
+    7,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [10, 11] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_culture_b3_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b4_grok_boost.md: 턴 [11] 교체 · 요약: 카오스 없음 · 심쿵 11",
+   "boost_turns": [
+    11
+   ],
+   "final": "2026-11-03 Grok 9턴 「本物じゃない」는 뜻이 어긋나 미반영",
+   "grok_rewrite": "data/review/r2_culture_b4_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b5": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b5_grok_boost.md: 턴 [12] 교체 · 요약: 카오스 없음 · 심쿵 12",
+   "boost_turns": [
+    12
+   ],
+   "final": "2026-11-03 Grok 반영(1턴 どう?)",
+   "grok_rewrite": "data/review/r2_culture_b5_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b6": {
+  "review": {
+   "boost_turns": [
+    10,
+    11,
+    12
+   ],
+   "chaos": "data/review/chaos/r2_culture_b6_grok_chaos.md: 턴 [10, 11, 12] 교체 · 카오스: 비둘기 쫓는 순간 바람에 돗자리 날아감 + 옆 회사 단체석에 떨어짐",
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 10,11,12",
+   "final": "2026-11-03 Grok 반영(11턴 お疲れ) · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
+   "grok_rewrite": "data/review/r2_culture_b6_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b7": {
+  "review": {
+   "boost": "data/review/chaos/r2_culture_b7_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 10",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [10] 유지) · 손질 턴 12",
+   "final": "2026-11-03 Grok 반영(1턴 お願いします). 6턴 大丈夫ですよ 는 미반영",
+   "grok_rewrite": "data/review/r2_culture_b7_grok_rewrite.md"
+  }
+ },
+ "r2_culture_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(2턴 最高)",
+   "grok_rewrite": "data/review/r2_culture_b8_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b1": {
+  "review": {
+   "boost_turns": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "chaos": "data/review/chaos/r2_friends_b1_grok_chaos.md: 턴 [8, 9, 10, 11] 교체 · 카오스: 타코야키 전부 UFO + 연기·화재경보 + 켄이 영상 촬영",
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 8,9,10,11",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_friends_b1_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b2_grok_boost.md: 턴 [11] 교체 · 요약: 카오스 없음 · 심쿵 11",
+   "boost_turns": [
+    11
+   ],
+   "final": "2026-11-03 Grok 반영(2턴 大丈夫?)",
+   "grok_rewrite": "data/review/r2_friends_b2_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b3": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b3_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 없음",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 10, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_friends_b3_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b4_grok_boost.md: 턴 [2, 4, 5] 교체 · 요약: 카오스 2 · 심쿵 없음",
+   "boost_turns": [
+    2,
+    4,
+    5
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 4, 5] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 반영(4턴 サプライズ, 7턴 バレてた)",
+   "grok_rewrite": "data/review/r2_friends_b4_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b5": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b5_grok_boost.md: 턴 [11] 교체 · 요약: 카오스 없음 · 심쿵 11",
+   "boost_turns": [
+    11
+   ],
+   "final": "2026-11-03 Grok 4턴 「反省してる」는 침묵의 무게를 깨 미반영",
+   "grok_rewrite": "data/review/r2_friends_b5_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b6": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b6_grok_boost.md: 턴 [11] 교체 · 요약: 카오스 없음 · 심쿵 11",
+   "boost_turns": [
+    11
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_friends_b6_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b7": {
+  "review": {
+   "boost": "data/review/chaos/r2_friends_b7_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 11",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 10, 12] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 2턴 「分ける。」 삽입은 어색해 미반영",
+   "grok_rewrite": "data/review/r2_friends_b7_grok_rewrite.md"
+  }
+ },
+ "r2_friends_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_friends_b8_grok_rewrite.md"
+  }
+ },
+ "r2_life_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_life_b1_grok_rewrite.md"
+  }
+ },
+ "r2_life_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_life_b2_grok_boost.md: 턴 [5, 6, 11, 12] 교체 · 요약: 카오스 5 · 심쿵 12",
+   "boost_turns": [
+    5,
+    6,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 11] 를 강화 전 원문으로 되돌림(심쿵 [12] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_life_b2_grok_rewrite.md"
+  }
+ },
+ "r2_life_b3": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(4턴 マジで?)",
+   "grok_rewrite": "data/review/r2_life_b3_grok_rewrite.md"
+  }
+ },
+ "r2_life_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_life_b4_grok_boost.md: 턴 [2, 4, 5] 교체 · 요약: 카오스 2 · 심쿵 없음",
+   "boost_turns": [
+    2,
+    4,
+    5
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 4, 5] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 どういう意味ですか)",
+   "grok_rewrite": "data/review/r2_life_b4_grok_rewrite.md"
+  }
+ },
+ "r2_life_b5": {
+  "review": {
+   "boost": "data/review/chaos/r2_life_b5_grok_boost.md: 턴 [1, 7, 10, 12] 교체 · 요약: 카오스 7 · 심쿵 1",
+   "boost_turns": [
+    1,
+    7,
+    10,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 10, 12] 를 강화 전 원문으로 되돌림(심쿵 [1] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 お願いします). 4턴 このくらい 는 문맥 밖이라 미반영",
+   "grok_rewrite": "data/review/r2_life_b5_grok_rewrite.md"
+  }
+ },
+ "r2_life_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1·3턴 인사 추가)",
+   "grok_rewrite": "data/review/r2_life_b6_grok_rewrite.md"
+  }
+ },
+ "r2_life_b7": {
+  "review": {
+   "boost": "data/review/chaos/r2_life_b7_grok_boost.md: 턴 [10] 교체 · 요약: 카오스 없음 · 심쿵 10",
+   "boost_turns": [
+    10
+   ],
+   "final": "2026-11-03 Grok 반영(3턴 すみません). 1턴 お願いします 중복은 미반영",
+   "grok_rewrite": "data/review/r2_life_b7_grok_rewrite.md"
+  }
+ },
+ "r2_life_b8": {
+  "review": {
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "chaos": "data/review/chaos/r2_life_b8_grok_chaos.md: 턴 [9, 10, 11, 12] 교체 · 카오스: 괴담 클라이맥스에 초인종·옆집 개 짖음·전기 복구가 겹침",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_life_b8_grok_rewrite.md"
+  }
+ },
+ "r2_love_b1": {
+  "review": {
+   "final": "2026-11-02 Grok 재작성본 그대로(8턴 また会いたいし, 9턴 マジで?, 12턴 楽しみ)",
+   "grok_rewrite": "data/review/r2_love_b1_grok_rewrite.md [J11]",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [8, 10, 12] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r2_love_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_love_b2_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 11",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 10, 12] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 반영(5턴 返信遅れてごめん)",
+   "grok_rewrite": "data/review/r2_love_b2_grok_rewrite.md"
+  }
+ },
+ "r2_love_b3": {
+  "review": {
+   "boost": "data/review/chaos/r2_love_b3_grok_boost.md: 턴 [3, 9, 10, 11] 교체 · 요약: 카오스 3 · 심쿵 10",
+   "boost_turns": [
+    3,
+    9,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [3, 9, 11] 를 강화 전 원문으로 되돌림(심쿵 [10] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_love_b3_grok_rewrite.md"
+  }
+ },
+ "r2_love_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_love_b4_grok_rewrite.md"
+  }
+ },
+ "r2_love_b5": {
+  "review": {
+   "boost": "data/review/chaos/r2_love_b5_grok_boost.md: 턴 [7, 8, 10, 11] 교체 · 요약: 카오스 7 · 심쿵 11",
+   "boost_turns": [
+    7,
+    8,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 8, 10] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 楽しみ). 8턴 マジで? 는 뜻을 모르는 단계라 미반영",
+   "grok_rewrite": "data/review/r2_love_b5_grok_rewrite.md",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [3, 4, 7, 8, 9, 11] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r2_love_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 覚えてる?)",
+   "grok_rewrite": "data/review/r2_love_b6_grok_rewrite.md"
+  }
+ },
+ "r2_love_b7": {
+  "review": {
+   "final": "2026-11-03 Grok 6턴 「好き」 추가는 모국어로만 말하는 장치를 깨므로 미반영",
+   "grok_rewrite": "data/review/r2_love_b7_grok_rewrite.md"
+  }
+ },
+ "r2_love_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(1턴 寂しい, 2턴 連絡するね)",
+   "grok_rewrite": "data/review/r2_love_b8_grok_rewrite.md"
+  }
+ },
+ "r2_study_b1": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b1_grok_boost.md: 턴 [10] 교체 · 요약: 카오스 없음 · 심쿵 10",
+   "boost_turns": [
+    10
+   ],
+   "final": "2026-11-03 Grok 반영(2턴 よろしくお願いします)",
+   "grok_rewrite": "data/review/r2_study_b1_grok_rewrite.md"
+  }
+ },
+ "r2_study_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b2_grok_boost.md: 턴 [7, 8, 12] 교체 · 요약: 카오스 7 · 심쿵 12",
+   "boost_turns": [
+    7,
+    8,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 8] 를 강화 전 원문으로 되돌림(심쿵 [12] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_study_b2_grok_rewrite.md"
+  }
+ },
+ "r2_study_b3": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b3_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 12",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 10, 11] 를 강화 전 원문으로 되돌림(심쿵 [12] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_study_b3_grok_rewrite.md"
+  }
+ },
+ "r2_study_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b4_grok_boost.md: 턴 [12] 교체 · 요약: 카오스 없음 · 심쿵 12",
+   "boost_turns": [
+    12
+   ],
+   "final": "2026-11-03 Grok 3턴 「コツはそれ」 덧붙임은 미반영",
+   "grok_rewrite": "data/review/r2_study_b4_grok_rewrite.md"
+  }
+ },
+ "r2_study_b5": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(12턴 すみません、先に 선사과 농담). 8턴 ありがとう 는 미반영",
+   "grok_rewrite": "data/review/r2_study_b5_grok_rewrite.md"
+  }
+ },
+ "r2_study_b6": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b6_grok_boost.md: 턴 [12] 교체 · 요약: 카오스 없음 · 심쿵 12",
+   "boost_turns": [
+    12
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_study_b6_grok_rewrite.md"
+  }
+ },
+ "r2_study_b7": {
+  "review": {
+   "boost": "data/review/chaos/r2_study_b7_grok_boost.md: 턴 [7, 8, 9, 10] 교체 · 요약: 카오스 7 · 심쿵 10",
+   "boost_turns": [
+    7,
+    8,
+    9,
+    10
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 8, 9] 를 강화 전 원문으로 되돌림(심쿵 [10] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_study_b7_grok_rewrite.md"
+  }
+ },
+ "r2_study_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_study_b8_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(4턴 생존 표현)",
+   "grok_rewrite": "data/review/r2_travel_b1_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b2": {
+  "review": {
+   "boost": "data/review/chaos/r2_travel_b2_grok_boost.md: 턴 [4, 6, 10, 11] 교체 · 요약: 카오스 4 · 심쿵 11",
+   "boost_turns": [
+    4,
+    6,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [4, 6, 10] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 いただきます). 10턴 감사 추가는 미반영",
+   "grok_rewrite": "data/review/r2_travel_b2_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b3": {
+  "review": {
+   "boost_turns": [
+    8,
+    9,
+    10,
+    11
+   ],
+   "chaos": "data/review/chaos/r2_travel_b3_grok_chaos.md: 턴 [8, 9, 10, 11] 교체 · 카오스: 우회전 대신 와이퍼 + 내비 「다음 오른쪽」 반복 + 뒤차 경적 + 유카 웃느라 말 못 함",
+   "final": "2026-11-03 Grok 2·5턴 덧붙임(お願いします·大丈夫ですよ)은 문맥 밖이라 미반영",
+   "grok_rewrite": "data/review/r2_travel_b3_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_travel_b4_grok_boost.md: 턴 [9, 10, 11, 12] 교체 · 요약: 카오스 9 · 심쿵 12",
+   "boost_turns": [
+    9,
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [9, 10, 11] 를 강화 전 원문으로 되돌림(심쿵 [12] 유지)",
+   "final": "2026-11-03 Grok 반영(1턴 見えない, 5턴 まあいいか)",
+   "grok_rewrite": "data/review/r2_travel_b4_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b5": {
+  "review": {
+   "boost": "data/review/chaos/r2_travel_b5_grok_boost.md: 턴 [12] 교체 · 요약: 카오스 없음 · 심쿵 12",
+   "boost_turns": [
+    12
+   ],
+   "final": "2026-11-03 Grok 2턴 약사의 どういう意味ですか 는 역할상 어색해 미반영",
+   "grok_rewrite": "data/review/r2_travel_b5_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b6": {
+  "review": {
+   "boost": "data/review/chaos/r2_travel_b6_grok_boost.md: 턴 [2, 6, 8, 11] 교체 · 요약: 카오스 2 · 심쿵 11",
+   "boost_turns": [
+    2,
+    6,
+    8,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 6, 8] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지) · 손질 턴 10",
+   "final": "2026-11-03 Grok 반영(4턴 合ってる?). 7턴 違う 중복은 미반영",
+   "grok_rewrite": "data/review/r2_travel_b6_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b7": {
+  "review": {
+   "final": "2026-11-03 Grok 4턴 どういう意味ですか 덧붙임은 길어져 미반영",
+   "grok_rewrite": "data/review/r2_travel_b7_grok_rewrite.md"
+  }
+ },
+ "r2_travel_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(11턴 連絡するね). 1턴 気をつけて 는 미반영",
+   "grok_rewrite": "data/review/r2_travel_b8_grok_rewrite.md"
+  }
+ },
+ "r2_work_b1": {
+  "review": {
+   "boost": "data/review/chaos/r2_work_b1_grok_boost.md: 턴 [7, 9, 10, 11] 교체 · 요약: 카오스 7 · 심쿵 11",
+   "boost_turns": [
+    7,
+    9,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [7, 9, 10] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 반영(2턴 よろしくお願いします). 10턴 すみません 은 미반영",
+   "grok_rewrite": "data/review/r2_work_b1_grok_rewrite.md"
+  }
+ },
+ "r2_work_b2": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(2턴 確認します)",
+   "grok_rewrite": "data/review/r2_work_b2_grok_rewrite.md"
+  }
+ },
+ "r2_work_b3": {
+  "review": {
+   "final": "2026-11-03 Grok 11턴 「お疲れさまでした」는 건배 자리라 미반영",
+   "grok_rewrite": "data/review/r2_work_b3_grok_rewrite.md"
+  }
+ },
+ "r2_work_b4": {
+  "review": {
+   "boost": "data/review/chaos/r2_work_b4_grok_boost.md: 턴 [6, 8, 10, 11] 교체 · 요약: 카오스 6 · 심쿵 11",
+   "boost_turns": [
+    6,
+    8,
+    10,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 8, 10] 를 강화 전 원문으로 되돌림(심쿵 [11] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_work_b4_grok_rewrite.md"
+  }
+ },
+ "r2_work_b5": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r2_work_b5_grok_rewrite.md"
+  }
+ },
+ "r2_work_b6": {
+  "review": {
+   "boost": "data/review/chaos/r2_work_b6_grok_boost.md: 턴 [12] 교체 · 요약: 카오스 없음 · 심쿵 12",
+   "boost_turns": [
+    12
+   ],
+   "final": "2026-11-03 Grok 1·8턴 덧붙임(すみません·お願いします)은 자리가 어색해 미반영",
+   "grok_rewrite": "data/review/r2_work_b6_grok_rewrite.md"
+  }
+ },
+ "r2_work_b7": {
+  "review": {
+   "boost": "data/review/chaos/r2_work_b7_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
+   "boost_turns": [
+    8
+   ],
+   "final": "2026-11-03 Grok 반영(8턴 お疲れさま). 9·12턴은 뜻이 어긋나 미반영",
+   "grok_rewrite": "data/review/r2_work_b7_grok_rewrite.md"
+  }
+ },
+ "r2_work_b8": {
+  "review": {
+   "final": "2026-11-03 Grok 반영(9턴 寂しいです)",
+   "grok_rewrite": "data/review/r2_work_b8_grok_rewrite.md"
+  }
+ },
+ "r3_culture_b1": {
+  "review": {
+   "boost": "data/review/chaos/r3_culture_b1_grok_boost.md: 턴 [10, 11, 12] 교체 · 요약: 카오스 10 · 심쿵 없음",
+   "boost_turns": [
+    10,
+    11,
+    12
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [10, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_culture_b1_grok_write.md"
+  }
+ },
+ "r3_culture_b2": {
+  "review": {
+   "boost_turns": [
+    11,
+    12,
+    13,
+    14
+   ],
+   "chaos": "data/review/chaos/r3_culture_b2_grok_chaos.md: 턴 [11, 12, 13, 14] 교체 · 카오스: 라쿠고가 질문 순간에 켄 폰 벨소리 + A 방석 미끄러짐 + 그걸 그대로 오치로 사용",
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 11",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만 · 턴 10 표현 풀 2회 맞추려 한 마디 추가 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
+   "grok_write": "data/review/write/r3_culture_b2_grok_write.md"
+  }
+ },
+ "r3_culture_b3": {
+  "review": {
+   "boost_turns": [
+    16
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 9",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_culture_b3_grok_write.md",
+   "simkung": "data/review/chaos/r3_culture_b3_grok_simkung.md: 턴 [16] 교체 · 심쿵: 16번 턴, 할아버지가 「내일도 올래? …혼자 들어가는 것보다 좋지」라고 다정하게 말함"
+  }
+ },
+ "r3_culture_b4": {
+  "review": {
+   "boost": "data/review/chaos/r3_culture_b4_grok_boost.md: 턴 [12, 13] 교체 · 요약: 카오스 12 · 심쿵 없음",
+   "boost_turns": [
+    12,
+    13
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [12, 13] 를 강화 전 원문으로 되돌림(심쿵 [] 유지) · 손질 턴 12",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_culture_b4_grok_write.md"
+  }
+ },
+ "r3_culture_b5": {
+  "review": {
+   "boost_turns": [
+    13
+   ],
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_culture_b5_grok_write.md",
+   "simkung": "data/review/chaos/r3_culture_b5_grok_simkung.md: 턴 [13] 교체 · 심쿵: 13번 턴, 홈런 뒤 미사키가 A 손을 잡고 뛰다가 둘 다 잠깐 멈칫함"
+  }
+ },
+ "r3_culture_b6": {
+  "review": {
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 13",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_culture_b6_grok_write.md"
+  }
+ },
+ "r3_friends_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 6턴 どうすれば? 덧붙임은 미반영(10턴 작전으로 이어지는 흐름 유지)",
+   "grok_rewrite": "data/review/r3_friends_b1_grok_rewrite.md",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [12, 15] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r3_friends_b2": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_friends_b2_grok_rewrite.md",
+   "rating12": "2026-11-11 사용자 지시 「연애·플러팅 표현은 12+ 기준으로」 — 외박·목욕 암시 턴 [3] 고침(설렘·반전은 유지)"
+  }
+ },
+ "r3_friends_b3": {
+  "review": {
+   "boost": "data/review/chaos/r3_friends_b3_grok_boost.md: 턴 [11, 12, 14] 교체 · 요약: 카오스 11 · 심쿵 없음",
+   "boost_turns": [
+    11,
+    12,
+    14
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [11, 12, 14] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_friends_b3_grok_rewrite.md"
+  }
+ },
+ "r3_friends_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_friends_b4_grok_rewrite.md"
+  }
+ },
+ "r3_friends_b5": {
+  "review": {
+   "boost": "data/review/chaos/r3_friends_b5_grok_boost.md: 턴 [12, 13, 14] 교체 · 요약: 카오스 12 · 심쿵 없음",
+   "boost_turns": [
+    12,
+    13,
+    14
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [12, 13, 14] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 반영(4턴 サプライズ — R2 b4 와 대칭)",
+   "grok_rewrite": "data/review/r3_friends_b5_grok_rewrite.md"
+  }
+ },
+ "r3_friends_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 9·14턴 덧붙임은 콜백(「会おう！」 한 단어 교정)을 깨 미반영",
+   "grok_rewrite": "data/review/r3_friends_b6_grok_rewrite.md"
+  }
+ },
+ "r3_life_b1": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_life_b1_grok_rewrite.md"
+  }
+ },
+ "r3_life_b2": {
+  "review": {
+   "boost": "data/review/chaos/r3_life_b2_grok_boost.md: 턴 [8, 9, 10, 13] 교체 · 요약: 카오스 8 · 심쿵 13",
+   "boost_turns": [
+    8,
+    9,
+    10,
+    13
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [8, 9, 10] 를 강화 전 원문으로 되돌림(심쿵 [13] 유지)",
+   "final": "2026-11-03 Grok 반영(11턴 しんどい?)",
+   "grok_rewrite": "data/review/r3_life_b2_grok_rewrite.md"
+  }
+ },
+ "r3_life_b3": {
+  "review": {
+   "boost": "data/review/chaos/r3_life_b3_grok_boost.md: 턴 [15] 교체 · 요약: 카오스 없음 · 심쿵 15",
+   "boost_turns": [
+    15
+   ],
+   "final": "2026-11-03 Grok 반영(6턴 どういう意味ですか, 7턴 大丈夫やで)",
+   "grok_rewrite": "data/review/r3_life_b3_grok_rewrite.md"
+  }
+ },
+ "r3_life_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_life_b4_grok_rewrite.md"
+  }
+ },
+ "r3_life_b5": {
+  "review": {
+   "boost": "data/review/chaos/r3_life_b5_grok_boost.md: 턴 [15] 교체 · 요약: 카오스 없음 · 심쿵 15",
+   "boost_turns": [
+    15
+   ],
+   "final": "2026-11-03 Grok 12턴 덧붙임은 흐름이 끊겨 미반영",
+   "grok_rewrite": "data/review/r3_life_b5_grok_rewrite.md"
+  }
+ },
+ "r3_life_b6": {
+  "review": {
+   "boost_turns": [
+    13,
+    14,
+    15,
+    16
+   ],
+   "chaos": "data/review/chaos/r3_life_b6_grok_chaos.md: 턴 [13, 14, 15, 16] 교체 · 카오스: 집주인·이웃 아주머니·사쿠라가 동시에 다른 뒤집기 방법 가르침 + A가 다 따르다 UFO 탄생",
+   "final": "2026-11-03 Grok 반영(8턴 最高や)",
+   "grok_rewrite": "data/review/r3_life_b6_grok_rewrite.md"
+  }
+ },
+ "r3_love_b1": {
+  "review": {
+   "boost": "data/review/chaos/r3_love_b1_grok_boost.md: 턴 [13, 14, 15] 교체 · 요약: 카오스 13 · 심쿵 없음",
+   "boost_turns": [
+    13,
+    14,
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [13, 14, 15] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-02 Grok 재작성본 그대로(10턴 침묵+マジで?, 16턴 爆笑)",
+   "grok_rewrite": "data/review/r3_love_b1_grok_rewrite.md [J12]"
+  }
+ },
+ "r3_love_b2": {
+  "review": {
+   "final": "2026-11-03 Grok 12턴 マジで? 덧붙임은 미반영",
+   "grok_rewrite": "data/review/r3_love_b2_grok_rewrite.md"
+  }
+ },
+ "r3_love_b3": {
+  "review": {
+   "boost": "data/review/chaos/r3_love_b3_grok_boost.md: 턴 [5, 6, 7] 교체 · 요약: 카오스 5 · 심쿵 없음",
+   "boost_turns": [
+    5,
+    6,
+    7
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [5, 6, 7] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_love_b3_grok_rewrite.md"
+  }
+ },
+ "r3_love_b4": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_love_b4_grok_rewrite.md"
+  }
+ },
+ "r3_love_b5": {
+  "review": {
+   "boost": "data/review/chaos/r3_love_b5_grok_boost.md: 턴 [16] 교체 · 요약: 카오스 없음 · 심쿵 16",
+   "boost_turns": [
+    16
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_love_b5_grok_rewrite.md"
+  }
+ },
+ "r3_love_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 6턴 「待ってる」는 비밀(A 가 간다)과 어긋나 미반영",
+   "grok_rewrite": "data/review/r3_love_b6_grok_rewrite.md"
+  }
+ },
+ "r3_study_b1": {
+  "review": {
+   "boost_turns": [
+    14
+   ],
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만 · 턴 11 표현 풀 2회 맞추려 한 마디 추가 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
+   "grok_write": "data/review/write/r3_study_b1_grok_write.md",
+   "simkung": "data/review/chaos/r3_study_b1_grok_simkung.md: 턴 [14] 교체 · 심쿵: 14번 턴, 민이 「{name}가 없으면 이 스터디 이어지지 않아」라고 진심으로 말함"
+  }
+ },
+ "r3_study_b2": {
+  "review": {
+   "boost_turns": [
+    14
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 9,10",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_study_b2_grok_write.md",
+   "simkung": "data/review/chaos/r3_study_b2_grok_simkung.md: 턴 [14] 교체 · 심쿵: 14번 턴, 리나가 먼저 「…내일도 올래?」라고 살짝 설레게 말함"
+  }
+ },
+ "r3_study_b3": {
+  "review": {
+   "boost": "data/review/chaos/r3_study_b3_grok_boost.md: 턴 [10, 11, 12] 교체 · 요약: 카오스 10 · 심쿵 없음",
+   "boost_turns": [
+    10,
+    11,
+    12,
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [10, 11, 12] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_study_b3_grok_write.md",
+   "simkung": "data/review/chaos/r3_study_b3_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 민이 「제일 처음에 {name} 일본어 들은 건 나야」라고 말함"
+  }
+ },
+ "r3_study_b4": {
+  "review": {
+   "boost_turns": [
+    16
+   ],
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_study_b4_grok_write.md",
+   "simkung": "data/review/chaos/r3_study_b4_grok_simkung.md: 턴 [16] 교체 · 심쿵: 16번 턴, 교수가 나가며 민에게 「좋은 친구네요」라고 말함"
+  }
+ },
+ "r3_study_b5": {
+  "review": {
+   "boost_turns": [
+    7
+   ],
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_study_b5_grok_write.md",
+   "simkung": "data/review/chaos/r3_study_b5_grok_simkung.md: 턴 [7] 교체 · 심쿵: 7번 턴, 호세가 처음으로 진지하게 「같이 합격하자」라고 말함"
+  }
+ },
+ "r3_study_b6": {
+  "review": {
+   "boost": "data/review/chaos/r3_study_b6_grok_boost.md: 턴 [13, 14, 15] 교체 · 요약: 카오스 13 · 심쿵 없음",
+   "boost_turns": [
+    13,
+    14,
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [13, 14, 15] 를 강화 전 원문으로 되돌림(심쿵 [] 유지) · 손질 턴 13,14",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_study_b6_grok_write.md"
+  }
+ },
+ "r3_travel_b1": {
+  "review": {
+   "boost": "data/review/chaos/r3_travel_b1_grok_boost.md: 턴 [14] 교체 · 요약: 카오스 없음 · 심쿵 14",
+   "boost_turns": [
+    14
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_travel_b1_grok_rewrite.md"
+  }
+ },
+ "r3_travel_b2": {
+  "review": {
+   "boost": "data/review/chaos/r3_travel_b2_grok_boost.md: 턴 [10, 11, 13] 교체 · 요약: 카오스 10 · 심쿵 없음",
+   "boost_turns": [
+    10,
+    11,
+    13
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [10, 11, 13] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_travel_b2_grok_rewrite.md"
+  }
+ },
+ "r3_travel_b3": {
+  "review": {
+   "boost": "data/review/chaos/r3_travel_b3_grok_boost.md: 턴 [13, 14, 15] 교체 · 요약: 카오스 13 · 심쿵 없음",
+   "boost_turns": [
+    13,
+    14,
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [13, 14, 15] 를 강화 전 원문으로 되돌림(심쿵 [] 유지)",
+   "final": "2026-11-03 Grok 반영(6턴 大丈夫)",
+   "grok_rewrite": "data/review/r3_travel_b3_grok_rewrite.md"
+  }
+ },
+ "r3_travel_b4": {
+  "review": {
+   "boost": "data/review/chaos/r3_travel_b4_grok_boost.md: 턴 [16] 교체 · 요약: 카오스 없음 · 심쿵 16",
+   "boost_turns": [
+    16
+   ],
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_travel_b4_grok_rewrite.md"
+  }
+ },
+ "r3_travel_b5": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_travel_b5_grok_rewrite.md"
+  }
+ },
+ "r3_travel_b6": {
+  "review": {
+   "final": "2026-11-03 Grok 재작성 전부 유지",
+   "grok_rewrite": "data/review/r3_travel_b6_grok_rewrite.md"
+  }
+ },
+ "r3_work_b1": {
+  "review": {
+   "boost_turns": [
+    14
+   ],
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b1_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b1_grok_simkung.md: 턴 [14] 교체 · 심쿵: 14번 턴, 미사키가 무심하게 「내일도 올 거지? …와 줘」라고 다정하게 말함"
+  }
+ },
+ "r3_work_b2": {
+  "review": {
+   "boost_turns": [
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 11,12,13",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b2_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b2_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 과장이 「아까 결론 좋았네」라고 처음 칭찬함"
+  }
+ },
+ "r3_work_b3": {
+  "review": {
+   "boost_turns": [
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 10,11",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b3_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b3_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 과장이 「우리 {name}는 정직한 게 장점이야」라고 A를 감싸며 칭찬함"
+  }
+ },
+ "r3_work_b4": {
+  "review": {
+   "boost": "data/review/chaos/r3_work_b4_grok_boost.md: 턴 [2, 3, 9] 교체 · 요약: 카오스 2 · 심쿵 없음",
+   "boost_turns": [
+    2,
+    3,
+    9,
+    11
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 3, 9] 를 강화 전 원문으로 되돌림(심쿵 [] 유지) · 손질 턴 9,10",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b4_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b4_grok_simkung.md: 턴 [11] 교체 · 심쿵: 11번 턴, 미사키가 과자를 나누며 A 몫을 더 크게 쪼개 줌"
+  }
+ },
+ "r3_work_b5": {
+  "review": {
+   "boost_turns": [
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 12",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b5_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b5_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 과장이 「도쿄에서 온 애 아니라 우리 애야」라고 인정하며 말함"
+  }
+ },
+ "r3_work_b6": {
+  "review": {
+   "boost": "data/review/chaos/r3_work_b6_grok_boost.md: 턴 [13, 14, 15] 교체 · 요약: 카오스 13 · 심쿵 없음",
+   "boost_turns": [
+    13,
+    14,
+    15
+   ],
+   "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [13, 14, 15] 를 강화 전 원문으로 되돌림(심쿵 [] 유지) · 손질 턴 13",
+   "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
+   "grok_write": "data/review/write/r3_work_b6_grok_write.md",
+   "simkung": "data/review/chaos/r3_work_b6_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 미사키가 「내년에도 파트너는 너야」라고 말함"
+  }
+ },
+ "r4_culture_b1": {
+  "review": {
+   "grok_write": "r4_culture_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ },
+ "r4_friends_b1": {
+  "review": {
+   "grok_write": "r4_friends_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ },
+ "r4_life_b1": {
+  "review": {
+   "grok_write": "r4_life_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ },
+ "r4_love_b1": {
+  "review": {
+   "grok_write": "r4_love_b1_grok_write.md 2026-11-18 — 16턴 모두 Grok 작성 그대로(사용자 지시 「Grok으로 다시 써」)"
+  }
+ },
+ "r4_study_b1": {
+  "review": {
+   "grok_write": "r4_study_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ },
+ "r4_travel_b1": {
+  "review": {
+   "grok_write": "r4_travel_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ },
+ "r4_work_b1": {
+  "review": {
+   "grok_write": "r4_work_b1_grok_write.md 2026-11-22 — 16턴 모두 Grok 작성 그대로(사용자 「R4 진행」)"
+  }
+ }
+}

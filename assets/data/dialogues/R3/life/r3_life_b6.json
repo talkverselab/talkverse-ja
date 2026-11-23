@@ -538,16 +538,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r3_life_b6_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(8턴 最高や)",
-  "chaos": "data/review/chaos/r3_life_b6_grok_chaos.md: 턴 [13, 14, 15, 16] 교체 · 카오스: 집주인·이웃 아주머니·사쿠라가 동시에 다른 뒤집기 방법 가르침 + A가 다 따르다 UFO 탄생",
-  "boost_turns": [
-   13,
-   14,
-   15,
-   16
-  ]
- },
  "twist_type": "chaos"
 }

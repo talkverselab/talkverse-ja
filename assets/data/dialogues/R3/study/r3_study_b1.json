@@ -558,13 +558,5 @@
    "emoji": "😆"
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_study_b1_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만 · 턴 11 표현 풀 2회 맞추려 한 마디 추가 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
-  "simkung": "data/review/chaos/r3_study_b1_grok_simkung.md: 턴 [14] 교체 · 심쿵: 14번 턴, 민이 「{name}가 없으면 이 스터디 이어지지 않아」라고 진심으로 말함",
-  "boost_turns": [
-   14
-  ]
- },
  "twist_type": "reveal"
 }

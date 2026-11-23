@@ -452,16 +452,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_travel_b3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 2·5턴 덧붙임(お願いします·大丈夫ですよ)은 문맥 밖이라 미반영",
-  "chaos": "data/review/chaos/r2_travel_b3_grok_chaos.md: 턴 [8, 9, 10, 11] 교체 · 카오스: 우회전 대신 와이퍼 + 내비 「다음 오른쪽」 반복 + 뒤차 경적 + 유카 웃느라 말 못 함",
-  "boost_turns": [
-   8,
-   9,
-   10,
-   11
-  ]
- },
  "twist_type": "chaos"
 }

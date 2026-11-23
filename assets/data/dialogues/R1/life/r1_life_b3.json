@@ -346,16 +346,5 @@
    "emoji": "😟"
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_life_b3_grok_rewrite.md",
-  "final": "2026-11-03 Grok 1턴 「遅い」 추가 제안은 2턴 遅いね 와 겹쳐 미반영 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
-  "chaos": "data/review/chaos/r1_life_b3_grok_chaos.md: 턴 [5, 6, 7, 8] 교체 · 카오스: 앱 주소 오류로 옆 건물 대기 + 다른 배달원 전화 + 창 손 흔들다 눈 마주침",
-  "boost_turns": [
-   5,
-   6,
-   7,
-   8
-  ]
- },
  "twist_type": "chaos"
 }

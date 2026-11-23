@@ -22,6 +22,7 @@ class CurLevel {
   final Map<String, int> daily; // light·normal·focus → 하루 새 편 수
   final String? wordSet; // 준비 급수의 단어 묶음(jlpt_n5 …)
   final double wordMix; // 급수 문제 중 단어 문제 비율 0~1(없으면 0.5, §12 끝줄)
+  final bool free; // 이용권 없이 열림(서버 값, 없으면 1단계만 — PAYWALL_SPEC §2)
   const CurLevel({
     required this.key,
     required this.title,
@@ -32,6 +33,7 @@ class CurLevel {
     this.daily = const {'light': 1, 'normal': 2, 'focus': 3},
     this.wordSet,
     this.wordMix = 0.5,
+    this.free = false,
   });
 
   /// JLPT 단어 급수(jlpt_n5 → 5). 없으면 null.
@@ -59,6 +61,7 @@ class CurLevel {
       daily: daily.isEmpty ? (defaults?.daily ?? const {'light': 1, 'normal': 2, 'focus': 3}) : daily,
       wordSet: j['wordSet'] as String?,
       wordMix: ((j['wordMix'] as num?)?.toDouble() ?? 0.5).clamp(0.0, 1.0),
+      free: j['free'] is bool ? j['free'] as bool : key == '1',
     );
   }
 }
@@ -73,7 +76,9 @@ class CurriculumPlan {
   final int rev;
   final List<CurLevel> stages;
   final List<CurPrep> prep;
-  const CurriculumPlan(this.rev, this.stages, this.prep);
+  final int freeSteps; // 문법 스텝 무료 한도(ja 는 따로 문법 스텝 메뉴가 없어 안 씀)
+  final int freeSenseLevels; // 언어감각 무료 급 수
+  const CurriculumPlan(this.rev, this.stages, this.prep, {this.freeSteps = 2, this.freeSenseLevels = 1});
 
   factory CurriculumPlan.fromJson(Map j) {
     final stages = <CurLevel>[
@@ -89,7 +94,8 @@ class CurriculumPlan {
           ]),
     ];
     if (stages.isEmpty) throw const FormatException('stages 없음');
-    return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, stages, prep);
+    return CurriculumPlan((j['rev'] as num?)?.toInt() ?? 0, stages, prep,
+        freeSteps: (j['freeSteps'] as num?)?.toInt() ?? 2, freeSenseLevels: (j['freeSenseLevels'] as num?)?.toInt() ?? 1);
   }
 
   /// JSON 이 없을 때: 회화 레벨로 단계를 만든다(R0+R1 → 1, R2 → 2 …).
@@ -97,7 +103,7 @@ class CurriculumPlan {
     final stages = <CurLevel>[];
     for (var n = 1; n <= 5; n++) {
       final ids = n == 1 ? [...?idsByRegion['R0'], ...?idsByRegion['R1']] : [...?idsByRegion['R$n']];
-      stages.add(CurLevel(key: '$n', title: '$n단계', dialogueIds: ids));
+      stages.add(CurLevel(key: '$n', title: '$n단계', dialogueIds: ids, free: n == 1));
     }
     return CurriculumPlan(0, stages, const []);
   }
@@ -203,4 +209,11 @@ class CurriculumPlanStore {
       client.close(force: true);
     }
   }
+}
+
+/// 회화 편이 무료인가 — 무료 단계에 든 편, 또는 회화 1단계(R0·R1). 그 밖(R2~)은 이용권(PAYWALL_SPEC §2).
+bool isDialogueFree(String id, String region, CurriculumPlan? plan) {
+  if (region == 'R0' || region == 'R1') return true;
+  if (plan == null) return false;
+  return plan.stages.any((s) => s.free && s.dialogueIds.contains(id));
 }

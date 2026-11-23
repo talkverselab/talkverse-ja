@@ -425,17 +425,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_friends_b1_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "chaos": "data/review/chaos/r2_friends_b1_grok_chaos.md: 턴 [8, 9, 10, 11] 교체 · 카오스: 타코야키 전부 UFO + 연기·화재경보 + 켄이 영상 촬영",
-  "boost_turns": [
-   8,
-   9,
-   10,
-   11
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 8,9,10,11"
- },
  "twist_type": "chaos"
 }

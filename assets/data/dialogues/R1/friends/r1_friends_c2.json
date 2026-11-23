@@ -308,16 +308,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_friends_c2_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(5턴 今起きた)",
-  "boost": "data/review/chaos/r1_friends_c2_grok_boost.md: 턴 [5, 6, 7] 교체 · 요약: 카오스 6 · 심쿵 5",
-  "boost_turns": [
-   5,
-   6,
-   7
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [6, 7] 를 강화 전 원문으로 되돌림(심쿵 [5] 유지) · 손질 턴 5"
- },
  "twist_type": "chaos"
 }

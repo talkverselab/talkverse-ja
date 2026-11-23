@@ -38,6 +38,8 @@ class Purchase {
   /// 상품 ID → 만료 시각(ms, 평생이면 0)
   static final owned = ValueNotifier<Map<String, int>>(const {});
   static final products = ValueNotifier<Map<String, ProductDetails>>(const {});
+  /// 스토어 상품 불러오기: 'loading' · 'ok' · 'failed'(결제 화면이 「잠시 뒤 다시 시도」를 보임 — 끝없이 돌지 않게, PAYWALL_SPEC §3)
+  static final loadState = ValueNotifier<String>('loading');
   /// 구매 진행 상태 알림(화면이 듣고 안내): null = 없음, 'pending' · 'error' · 'done' · 'restored' · 'nothing'
   static final status = ValueNotifier<String?>(null);
   static StreamSubscription<List<PurchaseDetails>>? _sub;
@@ -67,13 +69,54 @@ class Purchase {
     if ((p.getStringList('iap_owned') ?? const []).contains(code)) m['lang_${code}_life'] = 0; // 옛 저장 방식(평생 하나)
     owned.value = m;
     Account.user.addListener(_onAccount);
-    if (kIsWeb || !(Platform.isIOS || Platform.isAndroid)) return;
+    _loadMirror(p);
+    if (kIsWeb || !(Platform.isIOS || Platform.isAndroid)) {
+      loadState.value = 'failed';
+      return;
+    }
     if (ownStream) _sub ??= InAppPurchase.instance.purchaseStream.listen(onPurchaseUpdates, onError: (_) => status.value = 'error');
+    await loadProducts();
+    // 안드로이드만 시작 때 조용히 다시 물어 기기 기록을 맞춘다(PAYWALL_SPEC §4). iOS 는 복원이 Apple ID 암호 창을 띄울 수 있어
+    // 「구매 복원」 단추로만 — 미완료 거래는 purchaseStream 이 받는다(uk 11-23 기준 통일)
+    if (ownStream && Platform.isAndroid) {
+      try {
+        await InAppPurchase.instance.restorePurchases();
+      } catch (_) {}
+    }
+  }
+
+  /// 상품 목록을 스토어에서 받는다(10초 안에 못 받으면 failed).
+  static Future<void> loadProducts() async {
+    loadState.value = 'loading';
     try {
-      if (!await InAppPurchase.instance.isAvailable()) return;
-      final r = await InAppPurchase.instance.queryProductDetails({for (final x in list) x.id});
+      if (!await InAppPurchase.instance.isAvailable().timeout(const Duration(seconds: 10))) {
+        loadState.value = 'failed';
+        return;
+      }
+      final r = await InAppPurchase.instance.queryProductDetails({for (final x in plans) x.id}).timeout(const Duration(seconds: 10));
       products.value = {for (final d in r.productDetails) d.id: d};
-    } catch (_) {}
+      loadState.value = products.value.isEmpty ? 'failed' : 'ok';
+    } catch (_) {
+      loadState.value = 'failed';
+    }
+  }
+
+  /// 공통 저장 키(PAYWALL_SPEC §4): 이 언어 `<언어>_entitlement_v1`(Prefs 가 접두), 종합은 22개 언어 공통 `all_entitlement_v1`.
+  static void _loadMirror(Prefs p) {
+    final m = {...owned.value};
+    for (final raw in [p.getString('entitlement_v1'), p.raw.getString('all_entitlement_v1')]) {
+      if (raw == null) continue;
+      try {
+        (jsonDecode(raw) as Map).forEach((k, v) => m.putIfAbsent('$k', () => (v as num).toInt()));
+      } catch (_) {}
+    }
+    owned.value = m;
+  }
+
+  static Future<void> _saveMirror(Prefs p) async {
+    await p.setString('entitlement_v1', jsonEncode(owned.value));
+    final all = {for (final e in owned.value.entries) if (e.key.startsWith('all_')) e.key: e.value};
+    if (all.isNotEmpty) await p.raw.setString('all_entitlement_v1', jsonEncode(all));
   }
 
   /// 스토어 표시 가격(예 ₩3,900). 상품을 못 받았으면 null.
@@ -148,6 +191,7 @@ class Purchase {
     if (!keep) owned.value = {...owned.value, id: exp};
     final p = await Prefs.getInstance();
     await p.setString('iap_owned2', jsonEncode(owned.value));
+    await _saveMirror(p);
     // 서버로 보낼 영수증 — 로그인 전이면 쌓아 두었다가 로그인 때 보낸다
     final rec = {
       'platform': Platform.isIOS ? 'ios' : 'android',

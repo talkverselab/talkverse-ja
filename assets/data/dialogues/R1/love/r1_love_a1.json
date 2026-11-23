@@ -317,17 +317,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_a1_grok_rewrite.md [J09]",
-  "final": "2026-11-02 Grok 재작성본 반영(3턴 完全に面接じゃん, 7턴 いらないって). 6턴은 Grok 이 さん 을 뺐지만 7턴 「さん、いらない」가 성립하려면 A 가 さん 을 붙여야 하므로 초안(サクラさん) 유지",
-  "boost": "data/review/chaos/r1_love_a1_grok_boost.md: 턴 [2, 7, 8] 교체 · 요약: 카오스 2 · 심쿵 7",
-  "boost_turns": [
-   2,
-   7,
-   8
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「반전 때문에 일상회화와 동떨어지면 안 됨」 — 카오스 강화 턴 [2, 8] 를 강화 전 원문으로 되돌림(심쿵 [7] 유지)"
- },
- "approved": "2026-11-02 사용자 리뷰 통과(Grok 재작성본)",
  "twist_type": "chaos"
 }

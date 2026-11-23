@@ -290,13 +290,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_life_a6_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(3턴 痛いです)",
-  "boost": "data/review/chaos/r1_life_a6_grok_boost.md: 턴 [8] 교체 · 요약: 카오스 없음 · 심쿵 8",
-  "boost_turns": [
-   8
-  ]
- },
  "twist_type": "slip"
 }

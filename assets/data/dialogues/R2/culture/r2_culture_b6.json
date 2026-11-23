@@ -437,16 +437,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_culture_b6_grok_rewrite.md",
-  "final": "2026-11-03 Grok 반영(11턴 お疲れ) · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
-  "chaos": "data/review/chaos/r2_culture_b6_grok_chaos.md: 턴 [10, 11, 12] 교체 · 카오스: 비둘기 쫓는 순간 바람에 돗자리 날아감 + 옆 회사 단체석에 떨어짐",
-  "boost_turns": [
-   10,
-   11,
-   12
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 10,11,12"
- },
  "twist_type": "chaos"
 }

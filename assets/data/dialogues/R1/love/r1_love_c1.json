@@ -321,13 +321,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r1_love_c1_grok_rewrite.md [J10]",
-  "final": "2026-11-02 Grok 재작성본 그대로(4턴 さん 삭제, 5턴 !?)",
-  "boost": "data/review/chaos/r1_love_c1_grok_boost.md: 턴 [7] 교체 · 요약: 카오스 없음 · 심쿵 7",
-  "boost_turns": [
-   7
-  ]
- },
  "twist_type": "slip"
 }

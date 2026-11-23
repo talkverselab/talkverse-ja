@@ -527,17 +527,5 @@
    ]
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_culture_b2_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만 · 턴 10 표현 풀 2회 맞추려 한 마디 추가 · 2026-11-03 카오스·심쿵 반영 뒤 검사기 통과용 최소 수정",
-  "chaos": "data/review/chaos/r3_culture_b2_grok_chaos.md: 턴 [11, 12, 13, 14] 교체 · 카오스: 라쿠고가 질문 순간에 켄 폰 벨소리 + A 방석 미끄러짐 + 그걸 그대로 오치로 사용",
-  "boost_turns": [
-   11,
-   12,
-   13,
-   14
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 11"
- },
  "twist_type": "chaos"
 }

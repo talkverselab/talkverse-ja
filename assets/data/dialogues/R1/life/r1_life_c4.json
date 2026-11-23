@@ -261,9 +261,5 @@
     ]
    ]
   }
- ],
- "review": {
-  "grok_write": "data/review/write/r1_life_c4_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만"
- }
+ ]
 }

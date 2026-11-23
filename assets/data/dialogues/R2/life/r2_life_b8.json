@@ -427,16 +427,5 @@
    ]
   }
  ],
- "review": {
-  "grok_rewrite": "data/review/r2_life_b8_grok_rewrite.md",
-  "final": "2026-11-03 Grok 재작성 전부 유지",
-  "chaos": "data/review/chaos/r2_life_b8_grok_chaos.md: 턴 [9, 10, 11, 12] 교체 · 카오스: 괴담 클라이맥스에 초인종·옆집 개 짖음·전기 복구가 겹침",
-  "boost_turns": [
-   9,
-   10,
-   11,
-   12
-  ]
- },
  "twist_type": "chaos"
 }

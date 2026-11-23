@@ -631,14 +631,5 @@
    ]
   }
  ],
- "review": {
-  "grok_write": "data/review/write/r3_work_b5_grok_write.md",
-  "final": "2026-11-03 Grok 작성본(처음부터) 그대로 — 검사기 통과용 최소 수정만",
-  "simkung": "data/review/chaos/r3_work_b5_grok_simkung.md: 턴 [15] 교체 · 심쿵: 15번 턴, 과장이 「도쿄에서 온 애 아니라 우리 애야」라고 인정하며 말함",
-  "boost_turns": [
-   15
-  ],
-  "daily_fix": "2026-11-09 사용자 지시 「일상회화와 동떨어지면 안 됨」 · 손질 턴 12"
- },
  "twist_type": "reveal"
 }
