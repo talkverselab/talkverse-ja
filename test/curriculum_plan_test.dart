@@ -103,4 +103,14 @@ void main() {
     }
     expect(buildWordQuestions(ws.take(3).toList(), 3), isEmpty);
   });
+
+  test('wordMix — 급수 문제 중 단어 비율(없으면 0.5), 시험은 30 안에서', () {
+    expect(CurriculumPlan.fromJson(planJson(1, [['a']], n5: ['a'])).byKey('jlpt:N5')!.wordMix, 0.5);
+    expect(mixCounts(10, 0.5), (10, 10));
+    expect(mixCounts(9, 0.25), (9, 3));
+    expect(mixCounts(10, 0), (10, 0));
+    expect(mixCounts(30, 0.5, cap: 30), (15, 15));
+    expect(mixCounts(18, 0.4, cap: 30), (18, 12));
+    expect(mixCounts(8, 1), (0, 8));
+  });
 }

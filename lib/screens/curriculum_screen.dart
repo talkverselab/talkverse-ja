@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
@@ -101,9 +103,12 @@ class _CurriculumScreenState extends State<CurriculumScreen> {
     final ds = [for (final id in c.dialogueIds) DialogueService.instance.byId(id)].whereType<Dialogue>().toList();
     final per = examPerDialogue(ds.length);
     final seed = DateTime.now().millisecondsSinceEpoch;
-    final qs = [for (final d in ds) ...buildQuestions(d, limit: per, pool: ds, seed: seed), ...await _wordQs(5)]..shuffle();
+    final dq = [for (final d in ds) ...buildQuestions(d, limit: per, pool: ds, seed: seed)]..shuffle();
+    final lvl = _svc.levelOf();
+    final (nd, nw) = lvl?.jlptLevel == null ? (min(dq.length, 30), 0) : mixCounts(dq.length, lvl!.wordMix, cap: 30);
+    final qs = [...dq.take(nd), ...await _wordQs(nw)]..shuffle();
     if (!mounted) return;
-    final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: tr('코스 시험'), questions: qs.take(30).toList(), mode: QuizMode.exam));
+    final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: tr('코스 시험'), questions: qs, mode: QuizMode.exam));
     if (res == null || !mounted) return;
     final pass = _svc.passPercent;
     final passed = _st.recordExam(res.correct, res.total, res.wrongDialogues, _svc.today, pass: pass);
@@ -518,7 +523,9 @@ class _CurriculumPracticeScreenState extends State<CurriculumPracticeScreen> {
     _stop = true;
     await DialogueAudio.instance.stop();
     final svc = CurriculumService.instance;
-    final qs = [...buildQuestions(d, limit: 10, pool: svc.levelList(), seed: DateTime.now().millisecondsSinceEpoch), ...await widget.wordQs(3)];
+    final dq = buildQuestions(d, limit: 10, pool: svc.levelList(), seed: DateTime.now().millisecondsSinceEpoch);
+    final (nd, nw) = mixCounts(dq.length, svc.levelOf()?.wordMix ?? 0.5); // 준비 급수가 아니면 wordQs 가 빈 목록
+    final qs = [...dq.take(nd), ...await widget.wordQs(nw)]..shuffle();
     if (!mounted) return;
     final res = await openFull<QuizResult>(context, (_) => CurriculumQuizScreen(title: d.title, questions: qs, mode: QuizMode.practice));
     if (res == null || !mounted) return;

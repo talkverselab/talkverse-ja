@@ -390,3 +390,16 @@ List<CurQuestion> buildWordQuestions(List<(String, String, String)> words, int n
   }
   return out;
 }
+
+/// 회화 문제 [dialogueQs] 개에 섞을 단어 문제 수 — 단어 비율이 [mix] 가 되게. [cap] 을 주면 둘을 합쳐 그 안으로(회화, 단어) 나눈다.
+(int, int) mixCounts(int dialogueQs, double mix, {int? cap}) {
+  if (mix <= 0) return (cap == null ? dialogueQs : min(dialogueQs, cap), 0);
+  var d = dialogueQs;
+  var w = mix >= 1 ? max(dialogueQs, 5) : (dialogueQs * mix / (1 - mix)).round();
+  if (mix >= 1) d = 0;
+  if (cap != null && d + w > cap) {
+    w = (cap * mix).round();
+    d = min(dialogueQs, cap - w);
+  }
+  return (d, w);
+}

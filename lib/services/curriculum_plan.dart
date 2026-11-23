@@ -21,6 +21,7 @@ class CurLevel {
   final int pass;
   final Map<String, int> daily; // light·normal·focus → 하루 새 편 수
   final String? wordSet; // 준비 급수의 단어 묶음(jlpt_n5 …)
+  final double wordMix; // 급수 문제 중 단어 문제 비율 0~1(없으면 0.5, §12 끝줄)
   const CurLevel({
     required this.key,
     required this.title,
@@ -30,6 +31,7 @@ class CurLevel {
     this.pass = 80,
     this.daily = const {'light': 1, 'normal': 2, 'focus': 3},
     this.wordSet,
+    this.wordMix = 0.5,
   });
 
   /// JLPT 단어 급수(jlpt_n5 → 5). 없으면 null.
@@ -56,6 +58,7 @@ class CurLevel {
       pass: (j['pass'] as num?)?.toInt() ?? defaults?.pass ?? 80,
       daily: daily.isEmpty ? (defaults?.daily ?? const {'light': 1, 'normal': 2, 'focus': 3}) : daily,
       wordSet: j['wordSet'] as String?,
+      wordMix: ((j['wordMix'] as num?)?.toDouble() ?? 0.5).clamp(0.0, 1.0),
     );
   }
 }
