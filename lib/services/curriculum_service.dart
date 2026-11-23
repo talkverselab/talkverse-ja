@@ -4,6 +4,7 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 import '../core/prefs.dart';
+import 'curriculum_plan.dart';
 import 'dialogue_service.dart';
 
 /// 토크버스 커리큘럼 — 전 언어 공통 기준(`~/talkverse/CURRICULUM_SPEC.md`, 2026-11-22).
@@ -20,7 +21,7 @@ const kPassPercent = 80;
 
 /// 점수 = 정답 수 / 문제 수, 소수점 버림.
 int scorePercent(int correct, int total) => total <= 0 ? 0 : (correct * 100) ~/ total;
-bool isPass(int correct, int total) => scorePercent(correct, total) >= kPassPercent;
+bool isPass(int correct, int total, {int pass = kPassPercent}) => scorePercent(correct, total) >= pass;
 
 String ymd(DateTime d) => '${d.year.toString().padLeft(4, '0')}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
 DateTime parseYmd(String s) {
@@ -67,7 +68,7 @@ class Course {
 
 /// `curriculum_v1` 한 벌. 기준 형식 + `today`(오늘 한 양 — 홈 카드 진행 막대용, 기준 문서에 없는 칸이라 uk 에 알림).
 class CurriculumState {
-  String? level;
+  String? level; // 단계 '1'..'5' 또는 준비 급수 'jlpt:N5'(§12)
   int dailyGoal; // 새 편 수: 1 가볍게 · 2 보통 · 3 집중
   Course? course;
   final List<String> passedDialogues;
@@ -95,7 +96,7 @@ class CurriculumState {
     final st = (j['streak'] as Map?) ?? const {};
     final td = (j['today'] as Map?) ?? const {};
     return CurriculumState(
-      level: j['level'] as String?,
+      level: migrateLevelKey(j['level']?.toString()), // 옛 회화 레벨(R0~R5)은 단계로(§12)
       dailyGoal: (j['dailyGoal'] as num?)?.toInt() ?? 2,
       course: j['course'] is Map ? Course.fromJson(j['course'] as Map) : null,
       passedDialogues: [for (final x in (j['passedDialogues'] as List? ?? const [])) '$x'],
@@ -182,12 +183,12 @@ class CurriculumState {
   }
 
   /// 코스 시험 결과. 통과면 코스 완료·통과 편 기록, 아니면 틀린 편의 연습 표시를 지워 다시 연습하게.
-  bool recordExam(int correct, int total, Set<String> wrongDialogues, String today) {
+  bool recordExam(int correct, int total, Set<String> wrongDialogues, String today, {int pass = kPassPercent}) {
     final c = course;
     if (c == null) return false;
     final s = scorePercent(correct, total);
     c.examScores.add(s);
-    if (s >= kPassPercent) {
+    if (s >= pass) {
       c.passedAt = today;
       for (final id in c.dialogueIds) {
         if (!passedDialogues.contains(id)) passedDialogues.add(id);
@@ -293,6 +294,9 @@ class CurriculumService {
   DateTime Function() now = DateTime.now;
   String get today => ymd(now());
 
+  /// 단계·편 목록(서버 DB → 묶음 JSON → 회화 레벨 순으로 대체).
+  CurriculumPlan plan = const CurriculumPlan(0, [], []);
+
   Future<void> ensureLoaded() async {
     if (_loaded) return;
     await DialogueService.instance.ensureLoaded();
@@ -302,33 +306,87 @@ class CurriculumService {
         state = CurriculumState.fromJson(json.decode(raw) as Map);
       } catch (_) {}
     }
+    final store = CurriculumPlanStore.instance;
+    plan = await store.load() ?? _fromRegions();
     _loaded = true;
+    // 서버에 더 새 목록이 있으면 받아 바꿔 쓴다(지금 화면은 changed 로 다시 그림)
+    store.refresh().then((changed) {
+      if (changed && store.plan != null) {
+        plan = store.plan!;
+        this.changed.value++;
+      }
+    });
   }
+
+  CurriculumPlan _fromRegions() => CurriculumPlan.fromRegions({
+        for (final r in DialogueService.levels) r: [for (final d in DialogueService.instance.list(region: r)) d.id],
+      });
 
   Future<void> save() async {
     await (await Prefs.getInstance()).setString(key, json.encode(state.toJson()));
     changed.value++;
   }
 
-  List<Dialogue> levelList([String? level]) => DialogueService.instance.list(region: level ?? state.level);
+  CurLevel? levelOf([String? key]) => plan.byKey(key ?? state.level);
 
-  /// 레벨의 편을 모두 통과했나.
-  bool levelDone(String level) {
-    final l = levelList(level);
+  /// 단계(또는 준비 급수)의 편 — 서버 목록 순서, 앱에 없는 편 id 는 건너뜀.
+  List<Dialogue> levelList([String? key]) => [
+        for (final id in levelOf(key)?.dialogueIds ?? const <String>[]) ?DialogueService.instance.byId(id),
+      ];
+
+  /// 보일 단계(편이 있는 것만).
+  bool _has(String id) => DialogueService.instance.byId(id) != null;
+  List<CurLevel> get stages => visibleLevels(plan.stages, _has);
+
+  /// 보일 준비 묶음(JLPT) — 편이 있는 급수만, 급수가 없으면 묶음째 숨김.
+  List<CurPrep> get preps => [
+        for (final p in plan.prep)
+          if (visibleLevels(p.levels, _has) case final ls when ls.isNotEmpty) CurPrep(p.id, p.title, ls),
+      ];
+
+  /// 단계(준비 급수)의 편을 모두 통과했나.
+  bool levelDone(String key) {
+    final l = levelList(key);
     return l.isNotEmpty && l.every((d) => state.passedDialogues.contains(d.id));
   }
 
-  /// 다음 레벨(편이 있는 것), 없으면 null.
-  String? nextLevel(String level) {
-    const lv = DialogueService.levels;
-    for (var i = lv.indexOf(level) + 1; i < lv.length; i++) {
-      if (DialogueService.instance.count(lv[i]) > 0) return lv[i];
-    }
-    return null;
+  /// 같은 묶음 안 다음 단계(급수), 없으면 null.
+  String? nextLevel(String key) {
+    final group = key.contains(':') ? [for (final p in preps) if (key.startsWith('${p.id}:')) ...p.levels] : stages;
+    final i = group.indexWhere((l) => l.key == key);
+    return i >= 0 && i + 1 < group.length ? group[i + 1].key : null;
   }
+
+  /// 화면 이름(「1단계」, 「JLPT 준비 · N5」).
+  String titleOf(String key) {
+    for (final p in plan.prep) {
+      for (final l in p.levels) {
+        if (l.key == key) return '${p.title} · ${l.title}';
+      }
+    }
+    return levelOf(key)?.title ?? key;
+  }
+
+  int get passPercent => levelOf()?.pass ?? kPassPercent;
 
   Future<void> startCourse(List<String> ids) async {
     state.course = Course('c${now().millisecondsSinceEpoch}', ids);
     await save();
   }
+}
+
+/// 준비 급수(JLPT)의 단어 문제 — 단어를 보고 뜻 고르기(4지선다). [words] = (표기, 읽기, 뜻). 진도 대기열에는 안 들어간다.
+List<CurQuestion> buildWordQuestions(List<(String, String, String)> words, int n, {int seed = 0}) {
+  final rnd = Random(seed);
+  final ok = words.where((w) => w.$1.isNotEmpty && w.$3.isNotEmpty).toList()..shuffle(rnd);
+  final glosses = {for (final w in ok) w.$3}.toList();
+  if (glosses.length < 4) return const [];
+  final out = <CurQuestion>[];
+  for (final w in ok) {
+    if (out.length >= n) break;
+    final wrong = (glosses.toList()..remove(w.$3)..shuffle(rnd)).take(3).toList();
+    final ch = [w.$3, ...wrong]..shuffle(rnd);
+    out.add(CurQuestion('', 0, 'word', w.$1, w.$2 == w.$1 ? '' : w.$2, ch, ch.indexOf(w.$3)));
+  }
+  return out;
 }
