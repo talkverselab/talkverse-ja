@@ -32,7 +32,7 @@ void main() {
       expect(find.byKey(const ValueKey('sense-L1-ref')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L1-1')), findsNothing);
       expect(find.text('참고'), findsNWidgets(6));
-      expect(find.text('0/10회 마침'), findsOneWidget);
+      expect(find.text('0/17회 마침'), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L6-talk')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L6-4')), findsNothing);
       expect(find.byKey(const ValueKey('sense-L10-talk')), findsOneWidget);
@@ -48,7 +48,7 @@ void main() {
     addTearDown(t.view.reset);
     Purchase.owned.value = {'all_life': 0}; // L2 는 이용권(2급부터) — 이 테스트는 산 사람 기준
     addTearDown(() => Purchase.owned.value = const {});
-    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 0)));
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 7)));
     await settle(t, find.byKey(const ValueKey('sense-finish')));
     expect(t.takeException(), isNull);
     expect(find.byKey(const ValueKey('memorize-video')), findsOneWidget);
@@ -66,7 +66,7 @@ void main() {
     t.view.physicalSize = const Size(320, 12000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);
-    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 1)));
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 8)));
     await settle(t, find.text('닫기'));
     expect(t.takeException(), isNull);
     expect(find.textContaining('て / で'), findsWidgets);
@@ -93,12 +93,50 @@ void main() {
     expect(SenseCourse.levels(d).map((l) => l['id']), ['L1', 'L2', 'L4', 'L5']);
   });
 
-  test('묶음 원고 — 스텝 1~10 이 모두 데이터에 있고 지금은 10개 모두 내용 있음', () async {
+  test('묶음 원고 — 영상 급 L0 + 스텝 1~10 이 모두 데이터에 있고 모두 내용 있음', () async {
     final raw = File('assets/data/grammar/sense_course.json').readAsStringSync();
     final d = json.decode(raw) as Map<String, dynamic>;
-    expect((d['levels'] as List).map((l) => l['id']), [for (var i = 1; i <= 10; i++) 'L$i']);
-    expect(SenseCourse.levels(d).length, 10);
+    expect((d['levels'] as List).map((l) => l['id']), [for (var i = 0; i <= 10; i++) 'L$i']);
+    expect(SenseCourse.levels(d).length, 11);
     expect(File('tools/script_publish.py').readAsStringSync(), contains('grammar/sense_course.json'));
+  });
+
+  testWidgets('영상 회차 — 영상과 안내만, 이용권 없이 열리고 넘침 없음', (t) async {
+    t.view.physicalSize = const Size(320, 3000);
+    t.view.devicePixelRatio = 1;
+    addTearDown(t.view.reset);
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 0)));
+    await settle(t, find.byKey(const ValueKey('sense-finish')));
+    expect(t.takeException(), isNull);
+    expect(find.byKey(const ValueKey('memorize-video')), findsOneWidget);
+    expect(find.textContaining('설명은 영어로 나와요'), findsOneWidget);
+  });
+
+  test('영상만 있는 회차도 내용 — 영상 급(free)은 늘 열리고 무료 급 수를 쓰지 않음', () {
+    final d = <String, dynamic>{
+      'levels': [
+        {'id': 'L0', 'title': '영상', 'free': true, 'lessons': [{'id': 'L0-ep0', 'kind': 'memorize', 'video': 'https://x/v.mp4', 'sentences': []}]},
+        {'id': 'L1', 'title': 'a', 'lessons': [{'id': 'L1-a', 'sentences': ['x']}]},
+        {'id': 'L2', 'title': 'b', 'lessons': [{'id': 'L2-a', 'sentences': ['x']}, {'id': 'L2-v', 'video': '', 'sentences': []}]},
+      ]
+    };
+    expect(SenseCourse.flat(d).map((e) => e.$2['id']), ['L0-ep0', 'L1-a', 'L2-a']);
+    expect(SenseCourse.lockIndex(d, 'L0'), -1);
+    expect(SenseCourse.lockIndex(d, 'L1'), 0);
+    expect(SenseCourse.lockIndex(d, 'L2'), 1);
+  });
+
+  test('묶음 원고 — 영상 급 7편 주소는 서버 영상 폴더', () {
+    final d = json.decode(File('assets/data/grammar/sense_course.json').readAsStringSync()) as Map<String, dynamic>;
+    final l0 = (d['levels'] as List).first as Map<String, dynamic>;
+    expect(l0['free'], true);
+    final ls = (l0['lessons'] as List).cast<Map<String, dynamic>>();
+    expect(ls.length, 7);
+    for (final l in ls) {
+      expect(l['video'], startsWith('https://auth.talkverse.uk/art/video/ja/sense/MD1-'));
+    }
+    expect(SenseCourse.lockIndex(d, 'L1'), 0);
+    expect(SenseCourse.lockIndex(d, 'L2'), 1);
   });
 
   testWidgets('언어감각 목록 — 이용권 없으면 2급부터 자물쇠', (t) async {

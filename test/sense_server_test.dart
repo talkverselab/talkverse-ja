@@ -45,7 +45,7 @@ void main() {
     final server = Map<String, dynamic>.from(bundled)..['levels'] = (bundled['levels'] as List).where((l) => l['id'] != 'L4').toList();
     final steps = await stepsFrom(json.encode(server));
     expect(steps, isNot(contains('L4')));
-    expect(steps.length, 9);
+    expect(steps.length, 10);
   });
 
   test('서버 목록에 스텝이 더해지면 보임(15 넘어도 코드 수정 없이), 내용 없는 스텝은 숨김', () async {
@@ -61,13 +61,13 @@ void main() {
     ];
     final server = Map<String, dynamic>.from(bundled)..['levels'] = [...bundled['levels'] as List, ...extra];
     final steps = await stepsFrom(json.encode(server));
-    expect(steps.length, 15);
+    expect(steps.length, 16);
     expect(steps.last, 'L16');
     expect(steps, isNot(contains('L13')));
   });
 
   test('서버를 못 받으면 묶음 목록', () async {
     final steps = await stepsFrom(null);
-    expect(steps, [for (var i = 1; i <= 10; i++) 'L$i']);
+    expect(steps, [for (var i = 0; i <= 10; i++) 'L$i']);
   });
 }

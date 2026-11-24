@@ -44,7 +44,21 @@ class SenseCourse {
 
   /// 내용이 있는 회차인가 — 외울 문장·참고 항목·다른 메뉴 버튼 중 하나라도 있어야 보인다.
   static bool hasContent(Map<String, dynamic> ls) =>
-      ls['open'] != null || ((ls['sentences'] as List?)?.isNotEmpty ?? false) || ((ls['points'] as List?)?.isNotEmpty ?? false);
+      ls['open'] != null ||
+      ((ls['sentences'] as List?)?.isNotEmpty ?? false) ||
+      ((ls['points'] as List?)?.isNotEmpty ?? false) ||
+      ((ls['video'] as String?)?.isNotEmpty ?? false); // 영상만 있는 회차(문법 애니, 2026-11-24)
+
+  /// 이용권 판정용 급 순번 — `free: true` 인 급(영상 소개 급)은 -1(늘 열림)이고 무료 급 수를 쓰지 않는다. 그 밖은 나머지 급 안에서 0부터.
+  static int lockIndex(Map<String, dynamic> d, Object? levelId) {
+    var i = 0;
+    for (final lv in levels(d)) {
+      final free = lv['free'] == true;
+      if (lv['id'] == levelId) return free ? -1 : i;
+      if (!free) i++;
+    }
+    return i;
+  }
 
   /// 보일 급: 스텝 1~10 의 틀은 데이터(서버 파일)에 두고, 내용이 있는 회차가 하나도 없는 급은 숨긴다 — 서버에 내용이 올라오면 저절로 나타난다(11-23).
   static List<Map<String, dynamic>> levels(Map<String, dynamic> d) => [
@@ -92,7 +106,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
   /// 회차가 든 급 순번(0부터) — 언어감각 2급부터 이용권(freeSenseLevels, PAYWALL_SPEC).
   int _levelIndex(int index) {
     final lv = SenseCourse.flat(_data!)[index].$1;
-    return SenseCourse.levels(_data!).indexWhere((l) => l['id'] == lv['id']);
+    return SenseCourse.lockIndex(_data!, lv['id']);
   }
 
   Future<void> _open(int index) async {
@@ -129,8 +143,8 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
           style: const TextStyle(fontSize: 12, color: AppColors.muted)),
     ];
     var i = 0;
-    for (final (li, lv) in SenseCourse.levels(d).indexed) {
-      final locked = !PaywallGate.premium && !PaywallGate.senseLevelFree(li);
+    for (final lv in SenseCourse.levels(d)) {
+      final locked = !PaywallGate.premium && !PaywallGate.senseLevelFree(SenseCourse.lockIndex(d, lv['id']));
       children.add(Padding(
         padding: const EdgeInsets.fromLTRB(2, 18, 2, 8),
         child: Text('${lv['id']}  ${lv['title']}',
@@ -235,7 +249,7 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
     if (nextIdx < all.length) {
       // 다음 회차가 잠긴 급(2급~)이면 결제 화면 먼저 — 안 사면 목록으로
       final d = await SenseCourse.load();
-      final li = SenseCourse.levels(d).indexWhere((l) => l['id'] == all[nextIdx].$1['id']);
+      final li = SenseCourse.lockIndex(d, all[nextIdx].$1['id']);
       if (!mounted) return;
       if (!await PaywallGate.pass(context, PaywallGate.senseLevelFree(li))) {
         if (mounted) Navigator.of(context).pop();
