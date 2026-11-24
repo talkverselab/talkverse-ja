@@ -48,6 +48,8 @@ for i in range(0, len(ids), N):
         pc_run()
         for ep in eps:
             fetch(f'retake/{ep}')
+    # 마지막(3회째) 재생성본도 검사·반영한 뒤 묶는다 — 빠지면 받아만 두고 예전 판을 올린다(uk 11-24). --jobs 없이 = 재생성 요청 없음
+    r = sh(sys.executable, f'{HERE}/qa.py', f'{work}/wav', *eps); log('마지막 검사', r.stdout.strip())
     for ep in eps:
         r = sh(sys.executable, f'{HERE}/pack.py', f'{work}/wav', ep, '--upload', check=False)
         if r.returncode:
