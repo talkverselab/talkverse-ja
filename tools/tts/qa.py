@@ -57,7 +57,7 @@ def main():
             q['ok'] = q['sim'] >= 0.72
             if not q['ok']:
                 bad += 1
-                if q['tries'] < 3:
+                if q['tries'] < int(os.environ.get('TTS_TRIES', '3')):   # 끝 재생성은 tries 를 되돌리지 말고 이 값을 올린다 — PC 는 있는 파일을 건너뛰므로 새 이름(t4…)이어야 새로 만든다(uk 11-24)
                     q['tries'] += 1
                     jobs.append({'out': f"retake/{k[:-4]}.t{q['tries']}.wav", 'text': text, 'language': 'Japanese', 'reference': f'out/ref/{voice}_{emo}.wav', 'seed': 42 + 97 * q['tries']})
     json.dump(Q, open(qf, 'w', encoding='utf-8'), ensure_ascii=False, indent=0)
