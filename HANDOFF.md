@@ -1,8 +1,8 @@
-# 일본어유니버스 — 세션 인수인계 (2026-11-11 새벽)
+# 일본어유니버스 — 세션 인수인계 (2026-11-25)
 
 > 새 세션은 **`CLAUDE.md`(이 리포) → 이 파일** 순서로 읽고 바로 이어간다. 규칙 배경은 CLAUDE.md 절(§1 서명 · §2 배포 · §2-1 Zealot · §2-2 TestFlight · §2-3 톤·두 화면 · §4 공개 저장소 · §5 표시 언어 · §6 공용 인터페이스). 기기·계정은 `~/.claude/CLAUDE.md`. 다른 언어앱 공통 프롬프터 = `/Users/talkverse/talkverse/LANG_APP_REPLICATE_PROMPT.md`(uk 관리).
 
-**지금 국면(2026-11-11 새벽): 사용자 지시로 화면·내려받기 개편을 이어서 빌드 중.** 11-10~11 변동 사항은 아래 「0. 변동 기록」에 날짜순으로 한 벌. 11-09 일상성 정리 179턴의 음성 재생성은 11-11 새벽에 끝났다(아래 표).
+**지금 국면(2026-11-25): 일본어 첫 출시가 미뤄짐 — 첫 출시 언어는 베트남어(통합 앱).** 사용자 11-25(uk 경유): 「단어 작성도 이제 베트남어 말고는 멈춰줘.... 일본어에서 베트남어를 첫출시하는걸로 바뀌었어(물론 통합앱이지만)」. 풀릴 때까지 이 세션이 **새로 벌이지 않는 것**: ① 일본어 출시 준비(심사 자료·새 빌드) ② 단어 목록 쓰기·늘리기, 단어 그림 요청 ③ 65편 밖 회화 장면 그림(「대화문 그림은 멈추고 단어그림만 일단 완성」, 공개 65편 것은 됨) ④ Gemini 검수 요청·창 열기(「제미나이는 현재 베트남어 말고는 못쓰게해」, 9226·9227) ⑤ 음성 작업 전부(사용자 11-24 「음성작업 하던거 하고 멈춰줘」 — uk 「ja 채점 차례」 전에는 미검사 61조각 채점도 안 함). 통합 앱에 이미 들어간 일본어는 그대로. **멈출 때 하던 것은 없음**(단어·그림·Gemini·음성 모두 진행 중인 것 0). 마지막으로 올린 것 = Android 빌드 131(https://apps.talkverse.uk/Ultzu/690), iOS 단독 빌드는 그 전부터 보류(통합 앱은 uk 가 빌드). 변동 기록은 아래 「0」.
 
 ## 0. 변동 기록(2026-11-10 ~ 11, 빌드 번호와 함께)
 
@@ -56,8 +56,8 @@
 
 | 항목 | 값 |
 |---|---|
-| 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 프로필 내려받기 현황 커밋 700d548(2026-11-11). 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
-| Android | Zealot 「일본어 유니버스」 **빌드 114**(https://apps.talkverse.uk/Ultzu/489)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=115` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
+| 리포 | `talkverselab/talkverse-ja` master (PUBLIC), 최신 = 빌드 131 커밋 891796c(2026-11-24) + 인계 커밋. 미커밋 = `data/review/write/missing_lemmas.csv`(도구 부산물)·`data/review/*_grok_enrich*`(보류)·`RELAY_*`·`data/review/chaos/recut_ids.txt` — 의도적으로만 커밋 |
+| Android | Zealot 「일본어 유니버스」 **빌드 131**(https://apps.talkverse.uk/Ultzu/690, CI 빌드를 `tools/zealot_push.sh --ci` 로 올림)(설치 주소는 apps.talkverse.uk 「일본어 유니버스」 최신). 로컬 빌드 `flutter build apk --release --build-number=115` → `tools/zealot_push.sh "한 줄"` → PC 백업 `D:\OneDrive\app project\japanese_universe\japanese_universe-latest.apk`. **앱을 고치면 Android·iOS 둘 다 한 번에 올리고 두 번호를 보고**(사용자 지시 2026-11-07) |
 | iOS TestFlight | **2611151557**. `bash tools/ios_release.sh`. CoreSimulator 1174.21 로 고쳐져 iOS 빌드 정상 |
 | 화면 개편(2026-11-10 사용자 지시) | **회화**: 장면 칸은 그림만, 글(문장·읽기·뜻·단어 칩)은 스크립트의 현재 줄. 넓은 화면은 맨 왼쪽 레일만 남기고 목록 칸 + 오른쪽 칸을 덮는 넓은 칸(`openWide`, `lib/core/pane.dart`·`main_screen.dart` `_wide`)에 열어 좌 큰 그림·우 스크립트, 탭을 바꾸면 닫힘. **단어 화면 전부 카드 형식**: 공용 `lib/widgets/word_card.dart`(`WordCardGrid` — 그림 있는 단어는 그림 카드, **그림 없는 단어는 그 아래 낮은 카드**(빈칸 지적 2026-11-11); JLPT 단어·절벽 단어·외래어·회화 「새 단어」; 문법·표현은 줄 그대로). 테스트 `test/play_pane_layout_test.dart`·`wide_pane_test.dart`·`word_card_test.dart`. **실기기 화면 확인은 사용자 몫(아직)** |
 | 단어 단원 플래시카드·문법 카드(2026-11-11 사용자 지시, uk 경유) | 절벽·JLPT 단어를 **20어 단원**으로, 단원 머리줄 「플래시카드」 → `lib/screens/word_unit_flash_screen.dart`(앞 그림·표기 → 뒤 읽기·뜻 + 그 단어가 나온 회화 문장, 탭하면 그 턴부터 회화 재생 `openDialogueAt`; 몰라요 는 끝에 다시, 상태 `wcard:<낱말>`). 안내 「문장으로 외우는 게 더 좋아요」(`SentenceTip`) = 플래시카드·단어 시트·JLPT 목록 위. 예문 찾기 `lib/services/word_examples.dart`(lemmas → 없으면 글자 포함). 절벽 목록은 uk 분류표(talkversehanja `talkverse_art/words/ja_cliff_class_20261111.csv`)를 `python3 tools/freq/cliff_class.py <분류표>` 로 반영: noise 205줄 삭제(**순위 번호는 그대로** — 그림 번호가 순위, 2,000위 안 1,795어), 그 밖 647어의 읽기·뜻·품사 = `assets/data/freq/cliff_notes_ja.json`(문법 334어는 그림 대신 문법 카드). 시드 db 12. 2,001~2,500위 줄은 사용자 지시(2026-11-11 "2000단어 이상은 중요하지 않지")로 파일에서 잘라냄. **단어 속 한자 → 한자 가족**(2026-11-11 사용자 지시): `lib/widgets/word_kanji_families.dart` `WordKanjiFamilies` 를 단어 시트·절벽 단어 시트·플래시카드 뒷면에 — 씨앗 + 같은 소리 가족 글자(탭 = 한자 팝업), 「가족 지도」 = `openHanjaFamily`. 테스트 `test/word_unit_flash_test.dart`·`word_kanji_families_test.dart` |
@@ -77,7 +77,7 @@
 1. **git 기록 다시 쓰기 끝(11-11, 사용자 실행)**: 지운 이름이 든 옛 단어표 5개 판본을 기록에서 걸러 강제 푸시 — 원격을 새로 받아 이름 검색 0건 확인. 커밋 해시가 전부 바뀌었으니 다른 곳의 clone 은 다시 받을 것. GitHub 에 남는 옛 커밋(SHA 직접 접근)은 GitHub 지원에 정리 요청해야 사라진다(사용자 결정). 이 작업 폴더의 옛 가지 `master-old-history`·`master-stale` 과 reflog 에는 옛 기록이 로컬로만 남아 있다.
 2. **PC 백업은 사용자가 명령할 때만**(11-11 지시 — 자동 대기 걸지 말 것): 빌드 89 APK·iOS 2611111257 IPA 는 11-11 16:50 PC `D:\OneDrive\app project\japanese_universe\` 에 백업 끝(크기 대조), 맥 사본 삭제. low 3턴 음성도 11-11 17:06 끝 — 남은 대기 작업 없음. 맥이 재부팅으로 후처리 중에 끊기면 PC 조각은 남으므로 `cd tools/tts && ~/.venvs/tts_ja/bin/python run_all.py <작업폴더> 12` 로 이어서(조각 삭제 생략).
 3. 사용자 결정 대기: 맞춤 회화 워커 launchd 켜기(**심사 뒤**, 사용자 11-22 「심사뒤」) · Play 프로텍트 경고 · 스토어 상품 등록(`docs/STORE_PRODUCTS.md`, 통합 앱 "Talkverse" com.talkverse.app) · PrivacyInfo 는 통합 앱(uk) 몫 · 미검사 3회째 조각 61 채점(uk 「ja 채점 차례」 뒤).
-4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지.
+4. 사용자 기기 확인: 빌드 73+ 에서 통합 앱 대비 저장소 이전(ApplicationSupport/ja, `ja_` 키 접두) 뒤 옛 학습 기록이 남는지. 빌드 131: 언어감각 L0 영상 7편이 기기에서 재생되는지, L0 을 무료로 둔 것이 괜찮은지(둘 다 미확인).
 
 ## 3. 지울 후보(애매해서 남겨 둠 — 사용자·허브 판단)
 
