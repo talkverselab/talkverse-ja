@@ -54,7 +54,7 @@
 "dialogues/R1/culture/r1_culture_b3.json": "a9766ad65892",
 "dialogues/R1/culture/r1_culture_b5.json": "cc62eda35156",
 "dialogues/R1/culture/r1_culture_b6.json": "25613027b074",
-"dialogues/R1/friends/r1_friends_a1.json": "58102127680d",
+"dialogues/R1/friends/r1_friends_a1.json": "f7f2476b8f34",
 "dialogues/R1/friends/r1_friends_a3.json": "cd3a364997c7",
 "dialogues/R1/friends/r1_friends_a4.json": "207346814c1b",
 "dialogues/R1/friends/r1_friends_a6.json": "3668b4d83b72",
@@ -64,7 +64,7 @@
 "dialogues/R1/friends/r1_friends_b5.json": "9a083585d252",
 "dialogues/R1/friends/r1_friends_b6.json": "dd7a29a068b6",
 "dialogues/R1/friends/r1_friends_b7.json": "3ae27f7a6dbd",
-"dialogues/R1/friends/r1_friends_c1.json": "a8cd6f018f45",
+"dialogues/R1/friends/r1_friends_c1.json": "6639a71e13f6",
 "dialogues/R1/friends/r1_friends_c2.json": "585446690c64",
 "dialogues/R1/friends/r1_friends_c4.json": "aac4d6837ab4",
 "dialogues/R1/friends/r1_friends_c5.json": "876b8d14b664",
@@ -84,7 +84,7 @@
 "dialogues/R1/life/r1_life_c2.json": "96bce133cf21",
 "dialogues/R1/life/r1_life_c3.json": "a78c4085d0d8",
 "dialogues/R1/life/r1_life_c4.json": "9e69711653c4",
-"dialogues/R1/love/r1_love_a1.json": "a53b6208463c",
+"dialogues/R1/love/r1_love_a1.json": "25c0361882f1",
 "dialogues/R1/love/r1_love_a2.json": "d7f516d811d5",
 "dialogues/R1/love/r1_love_a3.json": "54f4faa04d09",
 "dialogues/R1/love/r1_love_a4.json": "2908139f0390",
@@ -93,7 +93,7 @@
 "dialogues/R1/love/r1_love_b1.json": "35f3a9e3a4b9",
 "dialogues/R1/love/r1_love_b2.json": "e70daf3190e7",
 "dialogues/R1/love/r1_love_b3.json": "1c2a0a313e9f",
-"dialogues/R1/love/r1_love_c1.json": "3be25e7bd2cc",
+"dialogues/R1/love/r1_love_c1.json": "1aa61e4355c6",
 "dialogues/R1/love/r1_love_c2.json": "970008aec53b",
 "dialogues/R1/love/r1_love_c3.json": "ca61e91cdc18",
 "dialogues/R1/survival/r1_survival_s1.json": "94ce15e71e7f",
@@ -223,5 +223,5 @@
 "dialogues/R4/work/r4_work_b1.json": "18b50fd50fbe",
 "grammar/sense_course.json": "a7eb723748f6"
 },
-"rev": 17
+"rev": 18
 }
