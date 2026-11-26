@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:japanese_universe/core/l10n.dart';
 import 'package:japanese_universe/screens/sense_course_screen.dart';
 import 'package:japanese_universe/services/purchase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -32,7 +33,7 @@ void main() {
       expect(find.byKey(const ValueKey('sense-L1-ref')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L1-1')), findsNothing);
       expect(find.text('참고'), findsNWidgets(6));
-      expect(find.text('0/17회 마침'), findsOneWidget);
+      expect(find.text('0/10회 마침'), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L6-talk')), findsOneWidget);
       expect(find.byKey(const ValueKey('sense-L6-4')), findsNothing);
       expect(find.byKey(const ValueKey('sense-L10-talk')), findsOneWidget);
@@ -48,7 +49,7 @@ void main() {
     addTearDown(t.view.reset);
     Purchase.owned.value = {'all_life': 0}; // L2 는 이용권(2급부터) — 이 테스트는 산 사람 기준
     addTearDown(() => Purchase.owned.value = const {});
-    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 7)));
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 0)));
     await settle(t, find.byKey(const ValueKey('sense-finish')));
     expect(t.takeException(), isNull);
     expect(find.byKey(const ValueKey('memorize-video')), findsOneWidget);
@@ -66,7 +67,7 @@ void main() {
     t.view.physicalSize = const Size(320, 12000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);
-    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 8)));
+    await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 1)));
     await settle(t, find.text('닫기'));
     expect(t.takeException(), isNull);
     expect(find.textContaining('て / で'), findsWidgets);
@@ -97,7 +98,7 @@ void main() {
     final raw = File('assets/data/grammar/sense_course.json').readAsStringSync();
     final d = json.decode(raw) as Map<String, dynamic>;
     expect((d['levels'] as List).map((l) => l['id']), [for (var i = 0; i <= 10; i++) 'L$i']);
-    expect(SenseCourse.levels(d).length, 11);
+    expect(SenseCourse.levels(d).length, 10); // 한국어 화면 — L0 은 영어 설명판뿐이라 숨음(11-26)
     expect(File('tools/script_publish.py').readAsStringSync(), contains('grammar/sense_course.json'));
   });
 
@@ -105,6 +106,8 @@ void main() {
     t.view.physicalSize = const Size(320, 3000);
     t.view.devicePixelRatio = 1;
     addTearDown(t.view.reset);
+    AppLangPrefs.lang.value = AppLang.en; // 영어 설명판은 영어 화면에서만
+    addTearDown(() => AppLangPrefs.lang.value = AppLang.ko);
     await t.pumpWidget(const MaterialApp(home: SenseLessonScreen(index: 0)));
     await settle(t, find.byKey(const ValueKey('sense-finish')));
     expect(t.takeException(), isNull);
@@ -126,6 +129,23 @@ void main() {
     expect(SenseCourse.lockIndex(d, 'L2'), 1);
   });
 
+  test('영상은 화면 언어별 칸 — 영어 설명판(video_en)은 한국어 화면에서 숨음', () {
+    const ls = <String, dynamic>{'id': 'L0-ep0', 'kind': 'memorize', 'sentences': [], 'video_en': 'https://x/en.mp4'};
+    expect(SenseCourse.videoOf(ls, AppLang.ko), '');
+    expect(SenseCourse.videoOf(ls, AppLang.en), 'https://x/en.mp4');
+    expect(SenseCourse.videoOf(ls, AppLang.zh), 'https://x/en.mp4');
+    const both = <String, dynamic>{'video': 'https://x/ko.mp4', 'video_en': 'https://x/en.mp4'};
+    expect(SenseCourse.videoOf(both, AppLang.ko), 'https://x/ko.mp4');
+    expect(SenseCourse.videoOf(both, AppLang.en), 'https://x/en.mp4');
+    expect(SenseCourse.videoOf(const {'video': 'https://x/v.mp4'}, AppLang.en), 'https://x/v.mp4');
+    expect(SenseCourse.videoOf(const {'video': 'https://x/v.mp4', 'video_ja': 'https://x/ja.mp4'}, AppLang.ja), 'https://x/ja.mp4');
+    AppLangPrefs.lang.value = AppLang.ko;
+    expect(SenseCourse.hasContent(Map<String, dynamic>.from(ls)), false);
+    AppLangPrefs.lang.value = AppLang.en;
+    expect(SenseCourse.hasContent(Map<String, dynamic>.from(ls)), true);
+    AppLangPrefs.lang.value = AppLang.ko;
+  });
+
   test('묶음 원고 — 영상 급 7편 주소는 서버 영상 폴더', () {
     final d = json.decode(File('assets/data/grammar/sense_course.json').readAsStringSync()) as Map<String, dynamic>;
     final l0 = (d['levels'] as List).first as Map<String, dynamic>;
@@ -133,7 +153,8 @@ void main() {
     final ls = (l0['lessons'] as List).cast<Map<String, dynamic>>();
     expect(ls.length, 7);
     for (final l in ls) {
-      expect(l['video'], startsWith('https://auth.talkverse.uk/art/video/ja/sense/MD1-'));
+      expect(l['video'], isNull);
+      expect(l['video_en'], startsWith('https://auth.talkverse.uk/art/video/ja/sense/MD1-'));
     }
     expect(SenseCourse.lockIndex(d, 'L1'), 0);
     expect(SenseCourse.lockIndex(d, 'L2'), 1);

@@ -42,12 +42,20 @@ class SenseCourse {
     return changed;
   }
 
+  /// 회차 영상 주소 — 앱 표시 언어별 칸 `video_<언어>` 가 먼저(ko·en·ja·zh), 없으면 한국어가 아닌 화면은 `video_en`, 마지막으로 `video`(2026-11-26: 한국어 화자에게 영어 설명 영상이 나오던 것).
+  /// 영어 설명판은 `video_en` 에만 두면 한국어 화면에서는 안 보이고, 이 칸을 모르는 옛 빌드에서도 영상 없는 회차라 숨는다.
+  static String videoOf(Map<String, dynamic> ls, [AppLang? lang]) {
+    final l = lang ?? AppLangPrefs.lang.value;
+    String? at(String k) => (ls[k] is String && (ls[k] as String).isNotEmpty) ? ls[k] as String : null;
+    return at('video_${l.name}') ?? (l == AppLang.ko ? null : at('video_en')) ?? at('video') ?? '';
+  }
+
   /// 내용이 있는 회차인가 — 외울 문장·참고 항목·다른 메뉴 버튼 중 하나라도 있어야 보인다.
   static bool hasContent(Map<String, dynamic> ls) =>
       ls['open'] != null ||
       ((ls['sentences'] as List?)?.isNotEmpty ?? false) ||
       ((ls['points'] as List?)?.isNotEmpty ?? false) ||
-      ((ls['video'] as String?)?.isNotEmpty ?? false); // 영상만 있는 회차(문법 애니, 2026-11-24)
+      videoOf(ls).isNotEmpty; // 영상만 있는 회차(문법 애니, 2026-11-24) — 이 화면 언어의 영상이 있을 때만
 
   /// 이용권 판정용 급 순번 — `free: true` 인 급(영상 소개 급)은 -1(늘 열림)이고 무료 급 수를 쓰지 않는다. 그 밖은 나머지 급 안에서 0부터.
   static int lockIndex(Map<String, dynamic> d, Object? levelId) {
@@ -389,7 +397,7 @@ class _Memorize extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final sentences = (lesson['sentences'] as List).cast<Map<String, dynamic>>();
-    final video = (lesson['video'] as String?) ?? '';
+    final video = SenseCourse.videoOf(lesson);
     const jaStyle = TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: AppColors.sumi, height: 1.45);
     const koStyle = TextStyle(fontSize: 14, color: AppColors.sumi, height: 1.45);
     return Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
