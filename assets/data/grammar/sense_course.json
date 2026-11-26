@@ -8,6 +8,15 @@
    "free": true,
    "lessons": [
     {
+     "id": "L0-ko1",
+     "title": "일본어는 한국어와 뼈대가 같아요",
+     "kind": "memorize",
+     "lang": "ko",
+     "video": "https://auth.talkverse.uk/art/video/ja/sense/L0ko-same_v1.mp4",
+     "note": "46초짜리 짧은 애니메이션이에요. 조사·어순·생략·꾸밈 순서·높임말 — 한국어 순서 그대로, 낱말만 바꾸면 돼요.",
+     "sentences": []
+    },
+    {
      "id": "L0-ep0",
      "title": "일본어 소리는 입 앞쪽에서 (발음)",
      "kind": "memorize",

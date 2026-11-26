@@ -43,9 +43,10 @@ class SenseCourse {
   }
 
   /// 회차 영상 주소 — 앱 표시 언어별 칸 `video_<언어>` 가 먼저(ko·en·ja·zh), 없으면 한국어가 아닌 화면은 `video_en`, 마지막으로 `video`(2026-11-26: 한국어 화자에게 영어 설명 영상이 나오던 것).
-  /// 영어 설명판은 `video_en` 에만 두면 한국어 화면에서는 안 보이고, 이 칸을 모르는 옛 빌드에서도 영상 없는 회차라 숨는다.
+  /// 회차에 `lang` 이 있으면 그 화면 언어에서만 영상이 나온다. 영어 설명판은 `video_en` 에만 두면 한국어 화면에서는 안 보이고, 이 칸을 모르는 옛 빌드에서도 영상 없는 회차라 숨는다.
   static String videoOf(Map<String, dynamic> ls, [AppLang? lang]) {
     final l = lang ?? AppLangPrefs.lang.value;
+    if (ls['lang'] is String && ls['lang'] != l.name) return ''; // 한 언어 화자용 회차(`lang: ko` = 한국어 설명판) — 옛 빌드는 이 칸을 몰라 `video` 를 그대로 보여 줌
     String? at(String k) => (ls[k] is String && (ls[k] as String).isNotEmpty) ? ls[k] as String : null;
     return at('video_${l.name}') ?? (l == AppLang.ko ? null : at('video_en')) ?? at('video') ?? '';
   }
