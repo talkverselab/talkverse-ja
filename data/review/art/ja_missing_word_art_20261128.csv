@@ -1,0 +1,2506 @@
+id,rank,word,reading,ko,en,pos,jlpt,where,hint,status
+ja_miss_00001,2,の,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00002,3,た,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00003,4,て,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00004,5,は,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00005,6,に,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00006,10,か,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00007,13,と,と,~와/과,and,,3,절벽단어/JLPT N3,,missing
+ja_miss_00008,17,で,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00009,20,ね,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00010,21,から,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00011,24,お,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00012,27,こと,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00013,30,いる,,,,,,절벽단어/회화새단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00014,33,さん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00015,34,なる,なる,~되다,to become,,5,절벽단어/JLPT N5,,missing
+ja_miss_00016,38,いう,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00017,62,や,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00018,64,ば,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00019,67,え,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00020,68,いや,,,,,,절벽단어/회화새단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00021,80,わ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00022,81,し,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00023,86,よう,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00024,109,ご,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00025,115,もの,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00026,130,いく,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00027,132,もん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00028,135,すむ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00029,139,こ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00030,143,ごめん,,,,,,절벽단어,,missing
+ja_miss_00031,146,そこ,そこ,거기,"that place, there; bottom, sole",,5,절벽단어/JLPT N5/회화새단어,r1_life_a4 2턴: 駅？すぐそこよ。,missing
+ja_miss_00032,162,い,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00033,166,おい,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00034,181,わかる,,,,,,절벽단어,,missing
+ja_miss_00035,184,うち,うち,집 · 우리 집,home; house; my place,,5,절벽단어/JLPT N5/회화새단어,r1_friends_c4 1턴: 土曜、うちでパーティーやる！来る人〜？,missing
+ja_miss_00036,187,しか,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00037,194,絶対,ぜったい,절대,"definitely, without fail, absoluteness",adverb,3,절벽단어/JLPT N3/회화새단어,r0_culture_a1 2턴: ある！『{drama}』。絶対見て。,missing
+ja_miss_00038,195,つく,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00039,205,あんた,きみ,너/그대,you (casual),,,"절벽단어/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00040,270,うまい,うまい,맛있다 · 능숙하다 · 잘되다,delicious; skillful; fortunate,,4,절벽단어/JLPT N4/회화새단어,r1_survival_s2 1턴: {name}、何飲む？ここ、抹茶ラテがめっちゃうまいよ。,missing
+ja_miss_00041,275,かわいい,,,,,,절벽단어/회화새단어,r1_survival_s3 1턴: あ、見て見て！あの犬、かわいい！,missing
+ja_miss_00042,304,とる,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00043,307,つける,つける,(불을) 켜다 · 붙이다,"to turn on (e.g., a light); to take",,5,절벽단어/JLPT N5,,missing
+ja_miss_00044,316,とき,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00045,378,くらい,,,,,,절벽단어,,missing
+ja_miss_00046,381,ほしい,,,,,,절벽단어,,missing
+ja_miss_00047,403,いろいろ,,,,,,절벽단어,,missing
+ja_miss_00048,416,かえる,,,,,,절벽단어,,missing
+ja_miss_00049,485,行ける,いく,가다,,,,절벽단어,,missing
+ja_miss_00050,583,わたし,,,,,,절벽단어,,missing
+ja_miss_00051,591,め,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00052,636,す,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00053,654,へん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00054,684,とも,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00055,720,ふう,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00056,724,える,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00057,799,おまえ,きみ,너/그대,,,,절벽단어,,missing
+ja_miss_00058,810,はる,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00059,843,くせ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00060,912,天皇,てんのう,천황,Emperor of Japan,noun,2,절벽단어/JLPT N2,,missing
+ja_miss_00061,945,やすむ,,,,,,절벽단어,,missing
+ja_miss_00062,962,ランジェリー,,속옷,,noun,,절벽단어,,missing
+ja_miss_00063,985,しょう,,,,,,절벽단어,,missing
+ja_miss_00064,1008,すぎ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00065,1081,まつ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00066,1082,じ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00067,1105,み,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00068,1123,なくなる,,,,,,절벽단어,,missing
+ja_miss_00069,1141,まえ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00070,1151,たつ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00071,1257,どく,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00072,1277,頂く,いただく,받다 · 먹다 (겸양),to receive; to eat (humble),,,"절벽단어/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00073,1278,すく,,,,,,절벽단어/회화새단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00074,1285,がら,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00075,1304,たまる,,,,,,절벽단어,,missing
+ja_miss_00076,1365,だいぶ,,,,,,절벽단어,,missing
+ja_miss_00077,1372,ちょうだい,ちょうだい,주세요 (친근한 말투) · 받음,-- colloquial form of ください; typically used by children or women --,,3,절벽단어/JLPT N3,,missing
+ja_miss_00078,1437,こな,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00079,1471,がん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00080,1486,おば,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00081,1497,横浜,よこはま,요코하마,,noun,,절벽단어,,missing
+ja_miss_00082,1519,こん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00083,1549,け,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00084,1669,おじ,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00085,1702,ずいぶん,,,,,,절벽단어,,missing
+ja_miss_00086,1718,機能,きのう,기능,"function, faculty",noun,3,절벽단어/JLPT N3,,missing
+ja_miss_00087,1774,まいる,,,,,,절벽단어,,missing
+ja_miss_00088,1795,告発,こくはつ,고발,,noun,,절벽단어,,missing
+ja_miss_00089,1812,かん,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00090,1841,しよう,,,,,,절벽단어,,missing
+ja_miss_00091,1848,ほる,,,,,,절벽단어,한두 글자 가나 — 조사·어미일 수 있음(그림 대신 문법 카드 후보),missing
+ja_miss_00092,1857,ブランド,,브랜드,,noun,,절벽단어,,missing
+ja_miss_00093,1980,くだる,,,,,,절벽단어,,missing
+ja_miss_00094,1982,つくる,,,,,,절벽단어,,missing
+ja_miss_00095,1983,あきらめる,,,,,,절벽단어,,missing
+ja_miss_00096,1999,霊,ゆうれい,유령,spirit; soul,,,"절벽단어/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00097,372,お願い,おねがい,부탁,request; favor; please,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00098,,なんで,なんで,왜,,,,회화빈출,,missing
+ja_miss_00099,,うそ,嘘,거짓말,lie,,4,회화빈출/JLPT N4,,missing
+ja_miss_00100,797,もう一度,もういちど,한 번 더,once more; one more time,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00101,,こわい,こわい,무섭다,,,,회화빈출/회화새단어,r1_survival_s3 2턴: え、こわい？わかった、逃げよう！,missing
+ja_miss_00102,,ゴミ,ごみ,쓰레기,,,,회화빈출/회화새단어,r1_life_b5 1턴: ゴミ、出してくる。,missing
+ja_miss_00103,,票,ひょう,표 · 투표 용지,"label, ballot, sign",,3,회화빈출/JLPT N3,,missing
+ja_miss_00104,,ほんとに,ほんとに,정말로,,,,회화빈출,,missing
+ja_miss_00105,,どういう,どういう,어떤 · 무슨,what kind of,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00106,503,お疲れさま,おつかれさま,수고했어요 · 수고하셨습니다,thank you for your hard work,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00107,1699,階,かい,층 · 계단,floor; story; stairs,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_travel_a2 2턴: {name}様、お待ちしておりました。お部屋は8階です。,missing
+ja_miss_00108,,ひとつ,ひとつ,하나 · 한 개,,,,회화빈출/회화새단어,r1_life_a1 1턴: すみません、カフェラテ、ひとつお願いします。,missing
+ja_miss_00109,,それだけ,それだけ,그것뿐,just that,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00110,,志望,しぼう,지망,"wish, desire, ambition",,3,회화빈출/JLPT N3,,missing
+ja_miss_00111,,鑑みる,かんがみる,고려하다,take into account,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00112,,なんとか,なんとか,어떻게든 · 그럭저럭 · 뭐라고,,,,회화빈출,,missing
+ja_miss_00113,,ぼちぼち,ぼちぼち,그럭저럭,so-so,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_life_b2 12턴: ぼちぼちです。,missing
+ja_miss_00114,,オチ,おち,(만담의) 결말,punchline,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00115,,おかえり,おかえり,어서 와 · 다녀왔니 · 귀가,,,,회화빈출,,missing
+ja_miss_00116,,ネタ,ねた,소재 · 웃음거리,material · gag,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00117,,ずるい,ずるい,교활하다 · 약삭빠르다 · 치사하다,,,,회화빈출,,missing
+ja_miss_00118,,タグ,たぐ,태그,tag,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_b5 6턴: 全部スペース入ってる。タグになってない。,missing
+ja_miss_00119,,ノリ,のり,풀 · 접착제,,,,회화빈출,,missing
+ja_miss_00120,,ふる,ふ,불~ · 비~ · 부~,,,,회화빈출,,missing
+ja_miss_00121,,いえいえ,いえいえ,아니에요,no no · not at all,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_travel_b4 4턴: いえいえ。{country}の人です。,missing
+ja_miss_00122,,まめ,まめ,콩,,,,회화빈출,,missing
+ja_miss_00123,,お手数,おてかず,수고(를 끼침),trouble (honorific),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00124,,おやすみ,おやすみ,휴일 · 쉼 · 잘 자,,,,회화빈출,,missing
+ja_miss_00125,,三つ,みっつ,세 개 · 세 살,three things,,5,회화빈출/JLPT N5,,missing
+ja_miss_00126,,ウケる,うける,받다 · (시험을) 치르다,,,,회화빈출,,missing
+ja_miss_00127,,タメ,ため,위함 · 때문 · 목적,,,,회화빈출,,missing
+ja_miss_00128,,土曜,どよう,토요일,Saturday,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_friends_b6 3턴: 来週の土曜、どう？,missing
+ja_miss_00129,,いま,いま,지금,,,,회화빈출,,missing
+ja_miss_00130,,カタカナ,かたかな,가타카나,,,,회화빈출/회화새단어,r1_life_a2 5턴: あ、お願いします！…カタカナで。,missing
+ja_miss_00131,,カバン,かばん,가방,,,,회화빈출/회화새단어,r1_travel_b6 1턴: すみません！電車にカバン、忘れました！,missing
+ja_miss_00132,,お待ち,おまち,기다림(お待ち),waiting (honorific),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00133,,ビザ,びざ,비자,visa,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_love_b4 4턴: ごめん。私も、ビザ、来年まで。,missing
+ja_miss_00134,,ことわざ,ことわざ,속담,,,,회화빈출/회화새단어,r2_friends_b1 12턴: 形より味。これ、{country}のことわざ。,missing
+ja_miss_00135,,おおきに,おおきに,고마워요(간사이),thank you (Kansai),,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_travel_b7 3턴: おおきに。観光？ほんま、ええ天気やなあ。,missing
+ja_miss_00136,,ほな,ほな,그럼(간사이),well then (Kansai),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00137,,ボケ,ぼけ,보케(바보 역),comedic fool,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00138,,なまる,なまら,엄청 · 아주(홋카이도),,,,회화빈출,,missing
+ja_miss_00139,,北海道,ほっかいどう,홋카이도,Hokkaido,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00140,,本年,ほんねん,올해,this year,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00141,,ジェット,じぇっと,제트(풍선),jet (balloon),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00142,,どっか,どっか,어딘가,somewhere,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00143,,縁,えん,인연 · 연분 · 관계,"chance, tie, relationship",,3,회화빈출/JLPT N3/JLPT N1/회화새단어,r2_travel_b6 2턴: ごえん＝5円＝縁。おもしろい。,missing
+ja_miss_00144,,いたる,いたっ,아야 · 아파,,,,회화빈출,,missing
+ja_miss_00145,,つなぐ,つなぐ,잇다 · 매다 · 연결하다,,,,회화빈출/회화새단어,r0_love_a4 3턴: …手、つなぐ？,missing
+ja_miss_00146,,ラブ,らぶ,사랑(러브),love,,,"회화빈출/단어DB(급수 없음, 낱말창)/외래어",,missing
+ja_miss_00147,,オッケー,おっけー,오케이,OK,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00148,,待ち受ける,まちうける,기다리다 · 대기(화면),wait for / lock screen,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00149,,閉じる,とじる,닫다 · 감다,"to close (e.g., book, eyes), to shut",,3,회화빈출/JLPT N3,,missing
+ja_miss_00150,,イケメン,いけめん,꽃미남,handsome guy,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_a1 4턴: 主人公がイケメン。,missing
+ja_miss_00151,,オタク,おたく,댁 · 자택,,,,회화빈출/회화새단어,r0_culture_c3 3턴: 私、オタク。,missing
+ja_miss_00152,,ハマる,はまる,푹 빠지다,get hooked,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c2 7턴: …広告だった。でも広告、ハマった。,missing
+ja_miss_00153,,のど,のど,목 · 목구멍,,,,회화빈출/회화새단어,r1_life_a6 4턴: のどは？せきは？鼻水は？,missing
+ja_miss_00154,,大吉,だいきち,대길,great luck,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00155,,猫,ねこ,고양이,cat,,5,회화빈출/JLPT N5,,missing
+ja_miss_00156,,総合,そうごう,종합,"synthesis, generalization",,1,회화빈출/JLPT N1,,missing
+ja_miss_00157,,西口,にしぐち,서쪽 출입구,west exit,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_friends_b1 5턴: 振ってる…。あ、待って。ここ「西口」。,missing
+ja_miss_00158,,お互い様,おたがいさま,피차일반,same to you,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_travel_a6 6턴: （笑）じゃあ、お互い様。駅ですか？,missing
+ja_miss_00159,,ドキドキ,どきどき,두근두근,,,,회화빈출,,missing
+ja_miss_00160,,えび,えび,새우,shrimp,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00161,,吹き替え,ふきかえ,더빙,dubbing,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_b6 1턴: 映画、どっち派？字幕？吹き替え？,missing
+ja_miss_00162,,感想,かんそう,감상 · 소감,"(one's) impressions, (one's) thoughts",,3,회화빈출/JLPT N3/회화새단어,r1_culture_b3 4턴: 1巻ずつ。読んだら感想。,missing
+ja_miss_00163,,人情,にんじょう,인정,human warmth,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_life_b1 8턴: 大阪はな、人情やねん。,missing
+ja_miss_00164,,たん,たん,단 (천 길이 단위),,,,회화빈출,,missing
+ja_miss_00165,,要するに,ようするに,요컨대 · 결국,"in a word, after all, in short …",,3,회화빈출/JLPT N3,,missing
+ja_miss_00166,,ぶる,ぶ,분/부분,,,,회화빈출,,missing
+ja_miss_00167,,同時に,どうじに,동시에,at the same time,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00168,,ミサキ,みさき,곶 · 갑,,,,회화빈출,,missing
+ja_miss_00169,,棒読み,ぼうよみ,감정 없는 읽기,monotone reading,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_friends_b4 6턴: …今の「うそ」、棒読み。,missing
+ja_miss_00170,,本当は,ほんとうは,사실은,actually,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00171,,たぶん,たぶん,아마,,,,회화빈출/회화새단어,r2_study_b1 11턴: （小声）かわいい。たぶん。,missing
+ja_miss_00172,,在留,ざいりゅう,체류,residence,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00173,,ホ,ほ,이삭,,,,회화빈출,,missing
+ja_miss_00174,,ちる,ち,피 · 혈액,,,,회화빈출,,missing
+ja_miss_00175,,一言,ひとこと,한마디 · 한 말씀,one word,,3,회화빈출/JLPT N3/회화새단어,r2_work_b8 1턴: では、{name}さんから一言。,missing
+ja_miss_00176,,越し,ごし,~너머,through (e.g. screen),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00177,,鬱,うつ,우울(鬱),melancholy,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_study_b4 7턴: じゃあ「鬱」は？,missing
+ja_miss_00178,,一泊,いっぱく,1박,one night stay,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_love_b5 3턴: いいね。日帰り？一泊？,missing
+ja_miss_00179,,既往症,きおうしょう,기왕증,medical history,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_life_b4 2턴: はい。（書く）…きおう…しょう？どういう意味ですか？,missing
+ja_miss_00180,,長所,ちょうしょ,장점,"strong point, merit; advantage",,2,회화빈출/JLPT N2/회화새단어,r2_friends_b3 5턴: いいね。長所は？,missing
+ja_miss_00181,,号車,ごうしゃ,~호차,car number,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_travel_b1 5턴: この車両は予約の席。1〜3号車へ移動してください。,missing
+ja_miss_00182,,バズ,ばず,화제가 됨,go viral,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00183,,喫茶,きっさ,찻집,coffee shop,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00184,,フラット,ふらっと,플랫(좌석),flat,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_culture_b1 7턴: お席はフラット席とリクライニング席、どちらに？,missing
+ja_miss_00185,,つり,つり,낚시,,,,회화빈출,,missing
+ja_miss_00186,1471,着信,ちゃくしん,착신 · 전화가 옴,incoming call; arrival of a message,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_love_c3 8턴: （着信中…）,missing
+ja_miss_00187,,ズズッ,ずずっ,후루룩,slurp,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00188,,かき,かき,굴,,,,회화빈출,,missing
+ja_miss_00189,,かぎ,かぎ,열쇠 · 자물쇠,,,,회화빈출,,missing
+ja_miss_00190,,入用,にゅうよう,필요함(入用),needed,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00191,,ひま,ひま,짬 · 한가함 · 여가,,,,회화빈출,,missing
+ja_miss_00192,,大物,おおもの,큰 것(대어),big catch,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_friends_b3 8턴: 大物だったよ。,missing
+ja_miss_00193,,日間,にちかん,~일간,for ~ days,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00194,,サル,さる,떠나다 · 지나가다,,,,회화빈출,,missing
+ja_miss_00195,,グッズ,ぐっず,굿즈,merchandise,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c3 6턴: 部屋、グッズ200個。,missing
+ja_miss_00196,,リンク,りんく,링크,link,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c2 1턴: この曲、聴いて。どう？（リンク）,missing
+ja_miss_00197,,筆談,ひつだん,필담,written conversation,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c4 7턴: 筆談する。,missing
+ja_miss_00198,,ナイス,ないす,나이스,nice,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00199,,ハズレ,はずれ,꽝,miss · blank,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_b2 8턴: 回す！…うそ、全部ハズレ。やばい。,missing
+ja_miss_00200,,オン,おん,소리 · 음,,,,회화빈출,,missing
+ja_miss_00201,,ドキッと,どきっと,두근,startled,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00202,,大凶,だいきょう,대흉,worst fortune,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00203,,個性,こせい,개성,"individuality, personality, idiosyncrasy",,1,회화빈출/JLPT N1,,missing
+ja_miss_00204,,おしゃれ,おしゃれ,멋 · 멋쟁이 · 멋을 냄,,,,회화빈출/회화새단어,r1_love_a2 3턴: サクラが決めて。おしゃれなとこ？,missing
+ja_miss_00205,,スルー,するー,무시(스루),ignore,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00206,,ぜんぶ,ぜんぶ,전부,,,,회화빈출,,missing
+ja_miss_00207,,踊れる,おどれる,춤출 수 있다,can dance,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00208,,木曜,もくよう,목요일,Thursday,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_life_b5 4턴: 木曜。ラベルとキャップは別。,missing
+ja_miss_00209,,喫煙,きつえん,흡연,smoking,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_life_b2 3턴: 二名様ですね。禁煙席と喫煙席、どちらに？,missing
+ja_miss_00210,,せき,せき,자리 · 좌석,,,,회화빈출/회화새단어,r1_life_a6 4턴: のどは？せきは？鼻水は？,missing
+ja_miss_00211,,カフェラテ,かふぇらて,카페라테,caffe latte,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_life_a1 1턴: すみません、カフェラテ、ひとつお願いします。,missing
+ja_miss_00212,,いか,いか,이하,,,,회화빈출,,missing
+ja_miss_00213,,ホット,ほっと,안심하는 모양 · 후유,,,,회화빈출/회화새단어,r1_life_a1 5턴: あ、M！ホットで。,missing
+ja_miss_00214,1192,か月,かげつ,개월,suffix: -months,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00215,,ついてる,ついてる,붙어 있다,is marked,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00216,,付け,つけ,~붙이기,tagging,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00217,,新曲,しんきょく,신곡,new song,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00218,,しゃべれる,しゃべれる,말할 수 있다,can speak,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00219,,準急,じゅんきゅう,준급행,"local express (train, slower than an express)",,1,회화빈출/JLPT N1/회화새단어,r1_travel_b1 4턴: 次は準急。それも止まりません。,missing
+ja_miss_00220,,かる,かり,빌림 · 빚 · 신세,,,,회화빈출,,missing
+ja_miss_00221,,シングル,しんぐる,싱글룸,single room,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_travel_b2 3턴: え、シングル一室ですか？,missing
+ja_miss_00222,,一室,いっしつ,한 방,one room,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_travel_b2 3턴: え、シングル一室ですか？,missing
+ja_miss_00223,,ゆずる,ゆずる,양보하다 · 물려주다 · 넘겨주다,,,,회화빈출,,missing
+ja_miss_00224,,私鉄,してつ,사철 · 민영 철도,private railway,,2,회화빈출/JLPT N2/회화새단어,r1_travel_b4 2턴: どの駅？JR？地下鉄？私鉄？,missing
+ja_miss_00225,,かい,かい,조개 · 조가비,,,,회화빈출,,missing
+ja_miss_00226,,ガチ,がち,진짜(구어),for real,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_b6 5턴: おお、ガチ。,missing
+ja_miss_00227,,ハウリング,はうりんぐ,하울링,feedback howl,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00228,,聖地,せいち,성지,sacred place,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00229,,巡礼,じゅんれい,순례,pilgrimage,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00230,,撮れる,とれる,찍힐 수 있다,can be taken,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00231,,盗る,とる,훔치다(盗る),steal,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_a4 3턴: （笑）盗ったじゃなくて、取れた。買えた、ってこと。,missing
+ja_miss_00232,,買える,かえる,살 수 있다,can buy,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_a4 3턴: （笑）盗ったじゃなくて、取れた。買えた、ってこと。,missing
+ja_miss_00233,,名言,めいげん,명언,famous quote,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r1_culture_a5 3턴: え？アニメの名言じゃない？,missing
+ja_miss_00234,,誤字,ごじ,오타,typo,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00235,,言い直す,いいなおす,고쳐 말하다,rephrase,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00236,,コメ,こめ,쌀,,,,회화빈출,,missing
+ja_miss_00237,,例文,れいぶん,예문,example sentence,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00238,2290,集,しゅう,모음집 · 집,collection; anthology,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00239,,読解,どっかい,독해,reading comprehension,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00240,,習慣,しゅうかん,습관 · 관습,custom (in reference to culture),,4,회화빈출/JLPT N4,,missing
+ja_miss_00241,,放送,ほうそう,방송,broadcasting,,4,회화빈출/JLPT N4,,missing
+ja_miss_00242,,ふり,ふり,불리,,,,회화빈출/회화새단어,r3_love_b4 9턴: いつも知ってるふりしてた。,missing
+ja_miss_00243,,まして,まして,하물며 · 더구나,"still more, still less (with neg. verb), to say nothing of",,1,회화빈출/JLPT N1,,missing
+ja_miss_00244,,折半,せっぱん,절반씩 부담,split half,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_love_b2 7턴: 折半。,missing
+ja_miss_00245,,保証,ほしょう,보증,"guarantee, assurance, warranty",,3,회화빈출/JLPT N3,,missing
+ja_miss_00246,,インスタ,いんすた,인스타,Instagram,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_love_b1 4턴: …昨日のインスタ。隣の人、誰？,missing
+ja_miss_00247,,延びる,のびる,연장되다 · 늘어나다 · 연기되다,to be prolonged,,3,회화빈출/JLPT N3/회화새단어,r3_love_b6 12턴: ビザ、延びた。3年。,missing
+ja_miss_00248,,焼き,やき,구이,grilled,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00249,,おばさん,おばさん,이모 · 고모 · 아주머니,,,,회화빈출,,missing
+ja_miss_00250,,水曜,すいよう,수요일,Wednesday,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00251,,返し,かえし,맞받아침,comeback,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_life_b1 12턴: （爆笑）おお、ええ返しや。合格。,missing
+ja_miss_00252,,ないし,ないし,내지 · 또는,,,,회화빈출,,missing
+ja_miss_00253,,しん,しん,심 · 속 · 심지,,,,회화빈출,,missing
+ja_miss_00254,,支社,ししゃ,지사,branch office,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_life_b2 1턴: {name}さん、ようこそ大阪支社へ。,missing
+ja_miss_00255,,一丁,いっちょう,하나(주문),one order,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00256,,まっか,まっか,새빨갛다 · 새빨간 · (얼굴이) 빨개짐,,,,회화빈출,,missing
+ja_miss_00257,,解約,かいやく,해약,cancel contract,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_life_b5 1턴: 東京のお部屋の解約ですね。原状回復費用が…,missing
+ja_miss_00258,,こういう,こういう,이런,this kind of,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00259,38,流,りゅう,류 · 유파,suffix: -style; school (of thought),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00260,,あたり,あたり,적중 · 성공 · 당첨,,,,회화빈출,,missing
+ja_miss_00261,,そうですね,そうですね,그렇군요,that's right,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00262,,今や,いまや,지금이야말로,now,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00263,,コスト,こすと,비용,cost,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00264,,漬け,つけ,절임,pickled,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00265,,遠回し,とおまわし,돌려 말함,indirect,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00266,,恐れ入る,おそれいる,황송하다 · 송구하다 · 질리다,"to be filled with awe, to feel small",,1,회화빈출/JLPT N1,,missing
+ja_miss_00267,,取り柄,とりえ,장점,strong point,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00268,,先約,せんやく,선약,prior appointment,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00269,,大きめ,おおきめ,좀 큰 편,largish,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00270,,リハーサル,りはーさる,리허설,rehearsal,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00271,,小道具,こどうぐ,소품,prop,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00272,,あむ,あん,안 · 계획 · 제안,,,,회화빈출,,missing
+ja_miss_00273,,こる,こる,열중하다 · 공들이다 · (어깨가) 결리다,,,,회화빈출,,missing
+ja_miss_00274,,おりる,おり,우리 · 감옥,,,,회화빈출,,missing
+ja_miss_00275,,ベタ,べた,뻔함(베타),cliché,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_friends_b1 11턴: ベタ。,missing
+ja_miss_00276,,効く,きく,(약 등이) 듣다 · 효과가 있다,to be effective,,3,회화빈출/JLPT N3/회화새단어,r3_friends_b1 14턴: …バレた。でも、効いた。,missing
+ja_miss_00277,,か国,かこく,~개국,-countries,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00278,,おかえりなさい,おかえりなさい,어서 와 · 다녀오셨어요,,,,회화빈출/회화새단어,r3_travel_b6 16턴: ……おかえりなさい。,missing
+ja_miss_00279,,リベンジ,りべんじ,리벤지,revenge (retry),,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r3_travel_b2 1턴: リベンジ。朝5時。,missing
+ja_miss_00280,,党,とう,당 · 정당,party (political),,3,회화빈출/JLPT N3,,missing
+ja_miss_00281,,本編,ほんぺん,본편,main part,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00282,,上がり,あがり,올라감 · 수입 · 끝남,"ascent; income; completion, stop",,1,회화빈출/JLPT N1,,missing
+ja_miss_00283,,長生き,ながいき,장수,longevity,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00284,,見せつける,みせつける,과시하다,show off,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00285,2059,寄る,よる,들르다 · 다가가다,to stop by,,4,회화빈출/JLPT N4,,missing
+ja_miss_00286,,学期,がっき,학기,term (school),,3,회화빈출/JLPT N3,,missing
+ja_miss_00287,,何分,なにぶん,아무쪼록 · 부디 · 어쨌든,"by all means, please",,2,회화빈출/JLPT N2/회화새단어,r1_life_a4 5턴: え…何分ですか？,missing
+ja_miss_00288,,ベトナム,べとなむ,베트남,Vietnam,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_study_b1 4턴: ミンです。ベトナムから。趣味は、寝ること。,missing
+ja_miss_00289,,だいたい,だいたい,대체로 · 대략 · 애초에,,,,회화빈출,,missing
+ja_miss_00290,,混浴,こんよく,혼욕,mixed bathing,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00291,,またせる,またせる,기다리게 하다,make wait,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00292,,パスワード,ぱすわーど,비밀번호,password,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00293,,かわり,かわり,대신 · 대리 · 대체,,,,회화빈출,,missing
+ja_miss_00294,,はねる,はね,날개 · 깃털,,,,회화빈출,,missing
+ja_miss_00295,,暗証,あんしょう,비밀(암증),PIN,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00296,,桁,けた,자릿수 · 도리,"column, beam, digit",,2,회화빈출/JLPT N2/회화새단어,r2_life_b7 6턴: 暗証番号、4桁を決めてください。,missing
+ja_miss_00297,,転入,てんにゅう,전입,moving in,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00298,,てん,てん,점 · 점수,,,,회화빈출,,missing
+ja_miss_00299,,書き方,かきかた,쓰는 법,how to write,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_life_b2 7턴: …漢字、多いです。書き方、教えてください。,missing
+ja_miss_00300,575,欄,らん,난 · 칸 · 란,"column of text (e.g., as in a newspaper)",,2,회화빈출/JLPT N2,,missing
+ja_miss_00301,,年金,ねんきん,연금,pension,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00302,,読み方,よみかた,읽는 법,how to read,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00303,,真っ暗,まっくら,캄캄함 · 암담함,total darkness,,2,회화빈출/JLPT N2/회화새단어,r2_life_b8 2턴: え、真っ暗。大丈夫？,missing
+ja_miss_00304,,送信,そうしん,송신,send,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00305,,再送,さいそう,재전송,resend,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_work_b5 7턴: B社に電話。「誤送信、破棄お願いします」。A社に再送。,missing
+ja_miss_00306,,それなら,それなら,그렇다면 · 그러면,"If that's the case..., If so..., That being the case...",,2,회화빈출/JLPT N2,,missing
+ja_miss_00307,,えらい,えらい,훌륭하다 · 위대하다 · 지독하다,,,,회화빈출,,missing
+ja_miss_00308,,伺い,うかがい,여쭘,inquiry (humble),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00309,,適量,てきりょう,적당량,appropriate amount,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_work_b7 11턴: 塩…。じゃあ、適量は？,missing
+ja_miss_00310,1489,私用,しよう,사적인 용무 · 개인 용도,"personal use, private business",,3,회화빈출/JLPT N3/회화새단어,r2_work_b6 10턴: 「私用のため」。それだけ。,missing
+ja_miss_00311,,びん,びん,편 (교통편) · 항공편 · 편의,,,,회화빈출/회화새단어,r2_friends_b7 2턴: ゴミ、私がやる。燃える、ペット、缶、びん。,missing
+ja_miss_00312,,即答,そくとう,즉답,instant answer,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_friends_b6 7턴: 違う（即答）。,missing
+ja_miss_00313,,五,ご,다섯 · 5,five,,5,회화빈출/JLPT N5,,missing
+ja_miss_00314,,タコ焼き,たこやき,타코야키,takoyaki,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00315,,指定,してい,지정,"designation, specification, assignment",,2,회화빈출/JLPT N2,,missing
+ja_miss_00316,,座れる,すわれる,앉을 수 있다,can sit,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00317,,ラッキー,らっきー,럭키,lucky,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_travel_b1 12턴: てか、デートが長くなった。ラッキー。,missing
+ja_miss_00318,,えん,えん,엔 (일본 화폐) · 원 (동그라미),,,,회화빈출,,missing
+ja_miss_00319,,道頓堀,どうとんぼり,도톤보리,Dotonbori,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_travel_b7 2턴: 道頓堀まで、お願いします。,missing
+ja_miss_00320,,弁,べん,~사투리,dialect,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00321,,なら,なら,~라면,if,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00322,,がる,がる,~하고 싶어하다,-garu (show feelings),,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00323,,おなか,おなか,배(신체) · 복부,,,,회화빈출,,missing
+ja_miss_00324,,くだす,くだす,(배를) 설사하다,have diarrhea,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00325,,さく,さき,앞 · 끝 · 먼저 · 이전,,,,회화빈출,,missing
+ja_miss_00326,664,寸,すん,치 (길이 단위) · 치수,sun (unit of length); measurement,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00327,,固形,こけい,고체,solid,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00328,,カリカリ,かりかり,바삭바삭,crunchy,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_travel_b2 9턴: はい。カリカリでおいしいですよ。,missing
+ja_miss_00329,,タン,たん,단 (천 길이 단위),,,,회화빈출,,missing
+ja_miss_00330,,作動,さどう,작동,operate,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00331,,コス,こす,넘다 · 넘기다,,,,회화빈출,,missing
+ja_miss_00332,,決め,きめ,결정(포즈),decide,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00333,,登録,とうろく,등록,"registration, register, record",,1,회화빈출/JLPT N1,,missing
+ja_miss_00334,1878,号,ごう,호 · 번,number; issue; sobriquet,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00335,,曲名,きょくめい,곡명,song title,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_culture_b8 6턴: 毎日聴いてる。曲名、知らないけど。,missing
+ja_miss_00336,,オーラ,おーら,아우라,aura,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_culture_b4 3턴: 名前、わかんない。でも絶対有名。オーラ。,missing
+ja_miss_00337,,かっこよい,かっこよい,멋지다,cool,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00338,,先客,せんきゃく,먼저 온 손님,earlier customer,,,"회화빈출/단어DB(급수 없음, 낱말창)/회화새단어",r2_culture_b6 8턴: 取れた。でも、先客がいる。,missing
+ja_miss_00339,,放題,ほうだい,무제한,all you can,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00340,,ナイト,ないと,나이트,night,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00341,,パック,ぱっく,팩(패키지),pack,,,"회화빈출/단어DB(급수 없음, 낱말창)",,missing
+ja_miss_00342,,ぱっく,ぱっく,팩(패키지),,,,회화빈출,,missing
+ja_miss_00343,1689,零,れい,영 · 제로,"zero, nought",,5,JLPT N5,,missing
+ja_miss_00344,,そう,そう,그래/그렇게,"yes; appears, to be the case",,5,JLPT N5,,missing
+ja_miss_00345,,たて,たて,세로 · 길이,"length, height",,5,JLPT N5,,missing
+ja_miss_00346,,丁度,ちょうど,마침 · 딱 · 꼭,"just, right, exactly",,5,JLPT N5,,missing
+ja_miss_00347,,千,せん,천 · 1000,thousand,,5,JLPT N5,,missing
+ja_miss_00348,,叔父さん,おじさん,삼촌 · 아저씨,"uncle, middle-aged man",,5,JLPT N5,,missing
+ja_miss_00349,,在る,ある,있다 · 존재하다,"to be, to have",,5,JLPT N5,,missing
+ja_miss_00350,,差す,さす,(우산을) 쓰다 · (햇빛이) 비치다,"to raise (stretch out) hands, to raise (e.g., umbrella)",,5,JLPT N5,,missing
+ja_miss_00351,,易しい,やさしい,쉽다 · 간단하다,"easy, plain, simple",,5,JLPT N5,,missing
+ja_miss_00352,,有る,ある,있다 · 가지고 있다,"to be, to have",,5,JLPT N5,,missing
+ja_miss_00353,,沢山,たくさん,많이 · 많음,"many, much",,5,JLPT N5,,missing
+ja_miss_00354,,終る,おわる,끝나다,"to finish, to close",,5,JLPT N5,,missing
+ja_miss_00355,,綺麗,きれい,예쁘다 · 깨끗하다,"pretty, clean, tidy",,5,JLPT N5,,missing
+ja_miss_00356,,美味しい,おいしい,맛있다,"delicious, tasty",,5,JLPT N5,,missing
+ja_miss_00357,42,事,こと,일/것,"thing(s), matter(s), fact",,4,JLPT N4,,missing
+ja_miss_00358,78,暮れる,くれる,저물다 · (해가) 지다,"to get dark, to come to an end",,4,JLPT N4,,missing
+ja_miss_00359,623,間,あいだ,사이/동안,"space, interval",,4,JLPT N4/JLPT N3,,missing
+ja_miss_00360,912,以外,いがい,이외 · ~외,"other than, with the exception of, excepting",,4,JLPT N4,,missing
+ja_miss_00361,1008,様,よう,~처럼 · ~인 듯 · 모양,"way, manner, kind",,4,JLPT N4/JLPT N1,,missing
+ja_miss_00362,1306,市,し,시 (행정 구역),city,,4,JLPT N4/JLPT N3,,missing
+ja_miss_00363,,あいさつする,挨拶,인사하다,greet(ing),,4,JLPT N4,,missing
+ja_miss_00364,,うかがう,うかがう,여쭙다 · 찾아뵙다,to ask,,4,JLPT N4,,missing
+ja_miss_00365,,おる,おる,있다 (겸양),-- extra-modest expression for いる --,,4,JLPT N4,,missing
+ja_miss_00366,,かっこう,格好,모습 · 모양 · 꼴,"appearance, manner, shape, form, posture",,4,JLPT N4,,missing
+ja_miss_00367,,下りる,おりる,내려오다 · 내려가다,"to get down, to go; come down",,4,JLPT N4,,missing
+ja_miss_00368,,乾く,かわく,마르다 · 건조해지다,to get dry,,4,JLPT N4,,missing
+ja_miss_00369,,凄い,すごい,굉장하다 · 대단하다 · 무섭다,"terrific, great",,4,JLPT N4,,missing
+ja_miss_00370,,固い,かたい,딱딱하다 · 단단하다 · 굳다,"solid, hard, firm",,4,JLPT N4,,missing
+ja_miss_00371,,堅,かたい,단단하다 · 딱딱하다 · 견고하다,"solid, hard, firm",,4,JLPT N4,,missing
+ja_miss_00372,,復習,ふくしゅう,복습,"review (of lessons), revision",,4,JLPT N4,,missing
+ja_miss_00373,,漬ける,つける,담그다 · 절이다,"to soak, to moisten, to pickle",,4,JLPT N4,,missing
+ja_miss_00374,,点く,つく,(불·전기가) 켜지다 · 붙다,"to be started, to be switched on",,4,JLPT N4,,missing
+ja_miss_00375,,直る,なおる,고쳐지다 · 낫다,to be fixed,,4,JLPT N4,,missing
+ja_miss_00376,,硬,かたい,단단하다 · 딱딱하다,"solid, hard, firm",,4,JLPT N4,,missing
+ja_miss_00377,,講堂,こうどう,강당,auditorium,,4,JLPT N4,,missing
+ja_miss_00378,,～おき,～おき,~걸러 · ~간격으로,after every ~,,4,JLPT N4,,missing
+ja_miss_00379,,～おわる,～おわる,다 ~하다 · ~하기를 끝내다,to finish doing ~,,4,JLPT N4,,missing
+ja_miss_00380,,～ちゃん,～ちゃん,~짱,suffix for familiar (female) person,,4,JLPT N4,,missing
+ja_miss_00381,,～にくい,～にくい,~하기 어렵다 · ~하기 힘들다,difficult to do ~,,4,JLPT N4,,missing
+ja_miss_00382,,～ばかり,～ばかり,~만 · 막 ~한 참,"just did ~, only",,4,JLPT N4,,missing
+ja_miss_00383,,～まま,～まま,~한 채 · ~대로,as it is,,4,JLPT N4,,missing
+ja_miss_00384,,～やすい,～やすい,~하기 쉽다,easy to do ~,,4,JLPT N4,,missing
+ja_miss_00385,,～代,～だい,~대 (연령·시대) · ~요금,~ age; period,,4,JLPT N4,,missing
+ja_miss_00386,,～区,～く,~구 (행정 구역),"~ district, ~ ward, ~ borough",,4,JLPT N4,,missing
+ja_miss_00387,,～君,～くん,너/그대,"Mr. (junior) ~, master ~",,4,JLPT N4,,missing
+ja_miss_00388,,～員,～いん,~원 (구성원),member of ~,,4,JLPT N4,,missing
+ja_miss_00389,,～学部,～がくぶ,~학부,department of a university,,4,JLPT N4,,missing
+ja_miss_00390,,～家,～か,집,person who is specialized in ~,,4,JLPT N4/JLPT N2,,missing
+ja_miss_00391,,～式,～しき,~식 (의식·방식),~ ceremony; ~ style,,4,JLPT N4,,missing
+ja_miss_00392,,～様,～さま,~님,"Mr., Mrs., Ms.",,4,JLPT N4,,missing
+ja_miss_00393,,～町,～ちょう,~정 · ~동네 (지명),the town of ~,,4,JLPT N4,,missing
+ja_miss_00394,,～目,～め,눈/목표,"number ~ sequence, ~nd; ~th",,4,JLPT N4,,missing
+ja_miss_00395,,～続ける,～つづける,계속 ~하다,to continue doing ~,,4,JLPT N4,,missing
+ja_miss_00396,,～軒,～けん,~채 (집을 세는 단위),counter for houses,,4,JLPT N4,,missing
+ja_miss_00397,92,反る,かえる,휘다 · 젖혀지다,"to warp, to be warped, to curve",,3,JLPT N3/JLPT N1,,missing
+ja_miss_00398,234,澄む,すむ,맑아지다 · 투명해지다,"to clear (e.g., weather), to become transparent",,3,JLPT N3,,missing
+ja_miss_00399,302,度,たび,~할 때마다 · 번,counter for occurrences,,3,JLPT N3,,missing
+ja_miss_00400,344,負う,おう,짊어지다 · (책임을) 지다 · (상처를) 입다,"to bear, to owe",,3,JLPT N3,,missing
+ja_miss_00401,428,異,い,다름 · 이의,objection,,3,JLPT N3,,missing
+ja_miss_00402,447,添う,そう,따르다 · 곁에 있다 · 부응하다,"to accompany, to comply with",,3,JLPT N3,,missing
+ja_miss_00403,578,件,けん,건 · 일 · 사항,"matter, case, item",,3,JLPT N3,,missing
+ja_miss_00404,654,大,だい,큰 · 대,"big, great",,3,JLPT N3,,missing
+ja_miss_00405,662,地,ち,땅 · 대지,earth,,3,JLPT N3,,missing
+ja_miss_00406,716,注す,さす,붓다 · 따르다 · (안약을) 넣다,"to pour (drink), to serve (drinks)",,3,JLPT N3,,missing
+ja_miss_00407,834,県,けん,현 (행정 구역),prefecture,,3,JLPT N3,,missing
+ja_miss_00408,949,課,か,과 (부서),"department, division",,3,JLPT N3,,missing
+ja_miss_00409,983,湾,わん,만 (바다),"bay, gulf, inlet",,3,JLPT N3,,missing
+ja_miss_00410,1031,問う,とう,묻다 · 따지다,"to ask, to question",,3,JLPT N3,,missing
+ja_miss_00411,1135,際,さい,때 · 즈음 · 경우,"on the occasion of, circumstances",,3,JLPT N3,,missing
+ja_miss_00412,1216,当たり前,あたりまえ,당연함 · 예사,"usual, common, obvious",,3,JLPT N3,,missing
+ja_miss_00413,1413,役,やく,역할 · 직책 · 배역,"role, position",,3,JLPT N3,,missing
+ja_miss_00414,1503,大した,たいした,대단한 · 별 (~아니다),"significant, great, considerable",,3,JLPT N3,,missing
+ja_miss_00415,1660,氏,し,씨 (성 뒤에 붙는 존칭) · 성씨,"family name, lineage",,3,JLPT N3,,missing
+ja_miss_00416,1694,討つ,うつ,치다 · 무찌르다 · (원수를) 갚다,"to attack, to avenge",,3,JLPT N3,,missing
+ja_miss_00417,1779,歓声,かんせい,환성 · 함성,"cheer, shout of joy",,3,JLPT N3,,missing
+ja_miss_00418,1811,直,じき,곧 · 금방,"immediately, soon, shortly",,3,JLPT N3,,missing
+ja_miss_00419,1922,位,くらい,정도 · 쯤 · 지위,"grade, rank, about",,3,JLPT N3,,missing
+ja_miss_00420,1980,原,はら,들판 · 벌판,"field, plain",,3,JLPT N3,,missing
+ja_miss_00421,2047,性,せい,성 · 성별 · 성질,"sex, gender",,3,JLPT N3,,missing
+ja_miss_00422,2194,相,そう,모습 · 양상 · 인상,"aspect, phase, countenance",,3,JLPT N3,,missing
+ja_miss_00423,2231,自身,じしん,자신 · 자기,oneself,,3,JLPT N3,,missing
+ja_miss_00424,2245,全,ぜん,전 · 모든 · 전체,"all, whole, entire",,3,JLPT N3,,missing
+ja_miss_00425,2337,級,きゅう,급 · 등급,"class, grade, rank",,3,JLPT N3,,missing
+ja_miss_00426,2416,作,さく,작품 · 작,"a work, a harvest",,3,JLPT N3,,missing
+ja_miss_00427,2457,約,やく,약 · 대략,"approximately, about, some",,3,JLPT N3,,missing
+ja_miss_00428,2463,被る,かぶる,(모자 등을) 쓰다 · 뒤집어쓰다 · 입다 (피해를),to wear; to be covered with,,3,JLPT N3,,missing
+ja_miss_00429,2495,以来,いらい,이래 · 이후,"since, henceforth",,3,JLPT N3,,missing
+ja_miss_00430,,いわゆる,いわゆる,이른바 · 소위,"the so-called, so-to-speak",,3,JLPT N3,,missing
+ja_miss_00431,,かもしれない,かもしれない,~일지도 모른다,"maybe, perhaps",,3,JLPT N3,,missing
+ja_miss_00432,,ことによると,ことによると,어쩌면 · 경우에 따라서는,(depending on the circumstances),,3,JLPT N3,,missing
+ja_miss_00433,,したがって,したがって,따라서 · 그러므로,"therefore, consequently",,3,JLPT N3,,missing
+ja_miss_00434,,すくなくとも,すくなくとも,적어도,at least,,3,JLPT N3,,missing
+ja_miss_00435,,すなわち,すなわち,즉 · 다시 말해,"that is, namely, e.g.",,3,JLPT N3,,missing
+ja_miss_00436,,そのうえ,そのうえ,게다가 · 더욱이,"in addition, furthermore",,3,JLPT N3,,missing
+ja_miss_00437,,そのうち,そのうち,머지않아 · 조만간 · 그중,"before long, eventually, sooner or later",,3,JLPT N3,,missing
+ja_miss_00438,,たしか,たしか,확실함 · 아마 · 분명히,"certain, sure, if I remember correctly",,3,JLPT N3,,missing
+ja_miss_00439,,たとえ,たとえ,설령 · 비록 (~라도),"even if, no matter, though",,3,JLPT N3,,missing
+ja_miss_00440,,たびたび,たびたび,자주 · 여러 번 · 종종,"often, repeatedly, frequently",,3,JLPT N3,,missing
+ja_miss_00441,,つまり,つまり,즉 · 요컨대 · 결국,namely; in other words; in short,,3,JLPT N3/회화새단어,r2_study_b3 11턴: （腕立て）…つまり、コンビニは、最高です。以上です。,missing
+ja_miss_00442,,できれば,できれば,가능하면 · 될 수 있으면,if possible…,,3,JLPT N3,,missing
+ja_miss_00443,,ですから,ですから,그러므로 · 그러니까,therefore,,3,JLPT N3,,missing
+ja_miss_00444,,ところで,ところで,그런데 (화제 전환) · ~해 봤자,by the way; even if,,3,JLPT N3,,missing
+ja_miss_00445,,とにかく,とにかく,어쨌든 · 아무튼 · 하여간,"anyhow, at any rate, anyway",,3,JLPT N3,,missing
+ja_miss_00446,,なお,なお,또한 · 더욱 · 여전히,"still, yet",,3,JLPT N3,,missing
+ja_miss_00447,,なぜなら,なぜなら,왜냐하면,because,,3,JLPT N3,,missing
+ja_miss_00448,,はあ,はあ,하아 (한숨) · 네 · 예?,(sigh),,3,JLPT N3,,missing
+ja_miss_00449,,まとめる,まとめる,정리하다 · 모으다 · 마무리하다,"to put in order, to collect, to bring to a conclusion",,3,JLPT N3,,missing
+ja_miss_00450,,やがて,やがて,이윽고 · 머지않아 · 결국,"before long, soon, at length",,3,JLPT N3,,missing
+ja_miss_00451,,より,より,~보다,"twist, ply",,3,JLPT N3,,missing
+ja_miss_00452,,一層,いっそう,한층 · 더욱,"much more, still more",,3,JLPT N3,,missing
+ja_miss_00453,,不,ふ,불~ · 비~ · 부~,"un(~), non(~), negative prefix",,3,JLPT N3,,missing
+ja_miss_00454,,不通,ふつう,불통 · (교통·통신) 끊김,"blockade, interruption, stoppage",,3,JLPT N3,,missing
+ja_miss_00455,,並,なみ,보통 · 중간 정도 · 평범함,"medium (e.g., food serving size, quality, price, etc.), ordinary",,3,JLPT N3,,missing
+ja_miss_00456,,亡くす,なくす,여의다 · 잃다,to lose someone,,3,JLPT N3,,missing
+ja_miss_00457,,享受,きょうじゅ,향수 · 누림,"enjoyment, being given",,3,JLPT N3,,missing
+ja_miss_00458,,今にも,いまにも,당장이라도 · 금방이라도,"at any time, soon",,3,JLPT N3,,missing
+ja_miss_00459,,付合う,つきあう,사귀다 · 교제하다 · 함께하다,"to associate with, to keep company with, to get on with",,3,JLPT N3,,missing
+ja_miss_00460,,代える,かえる,바꾸다 · 대신하다 · 대체하다,"to exchange, to interchange, to substitute",,3,JLPT N3,,missing
+ja_miss_00461,,代る,かわる,대신하다 · 교대하다 · 바뀌다,"to take the place of, to relieve, to be substituted for",,3,JLPT N3,,missing
+ja_miss_00462,,仮定,かてい,가정 · 가설,"assumption, supposition, hypothesis",,3,JLPT N3,,missing
+ja_miss_00463,,伝統,でんとう,전통,"tradition, convention",,3,JLPT N3,,missing
+ja_miss_00464,,住,じゅう,주거 · 사는 곳,"dwelling, living",,3,JLPT N3,,missing
+ja_miss_00465,,何でも,なんでも,무엇이든 · 뭐든지 · 어쨌든,"by all means, everything",,3,JLPT N3,,missing
+ja_miss_00466,,例,れい,예 · 보기 · 전례,"instance, example, case",,3,JLPT N3,,missing
+ja_miss_00467,,例え,たとえ,예 · 비유 · 설령 (~라도),example; even though,,3,JLPT N3,,missing
+ja_miss_00468,,供,とも,수행원 · 동행 · 따라감,"accompanying, attendant, companion, retinue",,3,JLPT N3,,missing
+ja_miss_00469,,依然,いぜん,여전히 · 아직도,"still, as yet",,3,JLPT N3,,missing
+ja_miss_00470,,便,びん,편 (교통편) · 항공편 · 편의,"way, means; flight",,3,JLPT N3,,missing
+ja_miss_00471,,保障,ほしょう,보장,"guarantee, security, warranty",,3,JLPT N3,,missing
+ja_miss_00472,,修飾,しゅうしょく,수식 · 꾸밈,ornamentation; modification (gram),,3,JLPT N3,,missing
+ja_miss_00473,,個々,ここ,개개 · 하나하나,"individual, one by one",,3,JLPT N3,,missing
+ja_miss_00474,,倒産,とうさん,도산 · 파산,"(corporate) bankruptcy, insolvency",,3,JLPT N3,,missing
+ja_miss_00475,,借り,かり,빌림 · 빚 · 신세,"borrowing, debt, loan",,3,JLPT N3,,missing
+ja_miss_00476,,偶,たま,가끔 · 드물게,"even number, couple, friend",,3,JLPT N3,,missing
+ja_miss_00477,,傷める,いためる,상하게 하다 · 손상시키다 · 다치게 하다,"to damage, to impair, to spoil",,3,JLPT N3,,missing
+ja_miss_00478,,僅か,わずか,약간 · 불과 · 조금,"only, merely, a little",,3,JLPT N3,,missing
+ja_miss_00479,,兎,うさぎ,토끼,"rabbit, hare",,3,JLPT N3,,missing
+ja_miss_00480,,全身,ぜんしん,전신 · 온몸,"the whole body, full-length (portrait)",,3,JLPT N3,,missing
+ja_miss_00481,,公演,こうえん,공연,public performance,,3,JLPT N3,,missing
+ja_miss_00482,,具体,ぐたい,구체,"concrete, tangible, material",,3,JLPT N3,,missing
+ja_miss_00483,,再び,ふたたび,다시 · 재차,"again, once more, a second time",,3,JLPT N3,,missing
+ja_miss_00484,,冷める,さめる,식다 · (흥미가) 깨다,"to become cool, to wear off",,3,JLPT N3,,missing
+ja_miss_00485,,分かれる,わかれる,나뉘다 · 갈라지다 · 헤어지다,"to branch off, to diverge from",,3,JLPT N3,,missing
+ja_miss_00486,,切り,きり,끝 · 한도 · 매듭,"limits, place to leave off",,3,JLPT N3,,missing
+ja_miss_00487,,刑,けい,형벌 · 형,"penalty, sentence, punishment",,3,JLPT N3,,missing
+ja_miss_00488,,前者,ぜんしゃ,전자 (앞의 것),the former,,3,JLPT N3,,missing
+ja_miss_00489,,創造,そうぞう,창조,creation,,3,JLPT N3,,missing
+ja_miss_00490,,加味,かみ,가미 · 맛을 더함,"seasoning, flavoring",,3,JLPT N3,,missing
+ja_miss_00491,,助詞,じょし,조사 (문법),"(gram) particle(s), postposition",,3,JLPT N3,,missing
+ja_miss_00492,,効果,こうか,효과,"effect, result",,3,JLPT N3,,missing
+ja_miss_00493,,動詞,どうし,동사,verb,,3,JLPT N3,,missing
+ja_miss_00494,,勘,かん,직감 · 감 · 눈치,"perception, intuition, the sixth sense",,3,JLPT N3,,missing
+ja_miss_00495,,勘定,かんじょう,계산 · 셈 · 계산서,"calculation, counting, consideration",,3,JLPT N3,,missing
+ja_miss_00496,,務め,つとめ,임무 · 의무 · 본분,duty,,3,JLPT N3,,missing
+ja_miss_00497,,勧める,すすめる,권하다 · 추천하다,"to urge (someone) to do (something), to recommend",,3,JLPT N3,,missing
+ja_miss_00498,,単なる,たんなる,단순한 · 단지 ~에 불과한,"mere, simple, sheer",,3,JLPT N3,,missing
+ja_miss_00499,,単に,たんに,단지 · 그저 · 다만,"simply, merely",,3,JLPT N3,,missing
+ja_miss_00500,,単純,たんじゅん,단순 · 단순하다,simplicity,,3,JLPT N3,,missing
+ja_miss_00501,,占める,しめる,차지하다 · 점하다,to take up; to account for,,3,JLPT N3,,missing
+ja_miss_00502,,句,く,구 · 어구 · (하이쿠의) 구,phrase,,3,JLPT N3,,missing
+ja_miss_00503,,可,か,가 · 가능 · 괜찮음,passable,,3,JLPT N3,,missing
+ja_miss_00504,,可愛そう,かわいそう,불쌍하다 · 가엾다,"poor, pitiable, pathetic",,3,JLPT N3,,missing
+ja_miss_00505,,同志,どうし,동지,"same mind, comrade, kindred soul",,3,JLPT N3,,missing
+ja_miss_00506,,同様,どうよう,같음 · 마찬가지,"identical, same (kind), like",,3,JLPT N3,,missing
+ja_miss_00507,,名詞,めいし,명사,noun,,3,JLPT N3,,missing
+ja_miss_00508,,否,いや,아니 · 아니오,"no, the noes",,3,JLPT N3,,missing
+ja_miss_00509,,善,ぜん,선 · 착함,"good, virtue",,3,JLPT N3,,missing
+ja_miss_00510,,四季,しき,사계절 · 사계,four seasons,,3,JLPT N3,,missing
+ja_miss_00511,,因る,よる,기인하다 · 의하다 · 말미암다,to come from,,3,JLPT N3,,missing
+ja_miss_00512,,図る,はかる,꾀하다 · 도모하다 · 계획하다,"to plot, to attempt, to devise, to design, to refer A to B",,3,JLPT N3,,missing
+ja_miss_00513,,型,かた,틀 · 형 · 유형,"mold, model, style",,3,JLPT N3,,missing
+ja_miss_00514,,声明,せいめい,성명 · 선언,"declaration, statement, proclamation",,3,JLPT N3,,missing
+ja_miss_00515,,大戦,たいせん,대전 · 큰 전쟁,"great war, great battle",,3,JLPT N3,,missing
+ja_miss_00516,,契機,けいき,계기 · 기회,"opportunity, chance",,3,JLPT N3,,missing
+ja_miss_00517,,女史,じょし,여사,Ms.,,3,JLPT N3,,missing
+ja_miss_00518,,姓,せい,성 (성씨),"surname, family name",,3,JLPT N3,,missing
+ja_miss_00519,,委員,いいん,위원,committee member,,3,JLPT N3,,missing
+ja_miss_00520,,字体,じたい,자체 · 글꼴,"font, lettering",,3,JLPT N3,,missing
+ja_miss_00521,,季刊,きかん,계간,"quarterly (e.g., magazine)",,3,JLPT N3,,missing
+ja_miss_00522,,学,がく,학문 · 지식 · ~학,"learning, knowledge",,3,JLPT N3,,missing
+ja_miss_00523,,官僚,かんりょう,관료,"bureaucrat, bureaucracy",,3,JLPT N3,,missing
+ja_miss_00524,,宛てる,あてる,(편지를) ~앞으로 보내다,"to address, to put",,3,JLPT N3,,missing
+ja_miss_00525,,実に,じつに,실로 · 참으로 · 정말,"indeed, truly, surely",,3,JLPT N3,,missing
+ja_miss_00526,,家事,かじ,집안일 · 가사,household matters; housework (same as 家の仕事 (いえのしごと)),,3,JLPT N3,,missing
+ja_miss_00527,,容器,ようき,용기 · 그릇,"container, vessel",,3,JLPT N3,,missing
+ja_miss_00528,,容易,ようい,쉬움 · 용이함,"easy, simple, plain",,3,JLPT N3,,missing
+ja_miss_00529,,寮,りょう,기숙사,"hostel, dormitory",,3,JLPT N3,,missing
+ja_miss_00530,,専攻,せんこう,전공,"major subject, special study",,3,JLPT N3,,missing
+ja_miss_00531,,小,しょう,소 · 작음,small,,3,JLPT N3,,missing
+ja_miss_00532,,少しも,すこしも,조금도 · 전혀,"anything of, not one bit",,3,JLPT N3,,missing
+ja_miss_00533,,尤も,もっとも,지당하다 · 그럴듯하다 · 다만,"quite right, plausible, natural",,3,JLPT N3,,missing
+ja_miss_00534,,就く,つく,(자리·직위에) 오르다 · 취임하다 · 종사하다,"to settle in (place), to take (seat position), to study (under teacher)",,3,JLPT N3,,missing
+ja_miss_00535,,差別,さべつ,차별,"discrimination, differentiation",,3,JLPT N3,,missing
+ja_miss_00536,,帰す,かえす,돌려보내다 · 귀가시키다,to send back,,3,JLPT N3,,missing
+ja_miss_00537,,年鑑,ねんかん,연감,yearbook,,3,JLPT N3,,missing
+ja_miss_00538,,延ばす,のばす,늘이다 · 연장하다 · 미루다,"to extend, to stretch, to reach out",,3,JLPT N3,,missing
+ja_miss_00539,,建つ,たつ,(건물이) 서다 · 세워지다,"to stand; to be built (v.i.), to erect, to be erected",,3,JLPT N3,,missing
+ja_miss_00540,,強力,きょうりょく,강력함,"powerful, strong",,3,JLPT N3,,missing
+ja_miss_00541,,強調,きょうちょう,강조,"emphasis, stress, stressed point",,3,JLPT N3,,missing
+ja_miss_00542,,弾,たま,탄알 · 총알,"bullet, shot",,3,JLPT N3,,missing
+ja_miss_00543,,当り,あたり,적중 · 성공 · 당첨,"hit, success, reaching the mark",,3,JLPT N3,,missing
+ja_miss_00544,,形態,けいたい,형태,"form, shape, figure",,3,JLPT N3,,missing
+ja_miss_00545,,後者,こうしゃ,후자,the latter,,3,JLPT N3,,missing
+ja_miss_00546,,後輩,こうはい,후배,junior members of a group,,3,JLPT N3,,missing
+ja_miss_00547,,意,い,뜻 · 마음,will,,3,JLPT N3,,missing
+ja_miss_00548,,意地,いじ,고집 · 오기 · 근성,"disposition, spirit, obstinacy, appetite",,3,JLPT N3,,missing
+ja_miss_00549,,意志,いし,의지,"will, volition",,3,JLPT N3,,missing
+ja_miss_00550,,意思,いし,의사 · 생각,"intention, purpose",,3,JLPT N3,,missing
+ja_miss_00551,,感心,かんしん,감탄 · 기특함,admiration,,3,JLPT N3,,missing
+ja_miss_00552,,慣らす,ならす,길들이다 · 익숙하게 하다,to accustom,,3,JLPT N3,,missing
+ja_miss_00553,,慣行,かんこう,관행 · 관습,"customary practice, habit, traditional event",,3,JLPT N3,,missing
+ja_miss_00554,,憲法,けんぽう,헌법,constitution,,3,JLPT N3,,missing
+ja_miss_00555,,成年,せいねん,성년,"majority, adult age",,3,JLPT N3,,missing
+ja_miss_00556,,或,ある,어떤 · 어느,"a certain..., some...",,3,JLPT N3,,missing
+ja_miss_00557,,挙げる,あげる,들다 · 올리다 · (예를) 들다,"to raise; to list, to cite",,3,JLPT N3,,missing
+ja_miss_00558,,振り,ふり,흔듦 · 모양 · ~인 척,"style, manner",,3,JLPT N3,,missing
+ja_miss_00559,,挿す,さす,꽂다 · 끼우다,"to insert, to put in, to graft",,3,JLPT N3,,missing
+ja_miss_00560,,掲示,けいじ,게시,"notice, bulletin",,3,JLPT N3,,missing
+ja_miss_00561,,揚げる,あげる,(높이) 올리다 · 튀기다,"to lift, to fry",,3,JLPT N3,,missing
+ja_miss_00562,,換える,かえる,바꾸다 · 교환하다,"to exchange, to interchange, to substitute",,3,JLPT N3,,missing
+ja_miss_00563,,放れる,はなれる,떨어지다 · 풀려나다 · 벗어나다,"to leave, to get free, to cut oneself off",,3,JLPT N3,,missing
+ja_miss_00564,,断つ,たつ,끊다 · 자르다,"to sever, to cut off",,3,JLPT N3,,missing
+ja_miss_00565,,旧,きゅう,옛 ~ · 구 ~,ex-,,3,JLPT N3,,missing
+ja_miss_00566,,昇る,のぼる,오르다 · (해가) 뜨다,"to arise, to ascend, to go up",,3,JLPT N3,,missing
+ja_miss_00567,,映す,うつす,비추다 · (영상을) 비추다 · 상영하다,"to project, to reflect, to cast (shadow)",,3,JLPT N3,,missing
+ja_miss_00568,,映る,うつる,비치다 · (사진에) 찍히다,"to be reflected, to come out (photo)",,3,JLPT N3,,missing
+ja_miss_00569,,昨,さく,작 ~ · 지난 ~ (작년·어제),"last (year), yesterday",,3,JLPT N3,,missing
+ja_miss_00570,,替える,かえる,바꾸다 · 교체하다,"to exchange, to interchange, to substitute",,3,JLPT N3,,missing
+ja_miss_00571,,有機,ゆうき,유기,organic,,3,JLPT N3,,missing
+ja_miss_00572,,有無,うむ,유무 · 있고 없음,"yes or no, presence or absence",,3,JLPT N3,,missing
+ja_miss_00573,,末,すえ,끝 · 말 · 결국,"the end of, powder",,3,JLPT N3,,missing
+ja_miss_00574,,枠,わく,틀 · 테두리 · 범위,"frame, slide",,3,JLPT N3,,missing
+ja_miss_00575,,格,かく,격 · 등급 · 지위,"status, character, case",,3,JLPT N3,,missing
+ja_miss_00576,,棟,とう,~동 (건물을 세는 단위) · 동,ridge (of roof,,3,JLPT N3,,missing
+ja_miss_00577,,機構,きこう,기구 · 구조,"mechanism, organization",,3,JLPT N3,,missing
+ja_miss_00578,,欠く,かく,빠뜨리다 · 결여하다 · 깨뜨리다,"to lack, to crack",,3,JLPT N3,,missing
+ja_miss_00579,,正,せい,정 · 올바름 · 정식,"(logical) true, regular",,3,JLPT N3,,missing
+ja_miss_00580,,正規,せいき,정규,"regular, legitimate",,3,JLPT N3,,missing
+ja_miss_00581,,気体,きたい,기체,"vapor, gas",,3,JLPT N3,,missing
+ja_miss_00582,,気味,きみ,기미 · ~한 기색 · ~한 기운,"-like, -looking, -looked",,3,JLPT N3,,missing
+ja_miss_00583,,決行,けっこう,결행 · 단행,"doing (with resolve), carrying out (e.g., a plan)",,3,JLPT N3,,missing
+ja_miss_00584,,沿う,そう,따르다 · (길을) 따라가다,"to run along, to follow",,3,JLPT N3,,missing
+ja_miss_00585,,深刻,しんこく,심각하다,serious,,3,JLPT N3,,missing
+ja_miss_00586,,清む,すむ,맑아지다 · 깨끗해지다,"to clear (e.g., weather), to become transparent",,3,JLPT N3,,missing
+ja_miss_00587,,湿る,しめる,축축해지다 · 젖다,"to be wet, to be damp",,3,JLPT N3,,missing
+ja_miss_00588,,無し,なし,없음 · ~없이,without,,3,JLPT N3,,missing
+ja_miss_00589,,照明,しょうめい,조명,illumination,,3,JLPT N3,,missing
+ja_miss_00590,,版,はん,판 · 출판,edition,,3,JLPT N3,,missing
+ja_miss_00591,,物価,ぶっか,물가,(commodity/consumer) prices,,3,JLPT N3,,missing
+ja_miss_00592,,特長,とくちょう,장점 · 특장,"forte, merit",,3,JLPT N3,,missing
+ja_miss_00593,,生る,なる,(열매가) 열리다,to bear fruit,,3,JLPT N3,,missing
+ja_miss_00594,,生地,きじ,옷감 · 천 · (빵·과자의) 반죽,fabric; dough,,3,JLPT N3,,missing
+ja_miss_00595,,生理,せいり,생리 · 월경,"physiology, menses",,3,JLPT N3,,missing
+ja_miss_00596,,生長,せいちょう,성장 · 생장,growth,,3,JLPT N3,,missing
+ja_miss_00597,,異動,いどう,이동 (인사이동) · 전근,"a change, transfer",,3,JLPT N3,,missing
+ja_miss_00598,,省略,しょうりゃく,생략,"omission, abbreviation, abridgment",,3,JLPT N3,,missing
+ja_miss_00599,,碑,ひ,비석 · 비,stone monument bearing an inscription,,3,JLPT N3,,missing
+ja_miss_00600,,磁器,じき,자기 (도자기),"porcelain, china",,3,JLPT N3,,missing
+ja_miss_00601,,磁気,じき,자기 (자성),magnetism,,3,JLPT N3,,missing
+ja_miss_00602,,禅,ぜん,선 (불교) · 선종,Zen (Buddhism),,3,JLPT N3,,missing
+ja_miss_00603,,福,ふく,복 · 행운,good fortune,,3,JLPT N3,,missing
+ja_miss_00604,,空き,あき,빈 곳 · 빈자리 · 틈,"vacancy, opening, space",,3,JLPT N3,,missing
+ja_miss_00605,,章,しょう,장 (章) · 휘장,"chapter, section; medal",,3,JLPT N3,,missing
+ja_miss_00606,,端,はし,끝 · 가장자리 · 구석,"end (e.g., of street), edge, margin",,3,JLPT N3,,missing
+ja_miss_00607,,策,さく,책략 · 방책 · 대책,"plan, policy",,3,JLPT N3,,missing
+ja_miss_00608,,粋,いき,멋 · 세련됨 · 정수,"chic, style, purity",,3,JLPT N3/JLPT N1,,missing
+ja_miss_00609,,精巧,せいこう,정교함 · 정밀함,"elaborate, delicate, exquisite",,3,JLPT N3,,missing
+ja_miss_00610,,経つ,たつ,(시간이) 지나다 · 경과하다,(time) passes,,3,JLPT N3,,missing
+ja_miss_00611,,経る,へる,지나다 · 거치다 · 경험하다,"to pass, to elapse, to experience",,3,JLPT N3,,missing
+ja_miss_00612,,経緯,けいい,경위 · 경과,"sequence of events, course",,3,JLPT N3,,missing
+ja_miss_00613,,能,のう,능력 · 재능 · 노 (일본 전통극),"being skilled in, nicely, properly",,3,JLPT N3,,missing
+ja_miss_00614,,脂,あぶら,기름 · 지방 · 비계,fat,,3,JLPT N3,,missing
+ja_miss_00615,,脂肪,しぼう,지방,"fat, grease",,3,JLPT N3,,missing
+ja_miss_00616,,膜,まく,막 · 얇은 막,"membrane, film",,3,JLPT N3,,missing
+ja_miss_00617,,自動,じどう,자동,"automatic, self-motion",,3,JLPT N3,,missing
+ja_miss_00618,,航海,こうかい,항해,"sail, voyage",,3,JLPT N3,,missing
+ja_miss_00619,,蕎麦,そば,메밀국수 · 메밀,soba (buckwheat noodles),,3,JLPT N3,,missing
+ja_miss_00620,,行き,いき,가는 길 · ~행,going,,3,JLPT N3/회화새단어,r1_travel_c1 6턴: うそ！！！今、成田行きの電車の中w,missing
+ja_miss_00621,,衣料,いりょう,의류 · 옷,clothing,,3,JLPT N3,,missing
+ja_miss_00622,,裁く,さばく,재판하다 · 심판하다,to judge,,3,JLPT N3,,missing
+ja_miss_00623,,裂く,さく,찢다 · 가르다 · (시간을) 할애하다,"to tear, to split",,3,JLPT N3,,missing
+ja_miss_00624,,見掛ける,みかける,눈에 띄다 · 보다 · 우연히 보다,"to (happen to see), to notice, to catch sight of",,3,JLPT N3,,missing
+ja_miss_00625,,覚ます,さます,깨우다 · (잠·술을) 깨게 하다,to awaken,,3,JLPT N3,,missing
+ja_miss_00626,,言わば,いわば,말하자면 · 이를테면,so to speak,,3,JLPT N3,,missing
+ja_miss_00627,,詩,し,시,poem; poetry,,3,JLPT N3,,missing
+ja_miss_00628,,課程,かてい,과정 · 교육 과정,"course, curriculum",,3,JLPT N3,,missing
+ja_miss_00629,,諮る,はかる,자문하다 · 상의하다,"to consult with, to confer",,3,JLPT N3,,missing
+ja_miss_00630,,貸し,かし,빌려줌 · 빌려준 것,"loan, lending",,3,JLPT N3,,missing
+ja_miss_00631,,資格,しかく,자격,"qualifications, requirements, capabilities",,3,JLPT N3,,missing
+ja_miss_00632,,足袋,たび,일본식 버선,Japanese socks (with split toe),,3,JLPT N3,,missing
+ja_miss_00633,,載る,のる,실리다 · 게재되다 · 얹히다,"to appear (in print), to be recorded",,3,JLPT N3,,missing
+ja_miss_00634,,辺り,あたり,근처 · 부근 · 주변,"vicinity, nearby",,3,JLPT N3,,missing
+ja_miss_00635,,近視,きんし,근시,nearsightedness,,3,JLPT N3,,missing
+ja_miss_00636,,退く,どく,비키다 · 물러나다,"to retreat, to recede, to withdraw",,3,JLPT N3,,missing
+ja_miss_00637,,退学,たいがく,퇴학,dropping out of school,,3,JLPT N3,,missing
+ja_miss_00638,,過程,かてい,과정,process,,3,JLPT N3,,missing
+ja_miss_00639,,違いない,ちがいない,틀림없다 · 분명하다,"(phrase) sure, no mistaking it, for certain",,3,JLPT N3,,missing
+ja_miss_00640,,適用,てきよう,적용,applying,,3,JLPT N3,,missing
+ja_miss_00641,,酌む,くむ,(술을) 따르다 · 헤아리다,to serve sake,,3,JLPT N3,,missing
+ja_miss_00642,,酢,す,식초,vinegar,,3,JLPT N3,,missing
+ja_miss_00643,,酸化,さんか,산화,oxidation,,3,JLPT N3,,missing
+ja_miss_00644,,重体,じゅうたい,중태 · 위독,"seriously ill, critical state",,3,JLPT N3,,missing
+ja_miss_00645,,野党,やとう,야당,opposition party,,3,JLPT N3,,missing
+ja_miss_00646,,関する,かんする,관하다 · 관계되다,"to concern, to be related",,3,JLPT N3,,missing
+ja_miss_00647,,露,つゆ,이슬,dew,,3,JLPT N3,,missing
+ja_miss_00648,,革,かわ,가죽,leather,,3,JLPT N3,,missing
+ja_miss_00649,,題,だい,제목 · 주제,"title, subject, theme",,3,JLPT N3,,missing
+ja_miss_00650,,飼う,かう,(동물을) 기르다 · 키우다,to keep; to own (a pet); to raise; to feed,,3,JLPT N3,,missing
+ja_miss_00651,,馴らす,ならす,길들이다,"to domesticate, to tame",,3,JLPT N3,,missing
+ja_miss_00652,,馴れる,なれる,길들다 · 익숙해지다,"to become domesticated, to become tame",,3,JLPT N3,,missing
+ja_miss_00653,,～敗,はい,~패 (진 횟수를 세는 단위),"counter for loss, defeat",,3,JLPT N3,,missing
+ja_miss_00654,,～観,かん,~관 (보는 관점·느낌),"feeling, view",,3,JLPT N3,,missing
+ja_miss_00655,400,捕る,とる,잡다 · (물고기를) 잡다,"to take, to catch (fish)",,2,JLPT N2,,missing
+ja_miss_00656,1270,一応,いちおう,일단 · 우선 · 대강,"tentatively, for the time being",,2,JLPT N2,,missing
+ja_miss_00657,1337,括弧,かっこ,괄호,"parenthesis, brackets",,2,JLPT N2,,missing
+ja_miss_00658,1765,芯,しん,심 · 속 · 심지,"core, heart, wick",,2,JLPT N2,,missing
+ja_miss_00659,1853,足る,たる,족하다 · 충분하다,"to be sufficient, to be enough",,2,JLPT N2,,missing
+ja_miss_00660,,〜ごと,〜ごと,~째 · ~마다,"whole ~, all of ~",,2,JLPT N2,,missing
+ja_miss_00661,,あれこれ,あれこれ,이것저것 · 이러쿵저러쿵,"one thing or another, this and that",,2,JLPT N2,,missing
+ja_miss_00662,,ええと,ええと,음 · 저 · 글쎄,"let me see, well, er...",,2,JLPT N2,,missing
+ja_miss_00663,,おかげさまで,おかげさまで,덕분에,"Thanks to god, thanks to you",,2,JLPT N2,,missing
+ja_miss_00664,,おかまいなく,おかまいなく,신경 쓰지 마세요,please don't fuss over me,,2,JLPT N2,,missing
+ja_miss_00665,,お気の毒に,おきのどくに,안됐네요 · 유감입니다,I'm sorry to hear that…,,2,JLPT N2,,missing
+ja_miss_00666,,きっかけ,きっかけ,계기 · 동기 · 실마리,"prompt, trigger, cue",,2,JLPT N2/회화새단어,r3_friends_b1 8턴: 私のUFOが、きっかけ？,missing
+ja_miss_00667,,くだらない,くだらない,시시하다 · 쓸데없다 · 하찮다,"good-for-nothing, stupid, worthless",,2,JLPT N2,,missing
+ja_miss_00668,,くどい,くどい,장황하다 · 끈질기다 · (맛이) 느끼하다,"verbose, importunate, heavy (taste)",,2,JLPT N2,,missing
+ja_miss_00669,,くれぐれも,くれぐれも,부디 · 아무쪼록,"repeatedly, sincerely, earnestly",,2,JLPT N2,,missing
+ja_miss_00670,,ご苦労様,ごくろうさま,수고하셨습니다,Thank you for your had work,,2,JLPT N2,,missing
+ja_miss_00671,,さす,さす,(우산을) 쓰다 · 찌르다 · 가리키다,to open; hold (an umbrella),,2,JLPT N2,,missing
+ja_miss_00672,,しいんと,しいんと,쥐 죽은 듯 조용히 · 고요히,"silent (as the grave), (deathly) quiet",,2,JLPT N2,,missing
+ja_miss_00673,,しみじみ,しみじみ,절실히 · 곰곰이 · 깊이,"keenly, deeply, heartily",,2,JLPT N2,,missing
+ja_miss_00674,,しめた,しめた,됐다 · 옳다구나,"I've got it, all right, fine",,2,JLPT N2,,missing
+ja_miss_00675,,ずうっと,ずうっと,쭉 · 내내,"all the time, all the way",,2,JLPT N2,,missing
+ja_miss_00676,,せめて,せめて,적어도 · 하다못해,at least,,2,JLPT N2,,missing
+ja_miss_00677,,ぜひとも,ぜひとも,꼭 · 반드시,by all means (with sense of not taking 'no' for an answer),,2,JLPT N2,,missing
+ja_miss_00678,,そういえば,そういえば,그러고 보니,which reminds me ..,,2,JLPT N2,,missing
+ja_miss_00679,,そのころ,そのころ,그 무렵 · 그 당시,"in those days, at that time, then",,2,JLPT N2,,missing
+ja_miss_00680,,そのため,そのため,그 때문에 · 그래서,"hence, for that reason",,2,JLPT N2,,missing
+ja_miss_00681,,その他,そのほか,그 밖에 · 그 외,besides,,2,JLPT N2,,missing
+ja_miss_00682,,それなのに,それなのに,그런데도 · 그럼에도,"though, although",,2,JLPT N2,,missing
+ja_miss_00683,,たちまち,たちまち,금세 · 순식간에 · 갑자기,"instantly, suddenly, all at once",,2,JLPT N2,,missing
+ja_miss_00684,,ためらう,ためらう,망설이다 · 주저하다,to be hesitant,,2,JLPT N2,,missing
+ja_miss_00685,,だいいち,だいいち,첫째 · 무엇보다도 · 애초에,"first, foremost,&nbsp;&nbsp;#1",,2,JLPT N2,,missing
+ja_miss_00686,,ついで,ついで,김 · 기회 · 하는 김,"opportunity, occasion",,2,JLPT N2,,missing
+ja_miss_00687,,でたらめ,でたらめ,엉터리 · 아무렇게나 함,"irresponsible utterance, nonsense; random",,2,JLPT N2,,missing
+ja_miss_00688,,とっくに,とっくに,훨씬 전에 · 벌써,"long ago, already, a long time ago",,2,JLPT N2,,missing
+ja_miss_00689,,ともかく,ともかく,어쨌든 · 하여튼 · ~은 고사하고,"anyhow, at any rate, anyway",,2,JLPT N2,,missing
+ja_miss_00690,,どうせ,どうせ,어차피 · 어쨌든,"anyhow, in any case, at any rate",,2,JLPT N2,,missing
+ja_miss_00691,,なにしろ,なにしろ,어쨌든 · 아무튼,"at any rate, in any case",,2,JLPT N2,,missing
+ja_miss_00692,,なんとなく,なんとなく,왠지 · 어쩐지,"somehow or other, for some reason or another",,2,JLPT N2,,missing
+ja_miss_00693,,はめる,はめる,끼우다 · 끼다 · 속이다,"(col) to get in, to insert, to put on",,2,JLPT N2,,missing
+ja_miss_00694,,ばからしい,ばからしい,어리석다 · 바보 같다,absurd,,2,JLPT N2,,missing
+ja_miss_00695,,ひとまず,ひとまず,일단 · 우선,"for the present, once, for the time being",,2,JLPT N2,,missing
+ja_miss_00696,,まぶた,まぶた,눈꺼풀,eyelids,,2,JLPT N2,,missing
+ja_miss_00697,,みっともない,みっともない,꼴사납다 · 보기 흉하다,"shameful, indecent",,2,JLPT N2,,missing
+ja_miss_00698,,めっきり,めっきり,눈에 띄게 · 부쩍,remarkably,,2,JLPT N2,,missing
+ja_miss_00699,,やむをえない,やむをえない,어쩔 수 없다 · 부득이하다,"cannot be helped, unavoidable",,2,JLPT N2,,missing
+ja_miss_00700,,カロリー,カロリー,칼로리 · 열량,calorie,,2,JLPT N2/외래어,,missing
+ja_miss_00701,,ナイロン,ナイロン,나일론,nylon,,2,JLPT N2/외래어,,missing
+ja_miss_00702,,プラットホーム,プラットホーム,플랫폼 · 승강장,platform,,2,JLPT N2/외래어,,missing
+ja_miss_00703,,一定,いってい,일정 · 정해져 있음,"fixed, settled, regular",,2,JLPT N2,,missing
+ja_miss_00704,,一昨昨日,さきおととい,그끄저께,"two days before yesterday, three days ago",,2,JLPT N2,,missing
+ja_miss_00705,,一段と,いちだんと,한층 · 더욱,"by far, greater",,2,JLPT N2,,missing
+ja_miss_00706,,三日月,みかづき,초승달,crescent moon,,2,JLPT N2,,missing
+ja_miss_00707,,上旬,じょうじゅん,상순,first 10 days of month,,2,JLPT N2,,missing
+ja_miss_00708,,上～,うわ～,위,upper ~,,2,JLPT N2,,missing
+ja_miss_00709,,下駄,げた,나막신 · 게타,"(Japanese footwear), wooden clogs",,2,JLPT N2,,missing
+ja_miss_00710,,不規則,ふきそく,불규칙,"irregularity, unsteadiness",,2,JLPT N2,,missing
+ja_miss_00711,,両～,りょう～,양~ · 두~,both ~,,2,JLPT N2,,missing
+ja_miss_00712,,中性,ちゅうせい,중성,"neuter gender, neutral",,2,JLPT N2,,missing
+ja_miss_00713,,中指,なかゆび,가운뎃손가락 · 중지,middle finger,,2,JLPT N2,,missing
+ja_miss_00714,,中旬,ちゅうじゅん,중순,second third of a month,,2,JLPT N2,,missing
+ja_miss_00715,,五十音,ごじゅうおん,오십음 · 일본어 오십음도,the Japanese syllabary,,2,JLPT N2,,missing
+ja_miss_00716,,人文科学,じんぶんかがく,인문 과학,"social sciences, humanities",,2,JLPT N2,,missing
+ja_miss_00717,,代名詞,だいめいし,대명사,pronoun,,2,JLPT N2,,missing
+ja_miss_00718,,以後,いご,이후 · 앞으로,after this; from now on; hereafter,,2,JLPT N2,,missing
+ja_miss_00719,,以降,いこう,이후 · 이래,"on and after, hereafter",,2,JLPT N2,,missing
+ja_miss_00720,,仮名,かな,가나 (일본 문자),kana,,2,JLPT N2,,missing
+ja_miss_00721,,仮名遣い,かなづかい,가나 표기법,"kana orthography, syllabary spelling",,2,JLPT N2,,missing
+ja_miss_00722,,伝記,でんき,전기 (傳記) · 일대기,"biography, life story",,2,JLPT N2,,missing
+ja_miss_00723,,伯父さん,おじさん,아저씨 · 큰아버지 · 삼촌,"(hon.) middle-aged gentleman, uncle",,2,JLPT N2,,missing
+ja_miss_00724,,何々,なになに,이러이러한 것 · 뭐라고,"such and such, What?",,2,JLPT N2,,missing
+ja_miss_00725,,係わる,かかわる,관계하다 · 관여하다 · 얽히다,"to concern oneself in, to be involved in",,2,JLPT N2,,missing
+ja_miss_00726,,先々月,せんせんげつ,지지난달,month before last,,2,JLPT N2,,missing
+ja_miss_00727,,先々週,せんせんしゅう,지지난주,2 weeks before,,2,JLPT N2,,missing
+ja_miss_00728,,公務,こうむ,공무,"official business, public business",,2,JLPT N2,,missing
+ja_miss_00729,,公式,こうしき,공식,"formula, formality, official",,2,JLPT N2,,missing
+ja_miss_00730,,共産～,きょうさん～,공산~,communist ~,,2,JLPT N2,,missing
+ja_miss_00731,,再三,さいさん,재삼 · 여러 번,"again and again, repeatedly",,2,JLPT N2,,missing
+ja_miss_00732,,再～,さい～,재~ · 다시 ~,re ~,,2,JLPT N2,,missing
+ja_miss_00733,,初めに,はじめに,우선 · 먼저 · 처음에,"to begin with, first of all",,2,JLPT N2,,missing
+ja_miss_00734,,初旬,しょじゅん,초순,first 10 days of the month,,2,JLPT N2,,missing
+ja_miss_00735,,初～,しょ～,초~ · 첫~,first ~,,2,JLPT N2,,missing
+ja_miss_00736,,前後,ぜんご,전후 · 앞뒤,"front and back, before and after",,2,JLPT N2,,missing
+ja_miss_00737,,剥す,はがす,벗기다 · 떼다 · 뜯다,"to tear off, to peel off, to rip off",,2,JLPT N2,,missing
+ja_miss_00738,,副詞,ふくし,부사,adverb,,2,JLPT N2,,missing
+ja_miss_00739,,副～,ふく～,부~,vice ~,,2,JLPT N2,,missing
+ja_miss_00740,,割と,わりと,비교적 · 의외로,"relatively, comparatively",,2,JLPT N2,,missing
+ja_miss_00741,,割合に,わりあいに,비교적 · 생각보다,"relatively, comparatively",,2,JLPT N2,,missing
+ja_miss_00742,,効力,こうりょく,효력,"effect, efficacy",,2,JLPT N2,,missing
+ja_miss_00743,,卒直,そっちょく,솔직,"frank, candid, honest",,2,JLPT N2,,missing
+ja_miss_00744,,単数,たんすう,단수,singular (number),,2,JLPT N2,,missing
+ja_miss_00745,,却って,かえって,오히려 · 도리어,"on the contrary, rather",,2,JLPT N2,,missing
+ja_miss_00746,,反～,はん～,반~,"anti ~, counter ~",,2,JLPT N2,,missing
+ja_miss_00747,,叔母,おば,이모 · 고모 · 숙모,aunt (younger than one's parent),,2,JLPT N2,,missing
+ja_miss_00748,,叔父,おじ,삼촌 · 숙부 · 외삼촌,uncle (younger than one's parent),,2,JLPT N2,,missing
+ja_miss_00749,,句読点,くとうてん,구두점,punctuation marks,,2,JLPT N2,,missing
+ja_miss_00750,,合理,ごうり,합리,rational,,2,JLPT N2,,missing
+ja_miss_00751,,吊る,つる,매달다 · 걸다 · (근육이) 당기다,to hang,,2,JLPT N2,,missing
+ja_miss_00752,,同格,どうかく,동격,"the same rank, equality, apposition",,2,JLPT N2,,missing
+ja_miss_00753,,和～,わ～,일본식 ~,Japanese style,,2,JLPT N2,,missing
+ja_miss_00754,,地帯,ちたい,지대,"area, zone",,2,JLPT N2,,missing
+ja_miss_00755,,境界,きょうかい,경계,boundary,,2,JLPT N2,,missing
+ja_miss_00756,,増減,ぞうげん,증감,"increase and decrease, fluctuation",,2,JLPT N2,,missing
+ja_miss_00757,,外～,がい～,외~,"foreign ~, outside ~",,2,JLPT N2,,missing
+ja_miss_00758,,夜間,やかん,야간,"at night, nighttime",,2,JLPT N2,,missing
+ja_miss_00759,,大層,たいそう,대단히 · 매우 · 과장됨,"very much, greatly",,2,JLPT N2,,missing
+ja_miss_00760,,女～,じょ～,여자,things done by women,,2,JLPT N2,,missing
+ja_miss_00761,,妥当,だとう,타당,"proper, appropriate",,2,JLPT N2,,missing
+ja_miss_00762,,始めに,はじめに,우선 · 먼저 · 처음에,"to begin with, first of all",,2,JLPT N2,,missing
+ja_miss_00763,,姪,めい,조카딸,niece,,2,JLPT N2,,missing
+ja_miss_00764,,孝行,こうこう,효도 · 효행,filial piety,,2,JLPT N2,,missing
+ja_miss_00765,,安易,あんい,안이 · 손쉬움,easy-going,,2,JLPT N2,,missing
+ja_miss_00766,,定価,ていか,정가,established price,,2,JLPT N2,,missing
+ja_miss_00767,,実例,じつれい,실례 · 사례,"example, instance",,2,JLPT N2,,missing
+ja_miss_00768,,専制,せんせい,전제 (專制) · 독재,"despotism, autocracy",,2,JLPT N2,,missing
+ja_miss_00769,,小父さん,おじさん,아저씨,"(hon.) middle-aged gentleman, uncle",,2,JLPT N2,,missing
+ja_miss_00770,,幾分,いくぶん,어느 정도 · 다소,somewhat,,2,JLPT N2,,missing
+ja_miss_00771,,幾～,いく～,몇~,several ~,,2,JLPT N2,,missing
+ja_miss_00772,,広々,ひろびろ,널찍함 · 광활함,"extensive, spacious",,2,JLPT N2,,missing
+ja_miss_00773,,引っ繰り返る,ひっくりかえる,뒤집히다 · 넘어지다 · 뒤바뀌다,"to be overturned, to be upset, to topple over, to be reversed",,2,JLPT N2,,missing
+ja_miss_00774,,引っ込む,ひっこむ,물러나다 · 틀어박히다 · 움푹 들어가다,"to draw back, to sink, to cave in",,2,JLPT N2,,missing
+ja_miss_00775,,形容動詞,けいようどうし,형용동사,"adjectival noun, quasi-adjective",,2,JLPT N2,,missing
+ja_miss_00776,,形容詞,けいようし,형용사,adjective,,2,JLPT N2,,missing
+ja_miss_00777,,形式,けいしき,형식,"form, formality, format",,2,JLPT N2,,missing
+ja_miss_00778,,役目,やくめ,역할 · 임무,"duty, business",,2,JLPT N2,,missing
+ja_miss_00779,,御中,おんちゅう,귀중 (단체 앞으로 보낼 때),Messrs.,,2,JLPT N2,,missing
+ja_miss_00780,,心当たり,こころあたり,짐작 가는 데 · 짚이는 데,"having some knowledge of, happening to know",,2,JLPT N2,,missing
+ja_miss_00781,,応対,おうたい,응대 · 접대,"receiving, dealing with",,2,JLPT N2,,missing
+ja_miss_00782,,慶ぶ,よろこぶ,기뻐하다,"to be delighted, to be glad",,2,JLPT N2,,missing
+ja_miss_00783,,我～,わが～,우리~,our ~,,2,JLPT N2,,missing
+ja_miss_00784,,折角,せっかく,모처럼 · 애써,"with trouble, at great pains, long-awaited",,2,JLPT N2,,missing
+ja_miss_00785,,振り仮名,ふりがな,후리가나 (한자 읽기 표기),pronunciation key,,2,JLPT N2,,missing
+ja_miss_00786,,採る,とる,채택하다 · 채용하다 · 따다,"to adopt (measure, proposal); to pick (fruit)",,2,JLPT N2,,missing
+ja_miss_00787,,接続,せつぞく,접속 · 연결 · 연계 (환승),"connection, union, join, link; changing trains",,2,JLPT N2,,missing
+ja_miss_00788,,接近,せっきん,접근,"getting closer, drawing nearer, approaching",,2,JLPT N2,,missing
+ja_miss_00789,,損得,そんとく,손익 · 득실,"loss and gain, advantage and disadvantage",,2,JLPT N2,,missing
+ja_miss_00790,,摩擦,まさつ,마찰,friction; rubbing; chafe,,2,JLPT N2,,missing
+ja_miss_00791,,改めて,あらためて,새삼스럽게 · 다시 · 다른 기회에,"another time, again",,2,JLPT N2,,missing
+ja_miss_00792,,改正,かいせい,개정,"revision, amendment, alteration",,2,JLPT N2,,missing
+ja_miss_00793,,整う,ととのう,갖추어지다 · 정돈되다 · 성립되다,"to be prepared, to be in order, to be arranged",,2,JLPT N2,,missing
+ja_miss_00794,,整数,せいすう,정수,integer,,2,JLPT N2,,missing
+ja_miss_00795,,文体,ぶんたい,문체,literary style,,2,JLPT N2,,missing
+ja_miss_00796,,文脈,ぶんみゃく,문맥,context,,2,JLPT N2,,missing
+ja_miss_00797,,斜,はす,비스듬함 · 대각선,diagonal,,2,JLPT N2,,missing
+ja_miss_00798,,斬る,きる,베다 · 베어 죽이다,"to behead, to murder",,2,JLPT N2,,missing
+ja_miss_00799,,日時,にちじ,일시 (날짜와 시간),date and time,,2,JLPT N2,,missing
+ja_miss_00800,,明明後日,しあさって,글피,two days after tomorrow,,2,JLPT N2,,missing
+ja_miss_00801,,普及,ふきゅう,보급,"diffusion, spread",,2,JLPT N2,,missing
+ja_miss_00802,,月給,げっきゅう,월급,monthly salary,,2,JLPT N2,,missing
+ja_miss_00803,,未～,み～,미~ · 아직 ~하지 않음,not yet ~,,2,JLPT N2,,missing
+ja_miss_00804,,本来,ほんらい,본래 · 원래,"essentially, naturally, by nature",,2,JLPT N2,,missing
+ja_miss_00805,,来日,らいにち,일본 방문 · 방일,"coming to Japan, visit to Japan",,2,JLPT N2,,missing
+ja_miss_00806,,東西,とうざい,동서 · 동양과 서양,"East and West, whole country",,2,JLPT N2,,missing
+ja_miss_00807,,果して,はたして,과연 · 역시 · 도대체,"as was expected, really",,2,JLPT N2,,missing
+ja_miss_00808,,栓,せん,마개 · 꼭지 · 밸브,"stopper, cork, stopcock",,2,JLPT N2,,missing
+ja_miss_00809,,格別,かくべつ,각별함 · 특별함,exceptional,,2,JLPT N2,,missing
+ja_miss_00810,,比較的,ひかくてき,비교적,comparatively; relatively,,2,JLPT N2,,missing
+ja_miss_00811,,民主～,みんしゅ～,민주~,democratic,,2,JLPT N2,,missing
+ja_miss_00812,,民間,みんかん,민간,"private, civilian",,2,JLPT N2,,missing
+ja_miss_00813,,気圧,きあつ,기압,atmospheric pressure,,2,JLPT N2,,missing
+ja_miss_00814,,水素,すいそ,수소,hydrogen,,2,JLPT N2,,missing
+ja_miss_00815,,汁,しる,즙 · 국물 · 국,"juice, soup",,2,JLPT N2,,missing
+ja_miss_00816,,流石,さすが,과연 · 역시,"indeed, truly, as one would expect",,2,JLPT N2,,missing
+ja_miss_00817,,消極的,しょうきょくてき,소극적,passive,,2,JLPT N2,,missing
+ja_miss_00818,,溜息,ためいき,한숨,a sigh,,2,JLPT N2,,missing
+ja_miss_00819,,溶け込む,とけこむ,녹아들다 · 융화되다 · 어우러지다,to melt into; to become a part of,,2,JLPT N2,,missing
+ja_miss_00820,,漢和,かんわ,한화 (한자-일본어),"Chinese Character-Japanese (e.g., dictionary)",,2,JLPT N2,,missing
+ja_miss_00821,,為す,なす,하다 · 이루다,"to accomplish, to do",,2,JLPT N2,,missing
+ja_miss_00822,,為替,かわせ,환 · 환율,"money order, exchange",,2,JLPT N2,,missing
+ja_miss_00823,,熟語,じゅくご,숙어 · 한자 복합어,"idiom, kanji compound",,2,JLPT N2,,missing
+ja_miss_00824,,片寄る,かたよる,치우치다 · 한쪽으로 쏠리다,"to be one-sided, to incline, to be partial",,2,JLPT N2,,missing
+ja_miss_00825,,片道,かたみち,편도,one-way (trip),,2,JLPT N2,,missing
+ja_miss_00826,,物凄い,ものすごい,무시무시하다 · 굉장하다 · 엄청나다,"earth-shattering, staggering, to a very great extent",,2,JLPT N2,,missing
+ja_miss_00827,,特定,とくてい,특정,"specific, special, particular",,2,JLPT N2,,missing
+ja_miss_00828,,狡い,ずるい,교활하다 · 약삭빠르다 · 치사하다,"sly, cunning",,2,JLPT N2,,missing
+ja_miss_00829,,現に,げんに,실제로 · 현재,"actually, really",,2,JLPT N2,,missing
+ja_miss_00830,,用語,ようご,용어,"term, terminology",,2,JLPT N2,,missing
+ja_miss_00831,,留まる,とどまる,머무르다 · 그치다,"to be fixed; to abide, to stay (in the one place)",,2,JLPT N2,,missing
+ja_miss_00832,,略す,りゃくす,생략하다 · 줄이다,to abbreviate,,2,JLPT N2,,missing
+ja_miss_00833,,番地,ばんち,번지 · 주소,"house number, address",,2,JLPT N2,,missing
+ja_miss_00834,,盗難,とうなん,도난,"theft, robbery",,2,JLPT N2,,missing
+ja_miss_00835,,目下,めした,목하 · 현재,"at present, now",,2,JLPT N2/JLPT N1,,missing
+ja_miss_00836,,目安,めやす,기준 · 목표 · 대중,"criterion, aim",,2,JLPT N2,,missing
+ja_miss_00837,,直前,ちょくぜん,직전,just before,,2,JLPT N2,,missing
+ja_miss_00838,,直後,ちょくご,직후,immediately following,,2,JLPT N2,,missing
+ja_miss_00839,,直流,ちょくりゅう,직류,direct current,,2,JLPT N2,,missing
+ja_miss_00840,,省～,しょう～,성~ · ~ 절약,economizing ~,,2,JLPT N2,,missing
+ja_miss_00841,,真空,しんくう,진공,vacuum,,2,JLPT N2,,missing
+ja_miss_00842,,社会科学,しゃかいかがく,사회과학,social science,,2,JLPT N2,,missing
+ja_miss_00843,,社説,しゃせつ,사설,editorial,,2,JLPT N2,,missing
+ja_miss_00844,,粗筋,あらすじ,줄거리 · 개요,"outline, synopsis",,2,JLPT N2,,missing
+ja_miss_00845,,純情,じゅんじょう,순정 · 순진함,pure heart,,2,JLPT N2,,missing
+ja_miss_00846,,索引,さくいん,색인,"index, indices",,2,JLPT N2,,missing
+ja_miss_00847,,経度,けいど,경도 (經度),longitude,,2,JLPT N2,,missing
+ja_miss_00848,,絶えず,たえず,끊임없이 · 늘,constantly,,2,JLPT N2,,missing
+ja_miss_00849,,総～,そう～,총~ · 전체 ~,"gross, general, entire",,2,JLPT N2,,missing
+ja_miss_00850,,締切,しめきり,마감 · 마감일,deadline,,2,JLPT N2,,missing
+ja_miss_00851,,緯度,いど,위도,latitude (navigation),,2,JLPT N2,,missing
+ja_miss_00852,,縞,しま,줄무늬,stripe,,2,JLPT N2,,missing
+ja_miss_00853,,臨時,りんじ,임시 · 특별,"temporary, special, extraordinary",,2,JLPT N2,,missing
+ja_miss_00854,,自治,じち,자치,"self-government, autonomy",,2,JLPT N2,,missing
+ja_miss_00855,,英和,えいわ,영일 (영어-일본어) · 영일사전,"English-Japanese (e.g., dictionary)",,2,JLPT N2,,missing
+ja_miss_00856,,英文,えいぶん,영문 · 영어 문장,sentence in English,,2,JLPT N2,,missing
+ja_miss_00857,,落着く,おちつく,진정되다 · 침착해지다 · 자리 잡다,"to calm down, to settle down",,2,JLPT N2,,missing
+ja_miss_00858,,虹,にじ,무지개,rainbow,,2,JLPT N2,,missing
+ja_miss_00859,,蛍光灯,けいこうとう,형광등,fluorescent lamp,,2,JLPT N2,,missing
+ja_miss_00860,,行ってらっしゃい,いってらっしゃい,다녀오세요 · 잘 다녀와,"have a nice day, see you",,2,JLPT N2,,missing
+ja_miss_00861,,行方,ゆくえ,행방 · 앞날,one's whereabouts,,2,JLPT N2,,missing
+ja_miss_00862,,複数,ふくすう,복수 · 여럿,"plural, multiple",,2,JLPT N2,,missing
+ja_miss_00863,,西暦,せいれき,서기 · 서력,"Christian Era, after (Christ’s) death (A.D.)",,2,JLPT N2,,missing
+ja_miss_00864,,見出し,みだし,표제 · 제목 · 헤드라인,"heading, index",,2,JLPT N2,,missing
+ja_miss_00865,,見慣れる,みなれる,눈에 익다 · 낯익다,"to become used to seeing, to be familiar with",,2,JLPT N2,,missing
+ja_miss_00866,,見掛け,みかけ,겉보기 · 외관,outward appearance,,2,JLPT N2,,missing
+ja_miss_00867,,言い出す,いいだす,말을 꺼내다 · 제안하다,"to start talking, to suggest",,2,JLPT N2,,missing
+ja_miss_00868,,課税,かぜい,과세,taxation,,2,JLPT N2,,missing
+ja_miss_00869,,足元,あしもと,발밑 · 발치 · 걸음걸이,at one's feet,,2,JLPT N2,,missing
+ja_miss_00870,,軟らかい,やわらかい,부드럽다 · 연하다,"soft, tender, limp",,2,JLPT N2,,missing
+ja_miss_00871,,転々,てんてん,전전 · 이리저리 옮겨 다님,from one to another,,2,JLPT N2,,missing
+ja_miss_00872,,述語,じゅつご,술어,predicate,,2,JLPT N2,,missing
+ja_miss_00873,,送り仮名,おくりがな,오쿠리가나 (한자 뒤에 붙이는 가나),part of word written in kana,,2,JLPT N2,,missing
+ja_miss_00874,,送料,そうりょう,송료 · 배송료,"postage, carriage",,2,JLPT N2,,missing
+ja_miss_00875,,通ずる,つうずる,통하다 · 이어지다 · 정통하다,"to lead, to run, to open",,2,JLPT N2,,missing
+ja_miss_00876,,通用,つうよう,통용,"popular use, circulation",,2,JLPT N2,,missing
+ja_miss_00877,,部首,ぶしゅ,부수 (한자의),radical (of a kanji character),,2,JLPT N2,,missing
+ja_miss_00878,,重点,じゅうてん,중점,"important point, lay stress on, emphasis",,2,JLPT N2,,missing
+ja_miss_00879,,鑑賞,かんしょう,감상 (鑑賞),appreciation,,2,JLPT N2,,missing
+ja_miss_00880,,長方形,ちょうほうけい,직사각형,"rectangle, oblong",,2,JLPT N2,,missing
+ja_miss_00881,,長短,ちょうたん,장단 · 길이,"length, long and short, +-",,2,JLPT N2,,missing
+ja_miss_00882,,間接,かんせつ,간접,"indirect, indirectness",,2,JLPT N2,,missing
+ja_miss_00883,,防止,ぼうし,방지,"prevention, check",,2,JLPT N2,,missing
+ja_miss_00884,,防犯,ぼうはん,방범,prevention of crime,,2,JLPT N2,,missing
+ja_miss_00885,,防～,ぼう～,방~ (막음),~ prevention,,2,JLPT N2,,missing
+ja_miss_00886,,附属,ふぞく,부속,"attached, belonging, affiliated",,2,JLPT N2,,missing
+ja_miss_00887,,隙,すき,틈 · 빈틈 · 허점,"unguarded moment, chance",,2,JLPT N2,,missing
+ja_miss_00888,,電流,でんりゅう,전류,electric current,,2,JLPT N2,,missing
+ja_miss_00889,,青白い,あおじろい,창백하다 · 해쓱하다,pale,,2,JLPT N2,,missing
+ja_miss_00890,,非～,ひ～,비~ · 반~,"anti~, counter~, an~, non~",,2,JLPT N2,,missing
+ja_miss_00891,,飢える,うえる,굶주리다 · 굶다 · 갈망하다,to starve,,2,JLPT N2,,missing
+ja_miss_00892,,飽くまで,あくまで,어디까지나 · 끝까지,"to the end, to the last, stubbornly",,2,JLPT N2,,missing
+ja_miss_00893,,高等,こうとう,고등,"high class, high grade",,2,JLPT N2,,missing
+ja_miss_00894,,～いち,～いち,~에서 제일,No. 1 ~ (in),,2,JLPT N2,,missing
+ja_miss_00895,,～がち,～がち,자칫 ~하기 쉬움 · ~하는 경향,tend to do ~,,2,JLPT N2,,missing
+ja_miss_00896,,～きる,～きる,다 ~하다 · 끝까지 ~하다,"nevertheless, to carry through",,2,JLPT N2,,missing
+ja_miss_00897,,～だらけ,～だらけ,~투성이,"be full of ~, be filled with ~",,2,JLPT N2,,missing
+ja_miss_00898,,～ところ,～ところ,막 ~하려는 참 · ~한 참,about to do ~,,2,JLPT N2,,missing
+ja_miss_00899,,～ほう,～ほう,~하는 편 · ~쪽,(in comparison),,2,JLPT N2,,missing
+ja_miss_00900,,～ぽい,～ぽい,~스럽다 · ~끼가 있다,~ish,,2,JLPT N2,,missing
+ja_miss_00901,,～みたい,～みたい,~같다/처럼,looks like ~,,2,JLPT N2,,missing
+ja_miss_00902,,～もち,～もち,~를 가진 사람 · ~부담,person who has ~,,2,JLPT N2,,missing
+ja_miss_00903,,～丁目,～ちょうめ,~가 (마을 구획 단위),"~ district (of a town; city, block)",,2,JLPT N2,,missing
+ja_miss_00904,,～付,～つき,~딸림 · ~ 포함,with ~,,2,JLPT N2,,missing
+ja_miss_00905,,～位,～い,~위 (순위),~th place,,2,JLPT N2,,missing
+ja_miss_00906,,～兆,～ちょう,~조 (수의 단위),trillion,,2,JLPT N2,,missing
+ja_miss_00907,,～刊,～かん,~간 (발행),"~ issued (magazine, newspaper)",,2,JLPT N2,,missing
+ja_miss_00908,,～力,～りょく,~력 · ~의 힘,power of ~,,2,JLPT N2,,missing
+ja_miss_00909,,～勝,～しょう,~승 (이긴 횟수),count for victory,,2,JLPT N2,,missing
+ja_miss_00910,,～化,～か,~화 (되게 함),action of making something,,2,JLPT N2,,missing
+ja_miss_00911,,～口,～くち,~구 · ~ 입구 · ~ 출구,"~ opening; ~ entrance, ~ exit",,2,JLPT N2,,missing
+ja_miss_00912,,～史,～し,~사 (역사),history of ~,,2,JLPT N2,,missing
+ja_miss_00913,,～号,～ごう,~호,counter for magazine; the name of ship,,2,JLPT N2,,missing
+ja_miss_00914,,～商,～しょう,~상 (장사),"merchant, business",,2,JLPT N2,,missing
+ja_miss_00915,,～問,～もん,~문 (문제를 세는 단위),counter for questions,,2,JLPT N2,,missing
+ja_miss_00916,,～国,～こく,나라,nation of ~,,2,JLPT N2,,missing
+ja_miss_00917,,～圏,～けん,~권 (범위),"bloc, sphere, area",,2,JLPT N2,,missing
+ja_miss_00918,,～場,～じょう,~장 (장소),"kind of field, ground",,2,JLPT N2,,missing
+ja_miss_00919,,～夜,～や,~박 · ~밤 (밤을 세는 단위),counter for nights,,2,JLPT N2,,missing
+ja_miss_00920,,～女,～じょ,여자,count for sisters,,2,JLPT N2,,missing
+ja_miss_00921,,～室,～しつ,~실 (방),counter for room,,2,JLPT N2,,missing
+ja_miss_00922,,～寺,～じ,~사 (절 이름),the name of temple,,2,JLPT N2,,missing
+ja_miss_00923,,～山,～さん,산,the name of mountain,,2,JLPT N2,,missing
+ja_miss_00924,,～島,～とう,~도 (섬),kind of islands,,2,JLPT N2,,missing
+ja_miss_00925,,～巻,～かん,~권 (책을 세는 단위),volume,,2,JLPT N2,,missing
+ja_miss_00926,,～席,～せき,~석 (좌석),counter for seats,,2,JLPT N2,,missing
+ja_miss_00927,,～帳,～ちょう,~장 (장부·수첩),"~ book, notebook",,2,JLPT N2,,missing
+ja_miss_00928,,～年生,～ねんせい,~학년생,counter for school year,,2,JLPT N2,,missing
+ja_miss_00929,,～形,～けい,~형 (모양),shape of ~,,2,JLPT N2,,missing
+ja_miss_00930,,～戦,～せん,~전 (경기를 세는 단위),"counter for games, matches",,2,JLPT N2,,missing
+ja_miss_00931,,～手,～しゅ,손,"~ player, person who does ~",,2,JLPT N2,,missing
+ja_miss_00932,,～振り,～ぶり,~만 · ~ 만에 · ~하는 모양,after an interval of ~,,2,JLPT N2,,missing
+ja_miss_00933,,～料,～りょう,~료 (요금),"fare, charge",,2,JLPT N2,,missing
+ja_miss_00934,,～時間目,～じかんめ,~교시 · ~번째 시간,"~th hour, ~th period",,2,JLPT N2,,missing
+ja_miss_00935,,～期,～き,~기 (시기),"~age, ~period",,2,JLPT N2,,missing
+ja_miss_00936,,～条,～じょう,~조 (조항),counter for article,,2,JLPT N2,,missing
+ja_miss_00937,,～校,～こう,~교 (학교를 세는 단위),counter for school,,2,JLPT N2,,missing
+ja_miss_00938,,～業,～ぎょう,~업 (업종),type of business,,2,JLPT N2,,missing
+ja_miss_00939,,～歌,～か,~가 (노래),song of ~,,2,JLPT N2,,missing
+ja_miss_00940,,～気味,～ぎみ,~기미 · 약간 ~한 기색,slightly ~,,2,JLPT N2,,missing
+ja_miss_00941,,～沿い,～そい,~를 따라 · ~변,along,,2,JLPT N2,,missing
+ja_miss_00942,,～泊,～はく,~박 (숙박을 세는 단위),"counter for staying (e.g., 2 nights)",,2,JLPT N2,,missing
+ja_miss_00943,,～流,～りゅう,~류 · ~식,"fashion, manner, way",,2,JLPT N2,,missing
+ja_miss_00944,,～点,～てん,~점 (점수),counter for scores,,2,JLPT N2,,missing
+ja_miss_00945,,～畳,～じょう,~장 (다다미를 세는 단위),"count for tatami, mat",,2,JLPT N2,,missing
+ja_miss_00946,,～病,～びょう,~병 (질병),kind of disease,,2,JLPT N2,,missing
+ja_miss_00947,,～発,～はつ,~발 (총알을 세는 단위),counter for bullets,,2,JLPT N2,,missing
+ja_miss_00948,,～省,～しょう,~성 (정부 부처),kind of ministry,,2,JLPT N2,,missing
+ja_miss_00949,,～着,～ちゃく,~벌 (옷을 세는 단위) · ~착 (도착 순위),counter for clothes; finishing place,,2,JLPT N2,,missing
+ja_miss_00950,,～社,～しゃ,~사 (회사),counter for company,,2,JLPT N2,,missing
+ja_miss_00951,,～系,～けい,~계 (계통),"~ system, ~ lineage, ~ group",,2,JLPT N2,,missing
+ja_miss_00952,,～続く,～つづく,잇따라 ~하다 · 계속 ~하다,"follow, continue, go on",,2,JLPT N2,,missing
+ja_miss_00953,,～羽,～わ,~마리 (새·토끼를 세는 단위),counter for rabbits; birds,,2,JLPT N2,,missing
+ja_miss_00954,,～色,～しょく,~색,kind of color,,2,JLPT N2,,missing
+ja_miss_00955,,～費,～ひ,~비 (비용),cost of ~,,2,JLPT N2,,missing
+ja_miss_00956,,～足,～そく,~켤레 (신발을 세는 단위),counter for shoes,,2,JLPT N2,,missing
+ja_miss_00957,,～辛い,～づらい,~하기 어렵다 · ~하기 거북하다,hard to do ~,,2,JLPT N2,,missing
+ja_miss_00958,,～通,～つう,~통 (편지를 세는 단위),counter for letters,,2,JLPT N2,,missing
+ja_miss_00959,,～通り,～とおり,~대로 · ~가 (거리),"in accordance with ~; following ~; ~ street, ~ avenue",,2,JLPT N2,,missing
+ja_miss_00960,,～過ぎる,～すぎる,너무 ~하다 · 지나치게 ~하다,too much ~,,2,JLPT N2,,missing
+ja_miss_00961,,～道,～どう,~도 (길),"kind of path, road",,2,JLPT N2,,missing
+ja_miss_00962,,～遣い,～づかい,~씀씀이 · ~ 사용,use of ~,,2,JLPT N2,,missing
+ja_miss_00963,,～酒,～しゅ,~주 (술),kind of alcohol,,2,JLPT N2,,missing
+ja_miss_00964,,～間,～かん,사이/동안,"between, during",,2,JLPT N2,,missing
+ja_miss_00965,,～集,～しゅう,~집 (모음집),collection of ~,,2,JLPT N2,,missing
+ja_miss_00966,,～難い,～がたい,~하기 어렵다 · ~할 수 없다,hard (difficult) to do ~,,2,JLPT N2,,missing
+ja_miss_00967,,～頭,～とう,~마리 (큰 동물을 세는 단위),counter for animals,,2,JLPT N2,,missing
+ja_miss_00968,,～館,～かん,~관 (건물),"~ hall, ~ building",,2,JLPT N2,,missing
+ja_miss_00969,901,乃至,ないし,내지 · 또는,"from...to, between...and, or",,1,JLPT N1,,missing
+ja_miss_00970,1077,何だか,なんだか,어쩐지 · 왠지,"a little, somewhat, somehow",,1,JLPT N1,,missing
+ja_miss_00971,1511,主,しゅ,주인 · 주 · 하느님,"owner, master, god",,1,JLPT N1,,missing
+ja_miss_00972,1831,富む,とむ,풍부하다 · 넉넉하다 · 부유하다,"to be rich, to become rich",,1,JLPT N1,,missing
+ja_miss_00973,1850,一切,いっさい,일절 · 전혀 · 일체,"without exception, the whole",,1,JLPT N1,,missing
+ja_miss_00974,1973,語彙,ごい,어휘,"vocabulary, glossary",,1,JLPT N1,,missing
+ja_miss_00975,,あくどい,あくどい,악랄하다 · (색이) 야하다,gaudy vicious,,1,JLPT N1,,missing
+ja_miss_00976,,あっさり,あっさり,산뜻이 · 담백하게 · 선선히,"easily, readily, quickly",,1,JLPT N1,,missing
+ja_miss_00977,,ありふれる,ありふれる,흔하다 · 평범하다,"common, ordinary, routine",,1,JLPT N1,,missing
+ja_miss_00978,,いかにも,いかにも,정말로 · 과연 · 자못,truly (same as 実に (じつに)),,1,JLPT N1,,missing
+ja_miss_00979,,いたって,いたって,지극히 · 매우,"very much, exceedingly, extremely",,1,JLPT N1,,missing
+ja_miss_00980,,いやに,いやに,이상하게 · 몹시,"awfully, terribly",,1,JLPT N1,,missing
+ja_miss_00981,,いやらしい,いやらしい,불쾌하다 · 징그럽다 · 음란하다,"unpleasant, disgusting, indecent",,1,JLPT N1,,missing
+ja_miss_00982,,かりに,かりに,임시로 · 만약 · 가령,"temporarily; if, for argument's sake",,1,JLPT N1,,missing
+ja_miss_00983,,きしむ,きしむ,삐걱거리다,"to jar, to creak, to grate",,1,JLPT N1,,missing
+ja_miss_00984,,きっちり,きっちり,꼭 · 꽉 · 정확히,"precisely, tightly",,1,JLPT N1,,missing
+ja_miss_00985,,けがらわしい,けがらわしい,더럽다 · 불결하다 · 추잡하다,"filthy, unfair",,1,JLPT N1,,missing
+ja_miss_00986,,こじれる,こじれる,꼬이다 · 악화되다 · 덧나다,"to get complicated, to grow worse",,1,JLPT N1,,missing
+ja_miss_00987,,こだわる,こだわる,구애되다 · 고집하다 · 신경 쓰다,"to fuss over, to be particular about",,1,JLPT N1,,missing
+ja_miss_00988,,ことごとく,ことごとく,모조리 · 전부,"altogether, entirely",,1,JLPT N1,,missing
+ja_miss_00989,,さぞ,さぞ,틀림없이 · 필시 · 오죽,"I am sure, certainly, no doubt",,1,JLPT N1,,missing
+ja_miss_00990,,さほど,さほど,그다지 · 별로,"not so, not that much",,1,JLPT N1,,missing
+ja_miss_00991,,さも,さも,자못 · 정말 그런 듯이,"with gusto, with satisfaction",,1,JLPT N1,,missing
+ja_miss_00992,,しかしながら,しかしながら,그러나 · 하지만,"however, nevertheless",,1,JLPT N1,,missing
+ja_miss_00993,,じっくり,じっくり,차분히 · 곰곰이,"deliberately, carefully",,1,JLPT N1,,missing
+ja_miss_00994,,すんなり,すんなり,순조롭게 · 날씬함 · 매끈함,"pass with no objection, slim, slender",,1,JLPT N1,,missing
+ja_miss_00995,,ずばり,ずばり,딱 잘라 · 정곡을 찔러 · 단도직입으로,"decisively, unreservedly, frankly",,1,JLPT N1,,missing
+ja_miss_00996,,そこら,そこら,그 근처 · 그 정도,"everywhere, somewhere",,1,JLPT N1,,missing
+ja_miss_00997,,それゆえ,それゆえ,그러므로 · 따라서,"therefore, for that reason, so",,1,JLPT N1,,missing
+ja_miss_00998,,だったら,だったら,그렇다면 · 그러면,if it's the case,,1,JLPT N1,,missing
+ja_miss_00999,,だと,だと,~라고/이면,if it's the case,,1,JLPT N1,,missing
+ja_miss_01000,,つじつま,つじつま,앞뒤 · 이치 · 아귀,"coherence, consistency",,1,JLPT N1,,missing
+ja_miss_01001,,てんで,てんで,전혀 · 아예,"(not) at all, altogether, entirely",,1,JLPT N1,,missing
+ja_miss_01002,,とかく,とかく,이러니저러니 · 자칫하면 · 어쨌든,"anyhow, anyway, in any case",,1,JLPT N1,,missing
+ja_miss_01003,,とぎれる,とぎれる,끊어지다 · 중단되다,"to pause, to be interrupted",,1,JLPT N1,,missing
+ja_miss_01004,,どうにか,どうにか,그럭저럭 · 어떻게든,"in some way or other, one way or another",,1,JLPT N1,,missing
+ja_miss_01005,,どうやら,どうやら,아무래도 · 그럭저럭,"it seems like, somehow or other",,1,JLPT N1,,missing
+ja_miss_01006,,なおさら,なおさら,더욱 · 하물며,"all the more, still less",,1,JLPT N1,,missing
+ja_miss_01007,,なにとぞ,なにとぞ,부디 · 아무쪼록,"please, kindly, by all means",,1,JLPT N1,,missing
+ja_miss_01008,,なるたけ,なるたけ,되도록 · 가능한 한,"as much as possible, if possible",,1,JLPT N1,,missing
+ja_miss_01009,,なんだかんだ,なんだかんだ,이러쿵저러쿵 · 이것저것,something or other,,1,JLPT N1,,missing
+ja_miss_01010,,なんなり,なんなり,무엇이든 · 뭐든지,"anything, whatever",,1,JLPT N1,,missing
+ja_miss_01011,,にも関わらず,にもかかわらず,~에도 불구하고,"in spite of, nevertheless",,1,JLPT N1,,missing
+ja_miss_01012,,はらはら,はらはら,조마조마 · 팔랑팔랑,feel nervous,,1,JLPT N1,,missing
+ja_miss_01013,,ばかばかしい,ばかばかしい,어리석다 · 터무니없다,stupid,,1,JLPT N1,,missing
+ja_miss_01014,,ひいては,ひいては,나아가서는 · 더 나아가,"not only…but also, in addition to, consequently",,1,JLPT N1,,missing
+ja_miss_01015,,ひょっと,ひょっと,혹시 · 어쩌면 · 문득,"possibly, accidentally",,1,JLPT N1,,missing
+ja_miss_01016,,びら,びら,전단 · 삐라,"handout, leaflet",,1,JLPT N1,,missing
+ja_miss_01017,,ぼやける,ぼやける,흐려지다 · 희미해지다,"to become dim, to become blurred",,1,JLPT N1,,missing
+ja_miss_01018,,もてる,もてる,인기가 있다 · 들 수 있다,"to be well liked, to be popular",,1,JLPT N1,,missing
+ja_miss_01019,,やけに,やけに,몹시 · 유난히 · 무턱대고,"sure, very",,1,JLPT N1,,missing
+ja_miss_01020,,ゆとり,ゆとり,여유,"reserve, affluence, time (to spare)",,1,JLPT N1,,missing
+ja_miss_01021,,よって,よって,따라서 · 그러므로,"therefore, consequently",,1,JLPT N1,,missing
+ja_miss_01022,,ろくな,ろくな,변변한 · 제대로 된,"satisfactory, decent",,1,JLPT N1,,missing
+ja_miss_01023,,わざわざ,わざわざ,일부러 · 굳이,"take the trouble (to do), doing something especially rather than incidentally",,1,JLPT N1/회화새단어,r2_life_b6 2턴: あ、はじめまして！わざわざ、すみません。,missing
+ja_miss_01024,,アマチュア,アマチュア,아마추어,amateur,,1,JLPT N1/외래어,,missing
+ja_miss_01025,,アルカリ,アルカリ,알칼리,alkali,,1,JLPT N1/외래어,,missing
+ja_miss_01026,,インフレ,インフレ,인플레이션 · 물가 상승,(abbr.) inflation,,1,JLPT N1/외래어,,missing
+ja_miss_01027,,カテゴリー,カテゴリー,카테고리 · 범주,category,,1,JLPT N1/외래어,,missing
+ja_miss_01028,,カムバック,カムバック,컴백 · 복귀,comeback,,1,JLPT N1/외래어,,missing
+ja_miss_01029,,キャリア,キャリア,경력 · 커리어 · 고시 출신 관료,"career, career government employee",,1,JLPT N1/외래어,,missing
+ja_miss_01030,,コメント,コメント,코멘트 · 논평,comment,,1,JLPT N1/외래어,,missing
+ja_miss_01031,,サボる,サボる,땡땡이치다 · 게으름 피우다,to cut (skip) classes; to loaf on the job; to idle away one's time,,1,JLPT N1/외래어,,missing
+ja_miss_01032,,ジャンル,ジャンル,장르,genre,,1,JLPT N1/외래어,,missing
+ja_miss_01033,,セクション,セクション,섹션 · 부문 · 구역,section,,1,JLPT N1/외래어,,missing
+ja_miss_01034,,タイマー,タイマー,타이머,timer,,1,JLPT N1/외래어,,missing
+ja_miss_01035,,タイムリー,タイムリー,시의적절함 · 적시타,"timely, run-batted-in (baseball), RBI",,1,JLPT N1/외래어,,missing
+ja_miss_01036,,テレックス,テレックス,텔렉스,"telex, teletypewriter exchange",,1,JLPT N1/외래어,,missing
+ja_miss_01037,,トーン,トーン,톤 · 음색 · 색조,tone,,1,JLPT N1/외래어,,missing
+ja_miss_01038,,ナンセンス,ナンセンス,난센스 · 터무니없음,nonsense,,1,JLPT N1/외래어,,missing
+ja_miss_01039,,ニュアンス,ニュアンス,뉘앙스,nuance,,1,JLPT N1/외래어,,missing
+ja_miss_01040,,バッジ,バッジ,배지,badge,,1,JLPT N1/외래어,,missing
+ja_miss_01041,,フォーム,フォーム,폼 · 자세 · 거품,foam; form,,1,JLPT N1/외래어,,missing
+ja_miss_01042,,ブーム,ブーム,붐 · 유행,boom,,1,JLPT N1/외래어,,missing
+ja_miss_01043,,ボイコット,ボイコット,보이콧 · 불매 운동,boycott,,1,JLPT N1/외래어,,missing
+ja_miss_01044,,マイ～,マイ～,마이~ · 자기 ~ · 나의 ~,"my ~, one's own ~",,1,JLPT N1,,missing
+ja_miss_01045,,ミスプリント,ミスプリント,오식 · 미스프린트,misprint,,1,JLPT N1/외래어,,missing
+ja_miss_01046,,ミセス,ミセス,부인 · 기혼 여성,Mrs.,,1,JLPT N1/외래어,,missing
+ja_miss_01047,,レギュラー,レギュラー,정규 (선수·멤버) · 고정 출연자 · 보통,regular,,1,JLPT N1/외래어,,missing
+ja_miss_01048,,一変,いっぺん,완전히 바뀜 · 일변,complete change,,1,JLPT N1,,missing
+ja_miss_01049,,一律,いちりつ,일률 · 한결같음 · 균일,"even, uniform, equal",,1,JLPT N1,,missing
+ja_miss_01050,,一概に,いちがいに,일률적으로 · 무조건 (~라고는 할 수 없다),"unconditionally, necessarily",,1,JLPT N1,,missing
+ja_miss_01051,,一様,いちよう,한결같음 · 똑같음 · 일률적,"uniform, similar, equal",,1,JLPT N1,,missing
+ja_miss_01052,,一目,いちもく,한번 봄 · 일목 · 한 수 위,"a glance, a look, a glimpse",,1,JLPT N1,,missing
+ja_miss_01053,,一筋,ひとすじ,한 줄기 · 외곬 · 오로지,"a line, earnestly, blindly, straightforwardly",,1,JLPT N1,,missing
+ja_miss_01054,,一見,いっけん,언뜻 보기에 · 한번 봄 · 첫 만남,"a look, a glimpse, glance; first meeting",,1,JLPT N1,,missing
+ja_miss_01055,,一連,いちれん,일련 · 연속,"a series, a chain, a ream (of paper)",,1,JLPT N1,,missing
+ja_miss_01056,,一部分,いちぶぶん,일부분 · 일부,"a part, a portion",,1,JLPT N1,,missing
+ja_miss_01057,,一面,いちめん,일면 · 한쪽 면 · 온통,"one side, the other hand",,1,JLPT N1,,missing
+ja_miss_01058,,下取り,したどり,보상 판매 · 중고 보상 교환,"trade in, part exchange",,1,JLPT N1,,missing
+ja_miss_01059,,下心,したごころ,속셈 · 흑심 · 저의,"secret intention, motive",,1,JLPT N1,,missing
+ja_miss_01060,,下火,したび,기세가 꺾임 · 쇠퇴 · 사그라짐,"burning low, waning, declining",,1,JLPT N1,,missing
+ja_miss_01061,,不可欠,ふかけつ,불가결 · 꼭 필요함,"indispensable, essential",,1,JLPT N1,,missing
+ja_miss_01062,,不良,ふりょう,불량,"badness, delinquent, failure",,1,JLPT N1,,missing
+ja_miss_01063,,与党,よとう,여당,"government party, (ruling) party in power, government",,1,JLPT N1,,missing
+ja_miss_01064,,世帯,せたい,세대 (世帯) · 가구,household,,1,JLPT N1,,missing
+ja_miss_01065,,世辞,せじ,겉치레 말 · 아첨 · 인사치레,"flattery, compliment",,1,JLPT N1,,missing
+ja_miss_01066,,両立,りょうりつ,양립,"compatibility, coexistence, standing together",,1,JLPT N1,,missing
+ja_miss_01067,,並列,へいれつ,병렬 · 나란히 늘어섬,"arrangement, parallel, abreast",,1,JLPT N1,,missing
+ja_miss_01068,,中和,ちゅうわ,중화,"neutralize, counteract",,1,JLPT N1,,missing
+ja_miss_01069,,主導,しゅどう,주도,main leadership,,1,JLPT N1,,missing
+ja_miss_01070,,主権,しゅけん,주권,sovereignty,,1,JLPT N1,,missing
+ja_miss_01071,,主観,しゅかん,주관,"subjectivity, subject, ego",,1,JLPT N1,,missing
+ja_miss_01072,,乏しい,とぼしい,부족하다 · 모자라다 · 가난하다,"meager, scarce, hard up, poor",,1,JLPT N1,,missing
+ja_miss_01073,,乙,おつ,을 (두 번째) · 세련되고 멋짐,2nd in rank,,1,JLPT N1,,missing
+ja_miss_01074,,了承,りょうしょう,양해 · 승낙,"acknowledgment, understanding",,1,JLPT N1,,missing
+ja_miss_01075,,予て,かねて,미리 · 진작부터 · 전부터,"previously, already, lately",,1,JLPT N1,,missing
+ja_miss_01076,,予感,よかん,예감,"presentiment, premonition",,1,JLPT N1,,missing
+ja_miss_01077,,事前,じぜん,사전 (事前) · 미리,"prior, beforehand, in advance",,1,JLPT N1,,missing
+ja_miss_01078,,事柄,ことがら,사항 · 일 · 사정,"matter, thing, affair, circumstance",,1,JLPT N1,,missing
+ja_miss_01079,,事業,じぎょう,사업,"project, enterprise, business",,1,JLPT N1,,missing
+ja_miss_01080,,事項,じこう,사항,"matter(s), item(s), facts",,1,JLPT N1,,missing
+ja_miss_01081,,云々,うんぬん,운운 · 등등,"and so on, and so forth",,1,JLPT N1,,missing
+ja_miss_01082,,交える,まじえる,섞다 · 주고받다 · 맞붙다,"to mix, to converse with, to cross (swords)",,1,JLPT N1,,missing
+ja_miss_01083,,交す,かわす,주고받다 · 교환하다,to exchange,,1,JLPT N1,,missing
+ja_miss_01084,,交付,こうふ,교부,"delivering, furnishing (with copies)",,1,JLPT N1,,missing
+ja_miss_01085,,人体,じんたい,인체,human body,,1,JLPT N1,,missing
+ja_miss_01086,,人柄,ひとがら,인품 · 사람됨,"personality, character",,1,JLPT N1,,missing
+ja_miss_01087,,人格,じんかく,인격,"personality, character",,1,JLPT N1,,missing
+ja_miss_01088,,人民,じんみん,인민 · 국민,"people, public",,1,JLPT N1,,missing
+ja_miss_01089,,人目,ひとめ,남의 눈 · 사람들 눈,"glimpse, public gaze",,1,JLPT N1,,missing
+ja_miss_01090,,介入,かいにゅう,개입,intervention,,1,JLPT N1,,missing
+ja_miss_01091,,仕立てる,したてる,짓다 (옷을) · 만들다 · 꾸미다,"to tailor, to make, to prepare",,1,JLPT N1,,missing
+ja_miss_01092,,他動詞,たどうし,타동사,transitive verb (direct object),,1,JLPT N1,,missing
+ja_miss_01093,,他方,たほう,다른 쪽 · 한편,"another side, on the other hand",,1,JLPT N1,,missing
+ja_miss_01094,,付け加える,つけくわえる,덧붙이다 · 추가하다,to add one thing to another,,1,JLPT N1,,missing
+ja_miss_01095,,付録,ふろく,부록,"appendix, supplement",,1,JLPT N1,,missing
+ja_miss_01096,,代る代る,かわるがわる,번갈아 · 교대로,alternately,,1,JLPT N1,,missing
+ja_miss_01097,,代弁,だいべん,대변,speak for another,,1,JLPT N1,,missing
+ja_miss_01098,,代用,だいよう,대용,substitution,,1,JLPT N1,,missing
+ja_miss_01099,,仲人,なこうど,중매인 · 중매쟁이,"go-between, matchmaker",,1,JLPT N1,,missing
+ja_miss_01100,,任命,にんめい,임명,"appointment, nomination, ordination",,1,JLPT N1,,missing
+ja_miss_01101,,休戦,きゅうせん,휴전,"truce, armistice",,1,JLPT N1,,missing
+ja_miss_01102,,伝達,でんたつ,전달,"transmission (e.g., news, communication, delivery)",,1,JLPT N1,,missing
+ja_miss_01103,,伴う,ともなう,따르다 · 동반하다 · 수반하다,"to accompany, to bring with",,1,JLPT N1,,missing
+ja_miss_01104,,体裁,ていさい,체면 · 겉모양 · 형식,"decency, style, form, appearance",,1,JLPT N1,,missing
+ja_miss_01105,,何気ない,なにげない,아무렇지 않다 · 무심하다 · 태연하다,"casual, unconcerned",,1,JLPT N1,,missing
+ja_miss_01106,,余興,よきょう,여흥,"side show, entertainment",,1,JLPT N1,,missing
+ja_miss_01107,,使命,しめい,사명,"mission, errand, message",,1,JLPT N1,,missing
+ja_miss_01108,,依存,いぞん,의존,"dependence, dependent, reliance",,1,JLPT N1,,missing
+ja_miss_01109,,侮辱,ぶじょく,모욕,"insult, contempt, slight",,1,JLPT N1,,missing
+ja_miss_01110,,侵略,しんりゃく,침략,"aggression, invasion, raid",,1,JLPT N1,,missing
+ja_miss_01111,,便宜,べんぎ,편의,"convenience, accommodation",,1,JLPT N1,,missing
+ja_miss_01112,,促進,そくしん,촉진,"promotion, acceleration, encouragement",,1,JLPT N1,,missing
+ja_miss_01113,,保つ,たもつ,유지하다 · 지키다 · 보존하다,"to keep, to preserve, to sustain",,1,JLPT N1,,missing
+ja_miss_01114,,保守,ほしゅ,보수 · 유지 보수,"conservative, maintaining",,1,JLPT N1,,missing
+ja_miss_01115,,保温,ほおん,보온,"retaining warmth, keeping heat in, heat insulation",,1,JLPT N1,,missing
+ja_miss_01116,,信者,しんじゃ,신자,"believer, devotee",,1,JLPT N1,,missing
+ja_miss_01117,,修学,しゅうがく,수학 (修學) · 학업,learning,,1,JLPT N1,,missing
+ja_miss_01118,,個別,こべつ,개별,particular case,,1,JLPT N1,,missing
+ja_miss_01119,,値する,あたいする,가치가 있다 · ~할 만하다,"to be worth, to deserve",,1,JLPT N1,,missing
+ja_miss_01120,,偏見,へんけん,편견,"prejudice, narrow view",,1,JLPT N1,,missing
+ja_miss_01121,,健在,けんざい,건재,"in good health, well",,1,JLPT N1,,missing
+ja_miss_01122,,偽造,ぎぞう,위조,"forgery, fabrication, counterfeiting",,1,JLPT N1,,missing
+ja_miss_01123,,優位,ゆうい,우위,"predominance, ascendancy, superiority",,1,JLPT N1,,missing
+ja_miss_01124,,優越,ゆうえつ,우월,"supremacy, predominance, being superior to",,1,JLPT N1,,missing
+ja_miss_01125,,元年,がんねん,원년,first year (of a specific reign),,1,JLPT N1,,missing
+ja_miss_01126,,元来,がんらい,원래 · 본디,"originally, naturally",,1,JLPT N1,,missing
+ja_miss_01127,,充実,じゅうじつ,충실 · 알참,"fullness, perfection",,1,JLPT N1,,missing
+ja_miss_01128,,先代,せんだい,선대 · 전대,"family predecessor, previous age, previous generation",,1,JLPT N1,,missing
+ja_miss_01129,,先天的,せんてんてき,선천적,"inherent, congenital, hereditary",,1,JLPT N1,,missing
+ja_miss_01130,,先着,せんちゃく,선착,first arrival,,1,JLPT N1,,missing
+ja_miss_01131,,免れる,まぬがれる,면하다 · 모면하다 · 벗어나다,"to escape from, to be exempted",,1,JLPT N1,,missing
+ja_miss_01132,,免除,めんじょ,면제,"exemption, exoneration, discharge",,1,JLPT N1,,missing
+ja_miss_01133,,入手,にゅうしゅ,입수 · 손에 넣음,"obtaining, coming to hand",,1,JLPT N1,,missing
+ja_miss_01134,,公募,こうぼ,공모,"public appeal, public contribution",,1,JLPT N1,,missing
+ja_miss_01135,,公団,こうだん,공단 (公團) · 공기업,public corporation,,1,JLPT N1,,missing
+ja_miss_01136,,公然,こうぜん,공공연함 · 공공연히,openly,,1,JLPT N1,,missing
+ja_miss_01137,,公用,こうよう,공무 · 공용,"government business, public use, public expense",,1,JLPT N1,,missing
+ja_miss_01138,,公認,こうにん,공인,"official recognition, authorization",,1,JLPT N1,,missing
+ja_miss_01139,,共和,きょうわ,공화,"republicanism, cooperation",,1,JLPT N1,,missing
+ja_miss_01140,,兵器,へいき,병기 · 무기,"arms, weapons, ordinance",,1,JLPT N1,,missing
+ja_miss_01141,,兼業,けんぎょう,겸업,holding two jobs at the same time,,1,JLPT N1,,missing
+ja_miss_01142,,兼用,けんよう,겸용,"multi-use, combined use",,1,JLPT N1,,missing
+ja_miss_01143,,内乱,ないらん,내란,"civil war, domestic conflict",,1,JLPT N1,,missing
+ja_miss_01144,,内心,ないしん,내심 · 속마음,"innermost thoughts, real intention, inmost heart",,1,JLPT N1,,missing
+ja_miss_01145,,内蔵,ないぞう,내장 (內藏) · 내장형,internal organ; built-in,,1,JLPT N1,,missing
+ja_miss_01146,,内訳,うちわけ,내역 · 명세,"the items, breakdown, classification",,1,JLPT N1,,missing
+ja_miss_01147,,内閣,ないかく,내각,"cabinet, (government)",,1,JLPT N1,,missing
+ja_miss_01148,,内陸,ないりく,내륙,inland,,1,JLPT N1,,missing
+ja_miss_01149,,円満,えんまん,원만,"harmony, peace, smoothness",,1,JLPT N1,,missing
+ja_miss_01150,,円滑,えんかつ,원활,"harmony, smoothness",,1,JLPT N1,,missing
+ja_miss_01151,,再現,さいげん,재현,"reproduction, return, revival",,1,JLPT N1,,missing
+ja_miss_01152,,冴える,さえる,맑다 · 선명하다 · (솜씨가) 뛰어나다,"to be clear, to be bright, to be skillful",,1,JLPT N1,,missing
+ja_miss_01153,,冷やかす,ひやかす,놀리다 · 희롱하다 · (사지 않고) 구경만 하다,"to banter, to make fun of, to jeer at, to cool, to refrigerate",,1,JLPT N1,,missing
+ja_miss_01154,,冷淡,れいたん,냉담,"coolness, indifference",,1,JLPT N1,,missing
+ja_miss_01155,,冷酷,れいこく,냉혹,"cruelty, coldheartedness, ruthless",,1,JLPT N1,,missing
+ja_miss_01156,,凝らす,こらす,집중하다 · 응시하다 · (공을) 들이다,"to concentrate, to devote, to peer into",,1,JLPT N1,,missing
+ja_miss_01157,,几帳面,きちょうめん,꼼꼼함 · 착실함,"methodical, punctual, steady",,1,JLPT N1,,missing
+ja_miss_01158,,出くわす,でくわす,우연히 마주치다 · 맞닥뜨리다,"to happen to meet, to come across",,1,JLPT N1,,missing
+ja_miss_01159,,出品,しゅっぴん,출품,"exhibit, display",,1,JLPT N1,,missing
+ja_miss_01160,,出費,しゅっぴ,지출 · 비용,"expenses, disbursements",,1,JLPT N1,,missing
+ja_miss_01161,,出題,しゅつだい,출제,proposing a question,,1,JLPT N1,,missing
+ja_miss_01162,,分子,ぶんし,분자,"numerator, molecule",,1,JLPT N1,,missing
+ja_miss_01163,,分業,ぶんぎょう,분업,"division of labor, specialization, assembly-line production",,1,JLPT N1,,missing
+ja_miss_01164,,分母,ぶんぼ,분모,denominator,,1,JLPT N1,,missing
+ja_miss_01165,,分裂,ぶんれつ,분열,"split, division, break up",,1,JLPT N1,,missing
+ja_miss_01166,,切実,せつじつ,절실함 · 절박함,"compelling, serious, severe, acute",,1,JLPT N1,,missing
+ja_miss_01167,,刑罰,けいばつ,형벌,"judgment, penalty, punishment",,1,JLPT N1,,missing
+ja_miss_01168,,初耳,はつみみ,처음 듣는 이야기 · 금시초문,something heard for the first time,,1,JLPT N1,,missing
+ja_miss_01169,,判定,はんてい,판정,"judgment, decision, award, verdict",,1,JLPT N1,,missing
+ja_miss_01170,,利潤,りじゅん,이윤,"profit, returns",,1,JLPT N1,,missing
+ja_miss_01171,,利点,りてん,이점 · 장점,"advantage, point in favor",,1,JLPT N1,,missing
+ja_miss_01172,,到底,とうてい,도저히,(cannot) possibly,,1,JLPT N1,,missing
+ja_miss_01173,,制定,せいてい,제정,"enactment, establishment, creation",,1,JLPT N1,,missing
+ja_miss_01174,,制約,せいやく,제약,"limitation, constraints",,1,JLPT N1,,missing
+ja_miss_01175,,前例,ぜんれい,전례,precedent,,1,JLPT N1,,missing
+ja_miss_01176,,前売,まえうり,예매 · 사전 판매,"advance sale, booking",,1,JLPT N1,,missing
+ja_miss_01177,,前提,ぜんてい,전제,"preamble, premise, prerequisite",,1,JLPT N1,,missing
+ja_miss_01178,,前置き,まえおき,서론 · 머리말,"preface, introduction",,1,JLPT N1,,missing
+ja_miss_01179,,前途,ぜんと,전도 · 앞길 · 장래,"future prospects, outlook, the journey ahead",,1,JLPT N1,,missing
+ja_miss_01180,,割当,わりあて,할당 · 배당,"allotment, allocation, quota",,1,JLPT N1,,missing
+ja_miss_01181,,割込む,わりこむ,끼어들다 · 새치기하다,"to cut in, to disturb",,1,JLPT N1,,missing
+ja_miss_01182,,創刊,そうかん,창간,"launching (e.g., newspaper, first issue)",,1,JLPT N1,,missing
+ja_miss_01183,,劇団,げきだん,극단,"troupe, theatrical company",,1,JLPT N1,,missing
+ja_miss_01184,,加入,かにゅう,가입,"becoming a member, admission",,1,JLPT N1,,missing
+ja_miss_01185,,助動詞,じょどうし,조동사,auxiliary verb,,1,JLPT N1,,missing
+ja_miss_01186,,助言,じょげん,조언,"advice, suggestion",,1,JLPT N1,,missing
+ja_miss_01187,,努めて,つとめて,되도록 · 애써 · 힘써,"make an effort!, work hard!",,1,JLPT N1,,missing
+ja_miss_01188,,励む,はげむ,힘쓰다 · 노력하다 · 열중하다,"to be zealous, to make an effort",,1,JLPT N1,,missing
+ja_miss_01189,,動向,どうこう,동향,"trend, tendency, movement, attitude",,1,JLPT N1,,missing
+ja_miss_01190,,動員,どういん,동원,mobilization,,1,JLPT N1,,missing
+ja_miss_01191,,動的,どうてき,동적,"dynamic, kinetic",,1,JLPT N1,,missing
+ja_miss_01192,,務まる,つとまる,감당할 수 있다 · (역할을) 해낼 수 있다,"be equal, be fit",,1,JLPT N1,,missing
+ja_miss_01193,,勧告,かんこく,권고,"advice, counsel",,1,JLPT N1,,missing
+ja_miss_01194,,勧誘,かんゆう,권유,"invitation, canvassing, inducement",,1,JLPT N1,,missing
+ja_miss_01195,,化合,かごう,화합 (化合),chemical combination,,1,JLPT N1,,missing
+ja_miss_01196,,化繊,かせん,화학 섬유 · 합성 섬유,synthetic fibers,,1,JLPT N1,,missing
+ja_miss_01197,,区切り,くぎり,구분 · 매듭 · 단락,"an end, a stop, punctuation",,1,JLPT N1,,missing
+ja_miss_01198,,区間,くかん,구간,section,,1,JLPT N1,,missing
+ja_miss_01199,,協定,きょうてい,협정,"arrangement, pact, agreement",,1,JLPT N1,,missing
+ja_miss_01200,,単独,たんどく,단독,"sole, single",,1,JLPT N1,,missing
+ja_miss_01201,,単調,たんちょう,단조로움,"monotony, monotone, dullness",,1,JLPT N1,,missing
+ja_miss_01202,,即する,そくする,맞추다 · 입각하다 · 즉하다,"to conform to, to agree with, to be adapted to,",,1,JLPT N1,,missing
+ja_miss_01203,,原作,げんさく,원작,original work,,1,JLPT N1,,missing
+ja_miss_01204,,原典,げんてん,원전,"original, source",,1,JLPT N1,,missing
+ja_miss_01205,,原則,げんそく,원칙,"principle, general rule",,1,JLPT N1,,missing
+ja_miss_01206,,原形,げんけい,원형 (原形) · 본래 모습,"original form, base form",,1,JLPT N1,,missing
+ja_miss_01207,,原文,げんぶん,원문,"the text, original",,1,JLPT N1,,missing
+ja_miss_01208,,原書,げんしょ,원서,original document,,1,JLPT N1,,missing
+ja_miss_01209,,原爆,げんばく,원자 폭탄 · 원폭,atomic bomb,,1,JLPT N1,,missing
+ja_miss_01210,,厳か,おごそか,엄숙하다 · 장엄하다,"majestic, dignified",,1,JLPT N1,,missing
+ja_miss_01211,,参上,さんじょう,찾아뵘 · 방문,"calling on, visiting",,1,JLPT N1,,missing
+ja_miss_01212,,参議院,さんぎいん,참의원,House of Councilors,,1,JLPT N1,,missing
+ja_miss_01213,,反する,はんする,어긋나다 · 위반되다 · 반하다,"to be inconsistent with, to oppose, to contradict",,1,JLPT N1,,missing
+ja_miss_01214,,反乱,はんらん,반란,"rebellion, revolt, uprising",,1,JLPT N1,,missing
+ja_miss_01215,,反感,はんかん,반감,"antipathy, revolt, animosity",,1,JLPT N1,,missing
+ja_miss_01216,,収まる,おさまる,수습되다 · 들어가다 · 가라앉다,to settle into; to be obtained,,1,JLPT N1,,missing
+ja_miss_01217,,収容,しゅうよう,수용,accommodation; seating; custody,,1,JLPT N1,,missing
+ja_miss_01218,,収支,しゅうし,수지 · 수입과 지출,income and expenditure,,1,JLPT N1,,missing
+ja_miss_01219,,取り次ぐ,とりつぐ,전하다 · 중개하다 · 취급하다,"to act as an agent for, to announce (someone), to convey (a message)",,1,JLPT N1,,missing
+ja_miss_01220,,取り組む,とりくむ,맞붙다 · 몰두하다 · 대처하다,"to tackle, to engage in a bout, to come to grips with",,1,JLPT N1,,missing
+ja_miss_01221,,取り調べる,とりしらべる,취조하다 · 조사하다,"to investigate, to examine",,1,JLPT N1,,missing
+ja_miss_01222,,取引,とりひき,거래,"transactions, dealings, business",,1,JLPT N1,,missing
+ja_miss_01223,,受け付ける,うけつける,접수하다 · 받아들이다,"to be accepted, to receive (an application)",,1,JLPT N1,,missing
+ja_miss_01224,,受け入れ,うけいれ,받아들임 · 수용,"receiving, acceptance",,1,JLPT N1,,missing
+ja_miss_01225,,受け継ぐ,うけつぐ,이어받다 · 계승하다,"to inherit, to succeed",,1,JLPT N1,,missing
+ja_miss_01226,,受身,うけみ,수동 · 수동태,"passive, passive voice",,1,JLPT N1,,missing
+ja_miss_01227,,口述,こうじゅつ,구술,verbal statement,,1,JLPT N1,,missing
+ja_miss_01228,,口頭,こうとう,구두,oral,,1,JLPT N1,,missing
+ja_miss_01229,,合わす,あわす,합치다 · 맞추다,"to join together, to face, to unite",,1,JLPT N1,,missing
+ja_miss_01230,,合成,ごうせい,합성,"synthetic, mixed",,1,JLPT N1,,missing
+ja_miss_01231,,合間,あいま,틈 · 짬 · 사이,interval,,1,JLPT N1,,missing
+ja_miss_01232,,同い年,おないどし,동갑,of the same age,,1,JLPT N1,,missing
+ja_miss_01233,,同封,どうふう,동봉,"enclosure (e.g., in a letter)",,1,JLPT N1,,missing
+ja_miss_01234,,同盟,どうめい,동맹,"alliance, union, league",,1,JLPT N1,,missing
+ja_miss_01235,,同調,どうちょう,동조 · 보조를 맞춤,"sympathy, agree with, alignment",,1,JLPT N1,,missing
+ja_miss_01236,,名残,なごり,자취 · 흔적 · 여운,"remains, traces, memory",,1,JLPT N1,,missing
+ja_miss_01237,,名簿,めいぼ,명부 · 명단,register of names,,1,JLPT N1,,missing
+ja_miss_01238,,否決,ひけつ,부결,"rejection, negation, voting down",,1,JLPT N1,,missing
+ja_miss_01239,,周期,しゅうき,주기,"cycle, period",,1,JLPT N1,,missing
+ja_miss_01240,,味わい,あじわい,맛 · 정취,"flavor, relish",,1,JLPT N1,,missing
+ja_miss_01241,,呼び止める,よびとめる,불러 세우다,to flag down,,1,JLPT N1,,missing
+ja_miss_01242,,和文,わぶん,일본어 문장 · 일문,"Japanese text, sentence in Japanese",,1,JLPT N1,,missing
+ja_miss_01243,,唱える,となえる,외다 · 읊다 · 주장하다,"to recite, to chant, to call upon",,1,JLPT N1,,missing
+ja_miss_01244,,善し悪し,よしあし,좋고 나쁨 · 선악 · 장단점,"good or bad, merits or demerits, quality",,1,JLPT N1,,missing
+ja_miss_01245,,善良,ぜんりょう,선량,"goodness, excellence, virtue",,1,JLPT N1,,missing
+ja_miss_01246,,営む,いとなむ,경영하다 · 영위하다 · (행사를) 치르다,"to carry on (e.g., in ceremony), to run a business",,1,JLPT N1,,missing
+ja_miss_01247,,回送,かいそう,회송,forwarding,,1,JLPT N1,,missing
+ja_miss_01248,,固定,こてい,고정,"fixation, fixing (e.g., salary, capital)",,1,JLPT N1,,missing
+ja_miss_01249,,国交,こっこう,국교,diplomatic relations,,1,JLPT N1,,missing
+ja_miss_01250,,国定,こくてい,국정 · 국가 지정,"state-sponsored, national",,1,JLPT N1,,missing
+ja_miss_01251,,国有,こくゆう,국유,national ownership,,1,JLPT N1,,missing
+ja_miss_01252,,国産,こくさん,국산,domestic products,,1,JLPT N1,,missing
+ja_miss_01253,,国連,こくれん,유엔 · 국제 연합,"U.N., United Nations",,1,JLPT N1,,missing
+ja_miss_01254,,国防,こくぼう,국방,national defense,,1,JLPT N1,,missing
+ja_miss_01255,,圧迫,あっぱく,압박,"pressure, coercion, oppression",,1,JLPT N1,,missing
+ja_miss_01256,,基金,ききん,기금,"fund, foundation",,1,JLPT N1,,missing
+ja_miss_01257,,堂々,どうどう,당당,"magnificent, grand, impressive",,1,JLPT N1,,missing
+ja_miss_01258,,報じる,ほうじる,알리다 · 보도하다,"to inform, to report",,1,JLPT N1,,missing
+ja_miss_01259,,報ずる,ほうずる,알리다 · 보도하다,"to inform, to report",,1,JLPT N1,,missing
+ja_miss_01260,,報酬,ほうしゅう,보수 · 대가,"remuneration, recompense, reward",,1,JLPT N1,,missing
+ja_miss_01261,,増強,ぞうきょう,증강,"reinforce, increase",,1,JLPT N1,,missing
+ja_miss_01262,,増進,ぞうしん,증진,"promoting, increase, advance",,1,JLPT N1,,missing
+ja_miss_01263,,墜落,ついらく,추락,"falling, crashing",,1,JLPT N1,,missing
+ja_miss_01264,,壮大,そうだい,웅장 · 장대,"magnificent, grand, majestic",,1,JLPT N1,,missing
+ja_miss_01265,,売り出す,うりだす,팔기 시작하다 · 발매하다 · 이름을 떨치다,"to put on sale, to market",,1,JLPT N1,,missing
+ja_miss_01266,,外方,そっぽ,딴 데 · 외면,look (or turn) the other way,,1,JLPT N1,,missing
+ja_miss_01267,,外来,がいらい,외래 · 외래 진료,"(abbr.) imported, outpatient clinic",,1,JLPT N1,,missing
+ja_miss_01268,,外相,がいしょう,외무 장관 · 외상,Foreign Minister,,1,JLPT N1,,missing
+ja_miss_01269,,外貨,がいか,외화,foreign money,,1,JLPT N1,,missing
+ja_miss_01270,,多数決,たすうけつ,다수결,majority rule,,1,JLPT N1,,missing
+ja_miss_01271,,大幅,おおはば,대폭 · 큰 폭,"full width, large scale, drastic",,1,JLPT N1,,missing
+ja_miss_01272,,大方,おおかた,대부분 · 대체로,"almost all, majority",,1,JLPT N1,,missing
+ja_miss_01273,,大概,たいがい,대개 · 대체로,"in general, mainly",,1,JLPT N1,,missing
+ja_miss_01274,,天下,てんか,천하 · 온 세상,"the world, whole country",,1,JLPT N1,,missing
+ja_miss_01275,,天地,てんち,천지 · 하늘과 땅,"heaven and earth, the universe",,1,JLPT N1,,missing
+ja_miss_01276,,失脚,しっきゃく,실각,"losing one's standing, being overthrown, falling",,1,JLPT N1,,missing
+ja_miss_01277,,失調,しっちょう,이상 · 부조화 · 실조,"lack of harmony, imbalance",,1,JLPT N1,,missing
+ja_miss_01278,,奉る,たてまつる,바치다 · 받들다,"to offer, to do respectfully",,1,JLPT N1,,missing
+ja_miss_01279,,奮闘,ふんとう,분투,"hard struggle, strenuous effort",,1,JLPT N1,,missing
+ja_miss_01280,,好意,こうい,호의,"good will, favor, courtesy",,1,JLPT N1,,missing
+ja_miss_01281,,好況,こうきょう,호황,"prosperous conditions, healthy economy",,1,JLPT N1,,missing
+ja_miss_01282,,好調,こうちょう,호조 · 순조로움,"satisfactory, in good shape",,1,JLPT N1,,missing
+ja_miss_01283,,妥協,だきょう,타협,"compromise, giving in",,1,JLPT N1,,missing
+ja_miss_01284,,始末,しまつ,처리 · 뒤처리 · (나쁜) 꼴,disposal; cleaning up afterwards,,1,JLPT N1,,missing
+ja_miss_01285,,始発,しはつ,첫차 · 시발,first train,,1,JLPT N1,,missing
+ja_miss_01286,,委託,いたく,위탁,"consign (goods (for sale) to a firm), entrust",,1,JLPT N1,,missing
+ja_miss_01287,,威力,いりょく,위력,"power, might, authority",,1,JLPT N1,,missing
+ja_miss_01288,,婉曲,えんきょく,완곡,"euphemistic, indirect, insinuating",,1,JLPT N1,,missing
+ja_miss_01289,,存続,そんぞく,존속,"duration, continuance",,1,JLPT N1,,missing
+ja_miss_01290,,学芸,がくげい,학예,"arts and sciences, liberal arts",,1,JLPT N1,,missing
+ja_miss_01291,,安っぽい,やすっぽい,싸구려 같다 · 천박하다,"cheap-looking, tawdry",,1,JLPT N1,,missing
+ja_miss_01292,,定まる,さだまる,정해지다 · 안정되다,"to become settled, to be fixed",,1,JLPT N1,,missing
+ja_miss_01293,,定義,ていぎ,정의 (定義),definition,,1,JLPT N1,,missing
+ja_miss_01294,,実業家,じつぎょうか,실업가 · 사업가,"industrialist, businessman",,1,JLPT N1,,missing
+ja_miss_01295,,実費,じっぴ,실비,"actual expense, cost price",,1,JLPT N1,,missing
+ja_miss_01296,,宣教,せんきょう,선교,religious mission,,1,JLPT N1,,missing
+ja_miss_01297,,家来,けらい,가신 · 부하,"retainer, retinue, servant",,1,JLPT N1,,missing
+ja_miss_01298,,家計,かけい,가계 · 살림,"household economy, family finances",,1,JLPT N1,,missing
+ja_miss_01299,,寄贈,きぞう,기증,"donation, presentation",,1,JLPT N1,,missing
+ja_miss_01300,,密接,みっせつ,밀접,"connected, close, intimate",,1,JLPT N1,,missing
+ja_miss_01301,,察する,さっする,헤아리다 · 짐작하다,"to guess, to sense, to judge",,1,JLPT N1,,missing
+ja_miss_01302,,審査,しんさ,심사,"judging, inspection, examination",,1,JLPT N1,,missing
+ja_miss_01303,,審議,しんぎ,심의,deliberation,,1,JLPT N1,,missing
+ja_miss_01304,,対処,たいしょ,대처,"deal with, cope",,1,JLPT N1,,missing
+ja_miss_01305,,対等,たいとう,대등,equivalent,,1,JLPT N1,,missing
+ja_miss_01306,,封建,ほうけん,봉건,feudalistic,,1,JLPT N1,,missing
+ja_miss_01307,,専ら,もっぱら,오로지 · 한결같이,"wholly, solely, entirely",,1,JLPT N1,,missing
+ja_miss_01308,,専修,せんしゅう,전수 · 전공,specialization,,1,JLPT N1,,missing
+ja_miss_01309,,専用,せんよう,전용,"exclusive use, personal use",,1,JLPT N1,,missing
+ja_miss_01310,,小切手,こぎって,수표,"cheque, check",,1,JLPT N1,,missing
+ja_miss_01311,,小売,こうり,소매,retail,,1,JLPT N1,,missing
+ja_miss_01312,,尽きる,つきる,다하다 · 바닥나다 · 끝나다,"to be used up, to be run out",,1,JLPT N1,,missing
+ja_miss_01313,,居住,きょじゅう,거주,residence,,1,JLPT N1,,missing
+ja_miss_01314,,屈折,くっせつ,굴절 · 꺾임,"bending, indentation, refraction",,1,JLPT N1,,missing
+ja_miss_01315,,履歴,りれき,이력 · 경력 · 기록,"personal history, background, log",,1,JLPT N1,,missing
+ja_miss_01316,,巧み,たくみ,교묘함 · 솜씨 좋음,"skill, cleverness",,1,JLPT N1,,missing
+ja_miss_01317,,巧妙,こうみょう,교묘,"ingenious, skillful, clever",,1,JLPT N1,,missing
+ja_miss_01318,,差し掛かる,さしかかる,다다르다 · 접어들다,"to come near to, to approach",,1,JLPT N1,,missing
+ja_miss_01319,,差し支える,さしつかえる,지장이 있다 · 지장을 주다,"to interfere, to hinder",,1,JLPT N1,,missing
+ja_miss_01320,,布告,ふこく,포고,"edict, ordinance, proclamation",,1,JLPT N1,,missing
+ja_miss_01321,,干し～,ほし～,말린 ~ · 건~,dried ~,,1,JLPT N1,,missing
+ja_miss_01322,,干渉,かんしょう,간섭,"interference, intervention",,1,JLPT N1,,missing
+ja_miss_01323,,平常,へいじょう,평상 · 평소,"normal, usual",,1,JLPT N1,,missing
+ja_miss_01324,,年号,ねんごう,연호,"name of an era, year number",,1,JLPT N1,,missing
+ja_miss_01325,,年長,ねんちょう,연장자 · 손위,seniority,,1,JLPT N1,,missing
+ja_miss_01326,,度忘れ,どわすれ,깜빡 잊음 · 건망,"lapse of memory, forget for a moment",,1,JLPT N1,,missing
+ja_miss_01327,,座標,ざひょう,좌표,coordinates,,1,JLPT N1,,missing
+ja_miss_01328,,座談会,ざだんかい,좌담회,"symposium, round-table discussion",,1,JLPT N1,,missing
+ja_miss_01329,,庶務,しょむ,서무,general affairs,,1,JLPT N1,,missing
+ja_miss_01330,,廃止,はいし,폐지,"abolition, repeal",,1,JLPT N1,,missing
+ja_miss_01331,,延べ,のべ,연 (延) · 총계 · 늘림,"futures, credit (buying), stretching, total",,1,JLPT N1,,missing
+ja_miss_01332,,引下げる,ひきさげる,끌어내리다 · 인하하다 · 철회하다,"to pull down, to lower, to reduce, to withdraw",,1,JLPT N1,,missing
+ja_miss_01333,,引取る,ひきとる,떠맡다 · 인수하다 · 물러가다,to take back; to adopt; to leave,,1,JLPT N1,,missing
+ja_miss_01334,,弛み,たるみ,느슨함 · 해이,"slack, slackening",,1,JLPT N1,,missing
+ja_miss_01335,,弛む,たるむ,느슨해지다 · 처지다 · 해이해지다,"to slacken, to loosen, to relax",,1,JLPT N1,,missing
+ja_miss_01336,,強いて,しいて,굳이 · 억지로,"to dare, to insist",,1,JLPT N1,,missing
+ja_miss_01337,,強制,きょうせい,강제,"obligation, compulsion, enforcement",,1,JLPT N1,,missing
+ja_miss_01338,,強行,きょうこう,강행,"forcing, enforcement",,1,JLPT N1,,missing
+ja_miss_01339,,弾力,だんりょく,탄력,"elasticity, flexibility",,1,JLPT N1,,missing
+ja_miss_01340,,当て,あて,기대 · 의지 · 목표,expectations; depend,,1,JLPT N1,,missing
+ja_miss_01341,,当て字,あてじ,취음자 · 음을 빌려 쓴 한자,"phonetic-equivalent character, substitute character",,1,JLPT N1,,missing
+ja_miss_01342,,当人,とうにん,당사자 · 본인,"the one concerned, the said person",,1,JLPT N1,,missing
+ja_miss_01343,,当～,とう～,당~ · 이~ · 본~,"Our ~ (e.g., Hotel, plane, etc.)",,1,JLPT N1,,missing
+ja_miss_01344,,役場,やくば,읍사무소 · 면사무소,town hall,,1,JLPT N1,,missing
+ja_miss_01345,,役職,やくしょく,직책 · 관리직,"post, managerial position, official position",,1,JLPT N1,,missing
+ja_miss_01346,,待ち望む,まちのぞむ,고대하다 · 손꼽아 기다리다,"to look anxiously for, to wait eagerly for",,1,JLPT N1,,missing
+ja_miss_01347,,待ち遠しい,まちどおしい,몹시 기다려지다,looking forward to,,1,JLPT N1,,missing
+ja_miss_01348,,待望,たいぼう,대망 · 고대하던,"long-expected, waiting",,1,JLPT N1,,missing
+ja_miss_01349,,後回し,あとまわし,뒤로 미룸,"putting off, postponing",,1,JLPT N1,,missing
+ja_miss_01350,,後退,こうたい,후퇴,"retreat, backspace",,1,JLPT N1,,missing
+ja_miss_01351,,徐行,じょこう,서행,going slowly,,1,JLPT N1,,missing
+ja_miss_01352,,従事,じゅうじ,종사,"engaging, pursuing, following",,1,JLPT N1,,missing
+ja_miss_01353,,従来,じゅうらい,종래 · 지금까지,"up to now, so far, traditional",,1,JLPT N1,,missing
+ja_miss_01354,,御世辞,おせじ,아첨 · 겉치레 말,"flattery, compliment",,1,JLPT N1,,missing
+ja_miss_01355,,復活,ふっかつ,부활,"revival (e.g., musical), restoration",,1,JLPT N1,,missing
+ja_miss_01356,,復興,ふっこう,부흥,"revival, renaissance, reconstruction",,1,JLPT N1,,missing
+ja_miss_01357,,微か,かすか,희미하다 · 어렴풋하다,"faint, dim, weak",,1,JLPT N1,,missing
+ja_miss_01358,,微塵,みじん,티끌 · 아주 작은 것 · 조금도,"particle, atom",,1,JLPT N1,,missing
+ja_miss_01359,,微量,びりょう,미량,"minuscule amount, extremely small quantity",,1,JLPT N1,,missing
+ja_miss_01360,,徹する,てっする,철저히 하다 · 일관하다 · 꼬박 새우다,"to devote oneself, to believe in",,1,JLPT N1,,missing
+ja_miss_01361,,心中,しんじゅう,동반 자살,double suicide,,1,JLPT N1,,missing
+ja_miss_01362,,心強い,こころづよい,마음 든든하다,"heartening, reassuring",,1,JLPT N1,,missing
+ja_miss_01363,,心掛け,こころがけ,마음가짐 · 유의,"readiness, intention, aim",,1,JLPT N1,,missing
+ja_miss_01364,,心掛ける,こころがける,명심하다 · 유의하다,"to bear in mind, to aim to do",,1,JLPT N1,,missing
+ja_miss_01365,,必修,ひっしゅう,필수,required (subject),,1,JLPT N1,,missing
+ja_miss_01366,,必然,ひつぜん,필연,"inevitable, necessary",,1,JLPT N1,,missing
+ja_miss_01367,,志,こころざし,뜻 · 의지 · 성의,"will, intention, motive",,1,JLPT N1,,missing
+ja_miss_01368,,応募,おうぼ,응모,"subscription, application",,1,JLPT N1,,missing
+ja_miss_01369,,忠告,ちゅうこく,충고,"advice, warning",,1,JLPT N1,,missing
+ja_miss_01370,,念願,ねんがん,염원,"one's heart's desire, earnest petition",,1,JLPT N1,,missing
+ja_miss_01371,,恋する,こいする,사랑하다 · 연애하다,"to fall in love with, to love",,1,JLPT N1,,missing
+ja_miss_01372,,恥,はじ,부끄러움 · 수치,"shame, embarrassment",,1,JLPT N1,,missing
+ja_miss_01373,,恥じらう,はじらう,부끄러워하다 · 수줍어하다,"to feel shy, to be bashful, to blush",,1,JLPT N1,,missing
+ja_miss_01374,,恥じる,はじる,부끄러워하다 · 수치스러워하다,to feel ashamed,,1,JLPT N1,,missing
+ja_miss_01375,,恵む,めぐむ,베풀다 · 은혜를 베풀다,"to bless, to show mercy to",,1,JLPT N1,,missing
+ja_miss_01376,,悟る,さとる,깨닫다 · 알아차리다,"to attain enlightenment, to understand",,1,JLPT N1,,missing
+ja_miss_01377,,悩ましい,なやましい,괴롭다 · 고민스럽다 · 뇌쇄적이다,"seductive, melancholy, languid",,1,JLPT N1,,missing
+ja_miss_01378,,悩ます,なやます,괴롭히다 · 골치 아프게 하다,"to bother, to harass, to molest",,1,JLPT N1,,missing
+ja_miss_01379,,悪しからず,あしからず,언짢게 생각지 마시길 · 양해 바랍니다,"don't take me wrong, but..., I'm sorry",,1,JLPT N1,,missing
+ja_miss_01380,,悪化,あっか,악화,"deterioration, worsen",,1,JLPT N1,,missing
+ja_miss_01381,,悪者,わるもの,나쁜 놈 · 악인,"bad fellow, rascal",,1,JLPT N1,,missing
+ja_miss_01382,,悲観,ひかん,비관,"pessimism, disappointment",,1,JLPT N1,,missing
+ja_miss_01383,,情け,なさけ,인정 · 동정,"sympathy, compassion",,1,JLPT N1,,missing
+ja_miss_01384,,情勢,じょうせい,정세,"state of things, condition, situation",,1,JLPT N1,,missing
+ja_miss_01385,,情深い,なさけぶかい,인정 많다 · 정이 깊다,"tender-hearted, compassionate",,1,JLPT N1,,missing
+ja_miss_01386,,情無い,なさけない,한심하다 · 비참하다 · 창피하다,"miserable, pitiable, shameful",,1,JLPT N1,,missing
+ja_miss_01387,,情熱,じょうねつ,정열 · 열정,"passion, enthusiasm, zeal",,1,JLPT N1,,missing
+ja_miss_01388,,惚ける,ぼける,노망나다 · 멍해지다 · 흐려지다,"to grow senile, to fade",,1,JLPT N1,,missing
+ja_miss_01389,,惜しむ,おしむ,아끼다 · 아쉬워하다 · 애석하게 여기다,"to be frugal, to value, to regret",,1,JLPT N1,,missing
+ja_miss_01390,,意欲,いよく,의욕,"will, desire, ambition",,1,JLPT N1,,missing
+ja_miss_01391,,意気込む,いきごむ,의욕에 차다 · 벼르다,to be enthusiastic about,,1,JLPT N1,,missing
+ja_miss_01392,,愚か,おろか,어리석다 · 바보 같다,"foolish, stupid",,1,JLPT N1,,missing
+ja_miss_01393,,愚痴,ぐち,푸념 · 넋두리,"idle complaint, grumble",,1,JLPT N1,,missing
+ja_miss_01394,,愛想,あいそう,붙임성 · 상냥함 · 대접,sociability,,1,JLPT N1,,missing
+ja_miss_01395,,感度,かんど,감도,"sensitivity, severity (quake)",,1,JLPT N1,,missing
+ja_miss_01396,,感無量,かんむりょう,감개무량,"deep feeling, filled with emotion",,1,JLPT N1,,missing
+ja_miss_01397,,感触,かんしょく,감촉 · 느낌,"sense of touch, feeling, sensation",,1,JLPT N1,,missing
+ja_miss_01398,,慣例,かんれい,관례 · 관행,"custom, precedent, of convention",,1,JLPT N1,,missing
+ja_miss_01399,,慣習,かんしゅう,관습,usual (historical) custom,,1,JLPT N1,,missing
+ja_miss_01400,,憂鬱,ゆううつ,우울 · 우울함,"depression, melancholy",,1,JLPT N1,,missing
+ja_miss_01401,,憎しみ,にくしみ,증오 · 미움,hatred,,1,JLPT N1,,missing
+ja_miss_01402,,憤慨,ふんがい,분개,"indignation, resentment",,1,JLPT N1,,missing
+ja_miss_01403,,憧れ,あこがれ,동경 · 선망,"yearning, longing, aspiration",,1,JLPT N1,,missing
+ja_miss_01404,,懲りる,こりる,질리다 · 데어서 다시는 안 하다,"to learn by experience, to be disgusted with",,1,JLPT N1,,missing
+ja_miss_01405,,成り立つ,なりたつ,성립하다 · 이루어지다,"to consist of; to be practical (logical, feasible, viable), to be concluded, to hold true",,1,JLPT N1,,missing
+ja_miss_01406,,成果,せいか,성과 · 결실,"results, fruits",,1,JLPT N1,,missing
+ja_miss_01407,,戦力,せんりょく,전력 (戰力),war potential,,1,JLPT N1,,missing
+ja_miss_01408,,戦災,せんさい,전쟁 피해 · 전화 (戰禍),war damage,,1,JLPT N1,,missing
+ja_miss_01409,,戦術,せんじゅつ,전술,tactics,,1,JLPT N1,,missing
+ja_miss_01410,,戸籍,こせき,호적,"census, family register",,1,JLPT N1,,missing
+ja_miss_01411,,戸締り,とじまり,문단속,"closing up, locking the doors",,1,JLPT N1,,missing
+ja_miss_01412,,所在,しょざい,소재 · 있는 곳,whereabouts,,1,JLPT N1,,missing
+ja_miss_01413,,所定,しょてい,소정 · 정해진,"fixed, prescribed",,1,JLPT N1,,missing
+ja_miss_01414,,所属,しょぞく,소속,"attached to, belong to",,1,JLPT N1,,missing
+ja_miss_01415,,所持,しょじ,소지,"possession, owning",,1,JLPT N1,,missing
+ja_miss_01416,,所有,しょゆう,소유,"one's possessions, ownership",,1,JLPT N1,,missing
+ja_miss_01417,,手元,てもと,수중 · 가까이 · 손놀림,"(money) on hand or at home, one's purse; usual skill",,1,JLPT N1,,missing
+ja_miss_01418,,手分け,てわけ,분담 · 나누어 맡음,division of labor,,1,JLPT N1,,missing
+ja_miss_01419,,手回し,てまわし,사전 준비 · 손을 씀,"preparations, arrangements",,1,JLPT N1,,missing
+ja_miss_01420,,手掛かり,てがかり,단서 · 실마리,"hint, clue, key",,1,JLPT N1,,missing
+ja_miss_01421,,手法,しゅほう,수법 · 기법,technique,,1,JLPT N1,,missing
+ja_miss_01422,,手筈,てはず,준비 · 절차 · 계획,"arrangement, plan, program",,1,JLPT N1,,missing
+ja_miss_01423,,手軽,てがる,손쉽다 · 간편하다,"easy, simple, cheap",,1,JLPT N1,,missing
+ja_miss_01424,,手遅れ,ておくれ,때늦음 · 손쓸 시기를 놓침,being (too); belated treatment,,1,JLPT N1,,missing
+ja_miss_01425,,手配,てはい,수배 · 준비 · 마련,"arrangement, search (by police)",,1,JLPT N1,,missing
+ja_miss_01426,,手際,てぎわ,솜씨 · 수완,"performance, skill, tact",,1,JLPT N1,,missing
+ja_miss_01427,,手順,てじゅん,순서 · 절차,"process, procedure, protocol",,1,JLPT N1,,missing
+ja_miss_01428,,打ち明ける,うちあける,털어놓다 · 고백하다,"to confess, to be open",,1,JLPT N1,,missing
+ja_miss_01429,,打ち込む,うちこむ,열중하다 · 몰두하다 · 박아 넣다,"to devote oneself to, to shoot into",,1,JLPT N1,,missing
+ja_miss_01430,,技能,ぎのう,기능 (技能),"technical skill, ability, capacity",,1,JLPT N1,,missing
+ja_miss_01431,,把握,はあく,파악,"grasp, catch, understanding",,1,JLPT N1,,missing
+ja_miss_01432,,投げ出す,なげだす,내던지다 · 포기하다 · 내놓다,"to abandon, to throw out",,1,JLPT N1,,missing
+ja_miss_01433,,投入,とうにゅう,투입,"throw, investment, making (an electrical circuit)",,1,JLPT N1,,missing
+ja_miss_01434,,折り返す,おりかえす,접어 꺾다 · 되돌아가다 · 바로 회신하다,"to turn up, to fold back",,1,JLPT N1,,missing
+ja_miss_01435,,折衷,せっちゅう,절충,"compromise, cross, blending, eclecticism",,1,JLPT N1,,missing
+ja_miss_01436,,抜け出す,ぬけだす,빠져나가다 · 몰래 나가다,"to slip out, to sneak away, to excel",,1,JLPT N1,,missing
+ja_miss_01437,,押し切る,おしきる,밀어붙이다 · 강행하다,to have one's own way,,1,JLPT N1,,missing
+ja_miss_01438,,拒否,きょひ,거부,"denial, rejection, refusal",,1,JLPT N1,,missing
+ja_miss_01439,,拝借,はいしゃく,빌림 (겸양어),(humble) (polite) borrowing,,1,JLPT N1,,missing
+ja_miss_01440,,拝啓,はいけい,근계 (편지 첫머리 인사),-- a formal greeting used at the beginning of a letter --,,1,JLPT N1,,missing
+ja_miss_01441,,持ち切り,もちきり,(화제로) 떠들썩함 · 그 이야기뿐임,"hot topic, talk of the town",,1,JLPT N1,,missing
+ja_miss_01442,,指令,しれい,지령,"orders, instructions, directive",,1,JLPT N1,,missing
+ja_miss_01443,,指摘,してき,지적,"pointing out, identification",,1,JLPT N1,,missing
+ja_miss_01444,,振り出し,ふりだし,출발점 · 원점 · (어음) 발행,"outset, starting point, drawing or issuing (draft)",,1,JLPT N1,,missing
+ja_miss_01445,,捕虜,ほりょ,포로,prisoner of war,,1,JLPT N1,,missing
+ja_miss_01446,,捗る,はかどる,진척되다 · 잘 되어 가다,"to make progress, to move right ahead (with the work), to advance",,1,JLPT N1,,missing
+ja_miss_01447,,授ける,さずける,주다 · 수여하다 · 전수하다,"to grant, to award, to teach",,1,JLPT N1,,missing
+ja_miss_01448,,排除,はいじょ,배제,"exclusion, removal, rejection",,1,JLPT N1,,missing
+ja_miss_01449,,掛～,かけ～,외상 · 걸~,credit,,1,JLPT N1,,missing
+ja_miss_01450,,採択,さいたく,채택,"adoption, selection, choice",,1,JLPT N1,,missing
+ja_miss_01451,,採決,さいけつ,표결 · 채결,"vote, roll call",,1,JLPT N1,,missing
+ja_miss_01452,,採算,さいさん,채산 · 수지,profit,,1,JLPT N1,,missing
+ja_miss_01453,,接続詞,せつぞくし,접속사,conjunction,,1,JLPT N1,,missing
+ja_miss_01454,,控える,ひかえる,삼가다 · 대기하다 · 적어 두다,to hold back; to make notes,,1,JLPT N1,,missing
+ja_miss_01455,,控除,こうじょ,공제,"subsidy, deduction",,1,JLPT N1,,missing
+ja_miss_01456,,推進,すいしん,추진,"propulsion, driving force",,1,JLPT N1,,missing
+ja_miss_01457,,措置,そち,조치,"measure, step",,1,JLPT N1,,missing
+ja_miss_01458,,描写,びょうしゃ,묘사,"depiction, description, portrayal",,1,JLPT N1,,missing
+ja_miss_01459,,提供,ていきょう,제공 · 협찬,"offer, program sponsoring",,1,JLPT N1,,missing
+ja_miss_01460,,換算,かんさん,환산,"conversion, change, exchange",,1,JLPT N1,,missing
+ja_miss_01461,,揺らぐ,ゆらぐ,흔들리다 · 동요하다,"to swing, to sway, to shake",,1,JLPT N1,,missing
+ja_miss_01462,,携わる,たずさわる,종사하다 · 관여하다,"to engage, to involve",,1,JLPT N1,,missing
+ja_miss_01463,,改まる,あらたまる,새로워지다 · 바뀌다 · 격식을 차리다,to be renewed; to be formal,,1,JLPT N1,,missing
+ja_miss_01464,,改悪,かいあく,개악,"deterioration, changing for the worse",,1,JLPT N1,,missing
+ja_miss_01465,,改訂,かいてい,개정 (改訂),revision,,1,JLPT N1,,missing
+ja_miss_01466,,改革,かいかく,개혁,"reform, reformation, innovation",,1,JLPT N1,,missing
+ja_miss_01467,,放り出す,ほうりだす,내던지다 · 내팽개치다 · 쫓아내다,"to throw out, to give up, to abandon",,1,JLPT N1,,missing
+ja_miss_01468,,放射能,ほうしゃのう,방사능,radioactivity,,1,JLPT N1,,missing
+ja_miss_01469,,政権,せいけん,정권,"(political) administration, political power",,1,JLPT N1,,missing
+ja_miss_01470,,政策,せいさく,정책,"political measures, policy",,1,JLPT N1,,missing
+ja_miss_01471,,故～,こ～,고 ~ (故),"deceased, late",,1,JLPT N1,,missing
+ja_miss_01472,,敏感,びんかん,민감 · 민감하다,"sensibility, susceptibility, sensitive (to)",,1,JLPT N1,,missing
+ja_miss_01473,,教材,きょうざい,교재,teaching materials,,1,JLPT N1,,missing
+ja_miss_01474,,教訓,きょうくん,교훈,"lesson, precept, moral instruction",,1,JLPT N1,,missing
+ja_miss_01475,,敢えて,あえて,굳이 · 감히,"dare (to do), venture (to do), challenge (to do)",,1,JLPT N1,,missing
+ja_miss_01476,,敬具,けいぐ,경구 (편지 끝맺음 말),Sincerely (used at the end of letter),,1,JLPT N1,,missing
+ja_miss_01477,,整える,ととのえる,정돈하다 · 갖추다 · 가다듬다,"to put in order, to arrange, to adjust; to get ready, to prepare; to raise money",,1,JLPT N1,,missing
+ja_miss_01478,,整然,せいぜん,정연함 · 질서정연,"orderly, regular, well-organized",,1,JLPT N1,,missing
+ja_miss_01479,,文書,ぶんしょ,문서,"document, writing",,1,JLPT N1,,missing
+ja_miss_01480,,文語,ぶんご,문어 · 글말,"written language, literary language",,1,JLPT N1,,missing
+ja_miss_01481,,斡旋,あっせん,알선 · 주선,"kind offices, mediation",,1,JLPT N1,,missing
+ja_miss_01482,,断言,だんげん,단언,"assertion, declaration, affirmation",,1,JLPT N1,,missing
+ja_miss_01483,,断面,だんめん,단면,cross section,,1,JLPT N1,,missing
+ja_miss_01484,,新婚,しんこん,신혼,newly-wed,,1,JLPT N1,,missing
+ja_miss_01485,,方式,ほうしき,방식,"form, method, system",,1,JLPT N1,,missing
+ja_miss_01486,,於いて,おいて,~에서 · ~에 있어서,"at, in, on",,1,JLPT N1,,missing
+ja_miss_01487,,日の丸,ひのまる,일장기,the Japanese flag,,1,JLPT N1,,missing
+ja_miss_01488,,日取り,ひどり,날짜 · 날짜 잡기,"fixed date, appointed day",,1,JLPT N1,,missing
+ja_miss_01489,,日夜,にちや,밤낮 · 늘,"day and night, always",,1,JLPT N1,,missing
+ja_miss_01490,,日頃,ひごろ,평소 · 평상시,"normally, habitually",,1,JLPT N1,,missing
+ja_miss_01491,,早める,はやめる,앞당기다 · 서두르다 · 재촉하다,"to hasten, to quicken, to accelerate",,1,JLPT N1,,missing
+ja_miss_01492,,明かす,あかす,밝히다 · 털어놓다 · 밤을 새우다,to reveal; to stay up,,1,JLPT N1,,missing
+ja_miss_01493,,明瞭,めいりょう,명료함,clarity,,1,JLPT N1,,missing
+ja_miss_01494,,是正,ぜせい,시정 · 바로잡음,"correction, revision",,1,JLPT N1,,missing
+ja_miss_01495,,晩年,ばんねん,만년,(one's) last years,,1,JLPT N1,,missing
+ja_miss_01496,,普遍,ふへん,보편,"universality, ubiquity, omnipresence",,1,JLPT N1,,missing
+ja_miss_01497,,晴天,せいてん,맑은 날씨 · 청천,fine weather,,1,JLPT N1,,missing
+ja_miss_01498,,暗殺,あんさつ,암살,assassination,,1,JLPT N1,,missing
+ja_miss_01499,,暗示,あんじ,암시,"hint, suggestion",,1,JLPT N1,,missing
+ja_miss_01500,,暗算,あんざん,암산,mental arithmetic,,1,JLPT N1,,missing
+ja_miss_01501,,暴動,ぼうどう,폭동,"insurrection, riot, uprising",,1,JLPT N1,,missing
+ja_miss_01502,,暴露,ばくろ,폭로,"disclosure, exposure, revelation",,1,JLPT N1,,missing
+ja_miss_01503,,書き取る,かきとる,받아쓰다 · 받아 적다,"to write down, to take dictation",,1,JLPT N1,,missing
+ja_miss_01504,,書評,しょひょう,서평,book review,,1,JLPT N1,,missing
+ja_miss_01505,,最善,さいぜん,최선,the very best,,1,JLPT N1,,missing
+ja_miss_01506,,月並,つきなみ,진부함 · 평범함,"conventional, trite, common",,1,JLPT N1,,missing
+ja_miss_01507,,月謝,げっしゃ,월사금 · 월 수강료,monthly tuition fee,,1,JLPT N1,,missing
+ja_miss_01508,,月賦,げっぷ,월부 · 할부,monthly installment,,1,JLPT N1,,missing
+ja_miss_01509,,有する,ゆうする,가지다 · 소유하다,"to own, to be endowed with",,1,JLPT N1,,missing
+ja_miss_01510,,有り様,ありさま,모양 · 꼴 · 상태,"state, condition",,1,JLPT N1,,missing
+ja_miss_01511,,有望,ゆうぼう,유망함,"good prospects, full of hope, promising",,1,JLPT N1,,missing
+ja_miss_01512,,有益,ゆうえき,유익함,"beneficial, profitable",,1,JLPT N1,,missing
+ja_miss_01513,,朗読,ろうどく,낭독,"reading aloud, recitation",,1,JLPT N1,,missing
+ja_miss_01514,,望ましい,のぞましい,바람직하다,"desirable, hoped for",,1,JLPT N1,,missing
+ja_miss_01515,,期日,きじつ,기일 · 기한,"fixed date, settlement date",,1,JLPT N1,,missing
+ja_miss_01516,,期末,きまつ,기말,(end of the season or term),,1,JLPT N1,,missing
+ja_miss_01517,,未婚,みこん,미혼,unmarried,,1,JLPT N1,,missing
+ja_miss_01518,,未定,みてい,미정,"not yet fixed, undecided, pending",,1,JLPT N1,,missing
+ja_miss_01519,,未熟,みじゅく,미숙,"inexperience, unskilled, immature",,1,JLPT N1,,missing
+ja_miss_01520,,未練,みれん,미련,"lingering affection, attachment, regret(s)",,1,JLPT N1,,missing
+ja_miss_01521,,未開,みかい,미개,"savage land, backward region, uncivilized",,1,JLPT N1,,missing
+ja_miss_01522,,末期,まっき,말기 · 임종,"deathbed, hour of death",,1,JLPT N1,,missing
+ja_miss_01523,,本体,ほんたい,본체 · 실체,"substance, body, trunk",,1,JLPT N1,,missing
+ja_miss_01524,,本名,ほんみょう,본명,real name,,1,JLPT N1,,missing
+ja_miss_01525,,本国,ほんごく,본국,one's own country,,1,JLPT N1,,missing
+ja_miss_01526,,本場,ほんば,본고장 · 본산지,"home, best place, genuine",,1,JLPT N1,,missing
+ja_miss_01527,,本格,ほんかく,본격,"propriety, full-scale",,1,JLPT N1,,missing
+ja_miss_01528,,本質,ほんしつ,본질,"essence, true nature, reality",,1,JLPT N1,,missing
+ja_miss_01529,,本音,ほんね,본심 · 속마음,"(one's) real intention, motive",,1,JLPT N1,,missing
+ja_miss_01530,,本館,ほんかん,본관,main building,,1,JLPT N1,,missing
+ja_miss_01531,,束ねる,たばねる,다발로 묶다 · 통솔하다,"to tie up in a bundle, to control",,1,JLPT N1,,missing
+ja_miss_01532,,条約,じょうやく,조약,"treaty, pact",,1,JLPT N1,,missing
+ja_miss_01533,,杯,さかずき,술잔,wine cup,,1,JLPT N1,,missing
+ja_miss_01534,,染まる,そまる,물들다 · 염색되다,to be dyed,,1,JLPT N1,,missing
+ja_miss_01535,,染みる,しみる,스며들다 · 따끔따끔하다 · 사무치다,to soak; pierce,,1,JLPT N1,,missing
+ja_miss_01536,,栄える,さかえる,번영하다 · 번창하다,"to flourish, to prosper, to thrive",,1,JLPT N1,,missing
+ja_miss_01537,,根回し,ねまわし,사전 교섭 · 물밑 작업,making necessary arrangements,,1,JLPT N1,,missing
+ja_miss_01538,,根気,こんき,끈기 · 인내심,"patience; perseverance, energy",,1,JLPT N1,,missing
+ja_miss_01539,,案じる,あんじる,걱정하다 · 궁리하다,"to be anxious, to ponder",,1,JLPT N1,,missing
+ja_miss_01540,,案の定,あんのじょう,아니나 다를까 · 예상대로,"sure enough, as usual",,1,JLPT N1,,missing
+ja_miss_01541,,棄権,きけん,기권,"abstain from voting, renunciation of a right",,1,JLPT N1,,missing
+ja_miss_01542,,植わる,うわる,심기다 · 심어져 있다,to be planted,,1,JLPT N1,,missing
+ja_miss_01543,,植民地,しょくみんち,식민지,colony,,1,JLPT N1,,missing
+ja_miss_01544,,業績,ぎょうせき,업적 · 실적,"achievement, work, contribution",,1,JLPT N1,,missing
+ja_miss_01545,,極めて,きわめて,극히 · 지극히,"exceedingly, extremely (written expression)",,1,JLPT N1,,missing
+ja_miss_01546,,楽観,らっかん,낙관,optimism,,1,JLPT N1,,missing
+ja_miss_01547,,楽譜,がくふ,악보,"score (music, sheet music)",,1,JLPT N1,,missing
+ja_miss_01548,,概念,がいねん,개념,"general idea, concept, notion",,1,JLPT N1,,missing
+ja_miss_01549,,概略,がいりゃく,개략 · 대강,"outline, summary, gist",,1,JLPT N1,,missing
+ja_miss_01550,,概説,がいせつ,개설 (槪說),"general statement, outline",,1,JLPT N1,,missing
+ja_miss_01551,,様相,ようそう,양상,aspect,,1,JLPT N1,,missing
+ja_miss_01552,,標語,ひょうご,표어 · 슬로건,"motto, slogan, catchword",,1,JLPT N1,,missing
+ja_miss_01553,,模倣,もほう,모방,"imitation, copying",,1,JLPT N1,,missing
+ja_miss_01554,,模索,もさく,모색,groping (for),,1,JLPT N1,,missing
+ja_miss_01555,,権力,けんりょく,권력,"(political) power, authority, influence",,1,JLPT N1,,missing
+ja_miss_01556,,権威,けんい,권위,"authority, power, influence",,1,JLPT N1,,missing
+ja_miss_01557,,権限,けんげん,권한,"power, authority, jurisdiction",,1,JLPT N1,,missing
+ja_miss_01558,,樹立,じゅりつ,수립,"establish, create",,1,JLPT N1,,missing
+ja_miss_01559,,橋渡し,はしわたし,다리 놓기 · 중개 · 가교,"bridge building', mediation",,1,JLPT N1,,missing
+ja_miss_01560,,欠乏,けつぼう,결핍 · 부족,shortage,,1,JLPT N1,,missing
+ja_miss_01561,,欲,よく,욕심 · 욕망,"greed, wants",,1,JLPT N1,,missing
+ja_miss_01562,,正常,せいじょう,정상 (正常),"normalcy, normality, normal",,1,JLPT N1,,missing
+ja_miss_01563,,正当,せいとう,정당 (正當),"just, due, proper",,1,JLPT N1,,missing
+ja_miss_01564,,武力,ぶりょく,무력 (武力),"armed might, military power, the sword, force",,1,JLPT N1,,missing
+ja_miss_01565,,武装,ぶそう,무장,"arms, armament, armed",,1,JLPT N1,,missing
+ja_miss_01566,,死刑,しけい,사형,death penalty,,1,JLPT N1,,missing
+ja_miss_01567,,残酷,ざんこく,잔혹 · 잔인함,"cruelty, harshness",,1,JLPT N1,,missing
+ja_miss_01568,,残金,ざんきん,잔금,remaining money,,1,JLPT N1,,missing
+ja_miss_01569,,母国,ぼこく,모국 · 조국,one's home country (same as 自分の国 (じぶんのくに)),,1,JLPT N1,,missing
+ja_miss_01570,,比例,ひれい,비례,proportion,,1,JLPT N1,,missing
+ja_miss_01571,,比率,ひりつ,비율,"ratio, proportion, percentage",,1,JLPT N1,,missing
+ja_miss_01572,,比重,ひじゅう,비중,specific gravity,,1,JLPT N1,,missing
+ja_miss_01573,,民族,みんぞく,민족,"people, race",,1,JLPT N1,,missing
+ja_miss_01574,,気まぐれ,きまぐれ,변덕 · 변덕스러움,"whim, caprice, uneven temper",,1,JLPT N1,,missing
+ja_miss_01575,,気兼ね,きがね,어려워함 · 눈치 봄 · 거리낌,"hesitance, diffidence, feeling constraint",,1,JLPT N1,,missing
+ja_miss_01576,,気品,きひん,기품,"grace, elegance",,1,JLPT N1,,missing
+ja_miss_01577,,気流,きりゅう,기류,atmospheric current,,1,JLPT N1,,missing
+ja_miss_01578,,気立て,きだて,마음씨 · 성품,"good-natured, kind-hearted",,1,JLPT N1,,missing
+ja_miss_01579,,気質,きしつ,기질 · 성질,"character, trait, temperament",,1,JLPT N1,,missing
+ja_miss_01580,,気軽,きがる,부담 없음 · 가벼운 마음,"cheerful, buoyant, lighthearted",,1,JLPT N1,,missing
+ja_miss_01581,,気障,きざ,아니꼬움 · 젠체함,"affectation, conceit, snobbery",,1,JLPT N1,,missing
+ja_miss_01582,,気風,きふう,기풍,"character, traits, ethos",,1,JLPT N1,,missing
+ja_miss_01583,,決,けつ,결정 · 의결 · 표결,"decision, vote",,1,JLPT N1,,missing
+ja_miss_01584,,決算,けっさん,결산,"balance sheet, settlement of accounts",,1,JLPT N1,,missing
+ja_miss_01585,,決議,けつぎ,결의 (決議) · 의결,"resolution, vote, decision",,1,JLPT N1,,missing
+ja_miss_01586,,沈黙,ちんもく,침묵,"silence, reticence",,1,JLPT N1,,missing
+ja_miss_01587,,治まる,おさまる,진정되다 · 가라앉다 · 다스려지다,"to be at peace, to calm down",,1,JLPT N1,,missing
+ja_miss_01588,,治安,ちあん,치안,"public order, security",,1,JLPT N1,,missing
+ja_miss_01589,,沼,ぬま,늪,"swamp, bog, pond",,1,JLPT N1,,missing
+ja_miss_01590,,沿岸,えんがん,연안,"coast, shore",,1,JLPT N1,,missing
+ja_miss_01591,,洋風,ようふう,서양식 · 양식,western style,,1,JLPT N1,,missing
+ja_miss_01592,,派遣,はけん,파견,"dispatch, send",,1,JLPT N1,,missing
+ja_miss_01593,,浅ましい,あさましい,비열하다 · 한심하다 · 천하다,"shameful, mean, despicable",,1,JLPT N1,,missing
+ja_miss_01594,,海抜,かいばつ,해발,height above sea level,,1,JLPT N1,,missing
+ja_miss_01595,,海路,かいろ,해로 · 뱃길,sea route,,1,JLPT N1,,missing
+ja_miss_01596,,浸す,ひたす,담그다 · 적시다,"to soak, to dip, to drench",,1,JLPT N1,,missing
+ja_miss_01597,,淑やか,しとやか,정숙하다 · 얌전하다,graceful,,1,JLPT N1,,missing
+ja_miss_01598,,混同,こんどう,혼동,"confusion, mixing, merger",,1,JLPT N1,,missing
+ja_miss_01599,,混血,こんけつ,혼혈,"mixed race, mixed parentage",,1,JLPT N1,,missing
+ja_miss_01600,,添える,そえる,곁들이다 · 덧붙이다 · 첨부하다,"to add to, to attach, to accompany",,1,JLPT N1,,missing
+ja_miss_01601,,清純,せいじゅん,청순함,"purity, innocence",,1,JLPT N1,,missing
+ja_miss_01602,,温和,おんわ,온화함,"gentle, mild, moderate",,1,JLPT N1,,missing
+ja_miss_01603,,湿気る,しける,눅눅해지다 · 습기 차다,"to be damp, to be moist",,1,JLPT N1,,missing
+ja_miss_01604,,準じる,じゅんじる,준하다 · 따르다,"to follow, to conform, to apply to",,1,JLPT N1,,missing
+ja_miss_01605,,滅亡,めつぼう,멸망,"downfall, collapse, destruction",,1,JLPT N1,,missing
+ja_miss_01606,,滑らか,なめらか,매끄러움 · 매끄럽다 · 순조로움,"smoothness, glassiness",,1,JLPT N1,,missing
+ja_miss_01607,,滞納,たいのう,체납,"non-payment, default",,1,JLPT N1,,missing
+ja_miss_01608,,漂う,ただよう,떠돌다 · 감돌다 · 떠다니다,"to drift about, to float, to hang in air",,1,JLPT N1,,missing
+ja_miss_01609,,漏らす,もらす,새게 하다 · 누설하다 · 흘리다,"to let leak, to reveal",,1,JLPT N1,,missing
+ja_miss_01610,,漠然,ばくぜん,막연함 · 막연하다,"obscure, vague, equivocal",,1,JLPT N1,,missing
+ja_miss_01611,,漢語,かんご,한자어 · 중국어 단어,"Chinese word, Sino-Japanese word",,1,JLPT N1,,missing
+ja_miss_01612,,潤う,うるおう,촉촉해지다 · 윤택해지다 · 혜택을 입다,to be moist; to profit by,,1,JLPT N1,,missing
+ja_miss_01613,,潮,しお,조수 · 밀물과 썰물 · 바닷물,tide,,1,JLPT N1,,missing
+ja_miss_01614,,激励,げきれい,격려,encouragement,,1,JLPT N1,,missing
+ja_miss_01615,,炭素,たんそ,탄소,carbon (C),,1,JLPT N1,,missing
+ja_miss_01616,,無口,むくち,과묵함 · 말수가 적음,reticence,,1,JLPT N1,,missing
+ja_miss_01617,,無念,むねん,원통함 · 분함 · 유감,"chagrin, regret",,1,JLPT N1,,missing
+ja_miss_01618,,無意味,むいみ,무의미,"nonsense, no meaning",,1,JLPT N1,,missing
+ja_miss_01619,,無断,むだん,무단 · 허락 없이,"without permission, without notice",,1,JLPT N1,,missing
+ja_miss_01620,,無知,むち,무지,ignorance,,1,JLPT N1,,missing
+ja_miss_01621,,無礼,ぶれい,무례,"impolite, rude",,1,JLPT N1,,missing
+ja_miss_01622,,無能,むのう,무능,"inefficiency, incompetence",,1,JLPT N1,,missing
+ja_miss_01623,,無言,むごん,무언 · 말없음,silence,,1,JLPT N1,,missing
+ja_miss_01624,,無論,むろん,물론,"of course, naturally",,1,JLPT N1,,missing
+ja_miss_01625,,無闇に,むやみに,함부로 · 무턱대고 · 마구,"unreasonably, absurdly, at random",,1,JLPT N1,,missing
+ja_miss_01626,,焦げ茶,こげちゃ,암갈색 · 고동색,dark brown,,1,JLPT N1,,missing
+ja_miss_01627,,煌々と,こうこうと,휘황하게 · 환하게,brightly,,1,JLPT N1,,missing
+ja_miss_01628,,照り返す,てりかえす,되비치다 · 반사하다,"to reflect, to throw back light",,1,JLPT N1,,missing
+ja_miss_01629,,照合,しょうごう,대조 · 조회,"check, verification",,1,JLPT N1,,missing
+ja_miss_01630,,煩わしい,わずらわしい,번거롭다 · 귀찮다 · 성가시다,"burdensome, troublesome, complicated",,1,JLPT N1,,missing
+ja_miss_01631,,熱意,ねつい,열의,"zeal, enthusiasm",,1,JLPT N1,,missing
+ja_miss_01632,,熱量,ねつりょう,열량,calorific value,,1,JLPT N1,,missing
+ja_miss_01633,,爆破,ばくは,폭파,"blast, explosion, blow up",,1,JLPT N1,,missing
+ja_miss_01634,,片～,かた～,한쪽 ~ · 편~,single ~,,1,JLPT N1,,missing
+ja_miss_01635,,牧師,ぼくし,목사,"pastor, minister, clergyman",,1,JLPT N1,,missing
+ja_miss_01636,,物好き,ものずき,호기심 · 별난 것을 좋아함,(idle) curiosity,,1,JLPT N1,,missing
+ja_miss_01637,,物議,ぶつぎ,물의,public discussion (criticism),,1,JLPT N1,,missing
+ja_miss_01638,,物足りない,ものたりない,어딘가 부족하다 · 성에 차지 않다,"unsatisfied, unsatisfactory",,1,JLPT N1,,missing
+ja_miss_01639,,特技,とくぎ,특기,special talent; skill,,1,JLPT N1,,missing
+ja_miss_01640,,特権,とっけん,특권,"privilege, special right",,1,JLPT N1,,missing
+ja_miss_01641,,特派,とくは,특파,"send specially, special envoy",,1,JLPT N1,,missing
+ja_miss_01642,,特許,とっきょ,특허,"special permission, patent",,1,JLPT N1,,missing
+ja_miss_01643,,犯す,おかす,범하다 · 저지르다 · 어기다,"to perpetrate, to violate",,1,JLPT N1,,missing
+ja_miss_01644,,独創,どくそう,독창,originality,,1,JLPT N1,,missing
+ja_miss_01645,,独占,どくせん,독점,monopoly,,1,JLPT N1,,missing
+ja_miss_01646,,独自,どくじ,독자 (獨自) · 독특함,"original, peculiar, characteristic",,1,JLPT N1,,missing
+ja_miss_01647,,独裁,どくさい,독재,"dictatorship, despotism",,1,JLPT N1,,missing
+ja_miss_01648,,玄人,くろうと,전문가 · 숙련자,"expert, professional",,1,JLPT N1,,missing
+ja_miss_01649,,現地,げんち,현지,"actual place, local",,1,JLPT N1,,missing
+ja_miss_01650,,甘口,あまくち,단맛 · 순한 맛,sweet flavor,,1,JLPT N1,,missing
+ja_miss_01651,,生かす,いかす,살리다 · 활용하다,to keep something alive; to make use of,,1,JLPT N1,,missing
+ja_miss_01652,,生き甲斐,いきがい,삶의 보람,"something one lives for, very important",,1,JLPT N1,,missing
+ja_miss_01653,,生まれつき,うまれつき,타고남 · 선천적으로,"by nature, by birth, native",,1,JLPT N1,,missing
+ja_miss_01654,,生死,せいし,생사,life and death,,1,JLPT N1,,missing
+ja_miss_01655,,生計,せいけい,생계,"livelihood, living",,1,JLPT N1,,missing
+ja_miss_01656,,生身,なまみ,산 몸 · 살아 있는 인간,"living flesh, flesh and blood, the quick",,1,JLPT N1,,missing
+ja_miss_01657,,産休,さんきゅう,출산 휴가,maternity leave,,1,JLPT N1,,missing
+ja_miss_01658,,産後,さんご,산후 · 출산 후,"postpartum, after childbirth",,1,JLPT N1,,missing
+ja_miss_01659,,産物,さんぶつ,산물 · 결과,"product, result, fruit",,1,JLPT N1,,missing
+ja_miss_01660,,用品,ようひん,용품,"articles, supplies, parts",,1,JLPT N1,,missing
+ja_miss_01661,,用法,ようほう,용법 · 사용법,"directions, rules of use",,1,JLPT N1,,missing
+ja_miss_01662,,甲,こう,갑 (첫째) · 등딱지,1st in rank; shell,,1,JLPT N1,,missing
+ja_miss_01663,,申し出る,もうしでる,자청하다 · 신청하다 · 제의하다,"to report to, to tell, to suggest",,1,JLPT N1,,missing
+ja_miss_01664,,申し分,もうしぶん,나무랄 데 · 할 말 · 결점,"objection, shortcomings",,1,JLPT N1,,missing
+ja_miss_01665,,畜生,ちくしょう,짐승 · 제기랄 · 빌어먹을,"beast, brute, damn",,1,JLPT N1,,missing
+ja_miss_01666,,略奪,りゃくだつ,약탈,"pillage, looting, robbery",,1,JLPT N1,,missing
+ja_miss_01667,,略語,りゃくご,약어 · 줄임말,"abbreviation, acronym",,1,JLPT N1,,missing
+ja_miss_01668,,異性,いせい,이성 (異性),the opposite sex,,1,JLPT N1,,missing
+ja_miss_01669,,異見,いけん,이견 · 다른 의견,"different opinion, objection",,1,JLPT N1,,missing
+ja_miss_01670,,異論,いろん,이론 (異論) · 이의,"different opinion, objection",,1,JLPT N1,,missing
+ja_miss_01671,,異議,いぎ,이의 · 반대,"objection, dissent, protest",,1,JLPT N1,,missing
+ja_miss_01672,,痛切,つうせつ,절실함 · 통절함,"keen, deep",,1,JLPT N1,,missing
+ja_miss_01673,,痛感,つうかん,통감 · 절감,"feeling keenly, fully realizing",,1,JLPT N1,,missing
+ja_miss_01674,,発言,はつげん,발언,"utterance, speech, proposal",,1,JLPT N1,,missing
+ja_miss_01675,,皇居,こうきょ,황거 · 왕궁,Imperial Palace,,1,JLPT N1,,missing
+ja_miss_01676,,目付き,めつき,눈매 · 눈초리,"look, expression of the eyes, eyes",,1,JLPT N1,,missing
+ja_miss_01677,,目覚しい,めざましい,눈부시다 · 놀랍다,"brilliant, remarkable",,1,JLPT N1,,missing
+ja_miss_01678,,目論見,もくろみ,계획 · 의도 · 속셈,"a plan, a scheme, intention",,1,JLPT N1,,missing
+ja_miss_01679,,目録,もくろく,목록 · 카탈로그,"catalogue, catalog, list",,1,JLPT N1,,missing
+ja_miss_01680,,直感,ちょっかん,직감,"intuition, instinct",,1,JLPT N1,,missing
+ja_miss_01681,,相場,そうば,시세 · 시가 · 통념,"market price, speculation, estimation",,1,JLPT N1,,missing
+ja_miss_01682,,相応,そうおう,상응 · 걸맞음,"suitability, fitness",,1,JLPT N1,,missing
+ja_miss_01683,,省みる,かえりみる,반성하다 · 돌이켜 보다,to reflect,,1,JLPT N1,,missing
+ja_miss_01684,,真ん丸い,まんまるい,아주 둥글다 · 동그랗다,perfectly circular,,1,JLPT N1,,missing
+ja_miss_01685,,真ん円い,まんまるい,아주 둥글다 · 동그랗다,perfectly round,,1,JLPT N1,,missing
+ja_miss_01686,,真心,まごころ,진심 · 정성,"sincerity, devotion",,1,JLPT N1,,missing
+ja_miss_01687,,着手,ちゃくしゅ,착수,"embarkation, launch",,1,JLPT N1,,missing
+ja_miss_01688,,着飾る,きかざる,차려입다 · 성장하다,to dress up,,1,JLPT N1,,missing
+ja_miss_01689,,知的,ちてき,지적 (知的),intellectual,,1,JLPT N1,,missing
+ja_miss_01690,,短大,たんだい,전문대학,junior college,,1,JLPT N1,,missing
+ja_miss_01691,,短歌,たんか,단가 (일본 정형시),31-syllable Japanese poem,,1,JLPT N1,,missing
+ja_miss_01692,,短縮,たんしゅく,단축,"shortening, abbreviation, reduction",,1,JLPT N1,,missing
+ja_miss_01693,,確信,かくしん,확신,"conviction, confidence",,1,JLPT N1,,missing
+ja_miss_01694,,社交,しゃこう,사교,social life,,1,JLPT N1,,missing
+ja_miss_01695,,社宅,しゃたく,사택,company owned house,,1,JLPT N1,,missing
+ja_miss_01696,,神聖,しんせい,신성,"holiness, sacredness, dignity",,1,JLPT N1,,missing
+ja_miss_01697,,禁物,きんもつ,금물,"taboo, forbidden thing",,1,JLPT N1,,missing
+ja_miss_01698,,私有,しゆう,사유 (私有),private ownership,,1,JLPT N1,,missing
+ja_miss_01699,,私物,しぶつ,사물 (私物) · 개인 소지품,"private property, personal effects",,1,JLPT N1,,missing
+ja_miss_01700,,称する,しょうする,칭하다 · 자칭하다 · 일컫다,"to take the name of, to call oneself",,1,JLPT N1,,missing
+ja_miss_01701,,移民,いみん,이민,"emigrant, immigrant",,1,JLPT N1,,missing
+ja_miss_01702,,移行,いこう,이행 (移行),switching over to,,1,JLPT N1,,missing
+ja_miss_01703,,税務署,ぜいむしょ,세무서,tax office,,1,JLPT N1,,missing
+ja_miss_01704,,究極,きゅうきょく,궁극,"ultimate, final, eventual",,1,JLPT N1,,missing
+ja_miss_01705,,空しい,むなしい,허무하다 · 덧없다 · 공허하다,"vacant, futile, vain",,1,JLPT N1,,missing
+ja_miss_01706,,空ろ,うつろ,공허함 · 텅 빔 · 멍함,"blank, hollow, empty",,1,JLPT N1,,missing
+ja_miss_01707,,空間,くうかん,공간,"space, room, airspace",,1,JLPT N1,,missing
+ja_miss_01708,,突っ突く,つっつく,쿡쿡 찌르다 · 쪼다 · 부추기다,to prompt someone,,1,JLPT N1,,missing
+ja_miss_01709,,突破,とっぱ,돌파,"breaking through, breakthrough, penetration",,1,JLPT N1,,missing
+ja_miss_01710,,窒息,ちっそく,질식,suffocation,,1,JLPT N1,,missing
+ja_miss_01711,,窮屈,きゅうくつ,비좁다 · 갑갑하다 · 거북하다,"narrow, tight, formal",,1,JLPT N1,,missing
+ja_miss_01712,,立て替える,たてかえる,대신 지불하다 · 입체하다,"to pay in advance, to pay for another",,1,JLPT N1,,missing
+ja_miss_01713,,立法,りっぽう,입법,"legislation, lawmaking",,1,JLPT N1,,missing
+ja_miss_01714,,竿,さお,장대 · 바지랑대 · 낚싯대,"rod, pole (e.g., for drying laundry)",,1,JLPT N1,,missing
+ja_miss_01715,,箇条書,かじょうがき,조목별로 씀 · 항목별 기재,"itemized form, itemization",,1,JLPT N1,,missing
+ja_miss_01716,,簡易,かんい,간이 · 간편함,"simplicity, easiness, quasi-",,1,JLPT N1,,missing
+ja_miss_01717,,簡潔,かんけつ,간결,"brevity, concise, simple",,1,JLPT N1,,missing
+ja_miss_01718,,粘り,ねばり,끈기 · 찰기 · 점성,"stickiness, viscosity",,1,JLPT N1,,missing
+ja_miss_01719,,粘る,ねばる,끈적이다 · 끈질기게 버티다 · 끈기 있게 견디다,"to be sticky, to be adhesive, to persist, to stick to",,1,JLPT N1,,missing
+ja_miss_01720,,納まる,おさまる,수습되다 · 들어가다 · 자리 잡다,to settle into; to be obtained,,1,JLPT N1,,missing
+ja_miss_01721,,紛らわしい,まぎらわしい,헷갈리기 쉽다 · 혼동하기 쉽다,"confusing, misleading, ambiguous",,1,JLPT N1,,missing
+ja_miss_01722,,紛れる,まぎれる,섞여 들다 · 마음이 딴 데로 쏠리다 · 잊혀지다,"to be diverted, to slip into",,1,JLPT N1,,missing
+ja_miss_01723,,素朴,そぼく,소박,"simplicity, artlessness, naivety",,1,JLPT N1,,missing
+ja_miss_01724,,細やか,こまやか,세심함 · 자상함 · 정이 깊음,"meager, modest",,1,JLPT N1,,missing
+ja_miss_01725,,終始,しゅうし,시종 · 처음부터 끝까지,from beginning to end; consistent(ly),,1,JLPT N1,,missing
+ja_miss_01726,,経歴,けいれき,경력,"personal history, career",,1,JLPT N1,,missing
+ja_miss_01727,,結び,むすび,맺음 · 결말 · 주먹밥,"ending, conclusion, union",,1,JLPT N1,,missing
+ja_miss_01728,,結晶,けっしょう,결정 (結晶),"crystal, crystallization",,1,JLPT N1,,missing
+ja_miss_01729,,統制,とうせい,통제,"regulation, control",,1,JLPT N1,,missing
+ja_miss_01730,,統合,とうごう,통합,"integration, unification, synthesis",,1,JLPT N1,,missing
+ja_miss_01731,,絶える,たえる,끊어지다 · 끊기다 · 멸종하다,"to die out, to become extinct",,1,JLPT N1,,missing
+ja_miss_01732,,絶版,ぜっぱん,절판,out of print,,1,JLPT N1,,missing
+ja_miss_01733,,継目,つぎめ,이음매 · 솔기,"joint, seam",,1,JLPT N1,,missing
+ja_miss_01734,,緩む,ゆるむ,느슨해지다 · 풀리다 · 누그러지다,"to become loose, to slacken",,1,JLPT N1,,missing
+ja_miss_01735,,緩やか,ゆるやか,완만함 · 느릿함 · 너그러움,lenient,,1,JLPT N1,,missing
+ja_miss_01736,,縁談,えんだん,혼담,marriage proposal,,1,JLPT N1,,missing
+ja_miss_01737,,縮まる,ちぢまる,줄어들다 · 오그라들다 · 좁혀지다,"to be shortened, to be contracted, to shrink",,1,JLPT N1,,missing
+ja_miss_01738,,繊維,せんい,섬유,"fiber, fiber, textile",,1,JLPT N1,,missing
+ja_miss_01739,,罰,ばつ,벌 · 처벌,"punishment, penalty",,1,JLPT N1,,missing
+ja_miss_01740,,義理,ぎり,의리 · 도리 · (결혼으로 맺은) 인척 관계,"debt of gratitude, obligation",,1,JLPT N1,,missing
+ja_miss_01741,,老衰,ろうすい,노쇠,"senility, senile decay",,1,JLPT N1,,missing
+ja_miss_01742,,耽る,ふける,빠지다 · 열중하다 · 탐닉하다,"to indulge in, to give oneself up to, to be absorbed in",,1,JLPT N1,,missing
+ja_miss_01743,,聖書,せいしょ,성서 · 성경,Bible,,1,JLPT N1,,missing
+ja_miss_01744,,聴講,ちょうこう,청강,"lecture attendance, auditing",,1,JLPT N1,,missing
+ja_miss_01745,,職務,しょくむ,직무,professional duties,,1,JLPT N1,,missing
+ja_miss_01746,,肉親,にくしん,육친,"blood relationship, blood relative",,1,JLPT N1,,missing
+ja_miss_01747,,肝心,かんじん,중요함 · 가장 중요함,"essential, fundamental, crucial",,1,JLPT N1,,missing
+ja_miss_01748,,肝腎,かんじん,중요함 · 가장 중요함,"essential, fundamental, crucial",,1,JLPT N1,,missing
+ja_miss_01749,,育成,いくせい,육성,"rearing, training, cultivation",,1,JLPT N1,,missing
+ja_miss_01750,,背く,そむく,등지다 · 거역하다 · 배반하다,"to run counter to, to go against",,1,JLPT N1,,missing
+ja_miss_01751,,背景,はいけい,배경,"background, scenery, setting",,1,JLPT N1,,missing
+ja_miss_01752,,胴,どう,몸통 · 동체,"trunk, body, frame",,1,JLPT N1,,missing
+ja_miss_01753,,脅迫,きょうはく,협박,"threat, coercion",,1,JLPT N1,,missing
+ja_miss_01754,,脆い,もろい,부서지기 쉽다 · 무르다 · 여리다,"brittle, fragile, tender-hearted",,1,JLPT N1,,missing
+ja_miss_01755,,脚色,きゃくしょく,각색,"dramatization (e.g., film",,1,JLPT N1,,missing
+ja_miss_01756,,脱する,だっする,벗어나다 · 탈출하다 · 빠져나오다,"to escape from, to get out",,1,JLPT N1,,missing
+ja_miss_01757,,脱退,だったい,탈퇴,"secession, withdrawal",,1,JLPT N1,,missing
+ja_miss_01758,,自ずから,おのずから,저절로 · 자연히,"naturally, as a matter of course",,1,JLPT N1,,missing
+ja_miss_01759,,自主,じしゅ,자주,"independence, autonomy",,1,JLPT N1,,missing
+ja_miss_01760,,自在,じざい,자유자재,"freely, at will",,1,JLPT N1,,missing
+ja_miss_01761,,自尊心,じそんしん,자존심,"self-respect, conceit",,1,JLPT N1,,missing
+ja_miss_01762,,自我,じが,자아,"self, ego",,1,JLPT N1,,missing
+ja_miss_01763,,自立,じりつ,자립,"independence, self-reliance",,1,JLPT N1,,missing
+ja_miss_01764,,自覚,じかく,자각,self-conscious,,1,JLPT N1,,missing
+ja_miss_01765,,興業,こうぎょう,흥업 · 산업을 일으킴,starting a business; industry,,1,JLPT N1,,missing
+ja_miss_01766,,良し,よし,좋아 · 됐어 · 좋다,all right!,,1,JLPT N1,,missing
+ja_miss_01767,,良好,りょうこう,양호,"favorable, satisfactory",,1,JLPT N1,,missing
+ja_miss_01768,,良識,りょうしき,양식 (良識) · 건전한 판단력,good sense,,1,JLPT N1,,missing
+ja_miss_01769,,良質,りょうしつ,양질 · 좋은 품질,"good quality, superior quality",,1,JLPT N1,,missing
+ja_miss_01770,,若干,じゃっかん,약간 · 다소,"some, few, number of",,1,JLPT N1,,missing
+ja_miss_01771,,英字,えいじ,영문자 · 로마자,English letter (character),,1,JLPT N1,,missing
+ja_miss_01772,,華々しい,はなばなしい,화려하다 · 눈부시다,"brilliant, magnificent, spectacular",,1,JLPT N1,,missing
+ja_miss_01773,,華やか,はなやか,화려함 · 화사함,"brilliant, gorgeous, florid",,1,JLPT N1,,missing
+ja_miss_01774,,著しい,いちじるしい,현저하다 · 두드러지다,"remarkable, considerable",,1,JLPT N1,,missing
+ja_miss_01775,,蓄積,ちくせき,축적,"accumulation, accumulate, store",,1,JLPT N1,,missing
+ja_miss_01776,,蔵相,ぞうしょう,재무 장관 · 대장대신,Minister of Finance,,1,JLPT N1,,missing
+ja_miss_01777,,薄弱,はくじゃく,박약 · 허약함,"feebleness, weakness, weak",,1,JLPT N1,,missing
+ja_miss_01778,,融通,ゆうずう,융통 · 융통성 · 변통,"adaptability, versatility, finance",,1,JLPT N1,,missing
+ja_miss_01779,,衆議院,しゅうぎいん,중의원,"Lower House, House of Representatives",,1,JLPT N1,,missing
+ja_miss_01780,,行い,おこない,행동 · 행실 · 품행,"conduct, behavior, action",,1,JLPT N1,,missing
+ja_miss_01781,,裏返し,うらがえし,뒤집음 · 뒤집기 · 안팎을 뒤집은 것,"inside out, reverse",,1,JLPT N1,,missing
+ja_miss_01782,,補足,ほそく,보충 · 보족,"supplement, complement",,1,JLPT N1,,missing
+ja_miss_01783,,製法,せいほう,제조법 · 제법,"manufacturing method, recipe, formula",,1,JLPT N1,,missing
+ja_miss_01784,,複合,ふくごう,복합,"composite, complex",,1,JLPT N1,,missing
+ja_miss_01785,,褒美,ほうび,상 · 포상 · 상품,"reward, prize",,1,JLPT N1,,missing
+ja_miss_01786,,要因,よういん,요인 · 주된 원인,"primary factor, main cause",,1,JLPT N1,,missing
+ja_miss_01787,,要望,ようぼう,요망 · 요구 · 바람,"demand for, request",,1,JLPT N1,,missing
+ja_miss_01788,,見なす,みなす,간주하다 · 여기다,"to consider as, to regard",,1,JLPT N1,,missing
+ja_miss_01789,,見合わせる,みあわせる,마주 보다 · 보류하다 · 미루다,to exchange glances; to postpone,,1,JLPT N1,,missing
+ja_miss_01790,,見地,けんち,견지 · 관점,point of view,,1,JLPT N1,,missing
+ja_miss_01791,,見渡す,みわたす,둘러보다 · 멀리 내다보다,"to look out over, to survey (scene), to take an extensive view of",,1,JLPT N1,,missing
+ja_miss_01792,,見積もり,みつもり,견적 · 어림,"estimation, quotation",,1,JLPT N1,,missing
+ja_miss_01793,,見苦しい,みぐるしい,보기 흉하다 · 꼴사납다,"unsightly, ugly",,1,JLPT N1,,missing
+ja_miss_01794,,見計らう,みはからう,적당한 때를 가늠하다 · 알맞게 고르다,to choose at one's own discretion,,1,JLPT N1,,missing
+ja_miss_01795,,見込み,みこみ,가망 · 전망 · 예상,"prospects, expectation, hope",,1,JLPT N1,,missing
+ja_miss_01796,,規模,きぼ,규모,"scale, scope, plan, structure",,1,JLPT N1,,missing
+ja_miss_01797,,視察,しさつ,시찰,"inspection, observation",,1,JLPT N1,,missing
+ja_miss_01798,,視野,しや,시야,"field of vision, outlook",,1,JLPT N1,,missing
+ja_miss_01799,,観点,かんてん,관점,point of view,,1,JLPT N1,,missing
+ja_miss_01800,,解除,かいじょ,해제 · 해지,"cancellation, release, cancel",,1,JLPT N1,,missing
+ja_miss_01801,,訂正,ていせい,정정,"correction, revision",,1,JLPT N1,,missing
+ja_miss_01802,,討議,とうぎ,토의,"debate, discussion",,1,JLPT N1,,missing
+ja_miss_01803,,記す,しるす,적다 · 기록하다 · 쓰다,"to note, to write down",,1,JLPT N1,,missing
+ja_miss_01804,,記載,きさい,기재,"mention, entry",,1,JLPT N1,,missing
+ja_miss_01805,,記述,きじゅつ,기술 · 서술,"describing, descriptor",,1,JLPT N1,,missing
+ja_miss_01806,,設ける,もうける,마련하다 · 설치하다 · 만들다,"to create, to establish",,1,JLPT N1,,missing
+ja_miss_01807,,設立,せつりつ,설립,"establishment, foundation, institution",,1,JLPT N1,,missing
+ja_miss_01808,,訴え,うったえ,호소 · 소송 · 고소,"lawsuit, complaint",,1,JLPT N1,,missing
+ja_miss_01809,,詰る,なじる,힐책하다 · 따지다 · 나무라다,"to rebuke, to scold, to tell off",,1,JLPT N1,,missing
+ja_miss_01810,,該当,がいとう,해당,"corresponding, answering to, coming under",,1,JLPT N1,,missing
+ja_miss_01811,,詳細,しょうさい,상세 · 자세한 내용,"detail, particulars",,1,JLPT N1,,missing
+ja_miss_01812,,誠に,まことに,참으로 · 정말로 · 대단히,"indeed, really (very polite), absolutely",,1,JLPT N1,,missing
+ja_miss_01813,,誠実,せいじつ,성실,"sincere, honest, faithful",,1,JLPT N1,,missing
+ja_miss_01814,,読み上げる,よみあげる,소리 내어 읽다 · 낭독하다,"to read out loud (and clearly), to call a roll",,1,JLPT N1,,missing
+ja_miss_01815,,課外,かがい,과외 · 정규 과정 외,extracurricular,,1,JLPT N1,,missing
+ja_miss_01816,,調停,ちょうてい,조정 · 중재,"arbitration, conciliation, mediation",,1,JLPT N1,,missing
+ja_miss_01817,,論理,ろんり,논리,logic,,1,JLPT N1,,missing
+ja_miss_01818,,諦め,あきらめ,체념 · 단념,"resignation, reconciliation, consolation",,1,JLPT N1,,missing
+ja_miss_01819,,諸君,しょくん,제군 · 여러분,"Gentlemen!, Ladies!",,1,JLPT N1,,missing
+ja_miss_01820,,講習,こうしゅう,강습,"short course, training",,1,JLPT N1,,missing
+ja_miss_01821,,議案,ぎあん,의안,legislative bill,,1,JLPT N1,,missing
+ja_miss_01822,,議題,ぎだい,의제,"topic of discussion, agenda",,1,JLPT N1,,missing
+ja_miss_01823,,譲歩,じょうほ,양보,"concession, conciliation, compromise",,1,JLPT N1,,missing
+ja_miss_01824,,護衛,ごえい,호위,"guard, convoy, escort",,1,JLPT N1,,missing
+ja_miss_01825,,財政,ざいせい,재정,"economy, financial affairs",,1,JLPT N1,,missing
+ja_miss_01826,,財源,ざいげん,재원,"source of funds, resources, finances",,1,JLPT N1,,missing
+ja_miss_01827,,貧困,ひんこん,빈곤 · 결핍,"poverty, lack",,1,JLPT N1,,missing
+ja_miss_01828,,貫く,つらぬく,관통하다 · 꿰뚫다 · 관철하다,to go through,,1,JLPT N1,,missing
+ja_miss_01829,,貫禄,かんろく,관록 · 위엄,"presence, dignity",,1,JLPT N1,,missing
+ja_miss_01830,,責務,せきむ,책무,"duty, obligation",,1,JLPT N1,,missing
+ja_miss_01831,,貴族,きぞく,귀족,"noble, aristocrat",,1,JLPT N1,,missing
+ja_miss_01832,,賃金,ちんぎん,임금,wages,,1,JLPT N1,,missing
+ja_miss_01833,,賄う,まかなう,조달하다 · 꾸려 나가다 · (식사를) 마련해 주다,"to give board to, to provide meals, to pay",,1,JLPT N1,,missing
+ja_miss_01834,,賜る,たまわる,하사하다 · 내려 주시다 · 받다 (겸양),"to grant, to bestow",,1,JLPT N1,,missing
+ja_miss_01835,,賠償,ばいしょう,배상,"reparations, indemnity, compensation",,1,JLPT N1,,missing
+ja_miss_01836,,赤らむ,あからむ,붉어지다 · 빨개지다,"to become red, to blush",,1,JLPT N1,,missing
+ja_miss_01837,,赤字,あかじ,적자,"deficit, go in the red",,1,JLPT N1,,missing
+ja_miss_01838,,赴任,ふにん,부임,(proceeding to) new appointment,,1,JLPT N1,,missing
+ja_miss_01839,,起伏,きふく,기복,undulation,,1,JLPT N1,,missing
+ja_miss_01840,,趣,おもむき,정취 · 멋 · 취지,"flavor, appearance, quaint",,1,JLPT N1,,missing
+ja_miss_01841,,趣旨,しゅし,취지,"object, meaning",,1,JLPT N1,,missing
+ja_miss_01842,,跡継ぎ,あとつぎ,후계자 · 상속자,"heir, successor",,1,JLPT N1,,missing
+ja_miss_01843,,踏まえる,ふまえる,근거로 하다 · 토대로 하다 · 감안하다,"to be based on, to have origin in",,1,JLPT N1,,missing
+ja_miss_01844,,踏み込む,ふみこむ,발을 들여놓다 · 깊이 파고들다 · 들이닥치다,"to step into (someone else's territory, to break into, to raid",,1,JLPT N1,,missing
+ja_miss_01845,,身の上,みのうえ,신상 · 처지 · 신세,"one's future, one's welfare, one's personal history",,1,JLPT N1,,missing
+ja_miss_01846,,身の回り,みのまわり,신변 · 일상 용품,"one's personal appearance, personal belongings",,1,JLPT N1,,missing
+ja_miss_01847,,身振り,みぶり,몸짓 · 제스처,gesture,,1,JLPT N1,,missing
+ja_miss_01848,,身近,みぢか,가까움 · 친근함 · 신변,"near oneself, close to one, familiar",,1,JLPT N1,,missing
+ja_miss_01849,,躾,しつけ,예의범절 · 가정교육 · 훈육,"discipline, training",,1,JLPT N1,,missing
+ja_miss_01850,,躾ける,しつける,예의범절을 가르치다 · 훈육하다 · 길들이다,"to discipline, to teach manners",,1,JLPT N1,,missing
+ja_miss_01851,,軍事,ぐんじ,군사,military affairs,,1,JLPT N1,,missing
+ja_miss_01852,,軍備,ぐんび,군비,"armaments, military preparations",,1,JLPT N1,,missing
+ja_miss_01853,,軍服,ぐんぷく,군복,military or naval uniform,,1,JLPT N1,,missing
+ja_miss_01854,,軍艦,ぐんかん,군함,"warship, battleship",,1,JLPT N1,,missing
+ja_miss_01855,,軒並,のきなみ,집집마다 · 줄줄이 · 일제히,row of houses; uniformly,,1,JLPT N1,,missing
+ja_miss_01856,,転任,てんにん,전임 · 자리를 옮김,change of post,,1,JLPT N1,,missing
+ja_miss_01857,,転回,てんかい,회전 · 방향 전환,"revolution, rotation",,1,JLPT N1,,missing
+ja_miss_01858,,軽快,けいかい,경쾌,"lively, casual, light",,1,JLPT N1,,missing
+ja_miss_01859,,軽率,けいそつ,경솔,"thoughtless, careless, hasty",,1,JLPT N1,,missing
+ja_miss_01860,,軽蔑,けいべつ,경멸,"scorn, disdain",,1,JLPT N1,,missing
+ja_miss_01861,,辛抱,しんぼう,인내 · 참음,"patience, endurance",,1,JLPT N1,,missing
+ja_miss_01862,,辟易,へきえき,질림 · 넌더리남 · 쩔쩔맴,"wince, shrink back, succumbing to, being frightened",,1,JLPT N1,,missing
+ja_miss_01863,,近郊,きんこう,근교,"suburbs, outskirts",,1,JLPT N1,,missing
+ja_miss_01864,,返済,へんさい,변제 · 상환,repayment,,1,JLPT N1,,missing
+ja_miss_01865,,迫害,はくがい,박해,persecution,,1,JLPT N1,,missing
+ja_miss_01866,,追い込む,おいこむ,몰아넣다 · 궁지에 몰다,"to herd, to corner, to drive",,1,JLPT N1,,missing
+ja_miss_01867,,追放,ついほう,추방,"exile, banishment",,1,JLPT N1,,missing
+ja_miss_01868,,退化,たいか,퇴화,"degeneration, retrogression",,1,JLPT N1,,missing
+ja_miss_01869,,退治,たいじ,퇴치,extermination,,1,JLPT N1,,missing
+ja_miss_01870,,送金,そうきん,송금,"remittance, sending money",,1,JLPT N1,,missing
+ja_miss_01871,,逃走,とうそう,도주,"flight, desertion, escape",,1,JLPT N1,,missing
+ja_miss_01872,,途上,とじょう,도중 · 도상,"en/in route, half way",,1,JLPT N1,,missing
+ja_miss_01873,,通常,つうじょう,통상 · 보통,"common, normal, usual",,1,JLPT N1,,missing
+ja_miss_01874,,連ねる,つらねる,늘어놓다 · 잇다 · 나란히 하다,"to link, to join, to put together",,1,JLPT N1,,missing
+ja_miss_01875,,連休,れんきゅう,연휴,consecutive holidays,,1,JLPT N1,,missing
+ja_miss_01876,,連帯,れんたい,연대,solidarity,,1,JLPT N1,,missing
+ja_miss_01877,,連盟,れんめい,연맹,"league, union, alliance",,1,JLPT N1,,missing
+ja_miss_01878,,連邦,れんぽう,연방,"commonwealth, federation of states",,1,JLPT N1,,missing
+ja_miss_01879,,進み,すすみ,진행 · 진척,progress,,1,JLPT N1,,missing
+ja_miss_01880,,進出,しんしゅつ,진출,advancement,,1,JLPT N1,,missing
+ja_miss_01881,,進展,しんてん,진전,"progress, development",,1,JLPT N1,,missing
+ja_miss_01882,,進度,しんど,진도,progress,,1,JLPT N1,,missing
+ja_miss_01883,,遅くとも,おそくとも,늦어도,at the latest,,1,JLPT N1,,missing
+ja_miss_01884,,遅らす,おくらす,늦추다 · 지연시키다,"to retard, to delay",,1,JLPT N1,,missing
+ja_miss_01885,,運用,うんよう,운용,"making use of, application, practical use",,1,JLPT N1,,missing
+ja_miss_01886,,運賃,うんちん,운임 · 요금,"freight rates, shipping expenses, (passenger) fare",,1,JLPT N1,,missing
+ja_miss_01887,,運輸,うんゆ,운수 · 수송,transportation,,1,JLPT N1,,missing
+ja_miss_01888,,過ち,あやまち,잘못 · 과실 · 실수,"fault, error, indiscretion",,1,JLPT N1,,missing
+ja_miss_01889,,遠ざかる,とおざかる,멀어지다 · 멀리하다,to go far off,,1,JLPT N1,,missing
+ja_miss_01890,,遠方,えんぽう,먼 곳 · 원방,"long way, distant place",,1,JLPT N1,,missing
+ja_miss_01891,,適宜,てきぎ,적의 · 적당히 · 알맞게,suitability,,1,JLPT N1,,missing
+ja_miss_01892,,適応,てきおう,적응,"adaptation, accommodation, conformity",,1,JLPT N1,,missing
+ja_miss_01893,,適性,てきせい,적성,aptitude,,1,JLPT N1,,missing
+ja_miss_01894,,遮る,さえぎる,가로막다 · 차단하다 · 막다,"to interrupt, to intercept, to obstruct",,1,JLPT N1,,missing
+ja_miss_01895,,還元,かんげん,환원,"resolution, reduction, return",,1,JLPT N1,,missing
+ja_miss_01896,,郷土,きょうど,향토 · 고향,homeland,,1,JLPT N1,,missing
+ja_miss_01897,,郷愁,きょうしゅう,향수 · 노스탤지어,"nostalgia, homesickness",,1,JLPT N1,,missing
+ja_miss_01898,,郷里,きょうり,고향 · 향리,"birth-place, home town",,1,JLPT N1,,missing
+ja_miss_01899,,配列,はいれつ,배열,"arrangement, array (programming)",,1,JLPT N1,,missing
+ja_miss_01900,,配給,はいきゅう,배급,"distribution (e.g., films, rice",,1,JLPT N1,,missing
+ja_miss_01901,,配置,はいち,배치,"arrangement (of resources), disposition",,1,JLPT N1,,missing
+ja_miss_01902,,重んじる,おもんじる,중히 여기다 · 존중하다,"to respect, to honor, to esteem, to prize",,1,JLPT N1,,missing
+ja_miss_01903,,重んずる,おもんずる,중히 여기다 · 존중하다,"to honor, to respect, to value",,1,JLPT N1,,missing
+ja_miss_01904,,野心,やしん,야심,"ambition, aspiration",,1,JLPT N1,,missing
+ja_miss_01905,,鈍る,にぶる,둔해지다 · 무디어지다 · 약해지다,"to become less capable, to grow dull, to become blunt, to weaken",,1,JLPT N1,,missing
+ja_miss_01906,,鈍感,どんかん,둔감,"thickheadedness, stolidity",,1,JLPT N1,,missing
+ja_miss_01907,,鉄鋼,てっこう,철강,iron and steel,,1,JLPT N1,,missing
+ja_miss_01908,,長官,ちょうかん,장관 · 청장,"chief, (government) secretary",,1,JLPT N1,,missing
+ja_miss_01909,,閉口,へいこう,질림 · 손듦 · 난처함,shut mouth,,1,JLPT N1,,missing
+ja_miss_01910,,開催,かいさい,개최,"holding a meeting, open an exhibition",,1,JLPT N1,,missing
+ja_miss_01911,,開拓,かいたく,개척 · 개간,"cultivation, pioneer",,1,JLPT N1,,missing
+ja_miss_01912,,閲覧,えつらん,열람,"inspection, reference, browse",,1,JLPT N1,,missing
+ja_miss_01913,,阻止,そし,저지,"obstruction, check, hindrance",,1,JLPT N1,,missing
+ja_miss_01914,,陣,じん,진 · 진영 · 진지,"battle formation, camp, encampment",,1,JLPT N1,,missing
+ja_miss_01915,,陰気,いんき,음울 · 음침함,"gloom, melancholy",,1,JLPT N1,,missing
+ja_miss_01916,,隔週,かくしゅう,격주,every other week,,1,JLPT N1,,missing
+ja_miss_01917,,集計,しゅうけい,집계,"totalization, aggregate",,1,JLPT N1,,missing
+ja_miss_01918,,雑木,ぞうき,잡목,"various kinds of small trees, assorted trees",,1,JLPT N1,,missing
+ja_miss_01919,,雑談,ざつだん,잡담,"chatting, idle talk",,1,JLPT N1,,missing
+ja_miss_01920,,霞む,かすむ,흐려지다 · 안개가 끼다 · 침침해지다,"to grow hazy, to be misty",,1,JLPT N1,,missing
+ja_miss_01921,,露骨,ろこつ,노골,"blunt, outspoken; conspicuous; broad, suggestive",,1,JLPT N1,,missing
+ja_miss_01922,,静止,せいし,정지,"stillness, repose, standing still",,1,JLPT N1,,missing
+ja_miss_01923,,静的,せいてき,정적,static,,1,JLPT N1,,missing
+ja_miss_01924,,面する,めんする,면하다 · 향하다,"to face on, to look out on to",,1,JLPT N1,,missing
+ja_miss_01925,,革新,かくしん,혁신,"reform, innovation",,1,JLPT N1,,missing
+ja_miss_01926,,音色,ねいろ,음색,"tone color, timbre",,1,JLPT N1,,missing
+ja_miss_01927,,頑丈,がんじょう,튼튼함 · 견고함,"solid, firm, strong",,1,JLPT N1,,missing
+ja_miss_01928,,頑固,がんこ,완고 · 고집,"stubbornness, obstinacy",,1,JLPT N1,,missing
+ja_miss_01929,,領土,りょうど,영토,"territory, possession",,1,JLPT N1,,missing
+ja_miss_01930,,頻繁,ひんぱん,빈번,frequency,,1,JLPT N1,,missing
+ja_miss_01931,,類推,るいすい,유추,analogy,,1,JLPT N1,,missing
+ja_miss_01932,,顧みる,かえりみる,돌아보다 · 회고하다 · 반성하다,"to look back, to turn around, to review",,1,JLPT N1,,missing
+ja_miss_01933,,風俗,ふうぞく,풍속 · 풍습 · 유흥업,"manners, customs; sex industry",,1,JLPT N1,,missing
+ja_miss_01934,,風土,ふうど,풍토,"natural features, climate",,1,JLPT N1,,missing
+ja_miss_01935,,食い違う,くいちがう,어긋나다 · 엇갈리다,"to cross each other, to differ",,1,JLPT N1,,missing
+ja_miss_01936,,飲み込む,のみこむ,삼키다 · 이해하다 · 납득하다,"to gulp down, to swallow deeply, to understand",,1,JLPT N1,,missing
+ja_miss_01937,,飽和,ほうわ,포화,saturation,,1,JLPT N1,,missing
+ja_miss_01938,,養う,やしなう,기르다 · 부양하다 · 양성하다,"to rear, to maintain, to cultivate",,1,JLPT N1,,missing
+ja_miss_01939,,養護,ようご,양호 · 보호,"protection, nursing, protective care",,1,JLPT N1,,missing
+ja_miss_01940,,馴々しい,なれなれしい,허물없다 · 지나치게 친한 체하다,"familiar, make free with",,1,JLPT N1,,missing
+ja_miss_01941,,駄作,ださく,졸작,poor work,,1,JLPT N1,,missing
+ja_miss_01942,,驚異,きょうい,경이,"wonder, miracle",,1,JLPT N1,,missing
+ja_miss_01943,,鮮やか,あざやか,선명함 · 산뜻함 · 훌륭함,"vivid, clear",,1,JLPT N1,,missing
+ja_miss_01944,,鳥居,とりい,도리이 (신사 입구의 문),Shinto shrine archway,,1,JLPT N1,,missing
+ja_miss_01945,,麻痺,まひ,마비,"paralysis, palsy, numbness",,1,JLPT N1,,missing
+ja_miss_01946,,黒字,くろじ,흑자,balance (figure) in the black,,1,JLPT N1,,missing
+ja_miss_01947,,～きり,～きり,~만 · ~뿐 · ~한 채로,only,,1,JLPT N1,,missing
+ja_miss_01948,,～どころか,～どころか,~은커녕 · ~는 고사하고,"rather, far from",,1,JLPT N1,,missing
+ja_miss_01949,,～なんか,～なんか,~ 따위 · ~ 같은 것,in the least ~,,1,JLPT N1,,missing
+ja_miss_01950,,～まみれ,～まみれ,~투성이,"covered with (by, in) ~",,1,JLPT N1,,missing
+ja_miss_01951,,～合せ,～あわせ,~ 합해서 · 모두 ~,in all,,1,JLPT N1,,missing
+ja_miss_01952,,～嬢,～じょう,~양 · 아가씨,young woman,,1,JLPT N1,,missing
+ja_miss_01953,,～宗,～しゅう,~종 · ~파,sect,,1,JLPT N1,,missing
+ja_miss_01954,,～寄り,～より,~ 쪽 · ~ 가까이 · ~ 쪽으로 치우침,"near to ~ (e.g., North by East)",,1,JLPT N1,,missing
+ja_miss_01955,,～掛け,～かけ,~ 걸이,"rack, hanger",,1,JLPT N1,,missing
+ja_miss_01956,,～派,～は,~파,"group, party, section (mil)",,1,JLPT N1,,missing
+ja_miss_01957,,～狂,～きょう,~광 · ~ 마니아,"maniac, fan, freak",,1,JLPT N1,,missing
+ja_miss_01958,,～界,～かい,~계,"world, circle, kingdom",,1,JLPT N1,,missing
+ja_miss_01959,,～症,～しょう,~증,disease,,1,JLPT N1,,missing
+ja_miss_01960,,～署,～しょ,~서,department,,1,JLPT N1,,missing
+ja_miss_01961,,～著,～ちょ,~ 저 · ~ 지음,written by ~,,1,JLPT N1,,missing
+ja_miss_01962,,～証,～しょう,~증 · ~ 증명서,"proof, certificate",,1,JLPT N1,,missing
+ja_miss_01963,150,語,かたり,어/언어,language; word,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01964,163,反,たん,단 (천 길이 단위),"tan (cloth measure, ~10 m)",,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01965,180,一緒に,いっしょに,함께/같이,together; at the same time,,,"단어DB(급수 없음, 낱말창)/회화새단어",r1_love_a2 6턴: てか、一緒にラーメン食べられる人、最高じゃん。,missing
+ja_miss_01966,184,然う言う,そういう,그렇게 말하다,to say so; such (a thing),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01967,194,負,ふ,마이너스 · 부(負),minus; negative; loss,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01968,198,羅,うすもの,얇은 비단,gauze; thin silk,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01969,205,魔,ま,마 · 악마 · 마가 낌,demon; evil spirit; the devil,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01970,215,驢,うさぎうま,당나귀,donkey; ass,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01971,225,諸,しょ,여러 · 제(諸),various; many; all,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01972,244,婬,いん,음란,lewd; obscene,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01973,260,何も,なにも,아무것도 · 아무 ~도,nothing (with negative); not any,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01974,299,茣蓙,ござ,돗자리,rush mat; straw mat,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01975,314,著,ちょ,저 · 지음 · 저서,author; written by; book,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01976,345,餡,あん,팥소 · 소,bean-jam filling; filling,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01977,358,区,く,구 · 구역,ward; district; section,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01978,361,陽,ひ,해 · 햇빛,sun; sunlight; yang,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01979,369,御免なさい,ごめんなさい,미안합니다 · 죄송합니다,I'm sorry; excuse me,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01980,378,韃靼,だったん,타타르,Tatar; Tartar,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01981,382,１人,いちにん,한 사람,one person,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01982,408,第一,だいいち,첫째 · 애초에 · 무엇보다,first; first of all; above all,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01983,413,時に,ときに,때로,sometimes; at times,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01984,417,韻,いん,운 · 운율,rhyme; tone,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01985,448,壮,そう,장 · 씩씩함,robust; grand; vigorous,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01986,478,達,たち,~들,plural suffix: -s; and others,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01987,480,あの人,あのひと,그 사람 · 저 사람,that person; he; she,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01988,482,的,てき,~적 (접미),suffix: -ic; -al; -like,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01989,486,言,げん,말 · 언,word; saying; to say,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01990,489,季,き,계절 · 철,season; period,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01991,506,教科書体,きょうかしょたい,교과서체 (글꼴),textbook typeface (font),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01992,517,張る,はる,붙이다 · 펴다 · 치다,to stretch; to put up; to spread,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01993,530,撥ねる,はねる,튀다 · (차로) 치다 · 튕기다,to splash; to hit (with a car); to bounce,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01994,543,日文,にちぶん,일본어 문장,Japanese text; Japanese sentence,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01995,564,俺たち,おれたち,우리 (남),we; us (masculine),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01996,569,あの子,あのこ,저 아이,that child; that kid,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01997,570,諱む,いむ,꺼리다 · 기피하다,to dislike; to avoid; to shun,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01998,589,竹刀,しない,죽도,bamboo sword; shinai,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_01999,590,行,ぎょう,행 · 줄,line; row; conduct,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02000,600,部,ぶ,부,department; part; club,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02001,602,砲,つつ,총 · 총신,gun; barrel,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02002,609,似付く,につく,닮다,to resemble; to be suited to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02003,610,明朝体,みんちょうたい,명조체 (글꼴),Mincho typeface (font),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02004,613,回,かい,회 · 번,times; counter for occurrences,,,"단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c4 5턴: ウォー、100回。,missing
+ja_miss_02005,619,側,がわ,쪽 · 편,side; direction,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02006,626,今まで,いままで,지금까지,until now; so far,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02007,631,槍,ほこ,창,spear; lance,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02008,638,絶対に,ぜったいに,절대로 · 반드시,absolutely; definitely,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02009,640,消火,しょうか,소화,fire extinguishing,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02010,657,よろしくお願いします,よろしくおねがいします,잘 부탁드립니다,please treat me well; nice to meet you,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02011,675,分かんない,わかんない,모르겠어 · 몰라,I don't know; don't understand,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02012,680,労,ろう,수고 · 노고,labor; trouble; effort,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02013,689,屎,くそ,똥 · 젠장,feces; shit; damn,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02014,692,気になる,きになる,신경 쓰이다 · 궁금하다,to weigh on one's mind; to be curious,,,"단어DB(급수 없음, 낱말창)/회화새단어",r3_love_b1 5턴: え、あれ？…ふふ。気になる？,missing
+ja_miss_02015,704,愚,ぐ,어리석음 · 우(愚),foolishness; stupidity,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02016,746,母さん,かあさん,엄마 · 어머니,mother; mom,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02017,759,泣き声,なきごえ,울음소리,crying voice; sound of crying,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02018,771,巳,し,사 (십이지의 뱀),snake (zodiac); sixth sign,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02019,775,御座います,ございます,있습니다 · 입니다,to be; to exist (polite),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02020,781,お店,おたな,가게 · 상점 (옛말),shop; store (polite),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02021,786,その時,そのとき,그때,at that time; then,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02022,800,先に,さきに,먼저 · 앞서,before; ahead; first,,,"단어DB(급수 없음, 낱말창)/회화새단어",r1_life_c2 1턴: 今日、遅くなる。先に食べて！10時くらいになりそう,missing
+ja_miss_02023,811,一人で,ひとりで,혼자서,alone; by oneself,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02024,819,邦画,ほうが,일본 영화,Japanese film,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02025,828,舎,しゃ,사 · 건물,building; house,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02026,832,やって来る,やってくる,다가오다,to approach; to come along,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02027,874,方がいい,ほうがいい,~하는 게 좋다,had better; it's better to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02028,883,他に,ほかに,그 밖에 · 달리,besides; otherwise,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02029,889,素っ,すっ,아주 · 완전히 (강조 접두),prefix: utterly; completely,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02030,897,会,え,모임,meeting; party; association,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02031,900,造る,つくる,만들다 · 짓다,to build; to construct; to make,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02032,903,農,のう,농업 · 농사,agriculture; farming,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02033,907,雅,が,우아함 · 아(雅),elegance; refinement,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02034,933,お姉ちゃん,おねえちゃん,언니 · 누나,older sister,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02035,940,何て,なんて,뭐라고 · ~따위 · 얼마나,what; such as; how (exclamation),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02036,955,お話,おはなし,이야기 · 말씀,story; talk,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02037,963,屋,おく,집 · 지붕,shop; roof; house,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02038,971,波動,はどう,파동,wave motion; undulation,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02039,973,笑む,えむ,미소 짓다,to smile; to bud,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02040,985,座,ざ,자리 · 좌석,seat; place; stand,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02041,987,鷹,たか,매,hawk,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02042,990,番,つがい,한 쌍 · 짝,pair; couple; mate,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02043,993,殺害,さつがい,살해,murder; killing,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02044,1001,気にする,きにする,신경 쓰다 · 마음에 두다,to worry about; to mind,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02045,1018,非,ひ,잘못 · 비(非),wrong; non-; un-,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02046,1026,間違いない,まちがいない,틀림없다,no doubt; certain,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02047,1027,願,がん,기원 · 소원,vow; wish; prayer,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02048,1029,易い,やすい,쉽다 · ~하기 쉽다,easy; likely to; apt to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02049,1035,悼む,いたむ,애도하다 · 슬퍼하다,to mourn; to grieve,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02050,1037,黄,き,노랑 · 노란색,yellow,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02051,1040,知,ち,지식,knowledge; wisdom,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02052,1062,お兄ちゃん,おにいちゃん,오빠 · 형,older brother,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02053,1064,回想,かいそう,회상,recollection; reminiscence,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02054,1069,貫,かん,관 (무게 단위),"kan (unit of weight, 3.75 kg)",,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02055,1071,関係ない,かんけいない,상관없다 · 관계없다,unrelated; doesn't matter,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02056,1074,本當,ほんと,정말 · 진짜,really; truly,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02057,1083,他派,たは,다른 파,other faction; another sect,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02058,1086,外に,ほかに,그 밖에 · 달리,besides; other than,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02059,1108,何度も,なんども,몇 번이나,many times; over and over,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02060,1118,何と,なんと,뭐라고 · 놀랍게도 · 정말,what; how (surprisingly); wow,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02061,1129,二死,にし,투아웃 (야구),two outs (baseball),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02062,1134,と言って,といって,~라고 하며 · ~라면서,saying that; and saying,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02063,1162,お世話になる,おせわになる,신세를 지다,to be indebted; to receive help,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02064,1181,巽,そん,손괘 · 남동쪽,southeast; Xun trigram,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02065,1208,上手くいく,うまくいく,잘되다 · 잘 풀리다,to go well; to turn out well,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02066,1224,御前,おまえ,너 · 네놈,you (rude); presence,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02067,1232,この前,このまえ,요전에 · 지난번,the other day; recently,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02068,1235,申し訳ありません,もうしわけありません,죄송합니다,I am very sorry,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02069,1236,気をつける,きをつける,조심하다 · 주의하다,to be careful; to take care,,,"단어DB(급수 없음, 낱말창)/회화새단어",r0_love_a6 7턴: （笑）うん。じゃあね。気をつけて。,missing
+ja_miss_02070,1238,大志,たいし,큰 뜻 · 대망,ambition; high aspirations,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02071,1273,僕ら,ぼくら,우리 (남),we; us (masculine),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02072,1286,何にも,なににも,무엇에도,nothing at all; anything,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02073,1303,痛っ,いたっ,아야 · 아파,ouch,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02074,1307,火照る,ほてる,달아오르다,to flush; to burn (face),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02075,1331,亡,ぼう,망 · 죽은,dead; deceased; perishing,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02076,1339,誰にも,だれにも,아무에게도,no one; nobody (with negative),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02077,1343,お父,おとう,아버지 · 아빠,father; dad,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02078,1348,代わる,かわる,대신하다 · 바뀌다,to take the place of; to change,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02079,1361,人たち,ひとたち,사람들,people (plural),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02080,1362,室,しつ,실 · 방,room; chamber,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02081,1377,遣って見る,やってみる,해 보다,to try (doing); to have a go,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02082,1383,山里,やまざと,산골,mountain village,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02083,1390,父上,ちちうえ,아버님,father (honorific),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02084,1392,頑張り,がんばり,노력 · 분발,effort; striving,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02085,1396,犯行,はんこう,범행,crime; criminal act,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02086,1397,話をする,はなしをする,이야기를 하다,to talk; to have a conversation,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02087,1398,貴様,きさま,네놈 · 이 자식,you (rude); bastard,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02088,1408,喜んで,よろこんで,기꺼이 · 기뻐서,gladly; happily,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02089,1430,その後,そのあと,그 후,after that; afterwards,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02090,1435,為さる,なさる,하시다,to do (honorific),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02091,1438,と言われる,といわれる,~라는 말을 듣다 · ~라고 불리다,to be told that; to be called,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02092,1445,例の,れいの,그 · 예의 그,that; the usual; said (thing),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02093,1455,銃声,じゅうせい,총소리,gunshot,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02094,1460,我ら,われら,우리 · 우리들,we; us (literary),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02095,1466,署,しょ,서 · 경찰서,station; office; bureau,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02096,1472,お帰りなさい,おかえりなさい,어서 와 · 다녀오셨어요,welcome home,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02097,1478,開閉,かいへい,개폐 · 여닫음,opening and closing,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02098,1486,江戸,えど,에도 (도쿄의 옛 이름),Edo (old name of Tokyo),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02099,1490,その通り,そのとおり,그 말대로,exactly so; just as you say,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02100,1494,成す,なす,이루다 · 하다,to accomplish; to form; to do,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02101,1497,２人とも,ふたりとも,둘 다,both (people); both of the two,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02102,1505,銭,せん,전 (화폐 단위),sen (old coin); money,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02103,1535,代わりに,かわりに,대신에,instead; in place of,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02104,1542,お祖父ちゃん,おじいちゃん,할아버지,grandfather,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02105,1546,君たち,きみたち,너희들 · 자네들,"you (plural, familiar)",,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02106,1550,個,こ,개 · 낱개,counter for individual items,,,"단어DB(급수 없음, 낱말창)/회화새단어",r0_culture_c3 6턴: 部屋、グッズ200個。,missing
+ja_miss_02107,1564,俺ら,おいら,"우리들 · 나 (남성, 투박한 말)","we; us (rough, masculine)",,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02108,1568,選る,える,고르다 · 가려 뽑다,to select; to choose,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02109,1576,毎,ごと,~마다,every; each,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02110,1578,決する,けっする,결정하다 · 결심하다,to decide; to resolve,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02111,1580,出合う,であう,우연히 만나다 · 마주치다,to meet by chance; to come across,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02112,1585,鳴き声,なきごえ,울음소리,animal cry; chirping,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02113,1598,出ていく,でていく,나가다 · 나가 버리다,to go out; to leave,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02114,1599,稲架,はさ,볏덕 (벼 말리는 걸이),drying rack for rice sheaves,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02115,1608,其の為,そのため,그 때문에 · 그래서,for that reason; therefore,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02116,1609,警視庁,けいしちょう,경시청 (도쿄 경찰),Metropolitan Police Department,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02117,1627,塚,つか,무덤 · 둔덕,mound; tomb,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02118,1642,総出,そうで,총출동,everyone turning out; all hands,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02119,1653,巻き込む,まきこむ,말려들게 하다 · 끌어들이다,to involve; to drag into,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02120,1655,言い方,いいかた,말투 · 표현 방식,way of speaking; expression,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02121,1657,時には,ときには,때로는,sometimes; occasionally,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02122,1658,何の,どの,어느,which; what kind of,,,"단어DB(급수 없음, 낱말창)/회화새단어",r1_friends_a3 3턴: あー、やっぱり！何のアニメ？,missing
+ja_miss_02123,1665,気がする,きがする,~한 느낌이 들다 · ~한 것 같다,to have a feeling; to feel that,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02124,1669,１日,いちじつ,하루 · 초하루,first day of the month; one day,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02125,1674,合,ごう,합 · 홉 (단위),go (unit of volume); gou,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02126,1678,持てる,もてる,인기가 있다 · 가질 수 있다,to be popular; to be able to hold,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02127,1679,茹だる,うだる,푹 삶아지다 · 찌는 듯 덥다,to be boiled; to swelter,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02128,1696,薫,かおり,가오리 (여자 이름) · 향기,Kaoru (name); fragrance,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02129,1698,後に,のちに,나중에 · 훗날,later; afterwards,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02130,1707,香る,かおる,향기가 나다,to smell sweet; to be fragrant,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02131,1709,入江,いりえ,후미 · 작은 만,inlet; small bay,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02132,1710,御簾,ぎょれん,발 (가리개),bamboo blind; screen,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02133,1718,新,さら,새것 · 갓 만든 것,new; fresh,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02134,1734,裔,えい,후손,descendant,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02135,1744,御陰,おかげ,덕분,thanks to; owing to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02136,1754,馬場,ばば,승마장 · 바바 (성),riding ground; Baba (surname),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02137,1756,之,これ,이것,this; of,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02138,1760,何でもない,なんでもない,아무것도 아니다 · 별일 없다,it's nothing; no problem,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02139,1768,親子,おやこ,부모와 자식,parent and child,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02140,1775,猛威,もうい,맹위,fury; ferocity; violence,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02141,1781,母ちゃん,かあちゃん,엄마,mom; mother,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02142,1785,異様,いよう,이상함 · 기이함,strange; bizarre; odd,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02143,1795,白石,しろいし,시로이시 (성),Shiroishi (surname),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02144,1796,橘,たちばな,다치바나 (성) · 귤나무,Tachibana (surname); mandarin orange,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02145,1797,儀,ぎ,건 · 일 · 의식,matter; ceremony; manner,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02146,1799,翔る,かける,날다 · 달리다,to soar; to fly,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02147,1805,要約,ようやく,요약,summary; abstract,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02148,1817,と言うか,というか,랄까 · 그보다,or rather; I mean,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02149,1848,蘭,あららぎ,아라라기 (성),Araragi (surname); orchid,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02150,1865,分んない,わかんない,모르겠어 · 몰라,I don't know (casual),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02151,1871,粗野,そや,거칠고 촌스러움,rough; coarse; crude,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02152,1877,大門,おおもん,대문 · 정문,main gate,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02153,1885,県下,けんか,현 내 · 현 관할 지역,within the prefecture,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02154,1886,方が良い,ほうがいい,~하는 편이 좋다,had better; it's better to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02155,1887,汝,うぬ,네놈 · 너,you (rude); thou,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02156,1909,盤,ばん,판 · 반,board; plate; disc; record,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02157,1915,社,しゃ,회사 · ~사,company; suffix: -company,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02158,1926,気持,きもち,기분 · 마음,feeling; mood,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02159,1929,阿呆,あほ,바보,fool; idiot,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02160,1930,老爺,ろうや,노인 · 늙은이,old man; old gentleman,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02161,1935,先ほど,さきほど,아까 · 조금 전,a little while ago; earlier,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02162,1961,手痛い,ていたい,뼈아프다 · 호되다,painful; severe; heavy,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02163,1965,何もない,なにもない,아무것도 없다,there is nothing,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02164,1968,お話し,おはなし,이야기 · 말씀,talk; story (honorific),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02165,1972,守,まもり,지킴 · 수호,protection; guarding,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02166,1988,と思われる,とおもわれる,~라고 여겨지다 · ~인 것 같다,it seems that; is thought to be,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02167,1993,戊,つちのえ,무 (십간의 다섯째),fifth stem (of the ten stems),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02168,1997,最後まで,さいごまで,끝까지,until the end,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02169,2001,大地,だいち,대지 · 땅,earth; ground; land,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02170,2005,立花,りっか,꽃꽂이 (전통 양식) · 릿카 (이름),flower arrangement style; Rikka (name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02171,2013,青柳,あおやなぎ,아오야기 (성) · 푸른 버들,Aoyagi (surname); green willow,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02172,2018,いい人,いいひと,좋은 사람,good person; nice person,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02173,2022,是,これ,이것,this; indeed,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02174,2030,死因,しいん,사인 (죽은 원인),cause of death,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02175,2043,早苗,さなえ,사나에 (여자 이름) · 모,Sanae (name); rice seedling,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02176,2054,総社,そうじゃ,총사 (합사한 신사),head shrine (enshrining several deities),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02177,2058,お方,おかた,분 (사람의 높임),person (honorific),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02178,2063,物がある,ものがある,~하는 것이 있다 · ~한 데가 있다,there is something; there is a quality,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02179,2064,言うとおり,いうとおり,말한 대로,as (someone) said,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02180,2083,仁,じん,인 · 사람,benevolence; humanity; person,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02181,2084,に対して,にたいして,~에 대해 · ~에 비해,toward; against; in contrast to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02182,2089,夫れ夫れ,それぞれ,각각 · 저마다,respectively; each,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02183,2102,旭,あさひ,아사히 (이름) · 아침 해,Asahi (name); morning sun,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02184,2106,人がいい,ひとがいい,사람이 좋다 · 착하다,good-natured; kind,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02185,2109,法外,ほうがい,터무니없음 · 엄청남,unreasonable; exorbitant,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02186,2111,殿下,でんか,전하,His Highness; your highness,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02187,2126,揺る,ゆる,흔들다,to shake; to sway,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02188,2131,静,しず,시즈 (여자 이름) · 조용함,Shizu (name); quiet,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02189,2136,お母ちゃん,おかあちゃん,엄마,mom; mother,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02190,2139,弥生,やよい,음력 삼월 · 야요이 (이름),third lunar month; Yayoi (name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02191,2145,何者,なにもの,누구 · 정체,who; what sort of person,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02192,2167,駆る,かる,몰다 · 달리게 하다,to drive; to spur on,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02193,2179,署長,しょちょう,서장,police chief,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02194,2183,配意,はいい,배려 · 신경 씀,consideration; thoughtfulness,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02195,2185,と共に,とともに,~와 함께,together with; along with,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02196,2189,了,りょう,끝 · 완료,end; completion,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02197,2190,逸す,いっす,놓치다 · 벗어나다,to miss; to lose; to stray from,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02198,2191,系,けい,계 · 계통,system; lineage; group,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02199,2198,と言えば,といえば,~라고 하면 · 그러고 보니,speaking of; come to think of it,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02200,2205,籍,せき,호적 · 적,family register; one's membership,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02201,2217,奴等,めら,~놈들,those guys; they (rude),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02202,2220,いい子,いいこ,착한 아이,good child; nice kid,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02203,2224,己,おのれ,자기 자신 · 네 이놈,oneself; you (rude),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02204,2225,畏まりました,かしこまりました,알겠습니다 (공손),certainly; understood (humble),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02205,2227,性根,しょうこん,근성 · 본성,nature; disposition; guts,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02206,2228,点者,てんじゃ,점자 (평가하는 사람),judge of verses; scorer,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02207,2229,小田,おだ,오다 (성),Oda (surname),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02208,2233,鳴門,なると,나루토 (지명) · 어묵의 일종,Naruto (place name); fish cake,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02209,2236,文中,ぶんちゅう,문장 속 · 본문 중,in the text; within the sentence,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02210,2239,その日,そのひ,그날,that day,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02211,2241,初,うい,첫~ · 처음의,prefix: first; the first,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02212,2249,御座ります,ござります,있습니다 (고어 공손),to be; to exist (archaic polite),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02213,2259,助,じょ,보조 · 조~,help; assistant; prefix: assistant,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02214,2262,真,しん,참 · 진실,true; real; truth,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02215,2269,紫檀,したん,자단 (나무),red sandalwood,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02216,2271,其の後,そのあと,그 후 · 그다음,after that; thereafter,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02217,2272,小春,こはる,초봄 같은 늦가을 날씨 · 고하루 (이름),early winter weather; Koharu (name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02218,2274,食,しょく,식사 · 음식,meal; food; eating,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02219,2275,本真,ほんま,정말 · 진짜,really; truly,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02220,2282,高木,こうぼく,큰키나무,tall tree,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02221,2307,今でも,いまでも,지금도,even now; still,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02222,2309,京,きょう,수도 · 교토,capital; Kyoto,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02223,2311,犯,はん,범 · ~범,crime; suffix: -offender,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02224,2313,お邪魔,おじゃま,방해 · 실례,intrusion; disturbance; visit,,,"단어DB(급수 없음, 낱말창)/회화새단어",r2_love_b3 1턴: （深呼吸）…お邪魔します。,missing
+ja_miss_02225,2322,民,たみ,백성 · 국민,people; nation; subjects,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02226,2332,範,のり,본보기 · 노리 (이름),model; example; Nori (name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02227,2336,高,たか,높이 · 양,height; amount; sum,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02228,2339,山本,やまもと,야마모토 (성),Yamamoto (surname),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02229,2355,ご迷惑,ごめいわく,폐 · 민폐,trouble; nuisance,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02230,2361,速める,はやめる,빠르게 하다 · 앞당기다,to speed up; to hasten,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02231,2368,皆様,みなさま,여러분,everyone; ladies and gentlemen,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02232,2384,利く,きく,듣다 · 효과가 있다 · 잘 움직이다,to be effective; to work; to be able to,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02233,2385,一度も,いちども,한 번도,not even once; never,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02234,2395,機,き,기계 · 기회,machine; opportunity,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02235,2407,入,いり,들어감 · 손님 수,entering; number of customers,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02236,2410,この先,このさき,앞으로 · 이 앞,from now on; ahead,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02237,2419,会す,あわす,맞추다 · 만나게 하다,to bring together; to unite,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02238,2423,良い事,よいこと,좋은 일,good thing; good news,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02239,2430,本意,ほい,본뜻 · 본의,real intention; true meaning,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02240,2432,何より,なにより,무엇보다,more than anything,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02241,2441,申し訳ございません,もうしわけございません,정말 죄송합니다,I am very sorry,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02242,2448,に対する,にたいする,~에 대한,regarding; toward,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02243,2451,梓,あずさ,가래나무 · 아즈사 (이름),Japanese cattail catalpa; Azusa (name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02244,2455,編集長,へんしゅうちょう,편집장,editor-in-chief,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02245,2468,太郎,たろう,타로 (남자 이름),Taro (male name),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02246,2469,子供達,こどもたち,아이들,children (plural),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02247,2475,内府,だいふ,내대신 (옛 관직),inner minister (old post),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02248,2486,方正,ほうせい,품행이 바름 · 방정,honest; upright; square,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02249,2490,此度,こたび,이번,this time; the present,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02250,2500,兵,いくさ,전쟁 · 싸움,war; battle,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02251,,てか,てか,근데 · 그러니까,I mean,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02252,,ねえ,ねえ,저기 · 있잖아,hey,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02253,,ちゃん,ちゃん,~짱 (애칭),-chan (affectionate),,,"단어DB(급수 없음, 낱말창)/회화새단어",r1_friends_b4 8턴: じゃあ…ケンちゃん。,missing
+ja_miss_02254,,なまら,なまら,엄청 · 아주(홋카이도),very (Hokkaido),,,"단어DB(급수 없음, 낱말창)/회화새단어",r3_travel_b1 1턴: なまらしばれるねえ。早く入って。,missing
+ja_miss_02255,,けど,けど,하지만,but,,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02256,,割,わり,할(10%),tenths,,,"단어DB(급수 없음, 낱말창)/회화새단어",r2_work_b7 12턴: 「です・ます」と「お願いします」。それで9割。,missing
+ja_miss_02257,,ござる,ござる,계시다(고어),be (archaic),,,"단어DB(급수 없음, 낱말창)",,missing
+ja_miss_02258,,デスク,デスク,책상,desk,,,외래어,,missing
+ja_miss_02259,,オレンジ,オレンジ,오렌지,orange,,,외래어,,missing
+ja_miss_02260,,ゲームセット,ゲームセット,경기 종료,game set,,,외래어,,missing
+ja_miss_02261,,ライト,ライト,조명 / 오른쪽,light / right,,,외래어,,missing
+ja_miss_02262,,ロック,ロック,잠금 / 록,lock / rock,,,외래어,,missing
+ja_miss_02263,,ブログ,ブログ,블로그,blog,,,외래어,,missing
+ja_miss_02264,,クラブ,クラブ,클럽,club,,,외래어,,missing
+ja_miss_02265,,レクリエーション,レクリエーション,레크리에이션,recreation,,2,외래어,,missing
+ja_miss_02266,,ファッション,ファッション,패션,fashion,,,외래어,,missing
+ja_miss_02267,,ファミリー,ファミリー,가족,family,,,외래어,,missing
+ja_miss_02268,,フォント,フォント,폰트,font,,,외래어,,missing
+ja_miss_02269,,フルーツ,フルーツ,과일,fruits,,,외래어,,missing
+ja_miss_02270,,テレホン,テレホン,전화,telephone,,,외래어,,missing
+ja_miss_02271,,セーフ,セーフ,세이프,safe,,,외래어,,missing
+ja_miss_02272,,オリーブ,オリーブ,올리브,olive,,,외래어,,missing
+ja_miss_02273,,ボリューム,ボリューム,볼륨,volume,,,외래어,,missing
+ja_miss_02274,,バケーション,バケーション,휴가,vacation,,,외래어,,missing
+ja_miss_02275,,レビュー,レビュー,리뷰,review,,,외래어,,missing
+ja_miss_02276,,ヴァイオリン,ヴァイオリン,바이올린,violin,,,외래어,,missing
+ja_miss_02277,,スリー,スリー,3,three,,,외래어,,missing
+ja_miss_02278,,ヘルシー,ヘルシー,건강한,healthy,,,외래어,,missing
+ja_miss_02279,,バースデー,バースデー,생일,birthday,,,외래어,,missing
+ja_miss_02280,,マザー,マザー,어머니,mother,,,외래어,,missing
+ja_miss_02281,,ファーザー,ファーザー,아버지,father,,,외래어,,missing
+ja_miss_02282,,スムーズ,スムーズ,매끄러운,smooth,,,외래어,,missing
+ja_miss_02283,,ハンバーガー,ハンバーガー,햄버거,hamburger,,,외래어,,missing
+ja_miss_02284,,パワー,パワー,파워,power,,,외래어,,missing
+ja_miss_02285,,ミラー,ミラー,거울,mirror,,,외래어,,missing
+ja_miss_02286,,コピー,コピー,복사,copy,,,외래어,,missing
+ja_miss_02287,,ホッチキス,ホッチキス,스테이플러,Hotchkiss,,,외래어,,missing
+ja_miss_02288,,スキンシップ,スキンシップ,스킨십,skin + -ship,,,외래어,,missing
+ja_miss_02289,,ピンセット,ピンセット,핀셋,pincet,,,외래어,,missing
+ja_miss_02290,,リュックサック,リュックサック,배낭,Rucksack,,,외래어,,missing
+ja_miss_02291,,クロワッサン,クロワッサン,크루아상,croissant,,,외래어,,missing
+ja_miss_02292,,ブティック,ブティック,부티크,boutique,,,외래어,,missing
+ja_miss_02293,,スパゲッティ,スパゲッティ,스파게티,spaghetti (이탈리아어),,,외래어,,missing
+ja_miss_02294,,リフォーム,リフォーム,리모델링,reform,,,외래어,,missing
+ja_miss_02295,,パフェ,パフェ,파르페,parfait,,,외래어,,missing
+ja_miss_02296,,カラオケ,カラオケ,노래방,kara + orchestra,,,외래어,,missing
+ja_miss_02297,,キーホルダー,キーホルダー,열쇠고리,key + holder,,,외래어,,missing
+ja_miss_02298,,シャープペンシル,シャープペンシル,샤프,sharp + pencil,,,외래어,,missing
+ja_miss_02299,,フリーター,フリーター,프리터,free + Arbeiter,,,외래어,,missing
+ja_miss_02300,,ベビーカー,ベビーカー,유모차,baby + car,,,외래어,,missing
+ja_miss_02301,,モーニングコール,モーニングコール,모닝콜,morning + call,,,외래어,,missing
+ja_miss_02302,,ノートパソコン,ノートパソコン,노트북,note + PC,,,외래어,,missing
+ja_miss_02303,,バイキング,バイキング,뷔페,Viking,,,외래어,,missing
+ja_miss_02304,,クレーム,クレーム,항의,claim,,,외래어,,missing
+ja_miss_02305,,ドンマイ,ドンマイ,괜찮아,don't mind,,,외래어,,missing
+ja_miss_02306,,オーダーメイド,オーダーメイド,맞춤 제작,order + made,,,외래어,,missing
+ja_miss_02307,,ゲームセンター,ゲームセンター,오락실,game + center,,,외래어,,missing
+ja_miss_02308,,タバコ,タバコ,담배,tabaco,,,외래어,,missing
+ja_miss_02309,,カステラ,カステラ,카스텔라,castella,,,외래어,,missing
+ja_miss_02310,,テンプラ,テンプラ,튀김(天ぷら),tempero,,,외래어,,missing
+ja_miss_02311,,カルタ,カルタ,카드놀이,carta,,,외래어,,missing
+ja_miss_02312,,コンペイトウ,コンペイトウ,별사탕(金平糖),confeito,,,외래어,,missing
+ja_miss_02313,,シャボン,シャボン,비누,sabão,,,외래어,,missing
+ja_miss_02314,,ビロード,ビロード,벨벳,veludo,,,외래어,,missing
+ja_miss_02315,,ジョウロ,ジョウロ,물뿌리개,jarro,,,외래어,,missing
+ja_miss_02316,,ランドセル,ランドセル,책가방,ransel,,,외래어,,missing
+ja_miss_02317,,オルゴール,オルゴール,오르골,orgel,,,외래어,,missing
+ja_miss_02318,,メス,メス,수술칼,mes,,,외래어,,missing
+ja_miss_02319,,ギプス,ギプス,깁스,Gips,,,외래어,,missing
+ja_miss_02320,,ワクチン,ワクチン,백신,Vakzin,,,외래어,,missing
+ja_miss_02321,,ゲレンデ,ゲレンデ,스키장 슬로프,Gelände,,,외래어,,missing
+ja_miss_02322,,メルヘン,メルヘン,동화,Märchen,,,외래어,,missing
+ja_miss_02323,,ガーゼ,ガーゼ,거즈,Gaze,,,외래어,,missing
+ja_miss_02324,,バウムクーヘン,バウムクーヘン,바움쿠헨,Baumkuchen,,,외래어,,missing
+ja_miss_02325,,ピーマン,ピーマン,피망,piment,,,외래어,,missing
+ja_miss_02326,,アトリエ,アトリエ,작업실,atelier,,,외래어,,missing
+ja_miss_02327,,グルメ,グルメ,미식가,gourmet,,,외래어,,missing
+ja_miss_02328,,クレヨン,クレヨン,크레용,crayon,,,외래어,,missing
+ja_miss_02329,,オムレツ,オムレツ,오믈렛,omelette,,,외래어,,missing
+ja_miss_02330,,シュークリーム,シュークリーム,슈크림,chou à la crème,,,외래어,,missing
+ja_miss_02331,,ベージュ,ベージュ,베이지,beige,,,외래어,,missing
+ja_miss_02332,,バカンス,バカンス,바캉스·휴가,vacances,,,외래어,,missing
+ja_miss_02333,,ピエロ,ピエロ,삐에로,pierrot,,,외래어,,missing
+ja_miss_02334,,パスタ,パスタ,파스타,pasta (이탈리아어),,,외래어,,missing
+ja_miss_02335,,ピザ,ピザ,피자,pizza (이탈리아어),,,외래어,,missing
+ja_miss_02336,,オペラ,オペラ,오페라,opera (이탈리아어),,,외래어,,missing
+ja_miss_02337,,ソプラノ,ソプラノ,소프라노,soprano (이탈리아어),,,외래어,,missing
+ja_miss_02338,,イクラ,イクラ,연어알,ikra (러시아어),,,외래어,,missing
+ja_miss_02339,,ノルマ,ノルマ,할당량,norma (러시아어),,,외래어,,missing
+ja_miss_02340,,お疲れ,,,,,,회화새단어,r0_culture_b2 5턴: お疲れ。短く、乙。,missing
+ja_miss_02341,,サビ,,,,,,회화새단어,r0_culture_b4 7턴: 合ってる！で、サビで「ウォー」。,missing
+ja_miss_02342,,コール,,,,,,회화새단어,r0_culture_b4 8턴: 色とコール…。試験より難しい。,missing
+ja_miss_02343,,30秒,,,,,,회화새단어,r0_culture_c2 3턴: 早いw　まだ30秒だよ？,missing
+ja_miss_02344,,ぜひ,,,,,,회화새단어,r0_friends_a2 6턴: ぜひ！…あ、「ぜひ」、合ってます？,missing
+ja_miss_02345,,10分,,,,,,회화새단어,r0_friends_a5 3턴: ほんとに？10分も…,missing
+ja_miss_02346,,釣り,,,,,,회화새단어,r0_friends_b3 2턴: んー、釣り。,missing
+ja_miss_02347,,ポイントカード,,,,,,회화새단어,r0_life_b1 3턴: ポイントカードは？,missing
+ja_miss_02348,,どのくらい,,,,,,회화새단어,r0_life_b6 3턴: どのくらいですか？,missing
+ja_miss_02349,,保険証,,,,,,회화새단어,r0_life_c4 5턴: いらない。でも保険証、持った？,missing
+ja_miss_02350,,何日間,,,,,,회화새단어,r0_travel_a1 3턴: 何日間ですか？,missing
+ja_miss_02351,,5日,,,,,,회화새단어,r0_travel_a1 5턴: 5日ですね。じゃあ、宿泊先は？,missing
+ja_miss_02352,,宿泊先,,,,,,회화새단어,r0_travel_a1 5턴: 5日ですね。じゃあ、宿泊先は？,missing
+ja_miss_02353,,一週間,,,,,,회화새단어,r0_travel_c4 2턴: 早い…。もう一週間？,missing
+ja_miss_02354,,投稿,,,,,,회화새단어,r1_culture_a3 1턴: （写真投稿）今日のカフェ☕ てかこれ、ラテの泡が顔みたいになってる,missing
+ja_miss_02355,,何枚,,,,,,회화새단어,r1_culture_a4 4턴: あ…。すごい！何枚？,missing
+ja_miss_02356,,寝なさい,,,,,,회화새단어,r1_culture_a5 4턴: 普通の日本語。「早く寝なさい」みたいな。,missing
+ja_miss_02357,,一曲,,,,,,회화새단어,r1_culture_a6 2턴: 日本語の歌、一曲だけ知ってる。入れて。,missing
+ja_miss_02358,,歌詞,,,,,,회화새단어,r1_culture_a6 6턴: え？歌詞、こう聞こえる。,missing
+ja_miss_02359,,バージョン,,,,,,회화새단어,r1_culture_a6 8턴: もう一曲！{name}バージョンで！,missing
+ja_miss_02360,,聖地巡礼,,,,,,회화새단어,r1_culture_b1 2턴: ほんとだ。聖地巡礼だね。,missing
+ja_miss_02361,,巻,,,,,,회화새단어,r1_culture_b3 4턴: 1巻ずつ。読んだら感想。,missing
+ja_miss_02362,,ネタバレ,,,,,,회화새단어,r1_culture_b3 7턴: ネタバレ！！,missing
+ja_miss_02363,,ハッシュタグ,,,,,,회화새단어,r1_culture_b5 4턴: 写真はいい。でも、ハッシュタグ…,missing
+ja_miss_02364,,派,,,,,,회화새단어,r1_culture_b6 1턴: 映画、どっち派？字幕？吹き替え？,missing
+ja_miss_02365,,タメ口,,,,,,회화새단어,r1_friends_a4 1턴: ねえ、タメ口でいい？,missing
+ja_miss_02366,,一本,,,,,,회화새단어,r1_friends_b2 6턴: ずるい！最後の一本、どっちの？,missing
+ja_miss_02367,,くん,,,,,,회화새단어,r1_friends_b4 5턴: わかった。ケン…くん？,missing
+ja_miss_02368,,呼び方,,,,,,회화새단어,r1_friends_b4 6턴: （爆笑）{name}、全部試してる。じゃあ、ケンちゃんは？,missing
+ja_miss_02369,,SNS,,,,,,회화새단어,r1_friends_b5 1턴: この写真、SNSに載せていい？,missing
+ja_miss_02370,,タグ付け,,,,,,회화새단어,r1_friends_b5 4턴: ほんと？じゃあタグ付けして。,missing
+ja_miss_02371,,既読,,,,,,회화새단어,r1_friends_c2 3턴: 既読ついてる…,missing
+ja_miss_02372,,11時,,,,,,회화새단어,r1_friends_c2 8턴: 11時！駅前！今度は東口w,missing
+ja_miss_02373,,残高不足,,,,,,회화새단어,r1_life_a3 1턴: あ、残高不足ですね。,missing
+ja_miss_02374,,千円,,,,,,회화새단어,r1_life_a3 8턴: 全部！…あ、違う、千円。,missing
+ja_miss_02375,,15分,,,,,,회화새단어,r1_life_a4 6턴: 15分くらい。すぐそこ。,missing
+ja_miss_02376,,総合感冒薬,,,,,,회화새단어,r1_life_a6 6턴: （笑）じゃあ、総合感冒薬ですね。,missing
+ja_miss_02377,,何名様,,,,,,회화새단어,r1_life_b2 1턴: いらっしゃいませ。何名様ですか？,missing
+ja_miss_02378,,配達中,,,,,,회화새단어,r1_life_b3 3턴: ほら。「配達中」。ずっと。,missing
+ja_miss_02379,,降水確率,,,,,,회화새단어,r1_life_b4 2턴: 降水確率40％。微妙。,missing
+ja_miss_02380,,3つ,,,,,,회화새단어,r1_life_c1 3턴: 青いドア、3つあります…,missing
+ja_miss_02381,,不在票,,,,,,회화새단어,r1_life_c3 4턴: 不在票だね。再配達、ネットでできるよ。,missing
+ja_miss_02382,,再配達,,,,,,회화새단어,r1_life_c3 4턴: 不在票だね。再配達、ネットでできるよ。,missing
+ja_miss_02383,,よかった,,,,,,회화새단어,r1_love_a1 1턴: {name}…さん？あ、よかった、写真と同じ！,missing
+ja_miss_02384,,ソファ,,,,,,회화새단어,r1_love_c1 3턴: ソファでごろごろw　{name}は？,missing
+ja_miss_02385,,いらっしゃいませ,,,,,,회화새단어,r1_survival_s1 1턴: いらっしゃいませ。温めますか？お箸おつけしますか？,missing
+ja_miss_02386,,お箸,,,,,,회화새단어,r1_survival_s1 1턴: いらっしゃいませ。温めますか？お箸おつけしますか？,missing
+ja_miss_02387,,抹茶ラテ,,,,,,회화새단어,r1_survival_s2 1턴: {name}、何飲む？ここ、抹茶ラテがめっちゃうまいよ。,missing
+ja_miss_02388,,なし,,,,,,회화새단어,r1_survival_s2 7턴: はい、抹茶ラテ、ホイップなしで。,missing
+ja_miss_02389,,何階,,,,,,회화새단어,r1_travel_a2 3턴: ありがとうございます。朝食は何階ですか？,missing
+ja_miss_02390,,2階,,,,,,회화새단어,r1_travel_a2 4턴: 2階です。7時からです。,missing
+ja_miss_02391,,7時,,,,,,회화새단어,r1_travel_a2 4턴: 2階です。7時からです。,missing
+ja_miss_02392,,縦,,,,,,회화새단어,r1_travel_a3 5턴: もう一枚！縦も！横も！,missing
+ja_miss_02393,,30枚,,,,,,회화새단어,r1_travel_a3 8턴: （小声）…30枚。ありがとうございます。,missing
+ja_miss_02394,,600円,,,,,,회화새단어,r1_travel_a4 6턴: 600円！熱いよ、気をつけて！,missing
+ja_miss_02395,,各停,,,,,,회화새단어,r1_travel_b1 6턴: 各停です。3本あとです。,missing
+ja_miss_02396,,3本,,,,,,회화새단어,r1_travel_b1 6턴: 各停です。3本あとです。,missing
+ja_miss_02397,,普通に,,,,,,회화새단어,r1_travel_b3 5턴: マジで…。じゃあ、普通に買います。,missing
+ja_miss_02398,,取り,,,,,,회화새단어,r1_travel_b3 6턴: ホテル、近いですか？取りに行かれては？,missing
+ja_miss_02399,,血液型,,,,,,회화새단어,r1_travel_b5 4턴: AB…？血液型？,missing
+ja_miss_02400,,何線,,,,,,회화새단어,r1_travel_b6 2턴: 落ち着いて。何線ですか？,missing
+ja_miss_02401,,何色,,,,,,회화새단어,r1_travel_b6 4턴: 何色のカバンですか？,missing
+ja_miss_02402,,羽田,,,,,,회화새단어,r1_travel_c1 5턴: …羽田。,missing
+ja_miss_02403,,有名店,,,,,,회화새단어,r1_travel_c2 2턴: ある。{food}の有名店。,missing
+ja_miss_02404,,やめる,,,,,,회화새단어,r1_travel_c2 7턴: …やめとく。コンビニ行く。,missing
+ja_miss_02405,,漫画喫茶,,,,,,회화새단어,r2_culture_b1 1턴: 終電、終わった。漫画喫茶、行こう。,missing
+ja_miss_02406,,読み放題,,,,,,회화새단어,r2_culture_b1 3턴: 漫画、読み放題。寝られる。シャワーもある。,missing
+ja_miss_02407,,ナイトパック,,,,,,회화새단어,r2_culture_b1 4턴: いらっしゃいませ。ナイトパック8時間、お二人ですか？,missing
+ja_miss_02408,,ドリンクバー,,,,,,회화새단어,r2_culture_b1 11턴: ドリンクバーは無料です。ソフトクリームも。,missing
+ja_miss_02409,,クレーンゲーム,,,,,,회화새단어,r2_culture_b2 2턴: クレーンゲーム？難しいよ。マジで？やるの？,missing
+ja_miss_02410,,優しさ,,,,,,회화새단어,r2_culture_b2 10턴: 日本の優しさ。,missing
+ja_miss_02411,,コスプレ,,,,,,회화새단어,r2_culture_b3 1턴: {name}、今度のイベント、コスプレしよう。,missing
+ja_miss_02412,,決めポーズ,,,,,,회화새단어,r2_culture_b3 9턴: うん。で、決めポーズ。,missing
+ja_miss_02413,,棒立ち,,,,,,회화새단어,r2_culture_b3 10턴: ポーズ…？（棒立ち）,missing
+ja_miss_02414,,場所取り,,,,,,회화새단어,r2_culture_b6 1턴: {name}、場所取り、頼んだ。朝6時。,missing
+ja_miss_02415,,小さく,,,,,,회화새단어,r2_culture_b7 6턴: …そちらの方、少し小さく。,missing
+ja_miss_02416,,UFO,,,,,,회화새단어,r2_friends_b1 3턴: （3分後）…それ、UFO？,missing
+ja_miss_02417,,志望動機,,,,,,회화새단어,r2_friends_b3 1턴: （咳払い）では、志望動機を。,missing
+ja_miss_02418,,面接官,,,,,,회화새단어,r2_friends_b3 9턴: 合格。てか、面接官、私でいい？,missing
+ja_miss_02419,,せい,,,,,,회화새단어,r2_friends_b4 10턴: …俺のせい。,missing
+ja_miss_02420,,二回目,,,,,,회화새단어,r2_friends_b5 1턴: …30分。二回目。,missing
+ja_miss_02421,,ドヤ顔,,,,,,회화새단어,r2_friends_b7 6턴: （ドヤ顔）,missing
+ja_miss_02422,,ラスボス,,,,,,회화새단어,r2_friends_b7 12턴: 日本のゴミ、ラスボス。,missing
+ja_miss_02423,,あの時,,,,,,회화새단어,r2_friends_b8 3턴: あの時の{name}。「あの…ユカさんですか？」,missing
+ja_miss_02424,,1年前,,,,,,회화새단어,r2_life_b1 10턴: （小声）…1年前の私。,missing
+ja_miss_02425,,引っ越し,,,,,,회화새단어,r2_life_b2 1턴: すみません、引っ越しの手続き、したいです。,missing
+ja_miss_02426,,転入届,,,,,,회화새단어,r2_life_b2 2턴: 転入届ですね。番号札を取ってお待ちください。,missing
+ja_miss_02427,,番号札,,,,,,회화새단어,r2_life_b2 2턴: 転入届ですね。番号札を取ってお待ちください。,missing
+ja_miss_02428,,電気代,,,,,,회화새단어,r2_life_b3 3턴: 電気代。先月の2倍。,missing
+ja_miss_02429,,問診票,,,,,,회화새단어,r2_life_b4 1턴: 保険証と、この問診票をお願いします。,missing
+ja_miss_02430,,花粉症,,,,,,회화새단어,r2_life_b4 5턴: （診察室）{name}さん、既往症なし、と。花粉症は？,missing
+ja_miss_02431,,長さ,,,,,,회화새단어,r2_life_b5 11턴: 量を減らすんです。長さは変わりませんよ。,missing
+ja_miss_02432,,在留カード,,,,,,회화새단어,r2_life_b7 2턴: はい。在留カードと印鑑をお願いします。,missing
+ja_miss_02433,,暗証番号,,,,,,회화새단어,r2_life_b7 6턴: 暗証番号、4桁を決めてください。,missing
+ja_miss_02434,,懐中電灯,,,,,,회화새단어,r2_life_b8 3턴: 台風だから。懐中電灯、ここ。,missing
+ja_miss_02435,,さすが,,,,,,회화새단어,r2_life_b8 4턴: 準備いい。さすが。,missing
+ja_miss_02436,,怖い話,,,,,,회화새단어,r2_life_b8 5턴: 暇だし、怖い話する？,missing
+ja_miss_02437,,昔々,,,,,,회화새단어,r2_life_b8 7턴: 昔々、ある村に…（10分）…だったんだよ。,missing
+ja_miss_02438,,言わせる,,,,,,회화새단어,r2_love_b1 10턴: まだ一緒にいたい、ってこと。…言わせないで。,missing
+ja_miss_02439,,おまたせ,,,,,,회화새단어,r2_love_b2 1턴: おまたせ！…なんか、顔こわい。,missing
+ja_miss_02440,,おかわり,,,,,,회화새단어,r2_love_b3 12턴: おかわりは？,missing
+ja_miss_02441,,言語交換,,,,,,회화새단어,r2_love_b4 2턴: ユカ。言語交換の友達。,missing
+ja_miss_02442,,三人,,,,,,회화새단어,r2_love_b4 8턴: （笑）じゃあ、今度三人で会う？,missing
+ja_miss_02443,,足湯,,,,,,회화새단어,r2_love_b5 7턴: どこ？…{name}、それ「足湯」って書いてある。,missing
+ja_miss_02444,,何の日,,,,,,회화새단어,r2_love_b6 1턴: サクラ、今日、何の日？覚えてる？,missing
+ja_miss_02445,,100日,,,,,,회화새단어,r2_love_b6 3턴: 違う。100日。,missing
+ja_miss_02446,,ヶ月,,,,,,회화새단어,r2_love_b6 8턴: 1ヶ月、半年、1年。あと、クリスマス。,missing
+ja_miss_02447,,二週間,,,,,,회화새단어,r2_love_b8 1턴: 二週間、長い。寂しい。,missing
+ja_miss_02448,,4月,,,,,,회화새단어,r2_love_b8 8턴: （笑）4月の花粉、強いね。,missing
+ja_miss_02449,,自己紹介,,,,,,회화새단어,r2_study_b1 1턴: では、自己紹介。名前、出身、趣味。{name}さんから。,missing
+ja_miss_02450,,覚え方,,,,,,회화새단어,r2_study_b4 3턴: 覚え方、ある？私は絵で覚える。,missing
+ja_miss_02451,,通過点,,,,,,회화새단어,r2_study_b5 5턴: （笑）いい経験。弱点じゃなくて、通過点。,missing
+ja_miss_02452,,来学期,,,,,,회화새단어,r2_study_b5 12턴: じゃあ、来学期の目標。もっと失敗する。すみません、先に。,missing
+ja_miss_02453,,再考,,,,,,회화새단어,r2_study_b6 1턴: …以上の点に鑑みて、この理論は再考されるべきであろう。質問は？,missing
+ja_miss_02454,,受験票,,,,,,회화새단어,r2_study_b7 5턴: 受験票…家に忘れた。,missing
+ja_miss_02455,,授業中,,,,,,회화새단어,r2_study_b8 6턴: ミンさんは、授業中、一度も寝なかった。本当は。,missing
+ja_miss_02456,,教え方,,,,,,회화새단어,r2_study_b8 9턴: こちらこそ。{name}さんの失敗で、私も教え方を覚えた。,missing
+ja_miss_02457,,自由席,,,,,,회화새단어,r2_travel_b1 3턴: あ、こちらは自由席の切符ですね。ここは指定席です。,missing
+ja_miss_02458,,指定席,,,,,,회화새단어,r2_travel_b1 3턴: あ、こちらは自由席の切符ですね。ここは指定席です。,missing
+ja_miss_02459,,寝たふり,,,,,,회화새단어,r2_travel_b1 7턴: （寝たふり）,missing
+ja_miss_02460,,お食事,,,,,,회화새단어,r2_travel_b2 1턴: お食事をお持ちしました。こちらは先付けです。,missing
+ja_miss_02461,,八寸,,,,,,회화새단어,r2_travel_b2 3턴: こちらは八寸、こちらはお造り、こちらは煮物でございます。,missing
+ja_miss_02462,,お造り,,,,,,회화새단어,r2_travel_b2 3턴: こちらは八寸、こちらはお造り、こちらは煮物でございます。,missing
+ja_miss_02463,,左側通行,,,,,,회화새단어,r2_travel_b3 1턴: 日本は左側通行です。ご注意ください。,missing
+ja_miss_02464,,満タン,,,,,,회화새단어,r2_travel_b3 5턴: 返却は満タンでお願いします。,missing
+ja_miss_02465,,恥ずかしがり屋,,,,,,회화새단어,r2_travel_b4 4턴: 富士山、恥ずかしがり屋だから。,missing
+ja_miss_02466,,食べ過ぎ,,,,,,회화새단어,r2_travel_b5 2턴: お腹いっぱい…？食べ過ぎですか？,missing
+ja_miss_02467,,何回も,,,,,,회화새단어,r2_travel_b5 3턴: いえ…痛いです。トイレ、何回も。,missing
+ja_miss_02468,,お賽銭,,,,,,회화새단어,r2_travel_b6 1턴: まず、お賽銭。5円がいい。「ご縁」。,missing
+ja_miss_02469,,ご縁,,,,,,회화새단어,r2_travel_b6 1턴: まず、お賽銭。5円がいい。「ご縁」。,missing
+ja_miss_02470,,二礼二拍手一礼,,,,,,회화새단어,r2_travel_b6 3턴: 次、二礼二拍手一礼。,missing
+ja_miss_02471,,二回,,,,,,회화새단어,r2_travel_b6 7턴: 多い！二回！,missing
+ja_miss_02472,,お願い事,,,,,,회화새단어,r2_travel_b6 10턴: ケンも、最初はそうだった？,missing
+ja_miss_02473,,関西弁,,,,,,회화새단어,r2_travel_b7 5턴: あ、ごめんごめん。関西弁わからんか。「いい天気ですね」。,missing
+ja_miss_02474,,なんでやねん,,,,,,회화새단어,r2_travel_b7 9턴: なら「なんでやねん」も。ツッコミの言葉。,missing
+ja_miss_02475,,大阪人,,,,,,회화새단어,r2_travel_b7 11턴: （爆笑）うまい！もう大阪人や。,missing
+ja_miss_02476,,疲れた,,,,,,회화새단어,r2_work_b1 12턴: …お疲れさまです。（もう疲れた）,missing
+ja_miss_02477,,飲み会,,,,,,회화새단어,r2_work_b3 1턴: {name}さん、飲み会のルール、三つ。,missing
+ja_miss_02478,,お電話,,,,,,회화새단어,r2_work_b4 2턴: （電話）お電話ありがとうございます。{company}の{name}です。,missing
+ja_miss_02479,,商事,,,,,,회화새단어,r2_work_b4 3턴: お世話になっております。○○商事の△△です。,missing
+ja_miss_02480,,見積書,,,,,,회화새단어,r2_work_b5 4턴: 部長、申し訳ありません。見積書を、A社ではなくB社に送りました。,missing
+ja_miss_02481,,誤送信,,,,,,회화새단어,r2_work_b5 7턴: B社に電話。「誤送信、破棄お願いします」。A社に再送。,missing
+ja_miss_02482,,計画通り,,,,,,회화새단어,r3_friends_b3 16턴: …計画通り。私だけ、一人で帰る。最高。,missing
+ja_miss_02483,,気を使う,,,,,,회화새단어,r3_friends_b4 6턴: 気を使ってる。二人の時間。,missing
+ja_miss_02484,,いつも通り,,,,,,회화새단어,r3_friends_b4 7턴: やめて。いつも通りで。,missing
+ja_miss_02485,,樽,,,,,,회화새단어,r3_life_b2 7턴: （笑）生ビール。樽の。,missing
+ja_miss_02486,,もうかってまっか,,,,,,회화새단어,r3_life_b2 14턴: 大家さんに習いました。「もうかってまっか」「ぼちぼちでんな」。,missing
+ja_miss_02487,,どない,,,,,,회화새단어,r3_life_b3 1턴: どないしたん？,missing
+ja_miss_02488,,標準語,,,,,,회화새단어,r3_life_b3 3턴: あ、標準語な。どうしましたか？,missing
+ja_miss_02489,,大阪流,,,,,,회화새단어,r3_life_b4 6턴: 見とき。ソース、マヨ、交差。これが大阪流。,missing
+ja_miss_02490,,格子,,,,,,회화새단어,r3_life_b4 7턴: （かける）…格子。,missing
+ja_miss_02491,,原状回復,,,,,,회화새단어,r3_life_b5 1턴: 東京のお部屋の解約ですね。原状回復費用が…,missing
+ja_miss_02492,,清掃費,,,,,,회화새단어,r3_life_b5 3턴: …敷金から清掃費を引いて、3万円です。,missing
+ja_miss_02493,,確かに,,,,,,회화새단어,r3_life_b5 7턴: （写真を見る）…確かに、きれいですね。,missing
+ja_miss_02494,,更新料,,,,,,회화새단어,r3_life_b5 11턴: 大阪のお部屋は、更新料なしです。,missing
+ja_miss_02495,,契約書,,,,,,회화새단어,r3_life_b5 13턴: その代わり、たこ焼きパーティー、と書いてあります。契約書に。,missing
+ja_miss_02496,,書き足す,,,,,,회화새단어,r3_life_b5 16턴: …サインします。UFO型、って書き足していいですか。,missing
+ja_miss_02497,,保証人,,,,,,회화새단어,r3_love_b2 8턴: 保証人。外国人、難しい。,missing
+ja_miss_02498,,どこでも,,,,,,회화새단어,r3_love_b4 13턴: 一緒にいたい。場所は、どこでも。,missing
+ja_miss_02499,,したっけ,,,,,,회화새단어,r3_travel_b1 11턴: なまら上手！じゃ、北海道語も一つ。「したっけ」。,missing
+ja_miss_02500,,か国語,,,,,,회화새단어,r3_travel_b1 15턴: 東京、大阪、北海道。私、三か国語。,missing
+ja_miss_02501,,展望台,,,,,,회화새단어,r3_travel_b2 3턴: （展望台）…。,missing
+ja_miss_02502,,外国の方,,,,,,회화새단어,r3_travel_b4 5턴: え！？外国の方？日本語、お上手！,missing
+ja_miss_02503,,再入国,,,,,,회화새단어,r3_travel_b6 3턴: 再入国ですね。滞在の目的は？,missing
+ja_redo_scene_1,,(장면 컷) r3_culture_b3 남자판 컷 1·2·4,,목욕탕 상반신 수건,,scene,,회화 장면,12+ 다시 그리기 결정(사용자 11-11) — 다시 그렸는지 확인 필요,redo
+ja_redo_scene_2,,(장면 컷) r1_travel_a5_f 컷 4,,탕 안 어깨,,scene,,회화 장면,12+ 다시 그리기 결정(사용자 11-11) — 다시 그렸는지 확인 필요,redo
