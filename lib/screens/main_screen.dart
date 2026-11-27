@@ -31,6 +31,7 @@ import 'sentence_flashcard_screen.dart';
 import 'sentence_units_screen.dart';
 import 'word_freq_screen.dart';
 import 'about_screen.dart';
+import 'jlpt_prep_screen.dart';
 import 'app_guide_screen.dart';
 
 /// 메인 — 탭 4개: 배우기(오늘의 학습·기초 수업·에피소드 단원) · 복습(문장 카드·덱·한자 퀴즈) · 탐색(사전·단어·한자음…) · 나(진행·설정).
@@ -548,6 +549,14 @@ class _LearnTabState extends State<LearnTab> {
                   _load();
                 },
               ),
+            _section(tr('시험 대비')),
+            _NavRow(
+              seal: 'N1',
+              sealColor: AppColors.beniDeep,
+              title: tr('JLPT 대비'),
+              subtitle: tr('N1 · 12월 6일 · 날짜별 계획과 체크'),
+              onTap: () => openPane(context, (_) => const JlptPrepScreen()),
+            ),
             _section(tr('정규과정')),
             _NavRow(
               seal: '感覚',

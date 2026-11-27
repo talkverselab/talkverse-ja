@@ -707,6 +707,7 @@ const Map<String, String> kDictEn = {
   '커리큘럼·회화 1단계, 글자·발음·단어 기본은 무료': 'Curriculum & dialogue level 1 and basic letters, sounds and words stay free',
   '스토어에 연결하지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'Could not reach the store. Please try again shortly.',
   '다시 시도': 'Try again',
+  'JLPT 대비': 'JLPT prep', '시험 대비': 'Exam prep', 'N1 · 12월 6일 · 날짜별 계획과 체크': 'N1 · Dec 6 · day-by-day plan', '{0}/{1} 마침': '{0}/{1} done', '한자 퀴즈 열기': 'Open kanji quiz', 'JLPT 단어 열기': 'Open JLPT words', '언어감각 익히기 열기': 'Open Language Sense',
 };
 
 const Map<String, String> kDictJa = {
@@ -1251,6 +1252,7 @@ const Map<String, String> kDictJa = {
   '커리큘럼·회화 1단계, 글자·발음·단어 기본은 무료': 'カリキュラム・会話のステージ1、文字・発音・単語の基本は無料',
   '스토어에 연결하지 못했어요. 잠시 뒤 다시 시도해 주세요.': 'ストアに接続できませんでした。少し後でもう一度お試しください。',
   '다시 시도': '再試行',
+  'JLPT 대비': 'JLPT 対策', '시험 대비': '試験対策', 'N1 · 12월 6일 · 날짜별 계획과 체크': 'N1 · 12月6日 · 日別プラン', '{0}/{1} 마침': '{0}/{1} 完了', '한자 퀴즈 열기': '漢字クイズを開く', 'JLPT 단어 열기': 'JLPT 単語を開く', '언어감각 익히기 열기': '言語感覚を開く',
 };
 
 const Map<String, String> kDictZh = {
@@ -1795,4 +1797,5 @@ const Map<String, String> kDictZh = {
   '커리큘럼·회화 1단계, 글자·발음·단어 기본은 무료': '课程与会话第1阶段、文字·发音·单词基础免费',
   '스토어에 연결하지 못했어요. 잠시 뒤 다시 시도해 주세요.': '无法连接商店，请稍后再试。',
   '다시 시도': '重试',
+  'JLPT 대비': 'JLPT 备考', '시험 대비': '考试备考', 'N1 · 12월 6일 · 날짜별 계획과 체크': 'N1 · 12月6日 · 每日计划', '{0}/{1} 마침': '{0}/{1} 完成', '한자 퀴즈 열기': '打开汉字测验', 'JLPT 단어 열기': '打开 JLPT 单词', '언어감각 익히기 열기': '打开语感课程',
 };
