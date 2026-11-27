@@ -1,3 +1,4 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -9,9 +10,11 @@ import '../core/pane.dart';
 import '../core/platform.dart';
 import '../core/prefs.dart';
 import '../core/theme.dart';
+import '../services/paywall_gate.dart';
 import '../services/word_service.dart';
 import '../widgets/japanese_decor.dart';
 import 'sense_course_screen.dart';
+import 'jlpt_patterns_screen.dart';
 import 'jlpt_words_screen.dart';
 import 'kanji_stages_screen.dart';
 import 'word_unit_flash_screen.dart';
@@ -400,6 +403,44 @@ class _DayCard extends StatelessWidget {
                             ),
                           ),
                       ],
+                    ),
+                  ),
+                if (t['pat'] is List)
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(34, 0, 0, 6),
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: OutlinedButton(
+                        key: ValueKey('jlpt-pat-${t['id']}'),
+                        onPressed: () async {
+                          if (!await PaywallGate.pass(
+                                context,
+                                patternUnitFree((t['pat'] as List)[1] as int),
+                              ) ||
+                              !context.mounted)
+                            return;
+                          openPane(
+                            context,
+                            (_) => JlptPatternsScreen(
+                              newFrom: (t['pat'] as List)[0] as int,
+                              upTo: (t['pat'] as List)[1] as int,
+                            ),
+                          );
+                        },
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: AppColors.ai,
+                          side: const BorderSide(color: AppColors.line),
+                          visualDensity: VisualDensity.compact,
+                          minimumSize: const Size(0, 32),
+                        ),
+                        child: Text(
+                          tr('문형 누적 읽기 열기'),
+                          style: const TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w700,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
                 if (t['open'] != null)
