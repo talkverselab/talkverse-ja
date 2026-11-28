@@ -18,8 +18,40 @@ import '../services/tts_service.dart';
 /// 날마다 새 단원을 읽고 앞 단원을 처음부터 다시 읽는다. 단원마다 읽은 횟수를 센다.
 /// 데이터 `assets/data/jlpt/patterns.json`: [{id, head, yomi, lv(1~5 = N1~N5), cat(쓰임 분류), mean, conn, tip, s:[{ja, kana, ko}]}] — 문장의 `{…}` 가 포인트.
 /// 문형 고르기·분류·뜻풀이·설명·예문은 모두 자체 작성(특정 교재의 목록·번호·해설을 따르지 않는다).
-const _kReadKey = 'jlpt_pattern_reads';
-const _kAsset = 'assets/data/jlpt/patterns.json';
+/// 누적 읽기 묶음 — 같은 화면으로 문형과 「헷갈리는 말」을 읽는다(자료·저장 키·하루 분량만 다름).
+class PatternSet {
+  final String asset, readKey, startKey, title, intro;
+  final int perDay;
+  const PatternSet({required this.asset, required this.readKey, required this.startKey, required this.title, required this.intro, this.perDay = 2});
+  static const jlpt = PatternSet(
+    asset: 'assets/data/jlpt/patterns.json',
+    readKey: 'jlpt_pattern_reads',
+    startKey: 'jlpt_pattern_start',
+    title: 'JLPT 문형 누적 읽기',
+    intro: '한 달 동안 날마다 2단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 외우지 않아도 돼요.',
+  );
+  /// 한국어 한 낱말에 일본어가 둘 이상인 말(있다 = いる / ある …) — 말마다 짧은 문장 하나씩(자체 작성).
+  static const confuse = PatternSet(
+    asset: 'assets/data/jlpt/confusables.json',
+    readKey: 'jlpt_confuse_reads',
+    startKey: 'jlpt_confuse_start',
+    title: '헷갈리는 말 누적 읽기',
+    intro: '날마다 1단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 짧은 문장으로 차이를 느껴요.',
+    perDay: 1,
+  );
+  bool unitFree(int unit) => unit <= kPatternFreeDays * perDay;
+
+  /// 단원에 든 가장 어려운 급 — N1·N2 가 든 단원은 시험 권한으로 연다(자료는 N5→N1 순, 급 안에서는 쉬운 한자 순).
+  static int unitLevel(List<Map<String, dynamic>> all, int unit) {
+    var lv = 5;
+    for (var i = (unit - 1) * kPatternUnit; i < unit * kPatternUnit && i < all.length; i++) {
+      final v = (all[i]['lv'] as num?)?.toInt() ?? 5;
+      if (v < lv) lv = v;
+    }
+    return lv;
+  }
+}
+
 const kPatternUnit = 10;
 const _kPoint = Color(0xFF2F6FDB);
 final _kMark = RegExp(r'\{([^}]*)\}');
@@ -52,13 +84,13 @@ List<InlineSpan> pointSpans(String s, TextStyle base) {
 }
 
 class JlptPatterns {
-  static List<Map<String, dynamic>>? _cache;
+  static final Map<String, List<Map<String, dynamic>>> _cache = {};
 
-  /// 읽는 순서 = 원고 파일 순서 그대로 — 쉬운 한자(패밀리가 큰 한자)로 된 문형부터(사용자 지시 2026-11-28, 정렬은 원고를 만들 때 함).
-  static Future<List<Map<String, dynamic>>> load() async {
-    if (_cache != null) return _cache!;
-    final b = await rootBundle.load(assetPath(_kAsset));
-    return _cache = (json.decode(utf8.decode(b.buffer.asUint8List(b.offsetInBytes, b.lengthInBytes))) as List).cast<Map<String, dynamic>>();
+  /// 읽는 순서 = 원고 파일 순서 그대로 — 급별 N5→N1, 급 안에서는 쉬운 한자(패밀리가 큰·자주 쓰는 한자)로 된 문형부터(사용자 지시 2026-11-28 「급별로 다시 묶기」, 정렬은 원고를 만들 때 함).
+  static Future<List<Map<String, dynamic>>> load([PatternSet set = PatternSet.jlpt]) async {
+    if (_cache[set.asset] != null) return _cache[set.asset]!;
+    final b = await rootBundle.load(assetPath(set.asset));
+    return _cache[set.asset] = (json.decode(utf8.decode(b.buffer.asUint8List(b.offsetInBytes, b.lengthInBytes))) as List).cast<Map<String, dynamic>>();
   }
 
   static int unitCount(int n) => (n / kPatternUnit).ceil();
@@ -83,12 +115,12 @@ const kPatternPerDay = 2;
 /// 이용권 없이 읽는 날 수(사용자 11-28 「일부풀고 이용권」) — 처음 3일(1~6단원, 문형 60개). 그 뒤는 이용권.
 const kPatternFreeDays = 3;
 bool patternUnitFree(int unit) => unit <= kPatternFreeDays * kPatternPerDay;
-const _kStartKey = 'jlpt_pattern_start';
 
 class JlptPatternDaysScreen extends StatefulWidget {
   /// 시험용 — 오늘 날짜를 바꿔 끼운다.
   final DateTime? now;
-  const JlptPatternDaysScreen({super.key, this.now});
+  final PatternSet set;
+  const JlptPatternDaysScreen({super.key, this.now, this.set = PatternSet.jlpt});
 
   @override
   State<JlptPatternDaysScreen> createState() => _JlptPatternDaysScreenState();
@@ -96,6 +128,7 @@ class JlptPatternDaysScreen extends StatefulWidget {
 
 class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
   int? _total;
+  List<Map<String, dynamic>> _all = const [];
   int _today = 1;
   Map<String, int> _reads = {};
 
@@ -106,24 +139,25 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
   }
 
   Future<void> _load() async {
-    final all = await JlptPatterns.load();
+    final all = await JlptPatterns.load(widget.set);
     final p = await Prefs.getInstance();
     final now = widget.now ?? DateTime.now();
     final day0 = DateTime(now.year, now.month, now.day);
-    var start = DateTime.tryParse(p.getString(_kStartKey) ?? '');
+    var start = DateTime.tryParse(p.getString(widget.set.startKey) ?? '');
     if (start == null) {
       start = day0;
-      await p.setString(_kStartKey, day0.toIso8601String());
+      await p.setString(widget.set.startKey, day0.toIso8601String());
     }
     final reads = <String, int>{};
     try {
-      (json.decode(p.getString(_kReadKey) ?? '{}') as Map).forEach(
+      (json.decode(p.getString(widget.set.readKey) ?? '{}') as Map).forEach(
         (k, v) => reads['$k'] = (v as num).toInt(),
       );
     } catch (_) {}
     if (!mounted) return;
     setState(() {
       _total = all.length;
+      _all = all;
       _today = day0.difference(start!).inDays + 1;
       _reads = reads;
     });
@@ -133,7 +167,7 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
   Widget build(BuildContext context) {
     final total = _total;
     final units = total == null ? 0 : JlptPatterns.unitCount(total);
-    final days = (units / kPatternPerDay).ceil();
+    final days = (units / widget.set.perDay).ceil();
     return ListenableBuilder(
       listenable: PaywallGate.changes,
       builder: (context, _) => _scaffold(context, total, units, days),
@@ -145,7 +179,7 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
       backgroundColor: AppColors.washi,
       appBar: AppBar(
         title: Text(
-          tr('JLPT 문형 누적 읽기'),
+          tr(widget.set.title),
           style: const TextStyle(
             color: AppColors.sumi,
             fontSize: 16,
@@ -155,9 +189,9 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
         actions: [
           TextButton(
             onPressed: () async {
-              if (!await PaywallGate.pass(context, false) || !context.mounted)
+              if (!await PaywallGate.passLevel(context, _all.any((p) => PaywallGate.examLevel((p['lv'] as num?)?.toInt() ?? 5)) ? 1 : 3, false) || !context.mounted)
                 return;
-              openPane(context, (_) => const JlptPatternsScreen());
+              openPane(context, (_) => JlptPatternsScreen(set: widget.set));
             },
             child: Text(
               tr('전체 보기'),
@@ -177,7 +211,7 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
               ),
               children: [
                 Text(
-                  tr('한 달 동안 날마다 2단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 외우지 않아도 돼요.'),
+                  tr(widget.set.intro),
                   style: const TextStyle(
                     color: AppColors.sumiLight,
                     fontSize: 12.5,
@@ -192,8 +226,8 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
   }
 
   Widget _row(BuildContext context, int d, int units) {
-    final a = (d - 1) * kPatternPerDay + 1;
-    final b = (a + kPatternPerDay - 1).clamp(1, units);
+    final a = (d - 1) * widget.set.perDay + 1;
+    final b = (a + widget.set.perDay - 1).clamp(1, units);
     final isToday = d == _today;
     final read = [
       for (var u = a; u <= b; u++) _reads['$u'] ?? 0,
@@ -213,12 +247,12 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
         child: InkWell(
           key: ValueKey('pat-day-$d'),
           onTap: () async {
-            if (!await PaywallGate.pass(context, patternUnitFree(b)) ||
+            if (!await PaywallGate.passLevel(context, PatternSet.unitLevel(_all, b), widget.set.unitFree(b)) ||
                 !context.mounted)
               return;
             await openPane(
               context,
-              (_) => JlptPatternsScreen(newFrom: a, upTo: b),
+              (_) => JlptPatternsScreen(newFrom: a, upTo: b, set: widget.set),
             );
             _load();
           },
@@ -239,9 +273,7 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
                 ),
                 Expanded(
                   child: Text(
-                    a == b
-                        ? trf('{0}단원', [a])
-                        : '${trf('새로 {0}~{1}단원', [a, b])}${a > 1 ? ' · ${trf('누적 1~{0}단원', [a - 1])}' : ''}',
+                    '${widget.set == PatternSet.jlpt ? 'N${PatternSet.unitLevel(_all, b)} · ' : ''}${a == b ? trf('{0}단원', [a]) : '${trf('새로 {0}~{1}단원', [a, b])}${a > 1 ? ' · ${trf('누적 1~{0}단원', [a - 1])}' : ''}'}',
                     style: const TextStyle(
                       color: AppColors.sumi,
                       fontSize: 13,
@@ -261,7 +293,7 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
                       ),
                     ),
                   ),
-                if (!PaywallGate.premium && !patternUnitFree(b))
+                if (!PaywallGate.openFor(PatternSet.unitLevel(_all, b)) && !widget.set.unitFree(b))
                   const LockBadge()
                 else
                   Icon(
@@ -281,7 +313,8 @@ class _JlptPatternDaysScreenState extends State<JlptPatternDaysScreen> {
 /// 문형 누적 읽기 — [upTo] 가 있으면 그날의 누적 읽기(새 단원 → 앞 단원 다시), 없으면 전체.
 class JlptPatternsScreen extends StatefulWidget {
   final int? newFrom, upTo;
-  const JlptPatternsScreen({super.key, this.newFrom, this.upTo});
+  final PatternSet set;
+  const JlptPatternsScreen({super.key, this.newFrom, this.upTo, this.set = PatternSet.jlpt});
 
   @override
   State<JlptPatternsScreen> createState() => _JlptPatternsScreenState();
@@ -298,8 +331,8 @@ class _JlptPatternsScreenState extends State<JlptPatternsScreen> {
   }
 
   Future<void> _load() async {
-    final all = await JlptPatterns.load();
-    final raw = (await Prefs.getInstance()).getString(_kReadKey);
+    final all = await JlptPatterns.load(widget.set);
+    final raw = (await Prefs.getInstance()).getString(widget.set.readKey);
     final reads = <String, int>{};
     if (raw != null) {
       try {
@@ -317,7 +350,7 @@ class _JlptPatternsScreenState extends State<JlptPatternsScreen> {
 
   Future<void> _read(int unit) async {
     setState(() => _reads['$unit'] = (_reads['$unit'] ?? 0) + 1);
-    await (await Prefs.getInstance()).setString(_kReadKey, json.encode(_reads));
+    await (await Prefs.getInstance()).setString(widget.set.readKey, json.encode(_reads));
   }
 
   @override
@@ -333,7 +366,7 @@ class _JlptPatternsScreenState extends State<JlptPatternsScreen> {
       backgroundColor: AppColors.washi,
       appBar: AppBar(
         title: Text(
-          tr('JLPT 문형 누적 읽기'),
+          tr(widget.set.title),
           style: const TextStyle(
             color: AppColors.sumi,
             fontSize: 16,

@@ -741,6 +741,9 @@ const Map<String, String> kDictEn = {
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5–N1 · words → patterns → story → dialogue → review',
   '프로+JLPT': 'Pro+JLPT',
   'JLPT N1·N2 포함': 'includes JLPT N1·N2',
+  '헷갈리는 말 누적 읽기': 'Confusable words — cumulative reading',
+  '있다 = いる / ある … 짧은 문장으로 차이 읽기': 'いる / ある … read the difference in short sentences',
+  '날마다 1단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 짧은 문장으로 차이를 느껴요.': 'Read one new unit a day, then reread the earlier units from the start. Feel the difference through short sentences.',
 };
 
 const Map<String, String> kDictJa = {
@@ -1319,6 +1322,9 @@ const Map<String, String> kDictJa = {
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5~N1 · 語彙 → 文型 → 物語 → 会話 → 復習',
   '프로+JLPT': 'プロ+JLPT',
   'JLPT N1·N2 포함': 'JLPT N1·N2 を含む',
+  '헷갈리는 말 누적 읽기': '紛らわしい言葉の累積読み',
+  '있다 = いる / ある … 짧은 문장으로 차이 읽기': 'いる / ある … 短い文で違いを読む',
+  '날마다 1단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 짧은 문장으로 차이를 느껴요.': '毎日1単元ずつ新しく読み、前の単元を最初から読み直します。短い文で違いを感じましょう。',
 };
 
 const Map<String, String> kDictZh = {
@@ -1897,4 +1903,7 @@ const Map<String, String> kDictZh = {
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5~N1 · 词汇 → 句型 → 故事 → 对话 → 复习',
   '프로+JLPT': '专业版+JLPT',
   'JLPT N1·N2 포함': '含 JLPT N1·N2',
+  '헷갈리는 말 누적 읽기': '易混词累积阅读',
+  '있다 = いる / ある … 짧은 문장으로 차이 읽기': 'いる / ある … 用短句读出区别',
+  '날마다 1단원씩 새로 읽고, 앞 단원을 처음부터 다시 읽어요. 짧은 문장으로 차이를 느껴요.': '每天新读1个单元，再从头重读前面的单元。用短句体会区别。',
 };

@@ -577,6 +577,13 @@ class _LearnTabState extends State<LearnTab> {
               subtitle: tr('한 달 · 날마다 새 문형을 읽고 처음부터 다시 읽기'),
               onTap: () => openPane(context, (_) => const JlptPatternDaysScreen()),
             ),
+            _NavRow(
+              seal: '似',
+              sealColor: AppColors.beni,
+              title: tr('헷갈리는 말 누적 읽기'),
+              subtitle: tr('있다 = いる / ある … 짧은 문장으로 차이 읽기'),
+              onTap: () => openPane(context, (_) => const JlptPatternDaysScreen(set: PatternSet.confuse)),
+            ),
             _section(tr('정규과정')),
             _NavRow(
               seal: '感覚',

@@ -103,6 +103,7 @@ flutter:
     - assets/data/jlpt/prep_n1.json
     - assets/data/jlpt/patterns.json
     - assets/data/jlpt/course.json
+    - assets/data/jlpt/confusables.json
     - assets/data/decks/
     - assets/data/vocab/gairaigo.json
     - assets/images/ipa/

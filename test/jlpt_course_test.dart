@@ -1,3 +1,4 @@
+// ignore_for_file: curly_braces_in_flow_control_structures
 import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
@@ -5,8 +6,10 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:japanese_universe/screens/jlpt_course_screen.dart';
+import 'package:japanese_universe/screens/jlpt_patterns_screen.dart';
 
 void main() {
+  sets();
   final all = (json.decode(File('assets/data/jlpt/course.json').readAsStringSync()) as List).cast<Map<String, dynamic>>();
   final pats = {for (final p in (json.decode(File('assets/data/jlpt/patterns.json').readAsStringSync()) as List).cast<Map<String, dynamic>>()) '${p['id']}': p};
   final kanji = RegExp('[一-鿿]');
@@ -88,5 +91,36 @@ void main() {
     await t.tap(find.byKey(const ValueKey('quiz-next')));
     await t.pump();
     expect(find.byKey(const ValueKey('quiz-close')), findsOneWidget);
+  });
+}
+
+// 누적 읽기 자료 두 벌(문형·헷갈리는 말)의 꼴과 급별 묶음.
+void sets() {
+  final kanji = RegExp('[一-鿿]');
+  List<Map<String, dynamic>> read(String p) => (json.decode(File(p).readAsStringSync()) as List).cast<Map<String, dynamic>>();
+
+  test('문형은 급별 N5→N1 순, N3 까지가 29단원에서 끝난다', () {
+    final d = read('assets/data/jlpt/patterns.json');
+    for (var i = 1; i < d.length; i++) expect((d[i]['lv'] as int) <= (d[i - 1]['lv'] as int), isTrue);
+    expect(PatternSet.unitLevel(d, 29), 3);
+    expect(PatternSet.unitLevel(d, 30), 2);
+    expect(PatternSet.unitLevel(d, 1), 5);
+  });
+
+  test('헷갈리는 말: 말 하나에 문장 하나, 짧은 문장, 읽기에 한자 없음', () {
+    final d = read('assets/data/jlpt/confusables.json');
+    expect(d.length, greaterThan(100));
+    expect(d.map((e) => e['id']).toSet().length, d.length);
+    for (final x in d) {
+      final ss = x['s'] as List;
+      expect(ss.length, '${x['head']}'.split('/').length, reason: '${x['head']}');
+      for (final s in ss) {
+        expect('${s['ja']}'.contains('{'), isTrue);
+        expect(plainPoint('${s['ja']}').length <= 25, isTrue, reason: '${s['ja']}');
+        expect(kanji.hasMatch('${s['kana']}'), isFalse);
+      }
+    }
+    expect(PatternSet.confuse.unitFree(3), isTrue);
+    expect(PatternSet.confuse.unitFree(4), isFalse);
   });
 }
