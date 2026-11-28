@@ -4,6 +4,7 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.': 'Your usage records may be provided to the store when a refund is reviewed.',
   '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': 'No refund once you have opened {0}% or more of the paid screens',
   '환불 규정': 'Refund policy',
   '유료 화면 열람 {0}/{1} ({2}%)': 'Paid screens opened {0}/{1} ({2}%)',
@@ -750,6 +751,7 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.': '返金審査の際、利用記録がストアに提供されることがあります。',
   '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': '有料画面の{0}%以上を閲覧すると返金されません',
   '환불 규정': '返金規定',
   '유료 화면 열람 {0}/{1} ({2}%)': '有料画面の閲覧 {0}/{1} ({2}%)',
@@ -1334,6 +1336,7 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.': '审核退款时，使用记录可能会提供给应用商店。',
   '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': '浏览付费页面达到{0}%以上后不予退款',
   '환불 규정': '退款规定',
   '유료 화면 열람 {0}/{1} ({2}%)': '已浏览付费页面 {0}/{1} ({2}%)',

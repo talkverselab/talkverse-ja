@@ -147,6 +147,8 @@ class _PaywallScreenState extends State<PaywallScreen> {
                     textAlign: TextAlign.center,
                     style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight, height: 1.4),
                   ),
+                  const SizedBox(height: 4),
+                  Text(tr('환불 심사 때 이용 기록이 스토어에 제공될 수 있습니다.'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight, height: 1.4)),
                   const SizedBox(height: 6),
                   OutlinedButton(
                     style: OutlinedButton.styleFrom(shape: const StadiumBorder(), side: const BorderSide(color: AppColors.line)),
