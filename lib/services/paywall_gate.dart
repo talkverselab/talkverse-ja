@@ -16,6 +16,11 @@ class PaywallGate {
   static final Listenable changes = Listenable.merge([Purchase.owned, Account.user]);
   static bool get premium => Entitlement.premium;
 
+  /// JLPT N1·N2 내용은 시험 권한으로 가른다(N3 이하는 프로).
+  static bool get exam => Entitlement.exam;
+  static bool examLevel(int jlpt) => jlpt <= 2;
+  static bool openFor(int jlpt) => examLevel(jlpt) ? exam : premium;
+
   static CurriculumPlan? get _plan => CurriculumPlanStore.instance.plan;
   static Future<void> ensure() async => CurriculumPlanStore.instance.load();
 
@@ -30,6 +35,13 @@ class PaywallGate {
     if (free || premium) return true;
     await PaywallScreen.show(context);
     return premium;
+  }
+
+  /// [pass] 의 급수판 — N1·N2 는 시험 권한이 있어야 열린다.
+  static Future<bool> passLevel(BuildContext context, int jlpt, bool free) async {
+    if (free || openFor(jlpt)) return true;
+    await PaywallScreen.show(context);
+    return openFor(jlpt);
   }
 }
 

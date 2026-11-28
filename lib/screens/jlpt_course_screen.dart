@@ -143,7 +143,7 @@ class _JlptCourseScreenState extends State<JlptCourseScreen> {
   }
 
   Future<void> _open(List<Map<String, dynamic>> chs, Map<String, dynamic> ch) async {
-    if (!await PaywallGate.pass(context, courseChapterFree(ch['n'] as int)) || !mounted) return;
+    if (!await PaywallGate.passLevel(context, _lv, courseChapterFree(ch['n'] as int)) || !mounted) return;
     await openPane(context, (_) => JlptChapterScreen(level: _lv, chapter: ch, chapters: chs, patterns: _pats));
     if (mounted) setState(() {});
   }
@@ -187,7 +187,7 @@ class _JlptCourseScreenState extends State<JlptCourseScreen> {
     final n = ch['n'] as int;
     final wc = JlptCourse.words(ch).length;
     final done = [for (final p in _kParts) if (_Done.v.contains('$_lv-$n-$p')) p].length;
-    final locked = !PaywallGate.premium && !courseChapterFree(n);
+    final locked = !PaywallGate.openFor(_lv) && !courseChapterFree(n);
     final ready = ch['read'] != null;
     return Container(
       margin: const EdgeInsets.only(bottom: 10),

@@ -14,6 +14,10 @@ class Entitlement {
   static bool _local = false;
   static bool get premium => _local || Account.has(lang) || Purchase.owns(lang);
 
+  /// 시험 내용(JLPT N1·N2) 권한 — 「프로+JLPT」·평생·종합 상품이 연다(가격 확정 2026-11-28).
+  /// 서버 상품·권한 이름 규격이 오기 전이라 지금은 프로와 같다. 규격이 오면 여기만 바꾼다.
+  static bool get exam => premium;
+
   static Future<void> load() async => _local = (await Prefs.getInstance()).getBool('premium') ?? false;
   static Future<void> set(bool v) async {
     _local = v;
