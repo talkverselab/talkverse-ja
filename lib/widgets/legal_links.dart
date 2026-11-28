@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../core/l10n.dart';
 import '../core/theme.dart';
+import '../services/usage_pages.dart';
 
 /// 이용약관·개인정보처리방침 주소(출시 점검 2026-11-09, uk 공통). 결제 화면·로그인·설정에서 같은 링크를 쓴다.
 class Legal {
@@ -28,6 +29,22 @@ class LegalLinks extends StatelessWidget {
       ]),
     ]);
   }
+}
+
+/// 환불 규정의 열람률 한 줄(결제 화면·내 정보 공용) — 누르면 환불 규정. 숫자는 [RefundRule.blockPct].
+class RefundNote extends StatelessWidget {
+  final int? pct;
+  const RefundNote({super.key, this.pct});
+  static String text([int? pct]) => trf('유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다', [pct ?? RefundRule.blockPct]);
+  @override
+  Widget build(BuildContext context) => InkWell(
+        onTap: () => Legal.open(RefundRule.url),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4),
+          child: Text('${text(pct)} · ${tr('환불 규정')}',
+              textAlign: TextAlign.center, style: const TextStyle(fontSize: 11.5, color: AppColors.sumiLight, height: 1.4, decoration: TextDecoration.underline)),
+        ),
+      );
 }
 
 /// 맞춤 회화(AI 생성) 표시 + 신고(스토어 심사 대비, 2026-11-09). 신고는 메일로 — 편 ID 가 제목에 들어간다.

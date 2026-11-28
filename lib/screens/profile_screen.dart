@@ -1,3 +1,4 @@
+import '../services/usage_pages.dart';
 import '../widgets/sync_status_card.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -40,6 +41,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
     PackageInfo.fromPlatform().then((i) {
       if (mounted) setState(() => _version = '${i.version} · ${tr('빌드')} ${i.buildNumber}');
     }).catchError((_) {});
+    Account.user.addListener(_loadUsage);
+    _loadUsage();
+  }
+
+  UsageSummary? _usage; // 유료 화면 열람률(로그인했고 서버가 답할 때만)
+  Future<void> _loadUsage() async {
+    final u = Account.user.value == null ? null : await UsageSummary.fetch();
+    if (mounted) setState(() => _usage = u);
+  }
+
+  @override
+  void dispose() {
+    Account.user.removeListener(_loadUsage);
+    super.dispose();
   }
 
   /// 표시 언어 고르기 — 탭마다 돌리지 않고 목록에서 고른다(바꾸면 앱이 새로 그려진다).
@@ -111,6 +126,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
             subtitle: Account.has('ja') || Purchase.owns('ja') ? tr('보유 중 — 맞춤 회화 무제한') : tr('1개월·3개월·1년·평생 · 구매 또는 이전 구매 복원'),
             onTap: () => PaywallScreen.show(context),
           ),
+          if (u != null && _usage != null)
+            _SettingItem(
+              icon: Icons.fact_check_outlined,
+              title: trf('유료 화면 열람 {0}/{1} ({2}%)', [_usage!.viewed, _usage!.total, _usage!.pct]),
+              subtitle: RefundNote.text(_usage!.blockPct),
+              onTap: () => Legal.open(RefundRule.url),
+            ),
         ]),
       );
 

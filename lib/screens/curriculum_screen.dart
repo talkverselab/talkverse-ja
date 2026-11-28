@@ -1,3 +1,4 @@
+import '../services/usage_pages.dart';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -498,6 +499,12 @@ class _CurriculumPracticeScreenState extends State<CurriculumPracticeScreen> {
   bool _stop = false;
 
   Dialogue get d => widget.dialogue;
+
+  @override
+  void initState() {
+    super.initState();
+    UsagePages.view(UsagePages.conv(d.id));
+  }
 
   @override
   void dispose() {

@@ -4,6 +4,9 @@
 // ignore_for_file: lines_longer_than_80_chars
 
 const Map<String, String> kDictEn = {
+  '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': 'No refund once you have opened {0}% or more of the paid screens',
+  '환불 규정': 'Refund policy',
+  '유료 화면 열람 {0}/{1} ({2}%)': 'Paid screens opened {0}/{1} ({2}%)',
   '외국어 단어 익히기 메뉴 열기': 'Open the loanword menu',
   '영상을 불러오지 못했어요': 'Could not load the video',
   '한국어와 다른 곳만 잠깐': 'Only where it differs from Korean',
@@ -747,6 +750,9 @@ const Map<String, String> kDictEn = {
 };
 
 const Map<String, String> kDictJa = {
+  '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': '有料画面の{0}%以上を閲覧すると返金されません',
+  '환불 규정': '返金規定',
+  '유료 화면 열람 {0}/{1} ({2}%)': '有料画面の閲覧 {0}/{1} ({2}%)',
   '외국어 단어 익히기 메뉴 열기': '外来語メニューを開く',
   '영상을 불러오지 못했어요': '動画を読み込めませんでした',
   '한국어와 다른 곳만 잠깐': '韓国語と違うところだけ',
@@ -1328,6 +1334,9 @@ const Map<String, String> kDictJa = {
 };
 
 const Map<String, String> kDictZh = {
+  '유료 화면의 {0}% 이상을 열람하면 환불되지 않습니다': '浏览付费页面达到{0}%以上后不予退款',
+  '환불 규정': '退款规定',
+  '유료 화면 열람 {0}/{1} ({2}%)': '已浏览付费页面 {0}/{1} ({2}%)',
   '외국어 단어 익히기 메뉴 열기': '打开外来语菜单',
   '영상을 불러오지 못했어요': '视频加载失败',
   '한국어와 다른 곳만 잠깐': '只讲和韩语不同的地方',

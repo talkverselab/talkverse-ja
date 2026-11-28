@@ -1,3 +1,4 @@
+import '../services/usage_pages.dart';
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -63,6 +64,7 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
   Future<void> _reload() async {
     setState(() => _loading = true);
     final q = _ctrl.text.trim();
+    if (q.isEmpty && _level != null) UsagePages.view(UsagePages.words(_level!));
     final list = q.isNotEmpty ? await WordService.instance.search(q) : await WordService.instance.byLevel(_level);
     if (!mounted) return;
     setState(() {

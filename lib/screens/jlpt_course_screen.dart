@@ -1,4 +1,5 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
+import '../services/usage_pages.dart';
 import 'dart:convert';
 import 'dart:math';
 
@@ -233,6 +234,12 @@ class _JlptChapterScreenState extends State<JlptChapterScreen> {
   Future<void> _mark(String part, [bool? on]) async {
     await _Done.toggle(_key(part), on);
     if (mounted) setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    UsagePages.view(UsagePages.course(widget.level, _n));
   }
 
   @override

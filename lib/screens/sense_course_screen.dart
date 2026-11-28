@@ -1,3 +1,4 @@
+import '../services/usage_pages.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -121,6 +122,7 @@ class _SenseCourseScreenState extends State<SenseCourseScreen> {
   Future<void> _open(int index) async {
     if (!await PaywallGate.pass(context, PaywallGate.senseLevelFree(_levelIndex(index))) || !mounted) return;
     final ls = SenseCourse.flat(_data!)[index].$2;
+    UsagePages.view(UsagePages.sense('${ls['id']}'));
     if (ls['open'] == 'gairaigo') {
       await openPane(context, (_) => const GairaigoScreen(rulesFirst: true)); // 참고 = 외국어 발음 규칙 화면
       return;
@@ -239,7 +241,10 @@ class _SenseLessonScreenState extends State<SenseLessonScreen> {
   void initState() {
     super.initState();
     SenseCourse.load().then((d) {
-      if (mounted) setState(() => _all = SenseCourse.flat(d));
+      if (!mounted) return;
+      final all = SenseCourse.flat(d);
+      if (widget.index < all.length) UsagePages.view(UsagePages.sense('${all[widget.index].$2['id']}')); // 「다음 회차」로 넘어온 경우도
+      setState(() => _all = all);
     });
   }
 

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:package_info_plus/package_info_plus.dart';
+
 import 'core/embed_env.dart';
 import 'core/l10n.dart';
 import 'core/theme.dart';
@@ -16,6 +18,7 @@ import 'services/entitlement.dart';
 import 'services/ko_reading.dart';
 import 'services/learner_prefs.dart';
 import 'services/purchase.dart';
+import 'usage_log.dart';
 
 export 'core/embed_env.dart' show embedded;
 
@@ -46,6 +49,13 @@ Future<void> embedInit({bool standalone = false}) async {
   // Talkverse ID 로그인(선택) + 스토어 결제 — 통합 앱이면 결제 스트림은 공용 결제가 넘겨준다(Purchase.ownStream)
   Account.load(); // 저장된 로그인 표시 + 뒤에서 토큰 갱신(기다리지 않음)
   await Entitlement.load();
+  // 화면 열람 기록(환불 규정의 열람률) — 실패해도 앱 동작에는 영향 없음
+  int? build;
+  try {
+    build = int.tryParse((await PackageInfo.fromPlatform()).buildNumber);
+  } catch (_) {}
+  UsageLog.init(lang: 'ja', token: Account.accessToken, appBuild: build);
+  WidgetsBinding.instance.addObserver(_UsageFlush());
   Purchase.ownStream = standalone;
   // 가격·상품 ID = Talkverse 공통(사용자 최종 확정 2026-11-09, ~/talkverse/PRICING.md 「앱 정가/앱 할인가」). 스토어 판매가 = 할인가.
   Purchase.configure('ja', const [
@@ -75,6 +85,14 @@ Future<void> embedInit({bool standalone = false}) async {
     }
   } catch (_) {}
   _syncFirst = await ContentSync.instance.init(large: wide, female: LearnerPrefs.isFemale, jlpt: jlpt);
+}
+
+/// 앱이 뒤로 가면 모아 둔 열람 기록을 보낸다.
+class _UsageFlush with WidgetsBindingObserver {
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused) UsageLog.flush();
+  }
 }
 
 /// runApp 에 넘기는 위젯(통합 앱은 이 언어 화면으로). [onSwitchLanguage] 가 있으면 설정 및 프로필에 「다른 언어 배우기」.

@@ -1,3 +1,4 @@
+import '../services/usage_pages.dart';
 import 'package:flutter/material.dart';
 
 import '../core/l10n.dart';
@@ -249,6 +250,7 @@ class _DialogueScreenState extends State<DialogueScreen> {
   void initState() {
     super.initState();
     DialogueService.instance.setLastOpened(d.id);
+    UsagePages.view(UsagePages.conv(d.id));
     // 처음 여는 편이면 새 단어·문법을 먼저 보여 준다(2026-11-08)
     WidgetsBinding.instance.addPostFrameCallback((_) { if (mounted) maybeShowDialoguePreview(context, d); });
   }

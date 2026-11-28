@@ -1,4 +1,5 @@
 // ignore_for_file: curly_braces_in_flow_control_structures
+import '../services/usage_pages.dart';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -327,6 +328,13 @@ class _JlptPatternsScreenState extends State<JlptPatternsScreen> {
   @override
   void initState() {
     super.initState();
+    // 그날 새로 읽는 단원만 기록한다(누적 복습분·「전체 보기」는 세지 않음)
+    final a = widget.newFrom, b = widget.upTo;
+    if (a != null && b != null) {
+      for (var u = a; u <= b; u++) {
+        UsagePages.view(UsagePages.pattern(u, confuse: widget.set == PatternSet.confuse));
+      }
+    }
     _load();
   }
 
