@@ -567,7 +567,7 @@ class _LearnTabState extends State<LearnTab> {
               seal: '級',
               sealColor: AppColors.matcha,
               title: tr('급별 JLPT'),
-              subtitle: tr('N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제'),
+              subtitle: tr('N5~N1 · 낱말 → 문형 → 대화 읽기·듣기 → 복습 문제'),
               onTap: () => openPane(context, (_) => const JlptCourseScreen()),
             ),
             _NavRow(

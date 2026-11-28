@@ -16,8 +16,8 @@ import '../services/tts_service.dart';
 import 'jlpt_patterns_screen.dart';
 import 'word_unit_flash_screen.dart';
 
-/// 급별 JLPT 과정(사용자 지시 2026-11-28) — N5~N1 을 장으로 나눠 낱말 → 문형 → 읽기 이야기 → 듣기 대화 → 복습 문제.
-/// 낱말은 쉬운 한자(자주 쓰는 한자·같은 소리 부품 패밀리) 순의 한자 묶음, 읽기·듣기는 시험 지문이 아니라 이야기·일상 대화(자체 작성).
+/// 급별 JLPT 과정(사용자 지시 2026-11-28) — N5~N1 을 장으로 나눠 낱말 → 문형 → 대화 읽기 → 대화 듣기 → 복습 문제.
+/// 낱말은 쉬운 한자(자주 쓰는 한자·같은 소리 부품 패밀리) 순의 한자 묶음, 읽기·듣기는 시험 지문이 아니라 일상 대화(영화·음악·애니 같은 관심사, 자체 작성 — 사용자 2026-11-28 「일상대화로」).
 /// 복습 문제는 이 장과 앞 장의 낱말·문형에서 앱이 만든다(앞 장을 계속 다시 만나게).
 /// 데이터 `assets/data/jlpt/course.json`(만들기 `tools/jlpt_course_build.py`):
 /// [{lv, chapters:[{n, title?, words:[{k,m,f,w:[[표기,읽기,뜻]]}], patterns:[문형 id], read?, listen?}]}]
@@ -173,7 +173,7 @@ class _JlptCourseScreenState extends State<JlptCourseScreen> {
                     ),
                 ]),
                 const SizedBox(height: 6),
-                Text(tr('한 장 = 낱말 → 문형 → 이야기 읽기 → 대화 듣기 → 복습 문제. 앞 장은 복습 문제에서 계속 다시 나와요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.muted, height: 1.45)),
+                Text(tr('한 장 = 낱말 → 문형 → 대화 읽기 → 대화 듣기 → 복습 문제. 앞 장은 복습 문제에서 계속 다시 나와요.'), style: const TextStyle(fontSize: 12.5, color: AppColors.muted, height: 1.45)),
                 const SizedBox(height: 10),
                 if (chs.isEmpty)
                   Padding(padding: const EdgeInsets.all(28), child: Center(child: Text(trf('N{0} 은 준비 중이에요', [_lv]), style: const TextStyle(color: AppColors.muted)))),
@@ -204,7 +204,7 @@ class _JlptCourseScreenState extends State<JlptCourseScreen> {
           ),
           title: Text(ch['title'] == null ? trf('{0}장', [n]) : '${trf('{0}장', [n])} · ${ch['title']}', style: const TextStyle(fontWeight: FontWeight.w800, color: AppColors.sumi)),
           subtitle: Text(
-            '${trf('낱말 {0}개 · 문형 {1}개', [wc, (ch['patterns'] as List).length])}${ready ? '' : ' · ${tr('이야기·대화 준비 중')}'}\n${trf('{0}/5 마침', [done])}',
+            '${trf('낱말 {0}개 · 문형 {1}개', [wc, (ch['patterns'] as List).length])}${ready ? '' : ' · ${tr('대화 준비 중')}'}\n${trf('{0}/5 마침', [done])}',
             style: const TextStyle(fontSize: 12, color: AppColors.muted, height: 1.5),
           ),
           isThreeLine: true,
@@ -357,7 +357,7 @@ class _JlptChapterScreenState extends State<JlptChapterScreen> {
       ]);
 
   Widget _story(Map<String, dynamic>? s, String part) {
-    if (s == null) return Center(child: Text(tr('이 장의 이야기·대화는 준비 중이에요'), style: const TextStyle(color: AppColors.muted)));
+    if (s == null) return Center(child: Text(tr('이 장의 대화는 준비 중이에요'), style: const TextStyle(color: AppColors.muted)));
     return _StoryView(key: ValueKey('story-$part'), story: s, listen: part == 'l', onAllRight: () => _mark(part, true), done: _on(part));
   }
 
