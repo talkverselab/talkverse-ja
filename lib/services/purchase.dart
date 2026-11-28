@@ -18,7 +18,9 @@ class Plan {
   final bool bundle;
   final int krw; // 앱 할인가(스토어 판매가) — 스토어 가격을 못 받았을 때 표시
   final int listKrw; // 앱 정가(취소선 표기용, ~/talkverse/PRICING.md)
-  const Plan(this.id, this.months, this.krw, {this.listKrw = 0, this.bundle = false});
+  final bool exam; // 프로+시험(JLPT N1·N2 포함) 구독 — 평생·종합은 [opensExam] 으로 함께 연다
+  const Plan(this.id, this.months, this.krw, {this.listKrw = 0, this.bundle = false, this.exam = false});
+  bool get opensExam => exam || lifetime || bundle;
   bool get lifetime => months == 0;
   bool get discounted => listKrw > krw;
   int get discountPct => discounted ? ((1 - krw / listKrw) * 100).round() : 0;
@@ -58,6 +60,12 @@ class Purchase {
   static bool owns(String code) {
     final now = DateTime.now().millisecondsSinceEpoch;
     return owned.value.entries.any((e) => (e.key.startsWith('lang_${code}_') || e.key.startsWith('all_')) && (e.value == 0 || e.value > now));
+  }
+
+  /// 시험 내용(JLPT N1·N2)을 여는 상품이 있는가 — 프로+시험(lang_<코드>_exam_*)·언어 평생(lang_<코드>_life)·종합(all_*) 중 기한이 남은 것.
+  static bool ownsExam(String code) {
+    final now = DateTime.now().millisecondsSinceEpoch;
+    return owned.value.entries.any((e) => (e.key.startsWith('lang_${code}_exam_') || e.key == 'lang_${code}_life' || e.key.startsWith('all_')) && (e.value == 0 || e.value > now));
   }
 
   static Future<void> configure(String code, List<Plan> list) async {

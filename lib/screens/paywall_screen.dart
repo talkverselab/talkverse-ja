@@ -34,7 +34,9 @@ class PaywallScreen extends StatefulWidget {
 class _PaywallScreenState extends State<PaywallScreen> {
   String? _sel; // 미리 고르지 않는다
 
-  String _title(Plan p) => switch ((p.bundle, p.months)) {
+  String _title(Plan p) => p.exam ? '${tr('프로+JLPT')} ${_base(p)} · ${tr('JLPT N1·N2 포함')}' : (p.lifetime && !p.bundle ? '${_base(p)} · ${tr('JLPT N1·N2 포함')}' : _base(p));
+
+  String _base(Plan p) => switch ((p.bundle, p.months)) {
         (false, 1) => tr('1개월'),
         (false, 3) => tr('3개월'),
         (false, 12) => tr('1년'),

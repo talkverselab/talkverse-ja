@@ -11,6 +11,7 @@ import '../widgets/furigana_toggle.dart';
 import '../services/ko_reading.dart';
 import '../services/tts_service.dart';
 import '../services/word_service.dart';
+import '../services/paywall_gate.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/word_sheet.dart';
 import '../core/l10n.dart';
@@ -173,7 +174,10 @@ class _JlptWordsScreenState extends State<JlptWordsScreen> {
                   return Padding(
                     padding: const EdgeInsets.only(right: 8),
                     child: GestureDetector(
-                      onTap: () {
+                      onTap: () async {
+                        // N1·N2 낱말은 시험 권한(프로+JLPT)으로 연다
+                        if (lv != null && PaywallGate.examLevel(lv) && !await PaywallGate.passLevel(context, lv, false)) return;
+                        if (!mounted) return;
                         setState(() => _level = lv);
                         _reload();
                       },

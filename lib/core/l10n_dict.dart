@@ -739,6 +739,8 @@ const Map<String, String> kDictEn = {
   '한 번 더 풀기': 'Try again',
   '한 장 = 낱말 → 문형 → 이야기 읽기 → 대화 듣기 → 복습 문제. 앞 장은 복습 문제에서 계속 다시 나와요.': 'One chapter = words → patterns → story → dialogue → review quiz. Earlier chapters keep coming back in the review.',
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5–N1 · words → patterns → story → dialogue → review',
+  '프로+JLPT': 'Pro+JLPT',
+  'JLPT N1·N2 포함': 'includes JLPT N1·N2',
 };
 
 const Map<String, String> kDictJa = {
@@ -1315,6 +1317,8 @@ const Map<String, String> kDictJa = {
   '한 번 더 풀기': 'もう一度解く',
   '한 장 = 낱말 → 문형 → 이야기 읽기 → 대화 듣기 → 복습 문제. 앞 장은 복습 문제에서 계속 다시 나와요.': '1章 = 語彙 → 文型 → 物語を読む → 会話を聞く → 復習問題。前の章は復習問題で繰り返し出ます。',
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5~N1 · 語彙 → 文型 → 物語 → 会話 → 復習',
+  '프로+JLPT': 'プロ+JLPT',
+  'JLPT N1·N2 포함': 'JLPT N1·N2 を含む',
 };
 
 const Map<String, String> kDictZh = {
@@ -1891,4 +1895,6 @@ const Map<String, String> kDictZh = {
   '한 번 더 풀기': '再做一遍',
   '한 장 = 낱말 → 문형 → 이야기 읽기 → 대화 듣기 → 복습 문제. 앞 장은 복습 문제에서 계속 다시 나와요.': '一章 = 词汇 → 句型 → 读故事 → 听对话 → 复习题。前面的章节会在复习题中反复出现。',
   'N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제': 'N5~N1 · 词汇 → 句型 → 故事 → 对话 → 复习',
+  '프로+JLPT': '专业版+JLPT',
+  'JLPT N1·N2 포함': '含 JLPT N1·N2',
 };

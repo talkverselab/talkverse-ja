@@ -13,7 +13,7 @@ class PaywallGate {
   PaywallGate._();
 
   /// 이용권·계정이 바뀌면 다시 그릴 것.
-  static final Listenable changes = Listenable.merge([Purchase.owned, Account.user]);
+  static final Listenable changes = Listenable.merge([Purchase.owned, Account.user, Account.examLangs]);
   static bool get premium => Entitlement.premium;
 
   /// JLPT N1·N2 내용은 시험 권한으로 가른다(N3 이하는 프로).

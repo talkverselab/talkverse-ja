@@ -32,6 +32,10 @@ class Account {
   static bool get signedIn => user.value != null;
   static bool has(String lang) => entitlements.value.contains(lang);
 
+  /// 시험 권한(exam: true)이 붙은 언어 — 서버 이용권 응답의 언어 항목마다 `exam` 이 온다(2026-11-28).
+  static final examLangs = ValueNotifier<List<String>>(const []);
+  static bool hasExam(String lang) => examLangs.value.contains(lang);
+
   /// 앱 시작 때: 저장된 사용자를 바로 보여 주고, 뒤에서 토큰을 갱신한다(오프라인이면 저장값 유지).
   static Future<void> load() async {
     try {
@@ -39,6 +43,8 @@ class Account {
       final e = await _store.read(key: 'tv_ent');
       if (u != null) user.value = jsonDecode(u) as Map<String, dynamic>;
       if (e != null) entitlements.value = (jsonDecode(e) as List).cast<String>();
+      final x = await _store.read(key: 'tv_ent_exam');
+      if (x != null) examLangs.value = (jsonDecode(x) as List).cast<String>();
     } catch (_) {}
     if (user.value != null) refresh();
   }
@@ -125,7 +131,9 @@ class Account {
     user.value = j['user'] as Map<String, dynamic>;
     entitlements.value = [for (final e in (j['entitlements'] as List)) (e as Map)['lang'] as String];
     await _store.write(key: 'tv_user', value: jsonEncode(user.value));
+    examLangs.value = [for (final e in (j['entitlements'] as List)) if ((e as Map)['exam'] == true) e['lang'] as String];
     await _store.write(key: 'tv_ent', value: jsonEncode(entitlements.value));
+    await _store.write(key: 'tv_ent_exam', value: jsonEncode(examLangs.value));
   }
 
   /// refresh 토큰으로 새 access. 서버가 거부하면(만료·회수) 로그아웃 상태로.
@@ -174,8 +182,9 @@ class Account {
     _access = null;
     user.value = null;
     entitlements.value = const [];
+    examLangs.value = const [];
     // 우리 키만 지운다 — 통합 앱에서는 키체인을 다른 언어 패키지와 같이 쓴다(2026-11-09). tv_* 는 Talkverse 계정 공용 키.
-    for (final k in const ['tv_refresh', 'tv_user', 'tv_ent']) {
+    for (final k in const ['tv_refresh', 'tv_user', 'tv_ent', 'tv_ent_exam']) {
       await _store.delete(key: k);
     }
   }

@@ -9,6 +9,7 @@ import '../review/review_ui.dart';
 import '../services/art_service.dart';
 import '../services/deck_service.dart';
 import '../services/tts_service.dart';
+import '../services/paywall_gate.dart';
 import '../widgets/japanese_decor.dart';
 import '../widgets/today_mission.dart';
 import 'custom_script_screen.dart';
@@ -557,7 +558,10 @@ class _LearnTabState extends State<LearnTab> {
               sealColor: AppColors.beniDeep,
               title: tr('JLPT 대비'),
               subtitle: tr('N1 · 12월 6일 · 날짜별 계획과 체크'),
-              onTap: () => openPane(context, (_) => const JlptPrepScreen()),
+              onTap: () async {
+                if (!await PaywallGate.passLevel(context, 1, false) || !context.mounted) return;
+                openPane(context, (_) => const JlptPrepScreen());
+              },
             ),
             _NavRow(
               seal: '級',
