@@ -32,6 +32,7 @@ import 'sentence_units_screen.dart';
 import 'word_freq_screen.dart';
 import 'about_screen.dart';
 import 'jlpt_prep_screen.dart';
+import 'jlpt_course_screen.dart';
 import 'jlpt_patterns_screen.dart';
 import 'app_guide_screen.dart';
 
@@ -557,6 +558,13 @@ class _LearnTabState extends State<LearnTab> {
               title: tr('JLPT 대비'),
               subtitle: tr('N1 · 12월 6일 · 날짜별 계획과 체크'),
               onTap: () => openPane(context, (_) => const JlptPrepScreen()),
+            ),
+            _NavRow(
+              seal: '級',
+              sealColor: AppColors.matcha,
+              title: tr('급별 JLPT'),
+              subtitle: tr('N5~N1 · 낱말 → 문형 → 이야기 → 대화 → 복습 문제'),
+              onTap: () => openPane(context, (_) => const JlptCourseScreen()),
             ),
             _NavRow(
               seal: '文型',
