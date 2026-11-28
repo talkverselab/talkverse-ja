@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """JLPT 급별 과정(assets/data/jlpt/course.json) 만들기.
 
-한 급을 장으로 나눈다. 장 = 낱말(한자 묶음) + 문형 + 읽기 이야기 + 듣기 대화. 복습 문제는 앱이 자료에서 만든다.
+한 급을 장으로 나눈다. 장 = 낱말(한자 묶음) + 문형 + 읽기 대화(메시지) + 듣기 대화. 복습 문제는 앱이 자료에서 만든다.
 - 낱말: 낱말 DB 의 그 급 낱말을 「쉬운 한자」 순으로 — 자주 쓰는 한자부터, 같은 소리 부품(패밀리) 한자는 붙여서.
   낱말은 그 낱말의 한자 가운데 가장 뒤에 나오는 한자 묶음에 넣는다(앞 한자는 이미 배운 상태).
 - 문형: patterns.json 의 그 급 문형을 파일 순서대로 장마다 PER 개.
-- 이야기·대화: data/jlpt_course/n<급>.json (자체 작성) 의 장 번호에 맞춰 넣는다. 없으면 그 장은 「준비 중」.
+- 읽기·듣기 대화: data/jlpt_course/n<급>.json (자체 작성) 의 장 번호에 맞춰 넣는다. 없으면 그 장은 「준비 중」.
 사용: python3 tools/jlpt_course_build.py
 """
 import json, math, os, re
@@ -54,7 +54,8 @@ def build_level(lv, words, pats, ph, idx, src):
     per_p = math.ceil(len(lp) / n)
     kw = sum(len(v) for v in by.values())
     per_w, per_k = kw / n, math.ceil(len(kana) / n)
-    item = lambda w: [w['surface'], '' if w['kana'] == w['surface'] else w['kana'], w['ko']]
+    # 읽기 칸에 한자가 들어간 항목(자료 오류)은 읽기를 비운다
+    item = lambda w: [w['surface'], '' if (w['kana'] == w['surface'] or KANJI.search(w['kana'])) else w['kana'], w['ko']]
     chapters, ci, acc = [], 0, 0
     cur = []
     flat = [(c, by[c]) for c in order if by[c]]
